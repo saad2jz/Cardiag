@@ -1,0 +1,1146 @@
+{
+  "marque": "Fiat",
+  "modeles": [
+    {
+      "nom": "500 (Nuova)",
+      "generations": [
+        {
+          "code_chassis": "110",
+          "annees": "1957-1975",
+          "phases": [
+            "500N",
+            "500D",
+            "500F",
+            "500L",
+            "500R"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "500cc bicylindre refroidi par air",
+              "code_moteur": "Fiat 100.000",
+              "cylindree": "0.5L",
+              "puissance_ch": 22,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                "Corrosion généralisée sur planchers, bas de caisse et passages de roues",
+                "Refroidissement par air sensible à la surchauffe en usage prolongé",
+                "Système électrique 6V/12V vieillissant, faux contacts fréquents",
+                "Freins à tambour peu endurants nécessitant réglages fréquents"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "127",
+      "generations": [
+        {
+          "code_chassis": "128128",
+          "annees": "1971-1987",
+          "phases": [
+            "Série 1 (1971-1977)",
+            "Série 2 (1977-1981)",
+            "Série 3 (1981-1987)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "900/1050/1300",
+              "code_moteur": "Fiat 100 series OHV",
+              "cylindree": "0.9L-1.3L",
+              "puissance_ch": 70,
+              "boite": [
+                "BVM4",
+                "BVM5"
+              ],
+              "points_faibles": [
+                "Corrosion très marquée, notamment bas de caisse et passages de roues avant",
+                "Carburateur simple corps sensible au déréglage",
+                "Distribution par courroie à surveiller (moteur non protégé en cas de rupture sur certaines versions)",
+                "Suspension arrière à ressorts à lames vieillissante, bruits de train arrière"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Panda",
+      "generations": [
+        {
+          "code_chassis": "141",
+          "annees": "1980-2003",
+          "phases": [
+            "Phase 1 (1980-1986)",
+            "Phase 2 restylée (1986-2003)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "750/900/1000/1100 Fire",
+              "code_moteur": "FIRE 100 A1.000",
+              "cylindree": "0.75L-1.1L",
+              "puissance_ch": 50,
+              "boite": [
+                "BVM4",
+                "BVM5"
+              ],
+              "points_faibles": [
+                "Corrosion importante sur les modèles anciens (bas de caisse, planchers)",
+                "Distribution par courroie du bloc FIRE à surveiller, remplacement recommandé tous les 60 000-80 000 km",
+                "Carburateur Weber sensible au déréglage sur les premières versions",
+                "Système 4x4 (Panda 4x4) mécaniquement simple mais différentiel à vidanger régulièrement"
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "169",
+          "annees": "2003-2011",
+          "phases": [
+            "Phase 1 (2003-2009)",
+            "Phase 2 restylée (2009-2011)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.1/1.2 Fire 60/69ch",
+              "code_moteur": "169 A4.000 (FIRE)",
+              "cylindree": "1.1L-1.2L",
+              "puissance_ch": 69,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                "Distribution par courroie à respecter strictement (interférence en cas de rupture)",
+                "Bobine d'allumage et faisceau électrique sujets à pannes intermittentes",
+                "Rouille sur les passages de roues arrière et bas de caisse",
+                "Boîte de vitesses parfois dure à froid, câblage de commande à vérifier"
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.4 16v 100ch (Panda 100HP)",
+              "code_moteur": "843 A1.000",
+              "cylindree": "1.4L",
+              "puissance_ch": 100,
+              "boite": [
+                "BVM6"
+              ],
+              "points_faibles": [
+                "Consommation d'huile notable sur les modèles poussés en sportivité",
+                "Distribution par chaîne globalement fiable mais bruyante avec l'âge",
+                "Trains roulants sollicités (version sportive), usure prématurée silent-blocs"
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "1.3 Multijet 70/75ch",
+              "code_moteur": "199 A2.000 (Multijet)",
+              "cylindree": "1.3L",
+              "puissance_ch": 75,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                "Volant moteur bi-masse fragile générant vibrations à froid",
+                "Vanne EGR sensible à l'encrassement en usage urbain",
+                "Turbo sensible à l'encrassement du circuit d'huile si vidanges espacées",
+                "Injecteurs Multijet coûteux à remplacer en cas de panne"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Uno",
+      "generations": [
+        {
+          "code_chassis": "146",
+          "annees": "1983-1995",
+          "phases": [
+            "Phase 1 (1983-1989)",
+            "Phase 2 restylée (1989-1995)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "45/55/60/70/75 Fire",
+              "code_moteur": "FIRE 100 series",
+              "cylindree": "0.9L-1.4L",
+              "puissance_ch": 75,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                "Corrosion marquée sur bas de caisse, ailes et passages de roues",
+                "Distribution par courroie du bloc FIRE à surveiller impérativement",
+                "Carburateur sensible au déréglage sur les premières versions",
+                "Suspension arrière à poutre rigide vieillissante avec bruits de jeu"
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Uno Turbo i.e. 105ch",
+              "code_moteur": "146 C1.000 Turbo",
+              "cylindree": "1.3L",
+              "puissance_ch": 105,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                "Turbo IHI fragile, sensible à la vidange régulière et à la qualité de l'huile",
+                "Injection électronique Weber-Marelli sensible au vieillissement des capteurs",
+                "Turbolag important nécessitant une conduite adaptée pour préserver le moteur",
+                "Corrosion accélérée du fait de l'âge du modèle"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Punto",
+      "generations": [
+        {
+          "code_chassis": "176",
+          "annees": "1993-1999",
+          "phases": [
+            "Phase 1 (1993-1997)",
+            "Phase 2 restylée (1997-1999)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.1/1.2/1.4/1.6 Fire/SPI",
+              "code_moteur": "176 A/B series (FIRE)",
+              "cylindree": "1.1L-1.6L",
+              "puissance_ch": 90,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                "Corrosion des passages de roues et bas de caisse fréquente",
+                "Distribution par courroie à surveiller sur tous les blocs FIRE",
+                "Faisceau électrique vieillissant provoquant pannes de voyants tableau de bord",
+                "Boîte de vitesses parfois dure en passage de rapports à froid"
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "1.7 D/TD",
+              "code_moteur": "176 B2.000",
+              "cylindree": "1.7L",
+              "puissance_ch": 71,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                "Pompe d'injection mécanique fragile en cas de manque d'entretien",
+                "Fumée à froid fréquente, signe d'usure des segments avec le kilométrage",
+                "Turbo (version TD) sensible à l'encrassement"
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "188",
+          "annees": "1999-2010",
+          "phases": [
+            "Punto Phase 1 (1999-2003)",
+            "Punto Phase 2/Grande Punto (2005-2010)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.2 8v/16v",
+              "code_moteur": "188 A4.000 (FIRE)",
+              "cylindree": "1.2L",
+              "puissance_ch": 80,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                "Distribution par courroie à respecter strictement, rupture fréquente si négligée",
+                "Bobine d'allumage et capteur PMH sujets à pannes intermittentes",
+                "Corrosion des bas de caisse sur les exemplaires les plus anciens",
+                "Système ABS/capteurs de roue sensibles à l'encrassement"
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "1.3 Multijet 75/90ch",
+              "code_moteur": "188 A9.000 (Multijet)",
+              "cylindree": "1.3L",
+              "puissance_ch": 90,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                "Volant moteur bi-masse fragile générant vibrations",
+                "Vanne EGR encrassée provoquant perte de puissance et voyant moteur",
+                "Injecteurs Multijet coûteux en cas de panne",
+                "Turbo sensible à l'encrassement du circuit d'huile"
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Grande Punto/Evo 1.4 T-Jet 120/155ch (Abarth)",
+              "code_moteur": "198 A4.000 (T-Jet)",
+              "cylindree": "1.4L",
+              "puissance_ch": 155,
+              "boite": [
+                "BVM5",
+                "BVM6"
+              ],
+              "points_faibles": [
+                "Turbo IHI sollicité en conduite sportive, vidanges fréquentes recommandées",
+                "Embrayage à usure rapide sur les versions Abarth",
+                "Bobines d'allumage fragiles avec ratés à haut régime",
+                "Distribution par chaîne globalement fiable mais bruyante avec l'âge"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Tipo (1988)",
+      "generations": [
+        {
+          "code_chassis": "160",
+          "annees": "1988-1995",
+          "phases": [
+            "Phase 1 (1988-1993)",
+            "Phase 2 restylée (1993-1995)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.4/1.6/1.8/2.0 8v/16v",
+              "code_moteur": "160 A/B series",
+              "cylindree": "1.4L-2.0L",
+              "puissance_ch": 148,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                "Corrosion prononcée sur bas de caisse et passages de roues (modèle réputé fragile à la rouille)",
+                "Distribution par courroie à surveiller strictement",
+                "Faisceau électrique vieillissant, pannes de tableau de bord fréquentes",
+                "Suspension avant (jambes de force) sensible à l'usure avec fuites d'amortisseurs"
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "1.9 D/TD",
+              "code_moteur": "160 C1.000",
+              "cylindree": "1.9L",
+              "puissance_ch": 92,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                "Pompe d'injection mécanique fragile en cas de manque d'entretien",
+                "Turbo (version TD) sensible à l'encrassement",
+                "Fumée à froid fréquente signe d'usure moteur"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Bravo / Brava",
+      "generations": [
+        {
+          "code_chassis": "182",
+          "annees": "1995-2001",
+          "phases": [
+            "Phase 1 (1995-1998)",
+            "Phase 2 restylée (1998-2001)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.4/1.6/1.8/2.0 16v HGT",
+              "code_moteur": "182 A/B series",
+              "cylindree": "1.4L-2.0L",
+              "puissance_ch": 147,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                "Distribution par courroie à surveiller strictement, interférence en cas de rupture",
+                "Corrosion des bas de caisse et passages de roues arrière",
+                "Faisceau électrique vieillissant, pannes de tableau de bord",
+                "Suspension arrière (essieu semi-rigide) bruyante avec l'usure des silent-blocs"
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "1.9 TD/JTD 100/105ch",
+              "code_moteur": "182 B7.000 (JTD)",
+              "cylindree": "1.9L",
+              "puissance_ch": 105,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                "Injecteurs JTD (première génération common-rail) coûteux en cas de panne",
+                "Turbo Garrett sensible à l'encrassement",
+                "Volant moteur bi-masse fragile générant vibrations",
+                "Vanne EGR encrassée en usage urbain répété"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Bravo (2007)",
+      "generations": [
+        {
+          "code_chassis": "198",
+          "annees": "2007-2014",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.4 16v / 1.4 T-Jet",
+              "code_moteur": "198 A4.000 (T-Jet)",
+              "cylindree": "1.4L",
+              "puissance_ch": 150,
+              "boite": [
+                "BVM5",
+                "BVM6"
+              ],
+              "points_faibles": [
+                "Turbo IHI sollicité en conduite sportive, entretien rigoureux nécessaire",
+                "Bobines d'allumage fragiles avec ratés d'allumage",
+                "Système Blue&Me (infodivertissement) sujet à bugs et déconnexions Bluetooth",
+                "Distribution par chaîne bruyante avec l'âge"
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "1.6/2.0 Multijet 105/165ch",
+              "code_moteur": "198 A2.000 (Multijet)",
+              "cylindree": "1.6L-2.0L",
+              "puissance_ch": 165,
+              "boite": [
+                "BVM6"
+              ],
+              "points_faibles": [
+                "Vanne EGR et FAP sensibles à l'encrassement en usage urbain",
+                "Volant moteur bi-masse fragile générant vibrations à froid",
+                "Injecteurs Multijet coûteux à remplacer en cas de panne",
+                "Turbo sensible à l'encrassement du circuit d'huile"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Stilo",
+      "generations": [
+        {
+          "code_chassis": "192",
+          "annees": "2001-2010",
+          "phases": [
+            "3 portes",
+            "5 portes",
+            "Multi Wagon"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.6/1.8/2.0 16v / 2.4 20v (Abarth)",
+              "code_moteur": "192 A/B series",
+              "cylindree": "1.6L-2.4L",
+              "puissance_ch": 170,
+              "boite": [
+                "BVM5",
+                "BVM6",
+                "Selespeed"
+              ],
+              "points_faibles": [
+                "Boîte robotisée Selespeed capricieuse, à-coups et usure prématurée d'embrayage",
+                "Distribution par courroie à surveiller strictement",
+                "Électronique embarquée (calculateur moteur) sujette à pannes intermittentes",
+                "Corrosion modérée mais présente sur les passages de roues arrière"
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "1.9 JTD 115/140ch",
+              "code_moteur": "192 A9.000 (JTD)",
+              "cylindree": "1.9L",
+              "puissance_ch": 140,
+              "boite": [
+                "BVM5",
+                "BVM6"
+              ],
+              "points_faibles": [
+                "Volant moteur bi-masse fragile générant vibrations",
+                "Turbo Garrett sensible à l'encrassement",
+                "Vanne EGR encrassée provoquant perte de puissance",
+                "Injecteurs JTD coûteux en cas de panne"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Multipla",
+      "generations": [
+        {
+          "code_chassis": "186",
+          "annees": "1998-2010",
+          "phases": [
+            "Phase 1 (1998-2004)",
+            "Phase 2 restylée (2004-2010)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.6 16v",
+              "code_moteur": "182 B6.000",
+              "cylindree": "1.6L",
+              "puissance_ch": 103,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                "Distribution par courroie à surveiller strictement",
+                "Corrosion des bas de caisse, modèle peu préservé aujourd'hui",
+                "Suspension avant sensible à l'usure prématurée (poids et configuration 3 places avant)",
+                "Faisceau électrique vieillissant provoquant pannes diverses"
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "1.9 JTD 105/120ch",
+              "code_moteur": "186 A9.000 (JTD)",
+              "cylindree": "1.9L",
+              "puissance_ch": 120,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                "Injecteurs JTD coûteux en cas de panne",
+                "Volant moteur bi-masse fragile",
+                "Turbo sensible à l'encrassement",
+                "Vanne EGR encrassée en usage urbain"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Croma (2005)",
+      "generations": [
+        {
+          "code_chassis": "194",
+          "annees": "2005-2011",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.8 16v / 2.2 16v",
+              "code_moteur": "939 A/B series",
+              "cylindree": "1.8L-2.2L",
+              "puissance_ch": 147,
+              "boite": [
+                "BVM6",
+                "BVA6"
+              ],
+              "points_faibles": [
+                "Consommation d'huile parfois excessive sur le 2.2 16v",
+                "Distribution par chaîne bruyante avec l'âge",
+                "Poids important pénalisant les trains roulants",
+                "Électronique embarquée (calculateurs partagés avec GM) sujette à bugs"
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "1.9/2.4 Multijet 120/200ch",
+              "code_moteur": "939 A2.000/A7.000",
+              "cylindree": "1.9L-2.4L",
+              "puissance_ch": 200,
+              "boite": [
+                "BVM6",
+                "BVA6"
+              ],
+              "points_faibles": [
+                "Double turbo (2.4 Multijet 200ch) fragile et coûteux en cas de panne",
+                "Vanne EGR et FAP sensibles à l'encrassement",
+                "Volant moteur bi-masse fragile",
+                "Injecteurs Multijet coûteux en cas de panne"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "500 (2007)",
+      "generations": [
+        {
+          "code_chassis": "312",
+          "annees": "2007-2024",
+          "phases": [
+            "Phase 1 (2007-2015)",
+            "Phase 2 restylée (2015-2024)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.2 8v 69ch",
+              "code_moteur": "169 A4.000 (FIRE)",
+              "cylindree": "1.2L",
+              "puissance_ch": 69,
+              "boite": [
+                "BVM5",
+                "Dualogic"
+              ],
+              "points_faibles": [
+                "Boîte robotisée Dualogic capricieuse, à-coups fréquents à basse vitesse",
+                "Bobine d'allumage et faisceau électrique sujets à pannes",
+                "Distribution par courroie à surveiller strictement",
+                "Rouille possible sur les passages de roues sur les tout premiers modèles"
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "0.9 TwinAir 85/105ch",
+              "code_moteur": "312 A1.000 (TwinAir)",
+              "cylindree": "0.9L",
+              "puissance_ch": 105,
+              "boite": [
+                "BVM5",
+                "Dualogic"
+              ],
+              "points_faibles": [
+                "Bicylindre TwinAir sensible aux ratés d'allumage et vibrations à froid",
+                "Courroie de distribution à surveiller (durée de vie parfois inférieure aux préconisations)",
+                "Consommation réelle souvent supérieure à l'annoncée en usage urbain",
+                "Boîte Dualogic capricieuse comme sur le 1.2"
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "1.3 Multijet 75/95ch",
+              "code_moteur": "199 B4.000 (Multijet)",
+              "cylindree": "1.3L",
+              "puissance_ch": 95,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                "Volant moteur bi-masse fragile générant vibrations",
+                "Vanne EGR sensible à l'encrassement en usage urbain",
+                "Injecteurs Multijet coûteux en cas de panne",
+                "Turbo sensible à l'encrassement du circuit d'huile"
+              ]
+            },
+            {
+              "type": "Electrique",
+              "nom": "500e (2020)",
+              "code_moteur": "Moteur électrique synchrone 87kW",
+              "cylindree": "N/A",
+              "puissance_ch": 118,
+              "boite": [
+                "Réducteur fixe"
+              ],
+              "points_faibles": [
+                "Autonomie réelle inférieure à l'annoncée par temps froid",
+                "Batterie sensible à la dégradation en cas de recharges rapides fréquentes et répétées",
+                "Système de gestion thermique de la batterie perfectible sur les premiers modèles",
+                "Coût de remplacement de la batterie élevé hors garantie"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Panda (2012)",
+      "generations": [
+        {
+          "code_chassis": "319",
+          "annees": "2012-aujourd'hui",
+          "phases": [
+            "Phase 1 (2012-2016)",
+            "Phase 2 restylée (2016-aujourd'hui)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.2 8v 69ch",
+              "code_moteur": "169 A4.000 (FIRE)",
+              "cylindree": "1.2L",
+              "puissance_ch": 69,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                "Distribution par courroie à surveiller strictement",
+                "Bobine d'allumage sujette à pannes intermittentes",
+                "Suspension avant sensible à l'usure sur routes dégradées",
+                "Insonorisation limitée générant bruit de roulement important"
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "0.9 TwinAir 85/90ch",
+              "code_moteur": "312 A1.000 (TwinAir)",
+              "cylindree": "0.9L",
+              "puissance_ch": 90,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                "Bicylindre sensible aux ratés d'allumage et vibrations à froid",
+                "Courroie de distribution à surveiller",
+                "Consommation réelle supérieure à l'annoncée en usage urbain répété"
+              ]
+            },
+            {
+              "type": "Hybride",
+              "nom": "1.0 Hybrid 70ch (FireFly)",
+              "code_moteur": "FireFly 100 (Hybrid mild)",
+              "cylindree": "1.0L",
+              "puissance_ch": 70,
+              "boite": [
+                "BVM6"
+              ],
+              "points_faibles": [
+                "Système mild-hybrid 12V à faible apport réel sur la consommation",
+                "Batterie auxiliaire lithium-ion sensible aux fortes chaleurs",
+                "Distribution par chaîne globalement fiable mais bruyante à froid"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Tipo (2016)",
+      "generations": [
+        {
+          "code_chassis": "356",
+          "annees": "2016-aujourd'hui",
+          "phases": [
+            "Berline/5 portes/SW",
+            "Restylage 2020"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.4 16v / 1.6 E-torQ",
+              "code_moteur": "E-torQ (350 series)",
+              "cylindree": "1.4L-1.6L",
+              "puissance_ch": 110,
+              "boite": [
+                "BVM6",
+                "BVA6 (DCT à partir du restylage)"
+              ],
+              "points_faibles": [
+                "Consommation d'huile notable sur certains exemplaires du 1.6",
+                "Finitions intérieures jugées peu qualitatives, grincements avec le kilométrage",
+                "Distribution par chaîne bruyante à froid",
+                "Boîte automatique DCT capricieuse à basse vitesse sur les versions restylées"
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "1.3/1.6 Multijet 95/130ch",
+              "code_moteur": "199 B4.000 / 955 A9.000",
+              "cylindree": "1.3L-1.6L",
+              "puissance_ch": 130,
+              "boite": [
+                "BVM6"
+              ],
+              "points_faibles": [
+                "Vanne EGR et FAP sensibles à l'encrassement en usage urbain",
+                "Volant moteur bi-masse fragile générant vibrations",
+                "Injecteurs Multijet coûteux en cas de panne",
+                "Turbo sensible à l'encrassement du circuit d'huile"
+              ]
+            },
+            {
+              "type": "Hybride",
+              "nom": "1.5 FireFly Hybrid 130ch (mild-hybrid 48V)",
+              "code_moteur": "FireFly 1.5 T4 + module 48V 15kW",
+              "cylindree": "1.5L",
+              "puissance_ch": 130,
+              "boite": [
+                "DCT7 (double embrayage)"
+              ],
+              "points_faibles": [
+                "Boîte double embrayage DCT7 parfois hésitante à basse vitesse",
+                "Système mild-hybrid à faible apport réel sur la consommation en usage routier",
+                "Finitions intérieures jugées peu qualitatives, communes à la gamme Tipo",
+                "Modèle encore jeune sur cette motorisation, peu de retours à très haut kilométrage disponibles"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "500X",
+      "generations": [
+        {
+          "code_chassis": "334",
+          "annees": "2014-aujourd'hui",
+          "phases": [
+            "Phase 1 (2014-2018)",
+            "Phase 2 restylée (2018-aujourd'hui)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.4 MultiAir Turbo 140/170ch",
+              "code_moteur": "955 A7.000",
+              "cylindree": "1.4L",
+              "puissance_ch": 170,
+              "boite": [
+                "BVM6",
+                "BVA9 (ZF 9HP)"
+              ],
+              "points_faibles": [
+                "Système MultiAir sensible à l'encrassement du filtre à huile dédié",
+                "Boîte automatique ZF 9 rapports parfois hésitante dans les passages de rapports",
+                "Transmission intégrale (versions AWD) coûteuse à entretenir",
+                "Électronique et infodivertissement (Uconnect) sujets à bugs sur les premiers modèles",
+                "Chaîne de distribution globalement fiable mais tendeur parfois bruyant à haut kilométrage",
+                "Climatisation automatique sujette à pannes de calculateur sur certains exemplaires"
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "1.6/2.0 Multijet 120/170ch",
+              "code_moteur": "955 A2.000 / 940 B4.000",
+              "cylindree": "1.6L-2.0L",
+              "puissance_ch": 170,
+              "boite": [
+                "BVM6",
+                "BVA9"
+              ],
+              "points_faibles": [
+                "Vanne EGR et FAP sensibles à l'encrassement",
+                "Volant moteur bi-masse fragile",
+                "Coût d'entretien élevé sur les versions à transmission intégrale",
+                "Injecteurs Multijet coûteux en cas de panne"
+              ]
+            },
+            {
+              "type": "Hybride",
+              "nom": "1.5 FireFly Hybrid 130ch (mild-hybrid 48V)",
+              "code_moteur": "FireFly 1.5 T4 + module 48V 15kW",
+              "cylindree": "1.5L",
+              "puissance_ch": 130,
+              "boite": [
+                "DCT7 (double embrayage)"
+              ],
+              "points_faibles": [
+                "Système mild-hybrid 48V à faible autonomie électrique réelle (courtes distances à très faible vitesse uniquement)",
+                "Boîte double embrayage DCT7 parfois lente à répondre au démarrage",
+                "Surcoût important par rapport à la version essence classique pour un gain de consommation modéré",
+                "Rappel constructeur Stellantis concernant un risque électrique ayant concerné les 500X, Jeep Renegade et Alfa Romeo Tonale (à vérifier via le VIN auprès du réseau)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Ducato",
+      "generations": [
+        {
+          "code_chassis": "250",
+          "annees": "2006-aujourd'hui",
+          "phases": [
+            "Phase 1 (2006-2014)",
+            "Phase 2 restylée (2014-aujourd'hui)"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "2.3/3.0 Multijet 110-180ch",
+              "code_moteur": "F1AE / F1CE (Multijet)",
+              "cylindree": "2.3L-3.0L",
+              "puissance_ch": 180,
+              "boite": [
+                "BVM6",
+                "Comfort-Matic (robotisée)"
+              ],
+              "points_faibles": [
+                "FAP sensible au colmatage en usage urbain, régénérations forcées fréquentes",
+                "Vanne EGR encrassée provoquant perte de puissance",
+                "Boîte robotisée Comfort-Matic capricieuse, à-coups à basse vitesse",
+                "Turbo sensible à l'encrassement en cas de vidanges espacées",
+                "Corrosion possible sur les châssis des versions utilitaires très kilométrées"
+              ]
+            },
+            {
+              "type": "Electrique",
+              "nom": "E-Ducato",
+              "code_moteur": "Moteur électrique synchrone",
+              "cylindree": "N/A",
+              "puissance_ch": 122,
+              "boite": [
+                "Réducteur fixe"
+              ],
+              "points_faibles": [
+                "Autonomie réelle variable selon charge utile transportée",
+                "Coût d'acquisition et de remplacement de la batterie élevé",
+                "Réseau de recharge rapide encore limité pour usage professionnel intensif"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Idea",
+      "generations": [
+        {
+          "code_chassis": "350",
+          "annees": "2003-2012",
+          "phases": [
+            "Phase 1 (2003-2007)",
+            "Phase 2 restylée (2007-2012)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.2/1.4 8v/16v",
+              "code_moteur": "188 A/350 A series (FIRE)",
+              "cylindree": "1.2L-1.4L",
+              "puissance_ch": 95,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                "Distribution par courroie à surveiller strictement",
+                "Faisceau électrique vieillissant, pannes de tableau de bord",
+                "Corrosion modérée sur les passages de roues arrière",
+                "Suspension avant sensible à l'usure prématurée des silent-blocs"
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "1.3 Multijet 70/90ch",
+              "code_moteur": "199 A2.000 (Multijet)",
+              "cylindree": "1.3L",
+              "puissance_ch": 90,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                "Volant moteur bi-masse fragile générant vibrations",
+                "Vanne EGR sensible à l'encrassement en usage urbain",
+                "Injecteurs Multijet coûteux en cas de panne"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Doblo",
+      "generations": [
+        {
+          "code_chassis": "223 (première génération)",
+          "annees": "2000-2010",
+          "phases": [
+            "Phase 1 (2000-2005)",
+            "Phase 2 restylée (2005-2010)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.4/1.6 16v",
+              "code_moteur": "182 B/223 A series",
+              "cylindree": "1.4L-1.6L",
+              "puissance_ch": 103,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                "Distribution par courroie à surveiller strictement",
+                "Corrosion sur bas de caisse en usage utilitaire intensif",
+                "Suspension arrière sollicitée en usage charge lourde répétée"
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "1.9 JTD / 1.3 Multijet",
+              "code_moteur": "223 A9.000 (JTD) / 199 A2.000 (Multijet)",
+              "cylindree": "1.3L-1.9L",
+              "puissance_ch": 105,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                "Volant moteur bi-masse fragile en usage utilitaire (charges lourdes répétées)",
+                "Vanne EGR sensible à l'encrassement",
+                "Injecteurs coûteux en cas de panne",
+                "Turbo sensible à l'encrassement du circuit d'huile"
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "263 (deuxième génération)",
+          "annees": "2010-2022",
+          "phases": [
+            "Phase 1 (2010-2015)",
+            "Phase 2 restylée (2015-2022)"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "1.3/1.6 Multijet 90-120ch",
+              "code_moteur": "263 A1.000 / 955 A2.000",
+              "cylindree": "1.3L-1.6L",
+              "puissance_ch": 120,
+              "boite": [
+                "BVM5",
+                "BVM6"
+              ],
+              "points_faibles": [
+                "FAP sensible au colmatage en usage urbain fréquent",
+                "Vanne EGR encrassée en usage utilitaire intensif",
+                "Volant moteur bi-masse fragile sous charges lourdes répétées",
+                "Turbo sensible à l'encrassement en cas de vidanges espacées"
+              ]
+            },
+            {
+              "type": "Electrique",
+              "nom": "E-Doblo 136ch",
+              "code_moteur": "Moteur électrique synchrone 100kW (base Stellantis e-CMP)",
+              "cylindree": "N/A",
+              "puissance_ch": 136,
+              "boite": [
+                "Réducteur fixe"
+              ],
+              "points_faibles": [
+                "Autonomie réelle (267-280 km WLTP selon version) significativement réduite en usage professionnel chargé ou par temps froid",
+                "Batterie 50 kWh sensible à la dégradation en cas de recharges rapides fréquentes et répétées",
+                "Coût d'acquisition et de remplacement de la batterie élevé",
+                "Modèle partagé avec Peugeot e-Rifter/Citroën ë-Berlingo/Opel Combo-e, réseau de pièces électriques encore en développement chez certains réparateurs indépendants"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Sedici",
+      "generations": [
+        {
+          "code_chassis": "FY (base Suzuki SX4)",
+          "annees": "2006-2014",
+          "phases": [
+            "Phase unique avec restylage mineur"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.6 16v",
+              "code_moteur": "M16A (base Suzuki)",
+              "cylindree": "1.6L",
+              "puissance_ch": 107,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                "Base mécanique Suzuki globalement fiable mais pièces spécifiques Fiat parfois plus rares",
+                "Transmission intégrale (i-AWD) coûteuse à entretenir",
+                "Insonorisation limitée générant du bruit de roulement",
+                "Faible diffusion du modèle rendant certaines pièces de carrosserie rares"
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "1.9 Multijet",
+              "code_moteur": "199 B4.000",
+              "cylindree": "1.9L",
+              "puissance_ch": 120,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                "Volant moteur bi-masse fragile",
+                "Vanne EGR sensible à l'encrassement",
+                "Turbo sensible à l'encrassement du circuit d'huile"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Croma (1985)",
+      "generations": [
+        {
+          "code_chassis": "154",
+          "annees": "1985-1996",
+          "phases": [
+            "Phase 1 (1985-1991)",
+            "Phase 2 restylée (1991-1996)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.0 ie / 2.0 Turbo",
+              "code_moteur": "154 C1.000 / 154 C2.000 (Turbo)",
+              "cylindree": "2.0L",
+              "puissance_ch": 155,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                "Turbo (version Turbo) fragile en cas de manque d'entretien rigoureux",
+                "Corrosion marquée sur bas de caisse et passages de roues",
+                "Injection Bosch L/LE-Jetronic sensible au vieillissement des capteurs",
+                "Distribution par courroie à surveiller strictement"
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "2.5 TD (VM Motori)",
+              "code_moteur": "VM Motori 2.5L",
+              "cylindree": "2.5L",
+              "puissance_ch": 100,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                "Bloc VM Motori réputé fragile, joint de culasse sensible",
+                "Turbo à géométrie fixe fragile en cas de surchauffe",
+                "Rareté des pièces détachées spécifiques aujourd'hui"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
