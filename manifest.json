@@ -2,11 +2,18 @@
   "name": "Fiche d'Expertise — Véhicule d'Occasion",
   "short_name": "Fiche Expertise Auto",
   "description": "Fiche d'inspection terrain pour l'achat d'un véhicule d'occasion, avec fonctionnement 100% hors-ligne.",
-  "start_url": "index.html",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "background_color": "#EEF1F6",
   "theme_color": "#0A1830",
   "lang": "fr",
-  "icons": []
+  "icons": [
+    {
+      "src": "icons/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
 }
