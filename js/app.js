@@ -1,4 +1,5 @@
 import { initializeLegacyFeatures } from './legacy-features.js';
+import { initializeChatExperience } from './chat-experience.js';
 
 /**
  * Application entry point. Data loading stays separate from the UI controller
@@ -13,6 +14,7 @@ async function initializeApp() {
     const payload = await window.dbLoader.loadAppData();
     const vehicles = window.buildData(payload);
     initializeLegacyFeatures(vehicles);
+    initializeChatExperience();
   } catch (error) {
     console.error('Erreur app.js:', error);
     if (status) status.textContent = `Le chargement a echoue : ${error.message}`;
