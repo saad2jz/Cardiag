@@ -1,0 +1,348 @@
+[
+  {
+    "marque": "Tesla",
+    "modeles": [
+      {
+        "nom": "Model S",
+        "generations": [
+          {
+            "code_chassis": "1ère génération",
+            "annees": "2012-2016",
+            "phases": [
+              "Phase 1 (2012-2014)",
+              "Phase 2 (2015-2016, introduction AWD/P90D Ludicrous)"
+            ],
+            "motorisations": [
+              {
+                "type": "Électrique",
+                "nom": "Model S 60/70/85 - 306 à 470ch",
+                "code_moteur": "Moteur électrique à induction asynchrone (RWD, puis AWD dual-motor à partir de 2014-2015)",
+                "cylindree": "N/A",
+                "puissance_ch": 470,
+                "boite": [
+                  "Réducteur monovitesse"
+                ],
+                "points_faibles": [
+                  "Moteurs équipés du 'Large Drive Unit' (LDU, ou pack 570A) sujets à des fuites de joints documentées provoquant à terme une défaillance complète du moteur, problème connu et largement discuté sur les forums propriétaires jusqu'en 2021",
+                  "Poignées de porte électriques rétractables sujettes à pannes fréquemment documentées, notamment par temps froid",
+                  "Suspension pneumatique (Air Suspension) sujette à fuites et pannes de compresseur sur les premiers millésimes",
+                  "Batteries des tout premiers millésimes (packs 'A' et 'B' de 2012) limitées à des puissances de charge de 90 kW et 120 kW respectivement, technologie rapidement dépassée par les générations suivantes"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "2e génération (restylée, plus grande batterie)",
+            "annees": "2016-2021",
+            "phases": [
+              "Phase 1 (2016-2018)",
+              "Phase 2 restylée intérieur (2019-2021)"
+            ],
+            "motorisations": [
+              {
+                "type": "Électrique",
+                "nom": "Model S 75/90/100D, P100D Ludicrous - 333 à 764ch",
+                "code_moteur": "Double moteur électrique (AWD, un asynchrone à l'arrière, un à aimants permanents à l'avant à partir de 2017)",
+                "cylindree": "N/A",
+                "puissance_ch": 764,
+                "boite": [
+                  "Réducteur monovitesse par essieu"
+                ],
+                "points_faibles": [
+                  "Toujours concerné par les défaillances de joints du 'Large Drive Unit' jusqu'à son remplacement progressif par le nouveau moteur à aimants permanents",
+                  "Rappel constructeur pour risque de blocage de la direction assistée sur certains millésimes",
+                  "Écran tactile MCU1 (Media Control Unit) sujet à défaillance de la mémoire eMMC après plusieurs années d'usage, provoquant ralentissements puis panne complète de l'écran",
+                  "Mode Ludicrous (P100D) sollicitant fortement la batterie et les moteurs, dégradation de la capacité de charge rapide plus prononcée selon certains retours propriétaires en usage très intensif"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "3e génération (Plaid, refonte intérieure complète)",
+            "annees": "2021-présent",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Électrique",
+                "nom": "Model S Long Range / Plaid - 670 à 1020ch",
+                "code_moteur": "Double ou triple moteur électrique à aimants permanents (Plaid : tri-motor)",
+                "cylindree": "N/A",
+                "puissance_ch": 1020,
+                "boite": [
+                  "Réducteur monovitesse par essieu"
+                ],
+                "points_faibles": [
+                  "Volant 'Yoke' (en forme de demi-lune, sans levier de clignotant) proposé en option sur les premiers millésimes, très controversé et jugé peu pratique par de nombreux essayeurs",
+                  "Rappel constructeur pour capteur de pression des pneus (TPMS) et pour contacteurs de batterie pouvant provoquer une perte de puissance de traction",
+                  "Rappel logiciel pour caméra de recul défaillante (circuit imprimé pouvant subir un court-circuit)",
+                  "Suspension pneumatique toujours sujette à pannes de compresseur documentées sur certains exemplaires"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Model 3",
+        "generations": [
+          {
+            "code_chassis": "1ère génération",
+            "annees": "2017-2023",
+            "phases": [
+              "Phase 1 (2017-2020)",
+              "Phase 2 restylée mineure (2021-2023)"
+            ],
+            "motorisations": [
+              {
+                "type": "Électrique",
+                "nom": "Model 3 Standard Range/Long Range/Performance - 283 à 513ch",
+                "code_moteur": "Moteur électrique arrière (RWD) puis double moteur (AWD, Long Range/Performance)",
+                "cylindree": "N/A",
+                "puissance_ch": 513,
+                "boite": [
+                  "Réducteur monovitesse"
+                ],
+                "points_faibles": [
+                  "Défauts de peinture et d'assemblage de carrosserie (jeux de panneaux irréguliers) massivement documentés sur les millésimes de lancement 2017-2018, période de 'production hell' évoquée publiquement par Tesla elle-même",
+                  "Batterie 12V lead-acid des millésimes 2018-2021 sujette à défaillance prématurée, remplaçable par une batterie lithium-ion aftermarket pour une meilleure longévité",
+                  "Suspension arrière sujette à bruit de cliquetis (bushings) documenté sur plusieurs millésimes",
+                  "Poignées de porte à affleurement électriques sujettes à pannes documentées, notamment par temps froid"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "2e génération (Highland, refonte complète)",
+            "annees": "2024-présent",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Électrique",
+                "nom": "Model 3 Standard/Long Range/Performance - 283 à 510ch",
+                "code_moteur": "Moteur électrique arrière (RWD) ou double moteur (AWD)",
+                "cylindree": "N/A",
+                "puissance_ch": 510,
+                "boite": [
+                  "Réducteur monovitesse"
+                ],
+                "points_faibles": [
+                  "Rappel constructeur (2025-2026) pour contacteurs de batterie haute tension pouvant se souder et provoquer une perte de puissance de traction, concernant les millésimes 2025 Model 3 et 2026 Model Y",
+                  "Cas documenté de défaillance complète de l'onduleur du moteur arrière (rear drive inverter) survenue dans la première année d'utilisation sur un exemplaire récent, entraînant un remorquage",
+                  "Absence de levier de clignotant (boutons sur le volant) et volant Yoke en option sur certaines versions, ergonomie controversée jugée déroutante par de nombreux essayeurs",
+                  "Rappel logiciel pour caméra de recul défaillante, partagé avec les Model S/X/Y de la même période"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Model X",
+        "generations": [
+          {
+            "code_chassis": "1ère génération",
+            "annees": "2015-2020",
+            "phases": [
+              "Phase 1 (2015-2017, lancement chaotique)",
+              "Phase 2 (2018-2020)"
+            ],
+            "motorisations": [
+              {
+                "type": "Électrique",
+                "nom": "Model X 75D/90D/100D, P100D - 328 à 764ch",
+                "code_moteur": "Double moteur électrique (AWD, asynchrone puis aimants permanents à l'avant)",
+                "cylindree": "N/A",
+                "puissance_ch": 764,
+                "boite": [
+                  "Réducteur monovitesse par essieu"
+                ],
+                "points_faibles": [
+                  "Portes Falcon Wing (à ouverture verticale double articulation) source de plaintes constantes depuis le lancement : détection d'obstacles erronée, ouverture/fermeture lente voire incomplète, portes refusant de se fermer complètement documentées dès les toutes premières livraisons en 2015",
+                  "Le fournisseur initialement sous contrat pour ces portes n'ayant pas pu répondre aux exigences de Tesla, la marque a dû développer elle-même le mécanisme en interne, retardant l'arrivée du Model X de près de deux ans",
+                  "Une mise à jour logicielle censée améliorer le fonctionnement des portes a par la suite désactivé certains capteurs de sécurité importants, provoquant de nouveaux problèmes selon plusieurs rapports de l'époque",
+                  "Écran tactile MCU1 sujet à défaillance de la mémoire eMMC après plusieurs années d'usage, identique au Model S de la même période"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "2e génération (restylée, refonte intérieure Plaid)",
+            "annees": "2021-présent",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Électrique",
+                "nom": "Model X Long Range / Plaid - 670 à 1020ch",
+                "code_moteur": "Double ou triple moteur électrique à aimants permanents (Plaid : tri-motor)",
+                "cylindree": "N/A",
+                "puissance_ch": 1020,
+                "boite": [
+                  "Réducteur monovitesse par essieu"
+                ],
+                "points_faibles": [
+                  "Problèmes de portes Falcon Wing toujours documentés sur les millésimes les plus récents (2026), un propriétaire rapportant que les portes ne s'ouvrent pas complètement environ une fois sur deux, une semaine seulement après la livraison",
+                  "Bruits de suspension et de direction (chocs à l'avant sur les bosses, usure prématurée des bras de suspension) rapportés, en particulier avec les jantes 20-22 pouces",
+                  "Rappel constructeur pour contacteurs de batterie haute tension pouvant se souder, provoquant une perte de puissance de traction",
+                  "Fiabilité globale toujours en retrait par rapport à de nombreux SUV de luxe concurrents selon les données consolidées de sondages propriétaires, malgré une motorisation (batterie et moteurs) jugée durable"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Model Y",
+        "generations": [
+          {
+            "code_chassis": "1ère génération",
+            "annees": "2020-2024",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Électrique",
+                "nom": "Model Y Standard Range/Long Range/Performance - 299 à 534ch",
+                "code_moteur": "Moteur électrique arrière (RWD) puis double moteur (AWD, Long Range/Performance)",
+                "cylindree": "N/A",
+                "puissance_ch": 534,
+                "boite": [
+                  "Réducteur monovitesse"
+                ],
+                "points_faibles": [
+                  "Batterie 12V lead-acid des premiers millésimes (2020-2021) sujette à défaillance prématurée, remplaçable par une batterie lithium-ion aftermarket",
+                  "Défauts d'assemblage de carrosserie et de jeux de panneaux rapportés sur les tout premiers millésimes, bien que moins prononcés que sur le Model 3 de lancement",
+                  "Bruits de cliquetis et grincements d'habitacle fréquemment rapportés",
+                  "Cas rapportés de corps étrangers (araignées) et d'anomalies détectées dans les caméras Autopilot, ainsi que des cas de freinage fantôme (phantom braking) à haute vitesse et de désengagement intempestif du régulateur adaptatif sur route rectiligne"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "2e génération (Juniper, refonte extérieure/intérieure)",
+            "annees": "2025-présent",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Électrique",
+                "nom": "Model Y Standard/Long Range/Performance - 299 à 534ch",
+                "code_moteur": "Moteur électrique arrière (RWD) ou double moteur (AWD)",
+                "cylindree": "N/A",
+                "puissance_ch": 534,
+                "boite": [
+                  "Réducteur monovitesse"
+                ],
+                "points_faibles": [
+                  "Rappel constructeur (2025-2026) pour contacteurs de batterie haute tension pouvant se souder et provoquer une perte de puissance de traction, concernant notamment les millésimes 2026",
+                  "Modèle très récent intégrant les mêmes améliorations que le Model 3 Highland (ventilation des sièges, suspension améliorée, volant sans levier de clignotant controversé)",
+                  "Rappel logiciel pour caméra de recul défaillante (circuit imprimé pouvant subir un court-circuit), partagé avec les autres modèles Tesla de la même période",
+                  "Retours d'expérience encore limités sur le très haut kilométrage de cette génération récente"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Cybertruck",
+        "generations": [
+          {
+            "code_chassis": "1ère génération",
+            "annees": "2023-présent",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Électrique",
+                "nom": "Cybertruck RWD/AWD/Cyberbeast - 600 à 845ch",
+                "code_moteur": "Simple, double ou triple moteur électrique à aimants permanents",
+                "cylindree": "N/A",
+                "puissance_ch": 845,
+                "boite": [
+                  "Réducteur monovitesse par essieu",
+                  "Direction à quatre roues"
+                ],
+                "points_faibles": [
+                  "Fuites d'eau documentées au niveau de la couverture de benne (tonneau cover), Tesla ayant déployé une solution corrective sous forme de joint en mousse pour y remédier",
+                  "Carrosserie en acier inoxydable non peinte sujette à corrosion de surface (points de rouille superficielle) rapportée par plusieurs propriétaires, notamment en environnement côtier ou salé",
+                  "Pneus d'origine (Pirelli Scorpion) à l'usure rapide documentée par plusieurs propriétaires (environ 19 000 miles selon un témoignage détaillé), plusieurs se tournant vers d'autres marques pour une meilleure longévité",
+                  "Rappels constructeur multiples documentés sur les premiers millésimes concernant l'accélérateur (pédale pouvant se coincer), l'essuie-glace et le montage du pare-chocs arrière"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Roadster",
+        "generations": [
+          {
+            "code_chassis": "1ère génération (base châssis Lotus Elise)",
+            "annees": "2008-2012",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Électrique",
+                "nom": "Roadster 1.5/2.0/2.5 - 248ch",
+                "code_moteur": "Moteur électrique triphasé à induction asynchrone",
+                "cylindree": "N/A",
+                "puissance_ch": 248,
+                "boite": [
+                  "BVM1 (rapport unique après échec initial d'une boîte 2 rapports)"
+                ],
+                "points_faibles": [
+                  "Batterie d'origine (pack 200 miles) conçue pour une durée de vie théorique d'environ 10 ans, mais se révélant a posteriori nettement plus durable, certains packs dépassant 15 ans avec seulement 10-15% de dégradation selon plusieurs propriétaires de longue date",
+                  "Pack de batterie de remplacement '3.0' (annoncé 400 miles d'autonomie) proposé par Tesla à partir de 2016 et retiré de la vente en 2019, les cellules de ce pack de 2e génération montrant une défaillance prématurée similaire à celle des packs d'origine de 2008, probablement liée à un problème de qualité de lot de cellules",
+                  "PEM (Power Electronics Module) sujet à pannes documentées pouvant empêcher la charge du véhicule, distinctes d'un problème de batterie proprement dit",
+                  "Base châssis Lotus Elise limitant l'espace et le confort, complexité d'entretien accrue par la rareté des spécialistes Tesla capables d'intervenir sur ce modèle historique aujourd'hui"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Semi",
+        "generations": [
+          {
+            "code_chassis": "1ère génération (poids lourd Classe 8)",
+            "annees": "2022-présent (production pilote, volume prévu fin 2026)",
+            "phases": [
+              "Pré-production limitée (2022-2025)",
+              "Montée en volume prévue (2026)"
+            ],
+            "motorisations": [
+              {
+                "type": "Électrique",
+                "nom": "Semi 300/500 miles - environ 1000ch",
+                "code_moteur": "Trois moteurs électriques à aimants permanents, pack batterie 850-900 kWh",
+                "cylindree": "N/A",
+                "puissance_ch": 1000,
+                "boite": [
+                  "Réducteur monovitesse par essieu"
+                ],
+                "points_faibles": [
+                  "Rappel de sécurité documenté en mars 2023 concernant 35 camions livrés, freins de stationnement défectueux ayant nécessité l'ajout d'un composant permettant au conducteur d'engager/désengager manuellement le frein",
+                  "Accident documenté sur l'autoroute I-80 en Californie (col d'Emigrant Pass) où un Semi a quitté la route après avoir heurté un arbre, la batterie lithium-ion de grande capacité ayant pris feu, le conducteur s'en étant sorti indemne",
+                  "Programme marqué par des retards de production considérables et répétés depuis l'annonce initiale en 2017 (production initialement prévue en 2019, puis reportée à de multiples reprises jusqu'à un objectif de production en volume repoussé à fin 2026)",
+                  "Contraintes d'approvisionnement en cellules de batterie identifiées comme frein majeur à la montée en volume, le pack de 850-900 kWh nécessitant une quantité de cellules très supérieure à un véhicule particulier standard"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

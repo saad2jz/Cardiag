@@ -1,0 +1,901 @@
+[
+  {
+    "marque": "Porsche",
+    "modeles": [
+      {
+        "nom": "911",
+        "generations": [
+          {
+            "code_chassis": "964",
+            "annees": "1989-1994",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "Carrera 2/4 - 250ch",
+                "code_moteur": "M64/01",
+                "cylindree": "3.6L flat-6 refroidi par air",
+                "puissance_ch": 250,
+                "boite": [
+                  "BVM5",
+                  "Tiptronic 4"
+                ],
+                "points_faibles": [
+                  "Fuites d'huile chroniques au niveau des joints de carter et culasses",
+                  "Corrosion sur les bas de caisse et planchers si entretien négligé",
+                  "Boîte Tiptronic première génération fragile",
+                  "Suspension pneumatique/hydraulique (versions équipées) coûteuse en entretien"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "993",
+            "annees": "1993-1998",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "Carrera - 272 à 300ch",
+                "code_moteur": "M64/05 / M64/21 (Carrera S)",
+                "cylindree": "3.6L flat-6 refroidi par air",
+                "puissance_ch": 300,
+                "boite": [
+                  "BVM6",
+                  "Tiptronic S"
+                ],
+                "points_faibles": [
+                  "Dernier flat-6 refroidi par air, très recherché mais entretien spécifique coûteux",
+                  "Fuites d'huile chroniques (culasses, carter)",
+                  "Corrosion moindre grâce à la galvanisation totale mais points de contrôle à vérifier",
+                  "Embrayage et volant moteur à surveiller sur versions BVM"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "996",
+            "annees": "1997-2005",
+            "phases": [
+              "Phase 1 (1997-2001)",
+              "Phase 2 restylée (2001-2005)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "Carrera/Carrera 4S - 300 à 320ch",
+                "code_moteur": "M96",
+                "cylindree": "3.4L / 3.6L flat-6 refroidi par eau",
+                "puissance_ch": 320,
+                "boite": [
+                  "BVM6",
+                  "Tiptronic S5"
+                ],
+                "points_faibles": [
+                  "MALADIE CONNUE M96 : usure prématurée du roulement IMS (Intermediate Shaft Bearing) pouvant entraîner une casse moteur totale",
+                  "Fissures de cylindres (bore scoring) sur certains blocs M96",
+                  "Fuites au niveau du joint spi RMS (Rear Main Seal)",
+                  "Radiateurs (versions à eau) sensibles à la corrosion et aux fuites"
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "GT3/GT2 - 360 à 483ch",
+                "code_moteur": "M96/76 (Mezger)",
+                "cylindree": "3.6L flat-6",
+                "puissance_ch": 483,
+                "boite": [
+                  "BVM6"
+                ],
+                "points_faibles": [
+                  "Bloc Mezger (dérivé course) réputé BEAUCOUP plus fiable que le M96 standard, sans le défaut IMS",
+                  "Embrayage sollicité en usage sportif",
+                  "Suspension et freins coûteux en entretien",
+                  "Corrosion des disques de frein en cas d'usage peu fréquent"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "997",
+            "annees": "2004-2012",
+            "phases": [
+              "Phase 1 (2004-2008)",
+              "Phase 2 restylée (2008-2012)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "Carrera/Carrera S - 325 à 385ch",
+                "code_moteur": "M96/M97 (Phase 1) / MA1 (Phase 2, injection directe)",
+                "cylindree": "3.6L / 3.8L flat-6",
+                "puissance_ch": 385,
+                "boite": [
+                  "BVM6",
+                  "Tiptronic S",
+                  "PDK (Phase 2)"
+                ],
+                "points_faibles": [
+                  "Phase 1 : même défaut IMS que sur 996, moins fréquent mais existant sur certains millésimes",
+                  "Phase 2 (moteur MA1 à injection directe) : défaut IMS corrigé, plus fiable",
+                  "Bore scoring possible sur les blocs 3.8L Phase 1",
+                  "Boîte PDK (Phase 2) fiable mais coûteuse hors garantie"
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "GT3/GT3 RS/GT2 RS - 415 à 620ch",
+                "code_moteur": "MA1/76 (Mezger)",
+                "cylindree": "3.6L / 3.8L flat-6",
+                "puissance_ch": 620,
+                "boite": [
+                  "BVM6"
+                ],
+                "points_faibles": [
+                  "Bloc Mezger sans défaut IMS, très fiable en usage normal",
+                  "Embrayage et volant moteur sollicités en usage circuit",
+                  "Suspension et freins carbo-céramiques coûteux à l'entretien",
+                  "Turbo (GT2 RS) sensible à l'entretien rigoureux"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "991",
+            "annees": "2011-2019",
+            "phases": [
+              "Phase 1 (2011-2015, atmosphérique)",
+              "Phase 2 restylée (2015-2019, turbo généralisé)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "Carrera/Carrera S - 350 à 420ch",
+                "code_moteur": "MA1 (Phase 1 atmo) / 9A2 (Phase 2 turbo)",
+                "cylindree": "3.4L / 3.8L / 3.0L turbo (Phase 2)",
+                "puissance_ch": 420,
+                "boite": [
+                  "BVM7",
+                  "PDK7"
+                ],
+                "points_faibles": [
+                  "Fiabilité globalement excellente, plus de défaut IMS",
+                  "Phase 2 turbo : turbo et échangeurs à surveiller sur usage intensif",
+                  "PDK très fiable mais coûteuse en réparation hors garantie",
+                  "Consommation d'huile résiduelle possible sur certains exemplaires"
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "GT3/GT3 RS/GT2 RS - 475 à 700ch",
+                "code_moteur": "9A1",
+                "cylindree": "4.0L flat-6",
+                "puissance_ch": 700,
+                "boite": [
+                  "BVM6",
+                  "PDK7"
+                ],
+                "points_faibles": [
+                  "MALADIE CONNUE : rappel constructeur sur GT3 991.1 pour risque d'incendie lié aux vis de bielles (bulletin officiel Porsche)",
+                  "Consommation d'huile en usage circuit intensif",
+                  "Système de refroidissement sophistiqué exigeant un entretien rigoureux",
+                  "Coûts de pneus, freins et entretien très élevés"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "992",
+            "annees": "2018-aujourd'hui",
+            "phases": [
+              "Phase 1 (2018-2023)",
+              "Phase 2 restylée (2023-)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "Carrera/Carrera S/Turbo - 385 à 650ch",
+                "code_moteur": "9A2 Evo",
+                "cylindree": "3.0L turbo / 3.7L turbo (Turbo S)",
+                "puissance_ch": 650,
+                "boite": [
+                  "BVM7",
+                  "PDK8"
+                ],
+                "points_faibles": [
+                  "Modèle récent : peu de recul sur fiabilité long terme",
+                  "Électronique très sophistiquée (nombreux ADAS) sensible aux bugs logiciels",
+                  "PDK8 fiable mais coûteuse en réparation hors garantie",
+                  "Coûts d'entretien et de pneumatiques élevés"
+                ]
+              },
+              {
+                "type": "Hybride",
+                "nom": "GTS T-Hybrid - 541ch",
+                "code_moteur": "9A2 Evo + turbo électrique",
+                "cylindree": "3.6L turbo + électrique",
+                "puissance_ch": 541,
+                "boite": [
+                  "PDK8"
+                ],
+                "points_faibles": [
+                  "Technologie hybride/turbo électrique inédite : très peu de recul sur la fiabilité",
+                  "Complexité électronique élevée",
+                  "Coûts de réparation potentiellement très élevés hors garantie",
+                  "Batterie HT à surveiller sur le long terme"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Cayenne",
+        "generations": [
+          {
+            "code_chassis": "955/957",
+            "annees": "2002-2010",
+            "phases": [
+              "Phase 1 (2002-2006)",
+              "Phase 2 restylée 957 (2006-2010)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "S/Turbo - 340 à 450ch",
+                "code_moteur": "M48 (V8 atmo) / M48/50 (V8 turbo)",
+                "cylindree": "4.5L V8",
+                "puissance_ch": 450,
+                "boite": [
+                  "Tiptronic S6"
+                ],
+                "points_faibles": [
+                  "Chaîne de distribution et tendeurs hydrauliques sujets à l'usure prématurée",
+                  "Boîte de transfert et système Quattro coûteux en entretien",
+                  "Suspension pneumatique fragile et coûteuse en réparation",
+                  "Refroidisseur de boîte de vitesses sujet à fuites de liquide dans l'huile de boîte"
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "Diesel - 240ch",
+                "code_moteur": "OM642 (Mercedes)",
+                "cylindree": "3.0L V6",
+                "puissance_ch": 240,
+                "boite": [
+                  "Tiptronic S6"
+                ],
+                "points_faibles": [
+                  "Bloc réputé robuste (base Mercedes OM642)",
+                  "Vanne EGR et FAP encrassés sur usage urbain",
+                  "Suspension pneumatique fragile",
+                  "Turbo à géométrie variable sensible à l'entretien"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "92A",
+            "annees": "2010-2017",
+            "phases": [
+              "Phase 1 (2010-2014)",
+              "Phase 2 restylée (2014-2017)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "S/Turbo/Turbo S - 400 à 570ch",
+                "code_moteur": "M48/M4E (V8)",
+                "cylindree": "3.6L V6 / 4.8L V8",
+                "puissance_ch": 570,
+                "boite": [
+                  "Tiptronic S8"
+                ],
+                "points_faibles": [
+                  "Chaîne de distribution à surveiller sur gros kilométrage",
+                  "Suspension pneumatique coûteuse en entretien",
+                  "Système Start&Stop parfois capricieux",
+                  "Coûts d'entretien globalement élevés (freins, pneus)"
+                ]
+              },
+              {
+                "type": "Hybride",
+                "nom": "S Hybrid/S E-Hybrid - 380 à 416ch",
+                "code_moteur": "M47 (V6 compresseur) + moteur électrique",
+                "cylindree": "3.0L + électrique",
+                "puissance_ch": 416,
+                "boite": [
+                  "Tiptronic S8"
+                ],
+                "points_faibles": [
+                  "Vieillissement de la batterie HT à surveiller",
+                  "Système hybride complexe, coûts de réparation élevés hors garantie",
+                  "Poids supplémentaire sollicitant trains roulants et freins",
+                  "Logiciel de gestion hybride parfois capricieux"
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "Diesel/S Diesel - 240 à 385ch",
+                "code_moteur": "OM642 / OM651 (Audi/VW V6/V8 TDI selon millésime)",
+                "cylindree": "3.0L / 4.2L V8",
+                "puissance_ch": 385,
+                "boite": [
+                  "Tiptronic S8"
+                ],
+                "points_faibles": [
+                  "Système AdBlue/SCR sensible sur usage urbain",
+                  "FAP encrassé sur petits trajets répétés",
+                  "Certaines versions concernées par le Dieselgate (groupe VAG)",
+                  "Injecteurs coûteux en remplacement"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "9YA",
+            "annees": "2017-aujourd'hui",
+            "phases": [
+              "Phase 1 (2017-2023)",
+              "Phase 2 restylée (2023-)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "S/Turbo/Turbo GT - 340 à 640ch",
+                "code_moteur": "9A5 (V6/V8)",
+                "cylindree": "2.9L V6 / 4.0L V8",
+                "puissance_ch": 640,
+                "boite": [
+                  "Tiptronic S8"
+                ],
+                "points_faibles": [
+                  "Modèle récent : peu de recul sur fiabilité long terme",
+                  "Suspension pneumatique/active (PASM, PDCC) coûteuse en entretien",
+                  "Électronique très sophistiquée sensible aux bugs logiciels",
+                  "Coûts d'entretien et de pneumatiques élevés"
+                ]
+              },
+              {
+                "type": "Hybride rechargeable",
+                "nom": "E-Hybrid/Turbo S E-Hybrid - 462 à 739ch",
+                "code_moteur": "9A5 V6/V8 + moteur électrique",
+                "cylindree": "2.9L / 4.0L + électrique",
+                "puissance_ch": 739,
+                "boite": [
+                  "Tiptronic S8"
+                ],
+                "points_faibles": [
+                  "Vieillissement de la batterie HT à surveiller sur le long terme",
+                  "Système hybride complexe, coûts de réparation élevés hors garantie",
+                  "Poids très élevé sollicitant fortement trains roulants et freins",
+                  "Logiciel de gestion hybride parfois capricieux"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Boxster / Cayman",
+        "generations": [
+          {
+            "code_chassis": "986 (Boxster I)",
+            "annees": "1996-2004",
+            "phases": [
+              "Phase 1 (1996-2002)",
+              "Phase 2 restylée (2002-2004)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "2.5/2.7/3.2 S - 204 à 260ch",
+                "code_moteur": "M96",
+                "cylindree": "2.5L à 3.2L flat-6",
+                "puissance_ch": 260,
+                "boite": [
+                  "BVM5/6",
+                  "Tiptronic S"
+                ],
+                "points_faibles": [
+                  "MALADIE CONNUE M96 : usure prématurée du roulement IMS pouvant entraîner une casse moteur totale",
+                  "Fissures de cylindres (bore scoring) sur certains blocs",
+                  "Fuites au niveau du joint spi RMS",
+                  "Toit souple (versions cabriolet) à surveiller avec l'âge"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "987 (Boxster II / Cayman I)",
+            "annees": "2004-2012",
+            "phases": [
+              "Phase 1 (2004-2008)",
+              "Phase 2 restylée (2008-2012)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "2.7/3.4 S - 245 à 320ch",
+                "code_moteur": "M96 / MA1 (Phase 2, injection directe)",
+                "cylindree": "2.7L à 3.4L flat-6",
+                "puissance_ch": 320,
+                "boite": [
+                  "BVM5/6",
+                  "PDK (Phase 2)"
+                ],
+                "points_faibles": [
+                  "Phase 1 : même défaut IMS que sur 986, moins fréquent mais existant",
+                  "Phase 2 (MA1) : défaut IMS corrigé, plus fiable",
+                  "Bore scoring possible sur certains blocs Phase 1",
+                  "Boîte PDK (Phase 2) fiable mais coûteuse hors garantie"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "981 / 981C",
+            "annees": "2012-2016",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "2.7/3.4 S/GTS - 265 à 340ch",
+                "code_moteur": "MA1.2",
+                "cylindree": "2.7L à 3.4L flat-6",
+                "puissance_ch": 340,
+                "boite": [
+                  "BVM6",
+                  "PDK7"
+                ],
+                "points_faibles": [
+                  "Fiabilité globalement excellente, plus de défaut IMS",
+                  "Embrayage sollicité en usage sportif (versions BVM)",
+                  "PDK très fiable mais coûteuse en réparation hors garantie",
+                  "Consommation d'huile résiduelle possible sur certains exemplaires"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "982",
+            "annees": "2016-aujourd'hui",
+            "phases": [
+              "Phase 1 (2016-2020, 4 cyl. turbo)",
+              "Phase 2 restylée (2020-)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "718/718 S - 300 à 350ch",
+                "code_moteur": "9A2 (4 cyl. turbo)",
+                "cylindree": "2.0L / 2.5L turbo",
+                "puissance_ch": 350,
+                "boite": [
+                  "BVM6",
+                  "PDK7"
+                ],
+                "points_faibles": [
+                  "Passage au 4 cylindres turbo controversé : sonorité et agrément différents du flat-6",
+                  "Turbo à surveiller en cas d'usage intensif",
+                  "Consommation d'huile résiduelle possible",
+                  "Modèle globalement fiable mais coûts d'entretien Porsche élevés"
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "718 GTS 4.0/Spyder/GT4 - 400 à 420ch",
+                "code_moteur": "9A2 (flat-6 atmo, retour au 6 cyl.)",
+                "cylindree": "4.0L flat-6",
+                "puissance_ch": 420,
+                "boite": [
+                  "BVM6",
+                  "PDK7"
+                ],
+                "points_faibles": [
+                  "Retour au flat-6 atmosphérique très apprécié, fiabilité réputée bonne",
+                  "Consommation d'huile en usage circuit intensif",
+                  "Embrayage sollicité en usage sportif",
+                  "Coûts de pneus et freins élevés en usage circuit"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Macan",
+        "generations": [
+          {
+            "code_chassis": "95B (Macan I)",
+            "annees": "2014-2021",
+            "phases": [
+              "Phase 1 (2014-2018)",
+              "Phase 2 restylée (2018-2021)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "S/GTS/Turbo - 245 à 440ch",
+                "code_moteur": "EA839 (V6, base Audi)",
+                "cylindree": "3.0L / 3.6L V6",
+                "puissance_ch": 440,
+                "boite": [
+                  "PDK7"
+                ],
+                "points_faibles": [
+                  "Chaîne de distribution à surveiller sur gros kilométrage",
+                  "Suspension pneumatique (versions équipées) coûteuse en entretien",
+                  "PDK fiable mais coûteuse en réparation hors garantie",
+                  "Coûts d'entretien globalement élevés (freins, pneus)"
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "S Diesel - 258ch",
+                "code_moteur": "EA897 (V6 TDI, base Audi)",
+                "cylindree": "3.0L V6",
+                "puissance_ch": 258,
+                "boite": [
+                  "PDK7"
+                ],
+                "points_faibles": [
+                  "Système AdBlue/SCR sensible sur usage urbain",
+                  "FAP encrassé sur petits trajets répétés",
+                  "Retiré du marché suite au Dieselgate (groupe VAG)",
+                  "Injecteurs coûteux en remplacement"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "95B (Macan II, restylage majeur)",
+            "annees": "2021-aujourd'hui",
+            "phases": [
+              "Phase unique (thermique, avant transition full électrique)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "S/GTS/Turbo - 380 à 440ch",
+                "code_moteur": "EA839 Evo (V6)",
+                "cylindree": "2.9L / 3.6L V6",
+                "puissance_ch": 440,
+                "boite": [
+                  "PDK7"
+                ],
+                "points_faibles": [
+                  "Modèle récent : peu de recul sur fiabilité long terme",
+                  "Suspension pneumatique/active coûteuse en entretien",
+                  "Électronique très sophistiquée sensible aux bugs logiciels",
+                  "Coûts d'entretien et de pneumatiques élevés"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Panamera",
+        "generations": [
+          {
+            "code_chassis": "970",
+            "annees": "2009-2016",
+            "phases": [
+              "Phase 1 (2009-2013)",
+              "Phase 2 restylée (2013-2016)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "S/4S/Turbo - 300 à 550ch",
+                "code_moteur": "MA1 (V6/V8)",
+                "cylindree": "3.0L V6 / 4.8L V8",
+                "puissance_ch": 550,
+                "boite": [
+                  "BVM6",
+                  "PDK7"
+                ],
+                "points_faibles": [
+                  "Chaîne de distribution V8 à surveiller sur gros kilométrage",
+                  "Suspension pneumatique/PASM coûteuse en entretien",
+                  "PDK fiable mais coûteuse en réparation hors garantie",
+                  "Coûts d'entretien globalement très élevés"
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "Diesel - 250ch",
+                "code_moteur": "V6 TDI (base Audi/VW)",
+                "cylindree": "3.0L V6",
+                "puissance_ch": 250,
+                "boite": [
+                  "PDK8 Tiptronic"
+                ],
+                "points_faibles": [
+                  "Système AdBlue/SCR sensible sur usage urbain",
+                  "Retiré du marché suite au Dieselgate (groupe VAG)",
+                  "Suspension pneumatique fragile",
+                  "Injecteurs coûteux en remplacement"
+                ]
+              },
+              {
+                "type": "Hybride",
+                "nom": "S E-Hybrid - 416ch",
+                "code_moteur": "V6 compresseur + moteur électrique",
+                "cylindree": "3.0L + électrique",
+                "puissance_ch": 416,
+                "boite": [
+                  "PDK8 Tiptronic"
+                ],
+                "points_faibles": [
+                  "Vieillissement de la batterie HT à surveiller",
+                  "Système hybride complexe, coûts de réparation élevés hors garantie",
+                  "Poids supplémentaire sollicitant trains roulants",
+                  "Logiciel de gestion hybride parfois capricieux"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "971",
+            "annees": "2016-aujourd'hui",
+            "phases": [
+              "Phase 1 (2016-2020)",
+              "Phase 2 restylée (2020-)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "S/4S/Turbo/Turbo S - 330 à 630ch",
+                "code_moteur": "9A2 (V6/V8)",
+                "cylindree": "2.9L V6 / 4.0L V8",
+                "puissance_ch": 630,
+                "boite": [
+                  "PDK8"
+                ],
+                "points_faibles": [
+                  "Modèle récent : peu de recul sur fiabilité long terme",
+                  "Suspension pneumatique/active très coûteuse en entretien",
+                  "Électronique très sophistiquée sensible aux bugs logiciels",
+                  "Coûts d'entretien et de pneumatiques élevés"
+                ]
+              },
+              {
+                "type": "Hybride rechargeable",
+                "nom": "4S E-Hybrid/Turbo S E-Hybrid - 462 à 700ch",
+                "code_moteur": "V6/V8 + moteur électrique",
+                "cylindree": "2.9L / 4.0L + électrique",
+                "puissance_ch": 700,
+                "boite": [
+                  "PDK8"
+                ],
+                "points_faibles": [
+                  "Vieillissement de la batterie HT à surveiller sur le long terme",
+                  "Système hybride complexe, coûts de réparation élevés hors garantie",
+                  "Poids très élevé sollicitant fortement trains roulants et freins",
+                  "Logiciel de gestion hybride parfois capricieux"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Taycan",
+        "generations": [
+          {
+            "code_chassis": "Y1A",
+            "annees": "2019-aujourd'hui",
+            "phases": [
+              "Phase 1 (2019-2023)",
+              "Phase 2 restylée (2023-)"
+            ],
+            "motorisations": [
+              {
+                "type": "Électrique",
+                "nom": "4S/Turbo/Turbo S - 435 à 940ch",
+                "code_moteur": "Moteurs électriques synchrones à aimants permanents (bi-moteur)",
+                "cylindree": "N/A",
+                "puissance_ch": 940,
+                "boite": [
+                  "Réducteur 2 rapports (essieu arrière)"
+                ],
+                "points_faibles": [
+                  "Modèle récent : peu de recul sur fiabilité long terme de la batterie",
+                  "Logiciel embarqué complexe, mises à jour fréquentes nécessaires",
+                  "Coût de remplacement de la batterie très élevé hors garantie",
+                  "Suspension pneumatique/active coûteuse en entretien",
+                  "Consommation électrique élevée en conduite dynamique réduisant l'autonomie réelle"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "924 / 944 / 968",
+        "generations": [
+          {
+            "code_chassis": "924",
+            "annees": "1976-1988",
+            "phases": [
+              "Phase 1 (1976-1985)",
+              "924S (1986-1988)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "924/924 Turbo/924S - 125 à 160ch",
+                "code_moteur": "M array (bloc Audi 2.0L) / 931 (Turbo)",
+                "cylindree": "2.0L 4 cyl.",
+                "puissance_ch": 160,
+                "boite": [
+                  "BVM5",
+                  "BVA3"
+                ],
+                "points_faibles": [
+                  "Courroie de distribution à respecter très strictement (risque de casse moteur si négligée)",
+                  "Corrosion fréquente sur exemplaires mal entretenus",
+                  "Radiateur et durites vieillissants",
+                  "Turbo (924 Turbo) sensible à l'entretien"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "944",
+            "annees": "1982-1991",
+            "phases": [
+              "Phase 1 (1982-1985)",
+              "Phase 2 restylée (1985-1991)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "944/944S/944 Turbo - 163 à 250ch",
+                "code_moteur": "M44 (atmo) / M44/51 (Turbo)",
+                "cylindree": "2.5L à 3.0L 4 cyl.",
+                "puissance_ch": 250,
+                "boite": [
+                  "BVM5",
+                  "BVA3/4"
+                ],
+                "points_faibles": [
+                  "Courroie de distribution ET courroie de balancier à remplacer ensemble impérativement (risque de casse moteur majeur)",
+                  "Fuites d'huile chroniques (joints de carter, culasse)",
+                  "Corrosion moindre grâce à galvanisation partielle mais points de contrôle à vérifier",
+                  "944 Turbo : turbo sensible à l'entretien rigoureux"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "968",
+            "annees": "1991-1995",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "968/968 Turbo S - 240 à 305ch",
+                "code_moteur": "M44/43",
+                "cylindree": "3.0L 4 cyl.",
+                "puissance_ch": 305,
+                "boite": [
+                  "BVM6",
+                  "Tiptronic"
+                ],
+                "points_faibles": [
+                  "Courroie de distribution et de balancier à remplacer impérativement ensemble",
+                  "Fuites d'huile chroniques (joints de carter, culasse)",
+                  "Modèle rare et recherché, pièces spécifiques parfois difficiles à trouver",
+                  "Embrayage et volant moteur à surveiller sur exemplaires sportifs"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "928",
+        "generations": [
+          {
+            "code_chassis": "928",
+            "annees": "1977-1995",
+            "phases": [
+              "Phase 1 (1977-1986)",
+              "928 S4/GT/GTS (1986-1995)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "928/928S4/928GTS - 219 à 350ch",
+                "code_moteur": "M28",
+                "cylindree": "4.5L à 5.4L V8",
+                "puissance_ch": 350,
+                "boite": [
+                  "BVM5",
+                  "BVA4 Automatique"
+                ],
+                "points_faibles": [
+                  "Courroie de distribution à respecter très strictement (risque de casse moteur si négligée)",
+                  "Radiateur et durites vieillissants, système de refroidissement complexe",
+                  "Consommation élevée typique d'un grand V8 des années 80-90",
+                  "Coussinets de biellettes et suspension arrière (essieu Weissach) à surveiller avec l'âge"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "918 Spyder",
+        "generations": [
+          {
+            "code_chassis": "918",
+            "annees": "2013-2015",
+            "phases": [
+              "Phase unique (série limitée)"
+            ],
+            "motorisations": [
+              {
+                "type": "Hybride",
+                "nom": "918 Spyder - 887ch",
+                "code_moteur": "V8 atmo (dérivé course RS Spyder) + 2 moteurs électriques",
+                "cylindree": "4.6L V8 + électrique",
+                "puissance_ch": 887,
+                "boite": [
+                  "PDK7"
+                ],
+                "points_faibles": [
+                  "Hypercar à production très limitée : entretien et pièces extrêmement spécialisés et coûteux",
+                  "Batterie HT et système hybride complexes, interventions réservées à des centres Porsche spécialisés",
+                  "Consommation d'huile et fluides à surveiller rigoureusement en usage intensif",
+                  "Coûts d'assurance et d'entretien parmi les plus élevés du marché"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Carrera GT",
+        "generations": [
+          {
+            "code_chassis": "980",
+            "annees": "2004-2007",
+            "phases": [
+              "Phase unique (série limitée)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "Carrera GT - 612ch",
+                "code_moteur": "V10 (dérivé programme course Le Mans/F1 abandonné)",
+                "cylindree": "5.7L V10",
+                "puissance_ch": 612,
+                "boite": [
+                  "BVM6"
+                ],
+                "points_faibles": [
+                  "Embrayage céramique très sensible à une utilisation inadaptée, casse coûteuse fréquente chez conducteurs inexpérimentés",
+                  "Châssis et carrosserie en carbone : réparations en cas de choc extrêmement complexes et coûteuses",
+                  "Absence d'aides électroniques modernes (pas d'ABS/ESP désactivable) exigeant une grande maîtrise",
+                  "Production très limitée : pièces spécifiques rares et très coûteuses"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

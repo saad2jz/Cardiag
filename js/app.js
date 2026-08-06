@@ -139,6 +139,7 @@
     if (!motorisationSelect) return;
     motorisationSelect.innerHTML = '';
     motorisationSelect.appendChild(createPlaceholderOption('Choisissez une motorisation'));
+    renderPotentialIssues();
 
     const generation = getSelectedGeneration();
     const motorisations = Array.isArray(generation?.motorisations)
@@ -191,6 +192,7 @@
       motorisationSelect.innerHTML = '';
       motorisationSelect.appendChild(createPlaceholderOption('Choisissez d\'abord une génération'));
       motorisationSelect.disabled = true;
+      renderPotentialIssues();
     }
   }
 
@@ -219,6 +221,58 @@
     }
 
     return modele.generations[index] || null;
+  }
+
+  function getSelectedMotorisation() {
+    const generation = getSelectedGeneration();
+    const rawValue = motorisationSelect?.value;
+    const motorisations = Array.isArray(generation?.motorisations) ? generation.motorisations : [];
+    const index = Number.parseInt(rawValue, 10);
+
+    if (!Number.isInteger(index) || index < 0 || index >= motorisations.length) {
+      return null;
+    }
+
+    return motorisations[index] || null;
+  }
+
+  function renderPotentialIssues() {
+    const container = document.getElementById('vehicleIssues');
+    const summary = document.getElementById('vehicleIssuesSummary');
+    const list = document.getElementById('vehicleIssuesList');
+    const hiddenField = document.querySelector('input[name="motorisation_points_faibles"]');
+    const motorisation = getSelectedMotorisation();
+    const issues = Array.isArray(motorisation?.points_faibles)
+      ? motorisation.points_faibles
+      : [];
+
+    if (!container || !summary || !list) return;
+
+    list.replaceChildren();
+    if (hiddenField) hiddenField.value = issues.length ? JSON.stringify(issues) : '';
+
+    if (!issues.length) {
+      container.hidden = true;
+      return;
+    }
+
+    issues.forEach((issue) => {
+      const item = document.createElement('li');
+      const title = typeof issue === 'string'
+        ? issue
+        : String(issue?.probleme || issue?.description || 'Point de vigilance documenté');
+      const details = typeof issue === 'object' && issue
+        ? [issue.gravite, issue.frequence, issue.kilometrage_apparition]
+          .filter(Boolean)
+          .join(' — ')
+        : '';
+
+      item.textContent = details ? `${title} (${details})` : title;
+      list.appendChild(item);
+    });
+
+    summary.textContent = `${issues.length} point${issues.length > 1 ? 's' : ''} documenté${issues.length > 1 ? 's' : ''} pour cette motorisation. À confirmer lors de l'inspection.`;
+    container.hidden = false;
   }
 
   function formatGenerationLabel(generation) {
@@ -285,6 +339,124 @@
     });
   }
 
+  const defaultWeights = {
+    vital: 5,
+    chassis: 3,
+    esthetique: 1,
+  };
+
+  function scoreCategory(item) {
+    const section = item.closest('details.section')?.dataset.section;
+    if (section === 'moteur' || section === 'diagnostic') return 'vital';
+    if (section === 'chassis' || section === 'essai') return 'chassis';
+    return 'esthetique';
+  }
+
+  function scoreWeights() {
+    const fields = {
+      vital: document.getElementById('weightVital'),
+      chassis: document.getElementById('weightChassis'),
+      esthetique: document.getElementById('weightEsthetique'),
+    };
+
+    return Object.fromEntries(
+      Object.entries(fields).map(([category, field]) => {
+        const value = Number.parseInt(field?.value, 10);
+        return [category, Number.isFinite(value) && value >= 0 ? value : defaultWeights[category]];
+      })
+    );
+  }
+
+  function updateScore() {
+    const items = Array.from(document.querySelectorAll('.check-item'));
+    const checkedItems = items.filter((item) => item.querySelector('input[type="radio"]:checked'));
+    const scoreGauge = document.getElementById('scoreGauge');
+    const miniDash = document.getElementById('miniDash');
+    const miniDashRing = document.getElementById('miniDashRing');
+    const miniDashScore = document.getElementById('miniDashScore');
+    const miniDashVerdict = document.getElementById('miniDashVerdict');
+    const miniDashSub = document.getElementById('miniDashSub');
+    const progressBar = document.getElementById('progressBar');
+    const progressText = document.getElementById('progressText');
+    const progressPct = document.getElementById('progressPct');
+
+    const completion = items.length ? Math.round((checkedItems.length / items.length) * 100) : 0;
+    if (progressBar) progressBar.style.width = `${completion}%`;
+    if (progressText) progressText.textContent = `${checkedItems.length} point${checkedItems.length > 1 ? 's' : ''} vérifié${checkedItems.length > 1 ? 's' : ''}`;
+    if (progressPct) progressPct.textContent = `${completion}%`;
+
+    if (!checkedItems.length) {
+      if (scoreGauge) scoreGauge.textContent = 'Score : —';
+      if (miniDash) miniDash.classList.remove('show', 'v-achat', 'v-negociation', 'v-fuir');
+      return;
+    }
+
+    const values = { ok: 100, moyen: 55, defaut: 0 };
+    const weights = scoreWeights();
+    let weightedScore = 0;
+    let totalWeight = 0;
+
+    checkedItems.forEach((item) => {
+      const selected = item.querySelector('input[type="radio"]:checked');
+      const weight = weights[scoreCategory(item)];
+      weightedScore += (values[selected.value] ?? 0) * weight;
+      totalWeight += weight;
+    });
+
+    const score = totalWeight ? Math.round(weightedScore / totalWeight) : 0;
+    const selectedVerdict = document.querySelector('input[name="verdict"]:checked')?.value;
+    const verdict = selectedVerdict || (score >= 80 ? 'achat' : score >= 55 ? 'negociation' : 'fuir');
+    const verdictLabels = {
+      achat: 'ACHAT',
+      negociation: 'NÉGOCIATION',
+      fuir: 'À FUIR',
+    };
+    const colors = {
+      achat: '#1B8F58',
+      negociation: '#C78A00',
+      fuir: '#C6303A',
+    };
+
+    if (scoreGauge) {
+      scoreGauge.textContent = `Score : ${score}%`;
+      scoreGauge.dataset.tooltip = `Score pondéré sur ${checkedItems.length} contrôle${checkedItems.length > 1 ? 's' : ''} renseigné${checkedItems.length > 1 ? 's' : ''}.`;
+    }
+    if (miniDash) {
+      miniDash.classList.add('show');
+      miniDash.classList.remove('v-achat', 'v-negociation', 'v-fuir');
+      miniDash.classList.add(`v-${verdict}`);
+    }
+    if (miniDashRing) {
+      miniDashRing.style.background = `conic-gradient(${colors[verdict]} ${score}%, var(--border) 0)`;
+    }
+    if (miniDashScore) miniDashScore.textContent = `${score}%`;
+    if (miniDashVerdict) miniDashVerdict.innerHTML = `<span class="mini-dash-dot"></span> ${verdictLabels[verdict]}`;
+    if (miniDashSub) miniDashSub.textContent = `${checkedItems.length} / ${items.length} vérifiés`;
+  }
+
+  function initializeScore() {
+    const weightFields = [
+      document.getElementById('weightVital'),
+      document.getElementById('weightChassis'),
+      document.getElementById('weightEsthetique'),
+    ];
+    weightFields.forEach((field, index) => {
+      if (!field) return;
+      if (!field.value) field.value = Object.values(defaultWeights)[index];
+      field.addEventListener('input', updateScore);
+    });
+
+    document.querySelectorAll('.check-item input[type="radio"], input[name="verdict"]').forEach((input) => {
+      input.addEventListener('change', updateScore);
+    });
+
+    document.getElementById('miniDash')?.addEventListener('click', () => {
+      document.querySelector('details[data-section="bilan"]')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    updateScore();
+  }
+
   function updateResult() {
     const selectedMarque = marqueSelect.value;
     const selectedModele = modeleSelect.value;
@@ -345,6 +517,7 @@
       
       renderBrands();
       syncBadgeGroupStates();
+      initializeScore();
       marqueSelect.addEventListener('change', renderModels);
       modeleSelect.addEventListener('change', renderGenerations);
       generationSelect.addEventListener('change', () => {
@@ -355,7 +528,10 @@
         renderMotorisations();
         updateResult();
       });
-      motorisationSelect.addEventListener('change', updateResult);
+      motorisationSelect.addEventListener('change', () => {
+        renderPotentialIssues();
+        updateResult();
+      });
       updateResult();
     } catch (error) {
       console.error('Erreur app.js:', error);

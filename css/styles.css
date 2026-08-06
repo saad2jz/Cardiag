@@ -283,6 +283,11 @@ body.dark .alert-box .txt, body.dark .alert-box .txt strong{color:#F0D28A;}
 .vstep select:focus{outline:none; box-shadow:none;}
 .vstep-chevron{color:var(--muted); font-size:14px; flex-shrink:0;}
 .vstep-hint{font-size:11px; color:var(--muted); padding:0 2px 2px;}
+.vehicle-issues{background:var(--jaune-fond); border:1px solid #E9C46A; border-radius:var(--radius-sm); padding:12px 14px; color:#5C4300;}
+.vehicle-issues h3{margin:0; font-size:14px; font-family:'Barlow Condensed',sans-serif; letter-spacing:.02em;}
+.vehicle-issues p{margin:4px 0 8px; font-size:12px; line-height:1.45;}
+.vehicle-issues ul{margin:0; padding-left:18px; display:grid; gap:6px; font-size:12px; line-height:1.45;}
+body.dark .vehicle-issues{color:#F0D28A;}
 
 .doc-check{display:flex; align-items:center; gap:10px; padding:11px 12px; border:1px solid var(--border); border-radius:var(--radius-sm); background:var(--bg); margin-bottom:8px;}
 .doc-check input[type="checkbox"]{width:18px; height:18px; accent-color:var(--accent); flex-shrink:0;}
