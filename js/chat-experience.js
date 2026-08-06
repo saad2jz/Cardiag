@@ -1,10 +1,6 @@
 const MAX_MESSAGES = 30;
-
-function apiBaseUrl() {
-  const configured = document.querySelector('meta[name="chat-api"]')?.content.trim();
-  if (configured) return configured.replace(/\/$/, '');
-  return ['localhost', '127.0.0.1'].includes(window.location.hostname) ? 'http://localhost:3000' : '';
-}
+const API_BASE_URL = 'https://fiche-expert-auto.onrender.com/';
+const API_TIMEOUT_MS = 30_000;
 
 function carContext() {
   return {
@@ -21,16 +17,32 @@ function canUseAssistant() {
 }
 
 async function request(path, body) {
-  const baseUrl = apiBaseUrl();
-  if (!baseUrl) throw new Error("L’assistant n’est pas configuré pour ce site.");
-  const response = await fetch(`${baseUrl}${path}`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(body),
-  });
-  const payload = await response.json().catch(() => ({}));
-  if (!response.ok) throw new Error(payload.error || 'Le service est indisponible.');
-  return payload;
+  const controller = new AbortController();
+  const timeout = window.setTimeout(() => controller.abort(), API_TIMEOUT_MS);
+
+  try {
+    const response = await fetch(`${API_BASE_URL}${path.replace(/^\//, '')}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+      signal: controller.signal,
+    });
+    const payload = await response.json().catch(() => ({}));
+    if (!response.ok) {
+      throw new Error(payload.error || `Le service est indisponible (erreur ${response.status}).`);
+    }
+    return payload;
+  } catch (error) {
+    if (error.name === 'AbortError') {
+      throw new Error('Le service met trop de temps à répondre. Il peut être en cours de démarrage : réessayez dans quelques instants.');
+    }
+    if (error instanceof TypeError) {
+      throw new Error('Impossible de joindre le service de diagnostic. Vérifiez votre connexion puis réessayez.');
+    }
+    throw error;
+  } finally {
+    window.clearTimeout(timeout);
+  }
 }
 
 function appendMessage(list, role, content) {
