@@ -1,0 +1,1150 @@
+[
+  {
+    "marque": "Rolls-Royce",
+    "modeles": [
+      {
+        "nom": "Silver Shadow / Silver Wraith II",
+        "generations": [
+          {
+            "code_chassis": "Silver Shadow",
+            "annees": "1965-1980",
+            "phases": [
+              "Silver Shadow I (1965-1976)",
+              "Silver Shadow II (1977-1980)",
+              "Corniche (dérivée, 1971-1995)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "6.75L V8 - puissance non communiquée (estimée 180-220ch)",
+                "code_moteur": "Rolls-Royce V8 6.75L",
+                "cylindree": "6.75L",
+                "puissance_ch": 220,
+                "boite": [
+                  "BVA3/BVA4 (GM Hydramatic/Turbo Hydramatic)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Fuites de spheres et de fluide LHM de la suspension hydropneumatique Citroen-derivee",
+                    "symptomes": [
+                      "Affaissement d'un coin du vehicule apres une nuit de stationnement"
+                    ],
+                    "kilometrage_apparition": "Frequente",
+                    "diagnostic": "Controle de la hauteur de caisse, test de pression des spheres",
+                    "piece_concernee": "Suspension hydropneumatique",
+                    "gravite": "Majeure",
+                    "frequence": "Frequent",
+                    "cout_reparation_estime": "Eleve"
+                  },
+                  {
+                    "probleme": "Corrosion interne du bloc V8 alu si liquide de refroidissement negligé",
+                    "symptomes": [
+                      "Colmatage progressif des conduits, surchauffe localisee"
+                    ],
+                    "kilometrage_apparition": "Si entretien du circuit negligé",
+                    "diagnostic": "Analyse du liquide",
+                    "piece_concernee": "Bloc-moteur V8",
+                    "gravite": "Majeure",
+                    "frequence": "Frequent",
+                    "cout_reparation_estime": "Eleve"
+                  },
+                  {
+                    "probleme": "Panne de sphere affectant simultanement freinage et suspension",
+                    "symptomes": [
+                      "Perte de freinage partielle"
+                    ],
+                    "kilometrage_apparition": "Aleatoire",
+                    "diagnostic": "Controle du circuit hydraulique complet",
+                    "piece_concernee": "Circuit hydraulique",
+                    "gravite": "Critique (securite)",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Tres eleve"
+                  },
+                  {
+                    "probleme": "Corrosion de la caisse monocoque (bas de caisse)",
+                    "symptomes": [
+                      "Rouille"
+                    ],
+                    "kilometrage_apparition": "Points sensibles",
+                    "diagnostic": "Sondage",
+                    "piece_concernee": "Carrosserie",
+                    "gravite": "Critique",
+                    "frequence": "Frequent",
+                    "cout_reparation_estime": "Eleve"
+                  },
+                  {
+                    "probleme": "Rarete des pieces pour l'injection Solex puis Bosch",
+                    "symptomes": [
+                      "Comportement moteur degrade"
+                    ],
+                    "kilometrage_apparition": "Avec l'age",
+                    "diagnostic": "Diagnostic specialise necessaire",
+                    "piece_concernee": "Systeme d'injection",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Eleve"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Silver Spirit / Silver Spur",
+        "generations": [
+          {
+            "code_chassis": "Silver Spirit / Silver Spur",
+            "annees": "1980-1998",
+            "phases": [
+              "Silver Spirit (1980-1989)",
+              "Silver Spirit II (1989-1993)",
+              "Silver Spirit III (1993-1995)",
+              "Silver Spur (empattement long)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "6.75L V8 (Turbo sur Silver Spirit Turbo R) - puissance non communiquee (estimee 220-320ch)",
+                "code_moteur": "Rolls-Royce V8 6.75L (turbocompresse sur Turbo R)",
+                "cylindree": "6.75L",
+                "puissance_ch": 320,
+                "boite": [
+                  "BVA3/BVA4 (GM Turbo Hydramatic)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Fuites de spheres et de LHM de la suspension hydropneumatique",
+                    "symptomes": [
+                      "Affaissement"
+                    ],
+                    "kilometrage_apparition": "Recurrente",
+                    "diagnostic": "Test de pression des spheres",
+                    "piece_concernee": "Suspension hydropneumatique",
+                    "gravite": "Majeure",
+                    "frequence": "Frequent",
+                    "cout_reparation_estime": "Eleve"
+                  },
+                  {
+                    "probleme": "Panne interne du turbo (Turbo R)",
+                    "symptomes": [
+                      "Perte de puissance"
+                    ],
+                    "kilometrage_apparition": "Aleatoire, couteux",
+                    "diagnostic": "Test de pression de suralimentation",
+                    "piece_concernee": "Turbocompresseur",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Eleve"
+                  },
+                  {
+                    "probleme": "Consommation d'essence extremement elevee",
+                    "symptomes": [
+                      "Regulierement superieure a 20L/100km"
+                    ],
+                    "kilometrage_apparition": "Caracteristique",
+                    "diagnostic": "Mesure directe",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible (cout d'usage)",
+                    "frequence": "Systematique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Corrosion sur bas de caisse",
+                    "symptomes": [
+                      "Rouille"
+                    ],
+                    "kilometrage_apparition": "Points sensibles",
+                    "diagnostic": "Sondage",
+                    "piece_concernee": "Carrosserie",
+                    "gravite": "Critique",
+                    "frequence": "Frequent",
+                    "cout_reparation_estime": "Eleve"
+                  },
+                  {
+                    "probleme": "Capteurs vieillissants de l'injection Bosch",
+                    "symptomes": [
+                      "Comportement moteur degrade"
+                    ],
+                    "kilometrage_apparition": "Avec l'age",
+                    "diagnostic": "Diagnostic specialise",
+                    "piece_concernee": "Systeme d'injection",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Eleve"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Silver Seraph",
+        "generations": [
+          {
+            "code_chassis": "Silver Seraph",
+            "annees": "1998-2002",
+            "phases": [
+              "Silver Seraph (1998-2002)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "5.4L V12 BMW - 326ch",
+                "code_moteur": "BMW V12 5.4L (base BMW 750i/850Ci)",
+                "cylindree": "5.4L",
+                "puissance_ch": 326,
+                "boite": [
+                  "BVA5 (ZF 5HP30)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Integration technique de transition BMW/Rolls-Royce parfois capricieuse",
+                    "symptomes": [
+                      "Dysfonctionnements electroniques ponctuels"
+                    ],
+                    "kilometrage_apparition": "Specifique a cette generation transitoire",
+                    "diagnostic": "Diagnostic specialise",
+                    "piece_concernee": "Systeme electronique",
+                    "gravite": "Moderee",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Eleve"
+                  },
+                  {
+                    "probleme": "Panne de la suspension pneumatique electronique",
+                    "symptomes": [
+                      "Affaissement"
+                    ],
+                    "kilometrage_apparition": "Aleatoire, compresseur ou capteur",
+                    "diagnostic": "Lecture des codes defauts",
+                    "piece_concernee": "Suspension pneumatique",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Eleve"
+                  },
+                  {
+                    "probleme": "Faible diffusion rendant certaines pieces specifiques difficiles a trouver",
+                    "symptomes": [],
+                    "kilometrage_apparition": "N/A",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A (disponibilite)",
+                    "gravite": "Moderee",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Eleve"
+                  },
+                  {
+                    "probleme": "Pannes de capteurs vieillissants",
+                    "symptomes": [
+                      "Dysfonctionnements divers"
+                    ],
+                    "kilometrage_apparition": "Progressive",
+                    "diagnostic": "Diagnostic complet",
+                    "piece_concernee": "Capteurs / calculateurs",
+                    "gravite": "Moderee",
+                    "frequence": "Frequent",
+                    "cout_reparation_estime": "Modere"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Phantom",
+        "generations": [
+          {
+            "code_chassis": "Phantom VII",
+            "annees": "2003-2016",
+            "phases": [
+              "Phantom (2003-2009)",
+              "Facelift (2009-2016)",
+              "Coupé/Drophead Coupé (2007-2016)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "6.75L V12 - 453 à 460ch",
+                "code_moteur": "BMW V12 6.75L (N73)",
+                "cylindree": "6.75L",
+                "puissance_ch": 460,
+                "boite": [
+                  "BVA6 (ZF 6HP26)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Consommation de carburant extrêmement élevée",
+                    "symptomes": [
+                      "Régulièrement supérieure à 20L/100km"
+                    ],
+                    "kilometrage_apparition": "Caractéristique",
+                    "diagnostic": "Mesure directe",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible (coût d'usage)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Panne de compresseur de la suspension pneumatique active",
+                    "symptomes": [
+                      "Affaissement"
+                    ],
+                    "kilometrage_apparition": "Aléatoire",
+                    "diagnostic": "Lecture des codes défauts",
+                    "piece_concernee": "Suspension pneumatique",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Réparations après choc extrêmement spécifiques sur structure spatiale aluminium",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de choc",
+                    "diagnostic": "Outillage dédié rare hors réseau constructeur",
+                    "piece_concernee": "Structure aluminium",
+                    "gravite": "Faible (coût)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Pannes capricieuses de calculateurs (base BMW)",
+                    "symptomes": [
+                      "Dysfonctionnements divers"
+                    ],
+                    "kilometrage_apparition": "Variable",
+                    "diagnostic": "Diagnostic complet",
+                    "piece_concernee": "Électronique embarquée",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Usure accélérée de freins et pneumatiques liée au poids (plus de 2 500 kg)",
+                    "symptomes": [
+                      "Usure accélérée"
+                    ],
+                    "kilometrage_apparition": "Cumulatif",
+                    "diagnostic": "Contrôle régulier",
+                    "piece_concernee": "Freins / pneumatiques",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "Phantom VIII",
+            "annees": "2017-présent",
+            "phases": [
+              "Phantom VIII (2017-présent)",
+              "Coupé/Drophead Coupé retirés après VII",
+              "Extended Wheelbase"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "6.75L V12 biturbo - 571ch",
+                "code_moteur": "BMW V12 6.75L biturbo (N74)",
+                "cylindree": "6.75L",
+                "puissance_ch": 571,
+                "boite": [
+                  "BVA8 (ZF 8HP)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Consommation de carburant extrêmement élevée",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Caractéristique",
+                    "diagnostic": "Mesure directe",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible (coût d'usage)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Complexité et coût de la suspension pneumatique active « Planar »",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de panne",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Suspension Planar",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Réparations après choc extrêmement spécifiques (Architecture of Luxury)",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de choc",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Structure aluminium",
+                    "gravite": "Faible (coût)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Usure accélérée de freins et pneumatiques liée au poids",
+                    "symptomes": [
+                      "Usure accélérée"
+                    ],
+                    "kilometrage_apparition": "Cumulatif",
+                    "diagnostic": "Contrôle régulier",
+                    "piece_concernee": "Freins / pneumatiques",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Bugs logiciels du système électronique et multimédia",
+                    "symptomes": [
+                      "Dysfonctionnements divers"
+                    ],
+                    "kilometrage_apparition": "Sur les premières années",
+                    "diagnostic": "Mise à jour logicielle",
+                    "piece_concernee": "Système multimédia",
+                    "gravite": "Faible",
+                    "frequence": "Fréquent sur premières années",
+                    "cout_reparation_estime": "Faible"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Ghost",
+        "generations": [
+          {
+            "code_chassis": "Ghost (1ère génération)",
+            "annees": "2009-2020",
+            "phases": [
+              "Ghost (2009-2014)",
+              "Series II facelift (2014-2020)",
+              "Ghost EWB (empattement long)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "6.6L V12 biturbo - 563 à 601ch",
+                "code_moteur": "BMW V12 6.6L biturbo (N74)",
+                "cylindree": "6.6L",
+                "puissance_ch": 601,
+                "boite": [
+                  "BVA8 (ZF 8HP)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Consommation de carburant très élevée",
+                    "symptomes": [
+                      "Régulièrement supérieure à 18-20L/100km"
+                    ],
+                    "kilometrage_apparition": "Caractéristique",
+                    "diagnostic": "Mesure directe",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible (coût d'usage)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Panne de compresseur de la suspension pneumatique active",
+                    "symptomes": [
+                      "Affaissement"
+                    ],
+                    "kilometrage_apparition": "Aléatoire",
+                    "diagnostic": "Lecture des codes défauts",
+                    "piece_concernee": "Suspension pneumatique",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Base technique partagée avec BMW Série 7 de l'époque",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Entretien spécialisé Rolls-Royce recommandé pour la finition",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A (positif, globalement fiable)",
+                    "gravite": "Faible",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Pannes capricieuses de calculateurs multiples",
+                    "symptomes": [
+                      "Dysfonctionnements divers"
+                    ],
+                    "kilometrage_apparition": "Variable",
+                    "diagnostic": "Diagnostic complet",
+                    "piece_concernee": "Électronique embarquée",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "Ghost (2ème génération)",
+            "annees": "2020-présent",
+            "phases": [
+              "Ghost (2020-présent)",
+              "Black Badge (2021-présent)",
+              "Extended Wheelbase"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "6.75L V12 biturbo - 571 à 600ch (Black Badge)",
+                "code_moteur": "BMW V12 6.75L biturbo (N74)",
+                "cylindree": "6.75L",
+                "puissance_ch": 600,
+                "boite": [
+                  "BVA8 (ZF 8HP)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Consommation de carburant très élevée",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Caractéristique",
+                    "diagnostic": "Mesure directe",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible (coût d'usage)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Complexité et coût de la suspension pneumatique active « Planar »",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de panne",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Suspension Planar",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Réparations après choc spécifiques sur plateforme aluminium spatiale",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de choc",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Structure aluminium",
+                    "gravite": "Faible (coût)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Bugs logiciels du système électronique et multimédia",
+                    "symptomes": [
+                      "Dysfonctionnements divers"
+                    ],
+                    "kilometrage_apparition": "Sur les premières années",
+                    "diagnostic": "Mise à jour logicielle",
+                    "piece_concernee": "Système multimédia",
+                    "gravite": "Faible",
+                    "frequence": "Fréquent sur premières années",
+                    "cout_reparation_estime": "Faible"
+                  },
+                  {
+                    "probleme": "Retour de fiabilité communautaire encore en consolidation",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Modèle relativement récent",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A",
+                    "gravite": "Indéterminée",
+                    "frequence": "Indéterminée",
+                    "cout_reparation_estime": "Indéterminé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Wraith",
+        "generations": [
+          {
+            "code_chassis": "Wraith",
+            "annees": "2013-2023",
+            "phases": [
+              "Wraith (2013-2023)",
+              "Black Badge (2016-2023)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "6.6L V12 biturbo - 632 à 642ch (Black Badge)",
+                "code_moteur": "BMW V12 6.6L biturbo (N74)",
+                "cylindree": "6.6L",
+                "puissance_ch": 642,
+                "boite": [
+                  "BVA8 (ZF 8HP)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Consommation de carburant extrêmement élevée en usage sportif",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Caractéristique",
+                    "diagnostic": "Mesure directe",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible (coût d'usage)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Panne de la suspension pneumatique active",
+                    "symptomes": [
+                      "Affaissement"
+                    ],
+                    "kilometrage_apparition": "Aléatoire",
+                    "diagnostic": "Lecture des codes défauts",
+                    "piece_concernee": "Suspension pneumatique",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Plateforme aluminium partagée avec la Ghost de l'époque",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Entretien spécialisé requis",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A (globalement robuste)",
+                    "gravite": "Faible",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Pannes du mécanisme du toit ouvrant panoramique (Starlight, en option)",
+                    "symptomes": [
+                      "Grippage ou fuite"
+                    ],
+                    "kilometrage_apparition": "Aléatoire",
+                    "diagnostic": "Test de fonctionnement",
+                    "piece_concernee": "Toit ouvrant Starlight",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Usure accélérée de freins et pneumatiques liée au poids",
+                    "symptomes": [
+                      "Usure accélérée"
+                    ],
+                    "kilometrage_apparition": "Cumulatif",
+                    "diagnostic": "Contrôle régulier",
+                    "piece_concernee": "Freins / pneumatiques",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Dawn",
+        "generations": [
+          {
+            "code_chassis": "Dawn",
+            "annees": "2015-2023",
+            "phases": [
+              "Dawn Cabriolet (2015-2023)",
+              "Black Badge (2018-2023)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "6.6L V12 biturbo - 571 à 601ch (Black Badge)",
+                "code_moteur": "BMW V12 6.6L biturbo (N74)",
+                "cylindree": "6.6L",
+                "puissance_ch": 601,
+                "boite": [
+                  "BVA8 (ZF 8HP)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Consommation de carburant extrêmement élevée",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Caractéristique",
+                    "diagnostic": "Mesure directe",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible (coût d'usage)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Pannes du mécanisme électrique de la capote multicouche",
+                    "symptomes": [
+                      "Fonctionnement capricieux ou blocage"
+                    ],
+                    "kilometrage_apparition": "Joints à changer préventivement après plusieurs années",
+                    "diagnostic": "Test de fonctionnement",
+                    "piece_concernee": "Capote multicouche",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Panne de la suspension pneumatique active",
+                    "symptomes": [
+                      "Affaissement"
+                    ],
+                    "kilometrage_apparition": "Aléatoire",
+                    "diagnostic": "Lecture des codes défauts",
+                    "piece_concernee": "Suspension pneumatique",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Sollicitation accrue de la structure sur mauvaises routes (absence de toit fixe)",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Structurel",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Structure",
+                    "gravite": "Faible (comportement)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Usure accélérée de freins et pneumatiques liée au poids",
+                    "symptomes": [
+                      "Usure accélérée"
+                    ],
+                    "kilometrage_apparition": "Cumulatif",
+                    "diagnostic": "Contrôle régulier",
+                    "piece_concernee": "Freins / pneumatiques",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Cullinan",
+        "generations": [
+          {
+            "code_chassis": "Cullinan",
+            "annees": "2018-présent",
+            "phases": [
+              "Cullinan (2018-présent)",
+              "Black Badge (2019-présent)",
+              "Facelift Series II (2024-présent)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "6.75L V12 biturbo - 571 à 600ch (Black Badge)",
+                "code_moteur": "BMW V12 6.75L biturbo (N74)",
+                "cylindree": "6.75L",
+                "puissance_ch": 600,
+                "boite": [
+                  "BVA8 (ZF 8HP)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Consommation de carburant extrêmement élevée en usage urbain",
+                    "symptomes": [
+                      "Régulièrement supérieure à 20L/100km"
+                    ],
+                    "kilometrage_apparition": "Caractéristique",
+                    "diagnostic": "Mesure directe",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible (coût d'usage)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Complexité et coût de la suspension pneumatique active « Planar »",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de panne de compresseur",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Suspension Planar",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Usure accélérée de freins et pneumatiques liée au poids (plus de 2 700 kg)",
+                    "symptomes": [
+                      "Usure accélérée"
+                    ],
+                    "kilometrage_apparition": "Cumulatif",
+                    "diagnostic": "Contrôle régulier",
+                    "piece_concernee": "Freins / pneumatiques",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Bugs logiciels du système électronique et multimédia",
+                    "symptomes": [
+                      "Dysfonctionnements divers"
+                    ],
+                    "kilometrage_apparition": "Sur les premières années",
+                    "diagnostic": "Mise à jour logicielle",
+                    "piece_concernee": "Système multimédia",
+                    "gravite": "Faible",
+                    "frequence": "Fréquent sur premières années",
+                    "cout_reparation_estime": "Faible"
+                  },
+                  {
+                    "probleme": "Retour de fiabilité communautaire encore en consolidation",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Modèle relativement récent",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A",
+                    "gravite": "Indéterminée",
+                    "frequence": "Indéterminée",
+                    "cout_reparation_estime": "Indéterminé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Spectre",
+        "generations": [
+          {
+            "code_chassis": "Spectre",
+            "annees": "2023-présent",
+            "phases": [
+              "Spectre (2023-présent)"
+            ],
+            "motorisations": [
+              {
+                "type": "Électrique",
+                "nom": "Spectre - 585ch",
+                "code_moteur": "Deux moteurs électriques synchrones à aimants permanents (transmission intégrale)",
+                "cylindree": "N/A",
+                "puissance_ch": 585,
+                "boite": [
+                  "Rapport fixe (pas de boîte de vitesses)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Absence de retour de fiabilité long terme",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Premier véhicule entièrement électrique de la marque",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A",
+                    "gravite": "Indéterminée",
+                    "frequence": "Indéterminée",
+                    "cout_reparation_estime": "Indéterminé"
+                  },
+                  {
+                    "probleme": "Sollicitation forte de pneumatiques et suspension par le poids de la batterie",
+                    "symptomes": [
+                      "Usure accélérée"
+                    ],
+                    "kilometrage_apparition": "Cumulatif",
+                    "diagnostic": "Contrôle régulier",
+                    "piece_concernee": "Pneumatiques / suspension",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Complexité et coût potentiel de la suspension pneumatique active « Planar »",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de panne",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Suspension Planar",
+                    "gravite": "Majeure",
+                    "frequence": "Indéterminée",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Autonomie réelle probablement inférieure à l'annoncée",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Par temps froid ou en usage dynamique",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Batterie",
+                    "gravite": "Faible",
+                    "frequence": "Indéterminée",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Coût de remplacement de la batterie potentiellement extrêmement élevé hors garantie",
+                    "symptomes": [],
+                    "kilometrage_apparition": "N/A",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Batterie haute tension",
+                    "gravite": "Critique (coût)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Extrêmement élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Silver Cloud",
+        "generations": [
+          {
+            "code_chassis": "Silver Cloud I/II/III",
+            "annees": "1955-1966",
+            "phases": [
+              "Silver Cloud I (1955-1959)",
+              "Silver Cloud II (1959-1962, introduction du V8)",
+              "Silver Cloud III (1962-1966)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "4.9L 6 cylindres (I) puis 6.2L/6.75L V8 (II/III) - environ 178 à 220ch",
+                "code_moteur": "Rolls-Royce 6 cylindres 4.9L (Silver Cloud I) / Rolls-Royce V8 6.2L puis 6.75L (Silver Cloud II/III)",
+                "cylindree": "6.75L",
+                "puissance_ch": 220,
+                "boite": [
+                  "BVA4 (Rolls-Royce/GM Hydramatic)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Corrosion électrolytique interne du bloc V8 alu (Silver Cloud II/III) si liquide de refroidissement négligé",
+                    "symptomes": [
+                      "Colmatage progressif des conduits, surchauffe"
+                    ],
+                    "kilometrage_apparition": "Progressive avec la négligence d'entretien",
+                    "diagnostic": "Analyse du liquide de refroidissement",
+                    "piece_concernee": "Bloc-moteur V8",
+                    "gravite": "Majeure",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Corrosion de la carrosserie sur ossature acier avec panneaux d'aluminium sur certains éléments",
+                    "symptomes": [
+                      "Rouille, corrosion électrolytique aux jonctions"
+                    ],
+                    "kilometrage_apparition": "Fréquente sur exemplaires non restaurés",
+                    "diagnostic": "Sondage systématique et examen des jonctions",
+                    "piece_concernee": "Carrosserie",
+                    "gravite": "Critique",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Système de graissage centralisé d'origine complexe et souvent négligé",
+                    "symptomes": [
+                      "Usure accélérée des articulations si non entretenu"
+                    ],
+                    "kilometrage_apparition": "Fréquente sur exemplaires mal suivis",
+                    "diagnostic": "Contrôle du plan de graissage suivi",
+                    "piece_concernee": "Système de graissage centralisé",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Encrassement des carburateurs SU (Silver Cloud I) ou du système d'alimentation V8",
+                    "symptomes": [
+                      "Ralenti irrégulier"
+                    ],
+                    "kilometrage_apparition": "Réglage pointu nécessaire",
+                    "diagnostic": "Démontage et nettoyage",
+                    "piece_concernee": "Alimentation carburant",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Introduction progressive de la direction assistée et des freins assistés hydrauliquement, réglages délicats sur les exemplaires anciens",
+                    "symptomes": [
+                      "Direction ou freinage dégradé si mal entretenu"
+                    ],
+                    "kilometrage_apparition": "Selon année et niveau d'équipement",
+                    "diagnostic": "Contrôle par un spécialiste Rolls-Royce vintage",
+                    "piece_concernee": "Direction assistée / freins assistés",
+                    "gravite": "Majeure (sécurité)",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Phantom V / Phantom VI",
+        "generations": [
+          {
+            "code_chassis": "Phantom V/VI",
+            "annees": "1959-1992",
+            "phases": [
+              "Phantom V (1959-1968)",
+              "Phantom VI (1968-1992, principalement limousines de représentation officielle)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "6.2L / 6.75L V8 - environ 220ch",
+                "code_moteur": "Rolls-Royce V8 6.2L puis 6.75L",
+                "cylindree": "6.75L",
+                "puissance_ch": 220,
+                "boite": [
+                  "BVA4 (Rolls-Royce/GM Hydramatic)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Poids considérable de la limousine à empattement très long sollicitant fortement freins et suspension",
+                    "symptomes": [
+                      "Usure accélérée des composants"
+                    ],
+                    "kilometrage_apparition": "Cumulatif avec l'usage",
+                    "diagnostic": "Contrôle régulier des trains roulants",
+                    "piece_concernee": "Freins / suspension",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Corrosion électrolytique interne du bloc V8 alu si liquide de refroidissement négligé",
+                    "symptomes": [
+                      "Surchauffe"
+                    ],
+                    "kilometrage_apparition": "Progressive",
+                    "diagnostic": "Analyse du liquide de refroidissement",
+                    "piece_concernee": "Bloc-moteur V8",
+                    "gravite": "Majeure",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Carrosserie coachbuilt (Mulliner Park Ward) aux dimensions et à la complexité exceptionnelles rendant toute réparation très spécifique",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de choc ou de corrosion avancée",
+                    "diagnostic": "Réservé à un très petit nombre d'ateliers coachbuilt spécialisés",
+                    "piece_concernee": "Carrosserie coachbuilt",
+                    "gravite": "Critique (coût)",
+                    "frequence": "Rare",
+                    "cout_reparation_estime": "Extrêmement élevé"
+                  },
+                  {
+                    "probleme": "Production quasi entièrement destinée à des usages officiels (chefs d'État, cérémonies), historique d'entretien parfois incomplet sur les exemplaires passés en collection privée",
+                    "symptomes": [],
+                    "kilometrage_apparition": "N/A",
+                    "diagnostic": "Expertise complète recommandée avant achat",
+                    "piece_concernee": "N/A",
+                    "gravite": "Modérée",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Rareté des pièces spécifiques à l'empattement très long et aux équipements de représentation (cloison de séparation électrique, etc.)",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Aléatoire",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Équipements spécifiques",
+                    "gravite": "Majeure (disponibilité)",
+                    "frequence": "Rare",
+                    "cout_reparation_estime": "Élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Camargue",
+        "generations": [
+          {
+            "code_chassis": "Camargue",
+            "annees": "1975-1986",
+            "phases": [
+              "Camargue (1975-1986, coupé 2 portes dessiné par Pininfarina, un temps la Rolls-Royce la plus chère jamais produite)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "6.75L V8 - puissance non communiquée (estimée 220ch)",
+                "code_moteur": "Rolls-Royce V8 6.75L",
+                "cylindree": "6.75L",
+                "puissance_ch": 220,
+                "boite": [
+                  "BVA3 (GM Turbo Hydramatic)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Système de climatisation bi-zone à double compresseur, extrêmement complexe pour l'époque et l'un des plus sophistiqués jamais montés sur une automobile de série de cette génération",
+                    "symptomes": [
+                      "Pannes fréquentes et coûteuses à diagnostiquer"
+                    ],
+                    "kilometrage_apparition": "Fréquente avec l'âge du système",
+                    "diagnostic": "Diagnostic réservé à un très petit nombre de spécialistes formés à ce système spécifique",
+                    "piece_concernee": "Climatisation bi-zone",
+                    "gravite": "Majeure",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Corrosion interne du bloc V8 alu si liquide de refroidissement négligé",
+                    "symptomes": [
+                      "Surchauffe"
+                    ],
+                    "kilometrage_apparition": "Progressive",
+                    "diagnostic": "Analyse du liquide de refroidissement",
+                    "piece_concernee": "Bloc-moteur V8",
+                    "gravite": "Majeure",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Suspension hydropneumatique Citroën-dérivée sujette à fuites de sphères et de LHM",
+                    "symptomes": [
+                      "Affaissement"
+                    ],
+                    "kilometrage_apparition": "Fréquente",
+                    "diagnostic": "Test de pression des sphères",
+                    "piece_concernee": "Suspension hydropneumatique",
+                    "gravite": "Majeure",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Carrosserie Pininfarina construite en Italie puis finie en Angleterre, avec des tolérances d'assemblage jugées inégales à l'époque",
+                    "symptomes": [
+                      "Jeux de carrosserie irréguliers",
+                      "Infiltrations possibles"
+                    ],
+                    "kilometrage_apparition": "Variable selon exemplaire",
+                    "diagnostic": "Contrôle des jeux de carrosserie et de l'étanchéité",
+                    "piece_concernee": "Carrosserie",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Production très limitée (moins de 531 exemplaires) rendant certaines pièces de carrosserie et d'habillage très rares",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Aléatoire",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Pièces de carrosserie spécifiques",
+                    "gravite": "Majeure (disponibilité)",
+                    "frequence": "Rare",
+                    "cout_reparation_estime": "Très élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

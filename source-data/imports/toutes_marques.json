@@ -2595,6 +2595,207 @@
             ]
           }
         ]
+      },
+      {
+        "nom": "Cygnet",
+        "generations": [
+          {
+            "code_chassis": "Cygnet",
+            "annees": "2011-2013",
+            "phases": [
+              "Cygnet (2011-2013)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.33L 4 cylindres - 98ch",
+                "code_moteur": "Toyota 1NR-FE 1.33L (base Toyota iQ rebadgée)",
+                "cylindree": "1.33L",
+                "puissance_ch": 98,
+                "boite": [
+                  "BVM5 (Toyota)",
+                  "BVA CVT (Toyota Multidrive)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Base technique intégralement Toyota iQ sous une carrosserie retravaillée",
+                    "symptomes": [],
+                    "kilometrage_apparition": "N/A (fiabilité mécanique héritée de Toyota, globalement bonne)",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A (positif)",
+                    "gravite": "N/A",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Coût des pièces de carrosserie et de sellerie spécifiques Aston Martin",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de choc ou d'usure de la sellerie en cuir",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Carrosserie / sellerie",
+                    "gravite": "Faible (coût plutôt que panne)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Élevé (pièces facturées au tarif Aston Martin)"
+                  },
+                  {
+                    "probleme": "Très faible diffusion commerciale (échec commercial du modèle)",
+                    "symptomes": [],
+                    "kilometrage_apparition": "N/A",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A (disponibilité de service)",
+                    "gravite": "Faible",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Entretien courant à confier à un réseau Toyota pour la mécanique, Aston Martin pour la carrosserie",
+                    "symptomes": [],
+                    "kilometrage_apparition": "N/A",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "One-77",
+        "generations": [
+          {
+            "code_chassis": "One-77",
+            "annees": "2009-2012",
+            "phases": [
+              "One-77 (2009-2012, série limitée à 77 exemplaires)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "7.3L V12 atmosphérique - 750ch",
+                "code_moteur": "Aston Martin/Cosworth V12 7.3L atmosphérique",
+                "cylindree": "7.3L",
+                "puissance_ch": 750,
+                "boite": [
+                  "BVA6 séquentielle robotisée (Graziano)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Entretien exclusivement réservé au constructeur, production ultra-limitée (77 exemplaires)",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Dès la livraison",
+                    "diagnostic": "Uniquement via le réseau Aston Martin spécialisé",
+                    "piece_concernee": "N/A (disponibilité de service)",
+                    "gravite": "Majeure (disponibilité)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Réactivité et douceur de la boîte séquentielle robotisée jugées datées",
+                    "symptomes": [
+                      "À-coups aux changements de rapport"
+                    ],
+                    "kilometrage_apparition": "Dès l'origine",
+                    "diagnostic": "N/A (caractéristique de conception)",
+                    "piece_concernee": "Boîte robotisée",
+                    "gravite": "Faible (confort)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Rareté extrême des pièces mécaniques et de carrosserie spécifiques",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Aléatoire",
+                    "diagnostic": "Approvisionnement long, pièces parfois refabriquées sur mesure",
+                    "piece_concernee": "Pièces diverses",
+                    "gravite": "Critique (disponibilité)",
+                    "frequence": "Rare",
+                    "cout_reparation_estime": "Extrêmement élevé"
+                  },
+                  {
+                    "probleme": "Coût de réparation du châssis en fibre de carbone après choc",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de choc",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Châssis carbone",
+                    "gravite": "Critique (coût)",
+                    "frequence": "Rare",
+                    "cout_reparation_estime": "Extrêmement élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Vulcan",
+        "generations": [
+          {
+            "code_chassis": "Vulcan",
+            "annees": "2015-2016",
+            "phases": [
+              "Vulcan (2015-2016, série limitée à 24 exemplaires, exclusivement piste)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "7.0L V12 atmosphérique - 831ch",
+                "code_moteur": "Aston Martin V12 7.0L atmosphérique (dérivé compétition)",
+                "cylindree": "7.0L",
+                "puissance_ch": 831,
+                "boite": [
+                  "Séquentielle 6 rapports (Xtrac)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Véhicule exclusivement destiné à la piste, non homologué route",
+                    "symptomes": [],
+                    "kilometrage_apparition": "N/A",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A",
+                    "gravite": "N/A",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Entretien exclusivement réservé au constructeur, production ultra-limitée (24 exemplaires)",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Dès la livraison",
+                    "diagnostic": "Programme d'accompagnement piste dédié par Aston Martin",
+                    "piece_concernee": "N/A (disponibilité de service)",
+                    "gravite": "Majeure (disponibilité)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "Extrêmement élevé"
+                  },
+                  {
+                    "probleme": "Usure très rapide des consommables (pneus slicks, freins carbone-céramique) en usage circuit intensif",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Dès les premières sorties piste",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Pneumatiques / freins",
+                    "gravite": "Faible (coût d'usage)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "Extrêmement élevé"
+                  },
+                  {
+                    "probleme": "Complexité du système aérodynamique actif et du diagnostic électronique de compétition",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de panne",
+                    "diagnostic": "Réservé aux ingénieurs de piste dédiés au programme",
+                    "piece_concernee": "Aérodynamique active / électronique course",
+                    "gravite": "Critique",
+                    "frequence": "Rare",
+                    "cout_reparation_estime": "Extrêmement élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -3440,7 +3641,6 @@
                     "symptomes": [
                       "Dysfonctionnements mineurs divers"
                     ],
-                    "apparition": "N/A",
                     "kilometrage_apparition": "Fréquent sur cette architecture électronique dense",
                     "diagnostic": "Mise à jour logicielle en concession",
                     "piece_concernee": "Électronique embarquée",
@@ -8910,6 +9110,246 @@
             ]
           }
         ]
+      },
+      {
+        "nom": "XK120 / XK140 / XK150",
+        "generations": [
+          {
+            "code_chassis": "XK120/140/150",
+            "annees": "1948-1961",
+            "phases": [
+              "XK120 (1948-1954)",
+              "XK140 (1954-1957)",
+              "XK150 (1957-1961)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "3.4L / 3.8L XK - 160 à 265ch (XK150S)",
+                "code_moteur": "Jaguar XK 3.4L / 3.8L (6 cylindres double arbre à cames)",
+                "cylindree": "3.8L",
+                "puissance_ch": 265,
+                "boite": [
+                  "BVM4"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Corrosion du châssis en échelle et de la carrosserie",
+                    "symptomes": [
+                      "Rouille perforante"
+                    ],
+                    "kilometrage_apparition": "Fréquente sur exemplaires non restaurés",
+                    "diagnostic": "Sondage systématique au marteau lors d'une expertise",
+                    "piece_concernee": "Châssis / carrosserie",
+                    "gravite": "Critique",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Déréglage des carburateurs SU triples",
+                    "symptomes": [
+                      "Ralenti irrégulier",
+                      "Perte de reprise"
+                    ],
+                    "kilometrage_apparition": "Réglage pointu nécessaire régulièrement",
+                    "diagnostic": "Réglage au manomètre de dépression",
+                    "piece_concernee": "Alimentation carburant",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Faible à modéré"
+                  },
+                  {
+                    "probleme": "Sensibilité du joint de culasse en cas de surchauffe",
+                    "symptomes": [
+                      "Perte de compression"
+                    ],
+                    "kilometrage_apparition": "Système de refroidissement d'époque limité",
+                    "diagnostic": "Test de compression",
+                    "piece_concernee": "Culasse",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Freins tambour peu endurants (XK120/140) puis disque (XK150)",
+                    "symptomes": [
+                      "Efficacité limitée en usage soutenu sur les premières versions"
+                    ],
+                    "kilometrage_apparition": "Selon génération",
+                    "diagnostic": "Test de freinage",
+                    "piece_concernee": "Freins",
+                    "gravite": "Majeure (sécurité, XK120/140 surtout)",
+                    "frequence": "Fréquent sur XK120/140",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Faisceau électrique Lucas d'époque fragile",
+                    "symptomes": [
+                      "Pannes de charge et d'éclairage"
+                    ],
+                    "kilometrage_apparition": "Progressive avec l'âge",
+                    "diagnostic": "Test de continuité",
+                    "piece_concernee": "Faisceau électrique",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré à élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Mark 1 (2.4 / 3.4 Litre)",
+        "generations": [
+          {
+            "code_chassis": "Mark 1",
+            "annees": "1955-1959",
+            "phases": [
+              "2.4 Litre (1955-1957)",
+              "3.4 Litre (1957-1959)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "2.4L / 3.4L XK - 112 à 210ch",
+                "code_moteur": "Jaguar XK 2.4L / 3.4L",
+                "cylindree": "3.4L",
+                "puissance_ch": 210,
+                "boite": [
+                  "BVM4"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Corrosion sévère de la caisse monocoque (première Jaguar berline à structure autoporteuse)",
+                    "symptomes": [
+                      "Rouille perforante généralisée"
+                    ],
+                    "kilometrage_apparition": "Très fréquente, structure d'époque peu protégée",
+                    "diagnostic": "Sondage systématique au marteau",
+                    "piece_concernee": "Carrosserie monocoque",
+                    "gravite": "Critique",
+                    "frequence": "Très fréquent",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Voie arrière étroite réputée pour un comportement routier limite en virage rapide (défaut de conception connu)",
+                    "symptomes": [
+                      "Décrochage arrière en virage rapide"
+                    ],
+                    "kilometrage_apparition": "Caractéristique de conception d'origine",
+                    "diagnostic": "N/A (comportement plutôt que panne)",
+                    "piece_concernee": "Voie arrière / suspension",
+                    "gravite": "Modérée (sécurité)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Encrassement des carburateurs SU",
+                    "symptomes": [
+                      "Ralenti irrégulier"
+                    ],
+                    "kilometrage_apparition": "Réglage pointu nécessaire",
+                    "diagnostic": "Démontage et nettoyage",
+                    "piece_concernee": "Alimentation carburant",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Faible à modéré"
+                  },
+                  {
+                    "probleme": "Freins tambour peu endurants sur les 3.4 Litre les plus puissantes",
+                    "symptomes": [
+                      "Distance de freinage allongée"
+                    ],
+                    "kilometrage_apparition": "Systématique en usage dynamique",
+                    "diagnostic": "Test de freinage",
+                    "piece_concernee": "Freins",
+                    "gravite": "Majeure (sécurité)",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "XJ220",
+        "generations": [
+          {
+            "code_chassis": "XJ220",
+            "annees": "1992-1994",
+            "phases": [
+              "XJ220 (1992-1994, série limitée à 281 exemplaires)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "3.5L V6 biturbo - 542ch",
+                "code_moteur": "Jaguar/TWR V6 3.5L biturbo (dérivé du moteur de compétition, à la place du V12 initialement prévu)",
+                "cylindree": "3.5L",
+                "puissance_ch": 542,
+                "boite": [
+                  "BVM5 (Jaguar/TWR)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Choix controversé du V6 biturbo à la place du V12 initialement annoncé, ayant entraîné des annulations de commandes à l'époque",
+                    "symptomes": [],
+                    "kilometrage_apparition": "N/A (historique commercial)",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A",
+                    "gravite": "N/A",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Sollicitation extrême des turbos biturbo à haute vitesse soutenue",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Gestion thermique critique",
+                    "diagnostic": "Surveillance des paramètres moteur, spécialiste requis",
+                    "piece_concernee": "Turbocompresseurs",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Rareté extrême des pièces mécaniques et électroniques (production arrêtée depuis 1994)",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Aléatoire",
+                    "diagnostic": "Réseau de spécialistes très restreint, pièces parfois refabriquées sur mesure",
+                    "piece_concernee": "Pièces diverses",
+                    "gravite": "Critique (disponibilité)",
+                    "frequence": "Rare",
+                    "cout_reparation_estime": "Extrêmement élevé"
+                  },
+                  {
+                    "probleme": "Coût de réparation du châssis en aluminium après choc",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de choc",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Châssis aluminium",
+                    "gravite": "Critique (coût)",
+                    "frequence": "Rare",
+                    "cout_reparation_estime": "Extrêmement élevé"
+                  },
+                  {
+                    "probleme": "Absence de systèmes d'assistance modernes (ABS non systématique selon année) imposant une conduite très maîtrisée",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Caractéristique d'époque",
+                    "diagnostic": "N/A (usage plutôt que panne)",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -10316,6 +10756,223 @@
                     "gravite": "Modérée",
                     "frequence": "N/A",
                     "cout_reparation_estime": "N/A"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "3 Litre / 4.5 Litre (dont Blower Bentley)",
+        "generations": [
+          {
+            "code_chassis": "3 Litre / 4.5 Litre",
+            "annees": "1921-1931",
+            "phases": [
+              "3 Litre (1921-1929)",
+              "4.5 Litre (1927-1931)",
+              "4.5 Litre Supercharged 'Blower' (1929-1931)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "4.5L 4 cylindres suralimenté (Blower) - environ 175ch",
+                "code_moteur": "Bentley 4 cylindres 4.5L à compresseur Roots (préconisé par Sir Henry Birkin, contre l'avis de W.O. Bentley lui-même)",
+                "cylindree": "4.5L",
+                "puissance_ch": 175,
+                "boite": [
+                  "BVM4 (crash gearbox, non synchronisée)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Boîte non synchronisée exigeant une maîtrise experte du double débrayage",
+                    "symptomes": [
+                      "Craquement en cas de mauvaise manipulation"
+                    ],
+                    "kilometrage_apparition": "Caractéristique d'origine, aucune tolérance à l'erreur",
+                    "diagnostic": "N/A (usage plutôt que panne)",
+                    "piece_concernee": "Boîte de vitesses (crash gearbox)",
+                    "gravite": "Modérée",
+                    "frequence": "Systématique pour un conducteur non expérimenté",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Fiabilité historiquement inférieure au 4.5 Litre atmosphérique selon W.O. Bentley lui-même (le compresseur n'a jamais remporté les 24h du Mans)",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Documenté historiquement",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Compresseur Roots",
+                    "gravite": "Majeure",
+                    "frequence": "Documenté à l'époque de la compétition",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Corrosion et fatigue du châssis et de la carrosserie coachbuilt d'époque",
+                    "symptomes": [
+                      "Rouille, jeu structurel"
+                    ],
+                    "kilometrage_apparition": "Après un siècle d'existence pour la plupart des exemplaires survivants",
+                    "diagnostic": "Expertise par un spécialiste Bentley Vintage (W.O. Bentley era)",
+                    "piece_concernee": "Châssis / carrosserie coachbuilt",
+                    "gravite": "Critique",
+                    "frequence": "Systématique sur exemplaires non restaurés récemment",
+                    "cout_reparation_estime": "Extrêmement élevé"
+                  },
+                  {
+                    "probleme": "Rareté absolue des pièces mécaniques d'origine (moins de 55 Blower produites)",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Aléatoire",
+                    "diagnostic": "Réseau de spécialistes vintage très restreint, pièces refabriquées sur mesure",
+                    "piece_concernee": "Pièces mécaniques diverses",
+                    "gravite": "Critique (disponibilité)",
+                    "frequence": "Rare",
+                    "cout_reparation_estime": "Extrêmement élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Mark VI",
+        "generations": [
+          {
+            "code_chassis": "Mark VI",
+            "annees": "1946-1952",
+            "phases": [
+              "Mark VI (1946-1952, première Bentley d'après-guerre à carrosserie usine standardisée)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "4.25L / 4.5L 6 cylindres - environ 130ch",
+                "code_moteur": "Rolls-Royce/Bentley 6 cylindres 4.25L puis 4.5L",
+                "cylindree": "4.5L",
+                "puissance_ch": 130,
+                "boite": [
+                  "BVM4"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Corrosion de la carrosserie monocoque en acier (première Bentley construite en usine plutôt que carrossée sur mesure)",
+                    "symptomes": [
+                      "Rouille perforante"
+                    ],
+                    "kilometrage_apparition": "Fréquente sur exemplaires non restaurés",
+                    "diagnostic": "Sondage systématique",
+                    "piece_concernee": "Carrosserie monocoque",
+                    "gravite": "Critique",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Encrassement des carburateurs SU d'époque",
+                    "symptomes": [
+                      "Ralenti irrégulier"
+                    ],
+                    "kilometrage_apparition": "Réglage pointu nécessaire",
+                    "diagnostic": "Démontage et nettoyage",
+                    "piece_concernee": "Alimentation carburant",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Faible à modéré"
+                  },
+                  {
+                    "probleme": "Système de graissage centralisé d'origine complexe et souvent négligé",
+                    "symptomes": [
+                      "Usure accélérée des articulations si non entretenu"
+                    ],
+                    "kilometrage_apparition": "Fréquente sur exemplaires mal suivis",
+                    "diagnostic": "Contrôle du plan de graissage suivi",
+                    "piece_concernee": "Système de graissage centralisé",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Freins hydrauliques avant / mécaniques arrière (système hybride d'époque) à réglage délicat",
+                    "symptomes": [
+                      "Freinage déséquilibré si mal réglé"
+                    ],
+                    "kilometrage_apparition": "Nécessite un réglage expert régulier",
+                    "diagnostic": "Contrôle du freinage par un spécialiste vintage",
+                    "piece_concernee": "Système de freinage hybride",
+                    "gravite": "Majeure (sécurité)",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "R-Type Continental",
+        "generations": [
+          {
+            "code_chassis": "R-Type Continental",
+            "annees": "1952-1955",
+            "phases": [
+              "R-Type Continental (1952-1955, carrosserie Fastback H.J. Mulliner, icône du style Bentley)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "4.9L 6 cylindres - environ 153ch",
+                "code_moteur": "Rolls-Royce/Bentley 6 cylindres 4.9L (rapport de compression et carburateurs optimisés pour la grande vitesse routière)",
+                "cylindree": "4.9L",
+                "puissance_ch": 153,
+                "boite": [
+                  "BVM4"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Rareté extrême (moins de 210 exemplaires produits, dont une majorité carrossés par H.J. Mulliner)",
+                    "symptomes": [],
+                    "kilometrage_apparition": "N/A",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A (disponibilité)",
+                    "gravite": "Critique (disponibilité)",
+                    "frequence": "Rare",
+                    "cout_reparation_estime": "Extrêmement élevé"
+                  },
+                  {
+                    "probleme": "Corrosion de la structure en aluminium sur ossature acier (construction coachbuilt d'époque)",
+                    "symptomes": [
+                      "Corrosion électrolytique aux points de jonction"
+                    ],
+                    "kilometrage_apparition": "Fréquente après plusieurs décennies",
+                    "diagnostic": "Expertise par un spécialiste coachbuilt Bentley vintage",
+                    "piece_concernee": "Carrosserie aluminium sur ossature acier",
+                    "gravite": "Critique",
+                    "frequence": "Fréquent sur exemplaires non restaurés",
+                    "cout_reparation_estime": "Extrêmement élevé"
+                  },
+                  {
+                    "probleme": "Encrassement des carburateurs SU triples optimisés grande vitesse",
+                    "symptomes": [
+                      "Ralenti irrégulier",
+                      "Perte de performance"
+                    ],
+                    "kilometrage_apparition": "Réglage très pointu nécessaire",
+                    "diagnostic": "Réglage au manomètre par un spécialiste",
+                    "piece_concernee": "Alimentation carburant",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré à élevé"
+                  },
+                  {
+                    "probleme": "Coût de restauration disproportionné en cas de carrosserie très dégradée compte tenu de la valeur patrimoniale du modèle",
+                    "symptomes": [],
+                    "kilometrage_apparition": "N/A",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A",
+                    "gravite": "Critique (coût)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Extrêmement élevé"
                   }
                 ]
               }
@@ -11757,6 +12414,91 @@
             ]
           }
         ]
+      },
+      {
+        "nom": "Seven",
+        "generations": [
+          {
+            "code_chassis": "Seven (Series 1-4)",
+            "annees": "1957-1972",
+            "phases": [
+              "Series 1 (1957-1960)",
+              "Series 2 (1960-1968)",
+              "Series 3 (1968-1970)",
+              "Series 4 (1970-1972, avant cession de la licence à Caterham en 1973)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.5L / 1.6L Ford Kent - 75 à 126ch (Twin Cam)",
+                "code_moteur": "Ford Kent 1.5L/1.6L puis Lotus-Ford Twin Cam 1.6L (Series 4)",
+                "cylindree": "1.6L",
+                "puissance_ch": 126,
+                "boite": [
+                  "BVM4"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Corrosion du châssis tubulaire léger",
+                    "symptomes": [
+                      "Rouille structurelle sur les modèles non entretenus"
+                    ],
+                    "kilometrage_apparition": "Fréquente sur exemplaires anciens sans restauration",
+                    "diagnostic": "Sondage systématique de la structure",
+                    "piece_concernee": "Châssis tubulaire",
+                    "gravite": "Critique",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Exposition totale aux intempéries (absence de toit et de portes réelles sur la plupart des versions)",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Caractéristique de conception",
+                    "diagnostic": "N/A (usage plutôt que panne)",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Encrassement des carburateurs Weber/Ford d'époque",
+                    "symptomes": [
+                      "Ralenti irrégulier"
+                    ],
+                    "kilometrage_apparition": "Fréquent en cas d'usage occasionnel",
+                    "diagnostic": "Démontage et nettoyage",
+                    "piece_concernee": "Alimentation carburant",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Faible à modéré"
+                  },
+                  {
+                    "probleme": "Usure rapide des liaisons au sol très légères en usage sportif intensif",
+                    "symptomes": [
+                      "Perte de précision de conduite"
+                    ],
+                    "kilometrage_apparition": "Progressive",
+                    "diagnostic": "Contrôle du jeu sur pont",
+                    "piece_concernee": "Suspension",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Distinction à faire entre les Lotus Seven d'origine (jusqu'en 1972) et les Caterham Seven produites sous licence ensuite, avec des différences de provenance des pièces",
+                    "symptomes": [],
+                    "kilometrage_apparition": "N/A",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -12645,6 +13387,175 @@
                     "gravite": "Critique (coût)",
                     "frequence": "N/A",
                     "cout_reparation_estime": "Extrêmement élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Silver Cloud",
+        "generations": [
+          {
+            "code_chassis": "Silver Cloud I/II/III",
+            "annees": "1955-1966",
+            "phases": [
+              "Silver Cloud I (1955-1959)",
+              "Silver Cloud II (1959-1962, introduction du V8)",
+              "Silver Cloud III (1962-1966)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "4.9L 6 cylindres (I) puis 6.2L/6.75L V8 (II/III) - environ 178 à 220ch",
+                "code_moteur": "Rolls-Royce 6 cylindres 4.9L (Silver Cloud I) / Rolls-Royce V8 6.2L puis 6.75L (Silver Cloud II/III)",
+                "cylindree": "6.75L",
+                "puissance_ch": 220,
+                "boite": [
+                  "BVA4 (Rolls-Royce/GM Hydramatic)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Corrosion électrolytique interne du bloc V8 alu (Silver Cloud II/III) si liquide de refroidissement négligé",
+                    "symptomes": [
+                      "Colmatage progressif des conduits, surchauffe"
+                    ],
+                    "kilometrage_apparition": "Progressive avec la négligence d'entretien",
+                    "diagnostic": "Analyse du liquide de refroidissement",
+                    "piece_concernee": "Bloc-moteur V8",
+                    "gravite": "Majeure",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Corrosion de la carrosserie sur ossature acier avec panneaux d'aluminium sur certains éléments",
+                    "symptomes": [
+                      "Rouille, corrosion électrolytique aux jonctions"
+                    ],
+                    "kilometrage_apparition": "Fréquente sur exemplaires non restaurés",
+                    "diagnostic": "Sondage systématique et examen des jonctions",
+                    "piece_concernee": "Carrosserie",
+                    "gravite": "Critique",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Système de graissage centralisé d'origine complexe et souvent négligé",
+                    "symptomes": [
+                      "Usure accélérée des articulations si non entretenu"
+                    ],
+                    "kilometrage_apparition": "Fréquente sur exemplaires mal suivis",
+                    "diagnostic": "Contrôle du plan de graissage suivi",
+                    "piece_concernee": "Système de graissage centralisé",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Encrassement des carburateurs SU (Silver Cloud I) ou du système d'alimentation V8",
+                    "symptomes": [
+                      "Ralenti irrégulier"
+                    ],
+                    "kilometrage_apparition": "Réglage pointu nécessaire",
+                    "diagnostic": "Démontage et nettoyage",
+                    "piece_concernee": "Alimentation carburant",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Introduction progressive de la direction assistée et des freins assistés hydrauliquement, réglages délicats sur les exemplaires anciens",
+                    "symptomes": [
+                      "Direction ou freinage dégradé si mal entretenu"
+                    ],
+                    "kilometrage_apparition": "Selon année et niveau d'équipement",
+                    "diagnostic": "Contrôle par un spécialiste Rolls-Royce vintage",
+                    "piece_concernee": "Direction assistée / freins assistés",
+                    "gravite": "Majeure (sécurité)",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Phantom V / Phantom VI",
+        "generations": [
+          {
+            "code_chassis": "Phantom V/VI",
+            "annees": "1959-1992",
+            "phases": [
+              "Phantom V (1959-1968)",
+              "Phantom VI (1968-1992, principalement limousines de représentation officielle)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "6.2L / 6.75L V8 - environ 220ch",
+                "code_moteur": "Rolls-Royce V8 6.2L puis 6.75L",
+                "cylindree": "6.75L",
+                "puissance_ch": 220,
+                "boite": [
+                  "BVA4 (Rolls-Royce/GM Hydramatic)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Poids considérable de la limousine à empattement très long sollicitant fortement freins et suspension",
+                    "symptomes": [
+                      "Usure accélérée des composants"
+                    ],
+                    "kilometrage_apparition": "Cumulatif avec l'usage",
+                    "diagnostic": "Contrôle régulier des trains roulants",
+                    "piece_concernee": "Freins / suspension",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Corrosion électrolytique interne du bloc V8 alu si liquide de refroidissement négligé",
+                    "symptomes": [
+                      "Surchauffe"
+                    ],
+                    "kilometrage_apparition": "Progressive",
+                    "diagnostic": "Analyse du liquide de refroidissement",
+                    "piece_concernee": "Bloc-moteur V8",
+                    "gravite": "Majeure",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Carrosserie coachbuilt (Mulliner Park Ward) aux dimensions et à la complexité exceptionnelles rendant toute réparation très spécifique",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de choc ou de corrosion avancée",
+                    "diagnostic": "Réservé à un très petit nombre d'ateliers coachbuilt spécialisés",
+                    "piece_concernee": "Carrosserie coachbuilt",
+                    "gravite": "Critique (coût)",
+                    "frequence": "Rare",
+                    "cout_reparation_estime": "Extrêmement élevé"
+                  },
+                  {
+                    "probleme": "Production quasi entièrement destinée à des usages officiels (chefs d'État, cérémonies), historique d'entretien parfois incomplet sur les exemplaires passés en collection privée",
+                    "symptomes": [],
+                    "kilometrage_apparition": "N/A",
+                    "diagnostic": "Expertise complète recommandée avant achat",
+                    "piece_concernee": "N/A",
+                    "gravite": "Modérée",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Rareté des pièces spécifiques à l'empattement très long et aux équipements de représentation (cloison de séparation électrique, etc.)",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Aléatoire",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Équipements spécifiques",
+                    "gravite": "Majeure (disponibilité)",
+                    "frequence": "Rare",
+                    "cout_reparation_estime": "Élevé"
                   }
                 ]
               }

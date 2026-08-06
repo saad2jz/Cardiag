@@ -1,0 +1,629 @@
+[
+  {
+    "marque": "Morgan",
+    "modeles": [
+      {
+        "nom": "4/4",
+        "generations": [
+          {
+            "code_chassis": "4/4 (toutes séries)",
+            "annees": "1936-2019",
+            "phases": [
+              "Series I-V (1936-1981)",
+              "4/4 1600 (1981-2004)",
+              "4/4 dernière série (2004-2019)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.6L Ford CVH/Zetec - 96 à 122ch",
+                "code_moteur": "Ford CVH 1.6L puis Ford Zetec 1.6L/1.8L",
+                "cylindree": "1.6L",
+                "puissance_ch": 122,
+                "boite": [
+                  "BVM5 (Ford)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Pourriture de l'ossature en bois (frêne) sous la carrosserie",
+                    "symptomes": [
+                      "Affaissement localisé de la carrosserie",
+                      "Jeu de portière qui s'accentue"
+                    ],
+                    "kilometrage_apparition": "En cas d'infiltration d'eau non traitée",
+                    "diagnostic": "Sondage du bois par un spécialiste Morgan avant tout achat",
+                    "piece_concernee": "Ossature bois du châssis",
+                    "gravite": "Critique",
+                    "frequence": "Fréquent sur exemplaires non traités",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Infiltrations d'eau par les jointures artisanales",
+                    "symptomes": [
+                      "Humidité dans l'habitacle"
+                    ],
+                    "kilometrage_apparition": "Systématique par temps de pluie",
+                    "diagnostic": "Test au jet d'eau",
+                    "piece_concernee": "Carrosserie / joints",
+                    "gravite": "Faible",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "Faible"
+                  },
+                  {
+                    "probleme": "Usure de la suspension avant à ressort transversal",
+                    "symptomes": [
+                      "Jeu de direction imprécis"
+                    ],
+                    "kilometrage_apparition": "Progressive sans graissage régulier",
+                    "diagnostic": "Contrôle du jeu de suspension",
+                    "piece_concernee": "Suspension avant",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Corrosion du châssis acier",
+                    "symptomes": [
+                      "Rouille"
+                    ],
+                    "kilometrage_apparition": "Si traitement anticorrosion non repris (tous les 5-8 ans recommandé)",
+                    "diagnostic": "Sondage systématique",
+                    "piece_concernee": "Châssis acier",
+                    "gravite": "Critique",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Variabilité des ajustements de carrosserie artisanale",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Selon année et atelier de fabrication",
+                    "diagnostic": "Contrôle individuel de chaque exemplaire",
+                    "piece_concernee": "N/A (finition)",
+                    "gravite": "Faible",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Plus 4",
+        "generations": [
+          {
+            "code_chassis": "Plus 4 (classique)",
+            "annees": "1950-2020",
+            "phases": [
+              "Plus 4 Triumph (1950-1969)",
+              "Plus 4 relance Rover T16 (1985-2000)",
+              "Plus 4 Ford Duratec (2004-2020)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "2.0L Ford Duratec - 145ch",
+                "code_moteur": "Ford Duratec 2.0L (Mazda MZR dérivé)",
+                "cylindree": "2.0L",
+                "puissance_ch": 145,
+                "boite": [
+                  "BVM5 (Ford/Mazda)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Pourriture de l'ossature bois (frêne) du châssis",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas d'infiltration non traitée",
+                    "diagnostic": "Sondage du bois lors d'un achat",
+                    "piece_concernee": "Ossature bois",
+                    "gravite": "Critique",
+                    "frequence": "Fréquent sur exemplaires non traités",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Infiltrations d'eau",
+                    "symptomes": [
+                      "Humidité"
+                    ],
+                    "kilometrage_apparition": "Étanchéité artisanale limitée",
+                    "diagnostic": "Test au jet d'eau",
+                    "piece_concernee": "Carrosserie / joints",
+                    "gravite": "Faible",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "Faible"
+                  },
+                  {
+                    "probleme": "Usure de la suspension avant à ressort transversal",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Sans entretien régulier",
+                    "diagnostic": "Contrôle du jeu",
+                    "piece_concernee": "Suspension avant",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Corrosion du châssis acier",
+                    "symptomes": [
+                      "Rouille"
+                    ],
+                    "kilometrage_apparition": "Si traitement négligé",
+                    "diagnostic": "Sondage",
+                    "piece_concernee": "Châssis acier",
+                    "gravite": "Critique",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "Plus 4 (nouvelle génération, châssis CX)",
+            "annees": "2020-présent",
+            "phases": [
+              "Plus 4 CX (2020-présent)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "2.0L BMW B48 turbo - 258ch",
+                "code_moteur": "BMW B48 2.0L turbo",
+                "cylindree": "2.0L",
+                "puissance_ch": 258,
+                "boite": [
+                  "BVM6",
+                  "BVA8 (ZF)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Réparations après choc spécifiques sur châssis aluminium collé (CX-Generation)",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de choc",
+                    "diagnostic": "Savoir-faire rare hors réseau Morgan",
+                    "piece_concernee": "Châssis aluminium",
+                    "gravite": "Faible (coût plutôt que panne)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Consommation d'huile sur certains exemplaires",
+                    "symptomes": [
+                      "Baisse de niveau"
+                    ],
+                    "kilometrage_apparition": "Variable",
+                    "diagnostic": "Contrôle régulier",
+                    "piece_concernee": "Moteur BMW B48",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Faible (surveillance)"
+                  },
+                  {
+                    "probleme": "Absence de retour de fiabilité communautaire",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Modèle relativement récent",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A",
+                    "gravite": "Indéterminée",
+                    "frequence": "Indéterminée",
+                    "cout_reparation_estime": "Indéterminé"
+                  },
+                  {
+                    "probleme": "Échauffement du turbo en usage sportif",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En usage sportif",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Turbocompresseur",
+                    "gravite": "Faible",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Coûts et délais de pièces spécifiques élevés (production artisanale petite série)",
+                    "symptomes": [],
+                    "kilometrage_apparition": "N/A",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A (disponibilité)",
+                    "gravite": "Faible",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Plus 8",
+        "generations": [
+          {
+            "code_chassis": "Plus 8 (classique)",
+            "annees": "1968-2004",
+            "phases": [
+              "Plus 8 Rover V8 3.5L (1968-1996)",
+              "Plus 8 Rover V8 4.0L/4.6L (1996-2004)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "3.5L / 4.0L / 4.6L Rover V8 - 143 à 190ch",
+                "code_moteur": "Rover V8 3.5L/4.0L/4.6L (dérivé Buick)",
+                "cylindree": "4.6L",
+                "puissance_ch": 190,
+                "boite": [
+                  "BVM5 (Rover/LT77)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Corrosion interne du bloc V8 alu si liquide de refroidissement négligé",
+                    "symptomes": [
+                      "Surchauffe"
+                    ],
+                    "kilometrage_apparition": "Si liquide de refroidissement négligé",
+                    "diagnostic": "Analyse du liquide",
+                    "piece_concernee": "Bloc-moteur V8",
+                    "gravite": "Majeure",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Pourriture de l'ossature bois du châssis",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas d'infiltration",
+                    "diagnostic": "Sondage du bois",
+                    "piece_concernee": "Ossature bois",
+                    "gravite": "Critique",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Sollicitation forte du châssis traditionnel léger par la puissance du V8",
+                    "symptomes": [
+                      "Jeu de direction excessif"
+                    ],
+                    "kilometrage_apparition": "Cumulatif",
+                    "diagnostic": "Contrôle rapproché du jeu de direction",
+                    "piece_concernee": "Châssis / direction",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Corrosion du châssis acier",
+                    "symptomes": [
+                      "Rouille"
+                    ],
+                    "kilometrage_apparition": "Si traitement négligé",
+                    "diagnostic": "Sondage",
+                    "piece_concernee": "Châssis acier",
+                    "gravite": "Critique",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Aero 8 / Aeromax / AeroSuperSports",
+        "generations": [
+          {
+            "code_chassis": "Aero 8",
+            "annees": "2000-2018",
+            "phases": [
+              "Aero 8 (2000-2010)",
+              "Aeromax (2009-2012)",
+              "AeroSuperSports (2010-2012)",
+              "Aero 8 relancée (2015-2018)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "4.4L / 4.8L BMW V8 - 286 à 367ch",
+                "code_moteur": "BMW V8 4.4L (N62) / 4.8L (N62B48)",
+                "cylindree": "4.8L",
+                "puissance_ch": 367,
+                "boite": [
+                  "BVM6 (Getrag)",
+                  "BVA6 (ZF/BMW)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Réparations après choc très spécifiques sur châssis aluminium collé",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de choc",
+                    "diagnostic": "Peu d'ateliers qualifiés hors réseau constructeur",
+                    "piece_concernee": "Châssis aluminium",
+                    "gravite": "Faible (coût plutôt que panne)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Fuites du joint de cache-culbuteurs sur le bloc BMW N62",
+                    "symptomes": [
+                      "Consommation d'huile",
+                      "Tache visible"
+                    ],
+                    "kilometrage_apparition": "Sur certains exemplaires",
+                    "diagnostic": "Contrôle visuel du compartiment moteur",
+                    "piece_concernee": "Joint cache-culbuteurs",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Variabilité des finitions et ajustements de carrosserie composite",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Selon exemplaire",
+                    "diagnostic": "Contrôle individuel",
+                    "piece_concernee": "N/A (finition)",
+                    "gravite": "Faible",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Rareté des pièces de carrosserie spécifiques",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Faible diffusion",
+                    "diagnostic": "Délais d'approvisionnement longs",
+                    "piece_concernee": "N/A (disponibilité)",
+                    "gravite": "Modérée",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Diagnostics complexes sur l'intégration BMW par un petit constructeur artisanal",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Hors réseau spécialisé",
+                    "diagnostic": "Diagnostic spécialisé nécessaire",
+                    "piece_concernee": "Électronique embarquée",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Plus 6",
+        "generations": [
+          {
+            "code_chassis": "Plus 6 (châssis CX)",
+            "annees": "2019-présent",
+            "phases": [
+              "Plus 6 (2019-présent)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "3.0L BMW B58 turbo - 335ch",
+                "code_moteur": "BMW B58 3.0L 6 cylindres turbo",
+                "cylindree": "3.0L",
+                "puissance_ch": 335,
+                "boite": [
+                  "BVM6",
+                  "BVA8 (ZF)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Réparations après choc spécifiques sur châssis aluminium collé",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de choc",
+                    "diagnostic": "Savoir-faire rare hors réseau Morgan",
+                    "piece_concernee": "Châssis aluminium",
+                    "gravite": "Faible (coût plutôt que panne)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Base moteur BMW B58 globalement très fiable",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Peu de défauts documentés à ce jour",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A (positif)",
+                    "gravite": "N/A",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Absence de retour de fiabilité communautaire consolidé",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Modèle relativement récent",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A",
+                    "gravite": "Indéterminée",
+                    "frequence": "Indéterminée",
+                    "cout_reparation_estime": "Indéterminé"
+                  },
+                  {
+                    "probleme": "Coûts et délais de pièces spécifiques élevés (production artisanale très petite série)",
+                    "symptomes": [],
+                    "kilometrage_apparition": "N/A",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A (disponibilité)",
+                    "gravite": "Faible",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Modification sensible de l'équilibre par le poids du châssis aluminium",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Par rapport aux Morgan historiques à ossature bois",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A (comportement)",
+                    "gravite": "Faible",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Super 3",
+        "generations": [
+          {
+            "code_chassis": "Super 3",
+            "annees": "2021-présent",
+            "phases": [
+              "Super 3 (2021-présent, successeur du 3 Wheeler)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.5L Ford 3 cylindres turbo - 118ch",
+                "code_moteur": "Ford 1.5L 3 cylindres turbo (base Fiesta/Focus)",
+                "cylindree": "1.5L",
+                "puissance_ch": 118,
+                "boite": [
+                  "BVM5 (Mazda)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Comportement routier très spécifique de l'architecture à trois roues",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Caractéristique de conception",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Corrosion des éléments métalliques exposés (habitacle largement ouvert)",
+                    "symptomes": [
+                      "Rouille sur visserie et supports de carrosserie"
+                    ],
+                    "kilometrage_apparition": "Progressive selon exposition aux intempéries",
+                    "diagnostic": "Contrôle visuel régulier",
+                    "piece_concernee": "Éléments métalliques exposés",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Variabilité des finitions de carrosserie composite artisanale",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Selon exemplaire",
+                    "diagnostic": "Contrôle individuel",
+                    "piece_concernee": "N/A (finition)",
+                    "gravite": "Faible",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Absence de retour de fiabilité communautaire",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Modèle relativement récent",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A",
+                    "gravite": "Indéterminée",
+                    "frequence": "Indéterminée",
+                    "cout_reparation_estime": "Indéterminé"
+                  },
+                  {
+                    "probleme": "Usure prématurée de la transmission finale par courroie/chaîne exposée",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Sans entretien et graissage réguliers",
+                    "diagnostic": "Contrôle visuel de la transmission",
+                    "piece_concernee": "Transmission finale",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent si négligé",
+                    "cout_reparation_estime": "Modéré"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "3 Wheeler (ancienne génération)",
+        "generations": [
+          {
+            "code_chassis": "3 Wheeler (relance moderne)",
+            "annees": "2011-2021",
+            "phases": [
+              "3 Wheeler (2011-2021)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "2.0L S&S V-Twin - 82ch",
+                "code_moteur": "S&S Cycle V-Twin 2.0L (moteur de moto américain refroidi par air)",
+                "cylindree": "2.0L",
+                "puissance_ch": 82,
+                "boite": [
+                  "BVM5 (Mazda)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Corrosion des ailettes de refroidissement du moteur exposé aux intempéries",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Sur exemplaires peu entretenus",
+                    "diagnostic": "Contrôle visuel",
+                    "piece_concernee": "Moteur V-Twin (ailettes)",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Comportement routier très spécifique de l'architecture à trois roues",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Caractéristique",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Corrosion des éléments métalliques exposés",
+                    "symptomes": [
+                      "Rouille"
+                    ],
+                    "kilometrage_apparition": "Progressive",
+                    "diagnostic": "Contrôle visuel",
+                    "piece_concernee": "Éléments métalliques exposés",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Usure prématurée de la transmission finale par courroie exposée",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Sans entretien et graissage réguliers",
+                    "diagnostic": "Contrôle visuel",
+                    "piece_concernee": "Transmission finale",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent si négligé",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Rareté des pièces spécifiques au V-Twin S&S",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Diffusion très limitée",
+                    "diagnostic": "Commande via un réseau restreint, délais parfois longs",
+                    "piece_concernee": "N/A (disponibilité)",
+                    "gravite": "Majeure (disponibilité)",
+                    "frequence": "Rare",
+                    "cout_reparation_estime": "Élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,1686 @@
+[
+  {
+    "marque": "Lotus",
+    "modeles": [
+      {
+        "nom": "Elan (classique)",
+        "generations": [
+          {
+            "code_chassis": "Elan (Type 26)",
+            "annees": "1962-1975",
+            "phases": [
+              "Elan S1-S4 (1962-1971)",
+              "Elan Sprint (1971-1973)",
+              "Elan +2 (1967-1975)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.6L Twin Cam - 105 à 126ch",
+                "code_moteur": "Lotus-Ford Twin Cam 1.6L",
+                "cylindree": "1.6L",
+                "puissance_ch": 126,
+                "boite": [
+                  "BVM4"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Corrosion interne du châssis poutre en acier (backbone chassis)",
+                    "symptomes": [
+                      "Rouille invisible sans dépose de la carrosserie fibre de verre"
+                    ],
+                    "kilometrage_apparition": "Progressive selon entretien",
+                    "diagnostic": "Sondage systématique de la structure centrale",
+                    "piece_concernee": "Châssis poutre",
+                    "gravite": "Critique",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Rouille des inserts métalliques noyés dans le stratifié",
+                    "symptomes": [
+                      "Descellement progressif des points d'ancrage sur le châssis"
+                    ],
+                    "kilometrage_apparition": "Avec l'âge",
+                    "diagnostic": "Contrôle du jeu entre carrosserie et châssis",
+                    "piece_concernee": "Carrosserie fibre de verre",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Encrassement des carburateurs Weber double corps",
+                    "symptomes": [
+                      "Ralenti irrégulier"
+                    ],
+                    "kilometrage_apparition": "En cas d'usage occasionnel",
+                    "diagnostic": "Démontage et nettoyage",
+                    "piece_concernee": "Alimentation carburant",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Faible à modéré"
+                  },
+                  {
+                    "probleme": "Étirement de la chaîne double de distribution",
+                    "symptomes": [
+                      "Cliquetis caractéristique à froid"
+                    ],
+                    "kilometrage_apparition": "Avec l'âge",
+                    "diagnostic": "Écoute au démarrage à froid",
+                    "piece_concernee": "Distribution",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Usure des silent-blocs et rotules des liaisons au sol",
+                    "symptomes": [
+                      "Perte de la précision de conduite"
+                    ],
+                    "kilometrage_apparition": "Progressive",
+                    "diagnostic": "Contrôle du jeu sur pont",
+                    "piece_concernee": "Suspension",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Infiltrations d'eau au niveau des jointures de capote",
+                    "symptomes": [
+                      "Humidité dans l'habitacle"
+                    ],
+                    "kilometrage_apparition": "Classique sur les modèles anciens",
+                    "diagnostic": "Test au jet d'eau",
+                    "piece_concernee": "Capote / joints",
+                    "gravite": "Faible",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Faible"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Europa",
+        "generations": [
+          {
+            "code_chassis": "Europa (Type 46/47/74)",
+            "annees": "1966-1975",
+            "phases": [
+              "Europa S1/S2 (1966-1971)",
+              "Europa Twin Cam / Special (1971-1975)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.6L Twin Cam - 126ch (Special)",
+                "code_moteur": "Lotus-Ford Twin Cam 1.6L",
+                "cylindree": "1.6L",
+                "puissance_ch": 126,
+                "boite": [
+                  "BVM4/BVM5 (Renault, sur versions tardives)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Corrosion du châssis poutre en acier",
+                    "symptomes": [
+                      "Rouille interne"
+                    ],
+                    "kilometrage_apparition": "Selon entretien, mêmes points que l'Elan contemporaine",
+                    "diagnostic": "Sondage de la structure",
+                    "piece_concernee": "Châssis poutre",
+                    "gravite": "Critique",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Accès moteur limité (position centrale arrière)",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Caractéristique de conception",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible (coût de main d'œuvre)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Encrassement des carburateurs",
+                    "symptomes": [
+                      "Ralenti irrégulier"
+                    ],
+                    "kilometrage_apparition": "Fréquent",
+                    "diagnostic": "Démontage et nettoyage",
+                    "piece_concernee": "Alimentation carburant",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Faible à modéré"
+                  },
+                  {
+                    "probleme": "Comportement imprévisible en limite d'adhérence si suspension arrière mal réglée",
+                    "symptomes": [
+                      "Instabilité en virage"
+                    ],
+                    "kilometrage_apparition": "Notamment sur les tout premiers modèles S1",
+                    "diagnostic": "Contrôle de la géométrie arrière",
+                    "piece_concernee": "Suspension arrière",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Esprit",
+        "generations": [
+          {
+            "code_chassis": "Esprit S1-S3",
+            "annees": "1976-1987",
+            "phases": [
+              "S1 (1976-1978)",
+              "S2 (1978-1980)",
+              "S2.2 (1980-1981)",
+              "S3 (1981-1987)",
+              "Turbo Esprit (1980-1987)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "2.0L / 2.2L 4 cylindres - 160 à 210ch (Turbo)",
+                "code_moteur": "Lotus 907/910/912 4 cylindres 16 soupapes",
+                "cylindree": "2.2L",
+                "puissance_ch": 210,
+                "boite": [
+                  "BVM5 (Citroën/Renault)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Corrosion du châssis poutre acier",
+                    "symptomes": [
+                      "Rouille"
+                    ],
+                    "kilometrage_apparition": "Point de vigilance majeur",
+                    "diagnostic": "Inspection par le dessous",
+                    "piece_concernee": "Châssis poutre",
+                    "gravite": "Critique",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Fuites d'huile du turbo Garrett (versions Turbo)",
+                    "symptomes": [
+                      "Fuites, jeu axial"
+                    ],
+                    "kilometrage_apparition": "Avec l'âge",
+                    "diagnostic": "Contrôle du jeu axial",
+                    "piece_concernee": "Turbocompresseur",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Réglage délicat des carburateurs Dell'Orto",
+                    "symptomes": [
+                      "Synchronisation instable"
+                    ],
+                    "kilometrage_apparition": "Fréquent",
+                    "diagnostic": "Réglage au manomètre",
+                    "piece_concernee": "Alimentation carburant",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Rouille des points de fixation métalliques de la carrosserie fibre de verre",
+                    "symptomes": [
+                      "Rouille localisée"
+                    ],
+                    "kilometrage_apparition": "Progressive",
+                    "diagnostic": "Contrôle visuel",
+                    "piece_concernee": "Carrosserie",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Sous-dimensionnement du refroidissement",
+                    "symptomes": [
+                      "Surchauffe en usage urbain ou climat chaud"
+                    ],
+                    "kilometrage_apparition": "Fréquente, radiateur additionnel souvent monté",
+                    "diagnostic": "Test de pression du circuit",
+                    "piece_concernee": "Circuit de refroidissement",
+                    "gravite": "Majeure",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Pannes de lève-vitres et commandes électriques d'époque",
+                    "symptomes": [
+                      "Fonctionnement capricieux"
+                    ],
+                    "kilometrage_apparition": "Classique",
+                    "diagnostic": "Test de fonctionnement",
+                    "piece_concernee": "Équipements électriques",
+                    "gravite": "Faible",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "Esprit (X180/S4/GT3/V8)",
+            "annees": "1987-2004",
+            "phases": [
+              "X180 (1987-1993)",
+              "S4 (1993-1996)",
+              "GT3 4 cylindres (1996-1999)",
+              "V8 (1996-2004)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "2.2L 4 cylindres Turbo - 172 à 264ch",
+                "code_moteur": "Lotus 910/912 4 cylindres turbo",
+                "cylindree": "2.2L",
+                "puissance_ch": 264,
+                "boite": [
+                  "BVM5 (Renault UN1)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Panne interne du turbo",
+                    "symptomes": [
+                      "Perte de puissance"
+                    ],
+                    "kilometrage_apparition": "Aléatoire, coûteux",
+                    "diagnostic": "Test de pression de suralimentation",
+                    "piece_concernee": "Turbocompresseur",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Corrosion du châssis poutre acier",
+                    "symptomes": [
+                      "Rouille"
+                    ],
+                    "kilometrage_apparition": "Toujours sensible",
+                    "diagnostic": "Contrôle systématique",
+                    "piece_concernee": "Châssis poutre",
+                    "gravite": "Critique",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Dérive des capteurs de l'injection Bosch",
+                    "symptomes": [
+                      "Comportement moteur dégradé"
+                    ],
+                    "kilometrage_apparition": "Avec l'âge, pièces de plus en plus rares",
+                    "diagnostic": "Diagnostic spécialisé",
+                    "piece_concernee": "Capteurs de gestion moteur",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Surchauffe en usage sportif prolongé",
+                    "symptomes": [
+                      "Montée en température"
+                    ],
+                    "kilometrage_apparition": "Notamment en circuit",
+                    "diagnostic": "Test de pression du circuit",
+                    "piece_concernee": "Circuit de refroidissement",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Usure des synchros de boîte Renault",
+                    "symptomes": [
+                      "Craquement"
+                    ],
+                    "kilometrage_apparition": "Sur hauts kilométrages",
+                    "diagnostic": "Essai routier",
+                    "piece_concernee": "Boîte de vitesses",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  }
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "3.5L V8 Biturbo - 355ch",
+                "code_moteur": "Lotus V8 3.5L biturbo (bloc maison Lotus)",
+                "cylindree": "3.5L",
+                "puissance_ch": 355,
+                "boite": [
+                  "BVM5 (Renault UN1)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Rareté des pièces spécifiques au bloc V8 Lotus (très faible série)",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Aléatoire",
+                    "diagnostic": "Approvisionnement via spécialistes britanniques uniquement",
+                    "piece_concernee": "Bloc-moteur V8",
+                    "gravite": "Majeure (disponibilité)",
+                    "frequence": "Rare",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Sollicitation forte des turbos biturbo dans un habitacle exigu",
+                    "symptomes": [
+                      "Gestion thermique difficile"
+                    ],
+                    "kilometrage_apparition": "En usage sportif",
+                    "diagnostic": "Contrôle des durites et du circuit de refroidissement",
+                    "piece_concernee": "Turbocompresseurs",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Complexité du système d'injection et de gestion moteur",
+                    "symptomes": [
+                      "Diagnostics longs"
+                    ],
+                    "kilometrage_apparition": "Faute de documentation abondante",
+                    "diagnostic": "Diagnostic spécialisé uniquement",
+                    "piece_concernee": "Système d'injection",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Corrosion du châssis poutre acier",
+                    "symptomes": [
+                      "Rouille"
+                    ],
+                    "kilometrage_apparition": "Toujours sensible",
+                    "diagnostic": "Contrôle systématique",
+                    "piece_concernee": "Châssis poutre",
+                    "gravite": "Critique",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Très élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Elise",
+        "generations": [
+          {
+            "code_chassis": "Elise S1",
+            "annees": "1996-2001",
+            "phases": [
+              "S1 (1996-2001)",
+              "Sport 135/160/190"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.8L K-Series - 118 à 190ch (Sport 190)",
+                "code_moteur": "Rover K-Series 1.8L",
+                "cylindree": "1.8L",
+                "puissance_ch": 190,
+                "boite": [
+                  "BVM5"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Défaillance du joint de culasse multicouche K-Series",
+                    "symptomes": [
+                      "Perte de liquide sans fuite externe visible",
+                      "Surchauffe"
+                    ],
+                    "kilometrage_apparition": "Parfois avant 100 000 km",
+                    "diagnostic": "Test de fuite de gaz d'échappement dans le liquide de refroidissement",
+                    "piece_concernee": "Joint de culasse",
+                    "gravite": "Critique",
+                    "frequence": "Très fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Radiateur sous-dimensionné à l'origine",
+                    "symptomes": [
+                      "Surchauffe aggravée, notamment en usage circuit"
+                    ],
+                    "kilometrage_apparition": "Fréquente",
+                    "diagnostic": "Test de pression du circuit",
+                    "piece_concernee": "Circuit de refroidissement",
+                    "gravite": "Majeure",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Complexité de réparation du châssis aluminium collé après choc",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de choc",
+                    "diagnostic": "Réservé à un réparateur agréé disposant de l'outillage dédié",
+                    "piece_concernee": "Châssis aluminium",
+                    "gravite": "Faible (coût plutôt que panne)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Distribution par courroie à surveiller strictement",
+                    "symptomes": [
+                      "Risque de casse moteur"
+                    ],
+                    "kilometrage_apparition": "Selon intervalle constructeur",
+                    "diagnostic": "Remplacement préventif impératif",
+                    "piece_concernee": "Distribution",
+                    "gravite": "Critique (préventif)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "Modéré (préventif)"
+                  },
+                  {
+                    "probleme": "Infiltrations d'eau si joints de portière négligés",
+                    "symptomes": [
+                      "Humidité dans l'habitacle"
+                    ],
+                    "kilometrage_apparition": "Habitacle peu isolé",
+                    "diagnostic": "Test au jet d'eau",
+                    "piece_concernee": "Joints de portière",
+                    "gravite": "Faible",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Faible"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "Elise S2",
+            "annees": "2001-2011",
+            "phases": [
+              "S2 111S/111R (2001-2004)",
+              "S2 Facelift (2004-2011)",
+              "S2 Sport/SC (compressé, 2008-2011)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.8L K-Series / VVC - 120 à 156ch",
+                "code_moteur": "Rover K-Series 1.8L (16v puis VVC)",
+                "cylindree": "1.8L",
+                "puissance_ch": 156,
+                "boite": [
+                  "BVM5"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Fragilité résiduelle du joint de culasse K-Series",
+                    "symptomes": [
+                      "Surchauffe"
+                    ],
+                    "kilometrage_apparition": "Amélioré sur versions tardives mais toujours un point de vigilance",
+                    "diagnostic": "Test de fuite",
+                    "piece_concernee": "Joint de culasse",
+                    "gravite": "Majeure",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Réparations après choc spécifiques sur châssis aluminium collé",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de choc",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Châssis aluminium",
+                    "gravite": "Faible (coût)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Usure de l'actionneur hydraulique du système VVC",
+                    "symptomes": [
+                      "Perte de performance"
+                    ],
+                    "kilometrage_apparition": "Progressive",
+                    "diagnostic": "Test de fonctionnement du VVC",
+                    "piece_concernee": "Système VVC",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Distribution par courroie à surveiller strictement",
+                    "symptomes": [
+                      "Risque de casse moteur"
+                    ],
+                    "kilometrage_apparition": "Selon intervalle",
+                    "diagnostic": "Remplacement préventif",
+                    "piece_concernee": "Distribution",
+                    "gravite": "Critique (préventif)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "Modéré (préventif)"
+                  }
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "1.8L Toyota 2ZZ-GE (111R) - 190ch",
+                "code_moteur": "Toyota 2ZZ-GE 1.8L (base Celica/Corolla, culasse VVTL-i)",
+                "cylindree": "1.8L",
+                "puissance_ch": 190,
+                "boite": [
+                  "BVM6"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Consommation d'huile sur hauts régimes prolongés",
+                    "symptomes": [
+                      "Baisse de niveau"
+                    ],
+                    "kilometrage_apparition": "Contrôle recommandé toutes les 1 000 km en usage circuit",
+                    "diagnostic": "Contrôle direct du niveau",
+                    "piece_concernee": "Moteur",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Faible (surveillance)"
+                  },
+                  {
+                    "probleme": "Sensibilité du système VVTL-i à un entretien rigoureux",
+                    "symptomes": [
+                      "Perte de performance haut régime"
+                    ],
+                    "kilometrage_apparition": "Vidanges rapprochées (8 000 km) recommandées",
+                    "diagnostic": "Respect du plan d'entretien",
+                    "piece_concernee": "Système VVTL-i",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Réparations après choc spécifiques sur châssis aluminium",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de choc",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Châssis aluminium",
+                    "gravite": "Faible (coût)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Usure accélérée de l'embrayage en usage circuit répété",
+                    "symptomes": [
+                      "Patinage"
+                    ],
+                    "kilometrage_apparition": "En conduite sportive intensive",
+                    "diagnostic": "Test de patinage sous charge",
+                    "piece_concernee": "Embrayage",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  }
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "1.8L Toyota 2ZZ-GE Compresseur (SC) - 220ch",
+                "code_moteur": "Toyota 2ZZ-GE 1.8L compressé (Jackson Racing)",
+                "cylindree": "1.8L",
+                "puissance_ch": 220,
+                "boite": [
+                  "BVM6"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Négligence de l'entretien spécifique du compresseur (huile dédiée)",
+                    "symptomes": [
+                      "Usure prématurée"
+                    ],
+                    "kilometrage_apparition": "Souvent négligée par les propriétaires successifs",
+                    "diagnostic": "Contrôle de l'huile du compresseur",
+                    "piece_concernee": "Compresseur volumétrique",
+                    "gravite": "Majeure",
+                    "frequence": "Fréquent si négligé",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Chaleur supplémentaire dans le compartiment moteur exigu",
+                    "symptomes": [
+                      "Gestion thermique critique en usage circuit"
+                    ],
+                    "kilometrage_apparition": "En usage sportif",
+                    "diagnostic": "Contrôle des durites",
+                    "piece_concernee": "Circuit de refroidissement",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Usure accélérée de l'embrayage",
+                    "symptomes": [
+                      "Patinage"
+                    ],
+                    "kilometrage_apparition": "En conduite sportive",
+                    "diagnostic": "Test de patinage",
+                    "piece_concernee": "Embrayage",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Réparations après choc spécifiques sur châssis aluminium",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de choc",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Châssis aluminium",
+                    "gravite": "Faible (coût)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Élevé"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "Elise S3",
+            "annees": "2010-2021",
+            "phases": [
+              "S3 (2010-2021)",
+              "Elise Cup 220/250 (2016-2021)",
+              "Elise Sprint (2017-2021)",
+              "Elise Final Edition (2021)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.6L Toyota 1ZR-FAE - 136ch",
+                "code_moteur": "Toyota 1ZR-FAE 1.6L (base Toyota/Lotus)",
+                "cylindree": "1.6L",
+                "puissance_ch": 136,
+                "boite": [
+                  "BVM5/BVM6"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Performances jugées limitées pour le poids plume du modèle",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Caractéristique",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Réparations après choc spécifiques sur châssis aluminium",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de choc",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Châssis aluminium",
+                    "gravite": "Faible (coût)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Usure de l'embrayage en conduite sportive",
+                    "symptomes": [
+                      "Patinage"
+                    ],
+                    "kilometrage_apparition": "Variable",
+                    "diagnostic": "Test de patinage",
+                    "piece_concernee": "Embrayage",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  }
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "1.8L Toyota 2ZR-FE compressé (Cup 220/250) - 220 à 250ch",
+                "code_moteur": "Toyota 2ZR-FE 1.8L compressé (Edelbrock/Harrop)",
+                "cylindree": "1.8L",
+                "puissance_ch": 250,
+                "boite": [
+                  "BVM6"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Négligence de l'entretien spécifique du compresseur",
+                    "symptomes": [
+                      "Usure prématurée"
+                    ],
+                    "kilometrage_apparition": "Aléatoire",
+                    "diagnostic": "Contrôle de l'huile dédiée",
+                    "piece_concernee": "Compresseur volumétrique",
+                    "gravite": "Majeure",
+                    "frequence": "Fréquent si négligé",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Chaleur importante en usage circuit",
+                    "symptomes": [
+                      "Gestion thermique essentielle"
+                    ],
+                    "kilometrage_apparition": "En usage sportif",
+                    "diagnostic": "Contrôle des durites",
+                    "piece_concernee": "Circuit de refroidissement",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Usure accélérée des plaquettes en usage piste",
+                    "symptomes": [
+                      "Usure rapide"
+                    ],
+                    "kilometrage_apparition": "Parfois avant 10 000 km en usage piste",
+                    "diagnostic": "Contrôle de l'épaisseur",
+                    "piece_concernee": "Freins",
+                    "gravite": "Faible",
+                    "frequence": "Fréquent en usage piste",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Usure accélérée de l'embrayage",
+                    "symptomes": [
+                      "Patinage"
+                    ],
+                    "kilometrage_apparition": "En conduite sportive intensive",
+                    "diagnostic": "Test de patinage",
+                    "piece_concernee": "Embrayage",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Exige",
+        "generations": [
+          {
+            "code_chassis": "Exige S1/S2",
+            "annees": "2000-2011",
+            "phases": [
+              "Exige S1 (2000-2001)",
+              "Exige S2 (2004-2011)",
+              "Exige S (compressé, 2005-2011)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.8L Toyota 2ZZ-GE - 190ch",
+                "code_moteur": "Toyota 2ZZ-GE 1.8L (base Celica/Corolla)",
+                "cylindree": "1.8L",
+                "puissance_ch": 190,
+                "boite": [
+                  "BVM6"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Sensibilité du système VVTL-i à un entretien rigoureux",
+                    "symptomes": [
+                      "Perte de performance haut régime"
+                    ],
+                    "kilometrage_apparition": "Vidanges rapprochées obligatoires",
+                    "diagnostic": "Respect du plan d'entretien",
+                    "piece_concernee": "Système VVTL-i",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Réparations après choc spécifiques sur châssis aluminium",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de choc",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Châssis aluminium",
+                    "gravite": "Faible (coût)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Usure accélérée de l'embrayage en usage circuit",
+                    "symptomes": [
+                      "Patinage"
+                    ],
+                    "kilometrage_apparition": "En conduite sportive",
+                    "diagnostic": "Test de patinage",
+                    "piece_concernee": "Embrayage",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  }
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "1.8L Toyota 2ZZ-GE Compresseur (Exige S) - 220 à 240ch",
+                "code_moteur": "Toyota 2ZZ-GE 1.8L compressé",
+                "cylindree": "1.8L",
+                "puissance_ch": 240,
+                "boite": [
+                  "BVM6"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Entretien spécifique du compresseur souvent négligé",
+                    "symptomes": [
+                      "Usure prématurée"
+                    ],
+                    "kilometrage_apparition": "Par propriétaires successifs",
+                    "diagnostic": "Contrôle de l'huile dédiée",
+                    "piece_concernee": "Compresseur volumétrique",
+                    "gravite": "Majeure",
+                    "frequence": "Fréquent si négligé",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Chaleur importante en usage circuit",
+                    "symptomes": [
+                      "Gestion thermique essentielle"
+                    ],
+                    "kilometrage_apparition": "En usage sportif",
+                    "diagnostic": "Contrôle des durites",
+                    "piece_concernee": "Circuit de refroidissement",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Usure accélérée de freins et embrayage en usage sportif intensif",
+                    "symptomes": [
+                      "Usure rapide"
+                    ],
+                    "kilometrage_apparition": "Variable",
+                    "diagnostic": "Contrôle régulier",
+                    "piece_concernee": "Freins / embrayage",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "Exige S3 / V6",
+            "annees": "2012-2021",
+            "phases": [
+              "Exige S3 (2012-2021)",
+              "Exige V6 Cup/S (2012-2021)",
+              "Exige Sport 350/380/410 (2016-2021)",
+              "Exige Cup 430 (2017-2021)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.6L Toyota 1ZR-FAE - 136ch",
+                "code_moteur": "Toyota 1ZR-FAE 1.6L",
+                "cylindree": "1.6L",
+                "puissance_ch": 136,
+                "boite": [
+                  "BVM6"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Performances jugées limitées pour une Exige orientée circuit",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Caractéristique",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Réparations après choc spécifiques sur châssis aluminium",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de choc",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Châssis aluminium",
+                    "gravite": "Faible (coût)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Élevé"
+                  }
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "3.5L Toyota V6 compressé - 345 à 430ch (Cup 430)",
+                "code_moteur": "Toyota 2GR-FE 3.5L V6 compressé (Harrop/Edelbrock)",
+                "cylindree": "3.5L",
+                "puissance_ch": 430,
+                "boite": [
+                  "BVM6",
+                  "BVA6 (automatique séquentielle sur certaines versions)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Entretien spécifique et coûteux du compresseur volumétrique",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Vidange dédiée régulière",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Compresseur volumétrique",
+                    "gravite": "Faible (préventif)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Chaleur très importante dans le compartiment moteur exigu",
+                    "symptomes": [
+                      "Gestion thermique critique"
+                    ],
+                    "kilometrage_apparition": "En usage circuit intensif",
+                    "diagnostic": "Contrôle des durites et du circuit",
+                    "piece_concernee": "Circuit de refroidissement",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Coût élevé des freins carbone-céramique (Cup 430, en option)",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Au remplacement",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Freins carbone-céramique",
+                    "gravite": "Faible (coût)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Sollicitation forte de l'embrayage par le couple important du V6",
+                    "symptomes": [
+                      "Usure accélérée"
+                    ],
+                    "kilometrage_apparition": "Cumulatif",
+                    "diagnostic": "Test de patinage",
+                    "piece_concernee": "Embrayage",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Modification de l'équilibre châssis par le poids du V6 à l'arrière",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Suspension à régler avec précision",
+                    "diagnostic": "Réglage par un spécialiste",
+                    "piece_concernee": "Suspension",
+                    "gravite": "Faible (comportement)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Modéré"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Evora",
+        "generations": [
+          {
+            "code_chassis": "Evora",
+            "annees": "2009-2021",
+            "phases": [
+              "Evora (2009-2015)",
+              "Evora 400/410 (2015-2021)",
+              "Evora GT (2020-2021)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "3.5L Toyota V6 - 280 à 316ch (atmosphérique)",
+                "code_moteur": "Toyota 2GR-FE 3.5L V6",
+                "cylindree": "3.5L",
+                "puissance_ch": 316,
+                "boite": [
+                  "BVM6",
+                  "BVA6 (Toyota/Aisin)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Base Toyota globalement très fiable",
+                    "symptomes": [],
+                    "kilometrage_apparition": "N/A",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A (positif)",
+                    "gravite": "N/A",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Réparations après choc spécifiques sur châssis aluminium collé et riveté",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de choc",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Châssis aluminium",
+                    "gravite": "Faible (coût)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Usure de l'embrayage en conduite sportive",
+                    "symptomes": [
+                      "Patinage"
+                    ],
+                    "kilometrage_apparition": "Variable",
+                    "diagnostic": "Test de patinage",
+                    "piece_concernee": "Embrayage",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Vieillissement rapide du système multimédia",
+                    "symptomes": [
+                      "Interface peu réactive"
+                    ],
+                    "kilometrage_apparition": "Progressif",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Système multimédia",
+                    "gravite": "Faible",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  }
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "3.5L Toyota V6 compressé - 350 à 430ch (400/410/GT)",
+                "code_moteur": "Toyota 2GR-FE 3.5L V6 compressé (Harrop/Edelbrock)",
+                "cylindree": "3.5L",
+                "puissance_ch": 430,
+                "boite": [
+                  "BVM6",
+                  "BVA6 (Toyota/Aisin)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Entretien spécifique du compresseur",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Vidange dédiée",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Compresseur volumétrique",
+                    "gravite": "Faible (préventif)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Chaleur importante en usage sportif",
+                    "symptomes": [
+                      "Gestion thermique à surveiller"
+                    ],
+                    "kilometrage_apparition": "En usage circuit",
+                    "diagnostic": "Contrôle des durites",
+                    "piece_concernee": "Circuit de refroidissement",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Sollicitation forte des freins sur les versions les plus performantes",
+                    "symptomes": [
+                      "Usure accélérée"
+                    ],
+                    "kilometrage_apparition": "Variable",
+                    "diagnostic": "Contrôle régulier",
+                    "piece_concernee": "Freins",
+                    "gravite": "Faible",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Embrayage très sollicité par le couple accru",
+                    "symptomes": [
+                      "Usure accélérée"
+                    ],
+                    "kilometrage_apparition": "Cumulatif",
+                    "diagnostic": "Test de patinage",
+                    "piece_concernee": "Embrayage",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Emira",
+        "generations": [
+          {
+            "code_chassis": "Emira",
+            "annees": "2021-présent",
+            "phases": [
+              "Emira First Edition (2021-2022)",
+              "Emira i4 (2022-présent)",
+              "Emira V6 (2022-présent)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "2.0L Mercedes-AMG M139 turbo (i4) - 360ch",
+                "code_moteur": "Mercedes-AMG M139 2.0L turbo",
+                "cylindree": "2.0L",
+                "puissance_ch": 360,
+                "boite": [
+                  "BVA8 double embrayage (AMG Speedshift DCT)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Absence de retour de fiabilité communautaire consolidé",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Modèle trop récent",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A",
+                    "gravite": "Indéterminée",
+                    "frequence": "Indéterminée",
+                    "cout_reparation_estime": "Indéterminé"
+                  },
+                  {
+                    "probleme": "Exigence d'entretien de la base M139 (huile de qualité, vidanges rapprochées)",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Selon usage",
+                    "diagnostic": "Respect du plan d'entretien recommandé",
+                    "piece_concernee": "Moteur AMG M139",
+                    "gravite": "Faible (préventif)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Sollicitation forte du turbo pour un bloc 4 cylindres de cette puissance",
+                    "symptomes": [],
+                    "kilometrage_apparition": "N/A",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Turbocompresseur",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Réparations après choc spécifiques sur châssis aluminium",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de choc",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Châssis aluminium",
+                    "gravite": "Faible (coût)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Élevé"
+                  }
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "3.5L Toyota V6 compressé - 400 à 405ch",
+                "code_moteur": "Toyota 2GR-FE 3.5L V6 compressé (Edelbrock)",
+                "cylindree": "3.5L",
+                "puissance_ch": 405,
+                "boite": [
+                  "BVM6",
+                  "BVA8 (Aisin)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Base Toyota éprouvée et globalement fiable",
+                    "symptomes": [],
+                    "kilometrage_apparition": "N/A",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A (positif)",
+                    "gravite": "N/A",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Entretien spécifique du compresseur",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Vidange dédiée",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Compresseur volumétrique",
+                    "gravite": "Faible (préventif)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Chaleur importante en usage sportif",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En circuit",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Circuit de refroidissement",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Retour d'expérience communautaire encore limité",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Modèle encore récent",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A",
+                    "gravite": "Indéterminée",
+                    "frequence": "Indéterminée",
+                    "cout_reparation_estime": "Indéterminé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Eletre",
+        "generations": [
+          {
+            "code_chassis": "Eletre",
+            "annees": "2023-présent",
+            "phases": [
+              "Eletre (2023-présent)",
+              "Eletre S/R (2023-présent)"
+            ],
+            "motorisations": [
+              {
+                "type": "Électrique",
+                "nom": "Eletre / Eletre R - 603 à 918ch",
+                "code_moteur": "Deux moteurs électriques synchrones à aimants permanents (transmission intégrale)",
+                "cylindree": "N/A",
+                "puissance_ch": 918,
+                "boite": [
+                  "Rapport fixe (pas de boîte de vitesses)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Absence de retour de fiabilité long terme",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Modèle nouvellement lancé",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A",
+                    "gravite": "Indéterminée",
+                    "frequence": "Indéterminée",
+                    "cout_reparation_estime": "Indéterminé"
+                  },
+                  {
+                    "probleme": "Écosystème de service après-vente encore en déploiement",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Premier SUV et VE de la marque",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A (disponibilité de service)",
+                    "gravite": "Faible",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Sollicitation forte de pneumatiques et suspension par le poids de la batterie",
+                    "symptomes": [
+                      "Usure accélérée"
+                    ],
+                    "kilometrage_apparition": "Cumulatif",
+                    "diagnostic": "Contrôle régulier",
+                    "piece_concernee": "Pneumatiques / suspension",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Complexité et coût potentiel de la suspension pneumatique active",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de panne",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Suspension pneumatique",
+                    "gravite": "Majeure",
+                    "frequence": "Indéterminée",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Bugs logiciels du système d'infodivertissement et ADAS",
+                    "symptomes": [
+                      "Dysfonctionnements divers"
+                    ],
+                    "kilometrage_apparition": "Sur les premières années",
+                    "diagnostic": "Mise à jour logicielle",
+                    "piece_concernee": "Électronique embarquée",
+                    "gravite": "Faible",
+                    "frequence": "Fréquent sur premières années",
+                    "cout_reparation_estime": "Faible"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Emeya",
+        "generations": [
+          {
+            "code_chassis": "Emeya",
+            "annees": "2024-présent",
+            "phases": [
+              "Emeya (2024-présent)",
+              "Emeya R (2024-présent)"
+            ],
+            "motorisations": [
+              {
+                "type": "Électrique",
+                "nom": "Emeya / Emeya R - 612 à 905ch",
+                "code_moteur": "Deux moteurs électriques synchrones à aimants permanents (transmission intégrale)",
+                "cylindree": "N/A",
+                "puissance_ch": 905,
+                "boite": [
+                  "Rapport fixe (pas de boîte de vitesses)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Absence de retour de fiabilité long terme",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Modèle très récent",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A",
+                    "gravite": "Indéterminée",
+                    "frequence": "Indéterminée",
+                    "cout_reparation_estime": "Indéterminé"
+                  },
+                  {
+                    "probleme": "Écosystème de service après-vente encore en déploiement",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Première berline électrique de la marque",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Sollicitation forte de pneumatiques et suspension par le poids de la batterie",
+                    "symptomes": [
+                      "Usure accélérée"
+                    ],
+                    "kilometrage_apparition": "Cumulatif",
+                    "diagnostic": "Contrôle régulier",
+                    "piece_concernee": "Pneumatiques / suspension",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Bugs logiciels du système d'infodivertissement et ADAS",
+                    "symptomes": [
+                      "Dysfonctionnements divers"
+                    ],
+                    "kilometrage_apparition": "Sur les premières années",
+                    "diagnostic": "Mise à jour logicielle",
+                    "piece_concernee": "Électronique embarquée",
+                    "gravite": "Faible",
+                    "frequence": "Fréquent sur premières années",
+                    "cout_reparation_estime": "Faible"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Seven",
+        "generations": [
+          {
+            "code_chassis": "Seven (Series 1-4)",
+            "annees": "1957-1972",
+            "phases": [
+              "Series 1 (1957-1960)",
+              "Series 2 (1960-1968)",
+              "Series 3 (1968-1970)",
+              "Series 4 (1970-1972, avant cession de la licence à Caterham en 1973)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.5L / 1.6L Ford Kent - 75 à 126ch (Twin Cam)",
+                "code_moteur": "Ford Kent 1.5L/1.6L puis Lotus-Ford Twin Cam 1.6L (Series 4)",
+                "cylindree": "1.6L",
+                "puissance_ch": 126,
+                "boite": [
+                  "BVM4"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Corrosion du châssis tubulaire léger",
+                    "symptomes": [
+                      "Rouille structurelle sur les modèles non entretenus"
+                    ],
+                    "kilometrage_apparition": "Fréquente sur exemplaires anciens sans restauration",
+                    "diagnostic": "Sondage systématique de la structure",
+                    "piece_concernee": "Châssis tubulaire",
+                    "gravite": "Critique",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Exposition totale aux intempéries (absence de toit et de portes réelles sur la plupart des versions)",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Caractéristique de conception",
+                    "diagnostic": "N/A (usage plutôt que panne)",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Encrassement des carburateurs Weber/Ford d'époque",
+                    "symptomes": [
+                      "Ralenti irrégulier"
+                    ],
+                    "kilometrage_apparition": "Fréquent en cas d'usage occasionnel",
+                    "diagnostic": "Démontage et nettoyage",
+                    "piece_concernee": "Alimentation carburant",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Faible à modéré"
+                  },
+                  {
+                    "probleme": "Usure rapide des liaisons au sol très légères en usage sportif intensif",
+                    "symptomes": [
+                      "Perte de précision de conduite"
+                    ],
+                    "kilometrage_apparition": "Progressive",
+                    "diagnostic": "Contrôle du jeu sur pont",
+                    "piece_concernee": "Suspension",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Distinction à faire entre les Lotus Seven d'origine (jusqu'en 1972) et les Caterham Seven produites sous licence ensuite, avec des différences de provenance des pièces",
+                    "symptomes": [],
+                    "kilometrage_apparition": "N/A",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Elan M100",
+        "generations": [
+          {
+            "code_chassis": "M100",
+            "annees": "1989-1995",
+            "phases": [
+              "Elan SE (1989-1992)",
+              "Elan S2 (1994-1995, fabriquée en Corée sous licence Kia après l'arrêt britannique)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.6L Isuzu turbo - 130 à 165ch",
+                "code_moteur": "Isuzu 4XE1 1.6L 16 soupapes turbo (première Lotus à traction avant et à moteur non britannique)",
+                "cylindree": "1.6L",
+                "puissance_ch": 165,
+                "boite": [
+                  "BVM5 (Isuzu)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Turbo Isuzu sollicité fortement, entretien coûteux en cas de panne",
+                    "symptomes": [
+                      "Perte de puissance"
+                    ],
+                    "kilometrage_apparition": "Aléatoire",
+                    "diagnostic": "Test de pression de suralimentation",
+                    "piece_concernee": "Turbocompresseur",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Rareté des pièces mécaniques spécifiques Isuzu sur le marché européen",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Aléatoire",
+                    "diagnostic": "Approvisionnement parfois long",
+                    "piece_concernee": "Pièces moteur Isuzu",
+                    "gravite": "Modérée (disponibilité)",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré à élevé"
+                  },
+                  {
+                    "probleme": "Réparations après choc spécifiques sur châssis composite/acier galvanisé avec carrosserie composite",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de choc",
+                    "diagnostic": "Réparateur spécialisé recommandé",
+                    "piece_concernee": "Châssis / carrosserie composite",
+                    "gravite": "Faible (coût plutôt que panne)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Comportement de traction avant inhabituel pour une Lotus, déroutant pour certains puristes (sans lien avec la fiabilité)",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Caractéristique de conception",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Faible diffusion (échec commercial relatif à l'époque) rendant le modèle méconnu et le réseau de spécialistes restreint",
+                    "symptomes": [],
+                    "kilometrage_apparition": "N/A",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A (disponibilité de service)",
+                    "gravite": "Modérée",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Excel",
+        "generations": [
+          {
+            "code_chassis": "Excel",
+            "annees": "1982-1992",
+            "phases": [
+              "Excel (1982-1985)",
+              "Excel SE (1986-1992, remplace l'Eclat)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "2.2L 4 cylindres 16 soupapes - 160 à 180ch",
+                "code_moteur": "Lotus 912 4 cylindres 2.2L (base technique et transmission partagées avec Toyota, notamment la boîte de vitesses)",
+                "cylindree": "2.2L",
+                "puissance_ch": 180,
+                "boite": [
+                  "BVM5 (Toyota)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Corrosion du châssis poutre en acier caractéristique des Lotus de cette génération",
+                    "symptomes": [
+                      "Rouille interne"
+                    ],
+                    "kilometrage_apparition": "Progressive selon entretien",
+                    "diagnostic": "Sondage systématique de la structure",
+                    "piece_concernee": "Châssis poutre",
+                    "gravite": "Critique",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Dérive du réglage des carburateurs Dell'Orto ou de l'injection selon version",
+                    "symptomes": [
+                      "Ralenti irrégulier"
+                    ],
+                    "kilometrage_apparition": "Fréquent",
+                    "diagnostic": "Réglage par un spécialiste",
+                    "piece_concernee": "Alimentation carburant",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Rouille des points de fixation métalliques de la carrosserie composite",
+                    "symptomes": [
+                      "Rouille localisée"
+                    ],
+                    "kilometrage_apparition": "Progressive",
+                    "diagnostic": "Contrôle visuel",
+                    "piece_concernee": "Carrosserie composite",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Pannes de l'équipement électrique d'époque (lève-vitres, toit ouvrant)",
+                    "symptomes": [
+                      "Fonctionnement capricieux"
+                    ],
+                    "kilometrage_apparition": "Classique sur véhicule de cet âge",
+                    "diagnostic": "Test de fonctionnement",
+                    "piece_concernee": "Équipements électriques",
+                    "gravite": "Faible",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Faible diffusion rendant certaines pièces de carrosserie spécifiques difficiles à trouver aujourd'hui",
+                    "symptomes": [],
+                    "kilometrage_apparition": "N/A",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A (disponibilité)",
+                    "gravite": "Modérée",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

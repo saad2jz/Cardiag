@@ -1,0 +1,4172 @@
+[
+  {
+    "marque": "Volkswagen",
+    "modeles": [
+      {
+        "nom": "Golf",
+        "generations": [
+          {
+            "code_chassis": "Golf II",
+            "annees": "1983-1992",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.8 GTI - 107 à 139ch",
+                "code_moteur": "PB / KR (16V)",
+                "cylindree": "1.8L",
+                "puissance_ch": 139,
+                "boite": [
+                  "BVM5"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Corrosion des bas de caisse et ailes arrière",
+                    "symptomes": "Perforations visibles, bulles de peinture",
+                    "pieces_concernees": "Bas de caisse, ailes arrière",
+                    "kilometrage_critique": "Fréquent au-delà de 30 ans d'âge",
+                    "cout_estime_eur": "500 à 2000€ selon étendue"
+                  },
+                  {
+                    "panne": "Déréglage de l'injection K-Jetronic",
+                    "symptomes": "Ralenti instable, surconsommation, à-coups",
+                    "pieces_concernees": "Distributeur-doseur K-Jetronic, injecteurs",
+                    "kilometrage_critique": "Révision recommandée tous les 30-40 000 km",
+                    "cout_estime_eur": "150 à 400€"
+                  },
+                  {
+                    "panne": "Usure de la courroie de distribution",
+                    "symptomes": "Bruit anormal, risque de casse moteur si négligée",
+                    "pieces_concernees": "Courroie de distribution, galet tendeur",
+                    "kilometrage_critique": "Remplacement strict tous les 60 000-90 000 km selon millésime",
+                    "cout_estime_eur": "150 à 350€ (préventif) / 1500€+ (casse moteur)"
+                  },
+                  {
+                    "panne": "Usure de l'essieu arrière à flasques",
+                    "symptomes": "Bruits de suspension, tenue de route imprécise",
+                    "pieces_concernees": "Flasques, silentblocs, roulements",
+                    "kilometrage_critique": "À vérifier au-delà de 150 000 km d'origine",
+                    "cout_estime_eur": "300 à 700€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.6D/1.6TD - 54 à 80ch",
+                "code_moteur": "JR / RA",
+                "cylindree": "1.6L",
+                "puissance_ch": 80,
+                "boite": [
+                  "BVM4",
+                  "BVM5"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité de la pompe injection en cas de manque d'entretien",
+                    "symptomes": "Perte de puissance, fumées",
+                    "pieces_concernees": "Pompe injection",
+                    "kilometrage_critique": "Au-delà de 250 000-300 000 km",
+                    "cout_estime_eur": "400 à 800€"
+                  },
+                  {
+                    "panne": "Corrosion carrosserie fréquente",
+                    "symptomes": "Perforations visibles",
+                    "pieces_concernees": "Carrosserie, bas de caisse",
+                    "kilometrage_critique": "Fréquent au-delà de 30 ans d'âge",
+                    "cout_estime_eur": "500 à 2000€"
+                  },
+                  {
+                    "panne": "Usure du joint de culasse sur très gros kilométrage",
+                    "symptomes": "Perte de liquide de refroidissement, surchauffe",
+                    "pieces_concernees": "Joint de culasse",
+                    "kilometrage_critique": "Au-delà de 300 000-350 000 km",
+                    "cout_estime_eur": "500 à 900€"
+                  },
+                  {
+                    "panne": "Sensibilité du turbo (TD) à l'entretien",
+                    "symptomes": "Perte de puissance, sifflement",
+                    "pieces_concernees": "Turbocompresseur",
+                    "kilometrage_critique": "Si vidanges espacées, dès 150 000 km",
+                    "cout_estime_eur": "500 à 900€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "Golf III",
+            "annees": "1991-1997",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.8/2.0 GTI - 90 à 150ch",
+                "code_moteur": "ABS / ADY / 2E",
+                "cylindree": "1.8L / 2.0L",
+                "puissance_ch": 150,
+                "boite": [
+                  "BVM5",
+                  "BVA4"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Corrosion des passages de roue et bas de caisse",
+                    "symptomes": "Perforations visibles, bulles de peinture",
+                    "pieces_concernees": "Passages de roue, bas de caisse",
+                    "kilometrage_critique": "Fréquent au-delà de 25-30 ans d'âge",
+                    "cout_estime_eur": "500 à 1800€"
+                  },
+                  {
+                    "panne": "Fragilité du joint de culasse sur versions 16V",
+                    "symptomes": "Perte de liquide de refroidissement, surchauffe",
+                    "pieces_concernees": "Joint de culasse",
+                    "kilometrage_critique": "Risque accru au-delà de 150 000 km",
+                    "cout_estime_eur": "500 à 900€"
+                  },
+                  {
+                    "panne": "Usure de la courroie de distribution",
+                    "symptomes": "Bruit anormal, risque de casse moteur si négligée",
+                    "pieces_concernees": "Courroie de distribution",
+                    "kilometrage_critique": "Remplacement strict tous les 60 000-90 000 km",
+                    "cout_estime_eur": "150 à 350€ (préventif) / 1500€+ (casse)"
+                  },
+                  {
+                    "panne": "Vieillissement du radiateur et des durites",
+                    "symptomes": "Fuites, surchauffe",
+                    "pieces_concernees": "Radiateur, durites",
+                    "kilometrage_critique": "Remplacement fréquent au-delà de 150 000 km",
+                    "cout_estime_eur": "150 à 300€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.9 TDI - 90 à 110ch",
+                "code_moteur": "1Z / AHU",
+                "cylindree": "1.9L",
+                "puissance_ch": 110,
+                "boite": [
+                  "BVM5"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Robustesse mécanique exceptionnelle",
+                    "symptomes": "N/A (fiabilité intrinsèque élevée)",
+                    "pieces_concernees": "N/A",
+                    "kilometrage_critique": "Souvent au-delà de 400 000-500 000 km avec entretien",
+                    "cout_estime_eur": "N/A"
+                  },
+                  {
+                    "panne": "Fragilité de la pompe injection rotative Bosch VE",
+                    "symptomes": "Perte de puissance, fumées, démarrage difficile",
+                    "pieces_concernees": "Pompe injection rotative Bosch VE",
+                    "kilometrage_critique": "En cas de manque d'entretien, dès 250 000 km",
+                    "cout_estime_eur": "400 à 800€"
+                  },
+                  {
+                    "panne": "Usure du volant moteur bi-masse",
+                    "symptomes": "Bruit métallique au ralenti, vibrations",
+                    "pieces_concernees": "Volant moteur bi-masse",
+                    "kilometrage_critique": "Entre 200 000 et 250 000 km",
+                    "cout_estime_eur": "500 à 900€"
+                  },
+                  {
+                    "panne": "Sensibilité du turbo sur gros kilométrage",
+                    "symptomes": "Perte de puissance, sifflement",
+                    "pieces_concernees": "Turbocompresseur",
+                    "kilometrage_critique": "Au-delà de 250 000-300 000 km",
+                    "cout_estime_eur": "500 à 900€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "Golf IV",
+            "annees": "1997-2003",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.6/2.0 - 100 à 125ch",
+                "code_moteur": "AKL / AZJ / APK",
+                "cylindree": "1.6L / 2.0L",
+                "puissance_ch": 125,
+                "boite": [
+                  "BVM5",
+                  "BVA4"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Usure du tendeur de chaîne sur gros kilométrage (2.0)",
+                    "symptomes": "Bruit de chaîne léger au démarrage",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "À surveiller au-delà de 200 000 km",
+                    "cout_estime_eur": "300 à 600€"
+                  },
+                  {
+                    "panne": "Fuites d'huile classiques au niveau du carter",
+                    "symptomes": "Traces d'huile sous le véhicule, niveau qui baisse",
+                    "pieces_concernees": "Joint de carter",
+                    "kilometrage_critique": "Fréquent au-delà de 150 000 km",
+                    "cout_estime_eur": "150 à 350€"
+                  },
+                  {
+                    "panne": "Vieillissement des supports moteur",
+                    "symptomes": "Vibrations anormales, bruit métallique au ralenti",
+                    "pieces_concernees": "Supports moteur",
+                    "kilometrage_critique": "Au-delà de 150 000 km",
+                    "cout_estime_eur": "150 à 300€"
+                  },
+                  {
+                    "panne": "Corrosion moindre que générations précédentes mais toujours présente",
+                    "symptomes": "Perforations localisées",
+                    "pieces_concernees": "Passages de roue, bas de caisse",
+                    "kilometrage_critique": "Fréquent au-delà de 20-25 ans d'âge",
+                    "cout_estime_eur": "300 à 1200€"
+                  }
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "1.8T GTI - 150 à 180ch",
+                "code_moteur": "AGU / AUM / AGN",
+                "cylindree": "1.8L turbo 20V",
+                "puissance_ch": 180,
+                "boite": [
+                  "BVM5",
+                  "BVM6"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "MALADIE CONNUE : consommation d'huile excessive",
+                    "symptomes": "Niveau d'huile qui baisse rapidement entre vidanges, encrassement du carter et des segments",
+                    "pieces_concernees": "Segments, carter, système de recyclage des gaz (PCV)",
+                    "kilometrage_critique": "Fréquent au-delà de 100 000-130 000 km",
+                    "cout_estime_eur": "Surveillance ; 1500 à 2500€ si réfection nécessaire"
+                  },
+                  {
+                    "panne": "Sensibilité du turbo K03/K04 en cas de manque d'entretien",
+                    "symptomes": "Perte de puissance, sifflement, fumée",
+                    "pieces_concernees": "Turbocompresseur K03/K04",
+                    "kilometrage_critique": "Dès 150 000 km si vidanges espacées",
+                    "cout_estime_eur": "500 à 900€"
+                  },
+                  {
+                    "panne": "Fragilité des bobines d'allumage",
+                    "symptomes": "Ratés d'allumage, voyant moteur, à-coups",
+                    "pieces_concernees": "Bobines d'allumage",
+                    "kilometrage_critique": "Usure fréquente au-delà de 120 000 km",
+                    "cout_estime_eur": "150 à 350€ (jeu complet)"
+                  },
+                  {
+                    "panne": "Craquement des durites de suralimentation avec l'âge",
+                    "symptomes": "Perte de puissance, sifflement de fuite d'air",
+                    "pieces_concernees": "Durites de suralimentation",
+                    "kilometrage_critique": "Au-delà de 15-18 ans d'âge",
+                    "cout_estime_eur": "100 à 300€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.9 TDI - 90 à 150ch",
+                "code_moteur": "ALH / AJM / ASZ / ARL",
+                "cylindree": "1.9L",
+                "puissance_ch": 150,
+                "boite": [
+                  "BVM5",
+                  "BVM6",
+                  "BVA4 Tiptronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Usure du volant moteur bi-masse",
+                    "symptomes": "Bruit métallique au ralenti, vibrations",
+                    "pieces_concernees": "Volant moteur bi-masse",
+                    "kilometrage_critique": "Entre 180 000 et 220 000 km",
+                    "cout_estime_eur": "500 à 900€"
+                  },
+                  {
+                    "panne": "Coût élevé de la pompe injection rotative (ALH) ou pompe-injecteurs (ARL/ASZ)",
+                    "symptomes": "Perte de puissance, fumées, bruit anormal",
+                    "pieces_concernees": "Pompe injection ou pompe-injecteurs",
+                    "kilometrage_critique": "Au-delà de 200 000-250 000 km",
+                    "cout_estime_eur": "600 à 1200€"
+                  },
+                  {
+                    "panne": "Fragilité et bruit des injecteurs pompe-injecteurs ARL/ASZ",
+                    "symptomes": "Bruit de cliquetis caractéristique, usure prématurée",
+                    "pieces_concernees": "Injecteurs pompe-injecteurs",
+                    "kilometrage_critique": "Dès 150 000-180 000 km",
+                    "cout_estime_eur": "700 à 1400€"
+                  },
+                  {
+                    "panne": "Encrassement fréquent de la vanne EGR (pas de FAP sur cette génération)",
+                    "symptomes": "Perte de puissance en usage urbain",
+                    "pieces_concernees": "Vanne EGR",
+                    "kilometrage_critique": "Dès 150 000 km",
+                    "cout_estime_eur": "200 à 450€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "Golf V",
+            "annees": "2003-2008",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.4 TSI/2.0 FSI GTI - 122 à 200ch",
+                "code_moteur": "BLG / BWA (2.0 TFSI)",
+                "cylindree": "1.4L / 2.0L turbo",
+                "puissance_ch": 200,
+                "boite": [
+                  "BVM6",
+                  "DSG6"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "MALADIE CONNUE 1.4 TSI première génération : rupture de la courroie de distribution interne au compresseur",
+                    "symptomes": "Casse moteur brutale sans signe préalable clair, arrêt moteur immédiat",
+                    "pieces_concernees": "Courroie interne au compresseur, ensemble moteur (versions bi-turbo/compresseur 170ch)",
+                    "kilometrage_critique": "Risque connu, souvent avant 100 000 km sur les tout premiers blocs",
+                    "cout_estime_eur": "3000 à 5000€ (remplacement moteur en cas de casse)"
+                  },
+                  {
+                    "panne": "Étirement de la chaîne de distribution 2.0 TFSI",
+                    "symptomes": "Bruit de chaîne au démarrage à froid",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "Avec l'âge, risque accru au-delà de 150 000 km",
+                    "cout_estime_eur": "600 à 1100€"
+                  },
+                  {
+                    "panne": "Fragilité de la mécatronique DSG6 à huile",
+                    "symptomes": "À-coups, pannes de passage de vitesses, voyant boîte",
+                    "pieces_concernees": "Mécatronique DSG6",
+                    "kilometrage_critique": "Fréquent au-delà de 100 000-130 000 km",
+                    "cout_estime_eur": "1200 à 2500€"
+                  },
+                  {
+                    "panne": "Sensibilité de la pompe à haute pression FSI à l'encrassement",
+                    "symptomes": "Perte de puissance, démarrage difficile",
+                    "pieces_concernees": "Pompe à haute pression FSI",
+                    "kilometrage_critique": "Fréquent au-delà de 120 000 km",
+                    "cout_estime_eur": "400 à 800€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.9 TDI/2.0 TDI - 105 à 170ch",
+                "code_moteur": "BXE / BKD / AZV",
+                "cylindree": "1.9L / 2.0L",
+                "puissance_ch": 170,
+                "boite": [
+                  "BVM6",
+                  "DSG6"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Usure du volant moteur bi-masse",
+                    "symptomes": "Bruit métallique au ralenti, vibrations",
+                    "pieces_concernees": "Volant moteur bi-masse",
+                    "kilometrage_critique": "Entre 180 000 et 220 000 km",
+                    "cout_estime_eur": "500 à 900€"
+                  },
+                  {
+                    "panne": "Fragilité et coût élevé des injecteurs pompe-injecteurs (2.0 16V PD)",
+                    "symptomes": "Bruit de cliquetis caractéristique, ratés, fumée",
+                    "pieces_concernees": "Injecteurs pompe-injecteurs",
+                    "kilometrage_critique": "Dès 150 000-180 000 km",
+                    "cout_estime_eur": "700 à 1400€"
+                  },
+                  {
+                    "panne": "Encrassement vanne EGR et FAP en usage urbain",
+                    "symptomes": "Perte de puissance, régénérations fréquentes",
+                    "pieces_concernees": "Vanne EGR, FAP",
+                    "kilometrage_critique": "Dès 120 000-150 000 km",
+                    "cout_estime_eur": "300 à 1000€"
+                  },
+                  {
+                    "panne": "Fragilité de la mécatronique DSG",
+                    "symptomes": "À-coups, pannes de passage de vitesses",
+                    "pieces_concernees": "Mécatronique DSG",
+                    "kilometrage_critique": "Fréquent au-delà de 100 000-130 000 km",
+                    "cout_estime_eur": "1200 à 2500€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "Golf VI",
+            "annees": "2008-2012",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.4 TSI/2.0 TSI GTI - 122 à 211ch",
+                "code_moteur": "CAXA / CCZA (2.0 TSI)",
+                "cylindree": "1.4L / 2.0L turbo",
+                "puissance_ch": 211,
+                "boite": [
+                  "BVM6",
+                  "DSG6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Étirement prématuré de la chaîne de distribution 2.0 TSI (CCZA/CAWB)",
+                    "symptomes": "Bruit de chaîne caractéristique au démarrage à froid",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "Risque avant 100 000 km sur certains blocs",
+                    "cout_estime_eur": "700 à 1300€"
+                  },
+                  {
+                    "panne": "Fragilité du tendeur de chaîne",
+                    "symptomes": "Cliquetis persistant au démarrage",
+                    "pieces_concernees": "Tendeur de chaîne",
+                    "kilometrage_critique": "Souvent lié à la casse de chaîne, contrôle dès 80 000 km",
+                    "cout_estime_eur": "Inclus dans réparation chaîne complète"
+                  },
+                  {
+                    "panne": "Fragilité de la mécatronique DSG7 à sec",
+                    "symptomes": "À-coups à basse vitesse, voyant boîte",
+                    "pieces_concernees": "Mécatronique DSG7",
+                    "kilometrage_critique": "Fréquent au-delà de 80 000-100 000 km",
+                    "cout_estime_eur": "1000 à 2200€"
+                  },
+                  {
+                    "panne": "Sensibilité de la pompe à haute pression",
+                    "symptomes": "Perte de puissance, démarrage difficile",
+                    "pieces_concernees": "Pompe à haute pression",
+                    "kilometrage_critique": "Fréquent au-delà de 120 000 km",
+                    "cout_estime_eur": "400 à 800€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.6 TDI/2.0 TDI - 90 à 170ch",
+                "code_moteur": "CAYC / CBAB / CFFB",
+                "cylindree": "1.6L / 2.0L",
+                "puissance_ch": 170,
+                "boite": [
+                  "BVM6",
+                  "DSG6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité des injecteurs Common Rail Bosch/Siemens à l'encrassement",
+                    "symptomes": "Ratés, fumée, voyant moteur",
+                    "pieces_concernees": "Injecteurs Common Rail",
+                    "kilometrage_critique": "Fréquent au-delà de 150 000-180 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement vanne EGR et FAP en usage urbain",
+                    "symptomes": "Perte de puissance, régénérations fréquentes",
+                    "pieces_concernees": "Vanne EGR, FAP",
+                    "kilometrage_critique": "Dès 120 000-150 000 km",
+                    "cout_estime_eur": "300 à 1000€"
+                  },
+                  {
+                    "panne": "Usure du volant moteur bi-masse",
+                    "symptomes": "Bruit métallique au ralenti, vibrations",
+                    "pieces_concernees": "Volant moteur bi-masse",
+                    "kilometrage_critique": "Entre 180 000 et 220 000 km",
+                    "cout_estime_eur": "500 à 900€"
+                  },
+                  {
+                    "panne": "MALADIE CONNUE : concerné par le scandale Dieselgate",
+                    "symptomes": "Logiciel de trucage des émissions NOx en conditions réelles",
+                    "pieces_concernees": "Calculateur moteur (logiciel)",
+                    "kilometrage_critique": "N/A (défaut logiciel, mise à jour corrective disponible)",
+                    "cout_estime_eur": "0€ (mise à jour gratuite chez le constructeur)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "Golf VII",
+            "annees": "2012-2019",
+            "phases": [
+              "Phase 1 (2012-2016)",
+              "Phase 2 restylée (2016-2019)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.2 TSI/1.4 TSI/2.0 TSI GTI - 85 à 310ch",
+                "code_moteur": "CJZC / CHPA / CJXC (2.0 TSI)",
+                "cylindree": "1.2L / 1.4L / 2.0L turbo",
+                "puissance_ch": 310,
+                "boite": [
+                  "BVM6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Étirement du tendeur de chaîne EA888 Gen3 (2.0 TSI)",
+                    "symptomes": "Bruit de chaîne léger au démarrage, moins fréquent que Gen2",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "À surveiller au-delà de 150 000-180 000 km",
+                    "cout_estime_eur": "600 à 1100€"
+                  },
+                  {
+                    "panne": "Défaillance de l'électrovanne ACT (1.4 TSI, désactivation de cylindres)",
+                    "symptomes": "Fonctionnement irrégulier de la désactivation, à-coups",
+                    "pieces_concernees": "Électrovanne ACT",
+                    "kilometrage_critique": "Fréquent au-delà de 100 000 km",
+                    "cout_estime_eur": "300 à 600€"
+                  },
+                  {
+                    "panne": "Usure de la mécatronique DSG7",
+                    "symptomes": "À-coups, voyant boîte",
+                    "pieces_concernees": "Mécatronique DSG7",
+                    "kilometrage_critique": "Fréquent au-delà de 100 000-130 000 km",
+                    "cout_estime_eur": "1000 à 2200€"
+                  },
+                  {
+                    "panne": "Consommation d'huile signalée sur certains blocs 1.4/2.0 TSI",
+                    "symptomes": "Niveau qui baisse entre vidanges",
+                    "pieces_concernees": "Segments",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "Surveillance requise"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.6 TDI/2.0 TDI - 90 à 184ch",
+                "code_moteur": "CLHA / CRBC / CUNA",
+                "cylindree": "1.6L / 2.0L",
+                "puissance_ch": 184,
+                "boite": [
+                  "BVM6",
+                  "DSG6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "MALADIE CONNUE : concernés par le Dieselgate",
+                    "symptomes": "Logiciel de trucage NOx en conditions réelles, rappel effectué",
+                    "pieces_concernees": "Calculateur moteur (logiciel)",
+                    "kilometrage_critique": "N/A, mise à jour corrective disponible",
+                    "cout_estime_eur": "0€ (mise à jour gratuite chez le constructeur)"
+                  },
+                  {
+                    "panne": "Encrassement vanne EGR et FAP en usage urbain",
+                    "symptomes": "Perte de puissance, régénérations fréquentes",
+                    "pieces_concernees": "Vanne EGR, FAP",
+                    "kilometrage_critique": "Dès 100 000-120 000 km",
+                    "cout_estime_eur": "300 à 1000€"
+                  },
+                  {
+                    "panne": "Sensibilité des injecteurs à l'encrassement",
+                    "symptomes": "Ratés, fumée",
+                    "pieces_concernees": "Injecteurs",
+                    "kilometrage_critique": "Au-delà de 150 000-180 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Défaillance du capteur NOx AdBlue (versions récentes)",
+                    "symptomes": "Voyant AdBlue, limitation de démarrages",
+                    "pieces_concernees": "Capteur NOx",
+                    "kilometrage_critique": "Au-delà de 100 000 km",
+                    "cout_estime_eur": "300 à 600€"
+                  }
+                ]
+              },
+              {
+                "type": "Électrique",
+                "nom": "e-Golf - 115 à 136ch",
+                "code_moteur": "Moteur électrique synchrone",
+                "cylindree": "N/A",
+                "puissance_ch": 136,
+                "boite": [
+                  "Réducteur monovitesse"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Autonomie limitée par rapport aux standards actuels",
+                    "symptomes": "Autonomie réelle de 150-200 km, insuffisante pour usage extra-urbain régulier",
+                    "pieces_concernees": "Batterie (24 kWh à 35,8 kWh selon millésime)",
+                    "kilometrage_critique": "Caractéristique dès l'achat",
+                    "cout_estime_eur": "N/A (limite technique d'origine)"
+                  },
+                  {
+                    "panne": "Vieillissement de la batterie sur les modèles les plus anciens",
+                    "symptomes": "Perte de capacité et d'autonomie progressive",
+                    "pieces_concernees": "Batterie haute tension",
+                    "kilometrage_critique": "Dégradation notable après 7-9 ans/100 000 km",
+                    "cout_estime_eur": "4500 à 7500€ hors garantie"
+                  },
+                  {
+                    "panne": "Coût élevé de remplacement de la batterie hors garantie",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Batterie haute tension complète",
+                    "kilometrage_critique": "Au-delà de la garantie constructeur",
+                    "cout_estime_eur": "4500 à 7500€"
+                  },
+                  {
+                    "panne": "Bugs logiciels du chargeur embarqué",
+                    "symptomes": "Recharge qui ne démarre pas ou s'interrompt",
+                    "pieces_concernees": "Chargeur embarqué, calculateur de charge",
+                    "kilometrage_critique": "Variable",
+                    "cout_estime_eur": "0€ si résolu par mise à jour, sinon 400-900€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "Golf VIII",
+            "annees": "2019-aujourd'hui",
+            "phases": [
+              "Phase 1 (2019-2024)",
+              "Phase 2 restylée (2024-)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.0 TSI/1.5 TSI/2.0 TSI GTI - 90 à 333ch",
+                "code_moteur": "DKR / DPCA / DNPA (2.0 TSI)",
+                "cylindree": "1.0L / 1.5L / 2.0L turbo",
+                "puissance_ch": 333,
+                "boite": [
+                  "BVM6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Bugs et lenteurs de l'interface infodivertissement MIB3",
+                    "symptomes": "Écran figé, lenteurs, redémarrages intempestifs",
+                    "pieces_concernees": "Calculateur infodivertissement MIB3",
+                    "kilometrage_critique": "Variable, retours utilisateurs fréquents dès l'achat",
+                    "cout_estime_eur": "0€ si résolu par mise à jour, sinon 300 à 800€"
+                  },
+                  {
+                    "panne": "Complexité du système mild-hybrid 48V (eTSI)",
+                    "symptomes": "Messages d'erreur électronique potentiels",
+                    "pieces_concernees": "Module mild-hybrid, batterie 48V",
+                    "kilometrage_critique": "Peu de recul, système récent",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  },
+                  {
+                    "panne": "Encrassement du filtre à particules essence",
+                    "symptomes": "Voyant moteur, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules essence",
+                    "kilometrage_critique": "Sur petits trajets dès 60 000-80 000 km",
+                    "cout_estime_eur": "700 à 1400€"
+                  },
+                  {
+                    "panne": "Dysfonctionnements divers de l'électronique ADAS",
+                    "symptomes": "Alertes intempestives, désactivation d'aides à la conduite",
+                    "pieces_concernees": "Capteurs, caméras, radars ADAS",
+                    "kilometrage_critique": "Variable",
+                    "cout_estime_eur": "150 à 600€ selon capteur"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "2.0 TDI - 115 à 200ch",
+                "code_moteur": "DTSA / DTUA",
+                "cylindree": "2.0L",
+                "puissance_ch": 200,
+                "boite": [
+                  "BVM6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité du système AdBlue/SCR",
+                    "symptomes": "Voyant AdBlue, limitation de démarrages",
+                    "pieces_concernees": "Capteur NOx, pompe de dosage",
+                    "kilometrage_critique": "Dès 80 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement du FAP sur petits trajets répétés",
+                    "symptomes": "Voyant FAP, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Nettoyage préventif de la vanne EGR",
+                    "symptomes": "Perte de puissance",
+                    "pieces_concernees": "Vanne EGR",
+                    "kilometrage_critique": "Vers 100 000 km",
+                    "cout_estime_eur": "250 à 500€"
+                  },
+                  {
+                    "panne": "Manque de recul sur la fiabilité long terme",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Ensemble du groupe motopropulseur",
+                    "kilometrage_critique": "Modèle récent",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  }
+                ]
+              },
+              {
+                "type": "Hybride rechargeable",
+                "nom": "GTE - 204 à 245ch",
+                "code_moteur": "EA211 TSI evo + moteur électrique",
+                "cylindree": "1.4L + électrique",
+                "puissance_ch": 245,
+                "boite": [
+                  "DSG6"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Vieillissement de la batterie HT sur les premiers modèles",
+                    "symptomes": "Autonomie électrique réduite",
+                    "pieces_concernees": "Batterie haute tension",
+                    "kilometrage_critique": "Dégradation après 5-7 ans/100 000 km",
+                    "cout_estime_eur": "4000 à 6500€ hors garantie"
+                  },
+                  {
+                    "panne": "Bugs logiciels de gestion hybride",
+                    "symptomes": "Transitions essence/électrique erratiques",
+                    "pieces_concernees": "Calculateur hybride",
+                    "kilometrage_critique": "Variable",
+                    "cout_estime_eur": "0 à 300€"
+                  },
+                  {
+                    "panne": "Sollicitation accrue des trains roulants et freins",
+                    "symptomes": "Usure plus rapide pneus/freins",
+                    "pieces_concernees": "Pneumatiques, plaquettes",
+                    "kilometrage_critique": "Usure 10-20% plus rapide",
+                    "cout_estime_eur": "Surcoût entretien courant"
+                  },
+                  {
+                    "panne": "Coût élevé de remplacement batterie hors garantie",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Batterie HT complète",
+                    "kilometrage_critique": "Au-delà de 8 ans",
+                    "cout_estime_eur": "4000 à 6500€"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Passat",
+        "generations": [
+          {
+            "code_chassis": "B5/B5.5",
+            "annees": "1996-2005",
+            "phases": [
+              "Phase 1 (1996-2000)",
+              "Phase 2 restylée B5.5 (2000-2005)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.8T/2.8 V6 - 150 à 193ch",
+                "code_moteur": "AEB / AJP / ACK",
+                "cylindree": "1.8L turbo / 2.8L V6",
+                "puissance_ch": 193,
+                "boite": [
+                  "BVM5",
+                  "BVA4/5 Tiptronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Consommation d'huile sur 1.8T après gros kilométrage",
+                    "symptomes": "Niveau qui baisse rapidement entre vidanges, encrassement carter/segments",
+                    "pieces_concernees": "Segments, carter",
+                    "kilometrage_critique": "Fréquent au-delà de 150 000-180 000 km",
+                    "cout_estime_eur": "Surveillance ; 1500€+ si réfection"
+                  },
+                  {
+                    "panne": "Rupture de la courroie de distribution sur V6",
+                    "symptomes": "Arrêt moteur brutal si négligée",
+                    "pieces_concernees": "Courroie de distribution",
+                    "kilometrage_critique": "Remplacement strict tous les 90 000-120 000 km",
+                    "cout_estime_eur": "300 à 600€ (préventif) / 2500€+ (casse)"
+                  },
+                  {
+                    "panne": "Coût élevé d'entretien de la traction intégrale Syncro/4Motion",
+                    "symptomes": "Bruits en 4x4, vibrations en virage",
+                    "pieces_concernees": "Boîte de transfert, arbre de transmission",
+                    "kilometrage_critique": "Au-delà de 150 000 km",
+                    "cout_estime_eur": "800 à 1800€"
+                  },
+                  {
+                    "panne": "Fragilité des radiateurs plastiques",
+                    "symptomes": "Fuites, surchauffe",
+                    "pieces_concernees": "Radiateur",
+                    "kilometrage_critique": "Remplacement fréquent au-delà de 150 000 km",
+                    "cout_estime_eur": "150 à 300€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.9 TDI - 90 à 130ch",
+                "code_moteur": "AFN / AVG / AJM",
+                "cylindree": "1.9L",
+                "puissance_ch": 130,
+                "boite": [
+                  "BVM5",
+                  "BVA4 Tiptronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Robustesse mécanique réputée",
+                    "symptomes": "N/A (fiabilité intrinsèque élevée)",
+                    "pieces_concernees": "N/A",
+                    "kilometrage_critique": "Souvent au-delà de 400 000 km avec entretien",
+                    "cout_estime_eur": "N/A"
+                  },
+                  {
+                    "panne": "Usure du volant moteur bi-masse",
+                    "symptomes": "Bruit métallique au ralenti, vibrations",
+                    "pieces_concernees": "Volant moteur bi-masse",
+                    "kilometrage_critique": "Entre 200 000 et 250 000 km",
+                    "cout_estime_eur": "500 à 900€"
+                  },
+                  {
+                    "panne": "Fragilité de la pompe injection rotative en cas de manque d'entretien",
+                    "symptomes": "Perte de puissance, fumées",
+                    "pieces_concernees": "Pompe injection rotative",
+                    "kilometrage_critique": "Au-delà de 250 000 km",
+                    "cout_estime_eur": "400 à 800€"
+                  },
+                  {
+                    "panne": "Sensibilité du turbo sur gros kilométrage",
+                    "symptomes": "Perte de puissance, sifflement",
+                    "pieces_concernees": "Turbocompresseur",
+                    "kilometrage_critique": "Au-delà de 250 000-300 000 km",
+                    "cout_estime_eur": "500 à 900€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "B6/B7",
+            "annees": "2005-2014",
+            "phases": [
+              "Phase 1 B6 (2005-2010)",
+              "Phase 2 B7 restylée (2010-2014)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.4 TSI/2.0 TSI - 122 à 211ch",
+                "code_moteur": "CAXA / CCZA",
+                "cylindree": "1.4L / 2.0L turbo",
+                "puissance_ch": 211,
+                "boite": [
+                  "BVM6",
+                  "DSG6"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Étirement de la chaîne de distribution 2.0 TSI",
+                    "symptomes": "Bruit de chaîne au démarrage à froid",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "Risque avant 100 000-130 000 km",
+                    "cout_estime_eur": "700 à 1300€"
+                  },
+                  {
+                    "panne": "MALADIE CONNUE 1.4 TSI première génération : risque de rupture de la courroie interne au compresseur",
+                    "symptomes": "Casse moteur brutale sans signe préalable",
+                    "pieces_concernees": "Courroie interne au compresseur",
+                    "kilometrage_critique": "Souvent avant 100 000 km sur les tout premiers blocs",
+                    "cout_estime_eur": "3000 à 5000€ (remplacement moteur)"
+                  },
+                  {
+                    "panne": "Fragilité de la mécatronique DSG6",
+                    "symptomes": "À-coups, pannes de passage de vitesses",
+                    "pieces_concernees": "Mécatronique DSG6",
+                    "kilometrage_critique": "Fréquent au-delà de 100 000-130 000 km",
+                    "cout_estime_eur": "1200 à 2500€"
+                  },
+                  {
+                    "panne": "Sensibilité de la pompe à haute pression",
+                    "symptomes": "Perte de puissance, démarrage difficile",
+                    "pieces_concernees": "Pompe à haute pression",
+                    "kilometrage_critique": "Fréquent au-delà de 120 000 km",
+                    "cout_estime_eur": "400 à 800€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.9 TDI/2.0 TDI - 105 à 170ch",
+                "code_moteur": "BXE / BKD / CBAB",
+                "cylindree": "1.9L / 2.0L",
+                "puissance_ch": 170,
+                "boite": [
+                  "BVM6",
+                  "DSG6"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Usure du volant moteur bi-masse",
+                    "symptomes": "Bruit métallique au ralenti, vibrations",
+                    "pieces_concernees": "Volant moteur bi-masse",
+                    "kilometrage_critique": "Entre 180 000 et 220 000 km",
+                    "cout_estime_eur": "500 à 900€"
+                  },
+                  {
+                    "panne": "Fragilité et coût élevé des injecteurs pompe-injecteurs (versions PD)",
+                    "symptomes": "Bruit de cliquetis caractéristique, ratés, fumée",
+                    "pieces_concernees": "Injecteurs pompe-injecteurs",
+                    "kilometrage_critique": "Dès 150 000-180 000 km",
+                    "cout_estime_eur": "700 à 1400€"
+                  },
+                  {
+                    "panne": "Encrassement vanne EGR et FAP",
+                    "symptomes": "Perte de puissance, régénérations fréquentes",
+                    "pieces_concernees": "Vanne EGR, FAP",
+                    "kilometrage_critique": "Dès 120 000-150 000 km",
+                    "cout_estime_eur": "300 à 1000€"
+                  },
+                  {
+                    "panne": "Certaines versions concernées par le Dieselgate",
+                    "symptomes": "Logiciel de trucage NOx en conditions réelles",
+                    "pieces_concernees": "Calculateur moteur (logiciel)",
+                    "kilometrage_critique": "N/A, mise à jour corrective disponible",
+                    "cout_estime_eur": "0€ (mise à jour gratuite chez le constructeur)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "B8",
+            "annees": "2014-2023",
+            "phases": [
+              "Phase 1 (2014-2019)",
+              "Phase 2 restylée (2019-2023)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.4 TSI/2.0 TSI - 125 à 272ch",
+                "code_moteur": "CZDA / CZPB (2.0 TSI EA888 Gen3)",
+                "cylindree": "1.4L / 2.0L turbo",
+                "puissance_ch": 272,
+                "boite": [
+                  "BVM6",
+                  "DSG6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Étirement du tendeur de chaîne EA888 Gen3 sur gros kilométrage",
+                    "symptomes": "Bruit de chaîne léger au démarrage",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "À surveiller au-delà de 150 000-180 000 km",
+                    "cout_estime_eur": "600 à 1100€"
+                  },
+                  {
+                    "panne": "Consommation d'huile signalée sur certains blocs",
+                    "symptomes": "Niveau qui baisse entre vidanges",
+                    "pieces_concernees": "Segments",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "Surveillance requise"
+                  },
+                  {
+                    "panne": "Usure de la mécatronique DSG sur gros kilométrage",
+                    "symptomes": "À-coups, voyant boîte",
+                    "pieces_concernees": "Mécatronique DSG",
+                    "kilometrage_critique": "Fréquent au-delà de 130 000-150 000 km",
+                    "cout_estime_eur": "1000 à 2200€"
+                  },
+                  {
+                    "panne": "Système Start&Stop parfois capricieux",
+                    "symptomes": "Fonction qui se désactive, message d'erreur",
+                    "pieces_concernees": "Capteur de batterie intelligent",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "150 à 300€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.6 TDI/2.0 TDI - 120 à 240ch",
+                "code_moteur": "DDYA / DFHA",
+                "cylindree": "1.6L / 2.0L",
+                "puissance_ch": 240,
+                "boite": [
+                  "BVM6",
+                  "DSG6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité du système AdBlue/SCR",
+                    "symptomes": "Voyant AdBlue, limitation de démarrages",
+                    "pieces_concernees": "Capteur NOx, pompe de dosage",
+                    "kilometrage_critique": "Dès 80 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement du FAP sur petits trajets répétés",
+                    "symptomes": "Voyant FAP, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Sensibilité des injecteurs à l'encrassement",
+                    "symptomes": "Ratés, fumée",
+                    "pieces_concernees": "Injecteurs",
+                    "kilometrage_critique": "Au-delà de 150 000-180 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  },
+                  {
+                    "panne": "Nettoyage préventif de la vanne EGR",
+                    "symptomes": "Perte de puissance",
+                    "pieces_concernees": "Vanne EGR",
+                    "kilometrage_critique": "Vers 100 000 km",
+                    "cout_estime_eur": "250 à 500€"
+                  }
+                ]
+              },
+              {
+                "type": "Hybride rechargeable",
+                "nom": "GTE - 218ch",
+                "code_moteur": "EA211 TSI + moteur électrique",
+                "cylindree": "1.4L + électrique",
+                "puissance_ch": 218,
+                "boite": [
+                  "DSG6"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Vieillissement de la batterie HT",
+                    "symptomes": "Autonomie électrique réduite",
+                    "pieces_concernees": "Batterie haute tension",
+                    "kilometrage_critique": "Dégradation après 5-7 ans/100 000 km",
+                    "cout_estime_eur": "4000 à 6500€ hors garantie"
+                  },
+                  {
+                    "panne": "Bugs logiciels de gestion hybride",
+                    "symptomes": "Transitions essence/électrique erratiques",
+                    "pieces_concernees": "Calculateur hybride",
+                    "kilometrage_critique": "Variable",
+                    "cout_estime_eur": "0 à 300€"
+                  },
+                  {
+                    "panne": "Sollicitation accrue des trains roulants",
+                    "symptomes": "Usure plus rapide pneus/freins",
+                    "pieces_concernees": "Pneumatiques, plaquettes",
+                    "kilometrage_critique": "Usure 10-20% plus rapide",
+                    "cout_estime_eur": "Surcoût entretien courant"
+                  },
+                  {
+                    "panne": "Coût élevé de remplacement batterie hors garantie",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Batterie HT complète",
+                    "kilometrage_critique": "Au-delà de 8 ans",
+                    "cout_estime_eur": "4000 à 6500€"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Polo",
+        "generations": [
+          {
+            "code_chassis": "6N/6N2",
+            "annees": "1994-2001",
+            "phases": [
+              "Phase 1 (1994-1999)",
+              "Phase 2 restylée 6N2 (1999-2001)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.4/1.6 - 60 à 100ch",
+                "code_moteur": "AEX / AFH",
+                "cylindree": "1.4L / 1.6L",
+                "puissance_ch": 100,
+                "boite": [
+                  "BVM5"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Corrosion des bas de caisse et ailes arrière",
+                    "symptomes": "Perforations visibles, bulles de peinture",
+                    "pieces_concernees": "Bas de caisse, ailes arrière",
+                    "kilometrage_critique": "Fréquent au-delà de 25 ans d'âge",
+                    "cout_estime_eur": "400 à 1500€ selon étendue"
+                  },
+                  {
+                    "panne": "Usure de la courroie de distribution",
+                    "symptomes": "Risque de casse moteur si négligée",
+                    "pieces_concernees": "Courroie de distribution",
+                    "kilometrage_critique": "Remplacement strict tous les 60 000-90 000 km",
+                    "cout_estime_eur": "150 à 300€ (préventif) / 1200€+ (casse)"
+                  },
+                  {
+                    "panne": "Vieillissement du radiateur et des durites",
+                    "symptomes": "Fuites, surchauffe",
+                    "pieces_concernees": "Radiateur, durites",
+                    "kilometrage_critique": "Remplacement fréquent au-delà de 150 000 km",
+                    "cout_estime_eur": "120 à 250€"
+                  },
+                  {
+                    "panne": "Usure de la suspension arrière avec l'âge",
+                    "symptomes": "Bruits de suspension, tenue de route imprécise",
+                    "pieces_concernees": "Silentblocs, amortisseurs arrière",
+                    "kilometrage_critique": "À vérifier au-delà de 150 000 km",
+                    "cout_estime_eur": "200 à 500€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.9 SDI/1.9 TDI - 64 à 90ch",
+                "code_moteur": "AEF / AGP",
+                "cylindree": "1.9L",
+                "puissance_ch": 90,
+                "boite": [
+                  "BVM5"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Bloc mécanique robuste mais pompe injection à surveiller",
+                    "symptomes": "Perte de puissance, fumées",
+                    "pieces_concernees": "Pompe injection",
+                    "kilometrage_critique": "Au-delà de 250 000-300 000 km",
+                    "cout_estime_eur": "400 à 800€"
+                  },
+                  {
+                    "panne": "Corrosion carrosserie fréquente",
+                    "symptomes": "Perforations visibles",
+                    "pieces_concernees": "Carrosserie",
+                    "kilometrage_critique": "Fréquent au-delà de 25 ans d'âge",
+                    "cout_estime_eur": "400 à 1500€"
+                  },
+                  {
+                    "panne": "Usure du joint de culasse sur gros kilométrage",
+                    "symptomes": "Perte de liquide de refroidissement",
+                    "pieces_concernees": "Joint de culasse",
+                    "kilometrage_critique": "Au-delà de 300 000 km",
+                    "cout_estime_eur": "400 à 800€"
+                  },
+                  {
+                    "panne": "Sensibilité du turbo (TDI) à l'entretien",
+                    "symptomes": "Perte de puissance, sifflement",
+                    "pieces_concernees": "Turbocompresseur",
+                    "kilometrage_critique": "Si vidanges espacées",
+                    "cout_estime_eur": "400 à 800€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "9N",
+            "annees": "2001-2009",
+            "phases": [
+              "Phase 1 (2001-2005)",
+              "Phase 2 restylée (2005-2009)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.2/1.4/1.4 TSI GTI - 60 à 180ch",
+                "code_moteur": "BBM / AUA / BLG (TSI)",
+                "cylindree": "1.2L à 1.4L",
+                "puissance_ch": 180,
+                "boite": [
+                  "BVM5",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "MALADIE CONNUE 1.4 TSI première génération : risque de rupture de courroie interne au compresseur",
+                    "symptomes": "Casse moteur brutale sans signe préalable",
+                    "pieces_concernees": "Courroie interne au compresseur",
+                    "kilometrage_critique": "Souvent avant 100 000 km",
+                    "cout_estime_eur": "2500 à 4500€ (remplacement moteur)"
+                  },
+                  {
+                    "panne": "Distribution à chaîne (1.2/1.4 atmo) fiable",
+                    "symptomes": "N/A (fiabilité correcte)",
+                    "pieces_concernees": "N/A",
+                    "kilometrage_critique": "Peu de défaillances rapportées",
+                    "cout_estime_eur": "N/A"
+                  },
+                  {
+                    "panne": "Sensibilité de la mécatronique DSG7 à sec sur premières générations",
+                    "symptomes": "À-coups à basse vitesse, voyant boîte",
+                    "pieces_concernees": "Mécatronique DSG7",
+                    "kilometrage_critique": "Fréquent au-delà de 80 000-100 000 km",
+                    "cout_estime_eur": "900 à 2000€"
+                  },
+                  {
+                    "panne": "Corrosion moindre que générations précédentes",
+                    "symptomes": "Perforations localisées possibles",
+                    "pieces_concernees": "Bas de caisse",
+                    "kilometrage_critique": "Variable, à contrôler au-delà de 18-20 ans",
+                    "cout_estime_eur": "300 à 900€ si nécessaire"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.4 TDI/1.9 TDI - 70 à 105ch",
+                "code_moteur": "BNM / ASZ",
+                "cylindree": "1.4L / 1.9L",
+                "puissance_ch": 105,
+                "boite": [
+                  "BVM5"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Usure du volant moteur bi-masse",
+                    "symptomes": "Bruit métallique au ralenti, vibrations",
+                    "pieces_concernees": "Volant moteur bi-masse",
+                    "kilometrage_critique": "Entre 180 000 et 220 000 km",
+                    "cout_estime_eur": "450 à 800€"
+                  },
+                  {
+                    "panne": "Fragilité des injecteurs pompe-injecteurs (1.4 TDI 3 cyl.)",
+                    "symptomes": "Bruit de cliquetis caractéristique, ratés",
+                    "pieces_concernees": "Injecteurs pompe-injecteurs",
+                    "kilometrage_critique": "Dès 130 000-150 000 km",
+                    "cout_estime_eur": "600 à 1200€"
+                  },
+                  {
+                    "panne": "Encrassement de la vanne EGR en usage urbain",
+                    "symptomes": "Perte de puissance",
+                    "pieces_concernees": "Vanne EGR",
+                    "kilometrage_critique": "Dès 120 000-150 000 km",
+                    "cout_estime_eur": "200 à 450€"
+                  },
+                  {
+                    "panne": "Sensibilité du turbo à l'entretien",
+                    "symptomes": "Perte de puissance, sifflement",
+                    "pieces_concernees": "Turbocompresseur",
+                    "kilometrage_critique": "Si vidanges espacées",
+                    "cout_estime_eur": "500 à 900€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "6R/6C",
+            "annees": "2009-2017",
+            "phases": [
+              "Phase 1 (2009-2014)",
+              "Phase 2 restylée 6C (2014-2017)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.2 TSI/1.8 TSI GTI - 60 à 192ch",
+                "code_moteur": "CBZB / CJXE (GTI)",
+                "cylindree": "1.0L à 1.8L turbo",
+                "puissance_ch": 192,
+                "boite": [
+                  "BVM5",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Étirement de la chaîne de distribution 1.2 TSI avec l'âge",
+                    "symptomes": "Bruit de chaîne au démarrage à froid",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "Risque dès 100 000-130 000 km",
+                    "cout_estime_eur": "500 à 900€"
+                  },
+                  {
+                    "panne": "Usure de la mécatronique DSG7 à sec",
+                    "symptomes": "À-coups à basse vitesse, voyant boîte",
+                    "pieces_concernees": "Mécatronique DSG7",
+                    "kilometrage_critique": "Fréquent au-delà de 80 000-100 000 km",
+                    "cout_estime_eur": "900 à 2000€"
+                  },
+                  {
+                    "panne": "Sensibilité de la pompe à haute pression",
+                    "symptomes": "Perte de puissance, démarrage difficile",
+                    "pieces_concernees": "Pompe à haute pression",
+                    "kilometrage_critique": "Fréquent au-delà de 100 000-120 000 km",
+                    "cout_estime_eur": "400 à 800€"
+                  },
+                  {
+                    "panne": "Consommation d'huile signalée sur certains blocs 1.2 TSI",
+                    "symptomes": "Niveau qui baisse entre vidanges",
+                    "pieces_concernees": "Segments",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "Surveillance requise"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.2 TDI/1.6 TDI - 75 à 105ch",
+                "code_moteur": "CFWA / CAYC",
+                "cylindree": "1.2L / 1.6L",
+                "puissance_ch": 105,
+                "boite": [
+                  "BVM5"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité des injecteurs Common Rail à l'encrassement",
+                    "symptomes": "Ratés, fumée, voyant moteur",
+                    "pieces_concernees": "Injecteurs Common Rail",
+                    "kilometrage_critique": "Fréquent au-delà de 150 000 km",
+                    "cout_estime_eur": "400 à 800€"
+                  },
+                  {
+                    "panne": "Encrassement vanne EGR et FAP en usage urbain",
+                    "symptomes": "Perte de puissance, régénérations fréquentes",
+                    "pieces_concernees": "Vanne EGR, FAP",
+                    "kilometrage_critique": "Dès 100 000-120 000 km",
+                    "cout_estime_eur": "300 à 900€"
+                  },
+                  {
+                    "panne": "Usure du volant moteur bi-masse",
+                    "symptomes": "Bruit métallique au ralenti",
+                    "pieces_concernees": "Volant moteur bi-masse",
+                    "kilometrage_critique": "Entre 180 000 et 220 000 km",
+                    "cout_estime_eur": "450 à 800€"
+                  },
+                  {
+                    "panne": "Certaines versions concernées par le Dieselgate",
+                    "symptomes": "Logiciel de trucage NOx en conditions réelles",
+                    "pieces_concernees": "Calculateur moteur (logiciel)",
+                    "kilometrage_critique": "N/A, mise à jour corrective disponible",
+                    "cout_estime_eur": "0€ (mise à jour gratuite)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "AW",
+            "annees": "2017-aujourd'hui",
+            "phases": [
+              "Phase 1 (2017-2021)",
+              "Phase 2 restylée (2021-)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.0 TSI/2.0 TSI GTI - 65 à 207ch",
+                "code_moteur": "DKR / DPCA (GTI)",
+                "cylindree": "1.0L / 2.0L turbo",
+                "puissance_ch": 207,
+                "boite": [
+                  "BVM5",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Complexité du système mild-hybrid 48V (versions eTSI)",
+                    "symptomes": "Messages d'erreur électronique potentiels",
+                    "pieces_concernees": "Module mild-hybrid",
+                    "kilometrage_critique": "Peu de recul, système récent",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  },
+                  {
+                    "panne": "Encrassement du filtre à particules essence",
+                    "symptomes": "Voyant moteur, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules essence",
+                    "kilometrage_critique": "Sur petits trajets dès 60 000-80 000 km",
+                    "cout_estime_eur": "600 à 1300€"
+                  },
+                  {
+                    "panne": "Chaîne de distribution plus fiable que générations précédentes",
+                    "symptomes": "N/A (fiabilité améliorée)",
+                    "pieces_concernees": "N/A",
+                    "kilometrage_critique": "Peu de défaillances rapportées à ce jour",
+                    "cout_estime_eur": "N/A"
+                  },
+                  {
+                    "panne": "Bugs de l'interface infodivertissement partagée VAG",
+                    "symptomes": "Écran figé, lenteurs",
+                    "pieces_concernees": "Calculateur infodivertissement",
+                    "kilometrage_critique": "Variable",
+                    "cout_estime_eur": "0€ si résolu par mise à jour, sinon 300-700€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.6 TDI - 80 à 95ch",
+                "code_moteur": "DDAB",
+                "cylindree": "1.6L",
+                "puissance_ch": 95,
+                "boite": [
+                  "BVM5"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité du système AdBlue/SCR",
+                    "symptomes": "Voyant AdBlue, limitation de démarrages",
+                    "pieces_concernees": "Capteur NOx, pompe de dosage",
+                    "kilometrage_critique": "Dès 80 000 km",
+                    "cout_estime_eur": "400 à 800€"
+                  },
+                  {
+                    "panne": "Encrassement du FAP sur petits trajets répétés",
+                    "symptomes": "Voyant FAP, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "300 à 1000€"
+                  },
+                  {
+                    "panne": "Nettoyage préventif de la vanne EGR",
+                    "symptomes": "Perte de puissance",
+                    "pieces_concernees": "Vanne EGR",
+                    "kilometrage_critique": "Vers 100 000 km",
+                    "cout_estime_eur": "250 à 500€"
+                  },
+                  {
+                    "panne": "Manque de recul sur la fiabilité long terme",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Ensemble du groupe motopropulseur",
+                    "kilometrage_critique": "Modèle récent",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Tiguan",
+        "generations": [
+          {
+            "code_chassis": "5N",
+            "annees": "2007-2016",
+            "phases": [
+              "Phase 1 (2007-2011)",
+              "Phase 2 restylée (2011-2016)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.4 TSI/2.0 TSI - 122 à 210ch",
+                "code_moteur": "CAVD / CCZA (2.0 TSI)",
+                "cylindree": "1.4L / 2.0L turbo",
+                "puissance_ch": 210,
+                "boite": [
+                  "BVM6",
+                  "DSG6"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Étirement prématuré de la chaîne de distribution 2.0 TSI",
+                    "symptomes": "Bruit de chaîne au démarrage à froid",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "Risque avant 100 000-130 000 km",
+                    "cout_estime_eur": "700 à 1300€"
+                  },
+                  {
+                    "panne": "Fragilité de la mécatronique DSG6",
+                    "symptomes": "À-coups, pannes de passage de vitesses",
+                    "pieces_concernees": "Mécatronique DSG6",
+                    "kilometrage_critique": "Fréquent au-delà de 100 000-130 000 km",
+                    "cout_estime_eur": "1200 à 2500€"
+                  },
+                  {
+                    "panne": "Coût élevé d'entretien de la traction 4Motion",
+                    "symptomes": "Bruits en 4x4, vibrations en virage",
+                    "pieces_concernees": "Boîte de transfert, arbre de transmission",
+                    "kilometrage_critique": "Au-delà de 150 000 km",
+                    "cout_estime_eur": "800 à 1800€"
+                  },
+                  {
+                    "panne": "Sensibilité de la pompe à haute pression FSI",
+                    "symptomes": "Perte de puissance, démarrage difficile",
+                    "pieces_concernees": "Pompe à haute pression FSI",
+                    "kilometrage_critique": "Fréquent au-delà de 120 000 km",
+                    "cout_estime_eur": "400 à 800€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "2.0 TDI - 110 à 177ch",
+                "code_moteur": "CBAB / CFGB",
+                "cylindree": "2.0L",
+                "puissance_ch": 177,
+                "boite": [
+                  "BVM6",
+                  "DSG6"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Usure du volant moteur bi-masse",
+                    "symptomes": "Bruit métallique au ralenti, vibrations",
+                    "pieces_concernees": "Volant moteur bi-masse",
+                    "kilometrage_critique": "Entre 180 000 et 220 000 km",
+                    "cout_estime_eur": "500 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement vanne EGR et FAP",
+                    "symptomes": "Perte de puissance, régénérations fréquentes",
+                    "pieces_concernees": "Vanne EGR, FAP",
+                    "kilometrage_critique": "Dès 120 000-150 000 km",
+                    "cout_estime_eur": "300 à 1000€"
+                  },
+                  {
+                    "panne": "Sensibilité des injecteurs à l'encrassement",
+                    "symptomes": "Ratés, fumée",
+                    "pieces_concernees": "Injecteurs",
+                    "kilometrage_critique": "Au-delà de 150 000-180 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Certaines versions concernées par le Dieselgate",
+                    "symptomes": "Logiciel de trucage NOx en conditions réelles",
+                    "pieces_concernees": "Calculateur moteur (logiciel)",
+                    "kilometrage_critique": "N/A, mise à jour corrective disponible",
+                    "cout_estime_eur": "0€ (mise à jour gratuite)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "AD1",
+            "annees": "2016-2023",
+            "phases": [
+              "Phase 1 (2016-2020)",
+              "Phase 2 restylée (2020-2023)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.4 TSI/2.0 TSI - 125 à 245ch",
+                "code_moteur": "CZDA / CZPB",
+                "cylindree": "1.4L / 2.0L turbo",
+                "puissance_ch": 245,
+                "boite": [
+                  "BVM6",
+                  "DSG6/7"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Étirement du tendeur de chaîne EA888 Gen3 sur gros kilométrage",
+                    "symptomes": "Bruit de chaîne léger au démarrage",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "À surveiller au-delà de 150 000-180 000 km",
+                    "cout_estime_eur": "600 à 1100€"
+                  },
+                  {
+                    "panne": "Consommation d'huile signalée sur certains blocs",
+                    "symptomes": "Niveau qui baisse entre vidanges",
+                    "pieces_concernees": "Segments",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "Surveillance requise"
+                  },
+                  {
+                    "panne": "Usure de la mécatronique DSG sur gros kilométrage",
+                    "symptomes": "À-coups, voyant boîte",
+                    "pieces_concernees": "Mécatronique DSG",
+                    "kilometrage_critique": "Fréquent au-delà de 130 000-150 000 km",
+                    "cout_estime_eur": "1000 à 2200€"
+                  },
+                  {
+                    "panne": "Coût élevé d'entretien de la traction 4Motion",
+                    "symptomes": "Bruits en 4x4, vibrations",
+                    "pieces_concernees": "Boîte de transfert",
+                    "kilometrage_critique": "Au-delà de 150 000 km",
+                    "cout_estime_eur": "800 à 1800€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.6 TDI/2.0 TDI - 115 à 240ch",
+                "code_moteur": "DDYA / DFHA",
+                "cylindree": "1.6L / 2.0L",
+                "puissance_ch": 240,
+                "boite": [
+                  "BVM6",
+                  "DSG6/7"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité du système AdBlue/SCR",
+                    "symptomes": "Voyant AdBlue, limitation de démarrages",
+                    "pieces_concernees": "Capteur NOx, pompe de dosage",
+                    "kilometrage_critique": "Dès 80 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement du FAP sur petits trajets répétés",
+                    "symptomes": "Voyant FAP, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Sensibilité des injecteurs à l'encrassement",
+                    "symptomes": "Ratés, fumée",
+                    "pieces_concernees": "Injecteurs",
+                    "kilometrage_critique": "Au-delà de 150 000-180 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  },
+                  {
+                    "panne": "Nettoyage préventif de la vanne EGR",
+                    "symptomes": "Perte de puissance",
+                    "pieces_concernees": "Vanne EGR",
+                    "kilometrage_critique": "Vers 100 000 km",
+                    "cout_estime_eur": "250 à 500€"
+                  }
+                ]
+              },
+              {
+                "type": "Hybride rechargeable",
+                "nom": "eHybrid - 245ch",
+                "code_moteur": "EA211 TSI evo + moteur électrique",
+                "cylindree": "1.4L + électrique",
+                "puissance_ch": 245,
+                "boite": [
+                  "DSG6"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Vieillissement de la batterie HT",
+                    "symptomes": "Autonomie électrique réduite",
+                    "pieces_concernees": "Batterie haute tension",
+                    "kilometrage_critique": "Dégradation après 5-7 ans/100 000 km",
+                    "cout_estime_eur": "4500 à 7000€ hors garantie"
+                  },
+                  {
+                    "panne": "Bugs logiciels de gestion hybride",
+                    "symptomes": "Transitions essence/électrique erratiques",
+                    "pieces_concernees": "Calculateur hybride",
+                    "kilometrage_critique": "Variable",
+                    "cout_estime_eur": "0 à 300€"
+                  },
+                  {
+                    "panne": "Sollicitation accrue des trains roulants",
+                    "symptomes": "Usure plus rapide pneus/freins",
+                    "pieces_concernees": "Pneumatiques, plaquettes",
+                    "kilometrage_critique": "Usure 10-20% plus rapide",
+                    "cout_estime_eur": "Surcoût entretien courant"
+                  },
+                  {
+                    "panne": "Coût élevé de remplacement batterie hors garantie",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Batterie HT complète",
+                    "kilometrage_critique": "Au-delà de 8 ans",
+                    "cout_estime_eur": "4500 à 7000€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "AD1 (III)",
+            "annees": "2023-aujourd'hui",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.5 TSI/2.0 TSI R - 130 à 333ch",
+                "code_moteur": "DPCA / DNPA",
+                "cylindree": "1.5L / 2.0L turbo",
+                "puissance_ch": 333,
+                "boite": [
+                  "BVM6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Manque de recul sur la fiabilité long terme",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Ensemble du groupe motopropulseur",
+                    "kilometrage_critique": "Modèle récent",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  },
+                  {
+                    "panne": "Complexité du système mild-hybrid 48V",
+                    "symptomes": "Messages d'erreur électronique potentiels",
+                    "pieces_concernees": "Module mild-hybrid",
+                    "kilometrage_critique": "Peu de recul, système récent",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  },
+                  {
+                    "panne": "Encrassement du filtre à particules essence",
+                    "symptomes": "Voyant moteur, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules essence",
+                    "kilometrage_critique": "Sur petits trajets dès 60 000-80 000 km",
+                    "cout_estime_eur": "700 à 1400€"
+                  },
+                  {
+                    "panne": "Bugs de l'interface infodivertissement dense",
+                    "symptomes": "Écran figé, lenteurs",
+                    "pieces_concernees": "Calculateur infodivertissement",
+                    "kilometrage_critique": "Variable",
+                    "cout_estime_eur": "0€ si résolu par mise à jour, sinon 300-700€"
+                  }
+                ]
+              },
+              {
+                "type": "Hybride rechargeable",
+                "nom": "eHybrid - 204 à 272ch",
+                "code_moteur": "EA211 TSI evo + moteur électrique",
+                "cylindree": "1.5L + électrique",
+                "puissance_ch": 272,
+                "boite": [
+                  "DSG6"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Batterie HT de plus grande capacité, encore peu de recul",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Batterie haute tension",
+                    "kilometrage_critique": "Modèle récent",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  },
+                  {
+                    "panne": "Bugs logiciels de gestion hybride",
+                    "symptomes": "Transitions essence/électrique erratiques",
+                    "pieces_concernees": "Calculateur hybride",
+                    "kilometrage_critique": "Variable",
+                    "cout_estime_eur": "0 à 300€"
+                  },
+                  {
+                    "panne": "Sollicitation accrue des trains roulants",
+                    "symptomes": "Usure plus rapide pneus/freins",
+                    "pieces_concernees": "Pneumatiques, plaquettes",
+                    "kilometrage_critique": "Usure 10-20% plus rapide",
+                    "cout_estime_eur": "Surcoût entretien courant"
+                  },
+                  {
+                    "panne": "Coût élevé de remplacement batterie hors garantie",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Batterie HT complète",
+                    "kilometrage_critique": "Au-delà de 8 ans",
+                    "cout_estime_eur": "5000 à 7500€"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Touareg",
+        "generations": [
+          {
+            "code_chassis": "7L",
+            "annees": "2002-2010",
+            "phases": [
+              "Phase 1 (2002-2006)",
+              "Phase 2 restylée (2006-2010)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "V6/V8 - 220 à 310ch",
+                "code_moteur": "BAA (V6) / BHK (V8)",
+                "cylindree": "3.2L V6 / 4.2L V8",
+                "puissance_ch": 310,
+                "boite": [
+                  "BVA6 Tiptronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Usure de la chaîne de distribution et des tendeurs",
+                    "symptomes": "Bruit de chaîne au démarrage",
+                    "pieces_concernees": "Chaîne de distribution, tendeurs",
+                    "kilometrage_critique": "À surveiller au-delà de 180 000-200 000 km",
+                    "cout_estime_eur": "600 à 1200€"
+                  },
+                  {
+                    "panne": "Fragilité de la suspension pneumatique",
+                    "symptomes": "Affaissement, compresseur bruyant",
+                    "pieces_concernees": "Compresseur, coussins d'air",
+                    "kilometrage_critique": "Fréquent au-delà de 130 000-150 000 km",
+                    "cout_estime_eur": "800 à 2000€"
+                  },
+                  {
+                    "panne": "Coût élevé d'entretien de la boîte de transfert 4Motion",
+                    "symptomes": "Bruits en 4x4, vibrations en virage",
+                    "pieces_concernees": "Boîte de transfert",
+                    "kilometrage_critique": "Au-delà de 150 000-180 000 km",
+                    "cout_estime_eur": "1200 à 2200€"
+                  },
+                  {
+                    "panne": "Consommation élevée sur versions V8",
+                    "symptomes": "Consommation de 15-18L/100km en usage mixte",
+                    "pieces_concernees": "N/A",
+                    "kilometrage_critique": "N/A",
+                    "cout_estime_eur": "Coût carburant élevé à budgétiser"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "V6 TDI/V10 TDI - 174 à 313ch",
+                "code_moteur": "BPD (V6) / BLE (V10)",
+                "cylindree": "2.5L / 3.0L V6 / 5.0L V10",
+                "puissance_ch": 313,
+                "boite": [
+                  "BVA6 Tiptronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Coûts d'entretien très élevés du V10 TDI",
+                    "symptomes": "Interventions longues et coûteuses même pour opérations courantes",
+                    "pieces_concernees": "Ensemble du groupe motopropulseur V10",
+                    "kilometrage_critique": "N/A (caractéristique structurelle)",
+                    "cout_estime_eur": "Coûts d'entretien 2 à 3 fois supérieurs à la version V6"
+                  },
+                  {
+                    "panne": "Encrassement vanne EGR et FAP en usage urbain",
+                    "symptomes": "Perte de puissance, régénérations fréquentes",
+                    "pieces_concernees": "Vanne EGR, FAP",
+                    "kilometrage_critique": "Dès 120 000-150 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Fragilité de la suspension pneumatique",
+                    "symptomes": "Affaissement, compresseur bruyant",
+                    "pieces_concernees": "Compresseur, coussins d'air",
+                    "kilometrage_critique": "Fréquent au-delà de 130 000-150 000 km",
+                    "cout_estime_eur": "800 à 2000€"
+                  },
+                  {
+                    "panne": "Coût élevé de remplacement des injecteurs pompe-injecteurs",
+                    "symptomes": "Bruit de cliquetis caractéristique, ratés, fumée",
+                    "pieces_concernees": "Injecteurs pompe-injecteurs",
+                    "kilometrage_critique": "Dès 150 000-180 000 km",
+                    "cout_estime_eur": "900 à 1800€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "7P",
+            "annees": "2010-2018",
+            "phases": [
+              "Phase 1 (2010-2014)",
+              "Phase 2 restylée (2014-2018)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "V6 TSI - 280ch",
+                "code_moteur": "CGRA",
+                "cylindree": "3.6L V6",
+                "puissance_ch": 280,
+                "boite": [
+                  "BVA8 Tiptronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Usure de la chaîne de distribution sur gros kilométrage",
+                    "symptomes": "Bruit de chaîne léger au démarrage",
+                    "pieces_concernees": "Chaîne de distribution",
+                    "kilometrage_critique": "À surveiller au-delà de 180 000-200 000 km",
+                    "cout_estime_eur": "700 à 1300€"
+                  },
+                  {
+                    "panne": "Coût élevé d'entretien de la suspension pneumatique",
+                    "symptomes": "Affaissement, compresseur bruyant",
+                    "pieces_concernees": "Compresseur, coussins d'air",
+                    "kilometrage_critique": "Au-delà de 130 000-150 000 km",
+                    "cout_estime_eur": "900 à 2200€"
+                  },
+                  {
+                    "panne": "Système Start&Stop parfois capricieux",
+                    "symptomes": "Fonction qui se désactive, message d'erreur",
+                    "pieces_concernees": "Capteur de batterie intelligent",
+                    "kilometrage_critique": "Dès 80 000-100 000 km",
+                    "cout_estime_eur": "150 à 300€"
+                  },
+                  {
+                    "panne": "Coûts d'entretien globalement élevés",
+                    "symptomes": "Usure rapide des pneus et freins du fait du gabarit et du poids",
+                    "pieces_concernees": "Pneumatiques, disques et plaquettes de frein",
+                    "kilometrage_critique": "Dès 25 000-30 000 km",
+                    "cout_estime_eur": "1500 à 3000€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "V6 TDI - 204 à 262ch",
+                "code_moteur": "CASA / CRCA",
+                "cylindree": "3.0L V6",
+                "puissance_ch": 262,
+                "boite": [
+                  "BVA8 Tiptronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité du système AdBlue/SCR",
+                    "symptomes": "Voyant AdBlue, limitation de démarrages",
+                    "pieces_concernees": "Capteur NOx, pompe de dosage",
+                    "kilometrage_critique": "Dès 80 000-100 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement du FAP sur petits trajets répétés",
+                    "symptomes": "Voyant FAP, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Certaines versions concernées par le Dieselgate",
+                    "symptomes": "Logiciel de trucage NOx en conditions réelles",
+                    "pieces_concernees": "Calculateur moteur (logiciel)",
+                    "kilometrage_critique": "N/A, mise à jour corrective disponible",
+                    "cout_estime_eur": "0€ (mise à jour gratuite)"
+                  },
+                  {
+                    "panne": "Coût élevé d'entretien de la suspension pneumatique",
+                    "symptomes": "Affaissement",
+                    "pieces_concernees": "Compresseur, coussins d'air",
+                    "kilometrage_critique": "Au-delà de 130 000-150 000 km",
+                    "cout_estime_eur": "900 à 2200€"
+                  }
+                ]
+              },
+              {
+                "type": "Hybride",
+                "nom": "Hybrid - 380ch",
+                "code_moteur": "CGRA (V6 compresseur) + moteur électrique",
+                "cylindree": "3.0L + électrique",
+                "puissance_ch": 380,
+                "boite": [
+                  "BVA8 Tiptronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Vieillissement de la batterie HT",
+                    "symptomes": "Autonomie électrique réduite",
+                    "pieces_concernees": "Batterie haute tension",
+                    "kilometrage_critique": "Dégradation après 5-7 ans/100 000 km",
+                    "cout_estime_eur": "4500 à 7500€ hors garantie"
+                  },
+                  {
+                    "panne": "Complexité du système hybride, coûts de réparation élevés hors garantie",
+                    "symptomes": "Messages d'erreur électronique, transitions moteur thermique/électrique à surveiller",
+                    "pieces_concernees": "Module hybride, calculateur dédié",
+                    "kilometrage_critique": "Variable",
+                    "cout_estime_eur": "1000 à 3500€ selon panne"
+                  },
+                  {
+                    "panne": "Sollicitation accrue des trains roulants",
+                    "symptomes": "Usure plus rapide pneus/freins",
+                    "pieces_concernees": "Pneumatiques, plaquettes",
+                    "kilometrage_critique": "Usure 10-20% plus rapide",
+                    "cout_estime_eur": "Surcoût entretien courant"
+                  },
+                  {
+                    "panne": "Bugs logiciels de gestion hybride",
+                    "symptomes": "Transitions essence/électrique erratiques",
+                    "pieces_concernees": "Calculateur hybride",
+                    "kilometrage_critique": "Variable",
+                    "cout_estime_eur": "0 à 300€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "CR",
+            "annees": "2018-aujourd'hui",
+            "phases": [
+              "Phase 1 (2018-2023)",
+              "Phase 2 restylée (2023-)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "V6 TSI - 340ch",
+                "code_moteur": "CVDA",
+                "cylindree": "3.0L V6 turbo",
+                "puissance_ch": 340,
+                "boite": [
+                  "BVA8 Tiptronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Manque de recul sur la fiabilité long terme",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Ensemble du groupe motopropulseur",
+                    "kilometrage_critique": "Modèle récent",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  },
+                  {
+                    "panne": "Coût élevé de la suspension pneumatique/active",
+                    "symptomes": "Affaissement, comportement dynamique dégradé",
+                    "pieces_concernees": "Compresseur, coussins d'air, capteurs",
+                    "kilometrage_critique": "Au-delà de 100 000-130 000 km",
+                    "cout_estime_eur": "1500 à 3500€"
+                  },
+                  {
+                    "panne": "Sensibilité de l'électronique très sophistiquée",
+                    "symptomes": "Écran figé, bugs logiciels divers",
+                    "pieces_concernees": "Calculateurs multiples, écran central",
+                    "kilometrage_critique": "Variable",
+                    "cout_estime_eur": "300 à 1000€ selon élément"
+                  },
+                  {
+                    "panne": "Coûts d'entretien et de pneumatiques élevés",
+                    "symptomes": "Usure rapide du fait du gabarit et du poids",
+                    "pieces_concernees": "Pneumatiques, disques et plaquettes de frein",
+                    "kilometrage_critique": "Dès 25 000-30 000 km",
+                    "cout_estime_eur": "1800 à 3500€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "V6 TDI - 231 à 286ch",
+                "code_moteur": "DCXA",
+                "cylindree": "3.0L V6",
+                "puissance_ch": 286,
+                "boite": [
+                  "BVA8 Tiptronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité du système AdBlue/SCR",
+                    "symptomes": "Voyant AdBlue, limitation de démarrages",
+                    "pieces_concernees": "Capteur NOx, pompe de dosage",
+                    "kilometrage_critique": "Dès 80 000-100 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement du FAP sur petits trajets répétés",
+                    "symptomes": "Voyant FAP, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Coût élevé de la suspension pneumatique",
+                    "symptomes": "Affaissement",
+                    "pieces_concernees": "Compresseur, coussins d'air",
+                    "kilometrage_critique": "Au-delà de 100 000-130 000 km",
+                    "cout_estime_eur": "1500 à 3500€"
+                  },
+                  {
+                    "panne": "Manque de recul sur la fiabilité long terme",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Ensemble du groupe motopropulseur",
+                    "kilometrage_critique": "Modèle récent",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  }
+                ]
+              },
+              {
+                "type": "Hybride rechargeable",
+                "nom": "eHybrid - 381 à 462ch",
+                "code_moteur": "V6 TSI + moteur électrique",
+                "cylindree": "3.0L + électrique",
+                "puissance_ch": 462,
+                "boite": [
+                  "BVA8 Tiptronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Vieillissement de la batterie HT sur le long terme",
+                    "symptomes": "Autonomie électrique réduite",
+                    "pieces_concernees": "Batterie haute tension",
+                    "kilometrage_critique": "Dégradation après 5-7 ans/100 000 km",
+                    "cout_estime_eur": "5000 à 8000€ hors garantie"
+                  },
+                  {
+                    "panne": "Complexité du système hybride, coûts de réparation élevés hors garantie",
+                    "symptomes": "Messages d'erreur électronique",
+                    "pieces_concernees": "Module hybride, calculateur dédié",
+                    "kilometrage_critique": "Variable",
+                    "cout_estime_eur": "1500 à 4000€ selon panne"
+                  },
+                  {
+                    "panne": "Sollicitation très forte des trains roulants et freins",
+                    "symptomes": "Usure accélérée pneus/freins du fait du poids très élevé",
+                    "pieces_concernees": "Pneumatiques, plaquettes, disques",
+                    "kilometrage_critique": "Usure 15-25% plus rapide",
+                    "cout_estime_eur": "Surcoût entretien courant important"
+                  },
+                  {
+                    "panne": "Bugs logiciels de gestion hybride",
+                    "symptomes": "Transitions essence/électrique erratiques",
+                    "pieces_concernees": "Calculateur hybride",
+                    "kilometrage_critique": "Variable",
+                    "cout_estime_eur": "0 à 300€"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "T-Roc",
+        "generations": [
+          {
+            "code_chassis": "A11",
+            "annees": "2017-aujourd'hui",
+            "phases": [
+              "Phase 1 (2017-2021)",
+              "Phase 2 restylée (2021-)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.0 TSI/1.5 TSI/2.0 TSI R - 115 à 300ch",
+                "code_moteur": "DKR / DPCA / DNPA (R)",
+                "cylindree": "1.0L à 2.0L turbo",
+                "puissance_ch": 300,
+                "boite": [
+                  "BVM6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Étirement du tendeur de chaîne EA888 Gen3 (2.0 TSI)",
+                    "symptomes": "Bruit de chaîne léger au démarrage",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "À surveiller au-delà de 150 000-180 000 km",
+                    "cout_estime_eur": "600 à 1100€"
+                  },
+                  {
+                    "panne": "Défaillance de l'électrovanne ACT (1.5 TSI)",
+                    "symptomes": "Fonctionnement irrégulier de la désactivation de cylindres, à-coups",
+                    "pieces_concernees": "Électrovanne ACT",
+                    "kilometrage_critique": "Fréquent au-delà de 100 000 km",
+                    "cout_estime_eur": "300 à 600€"
+                  },
+                  {
+                    "panne": "Encrassement du filtre à particules essence",
+                    "symptomes": "Voyant moteur, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules essence",
+                    "kilometrage_critique": "Sur petits trajets dès 60 000-80 000 km",
+                    "cout_estime_eur": "700 à 1400€"
+                  },
+                  {
+                    "panne": "Coût élevé d'entretien de la traction 4Motion",
+                    "symptomes": "Bruits en 4x4, vibrations en virage",
+                    "pieces_concernees": "Boîte de transfert, arbre de transmission",
+                    "kilometrage_critique": "Au-delà de 130 000-150 000 km",
+                    "cout_estime_eur": "800 à 1800€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.6 TDI/2.0 TDI - 95 à 150ch",
+                "code_moteur": "DDAB / DFHA",
+                "cylindree": "1.6L / 2.0L",
+                "puissance_ch": 150,
+                "boite": [
+                  "BVM6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité du système AdBlue/SCR",
+                    "symptomes": "Voyant AdBlue, limitation de démarrages",
+                    "pieces_concernees": "Capteur NOx, pompe de dosage",
+                    "kilometrage_critique": "Dès 80 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement du FAP sur petits trajets répétés",
+                    "symptomes": "Voyant FAP, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Sensibilité des injecteurs à l'encrassement",
+                    "symptomes": "Ratés, fumée",
+                    "pieces_concernees": "Injecteurs",
+                    "kilometrage_critique": "Au-delà de 150 000-180 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Nettoyage préventif de la vanne EGR",
+                    "symptomes": "Perte de puissance",
+                    "pieces_concernees": "Vanne EGR",
+                    "kilometrage_critique": "Vers 100 000 km",
+                    "cout_estime_eur": "250 à 500€"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Touran",
+        "generations": [
+          {
+            "code_chassis": "1T",
+            "annees": "2003-2015",
+            "phases": [
+              "Phase 1 (2003-2006)",
+              "Phase 2 restylée (2006-2010)",
+              "Phase 3 restylée (2010-2015)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.4 TSI/2.0 FSI - 102 à 170ch",
+                "code_moteur": "BLG / AXW",
+                "cylindree": "1.4L / 2.0L",
+                "puissance_ch": 170,
+                "boite": [
+                  "BVM5/6",
+                  "DSG6"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "MALADIE CONNUE 1.4 TSI première génération : risque de rupture de courroie interne au compresseur",
+                    "symptomes": "Casse moteur brutale sans signe préalable clair",
+                    "pieces_concernees": "Courroie interne au compresseur, ensemble moteur",
+                    "kilometrage_critique": "Souvent avant 100 000 km sur les tout premiers blocs",
+                    "cout_estime_eur": "3000 à 5000€ (remplacement moteur)"
+                  },
+                  {
+                    "panne": "Sensibilité de la pompe à haute pression FSI",
+                    "symptomes": "Perte de puissance, démarrage difficile",
+                    "pieces_concernees": "Pompe à haute pression FSI",
+                    "kilometrage_critique": "Fréquent au-delà de 120 000 km",
+                    "cout_estime_eur": "400 à 800€"
+                  },
+                  {
+                    "panne": "Fragilité de la mécatronique DSG6",
+                    "symptomes": "À-coups, pannes de passage de vitesses",
+                    "pieces_concernees": "Mécatronique DSG6",
+                    "kilometrage_critique": "Fréquent au-delà de 100 000-130 000 km",
+                    "cout_estime_eur": "1200 à 2500€"
+                  },
+                  {
+                    "panne": "Fragilité des radiateurs plastiques",
+                    "symptomes": "Fuites, surchauffe",
+                    "pieces_concernees": "Radiateur",
+                    "kilometrage_critique": "Remplacement fréquent au-delà de 150 000 km",
+                    "cout_estime_eur": "150 à 300€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.9 TDI/2.0 TDI - 90 à 170ch",
+                "code_moteur": "BXE / BKD",
+                "cylindree": "1.9L / 2.0L",
+                "puissance_ch": 170,
+                "boite": [
+                  "BVM6",
+                  "DSG6"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Usure du volant moteur bi-masse",
+                    "symptomes": "Bruit métallique au ralenti, vibrations",
+                    "pieces_concernees": "Volant moteur bi-masse",
+                    "kilometrage_critique": "Entre 180 000 et 220 000 km",
+                    "cout_estime_eur": "500 à 900€"
+                  },
+                  {
+                    "panne": "Fragilité et coût élevé des injecteurs pompe-injecteurs (versions PD)",
+                    "symptomes": "Bruit de cliquetis caractéristique, ratés, fumée",
+                    "pieces_concernees": "Injecteurs pompe-injecteurs",
+                    "kilometrage_critique": "Dès 150 000-180 000 km",
+                    "cout_estime_eur": "700 à 1400€"
+                  },
+                  {
+                    "panne": "Encrassement vanne EGR et FAP",
+                    "symptomes": "Perte de puissance, régénérations fréquentes",
+                    "pieces_concernees": "Vanne EGR, FAP",
+                    "kilometrage_critique": "Dès 120 000-150 000 km",
+                    "cout_estime_eur": "300 à 1000€"
+                  },
+                  {
+                    "panne": "MALADIE CONNUE : certaines versions concernées par le Dieselgate",
+                    "symptomes": "Logiciel de trucage NOx, mise à jour corrective disponible",
+                    "pieces_concernees": "Calculateur moteur (logiciel)",
+                    "kilometrage_critique": "N/A",
+                    "cout_estime_eur": "0€ (mise à jour gratuite chez le constructeur)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "5T",
+            "annees": "2015-aujourd'hui",
+            "phases": [
+              "Phase 1 (2015-2019)",
+              "Phase 2 restylée (2019-)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.2 TSI/1.5 TSI - 110 à 150ch",
+                "code_moteur": "CJZC / DPCA",
+                "cylindree": "1.2L / 1.5L",
+                "puissance_ch": 150,
+                "boite": [
+                  "BVM6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Chaîne de distribution à surveiller sur gros kilométrage",
+                    "symptomes": "Bruit de chaîne léger au démarrage",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "À surveiller au-delà de 150 000-180 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  },
+                  {
+                    "panne": "Défaillance de l'électrovanne ACT (1.5 TSI)",
+                    "symptomes": "Fonctionnement irrégulier de la désactivation de cylindres, à-coups",
+                    "pieces_concernees": "Électrovanne ACT",
+                    "kilometrage_critique": "Fréquent au-delà de 100 000 km",
+                    "cout_estime_eur": "300 à 600€"
+                  },
+                  {
+                    "panne": "Encrassement du filtre à particules essence",
+                    "symptomes": "Voyant moteur, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules essence",
+                    "kilometrage_critique": "Sur petits trajets dès 60 000-80 000 km",
+                    "cout_estime_eur": "700 à 1400€"
+                  },
+                  {
+                    "panne": "Usure de la mécatronique DSG7",
+                    "symptomes": "À-coups, voyant boîte",
+                    "pieces_concernees": "Mécatronique DSG7",
+                    "kilometrage_critique": "Fréquent au-delà de 100 000-130 000 km",
+                    "cout_estime_eur": "1000 à 2200€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.6 TDI/2.0 TDI - 95 à 150ch",
+                "code_moteur": "DDAB / DFHA",
+                "cylindree": "1.6L / 2.0L",
+                "puissance_ch": 150,
+                "boite": [
+                  "BVM6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité du système AdBlue/SCR",
+                    "symptomes": "Voyant AdBlue, limitation de démarrages",
+                    "pieces_concernees": "Capteur NOx, pompe de dosage",
+                    "kilometrage_critique": "Dès 80 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement du FAP sur petits trajets répétés",
+                    "symptomes": "Voyant FAP, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Sensibilité des injecteurs à l'encrassement",
+                    "symptomes": "Ratés, fumée",
+                    "pieces_concernees": "Injecteurs",
+                    "kilometrage_critique": "Au-delà de 150 000-180 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Nettoyage préventif de la vanne EGR",
+                    "symptomes": "Perte de puissance",
+                    "pieces_concernees": "Vanne EGR",
+                    "kilometrage_critique": "Vers 100 000 km",
+                    "cout_estime_eur": "250 à 500€"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Up!",
+        "generations": [
+          {
+            "code_chassis": "121",
+            "annees": "2011-2023",
+            "phases": [
+              "Phase 1 (2011-2016)",
+              "Phase 2 restylée (2016-2023)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.0 MPI/1.0 TSI GTI - 60 à 115ch",
+                "code_moteur": "CHYA / CHZB (TSI GTI)",
+                "cylindree": "1.0L",
+                "puissance_ch": 115,
+                "boite": [
+                  "BVM5",
+                  "ASG5 (robotisée)"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Bloc 1.0 MPI atmo réputé très fiable et simple mécaniquement",
+                    "symptomes": "N/A (fiabilité intrinsèque élevée)",
+                    "pieces_concernees": "N/A",
+                    "kilometrage_critique": "Souvent au-delà de 200 000-250 000 km avec entretien",
+                    "cout_estime_eur": "N/A"
+                  },
+                  {
+                    "panne": "Chaîne de distribution à surveiller sur GTI (TSI turbo)",
+                    "symptomes": "Bruit de chaîne léger au démarrage",
+                    "pieces_concernees": "Chaîne de distribution",
+                    "kilometrage_critique": "À surveiller au-delà de 100 000-120 000 km",
+                    "cout_estime_eur": "500 à 900€"
+                  },
+                  {
+                    "panne": "À-coups de la boîte robotisée ASG5 et usure de l'embrayage",
+                    "symptomes": "Secousses à basse vitesse, patinage",
+                    "pieces_concernees": "Boîte robotisée ASG5, embrayage",
+                    "kilometrage_critique": "Usure d'embrayage dès 80 000-100 000 km",
+                    "cout_estime_eur": "600 à 1200€"
+                  },
+                  {
+                    "panne": "Points de contrôle habituels VAG malgré corrosion réduite",
+                    "symptomes": "Perforations localisées possibles",
+                    "pieces_concernees": "Passages de roue, bas de caisse",
+                    "kilometrage_critique": "Variable, à contrôler au-delà de 10-12 ans",
+                    "cout_estime_eur": "200 à 600€ si nécessaire"
+                  }
+                ]
+              },
+              {
+                "type": "Électrique",
+                "nom": "e-Up! - 82ch",
+                "code_moteur": "Moteur électrique synchrone",
+                "cylindree": "N/A",
+                "puissance_ch": 82,
+                "boite": [
+                  "Réducteur monovitesse"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Autonomie limitée, surtout premières versions",
+                    "symptomes": "Autonomie réelle de 100-130 km, adaptée uniquement à un usage urbain",
+                    "pieces_concernees": "Batterie (18,7 kWh puis 32,3 kWh selon millésime)",
+                    "kilometrage_critique": "Caractéristique dès l'achat",
+                    "cout_estime_eur": "N/A (limite technique d'origine)"
+                  },
+                  {
+                    "panne": "Vieillissement de la batterie à surveiller",
+                    "symptomes": "Perte de capacité et d'autonomie progressive",
+                    "pieces_concernees": "Batterie haute tension",
+                    "kilometrage_critique": "Dégradation après 7-9 ans/80 000 km",
+                    "cout_estime_eur": "3500 à 6000€ hors garantie"
+                  },
+                  {
+                    "panne": "Bugs logiciels du chargeur embarqué",
+                    "symptomes": "Recharge qui ne démarre pas ou s'interrompt",
+                    "pieces_concernees": "Chargeur embarqué, calculateur de charge",
+                    "kilometrage_critique": "Variable",
+                    "cout_estime_eur": "0€ si résolu par mise à jour, sinon 300-700€"
+                  },
+                  {
+                    "panne": "Coût élevé de remplacement de la batterie hors garantie",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Batterie haute tension complète",
+                    "kilometrage_critique": "Au-delà de la garantie constructeur",
+                    "cout_estime_eur": "3500 à 6000€"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Scirocco",
+        "generations": [
+          {
+            "code_chassis": "137/138 (Scirocco III)",
+            "annees": "2008-2017",
+            "phases": [
+              "Phase 1 (2008-2014)",
+              "Phase 2 restylée (2014-2017)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.4 TSI/2.0 TSI R - 122 à 280ch",
+                "code_moteur": "CAXA / CCZA / CDLD (R)",
+                "cylindree": "1.4L / 2.0L turbo",
+                "puissance_ch": 280,
+                "boite": [
+                  "BVM6",
+                  "DSG6"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Étirement prématuré de la chaîne de distribution 2.0 TSI",
+                    "symptomes": "Bruit de chaîne au démarrage à froid",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "Risque avant 100 000-130 000 km",
+                    "cout_estime_eur": "700 à 1300€"
+                  },
+                  {
+                    "panne": "MALADIE CONNUE 1.4 TSI première génération : risque de rupture de courroie interne au compresseur",
+                    "symptomes": "Casse moteur brutale sans signe préalable",
+                    "pieces_concernees": "Courroie interne au compresseur",
+                    "kilometrage_critique": "Souvent avant 100 000 km sur les tout premiers blocs",
+                    "cout_estime_eur": "3000 à 5000€ (remplacement moteur)"
+                  },
+                  {
+                    "panne": "Fragilité de la mécatronique DSG6",
+                    "symptomes": "À-coups, pannes de passage de vitesses",
+                    "pieces_concernees": "Mécatronique DSG6",
+                    "kilometrage_critique": "Fréquent au-delà de 100 000-130 000 km",
+                    "cout_estime_eur": "1200 à 2500€"
+                  },
+                  {
+                    "panne": "Usure de l'embrayage sollicité en usage sportif (Scirocco R)",
+                    "symptomes": "Patinage, point de patinage haut",
+                    "pieces_concernees": "Embrayage",
+                    "kilometrage_critique": "Dès 60 000-80 000 km en conduite sportive",
+                    "cout_estime_eur": "700 à 1300€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "2.0 TDI - 140 à 184ch",
+                "code_moteur": "CBAB / CFGB",
+                "cylindree": "2.0L",
+                "puissance_ch": 184,
+                "boite": [
+                  "BVM6",
+                  "DSG6"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Usure du volant moteur bi-masse",
+                    "symptomes": "Bruit métallique au ralenti, vibrations",
+                    "pieces_concernees": "Volant moteur bi-masse",
+                    "kilometrage_critique": "Entre 180 000 et 220 000 km",
+                    "cout_estime_eur": "500 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement vanne EGR et FAP",
+                    "symptomes": "Perte de puissance, régénérations fréquentes",
+                    "pieces_concernees": "Vanne EGR, FAP",
+                    "kilometrage_critique": "Dès 120 000-150 000 km",
+                    "cout_estime_eur": "300 à 1000€"
+                  },
+                  {
+                    "panne": "Sensibilité des injecteurs à l'encrassement",
+                    "symptomes": "Ratés, fumée",
+                    "pieces_concernees": "Injecteurs",
+                    "kilometrage_critique": "Au-delà de 150 000-180 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "MALADIE CONNUE : certaines versions concernées par le Dieselgate",
+                    "symptomes": "Logiciel de trucage NOx, mise à jour corrective disponible",
+                    "pieces_concernees": "Calculateur moteur (logiciel)",
+                    "kilometrage_critique": "N/A",
+                    "cout_estime_eur": "0€ (mise à jour gratuite chez le constructeur)"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Arteon",
+        "generations": [
+          {
+            "code_chassis": "3H",
+            "annees": "2017-aujourd'hui",
+            "phases": [
+              "Phase 1 (2017-2020)",
+              "Phase 2 restylée (2020-)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.5 TSI/2.0 TSI/R - 150 à 320ch",
+                "code_moteur": "DPCA / DNPA (R)",
+                "cylindree": "1.5L / 2.0L turbo",
+                "puissance_ch": 320,
+                "boite": [
+                  "BVM6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Étirement du tendeur de chaîne EA888 Gen3",
+                    "symptomes": "Bruit de chaîne léger au démarrage",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "À surveiller au-delà de 150 000-180 000 km",
+                    "cout_estime_eur": "600 à 1100€"
+                  },
+                  {
+                    "panne": "Consommation d'huile signalée sur certains blocs",
+                    "symptomes": "Niveau qui baisse entre vidanges",
+                    "pieces_concernees": "Segments",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "Surveillance requise"
+                  },
+                  {
+                    "panne": "Usure de la mécatronique DSG sur gros kilométrage",
+                    "symptomes": "À-coups, voyant boîte",
+                    "pieces_concernees": "Mécatronique DSG",
+                    "kilometrage_critique": "Fréquent au-delà de 100 000-130 000 km",
+                    "cout_estime_eur": "1000 à 2200€"
+                  },
+                  {
+                    "panne": "Coût élevé d'entretien de la traction 4Motion (R)",
+                    "symptomes": "Bruits en 4x4, vibrations en virage",
+                    "pieces_concernees": "Boîte de transfert, arbre de transmission",
+                    "kilometrage_critique": "Au-delà de 130 000-150 000 km",
+                    "cout_estime_eur": "800 à 1800€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "2.0 TDI - 150 à 240ch",
+                "code_moteur": "DFHA / DTUA",
+                "cylindree": "2.0L",
+                "puissance_ch": 240,
+                "boite": [
+                  "BVM6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité du système AdBlue/SCR",
+                    "symptomes": "Voyant AdBlue, limitation de démarrages",
+                    "pieces_concernees": "Capteur NOx, pompe de dosage",
+                    "kilometrage_critique": "Dès 80 000-100 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement du FAP sur petits trajets répétés",
+                    "symptomes": "Voyant FAP, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Sensibilité des injecteurs à l'encrassement",
+                    "symptomes": "Ratés, fumée",
+                    "pieces_concernees": "Injecteurs",
+                    "kilometrage_critique": "Au-delà de 150 000-180 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Nettoyage préventif de la vanne EGR",
+                    "symptomes": "Perte de puissance",
+                    "pieces_concernees": "Vanne EGR",
+                    "kilometrage_critique": "Vers 100 000 km",
+                    "cout_estime_eur": "250 à 500€"
+                  }
+                ]
+              },
+              {
+                "type": "Hybride rechargeable",
+                "nom": "eHybrid - 218ch",
+                "code_moteur": "EA211 TSI evo + moteur électrique",
+                "cylindree": "1.4L + électrique",
+                "puissance_ch": 218,
+                "boite": [
+                  "DSG6"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Vieillissement de la batterie HT",
+                    "symptomes": "Autonomie électrique réduite",
+                    "pieces_concernees": "Batterie haute tension",
+                    "kilometrage_critique": "Dégradation après 5-7 ans/100 000 km",
+                    "cout_estime_eur": "4000 à 6500€ hors garantie"
+                  },
+                  {
+                    "panne": "Bugs logiciels de gestion hybride",
+                    "symptomes": "Transitions essence/électrique erratiques",
+                    "pieces_concernees": "Calculateur hybride",
+                    "kilometrage_critique": "Variable",
+                    "cout_estime_eur": "0 à 300€"
+                  },
+                  {
+                    "panne": "Sollicitation accrue des trains roulants",
+                    "symptomes": "Usure plus rapide pneus/freins",
+                    "pieces_concernees": "Pneumatiques, plaquettes",
+                    "kilometrage_critique": "Usure 10-20% plus rapide",
+                    "cout_estime_eur": "Surcoût entretien courant"
+                  },
+                  {
+                    "panne": "Coût élevé de remplacement batterie hors garantie",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Batterie HT complète",
+                    "kilometrage_critique": "Au-delà de 8 ans",
+                    "cout_estime_eur": "4000 à 6500€"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Amarok",
+        "generations": [
+          {
+            "code_chassis": "2H (Amarok I)",
+            "annees": "2010-2020",
+            "phases": [
+              "Phase 1 (2010-2016)",
+              "Phase 2 restylée (2016-2020)"
+            ],
+            "motorisations": [
+              {
+                "type": "Diesel",
+                "nom": "2.0 TDI/3.0 V6 TDI - 122 à 258ch",
+                "code_moteur": "CSHA / DDXB (V6)",
+                "cylindree": "2.0L / 3.0L V6",
+                "puissance_ch": 258,
+                "boite": [
+                  "BVM6",
+                  "BVA8 Tiptronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité des injecteurs à l'encrassement (bloc robuste par ailleurs)",
+                    "symptomes": "Ratés, fumée, perte de puissance",
+                    "pieces_concernees": "Injecteurs",
+                    "kilometrage_critique": "Fréquent au-delà de 150 000-180 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  },
+                  {
+                    "panne": "Encrassement vanne EGR et FAP en usage utilitaire intensif",
+                    "symptomes": "Perte de puissance, régénérations fréquentes",
+                    "pieces_concernees": "Vanne EGR, FAP",
+                    "kilometrage_critique": "Dès 100 000-130 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Coût élevé d'entretien de la traction 4Motion",
+                    "symptomes": "Bruits en 4x4, vibrations en virage",
+                    "pieces_concernees": "Boîte de transfert, arbre de transmission",
+                    "kilometrage_critique": "Au-delà de 130 000-150 000 km",
+                    "cout_estime_eur": "900 à 2000€"
+                  },
+                  {
+                    "panne": "Usure de la suspension arrière à lames en usage charge lourde",
+                    "symptomes": "Affaissement, bruits de suspension",
+                    "pieces_concernees": "Lames de ressort, amortisseurs arrière",
+                    "kilometrage_critique": "Usure accélérée en usage utilitaire intensif",
+                    "cout_estime_eur": "500 à 1200€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "S6 (Amarok II, base Ford Ranger)",
+            "annees": "2022-aujourd'hui",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Diesel",
+                "nom": "2.0 Bi-TDI/3.0 V6 TDI - 170 à 240ch",
+                "code_moteur": "Base Ford Panther (2.0L) / Ford Lion (3.0L V6)",
+                "cylindree": "2.0L / 3.0L V6",
+                "puissance_ch": 240,
+                "boite": [
+                  "BVM6",
+                  "BVA10"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Peu de recul sur fiabilité long terme dans cette configuration VW",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Ensemble du groupe motopropulseur base Ford",
+                    "kilometrage_critique": "Modèle récent, changement radical de plateforme",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  },
+                  {
+                    "panne": "Sensibilité du système AdBlue/SCR sur usage utilitaire",
+                    "symptomes": "Voyant AdBlue, limitation de démarrages",
+                    "pieces_concernees": "Capteur NOx, pompe de dosage",
+                    "kilometrage_critique": "Dès 80 000-100 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement du FAP sur usage majoritairement urbain",
+                    "symptomes": "Voyant FAP, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Réseau de pièces détachées VW vs Ford à bien identifier",
+                    "symptomes": "Délais et coûts de pièces variables selon le réseau utilisé",
+                    "pieces_concernees": "N/A (facteur logistique)",
+                    "kilometrage_critique": "N/A",
+                    "cout_estime_eur": "Variable selon le pays et le réseau"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "ID.3 / ID.4",
+        "generations": [
+          {
+            "code_chassis": "ID.3 (MEB)",
+            "annees": "2020-aujourd'hui",
+            "phases": [
+              "Phase 1 (2020-2023)",
+              "Phase 2 restylée (2023-)"
+            ],
+            "motorisations": [
+              {
+                "type": "Électrique",
+                "nom": "ID.3 Pro/Pro S/GTX - 150 à 286ch",
+                "code_moteur": "Moteur(s) électrique(s) synchrone(s), plateforme MEB",
+                "cylindree": "N/A",
+                "puissance_ch": 286,
+                "boite": [
+                  "Réducteur monovitesse"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Logiciel embarqué (ID.Software) capricieux, notamment premières versions",
+                    "symptomes": "Écran figé, fonctions capricieuses, bugs d'affichage, plantages",
+                    "pieces_concernees": "Calculateur ID.Software",
+                    "kilometrage_critique": "Fréquent dès les premiers mois d'utilisation, surtout millésimes 2020-2021",
+                    "cout_estime_eur": "0€ si résolu par mise à jour, sinon 300 à 900€"
+                  },
+                  {
+                    "panne": "Vieillissement de la batterie sur le long terme",
+                    "symptomes": "Perte de capacité et d'autonomie progressive",
+                    "pieces_concernees": "Batterie haute tension",
+                    "kilometrage_critique": "Dégradation après 5-7 ans/100 000 km",
+                    "cout_estime_eur": "6000 à 9000€ hors garantie"
+                  },
+                  {
+                    "panne": "Dysfonctionnement de la pompe à chaleur en grand froid (versions équipées)",
+                    "symptomes": "Chauffage insuffisant, consommation électrique accrue",
+                    "pieces_concernees": "Pompe à chaleur",
+                    "kilometrage_critique": "Variable, surtout par grand froid",
+                    "cout_estime_eur": "800 à 1800€ en cas de remplacement"
+                  },
+                  {
+                    "panne": "Coût très élevé de remplacement de la batterie hors garantie",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Batterie haute tension complète",
+                    "kilometrage_critique": "Au-delà de 8 ans/160 000 km",
+                    "cout_estime_eur": "6000 à 9000€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "ID.4 (MEB)",
+            "annees": "2020-aujourd'hui",
+            "phases": [
+              "Phase 1 (2020-2023)",
+              "Phase 2 restylée (2023-)"
+            ],
+            "motorisations": [
+              {
+                "type": "Électrique",
+                "nom": "ID.4 Pure/Pro/GTX - 148 à 340ch",
+                "code_moteur": "Moteur(s) électrique(s) synchrone(s), plateforme MEB",
+                "cylindree": "N/A",
+                "puissance_ch": 340,
+                "boite": [
+                  "Réducteur monovitesse"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Logiciel embarqué capricieux, notamment premières versions",
+                    "symptomes": "Écran figé, fonctions capricieuses, bugs d'affichage, plantages",
+                    "pieces_concernees": "Calculateur ID.Software",
+                    "kilometrage_critique": "Fréquent dès les premiers mois d'utilisation, surtout millésimes 2020-2021",
+                    "cout_estime_eur": "0€ si résolu par mise à jour, sinon 300 à 900€"
+                  },
+                  {
+                    "panne": "Vieillissement de la batterie sur le long terme",
+                    "symptomes": "Perte de capacité et d'autonomie progressive",
+                    "pieces_concernees": "Batterie haute tension",
+                    "kilometrage_critique": "Dégradation après 5-7 ans/100 000 km",
+                    "cout_estime_eur": "6000 à 9000€ hors garantie"
+                  },
+                  {
+                    "panne": "Dysfonctionnement de la pompe à chaleur en grand froid (versions équipées)",
+                    "symptomes": "Chauffage insuffisant, consommation électrique accrue",
+                    "pieces_concernees": "Pompe à chaleur",
+                    "kilometrage_critique": "Variable, surtout par grand froid",
+                    "cout_estime_eur": "800 à 1800€ en cas de remplacement"
+                  },
+                  {
+                    "panne": "Consommation électrique élevée en hiver",
+                    "symptomes": "Autonomie réelle nettement inférieure à l'autonomie WLTP par temps froid",
+                    "pieces_concernees": "Batterie, système de gestion thermique",
+                    "kilometrage_critique": "N/A (caractéristique saisonnière)",
+                    "cout_estime_eur": "N/A"
+                  },
+                  {
+                    "panne": "Coût très élevé de remplacement de la batterie hors garantie",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Batterie haute tension complète",
+                    "kilometrage_critique": "Au-delà de 8 ans/160 000 km",
+                    "cout_estime_eur": "6000 à 9000€"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Sharan",
+        "generations": [
+          {
+            "code_chassis": "7M (Sharan I)",
+            "annees": "1995-2010",
+            "phases": [
+              "Phase 1 (1995-2000)",
+              "Phase 2 restylée (2000-2010)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.8T/2.8 VR6 - 150 à 204ch",
+                "code_moteur": "AEB / AAA (VR6)",
+                "cylindree": "1.8L turbo / 2.8L VR6",
+                "puissance_ch": 204,
+                "boite": [
+                  "BVM5",
+                  "BVA4 Tiptronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Consommation d'huile sur 1.8T après gros kilométrage",
+                    "symptomes": "Niveau qui baisse rapidement entre vidanges",
+                    "pieces_concernees": "Segments, carter",
+                    "kilometrage_critique": "Fréquent au-delà de 150 000-180 000 km",
+                    "cout_estime_eur": "Surveillance ; 1500€+ si réfection nécessaire"
+                  },
+                  {
+                    "panne": "Risque de casse moteur si courroie de distribution négligée (VR6)",
+                    "symptomes": "Arrêt moteur brutal en cas de rupture",
+                    "pieces_concernees": "Courroie de distribution, galet tendeur",
+                    "kilometrage_critique": "Remplacement strict tous les 90 000-120 000 km",
+                    "cout_estime_eur": "300 à 600€ (préventif) / 2500€+ (casse moteur)"
+                  },
+                  {
+                    "panne": "Corrosion sur bas de caisse et passages de roue",
+                    "symptomes": "Perforations visibles",
+                    "pieces_concernees": "Bas de caisse, passages de roue",
+                    "kilometrage_critique": "Fréquent au-delà de 20-25 ans d'âge",
+                    "cout_estime_eur": "500 à 1800€"
+                  },
+                  {
+                    "panne": "Sollicitation forte des trains roulants (poids et gabarit)",
+                    "symptomes": "Usure prématurée de la suspension",
+                    "pieces_concernees": "Amortisseurs, silentblocs",
+                    "kilometrage_critique": "Usure accélérée dès 120 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.9 TDI - 90 à 130ch",
+                "code_moteur": "AFN / AJM",
+                "cylindree": "1.9L",
+                "puissance_ch": 130,
+                "boite": [
+                  "BVM5"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Robustesse mécanique réputée sur gros kilométrage",
+                    "symptomes": "N/A (fiabilité intrinsèque élevée)",
+                    "pieces_concernees": "N/A",
+                    "kilometrage_critique": "Souvent au-delà de 350 000-400 000 km avec entretien",
+                    "cout_estime_eur": "N/A"
+                  },
+                  {
+                    "panne": "Usure du volant moteur bi-masse",
+                    "symptomes": "Bruit métallique au ralenti, vibrations",
+                    "pieces_concernees": "Volant moteur bi-masse",
+                    "kilometrage_critique": "Entre 200 000 et 250 000 km",
+                    "cout_estime_eur": "500 à 900€"
+                  },
+                  {
+                    "panne": "Fragilité de la pompe injection rotative en cas de manque d'entretien",
+                    "symptomes": "Perte de puissance, fumées",
+                    "pieces_concernees": "Pompe injection rotative",
+                    "kilometrage_critique": "Au-delà de 250 000 km",
+                    "cout_estime_eur": "400 à 800€"
+                  },
+                  {
+                    "panne": "Usure du turbo sur gros kilométrage",
+                    "symptomes": "Perte de puissance, sifflement",
+                    "pieces_concernees": "Turbocompresseur",
+                    "kilometrage_critique": "Au-delà de 250 000-300 000 km",
+                    "cout_estime_eur": "500 à 900€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "7N (Sharan II)",
+            "annees": "2010-2022",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.4 TSI/2.0 TSI - 150 à 220ch",
+                "code_moteur": "CAVD / CCZA",
+                "cylindree": "1.4L / 2.0L turbo",
+                "puissance_ch": 220,
+                "boite": [
+                  "BVM6",
+                  "DSG6"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Étirement prématuré de la chaîne de distribution 2.0 TSI",
+                    "symptomes": "Bruit de chaîne au démarrage à froid",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "Risque avant 100 000-130 000 km",
+                    "cout_estime_eur": "700 à 1300€"
+                  },
+                  {
+                    "panne": "Fragilité de la mécatronique DSG6",
+                    "symptomes": "À-coups, pannes de passage de vitesses",
+                    "pieces_concernees": "Mécatronique DSG6",
+                    "kilometrage_critique": "Fréquent au-delà de 100 000-130 000 km",
+                    "cout_estime_eur": "1200 à 2500€"
+                  },
+                  {
+                    "panne": "Coût élevé d'entretien de la traction 4Motion",
+                    "symptomes": "Bruits en 4x4, vibrations en virage",
+                    "pieces_concernees": "Boîte de transfert, arbre de transmission",
+                    "kilometrage_critique": "Au-delà de 130 000-150 000 km",
+                    "cout_estime_eur": "800 à 1800€"
+                  },
+                  {
+                    "panne": "Sollicitation forte des trains roulants et freins (poids important)",
+                    "symptomes": "Usure prématurée pneus/freins/suspension",
+                    "pieces_concernees": "Pneumatiques, plaquettes, amortisseurs",
+                    "kilometrage_critique": "Usure accélérée dès 100 000 km",
+                    "cout_estime_eur": "600 à 1200€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "2.0 TDI - 115 à 184ch",
+                "code_moteur": "CFFB / CUVC",
+                "cylindree": "2.0L",
+                "puissance_ch": 184,
+                "boite": [
+                  "BVM6",
+                  "DSG6"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Usure du volant moteur bi-masse",
+                    "symptomes": "Bruit métallique au ralenti, vibrations",
+                    "pieces_concernees": "Volant moteur bi-masse",
+                    "kilometrage_critique": "Entre 180 000 et 220 000 km",
+                    "cout_estime_eur": "500 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement vanne EGR et FAP en usage familial intensif",
+                    "symptomes": "Perte de puissance, régénérations fréquentes",
+                    "pieces_concernees": "Vanne EGR, FAP",
+                    "kilometrage_critique": "Dès 100 000-130 000 km",
+                    "cout_estime_eur": "300 à 1000€"
+                  },
+                  {
+                    "panne": "Sensibilité des injecteurs à l'encrassement",
+                    "symptomes": "Ratés, fumée",
+                    "pieces_concernees": "Injecteurs",
+                    "kilometrage_critique": "Au-delà de 150 000-180 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "MALADIE CONNUE : certaines versions concernées par le Dieselgate",
+                    "symptomes": "Logiciel de trucage NOx, mise à jour corrective disponible",
+                    "pieces_concernees": "Calculateur moteur (logiciel)",
+                    "kilometrage_critique": "N/A",
+                    "cout_estime_eur": "0€ (mise à jour gratuite chez le constructeur)"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Caddy",
+        "generations": [
+          {
+            "code_chassis": "2K (Caddy III)",
+            "annees": "2004-2015",
+            "phases": [
+              "Phase 1 (2004-2010)",
+              "Phase 2 restylée (2010-2015)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.2 TSI/1.6 - 75 à 105ch",
+                "code_moteur": "CBZB / BSE",
+                "cylindree": "1.2L / 1.6L",
+                "puissance_ch": 105,
+                "boite": [
+                  "BVM5"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Chaîne de distribution 1.2 TSI pouvant s'étirer avec l'âge",
+                    "symptomes": "Bruit de chaîne au démarrage",
+                    "pieces_concernees": "Chaîne de distribution",
+                    "kilometrage_critique": "À surveiller au-delà de 130 000-150 000 km",
+                    "cout_estime_eur": "500 à 900€"
+                  },
+                  {
+                    "panne": "Sollicitation forte de la suspension en usage utilitaire intensif",
+                    "symptomes": "Affaissement, bruits de suspension",
+                    "pieces_concernees": "Amortisseurs, ressorts",
+                    "kilometrage_critique": "Usure accélérée dès 100 000 km en usage professionnel",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Corrosion possible en cas d'usage professionnel avec chargements lourds",
+                    "symptomes": "Perforations sur plancher de chargement",
+                    "pieces_concernees": "Plancher de chargement, bas de caisse",
+                    "kilometrage_critique": "Fréquent au-delà de 15-20 ans d'usage intensif",
+                    "cout_estime_eur": "300 à 1000€"
+                  },
+                  {
+                    "panne": "Fragilité du radiateur plastique",
+                    "symptomes": "Fuites, surchauffe",
+                    "pieces_concernees": "Radiateur",
+                    "kilometrage_critique": "Remplacement fréquent au-delà de 130 000 km",
+                    "cout_estime_eur": "150 à 300€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.9 TDI/2.0 TDI - 75 à 140ch",
+                "code_moteur": "BLS / CFHC",
+                "cylindree": "1.9L / 2.0L",
+                "puissance_ch": 140,
+                "boite": [
+                  "BVM5/6"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Volant moteur bi-masse sollicité par l'usage utilitaire",
+                    "symptomes": "Bruit métallique au ralenti, vibrations",
+                    "pieces_concernees": "Volant moteur bi-masse",
+                    "kilometrage_critique": "Entre 150 000 et 200 000 km en usage intensif",
+                    "cout_estime_eur": "500 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement vanne EGR et FAP sur usage urbain professionnel",
+                    "symptomes": "Perte de puissance, régénérations fréquentes",
+                    "pieces_concernees": "Vanne EGR, FAP",
+                    "kilometrage_critique": "Dès 100 000-130 000 km",
+                    "cout_estime_eur": "300 à 1000€"
+                  },
+                  {
+                    "panne": "Sensibilité des injecteurs à l'encrassement",
+                    "symptomes": "Ratés, fumée",
+                    "pieces_concernees": "Injecteurs",
+                    "kilometrage_critique": "Au-delà de 150 000-180 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Sollicitation forte de la suspension par les charges lourdes fréquentes",
+                    "symptomes": "Affaissement, usure prématurée",
+                    "pieces_concernees": "Amortisseurs, ressorts, silentblocs",
+                    "kilometrage_critique": "Usure accélérée dès 100 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "SA (Caddy IV/V)",
+            "annees": "2015-aujourd'hui",
+            "phases": [
+              "Phase 1 (2015-2020)",
+              "Phase 2 restylée (2020-)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.0 TSI/1.5 TSI - 84 à 150ch",
+                "code_moteur": "DKR / DPCA",
+                "cylindree": "1.0L / 1.5L turbo",
+                "puissance_ch": 150,
+                "boite": [
+                  "BVM6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Bruit/vibrations caractéristiques du 1.0 TSI 3 cylindres",
+                    "symptomes": "Vibrations au ralenti, bruit de chaîne à surveiller",
+                    "pieces_concernees": "Chaîne de distribution, supports moteur",
+                    "kilometrage_critique": "À surveiller au-delà de 100 000-120 000 km",
+                    "cout_estime_eur": "500 à 900€"
+                  },
+                  {
+                    "panne": "Sollicitation forte de la suspension en usage utilitaire intensif",
+                    "symptomes": "Affaissement, bruits de suspension",
+                    "pieces_concernees": "Amortisseurs, ressorts",
+                    "kilometrage_critique": "Usure accélérée dès 100 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement du filtre à particules essence sur petits trajets",
+                    "symptomes": "Voyant moteur, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules essence",
+                    "kilometrage_critique": "Sur petits trajets dès 60 000-80 000 km",
+                    "cout_estime_eur": "700 à 1400€"
+                  },
+                  {
+                    "panne": "Manque de recul sur la fiabilité long terme en usage professionnel",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Ensemble du groupe motopropulseur",
+                    "kilometrage_critique": "Modèle récent",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "2.0 TDI - 75 à 122ch",
+                "code_moteur": "DFHA",
+                "cylindree": "2.0L",
+                "puissance_ch": 122,
+                "boite": [
+                  "BVM6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité du système AdBlue/SCR sur usage utilitaire urbain",
+                    "symptomes": "Voyant AdBlue, limitation de démarrages",
+                    "pieces_concernees": "Capteur NOx, pompe de dosage",
+                    "kilometrage_critique": "Dès 80 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement du FAP sur usage majoritairement urbain",
+                    "symptomes": "Voyant FAP, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Sensibilité des injecteurs à l'encrassement",
+                    "symptomes": "Ratés, fumée",
+                    "pieces_concernees": "Injecteurs",
+                    "kilometrage_critique": "Au-delà de 150 000-180 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Sollicitation forte de la suspension par les charges lourdes",
+                    "symptomes": "Affaissement, usure prématurée",
+                    "pieces_concernees": "Amortisseurs, ressorts",
+                    "kilometrage_critique": "Usure accélérée dès 100 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Crafter",
+        "generations": [
+          {
+            "code_chassis": "2E",
+            "annees": "2006-2016",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Diesel",
+                "nom": "2.0 TDI/2.5 TDI - 80 à 163ch",
+                "code_moteur": "CECA / BJK (base Mercedes Sprinter)",
+                "cylindree": "2.0L / 2.5L",
+                "puissance_ch": 163,
+                "boite": [
+                  "BVM6"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Base mécanique partagée avec le Mercedes Sprinter de l'époque",
+                    "symptomes": "Pièces communes mais réseau/tarifs VW parfois moins compétitifs",
+                    "pieces_concernees": "Ensemble du groupe motopropulseur",
+                    "kilometrage_critique": "N/A (caractéristique commerciale)",
+                    "cout_estime_eur": "Variable selon réseau utilisé"
+                  },
+                  {
+                    "panne": "Fragilité et coût élevé des injecteurs pompe-injecteurs (2.5L)",
+                    "symptomes": "Bruit de cliquetis caractéristique, ratés, fumée",
+                    "pieces_concernees": "Injecteurs pompe-injecteurs",
+                    "kilometrage_critique": "Dès 150 000-180 000 km",
+                    "cout_estime_eur": "800 à 1600€"
+                  },
+                  {
+                    "panne": "Sollicitation forte de la suspension en usage utilitaire intensif",
+                    "symptomes": "Affaissement, usure prématurée",
+                    "pieces_concernees": "Amortisseurs, ressorts, trains roulants",
+                    "kilometrage_critique": "Usure accélérée dès 100 000 km en usage professionnel",
+                    "cout_estime_eur": "500 à 1200€"
+                  },
+                  {
+                    "panne": "Encrassement de la vanne EGR sur usage urbain professionnel",
+                    "symptomes": "Perte de puissance, voyant moteur",
+                    "pieces_concernees": "Vanne EGR",
+                    "kilometrage_critique": "Dès 100 000-130 000 km",
+                    "cout_estime_eur": "250 à 500€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "SY/SZ (Crafter II, base MAN)",
+            "annees": "2016-aujourd'hui",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Diesel",
+                "nom": "2.0 TDI - 102 à 177ch",
+                "code_moteur": "DTSA / DTUA",
+                "cylindree": "2.0L",
+                "puissance_ch": 177,
+                "boite": [
+                  "BVM6",
+                  "BVA8 Tiptronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité du système AdBlue/SCR sur usage professionnel urbain",
+                    "symptomes": "Voyant AdBlue, limitation de démarrages",
+                    "pieces_concernees": "Capteur NOx, pompe de dosage",
+                    "kilometrage_critique": "Dès 80 000-100 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement du FAP sur usage majoritairement urbain avec arrêts fréquents",
+                    "symptomes": "Voyant FAP, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Sollicitation forte de la suspension par les charges lourdes",
+                    "symptomes": "Affaissement, usure prématurée",
+                    "pieces_concernees": "Amortisseurs, ressorts, trains roulants",
+                    "kilometrage_critique": "Usure accélérée dès 100 000 km",
+                    "cout_estime_eur": "500 à 1200€"
+                  },
+                  {
+                    "panne": "Réseau de pièces spécifique à identifier (plateforme MAN)",
+                    "symptomes": "Délais et coûts de pièces variables selon le réseau utilisé",
+                    "pieces_concernees": "N/A (facteur logistique)",
+                    "kilometrage_critique": "N/A",
+                    "cout_estime_eur": "Variable selon le pays et le réseau"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "New Beetle / Beetle",
+        "generations": [
+          {
+            "code_chassis": "9C (New Beetle)",
+            "annees": "1998-2010",
+            "phases": [
+              "Phase 1 (1998-2005)",
+              "Phase 2 restylée (2005-2010)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.6/2.0/1.8T - 75 à 180ch",
+                "code_moteur": "AEG / AGU (1.8T)",
+                "cylindree": "1.6L à 1.8L turbo",
+                "puissance_ch": 180,
+                "boite": [
+                  "BVM5",
+                  "BVA4 Tiptronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Consommation d'huile excessive sur 1.8T",
+                    "symptomes": "Niveau qui baisse rapidement entre vidanges, encrassement du carter et des segments",
+                    "pieces_concernees": "Segments, carter",
+                    "kilometrage_critique": "Fréquent au-delà de 100 000-130 000 km",
+                    "cout_estime_eur": "Surveillance ; 1500€+ si réfection nécessaire"
+                  },
+                  {
+                    "panne": "Sensibilité du turbo K03/K04 en cas de manque d'entretien",
+                    "symptomes": "Perte de puissance, sifflement, fumée",
+                    "pieces_concernees": "Turbocompresseur K03/K04",
+                    "kilometrage_critique": "Dès 150 000 km si vidanges espacées",
+                    "cout_estime_eur": "500 à 900€"
+                  },
+                  {
+                    "panne": "Corrosion des bas de caisse et passages de roue",
+                    "symptomes": "Perforations visibles",
+                    "pieces_concernees": "Bas de caisse, passages de roue",
+                    "kilometrage_critique": "Fréquent au-delà de 20-25 ans d'âge",
+                    "cout_estime_eur": "500 à 1500€"
+                  },
+                  {
+                    "panne": "Usure de la courroie de distribution",
+                    "symptomes": "Bruit anormal, risque de casse moteur si négligée",
+                    "pieces_concernees": "Courroie de distribution",
+                    "kilometrage_critique": "Remplacement strict tous les 90 000-120 000 km",
+                    "cout_estime_eur": "200 à 400€ (préventif) / 1500€+ (casse)"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.9 TDI - 90 à 105ch",
+                "code_moteur": "AGR / ASZ",
+                "cylindree": "1.9L",
+                "puissance_ch": 105,
+                "boite": [
+                  "BVM5"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Robustesse mécanique réputée",
+                    "symptomes": "N/A (fiabilité intrinsèque élevée)",
+                    "pieces_concernees": "N/A",
+                    "kilometrage_critique": "Souvent au-delà de 350 000-400 000 km avec entretien",
+                    "cout_estime_eur": "N/A"
+                  },
+                  {
+                    "panne": "Fragilité de la pompe injection rotative en cas de manque d'entretien",
+                    "symptomes": "Perte de puissance, fumées, démarrage difficile",
+                    "pieces_concernees": "Pompe injection rotative",
+                    "kilometrage_critique": "En cas de manque d'entretien, dès 250 000 km",
+                    "cout_estime_eur": "400 à 800€"
+                  },
+                  {
+                    "panne": "Usure du volant moteur bi-masse",
+                    "symptomes": "Bruit métallique au ralenti, vibrations",
+                    "pieces_concernees": "Volant moteur bi-masse",
+                    "kilometrage_critique": "Entre 200 000 et 250 000 km",
+                    "cout_estime_eur": "500 à 900€"
+                  },
+                  {
+                    "panne": "Sensibilité du turbo sur gros kilométrage",
+                    "symptomes": "Perte de puissance, sifflement",
+                    "pieces_concernees": "Turbocompresseur",
+                    "kilometrage_critique": "Au-delà de 250 000-300 000 km",
+                    "cout_estime_eur": "500 à 900€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "5C (Beetle)",
+            "annees": "2011-2019",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.2 TSI/1.4 TSI/2.0 TSI - 105 à 220ch",
+                "code_moteur": "CBZB / CCZA",
+                "cylindree": "1.2L à 2.0L turbo",
+                "puissance_ch": 220,
+                "boite": [
+                  "BVM5/6",
+                  "DSG6"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Étirement prématuré de la chaîne de distribution 2.0 TSI",
+                    "symptomes": "Bruit de chaîne au démarrage à froid",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "Risque avant 100 000-130 000 km",
+                    "cout_estime_eur": "700 à 1300€"
+                  },
+                  {
+                    "panne": "Fragilité de la mécatronique DSG6",
+                    "symptomes": "À-coups, pannes de passage de vitesses",
+                    "pieces_concernees": "Mécatronique DSG6",
+                    "kilometrage_critique": "Fréquent au-delà de 100 000-130 000 km",
+                    "cout_estime_eur": "1200 à 2500€"
+                  },
+                  {
+                    "panne": "Sensibilité de la pompe à haute pression",
+                    "symptomes": "Perte de puissance, démarrage difficile",
+                    "pieces_concernees": "Pompe à haute pression",
+                    "kilometrage_critique": "Fréquent au-delà de 120 000 km",
+                    "cout_estime_eur": "400 à 800€"
+                  },
+                  {
+                    "panne": "Consommation d'huile signalée sur certains blocs",
+                    "symptomes": "Niveau qui baisse entre vidanges",
+                    "pieces_concernees": "Segments",
+                    "kilometrage_critique": "Dès 80 000-100 000 km",
+                    "cout_estime_eur": "Surveillance requise"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.6 TDI/2.0 TDI - 105 à 140ch",
+                "code_moteur": "CAYC / CFHC",
+                "cylindree": "1.6L / 2.0L",
+                "puissance_ch": 140,
+                "boite": [
+                  "BVM5/6",
+                  "DSG6"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité des injecteurs Common Rail à l'encrassement",
+                    "symptomes": "Ratés, fumée, voyant moteur",
+                    "pieces_concernees": "Injecteurs Common Rail",
+                    "kilometrage_critique": "Fréquent au-delà de 150 000-180 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement vanne EGR et FAP",
+                    "symptomes": "Perte de puissance, régénérations fréquentes",
+                    "pieces_concernees": "Vanne EGR, FAP",
+                    "kilometrage_critique": "Dès 120 000-150 000 km",
+                    "cout_estime_eur": "300 à 1000€"
+                  },
+                  {
+                    "panne": "Usure du volant moteur bi-masse",
+                    "symptomes": "Bruit métallique au ralenti, vibrations",
+                    "pieces_concernees": "Volant moteur bi-masse",
+                    "kilometrage_critique": "Entre 180 000 et 220 000 km",
+                    "cout_estime_eur": "500 à 900€"
+                  },
+                  {
+                    "panne": "MALADIE CONNUE : certaines versions concernées par le Dieselgate",
+                    "symptomes": "Logiciel de trucage NOx, mise à jour corrective disponible",
+                    "pieces_concernees": "Calculateur moteur (logiciel)",
+                    "kilometrage_critique": "N/A",
+                    "cout_estime_eur": "0€ (mise à jour gratuite chez le constructeur)"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Jetta",
+        "generations": [
+          {
+            "code_chassis": "1K (Jetta V, base Golf V)",
+            "annees": "2005-2010",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.4 TSI/2.0 FSI GLI - 122 à 200ch",
+                "code_moteur": "BLG / BWA",
+                "cylindree": "1.4L / 2.0L turbo",
+                "puissance_ch": 200,
+                "boite": [
+                  "BVM6",
+                  "DSG6"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "MALADIE CONNUE 1.4 TSI première génération : risque de rupture de courroie interne au compresseur",
+                    "symptomes": "Casse moteur brutale sans signe préalable clair",
+                    "pieces_concernees": "Courroie interne au compresseur, ensemble moteur",
+                    "kilometrage_critique": "Souvent avant 100 000 km sur les tout premiers blocs",
+                    "cout_estime_eur": "3000 à 5000€ (remplacement moteur en cas de casse)"
+                  },
+                  {
+                    "panne": "Étirement de la chaîne de distribution 2.0 TFSI/FSI",
+                    "symptomes": "Bruit de chaîne au démarrage à froid",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "Avec l'âge, risque accru au-delà de 150 000 km",
+                    "cout_estime_eur": "600 à 1100€"
+                  },
+                  {
+                    "panne": "Fragilité de la mécatronique DSG6",
+                    "symptomes": "À-coups, pannes de passage de vitesses",
+                    "pieces_concernees": "Mécatronique DSG6",
+                    "kilometrage_critique": "Fréquent au-delà de 100 000-130 000 km",
+                    "cout_estime_eur": "1200 à 2500€"
+                  },
+                  {
+                    "panne": "Modèle orienté marché nord-américain/mexicain principalement",
+                    "symptomes": "Retour d'expérience et disponibilité des pièces variables en Europe",
+                    "pieces_concernees": "N/A (facteur commercial)",
+                    "kilometrage_critique": "N/A",
+                    "cout_estime_eur": "Variable selon le pays"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.9 TDI/2.0 TDI - 105 à 140ch",
+                "code_moteur": "BXE / BKD",
+                "cylindree": "1.9L / 2.0L",
+                "puissance_ch": 140,
+                "boite": [
+                  "BVM6",
+                  "DSG6"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Usure du volant moteur bi-masse",
+                    "symptomes": "Bruit métallique au ralenti, vibrations",
+                    "pieces_concernees": "Volant moteur bi-masse",
+                    "kilometrage_critique": "Entre 180 000 et 220 000 km",
+                    "cout_estime_eur": "500 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement vanne EGR et FAP",
+                    "symptomes": "Perte de puissance, régénérations fréquentes",
+                    "pieces_concernees": "Vanne EGR, FAP",
+                    "kilometrage_critique": "Dès 120 000-150 000 km",
+                    "cout_estime_eur": "300 à 1000€"
+                  },
+                  {
+                    "panne": "Sensibilité des injecteurs à l'encrassement",
+                    "symptomes": "Ratés, fumée",
+                    "pieces_concernees": "Injecteurs",
+                    "kilometrage_critique": "Au-delà de 150 000-180 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "MALADIE CONNUE : certaines versions concernées par le Dieselgate",
+                    "symptomes": "Logiciel de trucage NOx, mise à jour corrective disponible",
+                    "pieces_concernees": "Calculateur moteur (logiciel)",
+                    "kilometrage_critique": "N/A",
+                    "cout_estime_eur": "0€ (mise à jour gratuite chez le constructeur)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "BU (Jetta VII, marché NA/Chine)",
+            "annees": "2018-aujourd'hui",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.4 TSI/1.5 TSI/GLI - 147 à 228ch",
+                "code_moteur": "EA211 evo",
+                "cylindree": "1.4L / 1.5L / 2.0L (GLI) turbo",
+                "puissance_ch": 228,
+                "boite": [
+                  "BVM6",
+                  "DSG8"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Non commercialisé en Europe : retour d'expérience essentiellement nord-américain",
+                    "symptomes": "Peu de données disponibles sur les marchés européens",
+                    "pieces_concernees": "N/A (facteur géographique)",
+                    "kilometrage_critique": "N/A",
+                    "cout_estime_eur": "N/A"
+                  },
+                  {
+                    "panne": "Encrassement du filtre à particules essence (marchés avec normes équivalentes)",
+                    "symptomes": "Voyant moteur, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules essence",
+                    "kilometrage_critique": "Sur petits trajets dès 60 000-80 000 km",
+                    "cout_estime_eur": "700 à 1400€ (marchés concernés)"
+                  },
+                  {
+                    "panne": "Chaîne de distribution EA211 evo à surveiller sur gros kilométrage",
+                    "symptomes": "Bruit de chaîne léger au démarrage",
+                    "pieces_concernees": "Chaîne de distribution",
+                    "kilometrage_critique": "À surveiller au-delà de 150 000 km",
+                    "cout_estime_eur": "500 à 900€"
+                  },
+                  {
+                    "panne": "Réseau de pièces et disponibilité variable selon le pays",
+                    "symptomes": "Délais et coûts de pièces variables",
+                    "pieces_concernees": "N/A (facteur logistique)",
+                    "kilometrage_critique": "N/A",
+                    "cout_estime_eur": "Variable selon le pays"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Multivan / Transporter",
+        "generations": [
+          {
+            "code_chassis": "T5",
+            "annees": "2003-2015",
+            "phases": [
+              "Phase 1 (2003-2009)",
+              "Phase 2 restylée (2009-2015)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "2.0 TSI - 150 à 204ch",
+                "code_moteur": "CCTA",
+                "cylindree": "2.0L turbo",
+                "puissance_ch": 204,
+                "boite": [
+                  "BVM6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sollicitation forte de la mécanique par l'usage utilitaire/familial intensif",
+                    "symptomes": "Usure accélérée générale du groupe motopropulseur",
+                    "pieces_concernees": "Ensemble mécanique",
+                    "kilometrage_critique": "Usure accélérée dès 100 000 km en usage intensif",
+                    "cout_estime_eur": "Variable"
+                  },
+                  {
+                    "panne": "Chaîne de distribution à surveiller sur gros kilométrage",
+                    "symptomes": "Bruit de chaîne léger au démarrage",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "À surveiller au-delà de 180 000-200 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  },
+                  {
+                    "panne": "Fragilité de la mécatronique DSG sous charge lourde répétée",
+                    "symptomes": "À-coups, pannes de passage de vitesses",
+                    "pieces_concernees": "Mécatronique DSG",
+                    "kilometrage_critique": "Fréquent au-delà de 100 000-130 000 km en usage intensif",
+                    "cout_estime_eur": "1200 à 2500€"
+                  },
+                  {
+                    "panne": "Coût élevé d'entretien de la traction 4Motion (versions équipées)",
+                    "symptomes": "Bruits en 4x4, vibrations en virage",
+                    "pieces_concernees": "Boîte de transfert, arbre de transmission",
+                    "kilometrage_critique": "Au-delà de 130 000-150 000 km",
+                    "cout_estime_eur": "800 à 1800€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "2.0 TDI/2.5 TDI - 84 à 180ch",
+                "code_moteur": "BNZ / AXD (2.5L 5 cyl.)",
+                "cylindree": "2.0L / 2.5L",
+                "puissance_ch": 180,
+                "boite": [
+                  "BVM5/6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Volant moteur bi-masse fortement sollicité",
+                    "symptomes": "Bruit métallique au ralenti, vibrations",
+                    "pieces_concernees": "Volant moteur bi-masse",
+                    "kilometrage_critique": "Entre 150 000 et 200 000 km en usage intensif",
+                    "cout_estime_eur": "500 à 1000€"
+                  },
+                  {
+                    "panne": "Fragilité et coût élevé des injecteurs pompe-injecteurs (2.5 TDI)",
+                    "symptomes": "Bruit de cliquetis caractéristique, ratés, fumée",
+                    "pieces_concernees": "Injecteurs pompe-injecteurs",
+                    "kilometrage_critique": "Dès 150 000-180 000 km",
+                    "cout_estime_eur": "800 à 1600€"
+                  },
+                  {
+                    "panne": "Encrassement de la vanne EGR sur usage urbain",
+                    "symptomes": "Perte de puissance",
+                    "pieces_concernees": "Vanne EGR",
+                    "kilometrage_critique": "Dès 100 000-130 000 km",
+                    "cout_estime_eur": "250 à 500€"
+                  },
+                  {
+                    "panne": "Sollicitation forte de la suspension par les charges lourdes fréquentes",
+                    "symptomes": "Affaissement, usure prématurée",
+                    "pieces_concernees": "Amortisseurs, ressorts, trains roulants",
+                    "kilometrage_critique": "Usure accélérée dès 100 000 km",
+                    "cout_estime_eur": "500 à 1200€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "T6/T6.1",
+            "annees": "2015-2024",
+            "phases": [
+              "Phase 1 T6 (2015-2019)",
+              "Phase 2 restylée T6.1 (2019-2024)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "2.0 TSI - 150 à 204ch",
+                "code_moteur": "DHHA",
+                "cylindree": "2.0L turbo",
+                "puissance_ch": 204,
+                "boite": [
+                  "BVM6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sollicitation forte de la mécanique par l'usage intensif",
+                    "symptomes": "Usure accélérée générale du groupe motopropulseur",
+                    "pieces_concernees": "Ensemble mécanique",
+                    "kilometrage_critique": "Usure accélérée dès 100 000 km en usage intensif",
+                    "cout_estime_eur": "Variable"
+                  },
+                  {
+                    "panne": "Chaîne de distribution à surveiller sur gros kilométrage",
+                    "symptomes": "Bruit de chaîne léger au démarrage",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "À surveiller au-delà de 180 000-200 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  },
+                  {
+                    "panne": "Mécatronique DSG à surveiller sous charge lourde répétée",
+                    "symptomes": "À-coups, pannes de passage de vitesses",
+                    "pieces_concernees": "Mécatronique DSG",
+                    "kilometrage_critique": "Fréquent au-delà de 100 000-130 000 km en usage intensif",
+                    "cout_estime_eur": "1200 à 2500€"
+                  },
+                  {
+                    "panne": "Coût élevé d'entretien de la traction 4Motion",
+                    "symptomes": "Bruits en 4x4, vibrations en virage",
+                    "pieces_concernees": "Boîte de transfert, arbre de transmission",
+                    "kilometrage_critique": "Au-delà de 130 000-150 000 km",
+                    "cout_estime_eur": "800 à 1800€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "2.0 TDI - 84 à 199ch",
+                "code_moteur": "DCYA / DFSA",
+                "cylindree": "2.0L",
+                "puissance_ch": 199,
+                "boite": [
+                  "BVM6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité du système AdBlue/SCR sur usage utilitaire urbain",
+                    "symptomes": "Voyant AdBlue, limitation de démarrages",
+                    "pieces_concernees": "Capteur NOx, pompe de dosage",
+                    "kilometrage_critique": "Dès 80 000-100 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement du FAP sur usage majoritairement urbain",
+                    "symptomes": "Voyant FAP, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Volant moteur bi-masse fortement sollicité",
+                    "symptomes": "Bruit métallique au ralenti, vibrations",
+                    "pieces_concernees": "Volant moteur bi-masse",
+                    "kilometrage_critique": "Entre 150 000 et 200 000 km en usage intensif",
+                    "cout_estime_eur": "500 à 1000€"
+                  },
+                  {
+                    "panne": "Sollicitation forte de la suspension par les charges lourdes fréquentes",
+                    "symptomes": "Affaissement, usure prématurée",
+                    "pieces_concernees": "Amortisseurs, ressorts, trains roulants",
+                    "kilometrage_critique": "Usure accélérée dès 100 000 km",
+                    "cout_estime_eur": "500 à 1200€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "T7 (Multivan, base plateforme MQB)",
+            "annees": "2021-aujourd'hui",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.5 TSI/2.0 TSI - 136 à 204ch",
+                "code_moteur": "DPCA / DNPA",
+                "cylindree": "1.5L / 2.0L turbo",
+                "puissance_ch": 204,
+                "boite": [
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Manque de recul sur la fiabilité long terme",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Ensemble du groupe motopropulseur",
+                    "kilometrage_critique": "Modèle récent",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  },
+                  {
+                    "panne": "Changement radical de plateforme (base MQB voiture particulière au lieu d'utilitaire)",
+                    "symptomes": "Retour d'expérience limité pour un usage utilitaire intensif",
+                    "pieces_concernees": "Ensemble du châssis",
+                    "kilometrage_critique": "N/A (architecture nouvelle)",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  },
+                  {
+                    "panne": "Encrassement du filtre à particules essence",
+                    "symptomes": "Voyant moteur, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules essence",
+                    "kilometrage_critique": "Sur petits trajets dès 60 000-80 000 km",
+                    "cout_estime_eur": "800 à 1600€"
+                  },
+                  {
+                    "panne": "Sollicitation forte des trains roulants et freins (poids important)",
+                    "symptomes": "Usure accélérée pneus/freins",
+                    "pieces_concernees": "Pneumatiques, plaquettes",
+                    "kilometrage_critique": "Usure accélérée dès 80 000-100 000 km",
+                    "cout_estime_eur": "Surcoût entretien courant"
+                  }
+                ]
+              },
+              {
+                "type": "Hybride rechargeable",
+                "nom": "eHybrid - 218ch",
+                "code_moteur": "1.4 TSI + moteur électrique",
+                "cylindree": "1.4L + électrique",
+                "puissance_ch": 218,
+                "boite": [
+                  "DSG6"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Vieillissement de la batterie HT sur le long terme",
+                    "symptomes": "Autonomie électrique réduite",
+                    "pieces_concernees": "Batterie haute tension",
+                    "kilometrage_critique": "Dégradation après 5-7 ans/100 000 km",
+                    "cout_estime_eur": "4500 à 7500€ hors garantie"
+                  },
+                  {
+                    "panne": "Bugs logiciels de gestion hybride",
+                    "symptomes": "Transitions essence/électrique erratiques",
+                    "pieces_concernees": "Calculateur hybride",
+                    "kilometrage_critique": "Variable",
+                    "cout_estime_eur": "0 à 300€"
+                  },
+                  {
+                    "panne": "Sollicitation très forte des trains roulants et freins (poids élevé)",
+                    "symptomes": "Usure accélérée pneus/freins",
+                    "pieces_concernees": "Pneumatiques, plaquettes, disques",
+                    "kilometrage_critique": "Usure 15-20% plus rapide",
+                    "cout_estime_eur": "Surcoût entretien courant important"
+                  },
+                  {
+                    "panne": "Coût élevé de remplacement batterie hors garantie",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Batterie HT complète",
+                    "kilometrage_critique": "Au-delà de 8 ans",
+                    "cout_estime_eur": "4500 à 7500€"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Taigo",
+        "generations": [
+          {
+            "code_chassis": "A11 (base T-Cross/Polo)",
+            "annees": "2021-aujourd'hui",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.0 TSI/1.5 TSI - 95 à 150ch",
+                "code_moteur": "DKR / DPCA",
+                "cylindree": "1.0L / 1.5L turbo",
+                "puissance_ch": 150,
+                "boite": [
+                  "BVM6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Bruit/vibrations caractéristiques du 1.0 TSI 3 cylindres",
+                    "symptomes": "Vibrations au ralenti, bruit de chaîne à surveiller",
+                    "pieces_concernees": "Chaîne de distribution, supports moteur",
+                    "kilometrage_critique": "À surveiller au-delà de 100 000-120 000 km",
+                    "cout_estime_eur": "500 à 900€"
+                  },
+                  {
+                    "panne": "Défaillance de l'électrovanne ACT (1.5 TSI)",
+                    "symptomes": "Fonctionnement irrégulier de la désactivation de cylindres, à-coups",
+                    "pieces_concernees": "Électrovanne ACT",
+                    "kilometrage_critique": "Fréquent au-delà de 100 000 km",
+                    "cout_estime_eur": "300 à 600€"
+                  },
+                  {
+                    "panne": "Encrassement du filtre à particules essence sur petits trajets",
+                    "symptomes": "Voyant moteur, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules essence",
+                    "kilometrage_critique": "Sur petits trajets dès 60 000-80 000 km",
+                    "cout_estime_eur": "700 à 1400€"
+                  },
+                  {
+                    "panne": "Manque de recul sur la fiabilité long terme",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Ensemble du groupe motopropulseur",
+                    "kilometrage_critique": "Modèle récent",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Corrado",
+        "generations": [
+          {
+            "code_chassis": "53I",
+            "annees": "1988-1995",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "G60/16V/VR6 - 136 à 190ch",
+                "code_moteur": "PG (G60, compresseur G) / KR (16V) / AAA (VR6)",
+                "cylindree": "1.8L compresseur / 2.0L 16V / 2.9L VR6",
+                "puissance_ch": 190,
+                "boite": [
+                  "BVM5"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "MALADIE CONNUE G60 : usure de la corde interne du compresseur G-Lader",
+                    "symptomes": "Sifflement anormal, perte de suralimentation, bruit de claquement",
+                    "pieces_concernees": "Corde interne du compresseur G-Lader",
+                    "kilometrage_critique": "Fréquent au-delà de 100 000-130 000 km",
+                    "cout_estime_eur": "800 à 1800€ (réparation spécialisée, pièces rares)"
+                  },
+                  {
+                    "panne": "Usure de la chaîne de distribution courte (VR6)",
+                    "symptomes": "Bruit de chaîne au démarrage à froid",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "À surveiller au-delà de 180 000-200 000 km",
+                    "cout_estime_eur": "400 à 800€"
+                  },
+                  {
+                    "panne": "Corrosion fréquente des bas de caisse et passages de roue",
+                    "symptomes": "Perforations visibles, bulles de peinture",
+                    "pieces_concernees": "Bas de caisse, passages de roue",
+                    "kilometrage_critique": "Fréquent au-delà de 25-30 ans d'âge",
+                    "cout_estime_eur": "500 à 1800€"
+                  },
+                  {
+                    "panne": "Panne du mécanisme de l'aileron arrière escamotable électrique",
+                    "symptomes": "Aileron qui ne se déploie plus à la vitesse prévue, bruit anormal du moteur électrique",
+                    "pieces_concernees": "Moteur électrique de l'aileron, mécanisme de déploiement",
+                    "kilometrage_critique": "Fréquent au-delà de 25-30 ans d'âge",
+                    "cout_estime_eur": "300 à 700€"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

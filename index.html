@@ -119,6 +119,11 @@
           <input type="text" id="motorisationManualInput" placeholder="Ex : 2.0 TDI 150ch — code CFFB (voir carte grise ou moteur)">
         </div>
         <div class="vstep-hint" id="motorisationHint"></div>
+        <section class="vehicle-issues" id="vehicleIssues" hidden aria-live="polite">
+          <h3>Points de vigilance potentiels</h3>
+          <p id="vehicleIssuesSummary"></p>
+          <ul id="vehicleIssuesList"></ul>
+        </section>
         <input type="hidden" name="motorisation_points_faibles">
       </div>
       <div class="grid cols-3" style="margin-top:16px;">
