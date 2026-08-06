@@ -576,8 +576,8 @@ body.dark.quick-mode .quick-mode-banner{color:#F0D28A;}
 .chat-message-assistant{background:var(--bg); color:var(--ink);}
 .chat-panel form{display:grid; grid-template-columns:1fr auto; gap:8px; align-items:end;}
 .chat-panel textarea{resize:vertical; min-height:48px;}
-.inline-assistant{position:fixed; z-index:80; display:flex; align-items:center; gap:8px; max-width:min(420px,calc(100vw - 24px)); padding:8px 10px; background:var(--ink); color:#fff; border-radius:var(--radius-sm); box-shadow:var(--ombre-lg); font-size:12px;}
-.inline-assistant span{line-height:1.35;}
+.inline-assistant{position:fixed; z-index:80; display:flex; align-items:center; gap:8px; width:min(420px,calc(100vw - 24px)); max-height:160px; padding:8px 10px; background:var(--ink); color:#fff; border-radius:var(--radius-sm); box-shadow:var(--ombre-lg); font-size:12px;}
+.inline-assistant span{flex:1; min-width:0; max-height:130px; overflow:auto; line-height:1.35;}
 .inline-assistant .btn-mini{padding:6px 8px; white-space:nowrap;}
 .sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;}
 @media print{.chat-panel,.inline-assistant{display:none !important;}}
