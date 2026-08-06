@@ -563,3 +563,19 @@ body.dark.quick-mode .quick-mode-banner{color:#F0D28A;}
   .mini-dash-sub{display:none;}
 }
 @media print{ .mini-dash{display:none !important;} }
+.chat-panel{position:fixed; z-index:70; right:16px; bottom:calc(var(--ab-h,84px) + 18px); width:min(390px,calc(100vw - 32px)); max-height:min(620px,75vh); display:flex; flex-direction:column; gap:10px; padding:14px; border:1px solid var(--border); border-radius:var(--radius); background:var(--surface); color:var(--ink); box-shadow:var(--ombre-lg);}
+.chat-panel[hidden],.inline-assistant[hidden]{display:none;}
+.chat-panel header{display:flex; align-items:center; justify-content:space-between; font-family:'Barlow Condensed',sans-serif; font-size:20px;}
+.chat-panel header button,.inline-assistant-close{border:0; background:transparent; color:var(--muted); cursor:pointer; font-size:22px; line-height:1;}
+.chat-context,.chat-status{margin:0; color:var(--muted); font-size:11px; line-height:1.4;}
+.chat-messages{display:grid; gap:8px; overflow-y:auto; min-height:80px; max-height:340px; padding-right:2px;}
+.chat-message{max-width:90%; padding:9px 10px; border-radius:var(--radius-sm); font-size:12.5px; line-height:1.45; white-space:pre-wrap;}
+.chat-message-user{justify-self:end; background:var(--accent); color:#fff;}
+.chat-message-assistant{background:var(--bg); color:var(--ink);}
+.chat-panel form{display:grid; grid-template-columns:1fr auto; gap:8px; align-items:end;}
+.chat-panel textarea{resize:vertical; min-height:48px;}
+.inline-assistant{position:fixed; z-index:80; display:flex; align-items:center; gap:8px; max-width:min(420px,calc(100vw - 24px)); padding:8px 10px; background:var(--ink); color:#fff; border-radius:var(--radius-sm); box-shadow:var(--ombre-lg); font-size:12px;}
+.inline-assistant span{line-height:1.35;}
+.inline-assistant .btn-mini{padding:6px 8px; white-space:nowrap;}
+.sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;}
+@media print{.chat-panel,.inline-assistant{display:none !important;}}

@@ -6,6 +6,7 @@
 <title>Fiche d'Expertise — Véhicule d'Occasion</title>
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#0A1830">
+<meta name="chat-api" content="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css?v=20260801">
@@ -35,6 +36,7 @@
       <button class="icon-btn" id="weightSettingsBtn" type="button">⚖ Pondération</button>
       <button class="icon-btn" id="quickModeToggle" type="button">⚡ Inspection rapide</button>
       <button class="icon-btn" id="darkToggle" type="button">🌙 Mode sombre</button>
+      <button class="icon-btn" id="chatToggle" type="button">💬 Assistant atelier</button>
     </div>
   </div>
   <div class="progress-wrap"><div class="progress-bar" id="progressBar"></div></div>
@@ -342,6 +344,24 @@
   <div class="mini-dash-text">
     <span class="mini-dash-verdict" id="miniDashVerdict"><span class="mini-dash-dot"></span> —</span>
     <span class="mini-dash-sub" id="miniDashSub">0 / 33 vérifiés</span>
+  </div>
+
+  <aside class="chat-panel" id="chatPanel" hidden aria-label="Assistant atelier">
+    <header><strong>Assistant atelier</strong><button type="button" id="chatClose" aria-label="Fermer l'assistant">×</button></header>
+    <p class="chat-context">Réponses guidées par le véhicule sélectionné. Ne remplace pas un diagnostic professionnel.</p>
+    <div class="chat-messages" id="chatMessages" aria-live="polite"></div>
+    <form id="chatForm">
+      <label class="sr-only" for="chatInput">Votre symptôme ou question</label>
+      <textarea id="chatInput" rows="3" maxlength="8000" placeholder="Ex. Bruit métallique au démarrage à froid…"></textarea>
+      <button class="btn-mini" type="submit">Envoyer</button>
+    </form>
+    <p class="chat-status" id="chatStatus" role="status"></p>
+  </aside>
+
+  <div class="inline-assistant" id="inlineAssistant" hidden role="status">
+    <span id="inlineAssistantText"></span>
+    <button type="button" class="btn-mini" id="inlineAssistantAsk">Expliquer</button>
+    <button type="button" class="inline-assistant-close" id="inlineAssistantClose" aria-label="Fermer">×</button>
   </div>
 </div>
 

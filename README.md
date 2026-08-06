@@ -10,3 +10,17 @@ indexes are constructed from the loaded data; no historic inline vehicle databas
 is included in the JavaScript.
 
 Application web pour consulter des fiches techniques de véhicules.
+
+## Assistant atelier
+
+Le frontend propose un diagnostic conversationnel et l'explication contextuelle
+d'un texte sélectionné. Le serveur Node protège la clé Gemini et expose
+`POST /api/chat` et `POST /api/inline`.
+
+1. Copiez `.env.example` vers `.env` et renseignez `GEMINI_API_KEY`.
+2. Exécutez `npm install`, puis `npm run dev`.
+3. En local, le frontend utilise automatiquement `http://localhost:3000`.
+
+Pour un déploiement statique, indiquez l'URL HTTPS du backend dans la balise
+`<meta name="chat-api" content="https://votre-api.example.com">` de
+`index.html`. Ne placez jamais la clé API dans le frontend.
