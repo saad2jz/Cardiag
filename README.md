@@ -21,6 +21,5 @@ d'un texte sélectionné. Le serveur Node protège la clé Gemini et expose
 2. Exécutez `npm install`, puis `npm run dev`.
 3. En local, le frontend utilise automatiquement `http://localhost:3000`.
 
-Pour un déploiement statique, indiquez l'URL HTTPS du backend dans la balise
-`<meta name="chat-api" content="https://votre-api.example.com">` de
-`index.html`. Ne placez jamais la clé API dans le frontend.
+Le frontend utilise `https://fiche-expert-auto.onrender.com/` comme backend
+Render. Ne placez jamais la clé API dans le frontend.
