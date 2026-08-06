@@ -138,7 +138,7 @@ export function initializeChatExperience() {
     }
   });
 
-  document.addEventListener('mouseup', () => {
+  function showInlineForSelection() {
     const selection = window.getSelection();
     const text = selection?.toString().trim() || '';
     const anchor = selection?.anchorNode?.parentElement;
@@ -162,6 +162,10 @@ export function initializeChatExperience() {
     );
     inline.style.left = `${left}px`;
     inline.style.top = `${top}px`;
+  }
+
+  document.addEventListener('pointerup', () => {
+    window.setTimeout(showInlineForSelection, 0);
   });
 
   inlineClose?.addEventListener('click', () => { inline.hidden = true; });
