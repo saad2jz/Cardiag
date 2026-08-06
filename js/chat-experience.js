@@ -101,8 +101,16 @@ export function initializeChatExperience() {
 
   toggles.forEach((toggle) => toggle.addEventListener('click', openPanel));
   close?.addEventListener('click', () => { panel.hidden = true; });
+  panel.addEventListener('keydown', (event) => {
+    event.stopPropagation();
+    if (event.target === input && event.key === 'Enter' && !event.shiftKey) {
+      event.preventDefault();
+      form.requestSubmit();
+    }
+  });
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
+    panel.hidden = false;
     const content = input.value.trim();
     if (!content) return;
     if (!canUseAssistant()) {
@@ -124,21 +132,36 @@ export function initializeChatExperience() {
       status.textContent = '';
     } catch (error) {
       status.textContent = error.message;
+    } finally {
+      panel.hidden = false;
+      input.focus();
     }
   });
 
   document.addEventListener('mouseup', () => {
     const selection = window.getSelection();
     const text = selection?.toString().trim() || '';
-    if (text.length < 2 || text.length > 1_000 || !canUseAssistant()) return;
+    const anchor = selection?.anchorNode?.parentElement;
+    if (!anchor?.closest('main') || text.length < 2 || text.length > 1_000 || !canUseAssistant()) return;
     const range = selection.getRangeAt(0);
     const rect = range.getBoundingClientRect();
     if (!rect.width && !rect.height) return;
     selectedText = text;
     inlineText.textContent = `Expliquer : « ${text.slice(0, 140)}${text.length > 140 ? '…' : ''} »`;
     inline.hidden = false;
-    inline.style.left = `${Math.min(window.innerWidth - inline.offsetWidth - 12, Math.max(12, rect.left))}px`;
-    inline.style.top = `${Math.min(window.innerHeight - 56, rect.bottom + 8)}px`;
+    const actionBarHeight = document.querySelector('.action-bar')?.getBoundingClientRect().height || 0;
+    const inlineRect = inline.getBoundingClientRect();
+    const safeBottom = actionBarHeight + 12;
+    const preferredTop = rect.bottom + 8;
+    const top = preferredTop + inlineRect.height <= window.innerHeight - safeBottom
+      ? preferredTop
+      : Math.max(12, rect.top - inlineRect.height - 8);
+    const left = Math.min(
+      window.innerWidth - inlineRect.width - 12,
+      Math.max(12, rect.left + (rect.width / 2) - (inlineRect.width / 2)),
+    );
+    inline.style.left = `${left}px`;
+    inline.style.top = `${top}px`;
   });
 
   inlineClose?.addEventListener('click', () => { inline.hidden = true; });
