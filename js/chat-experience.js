@@ -66,7 +66,7 @@ function renderSafeInline(target, html) {
 }
 
 export function initializeChatExperience() {
-  const toggle = document.getElementById('chatToggle');
+  const toggles = document.querySelectorAll('[data-chat-toggle]');
   const panel = document.getElementById('chatPanel');
   const close = document.getElementById('chatClose');
   const form = document.getElementById('chatForm');
@@ -80,14 +80,14 @@ export function initializeChatExperience() {
   let messages = [];
   let selectedText = '';
 
-  if (!toggle || !panel || !form || !input || !messagesElement || !status || !inline || !inlineText) return;
+  if (!toggles.length || !panel || !form || !input || !messagesElement || !status || !inline || !inlineText) return;
 
   function openPanel() {
     panel.hidden = false;
     input.focus();
   }
 
-  toggle.addEventListener('click', openPanel);
+  toggles.forEach((toggle) => toggle.addEventListener('click', openPanel));
   close?.addEventListener('click', () => { panel.hidden = true; });
   form.addEventListener('submit', async (event) => {
     event.preventDefault();

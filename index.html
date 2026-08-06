@@ -36,7 +36,7 @@
       <button class="icon-btn" id="weightSettingsBtn" type="button">⚖ Pondération</button>
       <button class="icon-btn" id="quickModeToggle" type="button">⚡ Inspection rapide</button>
       <button class="icon-btn" id="darkToggle" type="button">🌙 Mode sombre</button>
-      <button class="icon-btn" id="chatToggle" type="button">💬 Assistant atelier</button>
+      <button class="icon-btn" data-chat-toggle type="button">💬 Assistant atelier</button>
     </div>
   </div>
   <div class="progress-wrap"><div class="progress-bar" id="progressBar"></div></div>
@@ -345,6 +345,10 @@
     <span class="mini-dash-verdict" id="miniDashVerdict"><span class="mini-dash-dot"></span> —</span>
     <span class="mini-dash-sub" id="miniDashSub">0 / 33 vérifiés</span>
   </div>
+
+  <button class="chat-launcher" data-chat-toggle type="button" aria-label="Ouvrir l'assistant atelier">
+    <span aria-hidden="true">💬</span> Assistant atelier
+  </button>
 
   <aside class="chat-panel" id="chatPanel" hidden aria-label="Assistant atelier">
     <header><strong>Assistant atelier</strong><button type="button" id="chatClose" aria-label="Fermer l'assistant">×</button></header>
