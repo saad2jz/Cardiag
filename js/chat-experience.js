@@ -1,20 +1,33 @@
 const MAX_MESSAGES = 30;
-const API_BASE_URL = 'https://fiche-expert-auto.onrender.com/';
+const RENDER_API_URL = 'https://fiche-expert-auto.onrender.com/';
+const API_BASE_URL = ['localhost', '127.0.0.1'].includes(window.location.hostname)
+  || window.location.hostname.endsWith('.onrender.com')
+  ? `${window.location.origin}/`
+  : RENDER_API_URL;
 const API_TIMEOUT_MS = 30_000;
 
 function carContext() {
+  const selectOrManual = (selectId, manualId) => {
+    const manualValue = document.getElementById(manualId)?.value.trim();
+    return manualValue || document.getElementById(selectId)?.value || '';
+  };
+
   return {
-    marque: document.getElementById('marqueSelect')?.value || '',
-    modele: document.getElementById('modeleSelect')?.value || '',
+    marque: selectOrManual('marqueSelect', 'marqueManualInput'),
+    modele: selectOrManual('modeleSelect', 'modeleManualInput'),
     generation: document.getElementById('generationSelect')?.value || '',
     annee: document.getElementById('anneeSelect')?.value || '',
-    motorisation: document.getElementById('motorisationSelect')?.value || '',
+    motorisation: selectOrManual('motorisationSelect', 'motorisationManualInput'),
+    vin: document.querySelector('[name="vin"]')?.value.trim() || '',
   };
 }
 
 function canUseAssistant() {
-  return [carContext().marque, carContext().modele, carContext().motorisation].some(Boolean);
+  const context = carContext();
+  return [context.marque, context.modele, context.motorisation].every(Boolean);
 }
+
+const VEHICLE_CONTEXT_MESSAGE = 'Sélectionnez la marque, le modèle et la motorisation pour obtenir une réponse spécifique à votre véhicule.';
 
 async function request(path, body) {
   const controller = new AbortController();
@@ -113,7 +126,7 @@ export function initializeChatExperience() {
     const content = input.value.trim();
     if (!content) return;
     if (!canUseAssistant()) {
-      status.textContent = 'Sélectionnez au moins une marque, un modèle ou une motorisation.';
+      status.textContent = VEHICLE_CONTEXT_MESSAGE;
       return;
     }
 

@@ -49,6 +49,13 @@ function outputText(response, provider) {
   return text.trim();
 }
 
+function normalizeChatText(text) {
+  return text
+    .replace(/\*\*([^*]+)\*\*/g, '$1')
+    .replace(/__([^_]+)__/g, '$1')
+    .trim();
+}
+
 export function createLlmService({ client, provider, model } = {}) {
   const runtime = getLlmRuntimeConfig();
   const activeProvider = (provider || runtime.provider).toLowerCase();
@@ -74,7 +81,7 @@ export function createLlmService({ client, provider, model } = {}) {
           })),
           config: { systemInstruction: instructions, maxOutputTokens: 500 },
         });
-        return outputText(response, 'gemini');
+        return normalizeChatText(outputText(response, 'gemini'));
       }
 
       const response = await getClient().responses.create({
@@ -83,7 +90,7 @@ export function createLlmService({ client, provider, model } = {}) {
         input: messages.map(({ role, content }) => ({ role, content: content.trim() })),
         max_output_tokens: 500,
       });
-      return outputText(response, 'openai');
+      return normalizeChatText(outputText(response, 'openai'));
     },
     async inline(selectedText, carContext) {
       const instructions = buildInlineInstructions(carContext);
