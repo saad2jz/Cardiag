@@ -341,6 +341,24 @@
 
 <div id="printSynthesis"></div>
 
+<aside class="chat-panel" id="chatPanel" hidden aria-label="Assistant atelier">
+  <header><strong>Assistant atelier</strong><button type="button" id="chatClose" aria-label="Fermer l'assistant">×</button></header>
+  <p class="chat-context">Réponses guidées par le véhicule sélectionné. Ne remplace pas un diagnostic professionnel.</p>
+  <div class="chat-messages" id="chatMessages" aria-live="polite"></div>
+  <form id="chatForm">
+    <label class="sr-only" for="chatInput">Votre symptôme ou question</label>
+    <textarea id="chatInput" rows="3" maxlength="8000" placeholder="Ex. Bruit métallique au démarrage à froid…"></textarea>
+    <button class="btn-mini" type="submit">Envoyer</button>
+  </form>
+  <p class="chat-status" id="chatStatus" role="status"></p>
+</aside>
+
+<div class="inline-assistant" id="inlineAssistant" hidden role="status">
+  <span id="inlineAssistantText"></span>
+  <button type="button" class="btn-mini" id="inlineAssistantAsk">Expliquer</button>
+  <button type="button" class="inline-assistant-close" id="inlineAssistantClose" aria-label="Fermer">×</button>
+</div>
+
 <div class="mini-dash" id="miniDash" tabindex="0" role="button" aria-label="Voir le score et la décision, aller à la section bilan">
   <div class="mini-dash-ring" id="miniDashRing"><span id="miniDashScore">—</span></div>
   <div class="mini-dash-text">
@@ -351,24 +369,6 @@
   <button class="chat-launcher" data-chat-toggle type="button" aria-label="Ouvrir l'assistant atelier">
     <span aria-hidden="true">💬</span> Assistant atelier
   </button>
-
-  <aside class="chat-panel" id="chatPanel" hidden aria-label="Assistant atelier">
-    <header><strong>Assistant atelier</strong><button type="button" id="chatClose" aria-label="Fermer l'assistant">×</button></header>
-    <p class="chat-context">Réponses guidées par le véhicule sélectionné. Ne remplace pas un diagnostic professionnel.</p>
-    <div class="chat-messages" id="chatMessages" aria-live="polite"></div>
-    <form id="chatForm">
-      <label class="sr-only" for="chatInput">Votre symptôme ou question</label>
-      <textarea id="chatInput" rows="3" maxlength="8000" placeholder="Ex. Bruit métallique au démarrage à froid…"></textarea>
-      <button class="btn-mini" type="submit">Envoyer</button>
-    </form>
-    <p class="chat-status" id="chatStatus" role="status"></p>
-  </aside>
-
-  <div class="inline-assistant" id="inlineAssistant" hidden role="status">
-    <span id="inlineAssistantText"></span>
-    <button type="button" class="btn-mini" id="inlineAssistantAsk">Expliquer</button>
-    <button type="button" class="inline-assistant-close" id="inlineAssistantClose" aria-label="Fermer">×</button>
-  </div>
 </div>
 
 <div class="modal-overlay" id="compareModal">
