@@ -54,6 +54,16 @@ export function createApp({ llmService }) {
         if (serviceError?.code === 'LLM_NOT_CONFIGURED') {
           return res.status(503).json({ error: "Le service IA n'est pas configuré sur le serveur.", code: serviceError.code, requestId: req.requestId });
         }
+        const upstreamStatus = Number(serviceError?.status || serviceError?.statusCode || 0);
+        if (upstreamStatus === 401 || upstreamStatus === 403) {
+          return res.status(503).json({ error: 'La clé Gemini est invalide ou ne peut pas utiliser ce modèle.', code: 'LLM_AUTH_ERROR', requestId: req.requestId });
+        }
+        if (upstreamStatus === 404) {
+          return res.status(503).json({ error: 'Le modèle Gemini configuré est indisponible. Vérifiez GEMINI_MODEL.', code: 'LLM_MODEL_NOT_FOUND', requestId: req.requestId });
+        }
+        if (upstreamStatus === 429) {
+          return res.status(429).json({ error: 'La limite Gemini est atteinte. Réessayez dans quelques instants.', code: 'LLM_RATE_LIMITED', requestId: req.requestId });
+        }
         return res.status(500).json({ error: 'Le service IA est temporairement indisponible.', requestId: req.requestId });
       }
     };

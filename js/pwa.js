@@ -3,38 +3,49 @@ export function initializePwa() {
   const status = document.getElementById('installAppStatus');
   let installPrompt = null;
 
-  function setStatus(message) {
+  const setStatus = (message) => {
     if (status) status.textContent = message;
+  };
+
+  const isStandalone = () => window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+
+  if (isStandalone()) {
+    installButton?.setAttribute('hidden', '');
+    setStatus('Application installée. Vos fiches restent disponibles hors ligne.');
   }
 
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js').catch(() => {
-      setStatus('Le mode hors ligne est indisponible.');
-    });
+    navigator.serviceWorker.register('./sw.js')
+      .then((registration) => registration.update())
+      .catch(() => setStatus('Le mode hors ligne est indisponible. Vérifiez que l’application est ouverte en HTTPS.'));
   }
 
   window.addEventListener('beforeinstallprompt', (event) => {
     event.preventDefault();
     installPrompt = event;
-    if (installButton) installButton.hidden = false;
+    installButton?.removeAttribute('hidden');
+    setStatus('Application prête à être installée sur cet appareil.');
   });
 
   window.addEventListener('appinstalled', () => {
     installPrompt = null;
-    if (installButton) installButton.hidden = true;
+    installButton?.setAttribute('hidden', '');
     setStatus('Application installée : elle est disponible hors ligne.');
   });
 
   installButton?.addEventListener('click', async () => {
     if (!installPrompt) {
-      setStatus('Dans Chrome : menu ⋮ > Installer l’application. Sur iPhone/iPad : Partager > Sur l’écran d’accueil.');
+      const isAppleDevice = /iPad|iPhone|iPod/.test(navigator.userAgent);
+      setStatus(isAppleDevice
+        ? 'Dans Safari : Partager > Sur l’écran d’accueil.'
+        : 'Dans le navigateur : ouvrez le menu puis choisissez Installer l’application.');
       return;
     }
 
     installPrompt.prompt();
     const choice = await installPrompt.userChoice;
     installPrompt = null;
-    installButton.hidden = true;
+    installButton?.setAttribute('hidden', '');
     setStatus(choice.outcome === 'accepted' ? 'Installation en cours…' : 'Installation annulée.');
   });
 }
