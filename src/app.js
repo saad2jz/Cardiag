@@ -69,7 +69,7 @@ export function createApp({ llmService }) {
     };
   }
 
-  app.post('/api/chat', route(validateChatBody, async ({ messages, carContext }) => ({ message: await llmService.chat(messages, carContext) })));
+  app.post('/api/chat', route(validateChatBody, async ({ messages, carContext }) => llmService.chat(messages, carContext)));
   app.post('/api/inline', route(validateInlineBody, async ({ selectedText, carContext }) => ({ explanation: await llmService.inline(selectedText, carContext) })));
   app.use((_req, res) => res.status(404).json({ error: 'Route introuvable.' }));
   return app;

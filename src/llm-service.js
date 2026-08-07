@@ -56,6 +56,42 @@ function normalizeChatText(text) {
     .trim();
 }
 
+function readJsonObject(text) {
+  const normalized = text.trim().replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, '');
+  try {
+    return JSON.parse(normalized);
+  } catch {
+    throw new Error('Le modèle a renvoyé un diagnostic dans un format JSON invalide.');
+  }
+}
+
+function requiredString(value, field) {
+  if (typeof value !== 'string' || !value.trim()) {
+    throw new Error(`Le rapport JSON ne contient pas le champ obligatoire « ${field} ». `);
+  }
+  return value.trim();
+}
+
+function normalizeChatResult(text) {
+  const result = readJsonObject(text);
+  if (!result || typeof result !== 'object' || Array.isArray(result)) {
+    throw new Error('Le diagnostic JSON doit être un objet.');
+  }
+  if (result.type === 'question') {
+    return { type: 'question', content: requiredString(result.content, 'content') };
+  }
+  if (result.type === 'report') {
+    return {
+      type: 'report',
+      vehicle: requiredString(result.vehicle, 'vehicle'),
+      fault_code: requiredString(result.fault_code, 'fault_code'),
+      root_cause: requiredString(result.root_cause, 'root_cause'),
+      action_plan: requiredString(result.action_plan, 'action_plan'),
+    };
+  }
+  throw new Error('Le diagnostic JSON doit avoir le type « question » ou « report ».');
+}
+
 export function createLlmService({ client, provider, model } = {}) {
   const runtime = getLlmRuntimeConfig();
   const activeProvider = (provider || runtime.provider).toLowerCase();
@@ -81,7 +117,7 @@ export function createLlmService({ client, provider, model } = {}) {
           })),
           config: { systemInstruction: instructions, maxOutputTokens: 500 },
         });
-        return normalizeChatText(outputText(response, 'gemini'));
+        return normalizeChatResult(outputText(response, 'gemini'));
       }
 
       const response = await getClient().responses.create({
@@ -90,7 +126,7 @@ export function createLlmService({ client, provider, model } = {}) {
         input: messages.map(({ role, content }) => ({ role, content: content.trim() })),
         max_output_tokens: 500,
       });
-      return normalizeChatText(outputText(response, 'openai'));
+      return normalizeChatResult(outputText(response, 'openai'));
     },
     async inline(selectedText, carContext) {
       const instructions = buildInlineInstructions(carContext);
