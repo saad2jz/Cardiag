@@ -1,44 +1,109 @@
-import { GoogleGenerativeAI } from '@google/generative-ai';
+import { GoogleGenAI } from '@google/genai';
+import OpenAI from 'openai';
 import sanitizeHtml from 'sanitize-html';
 import { buildChatInstructions, buildInlineInstructions, escapePromptData } from './prompts.js';
 
-function messageHistory(messages) {
-  return messages.map(({ role, content }) => ({
-    role: role === 'assistant' ? 'model' : 'user',
-    parts: [{ text: content.trim() }],
-  }));
+const SUPPORTED_PROVIDERS = new Set(['gemini', 'openai']);
+
+export function getLlmRuntimeConfig(env = process.env) {
+  const inferredProvider = env.GEMINI_API_KEY || env.GOOGLE_API_KEY ? 'gemini' : 'openai';
+  const provider = (env.LLM_PROVIDER || inferredProvider).trim().toLowerCase();
+  const isGemini = provider === 'gemini';
+
+  return {
+    provider,
+    supported: SUPPORTED_PROVIDERS.has(provider),
+    configured: isGemini
+      ? Boolean(env.GEMINI_API_KEY || env.GOOGLE_API_KEY)
+      : provider === 'openai' && Boolean(env.OPENAI_API_KEY),
+    model: isGemini ? env.GEMINI_MODEL || 'gemini-3.6-flash' : env.OPENAI_MODEL || 'gpt-5.6',
+  };
 }
 
-async function responseText(result) {
-  const text = result.response.text()?.trim();
-  if (!text) throw new Error('Le modèle a renvoyé une réponse vide.');
-  return text;
+function configurationError(message) {
+  const error = new Error(message);
+  error.code = 'LLM_NOT_CONFIGURED';
+  return error;
 }
 
-export function createLlmService({ client, model = process.env.GEMINI_MODEL || 'gemini-1.5-flash' } = {}) {
-  if (!process.env.GEMINI_API_KEY && !client) throw new Error("GEMINI_API_KEY n'est pas configurée.");
-  const gemini = client || new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+function createProviderClient(provider) {
+  if (provider === 'gemini') {
+    const apiKey = process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY;
+    if (!apiKey) throw configurationError("GEMINI_API_KEY n'est pas configurée sur le serveur.");
+    return new GoogleGenAI({ apiKey });
+  }
 
-  function modelFor(instructions, maxOutputTokens) {
-    return gemini.getGenerativeModel({
-      model,
-      systemInstruction: { role: 'system', parts: [{ text: instructions }] },
-      generationConfig: { maxOutputTokens },
-    });
+  if (provider === 'openai') {
+    if (!process.env.OPENAI_API_KEY) throw configurationError("OPENAI_API_KEY n'est pas configurée sur le serveur.");
+    return new OpenAI({ apiKey: process.env.OPENAI_API_KEY, timeout: 30_000, maxRetries: 2 });
+  }
+
+  throw configurationError(`Le fournisseur LLM "${provider}" n'est pas pris en charge.`);
+}
+
+function outputText(response, provider) {
+  const text = provider === 'gemini'
+    ? (typeof response.text === 'function' ? response.text() : response.text)
+    : response.output_text;
+  if (!text?.trim()) throw new Error(`Le modèle ${provider} a renvoyé une réponse vide.`);
+  return text.trim();
+}
+
+export function createLlmService({ client, provider, model } = {}) {
+  const runtime = getLlmRuntimeConfig();
+  const activeProvider = (provider || runtime.provider).toLowerCase();
+  const activeModel = model || (activeProvider === runtime.provider
+    ? runtime.model
+    : activeProvider === 'gemini' ? 'gemini-3.6-flash' : 'gpt-5.6');
+  let activeClient = client;
+
+  function getClient() {
+    activeClient ??= createProviderClient(activeProvider);
+    return activeClient;
   }
 
   return {
     async chat(messages, carContext) {
-      const history = messageHistory(messages);
-      const latest = history.pop();
-      if (!latest || latest.role !== 'user') throw new Error('Le dernier message doit être envoyé par l’utilisateur.');
-      const chat = modelFor(buildChatInstructions(carContext), 500).startChat({ history });
-      return responseText(await chat.sendMessage(latest.parts[0].text));
+      const instructions = buildChatInstructions(carContext);
+      if (activeProvider === 'gemini') {
+        const response = await getClient().models.generateContent({
+          model: activeModel,
+          contents: messages.map(({ role, content }) => ({
+            role: role === 'assistant' ? 'model' : 'user',
+            parts: [{ text: content.trim() }],
+          })),
+          config: { systemInstruction: instructions, maxOutputTokens: 500 },
+        });
+        return outputText(response, 'gemini');
+      }
+
+      const response = await getClient().responses.create({
+        model: activeModel,
+        instructions,
+        input: messages.map(({ role, content }) => ({ role, content: content.trim() })),
+        max_output_tokens: 500,
+      });
+      return outputText(response, 'openai');
     },
     async inline(selectedText, carContext) {
-      const explanation = await responseText(await modelFor(buildInlineInstructions(carContext), 180)
-        .generateContent(`<texte_selectionne>${escapePromptData(selectedText.trim())}</texte_selectionne>`));
-      return sanitizeHtml(explanation, { allowedTags: ['strong', 'em', 'code', 'br'], allowedAttributes: {} });
+      const instructions = buildInlineInstructions(carContext);
+      const input = `<texte_selectionne>${escapePromptData(selectedText.trim())}</texte_selectionne>`;
+      const response = activeProvider === 'gemini'
+        ? await getClient().models.generateContent({
+          model: activeModel,
+          contents: input,
+          config: { systemInstruction: instructions, maxOutputTokens: 180 },
+        })
+        : await getClient().responses.create({
+          model: activeModel,
+          instructions,
+          input,
+          max_output_tokens: 180,
+        });
+      return sanitizeHtml(outputText(response, activeProvider), {
+        allowedTags: ['strong', 'em', 'code', 'br'],
+        allowedAttributes: {},
+      });
     },
   };
 }

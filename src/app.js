@@ -1,6 +1,7 @@
 import crypto from 'node:crypto';
 import cors from 'cors';
 import express from 'express';
+import { getLlmRuntimeConfig } from './llm-service.js';
 import { validateChatBody, validateInlineBody } from './validation.js';
 
 function isAllowedOrigin(origin) {
@@ -18,7 +19,10 @@ export function createApp({ llmService }) {
   app.use((req, res, next) => { req.requestId = crypto.randomUUID(); res.setHeader('X-Request-Id', req.requestId); next(); });
   app.use(cors({ origin: (origin, callback) => callback(null, isAllowedOrigin(origin)), methods: ['GET', 'POST', 'OPTIONS'] }));
   app.use(express.json({ limit: '100kb' }));
-  app.get('/health', (_req, res) => res.json({ status: 'ok' }));
+  app.get('/health', (_req, res) => {
+    const llm = getLlmRuntimeConfig();
+    res.json({ status: 'ok', llmConfigured: llm.configured, provider: llm.provider, model: llm.model });
+  });
 
   function route(validator, method) {
     return async (req, res) => {
@@ -28,6 +32,9 @@ export function createApp({ llmService }) {
         return res.json(await method(req.body));
       } catch (serviceError) {
         console.error(`[${req.requestId}] Service LLM indisponible:`, serviceError);
+        if (serviceError?.code === 'LLM_NOT_CONFIGURED') {
+          return res.status(503).json({ error: "Le service IA n'est pas configuré sur le serveur.", code: serviceError.code, requestId: req.requestId });
+        }
         return res.status(502).json({ error: 'Le service de diagnostic est temporairement indisponible.', requestId: req.requestId });
       }
     };

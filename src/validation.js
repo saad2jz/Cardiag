@@ -4,9 +4,14 @@ function isPlainObject(value) {
   return value !== null && typeof value === 'object' && !Array.isArray(value);
 }
 
-function validateCarContext(carContext) {
+export function validateCarContext(carContext) {
   if (!isPlainObject(carContext)) return 'carContext doit être un objet.';
-  if (!['marque', 'modele', 'motorisation'].some((key) => typeof carContext[key] === 'string' && carContext[key].trim())) {
+  const contextValues = [
+    carContext.marque ?? carContext.Marque,
+    carContext.modele ?? carContext['Modèle'] ?? carContext.Modele,
+    carContext.motorisation ?? carContext.Motorisation,
+  ];
+  if (!contextValues.some((value) => typeof value === 'string' && value.trim())) {
     return 'carContext doit contenir au moins une marque, un modèle ou une motorisation.';
   }
   return JSON.stringify(carContext).length > 4_000 ? 'carContext est trop volumineux.' : null;
