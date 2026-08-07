@@ -17,7 +17,7 @@ test('Gemini receives converted history and system instructions', async () => {
     { role: 'user', content: 'Perte de puissance' },
     { role: 'assistant', content: 'À chaud ou à froid ?' },
     { role: 'user', content: 'À chaud' },
-  ], { marque: 'Alpine', modele: 'A290' });
+  ], { marque: 'Alpine', modele: 'A290', motorisation: 'Électrique 220 ch' });
 
   assert.equal(result, 'Quel témoin est allumé ?');
   assert.equal(captured.model, 'gemini-test');
@@ -34,5 +34,5 @@ test('inline output strips unsafe HTML', async () => {
     },
   };
   const service = createLlmService({ client, provider: 'gemini' });
-  assert.equal(await service.inline('P0301', { marque: 'Peugeot' }), '<strong>P0301</strong>détail');
+  assert.equal(await service.inline('P0301', { marque: 'Peugeot', modele: '308', motorisation: '1.2 PureTech' }), '<strong>P0301</strong>détail');
 });

@@ -1,19 +1,42 @@
 {
+  "id": "./",
   "name": "Fiche d'Expertise — Véhicule d'Occasion",
-  "short_name": "Fiche Expertise Auto",
-  "description": "Fiche d'inspection terrain pour l'achat d'un véhicule d'occasion, avec fonctionnement 100% hors-ligne.",
+  "short_name": "Fiche Auto",
+  "description": "Assistant d'inspection automobile et fiche d'expertise utilisable hors ligne.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone"],
+  "orientation": "any",
   "background_color": "#EEF1F6",
   "theme_color": "#0A1830",
   "lang": "fr",
+  "categories": ["productivity", "utilities", "auto"],
   "icons": [
+    {
+      "src": "icons/app-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
     {
       "src": "icons/app-icon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Nouvelle fiche",
+      "short_name": "Nouvelle fiche",
+      "url": "./?action=new"
     }
   ]
 }

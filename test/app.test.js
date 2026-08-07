@@ -26,8 +26,17 @@ test('health reports LLM runtime status', async () => {
   assert.equal(typeof body.llmConfigured, 'boolean');
 });
 
+test('the combined server serves the frontend without exposing environment files', async () => {
+  const page = await fetch(`${baseUrl}/`);
+  assert.equal(page.status, 200);
+  assert.match(await page.text(), /Fiche d'Expertise/);
+
+  const envFile = await fetch(`${baseUrl}/.env`);
+  assert.equal(envFile.status, 404);
+});
+
 test('chat and inline routes call the configured service', async () => {
-  const payload = { carContext: { marque: 'Renault' } };
+  const payload = { carContext: { marque: 'Renault', modele: 'Clio IV', motorisation: '1.5 dCi' } };
   const chat = await fetch(`${baseUrl}/api/chat`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -40,4 +49,31 @@ test('chat and inline routes call the configured service', async () => {
   });
   assert.deepEqual(await chat.json(), { message: 'Question atelier ?' });
   assert.match((await inline.json()).explanation, /P0301/);
+});
+
+test('a Gemini authentication failure returns a useful configuration error', async () => {
+  const authServer = createApp({
+    llmService: {
+      chat: async () => {
+        const error = new Error('forbidden');
+        error.status = 403;
+        throw error;
+      },
+      inline: async () => '',
+    },
+  }).listen(0);
+  await new Promise((resolve) => authServer.once('listening', resolve));
+
+  const response = await fetch(`http://127.0.0.1:${authServer.address().port}/api/chat`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      messages: [{ role: 'user', content: 'Bruit moteur' }],
+      carContext: { marque: 'Renault', modele: 'Clio IV', motorisation: '1.5 dCi' },
+    }),
+  });
+
+  assert.equal(response.status, 503);
+  assert.equal((await response.json()).code, 'LLM_AUTH_ERROR');
+  await new Promise((resolve) => authServer.close(resolve));
 });

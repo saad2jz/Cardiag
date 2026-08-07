@@ -23,3 +23,10 @@ d'un texte sélectionné. Le serveur Node protège la clé Gemini et expose
 
 Le frontend utilise `https://fiche-expert-auto.onrender.com/` comme backend
 Render. Ne placez jamais la clé API dans le frontend.
+
+## Déploiement unique sur Render
+
+Ce dossier contient le frontend et le backend. Déployez-le avec `npm start`,
+définissez `LLM_PROVIDER=gemini`, `GEMINI_API_KEY` et `GEMINI_MODEL`, puis
+ouvrez l'URL Render : Express sert l'interface et les routes `/api/chat` et
+`/api/inline` depuis le même domaine.

@@ -1,21 +1,27 @@
-const CACHE_NAME = 'fiche-expert-auto-v4';
+const CACHE_NAME = 'fiche-expert-auto-v6';
 const APP_SHELL = [
   './',
-  'index.html',
-  'manifest.json',
-  'icons/app-icon.svg',
-  'css/styles.css?v=20260807-2',
-  'build-data.js?v=20260807-2',
-  'js/db-loader.js?v=20260807-2',
-  'js/app.js?v=20260807-2',
-  'js/legacy-features.js?v=20260807-2',
-  'js/chat-experience.js?v=20260807-2',
-  'js/pwa.js?v=20260807-2',
-  'data/vehicles.json',
+  './index.html',
+  './manifest.json',
+  './icons/app-icon.svg',
+  './icons/app-icon-192.png',
+  './icons/app-icon-512.png',
+  './css/styles.css?v=20260807-3',
+  './build-data.js?v=20260807-3',
+  './js/db-loader.js?v=20260807-3',
+  './js/app.js?v=20260807-3',
+  './js/legacy-features.js?v=20260807-2',
+  './js/chat-experience.js?v=20260807-2',
+  './js/pwa.js?v=20260807-2',
+  './data/vehicles.json',
 ];
 
 self.addEventListener('install', (event) => {
-  event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_SHELL)).then(() => self.skipWaiting()));
+  event.waitUntil(
+    caches.open(CACHE_NAME)
+      .then((cache) => cache.addAll(APP_SHELL))
+      .then(() => self.skipWaiting())
+  );
 });
 
 self.addEventListener('activate', (event) => {
@@ -28,18 +34,29 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
-  const requestUrl = new URL(event.request.url);
-  if (requestUrl.origin !== self.location.origin) return;
+  const url = new URL(event.request.url);
+  if (url.origin !== self.location.origin) return;
 
+  // Navigation : réseau d'abord pour récupérer les mises à jour, puis cache hors ligne.
+  if (event.request.mode === 'navigate') {
+    event.respondWith(
+      fetch(event.request)
+        .then((response) => {
+          const copy = response.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put('./index.html', copy));
+          return response;
+        })
+        .catch(() => caches.match('./index.html'))
+    );
+    return;
+  }
+
+  // Les données et ressources locales restent utilisables sans réseau.
   event.respondWith(
-    caches.match(event.request, { ignoreSearch: true }).then((cached) => {
-      const network = fetch(event.request).then((response) => {
-        if (response.ok) {
-          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, response.clone()));
-        }
+    caches.match(event.request, { ignoreSearch: true })
+      .then((cached) => cached || fetch(event.request).then((response) => {
+        if (response.ok) caches.open(CACHE_NAME).then((cache) => cache.put(event.request, response.clone()));
         return response;
-      });
-      return cached || network.catch(() => caches.match('index.html'));
-    })
+      }))
   );
 });

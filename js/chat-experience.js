@@ -4,7 +4,7 @@ const API_BASE_URL = ['localhost', '127.0.0.1'].includes(window.location.hostnam
   || window.location.hostname.endsWith('.onrender.com')
   ? `${window.location.origin}/`
   : RENDER_API_URL;
-const API_TIMEOUT_MS = 30_000;
+const API_TIMEOUT_MS = 60_000;
 
 function carContext() {
   const selectOrManual = (selectId, manualId) => {
@@ -42,7 +42,9 @@ async function request(path, body) {
     });
     const payload = await response.json().catch(() => ({}));
     if (!response.ok) {
-      throw new Error(payload.error || `Le service est indisponible (erreur ${response.status}).`);
+      const error = new Error(payload.error || `Le service est indisponible (erreur ${response.status}).`);
+      error.code = payload.code;
+      throw error;
     }
     return payload;
   } catch (error) {
@@ -58,44 +60,10 @@ async function request(path, body) {
   }
 }
 
-function renderSafeMarkdown(markdown) {
-  let html = markdown
-    .replace(/^### (.*$)/gim, '<h3>$1</h3>')
-    .replace(/^## (.*$)/gim, '<h2>$1</h2>')
-    .replace(/^# (.*$)/gim, '<h1>$1</h1>')
-    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-    .replace(/\*(.*?)\*/g, '<em>$1</em>')
-    .replace(/`(.*?)`/g, '<code>$1</code>')
-    .replace(/^\s*-\s+(.*$)/gim, '<li>$1</li>')
-    .replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>')
-    .replace(/\n/g, '<br>');
-
-  const allowed = new Set(['H1', 'H2', 'H3', 'STRONG', 'EM', 'CODE', 'BR', 'UL', 'OL', 'LI', 'P']);
-  const parsed = new DOMParser().parseFromString(html, 'text/html');
-  const fragment = document.createDocumentFragment();
-
-  function copy(node, parent) {
-    if (node.nodeType === Node.TEXT_NODE) {
-      parent.appendChild(document.createTextNode(node.textContent));
-    } else if (node.nodeType === Node.ELEMENT_NODE) {
-      if (!allowed.has(node.tagName)) {
-        node.childNodes.forEach((child) => copy(child, parent));
-        return;
-      }
-      const safeNode = document.createElement(node.tagName.toLowerCase());
-      node.childNodes.forEach((child) => copy(child, safeNode));
-      parent.appendChild(safeNode);
-    }
-  }
-
-  parsed.body.childNodes.forEach((node) => copy(node, fragment));
-  return fragment;
-}
-
 function appendMessage(list, role, content) {
   const message = document.createElement('article');
   message.className = `chat-message chat-message-${role}`;
-  message.appendChild(renderSafeMarkdown(content));
+  message.textContent = content;
   list.appendChild(message);
   list.scrollTop = list.scrollHeight;
   return message;
@@ -136,6 +104,7 @@ export function initializeChatExperience() {
   const inlineText = document.getElementById('inlineAssistantText');
   const inlineClose = document.getElementById('inlineAssistantClose');
   const inlineAsk = document.getElementById('inlineAssistantAsk');
+  const submitButton = form.querySelector('button[type="submit"]');
   let messages = [];
   let selectedText = '';
 
@@ -168,17 +137,39 @@ export function initializeChatExperience() {
     appendMessage(messagesElement, 'user', content);
     messages.push({ role: 'user', content });
     messages = messages.slice(-MAX_MESSAGES);
-    status.textContent = 'Diagnostic en cours…';
+    const pendingMessage = appendMessage(messagesElement, 'assistant', 'Réflexion en cours…');
+    pendingMessage.classList.add('chat-message-pending');
+    const thinkingSteps = [
+      'Réflexion en cours…',
+      'Analyse du symptôme et du véhicule…',
+      'Préparation du prochain contrôle…',
+    ];
+    let thinkingStep = 0;
+    const thinkingTimer = window.setInterval(() => {
+      thinkingStep = (thinkingStep + 1) % thinkingSteps.length;
+      pendingMessage.textContent = thinkingSteps[thinkingStep];
+      messagesElement.scrollTop = messagesElement.scrollHeight;
+    }, 2_500);
+    status.textContent = 'L’assistant prépare une réponse spécifique à votre véhicule.';
+    submitButton.disabled = true;
+    messagesElement.setAttribute('aria-busy', 'true');
 
     try {
       const { message } = await request('/api/chat', { messages, carContext: carContext() });
-      appendMessage(messagesElement, 'assistant', message);
+      pendingMessage.textContent = message;
+      pendingMessage.classList.remove('chat-message-pending');
       messages.push({ role: 'assistant', content: message });
       messages = messages.slice(-MAX_MESSAGES);
       status.textContent = '';
     } catch (error) {
-      status.textContent = error.message;
+      pendingMessage.textContent = `Réponse non disponible : ${error.message}`;
+      pendingMessage.classList.remove('chat-message-pending');
+      pendingMessage.classList.add('chat-message-error');
+      status.textContent = 'Vous pouvez réessayer dans quelques instants.';
     } finally {
+      window.clearInterval(thinkingTimer);
+      submitButton.disabled = false;
+      messagesElement.removeAttribute('aria-busy');
       panel.hidden = false;
       input.focus();
     }
@@ -188,13 +179,16 @@ export function initializeChatExperience() {
     const selection = window.getSelection();
     const text = selection?.toString().trim() || '';
     const anchor = selection?.anchorNode?.parentElement;
-    if (!anchor?.closest('main') || text.length < 2 || text.length > 1_000 || !canUseAssistant()) return;
+    if (!anchor?.closest('main') || text.length < 2 || text.length > 1_000) return;
     const range = selection.getRangeAt(0);
     const rect = range.getBoundingClientRect();
     if (!rect.width && !rect.height) return;
     selectedText = text;
-    inlineText.textContent = `Expliquer : « ${text.slice(0, 140)}${text.length > 140 ? '…' : ''} »`;
+    inlineText.textContent = canUseAssistant()
+      ? `Comprendre la vérification : « ${text.slice(0, 120)}${text.length > 120 ? '…' : ''} »`
+      : VEHICLE_CONTEXT_MESSAGE;
     inline.hidden = false;
+    inlineAsk.textContent = 'Voir comment vérifier';
     const actionBarHeight = document.querySelector('.action-bar')?.getBoundingClientRect().height || 0;
     const inlineRect = inline.getBoundingClientRect();
     const safeBottom = actionBarHeight + 12;
@@ -216,13 +210,17 @@ export function initializeChatExperience() {
   inlineClose?.addEventListener('click', () => { inline.hidden = true; });
   inlineAsk?.addEventListener('click', async () => {
     if (!selectedText) return;
+    if (!canUseAssistant()) {
+      inlineText.textContent = VEHICLE_CONTEXT_MESSAGE;
+      return;
+    }
     inlineAsk.disabled = true;
-    inlineText.textContent = 'Explication technique en cours…';
+    inlineText.textContent = 'Explication et méthode de vérification en cours…';
     try {
       const { explanation } = await request('/api/inline', { selectedText, carContext: carContext() });
       renderSafeInline(inlineText, explanation);
     } catch (error) {
-      inlineText.textContent = error.message;
+      inlineText.textContent = `Explication non disponible : ${error.message}`;
     } finally {
       inlineAsk.disabled = false;
     }
