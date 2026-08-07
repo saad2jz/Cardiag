@@ -58,10 +58,44 @@ async function request(path, body) {
   }
 }
 
+function renderSafeMarkdown(markdown) {
+  let html = markdown
+    .replace(/^### (.*$)/gim, '<h3>$1</h3>')
+    .replace(/^## (.*$)/gim, '<h2>$1</h2>')
+    .replace(/^# (.*$)/gim, '<h1>$1</h1>')
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.*?)\*/g, '<em>$1</em>')
+    .replace(/`(.*?)`/g, '<code>$1</code>')
+    .replace(/^\s*-\s+(.*$)/gim, '<li>$1</li>')
+    .replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>')
+    .replace(/\n/g, '<br>');
+
+  const allowed = new Set(['H1', 'H2', 'H3', 'STRONG', 'EM', 'CODE', 'BR', 'UL', 'OL', 'LI', 'P']);
+  const parsed = new DOMParser().parseFromString(html, 'text/html');
+  const fragment = document.createDocumentFragment();
+
+  function copy(node, parent) {
+    if (node.nodeType === Node.TEXT_NODE) {
+      parent.appendChild(document.createTextNode(node.textContent));
+    } else if (node.nodeType === Node.ELEMENT_NODE) {
+      if (!allowed.has(node.tagName)) {
+        node.childNodes.forEach((child) => copy(child, parent));
+        return;
+      }
+      const safeNode = document.createElement(node.tagName.toLowerCase());
+      node.childNodes.forEach((child) => copy(child, safeNode));
+      parent.appendChild(safeNode);
+    }
+  }
+
+  parsed.body.childNodes.forEach((node) => copy(node, fragment));
+  return fragment;
+}
+
 function appendMessage(list, role, content) {
   const message = document.createElement('article');
   message.className = `chat-message chat-message-${role}`;
-  message.textContent = content;
+  message.appendChild(renderSafeMarkdown(content));
   list.appendChild(message);
   list.scrollTop = list.scrollHeight;
   return message;
