@@ -6,15 +6,23 @@ function isPlainObject(value) {
 
 export function validateCarContext(carContext) {
   if (!isPlainObject(carContext)) return 'carContext doit être un objet.';
-  const contextValues = [
-    carContext.marque ?? carContext.Marque,
-    carContext.modele ?? carContext['Modèle'] ?? carContext.Modele,
-    carContext.motorisation ?? carContext.Motorisation,
-  ];
-  if (!contextValues.some((value) => typeof value === 'string' && value.trim())) {
-    return 'carContext doit contenir au moins une marque, un modèle ou une motorisation.';
+
+  const marque = carContext.marque ?? carContext.Marque;
+  const modele = carContext.modele ?? carContext.Modèle ?? carContext.Modele;
+  const motorisation = carContext.motorisation ?? carContext.Motorisation;
+  const missingFields = [
+    [marque, 'marque'],
+    [modele, 'modèle'],
+    [motorisation, 'motorisation'],
+  ]
+    .filter(([value]) => typeof value !== 'string' || !value.trim())
+    .map(([, field]) => field);
+
+  if (missingFields.length) {
+    return `carContext doit contenir ${missingFields.join(', ')} pour une réponse spécifique au véhicule.`;
   }
-  return JSON.stringify(carContext).length > 4_000 ? 'carContext est trop volumineux.' : null;
+  if (JSON.stringify(carContext).length > 4_000) return 'carContext est trop volumineux.';
+  return null;
 }
 
 export function validateChatBody(body) {
