@@ -14,7 +14,7 @@
 <meta name="chat-api" content="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=20260807-9">
+<link rel="stylesheet" href="css/styles.css?v=20260807-10">
 </head>
 <body>
 <header class="app-header">
@@ -41,7 +41,7 @@
       <button class="icon-btn" id="weightSettingsBtn" type="button">⚖ Pondération</button>
       <button class="icon-btn" id="quickModeToggle" type="button">⚡ Inspection rapide</button>
       <button class="icon-btn" id="darkToggle" type="button">🌙 Mode sombre</button>
-      <button class="icon-btn diagnostic-toggle" data-chat-toggle type="button">◆ Console diagnostic</button>
+      <button class="icon-btn" data-chat-toggle type="button">💬 Assistant atelier</button>
       <button class="icon-btn" id="installAppBtn" type="button">⬇ Installer l’application</button>
     </div>
     <p class="install-app-status" id="installAppStatus" role="status"></p>
@@ -346,6 +346,10 @@
 
 <div id="printSynthesis"></div>
 
+  <button class="chat-launcher" data-chat-toggle type="button" aria-label="Ouvrir l'assistant atelier">
+    <span aria-hidden="true">💬</span> Assistant atelier
+  </button>
+
 <section class="diagnostic-workspace" id="chatPanel" hidden aria-label="Console de diagnostic">
   <section class="diagnostic-console">
     <header class="diagnostic-console-head">
@@ -384,9 +388,6 @@
     <span class="mini-dash-sub" id="miniDashSub">0 / 33 vérifiés</span>
   </div>
 
-  <button class="chat-launcher" data-chat-toggle type="button" aria-label="Ouvrir la console de diagnostic">
-    <span aria-hidden="true">◆</span> Diagnostic
-  </button>
 </div>
 
 <div class="modal-overlay" id="compareModal">
@@ -438,8 +439,8 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<script src="build-data.js?v=20260807-9"></script>
-<script src="js/db-loader.js?v=20260807-9"></script>
-<script type="module" src="js/app.js?v=20260807-9"></script>
+<script src="build-data.js?v=20260807-10"></script>
+<script src="js/db-loader.js?v=20260807-10"></script>
+<script type="module" src="js/app.js?v=20260807-10"></script>
 </body>
 </html>
