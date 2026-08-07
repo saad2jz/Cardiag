@@ -8,7 +8,7 @@ let baseUrl;
 before(async () => {
   server = createApp({
     llmService: {
-      chat: async () => 'Question atelier ?',
+      chat: async () => ({ type: 'question', content: 'Question atelier ?' }),
       inline: async () => '<strong>P0301</strong> signale un raté.',
     },
   }).listen(0);
@@ -47,7 +47,7 @@ test('chat and inline routes call the configured service', async () => {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ ...payload, selectedText: 'P0301' }),
   });
-  assert.deepEqual(await chat.json(), { message: 'Question atelier ?' });
+  assert.deepEqual(await chat.json(), { type: 'question', content: 'Question atelier ?' });
   assert.match((await inline.json()).explanation, /P0301/);
 });
 

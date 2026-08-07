@@ -69,6 +69,61 @@ function appendMessage(list, role, content) {
   return message;
 }
 
+function splitActionPlan(plan) {
+  return String(plan || '').split(/\n|(?<=[.!?])\s+(?=[A-ZÀ-Ý])/)
+    .map((step) => step.trim()).filter(Boolean);
+}
+
+function reportCard(label, value, className = '', full = false) {
+  const card = document.createElement('article');
+  card.className = `report-card ${className} ${full ? 'full' : ''}`.trim();
+  const title = document.createElement('p');
+  title.className = 'report-label';
+  title.textContent = label;
+  const content = document.createElement('p');
+  content.className = 'report-value';
+  content.textContent = value || 'Non renseigné';
+  card.append(title, content);
+  return card;
+}
+
+function renderReport(target, data) {
+  target.replaceChildren();
+  const grid = document.createElement('section');
+  grid.className = 'report-grid';
+  const summary = document.createElement('p');
+  summary.className = 'report-summary';
+  summary.textContent = 'CAUSE PROBABLE IDENTIFIÉE';
+  grid.append(summary, reportCard('VÉHICULE', data.vehicle, '', true));
+  const fault = reportCard('CODE DÉFAUT', data.fault_code, 'fault');
+  fault.querySelector('.report-value').className = 'fault-code';
+  grid.append(fault, reportCard('ÉTAT SYSTÈME', 'Anomalie à confirmer après contrôle', 'warning'));
+  grid.append(reportCard('CAUSE RACINE', data.root_cause, 'fault', true));
+  const plan = document.createElement('article');
+  plan.className = 'report-card full warning';
+  const planTitle = document.createElement('p');
+  planTitle.className = 'report-label';
+  planTitle.textContent = "PLAN D'ACTION ATELIER";
+  const list = document.createElement('ol');
+  list.className = 'plan-list';
+  const steps = splitActionPlan(data.action_plan);
+  (steps.length ? steps : ['Aucune opération détaillée fournie.']).forEach((step) => {
+    const item = document.createElement('li');
+    item.textContent = step;
+    list.append(item);
+  });
+  plan.append(planTitle, list);
+  grid.append(plan);
+  target.append(grid);
+}
+
+function waitingReport() {
+  const state = document.createElement('div');
+  state.className = 'waiting-state';
+  state.innerHTML = '<div class="radar" aria-hidden="true"><span></span></div><p class="waiting-kicker">AUCUN RAPPORT ACTIF</p><h3>En attente des mesures terrain</h3><p>La synthèse d’intervention apparaîtra ici après confirmation de la cause probable.</p>';
+  return state;
+}
+
 function renderSafeInline(target, html) {
   const allowed = new Set(['STRONG', 'EM', 'CODE', 'BR']);
   const parsed = new DOMParser().parseFromString(html, 'text/html');
@@ -100,6 +155,9 @@ export function initializeChatExperience() {
   const input = document.getElementById('chatInput');
   const messagesElement = document.getElementById('chatMessages');
   const status = document.getElementById('chatStatus');
+  const reportContent = document.getElementById('reportContent');
+  const reset = document.getElementById('chatReset');
+  const vehicleReadout = document.getElementById('diagnosticVehicleReadout');
   const inline = document.getElementById('inlineAssistant');
   const inlineText = document.getElementById('inlineAssistantText');
   const inlineClose = document.getElementById('inlineAssistantClose');
@@ -108,15 +166,32 @@ export function initializeChatExperience() {
   let messages = [];
   let selectedText = '';
 
-  if (!toggles.length || !panel || !form || !input || !messagesElement || !status || !inline || !inlineText) return;
+  if (!toggles.length || !panel || !form || !input || !messagesElement || !status || !reportContent || !inline || !inlineText) return;
+
+  function updateVehicleReadout() {
+    const context = carContext();
+    const title = [context.marque, context.modele, context.annee ? `(${context.annee})` : '', context.motorisation].filter(Boolean).join(' · ');
+    vehicleReadout.textContent = title ? `Véhicule actif : ${title}` : 'Véhicule : à sélectionner dans la fiche';
+  }
 
   function openPanel() {
     panel.hidden = false;
+    updateVehicleReadout();
     input.focus();
   }
 
   toggles.forEach((toggle) => toggle.addEventListener('click', openPanel));
   close?.addEventListener('click', () => { panel.hidden = true; });
+  reset?.addEventListener('click', () => {
+    messages = [];
+    messagesElement.replaceChildren();
+    reportContent.replaceChildren(waitingReport());
+    input.disabled = false;
+    submitButton.disabled = false;
+    status.textContent = '';
+    updateVehicleReadout();
+    input.focus();
+  });
   input.addEventListener('keydown', (event) => {
     if (event.key === 'Enter' && !event.shiftKey) {
       event.preventDefault();
@@ -137,12 +212,12 @@ export function initializeChatExperience() {
     appendMessage(messagesElement, 'user', content);
     messages.push({ role: 'user', content });
     messages = messages.slice(-MAX_MESSAGES);
-    const pendingMessage = appendMessage(messagesElement, 'assistant', 'Réflexion en cours…');
+    const pendingMessage = appendMessage(messagesElement, 'assistant', 'Analyse des schémas électriques en cours…');
     pendingMessage.classList.add('chat-message-pending');
     const thinkingSteps = [
-      'Réflexion en cours…',
-      'Analyse du symptôme et du véhicule…',
-      'Préparation du prochain contrôle…',
+      'Analyse des schémas électriques en cours…',
+      'Recoupement des symptômes et des mesures…',
+      'Préparation du prochain contrôle atelier…',
     ];
     let thinkingStep = 0;
     const thinkingTimer = window.setInterval(() => {
@@ -153,14 +228,26 @@ export function initializeChatExperience() {
     status.textContent = 'L’assistant prépare une réponse spécifique à votre véhicule.';
     submitButton.disabled = true;
     messagesElement.setAttribute('aria-busy', 'true');
+    let investigationClosed = false;
 
     try {
-      const { message } = await request('/api/chat', { messages, carContext: carContext() });
-      pendingMessage.textContent = message;
+      const data = await request('/api/chat', { messages, carContext: carContext() });
       pendingMessage.classList.remove('chat-message-pending');
-      messages.push({ role: 'assistant', content: message });
-      messages = messages.slice(-MAX_MESSAGES);
-      status.textContent = '';
+      if (data.type === 'question') {
+        pendingMessage.textContent = data.content;
+        messages.push({ role: 'assistant', content: data.content });
+        messages = messages.slice(-MAX_MESSAGES);
+        status.textContent = 'Contrôle complémentaire requis avant d’établir le rapport.';
+      } else if (data.type === 'report') {
+        investigationClosed = true;
+        pendingMessage.textContent = 'Cause probable confirmée. Rapport d’intervention généré.';
+        renderReport(reportContent, data);
+        input.disabled = true;
+        submitButton.disabled = true;
+        status.textContent = 'Investigation clôturée. Utilisez « Nouvelle analyse » pour ouvrir un nouveau dossier.';
+      } else {
+        throw new Error('Format JSON IA invalide : type « question » ou « report » attendu.');
+      }
     } catch (error) {
       pendingMessage.textContent = `Réponse non disponible : ${error.message}`;
       pendingMessage.classList.remove('chat-message-pending');
@@ -168,10 +255,10 @@ export function initializeChatExperience() {
       status.textContent = 'Vous pouvez réessayer dans quelques instants.';
     } finally {
       window.clearInterval(thinkingTimer);
-      submitButton.disabled = false;
+      if (!investigationClosed) submitButton.disabled = false;
       messagesElement.removeAttribute('aria-busy');
       panel.hidden = false;
-      input.focus();
+      if (!investigationClosed) input.focus();
     }
   });
 

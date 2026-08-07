@@ -14,7 +14,7 @@
 <meta name="chat-api" content="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=20260807-8">
+<link rel="stylesheet" href="css/styles.css?v=20260807-9">
 </head>
 <body>
 <header class="app-header">
@@ -41,7 +41,7 @@
       <button class="icon-btn" id="weightSettingsBtn" type="button">⚖ Pondération</button>
       <button class="icon-btn" id="quickModeToggle" type="button">⚡ Inspection rapide</button>
       <button class="icon-btn" id="darkToggle" type="button">🌙 Mode sombre</button>
-      <button class="icon-btn" data-chat-toggle type="button">💬 Assistant atelier</button>
+      <button class="icon-btn diagnostic-toggle" data-chat-toggle type="button">◆ Console diagnostic</button>
       <button class="icon-btn" id="installAppBtn" type="button">⬇ Installer l’application</button>
     </div>
     <p class="install-app-status" id="installAppStatus" role="status"></p>
@@ -346,17 +346,29 @@
 
 <div id="printSynthesis"></div>
 
-<aside class="chat-panel" id="chatPanel" hidden aria-label="Assistant atelier">
-  <header><strong>Assistant atelier</strong><button type="button" id="chatClose" aria-label="Fermer l'assistant">×</button></header>
-  <p class="chat-context">Réponses guidées par le véhicule sélectionné. Ne remplace pas un diagnostic professionnel.</p>
-  <div class="chat-messages" id="chatMessages" aria-live="polite"></div>
-  <form id="chatForm">
-    <label class="sr-only" for="chatInput">Votre symptôme ou question</label>
-    <textarea id="chatInput" rows="3" maxlength="8000" placeholder="Ex. Bruit métallique au démarrage à froid…"></textarea>
-    <button class="btn-mini" type="submit">Envoyer</button>
-  </form>
-  <p class="chat-status" id="chatStatus" role="status"></p>
-</aside>
+<section class="diagnostic-workspace" id="chatPanel" hidden aria-label="Console de diagnostic">
+  <section class="diagnostic-console">
+    <header class="diagnostic-console-head">
+      <div><p class="panel-kicker"><span class="status-light"></span>SYSTÈME PRÊT</p><h2>Console d'investigation</h2></div>
+      <button type="button" id="chatClose" class="panel-close" aria-label="Fermer la console">×</button>
+    </header>
+    <p class="chat-context">Questions guidées par le véhicule sélectionné. Les contrôles doivent être confirmés sur le véhicule.</p>
+    <div class="vehicle-readout" id="diagnosticVehicleReadout">Véhicule : à sélectionner dans la fiche</div>
+    <div class="chat-messages" id="chatMessages" aria-live="polite"></div>
+    <form id="chatForm">
+      <label class="sr-only" for="chatInput">Votre symptôme ou mesure relevée</label>
+      <textarea id="chatInput" rows="3" maxlength="8000" placeholder="Symptôme, mesure, code défaut ou résultat de contrôle…"></textarea>
+      <button class="analyze-button" type="submit">Analyser <span aria-hidden="true">→</span></button>
+    </form>
+    <p class="chat-status" id="chatStatus" role="status"></p>
+  </section>
+  <section class="diagnostic-report" aria-live="polite">
+    <header class="report-head"><div><p class="panel-kicker">RAPPORT D'INTERVENTION</p><h2>Synthèse technique</h2></div><button id="chatReset" class="report-reset" type="button">↻ Nouvelle analyse</button></header>
+    <div id="reportContent" class="report-content">
+      <div class="waiting-state"><div class="radar" aria-hidden="true"><span></span></div><p class="waiting-kicker">AUCUN RAPPORT ACTIF</p><h3>En attente des mesures terrain</h3><p>La synthèse d'intervention apparaîtra ici après confirmation de la cause probable.</p></div>
+    </div>
+  </section>
+</section>
 
 <div class="inline-assistant" id="inlineAssistant" hidden role="status">
   <span class="inline-assistant-icon" aria-hidden="true">🔧</span>
@@ -372,8 +384,8 @@
     <span class="mini-dash-sub" id="miniDashSub">0 / 33 vérifiés</span>
   </div>
 
-  <button class="chat-launcher" data-chat-toggle type="button" aria-label="Ouvrir l'assistant atelier">
-    <span aria-hidden="true">💬</span> Assistant atelier
+  <button class="chat-launcher" data-chat-toggle type="button" aria-label="Ouvrir la console de diagnostic">
+    <span aria-hidden="true">◆</span> Diagnostic
   </button>
 </div>
 
@@ -426,8 +438,8 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<script src="build-data.js?v=20260807-8"></script>
-<script src="js/db-loader.js?v=20260807-8"></script>
-<script type="module" src="js/app.js?v=20260807-8"></script>
+<script src="build-data.js?v=20260807-9"></script>
+<script src="js/db-loader.js?v=20260807-9"></script>
+<script type="module" src="js/app.js?v=20260807-9"></script>
 </body>
 </html>

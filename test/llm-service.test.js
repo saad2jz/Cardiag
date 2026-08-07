@@ -8,7 +8,7 @@ test('Gemini receives converted history and system instructions', async () => {
     models: {
       async generateContent(request) {
         captured = request;
-        return { text: 'Quel témoin est allumé ?' };
+        return { text: '{"type":"question","content":"Quel témoin est allumé ?"}' };
       },
     },
   };
@@ -19,7 +19,7 @@ test('Gemini receives converted history and system instructions', async () => {
     { role: 'user', content: 'À chaud' },
   ], { marque: 'Alpine', modele: 'A290', motorisation: 'Électrique 220 ch' });
 
-  assert.equal(result, 'Quel témoin est allumé ?');
+  assert.deepEqual(result, { type: 'question', content: 'Quel témoin est allumé ?' });
   assert.equal(captured.model, 'gemini-test');
   assert.match(captured.config.systemInstruction, /chef d'atelier/i);
   assert.deepEqual(captured.contents.map(({ role }) => role), ['user', 'model', 'user']);
