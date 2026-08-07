@@ -13,7 +13,7 @@
 <meta name="chat-api" content="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=20260807-4">
+<link rel="stylesheet" href="css/styles.css?v=20260807-6">
 </head>
 <body>
 <header class="app-header">
@@ -346,8 +346,8 @@
 <div id="printSynthesis"></div>
 
 <aside class="chat-panel" id="chatPanel" hidden aria-label="Assistant atelier">
-  <header><strong>Assistant atelier</strong><button type="button" id="chatClose" aria-label="Fermer l'assistant">×</button></header>
-  <p class="chat-context">Réponses guidées par le véhicule sélectionné. Ne remplace pas un diagnostic professionnel.</p>
+  <header><strong>Assistant atelier</strong><span class="chat-info" title="Sélectionnez un terme technique dans la fiche pour obtenir une explication instantanée." aria-label="Aide">ℹ️</span><button type="button" id="chatClose" aria-label="Fermer l'assistant">×</button></header>
+  <p class="chat-context">Réponses guidées par le véhicule sélectionné. Ne remplace pas un diagnostic professionnel. <span class="chat-info-inline">💡 Sélectionnez un terme dans la fiche pour l'expliquer.</span></p>
   <div class="chat-messages" id="chatMessages" aria-live="polite"></div>
   <form id="chatForm">
     <label class="sr-only" for="chatInput">Votre symptôme ou question</label>
@@ -424,8 +424,8 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<script src="build-data.js?v=20260807-4"></script>
-<script src="js/db-loader.js?v=20260807-4"></script>
-<script type="module" src="js/app.js?v=20260807-4"></script>
+<script src="build-data.js?v=20260807-6"></script>
+<script src="js/db-loader.js?v=20260807-6"></script>
+<script type="module" src="js/app.js?v=20260807-6"></script>
 </body>
 </html>
