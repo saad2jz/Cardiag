@@ -101,9 +101,8 @@ export function initializeChatExperience() {
 
   toggles.forEach((toggle) => toggle.addEventListener('click', openPanel));
   close?.addEventListener('click', () => { panel.hidden = true; });
-  panel.addEventListener('keydown', (event) => {
-    event.stopPropagation();
-    if (event.target === input && event.key === 'Enter' && !event.shiftKey) {
+  input.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter' && !event.shiftKey) {
       event.preventDefault();
       form.requestSubmit();
     }
@@ -164,9 +163,8 @@ export function initializeChatExperience() {
     inline.style.top = `${top}px`;
   }
 
-  document.addEventListener('pointerup', () => {
-    window.setTimeout(showInlineForSelection, 0);
-  });
+  document.addEventListener('selectionchange', showInlineForSelection);
+  document.addEventListener('pointerup', showInlineForSelection);
 
   inlineClose?.addEventListener('click', () => { inline.hidden = true; });
   inlineAsk?.addEventListener('click', async () => {
