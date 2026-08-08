@@ -1,6 +1,6 @@
-import { initializeLegacyFeatures } from './legacy-features.js?v=20260808-2';
-import { initializeChatExperience } from './chat-experience.js?v=20260808-2';
-import { initializePwa } from './pwa.js?v=20260808-2';
+import { initializeLegacyFeatures } from './legacy-features.js?v=20260808-3';
+import { initializeChatExperience } from './chat-experience.js?v=20260808-3';
+import { initializePwa } from './pwa.js?v=20260808-3';
 
 /**
  * Application entry point. Data loading stays separate from the UI controller

@@ -1,8 +1,8 @@
 {
-  "name": "fiche-expert-auto-api",
+  "name": "cardiag-api",
   "version": "1.0.0",
   "private": true,
-  "description": "API de diagnostic et d'explication technique pour Fiche Expert Auto",
+  "description": "API de diagnostic et d'explication technique pour Cardiag",
   "type": "module",
   "scripts": {
     "start": "node src/server.js",

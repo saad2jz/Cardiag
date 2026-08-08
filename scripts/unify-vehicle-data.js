@@ -37,39 +37,95 @@ function modelKey(model) {
   return identity(model?.nom || model?.name);
 }
 
+function isPlaceholder(value) {
+  const v = String(value || '').trim().toLowerCase();
+  if (!v) return true;
+  const placeholders = ['documenter', 'non document', 'non precise', 'non précis', 'à confirmer', 'a confirmer', 'n/a', 'n/d', '-'];
+  return placeholders.some((p) => v === p || v.includes(p));
+}
+
+function cleanMotor(motor, index) {
+  if (typeof motor === 'string') {
+    return isPlaceholder(motor) ? `Motorisation ${index + 1}` : motor;
+  }
+  if (!motor || typeof motor !== 'object') {
+    return { nom: `Motorisation ${index + 1}` };
+  }
+  const type = isPlaceholder(motor.type) ? '' : String(motor.type || '').trim();
+  const nom = isPlaceholder(motor.nom) ? '' : String(motor.nom || '').trim();
+  const code = isPlaceholder(motor.code_moteur) && isPlaceholder(motor.code)
+    ? ''
+    : String(motor.code_moteur || motor.code || '').trim();
+  const cyl = isPlaceholder(motor.cylindree) ? '' : String(motor.cylindree || '').trim();
+  const puissance = motor.puissance_ch || motor.puissance || null;
+  const label = nom || [type, cyl, puissance ? `${puissance} ch` : ''].filter(Boolean).join(' ') || `Motorisation ${index + 1}`;
+  return {
+    ...motor,
+    type,
+    nom: label,
+    code_moteur: code,
+    cylindree: cyl,
+  };
+}
+
+function cleanGeneration(generation, modelName, index) {
+  const phase = String(generation?.phase || '').trim();
+  let code_chassis = String(generation?.code_chassis || generation?.chassis || '').trim();
+  let annees = String(generation?.annees || '').trim();
+
+  if (isPlaceholder(code_chassis)) {
+    code_chassis = phase || `${modelName || 'Version'} ${index + 1}`;
+  }
+  if (isPlaceholder(annees)) {
+    annees = '';
+  }
+
+  const motors = Array.isArray(generation?.motorisations)
+    ? generation.motorisations.map((m, i) => cleanMotor(m, i))
+    : [];
+
+  return {
+    ...generation,
+    code_chassis,
+    annees,
+    motorisations: motors,
+  };
+}
+
 function normalizeModel(model) {
   const normalized = {
     ...model,
     nom: String(model?.nom || model?.name || '').trim(),
   };
+  const modelName = normalized.nom;
   const generations = Array.isArray(model?.generations) ? model.generations : [];
 
   normalized.generations = generations.flatMap((generation) => {
     if (!generation || typeof generation !== 'object') return [];
     const phases = Array.isArray(generation.phases) ? generation.phases : [];
     if (!phases.length || phases.every((phase) => typeof phase !== 'object')) {
-      return [{
+      return [cleanGeneration({
         ...generation,
         motorisations: Array.isArray(generation.motorisations) ? generation.motorisations : [],
-      }];
+      }, modelName, 0)];
     }
 
-    return phases.map((phase) => ({
+    return phases.map((phase, index) => cleanGeneration({
       ...generation,
       phase: phase.phase || phase.nom || phase.name || '',
       annees: phase.annees || generation.annees || '',
       motorisations: Array.isArray(phase.motorisations)
         ? phase.motorisations
         : (Array.isArray(generation.motorisations) ? generation.motorisations : []),
-    }));
+    }, modelName, index));
   });
 
   if (!normalized.generations.length && Array.isArray(model?.motorisations)) {
-    normalized.generations = [{
+    normalized.generations = [cleanGeneration({
       code_chassis: model.code_chassis || model.chassis || '',
       annees: model.annees || '',
       motorisations: model.motorisations,
-    }];
+    }, modelName, 0)];
   }
 
   return normalized;

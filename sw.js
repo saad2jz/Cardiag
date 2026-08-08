@@ -1,4 +1,4 @@
-const CACHE_NAME = 'fiche-expert-auto-v8';
+const CACHE_NAME = 'cardiag-v9';
 const APP_SHELL = [
   './',
   './index.html',
@@ -6,13 +6,13 @@ const APP_SHELL = [
   './icons/app-icon.svg',
   './icons/app-icon-192.png',
   './icons/app-icon-512.png',
-  './css/styles.css?v=20260808-2',
-  './build-data.js?v=20260808-2',
-  './js/db-loader.js?v=20260808-2',
-  './js/app.js?v=20260808-2',
-  './js/legacy-features.js?v=20260808-2',
-  './js/chat-experience.js?v=20260808-2',
-  './js/pwa.js?v=20260808-2',
+  './css/styles.css?v=20260808-3',
+  './build-data.js?v=20260808-3',
+  './js/db-loader.js?v=20260808-3',
+  './js/app.js?v=20260808-3',
+  './js/legacy-features.js?v=20260808-3',
+  './js/chat-experience.js?v=20260808-3',
+  './js/pwa.js?v=20260808-3',
   './data/vehicles.json',
 ];
 
