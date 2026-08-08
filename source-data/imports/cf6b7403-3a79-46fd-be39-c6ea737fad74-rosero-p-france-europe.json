@@ -1,0 +1,59 @@
+{
+  "nom": "Rosero-P",
+  "modeles": [
+    {
+      "nom": "First",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "bus",
+        "body_type": null,
+        "countries": [
+          "fi",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 3
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "source_catalogue": "VehiclesDB 2026.08.2 (CC-BY 4.0)"
+}

@@ -1,0 +1,251 @@
+{
+  "nom": "Automet",
+  "modeles": [
+    {
+      "nom": "Apollo",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "bus",
+        "body_type": null,
+        "countries": [
+          "fi",
+          "ua"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "Apollo 970.24/970.28 sur Mercedes Atego",
+          "annees": "2005–2015",
+          "phases": [
+            "Autocar polonais sur Atego 1018L/1022L/1222L/1224L ; confirmer longueur 8,7/9,8 m, places et norme Euro"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "OM904 LA Euro 3/4 — 150 ch",
+              "code_moteur": "Mercedes OM904 LA",
+              "cylindree": "4 249 cm³",
+              "puissance_ch": 150,
+              "boite": [
+                "G56-6 manuelle 6 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo et dépollution des Mercedes OM904/OM924/OM906",
+                  "symptomes": [
+                    "Démarrage long",
+                    "Fumée",
+                    "Mode dégradé ou codes BlueTec"
+                  ],
+                  "kilometrage_apparition": "Souvent après 150 000 km, plus tôt en service urbain",
+                  "diagnostic": "Lire MR/FR/SCR, mesurer rail/retours selon version, contrôler injecteurs unitaires/common rail, turbo, intercooler, EGR, SCR/AdBlue, refroidissement et historique de charge",
+                  "piece_concernee": "Moteur Mercedes-Benz Atego",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 12 000 €"
+                },
+                {
+                  "probleme": "Boîte, embrayage/automatisation, pont et freinage pneumatique",
+                  "symptomes": [
+                    "Passages difficiles",
+                    "Vibration",
+                    "Perte d’air ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Souvent après 200 000 km selon service",
+                  "diagnostic": "Contrôler embrayage, G56/G85/Telligent, huile, arbre, pont, compresseur, dessiccateur, réservoirs, valves, ABS, retarder, disques, suspension et pneus",
+                  "piece_concernee": "Transmission et freinage d’autocar",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente en exploitation intensive",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Structure Automet, portes, électricité et sécurité passagers",
+                  "symptomes": [
+                    "Corrosion/fissure",
+                    "Porte inopérante",
+                    "Décharge ou climatisation défaillante"
+                  ],
+                  "kilometrage_apparition": "Variable selon service et stockage",
+                  "diagnostic": "Inspecter structure inox/acier, plancher, soutes, collage vitrages, portes, issues, sièges/ceintures, chauffage, climatisation, alternateurs/batteries, CAN carrossier, éclairage et système incendie",
+                  "piece_concernee": "Carrosserie Apollo et équipements passagers",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente avec l’âge",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 20 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "OM904 LA BlueTec — 177 ch",
+              "code_moteur": "Mercedes OM904 LA",
+              "cylindree": "4 249 cm³",
+              "puissance_ch": 177,
+              "boite": [
+                "G56/G85 manuelle 6 rapports ou Telligent"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo et dépollution des Mercedes OM904/OM924/OM906",
+                  "symptomes": [
+                    "Démarrage long",
+                    "Fumée",
+                    "Mode dégradé ou codes BlueTec"
+                  ],
+                  "kilometrage_apparition": "Souvent après 150 000 km, plus tôt en service urbain",
+                  "diagnostic": "Lire MR/FR/SCR, mesurer rail/retours selon version, contrôler injecteurs unitaires/common rail, turbo, intercooler, EGR, SCR/AdBlue, refroidissement et historique de charge",
+                  "piece_concernee": "Moteur Mercedes-Benz Atego",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 12 000 €"
+                },
+                {
+                  "probleme": "Boîte, embrayage/automatisation, pont et freinage pneumatique",
+                  "symptomes": [
+                    "Passages difficiles",
+                    "Vibration",
+                    "Perte d’air ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Souvent après 200 000 km selon service",
+                  "diagnostic": "Contrôler embrayage, G56/G85/Telligent, huile, arbre, pont, compresseur, dessiccateur, réservoirs, valves, ABS, retarder, disques, suspension et pneus",
+                  "piece_concernee": "Transmission et freinage d’autocar",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente en exploitation intensive",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Structure Automet, portes, électricité et sécurité passagers",
+                  "symptomes": [
+                    "Corrosion/fissure",
+                    "Porte inopérante",
+                    "Décharge ou climatisation défaillante"
+                  ],
+                  "kilometrage_apparition": "Variable selon service et stockage",
+                  "diagnostic": "Inspecter structure inox/acier, plancher, soutes, collage vitrages, portes, issues, sièges/ceintures, chauffage, climatisation, alternateurs/batteries, CAN carrossier, éclairage et système incendie",
+                  "piece_concernee": "Carrosserie Apollo et équipements passagers",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente avec l’âge",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 20 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "OM924 LA — 218 ch",
+              "code_moteur": "Mercedes OM924 LA",
+              "cylindree": "4 801 cm³",
+              "puissance_ch": 218,
+              "boite": [
+                "G85-6 manuelle 6 rapports ou Telligent"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo et dépollution des Mercedes OM904/OM924/OM906",
+                  "symptomes": [
+                    "Démarrage long",
+                    "Fumée",
+                    "Mode dégradé ou codes BlueTec"
+                  ],
+                  "kilometrage_apparition": "Souvent après 150 000 km, plus tôt en service urbain",
+                  "diagnostic": "Lire MR/FR/SCR, mesurer rail/retours selon version, contrôler injecteurs unitaires/common rail, turbo, intercooler, EGR, SCR/AdBlue, refroidissement et historique de charge",
+                  "piece_concernee": "Moteur Mercedes-Benz Atego",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 12 000 €"
+                },
+                {
+                  "probleme": "Boîte, embrayage/automatisation, pont et freinage pneumatique",
+                  "symptomes": [
+                    "Passages difficiles",
+                    "Vibration",
+                    "Perte d’air ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Souvent après 200 000 km selon service",
+                  "diagnostic": "Contrôler embrayage, G56/G85/Telligent, huile, arbre, pont, compresseur, dessiccateur, réservoirs, valves, ABS, retarder, disques, suspension et pneus",
+                  "piece_concernee": "Transmission et freinage d’autocar",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente en exploitation intensive",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Structure Automet, portes, électricité et sécurité passagers",
+                  "symptomes": [
+                    "Corrosion/fissure",
+                    "Porte inopérante",
+                    "Décharge ou climatisation défaillante"
+                  ],
+                  "kilometrage_apparition": "Variable selon service et stockage",
+                  "diagnostic": "Inspecter structure inox/acier, plancher, soutes, collage vitrages, portes, issues, sièges/ceintures, chauffage, climatisation, alternateurs/batteries, CAN carrossier, éclairage et système incendie",
+                  "piece_concernee": "Carrosserie Apollo et équipements passagers",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente avec l’âge",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 20 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "OM906 LA — 238 ch",
+              "code_moteur": "Mercedes OM906 LA",
+              "cylindree": "6 374 cm³",
+              "puissance_ch": 238,
+              "boite": [
+                "Boîte manuelle 6 rapports / automatisée"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo et dépollution des Mercedes OM904/OM924/OM906",
+                  "symptomes": [
+                    "Démarrage long",
+                    "Fumée",
+                    "Mode dégradé ou codes BlueTec"
+                  ],
+                  "kilometrage_apparition": "Souvent après 150 000 km, plus tôt en service urbain",
+                  "diagnostic": "Lire MR/FR/SCR, mesurer rail/retours selon version, contrôler injecteurs unitaires/common rail, turbo, intercooler, EGR, SCR/AdBlue, refroidissement et historique de charge",
+                  "piece_concernee": "Moteur Mercedes-Benz Atego",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 12 000 €"
+                },
+                {
+                  "probleme": "Boîte, embrayage/automatisation, pont et freinage pneumatique",
+                  "symptomes": [
+                    "Passages difficiles",
+                    "Vibration",
+                    "Perte d’air ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Souvent après 200 000 km selon service",
+                  "diagnostic": "Contrôler embrayage, G56/G85/Telligent, huile, arbre, pont, compresseur, dessiccateur, réservoirs, valves, ABS, retarder, disques, suspension et pneus",
+                  "piece_concernee": "Transmission et freinage d’autocar",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente en exploitation intensive",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Structure Automet, portes, électricité et sécurité passagers",
+                  "symptomes": [
+                    "Corrosion/fissure",
+                    "Porte inopérante",
+                    "Décharge ou climatisation défaillante"
+                  ],
+                  "kilometrage_apparition": "Variable selon service et stockage",
+                  "diagnostic": "Inspecter structure inox/acier, plancher, soutes, collage vitrages, portes, issues, sièges/ceintures, chauffage, climatisation, alternateurs/batteries, CAN carrossier, éclairage et système incendie",
+                  "piece_concernee": "Carrosserie Apollo et équipements passagers",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente avec l’âge",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 20 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "source_catalogue": "VehiclesDB 2026.08.2 (CC-BY 4.0)"
+}

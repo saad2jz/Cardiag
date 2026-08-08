@@ -1,0 +1,190 @@
+{
+  "nom": "Aquila",
+  "modeles": [
+    {
+      "nom": "Aquila",
+      "generations": [
+        {
+          "code_chassis": "TagAZ Aquila",
+          "annees": "2013–2014",
+          "phases": [
+            "Entrée attribuée au TagAZ Aquila russe ; châssis spatial acier et panneaux composites. Vérifier constructeur réel sur la plaque"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.6 MPI Mitsubishi — 107 ch",
+              "code_moteur": "Mitsubishi 4G18S",
+              "cylindree": "1 584 cm³",
+              "puissance_ch": 107,
+              "boite": [
+                "Boîte manuelle 5 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, injection et refroidissement du Mitsubishi 4G18",
+                  "symptomes": [
+                    "Cliquetis",
+                    "Ratés",
+                    "Surchauffe ou consommation d’huile"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 160 000 km",
+                  "diagnostic": "Contrôler échéance de courroie, galets, pompe à eau, compressions, pression d’huile, injecteurs, bobines, papillon, radiateur, thermostat et fuites",
+                  "piece_concernee": "Moteur 4G18 et périphériques",
+                  "gravite": "Majeure à critique en cas de rupture de distribution",
+                  "frequence": "Assez fréquente sans historique",
+                  "cout_reparation_estime": "Élevé : environ 400 à 3 500 €"
+                },
+                {
+                  "probleme": "Boîte manuelle, embrayage et trains roulants",
+                  "symptomes": [
+                    "Rapports difficiles",
+                    "Patinage",
+                    "Claquement ou usure des pneus"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km",
+                  "diagnostic": "Contrôler embrayage, commande, huile/synchros, supports, cardans, roulements, rotules, amortisseurs, direction, freins, géométrie et disponibilité des références TagAZ/MPM",
+                  "piece_concernee": "Transmission et châssis",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente avec l’âge",
+                  "cout_reparation_estime": "Moyen à élevé : environ 500 à 4 000 €"
+                },
+                {
+                  "probleme": "Fissures/corrosion du châssis tubulaire et panneaux composites",
+                  "symptomes": [
+                    "Craquement",
+                    "Panneau désaligné",
+                    "Corrosion aux soudures ou infiltration"
+                  ],
+                  "kilometrage_apparition": "Après choc, mauvais levage ou exposition au sel",
+                  "diagnostic": "Inspecter cadre spatial acier, soudures, ancrages, points de levage, collage/fixation des panneaux composites, ouvrants, planchers et réparations ; vérifier identité TagAZ/MPM",
+                  "piece_concernee": "Structure mixte acier/composite",
+                  "gravite": "Critique si cadre atteint",
+                  "frequence": "Occasionnelle mais importante sur petite série",
+                  "cout_reparation_estime": "Élevé : environ 1 000 à plus de 10 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "MPM PS160/Erelis — dérivé européen",
+          "annees": "2016–2020",
+          "phases": [
+            "Dérivé français de la TagAZ Aquila ; confirmer si la fiche doit être classée sous MPM Motors"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.6 MPI Mitsubishi — 100 ch",
+              "code_moteur": "Mitsubishi 4G18S",
+              "cylindree": "1 584 cm³",
+              "puissance_ch": 100,
+              "boite": [
+                "Boîte manuelle 5 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, injection et refroidissement du Mitsubishi 4G18",
+                  "symptomes": [
+                    "Cliquetis",
+                    "Ratés",
+                    "Surchauffe ou consommation d’huile"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 160 000 km",
+                  "diagnostic": "Contrôler échéance de courroie, galets, pompe à eau, compressions, pression d’huile, injecteurs, bobines, papillon, radiateur, thermostat et fuites",
+                  "piece_concernee": "Moteur 4G18 et périphériques",
+                  "gravite": "Majeure à critique en cas de rupture de distribution",
+                  "frequence": "Assez fréquente sans historique",
+                  "cout_reparation_estime": "Élevé : environ 400 à 3 500 €"
+                },
+                {
+                  "probleme": "Boîte manuelle, embrayage et trains roulants",
+                  "symptomes": [
+                    "Rapports difficiles",
+                    "Patinage",
+                    "Claquement ou usure des pneus"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km",
+                  "diagnostic": "Contrôler embrayage, commande, huile/synchros, supports, cardans, roulements, rotules, amortisseurs, direction, freins, géométrie et disponibilité des références TagAZ/MPM",
+                  "piece_concernee": "Transmission et châssis",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente avec l’âge",
+                  "cout_reparation_estime": "Moyen à élevé : environ 500 à 4 000 €"
+                },
+                {
+                  "probleme": "Fissures/corrosion du châssis tubulaire et panneaux composites",
+                  "symptomes": [
+                    "Craquement",
+                    "Panneau désaligné",
+                    "Corrosion aux soudures ou infiltration"
+                  ],
+                  "kilometrage_apparition": "Après choc, mauvais levage ou exposition au sel",
+                  "diagnostic": "Inspecter cadre spatial acier, soudures, ancrages, points de levage, collage/fixation des panneaux composites, ouvrants, planchers et réparations ; vérifier identité TagAZ/MPM",
+                  "piece_concernee": "Structure mixte acier/composite",
+                  "gravite": "Critique si cadre atteint",
+                  "frequence": "Occasionnelle mais importante sur petite série",
+                  "cout_reparation_estime": "Élevé : environ 1 000 à plus de 10 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.2 PureTech Turbo — 130 ch",
+              "code_moteur": "PSA EB2DTS",
+              "cylindree": "1 199 cm³",
+              "puissance_ch": 130,
+              "boite": [
+                "Boîte manuelle 6 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, injection et refroidissement du Mitsubishi 4G18",
+                  "symptomes": [
+                    "Cliquetis",
+                    "Ratés",
+                    "Surchauffe ou consommation d’huile"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 160 000 km",
+                  "diagnostic": "Contrôler échéance de courroie, galets, pompe à eau, compressions, pression d’huile, injecteurs, bobines, papillon, radiateur, thermostat et fuites",
+                  "piece_concernee": "Moteur 4G18 et périphériques",
+                  "gravite": "Majeure à critique en cas de rupture de distribution",
+                  "frequence": "Assez fréquente sans historique",
+                  "cout_reparation_estime": "Élevé : environ 400 à 3 500 €"
+                },
+                {
+                  "probleme": "Boîte manuelle, embrayage et trains roulants",
+                  "symptomes": [
+                    "Rapports difficiles",
+                    "Patinage",
+                    "Claquement ou usure des pneus"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km",
+                  "diagnostic": "Contrôler embrayage, commande, huile/synchros, supports, cardans, roulements, rotules, amortisseurs, direction, freins, géométrie et disponibilité des références TagAZ/MPM",
+                  "piece_concernee": "Transmission et châssis",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente avec l’âge",
+                  "cout_reparation_estime": "Moyen à élevé : environ 500 à 4 000 €"
+                },
+                {
+                  "probleme": "Fissures/corrosion du châssis tubulaire et panneaux composites",
+                  "symptomes": [
+                    "Craquement",
+                    "Panneau désaligné",
+                    "Corrosion aux soudures ou infiltration"
+                  ],
+                  "kilometrage_apparition": "Après choc, mauvais levage ou exposition au sel",
+                  "diagnostic": "Inspecter cadre spatial acier, soudures, ancrages, points de levage, collage/fixation des panneaux composites, ouvrants, planchers et réparations ; vérifier identité TagAZ/MPM",
+                  "piece_concernee": "Structure mixte acier/composite",
+                  "gravite": "Critique si cadre atteint",
+                  "frequence": "Occasionnelle mais importante sur petite série",
+                  "cout_reparation_estime": "Élevé : environ 1 000 à plus de 10 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

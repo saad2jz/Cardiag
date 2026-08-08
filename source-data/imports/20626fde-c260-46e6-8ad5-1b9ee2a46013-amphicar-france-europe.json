@@ -1,0 +1,143 @@
+{
+  "nom": "Amphicar",
+  "modeles": [
+    {
+      "nom": "770",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "convertible",
+        "countries": [
+          "fi",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 6
+      },
+      "generations": [
+        {
+          "code_chassis": "Model 770",
+          "annees": "1961–1968",
+          "phases": [
+            "La puissance varie selon norme DIN/SAE et marché ; confirmer numéro moteur. Deux hélices arrière assurent la propulsion nautique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.15 I4 Triumph Herald — 38 ch",
+              "code_moteur": "Standard-Triumph SC",
+              "cylindree": "1 147 cm³",
+              "puissance_ch": 38,
+              "boite": [
+                "Boîte manuelle 4 rapports + inverseur nautique avant/arrière"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion de la coque étanche et défaut d’étanchéité",
+                  "symptomes": [
+                    "Eau dans l’habitacle",
+                    "Bulles/rouille",
+                    "Pompe de cale sollicitée"
+                  ],
+                  "kilometrage_apparition": "À contrôler avant chaque mise à l’eau et annuellement",
+                  "diagnostic": "Effectuer inspection coque sèche sur pont, sonder soudures, planchers, longerons tubulaires, joints d’arbres/hélices, bouchons, portes et capote ; test d’étanchéité progressif sans immersion risquée",
+                  "piece_concernee": "Coque autoporteuse et passages étanches",
+                  "gravite": "Critique avec risque de naufrage",
+                  "frequence": "Fréquente sur coque acier mal restaurée",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Moteur Triumph, refroidissement et contamination après navigation",
+                  "symptomes": [
+                    "Ratés",
+                    "Surchauffe",
+                    "Huile laiteuse ou corrosion électrique"
+                  ],
+                  "kilometrage_apparition": "À contrôler indépendamment du kilométrage",
+                  "diagnostic": "Mesurer compressions/pression, contrôler carburateur, allumage, pompe à eau, radiateur, huile, connectique, évacuation, corrosion saline et procédure de rinçage après eau salée",
+                  "piece_concernee": "Moteur Triumph 1 147 cm³ et périphériques",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente après mauvais hivernage",
+                  "cout_reparation_estime": "Élevé : environ 800 à 6 000 €"
+                },
+                {
+                  "probleme": "Boîte route, inverseur nautique, hélices, freins et roulements",
+                  "symptomes": [
+                    "Sélection difficile",
+                    "Vibration dans l’eau",
+                    "Freinage faible ou grondement"
+                  ],
+                  "kilometrage_apparition": "Variable selon navigation et stockage",
+                  "diagnostic": "Tester séparément boîte 4 rapports et inverseur avant/arrière à sec selon procédure, inspecter câbles, embrayages, arbres/hélices, joints, roulements, tambours, flexibles, pivots et graissage",
+                  "piece_concernee": "Double transmission terrestre/nautique et châssis",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente avec corrosion et immobilisation",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 12 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.15 I4 Triumph Herald — spécification export — 43 ch",
+              "code_moteur": "Standard-Triumph SC export",
+              "cylindree": "1 147 cm³",
+              "puissance_ch": 43,
+              "boite": [
+                "Boîte manuelle 4 rapports + inverseur nautique avant/arrière"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion de la coque étanche et défaut d’étanchéité",
+                  "symptomes": [
+                    "Eau dans l’habitacle",
+                    "Bulles/rouille",
+                    "Pompe de cale sollicitée"
+                  ],
+                  "kilometrage_apparition": "À contrôler avant chaque mise à l’eau et annuellement",
+                  "diagnostic": "Effectuer inspection coque sèche sur pont, sonder soudures, planchers, longerons tubulaires, joints d’arbres/hélices, bouchons, portes et capote ; test d’étanchéité progressif sans immersion risquée",
+                  "piece_concernee": "Coque autoporteuse et passages étanches",
+                  "gravite": "Critique avec risque de naufrage",
+                  "frequence": "Fréquente sur coque acier mal restaurée",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Moteur Triumph, refroidissement et contamination après navigation",
+                  "symptomes": [
+                    "Ratés",
+                    "Surchauffe",
+                    "Huile laiteuse ou corrosion électrique"
+                  ],
+                  "kilometrage_apparition": "À contrôler indépendamment du kilométrage",
+                  "diagnostic": "Mesurer compressions/pression, contrôler carburateur, allumage, pompe à eau, radiateur, huile, connectique, évacuation, corrosion saline et procédure de rinçage après eau salée",
+                  "piece_concernee": "Moteur Triumph 1 147 cm³ et périphériques",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente après mauvais hivernage",
+                  "cout_reparation_estime": "Élevé : environ 800 à 6 000 €"
+                },
+                {
+                  "probleme": "Boîte route, inverseur nautique, hélices, freins et roulements",
+                  "symptomes": [
+                    "Sélection difficile",
+                    "Vibration dans l’eau",
+                    "Freinage faible ou grondement"
+                  ],
+                  "kilometrage_apparition": "Variable selon navigation et stockage",
+                  "diagnostic": "Tester séparément boîte 4 rapports et inverseur avant/arrière à sec selon procédure, inspecter câbles, embrayages, arbres/hélices, joints, roulements, tambours, flexibles, pivots et graissage",
+                  "piece_concernee": "Double transmission terrestre/nautique et châssis",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente avec corrosion et immobilisation",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 12 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "source_catalogue": "VehiclesDB 2026.08.2 (CC-BY 4.0)"
+}

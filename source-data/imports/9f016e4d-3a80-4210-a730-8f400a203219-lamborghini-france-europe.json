@@ -1,0 +1,2918 @@
+{
+  "nom": "Lamborghini",
+  "modeles": [
+    {
+      "nom": "Aventador",
+      "generations": [
+        {
+          "code_chassis": "LB834",
+          "annees": "2011-2022",
+          "phases": [
+            "Aventador LP700-4 (2011-2016)",
+            "Aventador S (2016-2019)",
+            "Aventador SVJ (2018-2022)",
+            "Aventador Ultimae (2021-2022)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V12 6.5L atmosphérique",
+              "code_moteur": "L539",
+              "cylindree": "6.5L",
+              "puissance_ch": 780,
+              "boite": [
+                "ISR - boîte robotisée séquentielle simple embrayage 7 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "symptomes": [
+                    "Boîte ISRréputée brutale dans les changements de rapports, en particulier à basse vitesse"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Boîte ISRréputée brutale dans les changements de rapports, en particulier à basse vitesse"
+                },
+                {
+                  "symptomes": [
+                    "Suspension à poussoirsrigide générant un inconfort marqué sur routes dégradées"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Suspension à poussoirsrigide générant un inconfort marqué sur routes dégradées"
+                },
+                {
+                  "symptomes": [
+                    "Système Start-Stop et électronique embarquée sujets à bugs sur les premiers exemplaires"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Système Start-Stop et électronique embarquée sujets à bugs sur les premiers exemplaires"
+                },
+                {
+                  "symptomes": [
+                    "Consommation d'huile à surveiller en usage circuit intensif"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Consommation d'huile à surveiller en usage circuit intensif"
+                },
+                {
+                  "symptomes": [
+                    "Coût d'entretien et de pièces très élevé, réseau agréé quasi indispensable"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Coût d'entretien et de pièces très élevé, réseau agréé quasi indispensable"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Countach",
+      "generations": [
+        {
+          "code_chassis": "LP400/LP500 S/LP5000 QV/25th Anniversary",
+          "annees": "1974-1990",
+          "phases": [
+            "LP400 (1974-1978)",
+            "LP400 S (1978-1982)",
+            "LP500 S (1982-1985)",
+            "LP5000 QV (1985-1988)",
+            "25th Anniversary (1988-1990)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V12 4.0 atmosphérique",
+              "code_moteur": "L403",
+              "cylindree": "12 L",
+              "puissance_ch": 375,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "symptomes": [
+                    "Carburateurs Weber multiples très délicats à régler et à synchroniser"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Carburateurs Weber multiples très délicats à régler et à synchroniser"
+                },
+                {
+                  "symptomes": [
+                    "Visibilité arrière très limitée rendant les manœuvres et le stationnement délicats"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Visibilité arrière très limitée rendant les manœuvres et le stationnement délicats"
+                },
+                {
+                  "symptomes": [
+                    "Surchauffe moteur fréquente en usage urbain prolongé, radiateurs latéraux sensibles"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Surchauffe moteur fréquente en usage urbain prolongé, radiateurs latéraux sensibles"
+                },
+                {
+                  "symptomes": [
+                    "Portières en élytreaux vérins hydrauliques sujets à faiblesse avec l'âge"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Portières en élytreaux vérins hydrauliques sujets à faiblesse avec l'âge"
+                },
+                {
+                  "symptomes": [
+                    "Rareté et coût très élevé des pièces mécaniques spécifiques"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Rareté et coût très élevé des pièces mécaniques spécifiques"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "V12 4.75 atmosphérique",
+              "code_moteur": "L505",
+              "cylindree": "12 L",
+              "puissance_ch": 455,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "symptomes": [
+                    "Carburateurs Weber multiples très délicats à régler et à synchroniser"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Carburateurs Weber multiples très délicats à régler et à synchroniser"
+                },
+                {
+                  "symptomes": [
+                    "Visibilité arrière très limitée rendant les manœuvres et le stationnement délicats"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Visibilité arrière très limitée rendant les manœuvres et le stationnement délicats"
+                },
+                {
+                  "symptomes": [
+                    "Surchauffe moteur fréquente en usage urbain prolongé, radiateurs latéraux sensibles"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Surchauffe moteur fréquente en usage urbain prolongé, radiateurs latéraux sensibles"
+                },
+                {
+                  "symptomes": [
+                    "Portières en élytreaux vérins hydrauliques sujets à faiblesse avec l'âge"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Portières en élytreaux vérins hydrauliques sujets à faiblesse avec l'âge"
+                },
+                {
+                  "symptomes": [
+                    "Rareté et coût très élevé des pièces mécaniques spécifiques"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Rareté et coût très élevé des pièces mécaniques spécifiques"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "V12 5.2 atmosphérique",
+              "code_moteur": "L505",
+              "cylindree": "12 L",
+              "puissance_ch": 455,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "symptomes": [
+                    "Carburateurs Weber multiples très délicats à régler et à synchroniser"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Carburateurs Weber multiples très délicats à régler et à synchroniser"
+                },
+                {
+                  "symptomes": [
+                    "Visibilité arrière très limitée rendant les manœuvres et le stationnement délicats"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Visibilité arrière très limitée rendant les manœuvres et le stationnement délicats"
+                },
+                {
+                  "symptomes": [
+                    "Surchauffe moteur fréquente en usage urbain prolongé, radiateurs latéraux sensibles"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Surchauffe moteur fréquente en usage urbain prolongé, radiateurs latéraux sensibles"
+                },
+                {
+                  "symptomes": [
+                    "Portières en élytreaux vérins hydrauliques sujets à faiblesse avec l'âge"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Portières en élytreaux vérins hydrauliques sujets à faiblesse avec l'âge"
+                },
+                {
+                  "symptomes": [
+                    "Rareté et coût très élevé des pièces mécaniques spécifiques"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Rareté et coût très élevé des pièces mécaniques spécifiques"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Diablo",
+      "generations": [
+        {
+          "code_chassis": "Diablo",
+          "annees": "1990-2001",
+          "phases": [
+            "Diablo (1990-1993)",
+            "Diablo VT (1993-1998)",
+            "Diablo SV/VT/6.0 (1998-2001)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V12 5.7 atmosphérique",
+              "code_moteur": "L539",
+              "cylindree": "12 L",
+              "puissance_ch": 492,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "symptomes": [
+                    "Injection Bosch Motronicsensible au vieillissement des capteurs"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Injection Bosch Motronicsensible au vieillissement des capteurs"
+                },
+                {
+                  "symptomes": [
+                    "Transmission intégrale viscocoupleurcoûteuse à entretenir"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Transmission intégrale viscocoupleurcoûteuse à entretenir"
+                },
+                {
+                  "symptomes": [
+                    "Direction assistée absente sur les premières versions, rendant les manœuvres physiquement exigeantes"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Direction assistée absente sur les premières versions, rendant les manœuvres physiquement exigeantes"
+                },
+                {
+                  "symptomes": [
+                    "Surchauffe possible en usage urbain prolongé, radiateurs latéraux sensibles à l'encrassement"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Surchauffe possible en usage urbain prolongé, radiateurs latéraux sensibles à l'encrassement"
+                },
+                {
+                  "symptomes": [
+                    "Coût très élevé des pièces mécaniques et de la main d'œuvre spécialisée"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Coût très élevé des pièces mécaniques et de la main d'œuvre spécialisée"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "V12 6.0 atmosphérique",
+              "code_moteur": "L539",
+              "cylindree": "12 L",
+              "puissance_ch": 550,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "symptomes": [
+                    "Injection Bosch Motronicsensible au vieillissement des capteurs"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Injection Bosch Motronicsensible au vieillissement des capteurs"
+                },
+                {
+                  "symptomes": [
+                    "Transmission intégrale viscocoupleurcoûteuse à entretenir"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Transmission intégrale viscocoupleurcoûteuse à entretenir"
+                },
+                {
+                  "symptomes": [
+                    "Direction assistée absente sur les premières versions, rendant les manœuvres physiquement exigeantes"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Direction assistée absente sur les premières versions, rendant les manœuvres physiquement exigeantes"
+                },
+                {
+                  "symptomes": [
+                    "Surchauffe possible en usage urbain prolongé, radiateurs latéraux sensibles à l'encrassement"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Surchauffe possible en usage urbain prolongé, radiateurs latéraux sensibles à l'encrassement"
+                },
+                {
+                  "symptomes": [
+                    "Coût très élevé des pièces mécaniques et de la main d'œuvre spécialisée"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Coût très élevé des pièces mécaniques et de la main d'œuvre spécialisée"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Espada",
+      "generations": [
+        {
+          "code_chassis": "Type 400 GT",
+          "annees": "1968-1978",
+          "phases": [
+            "Série 1",
+            "Série 2",
+            "Série 3"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V12 3.9L atmosphérique",
+              "code_moteur": "L401",
+              "cylindree": "3.9L",
+              "puissance_ch": 350,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "symptomes": [
+                    "Carburateurs Weber multiplestrès délicats à synchroniser"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Carburateurs Weber multiplestrès délicats à synchroniser"
+                },
+                {
+                  "symptomes": [
+                    "Corrosion importante du châssis et de la carrosserie sur les exemplaires non restaurés"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Corrosion importante du châssis et de la carrosserie sur les exemplaires non restaurés"
+                },
+                {
+                  "symptomes": [
+                    "Système électrique vieillissant, pannes fréquentes de l'instrumentation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Système électrique vieillissant, pannes fréquentes de l'instrumentation"
+                },
+                {
+                  "symptomes": [
+                    "Rareté et coût élevé des pièces mécaniques spécifiques aujourd'hui"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Rareté et coût élevé des pièces mécaniques spécifiques aujourd'hui"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Gallardo",
+      "generations": [
+        {
+          "code_chassis": "Gallardo",
+          "annees": "2003-2013",
+          "phases": [
+            "Gallardo (2003-2008)",
+            "Gallardo LP560-4 (2008-2013)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V10 5.0 atmosphérique",
+              "code_moteur": "L140",
+              "cylindree": "10 L",
+              "puissance_ch": 500,
+              "boite": [
+                "BVM6",
+                "E-gear (boîte robotisée séquentielle)"
+              ],
+              "points_faibles": [
+                {
+                  "symptomes": [
+                    "Boîte robotisée E-gearcapricieuse, embrayage à usure rapide"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Boîte robotisée E-gearcapricieuse, embrayage à usure rapide"
+                },
+                {
+                  "symptomes": [
+                    "Système de refroidissement complexe sensible aux fuites avec l'âge"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Système de refroidissement complexe sensible aux fuites avec l'âge"
+                },
+                {
+                  "symptomes": [
+                    "Suspension pilotée coûteuse en cas de panne des amortisseurs"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Suspension pilotée coûteuse en cas de panne des amortisseurs"
+                },
+                {
+                  "symptomes": [
+                    "Corrosion des freins et disques en cas de faible usage prolongé"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Corrosion des freins et disques en cas de faible usage prolongé"
+                },
+                {
+                  "symptomes": [
+                    "Coût d'entretien élevé"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Coût d'entretien élevé"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "V10 5.2 atmosphérique",
+              "code_moteur": "L140",
+              "cylindree": "10 L",
+              "puissance_ch": 560,
+              "boite": [
+                "BVM6",
+                "E-gear (boîte robotisée séquentielle)"
+              ],
+              "points_faibles": [
+                {
+                  "symptomes": [
+                    "Boîte robotisée E-gearcapricieuse, embrayage à usure rapide"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Boîte robotisée E-gearcapricieuse, embrayage à usure rapide"
+                },
+                {
+                  "symptomes": [
+                    "Système de refroidissement complexe sensible aux fuites avec l'âge"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Système de refroidissement complexe sensible aux fuites avec l'âge"
+                },
+                {
+                  "symptomes": [
+                    "Suspension pilotée coûteuse en cas de panne des amortisseurs"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Suspension pilotée coûteuse en cas de panne des amortisseurs"
+                },
+                {
+                  "symptomes": [
+                    "Corrosion des freins et disques en cas de faible usage prolongé"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Corrosion des freins et disques en cas de faible usage prolongé"
+                },
+                {
+                  "symptomes": [
+                    "Coût d'entretien élevé"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Coût d'entretien élevé"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Huracán",
+      "generations": [
+        {
+          "code_chassis": "LB724",
+          "annees": "2014-aujourd'hui",
+          "phases": [
+            "Huracán LP610-4 (2014-2019)",
+            "Huracán EVO (2019-2022)",
+            "Huracán STO/Tecnica (2021-aujourd'hui)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V10 5.2L atmosphérique",
+              "code_moteur": "L539",
+              "cylindree": "5.2L",
+              "puissance_ch": 640,
+              "boite": [
+                "BVA7 (double embrayage)"
+              ],
+              "points_faibles": [
+                {
+                  "symptomes": [
+                    "Système de refroidissement complexe sensible aux fuites de durites avec l'âge"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Système de refroidissement complexe sensible aux fuites de durites avec l'âge"
+                },
+                {
+                  "symptomes": [
+                    "Suspension pilotéecoûteuse en cas de panne des amortisseurs"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Suspension pilotéecoûteuse en cas de panne des amortisseurs"
+                },
+                {
+                  "symptomes": [
+                    "Électronique embarquéesujette à bugs sur certains exemplaires"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Électronique embarquéesujette à bugs sur certains exemplaires"
+                },
+                {
+                  "symptomes": [
+                    "Freins carbone-céramique coûteux à l'entretien"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Freins carbone-céramique coûteux à l'entretien"
+                },
+                {
+                  "symptomes": [
+                    "Coût d'entretien général élevé, pièces spécifiques onéreuses"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Coût d'entretien général élevé, pièces spécifiques onéreuses"
+                },
+                {
+                  "symptomes": [
+                    "Embrayageà usure accélérée en conduite urbaine fréquente avec beaucoup d'arrêts/redémarrages"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Embrayageà usure accélérée en conduite urbaine fréquente avec beaucoup d'arrêts/redémarrages"
+                },
+                {
+                  "symptomes": [
+                    "Capteurs de stationnement et caméras arrière sensibles à l'encrassement, faux positifs fréquents"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Capteurs de stationnement et caméras arrière sensibles à l'encrassement, faux positifs fréquents"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "LM002",
+      "generations": [
+        {
+          "code_chassis": "LM002",
+          "annees": "1986-1993",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V12 5.2L atmosphérique (dérivé Countach)",
+              "code_moteur": "L507",
+              "cylindree": "5.2L",
+              "puissance_ch": 450,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "symptomes": [
+                    "Consommation de carburant extrêmement élevée en usage tout-terrain"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Consommation de carburant extrêmement élevée en usage tout-terrain"
+                },
+                {
+                  "symptomes": [
+                    "Carburateurs multiples délicats à régler"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Carburateurs multiples délicats à régler"
+                },
+                {
+                  "symptomes": [
+                    "Corrosion de la carrosserie et du châssis sur les exemplaires peu entretenus"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Corrosion de la carrosserie et du châssis sur les exemplaires peu entretenus"
+                },
+                {
+                  "symptomes": [
+                    "Rareté extrême des pièces détachées spécifiques aujourd'hui, production très limitée"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Rareté extrême des pièces détachées spécifiques aujourd'hui, production très limitée"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Murciélago",
+      "generations": [
+        {
+          "code_chassis": "Murciélago",
+          "annees": "2001-2010",
+          "phases": [
+            "Murciélago (2001-2006)",
+            "Murciélago LP640 (2006-2010)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V12 6.2 atmosphérique",
+              "code_moteur": "L539",
+              "cylindree": "12 L",
+              "puissance_ch": 580,
+              "boite": [
+                "BVM6",
+                "E-gear (boîte robotisée séquentielle)"
+              ],
+              "points_faibles": [
+                {
+                  "symptomes": [
+                    "Boîte robotisée E-gear capricieuse, à-coups et usure prématurée de l'embrayage"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Boîte robotisée E-gear capricieuse, à-coups et usure prématurée de l'embrayage"
+                },
+                {
+                  "symptomes": [
+                    "Volets d'aération arrière motorisés sujets à pannes de moteurs électriques"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Volets d'aération arrière motorisés sujets à pannes de moteurs électriques"
+                },
+                {
+                  "symptomes": [
+                    "Consommation d'huile à surveiller sur les exemplaires à haut kilométrage"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Consommation d'huile à surveiller sur les exemplaires à haut kilométrage"
+                },
+                {
+                  "symptomes": [
+                    "Coût d'entretien très élevé"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Coût d'entretien très élevé"
+                },
+                {
+                  "symptomes": [
+                    "Suspension surbaissée sensible aux dénivelés et ralentisseurs"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Suspension surbaissée sensible aux dénivelés et ralentisseurs"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "V12 6.5 atmosphérique",
+              "code_moteur": "L539",
+              "cylindree": "12 L",
+              "puissance_ch": 640,
+              "boite": [
+                "BVM6",
+                "E-gear (boîte robotisée séquentielle)"
+              ],
+              "points_faibles": [
+                {
+                  "symptomes": [
+                    "Boîte robotisée E-gear capricieuse, à-coups et usure prématurée de l'embrayage"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Boîte robotisée E-gear capricieuse, à-coups et usure prématurée de l'embrayage"
+                },
+                {
+                  "symptomes": [
+                    "Volets d'aération arrière motorisés sujets à pannes de moteurs électriques"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Volets d'aération arrière motorisés sujets à pannes de moteurs électriques"
+                },
+                {
+                  "symptomes": [
+                    "Consommation d'huile à surveiller sur les exemplaires à haut kilométrage"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Consommation d'huile à surveiller sur les exemplaires à haut kilométrage"
+                },
+                {
+                  "symptomes": [
+                    "Coût d'entretien très élevé"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Coût d'entretien très élevé"
+                },
+                {
+                  "symptomes": [
+                    "Suspension surbaissée sensible aux dénivelés et ralentisseurs"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Suspension surbaissée sensible aux dénivelés et ralentisseurs"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Urraco / Silhouette / Jalpa",
+      "generations": [
+        {
+          "code_chassis": "Tipo 114 (Urraco) / 117 (Silhouette) / 122 (Jalpa)",
+          "annees": "1973-1988",
+          "phases": [
+            "Urraco (1973-1979)",
+            "Silhouette (1976-1979)",
+            "Jalpa (1981-1988)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 2.5 atmosphérique",
+              "code_moteur": "P250",
+              "cylindree": "8 L",
+              "puissance_ch": 220,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "symptomes": [
+                    "Distribution par courroie/chaîneà surveiller strictement"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Distribution par courroie/chaîneà surveiller strictement"
+                },
+                {
+                  "symptomes": [
+                    "Corrosion de la carrosserie et du châssis sur les exemplaires non restaurés"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Corrosion de la carrosserie et du châssis sur les exemplaires non restaurés"
+                },
+                {
+                  "symptomes": [
+                    "Carburateurs Weber multiples délicats à synchroniser"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Carburateurs Weber multiples délicats à synchroniser"
+                },
+                {
+                  "symptomes": [
+                    "Rareté extrême des pièces spécifiques aujourd'hui, production limitée"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Rareté extrême des pièces spécifiques aujourd'hui, production limitée"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "V8 3.0 atmosphérique",
+              "code_moteur": "P300",
+              "cylindree": "8 L",
+              "puissance_ch": 265,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "symptomes": [
+                    "Distribution par courroie/chaîneà surveiller strictement"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Distribution par courroie/chaîneà surveiller strictement"
+                },
+                {
+                  "symptomes": [
+                    "Corrosion de la carrosserie et du châssis sur les exemplaires non restaurés"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Corrosion de la carrosserie et du châssis sur les exemplaires non restaurés"
+                },
+                {
+                  "symptomes": [
+                    "Carburateurs Weber multiples délicats à synchroniser"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Carburateurs Weber multiples délicats à synchroniser"
+                },
+                {
+                  "symptomes": [
+                    "Rareté extrême des pièces spécifiques aujourd'hui, production limitée"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Rareté extrême des pièces spécifiques aujourd'hui, production limitée"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "V8 3.5 atmosphérique",
+              "code_moteur": "P350",
+              "cylindree": "8 L",
+              "puissance_ch": 255,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "symptomes": [
+                    "Distribution par courroie/chaîneà surveiller strictement"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Distribution par courroie/chaîneà surveiller strictement"
+                },
+                {
+                  "symptomes": [
+                    "Corrosion de la carrosserie et du châssis sur les exemplaires non restaurés"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Corrosion de la carrosserie et du châssis sur les exemplaires non restaurés"
+                },
+                {
+                  "symptomes": [
+                    "Carburateurs Weber multiples délicats à synchroniser"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Carburateurs Weber multiples délicats à synchroniser"
+                },
+                {
+                  "symptomes": [
+                    "Rareté extrême des pièces spécifiques aujourd'hui, production limitée"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Rareté extrême des pièces spécifiques aujourd'hui, production limitée"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Urus",
+      "generations": [
+        {
+          "code_chassis": "PL72",
+          "annees": "2017-aujourd'hui",
+          "phases": [
+            "Urus (2017-2022)",
+            "Urus S/Performante (2022-aujourd'hui)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 4.0L Bi-Turbo",
+              "code_moteur": "V8 EA825 (base groupe Volkswagen)",
+              "cylindree": "4.0L",
+              "puissance_ch": 666,
+              "boite": [
+                "BVA8 (ZF 8HP)"
+              ],
+              "points_faibles": [
+                {
+                  "symptomes": [
+                    "Turbos sollicités en usage sportif, entretien rigoureux et vidanges fréquentes recommandées"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Turbos sollicités en usage sportif, entretien rigoureux et vidanges fréquentes recommandées"
+                },
+                {
+                  "symptomes": [
+                    "Suspension pneumatique pilotée coûteuse en cas de panne de compresseur ou de cales"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Suspension pneumatique pilotée coûteuse en cas de panne de compresseur ou de cales"
+                },
+                {
+                  "symptomes": [
+                    "Poids importantaccentuant l'usure des trains roulants et des pneumatiques"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Poids importantaccentuant l'usure des trains roulants et des pneumatiques"
+                },
+                {
+                  "symptomes": [
+                    "Électronique embarquée partagée avec le groupe Volkswagen, globalement fiable mais bugs d'infodivertissement rapportés"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Électronique embarquée partagée avec le groupe Volkswagen, globalement fiable mais bugs d'infodivertissement rapportés"
+                },
+                {
+                  "symptomes": [
+                    "Freins carbone-céramiquecoûteux à l'entretien"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Freins carbone-céramiquecoûteux à l'entretien"
+                }
+              ]
+            },
+            {
+              "type": "Hybride",
+              "nom": "Urus SE (Plug-in Hybrid)",
+              "code_moteur": "V8 EA825 + moteur électrique",
+              "cylindree": "4.0L",
+              "puissance_ch": 800,
+              "boite": [
+                "BVA8 (ZF 8HP)"
+              ],
+              "points_faibles": [
+                {
+                  "symptomes": [
+                    "Batterie haute tension sensible à la dégradation en cas de recharges fréquentes intensives"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Batterie haute tension sensible à la dégradation en cas de recharges fréquentes intensives"
+                },
+                {
+                  "symptomes": [
+                    "Poids supplémentaire lié à la batterie accentuant l'usure des trains roulants"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Poids supplémentaire lié à la batterie accentuant l'usure des trains roulants"
+                },
+                {
+                  "symptomes": [
+                    "Complexité mécanique et électronique accrue nécessitant une maintenance spécialisée"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’historique d’entretien et les conditions d’utilisation.",
+                  "diagnostic": "Contrôle visuel ciblé, lecture des défauts si le véhicule est compatible et essai routier réalisé par un professionnel.",
+                  "piece_concernee": "À identifier selon le contrôle atelier",
+                  "gravite": "À évaluer selon les symptômes constatés",
+                  "frequence": "À surveiller sur les exemplaires sans historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé.",
+                  "probleme": "Complexité mécanique et électronique accrue nécessitant une maintenance spécialisée"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "140 Gallardo",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "coupe",
+        "countries": [
+          "fi",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 8
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "147 Murcielago",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "coupe",
+        "countries": [
+          "fi",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 6
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Aventador Countach",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "us"
+        ],
+        "regions": [
+          "na"
+        ],
+        "global_decile": null
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Aventador Roadster",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "us"
+        ],
+        "regions": [
+          "na"
+        ],
+        "global_decile": null
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Aventador S",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "us"
+        ],
+        "regions": [
+          "na"
+        ],
+        "global_decile": null
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Aventador S Roadster",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "us"
+        ],
+        "regions": [
+          "na"
+        ],
+        "global_decile": null
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Aventador Sian",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "us"
+        ],
+        "regions": [
+          "na"
+        ],
+        "global_decile": null
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Aventador Sian Roadster",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "us"
+        ],
+        "regions": [
+          "na"
+        ],
+        "global_decile": null
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Aventador Svj",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "coupe",
+        "countries": [
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 10
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Aventador Ultimae",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "th"
+        ],
+        "regions": [
+          "as",
+          "na"
+        ],
+        "global_decile": 9
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Countach LP500S",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "nz",
+          "us"
+        ],
+        "regions": [
+          "na",
+          "oc"
+        ],
+        "global_decile": 10
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Gallardo Spyder",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "us"
+        ],
+        "regions": [
+          "na"
+        ],
+        "global_decile": null
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Huracan Evo",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "th",
+          "ua"
+        ],
+        "regions": [
+          "as",
+          "eu",
+          "na"
+        ],
+        "global_decile": 9
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Huracan Evo Spyder",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "th"
+        ],
+        "regions": [
+          "as",
+          "na"
+        ],
+        "global_decile": 10
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Huracan Spyder",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "us"
+        ],
+        "regions": [
+          "na"
+        ],
+        "global_decile": null
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Huracan Sterrato",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "th",
+          "us"
+        ],
+        "regions": [
+          "as",
+          "na"
+        ],
+        "global_decile": 10
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Huracan Sto",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "th"
+        ],
+        "regions": [
+          "as",
+          "na"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Islero",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "coupe",
+        "countries": [
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 9
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Jalpa",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "coupe",
+        "countries": [
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 9
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Lm 002",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "nl",
+          "ua"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 9
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Murcielago Roadster",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "us"
+        ],
+        "regions": [
+          "na"
+        ],
+        "global_decile": null
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Revuelto",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "coupe",
+        "countries": [
+          "ca",
+          "lu",
+          "my",
+          "nl",
+          "nz",
+          "th",
+          "us"
+        ],
+        "regions": [
+          "as",
+          "eu",
+          "na",
+          "oc"
+        ],
+        "global_decile": 6
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Temerario",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "coupe",
+        "countries": [
+          "ca",
+          "gb",
+          "lu",
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "na",
+          "oc"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Urraco",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "coupe",
+        "countries": [
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 8
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Urus Performante",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "th",
+          "us"
+        ],
+        "regions": [
+          "as",
+          "na"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Urus S",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "th",
+          "us"
+        ],
+        "regions": [
+          "as",
+          "na"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Urus Se",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "ua",
+          "us"
+        ],
+        "regions": [
+          "eu",
+          "na"
+        ],
+        "global_decile": 10
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Veneno Roadster",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "us"
+        ],
+        "regions": [
+          "na"
+        ],
+        "global_decile": null
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

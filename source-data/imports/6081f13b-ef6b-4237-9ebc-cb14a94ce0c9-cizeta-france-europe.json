@@ -1,0 +1,266 @@
+{
+  "nom": "Cizeta",
+  "modeles": [
+    {
+      "nom": "V16T",
+      "generations": [
+        {
+          "code_chassis": "Cizeta-Moroder prototype",
+          "annees": "1988–1990",
+          "phases": [
+            "Prototype de développement portant la double appellation Cizeta-Moroder ; ne pas le compter comme série client."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V16 transversal 6.0 — 540 ch",
+              "code_moteur": "Cizeta Tipo V16 64V prototype",
+              "cylindree": "5 995 cm³",
+              "puissance_ch": 540,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Synchronisation des deux bancs, huit arbres à cames et lubrification du V16",
+                  "symptomes": [
+                    "Ratés ou température différente entre bancs",
+                    "Pression faible, bruit ou limaille",
+                    "Fumée ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Inspection annuelle et avant toute sollicitation ; aucun seuil statistique fiable",
+                  "diagnostic": "Mesurer compressions/leak-down des seize cylindres, analyser huile/filtre, contrôler pompes, chaînes et calage des huit arbres, tendeurs, jeux, étanchéité et refroidissement ; comparer les deux gestions/bancs avant montée à 8 000 tr/min",
+                  "piece_concernee": "V16 Cizeta 6.0 transversal 64 soupapes",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable sur quelques exemplaires",
+                  "cout_reparation_estime": "Extrême : environ 5 000 à plus de 200 000 €"
+                },
+                {
+                  "probleme": "Double injection, allumage, alimentation et refroidissement compartiment moteur",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés, odeur de carburant ou surchauffe",
+                    "Lambda ou puissance incohérente"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque remise en route et après immobilisation",
+                  "diagnostic": "Contrôler réservoirs/pompes, filtres, injecteurs, seize bougies, bobines, capteurs et deux circuits de gestion, puis radiateurs, ventilateurs, durites et flux d’air ; remplacer les flexibles âgés avant pression et ne pas improviser de cartographie",
+                  "piece_concernee": "Alimentation, gestion et refroidissement V16T",
+                  "gravite": "Critique",
+                  "frequence": "Vieillissement inévitable des périphériques",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à 40 000 €"
+                },
+                {
+                  "probleme": "Boîte cinq rapports, châssis, carrosserie et provenance",
+                  "symptomes": [
+                    "Embrayage lourd ou patinage",
+                    "Sélection difficile ou vibration",
+                    "Fissure, délaminage ou historique incomplet"
+                  ],
+                  "kilometrage_apparition": "Expertise usine/spécialiste obligatoire avant achat",
+                  "diagnostic": "Contrôler embrayage multidisque selon montage, boîte, huile, tringlerie, différentiel, arbres et supports ; inspecter structure tubulaire, aluminium/composite, portes et quatre phares escamotables, suspension, freins, pneus, VIN et chaîne de propriété, en distinguant Moroder, série Modène et assemblages tardifs",
+                  "piece_concernee": "Transmission, structure et identité Cizeta V16T",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque important de pièces uniques et immobilisation",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 100 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Cizeta V16T Modène",
+          "annees": "1991–1995",
+          "phases": [
+            "Série d’origine construite à Modène, 540 ch à 8 000 tr/min et 542 Nm annoncés."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V16 transversal 6.0 — 540 ch",
+              "code_moteur": "Cizeta Tipo V16 64V",
+              "cylindree": "5 995 cm³",
+              "puissance_ch": 540,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Synchronisation des deux bancs, huit arbres à cames et lubrification du V16",
+                  "symptomes": [
+                    "Ratés ou température différente entre bancs",
+                    "Pression faible, bruit ou limaille",
+                    "Fumée ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Inspection annuelle et avant toute sollicitation ; aucun seuil statistique fiable",
+                  "diagnostic": "Mesurer compressions/leak-down des seize cylindres, analyser huile/filtre, contrôler pompes, chaînes et calage des huit arbres, tendeurs, jeux, étanchéité et refroidissement ; comparer les deux gestions/bancs avant montée à 8 000 tr/min",
+                  "piece_concernee": "V16 Cizeta 6.0 transversal 64 soupapes",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable sur quelques exemplaires",
+                  "cout_reparation_estime": "Extrême : environ 5 000 à plus de 200 000 €"
+                },
+                {
+                  "probleme": "Double injection, allumage, alimentation et refroidissement compartiment moteur",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés, odeur de carburant ou surchauffe",
+                    "Lambda ou puissance incohérente"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque remise en route et après immobilisation",
+                  "diagnostic": "Contrôler réservoirs/pompes, filtres, injecteurs, seize bougies, bobines, capteurs et deux circuits de gestion, puis radiateurs, ventilateurs, durites et flux d’air ; remplacer les flexibles âgés avant pression et ne pas improviser de cartographie",
+                  "piece_concernee": "Alimentation, gestion et refroidissement V16T",
+                  "gravite": "Critique",
+                  "frequence": "Vieillissement inévitable des périphériques",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à 40 000 €"
+                },
+                {
+                  "probleme": "Boîte cinq rapports, châssis, carrosserie et provenance",
+                  "symptomes": [
+                    "Embrayage lourd ou patinage",
+                    "Sélection difficile ou vibration",
+                    "Fissure, délaminage ou historique incomplet"
+                  ],
+                  "kilometrage_apparition": "Expertise usine/spécialiste obligatoire avant achat",
+                  "diagnostic": "Contrôler embrayage multidisque selon montage, boîte, huile, tringlerie, différentiel, arbres et supports ; inspecter structure tubulaire, aluminium/composite, portes et quatre phares escamotables, suspension, freins, pneus, VIN et chaîne de propriété, en distinguant Moroder, série Modène et assemblages tardifs",
+                  "piece_concernee": "Transmission, structure et identité Cizeta V16T",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque important de pièces uniques et immobilisation",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 100 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "V16T assemblages spéciaux USA",
+          "annees": "1999–2003",
+          "phases": [
+            "Très rares voitures tardives assemblées sur commande ; provenance et conformité individuelles obligatoires."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V16 transversal 6.0 — 540 ch",
+              "code_moteur": "Cizeta Tipo V16 64V USA",
+              "cylindree": "5 995 cm³",
+              "puissance_ch": 540,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Synchronisation des deux bancs, huit arbres à cames et lubrification du V16",
+                  "symptomes": [
+                    "Ratés ou température différente entre bancs",
+                    "Pression faible, bruit ou limaille",
+                    "Fumée ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Inspection annuelle et avant toute sollicitation ; aucun seuil statistique fiable",
+                  "diagnostic": "Mesurer compressions/leak-down des seize cylindres, analyser huile/filtre, contrôler pompes, chaînes et calage des huit arbres, tendeurs, jeux, étanchéité et refroidissement ; comparer les deux gestions/bancs avant montée à 8 000 tr/min",
+                  "piece_concernee": "V16 Cizeta 6.0 transversal 64 soupapes",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable sur quelques exemplaires",
+                  "cout_reparation_estime": "Extrême : environ 5 000 à plus de 200 000 €"
+                },
+                {
+                  "probleme": "Double injection, allumage, alimentation et refroidissement compartiment moteur",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés, odeur de carburant ou surchauffe",
+                    "Lambda ou puissance incohérente"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque remise en route et après immobilisation",
+                  "diagnostic": "Contrôler réservoirs/pompes, filtres, injecteurs, seize bougies, bobines, capteurs et deux circuits de gestion, puis radiateurs, ventilateurs, durites et flux d’air ; remplacer les flexibles âgés avant pression et ne pas improviser de cartographie",
+                  "piece_concernee": "Alimentation, gestion et refroidissement V16T",
+                  "gravite": "Critique",
+                  "frequence": "Vieillissement inévitable des périphériques",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à 40 000 €"
+                },
+                {
+                  "probleme": "Boîte cinq rapports, châssis, carrosserie et provenance",
+                  "symptomes": [
+                    "Embrayage lourd ou patinage",
+                    "Sélection difficile ou vibration",
+                    "Fissure, délaminage ou historique incomplet"
+                  ],
+                  "kilometrage_apparition": "Expertise usine/spécialiste obligatoire avant achat",
+                  "diagnostic": "Contrôler embrayage multidisque selon montage, boîte, huile, tringlerie, différentiel, arbres et supports ; inspecter structure tubulaire, aluminium/composite, portes et quatre phares escamotables, suspension, freins, pneus, VIN et chaîne de propriété, en distinguant Moroder, série Modène et assemblages tardifs",
+                  "piece_concernee": "Transmission, structure et identité Cizeta V16T",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque important de pièces uniques et immobilisation",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 100 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "V16T Spyder TTJ prototype",
+          "annees": "2003",
+          "phases": [
+            "Roadster unique/prototype, explicitement séparé de la production coupé."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V16 transversal 6.0 — 540 ch",
+              "code_moteur": "Cizeta Tipo V16 64V TTJ",
+              "cylindree": "5 995 cm³",
+              "puissance_ch": 540,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Synchronisation des deux bancs, huit arbres à cames et lubrification du V16",
+                  "symptomes": [
+                    "Ratés ou température différente entre bancs",
+                    "Pression faible, bruit ou limaille",
+                    "Fumée ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Inspection annuelle et avant toute sollicitation ; aucun seuil statistique fiable",
+                  "diagnostic": "Mesurer compressions/leak-down des seize cylindres, analyser huile/filtre, contrôler pompes, chaînes et calage des huit arbres, tendeurs, jeux, étanchéité et refroidissement ; comparer les deux gestions/bancs avant montée à 8 000 tr/min",
+                  "piece_concernee": "V16 Cizeta 6.0 transversal 64 soupapes",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable sur quelques exemplaires",
+                  "cout_reparation_estime": "Extrême : environ 5 000 à plus de 200 000 €"
+                },
+                {
+                  "probleme": "Double injection, allumage, alimentation et refroidissement compartiment moteur",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés, odeur de carburant ou surchauffe",
+                    "Lambda ou puissance incohérente"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque remise en route et après immobilisation",
+                  "diagnostic": "Contrôler réservoirs/pompes, filtres, injecteurs, seize bougies, bobines, capteurs et deux circuits de gestion, puis radiateurs, ventilateurs, durites et flux d’air ; remplacer les flexibles âgés avant pression et ne pas improviser de cartographie",
+                  "piece_concernee": "Alimentation, gestion et refroidissement V16T",
+                  "gravite": "Critique",
+                  "frequence": "Vieillissement inévitable des périphériques",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à 40 000 €"
+                },
+                {
+                  "probleme": "Boîte cinq rapports, châssis, carrosserie et provenance",
+                  "symptomes": [
+                    "Embrayage lourd ou patinage",
+                    "Sélection difficile ou vibration",
+                    "Fissure, délaminage ou historique incomplet"
+                  ],
+                  "kilometrage_apparition": "Expertise usine/spécialiste obligatoire avant achat",
+                  "diagnostic": "Contrôler embrayage multidisque selon montage, boîte, huile, tringlerie, différentiel, arbres et supports ; inspecter structure tubulaire, aluminium/composite, portes et quatre phares escamotables, suspension, freins, pneus, VIN et chaîne de propriété, en distinguant Moroder, série Modène et assemblages tardifs",
+                  "piece_concernee": "Transmission, structure et identité Cizeta V16T",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque important de pièces uniques et immobilisation",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 100 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://cizeta-automobili.it/",
+        "https://cizeta-automobili.it/il-progetto-la-storia/"
+      ]
+    }
+  ]
+}

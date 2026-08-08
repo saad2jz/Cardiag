@@ -1,0 +1,511 @@
+{
+  "nom": "DeSoto",
+  "modeles": [
+    {
+      "nom": "Firedome",
+      "generations": [
+        {
+          "code_chassis": "S17 Firedome 8",
+          "annees": "1952",
+          "phases": [
+            "Première année du V8 DeSoto à chambres hémisphériques."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "276 FireDome Hemi — 160 ch",
+              "code_moteur": "DeSoto FireDome 276",
+              "cylindree": "4 524 cm³",
+              "puissance_ch": 160,
+              "boite": [
+                "Manuelle 3 rapports ou semi-automatique, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et culasses Hemi ou wedge DeSoto",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression faible, fumée ou claquement",
+                    "Fuite, compression inégale ou mayonnaise"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km, mais âge et restauration priment",
+                  "diagnostic": "Décoder année et fonderies : Hemi DeSoto 276/291/330/341 ou B-block wedge 361/383, sans commander comme Chrysler Hemi ; mesurer compressions/leak-down et pression, contrôler chaîne, pompe, radiateur, culasses/joints, soupapes hydrauliques et corrosion interne",
+                  "piece_concernee": "V8 DeSoto Firedome",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé sur moteur ancien ou mal identifié",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 15 000 €"
+                },
+                {
+                  "probleme": "Carburateur, allumage, alimentation et démarrage 6/12 V",
+                  "symptomes": [
+                    "Démarrage lent",
+                    "Vapor-lock, ratés ou fuite essence",
+                    "Charge faible, cliquetis ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et après immobilisation",
+                  "diagnostic": "Identifier carburateur deux/quatre corps et option 350 hp, vérifier réservoir, pompe, cuve, starter, avance, distributeur, bobine et bougies ; contrôler polarité/tension, démarreur, génératrice/alternateur et masses selon millésime avant branchement moderne",
+                  "piece_concernee": "Alimentation, allumage et électricité Firedome",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec faisceau et carburant âgés",
+                  "cout_reparation_estime": "Élevé : environ 200 à 3 500 €"
+                },
+                {
+                  "probleme": "PowerFlite/TorqueFlite, châssis, suspension et freinage Total Contact",
+                  "symptomes": [
+                    "Engagement tardif",
+                    "Patinage, fuite ou vibration",
+                    "Jeu, tirage ou pédale longue"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat ; service transmission périodique",
+                  "diagnostic": "Contrôler manuelle rare, PowerFlite deux ou TorqueFlite trois rapports, huile/pression, convertisseur, arbre/pont ; inspecter cadre, corrosion, torsion bars 1957+, direction, roulements, six cylindres de roue antérieurs, tambours, flexibles, pneus, carrosserie et VIN",
+                  "piece_concernee": "Transmission, châssis et sécurité DeSoto",
+                  "gravite": "Critique",
+                  "frequence": "Usure/corrosion fréquentes après sept décennies",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "S16/S19 Firedome",
+          "annees": "1953–1954",
+          "phases": [
+            "Puissance portée à 170 hp ; automatique PowerFlite selon millésime."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "276 FireDome Hemi — 170 ch",
+              "code_moteur": "DeSoto FireDome 276 évolution",
+              "cylindree": "4 524 cm³",
+              "puissance_ch": 170,
+              "boite": [
+                "Manuelle 3 rapports ou PowerFlite, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et culasses Hemi ou wedge DeSoto",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression faible, fumée ou claquement",
+                    "Fuite, compression inégale ou mayonnaise"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km, mais âge et restauration priment",
+                  "diagnostic": "Décoder année et fonderies : Hemi DeSoto 276/291/330/341 ou B-block wedge 361/383, sans commander comme Chrysler Hemi ; mesurer compressions/leak-down et pression, contrôler chaîne, pompe, radiateur, culasses/joints, soupapes hydrauliques et corrosion interne",
+                  "piece_concernee": "V8 DeSoto Firedome",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé sur moteur ancien ou mal identifié",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 15 000 €"
+                },
+                {
+                  "probleme": "Carburateur, allumage, alimentation et démarrage 6/12 V",
+                  "symptomes": [
+                    "Démarrage lent",
+                    "Vapor-lock, ratés ou fuite essence",
+                    "Charge faible, cliquetis ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et après immobilisation",
+                  "diagnostic": "Identifier carburateur deux/quatre corps et option 350 hp, vérifier réservoir, pompe, cuve, starter, avance, distributeur, bobine et bougies ; contrôler polarité/tension, démarreur, génératrice/alternateur et masses selon millésime avant branchement moderne",
+                  "piece_concernee": "Alimentation, allumage et électricité Firedome",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec faisceau et carburant âgés",
+                  "cout_reparation_estime": "Élevé : environ 200 à 3 500 €"
+                },
+                {
+                  "probleme": "PowerFlite/TorqueFlite, châssis, suspension et freinage Total Contact",
+                  "symptomes": [
+                    "Engagement tardif",
+                    "Patinage, fuite ou vibration",
+                    "Jeu, tirage ou pédale longue"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat ; service transmission périodique",
+                  "diagnostic": "Contrôler manuelle rare, PowerFlite deux ou TorqueFlite trois rapports, huile/pression, convertisseur, arbre/pont ; inspecter cadre, corrosion, torsion bars 1957+, direction, roulements, six cylindres de roue antérieurs, tambours, flexibles, pneus, carrosserie et VIN",
+                  "piece_concernee": "Transmission, châssis et sécurité DeSoto",
+                  "gravite": "Critique",
+                  "frequence": "Usure/corrosion fréquentes après sept décennies",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "S22 Firedome",
+          "annees": "1955",
+          "phases": [
+            "291 Hemi deux corps spécifique au Firedome, distinct du Fireflite quatre corps."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "291 FireDome Hemi — 185 ch",
+              "code_moteur": "DeSoto FireDome 291 2-bbl",
+              "cylindree": "4 769 cm³",
+              "puissance_ch": 185,
+              "boite": [
+                "Manuelle 3 rapports ou PowerFlite 2 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et culasses Hemi ou wedge DeSoto",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression faible, fumée ou claquement",
+                    "Fuite, compression inégale ou mayonnaise"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km, mais âge et restauration priment",
+                  "diagnostic": "Décoder année et fonderies : Hemi DeSoto 276/291/330/341 ou B-block wedge 361/383, sans commander comme Chrysler Hemi ; mesurer compressions/leak-down et pression, contrôler chaîne, pompe, radiateur, culasses/joints, soupapes hydrauliques et corrosion interne",
+                  "piece_concernee": "V8 DeSoto Firedome",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé sur moteur ancien ou mal identifié",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 15 000 €"
+                },
+                {
+                  "probleme": "Carburateur, allumage, alimentation et démarrage 6/12 V",
+                  "symptomes": [
+                    "Démarrage lent",
+                    "Vapor-lock, ratés ou fuite essence",
+                    "Charge faible, cliquetis ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et après immobilisation",
+                  "diagnostic": "Identifier carburateur deux/quatre corps et option 350 hp, vérifier réservoir, pompe, cuve, starter, avance, distributeur, bobine et bougies ; contrôler polarité/tension, démarreur, génératrice/alternateur et masses selon millésime avant branchement moderne",
+                  "piece_concernee": "Alimentation, allumage et électricité Firedome",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec faisceau et carburant âgés",
+                  "cout_reparation_estime": "Élevé : environ 200 à 3 500 €"
+                },
+                {
+                  "probleme": "PowerFlite/TorqueFlite, châssis, suspension et freinage Total Contact",
+                  "symptomes": [
+                    "Engagement tardif",
+                    "Patinage, fuite ou vibration",
+                    "Jeu, tirage ou pédale longue"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat ; service transmission périodique",
+                  "diagnostic": "Contrôler manuelle rare, PowerFlite deux ou TorqueFlite trois rapports, huile/pression, convertisseur, arbre/pont ; inspecter cadre, corrosion, torsion bars 1957+, direction, roulements, six cylindres de roue antérieurs, tambours, flexibles, pneus, carrosserie et VIN",
+                  "piece_concernee": "Transmission, châssis et sécurité DeSoto",
+                  "gravite": "Critique",
+                  "frequence": "Usure/corrosion fréquentes après sept décennies",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "S23 Firedome",
+          "annees": "1956",
+          "phases": [
+            "330,4 ci, 230 hp et 305 lb-ft selon fiche constructeur."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "330 FireDome Hemi — 230 ch",
+              "code_moteur": "DeSoto FireDome 330",
+              "cylindree": "5 408 cm³",
+              "puissance_ch": 230,
+              "boite": [
+                "PowerFlite 2 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et culasses Hemi ou wedge DeSoto",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression faible, fumée ou claquement",
+                    "Fuite, compression inégale ou mayonnaise"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km, mais âge et restauration priment",
+                  "diagnostic": "Décoder année et fonderies : Hemi DeSoto 276/291/330/341 ou B-block wedge 361/383, sans commander comme Chrysler Hemi ; mesurer compressions/leak-down et pression, contrôler chaîne, pompe, radiateur, culasses/joints, soupapes hydrauliques et corrosion interne",
+                  "piece_concernee": "V8 DeSoto Firedome",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé sur moteur ancien ou mal identifié",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 15 000 €"
+                },
+                {
+                  "probleme": "Carburateur, allumage, alimentation et démarrage 6/12 V",
+                  "symptomes": [
+                    "Démarrage lent",
+                    "Vapor-lock, ratés ou fuite essence",
+                    "Charge faible, cliquetis ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et après immobilisation",
+                  "diagnostic": "Identifier carburateur deux/quatre corps et option 350 hp, vérifier réservoir, pompe, cuve, starter, avance, distributeur, bobine et bougies ; contrôler polarité/tension, démarreur, génératrice/alternateur et masses selon millésime avant branchement moderne",
+                  "piece_concernee": "Alimentation, allumage et électricité Firedome",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec faisceau et carburant âgés",
+                  "cout_reparation_estime": "Élevé : environ 200 à 3 500 €"
+                },
+                {
+                  "probleme": "PowerFlite/TorqueFlite, châssis, suspension et freinage Total Contact",
+                  "symptomes": [
+                    "Engagement tardif",
+                    "Patinage, fuite ou vibration",
+                    "Jeu, tirage ou pédale longue"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat ; service transmission périodique",
+                  "diagnostic": "Contrôler manuelle rare, PowerFlite deux ou TorqueFlite trois rapports, huile/pression, convertisseur, arbre/pont ; inspecter cadre, corrosion, torsion bars 1957+, direction, roulements, six cylindres de roue antérieurs, tambours, flexibles, pneus, carrosserie et VIN",
+                  "piece_concernee": "Transmission, châssis et sécurité DeSoto",
+                  "gravite": "Critique",
+                  "frequence": "Usure/corrosion fréquentes après sept décennies",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "S25 Firedome",
+          "annees": "1957",
+          "phases": [
+            "Forward Look et suspension avant à barres de torsion."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "341 FireDome Hemi — 270 ch",
+              "code_moteur": "DeSoto FireDome 341",
+              "cylindree": "5 588 cm³",
+              "puissance_ch": 270,
+              "boite": [
+                "TorqueFlite 3 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et culasses Hemi ou wedge DeSoto",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression faible, fumée ou claquement",
+                    "Fuite, compression inégale ou mayonnaise"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km, mais âge et restauration priment",
+                  "diagnostic": "Décoder année et fonderies : Hemi DeSoto 276/291/330/341 ou B-block wedge 361/383, sans commander comme Chrysler Hemi ; mesurer compressions/leak-down et pression, contrôler chaîne, pompe, radiateur, culasses/joints, soupapes hydrauliques et corrosion interne",
+                  "piece_concernee": "V8 DeSoto Firedome",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé sur moteur ancien ou mal identifié",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 15 000 €"
+                },
+                {
+                  "probleme": "Carburateur, allumage, alimentation et démarrage 6/12 V",
+                  "symptomes": [
+                    "Démarrage lent",
+                    "Vapor-lock, ratés ou fuite essence",
+                    "Charge faible, cliquetis ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et après immobilisation",
+                  "diagnostic": "Identifier carburateur deux/quatre corps et option 350 hp, vérifier réservoir, pompe, cuve, starter, avance, distributeur, bobine et bougies ; contrôler polarité/tension, démarreur, génératrice/alternateur et masses selon millésime avant branchement moderne",
+                  "piece_concernee": "Alimentation, allumage et électricité Firedome",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec faisceau et carburant âgés",
+                  "cout_reparation_estime": "Élevé : environ 200 à 3 500 €"
+                },
+                {
+                  "probleme": "PowerFlite/TorqueFlite, châssis, suspension et freinage Total Contact",
+                  "symptomes": [
+                    "Engagement tardif",
+                    "Patinage, fuite ou vibration",
+                    "Jeu, tirage ou pédale longue"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat ; service transmission périodique",
+                  "diagnostic": "Contrôler manuelle rare, PowerFlite deux ou TorqueFlite trois rapports, huile/pression, convertisseur, arbre/pont ; inspecter cadre, corrosion, torsion bars 1957+, direction, roulements, six cylindres de roue antérieurs, tambours, flexibles, pneus, carrosserie et VIN",
+                  "piece_concernee": "Transmission, châssis et sécurité DeSoto",
+                  "gravite": "Critique",
+                  "frequence": "Usure/corrosion fréquentes après sept décennies",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "LS2 Firedome",
+          "annees": "1958",
+          "phases": [
+            "Abandon du Hemi DeSoto au profit du nouveau V8 wedge B-series."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "361 B-block wedge — 295 ch",
+              "code_moteur": "Chrysler/DeSoto B 361",
+              "cylindree": "5 916 cm³",
+              "puissance_ch": 295,
+              "boite": [
+                "TorqueFlite 3 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et culasses Hemi ou wedge DeSoto",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression faible, fumée ou claquement",
+                    "Fuite, compression inégale ou mayonnaise"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km, mais âge et restauration priment",
+                  "diagnostic": "Décoder année et fonderies : Hemi DeSoto 276/291/330/341 ou B-block wedge 361/383, sans commander comme Chrysler Hemi ; mesurer compressions/leak-down et pression, contrôler chaîne, pompe, radiateur, culasses/joints, soupapes hydrauliques et corrosion interne",
+                  "piece_concernee": "V8 DeSoto Firedome",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé sur moteur ancien ou mal identifié",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 15 000 €"
+                },
+                {
+                  "probleme": "Carburateur, allumage, alimentation et démarrage 6/12 V",
+                  "symptomes": [
+                    "Démarrage lent",
+                    "Vapor-lock, ratés ou fuite essence",
+                    "Charge faible, cliquetis ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et après immobilisation",
+                  "diagnostic": "Identifier carburateur deux/quatre corps et option 350 hp, vérifier réservoir, pompe, cuve, starter, avance, distributeur, bobine et bougies ; contrôler polarité/tension, démarreur, génératrice/alternateur et masses selon millésime avant branchement moderne",
+                  "piece_concernee": "Alimentation, allumage et électricité Firedome",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec faisceau et carburant âgés",
+                  "cout_reparation_estime": "Élevé : environ 200 à 3 500 €"
+                },
+                {
+                  "probleme": "PowerFlite/TorqueFlite, châssis, suspension et freinage Total Contact",
+                  "symptomes": [
+                    "Engagement tardif",
+                    "Patinage, fuite ou vibration",
+                    "Jeu, tirage ou pédale longue"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat ; service transmission périodique",
+                  "diagnostic": "Contrôler manuelle rare, PowerFlite deux ou TorqueFlite trois rapports, huile/pression, convertisseur, arbre/pont ; inspecter cadre, corrosion, torsion bars 1957+, direction, roulements, six cylindres de roue antérieurs, tambours, flexibles, pneus, carrosserie et VIN",
+                  "piece_concernee": "Transmission, châssis et sécurité DeSoto",
+                  "gravite": "Critique",
+                  "frequence": "Usure/corrosion fréquentes après sept décennies",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "MS2 Firedome",
+          "annees": "1959",
+          "phases": [
+            "Dernière année ; option 350 hp disponible dans la gamme Firedome."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "383 B-block wedge — 325 ch",
+              "code_moteur": "Chrysler/DeSoto B 383",
+              "cylindree": "6 276 cm³",
+              "puissance_ch": 325,
+              "boite": [
+                "TorqueFlite 3 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et culasses Hemi ou wedge DeSoto",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression faible, fumée ou claquement",
+                    "Fuite, compression inégale ou mayonnaise"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km, mais âge et restauration priment",
+                  "diagnostic": "Décoder année et fonderies : Hemi DeSoto 276/291/330/341 ou B-block wedge 361/383, sans commander comme Chrysler Hemi ; mesurer compressions/leak-down et pression, contrôler chaîne, pompe, radiateur, culasses/joints, soupapes hydrauliques et corrosion interne",
+                  "piece_concernee": "V8 DeSoto Firedome",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé sur moteur ancien ou mal identifié",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 15 000 €"
+                },
+                {
+                  "probleme": "Carburateur, allumage, alimentation et démarrage 6/12 V",
+                  "symptomes": [
+                    "Démarrage lent",
+                    "Vapor-lock, ratés ou fuite essence",
+                    "Charge faible, cliquetis ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et après immobilisation",
+                  "diagnostic": "Identifier carburateur deux/quatre corps et option 350 hp, vérifier réservoir, pompe, cuve, starter, avance, distributeur, bobine et bougies ; contrôler polarité/tension, démarreur, génératrice/alternateur et masses selon millésime avant branchement moderne",
+                  "piece_concernee": "Alimentation, allumage et électricité Firedome",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec faisceau et carburant âgés",
+                  "cout_reparation_estime": "Élevé : environ 200 à 3 500 €"
+                },
+                {
+                  "probleme": "PowerFlite/TorqueFlite, châssis, suspension et freinage Total Contact",
+                  "symptomes": [
+                    "Engagement tardif",
+                    "Patinage, fuite ou vibration",
+                    "Jeu, tirage ou pédale longue"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat ; service transmission périodique",
+                  "diagnostic": "Contrôler manuelle rare, PowerFlite deux ou TorqueFlite trois rapports, huile/pression, convertisseur, arbre/pont ; inspecter cadre, corrosion, torsion bars 1957+, direction, roulements, six cylindres de roue antérieurs, tambours, flexibles, pneus, carrosserie et VIN",
+                  "piece_concernee": "Transmission, châssis et sécurité DeSoto",
+                  "gravite": "Critique",
+                  "frequence": "Usure/corrosion fréquentes après sept décennies",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "383 Adventurer option — 350 ch",
+              "code_moteur": "Chrysler/DeSoto B 383 high-output",
+              "cylindree": "6 276 cm³",
+              "puissance_ch": 350,
+              "boite": [
+                "TorqueFlite 3 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et culasses Hemi ou wedge DeSoto",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression faible, fumée ou claquement",
+                    "Fuite, compression inégale ou mayonnaise"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km, mais âge et restauration priment",
+                  "diagnostic": "Décoder année et fonderies : Hemi DeSoto 276/291/330/341 ou B-block wedge 361/383, sans commander comme Chrysler Hemi ; mesurer compressions/leak-down et pression, contrôler chaîne, pompe, radiateur, culasses/joints, soupapes hydrauliques et corrosion interne",
+                  "piece_concernee": "V8 DeSoto Firedome",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé sur moteur ancien ou mal identifié",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 15 000 €"
+                },
+                {
+                  "probleme": "Carburateur, allumage, alimentation et démarrage 6/12 V",
+                  "symptomes": [
+                    "Démarrage lent",
+                    "Vapor-lock, ratés ou fuite essence",
+                    "Charge faible, cliquetis ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et après immobilisation",
+                  "diagnostic": "Identifier carburateur deux/quatre corps et option 350 hp, vérifier réservoir, pompe, cuve, starter, avance, distributeur, bobine et bougies ; contrôler polarité/tension, démarreur, génératrice/alternateur et masses selon millésime avant branchement moderne",
+                  "piece_concernee": "Alimentation, allumage et électricité Firedome",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec faisceau et carburant âgés",
+                  "cout_reparation_estime": "Élevé : environ 200 à 3 500 €"
+                },
+                {
+                  "probleme": "PowerFlite/TorqueFlite, châssis, suspension et freinage Total Contact",
+                  "symptomes": [
+                    "Engagement tardif",
+                    "Patinage, fuite ou vibration",
+                    "Jeu, tirage ou pédale longue"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat ; service transmission périodique",
+                  "diagnostic": "Contrôler manuelle rare, PowerFlite deux ou TorqueFlite trois rapports, huile/pression, convertisseur, arbre/pont ; inspecter cadre, corrosion, torsion bars 1957+, direction, roulements, six cylindres de roue antérieurs, tambours, flexibles, pneus, carrosserie et VIN",
+                  "piece_concernee": "Transmission, châssis et sécurité DeSoto",
+                  "gravite": "Critique",
+                  "frequence": "Usure/corrosion fréquentes après sept décennies",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://over-drive-magazine.com/2024/12/13/1952-desoto-fact-sheet/",
+        "https://over-drive-magazine.com/2025/01/08/1952-1961-desoto-v-8-facts/",
+        "https://over-drive-magazine.com/wp-content/uploads/2025/01/1959-DeSoto-AMA-Specs-1-29.pdf",
+        "https://desoto.org/1955-2/"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "nom": "Hotchkiss",
+  "modeles": [
+    {
+      "nom": "686",
+      "generations": [
+        {
+          "code_chassis": "686 standard",
+          "annees": "1936–1950",
+          "phases": [
+            "Version 20 CV standard ; production interrompue par la guerre puis reprise jusqu’à l’Anjou 2050."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.5 six-cylindres — 95 ch",
+              "code_moteur": "Hotchkiss 686",
+              "cylindree": "3 485 cm³",
+              "puissance_ch": 95,
+              "boite": [
+                "Manuelle 4 rapports ou Cotal, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et soupapes du moteur Hotchkiss",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km, mais âge et réfection priment",
+                  "diagnostic": "Identifier quatre-cylindres 2,0 l 480 ou six-cylindres 3,5 l 686 et niveau GS. Mesurer compressions/leak-down et pression, analyser huile, contrôler paliers, distribution, soupapes, pompe, radiateur, culasse/joints et corrosion.",
+                  "piece_concernee": "Moteur Hotchkiss 480/686",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque élevé si réfection ancienne",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 18 000 €"
+                },
+                {
+                  "probleme": "Carburation, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés",
+                    "Fuite, vapor-lock ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après stockage",
+                  "diagnostic": "Identifier carburateur simple/multiple et réglage 95/105/125 ch, contrôler réservoir, pompe, conduites, cuve, starter, avance, distributeur, bobine et bougies. Régler richesse sans masquer un manque de compression.",
+                  "piece_concernee": "Admission et allumage Hotchkiss",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquente avec carburant moderne et durites âgées",
+                  "cout_reparation_estime": "Élevé : environ 250 à 4 000 €"
+                },
+                {
+                  "probleme": "Boîte quatre rapports/Cotal, embrayage, arbre et pont",
+                  "symptomes": [
+                    "Rapport difficile",
+                    "Présélection défaillante",
+                    "Patinage, vibration ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Inspection avant achat et entretien spécialisé",
+                  "diagnostic": "Identifier boîte mécanique ou Cotal, contrôler huile, contacts et commande Cotal, embrayage, supports, arbre, croisillons, pont et roulements. Tester à chaud progressivement.",
+                  "piece_concernee": "Transmission Hotchkiss",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable et pièces spécifiques",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 10 000 €"
+                },
+                {
+                  "probleme": "Châssis, carrosserie, suspension, freins et authenticité",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Jeu, affaissement ou usure irrégulière",
+                    "Freinage faible ou numéros incohérents"
+                  ],
+                  "kilometrage_apparition": "Expertise complète avant acquisition",
+                  "diagnostic": "Identifier 480, 686, GS/Paris-Nice et carrosserie. Inspecter cadre, traverses, bois/panneaux, suspension, amortisseurs, direction, freins hydrauliques, roues, pneus et faisceau, puis rapprocher moteur et châssis des archives du club.",
+                  "piece_concernee": "Structure, sécurité et provenance Hotchkiss",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de mélange de pièces entre séries",
+                  "cout_reparation_estime": "Très élevé : environ 800 à plus de 35 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "686 S / évolution après-guerre",
+          "annees": "1946–1950",
+          "phases": [
+            "Calibrage intermédiaire documenté après-guerre ; vérifier carburateurs et type exact."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.5 six-cylindres évolution — 105 ch",
+              "code_moteur": "Hotchkiss 686 S",
+              "cylindree": "3 485 cm³",
+              "puissance_ch": 105,
+              "boite": [
+                "Manuelle 4 rapports ou Cotal, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et soupapes du moteur Hotchkiss",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km, mais âge et réfection priment",
+                  "diagnostic": "Identifier quatre-cylindres 2,0 l 480 ou six-cylindres 3,5 l 686 et niveau GS. Mesurer compressions/leak-down et pression, analyser huile, contrôler paliers, distribution, soupapes, pompe, radiateur, culasse/joints et corrosion.",
+                  "piece_concernee": "Moteur Hotchkiss 480/686",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque élevé si réfection ancienne",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 18 000 €"
+                },
+                {
+                  "probleme": "Carburation, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés",
+                    "Fuite, vapor-lock ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après stockage",
+                  "diagnostic": "Identifier carburateur simple/multiple et réglage 95/105/125 ch, contrôler réservoir, pompe, conduites, cuve, starter, avance, distributeur, bobine et bougies. Régler richesse sans masquer un manque de compression.",
+                  "piece_concernee": "Admission et allumage Hotchkiss",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquente avec carburant moderne et durites âgées",
+                  "cout_reparation_estime": "Élevé : environ 250 à 4 000 €"
+                },
+                {
+                  "probleme": "Boîte quatre rapports/Cotal, embrayage, arbre et pont",
+                  "symptomes": [
+                    "Rapport difficile",
+                    "Présélection défaillante",
+                    "Patinage, vibration ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Inspection avant achat et entretien spécialisé",
+                  "diagnostic": "Identifier boîte mécanique ou Cotal, contrôler huile, contacts et commande Cotal, embrayage, supports, arbre, croisillons, pont et roulements. Tester à chaud progressivement.",
+                  "piece_concernee": "Transmission Hotchkiss",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable et pièces spécifiques",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 10 000 €"
+                },
+                {
+                  "probleme": "Châssis, carrosserie, suspension, freins et authenticité",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Jeu, affaissement ou usure irrégulière",
+                    "Freinage faible ou numéros incohérents"
+                  ],
+                  "kilometrage_apparition": "Expertise complète avant acquisition",
+                  "diagnostic": "Identifier 480, 686, GS/Paris-Nice et carrosserie. Inspecter cadre, traverses, bois/panneaux, suspension, amortisseurs, direction, freins hydrauliques, roues, pneus et faisceau, puis rapprocher moteur et châssis des archives du club.",
+                  "piece_concernee": "Structure, sécurité et provenance Hotchkiss",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de mélange de pièces entre séries",
+                  "cout_reparation_estime": "Très élevé : environ 800 à plus de 35 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "686 GS Paris-Nice",
+          "annees": "1937–1950",
+          "phases": [
+            "Version haute performance dite Paris-Nice/Grand Sport ; puissance maximale de la famille selon configuration."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.5 six-cylindres Grand Sport — 125 ch",
+              "code_moteur": "Hotchkiss 686 GS",
+              "cylindree": "3 485 cm³",
+              "puissance_ch": 125,
+              "boite": [
+                "Manuelle 4 rapports ou Cotal, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et soupapes du moteur Hotchkiss",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km, mais âge et réfection priment",
+                  "diagnostic": "Identifier quatre-cylindres 2,0 l 480 ou six-cylindres 3,5 l 686 et niveau GS. Mesurer compressions/leak-down et pression, analyser huile, contrôler paliers, distribution, soupapes, pompe, radiateur, culasse/joints et corrosion.",
+                  "piece_concernee": "Moteur Hotchkiss 480/686",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque élevé si réfection ancienne",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 18 000 €"
+                },
+                {
+                  "probleme": "Carburation, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés",
+                    "Fuite, vapor-lock ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après stockage",
+                  "diagnostic": "Identifier carburateur simple/multiple et réglage 95/105/125 ch, contrôler réservoir, pompe, conduites, cuve, starter, avance, distributeur, bobine et bougies. Régler richesse sans masquer un manque de compression.",
+                  "piece_concernee": "Admission et allumage Hotchkiss",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquente avec carburant moderne et durites âgées",
+                  "cout_reparation_estime": "Élevé : environ 250 à 4 000 €"
+                },
+                {
+                  "probleme": "Boîte quatre rapports/Cotal, embrayage, arbre et pont",
+                  "symptomes": [
+                    "Rapport difficile",
+                    "Présélection défaillante",
+                    "Patinage, vibration ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Inspection avant achat et entretien spécialisé",
+                  "diagnostic": "Identifier boîte mécanique ou Cotal, contrôler huile, contacts et commande Cotal, embrayage, supports, arbre, croisillons, pont et roulements. Tester à chaud progressivement.",
+                  "piece_concernee": "Transmission Hotchkiss",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable et pièces spécifiques",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 10 000 €"
+                },
+                {
+                  "probleme": "Châssis, carrosserie, suspension, freins et authenticité",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Jeu, affaissement ou usure irrégulière",
+                    "Freinage faible ou numéros incohérents"
+                  ],
+                  "kilometrage_apparition": "Expertise complète avant acquisition",
+                  "diagnostic": "Identifier 480, 686, GS/Paris-Nice et carrosserie. Inspecter cadre, traverses, bois/panneaux, suspension, amortisseurs, direction, freins hydrauliques, roues, pneus et faisceau, puis rapprocher moteur et châssis des archives du club.",
+                  "piece_concernee": "Structure, sécurité et provenance Hotchkiss",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de mélange de pièces entre séries",
+                  "cout_reparation_estime": "Très élevé : environ 800 à plus de 35 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.club-hotchkiss.fr/fr/la-production-fr/vehicule-de-tourisme-fr/les-carrosseries-annees-fr"
+      ]
+    },
+    {
+      "nom": "480",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "sedan",
+        "countries": [
+          "es",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 9
+      },
+      "generations": [
+        {
+          "code_chassis": "480 11 CV",
+          "annees": "1936–1950",
+          "phases": [
+            "Quatre-cylindres de la gamme Hotchkiss ; 80 x 99,5 mm, à ne pas fusionner avec les 486/Anjou 1350 ultérieures."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.0 quatre-cylindres — 53 ch",
+              "code_moteur": "Hotchkiss 480",
+              "cylindree": "2 010 cm³",
+              "puissance_ch": 53,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et soupapes du moteur Hotchkiss",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km, mais âge et réfection priment",
+                  "diagnostic": "Identifier quatre-cylindres 2,0 l 480 ou six-cylindres 3,5 l 686 et niveau GS. Mesurer compressions/leak-down et pression, analyser huile, contrôler paliers, distribution, soupapes, pompe, radiateur, culasse/joints et corrosion.",
+                  "piece_concernee": "Moteur Hotchkiss 480/686",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque élevé si réfection ancienne",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 18 000 €"
+                },
+                {
+                  "probleme": "Carburation, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés",
+                    "Fuite, vapor-lock ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après stockage",
+                  "diagnostic": "Identifier carburateur simple/multiple et réglage 95/105/125 ch, contrôler réservoir, pompe, conduites, cuve, starter, avance, distributeur, bobine et bougies. Régler richesse sans masquer un manque de compression.",
+                  "piece_concernee": "Admission et allumage Hotchkiss",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquente avec carburant moderne et durites âgées",
+                  "cout_reparation_estime": "Élevé : environ 250 à 4 000 €"
+                },
+                {
+                  "probleme": "Boîte quatre rapports/Cotal, embrayage, arbre et pont",
+                  "symptomes": [
+                    "Rapport difficile",
+                    "Présélection défaillante",
+                    "Patinage, vibration ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Inspection avant achat et entretien spécialisé",
+                  "diagnostic": "Identifier boîte mécanique ou Cotal, contrôler huile, contacts et commande Cotal, embrayage, supports, arbre, croisillons, pont et roulements. Tester à chaud progressivement.",
+                  "piece_concernee": "Transmission Hotchkiss",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable et pièces spécifiques",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 10 000 €"
+                },
+                {
+                  "probleme": "Châssis, carrosserie, suspension, freins et authenticité",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Jeu, affaissement ou usure irrégulière",
+                    "Freinage faible ou numéros incohérents"
+                  ],
+                  "kilometrage_apparition": "Expertise complète avant acquisition",
+                  "diagnostic": "Identifier 480, 686, GS/Paris-Nice et carrosserie. Inspecter cadre, traverses, bois/panneaux, suspension, amortisseurs, direction, freins hydrauliques, roues, pneus et faisceau, puis rapprocher moteur et châssis des archives du club.",
+                  "piece_concernee": "Structure, sécurité et provenance Hotchkiss",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de mélange de pièces entre séries",
+                  "cout_reparation_estime": "Très élevé : environ 800 à plus de 35 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.club-hotchkiss.fr/fr/la-production-fr/vehicule-de-tourisme-fr/les-carrosseries-annees-fr"
+      ]
+    }
+  ]
+}

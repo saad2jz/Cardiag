@@ -1,0 +1,1219 @@
+{
+  "nom": "AC",
+  "modeles": [
+    {
+      "nom": "Ace",
+      "generations": [
+        {
+          "code_chassis": "Ace AC",
+          "annees": "1953–1963",
+          "phases": [
+            "Moteur AC à arbre à cames en tête d’origine 1919, plusieurs taux de compression et puissances."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "AC Light Six 2.0 — 85 ch",
+              "code_moteur": "AC Light Six",
+              "cylindree": "1 991 cm³",
+              "puissance_ch": 85,
+              "boite": [
+                "Moss manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et identification du six-cylindres",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "Âge et restauration priment ; contrôle avant saison",
+                  "diagnostic": "Identifier AC Light Six, Bristol 100B/100D ou Ford Zephyr Ruddspeed par numéros. Mesurer compressions/leak-down et pression, analyser huile, contrôler chaîne/engrenages, soupapes, paliers, pompe, radiateur, culasse et modifications.",
+                  "piece_concernee": "Moteur AC Ace historique",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque élevé de moteur remplacé ou préparé",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 18 000 €"
+                },
+                {
+                  "probleme": "Triple SU/Solex/Weber, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés",
+                    "Mélange inégal, fuite ou cliquetis"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après immobilisation",
+                  "diagnostic": "Identifier carburateurs selon moteur et stage Ruddspeed, contrôler réservoir, pompe, cuves, synchronisation, prises d’air, avance, distributeur et bougies. Régler chaque cylindre au banc sans supposer la puissance.",
+                  "piece_concernee": "Admission et allumage AC Ace",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après stockage ou préparation",
+                  "cout_reparation_estime": "Élevé : environ 300 à 4 500 €"
+                },
+                {
+                  "probleme": "Boîte Moss/Bristol/AC, embrayage, overdrive et pont",
+                  "symptomes": [
+                    "Rapport difficile",
+                    "Overdrive absent",
+                    "Patinage, vibration ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Souvent selon âge plus que kilométrage",
+                  "diagnostic": "Identifier boîte et rapports, contrôler huile, synchros, commande, solénoïde d’overdrive, embrayage, arbre, croisillons, différentiel et roulements. Vérifier adaptation Ford/Ruddspeed.",
+                  "piece_concernee": "Transmission AC Ace",
+                  "gravite": "Majeure",
+                  "frequence": "Usure variable sur voiture sportive",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 8 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, aluminium, lames transversales et freins",
+                  "symptomes": [
+                    "Tube fissuré ou corrodé",
+                    "Aluminium fissuré",
+                    "Jeu, géométrie ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle avant achat et après compétition",
+                  "diagnostic": "Inspecter tubes de 3 pouces, soudures, supports de carrosserie, aluminium formé main, lames transversales, triangles, amortisseurs, direction, tambours/disques selon année, roues à rayons et provenance au registre AC.",
+                  "piece_concernee": "Structure et authenticité AC Ace",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé de réparation ancienne ou transformation Cobra",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 50 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "AC Light Six haute compression — 102 ch",
+              "code_moteur": "AC Light Six high tune",
+              "cylindree": "1 991 cm³",
+              "puissance_ch": 102,
+              "boite": [
+                "Moss manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et identification du six-cylindres",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "Âge et restauration priment ; contrôle avant saison",
+                  "diagnostic": "Identifier AC Light Six, Bristol 100B/100D ou Ford Zephyr Ruddspeed par numéros. Mesurer compressions/leak-down et pression, analyser huile, contrôler chaîne/engrenages, soupapes, paliers, pompe, radiateur, culasse et modifications.",
+                  "piece_concernee": "Moteur AC Ace historique",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque élevé de moteur remplacé ou préparé",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 18 000 €"
+                },
+                {
+                  "probleme": "Triple SU/Solex/Weber, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés",
+                    "Mélange inégal, fuite ou cliquetis"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après immobilisation",
+                  "diagnostic": "Identifier carburateurs selon moteur et stage Ruddspeed, contrôler réservoir, pompe, cuves, synchronisation, prises d’air, avance, distributeur et bougies. Régler chaque cylindre au banc sans supposer la puissance.",
+                  "piece_concernee": "Admission et allumage AC Ace",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après stockage ou préparation",
+                  "cout_reparation_estime": "Élevé : environ 300 à 4 500 €"
+                },
+                {
+                  "probleme": "Boîte Moss/Bristol/AC, embrayage, overdrive et pont",
+                  "symptomes": [
+                    "Rapport difficile",
+                    "Overdrive absent",
+                    "Patinage, vibration ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Souvent selon âge plus que kilométrage",
+                  "diagnostic": "Identifier boîte et rapports, contrôler huile, synchros, commande, solénoïde d’overdrive, embrayage, arbre, croisillons, différentiel et roulements. Vérifier adaptation Ford/Ruddspeed.",
+                  "piece_concernee": "Transmission AC Ace",
+                  "gravite": "Majeure",
+                  "frequence": "Usure variable sur voiture sportive",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 8 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, aluminium, lames transversales et freins",
+                  "symptomes": [
+                    "Tube fissuré ou corrodé",
+                    "Aluminium fissuré",
+                    "Jeu, géométrie ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle avant achat et après compétition",
+                  "diagnostic": "Inspecter tubes de 3 pouces, soudures, supports de carrosserie, aluminium formé main, lames transversales, triangles, amortisseurs, direction, tambours/disques selon année, roues à rayons et provenance au registre AC.",
+                  "piece_concernee": "Structure et authenticité AC Ace",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé de réparation ancienne ou transformation Cobra",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 50 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Ace Bristol",
+          "annees": "1956–1964",
+          "phases": [
+            "Environ 466 Ace Bristol ; freins avant à disque disponibles puis standardisés."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Bristol Type 100B — 105 ch",
+              "code_moteur": "Bristol 100B",
+              "cylindree": "1 971 cm³",
+              "puissance_ch": 105,
+              "boite": [
+                "Bristol manuelle 4 rapports avec overdrive optionnel, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et identification du six-cylindres",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "Âge et restauration priment ; contrôle avant saison",
+                  "diagnostic": "Identifier AC Light Six, Bristol 100B/100D ou Ford Zephyr Ruddspeed par numéros. Mesurer compressions/leak-down et pression, analyser huile, contrôler chaîne/engrenages, soupapes, paliers, pompe, radiateur, culasse et modifications.",
+                  "piece_concernee": "Moteur AC Ace historique",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque élevé de moteur remplacé ou préparé",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 18 000 €"
+                },
+                {
+                  "probleme": "Triple SU/Solex/Weber, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés",
+                    "Mélange inégal, fuite ou cliquetis"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après immobilisation",
+                  "diagnostic": "Identifier carburateurs selon moteur et stage Ruddspeed, contrôler réservoir, pompe, cuves, synchronisation, prises d’air, avance, distributeur et bougies. Régler chaque cylindre au banc sans supposer la puissance.",
+                  "piece_concernee": "Admission et allumage AC Ace",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après stockage ou préparation",
+                  "cout_reparation_estime": "Élevé : environ 300 à 4 500 €"
+                },
+                {
+                  "probleme": "Boîte Moss/Bristol/AC, embrayage, overdrive et pont",
+                  "symptomes": [
+                    "Rapport difficile",
+                    "Overdrive absent",
+                    "Patinage, vibration ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Souvent selon âge plus que kilométrage",
+                  "diagnostic": "Identifier boîte et rapports, contrôler huile, synchros, commande, solénoïde d’overdrive, embrayage, arbre, croisillons, différentiel et roulements. Vérifier adaptation Ford/Ruddspeed.",
+                  "piece_concernee": "Transmission AC Ace",
+                  "gravite": "Majeure",
+                  "frequence": "Usure variable sur voiture sportive",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 8 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, aluminium, lames transversales et freins",
+                  "symptomes": [
+                    "Tube fissuré ou corrodé",
+                    "Aluminium fissuré",
+                    "Jeu, géométrie ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle avant achat et après compétition",
+                  "diagnostic": "Inspecter tubes de 3 pouces, soudures, supports de carrosserie, aluminium formé main, lames transversales, triangles, amortisseurs, direction, tambours/disques selon année, roues à rayons et provenance au registre AC.",
+                  "piece_concernee": "Structure et authenticité AC Ace",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé de réparation ancienne ou transformation Cobra",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 50 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Bristol Type 100D — 125 ch",
+              "code_moteur": "Bristol 100D",
+              "cylindree": "1 971 cm³",
+              "puissance_ch": 125,
+              "boite": [
+                "Bristol manuelle 4 rapports avec overdrive, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et identification du six-cylindres",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "Âge et restauration priment ; contrôle avant saison",
+                  "diagnostic": "Identifier AC Light Six, Bristol 100B/100D ou Ford Zephyr Ruddspeed par numéros. Mesurer compressions/leak-down et pression, analyser huile, contrôler chaîne/engrenages, soupapes, paliers, pompe, radiateur, culasse et modifications.",
+                  "piece_concernee": "Moteur AC Ace historique",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque élevé de moteur remplacé ou préparé",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 18 000 €"
+                },
+                {
+                  "probleme": "Triple SU/Solex/Weber, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés",
+                    "Mélange inégal, fuite ou cliquetis"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après immobilisation",
+                  "diagnostic": "Identifier carburateurs selon moteur et stage Ruddspeed, contrôler réservoir, pompe, cuves, synchronisation, prises d’air, avance, distributeur et bougies. Régler chaque cylindre au banc sans supposer la puissance.",
+                  "piece_concernee": "Admission et allumage AC Ace",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après stockage ou préparation",
+                  "cout_reparation_estime": "Élevé : environ 300 à 4 500 €"
+                },
+                {
+                  "probleme": "Boîte Moss/Bristol/AC, embrayage, overdrive et pont",
+                  "symptomes": [
+                    "Rapport difficile",
+                    "Overdrive absent",
+                    "Patinage, vibration ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Souvent selon âge plus que kilométrage",
+                  "diagnostic": "Identifier boîte et rapports, contrôler huile, synchros, commande, solénoïde d’overdrive, embrayage, arbre, croisillons, différentiel et roulements. Vérifier adaptation Ford/Ruddspeed.",
+                  "piece_concernee": "Transmission AC Ace",
+                  "gravite": "Majeure",
+                  "frequence": "Usure variable sur voiture sportive",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 8 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, aluminium, lames transversales et freins",
+                  "symptomes": [
+                    "Tube fissuré ou corrodé",
+                    "Aluminium fissuré",
+                    "Jeu, géométrie ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle avant achat et après compétition",
+                  "diagnostic": "Inspecter tubes de 3 pouces, soudures, supports de carrosserie, aluminium formé main, lames transversales, triangles, amortisseurs, direction, tambours/disques selon année, roues à rayons et provenance au registre AC.",
+                  "piece_concernee": "Structure et authenticité AC Ace",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé de réparation ancienne ou transformation Cobra",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 50 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Ace 2.6 Ford/Ruddspeed",
+          "annees": "1961–1963",
+          "phases": [
+            "Seulement 46 Ace Ford environ ; stages de 100 à 170 ch à authentifier par préparation."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Ford Zephyr 2.6 standard — 100 ch",
+              "code_moteur": "Ford Zephyr 2553",
+              "cylindree": "2 553 cm³",
+              "puissance_ch": 100,
+              "boite": [
+                "AC manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et identification du six-cylindres",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "Âge et restauration priment ; contrôle avant saison",
+                  "diagnostic": "Identifier AC Light Six, Bristol 100B/100D ou Ford Zephyr Ruddspeed par numéros. Mesurer compressions/leak-down et pression, analyser huile, contrôler chaîne/engrenages, soupapes, paliers, pompe, radiateur, culasse et modifications.",
+                  "piece_concernee": "Moteur AC Ace historique",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque élevé de moteur remplacé ou préparé",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 18 000 €"
+                },
+                {
+                  "probleme": "Triple SU/Solex/Weber, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés",
+                    "Mélange inégal, fuite ou cliquetis"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après immobilisation",
+                  "diagnostic": "Identifier carburateurs selon moteur et stage Ruddspeed, contrôler réservoir, pompe, cuves, synchronisation, prises d’air, avance, distributeur et bougies. Régler chaque cylindre au banc sans supposer la puissance.",
+                  "piece_concernee": "Admission et allumage AC Ace",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après stockage ou préparation",
+                  "cout_reparation_estime": "Élevé : environ 300 à 4 500 €"
+                },
+                {
+                  "probleme": "Boîte Moss/Bristol/AC, embrayage, overdrive et pont",
+                  "symptomes": [
+                    "Rapport difficile",
+                    "Overdrive absent",
+                    "Patinage, vibration ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Souvent selon âge plus que kilométrage",
+                  "diagnostic": "Identifier boîte et rapports, contrôler huile, synchros, commande, solénoïde d’overdrive, embrayage, arbre, croisillons, différentiel et roulements. Vérifier adaptation Ford/Ruddspeed.",
+                  "piece_concernee": "Transmission AC Ace",
+                  "gravite": "Majeure",
+                  "frequence": "Usure variable sur voiture sportive",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 8 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, aluminium, lames transversales et freins",
+                  "symptomes": [
+                    "Tube fissuré ou corrodé",
+                    "Aluminium fissuré",
+                    "Jeu, géométrie ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle avant achat et après compétition",
+                  "diagnostic": "Inspecter tubes de 3 pouces, soudures, supports de carrosserie, aluminium formé main, lames transversales, triangles, amortisseurs, direction, tambours/disques selon année, roues à rayons et provenance au registre AC.",
+                  "piece_concernee": "Structure et authenticité AC Ace",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé de réparation ancienne ou transformation Cobra",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 50 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Ruddspeed Stage 1–3 — 130 ch",
+              "code_moteur": "Ford Zephyr Ruddspeed",
+              "cylindree": "2 553 cm³",
+              "puissance_ch": 130,
+              "boite": [
+                "AC manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et identification du six-cylindres",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "Âge et restauration priment ; contrôle avant saison",
+                  "diagnostic": "Identifier AC Light Six, Bristol 100B/100D ou Ford Zephyr Ruddspeed par numéros. Mesurer compressions/leak-down et pression, analyser huile, contrôler chaîne/engrenages, soupapes, paliers, pompe, radiateur, culasse et modifications.",
+                  "piece_concernee": "Moteur AC Ace historique",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque élevé de moteur remplacé ou préparé",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 18 000 €"
+                },
+                {
+                  "probleme": "Triple SU/Solex/Weber, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés",
+                    "Mélange inégal, fuite ou cliquetis"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après immobilisation",
+                  "diagnostic": "Identifier carburateurs selon moteur et stage Ruddspeed, contrôler réservoir, pompe, cuves, synchronisation, prises d’air, avance, distributeur et bougies. Régler chaque cylindre au banc sans supposer la puissance.",
+                  "piece_concernee": "Admission et allumage AC Ace",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après stockage ou préparation",
+                  "cout_reparation_estime": "Élevé : environ 300 à 4 500 €"
+                },
+                {
+                  "probleme": "Boîte Moss/Bristol/AC, embrayage, overdrive et pont",
+                  "symptomes": [
+                    "Rapport difficile",
+                    "Overdrive absent",
+                    "Patinage, vibration ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Souvent selon âge plus que kilométrage",
+                  "diagnostic": "Identifier boîte et rapports, contrôler huile, synchros, commande, solénoïde d’overdrive, embrayage, arbre, croisillons, différentiel et roulements. Vérifier adaptation Ford/Ruddspeed.",
+                  "piece_concernee": "Transmission AC Ace",
+                  "gravite": "Majeure",
+                  "frequence": "Usure variable sur voiture sportive",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 8 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, aluminium, lames transversales et freins",
+                  "symptomes": [
+                    "Tube fissuré ou corrodé",
+                    "Aluminium fissuré",
+                    "Jeu, géométrie ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle avant achat et après compétition",
+                  "diagnostic": "Inspecter tubes de 3 pouces, soudures, supports de carrosserie, aluminium formé main, lames transversales, triangles, amortisseurs, direction, tambours/disques selon année, roues à rayons et provenance au registre AC.",
+                  "piece_concernee": "Structure et authenticité AC Ace",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé de réparation ancienne ou transformation Cobra",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 50 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Ruddspeed Stage 4 — 170 ch",
+              "code_moteur": "Ford Zephyr Ruddspeed Stage 4",
+              "cylindree": "2 553 cm³",
+              "puissance_ch": 170,
+              "boite": [
+                "AC manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et identification du six-cylindres",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "Âge et restauration priment ; contrôle avant saison",
+                  "diagnostic": "Identifier AC Light Six, Bristol 100B/100D ou Ford Zephyr Ruddspeed par numéros. Mesurer compressions/leak-down et pression, analyser huile, contrôler chaîne/engrenages, soupapes, paliers, pompe, radiateur, culasse et modifications.",
+                  "piece_concernee": "Moteur AC Ace historique",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque élevé de moteur remplacé ou préparé",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 18 000 €"
+                },
+                {
+                  "probleme": "Triple SU/Solex/Weber, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés",
+                    "Mélange inégal, fuite ou cliquetis"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après immobilisation",
+                  "diagnostic": "Identifier carburateurs selon moteur et stage Ruddspeed, contrôler réservoir, pompe, cuves, synchronisation, prises d’air, avance, distributeur et bougies. Régler chaque cylindre au banc sans supposer la puissance.",
+                  "piece_concernee": "Admission et allumage AC Ace",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après stockage ou préparation",
+                  "cout_reparation_estime": "Élevé : environ 300 à 4 500 €"
+                },
+                {
+                  "probleme": "Boîte Moss/Bristol/AC, embrayage, overdrive et pont",
+                  "symptomes": [
+                    "Rapport difficile",
+                    "Overdrive absent",
+                    "Patinage, vibration ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Souvent selon âge plus que kilométrage",
+                  "diagnostic": "Identifier boîte et rapports, contrôler huile, synchros, commande, solénoïde d’overdrive, embrayage, arbre, croisillons, différentiel et roulements. Vérifier adaptation Ford/Ruddspeed.",
+                  "piece_concernee": "Transmission AC Ace",
+                  "gravite": "Majeure",
+                  "frequence": "Usure variable sur voiture sportive",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 8 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, aluminium, lames transversales et freins",
+                  "symptomes": [
+                    "Tube fissuré ou corrodé",
+                    "Aluminium fissuré",
+                    "Jeu, géométrie ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle avant achat et après compétition",
+                  "diagnostic": "Inspecter tubes de 3 pouces, soudures, supports de carrosserie, aluminium formé main, lames transversales, triangles, amortisseurs, direction, tambours/disques selon année, roues à rayons et provenance au registre AC.",
+                  "piece_concernee": "Structure et authenticité AC Ace",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé de réparation ancienne ou transformation Cobra",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 50 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Ace Classic thermique",
+          "annees": "2024–aujourd’hui",
+          "phases": [
+            "Continuation moderne en carbone sur châssis tubulaire, valeurs de présérie annoncées par AC Cars."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Ford 2.3 EcoBoost — 320 ch",
+              "code_moteur": "Ford EcoBoost AC",
+              "cylindree": "2 261 cm³",
+              "puissance_ch": 320,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et identification du six-cylindres",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "Âge et restauration priment ; contrôle avant saison",
+                  "diagnostic": "Identifier AC Light Six, Bristol 100B/100D ou Ford Zephyr Ruddspeed par numéros. Mesurer compressions/leak-down et pression, analyser huile, contrôler chaîne/engrenages, soupapes, paliers, pompe, radiateur, culasse et modifications.",
+                  "piece_concernee": "Moteur AC Ace historique",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque élevé de moteur remplacé ou préparé",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 18 000 €"
+                },
+                {
+                  "probleme": "Triple SU/Solex/Weber, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés",
+                    "Mélange inégal, fuite ou cliquetis"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après immobilisation",
+                  "diagnostic": "Identifier carburateurs selon moteur et stage Ruddspeed, contrôler réservoir, pompe, cuves, synchronisation, prises d’air, avance, distributeur et bougies. Régler chaque cylindre au banc sans supposer la puissance.",
+                  "piece_concernee": "Admission et allumage AC Ace",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après stockage ou préparation",
+                  "cout_reparation_estime": "Élevé : environ 300 à 4 500 €"
+                },
+                {
+                  "probleme": "Boîte Moss/Bristol/AC, embrayage, overdrive et pont",
+                  "symptomes": [
+                    "Rapport difficile",
+                    "Overdrive absent",
+                    "Patinage, vibration ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Souvent selon âge plus que kilométrage",
+                  "diagnostic": "Identifier boîte et rapports, contrôler huile, synchros, commande, solénoïde d’overdrive, embrayage, arbre, croisillons, différentiel et roulements. Vérifier adaptation Ford/Ruddspeed.",
+                  "piece_concernee": "Transmission AC Ace",
+                  "gravite": "Majeure",
+                  "frequence": "Usure variable sur voiture sportive",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 8 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, aluminium, lames transversales et freins",
+                  "symptomes": [
+                    "Tube fissuré ou corrodé",
+                    "Aluminium fissuré",
+                    "Jeu, géométrie ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle avant achat et après compétition",
+                  "diagnostic": "Inspecter tubes de 3 pouces, soudures, supports de carrosserie, aluminium formé main, lames transversales, triangles, amortisseurs, direction, tambours/disques selon année, roues à rayons et provenance au registre AC.",
+                  "piece_concernee": "Structure et authenticité AC Ace",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé de réparation ancienne ou transformation Cobra",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 50 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Ace Classic EV",
+          "annees": "2024–aujourd’hui",
+          "phases": [
+            "Version électrique officielle annoncée à 225 kW et batterie 72 kWh."
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "TREMEC eGT413 — 301 ch",
+              "code_moteur": "TREMEC eGT413",
+              "cylindree": "Électrique — batterie 72 kWh",
+              "puissance_ch": 301,
+              "boite": [
+                "Entraînement direct, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et identification du six-cylindres",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "Âge et restauration priment ; contrôle avant saison",
+                  "diagnostic": "Identifier AC Light Six, Bristol 100B/100D ou Ford Zephyr Ruddspeed par numéros. Mesurer compressions/leak-down et pression, analyser huile, contrôler chaîne/engrenages, soupapes, paliers, pompe, radiateur, culasse et modifications.",
+                  "piece_concernee": "Moteur AC Ace historique",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque élevé de moteur remplacé ou préparé",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 18 000 €"
+                },
+                {
+                  "probleme": "Triple SU/Solex/Weber, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés",
+                    "Mélange inégal, fuite ou cliquetis"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après immobilisation",
+                  "diagnostic": "Identifier carburateurs selon moteur et stage Ruddspeed, contrôler réservoir, pompe, cuves, synchronisation, prises d’air, avance, distributeur et bougies. Régler chaque cylindre au banc sans supposer la puissance.",
+                  "piece_concernee": "Admission et allumage AC Ace",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après stockage ou préparation",
+                  "cout_reparation_estime": "Élevé : environ 300 à 4 500 €"
+                },
+                {
+                  "probleme": "Boîte Moss/Bristol/AC, embrayage, overdrive et pont",
+                  "symptomes": [
+                    "Rapport difficile",
+                    "Overdrive absent",
+                    "Patinage, vibration ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Souvent selon âge plus que kilométrage",
+                  "diagnostic": "Identifier boîte et rapports, contrôler huile, synchros, commande, solénoïde d’overdrive, embrayage, arbre, croisillons, différentiel et roulements. Vérifier adaptation Ford/Ruddspeed.",
+                  "piece_concernee": "Transmission AC Ace",
+                  "gravite": "Majeure",
+                  "frequence": "Usure variable sur voiture sportive",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 8 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, aluminium, lames transversales et freins",
+                  "symptomes": [
+                    "Tube fissuré ou corrodé",
+                    "Aluminium fissuré",
+                    "Jeu, géométrie ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle avant achat et après compétition",
+                  "diagnostic": "Inspecter tubes de 3 pouces, soudures, supports de carrosserie, aluminium formé main, lames transversales, triangles, amortisseurs, direction, tambours/disques selon année, roues à rayons et provenance au registre AC.",
+                  "piece_concernee": "Structure et authenticité AC Ace",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé de réparation ancienne ou transformation Cobra",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 50 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.acownersclub.co.uk/ac-models/ac-aces/",
+        "https://ac.cars/ac-ace-ac-ace-bristol/"
+      ]
+    },
+    {
+      "nom": "Cobra",
+      "generations": [
+        {
+          "code_chassis": "Cobra Mk I 260",
+          "annees": "1962–1963",
+          "phases": [
+            "Première série CSX2000 à ressorts à lames ; puissance routière indicative selon réglage."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Ford 260 V8 — 260 ch",
+              "code_moteur": "Ford small-block 260",
+              "cylindree": "4 261 cm³",
+              "puissance_ch": 260,
+              "boite": [
+                "Borg-Warner/Toploader manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et intégrité du Ford small/big-block",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km ; heures de course et préparation priment",
+                  "diagnostic": "Décoder 260, 289, 427 side-oiler ou 428 et numéros. Mesurer compressions/leak-down et pression, analyser huile/filtre, contrôler pompe, chaîne, poussoirs, culasses/joints, radiateur, ventilateurs et carter adapté à l’usage.",
+                  "piece_concernee": "V8 Ford AC/Shelby Cobra",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé sur moteur préparé ou non d’origine",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 25 000 €"
+                },
+                {
+                  "probleme": "Carburateur(s), alimentation, allumage et échappement latéral",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés sous charge",
+                    "Fuite, vapor-lock, cliquetis ou mélange pauvre"
+                  ],
+                  "kilometrage_apparition": "Réglage fréquent et avant piste",
+                  "diagnostic": "Identifier simple quatre corps ou Weber cross-ram, contrôler réservoir, pompes, filtres, cuves, tringlerie, avance, distributeur, bobine, bougies et échappement. Valider richesse et température cylindre par cylindre.",
+                  "piece_concernee": "Admission, allumage et échappement Cobra",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente avec chaleur et carburant moderne",
+                  "cout_reparation_estime": "Élevé : environ 300 à 6 000 €"
+                },
+                {
+                  "probleme": "Toploader quatre rapports, embrayage, différentiel et demi-arbres",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Vibration, fuite ou claquement"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et après départs violents",
+                  "diagnostic": "Contrôler huile/limaille, synchros, commande, embrayage, volant moteur, supports, arbre, croisillons, Salisbury/différentiel, demi-arbres et moyeux. Sur Mk III, inspecter les éléments de suspension à ressorts hélicoïdaux.",
+                  "piece_concernee": "Transmission Cobra",
+                  "gravite": "Critique",
+                  "frequence": "Usure élevée avec couple big-block",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 10 000 €"
+                },
+                {
+                  "probleme": "Châssis, aluminium, suspension, freins et authenticité CSX/COB/COX",
+                  "symptomes": [
+                    "Fissure ou déformation",
+                    "Géométrie instable",
+                    "Freinage irrégulier ou identité douteuse"
+                  ],
+                  "kilometrage_apparition": "Expertise par spécialiste et registre avant acquisition",
+                  "diagnostic": "Vérifier numéro CSX/COB/COX, tubes 3 ou 4 pouces, leaf/coil spring, moteur et carrosserie. Inspecter cadre, soudures, aluminium, ancrages, direction, freins, roues et réparations ; distinguer original, continuation et réplique.",
+                  "piece_concernee": "Structure et provenance AC Cobra",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque extrême de réplique ou reconstruction",
+                  "cout_reparation_estime": "Extrême : expertise puis restauration pouvant dépasser 150 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Cobra Mk I/Mk II 289 route",
+          "annees": "1963–1965",
+          "phases": [
+            "Small-block 289, châssis à lames ; distinguer route et préparation FIA."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Ford 289 V8 — 271 ch",
+              "code_moteur": "Ford small-block 289",
+              "cylindree": "4 727 cm³",
+              "puissance_ch": 271,
+              "boite": [
+                "Toploader manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et intégrité du Ford small/big-block",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km ; heures de course et préparation priment",
+                  "diagnostic": "Décoder 260, 289, 427 side-oiler ou 428 et numéros. Mesurer compressions/leak-down et pression, analyser huile/filtre, contrôler pompe, chaîne, poussoirs, culasses/joints, radiateur, ventilateurs et carter adapté à l’usage.",
+                  "piece_concernee": "V8 Ford AC/Shelby Cobra",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé sur moteur préparé ou non d’origine",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 25 000 €"
+                },
+                {
+                  "probleme": "Carburateur(s), alimentation, allumage et échappement latéral",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés sous charge",
+                    "Fuite, vapor-lock, cliquetis ou mélange pauvre"
+                  ],
+                  "kilometrage_apparition": "Réglage fréquent et avant piste",
+                  "diagnostic": "Identifier simple quatre corps ou Weber cross-ram, contrôler réservoir, pompes, filtres, cuves, tringlerie, avance, distributeur, bobine, bougies et échappement. Valider richesse et température cylindre par cylindre.",
+                  "piece_concernee": "Admission, allumage et échappement Cobra",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente avec chaleur et carburant moderne",
+                  "cout_reparation_estime": "Élevé : environ 300 à 6 000 €"
+                },
+                {
+                  "probleme": "Toploader quatre rapports, embrayage, différentiel et demi-arbres",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Vibration, fuite ou claquement"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et après départs violents",
+                  "diagnostic": "Contrôler huile/limaille, synchros, commande, embrayage, volant moteur, supports, arbre, croisillons, Salisbury/différentiel, demi-arbres et moyeux. Sur Mk III, inspecter les éléments de suspension à ressorts hélicoïdaux.",
+                  "piece_concernee": "Transmission Cobra",
+                  "gravite": "Critique",
+                  "frequence": "Usure élevée avec couple big-block",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 10 000 €"
+                },
+                {
+                  "probleme": "Châssis, aluminium, suspension, freins et authenticité CSX/COB/COX",
+                  "symptomes": [
+                    "Fissure ou déformation",
+                    "Géométrie instable",
+                    "Freinage irrégulier ou identité douteuse"
+                  ],
+                  "kilometrage_apparition": "Expertise par spécialiste et registre avant acquisition",
+                  "diagnostic": "Vérifier numéro CSX/COB/COX, tubes 3 ou 4 pouces, leaf/coil spring, moteur et carrosserie. Inspecter cadre, soudures, aluminium, ancrages, direction, freins, roues et réparations ; distinguer original, continuation et réplique.",
+                  "piece_concernee": "Structure et provenance AC Cobra",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque extrême de réplique ou reconstruction",
+                  "cout_reparation_estime": "Extrême : expertise puis restauration pouvant dépasser 150 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Cobra 289 FIA",
+          "annees": "1964–1965",
+          "phases": [
+            "Environ 330–340 ch selon la FIA et la préparation de course."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Ford 289 V8 compétition — 335 ch",
+              "code_moteur": "Ford 289 FIA",
+              "cylindree": "4 727 cm³",
+              "puissance_ch": 335,
+              "boite": [
+                "Toploader manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et intégrité du Ford small/big-block",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km ; heures de course et préparation priment",
+                  "diagnostic": "Décoder 260, 289, 427 side-oiler ou 428 et numéros. Mesurer compressions/leak-down et pression, analyser huile/filtre, contrôler pompe, chaîne, poussoirs, culasses/joints, radiateur, ventilateurs et carter adapté à l’usage.",
+                  "piece_concernee": "V8 Ford AC/Shelby Cobra",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé sur moteur préparé ou non d’origine",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 25 000 €"
+                },
+                {
+                  "probleme": "Carburateur(s), alimentation, allumage et échappement latéral",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés sous charge",
+                    "Fuite, vapor-lock, cliquetis ou mélange pauvre"
+                  ],
+                  "kilometrage_apparition": "Réglage fréquent et avant piste",
+                  "diagnostic": "Identifier simple quatre corps ou Weber cross-ram, contrôler réservoir, pompes, filtres, cuves, tringlerie, avance, distributeur, bobine, bougies et échappement. Valider richesse et température cylindre par cylindre.",
+                  "piece_concernee": "Admission, allumage et échappement Cobra",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente avec chaleur et carburant moderne",
+                  "cout_reparation_estime": "Élevé : environ 300 à 6 000 €"
+                },
+                {
+                  "probleme": "Toploader quatre rapports, embrayage, différentiel et demi-arbres",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Vibration, fuite ou claquement"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et après départs violents",
+                  "diagnostic": "Contrôler huile/limaille, synchros, commande, embrayage, volant moteur, supports, arbre, croisillons, Salisbury/différentiel, demi-arbres et moyeux. Sur Mk III, inspecter les éléments de suspension à ressorts hélicoïdaux.",
+                  "piece_concernee": "Transmission Cobra",
+                  "gravite": "Critique",
+                  "frequence": "Usure élevée avec couple big-block",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 10 000 €"
+                },
+                {
+                  "probleme": "Châssis, aluminium, suspension, freins et authenticité CSX/COB/COX",
+                  "symptomes": [
+                    "Fissure ou déformation",
+                    "Géométrie instable",
+                    "Freinage irrégulier ou identité douteuse"
+                  ],
+                  "kilometrage_apparition": "Expertise par spécialiste et registre avant acquisition",
+                  "diagnostic": "Vérifier numéro CSX/COB/COX, tubes 3 ou 4 pouces, leaf/coil spring, moteur et carrosserie. Inspecter cadre, soudures, aluminium, ancrages, direction, freins, roues et réparations ; distinguer original, continuation et réplique.",
+                  "piece_concernee": "Structure et provenance AC Cobra",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque extrême de réplique ou reconstruction",
+                  "cout_reparation_estime": "Extrême : expertise puis restauration pouvant dépasser 150 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Cobra Mk III 427 Street",
+          "annees": "1965–1967",
+          "phases": [
+            "Nouveau châssis à tubes de 4 pouces, ressorts hélicoïdaux et voies élargies."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Ford 427 V8 side-oiler — 425 ch",
+              "code_moteur": "Ford FE 427 side-oiler",
+              "cylindree": "6 997 cm³",
+              "puissance_ch": 425,
+              "boite": [
+                "Toploader manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et intégrité du Ford small/big-block",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km ; heures de course et préparation priment",
+                  "diagnostic": "Décoder 260, 289, 427 side-oiler ou 428 et numéros. Mesurer compressions/leak-down et pression, analyser huile/filtre, contrôler pompe, chaîne, poussoirs, culasses/joints, radiateur, ventilateurs et carter adapté à l’usage.",
+                  "piece_concernee": "V8 Ford AC/Shelby Cobra",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé sur moteur préparé ou non d’origine",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 25 000 €"
+                },
+                {
+                  "probleme": "Carburateur(s), alimentation, allumage et échappement latéral",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés sous charge",
+                    "Fuite, vapor-lock, cliquetis ou mélange pauvre"
+                  ],
+                  "kilometrage_apparition": "Réglage fréquent et avant piste",
+                  "diagnostic": "Identifier simple quatre corps ou Weber cross-ram, contrôler réservoir, pompes, filtres, cuves, tringlerie, avance, distributeur, bobine, bougies et échappement. Valider richesse et température cylindre par cylindre.",
+                  "piece_concernee": "Admission, allumage et échappement Cobra",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente avec chaleur et carburant moderne",
+                  "cout_reparation_estime": "Élevé : environ 300 à 6 000 €"
+                },
+                {
+                  "probleme": "Toploader quatre rapports, embrayage, différentiel et demi-arbres",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Vibration, fuite ou claquement"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et après départs violents",
+                  "diagnostic": "Contrôler huile/limaille, synchros, commande, embrayage, volant moteur, supports, arbre, croisillons, Salisbury/différentiel, demi-arbres et moyeux. Sur Mk III, inspecter les éléments de suspension à ressorts hélicoïdaux.",
+                  "piece_concernee": "Transmission Cobra",
+                  "gravite": "Critique",
+                  "frequence": "Usure élevée avec couple big-block",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 10 000 €"
+                },
+                {
+                  "probleme": "Châssis, aluminium, suspension, freins et authenticité CSX/COB/COX",
+                  "symptomes": [
+                    "Fissure ou déformation",
+                    "Géométrie instable",
+                    "Freinage irrégulier ou identité douteuse"
+                  ],
+                  "kilometrage_apparition": "Expertise par spécialiste et registre avant acquisition",
+                  "diagnostic": "Vérifier numéro CSX/COB/COX, tubes 3 ou 4 pouces, leaf/coil spring, moteur et carrosserie. Inspecter cadre, soudures, aluminium, ancrages, direction, freins, roues et réparations ; distinguer original, continuation et réplique.",
+                  "piece_concernee": "Structure et provenance AC Cobra",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque extrême de réplique ou reconstruction",
+                  "cout_reparation_estime": "Extrême : expertise puis restauration pouvant dépasser 150 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Cobra Mk III 427 S/C",
+          "annees": "1965–1967",
+          "phases": [
+            "S/C issues de châssis compétition invendus ; AC indique plus de 500 hp selon configuration."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Ford 427 V8 Semi-Competition — 485 ch",
+              "code_moteur": "Ford FE 427 S/C",
+              "cylindree": "6 997 cm³",
+              "puissance_ch": 485,
+              "boite": [
+                "Toploader manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et intégrité du Ford small/big-block",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km ; heures de course et préparation priment",
+                  "diagnostic": "Décoder 260, 289, 427 side-oiler ou 428 et numéros. Mesurer compressions/leak-down et pression, analyser huile/filtre, contrôler pompe, chaîne, poussoirs, culasses/joints, radiateur, ventilateurs et carter adapté à l’usage.",
+                  "piece_concernee": "V8 Ford AC/Shelby Cobra",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé sur moteur préparé ou non d’origine",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 25 000 €"
+                },
+                {
+                  "probleme": "Carburateur(s), alimentation, allumage et échappement latéral",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés sous charge",
+                    "Fuite, vapor-lock, cliquetis ou mélange pauvre"
+                  ],
+                  "kilometrage_apparition": "Réglage fréquent et avant piste",
+                  "diagnostic": "Identifier simple quatre corps ou Weber cross-ram, contrôler réservoir, pompes, filtres, cuves, tringlerie, avance, distributeur, bobine, bougies et échappement. Valider richesse et température cylindre par cylindre.",
+                  "piece_concernee": "Admission, allumage et échappement Cobra",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente avec chaleur et carburant moderne",
+                  "cout_reparation_estime": "Élevé : environ 300 à 6 000 €"
+                },
+                {
+                  "probleme": "Toploader quatre rapports, embrayage, différentiel et demi-arbres",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Vibration, fuite ou claquement"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et après départs violents",
+                  "diagnostic": "Contrôler huile/limaille, synchros, commande, embrayage, volant moteur, supports, arbre, croisillons, Salisbury/différentiel, demi-arbres et moyeux. Sur Mk III, inspecter les éléments de suspension à ressorts hélicoïdaux.",
+                  "piece_concernee": "Transmission Cobra",
+                  "gravite": "Critique",
+                  "frequence": "Usure élevée avec couple big-block",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 10 000 €"
+                },
+                {
+                  "probleme": "Châssis, aluminium, suspension, freins et authenticité CSX/COB/COX",
+                  "symptomes": [
+                    "Fissure ou déformation",
+                    "Géométrie instable",
+                    "Freinage irrégulier ou identité douteuse"
+                  ],
+                  "kilometrage_apparition": "Expertise par spécialiste et registre avant acquisition",
+                  "diagnostic": "Vérifier numéro CSX/COB/COX, tubes 3 ou 4 pouces, leaf/coil spring, moteur et carrosserie. Inspecter cadre, soudures, aluminium, ancrages, direction, freins, roues et réparations ; distinguer original, continuation et réplique.",
+                  "piece_concernee": "Structure et provenance AC Cobra",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque extrême de réplique ou reconstruction",
+                  "cout_reparation_estime": "Extrême : expertise puis restauration pouvant dépasser 150 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Cobra Mk III 428",
+          "annees": "1966–1967",
+          "phases": [
+            "Certains Street Cobra ont reçu le 428 lorsque le 427 manquait ; identification du bloc impérative."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Ford 428 V8 — 345 ch",
+              "code_moteur": "Ford FE 428 Police Interceptor",
+              "cylindree": "7 014 cm³",
+              "puissance_ch": 345,
+              "boite": [
+                "Toploader manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et intégrité du Ford small/big-block",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km ; heures de course et préparation priment",
+                  "diagnostic": "Décoder 260, 289, 427 side-oiler ou 428 et numéros. Mesurer compressions/leak-down et pression, analyser huile/filtre, contrôler pompe, chaîne, poussoirs, culasses/joints, radiateur, ventilateurs et carter adapté à l’usage.",
+                  "piece_concernee": "V8 Ford AC/Shelby Cobra",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé sur moteur préparé ou non d’origine",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 25 000 €"
+                },
+                {
+                  "probleme": "Carburateur(s), alimentation, allumage et échappement latéral",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés sous charge",
+                    "Fuite, vapor-lock, cliquetis ou mélange pauvre"
+                  ],
+                  "kilometrage_apparition": "Réglage fréquent et avant piste",
+                  "diagnostic": "Identifier simple quatre corps ou Weber cross-ram, contrôler réservoir, pompes, filtres, cuves, tringlerie, avance, distributeur, bobine, bougies et échappement. Valider richesse et température cylindre par cylindre.",
+                  "piece_concernee": "Admission, allumage et échappement Cobra",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente avec chaleur et carburant moderne",
+                  "cout_reparation_estime": "Élevé : environ 300 à 6 000 €"
+                },
+                {
+                  "probleme": "Toploader quatre rapports, embrayage, différentiel et demi-arbres",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Vibration, fuite ou claquement"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et après départs violents",
+                  "diagnostic": "Contrôler huile/limaille, synchros, commande, embrayage, volant moteur, supports, arbre, croisillons, Salisbury/différentiel, demi-arbres et moyeux. Sur Mk III, inspecter les éléments de suspension à ressorts hélicoïdaux.",
+                  "piece_concernee": "Transmission Cobra",
+                  "gravite": "Critique",
+                  "frequence": "Usure élevée avec couple big-block",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 10 000 €"
+                },
+                {
+                  "probleme": "Châssis, aluminium, suspension, freins et authenticité CSX/COB/COX",
+                  "symptomes": [
+                    "Fissure ou déformation",
+                    "Géométrie instable",
+                    "Freinage irrégulier ou identité douteuse"
+                  ],
+                  "kilometrage_apparition": "Expertise par spécialiste et registre avant acquisition",
+                  "diagnostic": "Vérifier numéro CSX/COB/COX, tubes 3 ou 4 pouces, leaf/coil spring, moteur et carrosserie. Inspecter cadre, soudures, aluminium, ancrages, direction, freins, roues et réparations ; distinguer original, continuation et réplique.",
+                  "piece_concernee": "Structure et provenance AC Cobra",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque extrême de réplique ou reconstruction",
+                  "cout_reparation_estime": "Extrême : expertise puis restauration pouvant dépasser 150 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "AC 289 Sports",
+          "annees": "1966–1969",
+          "phases": [
+            "Continuation britannique small-block sur châssis coil-spring de Mk III, environ 27 exemplaires."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Ford 289 V8 — 271 ch",
+              "code_moteur": "Ford small-block 289 AC",
+              "cylindree": "4 727 cm³",
+              "puissance_ch": 271,
+              "boite": [
+                "Toploader manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et intégrité du Ford small/big-block",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km ; heures de course et préparation priment",
+                  "diagnostic": "Décoder 260, 289, 427 side-oiler ou 428 et numéros. Mesurer compressions/leak-down et pression, analyser huile/filtre, contrôler pompe, chaîne, poussoirs, culasses/joints, radiateur, ventilateurs et carter adapté à l’usage.",
+                  "piece_concernee": "V8 Ford AC/Shelby Cobra",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé sur moteur préparé ou non d’origine",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 25 000 €"
+                },
+                {
+                  "probleme": "Carburateur(s), alimentation, allumage et échappement latéral",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés sous charge",
+                    "Fuite, vapor-lock, cliquetis ou mélange pauvre"
+                  ],
+                  "kilometrage_apparition": "Réglage fréquent et avant piste",
+                  "diagnostic": "Identifier simple quatre corps ou Weber cross-ram, contrôler réservoir, pompes, filtres, cuves, tringlerie, avance, distributeur, bobine, bougies et échappement. Valider richesse et température cylindre par cylindre.",
+                  "piece_concernee": "Admission, allumage et échappement Cobra",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente avec chaleur et carburant moderne",
+                  "cout_reparation_estime": "Élevé : environ 300 à 6 000 €"
+                },
+                {
+                  "probleme": "Toploader quatre rapports, embrayage, différentiel et demi-arbres",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Vibration, fuite ou claquement"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et après départs violents",
+                  "diagnostic": "Contrôler huile/limaille, synchros, commande, embrayage, volant moteur, supports, arbre, croisillons, Salisbury/différentiel, demi-arbres et moyeux. Sur Mk III, inspecter les éléments de suspension à ressorts hélicoïdaux.",
+                  "piece_concernee": "Transmission Cobra",
+                  "gravite": "Critique",
+                  "frequence": "Usure élevée avec couple big-block",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 10 000 €"
+                },
+                {
+                  "probleme": "Châssis, aluminium, suspension, freins et authenticité CSX/COB/COX",
+                  "symptomes": [
+                    "Fissure ou déformation",
+                    "Géométrie instable",
+                    "Freinage irrégulier ou identité douteuse"
+                  ],
+                  "kilometrage_apparition": "Expertise par spécialiste et registre avant acquisition",
+                  "diagnostic": "Vérifier numéro CSX/COB/COX, tubes 3 ou 4 pouces, leaf/coil spring, moteur et carrosserie. Inspecter cadre, soudures, aluminium, ancrages, direction, freins, roues et réparations ; distinguer original, continuation et réplique.",
+                  "piece_concernee": "Structure et provenance AC Cobra",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque extrême de réplique ou reconstruction",
+                  "cout_reparation_estime": "Extrême : expertise puis restauration pouvant dépasser 150 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://historicdb.fia.com/model/cobra",
+        "https://ac.cars/en-us/history/"
+      ]
+    }
+  ]
+}

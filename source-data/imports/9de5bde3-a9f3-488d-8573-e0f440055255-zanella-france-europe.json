@@ -1,0 +1,76 @@
+{
+  "nom": "Zanella",
+  "modeles": [
+    {
+      "nom": "Zity",
+      "generations": [
+        {
+          "code_chassis": "Prototype Zity trois-roues",
+          "annees": "2011–2012",
+          "phases": [
+            "Prototype quatre places annoncé pour 2012 mais sans production commerciale démontrée ; ce n’était pas un véhicule électrique malgré l’ancienne entrée du catalogue."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Z-Max monocylindre 200 — 15 ch",
+              "code_moteur": "Zanella Z-Max 200",
+              "cylindree": "197 cm³",
+              "puissance_ch": 15,
+              "boite": [
+                "Manuelle 5 rapports avec marche arrière, architecture trois-roues"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carburation, refroidissement par air, allumage et lubrification du 200 cm³",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Surchauffe",
+                    "Fumée, ratés ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Aucun seuil statistique ; prototype à contrôler avant chaque usage",
+                  "diagnostic": "Identifier le moteur Z-Max 200 réellement monté, mesurer compression, contrôler huile, jeu aux soupapes, carburateur, CDI/bobine, démarreur, refroidissement et échappement ; vérifier numéro moteur, pièces chinoises compatibles et absence de fuite carburant",
+                  "piece_concernee": "Monocylindre Zanella/Z-Max 200 de prototype",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Inconnue faute de série commerciale",
+                  "cout_reparation_estime": "Élevé ou sans solution : environ 300 à 3 000 €"
+                },
+                {
+                  "probleme": "Transmission moto, chaîne/différentiel et train arrière à trois roues",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport ou marche arrière indisponible",
+                    "À-coups, bruit ou instabilité"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant chaque circulation",
+                  "diagnostic": "Contrôler embrayage, boîte cinq rapports et marche arrière, chaîne/courroie ou arbre selon prototype, différentiel, roulements, alignement et tension ; inspecter moyeu/roue unique ou essieu selon configuration photographiée et ne pas rouler sans dossier de conception",
+                  "piece_concernee": "Transmission et architecture trois-roues Zity",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable",
+                  "cout_reparation_estime": "Variable : environ 300 à plus de 4 000 €"
+                },
+                {
+                  "probleme": "Châssis prototype, freins, direction, vitrage et homologation",
+                  "symptomes": [
+                    "Fissure",
+                    "Jeu",
+                    "Freinage dissymétrique ou documents incomplets"
+                  ],
+                  "kilometrage_apparition": "Contrôle systématique ; ne pas assimiler à un véhicule produit en série",
+                  "diagnostic": "Inspecter cadre, soudures, fixations de caisse, suspension, direction, roues et freins ; vérifier ceintures, sièges, éclairage, vitrage, masse, stabilité et numéro ; exiger certificat/homologation individuelle, car le projet annoncé pour 2012 n’a pas atteint une production commerciale démontrée",
+                  "piece_concernee": "Structure, sécurité et identité du prototype Zity",
+                  "gravite": "Critique",
+                  "frequence": "Risque structurel et administratif élevé",
+                  "cout_reparation_estime": "Variable, souvent non homologable ou non réparable"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.elonce.com/economia/zanella-lanzara-su-primer-auto-al-mercado-y-costara-25000-pesos.htm"
+      ]
+    }
+  ]
+}

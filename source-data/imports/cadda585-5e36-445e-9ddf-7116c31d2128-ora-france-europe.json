@@ -1,0 +1,209 @@
+{
+  "nom": "Ora",
+  "modeles": [
+    {
+      "nom": "Funky Cat",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "63 kWh — 171 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 171,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "État de la batterie de traction et de l’électronique de puissance",
+                  "symptomes": [
+                    "Voyant ou message au combiné",
+                    "Autonomie ou performances dégradées"
+                  ],
+                  "kilometrage_apparition": "Variable selon âge, kilométrage, cycles et conditions d’utilisation.",
+                  "diagnostic": "Diagnostic haute tension par un atelier habilité et contrôle de l’état de santé de la batterie.",
+                  "piece_concernee": "Batterie haute tension et électronique de puissance",
+                  "gravite": "À évaluer selon les défauts relevés",
+                  "frequence": "À surveiller selon l’historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Trains roulants, freinage et pneumatiques",
+                  "symptomes": [
+                    "Vibration",
+                    "Usure irrégulière",
+                    "Tirage"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque entretien.",
+                  "diagnostic": "Contrôle des jeux, de la géométrie, des disques et plaquettes.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                },
+                {
+                  "probleme": "Fonctionnement des équipements connectés et électriques",
+                  "symptomes": [
+                    "Fonction intermittente",
+                    "Alerte système"
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Lecture des défauts, vérification batterie 12 V et mises à jour disponibles.",
+                  "piece_concernee": "Réseau électrique et calculateurs",
+                  "gravite": "Faible à modérée",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Good Cat",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "th",
+          "ua"
+        ],
+        "regions": [
+          "as",
+          "eu"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "ES11",
+          "annees": "2020-aujourd’hui",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "Good Cat Pro/Ultra 47,8-63,1 kWh — 105 kW — 143 ch",
+              "code_moteur": "Moteur synchrone avant",
+              "cylindree": "Non applicable",
+              "puissance_ch": 143,
+              "boite": [
+                "Réducteur à rapport unique"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie de traction, BMS et recharge",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Charge interrompue",
+                    "Voyant batterie"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge, des cycles et du climat.",
+                  "diagnostic": "Mesure SOH, écarts de cellules, isolement, températures et essai AC/DC.",
+                  "piece_concernee": "Batterie LFP/NMC, BMS et chargeur embarqué",
+                  "gravite": "Majeure en cas de défaut haute tension",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "De quelques centaines d’euros à plus de 12 000 €."
+                },
+                {
+                  "probleme": "Moteur avant, onduleur et réducteur",
+                  "symptomes": [
+                    "Bruit de transmission",
+                    "Puissance limitée",
+                    "À-coups"
+                  ],
+                  "kilometrage_apparition": "Variable selon usage et refroidissement.",
+                  "diagnostic": "Lecture calculateurs, contrôle températures, fuites et essai sous charge.",
+                  "piece_concernee": "Moteur synchrone, onduleur et réducteur",
+                  "gravite": "Majeure",
+                  "frequence": "Encore peu documentée",
+                  "cout_reparation_estime": "Élevé — devis réseau spécialisé."
+                },
+                {
+                  "probleme": "Batterie 12 V, électronique et freinage",
+                  "symptomes": [
+                    "Démarrage impossible",
+                    "Alertes multiples",
+                    "Freinage mécanique bruyant"
+                  ],
+                  "kilometrage_apparition": "Batterie 12 V souvent à surveiller après 3 à 5 ans.",
+                  "diagnostic": "Test batterie 12 V/DC-DC, lecture réseau, inspection disques, pneus et géométrie.",
+                  "piece_concernee": "Réseau basse tension, calculateurs, freins et pneus",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "À contrôler à chaque entretien",
+                  "cout_reparation_estime": "Environ 150 à 2 500 €."
+                }
+              ]
+            },
+            {
+              "type": "Électrique",
+              "nom": "Good Cat GT 63,1 kWh — 126 kW — 171 ch",
+              "code_moteur": "Moteur synchrone avant",
+              "cylindree": "Non applicable",
+              "puissance_ch": 171,
+              "boite": [
+                "Réducteur à rapport unique"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie de traction, BMS et recharge",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Charge interrompue",
+                    "Voyant batterie"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge, des cycles et du climat.",
+                  "diagnostic": "Mesure SOH, écarts de cellules, isolement, températures et essai AC/DC.",
+                  "piece_concernee": "Batterie LFP/NMC, BMS et chargeur embarqué",
+                  "gravite": "Majeure en cas de défaut haute tension",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "De quelques centaines d’euros à plus de 12 000 €."
+                },
+                {
+                  "probleme": "Moteur avant, onduleur et réducteur",
+                  "symptomes": [
+                    "Bruit de transmission",
+                    "Puissance limitée",
+                    "À-coups"
+                  ],
+                  "kilometrage_apparition": "Variable selon usage et refroidissement.",
+                  "diagnostic": "Lecture calculateurs, contrôle températures, fuites et essai sous charge.",
+                  "piece_concernee": "Moteur synchrone, onduleur et réducteur",
+                  "gravite": "Majeure",
+                  "frequence": "Encore peu documentée",
+                  "cout_reparation_estime": "Élevé — devis réseau spécialisé."
+                },
+                {
+                  "probleme": "Batterie 12 V, électronique et freinage",
+                  "symptomes": [
+                    "Démarrage impossible",
+                    "Alertes multiples",
+                    "Freinage mécanique bruyant"
+                  ],
+                  "kilometrage_apparition": "Batterie 12 V souvent à surveiller après 3 à 5 ans.",
+                  "diagnostic": "Test batterie 12 V/DC-DC, lecture réseau, inspection disques, pneus et géométrie.",
+                  "piece_concernee": "Réseau basse tension, calculateurs, freins et pneus",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "À contrôler à chaque entretien",
+                  "cout_reparation_estime": "Environ 150 à 2 500 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

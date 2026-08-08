@@ -1,0 +1,715 @@
+{
+  "nom": "Delahaye",
+  "modeles": [
+    {
+      "nom": "135",
+      "generations": [
+        {
+          "code_chassis": "135 Sport 18 CV",
+          "annees": "1935–1939",
+          "phases": [
+            "Première 135 Sport, empattement 2,95 m ; 650 exemplaires avec la Coupe des Alpes."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.2 six-cylindres un carburateur — 95 ch",
+              "code_moteur": "Delahaye type 103 Sport",
+              "cylindree": "3 227 cm³",
+              "puissance_ch": 95,
+              "boite": [
+                "Manuelle 4 rapports ou Cotal, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et état du six-cylindres Delahaye",
+                  "symptomes": [
+                    "Pression d’huile faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "L’âge et la restauration priment ; contrôle avant chaque saison et après immobilisation",
+                  "diagnostic": "Identifier bloc 3,2 l type 103 ou 3,56 l et configuration Sport/M/MS/S par numéros, culasse et carburateurs. Mesurer compressions/leak-down et pression à chaud, analyser huile, contrôler pompe, paliers, distribution, soupapes, radiateur, pompe à eau, joints et corrosion interne.",
+                  "piece_concernee": "Six-cylindres Delahaye 135/175",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé si réfection ancienne ou non documentée",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 35 000 €"
+                },
+                {
+                  "probleme": "Carburation Solex/Stromberg, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés ou trou",
+                    "Vapor-lock, fuite ou différence de richesse entre cylindres"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après toute immobilisation",
+                  "diagnostic": "Distinguer un, deux ou trois carburateurs et puissance associée. Nettoyer/synchroniser, contrôler réservoir, pompe, cuves, starter, prises d’air, avance, distributeur, bobine et bougies, puis régler richesse au banc sans masquer une compression faible.",
+                  "piece_concernee": "Admission, carburateurs et allumage Delahaye",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec carburant moderne et conduites anciennes",
+                  "cout_reparation_estime": "Très élevé : environ 400 à 7 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle ou présélective Cotal, embrayage et pont",
+                  "symptomes": [
+                    "Rapport difficile ou absent",
+                    "Patinage",
+                    "À-coup, vibration ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant achat et vidange selon état documenté",
+                  "diagnostic": "Identifier boîte mécanique ou électromagnétique Cotal, vérifier huile, faisceau/contacts Cotal, commande, embrayage, supports, arbre, croisillons, pont et roulements. Tester progressivement à chaud sans forcer une présélection défaillante.",
+                  "piece_concernee": "Transmission Delahaye",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable ; spécialistes et pièces rares",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 18 000 €"
+                },
+                {
+                  "probleme": "Châssis, carrosserie de grand carrossier, freins et authenticité",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Bois affaibli ou ouvrants désalignés",
+                    "Freinage inégal, numéro ou carrosserie incohérents"
+                  ],
+                  "kilometrage_apparition": "Expertise historique et structurelle obligatoire avant acquisition",
+                  "diagnostic": "Rapprocher châssis, moteur, empattement et carrossier des archives. Inspecter cadre, traverses, structure bois/métal, soudures, panneaux, suspension indépendante avant, ressorts arrière, direction, freins hydrauliques, roues et réparations anciennes.",
+                  "piece_concernee": "Structure, carrosserie et sécurité Delahaye",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de transformation ou reconstruction",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 150 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "135 Coupe des Alpes",
+          "annees": "1935–1939",
+          "phases": [
+            "La dénomination Coupe des Alpes appartient au 3,2 l trois carburateurs, et non aux 135 Compétition 3,5 l."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.2 six-cylindres trois carburateurs — 113 ch",
+              "code_moteur": "Delahaye type 103 Coupe des Alpes",
+              "cylindree": "3 227 cm³",
+              "puissance_ch": 113,
+              "boite": [
+                "Manuelle 4 rapports ou Cotal, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et état du six-cylindres Delahaye",
+                  "symptomes": [
+                    "Pression d’huile faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "L’âge et la restauration priment ; contrôle avant chaque saison et après immobilisation",
+                  "diagnostic": "Identifier bloc 3,2 l type 103 ou 3,56 l et configuration Sport/M/MS/S par numéros, culasse et carburateurs. Mesurer compressions/leak-down et pression à chaud, analyser huile, contrôler pompe, paliers, distribution, soupapes, radiateur, pompe à eau, joints et corrosion interne.",
+                  "piece_concernee": "Six-cylindres Delahaye 135/175",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé si réfection ancienne ou non documentée",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 35 000 €"
+                },
+                {
+                  "probleme": "Carburation Solex/Stromberg, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés ou trou",
+                    "Vapor-lock, fuite ou différence de richesse entre cylindres"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après toute immobilisation",
+                  "diagnostic": "Distinguer un, deux ou trois carburateurs et puissance associée. Nettoyer/synchroniser, contrôler réservoir, pompe, cuves, starter, prises d’air, avance, distributeur, bobine et bougies, puis régler richesse au banc sans masquer une compression faible.",
+                  "piece_concernee": "Admission, carburateurs et allumage Delahaye",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec carburant moderne et conduites anciennes",
+                  "cout_reparation_estime": "Très élevé : environ 400 à 7 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle ou présélective Cotal, embrayage et pont",
+                  "symptomes": [
+                    "Rapport difficile ou absent",
+                    "Patinage",
+                    "À-coup, vibration ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant achat et vidange selon état documenté",
+                  "diagnostic": "Identifier boîte mécanique ou électromagnétique Cotal, vérifier huile, faisceau/contacts Cotal, commande, embrayage, supports, arbre, croisillons, pont et roulements. Tester progressivement à chaud sans forcer une présélection défaillante.",
+                  "piece_concernee": "Transmission Delahaye",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable ; spécialistes et pièces rares",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 18 000 €"
+                },
+                {
+                  "probleme": "Châssis, carrosserie de grand carrossier, freins et authenticité",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Bois affaibli ou ouvrants désalignés",
+                    "Freinage inégal, numéro ou carrosserie incohérents"
+                  ],
+                  "kilometrage_apparition": "Expertise historique et structurelle obligatoire avant acquisition",
+                  "diagnostic": "Rapprocher châssis, moteur, empattement et carrossier des archives. Inspecter cadre, traverses, structure bois/métal, soudures, panneaux, suspension indépendante avant, ressorts arrière, direction, freins hydrauliques, roues et réparations anciennes.",
+                  "piece_concernee": "Structure, carrosserie et sécurité Delahaye",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de transformation ou reconstruction",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 150 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "135 Compétition Long",
+          "annees": "1935–1938",
+          "phases": [
+            "Châssis 2,95 m, 453 exemplaires ; version un carburateur également produite mais puissance à authentifier."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.56 six-cylindres trois carburateurs — 120 ch",
+              "code_moteur": "Delahaye type 103J Compétition",
+              "cylindree": "3 557 cm³",
+              "puissance_ch": 120,
+              "boite": [
+                "Manuelle 4 rapports ou Cotal, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et état du six-cylindres Delahaye",
+                  "symptomes": [
+                    "Pression d’huile faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "L’âge et la restauration priment ; contrôle avant chaque saison et après immobilisation",
+                  "diagnostic": "Identifier bloc 3,2 l type 103 ou 3,56 l et configuration Sport/M/MS/S par numéros, culasse et carburateurs. Mesurer compressions/leak-down et pression à chaud, analyser huile, contrôler pompe, paliers, distribution, soupapes, radiateur, pompe à eau, joints et corrosion interne.",
+                  "piece_concernee": "Six-cylindres Delahaye 135/175",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé si réfection ancienne ou non documentée",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 35 000 €"
+                },
+                {
+                  "probleme": "Carburation Solex/Stromberg, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés ou trou",
+                    "Vapor-lock, fuite ou différence de richesse entre cylindres"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après toute immobilisation",
+                  "diagnostic": "Distinguer un, deux ou trois carburateurs et puissance associée. Nettoyer/synchroniser, contrôler réservoir, pompe, cuves, starter, prises d’air, avance, distributeur, bobine et bougies, puis régler richesse au banc sans masquer une compression faible.",
+                  "piece_concernee": "Admission, carburateurs et allumage Delahaye",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec carburant moderne et conduites anciennes",
+                  "cout_reparation_estime": "Très élevé : environ 400 à 7 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle ou présélective Cotal, embrayage et pont",
+                  "symptomes": [
+                    "Rapport difficile ou absent",
+                    "Patinage",
+                    "À-coup, vibration ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant achat et vidange selon état documenté",
+                  "diagnostic": "Identifier boîte mécanique ou électromagnétique Cotal, vérifier huile, faisceau/contacts Cotal, commande, embrayage, supports, arbre, croisillons, pont et roulements. Tester progressivement à chaud sans forcer une présélection défaillante.",
+                  "piece_concernee": "Transmission Delahaye",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable ; spécialistes et pièces rares",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 18 000 €"
+                },
+                {
+                  "probleme": "Châssis, carrosserie de grand carrossier, freins et authenticité",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Bois affaibli ou ouvrants désalignés",
+                    "Freinage inégal, numéro ou carrosserie incohérents"
+                  ],
+                  "kilometrage_apparition": "Expertise historique et structurelle obligatoire avant acquisition",
+                  "diagnostic": "Rapprocher châssis, moteur, empattement et carrossier des archives. Inspecter cadre, traverses, structure bois/métal, soudures, panneaux, suspension indépendante avant, ressorts arrière, direction, freins hydrauliques, roues et réparations anciennes.",
+                  "piece_concernee": "Structure, carrosserie et sécurité Delahaye",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de transformation ou reconstruction",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 150 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "135 Compétition Court",
+          "annees": "1935–1937",
+          "phases": [
+            "Seulement trente châssis de 2,70 m ; ne pas le fusionner avec la 135 S de course préparée à environ 160 ch."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.56 six-cylindres compétition — 120 ch",
+              "code_moteur": "Delahaye type 103J Compétition Court",
+              "cylindree": "3 557 cm³",
+              "puissance_ch": 120,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et état du six-cylindres Delahaye",
+                  "symptomes": [
+                    "Pression d’huile faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "L’âge et la restauration priment ; contrôle avant chaque saison et après immobilisation",
+                  "diagnostic": "Identifier bloc 3,2 l type 103 ou 3,56 l et configuration Sport/M/MS/S par numéros, culasse et carburateurs. Mesurer compressions/leak-down et pression à chaud, analyser huile, contrôler pompe, paliers, distribution, soupapes, radiateur, pompe à eau, joints et corrosion interne.",
+                  "piece_concernee": "Six-cylindres Delahaye 135/175",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé si réfection ancienne ou non documentée",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 35 000 €"
+                },
+                {
+                  "probleme": "Carburation Solex/Stromberg, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés ou trou",
+                    "Vapor-lock, fuite ou différence de richesse entre cylindres"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après toute immobilisation",
+                  "diagnostic": "Distinguer un, deux ou trois carburateurs et puissance associée. Nettoyer/synchroniser, contrôler réservoir, pompe, cuves, starter, prises d’air, avance, distributeur, bobine et bougies, puis régler richesse au banc sans masquer une compression faible.",
+                  "piece_concernee": "Admission, carburateurs et allumage Delahaye",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec carburant moderne et conduites anciennes",
+                  "cout_reparation_estime": "Très élevé : environ 400 à 7 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle ou présélective Cotal, embrayage et pont",
+                  "symptomes": [
+                    "Rapport difficile ou absent",
+                    "Patinage",
+                    "À-coup, vibration ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant achat et vidange selon état documenté",
+                  "diagnostic": "Identifier boîte mécanique ou électromagnétique Cotal, vérifier huile, faisceau/contacts Cotal, commande, embrayage, supports, arbre, croisillons, pont et roulements. Tester progressivement à chaud sans forcer une présélection défaillante.",
+                  "piece_concernee": "Transmission Delahaye",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable ; spécialistes et pièces rares",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 18 000 €"
+                },
+                {
+                  "probleme": "Châssis, carrosserie de grand carrossier, freins et authenticité",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Bois affaibli ou ouvrants désalignés",
+                    "Freinage inégal, numéro ou carrosserie incohérents"
+                  ],
+                  "kilometrage_apparition": "Expertise historique et structurelle obligatoire avant acquisition",
+                  "diagnostic": "Rapprocher châssis, moteur, empattement et carrossier des archives. Inspecter cadre, traverses, structure bois/métal, soudures, panneaux, suspension indépendante avant, ressorts arrière, direction, freins hydrauliques, roues et réparations anciennes.",
+                  "piece_concernee": "Structure, carrosserie et sécurité Delahaye",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de transformation ou reconstruction",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 150 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "135 S Spéciale course",
+          "annees": "1935–1939",
+          "phases": [
+            "Spécification de compétition, puissance dépendant de la préparation et du dossier moteur."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.56 six-cylindres course — 160 ch",
+              "code_moteur": "Delahaye type 103 Spéciale",
+              "cylindree": "3 557 cm³",
+              "puissance_ch": 160,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et état du six-cylindres Delahaye",
+                  "symptomes": [
+                    "Pression d’huile faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "L’âge et la restauration priment ; contrôle avant chaque saison et après immobilisation",
+                  "diagnostic": "Identifier bloc 3,2 l type 103 ou 3,56 l et configuration Sport/M/MS/S par numéros, culasse et carburateurs. Mesurer compressions/leak-down et pression à chaud, analyser huile, contrôler pompe, paliers, distribution, soupapes, radiateur, pompe à eau, joints et corrosion interne.",
+                  "piece_concernee": "Six-cylindres Delahaye 135/175",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé si réfection ancienne ou non documentée",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 35 000 €"
+                },
+                {
+                  "probleme": "Carburation Solex/Stromberg, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés ou trou",
+                    "Vapor-lock, fuite ou différence de richesse entre cylindres"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après toute immobilisation",
+                  "diagnostic": "Distinguer un, deux ou trois carburateurs et puissance associée. Nettoyer/synchroniser, contrôler réservoir, pompe, cuves, starter, prises d’air, avance, distributeur, bobine et bougies, puis régler richesse au banc sans masquer une compression faible.",
+                  "piece_concernee": "Admission, carburateurs et allumage Delahaye",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec carburant moderne et conduites anciennes",
+                  "cout_reparation_estime": "Très élevé : environ 400 à 7 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle ou présélective Cotal, embrayage et pont",
+                  "symptomes": [
+                    "Rapport difficile ou absent",
+                    "Patinage",
+                    "À-coup, vibration ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant achat et vidange selon état documenté",
+                  "diagnostic": "Identifier boîte mécanique ou électromagnétique Cotal, vérifier huile, faisceau/contacts Cotal, commande, embrayage, supports, arbre, croisillons, pont et roulements. Tester progressivement à chaud sans forcer une présélection défaillante.",
+                  "piece_concernee": "Transmission Delahaye",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable ; spécialistes et pièces rares",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 18 000 €"
+                },
+                {
+                  "probleme": "Châssis, carrosserie de grand carrossier, freins et authenticité",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Bois affaibli ou ouvrants désalignés",
+                    "Freinage inégal, numéro ou carrosserie incohérents"
+                  ],
+                  "kilometrage_apparition": "Expertise historique et structurelle obligatoire avant acquisition",
+                  "diagnostic": "Rapprocher châssis, moteur, empattement et carrossier des archives. Inspecter cadre, traverses, structure bois/métal, soudures, panneaux, suspension indépendante avant, ressorts arrière, direction, freins hydrauliques, roues et réparations anciennes.",
+                  "piece_concernee": "Structure, carrosserie et sécurité Delahaye",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de transformation ou reconstruction",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 150 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "135 M",
+          "annees": "1938–1939, 1946–1952",
+          "phases": [
+            "Version Grand Tourisme reprise après-guerre ; puissance varie selon alimentation, à confirmer sur chaque châssis."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.56 six-cylindres M — 115 ch",
+              "code_moteur": "Delahaye type 103M",
+              "cylindree": "3 557 cm³",
+              "puissance_ch": 115,
+              "boite": [
+                "Manuelle 4 rapports ou Cotal, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et état du six-cylindres Delahaye",
+                  "symptomes": [
+                    "Pression d’huile faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "L’âge et la restauration priment ; contrôle avant chaque saison et après immobilisation",
+                  "diagnostic": "Identifier bloc 3,2 l type 103 ou 3,56 l et configuration Sport/M/MS/S par numéros, culasse et carburateurs. Mesurer compressions/leak-down et pression à chaud, analyser huile, contrôler pompe, paliers, distribution, soupapes, radiateur, pompe à eau, joints et corrosion interne.",
+                  "piece_concernee": "Six-cylindres Delahaye 135/175",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé si réfection ancienne ou non documentée",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 35 000 €"
+                },
+                {
+                  "probleme": "Carburation Solex/Stromberg, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés ou trou",
+                    "Vapor-lock, fuite ou différence de richesse entre cylindres"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après toute immobilisation",
+                  "diagnostic": "Distinguer un, deux ou trois carburateurs et puissance associée. Nettoyer/synchroniser, contrôler réservoir, pompe, cuves, starter, prises d’air, avance, distributeur, bobine et bougies, puis régler richesse au banc sans masquer une compression faible.",
+                  "piece_concernee": "Admission, carburateurs et allumage Delahaye",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec carburant moderne et conduites anciennes",
+                  "cout_reparation_estime": "Très élevé : environ 400 à 7 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle ou présélective Cotal, embrayage et pont",
+                  "symptomes": [
+                    "Rapport difficile ou absent",
+                    "Patinage",
+                    "À-coup, vibration ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant achat et vidange selon état documenté",
+                  "diagnostic": "Identifier boîte mécanique ou électromagnétique Cotal, vérifier huile, faisceau/contacts Cotal, commande, embrayage, supports, arbre, croisillons, pont et roulements. Tester progressivement à chaud sans forcer une présélection défaillante.",
+                  "piece_concernee": "Transmission Delahaye",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable ; spécialistes et pièces rares",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 18 000 €"
+                },
+                {
+                  "probleme": "Châssis, carrosserie de grand carrossier, freins et authenticité",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Bois affaibli ou ouvrants désalignés",
+                    "Freinage inégal, numéro ou carrosserie incohérents"
+                  ],
+                  "kilometrage_apparition": "Expertise historique et structurelle obligatoire avant acquisition",
+                  "diagnostic": "Rapprocher châssis, moteur, empattement et carrossier des archives. Inspecter cadre, traverses, structure bois/métal, soudures, panneaux, suspension indépendante avant, ressorts arrière, direction, freins hydrauliques, roues et réparations anciennes.",
+                  "piece_concernee": "Structure, carrosserie et sécurité Delahaye",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de transformation ou reconstruction",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 150 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "135 MS",
+          "annees": "1938–1939, 1946–1952",
+          "phases": [
+            "Sommet routier de la gamme 135 ; environ 130 à 145 ch selon nombre de carburateurs et réglage."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.56 six-cylindres Modifiée Spéciale — 140 ch",
+              "code_moteur": "Delahaye type 103MS",
+              "cylindree": "3 557 cm³",
+              "puissance_ch": 140,
+              "boite": [
+                "Manuelle 4 rapports ou Cotal, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et état du six-cylindres Delahaye",
+                  "symptomes": [
+                    "Pression d’huile faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "L’âge et la restauration priment ; contrôle avant chaque saison et après immobilisation",
+                  "diagnostic": "Identifier bloc 3,2 l type 103 ou 3,56 l et configuration Sport/M/MS/S par numéros, culasse et carburateurs. Mesurer compressions/leak-down et pression à chaud, analyser huile, contrôler pompe, paliers, distribution, soupapes, radiateur, pompe à eau, joints et corrosion interne.",
+                  "piece_concernee": "Six-cylindres Delahaye 135/175",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé si réfection ancienne ou non documentée",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 35 000 €"
+                },
+                {
+                  "probleme": "Carburation Solex/Stromberg, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés ou trou",
+                    "Vapor-lock, fuite ou différence de richesse entre cylindres"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après toute immobilisation",
+                  "diagnostic": "Distinguer un, deux ou trois carburateurs et puissance associée. Nettoyer/synchroniser, contrôler réservoir, pompe, cuves, starter, prises d’air, avance, distributeur, bobine et bougies, puis régler richesse au banc sans masquer une compression faible.",
+                  "piece_concernee": "Admission, carburateurs et allumage Delahaye",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec carburant moderne et conduites anciennes",
+                  "cout_reparation_estime": "Très élevé : environ 400 à 7 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle ou présélective Cotal, embrayage et pont",
+                  "symptomes": [
+                    "Rapport difficile ou absent",
+                    "Patinage",
+                    "À-coup, vibration ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant achat et vidange selon état documenté",
+                  "diagnostic": "Identifier boîte mécanique ou électromagnétique Cotal, vérifier huile, faisceau/contacts Cotal, commande, embrayage, supports, arbre, croisillons, pont et roulements. Tester progressivement à chaud sans forcer une présélection défaillante.",
+                  "piece_concernee": "Transmission Delahaye",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable ; spécialistes et pièces rares",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 18 000 €"
+                },
+                {
+                  "probleme": "Châssis, carrosserie de grand carrossier, freins et authenticité",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Bois affaibli ou ouvrants désalignés",
+                    "Freinage inégal, numéro ou carrosserie incohérents"
+                  ],
+                  "kilometrage_apparition": "Expertise historique et structurelle obligatoire avant acquisition",
+                  "diagnostic": "Rapprocher châssis, moteur, empattement et carrossier des archives. Inspecter cadre, traverses, structure bois/métal, soudures, panneaux, suspension indépendante avant, ressorts arrière, direction, freins hydrauliques, roues et réparations anciennes.",
+                  "piece_concernee": "Structure, carrosserie et sécurité Delahaye",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de transformation ou reconstruction",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 150 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://clubdelahaye.com/project-category/tourisme/",
+        "https://www.slam.org/read-watch-listen/roaring-automobile-details/"
+      ]
+    },
+    {
+      "nom": "175",
+      "generations": [
+        {
+          "code_chassis": "Type 175",
+          "annees": "1948–1951",
+          "phases": [
+            "Châssis court 2,95 m de la famille 175/178/180, exclusivement carrossé sur mesure."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Type 183 4.5 six-cylindres — 140 ch",
+              "code_moteur": "Delahaye type 183",
+              "cylindree": "4 455 cm³",
+              "puissance_ch": 140,
+              "boite": [
+                "Cotal présélective 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et état du six-cylindres Delahaye",
+                  "symptomes": [
+                    "Pression d’huile faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "L’âge et la restauration priment ; contrôle avant chaque saison et après immobilisation",
+                  "diagnostic": "Identifier bloc 3,2 l type 103 ou 3,56 l et configuration Sport/M/MS/S par numéros, culasse et carburateurs. Mesurer compressions/leak-down et pression à chaud, analyser huile, contrôler pompe, paliers, distribution, soupapes, radiateur, pompe à eau, joints et corrosion interne.",
+                  "piece_concernee": "Six-cylindres Delahaye 135/175",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé si réfection ancienne ou non documentée",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 35 000 €"
+                },
+                {
+                  "probleme": "Carburation Solex/Stromberg, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés ou trou",
+                    "Vapor-lock, fuite ou différence de richesse entre cylindres"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après toute immobilisation",
+                  "diagnostic": "Distinguer un, deux ou trois carburateurs et puissance associée. Nettoyer/synchroniser, contrôler réservoir, pompe, cuves, starter, prises d’air, avance, distributeur, bobine et bougies, puis régler richesse au banc sans masquer une compression faible.",
+                  "piece_concernee": "Admission, carburateurs et allumage Delahaye",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec carburant moderne et conduites anciennes",
+                  "cout_reparation_estime": "Très élevé : environ 400 à 7 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle ou présélective Cotal, embrayage et pont",
+                  "symptomes": [
+                    "Rapport difficile ou absent",
+                    "Patinage",
+                    "À-coup, vibration ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant achat et vidange selon état documenté",
+                  "diagnostic": "Identifier boîte mécanique ou électromagnétique Cotal, vérifier huile, faisceau/contacts Cotal, commande, embrayage, supports, arbre, croisillons, pont et roulements. Tester progressivement à chaud sans forcer une présélection défaillante.",
+                  "piece_concernee": "Transmission Delahaye",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable ; spécialistes et pièces rares",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 18 000 €"
+                },
+                {
+                  "probleme": "Châssis, carrosserie de grand carrossier, freins et authenticité",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Bois affaibli ou ouvrants désalignés",
+                    "Freinage inégal, numéro ou carrosserie incohérents"
+                  ],
+                  "kilometrage_apparition": "Expertise historique et structurelle obligatoire avant acquisition",
+                  "diagnostic": "Rapprocher châssis, moteur, empattement et carrossier des archives. Inspecter cadre, traverses, structure bois/métal, soudures, panneaux, suspension indépendante avant, ressorts arrière, direction, freins hydrauliques, roues et réparations anciennes.",
+                  "piece_concernee": "Structure, carrosserie et sécurité Delahaye",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de transformation ou reconstruction",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 150 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Type 175 S",
+          "annees": "1948–1951",
+          "phases": [
+            "Option sportive trois carburateurs ; 51 Type 175 environ, majorité en configuration S selon registres publiés."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Type 183S 4.5 six-cylindres trois carburateurs — 160 ch",
+              "code_moteur": "Delahaye type 183S",
+              "cylindree": "4 455 cm³",
+              "puissance_ch": 160,
+              "boite": [
+                "Cotal présélective 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et état du six-cylindres Delahaye",
+                  "symptomes": [
+                    "Pression d’huile faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "L’âge et la restauration priment ; contrôle avant chaque saison et après immobilisation",
+                  "diagnostic": "Identifier bloc 3,2 l type 103 ou 3,56 l et configuration Sport/M/MS/S par numéros, culasse et carburateurs. Mesurer compressions/leak-down et pression à chaud, analyser huile, contrôler pompe, paliers, distribution, soupapes, radiateur, pompe à eau, joints et corrosion interne.",
+                  "piece_concernee": "Six-cylindres Delahaye 135/175",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé si réfection ancienne ou non documentée",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 35 000 €"
+                },
+                {
+                  "probleme": "Carburation Solex/Stromberg, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés ou trou",
+                    "Vapor-lock, fuite ou différence de richesse entre cylindres"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après toute immobilisation",
+                  "diagnostic": "Distinguer un, deux ou trois carburateurs et puissance associée. Nettoyer/synchroniser, contrôler réservoir, pompe, cuves, starter, prises d’air, avance, distributeur, bobine et bougies, puis régler richesse au banc sans masquer une compression faible.",
+                  "piece_concernee": "Admission, carburateurs et allumage Delahaye",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec carburant moderne et conduites anciennes",
+                  "cout_reparation_estime": "Très élevé : environ 400 à 7 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle ou présélective Cotal, embrayage et pont",
+                  "symptomes": [
+                    "Rapport difficile ou absent",
+                    "Patinage",
+                    "À-coup, vibration ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant achat et vidange selon état documenté",
+                  "diagnostic": "Identifier boîte mécanique ou électromagnétique Cotal, vérifier huile, faisceau/contacts Cotal, commande, embrayage, supports, arbre, croisillons, pont et roulements. Tester progressivement à chaud sans forcer une présélection défaillante.",
+                  "piece_concernee": "Transmission Delahaye",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable ; spécialistes et pièces rares",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 18 000 €"
+                },
+                {
+                  "probleme": "Châssis, carrosserie de grand carrossier, freins et authenticité",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Bois affaibli ou ouvrants désalignés",
+                    "Freinage inégal, numéro ou carrosserie incohérents"
+                  ],
+                  "kilometrage_apparition": "Expertise historique et structurelle obligatoire avant acquisition",
+                  "diagnostic": "Rapprocher châssis, moteur, empattement et carrossier des archives. Inspecter cadre, traverses, structure bois/métal, soudures, panneaux, suspension indépendante avant, ressorts arrière, direction, freins hydrauliques, roues et réparations anciennes.",
+                  "piece_concernee": "Structure, carrosserie et sécurité Delahaye",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de transformation ou reconstruction",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 150 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://simeonemuseum.org/collection/1936-48-delahaye-135s-175s/"
+      ]
+    }
+  ]
+}

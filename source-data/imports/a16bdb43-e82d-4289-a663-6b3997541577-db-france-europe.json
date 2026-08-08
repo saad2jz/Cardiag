@@ -1,0 +1,256 @@
+{
+  "nom": "DB",
+  "modeles": [
+    {
+      "nom": "HBR5",
+      "generations": [
+        {
+          "code_chassis": "HBR5 Standard",
+          "annees": "1954–1961",
+          "phases": [
+            "Version de tourisme ; chaque voiture peut différer par options et carrosserie."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Panhard 848 standard — 50 ch",
+              "code_moteur": "Panhard Dyna 848 DB",
+              "cylindree": "848 cm³",
+              "puissance_ch": 50,
+              "boite": [
+                "Manuelle 4 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Vilebrequin, roulements, refroidissement par air et lubrification du flat-twin Panhard",
+                  "symptomes": [
+                    "Claquement",
+                    "Surchauffe ou pression faible",
+                    "Fumée, fuite ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km, mais compétition et restauration priment",
+                  "diagnostic": "Authentifier 848 ou 954 cm³, mesurer compressions/leak-down et pression, contrôler rouleaux/paliers, distribution par pignons, centrifugeur, turbine, tôles, radiateur d’huile, culasses et étanchéité ; analyser huile et jeu sans solliciter à froid",
+                  "piece_concernee": "Flat-twin Panhard DB HBR5",
+                  "gravite": "Critique",
+                  "frequence": "Risque connu sur moteur ancien mal remonté",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 12 000 €"
+                },
+                {
+                  "probleme": "Double carburateur, allumage et réglage des soupapes",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ralenti irrégulier",
+                    "Trou, cliquetis ou différence de température entre cylindres"
+                  ],
+                  "kilometrage_apparition": "Réglage fréquent et avant épreuve historique",
+                  "diagnostic": "Identifier Solex/Zenith et préparation, synchroniser carburateurs, contrôler réservoir, pompe, gicleurs, prises d’air, avance, distributeur, bougies et jeu aux soupapes ; valider richesse et température cylindre par cylindre",
+                  "piece_concernee": "Admission et allumage HBR5",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après immobilisation",
+                  "cout_reparation_estime": "Élevé : environ 200 à 2 500 €"
+                },
+                {
+                  "probleme": "Châssis poutre, polyester, boîte, trains roulants et provenance",
+                  "symptomes": [
+                    "Fissure ou corrosion",
+                    "Sélection difficile ou cardan bruyant",
+                    "Jeu, freinage inégal ou identité incertaine"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle et historique avant acquisition",
+                  "diagnostic": "Rapprocher numéro, carrosserie Chausson et configuration Standard/Rallye/Super Rallye des archives ; inspecter poutre, polyester, ancrages, boîte Panhard, embrayage, cardans, suspension, direction, freins, roues et réparations de course",
+                  "piece_concernee": "Structure, transmission et authenticité DB HBR5",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de reconstruction ou préparation ultérieure",
+                  "cout_reparation_estime": "Très élevé : environ 800 à plus de 20 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "HBR5 Rallye",
+          "annees": "1955–1961",
+          "phases": [
+            "Double carburation et réglages plus poussés ; Lane Museum documente un HBR5 de 65 hp."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Panhard 848 double carburateur — 60 ch",
+              "code_moteur": "Panhard 848 DB Rallye",
+              "cylindree": "848 cm³",
+              "puissance_ch": 60,
+              "boite": [
+                "Manuelle 4 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Vilebrequin, roulements, refroidissement par air et lubrification du flat-twin Panhard",
+                  "symptomes": [
+                    "Claquement",
+                    "Surchauffe ou pression faible",
+                    "Fumée, fuite ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km, mais compétition et restauration priment",
+                  "diagnostic": "Authentifier 848 ou 954 cm³, mesurer compressions/leak-down et pression, contrôler rouleaux/paliers, distribution par pignons, centrifugeur, turbine, tôles, radiateur d’huile, culasses et étanchéité ; analyser huile et jeu sans solliciter à froid",
+                  "piece_concernee": "Flat-twin Panhard DB HBR5",
+                  "gravite": "Critique",
+                  "frequence": "Risque connu sur moteur ancien mal remonté",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 12 000 €"
+                },
+                {
+                  "probleme": "Double carburateur, allumage et réglage des soupapes",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ralenti irrégulier",
+                    "Trou, cliquetis ou différence de température entre cylindres"
+                  ],
+                  "kilometrage_apparition": "Réglage fréquent et avant épreuve historique",
+                  "diagnostic": "Identifier Solex/Zenith et préparation, synchroniser carburateurs, contrôler réservoir, pompe, gicleurs, prises d’air, avance, distributeur, bougies et jeu aux soupapes ; valider richesse et température cylindre par cylindre",
+                  "piece_concernee": "Admission et allumage HBR5",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après immobilisation",
+                  "cout_reparation_estime": "Élevé : environ 200 à 2 500 €"
+                },
+                {
+                  "probleme": "Châssis poutre, polyester, boîte, trains roulants et provenance",
+                  "symptomes": [
+                    "Fissure ou corrosion",
+                    "Sélection difficile ou cardan bruyant",
+                    "Jeu, freinage inégal ou identité incertaine"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle et historique avant acquisition",
+                  "diagnostic": "Rapprocher numéro, carrosserie Chausson et configuration Standard/Rallye/Super Rallye des archives ; inspecter poutre, polyester, ancrages, boîte Panhard, embrayage, cardans, suspension, direction, freins, roues et réparations de course",
+                  "piece_concernee": "Structure, transmission et authenticité DB HBR5",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de reconstruction ou préparation ultérieure",
+                  "cout_reparation_estime": "Très élevé : environ 800 à plus de 20 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence compétition",
+              "nom": "Panhard 848 compétition — 65 ch",
+              "code_moteur": "Panhard 848 DB compétition",
+              "cylindree": "848 cm³",
+              "puissance_ch": 65,
+              "boite": [
+                "Manuelle 4 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Vilebrequin, roulements, refroidissement par air et lubrification du flat-twin Panhard",
+                  "symptomes": [
+                    "Claquement",
+                    "Surchauffe ou pression faible",
+                    "Fumée, fuite ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km, mais compétition et restauration priment",
+                  "diagnostic": "Authentifier 848 ou 954 cm³, mesurer compressions/leak-down et pression, contrôler rouleaux/paliers, distribution par pignons, centrifugeur, turbine, tôles, radiateur d’huile, culasses et étanchéité ; analyser huile et jeu sans solliciter à froid",
+                  "piece_concernee": "Flat-twin Panhard DB HBR5",
+                  "gravite": "Critique",
+                  "frequence": "Risque connu sur moteur ancien mal remonté",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 12 000 €"
+                },
+                {
+                  "probleme": "Double carburateur, allumage et réglage des soupapes",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ralenti irrégulier",
+                    "Trou, cliquetis ou différence de température entre cylindres"
+                  ],
+                  "kilometrage_apparition": "Réglage fréquent et avant épreuve historique",
+                  "diagnostic": "Identifier Solex/Zenith et préparation, synchroniser carburateurs, contrôler réservoir, pompe, gicleurs, prises d’air, avance, distributeur, bougies et jeu aux soupapes ; valider richesse et température cylindre par cylindre",
+                  "piece_concernee": "Admission et allumage HBR5",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après immobilisation",
+                  "cout_reparation_estime": "Élevé : environ 200 à 2 500 €"
+                },
+                {
+                  "probleme": "Châssis poutre, polyester, boîte, trains roulants et provenance",
+                  "symptomes": [
+                    "Fissure ou corrosion",
+                    "Sélection difficile ou cardan bruyant",
+                    "Jeu, freinage inégal ou identité incertaine"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle et historique avant acquisition",
+                  "diagnostic": "Rapprocher numéro, carrosserie Chausson et configuration Standard/Rallye/Super Rallye des archives ; inspecter poutre, polyester, ancrages, boîte Panhard, embrayage, cardans, suspension, direction, freins, roues et réparations de course",
+                  "piece_concernee": "Structure, transmission et authenticité DB HBR5",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de reconstruction ou préparation ultérieure",
+                  "cout_reparation_estime": "Très élevé : environ 800 à plus de 20 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "HBR5 Super Rallye",
+          "annees": "1959–1961",
+          "phases": [
+            "Option 954 cm³ tardive ; puissance indicative à confirmer par fiche moteur individuelle."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Panhard 954 — 72 ch",
+              "code_moteur": "Panhard Tigre 954 DB",
+              "cylindree": "954 cm³",
+              "puissance_ch": 72,
+              "boite": [
+                "Manuelle 4 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Vilebrequin, roulements, refroidissement par air et lubrification du flat-twin Panhard",
+                  "symptomes": [
+                    "Claquement",
+                    "Surchauffe ou pression faible",
+                    "Fumée, fuite ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km, mais compétition et restauration priment",
+                  "diagnostic": "Authentifier 848 ou 954 cm³, mesurer compressions/leak-down et pression, contrôler rouleaux/paliers, distribution par pignons, centrifugeur, turbine, tôles, radiateur d’huile, culasses et étanchéité ; analyser huile et jeu sans solliciter à froid",
+                  "piece_concernee": "Flat-twin Panhard DB HBR5",
+                  "gravite": "Critique",
+                  "frequence": "Risque connu sur moteur ancien mal remonté",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 12 000 €"
+                },
+                {
+                  "probleme": "Double carburateur, allumage et réglage des soupapes",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ralenti irrégulier",
+                    "Trou, cliquetis ou différence de température entre cylindres"
+                  ],
+                  "kilometrage_apparition": "Réglage fréquent et avant épreuve historique",
+                  "diagnostic": "Identifier Solex/Zenith et préparation, synchroniser carburateurs, contrôler réservoir, pompe, gicleurs, prises d’air, avance, distributeur, bougies et jeu aux soupapes ; valider richesse et température cylindre par cylindre",
+                  "piece_concernee": "Admission et allumage HBR5",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après immobilisation",
+                  "cout_reparation_estime": "Élevé : environ 200 à 2 500 €"
+                },
+                {
+                  "probleme": "Châssis poutre, polyester, boîte, trains roulants et provenance",
+                  "symptomes": [
+                    "Fissure ou corrosion",
+                    "Sélection difficile ou cardan bruyant",
+                    "Jeu, freinage inégal ou identité incertaine"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle et historique avant acquisition",
+                  "diagnostic": "Rapprocher numéro, carrosserie Chausson et configuration Standard/Rallye/Super Rallye des archives ; inspecter poutre, polyester, ancrages, boîte Panhard, embrayage, cardans, suspension, direction, freins, roues et réparations de course",
+                  "piece_concernee": "Structure, transmission et authenticité DB HBR5",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de reconstruction ou préparation ultérieure",
+                  "cout_reparation_estime": "Très élevé : environ 800 à plus de 20 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.lanemotormuseum.org/collection/cars/item/deutsch-bonnet-hbr5-1955/"
+      ]
+    }
+  ]
+}

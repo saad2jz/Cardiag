@@ -1,0 +1,155 @@
+{
+  "nom": "Bloomfields",
+  "modeles": [
+    {
+      "nom": "Legacy",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "van",
+        "body_type": null,
+        "countries": [
+          "lu",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "Legacy S/SL sur Renault Master X62",
+          "annees": "2015–2024",
+          "phases": [
+            "Horsebox 3,5/4/4,25/4,5 t : puissance et transmission doivent être confirmées sur le porteur Renault Master Red"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "Master Red 2.3 dCi — 145 ch",
+              "code_moteur": "Renault M9T",
+              "cylindree": "2 298 cm³",
+              "puissance_ch": 145,
+              "boite": [
+                "Manuelle 6 rapports, traction avant ou propulsion selon porteur"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo et dépollution du Renault Master",
+                  "symptomes": [
+                    "Voyant injection",
+                    "Fumée",
+                    "Mode dégradé ou compte à rebours AdBlue"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 220 000 km, plus tôt avec ralenti et courts trajets",
+                  "diagnostic": "Identifier M9T 2.3 ou M920 2.0, lire rail/corrections, contrôler injecteurs, turbo, EGR, DPF, SCR/AdBlue, chaîne, refroidissement et historique de charge",
+                  "piece_concernee": "Moteur Renault dCi/Blue dCi et dépollution",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente en usage utilitaire",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Surcharge, embrayage/boîte et essieu arrière du porteur",
+                  "symptomes": [
+                    "Patinage",
+                    "Roulement bruyant",
+                    "Pneus écrasés ou tenue de route instable"
+                  ],
+                  "kilometrage_apparition": "Dès 60 000 à 140 000 km selon PTAC et charge réelle",
+                  "diagnostic": "Peser par essieu avec eau, carburant, personnes et chevaux, vérifier PTAC 3,5/4/4,25/4,5 t, embrayage, boîte, cardans, roulements, ressorts, amortisseurs, pneus CP/C et freinage",
+                  "piece_concernee": "Porteur Renault Master et répartition des masses",
+                  "gravite": "Critique si surcharge ou freinage affecté",
+                  "frequence": "Fréquente sur horsebox mal chargé",
+                  "cout_reparation_estime": "Élevé : environ 600 à 6 000 €"
+                },
+                {
+                  "probleme": "Cellule Bloomfields, plancher, pont et sécurité animale",
+                  "symptomes": [
+                    "Plancher souple",
+                    "Infiltration",
+                    "Pont lourd, fissure ou cloison mobile"
+                  ],
+                  "kilometrage_apparition": "Inspection avant chaque transport et annuelle approfondie",
+                  "diagnostic": "Contrôler plaque de transformation, châssis auxiliaire, plancher sous tapis, drainage, corrosion, pont/ressorts/verrous, barres poitrail anti-saut, cloisons, grilles, ventilation, éclairage, issues et absence d’arêtes ; inspecter après tout incident animal",
+                  "piece_concernee": "Cellule Legacy et équipements équestres",
+                  "gravite": "Critique pour animaux et occupants",
+                  "frequence": "À surveiller systématiquement",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 500 à plus de 15 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Legacy nouvelle base Master",
+          "annees": "2024–aujourd’hui",
+          "phases": [
+            "Cellule Legacy S/SL et variantes habitables ; toujours peser le véhicule terminé par essieu"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "Master 2.0 Blue dCi — 150 ch",
+              "code_moteur": "Renault M920",
+              "cylindree": "1 998 cm³",
+              "puissance_ch": 150,
+              "boite": [
+                "Manuelle 6 rapports ou automatique 9 rapports selon porteur"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo et dépollution du Renault Master",
+                  "symptomes": [
+                    "Voyant injection",
+                    "Fumée",
+                    "Mode dégradé ou compte à rebours AdBlue"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 220 000 km, plus tôt avec ralenti et courts trajets",
+                  "diagnostic": "Identifier M9T 2.3 ou M920 2.0, lire rail/corrections, contrôler injecteurs, turbo, EGR, DPF, SCR/AdBlue, chaîne, refroidissement et historique de charge",
+                  "piece_concernee": "Moteur Renault dCi/Blue dCi et dépollution",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente en usage utilitaire",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Surcharge, embrayage/boîte et essieu arrière du porteur",
+                  "symptomes": [
+                    "Patinage",
+                    "Roulement bruyant",
+                    "Pneus écrasés ou tenue de route instable"
+                  ],
+                  "kilometrage_apparition": "Dès 60 000 à 140 000 km selon PTAC et charge réelle",
+                  "diagnostic": "Peser par essieu avec eau, carburant, personnes et chevaux, vérifier PTAC 3,5/4/4,25/4,5 t, embrayage, boîte, cardans, roulements, ressorts, amortisseurs, pneus CP/C et freinage",
+                  "piece_concernee": "Porteur Renault Master et répartition des masses",
+                  "gravite": "Critique si surcharge ou freinage affecté",
+                  "frequence": "Fréquente sur horsebox mal chargé",
+                  "cout_reparation_estime": "Élevé : environ 600 à 6 000 €"
+                },
+                {
+                  "probleme": "Cellule Bloomfields, plancher, pont et sécurité animale",
+                  "symptomes": [
+                    "Plancher souple",
+                    "Infiltration",
+                    "Pont lourd, fissure ou cloison mobile"
+                  ],
+                  "kilometrage_apparition": "Inspection avant chaque transport et annuelle approfondie",
+                  "diagnostic": "Contrôler plaque de transformation, châssis auxiliaire, plancher sous tapis, drainage, corrosion, pont/ressorts/verrous, barres poitrail anti-saut, cloisons, grilles, ventilation, éclairage, issues et absence d’arêtes ; inspecter après tout incident animal",
+                  "piece_concernee": "Cellule Legacy et équipements équestres",
+                  "gravite": "Critique pour animaux et occupants",
+                  "frequence": "À surveiller systématiquement",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 500 à plus de 15 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.rhcv.co.uk/bloomfields/"
+      ]
+    }
+  ],
+  "source_catalogue": "VehiclesDB 2026.08.2 (CC-BY 4.0)"
+}

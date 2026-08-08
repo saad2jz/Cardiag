@@ -1,0 +1,143 @@
+{
+  "nom": "Ahorn",
+  "modeles": [
+    {
+      "nom": "Van 620",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "lu",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 8
+      },
+      "generations": [
+        {
+          "code_chassis": "Renault Master III Van 620",
+          "annees": "2019–2024",
+          "phases": [
+            "Fourgon aménagé 6,22 m sur Renault Master 3,5 t ; contrôler configuration, PTAC et équipements cellule"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "2.3 dCi — 135 ch",
+              "code_moteur": "Renault M9T",
+              "cylindree": "2 299 cm³",
+              "puissance_ch": 135,
+              "boite": [
+                "Boîte manuelle 6 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, EGR/FAP/SCR et turbo du Renault Master",
+                  "symptomes": [
+                    "Voyant antipollution",
+                    "Mode dégradé",
+                    "Régénérations fréquentes"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 160 000 km, plus tôt en petits trajets",
+                  "diagnostic": "Lire injection et dépollution, contrôler rail/retours, turbo, durites, EGR, FAP, NOx/AdBlue, huile et refroidissement ; vérifier poids réel et historique",
+                  "piece_concernee": "Moteur 2.3 dCi et dépollution",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage saisonnier",
+                  "cout_reparation_estime": "Élevé : environ 500 à 6 000 €"
+                },
+                {
+                  "probleme": "Embrayage/boîte, freins et châssis à la limite du PTAC",
+                  "symptomes": [
+                    "Patinage",
+                    "Vibration",
+                    "Freinage faible ou pneus usés"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km selon charge",
+                  "diagnostic": "Peser par essieu, contrôler embrayage/volant, boîte, cardans, freins, roulements, suspension, pneus camping-car, corrosion et date des pneumatiques",
+                  "piece_concernee": "Chaîne cinématique et châssis porteur",
+                  "gravite": "Critique si surcharge ou freinage insuffisant",
+                  "frequence": "Assez fréquente sur véhicules constamment chargés",
+                  "cout_reparation_estime": "Élevé : environ 700 à 6 000 €"
+                },
+                {
+                  "probleme": "Étanchéité, gaz, eau et installation électrique de cellule",
+                  "symptomes": [
+                    "Humidité",
+                    "Odeur de gaz",
+                    "Batterie cellule faible ou appareil inopérant"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et avant achat, indépendamment du kilométrage",
+                  "diagnostic": "Mesurer humidité autour baies/toit/plancher, tester gaz par professionnel, eau/pompe/chauffage Truma, 12/230 V, chargeur, batterie, panneaux, ventilation et poids des accessoires",
+                  "piece_concernee": "Cellule de camping-car et réseaux auxiliaires",
+                  "gravite": "Critique en cas de fuite de gaz ou infiltration structurelle",
+                  "frequence": "Assez fréquente sans contrôle annuel",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 15 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "2.3 dCi biturbo — 150 ch",
+              "code_moteur": "Renault M9T",
+              "cylindree": "2 299 cm³",
+              "puissance_ch": 150,
+              "boite": [
+                "Boîte manuelle 6 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, EGR/FAP/SCR et turbo du Renault Master",
+                  "symptomes": [
+                    "Voyant antipollution",
+                    "Mode dégradé",
+                    "Régénérations fréquentes"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 160 000 km, plus tôt en petits trajets",
+                  "diagnostic": "Lire injection et dépollution, contrôler rail/retours, turbo, durites, EGR, FAP, NOx/AdBlue, huile et refroidissement ; vérifier poids réel et historique",
+                  "piece_concernee": "Moteur 2.3 dCi et dépollution",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage saisonnier",
+                  "cout_reparation_estime": "Élevé : environ 500 à 6 000 €"
+                },
+                {
+                  "probleme": "Embrayage/boîte, freins et châssis à la limite du PTAC",
+                  "symptomes": [
+                    "Patinage",
+                    "Vibration",
+                    "Freinage faible ou pneus usés"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km selon charge",
+                  "diagnostic": "Peser par essieu, contrôler embrayage/volant, boîte, cardans, freins, roulements, suspension, pneus camping-car, corrosion et date des pneumatiques",
+                  "piece_concernee": "Chaîne cinématique et châssis porteur",
+                  "gravite": "Critique si surcharge ou freinage insuffisant",
+                  "frequence": "Assez fréquente sur véhicules constamment chargés",
+                  "cout_reparation_estime": "Élevé : environ 700 à 6 000 €"
+                },
+                {
+                  "probleme": "Étanchéité, gaz, eau et installation électrique de cellule",
+                  "symptomes": [
+                    "Humidité",
+                    "Odeur de gaz",
+                    "Batterie cellule faible ou appareil inopérant"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et avant achat, indépendamment du kilométrage",
+                  "diagnostic": "Mesurer humidité autour baies/toit/plancher, tester gaz par professionnel, eau/pompe/chauffage Truma, 12/230 V, chargeur, batterie, panneaux, ventilation et poids des accessoires",
+                  "piece_concernee": "Cellule de camping-car et réseaux auxiliaires",
+                  "gravite": "Critique en cas de fuite de gaz ou infiltration structurelle",
+                  "frequence": "Assez fréquente sans contrôle annuel",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 15 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "source_catalogue": "VehiclesDB 2026.08.2 (CC-BY 4.0)"
+}

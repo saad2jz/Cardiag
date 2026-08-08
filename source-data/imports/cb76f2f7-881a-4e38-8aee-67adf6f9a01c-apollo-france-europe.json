@@ -1,0 +1,73 @@
+{
+  "nom": "Apollo",
+  "modeles": [
+    {
+      "nom": "Intensa Emozione",
+      "generations": [
+        {
+          "code_chassis": "Apollo IE",
+          "annees": "2019–aujourd’hui",
+          "phases": [
+            "Hypercar de très faible série et usage circuit ; toute inspection exige documentation d’usine et spécialiste carbone/V12"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "6.3 V12 atmosphérique — 780 ch",
+              "code_moteur": "Apollo V12 / base Ferrari F140",
+              "cylindree": "6 262 cm³",
+              "puissance_ch": 780,
+              "boite": [
+                "Hewland séquentielle 6 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, injection et refroidissement du V12 atmosphérique",
+                  "symptomes": [
+                    "Pression faible",
+                    "Ratés",
+                    "Température élevée ou fuite"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque entretien et après usage circuit",
+                  "diagnostic": "Lire télémétrie/défauts, analyser huile/filtre, mesurer pressions, contrôler carter sec, pompes, injecteurs, bobines, papillons, radiateurs, conduites, purge et historique de chauffe/surrégime",
+                  "piece_concernee": "V12 6.3 Apollo/Ferrari dérivé et carter sec",
+                  "gravite": "Critique",
+                  "frequence": "Données de flotte très limitées ; risque lié à l’usage",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 80 000 €"
+                },
+                {
+                  "probleme": "Boîte séquentielle Hewland, embrayage et différentiel",
+                  "symptomes": [
+                    "Sélection lente",
+                    "Patinage",
+                    "À-coups ou bruit de pont"
+                  ],
+                  "kilometrage_apparition": "Dépend fortement des départs et de la piste",
+                  "diagnostic": "Lire cycles/temps de passage, contrôler usure embrayage, actionnement pneumatique/électrohydraulique, crabots, huile/débris, différentiel, arbres et supports selon documentation Apollo/Hewland",
+                  "piece_concernee": "Transmission séquentielle et chaîne cinématique",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Variable en usage circuit",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à 50 000 €"
+                },
+                {
+                  "probleme": "Monocoque carbone, aérodynamique, suspension et freins de compétition",
+                  "symptomes": [
+                    "Fissure/délamination",
+                    "Jeu",
+                    "Vibration ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Après tout choc, sortie de piste ou levage incorrect",
+                  "diagnostic": "Inspection carbone par spécialiste/NDT si doute, contrôler points de levage, sous-plancher, aileron, fixations, push-rods, amortisseurs, moyeux, jantes magnésium, pneus, disques carbone-céramique et historique circuit",
+                  "piece_concernee": "Structure carbone et châssis haute performance",
+                  "gravite": "Critique",
+                  "frequence": "Peu fréquente mais conséquences très coûteuses",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 100 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

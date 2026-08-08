@@ -1,0 +1,353 @@
+{
+  "nom": "BelAZ",
+  "modeles": [
+    {
+      "nom": "7540",
+      "generations": [
+        {
+          "code_chassis": "7540 série 30 tonnes à transmission hydromécanique",
+          "annees": "années 1980–aujourd’hui selon variante et marché",
+          "phases": [
+            "Chaque suffixe correspond à une configuration moteur/boîte distincte ; charge utile 30 t, confirmer plaque, manuel de série et montage avant toute pièce"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "7540A YaMZ-240PM2 309 kW — 420 ch",
+              "code_moteur": "YaMZ-240PM2",
+              "cylindree": "22 299 cm³",
+              "puissance_ch": 420,
+              "boite": [
+                "Hydromécanique 5 avant + 2 arrière"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et injection du diesel industriel",
+                  "symptomes": [
+                    "Pression d’huile basse",
+                    "Fumée",
+                    "Surchauffe ou puissance insuffisante en rampe"
+                  ],
+                  "kilometrage_apparition": "Suivi en heures : contrôles renforcés après 8 000 à 15 000 h selon moteur, charge, poussière et analyses d’huile",
+                  "diagnostic": "Identifier exactement YaMZ/TMZ, Deutz ou Cummins, relever heures et événements, analyser huile/liquide, mesurer pression, blow-by, équilibrage cylindres, injection, turbos, filtres à air, radiateurs, ventilateur, échangeurs et préchauffage ; comparer aux limites du manuel moteur",
+                  "piece_concernee": "Moteur diesel, admission et refroidissement du 7540",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente en mine si filtration, refroidissement ou analyses négligés",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 120 000 €"
+                },
+                {
+                  "probleme": "Transmission hydromécanique, convertisseur, pont et réducteurs planétaires",
+                  "symptomes": [
+                    "Patinage",
+                    "Température élevée",
+                    "À-coups, limaille ou absence d’un rapport"
+                  ],
+                  "kilometrage_apparition": "Souvent après 10 000 à 25 000 h selon profils de charge et entretien",
+                  "diagnostic": "Prélever huile et mesurer pressions/températures, contrôler convertisseur, ralentisseur, embrayages, commandes, arbre, couple conique, différentiel et réducteurs de roues ; réaliser essai de décrochage uniquement selon procédure de sécurité",
+                  "piece_concernee": "Boîte hydromécanique 3+1 ou 5+2 et essieu moteur",
+                  "gravite": "Critique, immobilisation lourde",
+                  "frequence": "Assez fréquente sur cycles miniers sévères",
+                  "cout_reparation_estime": "Très élevé : environ 15 000 à plus de 180 000 €"
+                },
+                {
+                  "probleme": "Freinage pneumatique, suspension pneumo-hydraulique, pneus et structure",
+                  "symptomes": [
+                    "Perte d’air",
+                    "Machine inclinée",
+                    "Fissure de châssis",
+                    "Échauffement moyeu ou freinage faible"
+                  ],
+                  "kilometrage_apparition": "Inspection à chaque prise de poste et contrôles structurels programmés en heures",
+                  "diagnostic": "Consigner pression d’air et temps de montée, tester service/secours/stationnement/ralentisseur, inspecter accumulateurs et vérins de suspension, pivots, direction, jantes multipièces, pneus 18.00-25, châssis, benne, articulations et ROPS ; appliquer consignation et calage minier",
+                  "piece_concernee": "Freins, suspension, pneus, châssis et benne 30 t",
+                  "gravite": "Critique pour les personnes et l’exploitation",
+                  "frequence": "Fréquente en environnement abrasif et sous surcharge",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 150 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "7540B YaMZ-240M2-1 265 kW — 360 ch",
+              "code_moteur": "YaMZ-240M2-1",
+              "cylindree": "22 299 cm³",
+              "puissance_ch": 360,
+              "boite": [
+                "Hydromécanique 3 avant + 1 arrière"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et injection du diesel industriel",
+                  "symptomes": [
+                    "Pression d’huile basse",
+                    "Fumée",
+                    "Surchauffe ou puissance insuffisante en rampe"
+                  ],
+                  "kilometrage_apparition": "Suivi en heures : contrôles renforcés après 8 000 à 15 000 h selon moteur, charge, poussière et analyses d’huile",
+                  "diagnostic": "Identifier exactement YaMZ/TMZ, Deutz ou Cummins, relever heures et événements, analyser huile/liquide, mesurer pression, blow-by, équilibrage cylindres, injection, turbos, filtres à air, radiateurs, ventilateur, échangeurs et préchauffage ; comparer aux limites du manuel moteur",
+                  "piece_concernee": "Moteur diesel, admission et refroidissement du 7540",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente en mine si filtration, refroidissement ou analyses négligés",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 120 000 €"
+                },
+                {
+                  "probleme": "Transmission hydromécanique, convertisseur, pont et réducteurs planétaires",
+                  "symptomes": [
+                    "Patinage",
+                    "Température élevée",
+                    "À-coups, limaille ou absence d’un rapport"
+                  ],
+                  "kilometrage_apparition": "Souvent après 10 000 à 25 000 h selon profils de charge et entretien",
+                  "diagnostic": "Prélever huile et mesurer pressions/températures, contrôler convertisseur, ralentisseur, embrayages, commandes, arbre, couple conique, différentiel et réducteurs de roues ; réaliser essai de décrochage uniquement selon procédure de sécurité",
+                  "piece_concernee": "Boîte hydromécanique 3+1 ou 5+2 et essieu moteur",
+                  "gravite": "Critique, immobilisation lourde",
+                  "frequence": "Assez fréquente sur cycles miniers sévères",
+                  "cout_reparation_estime": "Très élevé : environ 15 000 à plus de 180 000 €"
+                },
+                {
+                  "probleme": "Freinage pneumatique, suspension pneumo-hydraulique, pneus et structure",
+                  "symptomes": [
+                    "Perte d’air",
+                    "Machine inclinée",
+                    "Fissure de châssis",
+                    "Échauffement moyeu ou freinage faible"
+                  ],
+                  "kilometrage_apparition": "Inspection à chaque prise de poste et contrôles structurels programmés en heures",
+                  "diagnostic": "Consigner pression d’air et temps de montée, tester service/secours/stationnement/ralentisseur, inspecter accumulateurs et vérins de suspension, pivots, direction, jantes multipièces, pneus 18.00-25, châssis, benne, articulations et ROPS ; appliquer consignation et calage minier",
+                  "piece_concernee": "Freins, suspension, pneus, châssis et benne 30 t",
+                  "gravite": "Critique pour les personnes et l’exploitation",
+                  "frequence": "Fréquente en environnement abrasif et sous surcharge",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 150 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "7540C TMZ D-280/8437.10 312,5 kW — 425 ch",
+              "code_moteur": "TMZ 8437.10 / D-280",
+              "cylindree": "17 240 cm³",
+              "puissance_ch": 425,
+              "boite": [
+                "Hydromécanique 5 avant + 2 arrière"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et injection du diesel industriel",
+                  "symptomes": [
+                    "Pression d’huile basse",
+                    "Fumée",
+                    "Surchauffe ou puissance insuffisante en rampe"
+                  ],
+                  "kilometrage_apparition": "Suivi en heures : contrôles renforcés après 8 000 à 15 000 h selon moteur, charge, poussière et analyses d’huile",
+                  "diagnostic": "Identifier exactement YaMZ/TMZ, Deutz ou Cummins, relever heures et événements, analyser huile/liquide, mesurer pression, blow-by, équilibrage cylindres, injection, turbos, filtres à air, radiateurs, ventilateur, échangeurs et préchauffage ; comparer aux limites du manuel moteur",
+                  "piece_concernee": "Moteur diesel, admission et refroidissement du 7540",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente en mine si filtration, refroidissement ou analyses négligés",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 120 000 €"
+                },
+                {
+                  "probleme": "Transmission hydromécanique, convertisseur, pont et réducteurs planétaires",
+                  "symptomes": [
+                    "Patinage",
+                    "Température élevée",
+                    "À-coups, limaille ou absence d’un rapport"
+                  ],
+                  "kilometrage_apparition": "Souvent après 10 000 à 25 000 h selon profils de charge et entretien",
+                  "diagnostic": "Prélever huile et mesurer pressions/températures, contrôler convertisseur, ralentisseur, embrayages, commandes, arbre, couple conique, différentiel et réducteurs de roues ; réaliser essai de décrochage uniquement selon procédure de sécurité",
+                  "piece_concernee": "Boîte hydromécanique 3+1 ou 5+2 et essieu moteur",
+                  "gravite": "Critique, immobilisation lourde",
+                  "frequence": "Assez fréquente sur cycles miniers sévères",
+                  "cout_reparation_estime": "Très élevé : environ 15 000 à plus de 180 000 €"
+                },
+                {
+                  "probleme": "Freinage pneumatique, suspension pneumo-hydraulique, pneus et structure",
+                  "symptomes": [
+                    "Perte d’air",
+                    "Machine inclinée",
+                    "Fissure de châssis",
+                    "Échauffement moyeu ou freinage faible"
+                  ],
+                  "kilometrage_apparition": "Inspection à chaque prise de poste et contrôles structurels programmés en heures",
+                  "diagnostic": "Consigner pression d’air et temps de montée, tester service/secours/stationnement/ralentisseur, inspecter accumulateurs et vérins de suspension, pivots, direction, jantes multipièces, pneus 18.00-25, châssis, benne, articulations et ROPS ; appliquer consignation et calage minier",
+                  "piece_concernee": "Freins, suspension, pneus, châssis et benne 30 t",
+                  "gravite": "Critique pour les personnes et l’exploitation",
+                  "frequence": "Fréquente en environnement abrasif et sous surcharge",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 150 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "7540D Deutz BF8M1015 290 kW — 395 ch",
+              "code_moteur": "Deutz BF8M1015",
+              "cylindree": "15 874 cm³",
+              "puissance_ch": 395,
+              "boite": [
+                "Hydromécanique 5 avant + 2 arrière"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et injection du diesel industriel",
+                  "symptomes": [
+                    "Pression d’huile basse",
+                    "Fumée",
+                    "Surchauffe ou puissance insuffisante en rampe"
+                  ],
+                  "kilometrage_apparition": "Suivi en heures : contrôles renforcés après 8 000 à 15 000 h selon moteur, charge, poussière et analyses d’huile",
+                  "diagnostic": "Identifier exactement YaMZ/TMZ, Deutz ou Cummins, relever heures et événements, analyser huile/liquide, mesurer pression, blow-by, équilibrage cylindres, injection, turbos, filtres à air, radiateurs, ventilateur, échangeurs et préchauffage ; comparer aux limites du manuel moteur",
+                  "piece_concernee": "Moteur diesel, admission et refroidissement du 7540",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente en mine si filtration, refroidissement ou analyses négligés",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 120 000 €"
+                },
+                {
+                  "probleme": "Transmission hydromécanique, convertisseur, pont et réducteurs planétaires",
+                  "symptomes": [
+                    "Patinage",
+                    "Température élevée",
+                    "À-coups, limaille ou absence d’un rapport"
+                  ],
+                  "kilometrage_apparition": "Souvent après 10 000 à 25 000 h selon profils de charge et entretien",
+                  "diagnostic": "Prélever huile et mesurer pressions/températures, contrôler convertisseur, ralentisseur, embrayages, commandes, arbre, couple conique, différentiel et réducteurs de roues ; réaliser essai de décrochage uniquement selon procédure de sécurité",
+                  "piece_concernee": "Boîte hydromécanique 3+1 ou 5+2 et essieu moteur",
+                  "gravite": "Critique, immobilisation lourde",
+                  "frequence": "Assez fréquente sur cycles miniers sévères",
+                  "cout_reparation_estime": "Très élevé : environ 15 000 à plus de 180 000 €"
+                },
+                {
+                  "probleme": "Freinage pneumatique, suspension pneumo-hydraulique, pneus et structure",
+                  "symptomes": [
+                    "Perte d’air",
+                    "Machine inclinée",
+                    "Fissure de châssis",
+                    "Échauffement moyeu ou freinage faible"
+                  ],
+                  "kilometrage_apparition": "Inspection à chaque prise de poste et contrôles structurels programmés en heures",
+                  "diagnostic": "Consigner pression d’air et temps de montée, tester service/secours/stationnement/ralentisseur, inspecter accumulateurs et vérins de suspension, pivots, direction, jantes multipièces, pneus 18.00-25, châssis, benne, articulations et ROPS ; appliquer consignation et calage minier",
+                  "piece_concernee": "Freins, suspension, pneus, châssis et benne 30 t",
+                  "gravite": "Critique pour les personnes et l’exploitation",
+                  "frequence": "Fréquente en environnement abrasif et sous surcharge",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 150 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "7540E YaMZ-240M2-1 265 kW — 360 ch",
+              "code_moteur": "YaMZ-240M2-1",
+              "cylindree": "22 299 cm³",
+              "puissance_ch": 360,
+              "boite": [
+                "Hydromécanique 3 avant + 1 arrière"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et injection du diesel industriel",
+                  "symptomes": [
+                    "Pression d’huile basse",
+                    "Fumée",
+                    "Surchauffe ou puissance insuffisante en rampe"
+                  ],
+                  "kilometrage_apparition": "Suivi en heures : contrôles renforcés après 8 000 à 15 000 h selon moteur, charge, poussière et analyses d’huile",
+                  "diagnostic": "Identifier exactement YaMZ/TMZ, Deutz ou Cummins, relever heures et événements, analyser huile/liquide, mesurer pression, blow-by, équilibrage cylindres, injection, turbos, filtres à air, radiateurs, ventilateur, échangeurs et préchauffage ; comparer aux limites du manuel moteur",
+                  "piece_concernee": "Moteur diesel, admission et refroidissement du 7540",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente en mine si filtration, refroidissement ou analyses négligés",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 120 000 €"
+                },
+                {
+                  "probleme": "Transmission hydromécanique, convertisseur, pont et réducteurs planétaires",
+                  "symptomes": [
+                    "Patinage",
+                    "Température élevée",
+                    "À-coups, limaille ou absence d’un rapport"
+                  ],
+                  "kilometrage_apparition": "Souvent après 10 000 à 25 000 h selon profils de charge et entretien",
+                  "diagnostic": "Prélever huile et mesurer pressions/températures, contrôler convertisseur, ralentisseur, embrayages, commandes, arbre, couple conique, différentiel et réducteurs de roues ; réaliser essai de décrochage uniquement selon procédure de sécurité",
+                  "piece_concernee": "Boîte hydromécanique 3+1 ou 5+2 et essieu moteur",
+                  "gravite": "Critique, immobilisation lourde",
+                  "frequence": "Assez fréquente sur cycles miniers sévères",
+                  "cout_reparation_estime": "Très élevé : environ 15 000 à plus de 180 000 €"
+                },
+                {
+                  "probleme": "Freinage pneumatique, suspension pneumo-hydraulique, pneus et structure",
+                  "symptomes": [
+                    "Perte d’air",
+                    "Machine inclinée",
+                    "Fissure de châssis",
+                    "Échauffement moyeu ou freinage faible"
+                  ],
+                  "kilometrage_apparition": "Inspection à chaque prise de poste et contrôles structurels programmés en heures",
+                  "diagnostic": "Consigner pression d’air et temps de montée, tester service/secours/stationnement/ralentisseur, inspecter accumulateurs et vérins de suspension, pivots, direction, jantes multipièces, pneus 18.00-25, châssis, benne, articulations et ROPS ; appliquer consignation et calage minier",
+                  "piece_concernee": "Freins, suspension, pneus, châssis et benne 30 t",
+                  "gravite": "Critique pour les personnes et l’exploitation",
+                  "frequence": "Fréquente en environnement abrasif et sous surcharge",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 150 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "7540K Cummins QSM11-C400 298 kW — 405 ch",
+              "code_moteur": "Cummins QSM11-C400",
+              "cylindree": "10 800 cm³",
+              "puissance_ch": 405,
+              "boite": [
+                "Hydromécanique 5 avant + 2 arrière"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et injection du diesel industriel",
+                  "symptomes": [
+                    "Pression d’huile basse",
+                    "Fumée",
+                    "Surchauffe ou puissance insuffisante en rampe"
+                  ],
+                  "kilometrage_apparition": "Suivi en heures : contrôles renforcés après 8 000 à 15 000 h selon moteur, charge, poussière et analyses d’huile",
+                  "diagnostic": "Identifier exactement YaMZ/TMZ, Deutz ou Cummins, relever heures et événements, analyser huile/liquide, mesurer pression, blow-by, équilibrage cylindres, injection, turbos, filtres à air, radiateurs, ventilateur, échangeurs et préchauffage ; comparer aux limites du manuel moteur",
+                  "piece_concernee": "Moteur diesel, admission et refroidissement du 7540",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente en mine si filtration, refroidissement ou analyses négligés",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 120 000 €"
+                },
+                {
+                  "probleme": "Transmission hydromécanique, convertisseur, pont et réducteurs planétaires",
+                  "symptomes": [
+                    "Patinage",
+                    "Température élevée",
+                    "À-coups, limaille ou absence d’un rapport"
+                  ],
+                  "kilometrage_apparition": "Souvent après 10 000 à 25 000 h selon profils de charge et entretien",
+                  "diagnostic": "Prélever huile et mesurer pressions/températures, contrôler convertisseur, ralentisseur, embrayages, commandes, arbre, couple conique, différentiel et réducteurs de roues ; réaliser essai de décrochage uniquement selon procédure de sécurité",
+                  "piece_concernee": "Boîte hydromécanique 3+1 ou 5+2 et essieu moteur",
+                  "gravite": "Critique, immobilisation lourde",
+                  "frequence": "Assez fréquente sur cycles miniers sévères",
+                  "cout_reparation_estime": "Très élevé : environ 15 000 à plus de 180 000 €"
+                },
+                {
+                  "probleme": "Freinage pneumatique, suspension pneumo-hydraulique, pneus et structure",
+                  "symptomes": [
+                    "Perte d’air",
+                    "Machine inclinée",
+                    "Fissure de châssis",
+                    "Échauffement moyeu ou freinage faible"
+                  ],
+                  "kilometrage_apparition": "Inspection à chaque prise de poste et contrôles structurels programmés en heures",
+                  "diagnostic": "Consigner pression d’air et temps de montée, tester service/secours/stationnement/ralentisseur, inspecter accumulateurs et vérins de suspension, pivots, direction, jantes multipièces, pneus 18.00-25, châssis, benne, articulations et ROPS ; appliquer consignation et calage minier",
+                  "piece_concernee": "Freins, suspension, pneus, châssis et benne 30 t",
+                  "gravite": "Critique pour les personnes et l’exploitation",
+                  "frequence": "Fréquente en environnement abrasif et sous surcharge",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 150 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://dkbs.uz/f/katalog_osnovnoj_produkcii_belaz.pdf",
+        "https://www.beltrast.ru/users/bpm/files/buklet/belaz_7540d.pdf"
+      ]
+    }
+  ]
+}

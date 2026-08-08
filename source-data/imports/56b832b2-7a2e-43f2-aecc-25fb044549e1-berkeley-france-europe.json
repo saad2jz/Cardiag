@@ -1,0 +1,147 @@
+{
+  "nom": "Berkeley",
+  "modeles": [
+    {
+      "nom": "B95",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "fi",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 9
+      },
+      "generations": [
+        {
+          "code_chassis": "SE B95/B105",
+          "annees": "1959–1960",
+          "phases": [
+            "B95 40 bhp et B105 50 bhp sont séparées ; une cylindrée 750 cm³ indique généralement un remplacement non d’origine"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "B95 Royal Enfield Super Meteor — 41 ch",
+              "code_moteur": "Royal Enfield SMTB",
+              "cylindree": "692 cm³",
+              "puissance_ch": 41,
+              "boite": [
+                "Albion manuelle 4 rapports + marche arrière, traction"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, chauffe et usure du bicylindre Royal Enfield",
+                  "symptomes": [
+                    "Fumée",
+                    "Claquement",
+                    "Compression faible ou fuite d’huile"
+                  ],
+                  "kilometrage_apparition": "À contrôler quel que soit le compteur ; risque accru après immobilisation",
+                  "diagnostic": "Identifier Super Meteor SMTB ou Constellation SMUA, mesurer compressions/pression, contrôler vilebrequin, distribution OHV, carburateurs, magnéto/allumage, refroidissement par air et modifications 750 cm³ non d’origine",
+                  "piece_concernee": "Bicylindre Royal Enfield 692 cm³",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sur mécanique ancienne ou transformée",
+                  "cout_reparation_estime": "Élevé : environ 1 500 à 12 000 €"
+                },
+                {
+                  "probleme": "Chaîne primaire, boîte Albion, marche arrière et différentiel avant",
+                  "symptomes": [
+                    "Bruit de chaîne",
+                    "Rapport difficile",
+                    "À-coups ou perte de motricité"
+                  ],
+                  "kilometrage_apparition": "Variable, souvent après mauvais réglage ou usage sportif",
+                  "diagnostic": "Inspecter carter primaire Berkeley, tension/alignement duplex, embrayage, sélection, mécanisme de marche arrière, sorties, différentiel, cardans et supports ; vérifier absence de contact avec la coque",
+                  "piece_concernee": "Transmission 4 rapports et traction avant",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente avec réglage ou pièces non conformes",
+                  "cout_reparation_estime": "Élevé : environ 1 000 à 9 000 €"
+                },
+                {
+                  "probleme": "Coque polyester, châssis aluminium et organes de sécurité",
+                  "symptomes": [
+                    "Fissures en étoile",
+                    "Décollement",
+                    "Jeu ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique sur véhicule de 1959-1960",
+                  "diagnostic": "Contrôler osmose/fissures et réparations de polyester, corrosion galvanique du châssis, renforts du prototype/production, ancrages, suspension, direction, freins, roues et alignement ; authentifier numéro SE et moteur",
+                  "piece_concernee": "Monocoque composite, structure et trains roulants",
+                  "gravite": "Critique si structure ou freinage atteint",
+                  "frequence": "Fréquente avec âge et restaurations anciennes",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 20 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "B105 Royal Enfield Constellation — 51 ch",
+              "code_moteur": "Royal Enfield SMUA",
+              "cylindree": "692 cm³",
+              "puissance_ch": 51,
+              "boite": [
+                "Albion manuelle 4 rapports + marche arrière, traction"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, chauffe et usure du bicylindre Royal Enfield",
+                  "symptomes": [
+                    "Fumée",
+                    "Claquement",
+                    "Compression faible ou fuite d’huile"
+                  ],
+                  "kilometrage_apparition": "À contrôler quel que soit le compteur ; risque accru après immobilisation",
+                  "diagnostic": "Identifier Super Meteor SMTB ou Constellation SMUA, mesurer compressions/pression, contrôler vilebrequin, distribution OHV, carburateurs, magnéto/allumage, refroidissement par air et modifications 750 cm³ non d’origine",
+                  "piece_concernee": "Bicylindre Royal Enfield 692 cm³",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sur mécanique ancienne ou transformée",
+                  "cout_reparation_estime": "Élevé : environ 1 500 à 12 000 €"
+                },
+                {
+                  "probleme": "Chaîne primaire, boîte Albion, marche arrière et différentiel avant",
+                  "symptomes": [
+                    "Bruit de chaîne",
+                    "Rapport difficile",
+                    "À-coups ou perte de motricité"
+                  ],
+                  "kilometrage_apparition": "Variable, souvent après mauvais réglage ou usage sportif",
+                  "diagnostic": "Inspecter carter primaire Berkeley, tension/alignement duplex, embrayage, sélection, mécanisme de marche arrière, sorties, différentiel, cardans et supports ; vérifier absence de contact avec la coque",
+                  "piece_concernee": "Transmission 4 rapports et traction avant",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente avec réglage ou pièces non conformes",
+                  "cout_reparation_estime": "Élevé : environ 1 000 à 9 000 €"
+                },
+                {
+                  "probleme": "Coque polyester, châssis aluminium et organes de sécurité",
+                  "symptomes": [
+                    "Fissures en étoile",
+                    "Décollement",
+                    "Jeu ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique sur véhicule de 1959-1960",
+                  "diagnostic": "Contrôler osmose/fissures et réparations de polyester, corrosion galvanique du châssis, renforts du prototype/production, ancrages, suspension, direction, freins, roues et alignement ; authentifier numéro SE et moteur",
+                  "piece_concernee": "Monocoque composite, structure et trains roulants",
+                  "gravite": "Critique si structure ou freinage atteint",
+                  "frequence": "Fréquente avec âge et restaurations anciennes",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 20 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.royalenfields.com/2012/01/royal-enfield-powered-berkeley-sports.html"
+      ]
+    }
+  ],
+  "source_catalogue": "VehiclesDB 2026.08.2 (CC-BY 4.0)"
+}

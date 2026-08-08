@@ -1,0 +1,305 @@
+{
+  "nom": "Koenigsegg",
+  "modeles": [
+    {
+      "nom": "Jesko",
+      "generations": [
+        {
+          "code_chassis": "Jesko Attack",
+          "annees": "2021–aujourd’hui",
+          "phases": [
+            "Version à fort appui jusqu’à environ 1 400 kg ; puissance séparée selon carburant."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 biturbo sur essence — 1280 ch",
+              "code_moteur": "Koenigsegg 5.0 TT flat-plane",
+              "cylindree": "5 065 cm³",
+              "puissance_ch": 1280,
+              "boite": [
+                "Light Speed Transmission 9 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carburant, combustion individuelle, turbos et refroidissement du V8",
+                  "symptomes": [
+                    "Ratés ou correction cylindre",
+                    "Boost limité",
+                    "Température, fumée ou consommation de fluide"
+                  ],
+                  "kilometrage_apparition": "Diagnostic avant chaque usage intensif et selon échéances constructeur",
+                  "diagnostic": "Confirmer essence homologuée ou E85 avant d’attendre 1280/1600 ch, télécharger pression cylindre, lambda, cliquetis, boost, températures et historique ; tester alimentation flex-fuel, injecteurs, bobines, turbos céramique, système anti-lag/air, échangeurs, pompes et étanchéité sans pleine charge avant validation",
+                  "piece_concernee": "V8 Koenigsegg 5.0 biturbo flex-fuel",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable ; maintenance exclusivement spécialisée",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 100 000 €"
+                },
+                {
+                  "probleme": "Carter sec, vilebrequin plat, distribution et intégrité interne",
+                  "symptomes": [
+                    "Pression d’huile instable",
+                    "Vibration anormale",
+                    "Bruit mécanique, limaille ou régime enregistré excessif"
+                  ],
+                  "kilometrage_apparition": "Contrôle selon heures, télémétrie et calendrier constructeur",
+                  "diagnostic": "Analyser huile/filtre et données de pression, contrôler réservoir/pompes de carter sec, ventilation, supports et fuites ; réaliser endoscopie, compressions/leak-down et contrôle de distribution si anomalie, en tenant compte du vilebrequin plat et de la limite de 8 500 tr/min",
+                  "piece_concernee": "Lubrification et mécanique interne Jesko",
+                  "gravite": "Critique",
+                  "frequence": "Très rare mais conséquence catastrophique",
+                  "cout_reparation_estime": "Extrême : environ 5 000 à plus de 200 000 €"
+                },
+                {
+                  "probleme": "Light Speed Transmission neuf rapports, sept embrayages et e-diff",
+                  "symptomes": [
+                    "Sélection indisponible",
+                    "Patinage ou choc",
+                    "Température, alerte UPOD ou fuite"
+                  ],
+                  "kilometrage_apparition": "Contrôle logiciel et fluides selon constructeur ; après chaque alerte",
+                  "diagnostic": "Lire défauts, températures, pressions et usures d’embrayages, vérifier logiciel, batterie 12 V, actuateurs, connecteurs, refroidissement et fuites ; tester chaque rapport et UPOD progressivement, puis inspecter e-diff, arbres et moyeux sans adaptation générique",
+                  "piece_concernee": "Boîte Koenigsegg LST, embrayages et différentiel électronique",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable sur une série de 125 véhicules",
+                  "cout_reparation_estime": "Extrême : environ 5 000 à plus de 150 000 €"
+                },
+                {
+                  "probleme": "Monocoque carbone, aérodynamique Attack/Absolut, Triplex et freins carbone-céramique",
+                  "symptomes": [
+                    "Délaminage ou trace de choc",
+                    "Aéro active ou hauteur en défaut",
+                    "Vibration au freinage, fuite ou usure pneu"
+                  ],
+                  "kilometrage_apparition": "Inspection avant achat, après piste, choc, transport ou levage",
+                  "diagnostic": "Faire cartographier monocoque, inserts, crash structures, carrosserie et fond ; identifier Attack à grand appui ou Absolut faible traînée, tester aéro/hauteur, amortisseurs gaz-hydrauliques et Triplex, direction arrière, roues centrales, pneus, disques 410/395 mm, étriers et couples avec outillage Koenigsegg",
+                  "piece_concernee": "Structure, aérodynamique et châssis Jesko",
+                  "gravite": "Critique",
+                  "frequence": "Risque lié surtout à choc, piste ou intervention incorrecte",
+                  "cout_reparation_estime": "Extrême : environ 3 000 à plus de 250 000 €"
+                }
+              ]
+            },
+            {
+              "type": "E85",
+              "nom": "V8 biturbo sur E85 — 1600 ch",
+              "code_moteur": "Koenigsegg 5.0 TT flat-plane flex-fuel",
+              "cylindree": "5 065 cm³",
+              "puissance_ch": 1600,
+              "boite": [
+                "Light Speed Transmission 9 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carburant, combustion individuelle, turbos et refroidissement du V8",
+                  "symptomes": [
+                    "Ratés ou correction cylindre",
+                    "Boost limité",
+                    "Température, fumée ou consommation de fluide"
+                  ],
+                  "kilometrage_apparition": "Diagnostic avant chaque usage intensif et selon échéances constructeur",
+                  "diagnostic": "Confirmer essence homologuée ou E85 avant d’attendre 1280/1600 ch, télécharger pression cylindre, lambda, cliquetis, boost, températures et historique ; tester alimentation flex-fuel, injecteurs, bobines, turbos céramique, système anti-lag/air, échangeurs, pompes et étanchéité sans pleine charge avant validation",
+                  "piece_concernee": "V8 Koenigsegg 5.0 biturbo flex-fuel",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable ; maintenance exclusivement spécialisée",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 100 000 €"
+                },
+                {
+                  "probleme": "Carter sec, vilebrequin plat, distribution et intégrité interne",
+                  "symptomes": [
+                    "Pression d’huile instable",
+                    "Vibration anormale",
+                    "Bruit mécanique, limaille ou régime enregistré excessif"
+                  ],
+                  "kilometrage_apparition": "Contrôle selon heures, télémétrie et calendrier constructeur",
+                  "diagnostic": "Analyser huile/filtre et données de pression, contrôler réservoir/pompes de carter sec, ventilation, supports et fuites ; réaliser endoscopie, compressions/leak-down et contrôle de distribution si anomalie, en tenant compte du vilebrequin plat et de la limite de 8 500 tr/min",
+                  "piece_concernee": "Lubrification et mécanique interne Jesko",
+                  "gravite": "Critique",
+                  "frequence": "Très rare mais conséquence catastrophique",
+                  "cout_reparation_estime": "Extrême : environ 5 000 à plus de 200 000 €"
+                },
+                {
+                  "probleme": "Light Speed Transmission neuf rapports, sept embrayages et e-diff",
+                  "symptomes": [
+                    "Sélection indisponible",
+                    "Patinage ou choc",
+                    "Température, alerte UPOD ou fuite"
+                  ],
+                  "kilometrage_apparition": "Contrôle logiciel et fluides selon constructeur ; après chaque alerte",
+                  "diagnostic": "Lire défauts, températures, pressions et usures d’embrayages, vérifier logiciel, batterie 12 V, actuateurs, connecteurs, refroidissement et fuites ; tester chaque rapport et UPOD progressivement, puis inspecter e-diff, arbres et moyeux sans adaptation générique",
+                  "piece_concernee": "Boîte Koenigsegg LST, embrayages et différentiel électronique",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable sur une série de 125 véhicules",
+                  "cout_reparation_estime": "Extrême : environ 5 000 à plus de 150 000 €"
+                },
+                {
+                  "probleme": "Monocoque carbone, aérodynamique Attack/Absolut, Triplex et freins carbone-céramique",
+                  "symptomes": [
+                    "Délaminage ou trace de choc",
+                    "Aéro active ou hauteur en défaut",
+                    "Vibration au freinage, fuite ou usure pneu"
+                  ],
+                  "kilometrage_apparition": "Inspection avant achat, après piste, choc, transport ou levage",
+                  "diagnostic": "Faire cartographier monocoque, inserts, crash structures, carrosserie et fond ; identifier Attack à grand appui ou Absolut faible traînée, tester aéro/hauteur, amortisseurs gaz-hydrauliques et Triplex, direction arrière, roues centrales, pneus, disques 410/395 mm, étriers et couples avec outillage Koenigsegg",
+                  "piece_concernee": "Structure, aérodynamique et châssis Jesko",
+                  "gravite": "Critique",
+                  "frequence": "Risque lié surtout à choc, piste ou intervention incorrecte",
+                  "cout_reparation_estime": "Extrême : environ 3 000 à plus de 250 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Jesko Absolut",
+          "annees": "2022–aujourd’hui",
+          "phases": [
+            "Version faible traînée Cd 0,278 ; carrosserie et réglages ne doivent pas être fusionnés avec l’Attack."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 biturbo sur essence — 1280 ch",
+              "code_moteur": "Koenigsegg 5.0 TT flat-plane",
+              "cylindree": "5 065 cm³",
+              "puissance_ch": 1280,
+              "boite": [
+                "Light Speed Transmission 9 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carburant, combustion individuelle, turbos et refroidissement du V8",
+                  "symptomes": [
+                    "Ratés ou correction cylindre",
+                    "Boost limité",
+                    "Température, fumée ou consommation de fluide"
+                  ],
+                  "kilometrage_apparition": "Diagnostic avant chaque usage intensif et selon échéances constructeur",
+                  "diagnostic": "Confirmer essence homologuée ou E85 avant d’attendre 1280/1600 ch, télécharger pression cylindre, lambda, cliquetis, boost, températures et historique ; tester alimentation flex-fuel, injecteurs, bobines, turbos céramique, système anti-lag/air, échangeurs, pompes et étanchéité sans pleine charge avant validation",
+                  "piece_concernee": "V8 Koenigsegg 5.0 biturbo flex-fuel",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable ; maintenance exclusivement spécialisée",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 100 000 €"
+                },
+                {
+                  "probleme": "Carter sec, vilebrequin plat, distribution et intégrité interne",
+                  "symptomes": [
+                    "Pression d’huile instable",
+                    "Vibration anormale",
+                    "Bruit mécanique, limaille ou régime enregistré excessif"
+                  ],
+                  "kilometrage_apparition": "Contrôle selon heures, télémétrie et calendrier constructeur",
+                  "diagnostic": "Analyser huile/filtre et données de pression, contrôler réservoir/pompes de carter sec, ventilation, supports et fuites ; réaliser endoscopie, compressions/leak-down et contrôle de distribution si anomalie, en tenant compte du vilebrequin plat et de la limite de 8 500 tr/min",
+                  "piece_concernee": "Lubrification et mécanique interne Jesko",
+                  "gravite": "Critique",
+                  "frequence": "Très rare mais conséquence catastrophique",
+                  "cout_reparation_estime": "Extrême : environ 5 000 à plus de 200 000 €"
+                },
+                {
+                  "probleme": "Light Speed Transmission neuf rapports, sept embrayages et e-diff",
+                  "symptomes": [
+                    "Sélection indisponible",
+                    "Patinage ou choc",
+                    "Température, alerte UPOD ou fuite"
+                  ],
+                  "kilometrage_apparition": "Contrôle logiciel et fluides selon constructeur ; après chaque alerte",
+                  "diagnostic": "Lire défauts, températures, pressions et usures d’embrayages, vérifier logiciel, batterie 12 V, actuateurs, connecteurs, refroidissement et fuites ; tester chaque rapport et UPOD progressivement, puis inspecter e-diff, arbres et moyeux sans adaptation générique",
+                  "piece_concernee": "Boîte Koenigsegg LST, embrayages et différentiel électronique",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable sur une série de 125 véhicules",
+                  "cout_reparation_estime": "Extrême : environ 5 000 à plus de 150 000 €"
+                },
+                {
+                  "probleme": "Monocoque carbone, aérodynamique Attack/Absolut, Triplex et freins carbone-céramique",
+                  "symptomes": [
+                    "Délaminage ou trace de choc",
+                    "Aéro active ou hauteur en défaut",
+                    "Vibration au freinage, fuite ou usure pneu"
+                  ],
+                  "kilometrage_apparition": "Inspection avant achat, après piste, choc, transport ou levage",
+                  "diagnostic": "Faire cartographier monocoque, inserts, crash structures, carrosserie et fond ; identifier Attack à grand appui ou Absolut faible traînée, tester aéro/hauteur, amortisseurs gaz-hydrauliques et Triplex, direction arrière, roues centrales, pneus, disques 410/395 mm, étriers et couples avec outillage Koenigsegg",
+                  "piece_concernee": "Structure, aérodynamique et châssis Jesko",
+                  "gravite": "Critique",
+                  "frequence": "Risque lié surtout à choc, piste ou intervention incorrecte",
+                  "cout_reparation_estime": "Extrême : environ 3 000 à plus de 250 000 €"
+                }
+              ]
+            },
+            {
+              "type": "E85",
+              "nom": "V8 biturbo sur E85 — 1600 ch",
+              "code_moteur": "Koenigsegg 5.0 TT flat-plane flex-fuel",
+              "cylindree": "5 065 cm³",
+              "puissance_ch": 1600,
+              "boite": [
+                "Light Speed Transmission 9 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carburant, combustion individuelle, turbos et refroidissement du V8",
+                  "symptomes": [
+                    "Ratés ou correction cylindre",
+                    "Boost limité",
+                    "Température, fumée ou consommation de fluide"
+                  ],
+                  "kilometrage_apparition": "Diagnostic avant chaque usage intensif et selon échéances constructeur",
+                  "diagnostic": "Confirmer essence homologuée ou E85 avant d’attendre 1280/1600 ch, télécharger pression cylindre, lambda, cliquetis, boost, températures et historique ; tester alimentation flex-fuel, injecteurs, bobines, turbos céramique, système anti-lag/air, échangeurs, pompes et étanchéité sans pleine charge avant validation",
+                  "piece_concernee": "V8 Koenigsegg 5.0 biturbo flex-fuel",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable ; maintenance exclusivement spécialisée",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 100 000 €"
+                },
+                {
+                  "probleme": "Carter sec, vilebrequin plat, distribution et intégrité interne",
+                  "symptomes": [
+                    "Pression d’huile instable",
+                    "Vibration anormale",
+                    "Bruit mécanique, limaille ou régime enregistré excessif"
+                  ],
+                  "kilometrage_apparition": "Contrôle selon heures, télémétrie et calendrier constructeur",
+                  "diagnostic": "Analyser huile/filtre et données de pression, contrôler réservoir/pompes de carter sec, ventilation, supports et fuites ; réaliser endoscopie, compressions/leak-down et contrôle de distribution si anomalie, en tenant compte du vilebrequin plat et de la limite de 8 500 tr/min",
+                  "piece_concernee": "Lubrification et mécanique interne Jesko",
+                  "gravite": "Critique",
+                  "frequence": "Très rare mais conséquence catastrophique",
+                  "cout_reparation_estime": "Extrême : environ 5 000 à plus de 200 000 €"
+                },
+                {
+                  "probleme": "Light Speed Transmission neuf rapports, sept embrayages et e-diff",
+                  "symptomes": [
+                    "Sélection indisponible",
+                    "Patinage ou choc",
+                    "Température, alerte UPOD ou fuite"
+                  ],
+                  "kilometrage_apparition": "Contrôle logiciel et fluides selon constructeur ; après chaque alerte",
+                  "diagnostic": "Lire défauts, températures, pressions et usures d’embrayages, vérifier logiciel, batterie 12 V, actuateurs, connecteurs, refroidissement et fuites ; tester chaque rapport et UPOD progressivement, puis inspecter e-diff, arbres et moyeux sans adaptation générique",
+                  "piece_concernee": "Boîte Koenigsegg LST, embrayages et différentiel électronique",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable sur une série de 125 véhicules",
+                  "cout_reparation_estime": "Extrême : environ 5 000 à plus de 150 000 €"
+                },
+                {
+                  "probleme": "Monocoque carbone, aérodynamique Attack/Absolut, Triplex et freins carbone-céramique",
+                  "symptomes": [
+                    "Délaminage ou trace de choc",
+                    "Aéro active ou hauteur en défaut",
+                    "Vibration au freinage, fuite ou usure pneu"
+                  ],
+                  "kilometrage_apparition": "Inspection avant achat, après piste, choc, transport ou levage",
+                  "diagnostic": "Faire cartographier monocoque, inserts, crash structures, carrosserie et fond ; identifier Attack à grand appui ou Absolut faible traînée, tester aéro/hauteur, amortisseurs gaz-hydrauliques et Triplex, direction arrière, roues centrales, pneus, disques 410/395 mm, étriers et couples avec outillage Koenigsegg",
+                  "piece_concernee": "Structure, aérodynamique et châssis Jesko",
+                  "gravite": "Critique",
+                  "frequence": "Risque lié surtout à choc, piste ou intervention incorrecte",
+                  "cout_reparation_estime": "Extrême : environ 3 000 à plus de 250 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.koenigsegg.com/index.php/model/jesko-attack",
+        "https://www.koenigsegg.com/technical-specifications-jesko-absolut",
+        "https://www.koenigsegg.com/engines"
+      ]
+    }
+  ]
+}

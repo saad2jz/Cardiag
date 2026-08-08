@@ -1,0 +1,131 @@
+{
+  "nom": "Bédélia",
+  "modeles": [
+    {
+      "nom": "BD2",
+      "generations": [
+        {
+          "code_chassis": "BD2 tandem Bourbeau & Devaux",
+          "annees": "1911–1914",
+          "phases": [
+            "Les cylindrées documentées diffèrent selon exemplaire ; identifier le moteur et le châssis dans les archives plutôt que fusionner les deux variantes"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V-twin Anzani refroidi par air — 8 ch",
+              "code_moteur": "Anzani V-twin latéral",
+              "cylindree": "1 005 cm³",
+              "puissance_ch": 8,
+              "boite": [
+                "Deux rapports par courroies et poulies, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Usure, lubrification et authenticité du bicylindre en V refroidi par air",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Fumée",
+                    "Cognement ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Aucun seuil kilométrique pertinent ; contrôle avant chaque mise en route sur véhicule centenaire",
+                  "diagnostic": "Identifier moteur Anzani ou Bédélia par numéros/archives, mesurer compressions et jeux, inspecter soupapes latérales ou admission automatique selon moteur, carburateur Zenith, magnéto, graissage à huile perdue, ailettes et fuites ; lubrifier avant rotation après stockage",
+                  "piece_concernee": "V-twin 1 005/1 056 cm³ et alimentation",
+                  "gravite": "Critique pour mécanique et authenticité",
+                  "frequence": "Risque élevé après immobilisation ou restauration ancienne",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 30 000 € en fabrication spécialisée"
+                },
+                {
+                  "probleme": "Transmission à deux rapports par courroies et essieu arrière mobile",
+                  "symptomes": [
+                    "Courroie qui patine",
+                    "À-coups",
+                    "Désalignement ou absence d’entraînement"
+                  ],
+                  "kilometrage_apparition": "Inspection avant chaque roulage ; usure liée au réglage plus qu’au kilométrage",
+                  "diagnostic": "Contrôler matière, tension, alignement et état des deux courroies/poulies, chaîne de renvoi selon montage, roulements et mécanisme de déplacement de l’essieu ; vérifier absence de modification moderne irréversible",
+                  "piece_concernee": "Courroies, poulies et transmission arrière sans différentiel",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Très fréquente si courroies vieillies ou réglage incorrect",
+                  "cout_reparation_estime": "Élevé : environ 1 000 à 12 000 €"
+                },
+                {
+                  "probleme": "Châssis bois, direction par câble et freinage rudimentaire",
+                  "symptomes": [
+                    "Jeu de direction",
+                    "Bois fissuré",
+                    "Instabilité ou freinage insuffisant"
+                  ],
+                  "kilometrage_apparition": "Contrôle systématique avant usage, indépendamment du compteur",
+                  "diagnostic": "Expertiser longerons en frêne, assemblages, essieu avant pivot central, câble/tambour de direction, ressorts, roues, pneus, commandes et frein ; authentifier tandem conducteur arrière et limiter tout essai à un site sécurisé",
+                  "piece_concernee": "Structure bois, direction, suspension et freinage",
+                  "gravite": "Critique",
+                  "frequence": "Dégradation liée à l’âge et au stockage",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 40 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "V-twin Bédélia/Anzani 10 CV — 10 ch",
+              "code_moteur": "Bédélia V-twin latéral",
+              "cylindree": "1 056 cm³",
+              "puissance_ch": 10,
+              "boite": [
+                "Deux rapports par courroies et poulies, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Usure, lubrification et authenticité du bicylindre en V refroidi par air",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Fumée",
+                    "Cognement ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Aucun seuil kilométrique pertinent ; contrôle avant chaque mise en route sur véhicule centenaire",
+                  "diagnostic": "Identifier moteur Anzani ou Bédélia par numéros/archives, mesurer compressions et jeux, inspecter soupapes latérales ou admission automatique selon moteur, carburateur Zenith, magnéto, graissage à huile perdue, ailettes et fuites ; lubrifier avant rotation après stockage",
+                  "piece_concernee": "V-twin 1 005/1 056 cm³ et alimentation",
+                  "gravite": "Critique pour mécanique et authenticité",
+                  "frequence": "Risque élevé après immobilisation ou restauration ancienne",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 30 000 € en fabrication spécialisée"
+                },
+                {
+                  "probleme": "Transmission à deux rapports par courroies et essieu arrière mobile",
+                  "symptomes": [
+                    "Courroie qui patine",
+                    "À-coups",
+                    "Désalignement ou absence d’entraînement"
+                  ],
+                  "kilometrage_apparition": "Inspection avant chaque roulage ; usure liée au réglage plus qu’au kilométrage",
+                  "diagnostic": "Contrôler matière, tension, alignement et état des deux courroies/poulies, chaîne de renvoi selon montage, roulements et mécanisme de déplacement de l’essieu ; vérifier absence de modification moderne irréversible",
+                  "piece_concernee": "Courroies, poulies et transmission arrière sans différentiel",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Très fréquente si courroies vieillies ou réglage incorrect",
+                  "cout_reparation_estime": "Élevé : environ 1 000 à 12 000 €"
+                },
+                {
+                  "probleme": "Châssis bois, direction par câble et freinage rudimentaire",
+                  "symptomes": [
+                    "Jeu de direction",
+                    "Bois fissuré",
+                    "Instabilité ou freinage insuffisant"
+                  ],
+                  "kilometrage_apparition": "Contrôle systématique avant usage, indépendamment du compteur",
+                  "diagnostic": "Expertiser longerons en frêne, assemblages, essieu avant pivot central, câble/tambour de direction, ressorts, roues, pneus, commandes et frein ; authentifier tandem conducteur arrière et limiter tout essai à un site sécurisé",
+                  "piece_concernee": "Structure bois, direction, suspension et freinage",
+                  "gravite": "Critique",
+                  "frequence": "Dégradation liée à l’âge et au stockage",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 40 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.christies.com/lot/cyclecar-bedelia-bd2-10cv-tandem-annees-1912-6570428/",
+        "https://www.flickr.com/photos/109551672@N02/34346407383"
+      ]
+    }
+  ]
+}

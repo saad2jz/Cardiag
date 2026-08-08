@@ -1,0 +1,245 @@
+{
+  "nom": "Oltcit",
+  "modeles": [
+    {
+      "nom": "Club",
+      "generations": [
+        {
+          "code_chassis": "Club 11R",
+          "annees": "1981–1993",
+          "phases": [
+            "Version 1129 cm³ issue de la famille Citroën G ; boîte quatre rapports."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "11R boxer refroidi par air — 57 ch",
+              "code_moteur": "Citroën G11/631",
+              "cylindree": "1 129 cm³",
+              "puissance_ch": 57,
+              "boite": [
+                "Manuelle 4 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement par air, lubrification et étanchéité du flat-four",
+                  "symptomes": [
+                    "Surchauffe ou odeur d’huile",
+                    "Fumée, claquement ou compression faible",
+                    "Fuite aux tubes/joints"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, mais âge et remise en état priment",
+                  "diagnostic": "Identifier 1129 ou 1299 cm³, mesurer compressions/leak-down et pression d’huile, contrôler turbine, conduits, tôles, radiateur d’huile, thermostat/volets, courroie, reniflard, retours et joints ; nettoyer ailettes sans masquer une fuite susceptible d’atteindre l’échappement",
+                  "piece_concernee": "Moteur boxer Citroën/Oltcit refroidi par air",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sur véhicules immobilisés ou incomplets",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 000 €"
+                },
+                {
+                  "probleme": "Carburateur, allumage et réglage des culbuteurs",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ralenti irrégulier",
+                    "Trou, cliquetis ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage périodique tous les 15 000 à 30 000 km ; réfection après immobilisation",
+                  "diagnostic": "Contrôler réservoir, pompe, durites, filtre, starter et carburateur simple/double corps selon version ; synchroniser/régler richesse, avance, rupteurs ou module, bougies et jeu aux soupapes, puis comparer température et compression des quatre cylindres",
+                  "piece_concernee": "Admission, carburateur et allumage Oltcit Club",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Fréquente avec membranes, durites et connecteurs âgés",
+                  "cout_reparation_estime": "Faible à moyen : environ 100 à 900 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte quatre/cinq rapports et cardans avant",
+                  "symptomes": [
+                    "Sélection difficile",
+                    "Patinage",
+                    "Claquement en braquage, fuite ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km",
+                  "diagnostic": "Identifier boîte quatre du 11R ou cinq du 12TRS/12CS, contrôler commande, embrayage, huile, synchros, différentiel, supports, soufflets, cardans, moyeux et roulements ; vérifier rapports et pièces Citroën Axel compatibles avant commande",
+                  "piece_concernee": "Transmission manuelle et traction avant Oltcit",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente sans entretien ou avec soufflets rompus",
+                  "cout_reparation_estime": "Moyen à élevé : environ 250 à 2 500 €"
+                },
+                {
+                  "probleme": "Corrosion, suspension interconnectée, direction, freins et réseau électrique",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Caisse basse ou rebond",
+                    "Jeu, freinage dissymétrique ou pannes électriques"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant acquisition",
+                  "diagnostic": "Inspecter planchers, bas de caisse, longerons, ancrages, baie et passages ; contrôler barres de torsion, bras, roulements, amortisseurs, direction, pneus et géométrie, puis disques/tambours, conduites, maître-cylindre, alternateur, masses, commodos et faisceau ; authentifier version et numéros",
+                  "piece_concernee": "Coque et organes de sécurité Oltcit Club",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion et vieillissement fréquents selon stockage",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 6 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Club 12 TRS",
+          "annees": "1982–1994",
+          "phases": [
+            "Version 1299,25 cm³ homologuée en compétition dès 1982/1983 ; équipement et boîte distincts du 11R."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "12 TRS boxer refroidi par air — 62 ch",
+              "code_moteur": "Citroën G13/625",
+              "cylindree": "1 299 cm³",
+              "puissance_ch": 62,
+              "boite": [
+                "Manuelle 5 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement par air, lubrification et étanchéité du flat-four",
+                  "symptomes": [
+                    "Surchauffe ou odeur d’huile",
+                    "Fumée, claquement ou compression faible",
+                    "Fuite aux tubes/joints"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, mais âge et remise en état priment",
+                  "diagnostic": "Identifier 1129 ou 1299 cm³, mesurer compressions/leak-down et pression d’huile, contrôler turbine, conduits, tôles, radiateur d’huile, thermostat/volets, courroie, reniflard, retours et joints ; nettoyer ailettes sans masquer une fuite susceptible d’atteindre l’échappement",
+                  "piece_concernee": "Moteur boxer Citroën/Oltcit refroidi par air",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sur véhicules immobilisés ou incomplets",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 000 €"
+                },
+                {
+                  "probleme": "Carburateur, allumage et réglage des culbuteurs",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ralenti irrégulier",
+                    "Trou, cliquetis ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage périodique tous les 15 000 à 30 000 km ; réfection après immobilisation",
+                  "diagnostic": "Contrôler réservoir, pompe, durites, filtre, starter et carburateur simple/double corps selon version ; synchroniser/régler richesse, avance, rupteurs ou module, bougies et jeu aux soupapes, puis comparer température et compression des quatre cylindres",
+                  "piece_concernee": "Admission, carburateur et allumage Oltcit Club",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Fréquente avec membranes, durites et connecteurs âgés",
+                  "cout_reparation_estime": "Faible à moyen : environ 100 à 900 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte quatre/cinq rapports et cardans avant",
+                  "symptomes": [
+                    "Sélection difficile",
+                    "Patinage",
+                    "Claquement en braquage, fuite ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km",
+                  "diagnostic": "Identifier boîte quatre du 11R ou cinq du 12TRS/12CS, contrôler commande, embrayage, huile, synchros, différentiel, supports, soufflets, cardans, moyeux et roulements ; vérifier rapports et pièces Citroën Axel compatibles avant commande",
+                  "piece_concernee": "Transmission manuelle et traction avant Oltcit",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente sans entretien ou avec soufflets rompus",
+                  "cout_reparation_estime": "Moyen à élevé : environ 250 à 2 500 €"
+                },
+                {
+                  "probleme": "Corrosion, suspension interconnectée, direction, freins et réseau électrique",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Caisse basse ou rebond",
+                    "Jeu, freinage dissymétrique ou pannes électriques"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant acquisition",
+                  "diagnostic": "Inspecter planchers, bas de caisse, longerons, ancrages, baie et passages ; contrôler barres de torsion, bras, roulements, amortisseurs, direction, pneus et géométrie, puis disques/tambours, conduites, maître-cylindre, alternateur, masses, commodos et faisceau ; authentifier version et numéros",
+                  "piece_concernee": "Coque et organes de sécurité Oltcit Club",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion et vieillissement fréquents selon stockage",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 6 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Club 12 CS",
+          "annees": "1991–1996",
+          "phases": [
+            "Évolution tardive après reprise roumaine ; puissance et équipement à confirmer sur carte grise et numéro moteur."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "12 CS boxer refroidi par air — 64 ch",
+              "code_moteur": "Oltcit/Citroën G13 CS",
+              "cylindree": "1 299 cm³",
+              "puissance_ch": 64,
+              "boite": [
+                "Manuelle 5 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement par air, lubrification et étanchéité du flat-four",
+                  "symptomes": [
+                    "Surchauffe ou odeur d’huile",
+                    "Fumée, claquement ou compression faible",
+                    "Fuite aux tubes/joints"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, mais âge et remise en état priment",
+                  "diagnostic": "Identifier 1129 ou 1299 cm³, mesurer compressions/leak-down et pression d’huile, contrôler turbine, conduits, tôles, radiateur d’huile, thermostat/volets, courroie, reniflard, retours et joints ; nettoyer ailettes sans masquer une fuite susceptible d’atteindre l’échappement",
+                  "piece_concernee": "Moteur boxer Citroën/Oltcit refroidi par air",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sur véhicules immobilisés ou incomplets",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 000 €"
+                },
+                {
+                  "probleme": "Carburateur, allumage et réglage des culbuteurs",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ralenti irrégulier",
+                    "Trou, cliquetis ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage périodique tous les 15 000 à 30 000 km ; réfection après immobilisation",
+                  "diagnostic": "Contrôler réservoir, pompe, durites, filtre, starter et carburateur simple/double corps selon version ; synchroniser/régler richesse, avance, rupteurs ou module, bougies et jeu aux soupapes, puis comparer température et compression des quatre cylindres",
+                  "piece_concernee": "Admission, carburateur et allumage Oltcit Club",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Fréquente avec membranes, durites et connecteurs âgés",
+                  "cout_reparation_estime": "Faible à moyen : environ 100 à 900 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte quatre/cinq rapports et cardans avant",
+                  "symptomes": [
+                    "Sélection difficile",
+                    "Patinage",
+                    "Claquement en braquage, fuite ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km",
+                  "diagnostic": "Identifier boîte quatre du 11R ou cinq du 12TRS/12CS, contrôler commande, embrayage, huile, synchros, différentiel, supports, soufflets, cardans, moyeux et roulements ; vérifier rapports et pièces Citroën Axel compatibles avant commande",
+                  "piece_concernee": "Transmission manuelle et traction avant Oltcit",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente sans entretien ou avec soufflets rompus",
+                  "cout_reparation_estime": "Moyen à élevé : environ 250 à 2 500 €"
+                },
+                {
+                  "probleme": "Corrosion, suspension interconnectée, direction, freins et réseau électrique",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Caisse basse ou rebond",
+                    "Jeu, freinage dissymétrique ou pannes électriques"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant acquisition",
+                  "diagnostic": "Inspecter planchers, bas de caisse, longerons, ancrages, baie et passages ; contrôler barres de torsion, bras, roulements, amortisseurs, direction, pneus et géométrie, puis disques/tambours, conduites, maître-cylindre, alternateur, masses, commodos et faisceau ; authentifier version et numéros",
+                  "piece_concernee": "Coque et organes de sécurité Oltcit Club",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion et vieillissement fréquents selon stockage",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 6 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.acisport.it/public_federazione/2025/pdf/Archivio_storico_allegati_J/1987_allegato_j_fia_traduzione_italiana.pdf",
+        "https://electronicsandbooks.com/edt/manual/Magazine/T/Tehnium%20RO/1986%20-%20Colectie%20completa/8602.pdf"
+      ]
+    }
+  ]
+}

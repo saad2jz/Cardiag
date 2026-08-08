@@ -1,0 +1,168 @@
+{
+  "nom": "Exagon",
+  "modeles": [
+    {
+      "nom": "Furtive-eGT",
+      "generations": [
+        {
+          "code_chassis": "Concept Paris",
+          "annees": "2010",
+          "phases": [
+            "Concept électrique 2+2 français ; deux moteurs refroidis par liquide, puissance totale 296 kW et couple 516 Nm."
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "Deux moteurs Siemens 148 kW — 402 ch",
+              "code_moteur": "Siemens dual motor Exagon",
+              "cylindree": "Électrique — batterie 53 kWh",
+              "puissance_ch": 402,
+              "boite": [
+                "Boîte robotisée 3 rapports sans rupture de couple, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie Saft 53 kWh, équilibrage et isolation 360 V",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Écart de tension/température",
+                    "Défaut d’isolation ou charge interrompue"
+                  ],
+                  "kilometrage_apparition": "Vieillissement calendaire prioritaire ; contrôle à chaque remise en route",
+                  "diagnostic": "Consigner selon procédure haute tension, lire tensions et températures module par module, état de santé, équilibrage et résistance d’isolement. Contrôler contacteurs, précharge, refroidissement, connecteurs, humidité et intégrité du pack de 480 kg sans ouverture hors spécialiste.",
+                  "piece_concernee": "Batterie lithium-ion Saft de la Furtive-eGT",
+                  "gravite": "Critique",
+                  "frequence": "Inconnue sur prototype/présérie ; stockage déterminant",
+                  "cout_reparation_estime": "Extrême : diagnostic spécialisé puis réparation sur devis, potentiellement plus de 50 000 €"
+                },
+                {
+                  "probleme": "Deux moteurs Siemens, onduleurs et refroidissement",
+                  "symptomes": [
+                    "Puissance limitée",
+                    "À-coups",
+                    "Surchauffe, bruit ou défaut d’onduleur"
+                  ],
+                  "kilometrage_apparition": "Dès alerte ou différence de comportement entre chaînes",
+                  "diagnostic": "Comparer courants, températures et défauts des deux moteurs de 148 kW, contrôler capteurs de position, isolation, onduleurs, câbles, pompes et échangeurs. Valider les 296 kW/516 Nm progressivement après essais basse charge.",
+                  "piece_concernee": "Double chaîne de traction Siemens",
+                  "gravite": "Critique",
+                  "frequence": "Inconnue, composants spécifiques de présérie",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 40 000 €"
+                },
+                {
+                  "probleme": "Boîte trois rapports sans rupture de couple et transmission",
+                  "symptomes": [
+                    "Rapport indisponible",
+                    "À-coup",
+                    "Bruit, fuite ou surchauffe"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant chaque essai dynamique",
+                  "diagnostic": "Lire défauts de commande, vérifier actionneurs, huile, roulements, engrenages, refroidissement, arbres et différentiel. Confirmer apprentissages logiciels et ne pas effectuer d’accélération maximale avant validation mécanique et électrique.",
+                  "piece_concernee": "Transmission électrique trois rapports Exagon",
+                  "gravite": "Critique",
+                  "frequence": "Inconnue sur très faible nombre d’exemplaires",
+                  "cout_reparation_estime": "Extrême : pièces prototypes, réparation sur mesure"
+                },
+                {
+                  "probleme": "Monocoque carbone/nid-d’abeilles, berceaux aluminium et freinage",
+                  "symptomes": [
+                    "Fissure ou délaminage",
+                    "Corrosion galvanique",
+                    "Géométrie ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Expertise avant acquisition et après tout choc",
+                  "diagnostic": "Inspecter par méthode non destructive monocoque et carrosserie composites, collages, inserts, berceaux moulés aluminium, ancrages de batterie, suspension, direction, freins et pneumatiques Michelin spécifiques. Authentifier concept 2010 ou présérie 2012–2013.",
+                  "piece_concernee": "Structure et liaisons au sol Furtive-eGT",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque inconnu, dépend du stockage et des démonstrations",
+                  "cout_reparation_estime": "Extrême : expertise puis réparation constructeur sur devis"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Présérie Paris/Genève",
+          "annees": "2012–2013",
+          "phases": [
+            "Version de présérie : autonomie annoncée 310 km NEDC mixte et 360 km ECE15 ; prolongateur optionnel seulement rechargeur, non moteur de traction."
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "Deux moteurs Siemens 148 kW — 402 ch",
+              "code_moteur": "Siemens dual motor Exagon",
+              "cylindree": "Électrique — batterie Saft 53 kWh/360 V",
+              "puissance_ch": 402,
+              "boite": [
+                "Boîte robotisée 3 rapports sans rupture de couple, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie Saft 53 kWh, équilibrage et isolation 360 V",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Écart de tension/température",
+                    "Défaut d’isolation ou charge interrompue"
+                  ],
+                  "kilometrage_apparition": "Vieillissement calendaire prioritaire ; contrôle à chaque remise en route",
+                  "diagnostic": "Consigner selon procédure haute tension, lire tensions et températures module par module, état de santé, équilibrage et résistance d’isolement. Contrôler contacteurs, précharge, refroidissement, connecteurs, humidité et intégrité du pack de 480 kg sans ouverture hors spécialiste.",
+                  "piece_concernee": "Batterie lithium-ion Saft de la Furtive-eGT",
+                  "gravite": "Critique",
+                  "frequence": "Inconnue sur prototype/présérie ; stockage déterminant",
+                  "cout_reparation_estime": "Extrême : diagnostic spécialisé puis réparation sur devis, potentiellement plus de 50 000 €"
+                },
+                {
+                  "probleme": "Deux moteurs Siemens, onduleurs et refroidissement",
+                  "symptomes": [
+                    "Puissance limitée",
+                    "À-coups",
+                    "Surchauffe, bruit ou défaut d’onduleur"
+                  ],
+                  "kilometrage_apparition": "Dès alerte ou différence de comportement entre chaînes",
+                  "diagnostic": "Comparer courants, températures et défauts des deux moteurs de 148 kW, contrôler capteurs de position, isolation, onduleurs, câbles, pompes et échangeurs. Valider les 296 kW/516 Nm progressivement après essais basse charge.",
+                  "piece_concernee": "Double chaîne de traction Siemens",
+                  "gravite": "Critique",
+                  "frequence": "Inconnue, composants spécifiques de présérie",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 40 000 €"
+                },
+                {
+                  "probleme": "Boîte trois rapports sans rupture de couple et transmission",
+                  "symptomes": [
+                    "Rapport indisponible",
+                    "À-coup",
+                    "Bruit, fuite ou surchauffe"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant chaque essai dynamique",
+                  "diagnostic": "Lire défauts de commande, vérifier actionneurs, huile, roulements, engrenages, refroidissement, arbres et différentiel. Confirmer apprentissages logiciels et ne pas effectuer d’accélération maximale avant validation mécanique et électrique.",
+                  "piece_concernee": "Transmission électrique trois rapports Exagon",
+                  "gravite": "Critique",
+                  "frequence": "Inconnue sur très faible nombre d’exemplaires",
+                  "cout_reparation_estime": "Extrême : pièces prototypes, réparation sur mesure"
+                },
+                {
+                  "probleme": "Monocoque carbone/nid-d’abeilles, berceaux aluminium et freinage",
+                  "symptomes": [
+                    "Fissure ou délaminage",
+                    "Corrosion galvanique",
+                    "Géométrie ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Expertise avant acquisition et après tout choc",
+                  "diagnostic": "Inspecter par méthode non destructive monocoque et carrosserie composites, collages, inserts, berceaux moulés aluminium, ancrages de batterie, suspension, direction, freins et pneumatiques Michelin spécifiques. Authentifier concept 2010 ou présérie 2012–2013.",
+                  "piece_concernee": "Structure et liaisons au sol Furtive-eGT",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque inconnu, dépend du stockage et des démonstrations",
+                  "cout_reparation_estime": "Extrême : expertise puis réparation constructeur sur devis"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.exagon-engineering.com/furtive-e-gt/",
+        "https://saft4u.saft.com/en/download_file/8958232b-4881-4d92-973a-a9e13efbe932/English"
+      ]
+    }
+  ]
+}

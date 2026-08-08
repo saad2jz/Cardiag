@@ -1,0 +1,322 @@
+{
+  "nom": "Premier",
+  "modeles": [
+    {
+      "nom": "Padmini",
+      "generations": [
+        {
+          "code_chassis": "Padmini 1100 première phase",
+          "annees": "1974–1984",
+          "phases": [
+            "Évolution indienne de la Fiat 1100D, encore proche de la mécanique d’origine."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.1 OHV carburateur — 40 ch",
+              "code_moteur": "Fiat/Premier 103D 1089",
+              "cylindree": "1 089 cm³",
+              "puissance_ch": 40,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, joint de culasse et lubrification du 1.1 OHV",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression d’huile faible",
+                    "Fumée, fuite ou claquement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, mais âge et usage taxi priment",
+                  "diagnostic": "Mesurer compressions/leak-down et pression d’huile, inspecter pompe, carter, paliers, chaîne, culasse/joint, radiateur, pompe à eau, thermostat et ventilateur ; confirmer le 1089 cm³ et la culasse standard ou S1 avant commande",
+                  "piece_concernee": "Moteur Fiat/Premier 1089 cm³ OHV",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente sans restauration ou avec surchauffes anciennes",
+                  "cout_reparation_estime": "Élevé : environ 400 à 3 000 €"
+                },
+                {
+                  "probleme": "Carburateur, pompe à essence, allumage et réglage des soupapes",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ralenti instable",
+                    "Trou à l’accélération ou cliquetis"
+                  ],
+                  "kilometrage_apparition": "Réglage tous les 10 000 à 30 000 km ; réfection souvent après longue immobilisation",
+                  "diagnostic": "Identifier carburateur Solex/Pierburg selon phase, contrôler cuve, gicleurs, starter, pompe et durites ; régler richesse, avance, rupteur ou allumage, bougies et jeu aux soupapes, puis analyser les quatre cylindres avant d’augmenter le ralenti",
+                  "piece_concernee": "Admission, carburateur et allumage Padmini",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Fréquente sur mécanique ancienne",
+                  "cout_reparation_estime": "Faible à moyen : environ 100 à 900 €"
+                },
+                {
+                  "probleme": "Boîte quatre rapports, commande au volant/plancher, embrayage et pont",
+                  "symptomes": [
+                    "Levier imprécis",
+                    "Rapport qui saute",
+                    "Patinage, vibration ou bruit de pont"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, plus tôt en taxi",
+                  "diagnostic": "Contrôler tringlerie et bagues, embrayage/commande, huile et synchros de boîte, supports, arbre/croisillons, différentiel, demi-arbres et roulements ; vérifier la conversion éventuelle du levier et la conformité du rapport de pont",
+                  "piece_concernee": "Transmission manuelle et propulsion Padmini",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage commercial",
+                  "cout_reparation_estime": "Moyen à élevé : environ 250 à 2 500 €"
+                },
+                {
+                  "probleme": "Corrosion, direction, suspension, freins et authenticité",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu de direction",
+                    "Caisse affaissée ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique avant acquisition",
+                  "diagnostic": "Inspecter longerons, planchers, bas de caisse, ancrages, passages de roue, baie et traces de taxi ; contrôler boîtier de direction, pivots/rotules, ressorts, amortisseurs, conduites, maître-cylindre, tambours/disques, pneus, faisceau et numéros de châssis/moteur",
+                  "piece_concernee": "Coque et organes de sécurité Premier Padmini",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente avec âge, humidité et réparations successives",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 6 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Padmini 1100 révisée",
+          "annees": "1985–1992",
+          "phases": [
+            "Réglages modernisés et puissance portée à environ 42 ch ; ne pas fusionner avec la première phase."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.1 OHV carburateur — 42 ch",
+              "code_moteur": "Premier 1089",
+              "cylindree": "1 089 cm³",
+              "puissance_ch": 42,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, joint de culasse et lubrification du 1.1 OHV",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression d’huile faible",
+                    "Fumée, fuite ou claquement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, mais âge et usage taxi priment",
+                  "diagnostic": "Mesurer compressions/leak-down et pression d’huile, inspecter pompe, carter, paliers, chaîne, culasse/joint, radiateur, pompe à eau, thermostat et ventilateur ; confirmer le 1089 cm³ et la culasse standard ou S1 avant commande",
+                  "piece_concernee": "Moteur Fiat/Premier 1089 cm³ OHV",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente sans restauration ou avec surchauffes anciennes",
+                  "cout_reparation_estime": "Élevé : environ 400 à 3 000 €"
+                },
+                {
+                  "probleme": "Carburateur, pompe à essence, allumage et réglage des soupapes",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ralenti instable",
+                    "Trou à l’accélération ou cliquetis"
+                  ],
+                  "kilometrage_apparition": "Réglage tous les 10 000 à 30 000 km ; réfection souvent après longue immobilisation",
+                  "diagnostic": "Identifier carburateur Solex/Pierburg selon phase, contrôler cuve, gicleurs, starter, pompe et durites ; régler richesse, avance, rupteur ou allumage, bougies et jeu aux soupapes, puis analyser les quatre cylindres avant d’augmenter le ralenti",
+                  "piece_concernee": "Admission, carburateur et allumage Padmini",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Fréquente sur mécanique ancienne",
+                  "cout_reparation_estime": "Faible à moyen : environ 100 à 900 €"
+                },
+                {
+                  "probleme": "Boîte quatre rapports, commande au volant/plancher, embrayage et pont",
+                  "symptomes": [
+                    "Levier imprécis",
+                    "Rapport qui saute",
+                    "Patinage, vibration ou bruit de pont"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, plus tôt en taxi",
+                  "diagnostic": "Contrôler tringlerie et bagues, embrayage/commande, huile et synchros de boîte, supports, arbre/croisillons, différentiel, demi-arbres et roulements ; vérifier la conversion éventuelle du levier et la conformité du rapport de pont",
+                  "piece_concernee": "Transmission manuelle et propulsion Padmini",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage commercial",
+                  "cout_reparation_estime": "Moyen à élevé : environ 250 à 2 500 €"
+                },
+                {
+                  "probleme": "Corrosion, direction, suspension, freins et authenticité",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu de direction",
+                    "Caisse affaissée ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique avant acquisition",
+                  "diagnostic": "Inspecter longerons, planchers, bas de caisse, ancrages, passages de roue, baie et traces de taxi ; contrôler boîtier de direction, pivots/rotules, ressorts, amortisseurs, conduites, maître-cylindre, tambours/disques, pneus, faisceau et numéros de châssis/moteur",
+                  "piece_concernee": "Coque et organes de sécurité Premier Padmini",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente avec âge, humidité et réparations successives",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 6 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Padmini S1",
+          "annees": "1993–2000",
+          "phases": [
+            "Culasse et admission S1 revues, calibrage distinct de 48 ch."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "S1 1.1 culasse révisée — 48 ch",
+              "code_moteur": "Premier S1 1089",
+              "cylindree": "1 089 cm³",
+              "puissance_ch": 48,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, joint de culasse et lubrification du 1.1 OHV",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression d’huile faible",
+                    "Fumée, fuite ou claquement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, mais âge et usage taxi priment",
+                  "diagnostic": "Mesurer compressions/leak-down et pression d’huile, inspecter pompe, carter, paliers, chaîne, culasse/joint, radiateur, pompe à eau, thermostat et ventilateur ; confirmer le 1089 cm³ et la culasse standard ou S1 avant commande",
+                  "piece_concernee": "Moteur Fiat/Premier 1089 cm³ OHV",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente sans restauration ou avec surchauffes anciennes",
+                  "cout_reparation_estime": "Élevé : environ 400 à 3 000 €"
+                },
+                {
+                  "probleme": "Carburateur, pompe à essence, allumage et réglage des soupapes",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ralenti instable",
+                    "Trou à l’accélération ou cliquetis"
+                  ],
+                  "kilometrage_apparition": "Réglage tous les 10 000 à 30 000 km ; réfection souvent après longue immobilisation",
+                  "diagnostic": "Identifier carburateur Solex/Pierburg selon phase, contrôler cuve, gicleurs, starter, pompe et durites ; régler richesse, avance, rupteur ou allumage, bougies et jeu aux soupapes, puis analyser les quatre cylindres avant d’augmenter le ralenti",
+                  "piece_concernee": "Admission, carburateur et allumage Padmini",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Fréquente sur mécanique ancienne",
+                  "cout_reparation_estime": "Faible à moyen : environ 100 à 900 €"
+                },
+                {
+                  "probleme": "Boîte quatre rapports, commande au volant/plancher, embrayage et pont",
+                  "symptomes": [
+                    "Levier imprécis",
+                    "Rapport qui saute",
+                    "Patinage, vibration ou bruit de pont"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, plus tôt en taxi",
+                  "diagnostic": "Contrôler tringlerie et bagues, embrayage/commande, huile et synchros de boîte, supports, arbre/croisillons, différentiel, demi-arbres et roulements ; vérifier la conversion éventuelle du levier et la conformité du rapport de pont",
+                  "piece_concernee": "Transmission manuelle et propulsion Padmini",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage commercial",
+                  "cout_reparation_estime": "Moyen à élevé : environ 250 à 2 500 €"
+                },
+                {
+                  "probleme": "Corrosion, direction, suspension, freins et authenticité",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu de direction",
+                    "Caisse affaissée ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique avant acquisition",
+                  "diagnostic": "Inspecter longerons, planchers, bas de caisse, ancrages, passages de roue, baie et traces de taxi ; contrôler boîtier de direction, pivots/rotules, ressorts, amortisseurs, conduites, maître-cylindre, tambours/disques, pneus, faisceau et numéros de châssis/moteur",
+                  "piece_concernee": "Coque et organes de sécurité Premier Padmini",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente avec âge, humidité et réparations successives",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 6 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Padmini 137D",
+          "annees": "1996–2000",
+          "phases": [
+            "Version diesel tardive, souvent taxi, à distinguer intégralement des 1.1 essence."
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "137D atmosphérique — 41 ch",
+              "code_moteur": "Premier 137D",
+              "cylindree": "1 367 cm³",
+              "puissance_ch": 41,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Compression, injection, refroidissement et culasse du 137D",
+                  "symptomes": [
+                    "Démarrage à froid difficile",
+                    "Fumée noire ou blanche",
+                    "Surchauffe, souffle au reniflard ou manque de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 200 000 km, plus tôt en taxi",
+                  "diagnostic": "Mesurer compressions et pression d’huile, contrôler calage/débit de pompe, injecteurs, bougies de préchauffage, filtre et prises d’air ; tester radiateur, pompe, thermostat, joint/culasse et contamination, puis confirmer le diesel 1367 cm³ avant pièces",
+                  "piece_concernee": "Moteur Premier 137D et circuit diesel",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Élevé : environ 400 à 3 500 €"
+                },
+                {
+                  "probleme": "Distribution, supports et vibrations du diesel",
+                  "symptomes": [
+                    "Claquement anormal",
+                    "Vibrations au ralenti",
+                    "Fuite d’huile ou rupture de support"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque révision ; approfondir après 100 000 km",
+                  "diagnostic": "Comparer bruit à froid/chaud, contrôler chaîne/courroie selon moteur exact, calage, jeu aux soupapes, poulies, supports, échappement et fuites ; distinguer combustion diesel normale, injecteur et jeu mécanique par coupure cylindre",
+                  "piece_concernee": "Distribution, culasse et supports du 137D",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage intensif",
+                  "cout_reparation_estime": "Moyen à élevé : environ 150 à 1 800 €"
+                },
+                {
+                  "probleme": "Embrayage renforcé, boîte, arbre et pont",
+                  "symptomes": [
+                    "Patinage sous charge",
+                    "Sélection dure",
+                    "Vibration ou grondement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km",
+                  "diagnostic": "Contrôler disque/mécanisme, commande, boîte quatre rapports, huile, supports, arbre/croisillons, pont, demi-arbres et roulements ; rechercher fuite d’huile contaminant l’embrayage et fatigue liée au couple/vibrations diesel",
+                  "piece_concernee": "Transmission Padmini 137D",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente sur anciens taxis",
+                  "cout_reparation_estime": "Moyen à élevé : environ 300 à 2 500 €"
+                },
+                {
+                  "probleme": "Structure, suspension, direction et freinage après service taxi",
+                  "symptomes": [
+                    "Corrosion",
+                    "Jeu cumulé",
+                    "Usure irrégulière ou freinage faible"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat, sans se fier au compteur",
+                  "diagnostic": "Relever incohérences de compteur et entretien, mesurer corrosion/déformation des ancrages, contrôler boîtier de direction, pivots, ressorts, amortisseurs, roulements, conduites, maître-cylindre et garnitures ; vérifier pneus, éclairage et numéros",
+                  "piece_concernee": "Coque et sécurité Padmini diesel",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après fort kilométrage réel",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 6 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.autocarindia.com/auto-features/longest-running-cars-and-bikes-in-india-418003",
+        "https://www.automobile-catalog.com/car/1996/2877815/premier_padmini_137d_diesel.html"
+      ]
+    }
+  ]
+}

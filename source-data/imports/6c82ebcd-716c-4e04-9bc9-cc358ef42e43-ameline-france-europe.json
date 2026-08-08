@@ -1,0 +1,197 @@
+{
+  "nom": "Ameline",
+  "modeles": [
+    {
+      "nom": "Master",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "van",
+        "body_type": null,
+        "countries": [
+          "es",
+          "fi"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 6
+      },
+      "generations": [
+        {
+          "code_chassis": "Renault Master III — minibus Ameline",
+          "annees": "2010–2024",
+          "phases": [
+            "Ameline est le carrossier du minibus ; confirmer nombre de places, empattement, PTAC et date de transformation"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "2.3 dCi — 135 ch",
+              "code_moteur": "Renault M9T",
+              "cylindree": "2 299 cm³",
+              "puissance_ch": 135,
+              "boite": [
+                "Boîte manuelle 6 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo et dépollution du Renault Master",
+                  "symptomes": [
+                    "Démarrage long",
+                    "Mode dégradé",
+                    "Fumée ou codes AdBlue"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 200 000 km, plus tôt en service urbain",
+                  "diagnostic": "Lire injection/SCR, mesurer rail/retours, contrôler filtre, pompe, injecteurs, turbo, EGR, FAP, NOx, dosage AdBlue, huile, refroidissement et régénérations",
+                  "piece_concernee": "Moteur M9T et dépollution",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente en cycles courts",
+                  "cout_reparation_estime": "Élevé : environ 600 à 7 000 €"
+                },
+                {
+                  "probleme": "Embrayage/boîte, cardans, freinage et suspension sous charge",
+                  "symptomes": [
+                    "Patinage",
+                    "Vibration",
+                    "Freinage irrégulier ou pneus usés"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 km selon service",
+                  "diagnostic": "Contrôler embrayage/volant, boîte, cardans, roulements, direction, ressorts, amortisseurs, freins, pneus, géométrie, poids par essieu et respect du PTAC",
+                  "piece_concernee": "Chaîne cinématique et châssis Master",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente en transport de passagers",
+                  "cout_reparation_estime": "Élevé : environ 700 à 6 000 €"
+                },
+                {
+                  "probleme": "Conversion Ameline : portes, électricité et sécurité passagers",
+                  "symptomes": [
+                    "Porte ou marche inopérante",
+                    "Décharge batterie",
+                    "Chauffage/climatisation défaillant"
+                  ],
+                  "kilometrage_apparition": "Variable selon exploitation",
+                  "diagnostic": "Contrôler plaque carrossier, CAN/faisceaux ajoutés, alternateur/batteries, portes, marchepied, chauffage auxiliaire, climatisation arrière, sièges, ceintures, issues, éclairage, extincteur et homologation",
+                  "piece_concernee": "Carrosserie minibus et équipements passagers",
+                  "gravite": "Critique si évacuation ou retenue atteinte",
+                  "frequence": "Assez fréquente avec l’âge",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "2.3 dCi biturbo — 150 ch",
+              "code_moteur": "Renault M9T",
+              "cylindree": "2 299 cm³",
+              "puissance_ch": 150,
+              "boite": [
+                "Boîte manuelle 6 rapports / robotisée"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo et dépollution du Renault Master",
+                  "symptomes": [
+                    "Démarrage long",
+                    "Mode dégradé",
+                    "Fumée ou codes AdBlue"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 200 000 km, plus tôt en service urbain",
+                  "diagnostic": "Lire injection/SCR, mesurer rail/retours, contrôler filtre, pompe, injecteurs, turbo, EGR, FAP, NOx, dosage AdBlue, huile, refroidissement et régénérations",
+                  "piece_concernee": "Moteur M9T et dépollution",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente en cycles courts",
+                  "cout_reparation_estime": "Élevé : environ 600 à 7 000 €"
+                },
+                {
+                  "probleme": "Embrayage/boîte, cardans, freinage et suspension sous charge",
+                  "symptomes": [
+                    "Patinage",
+                    "Vibration",
+                    "Freinage irrégulier ou pneus usés"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 km selon service",
+                  "diagnostic": "Contrôler embrayage/volant, boîte, cardans, roulements, direction, ressorts, amortisseurs, freins, pneus, géométrie, poids par essieu et respect du PTAC",
+                  "piece_concernee": "Chaîne cinématique et châssis Master",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente en transport de passagers",
+                  "cout_reparation_estime": "Élevé : environ 700 à 6 000 €"
+                },
+                {
+                  "probleme": "Conversion Ameline : portes, électricité et sécurité passagers",
+                  "symptomes": [
+                    "Porte ou marche inopérante",
+                    "Décharge batterie",
+                    "Chauffage/climatisation défaillant"
+                  ],
+                  "kilometrage_apparition": "Variable selon exploitation",
+                  "diagnostic": "Contrôler plaque carrossier, CAN/faisceaux ajoutés, alternateur/batteries, portes, marchepied, chauffage auxiliaire, climatisation arrière, sièges, ceintures, issues, éclairage, extincteur et homologation",
+                  "piece_concernee": "Carrosserie minibus et équipements passagers",
+                  "gravite": "Critique si évacuation ou retenue atteinte",
+                  "frequence": "Assez fréquente avec l’âge",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "2.3 dCi biturbo — 165 ch",
+              "code_moteur": "Renault M9T",
+              "cylindree": "2 299 cm³",
+              "puissance_ch": 165,
+              "boite": [
+                "Boîte manuelle 6 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo et dépollution du Renault Master",
+                  "symptomes": [
+                    "Démarrage long",
+                    "Mode dégradé",
+                    "Fumée ou codes AdBlue"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 200 000 km, plus tôt en service urbain",
+                  "diagnostic": "Lire injection/SCR, mesurer rail/retours, contrôler filtre, pompe, injecteurs, turbo, EGR, FAP, NOx, dosage AdBlue, huile, refroidissement et régénérations",
+                  "piece_concernee": "Moteur M9T et dépollution",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente en cycles courts",
+                  "cout_reparation_estime": "Élevé : environ 600 à 7 000 €"
+                },
+                {
+                  "probleme": "Embrayage/boîte, cardans, freinage et suspension sous charge",
+                  "symptomes": [
+                    "Patinage",
+                    "Vibration",
+                    "Freinage irrégulier ou pneus usés"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 km selon service",
+                  "diagnostic": "Contrôler embrayage/volant, boîte, cardans, roulements, direction, ressorts, amortisseurs, freins, pneus, géométrie, poids par essieu et respect du PTAC",
+                  "piece_concernee": "Chaîne cinématique et châssis Master",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente en transport de passagers",
+                  "cout_reparation_estime": "Élevé : environ 700 à 6 000 €"
+                },
+                {
+                  "probleme": "Conversion Ameline : portes, électricité et sécurité passagers",
+                  "symptomes": [
+                    "Porte ou marche inopérante",
+                    "Décharge batterie",
+                    "Chauffage/climatisation défaillant"
+                  ],
+                  "kilometrage_apparition": "Variable selon exploitation",
+                  "diagnostic": "Contrôler plaque carrossier, CAN/faisceaux ajoutés, alternateur/batteries, portes, marchepied, chauffage auxiliaire, climatisation arrière, sièges, ceintures, issues, éclairage, extincteur et homologation",
+                  "piece_concernee": "Carrosserie minibus et équipements passagers",
+                  "gravite": "Critique si évacuation ou retenue atteinte",
+                  "frequence": "Assez fréquente avec l’âge",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "source_catalogue": "VehiclesDB 2026.08.2 (CC-BY 4.0)"
+}

@@ -1,0 +1,321 @@
+{
+  "nom": "Wiesmann",
+  "modeles": [
+    {
+      "nom": "MF5",
+      "generations": [
+        {
+          "code_chassis": "GT MF5 V10",
+          "annees": "2008–2010",
+          "phases": [
+            "Coupé initial à moteur V10 atmosphérique de M5/M6."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "BMW S85 5.0 V10 — 507 ch",
+              "code_moteur": "BMW S85B50",
+              "cylindree": "4 999 cm³",
+              "puissance_ch": 507,
+              "boite": [
+                "BMW SMG III robotisée 7 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Coussinets de bielles, VANOS, papillons et lubrification du BMW S85",
+                  "symptomes": [
+                    "Claquement",
+                    "Pression d’huile ou limaille",
+                    "Mode dégradé, ralenti instable ou manque de puissance"
+                  ],
+                  "kilometrage_apparition": "Vigilance dès 60 000 à 100 000 km et selon usage, plus tôt sur piste",
+                  "diagnostic": "Analyser huile/filtre, mesurer pression, rechercher historique de coussinets, puis lire adaptations VANOS/papillons et défauts ; contrôler actionneurs, pompes, électrovannes, débitmètres, bobines, injecteurs, compressions et refroidissement avant montée à 8 250 tr/min",
+                  "piece_concernee": "BMW S85B50 V10 adapté au Wiesmann MF5",
+                  "gravite": "Critique",
+                  "frequence": "Risque connu du groupe motopropulseur, variable selon usage et entretien",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "Boîte SMG sept rapports, embrayage, pompe et différentiel",
+                  "symptomes": [
+                    "Sélection lente",
+                    "À-coup excessif",
+                    "Point mort, témoin ou patinage"
+                  ],
+                  "kilometrage_apparition": "Souvent après 50 000 à 120 000 km, dépend des départs et manœuvres",
+                  "diagnostic": "Lire pression/temps de pompe, adaptations et usure d’embrayage, contrôler accumulateur, relais, capteurs, actionneurs, fuites et logiciel ; examiner volant, arbre, différentiel et supports, puis réaliser apprentissage seulement après validation mécanique",
+                  "piece_concernee": "Transmission BMW SMG III et pont MF5 V10",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente avec vieillissement hydraulique ou embrayage usé",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 12 000 €"
+                },
+                {
+                  "probleme": "Refroidissement, admission, échappement et périphériques spécifiques Wiesmann",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Odeur ou fuite",
+                    "Vibration, bruit ou défaut de catalyseur"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et avant usage soutenu",
+                  "diagnostic": "Tester radiateurs, pompes, thermostat, vase, ventilateurs et purge ; inspecter admission/échappement spécifiques, catalyseurs, sondes, supports, faisceaux et montage très compact, en vérifiant les références Wiesmann plutôt que BMW seules",
+                  "piece_concernee": "Intégration moteur et périphériques MF5 V10",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Occasionnelle mais accès et pièces coûteux",
+                  "cout_reparation_estime": "Élevé : environ 500 à 10 000 €"
+                },
+                {
+                  "probleme": "Châssis aluminium, coque composite, suspension, freins et authenticité",
+                  "symptomes": [
+                    "Fissure ou trace de choc",
+                    "Jeu, tirage ou usure pneu",
+                    "Freinage vibrant ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Expertise systématique avant achat",
+                  "diagnostic": "Inspecter structure aluminium, soudures/collages, carbone/fibre, points de levage, géométrie et réparations ; contrôler rotules, amortisseurs, direction, jantes, pneus, disques/étriers, ABS et faisceau, puis rapprocher VIN, moteur, GT/Roadster, options et historique usine",
+                  "piece_concernee": "Structure et organes de sécurité Wiesmann MF5",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de réparation coûteuse après choc",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 40 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Roadster MF5 V10",
+          "annees": "2009–2010",
+          "phases": [
+            "Roadster V10 limité à 43 exemplaires selon Wiesmann ; carrosserie et rigidité distinctes du GT."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "BMW S85 5.0 V10 — 507 ch",
+              "code_moteur": "BMW S85B50",
+              "cylindree": "4 999 cm³",
+              "puissance_ch": 507,
+              "boite": [
+                "BMW SMG III robotisée 7 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Coussinets de bielles, VANOS, papillons et lubrification du BMW S85",
+                  "symptomes": [
+                    "Claquement",
+                    "Pression d’huile ou limaille",
+                    "Mode dégradé, ralenti instable ou manque de puissance"
+                  ],
+                  "kilometrage_apparition": "Vigilance dès 60 000 à 100 000 km et selon usage, plus tôt sur piste",
+                  "diagnostic": "Analyser huile/filtre, mesurer pression, rechercher historique de coussinets, puis lire adaptations VANOS/papillons et défauts ; contrôler actionneurs, pompes, électrovannes, débitmètres, bobines, injecteurs, compressions et refroidissement avant montée à 8 250 tr/min",
+                  "piece_concernee": "BMW S85B50 V10 adapté au Wiesmann MF5",
+                  "gravite": "Critique",
+                  "frequence": "Risque connu du groupe motopropulseur, variable selon usage et entretien",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "Boîte SMG sept rapports, embrayage, pompe et différentiel",
+                  "symptomes": [
+                    "Sélection lente",
+                    "À-coup excessif",
+                    "Point mort, témoin ou patinage"
+                  ],
+                  "kilometrage_apparition": "Souvent après 50 000 à 120 000 km, dépend des départs et manœuvres",
+                  "diagnostic": "Lire pression/temps de pompe, adaptations et usure d’embrayage, contrôler accumulateur, relais, capteurs, actionneurs, fuites et logiciel ; examiner volant, arbre, différentiel et supports, puis réaliser apprentissage seulement après validation mécanique",
+                  "piece_concernee": "Transmission BMW SMG III et pont MF5 V10",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente avec vieillissement hydraulique ou embrayage usé",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 12 000 €"
+                },
+                {
+                  "probleme": "Refroidissement, admission, échappement et périphériques spécifiques Wiesmann",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Odeur ou fuite",
+                    "Vibration, bruit ou défaut de catalyseur"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et avant usage soutenu",
+                  "diagnostic": "Tester radiateurs, pompes, thermostat, vase, ventilateurs et purge ; inspecter admission/échappement spécifiques, catalyseurs, sondes, supports, faisceaux et montage très compact, en vérifiant les références Wiesmann plutôt que BMW seules",
+                  "piece_concernee": "Intégration moteur et périphériques MF5 V10",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Occasionnelle mais accès et pièces coûteux",
+                  "cout_reparation_estime": "Élevé : environ 500 à 10 000 €"
+                },
+                {
+                  "probleme": "Châssis aluminium, coque composite, suspension, freins et authenticité",
+                  "symptomes": [
+                    "Fissure ou trace de choc",
+                    "Jeu, tirage ou usure pneu",
+                    "Freinage vibrant ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Expertise systématique avant achat",
+                  "diagnostic": "Inspecter structure aluminium, soudures/collages, carbone/fibre, points de levage, géométrie et réparations ; contrôler rotules, amortisseurs, direction, jantes, pneus, disques/étriers, ABS et faisceau, puis rapprocher VIN, moteur, GT/Roadster, options et historique usine",
+                  "piece_concernee": "Structure et organes de sécurité Wiesmann MF5",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de réparation coûteuse après choc",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 40 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "GT MF5 V8 biturbo",
+          "annees": "2010–2013",
+          "phases": [
+            "Seconde phase de 555 ch et 680 Nm, à ne pas confondre avec le S85."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "BMW N63 4.4 V8 biturbo — 555 ch",
+              "code_moteur": "BMW N63B44 préparé Wiesmann",
+              "cylindree": "4 395 cm³",
+              "puissance_ch": 555,
+              "boite": [
+                "Automatique 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Turbos, refroidissement et circuit d’huile du BMW N63 4.4",
+                  "symptomes": [
+                    "Fumée",
+                    "Consommation d’huile",
+                    "Surchauffe, perte de boost ou odeur dans le V chaud"
+                  ],
+                  "kilometrage_apparition": "Vigilance dès 60 000 à 120 000 km, selon chaleur et entretien",
+                  "diagnostic": "Lire adaptations, ratés, boost et températures, analyser huile/filtre, contrôler turbos et conduites huile/eau, ventilation carter, joints de queue, injecteurs, pompes, échangeurs et fuites au V chaud ; confirmer la version 555 ch avant pièces",
+                  "piece_concernee": "BMW N63 V8 biturbo adapté au MF5",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru avec chaleur, immobilisation et vidanges espacées",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "Injection directe, allumage, distribution et alimentation",
+                  "symptomes": [
+                    "Démarrage long",
+                    "Ratés",
+                    "Cliquetis, voyant ou dilution de l’huile"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km",
+                  "diagnostic": "Contrôler pression basse/haute, index et correction des injecteurs, bobines/bougies, capteurs, VANOS et corrélations de distribution ; effectuer compressions/leak-down et endoscopie, rechercher contamination carburant/huile sans remplacer tous les injecteurs par supposition",
+                  "piece_concernee": "Injection et commande moteur N63 MF5",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Occasionnelle à assez fréquente selon génération des composants",
+                  "cout_reparation_estime": "Élevé : environ 400 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte automatique six rapports, convertisseur, arbre et différentiel",
+                  "symptomes": [
+                    "À-coup",
+                    "Patinage",
+                    "Vibration ou délai d’engagement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km",
+                  "diagnostic": "Lire adaptations/températures et défauts, contrôler niveau/état d’huile selon procédure, fuites, refroidissement, supports, convertisseur et mécatronique ; inspecter arbre, joints, différentiel et demi-arbres sous charge",
+                  "piece_concernee": "Transmission automatique et propulsion MF5 V8",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Occasionnelle, risque accru sans entretien documenté",
+                  "cout_reparation_estime": "Très élevé : environ 600 à 10 000 €"
+                },
+                {
+                  "probleme": "Châssis aluminium, carrosserie, trains roulants, freins et électronique",
+                  "symptomes": [
+                    "Trace de choc",
+                    "Jeu ou géométrie instable",
+                    "Freinage vibrant ou défaut électronique"
+                  ],
+                  "kilometrage_apparition": "Expertise systématique avant achat et après choc",
+                  "diagnostic": "Contrôler structure, soudures/collages, panneaux, capote du Roadster, points de levage et alignement ; inspecter suspension, direction, jantes/pneus, freins, ABS/DSC, batterie, masses, faisceaux et calculateurs, puis authentifier GT/Roadster et moteur sur le VIN",
+                  "piece_concernee": "Structure et équipements Wiesmann MF5 V8",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Non quantifiable sur moins de 200 MF5 au total",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 40 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Roadster MF5 V8 biturbo",
+          "annees": "2011–2013",
+          "phases": [
+            "Roadster de dernière phase ; vérifier la date et le groupe motopropulseur sur le certificat usine."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "BMW N63 4.4 V8 biturbo — 555 ch",
+              "code_moteur": "BMW N63B44 préparé Wiesmann",
+              "cylindree": "4 395 cm³",
+              "puissance_ch": 555,
+              "boite": [
+                "Automatique 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Turbos, refroidissement et circuit d’huile du BMW N63 4.4",
+                  "symptomes": [
+                    "Fumée",
+                    "Consommation d’huile",
+                    "Surchauffe, perte de boost ou odeur dans le V chaud"
+                  ],
+                  "kilometrage_apparition": "Vigilance dès 60 000 à 120 000 km, selon chaleur et entretien",
+                  "diagnostic": "Lire adaptations, ratés, boost et températures, analyser huile/filtre, contrôler turbos et conduites huile/eau, ventilation carter, joints de queue, injecteurs, pompes, échangeurs et fuites au V chaud ; confirmer la version 555 ch avant pièces",
+                  "piece_concernee": "BMW N63 V8 biturbo adapté au MF5",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru avec chaleur, immobilisation et vidanges espacées",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "Injection directe, allumage, distribution et alimentation",
+                  "symptomes": [
+                    "Démarrage long",
+                    "Ratés",
+                    "Cliquetis, voyant ou dilution de l’huile"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km",
+                  "diagnostic": "Contrôler pression basse/haute, index et correction des injecteurs, bobines/bougies, capteurs, VANOS et corrélations de distribution ; effectuer compressions/leak-down et endoscopie, rechercher contamination carburant/huile sans remplacer tous les injecteurs par supposition",
+                  "piece_concernee": "Injection et commande moteur N63 MF5",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Occasionnelle à assez fréquente selon génération des composants",
+                  "cout_reparation_estime": "Élevé : environ 400 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte automatique six rapports, convertisseur, arbre et différentiel",
+                  "symptomes": [
+                    "À-coup",
+                    "Patinage",
+                    "Vibration ou délai d’engagement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km",
+                  "diagnostic": "Lire adaptations/températures et défauts, contrôler niveau/état d’huile selon procédure, fuites, refroidissement, supports, convertisseur et mécatronique ; inspecter arbre, joints, différentiel et demi-arbres sous charge",
+                  "piece_concernee": "Transmission automatique et propulsion MF5 V8",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Occasionnelle, risque accru sans entretien documenté",
+                  "cout_reparation_estime": "Très élevé : environ 600 à 10 000 €"
+                },
+                {
+                  "probleme": "Châssis aluminium, carrosserie, trains roulants, freins et électronique",
+                  "symptomes": [
+                    "Trace de choc",
+                    "Jeu ou géométrie instable",
+                    "Freinage vibrant ou défaut électronique"
+                  ],
+                  "kilometrage_apparition": "Expertise systématique avant achat et après choc",
+                  "diagnostic": "Contrôler structure, soudures/collages, panneaux, capote du Roadster, points de levage et alignement ; inspecter suspension, direction, jantes/pneus, freins, ABS/DSC, batterie, masses, faisceaux et calculateurs, puis authentifier GT/Roadster et moteur sur le VIN",
+                  "piece_concernee": "Structure et équipements Wiesmann MF5 V8",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Non quantifiable sur moins de 200 MF5 au total",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 40 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://wiesmann.com/pages/wiesmann-mf5"
+      ]
+    }
+  ]
+}

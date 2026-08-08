@@ -1,0 +1,707 @@
+{
+  "nom": "Innocenti",
+  "modeles": [
+    {
+      "nom": "Mini",
+      "generations": [
+        {
+          "code_chassis": "Mini Minor italienne Mk I–III",
+          "annees": "1965–1972",
+          "phases": [
+            "Mini assemblée puis largement fabriquée en Italie ; 850, 1000/1001 et break Mini T à identifier séparément."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "A-Series 850 — 34 ch",
+              "code_moteur": "BMC 8AM/848",
+              "cylindree": "848 cm³",
+              "puissance_ch": 34,
+              "boite": [
+                "Manuelle 4 rapports, traction"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Pression d’huile, refroidissement et joint de culasse du BMC A-Series",
+                  "symptomes": [
+                    "Pression faible à chaud",
+                    "Surchauffe ou mayonnaise",
+                    "Fumée, claquement ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 140 000 km ; plus tôt si huile de boîte/moteur négligée",
+                  "diagnostic": "Identifier 848, 998 ou 1 275 cm³ et numéro Innocenti. Mesurer compressions/leak-down et pression, contrôler pompe, chaîne, poussoirs, culasse/joint, radiateur latéral, pompe à eau, thermostat et contamination de l’huile commune moteur-boîte.",
+                  "piece_concernee": "Moteur BMC A-Series Innocenti Mini",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sur moteur ancien ou préparé",
+                  "cout_reparation_estime": "Élevé : environ 500 à 6 000 €"
+                },
+                {
+                  "probleme": "Carburateur SU, allumage et alimentation",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Trou ou ratés",
+                    "Odeur, fuite ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après immobilisation",
+                  "diagnostic": "Contrôler réservoir, pompe, durites, cuve, aiguille, dashpot, starter, prises d’air, avance, distributeur, bobine et bougies. Sur Cooper 1300/De Tomaso BL, confirmer carburateur(s) et réglage de puissance.",
+                  "piece_concernee": "Admission et allumage A-Series",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquente avec carburant moderne et joints âgés",
+                  "cout_reparation_estime": "Moyen : environ 150 à 1 500 €"
+                },
+                {
+                  "probleme": "Boîte en carter moteur, embrayage, différentiel et cardans",
+                  "symptomes": [
+                    "Craquement de 2e/3e",
+                    "Rapport qui saute",
+                    "Patinage, claquement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 140 000 km",
+                  "diagnostic": "Contrôler huile commune, limaille, synchros, tringlerie, embrayage, butée, différentiel, sorties, croisillons/cardans et supports. Ne pas remplir avec une huile de boîte inadaptée au moteur.",
+                  "piece_concernee": "Transmission Mini traction avant",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente si vidanges espacées",
+                  "cout_reparation_estime": "Élevé : environ 600 à 4 500 €"
+                },
+                {
+                  "probleme": "Corrosion de coque, berceaux, suspension caoutchouc et freinage",
+                  "symptomes": [
+                    "Plancher ou bas de caisse perforé",
+                    "Affaissement, jeu ou tirage",
+                    "Freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Inspection annuelle et avant achat",
+                  "diagnostic": "Inspecter baie, planchers, bas de caisse, passages de roues, ancrages et berceaux ; contrôler cônes caoutchouc, rotules, bras, roulements, direction, tambours/disques, flexibles et roues. Distinguer coque italienne et éléments britanniques.",
+                  "piece_concernee": "Structure et liaisons au sol Innocenti Mini",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion fréquente selon stockage",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "A-Series 1000 — 48 ch",
+              "code_moteur": "BMC 99H/998",
+              "cylindree": "998 cm³",
+              "puissance_ch": 48,
+              "boite": [
+                "Manuelle 4 rapports, traction"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Pression d’huile, refroidissement et joint de culasse du BMC A-Series",
+                  "symptomes": [
+                    "Pression faible à chaud",
+                    "Surchauffe ou mayonnaise",
+                    "Fumée, claquement ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 140 000 km ; plus tôt si huile de boîte/moteur négligée",
+                  "diagnostic": "Identifier 848, 998 ou 1 275 cm³ et numéro Innocenti. Mesurer compressions/leak-down et pression, contrôler pompe, chaîne, poussoirs, culasse/joint, radiateur latéral, pompe à eau, thermostat et contamination de l’huile commune moteur-boîte.",
+                  "piece_concernee": "Moteur BMC A-Series Innocenti Mini",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sur moteur ancien ou préparé",
+                  "cout_reparation_estime": "Élevé : environ 500 à 6 000 €"
+                },
+                {
+                  "probleme": "Carburateur SU, allumage et alimentation",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Trou ou ratés",
+                    "Odeur, fuite ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après immobilisation",
+                  "diagnostic": "Contrôler réservoir, pompe, durites, cuve, aiguille, dashpot, starter, prises d’air, avance, distributeur, bobine et bougies. Sur Cooper 1300/De Tomaso BL, confirmer carburateur(s) et réglage de puissance.",
+                  "piece_concernee": "Admission et allumage A-Series",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquente avec carburant moderne et joints âgés",
+                  "cout_reparation_estime": "Moyen : environ 150 à 1 500 €"
+                },
+                {
+                  "probleme": "Boîte en carter moteur, embrayage, différentiel et cardans",
+                  "symptomes": [
+                    "Craquement de 2e/3e",
+                    "Rapport qui saute",
+                    "Patinage, claquement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 140 000 km",
+                  "diagnostic": "Contrôler huile commune, limaille, synchros, tringlerie, embrayage, butée, différentiel, sorties, croisillons/cardans et supports. Ne pas remplir avec une huile de boîte inadaptée au moteur.",
+                  "piece_concernee": "Transmission Mini traction avant",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente si vidanges espacées",
+                  "cout_reparation_estime": "Élevé : environ 600 à 4 500 €"
+                },
+                {
+                  "probleme": "Corrosion de coque, berceaux, suspension caoutchouc et freinage",
+                  "symptomes": [
+                    "Plancher ou bas de caisse perforé",
+                    "Affaissement, jeu ou tirage",
+                    "Freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Inspection annuelle et avant achat",
+                  "diagnostic": "Inspecter baie, planchers, bas de caisse, passages de roues, ancrages et berceaux ; contrôler cônes caoutchouc, rotules, bras, roulements, direction, tambours/disques, flexibles et roues. Distinguer coque italienne et éléments britanniques.",
+                  "piece_concernee": "Structure et liaisons au sol Innocenti Mini",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion fréquente selon stockage",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Mini Cooper italienne",
+          "annees": "1966–1972",
+          "phases": [
+            "Cooper Mk I à III italienne, distincte de la Cooper 1300 ultérieure."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Cooper 1000 — 55 ch",
+              "code_moteur": "BMC 9F/998 Cooper",
+              "cylindree": "998 cm³",
+              "puissance_ch": 55,
+              "boite": [
+                "Manuelle 4 rapports, traction"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Pression d’huile, refroidissement et joint de culasse du BMC A-Series",
+                  "symptomes": [
+                    "Pression faible à chaud",
+                    "Surchauffe ou mayonnaise",
+                    "Fumée, claquement ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 140 000 km ; plus tôt si huile de boîte/moteur négligée",
+                  "diagnostic": "Identifier 848, 998 ou 1 275 cm³ et numéro Innocenti. Mesurer compressions/leak-down et pression, contrôler pompe, chaîne, poussoirs, culasse/joint, radiateur latéral, pompe à eau, thermostat et contamination de l’huile commune moteur-boîte.",
+                  "piece_concernee": "Moteur BMC A-Series Innocenti Mini",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sur moteur ancien ou préparé",
+                  "cout_reparation_estime": "Élevé : environ 500 à 6 000 €"
+                },
+                {
+                  "probleme": "Carburateur SU, allumage et alimentation",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Trou ou ratés",
+                    "Odeur, fuite ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après immobilisation",
+                  "diagnostic": "Contrôler réservoir, pompe, durites, cuve, aiguille, dashpot, starter, prises d’air, avance, distributeur, bobine et bougies. Sur Cooper 1300/De Tomaso BL, confirmer carburateur(s) et réglage de puissance.",
+                  "piece_concernee": "Admission et allumage A-Series",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquente avec carburant moderne et joints âgés",
+                  "cout_reparation_estime": "Moyen : environ 150 à 1 500 €"
+                },
+                {
+                  "probleme": "Boîte en carter moteur, embrayage, différentiel et cardans",
+                  "symptomes": [
+                    "Craquement de 2e/3e",
+                    "Rapport qui saute",
+                    "Patinage, claquement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 140 000 km",
+                  "diagnostic": "Contrôler huile commune, limaille, synchros, tringlerie, embrayage, butée, différentiel, sorties, croisillons/cardans et supports. Ne pas remplir avec une huile de boîte inadaptée au moteur.",
+                  "piece_concernee": "Transmission Mini traction avant",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente si vidanges espacées",
+                  "cout_reparation_estime": "Élevé : environ 600 à 4 500 €"
+                },
+                {
+                  "probleme": "Corrosion de coque, berceaux, suspension caoutchouc et freinage",
+                  "symptomes": [
+                    "Plancher ou bas de caisse perforé",
+                    "Affaissement, jeu ou tirage",
+                    "Freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Inspection annuelle et avant achat",
+                  "diagnostic": "Inspecter baie, planchers, bas de caisse, passages de roues, ancrages et berceaux ; contrôler cônes caoutchouc, rotules, bras, roulements, direction, tambours/disques, flexibles et roues. Distinguer coque italienne et éléments britanniques.",
+                  "piece_concernee": "Structure et liaisons au sol Innocenti Mini",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion fréquente selon stockage",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Mini Cooper 1300",
+          "annees": "1972–1975",
+          "phases": [
+            "Version homologuée FIA et export, puissance selon marché/préparation à authentifier."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "A-Series 1275 Cooper — 64 ch",
+              "code_moteur": "BMC 12H/1275 Innocenti",
+              "cylindree": "1 275 cm³",
+              "puissance_ch": 64,
+              "boite": [
+                "Manuelle 4 rapports, traction"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Pression d’huile, refroidissement et joint de culasse du BMC A-Series",
+                  "symptomes": [
+                    "Pression faible à chaud",
+                    "Surchauffe ou mayonnaise",
+                    "Fumée, claquement ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 140 000 km ; plus tôt si huile de boîte/moteur négligée",
+                  "diagnostic": "Identifier 848, 998 ou 1 275 cm³ et numéro Innocenti. Mesurer compressions/leak-down et pression, contrôler pompe, chaîne, poussoirs, culasse/joint, radiateur latéral, pompe à eau, thermostat et contamination de l’huile commune moteur-boîte.",
+                  "piece_concernee": "Moteur BMC A-Series Innocenti Mini",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sur moteur ancien ou préparé",
+                  "cout_reparation_estime": "Élevé : environ 500 à 6 000 €"
+                },
+                {
+                  "probleme": "Carburateur SU, allumage et alimentation",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Trou ou ratés",
+                    "Odeur, fuite ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après immobilisation",
+                  "diagnostic": "Contrôler réservoir, pompe, durites, cuve, aiguille, dashpot, starter, prises d’air, avance, distributeur, bobine et bougies. Sur Cooper 1300/De Tomaso BL, confirmer carburateur(s) et réglage de puissance.",
+                  "piece_concernee": "Admission et allumage A-Series",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquente avec carburant moderne et joints âgés",
+                  "cout_reparation_estime": "Moyen : environ 150 à 1 500 €"
+                },
+                {
+                  "probleme": "Boîte en carter moteur, embrayage, différentiel et cardans",
+                  "symptomes": [
+                    "Craquement de 2e/3e",
+                    "Rapport qui saute",
+                    "Patinage, claquement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 140 000 km",
+                  "diagnostic": "Contrôler huile commune, limaille, synchros, tringlerie, embrayage, butée, différentiel, sorties, croisillons/cardans et supports. Ne pas remplir avec une huile de boîte inadaptée au moteur.",
+                  "piece_concernee": "Transmission Mini traction avant",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente si vidanges espacées",
+                  "cout_reparation_estime": "Élevé : environ 600 à 4 500 €"
+                },
+                {
+                  "probleme": "Corrosion de coque, berceaux, suspension caoutchouc et freinage",
+                  "symptomes": [
+                    "Plancher ou bas de caisse perforé",
+                    "Affaissement, jeu ou tirage",
+                    "Freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Inspection annuelle et avant achat",
+                  "diagnostic": "Inspecter baie, planchers, bas de caisse, passages de roues, ancrages et berceaux ; contrôler cônes caoutchouc, rotules, bras, roulements, direction, tambours/disques, flexibles et roues. Distinguer coque italienne et éléments britanniques.",
+                  "piece_concernee": "Structure et liaisons au sol Innocenti Mini",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion fréquente selon stockage",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Mini 90 Bertone",
+          "annees": "1974–1982",
+          "phases": [
+            "Nouvelle carrosserie trois portes dessinée par Bertone, conservant la mécanique Mini."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "A-Series 1000 — 48 ch",
+              "code_moteur": "BMC 99H/998",
+              "cylindree": "998 cm³",
+              "puissance_ch": 48,
+              "boite": [
+                "Manuelle 4 rapports, traction"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Pression d’huile, refroidissement et joint de culasse du BMC A-Series",
+                  "symptomes": [
+                    "Pression faible à chaud",
+                    "Surchauffe ou mayonnaise",
+                    "Fumée, claquement ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 140 000 km ; plus tôt si huile de boîte/moteur négligée",
+                  "diagnostic": "Identifier 848, 998 ou 1 275 cm³ et numéro Innocenti. Mesurer compressions/leak-down et pression, contrôler pompe, chaîne, poussoirs, culasse/joint, radiateur latéral, pompe à eau, thermostat et contamination de l’huile commune moteur-boîte.",
+                  "piece_concernee": "Moteur BMC A-Series Innocenti Mini",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sur moteur ancien ou préparé",
+                  "cout_reparation_estime": "Élevé : environ 500 à 6 000 €"
+                },
+                {
+                  "probleme": "Carburateur SU, allumage et alimentation",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Trou ou ratés",
+                    "Odeur, fuite ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après immobilisation",
+                  "diagnostic": "Contrôler réservoir, pompe, durites, cuve, aiguille, dashpot, starter, prises d’air, avance, distributeur, bobine et bougies. Sur Cooper 1300/De Tomaso BL, confirmer carburateur(s) et réglage de puissance.",
+                  "piece_concernee": "Admission et allumage A-Series",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquente avec carburant moderne et joints âgés",
+                  "cout_reparation_estime": "Moyen : environ 150 à 1 500 €"
+                },
+                {
+                  "probleme": "Boîte en carter moteur, embrayage, différentiel et cardans",
+                  "symptomes": [
+                    "Craquement de 2e/3e",
+                    "Rapport qui saute",
+                    "Patinage, claquement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 140 000 km",
+                  "diagnostic": "Contrôler huile commune, limaille, synchros, tringlerie, embrayage, butée, différentiel, sorties, croisillons/cardans et supports. Ne pas remplir avec une huile de boîte inadaptée au moteur.",
+                  "piece_concernee": "Transmission Mini traction avant",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente si vidanges espacées",
+                  "cout_reparation_estime": "Élevé : environ 600 à 4 500 €"
+                },
+                {
+                  "probleme": "Corrosion de coque, berceaux, suspension caoutchouc et freinage",
+                  "symptomes": [
+                    "Plancher ou bas de caisse perforé",
+                    "Affaissement, jeu ou tirage",
+                    "Freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Inspection annuelle et avant achat",
+                  "diagnostic": "Inspecter baie, planchers, bas de caisse, passages de roues, ancrages et berceaux ; contrôler cônes caoutchouc, rotules, bras, roulements, direction, tambours/disques, flexibles et roues. Distinguer coque italienne et éléments britanniques.",
+                  "piece_concernee": "Structure et liaisons au sol Innocenti Mini",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion fréquente selon stockage",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Mini 120 Bertone",
+          "annees": "1974–1980",
+          "phases": [
+            "Version 1,3 l de la Mini Bertone, différente de la sportive De Tomaso."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "A-Series 1275 — 64 ch",
+              "code_moteur": "BMC 12H/1275",
+              "cylindree": "1 275 cm³",
+              "puissance_ch": 64,
+              "boite": [
+                "Manuelle 4 rapports, traction"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Pression d’huile, refroidissement et joint de culasse du BMC A-Series",
+                  "symptomes": [
+                    "Pression faible à chaud",
+                    "Surchauffe ou mayonnaise",
+                    "Fumée, claquement ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 140 000 km ; plus tôt si huile de boîte/moteur négligée",
+                  "diagnostic": "Identifier 848, 998 ou 1 275 cm³ et numéro Innocenti. Mesurer compressions/leak-down et pression, contrôler pompe, chaîne, poussoirs, culasse/joint, radiateur latéral, pompe à eau, thermostat et contamination de l’huile commune moteur-boîte.",
+                  "piece_concernee": "Moteur BMC A-Series Innocenti Mini",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sur moteur ancien ou préparé",
+                  "cout_reparation_estime": "Élevé : environ 500 à 6 000 €"
+                },
+                {
+                  "probleme": "Carburateur SU, allumage et alimentation",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Trou ou ratés",
+                    "Odeur, fuite ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après immobilisation",
+                  "diagnostic": "Contrôler réservoir, pompe, durites, cuve, aiguille, dashpot, starter, prises d’air, avance, distributeur, bobine et bougies. Sur Cooper 1300/De Tomaso BL, confirmer carburateur(s) et réglage de puissance.",
+                  "piece_concernee": "Admission et allumage A-Series",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquente avec carburant moderne et joints âgés",
+                  "cout_reparation_estime": "Moyen : environ 150 à 1 500 €"
+                },
+                {
+                  "probleme": "Boîte en carter moteur, embrayage, différentiel et cardans",
+                  "symptomes": [
+                    "Craquement de 2e/3e",
+                    "Rapport qui saute",
+                    "Patinage, claquement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 140 000 km",
+                  "diagnostic": "Contrôler huile commune, limaille, synchros, tringlerie, embrayage, butée, différentiel, sorties, croisillons/cardans et supports. Ne pas remplir avec une huile de boîte inadaptée au moteur.",
+                  "piece_concernee": "Transmission Mini traction avant",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente si vidanges espacées",
+                  "cout_reparation_estime": "Élevé : environ 600 à 4 500 €"
+                },
+                {
+                  "probleme": "Corrosion de coque, berceaux, suspension caoutchouc et freinage",
+                  "symptomes": [
+                    "Plancher ou bas de caisse perforé",
+                    "Affaissement, jeu ou tirage",
+                    "Freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Inspection annuelle et avant achat",
+                  "diagnostic": "Inspecter baie, planchers, bas de caisse, passages de roues, ancrages et berceaux ; contrôler cônes caoutchouc, rotules, bras, roulements, direction, tambours/disques, flexibles et roues. Distinguer coque italienne et éléments britanniques.",
+                  "piece_concernee": "Structure et liaisons au sol Innocenti Mini",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion fréquente selon stockage",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.registroinnocenti.org/tutti-modelli-innocenti/",
+        "https://historicdb.fia.com/sites/default/files/car_attachment/1601034601/homologation_form_number_1639_group_2.pdf"
+      ]
+    },
+    {
+      "nom": "De Tomaso",
+      "generations": [
+        {
+          "code_chassis": "Mini De Tomaso BL",
+          "annees": "1976–1982",
+          "phases": [
+            "Première De Tomaso à moteur britannique atmosphérique, environ 70/71 ch."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "A-Series 1275 De Tomaso — 71 ch",
+              "code_moteur": "BMC 12H/1275 De Tomaso",
+              "cylindree": "1 275 cm³",
+              "puissance_ch": 71,
+              "boite": [
+                "Manuelle 4 rapports, traction"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Pression d’huile, refroidissement et joint de culasse du BMC A-Series",
+                  "symptomes": [
+                    "Pression faible à chaud",
+                    "Surchauffe ou mayonnaise",
+                    "Fumée, claquement ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 140 000 km ; plus tôt si huile de boîte/moteur négligée",
+                  "diagnostic": "Identifier 848, 998 ou 1 275 cm³ et numéro Innocenti. Mesurer compressions/leak-down et pression, contrôler pompe, chaîne, poussoirs, culasse/joint, radiateur latéral, pompe à eau, thermostat et contamination de l’huile commune moteur-boîte.",
+                  "piece_concernee": "Moteur BMC A-Series Innocenti Mini",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sur moteur ancien ou préparé",
+                  "cout_reparation_estime": "Élevé : environ 500 à 6 000 €"
+                },
+                {
+                  "probleme": "Carburateur SU, allumage et alimentation",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Trou ou ratés",
+                    "Odeur, fuite ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après immobilisation",
+                  "diagnostic": "Contrôler réservoir, pompe, durites, cuve, aiguille, dashpot, starter, prises d’air, avance, distributeur, bobine et bougies. Sur Cooper 1300/De Tomaso BL, confirmer carburateur(s) et réglage de puissance.",
+                  "piece_concernee": "Admission et allumage A-Series",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquente avec carburant moderne et joints âgés",
+                  "cout_reparation_estime": "Moyen : environ 150 à 1 500 €"
+                },
+                {
+                  "probleme": "Boîte en carter moteur, embrayage, différentiel et cardans",
+                  "symptomes": [
+                    "Craquement de 2e/3e",
+                    "Rapport qui saute",
+                    "Patinage, claquement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 140 000 km",
+                  "diagnostic": "Contrôler huile commune, limaille, synchros, tringlerie, embrayage, butée, différentiel, sorties, croisillons/cardans et supports. Ne pas remplir avec une huile de boîte inadaptée au moteur.",
+                  "piece_concernee": "Transmission Mini traction avant",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente si vidanges espacées",
+                  "cout_reparation_estime": "Élevé : environ 600 à 4 500 €"
+                },
+                {
+                  "probleme": "Corrosion de coque, berceaux, suspension caoutchouc et freinage",
+                  "symptomes": [
+                    "Plancher ou bas de caisse perforé",
+                    "Affaissement, jeu ou tirage",
+                    "Freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Inspection annuelle et avant achat",
+                  "diagnostic": "Inspecter baie, planchers, bas de caisse, passages de roues, ancrages et berceaux ; contrôler cônes caoutchouc, rotules, bras, roulements, direction, tambours/disques, flexibles et roues. Distinguer coque italienne et éléments britanniques.",
+                  "piece_concernee": "Structure et liaisons au sol Innocenti Mini",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion fréquente selon stockage",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Turbo De Tomaso CB-DT",
+          "annees": "1983–1988",
+          "phases": [
+            "Turbo IHI RHB5, moteur Daihatsu développé pour Innocenti ; ne pas le confondre avec le 1,275 BL."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Daihatsu 1.0 trois-cylindres turbo — 72 ch",
+              "code_moteur": "Daihatsu CB-DT/CB22",
+              "cylindree": "993 cm³",
+              "puissance_ch": 72,
+              "boite": [
+                "Manuelle 5 rapports, traction"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et culasse du Daihatsu CB turbo",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Bruit de courroie, perte de compression ou huile dans le liquide"
+                  ],
+                  "kilometrage_apparition": "Courroie selon âge ; turbo et culasse souvent à surveiller dès 80 000 km",
+                  "diagnostic": "Identifier CB-DT/CB22/CB61 et puissance 72 ou 77 ch. Contrôler historique courroie/galets/pompe, compressions, pression d’huile, culasse/joint, radiateur, thermostat, ventilateur et conduites d’huile du turbo.",
+                  "piece_concernee": "Trois-cylindres Daihatsu CB turbo",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente si refroidissement ou vidanges négligés",
+                  "cout_reparation_estime": "Élevé : environ 500 à 5 000 €"
+                },
+                {
+                  "probleme": "Carburateur pressurisé, turbo IHI, allumage et suralimentation",
+                  "symptomes": [
+                    "Trou sous boost",
+                    "Fumée bleue",
+                    "Sifflement, cliquetis ou pression irrégulière"
+                  ],
+                  "kilometrage_apparition": "Dès 60 000 km ou après stockage",
+                  "diagnostic": "Contrôler jeu du turbo IHI RHB5, wastegate, durites, carburateur pressurisé, pompe/régulateur, prises d’air, avance, bougies et richesse sous charge. Ne pas augmenter le boost sans vérifier refroidissement et compression.",
+                  "piece_concernee": "Suralimentation et gestion Turbo De Tomaso",
+                  "gravite": "Critique",
+                  "frequence": "Usure sensible à l’arrêt à chaud et à l’huile",
+                  "cout_reparation_estime": "Élevé : environ 300 à 3 500 €"
+                },
+                {
+                  "probleme": "Boîte cinq rapports, embrayage, cardans et supports",
+                  "symptomes": [
+                    "Craquement",
+                    "Patinage",
+                    "Vibration ou claquement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km",
+                  "diagnostic": "Contrôler huile, synchros, commande, embrayage, supports, cardans, soufflets, différentiel et roulements. Vérifier que le couple turbo n’a pas fissuré les ancrages.",
+                  "piece_concernee": "Transmission Innocenti Daihatsu",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en conduite sportive",
+                  "cout_reparation_estime": "Moyen à élevé : environ 400 à 3 000 €"
+                },
+                {
+                  "probleme": "Coque Bertone, corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Jeu ou géométrie instable",
+                    "Freinage faible ou usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Inspection avant achat et annuelle",
+                  "diagnostic": "Inspecter planchers, bas de caisse, baie, ancrages moteur/suspension, hayon et passages de roues. Contrôler amortisseurs, ressorts, rotules, direction, freins, pneus et authenticité des éléments De Tomaso.",
+                  "piece_concernee": "Structure et sécurité Mini De Tomaso",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion et modifications assez fréquentes",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 10 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Turbo De Tomaso CB61",
+          "annees": "1988–1990",
+          "phases": [
+            "Dernière évolution à carters gris et puissance portée à environ 77 ch selon marché."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Daihatsu 1.0 trois-cylindres turbo évolution — 77 ch",
+              "code_moteur": "Daihatsu CB61",
+              "cylindree": "993 cm³",
+              "puissance_ch": 77,
+              "boite": [
+                "Manuelle 5 rapports, traction"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et culasse du Daihatsu CB turbo",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Bruit de courroie, perte de compression ou huile dans le liquide"
+                  ],
+                  "kilometrage_apparition": "Courroie selon âge ; turbo et culasse souvent à surveiller dès 80 000 km",
+                  "diagnostic": "Identifier CB-DT/CB22/CB61 et puissance 72 ou 77 ch. Contrôler historique courroie/galets/pompe, compressions, pression d’huile, culasse/joint, radiateur, thermostat, ventilateur et conduites d’huile du turbo.",
+                  "piece_concernee": "Trois-cylindres Daihatsu CB turbo",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente si refroidissement ou vidanges négligés",
+                  "cout_reparation_estime": "Élevé : environ 500 à 5 000 €"
+                },
+                {
+                  "probleme": "Carburateur pressurisé, turbo IHI, allumage et suralimentation",
+                  "symptomes": [
+                    "Trou sous boost",
+                    "Fumée bleue",
+                    "Sifflement, cliquetis ou pression irrégulière"
+                  ],
+                  "kilometrage_apparition": "Dès 60 000 km ou après stockage",
+                  "diagnostic": "Contrôler jeu du turbo IHI RHB5, wastegate, durites, carburateur pressurisé, pompe/régulateur, prises d’air, avance, bougies et richesse sous charge. Ne pas augmenter le boost sans vérifier refroidissement et compression.",
+                  "piece_concernee": "Suralimentation et gestion Turbo De Tomaso",
+                  "gravite": "Critique",
+                  "frequence": "Usure sensible à l’arrêt à chaud et à l’huile",
+                  "cout_reparation_estime": "Élevé : environ 300 à 3 500 €"
+                },
+                {
+                  "probleme": "Boîte cinq rapports, embrayage, cardans et supports",
+                  "symptomes": [
+                    "Craquement",
+                    "Patinage",
+                    "Vibration ou claquement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km",
+                  "diagnostic": "Contrôler huile, synchros, commande, embrayage, supports, cardans, soufflets, différentiel et roulements. Vérifier que le couple turbo n’a pas fissuré les ancrages.",
+                  "piece_concernee": "Transmission Innocenti Daihatsu",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en conduite sportive",
+                  "cout_reparation_estime": "Moyen à élevé : environ 400 à 3 000 €"
+                },
+                {
+                  "probleme": "Coque Bertone, corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Jeu ou géométrie instable",
+                    "Freinage faible ou usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Inspection avant achat et annuelle",
+                  "diagnostic": "Inspecter planchers, bas de caisse, baie, ancrages moteur/suspension, hayon et passages de roues. Contrôler amortisseurs, ressorts, rotules, direction, freins, pneus et authenticité des éléments De Tomaso.",
+                  "piece_concernee": "Structure et sécurité Mini De Tomaso",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion et modifications assez fréquentes",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 10 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.registroinnocenti.org/tutti-modelli-innocenti/",
+        "https://www.innocenti-turbo-detomaso.com/"
+      ]
+    }
+  ]
+}

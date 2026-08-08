@@ -1,0 +1,147 @@
+{
+  "nom": "BMC",
+  "modeles": [
+    {
+      "nom": "Tughra",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "truck",
+        "body_type": null,
+        "countries": [
+          "es",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "Tuğra TGR route et tracteur",
+          "annees": "2018–aujourd’hui",
+          "phases": [
+            "Gamme 4x2/6x4/8x4 : la désignation 1832/1846 encode la classe et la puissance ; confirmer empattement, cabine et usage"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "TGR 1832 Cummins ISB6.7 — 320 ch",
+              "code_moteur": "Cummins ISB6.7 Euro 6",
+              "cylindree": "6 700 cm³",
+              "puissance_ch": 320,
+              "boite": [
+                "ZF 9S1310 TD manuelle 9 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo, EGR/DPF/SCR du Cummins ISB6.7",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Régénérations fréquentes",
+                    "Fumée ou voyant SCR"
+                  ],
+                  "kilometrage_apparition": "Souvent après 300 000 à 600 000 km selon service",
+                  "diagnostic": "Lire ECM Cummins, mesurer rail/équilibrage, contrôler injecteurs, turbo, refroidissement, EGR, DPF, capteurs NOx et dosage AdBlue ; analyser huile et liquide",
+                  "piece_concernee": "Cummins ISB6.7 Euro 6",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 18 000 €"
+                },
+                {
+                  "probleme": "Boîte ZF 9S, embrayage et pont",
+                  "symptomes": [
+                    "Rapports difficiles",
+                    "Patinage",
+                    "Vibration ou bruit de pont"
+                  ],
+                  "kilometrage_apparition": "Souvent après 400 000 km selon charge",
+                  "diagnostic": "Contrôler embrayage 430 mm, commande, huile et synchros ZF 9S1310, arbre, croisillons, couple conique, différentiel et blocage",
+                  "piece_concernee": "Transmission manuelle et essieu arrière",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en distribution lourde",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Freinage pneumatique, EBS/AEBS et châssis carrossé",
+                  "symptomes": [
+                    "Perte d’air",
+                    "Alerte EBS",
+                    "Freinage irrégulier ou fissure"
+                  ],
+                  "kilometrage_apparition": "Inspection quotidienne et selon heures/km réglementaires",
+                  "diagnostic": "Tester compresseur, dessiccateur, réservoirs, valves, freins Z-cam, EBS/ESC/AEBS, calibrations, lames, direction, pneus et châssis 8 mm ; inspecter montage de carrosserie/PTO",
+                  "piece_concernee": "Châssis, freinage et aides de sécurité TGR",
+                  "gravite": "Critique",
+                  "frequence": "À surveiller en service lourd",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 20 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "TGR 1846 FPT Cursor 11 — 460 ch",
+              "code_moteur": "FPT Cursor 11 ENT VI Euro 6",
+              "cylindree": "11 100 cm³",
+              "puissance_ch": 460,
+              "boite": [
+                "ZF TraXon 12TX2210TO automatisée 12 rapports ou 16S2230 manuelle"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo et dépollution du FPT Cursor 11 Euro 6",
+                  "symptomes": [
+                    "Mode dégradé",
+                    "Fumée",
+                    "Consommation ou alerte AdBlue"
+                  ],
+                  "kilometrage_apparition": "Souvent après 400 000 à 800 000 km",
+                  "diagnostic": "Lire ECU FPT, contrôler injecteurs, pression, turbo, intercooler, EGR, DPF/SCR, NOx, refroidissement et frein moteur 372 kW ; analyser huile",
+                  "piece_concernee": "FPT Cursor 11 ENT VI",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 25 000 €"
+                },
+                {
+                  "probleme": "TraXon 12 rapports, embrayage, Intarder et pont",
+                  "symptomes": [
+                    "À-coups",
+                    "Rapport indisponible",
+                    "Surchauffe ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent après 500 000 km selon tonnage et relief",
+                  "diagnostic": "Lire ZF TraXon, contrôler embrayage 430 mm, actionneurs, apprentissages, huile, Intarder 600 kW, arbre, pont 3.08 et différentiel ; essai en charge sécurisé",
+                  "piece_concernee": "Transmission ZF 12TX2210TO et chaîne cinématique",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente en longue distance sévère",
+                  "cout_reparation_estime": "Très élevé : environ 2 500 à 30 000 €"
+                },
+                {
+                  "probleme": "Air, EBS/AEBS, suspension et cabine",
+                  "symptomes": [
+                    "Perte d’air",
+                    "Voyant sécurité",
+                    "Usure pneu ou cabine instable"
+                  ],
+                  "kilometrage_apparition": "Inspection quotidienne et entretien réglementaire",
+                  "diagnostic": "Tester compresseur/dessiccateur, EBS/ESC/AEBS/LDWS, disques, suspension pneumatique arrière, direction, pneus, levage cabine, batteries et faisceau ; vérifier calibrations après pare-brise/choc",
+                  "piece_concernee": "Freinage, suspension et électronique châssis",
+                  "gravite": "Critique",
+                  "frequence": "À surveiller sur tout tracteur routier",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 20 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.bmctugra.com/upload/files/content_files_2021-03-22_10-59-561.pdf",
+        "https://www.bmctugra.com/upload/files/tractor-br-tgr-1846-br-4x2-br-standard-roof_2019-02-20_16-00-59.pdf"
+      ]
+    }
+  ],
+  "source_catalogue": "VehiclesDB 2026.08.2 (CC-BY 4.0)"
+}

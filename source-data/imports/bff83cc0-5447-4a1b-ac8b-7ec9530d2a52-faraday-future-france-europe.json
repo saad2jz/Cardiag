@@ -1,0 +1,140 @@
+{
+  "nom": "Faraday Future",
+  "modeles": [
+    {
+      "nom": "FF 91",
+      "generations": [
+        {
+          "code_chassis": "FF 91 Futurist préproduction",
+          "annees": "2017–2022",
+          "phases": [
+            "Véhicules de développement et préproduction, batterie annoncée à 130 kWh ; ne pas les confondre avec les unités client 142 kWh."
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "Tri-moteur 130 kWh — 1050 ch",
+              "code_moteur": "FF VPA tri-motor",
+              "cylindree": "Batterie 130 kWh",
+              "puissance_ch": 1050,
+              "boite": [
+                "Trois réducteurs mono-rapport, transmission intégrale avec vectorisation arrière"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Capacité, équilibre, refroidissement et isolement de la batterie 130/142 kWh",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Charge limitée",
+                    "Écart de modules, alerte thermique ou défaut d’isolement"
+                  ],
+                  "kilometrage_apparition": "Contrôle dès l’achat puis suivi annuel ; parc trop faible pour un seuil statistique",
+                  "diagnostic": "Identifier pack de préproduction 130 kWh ou production 142 kWh, lire SOH/énergie/tensions/températures, réaliser test de capacité, contrôler six chaînes de cellules, BMS, contacteurs, refroidissement liquide et blindage ; vérifier historique de charge, stockage, garantie et possibilité réelle de remplacement",
+                  "piece_concernee": "Batterie VPA haute tension et gestion thermique FF 91",
+                  "gravite": "Critique",
+                  "frequence": "Inconnue sur très faible série",
+                  "cout_reparation_estime": "Extrêmement élevé : environ 10 000 à plus de 80 000 €"
+                },
+                {
+                  "probleme": "Trois moteurs, onduleurs, réducteurs et recharge haute puissance",
+                  "symptomes": [
+                    "Puissance bridée",
+                    "Absence de READY",
+                    "Charge interrompue, vibration ou bruit de transmission"
+                  ],
+                  "kilometrage_apparition": "Variable ; diagnostic immédiat à la première alerte",
+                  "diagnostic": "Lire les trois unités de puissance, comparer couples/temperatures, contrôler deux moteurs arrière à vectorisation et moteur avant, onduleurs, refroidissement, réducteurs et cardans ; tester charge AC/DC, prise, verrouillage et convertisseur DC-DC, puis consigner la haute tension avant examen physique",
+                  "piece_concernee": "Chaîne tri-moteur 783 kW et recharge FF 91",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable vu volumes livrés",
+                  "cout_reparation_estime": "Extrêmement élevé : environ 5 000 à plus de 60 000 €"
+                },
+                {
+                  "probleme": "Suspension pneumatique, roues arrière directrices, logiciels et équipements TechLuxury",
+                  "symptomes": [
+                    "Caisse basse",
+                    "Direction ou ADAS indisponible",
+                    "Écrans noirs, décharge 12 V ou fonctions habitacle erratiques"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque entretien et après toute mise à jour ou choc",
+                  "diagnostic": "Tester batteries 12 V, repos réseau, calculateurs et connectivité ; contrôler compresseur/coussins, amortissement adaptatif, quatre roues directrices, géométrie, pneus/freins ; valider caméras/radars, onze écrans, sièges motorisés et versions logicielles, puis vérifier support, pièces et campagnes applicables au VIN",
+                  "piece_concernee": "Châssis piloté, réseau et équipements FF 91",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque élevé de panne immobilisante sur faible série complexe",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 30 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "FF 91 2.0 Futurist Alliance",
+          "annees": "2023–aujourd’hui",
+          "phases": [
+            "Production extrêmement limitée depuis 2023 : 783 kW/1 050 hp, trois moteurs et 142 kWh ; vérifier l’état de livraison et la configuration du VIN individuel."
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "Tri-moteur 142 kWh — 1050 ch",
+              "code_moteur": "FF VPA 2.0 tri-motor",
+              "cylindree": "Batterie 142 kWh",
+              "puissance_ch": 1050,
+              "boite": [
+                "Trois réducteurs mono-rapport, transmission intégrale avec vectorisation arrière"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Capacité, équilibre, refroidissement et isolement de la batterie 130/142 kWh",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Charge limitée",
+                    "Écart de modules, alerte thermique ou défaut d’isolement"
+                  ],
+                  "kilometrage_apparition": "Contrôle dès l’achat puis suivi annuel ; parc trop faible pour un seuil statistique",
+                  "diagnostic": "Identifier pack de préproduction 130 kWh ou production 142 kWh, lire SOH/énergie/tensions/températures, réaliser test de capacité, contrôler six chaînes de cellules, BMS, contacteurs, refroidissement liquide et blindage ; vérifier historique de charge, stockage, garantie et possibilité réelle de remplacement",
+                  "piece_concernee": "Batterie VPA haute tension et gestion thermique FF 91",
+                  "gravite": "Critique",
+                  "frequence": "Inconnue sur très faible série",
+                  "cout_reparation_estime": "Extrêmement élevé : environ 10 000 à plus de 80 000 €"
+                },
+                {
+                  "probleme": "Trois moteurs, onduleurs, réducteurs et recharge haute puissance",
+                  "symptomes": [
+                    "Puissance bridée",
+                    "Absence de READY",
+                    "Charge interrompue, vibration ou bruit de transmission"
+                  ],
+                  "kilometrage_apparition": "Variable ; diagnostic immédiat à la première alerte",
+                  "diagnostic": "Lire les trois unités de puissance, comparer couples/temperatures, contrôler deux moteurs arrière à vectorisation et moteur avant, onduleurs, refroidissement, réducteurs et cardans ; tester charge AC/DC, prise, verrouillage et convertisseur DC-DC, puis consigner la haute tension avant examen physique",
+                  "piece_concernee": "Chaîne tri-moteur 783 kW et recharge FF 91",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable vu volumes livrés",
+                  "cout_reparation_estime": "Extrêmement élevé : environ 5 000 à plus de 60 000 €"
+                },
+                {
+                  "probleme": "Suspension pneumatique, roues arrière directrices, logiciels et équipements TechLuxury",
+                  "symptomes": [
+                    "Caisse basse",
+                    "Direction ou ADAS indisponible",
+                    "Écrans noirs, décharge 12 V ou fonctions habitacle erratiques"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque entretien et après toute mise à jour ou choc",
+                  "diagnostic": "Tester batteries 12 V, repos réseau, calculateurs et connectivité ; contrôler compresseur/coussins, amortissement adaptatif, quatre roues directrices, géométrie, pneus/freins ; valider caméras/radars, onze écrans, sièges motorisés et versions logicielles, puis vérifier support, pièces et campagnes applicables au VIN",
+                  "piece_concernee": "Châssis piloté, réseau et équipements FF 91",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque élevé de panne immobilisante sur faible série complexe",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 30 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://investors.ff.com/news-releases/news-release-details/faraday-futures-first-production-ff-91-vehicle-comes-line-its-ff/",
+        "https://investors.ff.com/static-files/045ef38e-7c03-4cf8-ad90-b4eaf43c768a"
+      ]
+    }
+  ]
+}

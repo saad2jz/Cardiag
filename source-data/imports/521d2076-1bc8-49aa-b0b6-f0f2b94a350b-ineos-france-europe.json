@@ -1,0 +1,154 @@
+{
+  "nom": "INEOS",
+  "modeles": [
+    {
+      "nom": "Grenadier",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "de",
+          "es",
+          "fi",
+          "gb",
+          "lu",
+          "my",
+          "nl",
+          "nz",
+          "ua"
+        ],
+        "regions": [
+          "as",
+          "eu",
+          "na",
+          "oc"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "GM",
+          "annees": "2022-aujourd’hui",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.0 Turbo BMW B58 — 210 kW — 286 ch",
+              "code_moteur": "B58B30",
+              "cylindree": "2 998 cm³",
+              "puissance_ch": 286,
+              "boite": [
+                "ZF 8HP51"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement et périphériques BMW en usage sévère",
+                  "symptomes": [
+                    "Température élevée",
+                    "Fuite de liquide",
+                    "Puissance réduite"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque entretien et après usage tout-terrain intensif.",
+                  "diagnostic": "Mise sous pression du circuit, lecture des températures, inspection radiateur, durites et ventilateur.",
+                  "piece_concernee": "Moteur B57/B58, radiateur renforcé et périphériques",
+                  "gravite": "Majeure en cas de surchauffe",
+                  "frequence": "Encore peu documentée sur véhicule récent",
+                  "cout_reparation_estime": "Variable — environ 300 à 4 000 € selon organe."
+                },
+                {
+                  "probleme": "Boîte ZF, transfert et blocages de différentiels",
+                  "symptomes": [
+                    "À-coups",
+                    "Bruit en charge",
+                    "Blocage qui ne s’engage pas"
+                  ],
+                  "kilometrage_apparition": "Variable selon remorquage, passages à gué et usage hors route.",
+                  "diagnostic": "Essai de tous les modes, lecture des défauts, contrôle des huiles, connecteurs et mises à l’air.",
+                  "piece_concernee": "ZF 8HP, transfert Tremec, arbres et différentiels Carraro",
+                  "gravite": "Majeure",
+                  "frequence": "À inspecter après usage sévère",
+                  "cout_reparation_estime": "Environ 500 à 8 000 €."
+                },
+                {
+                  "probleme": "Châssis, essieux rigides et freinage",
+                  "symptomes": [
+                    "Tirage",
+                    "Vibration",
+                    "Jeu ou usure irrégulière des pneus"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Inspection du châssis échelle, ancrages, rotules, barres, roulements, freins Brembo et géométrie.",
+                  "piece_concernee": "Châssis, essieux Carraro, suspension cinq bras et freinage",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Dépend de la charge et du terrain",
+                  "cout_reparation_estime": "Environ 300 à 5 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "3.0 Turbo Diesel BMW B57 — 183 kW — 249 ch",
+              "code_moteur": "B57D30",
+              "cylindree": "2 993 cm³",
+              "puissance_ch": 249,
+              "boite": [
+                "ZF 8HP76"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement et périphériques BMW en usage sévère",
+                  "symptomes": [
+                    "Température élevée",
+                    "Fuite de liquide",
+                    "Puissance réduite"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque entretien et après usage tout-terrain intensif.",
+                  "diagnostic": "Mise sous pression du circuit, lecture des températures, inspection radiateur, durites et ventilateur.",
+                  "piece_concernee": "Moteur B57/B58, radiateur renforcé et périphériques",
+                  "gravite": "Majeure en cas de surchauffe",
+                  "frequence": "Encore peu documentée sur véhicule récent",
+                  "cout_reparation_estime": "Variable — environ 300 à 4 000 € selon organe."
+                },
+                {
+                  "probleme": "Boîte ZF, transfert et blocages de différentiels",
+                  "symptomes": [
+                    "À-coups",
+                    "Bruit en charge",
+                    "Blocage qui ne s’engage pas"
+                  ],
+                  "kilometrage_apparition": "Variable selon remorquage, passages à gué et usage hors route.",
+                  "diagnostic": "Essai de tous les modes, lecture des défauts, contrôle des huiles, connecteurs et mises à l’air.",
+                  "piece_concernee": "ZF 8HP, transfert Tremec, arbres et différentiels Carraro",
+                  "gravite": "Majeure",
+                  "frequence": "À inspecter après usage sévère",
+                  "cout_reparation_estime": "Environ 500 à 8 000 €."
+                },
+                {
+                  "probleme": "Châssis, essieux rigides et freinage",
+                  "symptomes": [
+                    "Tirage",
+                    "Vibration",
+                    "Jeu ou usure irrégulière des pneus"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Inspection du châssis échelle, ancrages, rotules, barres, roulements, freins Brembo et géométrie.",
+                  "piece_concernee": "Châssis, essieux Carraro, suspension cinq bras et freinage",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Dépend de la charge et du terrain",
+                  "cout_reparation_estime": "Environ 300 à 5 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "source_catalogue": "VehiclesDB 2026.08.2 (CC-BY 4.0)"
+}

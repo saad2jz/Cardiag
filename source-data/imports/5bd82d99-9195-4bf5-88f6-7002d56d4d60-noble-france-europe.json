@@ -1,0 +1,440 @@
+{
+  "nom": "Noble",
+  "modeles": [
+    {
+      "nom": "M600",
+      "generations": [
+        {
+          "code_chassis": "M600 Coupé",
+          "annees": "2010–aujourd’hui",
+          "phases": [
+            "Les trois puissances sont sélectionnables sur le même véhicule ; elles restent explicites pour le diagnostic de boost."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Road mode — 450 ch",
+              "code_moteur": "Noble/Yamaha B8444S TT Road",
+              "cylindree": "4 414 cm³",
+              "puissance_ch": 450,
+              "boite": [
+                "Graziano manuelle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement, turbos et intégrité du V8 B8444S préparé",
+                  "symptomes": [
+                    "Fumée ou consommation d’huile",
+                    "Surchauffe",
+                    "Boost faible, cliquetis ou limaille"
+                  ],
+                  "kilometrage_apparition": "Vigilance dès 60 000 à 120 000 km, plus tôt sur piste",
+                  "diagnostic": "Analyser huile/filtre, mesurer compressions/leak-down et pression, inspecter pompes, radiateurs, durites, ventilation, turbos Garrett, wastegates, intercoolers, échappement et supports ; comparer les trois niveaux 450/550/650 ch sans sollicitation maximale avant validation",
+                  "piece_concernee": "V8 4.4 Yamaha/Volvo biturbo Noble M600",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable sur très faible production",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 35 000 €"
+                },
+                {
+                  "probleme": "Sélecteur Adaptable Performance Control, MoTeC, injection et allumage",
+                  "symptomes": [
+                    "Mode de puissance indisponible",
+                    "Ratés ou coupure",
+                    "Voyant, lambda ou pression incohérente"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque anomalie et avant piste",
+                  "diagnostic": "Lire ECU MoTeC, vérifier sélection Road/Track/Race, pression de suralimentation approximative 0,6/0,8/1,0 bar, carburant, pompes, injecteurs, bobines, capteurs, faisceau et masses ; valider sur banc spécialisé plutôt que sur route",
+                  "piece_concernee": "Gestion et cartographies M600",
+                  "gravite": "Critique",
+                  "frequence": "Occasionnelle ; modifications non documentées à exclure",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 12 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte Graziano six rapports et différentiel",
+                  "symptomes": [
+                    "Embrayage lourd ou patinage",
+                    "Rapport difficile",
+                    "Bruit, vibration ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 50 000 à 120 000 km, selon départs et piste",
+                  "diagnostic": "Contrôler commande, disque/mécanisme, volant, huile et synchros de boîte Graziano, supports, tringlerie, différentiel, arbres, joints et roulements ; vérifier toute conversion séquentielle séparément",
+                  "piece_concernee": "Transmission manuelle et propulsion M600",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable, accélérée par le couple maximal",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 15 000 €"
+                },
+                {
+                  "probleme": "Châssis inox, carbone/GRP, suspension, freins et absence d’aides",
+                  "symptomes": [
+                    "Corrosion ou fissure de structure",
+                    "Jeu ou géométrie instable",
+                    "Freinage vibrant ou perte d’adhérence"
+                  ],
+                  "kilometrage_apparition": "Expertise systématique avant achat",
+                  "diagnostic": "Inspecter cadre inox, soudures, collages, panneaux et points de levage ; contrôler doubles triangles, Bilstein/Eibach, rotules, direction, jantes/pneus, disques/étriers et liquide ; tenir compte de l’absence d’ABS et d’ESP, puis authentifier M600/CarbonSport et historique",
+                  "piece_concernee": "Structure et sécurité Noble M600",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après choc ou usage piste",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 50 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Track mode — 550 ch",
+              "code_moteur": "Noble/Yamaha B8444S TT Track",
+              "cylindree": "4 414 cm³",
+              "puissance_ch": 550,
+              "boite": [
+                "Graziano manuelle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement, turbos et intégrité du V8 B8444S préparé",
+                  "symptomes": [
+                    "Fumée ou consommation d’huile",
+                    "Surchauffe",
+                    "Boost faible, cliquetis ou limaille"
+                  ],
+                  "kilometrage_apparition": "Vigilance dès 60 000 à 120 000 km, plus tôt sur piste",
+                  "diagnostic": "Analyser huile/filtre, mesurer compressions/leak-down et pression, inspecter pompes, radiateurs, durites, ventilation, turbos Garrett, wastegates, intercoolers, échappement et supports ; comparer les trois niveaux 450/550/650 ch sans sollicitation maximale avant validation",
+                  "piece_concernee": "V8 4.4 Yamaha/Volvo biturbo Noble M600",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable sur très faible production",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 35 000 €"
+                },
+                {
+                  "probleme": "Sélecteur Adaptable Performance Control, MoTeC, injection et allumage",
+                  "symptomes": [
+                    "Mode de puissance indisponible",
+                    "Ratés ou coupure",
+                    "Voyant, lambda ou pression incohérente"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque anomalie et avant piste",
+                  "diagnostic": "Lire ECU MoTeC, vérifier sélection Road/Track/Race, pression de suralimentation approximative 0,6/0,8/1,0 bar, carburant, pompes, injecteurs, bobines, capteurs, faisceau et masses ; valider sur banc spécialisé plutôt que sur route",
+                  "piece_concernee": "Gestion et cartographies M600",
+                  "gravite": "Critique",
+                  "frequence": "Occasionnelle ; modifications non documentées à exclure",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 12 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte Graziano six rapports et différentiel",
+                  "symptomes": [
+                    "Embrayage lourd ou patinage",
+                    "Rapport difficile",
+                    "Bruit, vibration ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 50 000 à 120 000 km, selon départs et piste",
+                  "diagnostic": "Contrôler commande, disque/mécanisme, volant, huile et synchros de boîte Graziano, supports, tringlerie, différentiel, arbres, joints et roulements ; vérifier toute conversion séquentielle séparément",
+                  "piece_concernee": "Transmission manuelle et propulsion M600",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable, accélérée par le couple maximal",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 15 000 €"
+                },
+                {
+                  "probleme": "Châssis inox, carbone/GRP, suspension, freins et absence d’aides",
+                  "symptomes": [
+                    "Corrosion ou fissure de structure",
+                    "Jeu ou géométrie instable",
+                    "Freinage vibrant ou perte d’adhérence"
+                  ],
+                  "kilometrage_apparition": "Expertise systématique avant achat",
+                  "diagnostic": "Inspecter cadre inox, soudures, collages, panneaux et points de levage ; contrôler doubles triangles, Bilstein/Eibach, rotules, direction, jantes/pneus, disques/étriers et liquide ; tenir compte de l’absence d’ABS et d’ESP, puis authentifier M600/CarbonSport et historique",
+                  "piece_concernee": "Structure et sécurité Noble M600",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après choc ou usage piste",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 50 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Race mode — 650 ch",
+              "code_moteur": "Noble/Yamaha B8444S TT Race",
+              "cylindree": "4 414 cm³",
+              "puissance_ch": 650,
+              "boite": [
+                "Graziano manuelle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement, turbos et intégrité du V8 B8444S préparé",
+                  "symptomes": [
+                    "Fumée ou consommation d’huile",
+                    "Surchauffe",
+                    "Boost faible, cliquetis ou limaille"
+                  ],
+                  "kilometrage_apparition": "Vigilance dès 60 000 à 120 000 km, plus tôt sur piste",
+                  "diagnostic": "Analyser huile/filtre, mesurer compressions/leak-down et pression, inspecter pompes, radiateurs, durites, ventilation, turbos Garrett, wastegates, intercoolers, échappement et supports ; comparer les trois niveaux 450/550/650 ch sans sollicitation maximale avant validation",
+                  "piece_concernee": "V8 4.4 Yamaha/Volvo biturbo Noble M600",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable sur très faible production",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 35 000 €"
+                },
+                {
+                  "probleme": "Sélecteur Adaptable Performance Control, MoTeC, injection et allumage",
+                  "symptomes": [
+                    "Mode de puissance indisponible",
+                    "Ratés ou coupure",
+                    "Voyant, lambda ou pression incohérente"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque anomalie et avant piste",
+                  "diagnostic": "Lire ECU MoTeC, vérifier sélection Road/Track/Race, pression de suralimentation approximative 0,6/0,8/1,0 bar, carburant, pompes, injecteurs, bobines, capteurs, faisceau et masses ; valider sur banc spécialisé plutôt que sur route",
+                  "piece_concernee": "Gestion et cartographies M600",
+                  "gravite": "Critique",
+                  "frequence": "Occasionnelle ; modifications non documentées à exclure",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 12 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte Graziano six rapports et différentiel",
+                  "symptomes": [
+                    "Embrayage lourd ou patinage",
+                    "Rapport difficile",
+                    "Bruit, vibration ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 50 000 à 120 000 km, selon départs et piste",
+                  "diagnostic": "Contrôler commande, disque/mécanisme, volant, huile et synchros de boîte Graziano, supports, tringlerie, différentiel, arbres, joints et roulements ; vérifier toute conversion séquentielle séparément",
+                  "piece_concernee": "Transmission manuelle et propulsion M600",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable, accélérée par le couple maximal",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 15 000 €"
+                },
+                {
+                  "probleme": "Châssis inox, carbone/GRP, suspension, freins et absence d’aides",
+                  "symptomes": [
+                    "Corrosion ou fissure de structure",
+                    "Jeu ou géométrie instable",
+                    "Freinage vibrant ou perte d’adhérence"
+                  ],
+                  "kilometrage_apparition": "Expertise systématique avant achat",
+                  "diagnostic": "Inspecter cadre inox, soudures, collages, panneaux et points de levage ; contrôler doubles triangles, Bilstein/Eibach, rotules, direction, jantes/pneus, disques/étriers et liquide ; tenir compte de l’absence d’ABS et d’ESP, puis authentifier M600/CarbonSport et historique",
+                  "piece_concernee": "Structure et sécurité Noble M600",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après choc ou usage piste",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 50 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "M600 CarbonSport",
+          "annees": "2013–aujourd’hui",
+          "phases": [
+            "Carrosserie carbone et finition propres ; le Speedster est resté une étude/prototype et n’est pas présenté comme série."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "CarbonSport Road mode — 450 ch",
+              "code_moteur": "Noble/Yamaha B8444S TT Road",
+              "cylindree": "4 414 cm³",
+              "puissance_ch": 450,
+              "boite": [
+                "Graziano manuelle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement, turbos et intégrité du V8 B8444S préparé",
+                  "symptomes": [
+                    "Fumée ou consommation d’huile",
+                    "Surchauffe",
+                    "Boost faible, cliquetis ou limaille"
+                  ],
+                  "kilometrage_apparition": "Vigilance dès 60 000 à 120 000 km, plus tôt sur piste",
+                  "diagnostic": "Analyser huile/filtre, mesurer compressions/leak-down et pression, inspecter pompes, radiateurs, durites, ventilation, turbos Garrett, wastegates, intercoolers, échappement et supports ; comparer les trois niveaux 450/550/650 ch sans sollicitation maximale avant validation",
+                  "piece_concernee": "V8 4.4 Yamaha/Volvo biturbo Noble M600",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable sur très faible production",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 35 000 €"
+                },
+                {
+                  "probleme": "Sélecteur Adaptable Performance Control, MoTeC, injection et allumage",
+                  "symptomes": [
+                    "Mode de puissance indisponible",
+                    "Ratés ou coupure",
+                    "Voyant, lambda ou pression incohérente"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque anomalie et avant piste",
+                  "diagnostic": "Lire ECU MoTeC, vérifier sélection Road/Track/Race, pression de suralimentation approximative 0,6/0,8/1,0 bar, carburant, pompes, injecteurs, bobines, capteurs, faisceau et masses ; valider sur banc spécialisé plutôt que sur route",
+                  "piece_concernee": "Gestion et cartographies M600",
+                  "gravite": "Critique",
+                  "frequence": "Occasionnelle ; modifications non documentées à exclure",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 12 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte Graziano six rapports et différentiel",
+                  "symptomes": [
+                    "Embrayage lourd ou patinage",
+                    "Rapport difficile",
+                    "Bruit, vibration ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 50 000 à 120 000 km, selon départs et piste",
+                  "diagnostic": "Contrôler commande, disque/mécanisme, volant, huile et synchros de boîte Graziano, supports, tringlerie, différentiel, arbres, joints et roulements ; vérifier toute conversion séquentielle séparément",
+                  "piece_concernee": "Transmission manuelle et propulsion M600",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable, accélérée par le couple maximal",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 15 000 €"
+                },
+                {
+                  "probleme": "Châssis inox, carbone/GRP, suspension, freins et absence d’aides",
+                  "symptomes": [
+                    "Corrosion ou fissure de structure",
+                    "Jeu ou géométrie instable",
+                    "Freinage vibrant ou perte d’adhérence"
+                  ],
+                  "kilometrage_apparition": "Expertise systématique avant achat",
+                  "diagnostic": "Inspecter cadre inox, soudures, collages, panneaux et points de levage ; contrôler doubles triangles, Bilstein/Eibach, rotules, direction, jantes/pneus, disques/étriers et liquide ; tenir compte de l’absence d’ABS et d’ESP, puis authentifier M600/CarbonSport et historique",
+                  "piece_concernee": "Structure et sécurité Noble M600",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après choc ou usage piste",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 50 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "CarbonSport Track mode — 550 ch",
+              "code_moteur": "Noble/Yamaha B8444S TT Track",
+              "cylindree": "4 414 cm³",
+              "puissance_ch": 550,
+              "boite": [
+                "Graziano manuelle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement, turbos et intégrité du V8 B8444S préparé",
+                  "symptomes": [
+                    "Fumée ou consommation d’huile",
+                    "Surchauffe",
+                    "Boost faible, cliquetis ou limaille"
+                  ],
+                  "kilometrage_apparition": "Vigilance dès 60 000 à 120 000 km, plus tôt sur piste",
+                  "diagnostic": "Analyser huile/filtre, mesurer compressions/leak-down et pression, inspecter pompes, radiateurs, durites, ventilation, turbos Garrett, wastegates, intercoolers, échappement et supports ; comparer les trois niveaux 450/550/650 ch sans sollicitation maximale avant validation",
+                  "piece_concernee": "V8 4.4 Yamaha/Volvo biturbo Noble M600",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable sur très faible production",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 35 000 €"
+                },
+                {
+                  "probleme": "Sélecteur Adaptable Performance Control, MoTeC, injection et allumage",
+                  "symptomes": [
+                    "Mode de puissance indisponible",
+                    "Ratés ou coupure",
+                    "Voyant, lambda ou pression incohérente"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque anomalie et avant piste",
+                  "diagnostic": "Lire ECU MoTeC, vérifier sélection Road/Track/Race, pression de suralimentation approximative 0,6/0,8/1,0 bar, carburant, pompes, injecteurs, bobines, capteurs, faisceau et masses ; valider sur banc spécialisé plutôt que sur route",
+                  "piece_concernee": "Gestion et cartographies M600",
+                  "gravite": "Critique",
+                  "frequence": "Occasionnelle ; modifications non documentées à exclure",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 12 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte Graziano six rapports et différentiel",
+                  "symptomes": [
+                    "Embrayage lourd ou patinage",
+                    "Rapport difficile",
+                    "Bruit, vibration ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 50 000 à 120 000 km, selon départs et piste",
+                  "diagnostic": "Contrôler commande, disque/mécanisme, volant, huile et synchros de boîte Graziano, supports, tringlerie, différentiel, arbres, joints et roulements ; vérifier toute conversion séquentielle séparément",
+                  "piece_concernee": "Transmission manuelle et propulsion M600",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable, accélérée par le couple maximal",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 15 000 €"
+                },
+                {
+                  "probleme": "Châssis inox, carbone/GRP, suspension, freins et absence d’aides",
+                  "symptomes": [
+                    "Corrosion ou fissure de structure",
+                    "Jeu ou géométrie instable",
+                    "Freinage vibrant ou perte d’adhérence"
+                  ],
+                  "kilometrage_apparition": "Expertise systématique avant achat",
+                  "diagnostic": "Inspecter cadre inox, soudures, collages, panneaux et points de levage ; contrôler doubles triangles, Bilstein/Eibach, rotules, direction, jantes/pneus, disques/étriers et liquide ; tenir compte de l’absence d’ABS et d’ESP, puis authentifier M600/CarbonSport et historique",
+                  "piece_concernee": "Structure et sécurité Noble M600",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après choc ou usage piste",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 50 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "CarbonSport Race mode — 650 ch",
+              "code_moteur": "Noble/Yamaha B8444S TT Race",
+              "cylindree": "4 414 cm³",
+              "puissance_ch": 650,
+              "boite": [
+                "Graziano manuelle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement, turbos et intégrité du V8 B8444S préparé",
+                  "symptomes": [
+                    "Fumée ou consommation d’huile",
+                    "Surchauffe",
+                    "Boost faible, cliquetis ou limaille"
+                  ],
+                  "kilometrage_apparition": "Vigilance dès 60 000 à 120 000 km, plus tôt sur piste",
+                  "diagnostic": "Analyser huile/filtre, mesurer compressions/leak-down et pression, inspecter pompes, radiateurs, durites, ventilation, turbos Garrett, wastegates, intercoolers, échappement et supports ; comparer les trois niveaux 450/550/650 ch sans sollicitation maximale avant validation",
+                  "piece_concernee": "V8 4.4 Yamaha/Volvo biturbo Noble M600",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable sur très faible production",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 35 000 €"
+                },
+                {
+                  "probleme": "Sélecteur Adaptable Performance Control, MoTeC, injection et allumage",
+                  "symptomes": [
+                    "Mode de puissance indisponible",
+                    "Ratés ou coupure",
+                    "Voyant, lambda ou pression incohérente"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque anomalie et avant piste",
+                  "diagnostic": "Lire ECU MoTeC, vérifier sélection Road/Track/Race, pression de suralimentation approximative 0,6/0,8/1,0 bar, carburant, pompes, injecteurs, bobines, capteurs, faisceau et masses ; valider sur banc spécialisé plutôt que sur route",
+                  "piece_concernee": "Gestion et cartographies M600",
+                  "gravite": "Critique",
+                  "frequence": "Occasionnelle ; modifications non documentées à exclure",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 12 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte Graziano six rapports et différentiel",
+                  "symptomes": [
+                    "Embrayage lourd ou patinage",
+                    "Rapport difficile",
+                    "Bruit, vibration ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 50 000 à 120 000 km, selon départs et piste",
+                  "diagnostic": "Contrôler commande, disque/mécanisme, volant, huile et synchros de boîte Graziano, supports, tringlerie, différentiel, arbres, joints et roulements ; vérifier toute conversion séquentielle séparément",
+                  "piece_concernee": "Transmission manuelle et propulsion M600",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable, accélérée par le couple maximal",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 15 000 €"
+                },
+                {
+                  "probleme": "Châssis inox, carbone/GRP, suspension, freins et absence d’aides",
+                  "symptomes": [
+                    "Corrosion ou fissure de structure",
+                    "Jeu ou géométrie instable",
+                    "Freinage vibrant ou perte d’adhérence"
+                  ],
+                  "kilometrage_apparition": "Expertise systématique avant achat",
+                  "diagnostic": "Inspecter cadre inox, soudures, collages, panneaux et points de levage ; contrôler doubles triangles, Bilstein/Eibach, rotules, direction, jantes/pneus, disques/étriers et liquide ; tenir compte de l’absence d’ABS et d’ESP, puis authentifier M600/CarbonSport et historique",
+                  "piece_concernee": "Structure et sécurité Noble M600",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après choc ou usage piste",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 50 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.allcarcentral.com/Noble_pdf/Noble_m600_2010.pdf",
+        "https://www.noblecars.com/"
+      ]
+    }
+  ]
+}

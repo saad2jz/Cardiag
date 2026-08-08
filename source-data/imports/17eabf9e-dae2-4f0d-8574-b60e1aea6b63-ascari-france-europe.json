@@ -1,0 +1,127 @@
+{
+  "nom": "Ascari",
+  "modeles": [
+    {
+      "nom": "KZ1",
+      "generations": [
+        {
+          "code_chassis": "KZ1 / KZ1-R",
+          "annees": "2003–2010",
+          "phases": [
+            "Très faible série ; distinguer KZ1 route et KZ1-R piste, carter sec et spécification de châssis"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "5.0 V8 BMW préparé — 500 ch",
+              "code_moteur": "BMW S62B50 Ascari",
+              "cylindree": "4 941 cm³",
+              "puissance_ch": 500,
+              "boite": [
+                "Boîte manuelle CIMA 6 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carter sec, VANOS, lubrification et refroidissement du BMW S62 préparé",
+                  "symptomes": [
+                    "Cliquetis",
+                    "Pression faible",
+                    "Ratés ou température élevée"
+                  ],
+                  "kilometrage_apparition": "À contrôler dès 60 000 km et après circuit",
+                  "diagnostic": "Analyser huile/filtre, mesurer pression, contrôler coussinets, VANOS, chaînes/guides, papillons, injecteurs, bobines, carter sec spécifique, radiateurs et historique de surrégime",
+                  "piece_concernee": "V8 BMW S62 Ascari et carter sec",
+                  "gravite": "Critique",
+                  "frequence": "Variable selon usage et préparation",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à 30 000 €"
+                },
+                {
+                  "probleme": "Boîte CIMA, embrayage, différentiel et transmission",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Bruit ou vibration"
+                  ],
+                  "kilometrage_apparition": "Dépend des départs et de la piste",
+                  "diagnostic": "Contrôler embrayage, commande, pignons/synchros, huile et débris, différentiel, arbres, joints, supports et disponibilité des pièces CIMA/Ascari",
+                  "piece_concernee": "Transmission manuelle et chaîne cinématique",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Peu documentée sur très faible série",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à 30 000 €"
+                },
+                {
+                  "probleme": "Monocoque/panneaux carbone, suspension et freins AP Racing",
+                  "symptomes": [
+                    "Fissure/délamination",
+                    "Jeu",
+                    "Vibration ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Après choc, piste ou levage incorrect",
+                  "diagnostic": "Inspection carbone et NDT si doute, contrôler points de levage, collages, triangles, rotules, amortisseurs, moyeux, jantes, pneus, conduites et disques/étriers AP Racing",
+                  "piece_concernee": "Structure carbone et châssis",
+                  "gravite": "Critique",
+                  "frequence": "Peu fréquente mais conséquences majeures",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 60 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "5.0 V8 BMW préparé KZ1-R — 520 ch",
+              "code_moteur": "BMW S62B50 Ascari R",
+              "cylindree": "4 941 cm³",
+              "puissance_ch": 520,
+              "boite": [
+                "Boîte manuelle CIMA 6 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carter sec, VANOS, lubrification et refroidissement du BMW S62 préparé",
+                  "symptomes": [
+                    "Cliquetis",
+                    "Pression faible",
+                    "Ratés ou température élevée"
+                  ],
+                  "kilometrage_apparition": "À contrôler dès 60 000 km et après circuit",
+                  "diagnostic": "Analyser huile/filtre, mesurer pression, contrôler coussinets, VANOS, chaînes/guides, papillons, injecteurs, bobines, carter sec spécifique, radiateurs et historique de surrégime",
+                  "piece_concernee": "V8 BMW S62 Ascari et carter sec",
+                  "gravite": "Critique",
+                  "frequence": "Variable selon usage et préparation",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à 30 000 €"
+                },
+                {
+                  "probleme": "Boîte CIMA, embrayage, différentiel et transmission",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Bruit ou vibration"
+                  ],
+                  "kilometrage_apparition": "Dépend des départs et de la piste",
+                  "diagnostic": "Contrôler embrayage, commande, pignons/synchros, huile et débris, différentiel, arbres, joints, supports et disponibilité des pièces CIMA/Ascari",
+                  "piece_concernee": "Transmission manuelle et chaîne cinématique",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Peu documentée sur très faible série",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à 30 000 €"
+                },
+                {
+                  "probleme": "Monocoque/panneaux carbone, suspension et freins AP Racing",
+                  "symptomes": [
+                    "Fissure/délamination",
+                    "Jeu",
+                    "Vibration ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Après choc, piste ou levage incorrect",
+                  "diagnostic": "Inspection carbone et NDT si doute, contrôler points de levage, collages, triangles, rotules, amortisseurs, moyeux, jantes, pneus, conduites et disques/étriers AP Racing",
+                  "piece_concernee": "Structure carbone et châssis",
+                  "gravite": "Critique",
+                  "frequence": "Peu fréquente mais conséquences majeures",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 60 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

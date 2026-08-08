@@ -1,0 +1,136 @@
+{
+  "nom": "Arash",
+  "modeles": [
+    {
+      "nom": "AF10",
+      "generations": [
+        {
+          "code_chassis": "AF10 V8",
+          "annees": "2016–aujourd’hui",
+          "phases": [
+            "Version thermique annoncée séparément de la Warp Drive hybride"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "6.2 V8 suralimenté — 900 ch",
+              "code_moteur": "Arash 6.2 V8",
+              "cylindree": "6 200 cm³",
+              "puissance_ch": 900,
+              "boite": [
+                "Boîte manuelle ou paddle-shift 6 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, suralimentation et refroidissement du V8 6.2",
+                  "symptomes": [
+                    "Pression faible",
+                    "Cliquetis",
+                    "Température élevée ou perte de boost"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque entretien et après piste",
+                  "diagnostic": "Lire télémétrie, analyser huile/filtre, mesurer pression, contrôler carter sec selon version, compresseur/turbos, échangeur, injection directe, allumage, pompes, radiateurs et historique de chauffe/surrégime",
+                  "piece_concernee": "V8 6.2 haute puissance et gestion thermique",
+                  "gravite": "Critique",
+                  "frequence": "Données de flotte extrêmement limitées",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 80 000 €"
+                },
+                {
+                  "probleme": "Batterie hybride 32 kWh, quatre moteurs et quatre boîtes électriques",
+                  "symptomes": [
+                    "Puissance limitée",
+                    "Écart de température",
+                    "Bruit ou défaut d’isolement"
+                  ],
+                  "kilometrage_apparition": "Selon cycles de piste et stockage",
+                  "diagnostic": "Avec habilitation HV, lire cellules/isolement/températures, tester refroidissement, quatre moteurs Compact Dynamics 220 kW, onduleurs, réducteurs 2 rapports, contacteurs, chargeur 22 kW et logiciels de couple",
+                  "piece_concernee": "Système hybride Warp Drive",
+                  "gravite": "Critique",
+                  "frequence": "Non documentée sur très faible série",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 100 000 €"
+                },
+                {
+                  "probleme": "Monocoque carbone, aérodynamique active, freins et boîte V8",
+                  "symptomes": [
+                    "Fissure",
+                    "Aileron inopérant",
+                    "Sélection difficile ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Après choc, piste ou levage incorrect",
+                  "diagnostic": "Inspection carbone/NDT, points de levage et fixations ; contrôler aérodynamique, suspension, moyeux, jantes magnésium, pneus, freins, embrayage et boîte 6 rapports manuelle/paddle",
+                  "piece_concernee": "Structure carbone et châssis haute performance",
+                  "gravite": "Critique",
+                  "frequence": "Peu fréquente mais conséquences majeures",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 100 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "AF10 Hybrid Warp Drive",
+          "annees": "2016–aujourd’hui",
+          "phases": [
+            "Arash annonce 1 551 kW/2 080 bhp et 2 280 Nm ; distinguer Hybrid et Hybrid Racer"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride rechargeable haute performance",
+              "nom": "6.2 V8 + quatre moteurs électriques — 2080 ch",
+              "code_moteur": "Arash V8 900 bhp + 4 × 220 kW",
+              "cylindree": "6 200 cm³ + batterie 32 kWh",
+              "puissance_ch": 2080,
+              "boite": [
+                "Boîte V8 6 rapports + 4 réducteurs électriques 2 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, suralimentation et refroidissement du V8 6.2",
+                  "symptomes": [
+                    "Pression faible",
+                    "Cliquetis",
+                    "Température élevée ou perte de boost"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque entretien et après piste",
+                  "diagnostic": "Lire télémétrie, analyser huile/filtre, mesurer pression, contrôler carter sec selon version, compresseur/turbos, échangeur, injection directe, allumage, pompes, radiateurs et historique de chauffe/surrégime",
+                  "piece_concernee": "V8 6.2 haute puissance et gestion thermique",
+                  "gravite": "Critique",
+                  "frequence": "Données de flotte extrêmement limitées",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 80 000 €"
+                },
+                {
+                  "probleme": "Batterie hybride 32 kWh, quatre moteurs et quatre boîtes électriques",
+                  "symptomes": [
+                    "Puissance limitée",
+                    "Écart de température",
+                    "Bruit ou défaut d’isolement"
+                  ],
+                  "kilometrage_apparition": "Selon cycles de piste et stockage",
+                  "diagnostic": "Avec habilitation HV, lire cellules/isolement/températures, tester refroidissement, quatre moteurs Compact Dynamics 220 kW, onduleurs, réducteurs 2 rapports, contacteurs, chargeur 22 kW et logiciels de couple",
+                  "piece_concernee": "Système hybride Warp Drive",
+                  "gravite": "Critique",
+                  "frequence": "Non documentée sur très faible série",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 100 000 €"
+                },
+                {
+                  "probleme": "Monocoque carbone, aérodynamique active, freins et boîte V8",
+                  "symptomes": [
+                    "Fissure",
+                    "Aileron inopérant",
+                    "Sélection difficile ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Après choc, piste ou levage incorrect",
+                  "diagnostic": "Inspection carbone/NDT, points de levage et fixations ; contrôler aérodynamique, suspension, moyeux, jantes magnésium, pneus, freins, embrayage et boîte 6 rapports manuelle/paddle",
+                  "piece_concernee": "Structure carbone et châssis haute performance",
+                  "gravite": "Critique",
+                  "frequence": "Peu fréquente mais conséquences majeures",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 100 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

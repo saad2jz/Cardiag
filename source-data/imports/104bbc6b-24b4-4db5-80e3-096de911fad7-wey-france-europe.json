@@ -1,0 +1,72 @@
+{
+  "nom": "Wey",
+  "modeles": [
+    {
+      "nom": "Coffee 01",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride",
+              "nom": "Plug-in Hybrid — 476 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 476,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Contrôle de l’état mécanique, de l’entretien et de la disponibilité des pièces",
+                  "symptomes": [
+                    "Bruit",
+                    "Voyant",
+                    "Fonctionnement irrégulier"
+                  ],
+                  "kilometrage_apparition": "Variable selon âge, usage et entretien.",
+                  "diagnostic": "Inspection atelier, essai routier et lecture des défauts lorsqu’elle est disponible.",
+                  "piece_concernee": "Groupe motopropulseur et périphériques",
+                  "gravite": "À évaluer selon le défaut relevé",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Sécurité active : freinage, direction et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Jeu"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque expertise.",
+                  "diagnostic": "Contrôle des jeux, pneus, freins et géométrie.",
+                  "piece_concernee": "Trains roulants et freinage",
+                  "gravite": "Majeure si sécurité affectée",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "État du système de traction électrique",
+                  "symptomes": [
+                    "Message au combiné",
+                    "Démarrage difficile"
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Diagnostic haute tension par atelier habilité.",
+                  "piece_concernee": "Batterie haute tension et électronique de puissance",
+                  "gravite": "À évaluer",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

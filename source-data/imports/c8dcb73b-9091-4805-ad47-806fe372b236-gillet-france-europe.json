@@ -1,0 +1,319 @@
+{
+  "nom": "Gillet",
+  "modeles": [
+    {
+      "nom": "Vertigo",
+      "generations": [
+        {
+          "code_chassis": "Vertigo prototype / première série",
+          "annees": "1991–1996",
+          "phases": [
+            "Prototype 1991, présentation 1992 et premières voitures homologuées à partir de 1994."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Ford Cosworth 2.0 — 220 ch",
+              "code_moteur": "Ford Cosworth YB Gillet",
+              "cylindree": "1 993 cm³",
+              "puissance_ch": 220,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Moteur et périphériques spécifiques Ford Cosworth, Alfa Busso ou Maserati V8",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée ou pression faible",
+                    "Ratés, bruit ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Selon moteur et usage ; inspection annuelle et avant piste",
+                  "diagnostic": "Identifier moteur sur VIN/dossier Gillet, mesurer compressions/leak-down et pression, contrôler distribution, lubrification, radiateurs, pompes, admission, injection/allumage et échappement ; appliquer les échéances Ford, Alfa ou Maserati sans ignorer l’intégration artisanale",
+                  "piece_concernee": "Groupe motopropulseur Gillet Vertigo",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Variable selon moteur et historique",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 25 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte manuelle ou Quaife séquentielle et différentiel",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport refusé ou faux point mort",
+                    "Vibration, limaille ou fuite"
+                  ],
+                  "kilometrage_apparition": "Selon heures de piste et kilométrage ; contrôle après chaque compétition",
+                  "diagnostic": "Identifier boîte et commande exactes, contrôler embrayage, coupure/auto-blip si séquentielle, huile, crabots/synchros, supports, arbre, différentiel et joints ; analyser journal de réfection et limaille avant réglage",
+                  "piece_concernee": "Transmission et propulsion Vertigo",
+                  "gravite": "Critique",
+                  "frequence": "Usure accélérée en compétition",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 15 000 €"
+                },
+                {
+                  "probleme": "Monocoque carbone/Nomex, carrosserie, suspension, freins et authenticité",
+                  "symptomes": [
+                    "Délaminage ou fissure",
+                    "Géométrie instable",
+                    "Vibration au freinage ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Expertise avant achat et après piste, choc ou levage",
+                  "diagnostic": "Faire contrôler monocoque carbone/Nomex, inserts, collages, panneaux, portes papillon et points de levage ; mesurer coins/géométrie, inspecter rotules, amortisseurs, direction, roues, pneus et freins, puis authentifier Vertigo, Streiff, .5 ou Spirit et réparations usine",
+                  "piece_concernee": "Structure et sécurité Gillet Vertigo",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque surtout après choc ou réparation non documentée",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 60 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Vertigo Streiff",
+          "annees": "1996–2002",
+          "phases": [
+            "Version adaptée à Philippe Streiff et évolution V6 fortement préparée ; dossier moteur indispensable."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Alfa Romeo Busso 3.6 — 360 ch",
+              "code_moteur": "Alfa Romeo Busso V6 Gillet 3.6",
+              "cylindree": "3 600 cm³",
+              "puissance_ch": 360,
+              "boite": [
+                "Manuelle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Moteur et périphériques spécifiques Ford Cosworth, Alfa Busso ou Maserati V8",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée ou pression faible",
+                    "Ratés, bruit ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Selon moteur et usage ; inspection annuelle et avant piste",
+                  "diagnostic": "Identifier moteur sur VIN/dossier Gillet, mesurer compressions/leak-down et pression, contrôler distribution, lubrification, radiateurs, pompes, admission, injection/allumage et échappement ; appliquer les échéances Ford, Alfa ou Maserati sans ignorer l’intégration artisanale",
+                  "piece_concernee": "Groupe motopropulseur Gillet Vertigo",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Variable selon moteur et historique",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 25 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte manuelle ou Quaife séquentielle et différentiel",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport refusé ou faux point mort",
+                    "Vibration, limaille ou fuite"
+                  ],
+                  "kilometrage_apparition": "Selon heures de piste et kilométrage ; contrôle après chaque compétition",
+                  "diagnostic": "Identifier boîte et commande exactes, contrôler embrayage, coupure/auto-blip si séquentielle, huile, crabots/synchros, supports, arbre, différentiel et joints ; analyser journal de réfection et limaille avant réglage",
+                  "piece_concernee": "Transmission et propulsion Vertigo",
+                  "gravite": "Critique",
+                  "frequence": "Usure accélérée en compétition",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 15 000 €"
+                },
+                {
+                  "probleme": "Monocoque carbone/Nomex, carrosserie, suspension, freins et authenticité",
+                  "symptomes": [
+                    "Délaminage ou fissure",
+                    "Géométrie instable",
+                    "Vibration au freinage ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Expertise avant achat et après piste, choc ou levage",
+                  "diagnostic": "Faire contrôler monocoque carbone/Nomex, inserts, collages, panneaux, portes papillon et points de levage ; mesurer coins/géométrie, inspecter rotules, amortisseurs, direction, roues, pneus et freins, puis authentifier Vertigo, Streiff, .5 ou Spirit et réparations usine",
+                  "piece_concernee": "Structure et sécurité Gillet Vertigo",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque surtout après choc ou réparation non documentée",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 60 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Vertigo .5 V6",
+          "annees": "2002–2008",
+          "phases": [
+            "Route GTA et compétition 4.0 ne doivent pas partager puissance ni échéances."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Alfa Romeo Busso 3.0 GTA — 300 ch",
+              "code_moteur": "Alfa Romeo 3.0/3.2 V6 24V Gillet",
+              "cylindree": "3 179 cm³",
+              "puissance_ch": 300,
+              "boite": [
+                "Manuelle ou séquentielle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Moteur et périphériques spécifiques Ford Cosworth, Alfa Busso ou Maserati V8",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée ou pression faible",
+                    "Ratés, bruit ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Selon moteur et usage ; inspection annuelle et avant piste",
+                  "diagnostic": "Identifier moteur sur VIN/dossier Gillet, mesurer compressions/leak-down et pression, contrôler distribution, lubrification, radiateurs, pompes, admission, injection/allumage et échappement ; appliquer les échéances Ford, Alfa ou Maserati sans ignorer l’intégration artisanale",
+                  "piece_concernee": "Groupe motopropulseur Gillet Vertigo",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Variable selon moteur et historique",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 25 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte manuelle ou Quaife séquentielle et différentiel",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport refusé ou faux point mort",
+                    "Vibration, limaille ou fuite"
+                  ],
+                  "kilometrage_apparition": "Selon heures de piste et kilométrage ; contrôle après chaque compétition",
+                  "diagnostic": "Identifier boîte et commande exactes, contrôler embrayage, coupure/auto-blip si séquentielle, huile, crabots/synchros, supports, arbre, différentiel et joints ; analyser journal de réfection et limaille avant réglage",
+                  "piece_concernee": "Transmission et propulsion Vertigo",
+                  "gravite": "Critique",
+                  "frequence": "Usure accélérée en compétition",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 15 000 €"
+                },
+                {
+                  "probleme": "Monocoque carbone/Nomex, carrosserie, suspension, freins et authenticité",
+                  "symptomes": [
+                    "Délaminage ou fissure",
+                    "Géométrie instable",
+                    "Vibration au freinage ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Expertise avant achat et après piste, choc ou levage",
+                  "diagnostic": "Faire contrôler monocoque carbone/Nomex, inserts, collages, panneaux, portes papillon et points de levage ; mesurer coins/géométrie, inspecter rotules, amortisseurs, direction, roues, pneus et freins, puis authentifier Vertigo, Streiff, .5 ou Spirit et réparations usine",
+                  "piece_concernee": "Structure et sécurité Gillet Vertigo",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque surtout après choc ou réparation non documentée",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 60 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence compétition",
+              "nom": "Alfa Romeo Busso 4.0 course — 420 ch",
+              "code_moteur": "Alfa Romeo Busso V6 Gillet 4.0",
+              "cylindree": "3 990 cm³",
+              "puissance_ch": 420,
+              "boite": [
+                "Quaife séquentielle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Moteur et périphériques spécifiques Ford Cosworth, Alfa Busso ou Maserati V8",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée ou pression faible",
+                    "Ratés, bruit ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Selon moteur et usage ; inspection annuelle et avant piste",
+                  "diagnostic": "Identifier moteur sur VIN/dossier Gillet, mesurer compressions/leak-down et pression, contrôler distribution, lubrification, radiateurs, pompes, admission, injection/allumage et échappement ; appliquer les échéances Ford, Alfa ou Maserati sans ignorer l’intégration artisanale",
+                  "piece_concernee": "Groupe motopropulseur Gillet Vertigo",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Variable selon moteur et historique",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 25 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte manuelle ou Quaife séquentielle et différentiel",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport refusé ou faux point mort",
+                    "Vibration, limaille ou fuite"
+                  ],
+                  "kilometrage_apparition": "Selon heures de piste et kilométrage ; contrôle après chaque compétition",
+                  "diagnostic": "Identifier boîte et commande exactes, contrôler embrayage, coupure/auto-blip si séquentielle, huile, crabots/synchros, supports, arbre, différentiel et joints ; analyser journal de réfection et limaille avant réglage",
+                  "piece_concernee": "Transmission et propulsion Vertigo",
+                  "gravite": "Critique",
+                  "frequence": "Usure accélérée en compétition",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 15 000 €"
+                },
+                {
+                  "probleme": "Monocoque carbone/Nomex, carrosserie, suspension, freins et authenticité",
+                  "symptomes": [
+                    "Délaminage ou fissure",
+                    "Géométrie instable",
+                    "Vibration au freinage ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Expertise avant achat et après piste, choc ou levage",
+                  "diagnostic": "Faire contrôler monocoque carbone/Nomex, inserts, collages, panneaux, portes papillon et points de levage ; mesurer coins/géométrie, inspecter rotules, amortisseurs, direction, roues, pneus et freins, puis authentifier Vertigo, Streiff, .5 ou Spirit et réparations usine",
+                  "piece_concernee": "Structure et sécurité Gillet Vertigo",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque surtout après choc ou réparation non documentée",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 60 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Vertigo .5 Spirit V8",
+          "annees": "2011–aujourd’hui",
+          "phases": [
+            "Spirit plus légère avec V8 Maserati et boîte Quaife ; configuration confirmée par le constructeur Gillet."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Maserati 4.2 V8 — 420 ch",
+              "code_moteur": "Maserati F136 V8 Gillet",
+              "cylindree": "4 244 cm³",
+              "puissance_ch": 420,
+              "boite": [
+                "Quaife séquentielle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Moteur et périphériques spécifiques Ford Cosworth, Alfa Busso ou Maserati V8",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée ou pression faible",
+                    "Ratés, bruit ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Selon moteur et usage ; inspection annuelle et avant piste",
+                  "diagnostic": "Identifier moteur sur VIN/dossier Gillet, mesurer compressions/leak-down et pression, contrôler distribution, lubrification, radiateurs, pompes, admission, injection/allumage et échappement ; appliquer les échéances Ford, Alfa ou Maserati sans ignorer l’intégration artisanale",
+                  "piece_concernee": "Groupe motopropulseur Gillet Vertigo",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Variable selon moteur et historique",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 25 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte manuelle ou Quaife séquentielle et différentiel",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport refusé ou faux point mort",
+                    "Vibration, limaille ou fuite"
+                  ],
+                  "kilometrage_apparition": "Selon heures de piste et kilométrage ; contrôle après chaque compétition",
+                  "diagnostic": "Identifier boîte et commande exactes, contrôler embrayage, coupure/auto-blip si séquentielle, huile, crabots/synchros, supports, arbre, différentiel et joints ; analyser journal de réfection et limaille avant réglage",
+                  "piece_concernee": "Transmission et propulsion Vertigo",
+                  "gravite": "Critique",
+                  "frequence": "Usure accélérée en compétition",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 15 000 €"
+                },
+                {
+                  "probleme": "Monocoque carbone/Nomex, carrosserie, suspension, freins et authenticité",
+                  "symptomes": [
+                    "Délaminage ou fissure",
+                    "Géométrie instable",
+                    "Vibration au freinage ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Expertise avant achat et après piste, choc ou levage",
+                  "diagnostic": "Faire contrôler monocoque carbone/Nomex, inserts, collages, panneaux, portes papillon et points de levage ; mesurer coins/géométrie, inspecter rotules, amortisseurs, direction, roues, pneus et freins, puis authentifier Vertigo, Streiff, .5 ou Spirit et réparations usine",
+                  "piece_concernee": "Structure et sécurité Gillet Vertigo",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque surtout après choc ou réparation non documentée",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 60 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://gilletvertigo.com/"
+      ]
+    }
+  ]
+}

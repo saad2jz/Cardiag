@@ -1,0 +1,1132 @@
+{
+  "nom": "Saab",
+  "modeles": [
+    {
+      "nom": "900",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.0 Turbo — 185 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 185,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien moteur et qualité des fluides",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage, l’âge et le respect du plan d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des niveaux et examen à froid comme à chaud.",
+                  "piece_concernee": "Groupe motopropulseur",
+                  "gravite": "À évaluer selon les défauts enregistrés",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis atelier recommandé."
+                },
+                {
+                  "probleme": "Usure des trains roulants, freins et pneumatiques",
+                  "symptomes": [
+                    "Vibrations",
+                    "Tirage au freinage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Généralement à contrôler à chaque révision, plus tôt sur routes dégradées.",
+                  "diagnostic": "Contrôle du jeu des articulations, de la géométrie, de l’épaisseur des plaquettes et disques.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le jeu ou l’usure constatée",
+                  "frequence": "Usure normale à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces et main-d’œuvre."
+                },
+                {
+                  "probleme": "Fonctionnement des équipements électriques et électroniques",
+                  "symptomes": [
+                    "Message au combiné",
+                    "Fonction intermittente",
+                    "Batterie 12 V faible"
+                  ],
+                  "kilometrage_apparition": "Variable, particulièrement après immobilisation prolongée.",
+                  "diagnostic": "Test de batterie 12 V, lecture des défauts et vérification des mises à jour disponibles.",
+                  "piece_concernee": "Réseau électrique basse tension et calculateurs",
+                  "gravite": "Faible à modérée selon la fonction affectée",
+                  "frequence": "À surveiller selon l’usage",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "9-3",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "1.9 TiD — 150 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 150,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien moteur et qualité des fluides",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage, l’âge et le respect du plan d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des niveaux et examen à froid comme à chaud.",
+                  "piece_concernee": "Groupe motopropulseur",
+                  "gravite": "À évaluer selon les défauts enregistrés",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis atelier recommandé."
+                },
+                {
+                  "probleme": "Usure des trains roulants, freins et pneumatiques",
+                  "symptomes": [
+                    "Vibrations",
+                    "Tirage au freinage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Généralement à contrôler à chaque révision, plus tôt sur routes dégradées.",
+                  "diagnostic": "Contrôle du jeu des articulations, de la géométrie, de l’épaisseur des plaquettes et disques.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le jeu ou l’usure constatée",
+                  "frequence": "Usure normale à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces et main-d’œuvre."
+                },
+                {
+                  "probleme": "Fonctionnement des équipements électriques et électroniques",
+                  "symptomes": [
+                    "Message au combiné",
+                    "Fonction intermittente",
+                    "Batterie 12 V faible"
+                  ],
+                  "kilometrage_apparition": "Variable, particulièrement après immobilisation prolongée.",
+                  "diagnostic": "Test de batterie 12 V, lecture des défauts et vérification des mises à jour disponibles.",
+                  "piece_concernee": "Réseau électrique basse tension et calculateurs",
+                  "gravite": "Faible à modérée selon la fonction affectée",
+                  "frequence": "À surveiller selon l’usage",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "9-5",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.3 Turbo — 220 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 220,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien moteur et qualité des fluides",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage, l’âge et le respect du plan d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des niveaux et examen à froid comme à chaud.",
+                  "piece_concernee": "Groupe motopropulseur",
+                  "gravite": "À évaluer selon les défauts enregistrés",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis atelier recommandé."
+                },
+                {
+                  "probleme": "Usure des trains roulants, freins et pneumatiques",
+                  "symptomes": [
+                    "Vibrations",
+                    "Tirage au freinage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Généralement à contrôler à chaque révision, plus tôt sur routes dégradées.",
+                  "diagnostic": "Contrôle du jeu des articulations, de la géométrie, de l’épaisseur des plaquettes et disques.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le jeu ou l’usure constatée",
+                  "frequence": "Usure normale à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces et main-d’œuvre."
+                },
+                {
+                  "probleme": "Fonctionnement des équipements électriques et électroniques",
+                  "symptomes": [
+                    "Message au combiné",
+                    "Fonction intermittente",
+                    "Batterie 12 V faible"
+                  ],
+                  "kilometrage_apparition": "Variable, particulièrement après immobilisation prolongée.",
+                  "diagnostic": "Test de batterie 12 V, lecture des défauts et vérification des mises à jour disponibles.",
+                  "piece_concernee": "Réseau électrique basse tension et calculateurs",
+                  "gravite": "Faible à modérée selon la fonction affectée",
+                  "frequence": "À surveiller selon l’usage",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "96",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V4 1.5 — 65 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 65,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien moteur et qualité des fluides",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage, l’âge et le respect du plan d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des niveaux et examen à froid comme à chaud.",
+                  "piece_concernee": "Groupe motopropulseur",
+                  "gravite": "À évaluer selon les défauts enregistrés",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis atelier recommandé."
+                },
+                {
+                  "probleme": "Usure des trains roulants, freins et pneumatiques",
+                  "symptomes": [
+                    "Vibrations",
+                    "Tirage au freinage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Généralement à contrôler à chaque révision, plus tôt sur routes dégradées.",
+                  "diagnostic": "Contrôle du jeu des articulations, de la géométrie, de l’épaisseur des plaquettes et disques.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le jeu ou l’usure constatée",
+                  "frequence": "Usure normale à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces et main-d’œuvre."
+                },
+                {
+                  "probleme": "Fonctionnement des équipements électriques et électroniques",
+                  "symptomes": [
+                    "Message au combiné",
+                    "Fonction intermittente",
+                    "Batterie 12 V faible"
+                  ],
+                  "kilometrage_apparition": "Variable, particulièrement après immobilisation prolongée.",
+                  "diagnostic": "Test de batterie 12 V, lecture des défauts et vérification des mises à jour disponibles.",
+                  "piece_concernee": "Réseau électrique basse tension et calculateurs",
+                  "gravite": "Faible à modérée selon la fonction affectée",
+                  "frequence": "À surveiller selon l’usage",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "9-2X",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "nl",
+          "us"
+        ],
+        "regions": [
+          "eu",
+          "na"
+        ],
+        "global_decile": 10
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.0 Turbo AWD — 227 ch",
+              "code_moteur": "À confirmer selon VIN et marché",
+              "cylindree": "À confirmer selon VIN",
+              "puissance_ch": 227,
+              "boite": [
+                "À confirmer selon version"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Gestion moteur, alimentation et refroidissement",
+                  "symptomes": [
+                    "Voyant moteur",
+                    "Perte de puissance",
+                    "Température anormale"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des paramètres réels, des fluides, de l’étanchéité et essai routier.",
+                  "piece_concernee": "Moteur, alimentation et périphériques",
+                  "gravite": "À qualifier après diagnostic",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis après contrôle."
+                },
+                {
+                  "probleme": "Transmission, freinage et liaisons au sol",
+                  "symptomes": [
+                    "À-coups",
+                    "Vibration",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque entretien et avant achat.",
+                  "diagnostic": "Essai routier puis contrôle des jeux, pneus, géométrie, transmission et freinage.",
+                  "piece_concernee": "Transmission, direction, suspension et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les organes concernés."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "9-4 X",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "fi",
+          "nl",
+          "us"
+        ],
+        "regions": [
+          "eu",
+          "na"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.8 V6 Turbo — 300 ch",
+              "code_moteur": "À confirmer selon VIN et marché",
+              "cylindree": "À confirmer selon VIN",
+              "puissance_ch": 300,
+              "boite": [
+                "À confirmer selon version"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Gestion moteur, alimentation et refroidissement",
+                  "symptomes": [
+                    "Voyant moteur",
+                    "Perte de puissance",
+                    "Température anormale"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des paramètres réels, des fluides, de l’étanchéité et essai routier.",
+                  "piece_concernee": "Moteur, alimentation et périphériques",
+                  "gravite": "À qualifier après diagnostic",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis après contrôle."
+                },
+                {
+                  "probleme": "Transmission, freinage et liaisons au sol",
+                  "symptomes": [
+                    "À-coups",
+                    "Vibration",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque entretien et avant achat.",
+                  "diagnostic": "Essai routier puis contrôle des jeux, pneus, géométrie, transmission et freinage.",
+                  "piece_concernee": "Transmission, direction, suspension et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les organes concernés."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "9-7 X",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "fi",
+          "nl",
+          "ua",
+          "us"
+        ],
+        "regions": [
+          "eu",
+          "na"
+        ],
+        "global_decile": 6
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "5.3 V8 — 300 ch",
+              "code_moteur": "À confirmer selon VIN et marché",
+              "cylindree": "À confirmer selon VIN",
+              "puissance_ch": 300,
+              "boite": [
+                "À confirmer selon version"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Gestion moteur, alimentation et refroidissement",
+                  "symptomes": [
+                    "Voyant moteur",
+                    "Perte de puissance",
+                    "Température anormale"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des paramètres réels, des fluides, de l’étanchéité et essai routier.",
+                  "piece_concernee": "Moteur, alimentation et périphériques",
+                  "gravite": "À qualifier après diagnostic",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis après contrôle."
+                },
+                {
+                  "probleme": "Transmission, freinage et liaisons au sol",
+                  "symptomes": [
+                    "À-coups",
+                    "Vibration",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque entretien et avant achat.",
+                  "diagnostic": "Essai routier puis contrôle des jeux, pneus, géométrie, transmission et freinage.",
+                  "piece_concernee": "Transmission, direction, suspension et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les organes concernés."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "90",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "sedan",
+        "countries": [
+          "fi",
+          "gb",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.0 — 100 ch",
+              "code_moteur": "À confirmer selon VIN et marché",
+              "cylindree": "À confirmer selon VIN",
+              "puissance_ch": 100,
+              "boite": [
+                "À confirmer selon version"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Gestion moteur, alimentation et refroidissement",
+                  "symptomes": [
+                    "Voyant moteur",
+                    "Perte de puissance",
+                    "Température anormale"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des paramètres réels, des fluides, de l’étanchéité et essai routier.",
+                  "piece_concernee": "Moteur, alimentation et périphériques",
+                  "gravite": "À qualifier après diagnostic",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis après contrôle."
+                },
+                {
+                  "probleme": "Transmission, freinage et liaisons au sol",
+                  "symptomes": [
+                    "À-coups",
+                    "Vibration",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque entretien et avant achat.",
+                  "diagnostic": "Essai routier puis contrôle des jeux, pneus, géométrie, transmission et freinage.",
+                  "piece_concernee": "Transmission, direction, suspension et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les organes concernés."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "9000",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "es",
+          "fi",
+          "gb",
+          "lu",
+          "nl",
+          "nz",
+          "ua",
+          "us"
+        ],
+        "regions": [
+          "eu",
+          "na",
+          "oc"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.3 Turbo — 225 ch",
+              "code_moteur": "À confirmer selon VIN et marché",
+              "cylindree": "À confirmer selon VIN",
+              "puissance_ch": 225,
+              "boite": [
+                "À confirmer selon version"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Gestion moteur, alimentation et refroidissement",
+                  "symptomes": [
+                    "Voyant moteur",
+                    "Perte de puissance",
+                    "Température anormale"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des paramètres réels, des fluides, de l’étanchéité et essai routier.",
+                  "piece_concernee": "Moteur, alimentation et périphériques",
+                  "gravite": "À qualifier après diagnostic",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis après contrôle."
+                },
+                {
+                  "probleme": "Transmission, freinage et liaisons au sol",
+                  "symptomes": [
+                    "À-coups",
+                    "Vibration",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque entretien et avant achat.",
+                  "diagnostic": "Essai routier puis contrôle des jeux, pneus, géométrie, transmission et freinage.",
+                  "piece_concernee": "Transmission, direction, suspension et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les organes concernés."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "92",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "sedan",
+        "countries": [
+          "fi",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "0.8 deux-temps — 25 ch",
+              "code_moteur": "À confirmer selon VIN et marché",
+              "cylindree": "À confirmer selon VIN",
+              "puissance_ch": 25,
+              "boite": [
+                "À confirmer selon version"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Gestion moteur, alimentation et refroidissement",
+                  "symptomes": [
+                    "Voyant moteur",
+                    "Perte de puissance",
+                    "Température anormale"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des paramètres réels, des fluides, de l’étanchéité et essai routier.",
+                  "piece_concernee": "Moteur, alimentation et périphériques",
+                  "gravite": "À qualifier après diagnostic",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis après contrôle."
+                },
+                {
+                  "probleme": "Transmission, freinage et liaisons au sol",
+                  "symptomes": [
+                    "À-coups",
+                    "Vibration",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque entretien et avant achat.",
+                  "diagnostic": "Essai routier puis contrôle des jeux, pneus, géométrie, transmission et freinage.",
+                  "piece_concernee": "Transmission, direction, suspension et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les organes concernés."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "93",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "convertible",
+        "countries": [
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 4
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "0.75 deux-temps — 33 ch",
+              "code_moteur": "À confirmer selon VIN et marché",
+              "cylindree": "À confirmer selon VIN",
+              "puissance_ch": 33,
+              "boite": [
+                "À confirmer selon version"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Gestion moteur, alimentation et refroidissement",
+                  "symptomes": [
+                    "Voyant moteur",
+                    "Perte de puissance",
+                    "Température anormale"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des paramètres réels, des fluides, de l’étanchéité et essai routier.",
+                  "piece_concernee": "Moteur, alimentation et périphériques",
+                  "gravite": "À qualifier après diagnostic",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis après contrôle."
+                },
+                {
+                  "probleme": "Transmission, freinage et liaisons au sol",
+                  "symptomes": [
+                    "À-coups",
+                    "Vibration",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque entretien et avant achat.",
+                  "diagnostic": "Essai routier puis contrôle des jeux, pneus, géométrie, transmission et freinage.",
+                  "piece_concernee": "Transmission, direction, suspension et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les organes concernés."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "95",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "fi",
+          "gb",
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 6
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "0.85 deux-temps — 38 ch",
+              "code_moteur": "À confirmer selon VIN et marché",
+              "cylindree": "À confirmer selon VIN",
+              "puissance_ch": 38,
+              "boite": [
+                "À confirmer selon version"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Gestion moteur, alimentation et refroidissement",
+                  "symptomes": [
+                    "Voyant moteur",
+                    "Perte de puissance",
+                    "Température anormale"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des paramètres réels, des fluides, de l’étanchéité et essai routier.",
+                  "piece_concernee": "Moteur, alimentation et périphériques",
+                  "gravite": "À qualifier après diagnostic",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis après contrôle."
+                },
+                {
+                  "probleme": "Transmission, freinage et liaisons au sol",
+                  "symptomes": [
+                    "À-coups",
+                    "Vibration",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque entretien et avant achat.",
+                  "diagnostic": "Essai routier puis contrôle des jeux, pneus, géométrie, transmission et freinage.",
+                  "piece_concernee": "Transmission, direction, suspension et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les organes concernés."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "99",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "sedan",
+        "countries": [
+          "fi",
+          "gb",
+          "nl",
+          "nz",
+          "ua"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.0 Turbo — 145 ch",
+              "code_moteur": "À confirmer selon VIN et marché",
+              "cylindree": "À confirmer selon VIN",
+              "puissance_ch": 145,
+              "boite": [
+                "À confirmer selon version"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Gestion moteur, alimentation et refroidissement",
+                  "symptomes": [
+                    "Voyant moteur",
+                    "Perte de puissance",
+                    "Température anormale"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des paramètres réels, des fluides, de l’étanchéité et essai routier.",
+                  "piece_concernee": "Moteur, alimentation et périphériques",
+                  "gravite": "À qualifier après diagnostic",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis après contrôle."
+                },
+                {
+                  "probleme": "Transmission, freinage et liaisons au sol",
+                  "symptomes": [
+                    "À-coups",
+                    "Vibration",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque entretien et avant achat.",
+                  "diagnostic": "Essai routier puis contrôle des jeux, pneus, géométrie, transmission et freinage.",
+                  "piece_concernee": "Transmission, direction, suspension et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les organes concernés."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Sonett",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "coupe",
+        "countries": [
+          "es",
+          "fi",
+          "gb",
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.5 V4 — 65 ch",
+              "code_moteur": "À confirmer selon VIN et marché",
+              "cylindree": "À confirmer selon VIN",
+              "puissance_ch": 65,
+              "boite": [
+                "À confirmer selon version"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Gestion moteur, alimentation et refroidissement",
+                  "symptomes": [
+                    "Voyant moteur",
+                    "Perte de puissance",
+                    "Température anormale"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des paramètres réels, des fluides, de l’étanchéité et essai routier.",
+                  "piece_concernee": "Moteur, alimentation et périphériques",
+                  "gravite": "À qualifier après diagnostic",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis après contrôle."
+                },
+                {
+                  "probleme": "Transmission, freinage et liaisons au sol",
+                  "symptomes": [
+                    "À-coups",
+                    "Vibration",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque entretien et avant achat.",
+                  "diagnostic": "Essai routier puis contrôle des jeux, pneus, géométrie, transmission et freinage.",
+                  "piece_concernee": "Transmission, direction, suspension et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les organes concernés."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "V4",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "sedan",
+        "countries": [
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 9
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.5 V4 — 65 ch",
+              "code_moteur": "À confirmer selon VIN et marché",
+              "cylindree": "À confirmer selon VIN",
+              "puissance_ch": 65,
+              "boite": [
+                "À confirmer selon version"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Gestion moteur, alimentation et refroidissement",
+                  "symptomes": [
+                    "Voyant moteur",
+                    "Perte de puissance",
+                    "Température anormale"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des paramètres réels, des fluides, de l’étanchéité et essai routier.",
+                  "piece_concernee": "Moteur, alimentation et périphériques",
+                  "gravite": "À qualifier après diagnostic",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis après contrôle."
+                },
+                {
+                  "probleme": "Transmission, freinage et liaisons au sol",
+                  "symptomes": [
+                    "À-coups",
+                    "Vibration",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque entretien et avant achat.",
+                  "diagnostic": "Essai routier puis contrôle des jeux, pneus, géométrie, transmission et freinage.",
+                  "piece_concernee": "Transmission, direction, suspension et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les organes concernés."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "95E-V4 Van",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "van",
+        "body_type": null,
+        "countries": [
+          "fi",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 9
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.5 V4 — 65 ch",
+              "code_moteur": "À confirmer selon VIN et marché",
+              "cylindree": "À confirmer selon VIN",
+              "puissance_ch": 65,
+              "boite": [
+                "À confirmer selon version"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Gestion moteur, alimentation et refroidissement",
+                  "symptomes": [
+                    "Voyant moteur",
+                    "Perte de puissance",
+                    "Température anormale"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des paramètres réels, des fluides, de l’étanchéité et essai routier.",
+                  "piece_concernee": "Moteur, alimentation et périphériques",
+                  "gravite": "À qualifier après diagnostic",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis après contrôle."
+                },
+                {
+                  "probleme": "Transmission, freinage et liaisons au sol",
+                  "symptomes": [
+                    "À-coups",
+                    "Vibration",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque entretien et avant achat.",
+                  "diagnostic": "Essai routier puis contrôle des jeux, pneus, géométrie, transmission et freinage.",
+                  "piece_concernee": "Transmission, direction, suspension et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les organes concernés."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

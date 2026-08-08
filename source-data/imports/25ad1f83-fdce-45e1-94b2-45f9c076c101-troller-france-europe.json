@@ -1,0 +1,265 @@
+{
+  "nom": "Troller",
+  "modeles": [
+    {
+      "nom": "T4",
+      "generations": [
+        {
+          "code_chassis": "T4 première génération",
+          "annees": "1999–2001",
+          "phases": [
+            "Premiers T4 à mécanique essence ; faible série précédant le châssis redessiné."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Volkswagen AP 2.0 injection — 114 ch",
+              "code_moteur": "Volkswagen AP-2000",
+              "cylindree": "1 984 cm³",
+              "puissance_ch": 114,
+              "boite": [
+                "Manuelle 5 rapports avec transfert, 4x4 enclenchable"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo, refroidissement et distribution selon moteur",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Fumée",
+                    "Perte de puissance, fuite ou surchauffe"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 120 000 et 250 000 km, plus tôt en tout-terrain sévère",
+                  "diagnostic": "Identifier VW AP essence, MWM 2.8, NGD 3.0 ou Duratorq 3.2 ; lire défauts et mesurer compressions/rail, contrôler injecteurs/pompe, turbo, intercooler, admission, radiateur, ventilateur, courroie/chaîne selon moteur et contamination ; analyser huile après franchissements",
+                  "piece_concernee": "Moteur T4 correspondant à la génération",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente avec boue, poussière, eau ou préparation",
+                  "cout_reparation_estime": "Élevé : environ 600 à 12 000 €"
+                },
+                {
+                  "probleme": "Boîte, embrayage, transfert BorgWarner, ponts Dana et moyeux",
+                  "symptomes": [
+                    "Rapports difficiles",
+                    "Patinage",
+                    "Claquement, vibration ou 4x4 indisponible"
+                  ],
+                  "kilometrage_apparition": "Inspection après chaque usage tout-terrain et souvent après 100 000 km",
+                  "diagnostic": "Contrôler boîte Eaton ou MT82, embrayage/volant, transfert et actionneur, gamme courte, moyeux manuels/automatiques, arbres/croisillons, ponts Dana 44, différentiels et demi-arbres ; analyser huiles pour eau/limaille, vérifier reniflards et quatre pneus identiques",
+                  "piece_concernee": "Transmission 4x4 enclenchable Troller T4",
+                  "gravite": "Critique en franchissement",
+                  "frequence": "Usure fréquente en usage intensif",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 15 000 €"
+                },
+                {
+                  "probleme": "Châssis, space-frame, carrosserie composite, suspension et freins",
+                  "symptomes": [
+                    "Fissure de châssis",
+                    "Jeu au volant",
+                    "Caisse désalignée, tirage ou freinage faible"
+                  ],
+                  "kilometrage_apparition": "Inspection annuelle et immédiatement après choc/franchissement",
+                  "diagnostic": "Lever sur points prescrits, inspecter longerons, traverses, soudures, structure tubulaire, ancrages et polyester ; contrôler essieux rigides, ressorts/amortisseurs, bras, panhard, direction, roulements, freins, ABS selon phase, protections et pneus ; vérifier treuil, snorkel, rehausse et homologation",
+                  "piece_concernee": "Châssis échelle, carrosserie et trains roulants T4",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sur véhicule modifié ou fortement sollicité",
+                  "cout_reparation_estime": "Très élevé : environ 700 à plus de 20 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "T4 deuxième génération MWM",
+          "annees": "2001–2005",
+          "phases": [
+            "Premier diesel de série, ponts Dana 44 et transfert électrique."
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "MWM Sprint 2.8 TCA — 115 ch",
+              "code_moteur": "MWM Sprint 4.07 TCA",
+              "cylindree": "2 798 cm³",
+              "puissance_ch": 115,
+              "boite": [
+                "Eaton 2405 manuelle 5 rapports, transfert BorgWarner 1352, 4x4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo, refroidissement et distribution selon moteur",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Fumée",
+                    "Perte de puissance, fuite ou surchauffe"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 120 000 et 250 000 km, plus tôt en tout-terrain sévère",
+                  "diagnostic": "Identifier VW AP essence, MWM 2.8, NGD 3.0 ou Duratorq 3.2 ; lire défauts et mesurer compressions/rail, contrôler injecteurs/pompe, turbo, intercooler, admission, radiateur, ventilateur, courroie/chaîne selon moteur et contamination ; analyser huile après franchissements",
+                  "piece_concernee": "Moteur T4 correspondant à la génération",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente avec boue, poussière, eau ou préparation",
+                  "cout_reparation_estime": "Élevé : environ 600 à 12 000 €"
+                },
+                {
+                  "probleme": "Boîte, embrayage, transfert BorgWarner, ponts Dana et moyeux",
+                  "symptomes": [
+                    "Rapports difficiles",
+                    "Patinage",
+                    "Claquement, vibration ou 4x4 indisponible"
+                  ],
+                  "kilometrage_apparition": "Inspection après chaque usage tout-terrain et souvent après 100 000 km",
+                  "diagnostic": "Contrôler boîte Eaton ou MT82, embrayage/volant, transfert et actionneur, gamme courte, moyeux manuels/automatiques, arbres/croisillons, ponts Dana 44, différentiels et demi-arbres ; analyser huiles pour eau/limaille, vérifier reniflards et quatre pneus identiques",
+                  "piece_concernee": "Transmission 4x4 enclenchable Troller T4",
+                  "gravite": "Critique en franchissement",
+                  "frequence": "Usure fréquente en usage intensif",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 15 000 €"
+                },
+                {
+                  "probleme": "Châssis, space-frame, carrosserie composite, suspension et freins",
+                  "symptomes": [
+                    "Fissure de châssis",
+                    "Jeu au volant",
+                    "Caisse désalignée, tirage ou freinage faible"
+                  ],
+                  "kilometrage_apparition": "Inspection annuelle et immédiatement après choc/franchissement",
+                  "diagnostic": "Lever sur points prescrits, inspecter longerons, traverses, soudures, structure tubulaire, ancrages et polyester ; contrôler essieux rigides, ressorts/amortisseurs, bras, panhard, direction, roulements, freins, ABS selon phase, protections et pneus ; vérifier treuil, snorkel, rehausse et homologation",
+                  "piece_concernee": "Châssis échelle, carrosserie et trains roulants T4",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sur véhicule modifié ou fortement sollicité",
+                  "cout_reparation_estime": "Très élevé : environ 700 à plus de 20 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "T4 NGD",
+          "annees": "2006–2014",
+          "phases": [
+            "Moteur 3.0 de 163 ch et 380 Nm ; plusieurs évolutions esthétiques sans fusion avec le 2.8."
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "International Power Stroke 3.0 NGD — 163 ch",
+              "code_moteur": "International/MWM NGD 3.0E",
+              "cylindree": "2 953 cm³",
+              "puissance_ch": 163,
+              "boite": [
+                "Eaton manuelle 5 rapports, transfert BorgWarner, 4x4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo, refroidissement et distribution selon moteur",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Fumée",
+                    "Perte de puissance, fuite ou surchauffe"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 120 000 et 250 000 km, plus tôt en tout-terrain sévère",
+                  "diagnostic": "Identifier VW AP essence, MWM 2.8, NGD 3.0 ou Duratorq 3.2 ; lire défauts et mesurer compressions/rail, contrôler injecteurs/pompe, turbo, intercooler, admission, radiateur, ventilateur, courroie/chaîne selon moteur et contamination ; analyser huile après franchissements",
+                  "piece_concernee": "Moteur T4 correspondant à la génération",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente avec boue, poussière, eau ou préparation",
+                  "cout_reparation_estime": "Élevé : environ 600 à 12 000 €"
+                },
+                {
+                  "probleme": "Boîte, embrayage, transfert BorgWarner, ponts Dana et moyeux",
+                  "symptomes": [
+                    "Rapports difficiles",
+                    "Patinage",
+                    "Claquement, vibration ou 4x4 indisponible"
+                  ],
+                  "kilometrage_apparition": "Inspection après chaque usage tout-terrain et souvent après 100 000 km",
+                  "diagnostic": "Contrôler boîte Eaton ou MT82, embrayage/volant, transfert et actionneur, gamme courte, moyeux manuels/automatiques, arbres/croisillons, ponts Dana 44, différentiels et demi-arbres ; analyser huiles pour eau/limaille, vérifier reniflards et quatre pneus identiques",
+                  "piece_concernee": "Transmission 4x4 enclenchable Troller T4",
+                  "gravite": "Critique en franchissement",
+                  "frequence": "Usure fréquente en usage intensif",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 15 000 €"
+                },
+                {
+                  "probleme": "Châssis, space-frame, carrosserie composite, suspension et freins",
+                  "symptomes": [
+                    "Fissure de châssis",
+                    "Jeu au volant",
+                    "Caisse désalignée, tirage ou freinage faible"
+                  ],
+                  "kilometrage_apparition": "Inspection annuelle et immédiatement après choc/franchissement",
+                  "diagnostic": "Lever sur points prescrits, inspecter longerons, traverses, soudures, structure tubulaire, ancrages et polyester ; contrôler essieux rigides, ressorts/amortisseurs, bras, panhard, direction, roulements, freins, ABS selon phase, protections et pneus ; vérifier treuil, snorkel, rehausse et homologation",
+                  "piece_concernee": "Châssis échelle, carrosserie et trains roulants T4",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sur véhicule modifié ou fortement sollicité",
+                  "cout_reparation_estime": "Très élevé : environ 700 à plus de 20 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "T4 nouvelle carrosserie",
+          "annees": "2015–2021",
+          "phases": [
+            "Dernière génération Ford : cinq cylindres, 200 ch et 470 Nm ; production arrêtée en 2021."
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "Ford Duratorq 3.2 TDCi — 200 ch",
+              "code_moteur": "Ford P5AT / Duratorq i5",
+              "cylindree": "3 198 cm³",
+              "puissance_ch": 200,
+              "boite": [
+                "Getrag MT82 manuelle 6 rapports avec gamme courte, 4x4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo, refroidissement et distribution selon moteur",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Fumée",
+                    "Perte de puissance, fuite ou surchauffe"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 120 000 et 250 000 km, plus tôt en tout-terrain sévère",
+                  "diagnostic": "Identifier VW AP essence, MWM 2.8, NGD 3.0 ou Duratorq 3.2 ; lire défauts et mesurer compressions/rail, contrôler injecteurs/pompe, turbo, intercooler, admission, radiateur, ventilateur, courroie/chaîne selon moteur et contamination ; analyser huile après franchissements",
+                  "piece_concernee": "Moteur T4 correspondant à la génération",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente avec boue, poussière, eau ou préparation",
+                  "cout_reparation_estime": "Élevé : environ 600 à 12 000 €"
+                },
+                {
+                  "probleme": "Boîte, embrayage, transfert BorgWarner, ponts Dana et moyeux",
+                  "symptomes": [
+                    "Rapports difficiles",
+                    "Patinage",
+                    "Claquement, vibration ou 4x4 indisponible"
+                  ],
+                  "kilometrage_apparition": "Inspection après chaque usage tout-terrain et souvent après 100 000 km",
+                  "diagnostic": "Contrôler boîte Eaton ou MT82, embrayage/volant, transfert et actionneur, gamme courte, moyeux manuels/automatiques, arbres/croisillons, ponts Dana 44, différentiels et demi-arbres ; analyser huiles pour eau/limaille, vérifier reniflards et quatre pneus identiques",
+                  "piece_concernee": "Transmission 4x4 enclenchable Troller T4",
+                  "gravite": "Critique en franchissement",
+                  "frequence": "Usure fréquente en usage intensif",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 15 000 €"
+                },
+                {
+                  "probleme": "Châssis, space-frame, carrosserie composite, suspension et freins",
+                  "symptomes": [
+                    "Fissure de châssis",
+                    "Jeu au volant",
+                    "Caisse désalignée, tirage ou freinage faible"
+                  ],
+                  "kilometrage_apparition": "Inspection annuelle et immédiatement après choc/franchissement",
+                  "diagnostic": "Lever sur points prescrits, inspecter longerons, traverses, soudures, structure tubulaire, ancrages et polyester ; contrôler essieux rigides, ressorts/amortisseurs, bras, panhard, direction, roulements, freins, ABS selon phase, protections et pneus ; vérifier treuil, snorkel, rehausse et homologation",
+                  "piece_concernee": "Châssis échelle, carrosserie et trains roulants T4",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sur véhicule modifié ou fortement sollicité",
+                  "cout_reparation_estime": "Très élevé : environ 700 à plus de 20 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://media.ford.com/content/fordmedia/fsa/br/pt/news/2019/10/21/troller-t4-2020-chega-com-nova-combinacao-de-cores-externas-e-na.html"
+      ]
+    }
+  ]
+}

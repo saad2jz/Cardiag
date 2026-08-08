@@ -1,0 +1,2084 @@
+{
+  "nom": "BYD",
+  "modeles": [
+    {
+      "nom": "Dolphin",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "60,4 kWh — 204 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 204,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "État de santé et équilibrage de la batterie haute tension",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Avertissement traction"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage, l’âge et le respect du plan d’entretien.",
+                  "diagnostic": "Lecture des défauts haute tension par un atelier habilité, contrôle du rapport de santé batterie.",
+                  "piece_concernee": "Batterie haute tension et électronique de puissance",
+                  "gravite": "À évaluer selon les défauts enregistrés",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis atelier recommandé."
+                },
+                {
+                  "probleme": "Usure des trains roulants, freins et pneumatiques",
+                  "symptomes": [
+                    "Vibrations",
+                    "Tirage au freinage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Généralement à contrôler à chaque révision, plus tôt sur routes dégradées.",
+                  "diagnostic": "Contrôle du jeu des articulations, de la géométrie, de l’épaisseur des plaquettes et disques.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le jeu ou l’usure constatée",
+                  "frequence": "Usure normale à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces et main-d’œuvre."
+                },
+                {
+                  "probleme": "Fonctionnement des équipements électriques et électroniques",
+                  "symptomes": [
+                    "Message au combiné",
+                    "Fonction intermittente",
+                    "Batterie 12 V faible"
+                  ],
+                  "kilometrage_apparition": "Variable, particulièrement après immobilisation prolongée.",
+                  "diagnostic": "Test de batterie 12 V, lecture des défauts et vérification des mises à jour disponibles.",
+                  "piece_concernee": "Réseau électrique basse tension et calculateurs",
+                  "gravite": "Faible à modérée selon la fonction affectée",
+                  "frequence": "À surveiller selon l’usage",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Atto 3",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "60,5 kWh — 204 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 204,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "État de santé et équilibrage de la batterie haute tension",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Avertissement traction"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage, l’âge et le respect du plan d’entretien.",
+                  "diagnostic": "Lecture des défauts haute tension par un atelier habilité, contrôle du rapport de santé batterie.",
+                  "piece_concernee": "Batterie haute tension et électronique de puissance",
+                  "gravite": "À évaluer selon les défauts enregistrés",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis atelier recommandé."
+                },
+                {
+                  "probleme": "Usure des trains roulants, freins et pneumatiques",
+                  "symptomes": [
+                    "Vibrations",
+                    "Tirage au freinage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Généralement à contrôler à chaque révision, plus tôt sur routes dégradées.",
+                  "diagnostic": "Contrôle du jeu des articulations, de la géométrie, de l’épaisseur des plaquettes et disques.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le jeu ou l’usure constatée",
+                  "frequence": "Usure normale à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces et main-d’œuvre."
+                },
+                {
+                  "probleme": "Fonctionnement des équipements électriques et électroniques",
+                  "symptomes": [
+                    "Message au combiné",
+                    "Fonction intermittente",
+                    "Batterie 12 V faible"
+                  ],
+                  "kilometrage_apparition": "Variable, particulièrement après immobilisation prolongée.",
+                  "diagnostic": "Test de batterie 12 V, lecture des défauts et vérification des mises à jour disponibles.",
+                  "piece_concernee": "Réseau électrique basse tension et calculateurs",
+                  "gravite": "Faible à modérée selon la fonction affectée",
+                  "frequence": "À surveiller selon l’usage",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Seal",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "Excellence AWD — 530 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 530,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "État de santé et équilibrage de la batterie haute tension",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Avertissement traction"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage, l’âge et le respect du plan d’entretien.",
+                  "diagnostic": "Lecture des défauts haute tension par un atelier habilité, contrôle du rapport de santé batterie.",
+                  "piece_concernee": "Batterie haute tension et électronique de puissance",
+                  "gravite": "À évaluer selon les défauts enregistrés",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis atelier recommandé."
+                },
+                {
+                  "probleme": "Usure des trains roulants, freins et pneumatiques",
+                  "symptomes": [
+                    "Vibrations",
+                    "Tirage au freinage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Généralement à contrôler à chaque révision, plus tôt sur routes dégradées.",
+                  "diagnostic": "Contrôle du jeu des articulations, de la géométrie, de l’épaisseur des plaquettes et disques.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le jeu ou l’usure constatée",
+                  "frequence": "Usure normale à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces et main-d’œuvre."
+                },
+                {
+                  "probleme": "Fonctionnement des équipements électriques et électroniques",
+                  "symptomes": [
+                    "Message au combiné",
+                    "Fonction intermittente",
+                    "Batterie 12 V faible"
+                  ],
+                  "kilometrage_apparition": "Variable, particulièrement après immobilisation prolongée.",
+                  "diagnostic": "Test de batterie 12 V, lecture des défauts et vérification des mises à jour disponibles.",
+                  "piece_concernee": "Réseau électrique basse tension et calculateurs",
+                  "gravite": "Faible à modérée selon la fonction affectée",
+                  "frequence": "À surveiller selon l’usage",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Seal U",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride",
+              "nom": "DM-i — 324 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 324,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fonctionnement du système hybride et de la batterie de traction",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Avertissement traction"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage, l’âge et le respect du plan d’entretien.",
+                  "diagnostic": "Lecture des défauts haute tension par un atelier habilité, contrôle du rapport de santé batterie.",
+                  "piece_concernee": "Batterie haute tension et électronique de puissance",
+                  "gravite": "À évaluer selon les défauts enregistrés",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis atelier recommandé."
+                },
+                {
+                  "probleme": "Usure des trains roulants, freins et pneumatiques",
+                  "symptomes": [
+                    "Vibrations",
+                    "Tirage au freinage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Généralement à contrôler à chaque révision, plus tôt sur routes dégradées.",
+                  "diagnostic": "Contrôle du jeu des articulations, de la géométrie, de l’épaisseur des plaquettes et disques.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le jeu ou l’usure constatée",
+                  "frequence": "Usure normale à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces et main-d’œuvre."
+                },
+                {
+                  "probleme": "Fonctionnement des équipements électriques et électroniques",
+                  "symptomes": [
+                    "Message au combiné",
+                    "Fonction intermittente",
+                    "Batterie 12 V faible"
+                  ],
+                  "kilometrage_apparition": "Variable, particulièrement après immobilisation prolongée.",
+                  "diagnostic": "Test de batterie 12 V, lecture des défauts et vérification des mises à jour disponibles.",
+                  "piece_concernee": "Réseau électrique basse tension et calculateurs",
+                  "gravite": "Faible à modérée selon la fonction affectée",
+                  "frequence": "À surveiller selon l’usage",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Tang",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "86,4 kWh AWD — 517 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 517,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "État de santé et équilibrage de la batterie haute tension",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Avertissement traction"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage, l’âge et le respect du plan d’entretien.",
+                  "diagnostic": "Lecture des défauts haute tension par un atelier habilité, contrôle du rapport de santé batterie.",
+                  "piece_concernee": "Batterie haute tension et électronique de puissance",
+                  "gravite": "À évaluer selon les défauts enregistrés",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis atelier recommandé."
+                },
+                {
+                  "probleme": "Usure des trains roulants, freins et pneumatiques",
+                  "symptomes": [
+                    "Vibrations",
+                    "Tirage au freinage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Généralement à contrôler à chaque révision, plus tôt sur routes dégradées.",
+                  "diagnostic": "Contrôle du jeu des articulations, de la géométrie, de l’épaisseur des plaquettes et disques.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le jeu ou l’usure constatée",
+                  "frequence": "Usure normale à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces et main-d’œuvre."
+                },
+                {
+                  "probleme": "Fonctionnement des équipements électriques et électroniques",
+                  "symptomes": [
+                    "Message au combiné",
+                    "Fonction intermittente",
+                    "Batterie 12 V faible"
+                  ],
+                  "kilometrage_apparition": "Variable, particulièrement après immobilisation prolongée.",
+                  "diagnostic": "Test de batterie 12 V, lecture des défauts et vérification des mises à jour disponibles.",
+                  "piece_concernee": "Réseau électrique basse tension et calculateurs",
+                  "gravite": "Faible à modérée selon la fonction affectée",
+                  "frequence": "À surveiller selon l’usage",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Ebus",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "bus",
+        "body_type": null,
+        "countries": [
+          "fi",
+          "gb",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 2
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Enviro",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "bus",
+        "body_type": null,
+        "countries": [
+          "gb"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 2
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Atto 2",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ar",
+          "de",
+          "es",
+          "fi",
+          "gb",
+          "lu",
+          "my",
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "as",
+          "eu",
+          "oc",
+          "sa"
+        ],
+        "global_decile": 3
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "51,1 kWh traction — 100 kW — 136 ch",
+              "code_moteur": "À confirmer selon VIN, pays et millésime",
+              "cylindree": "Non applicable",
+              "puissance_ch": 136,
+              "boite": [
+                "Réducteur à rapport unique"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie Blade, BMS et chaîne haute tension",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Puissance limitée",
+                    "Charge impossible ou interrompue"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge, des cycles, de la température et des habitudes de recharge.",
+                  "diagnostic": "Lecture du BMS, SOH, écarts de cellules, défauts d’isolement, températures et test de charge AC/DC.",
+                  "piece_concernee": "Batterie de traction, BMS, moteur, onduleur et chargeur embarqué",
+                  "gravite": "Majeure si isolement insuffisant ou défaut haute tension",
+                  "frequence": "À contrôler avant achat et en présence d’une alerte",
+                  "cout_reparation_estime": "Élevé si module batterie ou électronique de puissance concerné."
+                },
+                {
+                  "probleme": "Freinage régénératif, pneus et liaisons au sol",
+                  "symptomes": [
+                    "Freinage irrégulier",
+                    "Vibration",
+                    "Usure des pneus"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque entretien.",
+                  "diagnostic": "Essai de régénération, inspection du freinage mécanique, des pneus, des jeux et de la géométrie.",
+                  "piece_concernee": "Freinage, suspension, direction et pneumatiques",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les organes."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Atto 3 Evo",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "es",
+          "fi",
+          "lu",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 4
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "60,5 kWh traction — 150 kW — 204 ch",
+              "code_moteur": "À confirmer selon VIN, pays et millésime",
+              "cylindree": "Non applicable",
+              "puissance_ch": 204,
+              "boite": [
+                "Réducteur à rapport unique"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie Blade, BMS et chaîne haute tension",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Puissance limitée",
+                    "Charge impossible ou interrompue"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge, des cycles, de la température et des habitudes de recharge.",
+                  "diagnostic": "Lecture du BMS, SOH, écarts de cellules, défauts d’isolement, températures et test de charge AC/DC.",
+                  "piece_concernee": "Batterie de traction, BMS, moteur, onduleur et chargeur embarqué",
+                  "gravite": "Majeure si isolement insuffisant ou défaut haute tension",
+                  "frequence": "À contrôler avant achat et en présence d’une alerte",
+                  "cout_reparation_estime": "Élevé si module batterie ou électronique de puissance concerné."
+                },
+                {
+                  "probleme": "Freinage régénératif, pneus et liaisons au sol",
+                  "symptomes": [
+                    "Freinage irrégulier",
+                    "Vibration",
+                    "Usure des pneus"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque entretien.",
+                  "diagnostic": "Essai de régénération, inspection du freinage mécanique, des pneus, des jeux et de la géométrie.",
+                  "piece_concernee": "Freinage, suspension, direction et pneumatiques",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les organes."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Dolphin G",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "es",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 3
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Dolphin Surf",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "de",
+          "es",
+          "fi",
+          "lu",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 2
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "30,1/38,9 kWh traction — 55 kW — 75 ch",
+              "code_moteur": "À confirmer selon VIN, pays et millésime",
+              "cylindree": "Non applicable",
+              "puissance_ch": 75,
+              "boite": [
+                "Réducteur à rapport unique"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie Blade, BMS et chaîne haute tension",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Puissance limitée",
+                    "Charge impossible ou interrompue"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge, des cycles, de la température et des habitudes de recharge.",
+                  "diagnostic": "Lecture du BMS, SOH, écarts de cellules, défauts d’isolement, températures et test de charge AC/DC.",
+                  "piece_concernee": "Batterie de traction, BMS, moteur, onduleur et chargeur embarqué",
+                  "gravite": "Majeure si isolement insuffisant ou défaut haute tension",
+                  "frequence": "À contrôler avant achat et en présence d’une alerte",
+                  "cout_reparation_estime": "Élevé si module batterie ou électronique de puissance concerné."
+                },
+                {
+                  "probleme": "Freinage régénératif, pneus et liaisons au sol",
+                  "symptomes": [
+                    "Freinage irrégulier",
+                    "Vibration",
+                    "Usure des pneus"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque entretien.",
+                  "diagnostic": "Essai de régénération, inspection du freinage mécanique, des pneus, des jeux et de la géométrie.",
+                  "piece_concernee": "Freinage, suspension, direction et pneumatiques",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les organes."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "E6",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "gb",
+          "nl",
+          "th",
+          "us"
+        ],
+        "regions": [
+          "as",
+          "eu",
+          "na"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "61,4 kWh traction — 90 kW — 122 ch",
+              "code_moteur": "À confirmer selon VIN, pays et millésime",
+              "cylindree": "Non applicable",
+              "puissance_ch": 122,
+              "boite": [
+                "Réducteur à rapport unique"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie Blade, BMS et chaîne haute tension",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Puissance limitée",
+                    "Charge impossible ou interrompue"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge, des cycles, de la température et des habitudes de recharge.",
+                  "diagnostic": "Lecture du BMS, SOH, écarts de cellules, défauts d’isolement, températures et test de charge AC/DC.",
+                  "piece_concernee": "Batterie de traction, BMS, moteur, onduleur et chargeur embarqué",
+                  "gravite": "Majeure si isolement insuffisant ou défaut haute tension",
+                  "frequence": "À contrôler avant achat et en présence d’une alerte",
+                  "cout_reparation_estime": "Élevé si module batterie ou électronique de puissance concerné."
+                },
+                {
+                  "probleme": "Freinage régénératif, pneus et liaisons au sol",
+                  "symptomes": [
+                    "Freinage irrégulier",
+                    "Vibration",
+                    "Usure des pneus"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque entretien.",
+                  "diagnostic": "Essai de régénération, inspection du freinage mécanique, des pneus, des jeux et de la géométrie.",
+                  "piece_concernee": "Freinage, suspension, direction et pneumatiques",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les organes."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "E6H",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "E6Y",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Han",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "sedan",
+        "countries": [
+          "fi",
+          "lu",
+          "nl",
+          "ua"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "85,4 kWh AWD — 380 kW — 517 ch",
+              "code_moteur": "À confirmer selon VIN, pays et millésime",
+              "cylindree": "Non applicable",
+              "puissance_ch": 517,
+              "boite": [
+                "Réducteur à rapport unique"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie Blade, BMS et chaîne haute tension",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Puissance limitée",
+                    "Charge impossible ou interrompue"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge, des cycles, de la température et des habitudes de recharge.",
+                  "diagnostic": "Lecture du BMS, SOH, écarts de cellules, défauts d’isolement, températures et test de charge AC/DC.",
+                  "piece_concernee": "Batterie de traction, BMS, moteur, onduleur et chargeur embarqué",
+                  "gravite": "Majeure si isolement insuffisant ou défaut haute tension",
+                  "frequence": "À contrôler avant achat et en présence d’une alerte",
+                  "cout_reparation_estime": "Élevé si module batterie ou électronique de puissance concerné."
+                },
+                {
+                  "probleme": "Freinage régénératif, pneus et liaisons au sol",
+                  "symptomes": [
+                    "Freinage irrégulier",
+                    "Vibration",
+                    "Usure des pneus"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque entretien.",
+                  "diagnostic": "Essai de régénération, inspection du freinage mécanique, des pneus, des jeux et de la géométrie.",
+                  "piece_concernee": "Freinage, suspension, direction et pneumatiques",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les organes."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "M6",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "my",
+          "th"
+        ],
+        "regions": [
+          "as"
+        ],
+        "global_decile": 2
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "71,8 kWh traction — 120 kW — 163 ch",
+              "code_moteur": "À confirmer selon VIN, pays et millésime",
+              "cylindree": "Non applicable",
+              "puissance_ch": 163,
+              "boite": [
+                "Réducteur à rapport unique"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie Blade, BMS et chaîne haute tension",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Puissance limitée",
+                    "Charge impossible ou interrompue"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge, des cycles, de la température et des habitudes de recharge.",
+                  "diagnostic": "Lecture du BMS, SOH, écarts de cellules, défauts d’isolement, températures et test de charge AC/DC.",
+                  "piece_concernee": "Batterie de traction, BMS, moteur, onduleur et chargeur embarqué",
+                  "gravite": "Majeure si isolement insuffisant ou défaut haute tension",
+                  "frequence": "À contrôler avant achat et en présence d’une alerte",
+                  "cout_reparation_estime": "Élevé si module batterie ou électronique de puissance concerné."
+                },
+                {
+                  "probleme": "Freinage régénératif, pneus et liaisons au sol",
+                  "symptomes": [
+                    "Freinage irrégulier",
+                    "Vibration",
+                    "Usure des pneus"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque entretien.",
+                  "diagnostic": "Essai de régénération, inspection du freinage mécanique, des pneus, des jeux et de la géométrie.",
+                  "piece_concernee": "Freinage, suspension, direction et pneumatiques",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les organes."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Sea Lion 07",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "es",
+          "ua"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 6
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "71,8/80,6 kWh propulsion — 230 kW — 313 ch",
+              "code_moteur": "À confirmer selon VIN, pays et millésime",
+              "cylindree": "Non applicable",
+              "puissance_ch": 313,
+              "boite": [
+                "Réducteur à rapport unique"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie Blade, BMS et chaîne haute tension",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Puissance limitée",
+                    "Charge impossible ou interrompue"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge, des cycles, de la température et des habitudes de recharge.",
+                  "diagnostic": "Lecture du BMS, SOH, écarts de cellules, défauts d’isolement, températures et test de charge AC/DC.",
+                  "piece_concernee": "Batterie de traction, BMS, moteur, onduleur et chargeur embarqué",
+                  "gravite": "Majeure si isolement insuffisant ou défaut haute tension",
+                  "frequence": "À contrôler avant achat et en présence d’une alerte",
+                  "cout_reparation_estime": "Élevé si module batterie ou électronique de puissance concerné."
+                },
+                {
+                  "probleme": "Freinage régénératif, pneus et liaisons au sol",
+                  "symptomes": [
+                    "Freinage irrégulier",
+                    "Vibration",
+                    "Usure des pneus"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque entretien.",
+                  "diagnostic": "Essai de régénération, inspection du freinage mécanique, des pneus, des jeux et de la géométrie.",
+                  "piece_concernee": "Freinage, suspension, direction et pneumatiques",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les organes."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Seagull",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "nl",
+          "ua"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "30,1/38,9 kWh traction — 55 kW — 75 ch",
+              "code_moteur": "À confirmer selon VIN, pays et millésime",
+              "cylindree": "Non applicable",
+              "puissance_ch": 75,
+              "boite": [
+                "Réducteur à rapport unique"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie Blade, BMS et chaîne haute tension",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Puissance limitée",
+                    "Charge impossible ou interrompue"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge, des cycles, de la température et des habitudes de recharge.",
+                  "diagnostic": "Lecture du BMS, SOH, écarts de cellules, défauts d’isolement, températures et test de charge AC/DC.",
+                  "piece_concernee": "Batterie de traction, BMS, moteur, onduleur et chargeur embarqué",
+                  "gravite": "Majeure si isolement insuffisant ou défaut haute tension",
+                  "frequence": "À contrôler avant achat et en présence d’une alerte",
+                  "cout_reparation_estime": "Élevé si module batterie ou électronique de puissance concerné."
+                },
+                {
+                  "probleme": "Freinage régénératif, pneus et liaisons au sol",
+                  "symptomes": [
+                    "Freinage irrégulier",
+                    "Vibration",
+                    "Usure des pneus"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque entretien.",
+                  "diagnostic": "Essai de régénération, inspection du freinage mécanique, des pneus, des jeux et de la géométrie.",
+                  "piece_concernee": "Freinage, suspension, direction et pneumatiques",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les organes."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Seal 6",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "es",
+          "fi",
+          "gb",
+          "lu",
+          "my",
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "as",
+          "eu",
+          "oc"
+        ],
+        "global_decile": 4
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "56,6 kWh traction — 95 kW — 129 ch",
+              "code_moteur": "À confirmer selon VIN, pays et millésime",
+              "cylindree": "Non applicable",
+              "puissance_ch": 129,
+              "boite": [
+                "Réducteur à rapport unique"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie Blade, BMS et chaîne haute tension",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Puissance limitée",
+                    "Charge impossible ou interrompue"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge, des cycles, de la température et des habitudes de recharge.",
+                  "diagnostic": "Lecture du BMS, SOH, écarts de cellules, défauts d’isolement, températures et test de charge AC/DC.",
+                  "piece_concernee": "Batterie de traction, BMS, moteur, onduleur et chargeur embarqué",
+                  "gravite": "Majeure si isolement insuffisant ou défaut haute tension",
+                  "frequence": "À contrôler avant achat et en présence d’une alerte",
+                  "cout_reparation_estime": "Élevé si module batterie ou électronique de puissance concerné."
+                },
+                {
+                  "probleme": "Freinage régénératif, pneus et liaisons au sol",
+                  "symptomes": [
+                    "Freinage irrégulier",
+                    "Vibration",
+                    "Usure des pneus"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque entretien.",
+                  "diagnostic": "Essai de régénération, inspection du freinage mécanique, des pneus, des jeux et de la géométrie.",
+                  "piece_concernee": "Freinage, suspension, direction et pneumatiques",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les organes."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Seal Design EV",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "gb"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 1
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "82,5 kWh propulsion — 230 kW — 313 ch",
+              "code_moteur": "À confirmer selon VIN, pays et millésime",
+              "cylindree": "Non applicable",
+              "puissance_ch": 313,
+              "boite": [
+                "Réducteur à rapport unique"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie Blade, BMS et chaîne haute tension",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Puissance limitée",
+                    "Charge impossible ou interrompue"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge, des cycles, de la température et des habitudes de recharge.",
+                  "diagnostic": "Lecture du BMS, SOH, écarts de cellules, défauts d’isolement, températures et test de charge AC/DC.",
+                  "piece_concernee": "Batterie de traction, BMS, moteur, onduleur et chargeur embarqué",
+                  "gravite": "Majeure si isolement insuffisant ou défaut haute tension",
+                  "frequence": "À contrôler avant achat et en présence d’une alerte",
+                  "cout_reparation_estime": "Élevé si module batterie ou électronique de puissance concerné."
+                },
+                {
+                  "probleme": "Freinage régénératif, pneus et liaisons au sol",
+                  "symptomes": [
+                    "Freinage irrégulier",
+                    "Vibration",
+                    "Usure des pneus"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque entretien.",
+                  "diagnostic": "Essai de régénération, inspection du freinage mécanique, des pneus, des jeux et de la géométrie.",
+                  "piece_concernee": "Freinage, suspension, direction et pneumatiques",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les organes."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Sealion",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "my",
+          "nz"
+        ],
+        "regions": [
+          "as",
+          "oc"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Sealion 5",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "gb",
+          "lu",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride rechargeable",
+              "nom": "1.5 DM-i traction — 145 kW système — 197 ch",
+              "code_moteur": "À confirmer selon VIN, pays et millésime",
+              "cylindree": "1 498 cm³ (à confirmer selon marché)",
+              "puissance_ch": 197,
+              "boite": [
+                "Transmission hybride e-CVT / rapport dédié"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Système hybride DM-i et batterie de traction",
+                  "symptomes": [
+                    "Voyant hybride",
+                    "Autonomie électrique réduite",
+                    "À-coups ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon cycles, entretien et recharge.",
+                  "diagnostic": "Lecture croisée ECU/BMS, contrôle SOH, refroidissement, isolement, paramètres moteur et essai des transitions.",
+                  "piece_concernee": "Moteur thermique, batterie, BMS, moteurs électriques et électronique de puissance",
+                  "gravite": "Majeure en cas de défaut haute tension ou de refroidissement",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Variable à élevé selon le sous-système."
+                },
+                {
+                  "probleme": "Freinage, transmission et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Bruit",
+                    "Freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque révision.",
+                  "diagnostic": "Essai routier, contrôle de la régénération, des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Transmission hybride, freinage et liaisons au sol",
+                  "gravite": "Modérée à majeure selon défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Sealion 6",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "nz",
+          "th"
+        ],
+        "regions": [
+          "as",
+          "oc"
+        ],
+        "global_decile": 2
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride rechargeable",
+              "nom": "1.5 Turbo DM-i AWD — 238 kW système — 324 ch",
+              "code_moteur": "À confirmer selon VIN, pays et millésime",
+              "cylindree": "1 498 cm³ (à confirmer selon marché)",
+              "puissance_ch": 324,
+              "boite": [
+                "Transmission hybride e-CVT / rapport dédié"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Système hybride DM-i et batterie de traction",
+                  "symptomes": [
+                    "Voyant hybride",
+                    "Autonomie électrique réduite",
+                    "À-coups ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon cycles, entretien et recharge.",
+                  "diagnostic": "Lecture croisée ECU/BMS, contrôle SOH, refroidissement, isolement, paramètres moteur et essai des transitions.",
+                  "piece_concernee": "Moteur thermique, batterie, BMS, moteurs électriques et électronique de puissance",
+                  "gravite": "Majeure en cas de défaut haute tension ou de refroidissement",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Variable à élevé selon le sous-système."
+                },
+                {
+                  "probleme": "Freinage, transmission et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Bruit",
+                    "Freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque révision.",
+                  "diagnostic": "Essai routier, contrôle de la régénération, des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Transmission hybride, freinage et liaisons au sol",
+                  "gravite": "Modérée à majeure selon défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Sealion 7",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "de",
+          "es",
+          "fi",
+          "ie",
+          "lu",
+          "nl",
+          "nz",
+          "th"
+        ],
+        "regions": [
+          "as",
+          "eu",
+          "oc"
+        ],
+        "global_decile": 3
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "82,5 kWh propulsion — 230 kW — 313 ch",
+              "code_moteur": "À confirmer selon VIN, pays et millésime",
+              "cylindree": "Non applicable",
+              "puissance_ch": 313,
+              "boite": [
+                "Réducteur à rapport unique"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie Blade, BMS et chaîne haute tension",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Puissance limitée",
+                    "Charge impossible ou interrompue"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge, des cycles, de la température et des habitudes de recharge.",
+                  "diagnostic": "Lecture du BMS, SOH, écarts de cellules, défauts d’isolement, températures et test de charge AC/DC.",
+                  "piece_concernee": "Batterie de traction, BMS, moteur, onduleur et chargeur embarqué",
+                  "gravite": "Majeure si isolement insuffisant ou défaut haute tension",
+                  "frequence": "À contrôler avant achat et en présence d’une alerte",
+                  "cout_reparation_estime": "Élevé si module batterie ou électronique de puissance concerné."
+                },
+                {
+                  "probleme": "Freinage régénératif, pneus et liaisons au sol",
+                  "symptomes": [
+                    "Freinage irrégulier",
+                    "Vibration",
+                    "Usure des pneus"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque entretien.",
+                  "diagnostic": "Essai de régénération, inspection du freinage mécanique, des pneus, des jeux et de la géométrie.",
+                  "piece_concernee": "Freinage, suspension, direction et pneumatiques",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les organes."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Song Pro",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ar",
+          "ua"
+        ],
+        "regions": [
+          "eu",
+          "sa"
+        ],
+        "global_decile": 3
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride rechargeable",
+              "nom": "1.5 DM-i traction — 145 kW système — 197 ch",
+              "code_moteur": "À confirmer selon VIN, pays et millésime",
+              "cylindree": "1 498 cm³ (à confirmer selon marché)",
+              "puissance_ch": 197,
+              "boite": [
+                "Transmission hybride e-CVT / rapport dédié"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Système hybride DM-i et batterie de traction",
+                  "symptomes": [
+                    "Voyant hybride",
+                    "Autonomie électrique réduite",
+                    "À-coups ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon cycles, entretien et recharge.",
+                  "diagnostic": "Lecture croisée ECU/BMS, contrôle SOH, refroidissement, isolement, paramètres moteur et essai des transitions.",
+                  "piece_concernee": "Moteur thermique, batterie, BMS, moteurs électriques et électronique de puissance",
+                  "gravite": "Majeure en cas de défaut haute tension ou de refroidissement",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Variable à élevé selon le sous-système."
+                },
+                {
+                  "probleme": "Freinage, transmission et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Bruit",
+                    "Freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque révision.",
+                  "diagnostic": "Essai routier, contrôle de la régénération, des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Transmission hybride, freinage et liaisons au sol",
+                  "gravite": "Modérée à majeure selon défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Tang EV",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "es",
+          "fi",
+          "nl",
+          "ua"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "108,8 kWh AWD — 380 kW — 517 ch",
+              "code_moteur": "À confirmer selon VIN, pays et millésime",
+              "cylindree": "Non applicable",
+              "puissance_ch": 517,
+              "boite": [
+                "Réducteur à rapport unique"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie Blade, BMS et chaîne haute tension",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Puissance limitée",
+                    "Charge impossible ou interrompue"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge, des cycles, de la température et des habitudes de recharge.",
+                  "diagnostic": "Lecture du BMS, SOH, écarts de cellules, défauts d’isolement, températures et test de charge AC/DC.",
+                  "piece_concernee": "Batterie de traction, BMS, moteur, onduleur et chargeur embarqué",
+                  "gravite": "Majeure si isolement insuffisant ou défaut haute tension",
+                  "frequence": "À contrôler avant achat et en présence d’une alerte",
+                  "cout_reparation_estime": "Élevé si module batterie ou électronique de puissance concerné."
+                },
+                {
+                  "probleme": "Freinage régénératif, pneus et liaisons au sol",
+                  "symptomes": [
+                    "Freinage irrégulier",
+                    "Vibration",
+                    "Usure des pneus"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque entretien.",
+                  "diagnostic": "Essai de régénération, inspection du freinage mécanique, des pneus, des jeux et de la géométrie.",
+                  "piece_concernee": "Freinage, suspension, direction et pneumatiques",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les organes."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Yuan",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "nl",
+          "ua"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 8
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "60,5 kWh traction — 150 kW — 204 ch",
+              "code_moteur": "À confirmer selon VIN, pays et millésime",
+              "cylindree": "Non applicable",
+              "puissance_ch": 204,
+              "boite": [
+                "Réducteur à rapport unique"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie Blade, BMS et chaîne haute tension",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Puissance limitée",
+                    "Charge impossible ou interrompue"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge, des cycles, de la température et des habitudes de recharge.",
+                  "diagnostic": "Lecture du BMS, SOH, écarts de cellules, défauts d’isolement, températures et test de charge AC/DC.",
+                  "piece_concernee": "Batterie de traction, BMS, moteur, onduleur et chargeur embarqué",
+                  "gravite": "Majeure si isolement insuffisant ou défaut haute tension",
+                  "frequence": "À contrôler avant achat et en présence d’une alerte",
+                  "cout_reparation_estime": "Élevé si module batterie ou électronique de puissance concerné."
+                },
+                {
+                  "probleme": "Freinage régénératif, pneus et liaisons au sol",
+                  "symptomes": [
+                    "Freinage irrégulier",
+                    "Vibration",
+                    "Usure des pneus"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque entretien.",
+                  "diagnostic": "Essai de régénération, inspection du freinage mécanique, des pneus, des jeux et de la géométrie.",
+                  "piece_concernee": "Freinage, suspension, direction et pneumatiques",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les organes."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Yuan Plus",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "es",
+          "ua"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 6
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "60,5 kWh traction — 150 kW — 204 ch",
+              "code_moteur": "À confirmer selon VIN, pays et millésime",
+              "cylindree": "Non applicable",
+              "puissance_ch": 204,
+              "boite": [
+                "Réducteur à rapport unique"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie Blade, BMS et chaîne haute tension",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Puissance limitée",
+                    "Charge impossible ou interrompue"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge, des cycles, de la température et des habitudes de recharge.",
+                  "diagnostic": "Lecture du BMS, SOH, écarts de cellules, défauts d’isolement, températures et test de charge AC/DC.",
+                  "piece_concernee": "Batterie de traction, BMS, moteur, onduleur et chargeur embarqué",
+                  "gravite": "Majeure si isolement insuffisant ou défaut haute tension",
+                  "frequence": "À contrôler avant achat et en présence d’une alerte",
+                  "cout_reparation_estime": "Élevé si module batterie ou électronique de puissance concerné."
+                },
+                {
+                  "probleme": "Freinage régénératif, pneus et liaisons au sol",
+                  "symptomes": [
+                    "Freinage irrégulier",
+                    "Vibration",
+                    "Usure des pneus"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque entretien.",
+                  "diagnostic": "Essai de régénération, inspection du freinage mécanique, des pneus, des jeux et de la géométrie.",
+                  "piece_concernee": "Freinage, suspension, direction et pneumatiques",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les organes."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Yuan Pro",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ar",
+          "ua"
+        ],
+        "regions": [
+          "eu",
+          "sa"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "Blade Battery traction — 100 kW — 136 ch",
+              "code_moteur": "À confirmer selon VIN, pays et millésime",
+              "cylindree": "Non applicable",
+              "puissance_ch": 136,
+              "boite": [
+                "Réducteur à rapport unique"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie Blade, BMS et chaîne haute tension",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Puissance limitée",
+                    "Charge impossible ou interrompue"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge, des cycles, de la température et des habitudes de recharge.",
+                  "diagnostic": "Lecture du BMS, SOH, écarts de cellules, défauts d’isolement, températures et test de charge AC/DC.",
+                  "piece_concernee": "Batterie de traction, BMS, moteur, onduleur et chargeur embarqué",
+                  "gravite": "Majeure si isolement insuffisant ou défaut haute tension",
+                  "frequence": "À contrôler avant achat et en présence d’une alerte",
+                  "cout_reparation_estime": "Élevé si module batterie ou électronique de puissance concerné."
+                },
+                {
+                  "probleme": "Freinage régénératif, pneus et liaisons au sol",
+                  "symptomes": [
+                    "Freinage irrégulier",
+                    "Vibration",
+                    "Usure des pneus"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque entretien.",
+                  "diagnostic": "Essai de régénération, inspection du freinage mécanique, des pneus, des jeux et de la géométrie.",
+                  "piece_concernee": "Freinage, suspension, direction et pneumatiques",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les organes."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "ETP3",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "van",
+        "body_type": null,
+        "countries": [
+          "es",
+          "fi",
+          "gb",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "44,9 kWh traction — 100 kW — 136 ch",
+              "code_moteur": "À confirmer selon VIN, pays et millésime",
+              "cylindree": "Non applicable",
+              "puissance_ch": 136,
+              "boite": [
+                "Réducteur à rapport unique"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie Blade, BMS et chaîne haute tension",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Puissance limitée",
+                    "Charge impossible ou interrompue"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge, des cycles, de la température et des habitudes de recharge.",
+                  "diagnostic": "Lecture du BMS, SOH, écarts de cellules, défauts d’isolement, températures et test de charge AC/DC.",
+                  "piece_concernee": "Batterie de traction, BMS, moteur, onduleur et chargeur embarqué",
+                  "gravite": "Majeure si isolement insuffisant ou défaut haute tension",
+                  "frequence": "À contrôler avant achat et en présence d’une alerte",
+                  "cout_reparation_estime": "Élevé si module batterie ou électronique de puissance concerné."
+                },
+                {
+                  "probleme": "Freinage régénératif, pneus et liaisons au sol",
+                  "symptomes": [
+                    "Freinage irrégulier",
+                    "Vibration",
+                    "Usure des pneus"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque entretien.",
+                  "diagnostic": "Essai de régénération, inspection du freinage mécanique, des pneus, des jeux et de la géométrie.",
+                  "piece_concernee": "Freinage, suspension, direction et pneumatiques",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les organes."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "T3",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "van",
+        "body_type": null,
+        "countries": [
+          "th"
+        ],
+        "regions": [
+          "as"
+        ],
+        "global_decile": 6
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "50,3 kWh traction — 100 kW — 136 ch",
+              "code_moteur": "À confirmer selon VIN, pays et millésime",
+              "cylindree": "Non applicable",
+              "puissance_ch": 136,
+              "boite": [
+                "Réducteur à rapport unique"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie Blade, BMS et chaîne haute tension",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Puissance limitée",
+                    "Charge impossible ou interrompue"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge, des cycles, de la température et des habitudes de recharge.",
+                  "diagnostic": "Lecture du BMS, SOH, écarts de cellules, défauts d’isolement, températures et test de charge AC/DC.",
+                  "piece_concernee": "Batterie de traction, BMS, moteur, onduleur et chargeur embarqué",
+                  "gravite": "Majeure si isolement insuffisant ou défaut haute tension",
+                  "frequence": "À contrôler avant achat et en présence d’une alerte",
+                  "cout_reparation_estime": "Élevé si module batterie ou électronique de puissance concerné."
+                },
+                {
+                  "probleme": "Freinage régénératif, pneus et liaisons au sol",
+                  "symptomes": [
+                    "Freinage irrégulier",
+                    "Vibration",
+                    "Usure des pneus"
+                  ],
+                  "kilometrage_apparition": "À inspecter à chaque entretien.",
+                  "diagnostic": "Essai de régénération, inspection du freinage mécanique, des pneus, des jeux et de la géométrie.",
+                  "piece_concernee": "Freinage, suspension, direction et pneumatiques",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Variable selon les organes."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

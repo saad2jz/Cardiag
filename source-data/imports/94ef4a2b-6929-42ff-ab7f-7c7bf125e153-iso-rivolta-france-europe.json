@@ -1,0 +1,272 @@
+{
+  "nom": "Iso Rivolta",
+  "modeles": [
+    {
+      "nom": "Lele",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "coupe",
+        "countries": [
+          "fi",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 8
+      },
+      "generations": [
+        {
+          "code_chassis": "Lele Chevrolet",
+          "annees": "1969–1972",
+          "phases": [
+            "Les 125 premières Lele utilisent des V8 GM ; vérifier cylindrée réelle du calibrage 350."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Chevrolet 327 Lele 300 — 300 ch",
+              "code_moteur": "Chevrolet small-block 327",
+              "cylindree": "5 354 cm³",
+              "puissance_ch": 300,
+              "boite": [
+                "Manuelle 4/ZF 5 rapports ou automatique GM, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Moteur, refroidissement et lubrification des V8 Chevrolet/Ford",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée, pression faible ou bruit",
+                    "Ratés, fuite ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, âge et historique priment",
+                  "diagnostic": "Identifier Chevrolet 327/350 ou Ford Cleveland 351 et puissance, mesurer compressions/leak-down et pression, contrôler distribution, radiateur, pompe, ventilateurs, joints, reniflard, carburateur et échappement ; vérifier modifications de culasses/arbre à cames",
+                  "piece_concernee": "V8 Iso Rivolta Lele",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sans restauration documentée",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 15 000 €"
+                },
+                {
+                  "probleme": "Boîte quatre/ZF cinq/automatique, embrayage et pont",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection dure ou engagement tardif",
+                    "Vibration, fuite ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km",
+                  "diagnostic": "Identifier boîte Chevrolet, ZF cinq ou automatique GM/Ford, contrôler huile/pression, embrayage/convertisseur, supports, arbre/croisillons, différentiel Salisbury, demi-arbres et roulements ; confirmer rapport de pont associé au moteur",
+                  "piece_concernee": "Transmission Lele",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable selon couple et usage",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Corrosion, structure, suspension, freinage et identité Bertone",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu, affaissement ou usure irrégulière",
+                    "Freinage faible, électricité intermittente ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat",
+                  "diagnostic": "Inspecter châssis/monocoque, bas de caisse, planchers, ancrages, baie, panneaux et réparations ; contrôler De Dion, ressorts/amortisseurs, direction, freins, jantes/pneus, faisceau et climatisation, puis authentifier Lele 300/350, IR6 ou Sport et peinture Marlboro éventuelle",
+                  "piece_concernee": "Structure et sécurité Iso Lele",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion et transformations possibles sur faible série",
+                  "cout_reparation_estime": "Très élevé : environ 800 à plus de 30 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Chevrolet 327/350 Lele 350 — 350 ch",
+              "code_moteur": "Chevrolet small-block 327/350 Iso",
+              "cylindree": "5 354–5 733 cm³",
+              "puissance_ch": 350,
+              "boite": [
+                "ZF manuelle 5 rapports ou automatique GM, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Moteur, refroidissement et lubrification des V8 Chevrolet/Ford",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée, pression faible ou bruit",
+                    "Ratés, fuite ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, âge et historique priment",
+                  "diagnostic": "Identifier Chevrolet 327/350 ou Ford Cleveland 351 et puissance, mesurer compressions/leak-down et pression, contrôler distribution, radiateur, pompe, ventilateurs, joints, reniflard, carburateur et échappement ; vérifier modifications de culasses/arbre à cames",
+                  "piece_concernee": "V8 Iso Rivolta Lele",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sans restauration documentée",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 15 000 €"
+                },
+                {
+                  "probleme": "Boîte quatre/ZF cinq/automatique, embrayage et pont",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection dure ou engagement tardif",
+                    "Vibration, fuite ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km",
+                  "diagnostic": "Identifier boîte Chevrolet, ZF cinq ou automatique GM/Ford, contrôler huile/pression, embrayage/convertisseur, supports, arbre/croisillons, différentiel Salisbury, demi-arbres et roulements ; confirmer rapport de pont associé au moteur",
+                  "piece_concernee": "Transmission Lele",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable selon couple et usage",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Corrosion, structure, suspension, freinage et identité Bertone",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu, affaissement ou usure irrégulière",
+                    "Freinage faible, électricité intermittente ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat",
+                  "diagnostic": "Inspecter châssis/monocoque, bas de caisse, planchers, ancrages, baie, panneaux et réparations ; contrôler De Dion, ressorts/amortisseurs, direction, freins, jantes/pneus, faisceau et climatisation, puis authentifier Lele 300/350, IR6 ou Sport et peinture Marlboro éventuelle",
+                  "piece_concernee": "Structure et sécurité Iso Lele",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion et transformations possibles sur faible série",
+                  "cout_reparation_estime": "Très élevé : environ 800 à plus de 30 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Lele IR6 Ford",
+          "annees": "1972–1974",
+          "phases": [
+            "Seulement 165 Lele à moteur Ford selon Iso."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Ford 351 Cleveland — 325 ch",
+              "code_moteur": "Ford 351 Cleveland Iso IR6",
+              "cylindree": "5 763 cm³",
+              "puissance_ch": 325,
+              "boite": [
+                "ZF manuelle 5 rapports ou automatique Ford, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Moteur, refroidissement et lubrification des V8 Chevrolet/Ford",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée, pression faible ou bruit",
+                    "Ratés, fuite ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, âge et historique priment",
+                  "diagnostic": "Identifier Chevrolet 327/350 ou Ford Cleveland 351 et puissance, mesurer compressions/leak-down et pression, contrôler distribution, radiateur, pompe, ventilateurs, joints, reniflard, carburateur et échappement ; vérifier modifications de culasses/arbre à cames",
+                  "piece_concernee": "V8 Iso Rivolta Lele",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sans restauration documentée",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 15 000 €"
+                },
+                {
+                  "probleme": "Boîte quatre/ZF cinq/automatique, embrayage et pont",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection dure ou engagement tardif",
+                    "Vibration, fuite ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km",
+                  "diagnostic": "Identifier boîte Chevrolet, ZF cinq ou automatique GM/Ford, contrôler huile/pression, embrayage/convertisseur, supports, arbre/croisillons, différentiel Salisbury, demi-arbres et roulements ; confirmer rapport de pont associé au moteur",
+                  "piece_concernee": "Transmission Lele",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable selon couple et usage",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Corrosion, structure, suspension, freinage et identité Bertone",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu, affaissement ou usure irrégulière",
+                    "Freinage faible, électricité intermittente ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat",
+                  "diagnostic": "Inspecter châssis/monocoque, bas de caisse, planchers, ancrages, baie, panneaux et réparations ; contrôler De Dion, ressorts/amortisseurs, direction, freins, jantes/pneus, faisceau et climatisation, puis authentifier Lele 300/350, IR6 ou Sport et peinture Marlboro éventuelle",
+                  "piece_concernee": "Structure et sécurité Iso Lele",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion et transformations possibles sur faible série",
+                  "cout_reparation_estime": "Très élevé : environ 800 à plus de 30 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Lele Sport / Marlboro",
+          "annees": "1973–1974",
+          "phases": [
+            "Deux Marlboro promotionnelles puis environ vingt Sport de haute puissance ; authentification indispensable."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Ford 351 Cobra Jet — 360 ch",
+              "code_moteur": "Ford 351 Cleveland Cobra Jet Iso",
+              "cylindree": "5 763 cm³",
+              "puissance_ch": 360,
+              "boite": [
+                "ZF manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Moteur, refroidissement et lubrification des V8 Chevrolet/Ford",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée, pression faible ou bruit",
+                    "Ratés, fuite ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, âge et historique priment",
+                  "diagnostic": "Identifier Chevrolet 327/350 ou Ford Cleveland 351 et puissance, mesurer compressions/leak-down et pression, contrôler distribution, radiateur, pompe, ventilateurs, joints, reniflard, carburateur et échappement ; vérifier modifications de culasses/arbre à cames",
+                  "piece_concernee": "V8 Iso Rivolta Lele",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sans restauration documentée",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 15 000 €"
+                },
+                {
+                  "probleme": "Boîte quatre/ZF cinq/automatique, embrayage et pont",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection dure ou engagement tardif",
+                    "Vibration, fuite ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km",
+                  "diagnostic": "Identifier boîte Chevrolet, ZF cinq ou automatique GM/Ford, contrôler huile/pression, embrayage/convertisseur, supports, arbre/croisillons, différentiel Salisbury, demi-arbres et roulements ; confirmer rapport de pont associé au moteur",
+                  "piece_concernee": "Transmission Lele",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable selon couple et usage",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Corrosion, structure, suspension, freinage et identité Bertone",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu, affaissement ou usure irrégulière",
+                    "Freinage faible, électricité intermittente ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat",
+                  "diagnostic": "Inspecter châssis/monocoque, bas de caisse, planchers, ancrages, baie, panneaux et réparations ; contrôler De Dion, ressorts/amortisseurs, direction, freins, jantes/pneus, faisceau et climatisation, puis authentifier Lele 300/350, IR6 ou Sport et peinture Marlboro éventuelle",
+                  "piece_concernee": "Structure et sécurité Iso Lele",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion et transformations possibles sur faible série",
+                  "cout_reparation_estime": "Très élevé : environ 800 à plus de 30 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.isorivoltaofficial.com/isorivolta-lele.html"
+      ]
+    }
+  ],
+  "source_catalogue": "VehiclesDB 2026.08.2 (CC-BY 4.0)"
+}

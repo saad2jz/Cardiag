@@ -1,0 +1,387 @@
+{
+  "nom": "Ayats",
+  "modeles": [
+    {
+      "nom": "Bravo",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "bus",
+        "body_type": null,
+        "countries": [
+          "es",
+          "fi"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 8
+      },
+      "generations": [
+        {
+          "code_chassis": "Bravo I double étage sur châssis client",
+          "annees": "années 1990–2000",
+          "phases": [
+            "Carrosserie 12 à 15 m fabriquée sur commande ; ne jamais déduire le moteur de la seule apparence extérieure"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "Scania K124EB DC12 — 420 ch",
+              "code_moteur": "Scania DC12",
+              "cylindree": "11 705 cm³",
+              "puissance_ch": 420,
+              "boite": [
+                "Scania GR/GRS manuelle ou Opticruise selon châssis"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo et dépollution du groupe diesel de châssis",
+                  "symptomes": [
+                    "Fumée",
+                    "Mode dégradé",
+                    "Consommation élevée ou alertes SCR"
+                  ],
+                  "kilometrage_apparition": "Souvent après 300 000 à 700 000 km selon service et moteur",
+                  "diagnostic": "Identifier châssis et moteur sur plaques avant commande, lire EMS/SCR, contrôler injecteurs, turbo, intercooler, EGR, DPF/SCR, refroidissement, pression d’huile et historique d’exploitation",
+                  "piece_concernee": "Moteur Scania ou Volvo et dépollution",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 25 000 €"
+                },
+                {
+                  "probleme": "Boîte automatisée, ponts, ralentisseur et freinage pneumatique",
+                  "symptomes": [
+                    "Passages lents",
+                    "Vibration",
+                    "Perte d’air ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Souvent après 400 000 km, plus tôt en montagne ou tourisme intensif",
+                  "diagnostic": "Contrôler Opticruise/I-Shift, embrayage, adaptations, arbres, ponts, ralentisseur, compresseur, dessiccateur, valves, EBS/ABS, disques, soufflets de suspension et pneus par essieu",
+                  "piece_concernee": "Transmission et freinage d’autocar double étage",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sur parc intensif",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 30 000 €"
+                },
+                {
+                  "probleme": "Structure double étage Ayats, corrosion, portes et équipements passagers",
+                  "symptomes": [
+                    "Craquements",
+                    "Infiltrations",
+                    "Porte ou climatisation défaillante",
+                    "Usure irrégulière des pneus"
+                  ],
+                  "kilometrage_apparition": "Contrôle renforcé après 8 à 12 ans de service",
+                  "diagnostic": "Inspecter structure, planchers des deux niveaux, escaliers, collage vitrages, ancrages sièges/ceintures, portes/issues, soutes, levage, climatisation, électricité carrossier, incendie, masses et historique de choc ou retournement",
+                  "piece_concernee": "Carrosserie Ayats Bravo et équipements de sécurité",
+                  "gravite": "Critique si structure ou évacuation affectée",
+                  "frequence": "Assez fréquente avec âge et usage touristique",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 40 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "Volvo B12B D12D — 420 ch",
+              "code_moteur": "Volvo D12D420",
+              "cylindree": "12 130 cm³",
+              "puissance_ch": 420,
+              "boite": [
+                "Volvo I-Shift ou boîte automatique selon commande"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo et dépollution du groupe diesel de châssis",
+                  "symptomes": [
+                    "Fumée",
+                    "Mode dégradé",
+                    "Consommation élevée ou alertes SCR"
+                  ],
+                  "kilometrage_apparition": "Souvent après 300 000 à 700 000 km selon service et moteur",
+                  "diagnostic": "Identifier châssis et moteur sur plaques avant commande, lire EMS/SCR, contrôler injecteurs, turbo, intercooler, EGR, DPF/SCR, refroidissement, pression d’huile et historique d’exploitation",
+                  "piece_concernee": "Moteur Scania ou Volvo et dépollution",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 25 000 €"
+                },
+                {
+                  "probleme": "Boîte automatisée, ponts, ralentisseur et freinage pneumatique",
+                  "symptomes": [
+                    "Passages lents",
+                    "Vibration",
+                    "Perte d’air ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Souvent après 400 000 km, plus tôt en montagne ou tourisme intensif",
+                  "diagnostic": "Contrôler Opticruise/I-Shift, embrayage, adaptations, arbres, ponts, ralentisseur, compresseur, dessiccateur, valves, EBS/ABS, disques, soufflets de suspension et pneus par essieu",
+                  "piece_concernee": "Transmission et freinage d’autocar double étage",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sur parc intensif",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 30 000 €"
+                },
+                {
+                  "probleme": "Structure double étage Ayats, corrosion, portes et équipements passagers",
+                  "symptomes": [
+                    "Craquements",
+                    "Infiltrations",
+                    "Porte ou climatisation défaillante",
+                    "Usure irrégulière des pneus"
+                  ],
+                  "kilometrage_apparition": "Contrôle renforcé après 8 à 12 ans de service",
+                  "diagnostic": "Inspecter structure, planchers des deux niveaux, escaliers, collage vitrages, ancrages sièges/ceintures, portes/issues, soutes, levage, climatisation, électricité carrossier, incendie, masses et historique de choc ou retournement",
+                  "piece_concernee": "Carrosserie Ayats Bravo et équipements de sécurité",
+                  "gravite": "Critique si structure ou évacuation affectée",
+                  "frequence": "Assez fréquente avec âge et usage touristique",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 40 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Bravo II / Bravo III double étage",
+          "annees": "années 2000–2020",
+          "phases": [
+            "Versions tourisme/intercity de 12 à 13,75 m courantes ; châssis et puissance doivent être confirmés par plaques constructeur"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "Scania K420EB DC12 — 420 ch",
+              "code_moteur": "Scania DC12 14",
+              "cylindree": "11 705 cm³",
+              "puissance_ch": 420,
+              "boite": [
+                "Scania Opticruise"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo et dépollution du groupe diesel de châssis",
+                  "symptomes": [
+                    "Fumée",
+                    "Mode dégradé",
+                    "Consommation élevée ou alertes SCR"
+                  ],
+                  "kilometrage_apparition": "Souvent après 300 000 à 700 000 km selon service et moteur",
+                  "diagnostic": "Identifier châssis et moteur sur plaques avant commande, lire EMS/SCR, contrôler injecteurs, turbo, intercooler, EGR, DPF/SCR, refroidissement, pression d’huile et historique d’exploitation",
+                  "piece_concernee": "Moteur Scania ou Volvo et dépollution",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 25 000 €"
+                },
+                {
+                  "probleme": "Boîte automatisée, ponts, ralentisseur et freinage pneumatique",
+                  "symptomes": [
+                    "Passages lents",
+                    "Vibration",
+                    "Perte d’air ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Souvent après 400 000 km, plus tôt en montagne ou tourisme intensif",
+                  "diagnostic": "Contrôler Opticruise/I-Shift, embrayage, adaptations, arbres, ponts, ralentisseur, compresseur, dessiccateur, valves, EBS/ABS, disques, soufflets de suspension et pneus par essieu",
+                  "piece_concernee": "Transmission et freinage d’autocar double étage",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sur parc intensif",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 30 000 €"
+                },
+                {
+                  "probleme": "Structure double étage Ayats, corrosion, portes et équipements passagers",
+                  "symptomes": [
+                    "Craquements",
+                    "Infiltrations",
+                    "Porte ou climatisation défaillante",
+                    "Usure irrégulière des pneus"
+                  ],
+                  "kilometrage_apparition": "Contrôle renforcé après 8 à 12 ans de service",
+                  "diagnostic": "Inspecter structure, planchers des deux niveaux, escaliers, collage vitrages, ancrages sièges/ceintures, portes/issues, soutes, levage, climatisation, électricité carrossier, incendie, masses et historique de choc ou retournement",
+                  "piece_concernee": "Carrosserie Ayats Bravo et équipements de sécurité",
+                  "gravite": "Critique si structure ou évacuation affectée",
+                  "frequence": "Assez fréquente avec âge et usage touristique",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 40 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "Scania K440EB DC13 — 440 ch",
+              "code_moteur": "Scania DC13",
+              "cylindree": "12 742 cm³",
+              "puissance_ch": 440,
+              "boite": [
+                "Scania Opticruise"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo et dépollution du groupe diesel de châssis",
+                  "symptomes": [
+                    "Fumée",
+                    "Mode dégradé",
+                    "Consommation élevée ou alertes SCR"
+                  ],
+                  "kilometrage_apparition": "Souvent après 300 000 à 700 000 km selon service et moteur",
+                  "diagnostic": "Identifier châssis et moteur sur plaques avant commande, lire EMS/SCR, contrôler injecteurs, turbo, intercooler, EGR, DPF/SCR, refroidissement, pression d’huile et historique d’exploitation",
+                  "piece_concernee": "Moteur Scania ou Volvo et dépollution",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 25 000 €"
+                },
+                {
+                  "probleme": "Boîte automatisée, ponts, ralentisseur et freinage pneumatique",
+                  "symptomes": [
+                    "Passages lents",
+                    "Vibration",
+                    "Perte d’air ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Souvent après 400 000 km, plus tôt en montagne ou tourisme intensif",
+                  "diagnostic": "Contrôler Opticruise/I-Shift, embrayage, adaptations, arbres, ponts, ralentisseur, compresseur, dessiccateur, valves, EBS/ABS, disques, soufflets de suspension et pneus par essieu",
+                  "piece_concernee": "Transmission et freinage d’autocar double étage",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sur parc intensif",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 30 000 €"
+                },
+                {
+                  "probleme": "Structure double étage Ayats, corrosion, portes et équipements passagers",
+                  "symptomes": [
+                    "Craquements",
+                    "Infiltrations",
+                    "Porte ou climatisation défaillante",
+                    "Usure irrégulière des pneus"
+                  ],
+                  "kilometrage_apparition": "Contrôle renforcé après 8 à 12 ans de service",
+                  "diagnostic": "Inspecter structure, planchers des deux niveaux, escaliers, collage vitrages, ancrages sièges/ceintures, portes/issues, soutes, levage, climatisation, électricité carrossier, incendie, masses et historique de choc ou retournement",
+                  "piece_concernee": "Carrosserie Ayats Bravo et équipements de sécurité",
+                  "gravite": "Critique si structure ou évacuation affectée",
+                  "frequence": "Assez fréquente avec âge et usage touristique",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 40 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "Volvo B13R D13C — 460 ch",
+              "code_moteur": "Volvo D13C460",
+              "cylindree": "12 777 cm³",
+              "puissance_ch": 460,
+              "boite": [
+                "Volvo I-Shift"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo et dépollution du groupe diesel de châssis",
+                  "symptomes": [
+                    "Fumée",
+                    "Mode dégradé",
+                    "Consommation élevée ou alertes SCR"
+                  ],
+                  "kilometrage_apparition": "Souvent après 300 000 à 700 000 km selon service et moteur",
+                  "diagnostic": "Identifier châssis et moteur sur plaques avant commande, lire EMS/SCR, contrôler injecteurs, turbo, intercooler, EGR, DPF/SCR, refroidissement, pression d’huile et historique d’exploitation",
+                  "piece_concernee": "Moteur Scania ou Volvo et dépollution",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 25 000 €"
+                },
+                {
+                  "probleme": "Boîte automatisée, ponts, ralentisseur et freinage pneumatique",
+                  "symptomes": [
+                    "Passages lents",
+                    "Vibration",
+                    "Perte d’air ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Souvent après 400 000 km, plus tôt en montagne ou tourisme intensif",
+                  "diagnostic": "Contrôler Opticruise/I-Shift, embrayage, adaptations, arbres, ponts, ralentisseur, compresseur, dessiccateur, valves, EBS/ABS, disques, soufflets de suspension et pneus par essieu",
+                  "piece_concernee": "Transmission et freinage d’autocar double étage",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sur parc intensif",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 30 000 €"
+                },
+                {
+                  "probleme": "Structure double étage Ayats, corrosion, portes et équipements passagers",
+                  "symptomes": [
+                    "Craquements",
+                    "Infiltrations",
+                    "Porte ou climatisation défaillante",
+                    "Usure irrégulière des pneus"
+                  ],
+                  "kilometrage_apparition": "Contrôle renforcé après 8 à 12 ans de service",
+                  "diagnostic": "Inspecter structure, planchers des deux niveaux, escaliers, collage vitrages, ancrages sièges/ceintures, portes/issues, soutes, levage, climatisation, électricité carrossier, incendie, masses et historique de choc ou retournement",
+                  "piece_concernee": "Carrosserie Ayats Bravo et équipements de sécurité",
+                  "gravite": "Critique si structure ou évacuation affectée",
+                  "frequence": "Assez fréquente avec âge et usage touristique",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 40 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Bravo IR City électrique intégral",
+          "annees": "2022–aujourd’hui",
+          "phases": [
+            "Châssis Ayats A2E/A3E Low Floor en 10,70/12,15/13,20/14,20 m ; batterie 264 kWh sur deux essieux ou 330 kWh sur trois essieux"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "ZF CeTrax central 300 kW — 408 ch",
+              "code_moteur": "ZF CeTrax 300 kW",
+              "cylindree": "Sans cylindrée — batterie AKASOL NMC 264 ou 330 kWh",
+              "puissance_ch": 408,
+              "boite": [
+                "Réducteur CeTrax, essieu moteur ZF AV133-90"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie AKASOL NMC, refroidissement liquide et isolement",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Écart de température",
+                    "Charge limitée ou alerte HV"
+                  ],
+                  "kilometrage_apparition": "Dépend des cycles et du climat ; contrôle annuel recommandé en exploitation",
+                  "diagnostic": "Lire SOH, tensions/températures modules, isolement et historique de charge ; inspecter caissons 264/330 kWh, refroidissement liquide, pompes, contacteurs et dommages sous caisse/toit selon implantation",
+                  "piece_concernee": "Batteries AKASOL NMC et BMS",
+                  "gravite": "Critique",
+                  "frequence": "Parc limité, fréquence à établir",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 120 000 €"
+                },
+                {
+                  "probleme": "Moteur central ZF CeTrax 300 kW, onduleur et essieu AV133",
+                  "symptomes": [
+                    "Bruit",
+                    "Vibration",
+                    "Puissance limitée ou surchauffe"
+                  ],
+                  "kilometrage_apparition": "Variable selon charge, relief et entretien",
+                  "diagnostic": "Lire propulsion ZF, comparer couple/température, contrôler CeTrax, onduleur, réducteur, arbre/essieu AV133-90, lubrifiants, refroidissement et connecteurs HV",
+                  "piece_concernee": "ZF CeTrax, électronique de puissance et essieu moteur",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Non consolidée",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à 45 000 €"
+                },
+                {
+                  "probleme": "Freinage WABCO EBS3, structure double étage et auxiliaires électriques",
+                  "symptomes": [
+                    "Défaut EBS",
+                    "Porte lente",
+                    "Caisse basse",
+                    "Consommation auxiliaire excessive"
+                  ],
+                  "kilometrage_apparition": "Contrôle périodique et après tout choc ou levage incorrect",
+                  "diagnostic": "Lire EBS3, tester compresseur électrique, dessiccateur, valves, disques et récupération ; inspecter structure A2E/A3E, suspension, portes/issues, direction, chauffage-climatisation et conformité des masses/passagers",
+                  "piece_concernee": "Châssis intégral Ayats et systèmes de sécurité",
+                  "gravite": "Critique",
+                  "frequence": "À surveiller en exploitation urbaine",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 35 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://ayats.es/en/vehiculo/bravo-ir-city-en",
+        "https://ayats.es/en/home"
+      ]
+    }
+  ],
+  "source_catalogue": "VehiclesDB 2026.08.2 (CC-BY 4.0)"
+}

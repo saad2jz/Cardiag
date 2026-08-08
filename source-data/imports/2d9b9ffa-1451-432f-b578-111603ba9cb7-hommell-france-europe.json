@@ -1,0 +1,202 @@
+{
+  "nom": "Hommell",
+  "modeles": [
+    {
+      "nom": "Berlinette",
+      "generations": [
+        {
+          "code_chassis": "Berlinette Échappement",
+          "annees": "1994–1998",
+          "phases": [
+            "Première série créée autour du magazine Échappement, 155 ch."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Peugeot XU10 2.0 16V — 155 ch",
+              "code_moteur": "PSA XU10J4R Hommell",
+              "cylindree": "1 998 cm³",
+              "puissance_ch": 155,
+              "boite": [
+                "Manuelle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement, injection et lubrification du Peugeot XU10",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Bruit de courroie",
+                    "Ratés, voyant, fuite ou consommation d’huile"
+                  ],
+                  "kilometrage_apparition": "Distribution selon âge/kilométrage ; vigilance dès 80 000 à 150 000 km",
+                  "diagnostic": "Identifier XU10J4R 155/167 ou XU10J4RS 195, vérifier courroie, galets et pompe, mesurer compressions/pression, tester radiateur, thermostat et ventilateurs ; lire injection, contrôler bobines, injecteurs, capteurs, admission et échappement spécifiques",
+                  "piece_concernee": "Moteur PSA XU10 2.0 16V Hommell",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque important sans preuve de distribution",
+                  "cout_reparation_estime": "Élevé : environ 400 à 6 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte six rapports, différentiel et commande",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection dure",
+                    "Vibration, fuite ou bruit en charge"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km, plus tôt sur piste",
+                  "diagnostic": "Contrôler commande, disque/mécanisme, huile et synchros, supports, différentiel, arbres, joints et roulements ; identifier rapports et autobloquant éventuel propres à Échappement/RS/RS2 avant pièces Peugeot génériques",
+                  "piece_concernee": "Transmission et propulsion Berlinette",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable selon usage piste",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 6 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, aluminium, polyester, suspension et freinage",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Jeu ou géométrie instable",
+                    "Vibration au freinage, fuite ou usure pneu"
+                  ],
+                  "kilometrage_apparition": "Expertise systématique avant achat et après piste/choc",
+                  "diagnostic": "Inspecter tubes, soudures, panneaux aluminium/polyester, collages, ancrages et points de levage ; mesurer géométrie, contrôler doubles triangles, rotules, amortisseurs, direction, jantes/pneus, disques/étriers et conduites, puis authentifier Échappement, RS ou RS2",
+                  "piece_concernee": "Structure et sécurité Hommell Berlinette",
+                  "gravite": "Critique",
+                  "frequence": "Risque surtout après sortie de piste ou réparation artisanale",
+                  "cout_reparation_estime": "Très élevé : environ 700 à plus de 20 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Berlinette RS",
+          "annees": "1998–2000",
+          "phases": [
+            "RS renforcée et allégée, calibrage de 167 ch."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Peugeot XU10 2.0 16V — 167 ch",
+              "code_moteur": "PSA XU10J4R RS",
+              "cylindree": "1 998 cm³",
+              "puissance_ch": 167,
+              "boite": [
+                "Manuelle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement, injection et lubrification du Peugeot XU10",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Bruit de courroie",
+                    "Ratés, voyant, fuite ou consommation d’huile"
+                  ],
+                  "kilometrage_apparition": "Distribution selon âge/kilométrage ; vigilance dès 80 000 à 150 000 km",
+                  "diagnostic": "Identifier XU10J4R 155/167 ou XU10J4RS 195, vérifier courroie, galets et pompe, mesurer compressions/pression, tester radiateur, thermostat et ventilateurs ; lire injection, contrôler bobines, injecteurs, capteurs, admission et échappement spécifiques",
+                  "piece_concernee": "Moteur PSA XU10 2.0 16V Hommell",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque important sans preuve de distribution",
+                  "cout_reparation_estime": "Élevé : environ 400 à 6 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte six rapports, différentiel et commande",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection dure",
+                    "Vibration, fuite ou bruit en charge"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km, plus tôt sur piste",
+                  "diagnostic": "Contrôler commande, disque/mécanisme, huile et synchros, supports, différentiel, arbres, joints et roulements ; identifier rapports et autobloquant éventuel propres à Échappement/RS/RS2 avant pièces Peugeot génériques",
+                  "piece_concernee": "Transmission et propulsion Berlinette",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable selon usage piste",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 6 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, aluminium, polyester, suspension et freinage",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Jeu ou géométrie instable",
+                    "Vibration au freinage, fuite ou usure pneu"
+                  ],
+                  "kilometrage_apparition": "Expertise systématique avant achat et après piste/choc",
+                  "diagnostic": "Inspecter tubes, soudures, panneaux aluminium/polyester, collages, ancrages et points de levage ; mesurer géométrie, contrôler doubles triangles, rotules, amortisseurs, direction, jantes/pneus, disques/étriers et conduites, puis authentifier Échappement, RS ou RS2",
+                  "piece_concernee": "Structure et sécurité Hommell Berlinette",
+                  "gravite": "Critique",
+                  "frequence": "Risque surtout après sortie de piste ou réparation artisanale",
+                  "cout_reparation_estime": "Très élevé : environ 700 à plus de 20 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Berlinette RS2",
+          "annees": "2001–2003",
+          "phases": [
+            "Dernière évolution utilisant le moteur de 306 S16 préparé à 195 ch."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Peugeot XU10J4RS — 195 ch",
+              "code_moteur": "PSA XU10J4RS Hommell",
+              "cylindree": "1 998 cm³",
+              "puissance_ch": 195,
+              "boite": [
+                "Manuelle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement, injection et lubrification du Peugeot XU10",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Bruit de courroie",
+                    "Ratés, voyant, fuite ou consommation d’huile"
+                  ],
+                  "kilometrage_apparition": "Distribution selon âge/kilométrage ; vigilance dès 80 000 à 150 000 km",
+                  "diagnostic": "Identifier XU10J4R 155/167 ou XU10J4RS 195, vérifier courroie, galets et pompe, mesurer compressions/pression, tester radiateur, thermostat et ventilateurs ; lire injection, contrôler bobines, injecteurs, capteurs, admission et échappement spécifiques",
+                  "piece_concernee": "Moteur PSA XU10 2.0 16V Hommell",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque important sans preuve de distribution",
+                  "cout_reparation_estime": "Élevé : environ 400 à 6 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte six rapports, différentiel et commande",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection dure",
+                    "Vibration, fuite ou bruit en charge"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km, plus tôt sur piste",
+                  "diagnostic": "Contrôler commande, disque/mécanisme, huile et synchros, supports, différentiel, arbres, joints et roulements ; identifier rapports et autobloquant éventuel propres à Échappement/RS/RS2 avant pièces Peugeot génériques",
+                  "piece_concernee": "Transmission et propulsion Berlinette",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable selon usage piste",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 6 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, aluminium, polyester, suspension et freinage",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Jeu ou géométrie instable",
+                    "Vibration au freinage, fuite ou usure pneu"
+                  ],
+                  "kilometrage_apparition": "Expertise systématique avant achat et après piste/choc",
+                  "diagnostic": "Inspecter tubes, soudures, panneaux aluminium/polyester, collages, ancrages et points de levage ; mesurer géométrie, contrôler doubles triangles, rotules, amortisseurs, direction, jantes/pneus, disques/étriers et conduites, puis authentifier Échappement, RS ou RS2",
+                  "piece_concernee": "Structure et sécurité Hommell Berlinette",
+                  "gravite": "Critique",
+                  "frequence": "Risque surtout après sortie de piste ou réparation artisanale",
+                  "cout_reparation_estime": "Très élevé : environ 700 à plus de 20 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.manoir-automobile.fr/"
+      ]
+    }
+  ]
+}

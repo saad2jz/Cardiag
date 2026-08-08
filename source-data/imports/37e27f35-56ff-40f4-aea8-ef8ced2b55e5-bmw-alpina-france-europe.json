@@ -1,0 +1,699 @@
+{
+  "nom": "Bmw Alpina",
+  "modeles": [
+    {
+      "nom": "B7",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ua",
+          "us"
+        ],
+        "regions": [
+          "eu",
+          "na"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "E12 B7 Turbo / B7 S Turbo",
+          "annees": "1978–1982",
+          "phases": [
+            "B7 Turbo et série limitée B7 S sont distinctes ; authentifier le numéro de production Alpina."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "B7 Turbo 3.0 — 300 ch",
+              "code_moteur": "Alpina B7 Turbo M30",
+              "cylindree": "2 986 cm³",
+              "puissance_ch": 300,
+              "boite": [
+                "Getrag manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et suralimentation du six-cylindres M30 Alpina",
+                  "symptomes": [
+                    "Pression d’huile basse",
+                    "Fumée bleue",
+                    "Cliquetis, surchauffe ou pression de turbo instable"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km, beaucoup plus tôt en usage soutenu ou sans chauffe/refroidissement",
+                  "diagnostic": "Authentifier le moteur Alpina et la préparation exacte, mesurer compressions/leak-down et pression d’huile, contrôler turbo KKK, jeu d’axe, wastegate, échangeur, durites, pompe/radiateur, joint de culasse, arbre à cames/culbuteurs et réglage d’injection/allumage sur banc avec richesse et cliquetis surveillés",
+                  "piece_concernee": "BMW M30 turbocompressé et gestion Alpina",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sur véhicule modifié, mal réglé ou sans historique",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte manuelle, arbre et différentiel autobloquant",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection dure",
+                    "Claquement, vibration ou motricité irrégulière"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km selon couple et usage",
+                  "diagnostic": "Identifier la boîte Getrag et son étagement, contrôler embrayage/volant, synchros, supports, flector, palier d’arbre, cardans, huile et précharge du différentiel Alpina ; essayer en charge sans à-coups et rechercher pièces non conformes",
+                  "piece_concernee": "Chaîne cinématique B7 Turbo historique",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure très dépendante de l’usage et des modifications",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 20 000 €"
+                },
+                {
+                  "probleme": "Corrosion, trains roulants, freinage et authenticité Alpina",
+                  "symptomes": [
+                    "Rouille aux ancrages",
+                    "Flottement",
+                    "Vibration au freinage ou numéros incohérents"
+                  ],
+                  "kilometrage_apparition": "Contrôle systématique avant acquisition",
+                  "diagnostic": "Comparer plaque Alpina, numéro de production, VIN BMW, moteur, boîte, teinte, jantes et dossier aux archives ; inspecter chapelles, bas de caisse, planchers, longerons, supports d’essieu, amortisseurs/ressorts Alpina, silentblocs, direction et freins majorés ; mesurer géométrie et épaisseur des disques",
+                  "piece_concernee": "Coque E12/E24/E28 et équipements Alpina",
+                  "gravite": "Critique pour sécurité, provenance et valeur",
+                  "frequence": "Risque élevé vu rareté, corrosion et répliques",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 50 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "B7 S Turbo 3.5 — 330 ch",
+              "code_moteur": "Alpina B7 S Turbo M30",
+              "cylindree": "3 453 cm³",
+              "puissance_ch": 330,
+              "boite": [
+                "Getrag manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et suralimentation du six-cylindres M30 Alpina",
+                  "symptomes": [
+                    "Pression d’huile basse",
+                    "Fumée bleue",
+                    "Cliquetis, surchauffe ou pression de turbo instable"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km, beaucoup plus tôt en usage soutenu ou sans chauffe/refroidissement",
+                  "diagnostic": "Authentifier le moteur Alpina et la préparation exacte, mesurer compressions/leak-down et pression d’huile, contrôler turbo KKK, jeu d’axe, wastegate, échangeur, durites, pompe/radiateur, joint de culasse, arbre à cames/culbuteurs et réglage d’injection/allumage sur banc avec richesse et cliquetis surveillés",
+                  "piece_concernee": "BMW M30 turbocompressé et gestion Alpina",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sur véhicule modifié, mal réglé ou sans historique",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte manuelle, arbre et différentiel autobloquant",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection dure",
+                    "Claquement, vibration ou motricité irrégulière"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km selon couple et usage",
+                  "diagnostic": "Identifier la boîte Getrag et son étagement, contrôler embrayage/volant, synchros, supports, flector, palier d’arbre, cardans, huile et précharge du différentiel Alpina ; essayer en charge sans à-coups et rechercher pièces non conformes",
+                  "piece_concernee": "Chaîne cinématique B7 Turbo historique",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure très dépendante de l’usage et des modifications",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 20 000 €"
+                },
+                {
+                  "probleme": "Corrosion, trains roulants, freinage et authenticité Alpina",
+                  "symptomes": [
+                    "Rouille aux ancrages",
+                    "Flottement",
+                    "Vibration au freinage ou numéros incohérents"
+                  ],
+                  "kilometrage_apparition": "Contrôle systématique avant acquisition",
+                  "diagnostic": "Comparer plaque Alpina, numéro de production, VIN BMW, moteur, boîte, teinte, jantes et dossier aux archives ; inspecter chapelles, bas de caisse, planchers, longerons, supports d’essieu, amortisseurs/ressorts Alpina, silentblocs, direction et freins majorés ; mesurer géométrie et épaisseur des disques",
+                  "piece_concernee": "Coque E12/E24/E28 et équipements Alpina",
+                  "gravite": "Critique pour sécurité, provenance et valeur",
+                  "frequence": "Risque élevé vu rareté, corrosion et répliques",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 50 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "E24 B7 Turbo Coupé",
+          "annees": "1978–1988",
+          "phases": [
+            "Les versions Coupé et Coupé/1 diffèrent par cylindrée et puissance ; contrôler le dossier usine plutôt qu’une apparence extérieure."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "B7 Turbo Coupé 3.0 — 300 ch",
+              "code_moteur": "Alpina B7 Turbo M30 E24",
+              "cylindree": "2 986 cm³",
+              "puissance_ch": 300,
+              "boite": [
+                "Getrag manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et suralimentation du six-cylindres M30 Alpina",
+                  "symptomes": [
+                    "Pression d’huile basse",
+                    "Fumée bleue",
+                    "Cliquetis, surchauffe ou pression de turbo instable"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km, beaucoup plus tôt en usage soutenu ou sans chauffe/refroidissement",
+                  "diagnostic": "Authentifier le moteur Alpina et la préparation exacte, mesurer compressions/leak-down et pression d’huile, contrôler turbo KKK, jeu d’axe, wastegate, échangeur, durites, pompe/radiateur, joint de culasse, arbre à cames/culbuteurs et réglage d’injection/allumage sur banc avec richesse et cliquetis surveillés",
+                  "piece_concernee": "BMW M30 turbocompressé et gestion Alpina",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sur véhicule modifié, mal réglé ou sans historique",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte manuelle, arbre et différentiel autobloquant",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection dure",
+                    "Claquement, vibration ou motricité irrégulière"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km selon couple et usage",
+                  "diagnostic": "Identifier la boîte Getrag et son étagement, contrôler embrayage/volant, synchros, supports, flector, palier d’arbre, cardans, huile et précharge du différentiel Alpina ; essayer en charge sans à-coups et rechercher pièces non conformes",
+                  "piece_concernee": "Chaîne cinématique B7 Turbo historique",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure très dépendante de l’usage et des modifications",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 20 000 €"
+                },
+                {
+                  "probleme": "Corrosion, trains roulants, freinage et authenticité Alpina",
+                  "symptomes": [
+                    "Rouille aux ancrages",
+                    "Flottement",
+                    "Vibration au freinage ou numéros incohérents"
+                  ],
+                  "kilometrage_apparition": "Contrôle systématique avant acquisition",
+                  "diagnostic": "Comparer plaque Alpina, numéro de production, VIN BMW, moteur, boîte, teinte, jantes et dossier aux archives ; inspecter chapelles, bas de caisse, planchers, longerons, supports d’essieu, amortisseurs/ressorts Alpina, silentblocs, direction et freins majorés ; mesurer géométrie et épaisseur des disques",
+                  "piece_concernee": "Coque E12/E24/E28 et équipements Alpina",
+                  "gravite": "Critique pour sécurité, provenance et valeur",
+                  "frequence": "Risque élevé vu rareté, corrosion et répliques",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 50 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "B7 Turbo Coupé/1 3.5 — 330 ch",
+              "code_moteur": "Alpina B7 Turbo/1 M30",
+              "cylindree": "3 430 cm³",
+              "puissance_ch": 330,
+              "boite": [
+                "Getrag manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et suralimentation du six-cylindres M30 Alpina",
+                  "symptomes": [
+                    "Pression d’huile basse",
+                    "Fumée bleue",
+                    "Cliquetis, surchauffe ou pression de turbo instable"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km, beaucoup plus tôt en usage soutenu ou sans chauffe/refroidissement",
+                  "diagnostic": "Authentifier le moteur Alpina et la préparation exacte, mesurer compressions/leak-down et pression d’huile, contrôler turbo KKK, jeu d’axe, wastegate, échangeur, durites, pompe/radiateur, joint de culasse, arbre à cames/culbuteurs et réglage d’injection/allumage sur banc avec richesse et cliquetis surveillés",
+                  "piece_concernee": "BMW M30 turbocompressé et gestion Alpina",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sur véhicule modifié, mal réglé ou sans historique",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte manuelle, arbre et différentiel autobloquant",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection dure",
+                    "Claquement, vibration ou motricité irrégulière"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km selon couple et usage",
+                  "diagnostic": "Identifier la boîte Getrag et son étagement, contrôler embrayage/volant, synchros, supports, flector, palier d’arbre, cardans, huile et précharge du différentiel Alpina ; essayer en charge sans à-coups et rechercher pièces non conformes",
+                  "piece_concernee": "Chaîne cinématique B7 Turbo historique",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure très dépendante de l’usage et des modifications",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 20 000 €"
+                },
+                {
+                  "probleme": "Corrosion, trains roulants, freinage et authenticité Alpina",
+                  "symptomes": [
+                    "Rouille aux ancrages",
+                    "Flottement",
+                    "Vibration au freinage ou numéros incohérents"
+                  ],
+                  "kilometrage_apparition": "Contrôle systématique avant acquisition",
+                  "diagnostic": "Comparer plaque Alpina, numéro de production, VIN BMW, moteur, boîte, teinte, jantes et dossier aux archives ; inspecter chapelles, bas de caisse, planchers, longerons, supports d’essieu, amortisseurs/ressorts Alpina, silentblocs, direction et freins majorés ; mesurer géométrie et épaisseur des disques",
+                  "piece_concernee": "Coque E12/E24/E28 et équipements Alpina",
+                  "gravite": "Critique pour sécurité, provenance et valeur",
+                  "frequence": "Risque élevé vu rareté, corrosion et répliques",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 50 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "E28 B7 Turbo / Turbo/1",
+          "annees": "1984–1987",
+          "phases": [
+            "Puissance et équipement varient selon Turbo et Turbo/1 ; vérifier numéro Alpina et fiche de production."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "B7 Turbo 3.0 — 300 ch",
+              "code_moteur": "Alpina B7 Turbo M30 E28",
+              "cylindree": "2 986 cm³",
+              "puissance_ch": 300,
+              "boite": [
+                "Getrag manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et suralimentation du six-cylindres M30 Alpina",
+                  "symptomes": [
+                    "Pression d’huile basse",
+                    "Fumée bleue",
+                    "Cliquetis, surchauffe ou pression de turbo instable"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km, beaucoup plus tôt en usage soutenu ou sans chauffe/refroidissement",
+                  "diagnostic": "Authentifier le moteur Alpina et la préparation exacte, mesurer compressions/leak-down et pression d’huile, contrôler turbo KKK, jeu d’axe, wastegate, échangeur, durites, pompe/radiateur, joint de culasse, arbre à cames/culbuteurs et réglage d’injection/allumage sur banc avec richesse et cliquetis surveillés",
+                  "piece_concernee": "BMW M30 turbocompressé et gestion Alpina",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sur véhicule modifié, mal réglé ou sans historique",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte manuelle, arbre et différentiel autobloquant",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection dure",
+                    "Claquement, vibration ou motricité irrégulière"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km selon couple et usage",
+                  "diagnostic": "Identifier la boîte Getrag et son étagement, contrôler embrayage/volant, synchros, supports, flector, palier d’arbre, cardans, huile et précharge du différentiel Alpina ; essayer en charge sans à-coups et rechercher pièces non conformes",
+                  "piece_concernee": "Chaîne cinématique B7 Turbo historique",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure très dépendante de l’usage et des modifications",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 20 000 €"
+                },
+                {
+                  "probleme": "Corrosion, trains roulants, freinage et authenticité Alpina",
+                  "symptomes": [
+                    "Rouille aux ancrages",
+                    "Flottement",
+                    "Vibration au freinage ou numéros incohérents"
+                  ],
+                  "kilometrage_apparition": "Contrôle systématique avant acquisition",
+                  "diagnostic": "Comparer plaque Alpina, numéro de production, VIN BMW, moteur, boîte, teinte, jantes et dossier aux archives ; inspecter chapelles, bas de caisse, planchers, longerons, supports d’essieu, amortisseurs/ressorts Alpina, silentblocs, direction et freins majorés ; mesurer géométrie et épaisseur des disques",
+                  "piece_concernee": "Coque E12/E24/E28 et équipements Alpina",
+                  "gravite": "Critique pour sécurité, provenance et valeur",
+                  "frequence": "Risque élevé vu rareté, corrosion et répliques",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 50 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "B7 Turbo/1 3.5 — 320 ch",
+              "code_moteur": "Alpina B7 Turbo/1 M30 E28",
+              "cylindree": "3 430 cm³",
+              "puissance_ch": 320,
+              "boite": [
+                "Getrag manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et suralimentation du six-cylindres M30 Alpina",
+                  "symptomes": [
+                    "Pression d’huile basse",
+                    "Fumée bleue",
+                    "Cliquetis, surchauffe ou pression de turbo instable"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km, beaucoup plus tôt en usage soutenu ou sans chauffe/refroidissement",
+                  "diagnostic": "Authentifier le moteur Alpina et la préparation exacte, mesurer compressions/leak-down et pression d’huile, contrôler turbo KKK, jeu d’axe, wastegate, échangeur, durites, pompe/radiateur, joint de culasse, arbre à cames/culbuteurs et réglage d’injection/allumage sur banc avec richesse et cliquetis surveillés",
+                  "piece_concernee": "BMW M30 turbocompressé et gestion Alpina",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sur véhicule modifié, mal réglé ou sans historique",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte manuelle, arbre et différentiel autobloquant",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection dure",
+                    "Claquement, vibration ou motricité irrégulière"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km selon couple et usage",
+                  "diagnostic": "Identifier la boîte Getrag et son étagement, contrôler embrayage/volant, synchros, supports, flector, palier d’arbre, cardans, huile et précharge du différentiel Alpina ; essayer en charge sans à-coups et rechercher pièces non conformes",
+                  "piece_concernee": "Chaîne cinématique B7 Turbo historique",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure très dépendante de l’usage et des modifications",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 20 000 €"
+                },
+                {
+                  "probleme": "Corrosion, trains roulants, freinage et authenticité Alpina",
+                  "symptomes": [
+                    "Rouille aux ancrages",
+                    "Flottement",
+                    "Vibration au freinage ou numéros incohérents"
+                  ],
+                  "kilometrage_apparition": "Contrôle systématique avant acquisition",
+                  "diagnostic": "Comparer plaque Alpina, numéro de production, VIN BMW, moteur, boîte, teinte, jantes et dossier aux archives ; inspecter chapelles, bas de caisse, planchers, longerons, supports d’essieu, amortisseurs/ressorts Alpina, silentblocs, direction et freins majorés ; mesurer géométrie et épaisseur des disques",
+                  "piece_concernee": "Coque E12/E24/E28 et équipements Alpina",
+                  "gravite": "Critique pour sécurité, provenance et valeur",
+                  "frequence": "Risque élevé vu rareté, corrosion et répliques",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 50 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "E65/E66",
+          "annees": "2004–2008",
+          "phases": [
+            "Première B7 moderne à compresseur centrifuge ; valeur commerciale souvent exprimée en 500 hp SAE selon marché."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "B7 4.4 Kompressor — 500 ch",
+              "code_moteur": "Alpina H1",
+              "cylindree": "4 398 cm³",
+              "puissance_ch": 500,
+              "boite": [
+                "ZF 6HP26 Switch-Tronic 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fuites, refroidissement et suralimentation du V8 H1 compressé",
+                  "symptomes": [
+                    "Fumée au redémarrage",
+                    "Consommation d’huile",
+                    "Surchauffe, sifflement ou puissance réduite"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 160 000 km",
+                  "diagnostic": "Lire BMW/Alpina, contrôler compressions, consommation d’huile, joints de queues de soupapes, couvre-culasses, alternator bracket, tube de transfert et circuit de refroidissement ; inspecter compresseur centrifuge, courroie, poulies, lubrification, échangeur et étanchéité d’admission",
+                  "piece_concernee": "V8 Alpina H1 4,4 litres à compresseur",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente à kilométrage élevé",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 20 000 €"
+                },
+                {
+                  "probleme": "Boîte ZF 6HP, convertisseur et différentiel",
+                  "symptomes": [
+                    "À-coups à froid",
+                    "Patinage",
+                    "Vibration de verrouillage ou fuite au carter"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 180 000 km sans vidange documentée",
+                  "diagnostic": "Lire adaptations/pressions et température, contrôler carter-crépine, manchon mécatronique, solénoïdes, convertisseur, supports, flector, arbre et pont ; réaliser vidange par procédure ZF si l’état mécanique le permet, puis apprentissages",
+                  "piece_concernee": "ZF 6HP26 Switch-Tronic et transmission arrière",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente sans entretien préventif",
+                  "cout_reparation_estime": "Élevé : environ 700 à 8 000 €"
+                },
+                {
+                  "probleme": "Électronique E65, Dynamic Drive et suspension pilotée",
+                  "symptomes": [
+                    "Décharge batterie",
+                    "Messages multiples",
+                    "Caisse basse ou roulis anormal"
+                  ],
+                  "kilometrage_apparition": "Souvent après 10 ans ou 120 000 km",
+                  "diagnostic": "Tester batterie/alternateur et repos réseau, lire tous calculateurs, contrôler fibres MOST, modules exposés à l’eau, IBS, capteurs ; vérifier fuites du Dynamic Drive, amortisseurs pilotés, bras/silentblocs, compresseur et boudins arrière sur version longue, puis calibrer hauteur et géométrie",
+                  "piece_concernee": "Réseau électrique, suspension et stabilisation active",
+                  "gravite": "Majeure à critique si tenue de route affectée",
+                  "frequence": "Fréquente sur E65/E66 vieillissante",
+                  "cout_reparation_estime": "Élevé : environ 500 à 12 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "F01/F02 phase 1",
+          "annees": "2009–2011",
+          "phases": [
+            "507 ch DIN ; empattement court/long et transmission dépendent du marché."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "B7 Bi-Turbo 4.4 — 507 ch",
+              "code_moteur": "Alpina N63 B7 phase 1",
+              "cylindree": "4 395 cm³",
+              "puissance_ch": 507,
+              "boite": [
+                "ZF 6HP Switch-Tronic 6 rapports, propulsion ou xDrive"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Circuit d’huile/refroidissement, turbos et injection du V8 biturbo Alpina",
+                  "symptomes": [
+                    "Consommation d’huile ou liquide",
+                    "Ratés",
+                    "Fumée, surchauffe ou défaut de pression de suralimentation"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 160 000 km ; plus tôt avec intervalles longs ou forte charge",
+                  "diagnostic": "Lire ISTA/Alpina avec compteurs de ratés, adaptations et pressions, contrôler fuites du V chaud, pompes électriques, durites, échangeurs, turbos, retours d’huile, injecteurs/index, bougies/bobines, chaîne et ventilation de carter ; analyser huile et réaliser essai en charge surveillé",
+                  "piece_concernee": "V8 4,4 biturbo N63 préparé Alpina",
+                  "gravite": "Critique en cas de surchauffe, manque d’huile ou cliquetis",
+                  "frequence": "Assez fréquente à fort kilométrage ou entretien espacé",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "ZF 6HP/8HP, xDrive et chaîne cinématique à fort couple",
+                  "symptomes": [
+                    "À-coups",
+                    "Patinage",
+                    "Vibration ou pneus qui ripent en braquage"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 180 000 km sans entretien",
+                  "diagnostic": "Identifier 6HP ou 8HP et propulsion/xDrive, lire adaptations/températures, contrôler huile/carter, mécatronique et convertisseur ; vérifier flectors, arbres, cardans, différentiels et boîte de transfert, usure/circonférence identique des quatre pneus, puis apprentissages après intervention",
+                  "piece_concernee": "Transmission Switch-Tronic et xDrive selon génération",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sans vidanges et avec pneus dépareillés",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 15 000 €"
+                },
+                {
+                  "probleme": "Suspension Alpina, freins, direction, batteries et aides à la conduite",
+                  "symptomes": [
+                    "Usure irrégulière des pneus",
+                    "Claquement",
+                    "Vibration, caisse basse ou alertes intermittentes"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 160 000 km ou après choc",
+                  "diagnostic": "Contrôler jantes/pneus homologués, bras, silentblocs, amortisseurs pilotés, coussins/compresseur, géométrie et freins ; tester batteries AGM, charge et repos réseau, lire modules ; sur G12, vérifier intégral active steering, xDrive, capteurs radar/caméra et calibrations après pare-brise ou géométrie",
+                  "piece_concernee": "Châssis adaptatif et électronique B7",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente vu masse, performances et complexité",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 15 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "F01/F02 LCI",
+          "annees": "2012–2015",
+          "phases": [
+            "Version restylée portée à 540 ch ; ne pas la fusionner avec la phase 507 ch."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "B7 Bi-Turbo 4.4 LCI — 540 ch",
+              "code_moteur": "Alpina N63 B7 LCI",
+              "cylindree": "4 395 cm³",
+              "puissance_ch": 540,
+              "boite": [
+                "ZF 8HP Switch-Tronic 8 rapports, propulsion ou xDrive"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Circuit d’huile/refroidissement, turbos et injection du V8 biturbo Alpina",
+                  "symptomes": [
+                    "Consommation d’huile ou liquide",
+                    "Ratés",
+                    "Fumée, surchauffe ou défaut de pression de suralimentation"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 160 000 km ; plus tôt avec intervalles longs ou forte charge",
+                  "diagnostic": "Lire ISTA/Alpina avec compteurs de ratés, adaptations et pressions, contrôler fuites du V chaud, pompes électriques, durites, échangeurs, turbos, retours d’huile, injecteurs/index, bougies/bobines, chaîne et ventilation de carter ; analyser huile et réaliser essai en charge surveillé",
+                  "piece_concernee": "V8 4,4 biturbo N63 préparé Alpina",
+                  "gravite": "Critique en cas de surchauffe, manque d’huile ou cliquetis",
+                  "frequence": "Assez fréquente à fort kilométrage ou entretien espacé",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "ZF 6HP/8HP, xDrive et chaîne cinématique à fort couple",
+                  "symptomes": [
+                    "À-coups",
+                    "Patinage",
+                    "Vibration ou pneus qui ripent en braquage"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 180 000 km sans entretien",
+                  "diagnostic": "Identifier 6HP ou 8HP et propulsion/xDrive, lire adaptations/températures, contrôler huile/carter, mécatronique et convertisseur ; vérifier flectors, arbres, cardans, différentiels et boîte de transfert, usure/circonférence identique des quatre pneus, puis apprentissages après intervention",
+                  "piece_concernee": "Transmission Switch-Tronic et xDrive selon génération",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sans vidanges et avec pneus dépareillés",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 15 000 €"
+                },
+                {
+                  "probleme": "Suspension Alpina, freins, direction, batteries et aides à la conduite",
+                  "symptomes": [
+                    "Usure irrégulière des pneus",
+                    "Claquement",
+                    "Vibration, caisse basse ou alertes intermittentes"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 160 000 km ou après choc",
+                  "diagnostic": "Contrôler jantes/pneus homologués, bras, silentblocs, amortisseurs pilotés, coussins/compresseur, géométrie et freins ; tester batteries AGM, charge et repos réseau, lire modules ; sur G12, vérifier intégral active steering, xDrive, capteurs radar/caméra et calibrations après pare-brise ou géométrie",
+                  "piece_concernee": "Châssis adaptatif et électronique B7",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente vu masse, performances et complexité",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 15 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "G12 phase 1",
+          "annees": "2016–2018",
+          "phases": [
+            "Version européenne 608 ch ; certains marchés annoncent 600 hp SAE."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "B7 Bi-Turbo 4.4 xDrive — 608 ch",
+              "code_moteur": "Alpina N63M30",
+              "cylindree": "4 395 cm³",
+              "puissance_ch": 608,
+              "boite": [
+                "ZF 8HP75 Switch-Tronic 8 rapports, transmission intégrale"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Circuit d’huile/refroidissement, turbos et injection du V8 biturbo Alpina",
+                  "symptomes": [
+                    "Consommation d’huile ou liquide",
+                    "Ratés",
+                    "Fumée, surchauffe ou défaut de pression de suralimentation"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 160 000 km ; plus tôt avec intervalles longs ou forte charge",
+                  "diagnostic": "Lire ISTA/Alpina avec compteurs de ratés, adaptations et pressions, contrôler fuites du V chaud, pompes électriques, durites, échangeurs, turbos, retours d’huile, injecteurs/index, bougies/bobines, chaîne et ventilation de carter ; analyser huile et réaliser essai en charge surveillé",
+                  "piece_concernee": "V8 4,4 biturbo N63 préparé Alpina",
+                  "gravite": "Critique en cas de surchauffe, manque d’huile ou cliquetis",
+                  "frequence": "Assez fréquente à fort kilométrage ou entretien espacé",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "ZF 6HP/8HP, xDrive et chaîne cinématique à fort couple",
+                  "symptomes": [
+                    "À-coups",
+                    "Patinage",
+                    "Vibration ou pneus qui ripent en braquage"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 180 000 km sans entretien",
+                  "diagnostic": "Identifier 6HP ou 8HP et propulsion/xDrive, lire adaptations/températures, contrôler huile/carter, mécatronique et convertisseur ; vérifier flectors, arbres, cardans, différentiels et boîte de transfert, usure/circonférence identique des quatre pneus, puis apprentissages après intervention",
+                  "piece_concernee": "Transmission Switch-Tronic et xDrive selon génération",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sans vidanges et avec pneus dépareillés",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 15 000 €"
+                },
+                {
+                  "probleme": "Suspension Alpina, freins, direction, batteries et aides à la conduite",
+                  "symptomes": [
+                    "Usure irrégulière des pneus",
+                    "Claquement",
+                    "Vibration, caisse basse ou alertes intermittentes"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 160 000 km ou après choc",
+                  "diagnostic": "Contrôler jantes/pneus homologués, bras, silentblocs, amortisseurs pilotés, coussins/compresseur, géométrie et freins ; tester batteries AGM, charge et repos réseau, lire modules ; sur G12, vérifier intégral active steering, xDrive, capteurs radar/caméra et calibrations après pare-brise ou géométrie",
+                  "piece_concernee": "Châssis adaptatif et électronique B7",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente vu masse, performances et complexité",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 15 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "G12 LCI",
+          "annees": "2019–2022",
+          "phases": [
+            "Restylage G12 conservant 608 ch DIN, avec châssis et aides à la conduite actualisés."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "B7 Bi-Turbo 4.4 xDrive LCI — 608 ch",
+              "code_moteur": "Alpina N63M30 LCI",
+              "cylindree": "4 395 cm³",
+              "puissance_ch": 608,
+              "boite": [
+                "ZF 8HP75 Switch-Tronic 8 rapports, transmission intégrale"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Circuit d’huile/refroidissement, turbos et injection du V8 biturbo Alpina",
+                  "symptomes": [
+                    "Consommation d’huile ou liquide",
+                    "Ratés",
+                    "Fumée, surchauffe ou défaut de pression de suralimentation"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 160 000 km ; plus tôt avec intervalles longs ou forte charge",
+                  "diagnostic": "Lire ISTA/Alpina avec compteurs de ratés, adaptations et pressions, contrôler fuites du V chaud, pompes électriques, durites, échangeurs, turbos, retours d’huile, injecteurs/index, bougies/bobines, chaîne et ventilation de carter ; analyser huile et réaliser essai en charge surveillé",
+                  "piece_concernee": "V8 4,4 biturbo N63 préparé Alpina",
+                  "gravite": "Critique en cas de surchauffe, manque d’huile ou cliquetis",
+                  "frequence": "Assez fréquente à fort kilométrage ou entretien espacé",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "ZF 6HP/8HP, xDrive et chaîne cinématique à fort couple",
+                  "symptomes": [
+                    "À-coups",
+                    "Patinage",
+                    "Vibration ou pneus qui ripent en braquage"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 180 000 km sans entretien",
+                  "diagnostic": "Identifier 6HP ou 8HP et propulsion/xDrive, lire adaptations/températures, contrôler huile/carter, mécatronique et convertisseur ; vérifier flectors, arbres, cardans, différentiels et boîte de transfert, usure/circonférence identique des quatre pneus, puis apprentissages après intervention",
+                  "piece_concernee": "Transmission Switch-Tronic et xDrive selon génération",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sans vidanges et avec pneus dépareillés",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 15 000 €"
+                },
+                {
+                  "probleme": "Suspension Alpina, freins, direction, batteries et aides à la conduite",
+                  "symptomes": [
+                    "Usure irrégulière des pneus",
+                    "Claquement",
+                    "Vibration, caisse basse ou alertes intermittentes"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 160 000 km ou après choc",
+                  "diagnostic": "Contrôler jantes/pneus homologués, bras, silentblocs, amortisseurs pilotés, coussins/compresseur, géométrie et freins ; tester batteries AGM, charge et repos réseau, lire modules ; sur G12, vérifier intégral active steering, xDrive, capteurs radar/caméra et calibrations après pare-brise ou géométrie",
+                  "piece_concernee": "Châssis adaptatif et électronique B7",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente vu masse, performances et complexité",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 15 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.alpina-automobiles.com/en/product-world/model-history/bmw-7-series/bmw-7-series-f0102/",
+        "https://www.alpina-automobiles.com/fileadmin/user_upload/PDF_Brochure/ALPINA_Models/2018_07_INT/B7_BITURBO/epaper/ausgabe.pdf",
+        "https://www.alpina-automobiles.com/fileadmin/user_upload/PDF_Brochure/ALPINA_Models/2021_11_INT/B7/epaper/ausgabe.pdf",
+        "https://www.alpina-archive.com/?page_id=175"
+      ]
+    }
+  ],
+  "source_catalogue": "VehiclesDB 2026.08.2 (CC-BY 4.0)"
+}
