@@ -1,0 +1,72 @@
+{
+  "nom": "Tramontana",
+  "modeles": [
+    {
+      "nom": "R",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "5.5 V12 Biturbo — 720 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 720,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Contrôle de l’état mécanique, de l’entretien et de la disponibilité des pièces",
+                  "symptomes": [
+                    "Bruit",
+                    "Voyant",
+                    "Fonctionnement irrégulier"
+                  ],
+                  "kilometrage_apparition": "Variable selon âge, usage et entretien.",
+                  "diagnostic": "Inspection atelier, essai routier et lecture des défauts lorsqu’elle est disponible.",
+                  "piece_concernee": "Groupe motopropulseur et périphériques",
+                  "gravite": "À évaluer selon le défaut relevé",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Sécurité active : freinage, direction et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Jeu"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque expertise.",
+                  "diagnostic": "Contrôle des jeux, pneus, freins et géométrie.",
+                  "piece_concernee": "Trains roulants et freinage",
+                  "gravite": "Majeure si sécurité affectée",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Circuit électrique et alimentation",
+                  "symptomes": [
+                    "Message au combiné",
+                    "Démarrage difficile"
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Test de batterie, charge et connectiques.",
+                  "piece_concernee": "Circuit électrique",
+                  "gravite": "À évaluer",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

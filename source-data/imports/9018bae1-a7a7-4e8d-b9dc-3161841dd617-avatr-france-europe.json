@@ -1,0 +1,302 @@
+{
+  "nom": "Avatr",
+  "modeles": [
+    {
+      "nom": "11",
+      "generations": [
+        {
+          "code_chassis": "E11 première série BEV",
+          "annees": "2022–2024",
+          "phases": [
+            "Première configuration commerciale : confirmer batterie 90 ou 116 kWh, nombre de places et marché d’homologation"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "BEV propulsion, moteur arrière 230 kW — 313 ch",
+              "code_moteur": "Huawei DriveONE arrière 230 kW",
+              "cylindree": "Sans cylindrée — batterie CATL 90/116 kWh selon version",
+              "puissance_ch": 313,
+              "boite": [
+                "Réducteur mono-rapport, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie haute tension, équilibre des cellules et circuit thermique",
+                  "symptomes": [
+                    "Autonomie en baisse",
+                    "Recharge limitée",
+                    "Écart de température ou de tension entre modules"
+                  ],
+                  "kilometrage_apparition": "Dès 80 000 à 160 000 km ou après stockage prolongé à charge extrême ; vieillissement très dépendant du climat et des cycles rapides",
+                  "diagnostic": "Lire SOH, tensions minimales/maximales et températures avec l’outil compatible ; effectuer un essai de capacité, contrôler l’isolement, les contacteurs, le liquide, les pompes, les vannes et les échangeurs sans ouvrir la batterie hors procédure HV",
+                  "piece_concernee": "Batterie CATL, BMS et refroidissement haute tension",
+                  "gravite": "Majeure à critique en cas de défaut d’isolement ou de cellule",
+                  "frequence": "Parc européen encore trop récent pour une fréquence robuste",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 1 000 à plus de 30 000 € selon module ou batterie complète"
+                },
+                {
+                  "probleme": "Chaîne de traction Huawei DriveONE, onduleurs et réducteurs",
+                  "symptomes": [
+                    "Bruit de roulement",
+                    "À-coups",
+                    "Puissance réduite ou défaut de propulsion"
+                  ],
+                  "kilometrage_apparition": "Variable ; contrôle renforcé après choc sous caisse, passage dans l’eau ou usage intensif",
+                  "diagnostic": "Lire les défauts propulsion, comparer les couples avant/arrière, contrôler températures et isolement, inspecter carters, supports, connecteurs orange, refroidissement, étanchéité des réducteurs et particules dans l’huile si procédure disponible",
+                  "piece_concernee": "Moteur(s) électrique(s), onduleur(s) et réducteur(s)",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Non établie sur le parc actuel",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 18 000 € par ensemble"
+                },
+                {
+                  "probleme": "Architecture 800 V, charge rapide, ADAS et réseau électronique",
+                  "symptomes": [
+                    "Charge impossible ou lente",
+                    "Alertes caméra/lidar",
+                    "Écran noir ou fonctions intermittentes"
+                  ],
+                  "kilometrage_apparition": "Variable, souvent après mise à jour, batterie 12 V faible, choc ou défaut de borne",
+                  "diagnostic": "Tester batterie basse tension et convertisseur DC/DC, lire tous calculateurs, contrôler CCS, verrouillage et communication borne, vérifier campagnes logicielles, calibrations lidar/caméras/radars et absence de réparation structurelle hors tolérance",
+                  "piece_concernee": "Chargeur embarqué, DC/DC, connecteur de charge et capteurs ADAS",
+                  "gravite": "Majeure ; critique si assistance de conduite ou isolement affecté",
+                  "frequence": "Occasionnelle, données européennes limitées",
+                  "cout_reparation_estime": "Modéré à très élevé : environ 300 à 12 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Électrique",
+              "nom": "BEV intégrale, moteurs 195 + 230 kW — 578 ch",
+              "code_moteur": "Huawei DriveONE avant 195 kW + arrière 230 kW",
+              "cylindree": "Sans cylindrée — batterie CATL 116 kWh",
+              "puissance_ch": 578,
+              "boite": [
+                "Réducteurs mono-rapport, transmission intégrale"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie haute tension, équilibre des cellules et circuit thermique",
+                  "symptomes": [
+                    "Autonomie en baisse",
+                    "Recharge limitée",
+                    "Écart de température ou de tension entre modules"
+                  ],
+                  "kilometrage_apparition": "Dès 80 000 à 160 000 km ou après stockage prolongé à charge extrême ; vieillissement très dépendant du climat et des cycles rapides",
+                  "diagnostic": "Lire SOH, tensions minimales/maximales et températures avec l’outil compatible ; effectuer un essai de capacité, contrôler l’isolement, les contacteurs, le liquide, les pompes, les vannes et les échangeurs sans ouvrir la batterie hors procédure HV",
+                  "piece_concernee": "Batterie CATL, BMS et refroidissement haute tension",
+                  "gravite": "Majeure à critique en cas de défaut d’isolement ou de cellule",
+                  "frequence": "Parc européen encore trop récent pour une fréquence robuste",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 1 000 à plus de 30 000 € selon module ou batterie complète"
+                },
+                {
+                  "probleme": "Chaîne de traction Huawei DriveONE, onduleurs et réducteurs",
+                  "symptomes": [
+                    "Bruit de roulement",
+                    "À-coups",
+                    "Puissance réduite ou défaut de propulsion"
+                  ],
+                  "kilometrage_apparition": "Variable ; contrôle renforcé après choc sous caisse, passage dans l’eau ou usage intensif",
+                  "diagnostic": "Lire les défauts propulsion, comparer les couples avant/arrière, contrôler températures et isolement, inspecter carters, supports, connecteurs orange, refroidissement, étanchéité des réducteurs et particules dans l’huile si procédure disponible",
+                  "piece_concernee": "Moteur(s) électrique(s), onduleur(s) et réducteur(s)",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Non établie sur le parc actuel",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 18 000 € par ensemble"
+                },
+                {
+                  "probleme": "Architecture 800 V, charge rapide, ADAS et réseau électronique",
+                  "symptomes": [
+                    "Charge impossible ou lente",
+                    "Alertes caméra/lidar",
+                    "Écran noir ou fonctions intermittentes"
+                  ],
+                  "kilometrage_apparition": "Variable, souvent après mise à jour, batterie 12 V faible, choc ou défaut de borne",
+                  "diagnostic": "Tester batterie basse tension et convertisseur DC/DC, lire tous calculateurs, contrôler CCS, verrouillage et communication borne, vérifier campagnes logicielles, calibrations lidar/caméras/radars et absence de réparation structurelle hors tolérance",
+                  "piece_concernee": "Chargeur embarqué, DC/DC, connecteur de charge et capteurs ADAS",
+                  "gravite": "Majeure ; critique si assistance de conduite ou isolement affecté",
+                  "frequence": "Occasionnelle, données européennes limitées",
+                  "cout_reparation_estime": "Modéré à très élevé : environ 300 à 12 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "E11 évolution 800 V",
+          "annees": "2025–aujourd’hui",
+          "phases": [
+            "Architecture 800 V SiC ; valeurs constructeur 231/237/402 kW converties en chevaux métriques et non fusionnées"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride essence à prolongateur d’autonomie",
+              "nom": "REEV propulsion, moteur arrière 231 kW — 314 ch",
+              "code_moteur": "Kunlun REEV 1.5T générateur + moteur arrière 231 kW",
+              "cylindree": "1 499 cm³ (prolongateur) + batterie LFP 39,05 kWh",
+              "puissance_ch": 314,
+              "boite": [
+                "Réducteur mono-rapport, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Prolongateur 1.5 turbo, carburant ancien et gestion thermique partagée",
+                  "symptomes": [
+                    "Démarrage du thermique difficile",
+                    "Vibrations",
+                    "Consommation élevée ou message prolongateur"
+                  ],
+                  "kilometrage_apparition": "Variable ; risque accru après longs trajets uniquement électriques ou carburant stocké plusieurs mois",
+                  "diagnostic": "Lire compteurs d’heures et défauts, analyser huile et carburant, contrôler injection, allumage, turbo, échappement, refroidissement et déclenchement automatique du groupe ; confirmer que le thermique ne transmet pas directement le couple aux roues",
+                  "piece_concernee": "Moteur 1.5 turbo Kunlun utilisé comme générateur",
+                  "gravite": "Majeure",
+                  "frequence": "Non établie sur le parc récent",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Batterie LFP 39,05 kWh, isolement et recharge 3C",
+                  "symptomes": [
+                    "Autonomie EV réduite",
+                    "Recharge rapide bridée",
+                    "Alerte batterie ou température"
+                  ],
+                  "kilometrage_apparition": "Dès 80 000 à 160 000 km selon cycles, température et maintien prolongé à 100 %",
+                  "diagnostic": "Mesurer SOH/capacité, dispersion de cellules, isolement et températures ; contrôler refroidissement liquide, contacteurs, port de charge et historique de recharge",
+                  "piece_concernee": "Batterie CATL Freevoy LFP, BMS et circuit thermique",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Parc trop récent pour une fréquence robuste",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 1 000 à plus de 18 000 €"
+                },
+                {
+                  "probleme": "Moteur arrière, onduleur et interfaces entre thermique et haute tension",
+                  "symptomes": [
+                    "Mode dégradé",
+                    "À-coups",
+                    "Absence de charge par le prolongateur ou bruit de réducteur"
+                  ],
+                  "kilometrage_apparition": "Variable selon usage et maintenance",
+                  "diagnostic": "Comparer puissance demandée/réelle, contrôler onduleur, réducteur, génératrice, câblage HV, DC/DC, mises à jour et cohérence des calculateurs énergie",
+                  "piece_concernee": "Chaîne REEV Kunlun et moteur arrière",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Non documentée à long terme",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 15 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Électrique",
+              "nom": "BEV propulsion, moteur arrière 237 kW — 322 ch",
+              "code_moteur": "Huawei DriveONE arrière 237 kW",
+              "cylindree": "Sans cylindrée — batterie NMC 116,79 kWh",
+              "puissance_ch": 322,
+              "boite": [
+                "Réducteur mono-rapport, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie haute tension, équilibre des cellules et circuit thermique",
+                  "symptomes": [
+                    "Autonomie en baisse",
+                    "Recharge limitée",
+                    "Écart de température ou de tension entre modules"
+                  ],
+                  "kilometrage_apparition": "Dès 80 000 à 160 000 km ou après stockage prolongé à charge extrême ; vieillissement très dépendant du climat et des cycles rapides",
+                  "diagnostic": "Lire SOH, tensions minimales/maximales et températures avec l’outil compatible ; effectuer un essai de capacité, contrôler l’isolement, les contacteurs, le liquide, les pompes, les vannes et les échangeurs sans ouvrir la batterie hors procédure HV",
+                  "piece_concernee": "Batterie CATL, BMS et refroidissement haute tension",
+                  "gravite": "Majeure à critique en cas de défaut d’isolement ou de cellule",
+                  "frequence": "Parc européen encore trop récent pour une fréquence robuste",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 1 000 à plus de 30 000 € selon module ou batterie complète"
+                },
+                {
+                  "probleme": "Chaîne de traction Huawei DriveONE, onduleurs et réducteurs",
+                  "symptomes": [
+                    "Bruit de roulement",
+                    "À-coups",
+                    "Puissance réduite ou défaut de propulsion"
+                  ],
+                  "kilometrage_apparition": "Variable ; contrôle renforcé après choc sous caisse, passage dans l’eau ou usage intensif",
+                  "diagnostic": "Lire les défauts propulsion, comparer les couples avant/arrière, contrôler températures et isolement, inspecter carters, supports, connecteurs orange, refroidissement, étanchéité des réducteurs et particules dans l’huile si procédure disponible",
+                  "piece_concernee": "Moteur(s) électrique(s), onduleur(s) et réducteur(s)",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Non établie sur le parc actuel",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 18 000 € par ensemble"
+                },
+                {
+                  "probleme": "Architecture 800 V, charge rapide, ADAS et réseau électronique",
+                  "symptomes": [
+                    "Charge impossible ou lente",
+                    "Alertes caméra/lidar",
+                    "Écran noir ou fonctions intermittentes"
+                  ],
+                  "kilometrage_apparition": "Variable, souvent après mise à jour, batterie 12 V faible, choc ou défaut de borne",
+                  "diagnostic": "Tester batterie basse tension et convertisseur DC/DC, lire tous calculateurs, contrôler CCS, verrouillage et communication borne, vérifier campagnes logicielles, calibrations lidar/caméras/radars et absence de réparation structurelle hors tolérance",
+                  "piece_concernee": "Chargeur embarqué, DC/DC, connecteur de charge et capteurs ADAS",
+                  "gravite": "Majeure ; critique si assistance de conduite ou isolement affecté",
+                  "frequence": "Occasionnelle, données européennes limitées",
+                  "cout_reparation_estime": "Modéré à très élevé : environ 300 à 12 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Électrique",
+              "nom": "BEV intégrale, moteurs 165 + 237 kW — 547 ch",
+              "code_moteur": "Huawei DriveONE avant 165 kW + arrière 237 kW",
+              "cylindree": "Sans cylindrée — batterie NMC 116,79 kWh",
+              "puissance_ch": 547,
+              "boite": [
+                "Réducteurs mono-rapport, transmission intégrale"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie haute tension, équilibre des cellules et circuit thermique",
+                  "symptomes": [
+                    "Autonomie en baisse",
+                    "Recharge limitée",
+                    "Écart de température ou de tension entre modules"
+                  ],
+                  "kilometrage_apparition": "Dès 80 000 à 160 000 km ou après stockage prolongé à charge extrême ; vieillissement très dépendant du climat et des cycles rapides",
+                  "diagnostic": "Lire SOH, tensions minimales/maximales et températures avec l’outil compatible ; effectuer un essai de capacité, contrôler l’isolement, les contacteurs, le liquide, les pompes, les vannes et les échangeurs sans ouvrir la batterie hors procédure HV",
+                  "piece_concernee": "Batterie CATL, BMS et refroidissement haute tension",
+                  "gravite": "Majeure à critique en cas de défaut d’isolement ou de cellule",
+                  "frequence": "Parc européen encore trop récent pour une fréquence robuste",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 1 000 à plus de 30 000 € selon module ou batterie complète"
+                },
+                {
+                  "probleme": "Chaîne de traction Huawei DriveONE, onduleurs et réducteurs",
+                  "symptomes": [
+                    "Bruit de roulement",
+                    "À-coups",
+                    "Puissance réduite ou défaut de propulsion"
+                  ],
+                  "kilometrage_apparition": "Variable ; contrôle renforcé après choc sous caisse, passage dans l’eau ou usage intensif",
+                  "diagnostic": "Lire les défauts propulsion, comparer les couples avant/arrière, contrôler températures et isolement, inspecter carters, supports, connecteurs orange, refroidissement, étanchéité des réducteurs et particules dans l’huile si procédure disponible",
+                  "piece_concernee": "Moteur(s) électrique(s), onduleur(s) et réducteur(s)",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Non établie sur le parc actuel",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 18 000 € par ensemble"
+                },
+                {
+                  "probleme": "Architecture 800 V, charge rapide, ADAS et réseau électronique",
+                  "symptomes": [
+                    "Charge impossible ou lente",
+                    "Alertes caméra/lidar",
+                    "Écran noir ou fonctions intermittentes"
+                  ],
+                  "kilometrage_apparition": "Variable, souvent après mise à jour, batterie 12 V faible, choc ou défaut de borne",
+                  "diagnostic": "Tester batterie basse tension et convertisseur DC/DC, lire tous calculateurs, contrôler CCS, verrouillage et communication borne, vérifier campagnes logicielles, calibrations lidar/caméras/radars et absence de réparation structurelle hors tolérance",
+                  "piece_concernee": "Chargeur embarqué, DC/DC, connecteur de charge et capteurs ADAS",
+                  "gravite": "Majeure ; critique si assistance de conduite ou isolement affecté",
+                  "frequence": "Occasionnelle, données européennes limitées",
+                  "cout_reparation_estime": "Modéré à très élevé : environ 300 à 12 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.avatr.com/en/configuration?car=11",
+        "https://www.avatr.com/en/configuration?car=011"
+      ]
+    }
+  ]
+}

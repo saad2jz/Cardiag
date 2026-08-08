@@ -1,0 +1,388 @@
+{
+  "nom": "Aveuro",
+  "modeles": [
+    {
+      "nom": "Sprinter",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "bus",
+        "body_type": null,
+        "countries": [
+          "fi",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 6
+      },
+      "generations": [
+        {
+          "code_chassis": "W906 Aveuro M2/M3",
+          "annees": "2015–2018",
+          "phases": [
+            "Transformation scolaire, tourisme, VIP ou urbaine ; confirmer plaque Aveuro, PTAC, longueur et nombre de places"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "516 CDI quatre-cylindres — 163 ch",
+              "code_moteur": "Mercedes-Benz OM651 DE22LA",
+              "cylindree": "2 143 cm³",
+              "puissance_ch": 163,
+              "boite": [
+                "6 rapports manuels ou 7G-Tronic selon châssis"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection CDI, turbo et étanchéité moteur",
+                  "symptomes": [
+                    "Démarrage long",
+                    "Fumée",
+                    "Sifflement ou mode dégradé"
+                  ],
+                  "kilometrage_apparition": "Souvent après 150 000 à 250 000 km, plus tôt en service urbain ou avec vidanges espacées",
+                  "diagnostic": "Lire valeurs rail et corrections, effectuer test de retours, contrôler injecteurs, joints de pied, pompe HP, turbo, durites, intercooler, reniflard, pression d’huile, refroidissement et historique exact OM651/OM642/OM654",
+                  "piece_concernee": "Moteur Mercedes-Benz CDI et suralimentation",
+                  "gravite": "Majeure à critique en cas de lubrification ou emballement",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Élevé : environ 600 à 10 000 €"
+                },
+                {
+                  "probleme": "EGR, DPF, SCR/AdBlue et usage minibus",
+                  "symptomes": [
+                    "Voyant moteur",
+                    "Régénérations répétées",
+                    "Compte à rebours de démarrage ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 220 000 km ; plus tôt sur trajets courts et ralenti prolongé",
+                  "diagnostic": "Lire charge de suie/cendres et pressions, vérifier températures, EGR, capteurs NOx, injecteur/doseur AdBlue, pompe/réservoir chauffé et qualité du fluide ; traiter la cause avant régénération forcée",
+                  "piece_concernee": "Système antipollution Euro 5/6",
+                  "gravite": "Majeure, immobilisante si limitation de démarrage",
+                  "frequence": "Fréquente en service urbain intensif",
+                  "cout_reparation_estime": "Élevé : environ 400 à 6 000 €"
+                },
+                {
+                  "probleme": "Carrosserie Aveuro, charge passagers, portes et électricité auxiliaire",
+                  "symptomes": [
+                    "Infiltration",
+                    "Porte lente",
+                    "Bruits de structure",
+                    "Batteries qui se déchargent ou climatisation faible"
+                  ],
+                  "kilometrage_apparition": "Variable ; inspection renforcée après 5 à 8 ans de service commercial",
+                  "diagnostic": "Vérifier plaque de transformation et masses, rallonge de châssis, soudures, plancher, ancrages sièges/ceintures, porte et issue de secours, rampe/élévateur, chauffage-climatisation, alternateur, batteries et faisceau carrossier",
+                  "piece_concernee": "Transformation M2/M3 Aveuro et équipements passagers",
+                  "gravite": "Critique si structure, ancrage ou issue affectés",
+                  "frequence": "Assez fréquente avec usage collectif intensif",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 500 à plus de 15 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "519 CDI V6 — 190 ch",
+              "code_moteur": "Mercedes-Benz OM642 DE30LA",
+              "cylindree": "2 987 cm³",
+              "puissance_ch": 190,
+              "boite": [
+                "7G-Tronic automatique"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection CDI, turbo et étanchéité moteur",
+                  "symptomes": [
+                    "Démarrage long",
+                    "Fumée",
+                    "Sifflement ou mode dégradé"
+                  ],
+                  "kilometrage_apparition": "Souvent après 150 000 à 250 000 km, plus tôt en service urbain ou avec vidanges espacées",
+                  "diagnostic": "Lire valeurs rail et corrections, effectuer test de retours, contrôler injecteurs, joints de pied, pompe HP, turbo, durites, intercooler, reniflard, pression d’huile, refroidissement et historique exact OM651/OM642/OM654",
+                  "piece_concernee": "Moteur Mercedes-Benz CDI et suralimentation",
+                  "gravite": "Majeure à critique en cas de lubrification ou emballement",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Élevé : environ 600 à 10 000 €"
+                },
+                {
+                  "probleme": "EGR, DPF, SCR/AdBlue et usage minibus",
+                  "symptomes": [
+                    "Voyant moteur",
+                    "Régénérations répétées",
+                    "Compte à rebours de démarrage ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 220 000 km ; plus tôt sur trajets courts et ralenti prolongé",
+                  "diagnostic": "Lire charge de suie/cendres et pressions, vérifier températures, EGR, capteurs NOx, injecteur/doseur AdBlue, pompe/réservoir chauffé et qualité du fluide ; traiter la cause avant régénération forcée",
+                  "piece_concernee": "Système antipollution Euro 5/6",
+                  "gravite": "Majeure, immobilisante si limitation de démarrage",
+                  "frequence": "Fréquente en service urbain intensif",
+                  "cout_reparation_estime": "Élevé : environ 400 à 6 000 €"
+                },
+                {
+                  "probleme": "Carrosserie Aveuro, charge passagers, portes et électricité auxiliaire",
+                  "symptomes": [
+                    "Infiltration",
+                    "Porte lente",
+                    "Bruits de structure",
+                    "Batteries qui se déchargent ou climatisation faible"
+                  ],
+                  "kilometrage_apparition": "Variable ; inspection renforcée après 5 à 8 ans de service commercial",
+                  "diagnostic": "Vérifier plaque de transformation et masses, rallonge de châssis, soudures, plancher, ancrages sièges/ceintures, porte et issue de secours, rampe/élévateur, chauffage-climatisation, alternateur, batteries et faisceau carrossier",
+                  "piece_concernee": "Transformation M2/M3 Aveuro et équipements passagers",
+                  "gravite": "Critique si structure, ancrage ou issue affectés",
+                  "frequence": "Assez fréquente avec usage collectif intensif",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 500 à plus de 15 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "W907/W910 Aveuro M2/M3",
+          "annees": "2018–aujourd’hui",
+          "phases": [
+            "Inclut notamment le châssis 907.633 documenté en catégorie M2 ; identifier 4x2, empattement et transformation exacte"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "517 CDI quatre-cylindres — 170 ch",
+              "code_moteur": "Mercedes-Benz OM654 DE20LA",
+              "cylindree": "1 950 cm³",
+              "puissance_ch": 170,
+              "boite": [
+                "9G-Tronic automatique ou manuelle selon millésime"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection CDI, turbo et étanchéité moteur",
+                  "symptomes": [
+                    "Démarrage long",
+                    "Fumée",
+                    "Sifflement ou mode dégradé"
+                  ],
+                  "kilometrage_apparition": "Souvent après 150 000 à 250 000 km, plus tôt en service urbain ou avec vidanges espacées",
+                  "diagnostic": "Lire valeurs rail et corrections, effectuer test de retours, contrôler injecteurs, joints de pied, pompe HP, turbo, durites, intercooler, reniflard, pression d’huile, refroidissement et historique exact OM651/OM642/OM654",
+                  "piece_concernee": "Moteur Mercedes-Benz CDI et suralimentation",
+                  "gravite": "Majeure à critique en cas de lubrification ou emballement",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Élevé : environ 600 à 10 000 €"
+                },
+                {
+                  "probleme": "EGR, DPF, SCR/AdBlue et usage minibus",
+                  "symptomes": [
+                    "Voyant moteur",
+                    "Régénérations répétées",
+                    "Compte à rebours de démarrage ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 220 000 km ; plus tôt sur trajets courts et ralenti prolongé",
+                  "diagnostic": "Lire charge de suie/cendres et pressions, vérifier températures, EGR, capteurs NOx, injecteur/doseur AdBlue, pompe/réservoir chauffé et qualité du fluide ; traiter la cause avant régénération forcée",
+                  "piece_concernee": "Système antipollution Euro 5/6",
+                  "gravite": "Majeure, immobilisante si limitation de démarrage",
+                  "frequence": "Fréquente en service urbain intensif",
+                  "cout_reparation_estime": "Élevé : environ 400 à 6 000 €"
+                },
+                {
+                  "probleme": "Carrosserie Aveuro, charge passagers, portes et électricité auxiliaire",
+                  "symptomes": [
+                    "Infiltration",
+                    "Porte lente",
+                    "Bruits de structure",
+                    "Batteries qui se déchargent ou climatisation faible"
+                  ],
+                  "kilometrage_apparition": "Variable ; inspection renforcée après 5 à 8 ans de service commercial",
+                  "diagnostic": "Vérifier plaque de transformation et masses, rallonge de châssis, soudures, plancher, ancrages sièges/ceintures, porte et issue de secours, rampe/élévateur, chauffage-climatisation, alternateur, batteries et faisceau carrossier",
+                  "piece_concernee": "Transformation M2/M3 Aveuro et équipements passagers",
+                  "gravite": "Critique si structure, ancrage ou issue affectés",
+                  "frequence": "Assez fréquente avec usage collectif intensif",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 500 à plus de 15 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "519 CDI quatre-cylindres — 190 ch",
+              "code_moteur": "Mercedes-Benz OM654 DE20LA",
+              "cylindree": "1 950 cm³",
+              "puissance_ch": 190,
+              "boite": [
+                "9G-Tronic automatique"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection CDI, turbo et étanchéité moteur",
+                  "symptomes": [
+                    "Démarrage long",
+                    "Fumée",
+                    "Sifflement ou mode dégradé"
+                  ],
+                  "kilometrage_apparition": "Souvent après 150 000 à 250 000 km, plus tôt en service urbain ou avec vidanges espacées",
+                  "diagnostic": "Lire valeurs rail et corrections, effectuer test de retours, contrôler injecteurs, joints de pied, pompe HP, turbo, durites, intercooler, reniflard, pression d’huile, refroidissement et historique exact OM651/OM642/OM654",
+                  "piece_concernee": "Moteur Mercedes-Benz CDI et suralimentation",
+                  "gravite": "Majeure à critique en cas de lubrification ou emballement",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Élevé : environ 600 à 10 000 €"
+                },
+                {
+                  "probleme": "EGR, DPF, SCR/AdBlue et usage minibus",
+                  "symptomes": [
+                    "Voyant moteur",
+                    "Régénérations répétées",
+                    "Compte à rebours de démarrage ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 220 000 km ; plus tôt sur trajets courts et ralenti prolongé",
+                  "diagnostic": "Lire charge de suie/cendres et pressions, vérifier températures, EGR, capteurs NOx, injecteur/doseur AdBlue, pompe/réservoir chauffé et qualité du fluide ; traiter la cause avant régénération forcée",
+                  "piece_concernee": "Système antipollution Euro 5/6",
+                  "gravite": "Majeure, immobilisante si limitation de démarrage",
+                  "frequence": "Fréquente en service urbain intensif",
+                  "cout_reparation_estime": "Élevé : environ 400 à 6 000 €"
+                },
+                {
+                  "probleme": "Carrosserie Aveuro, charge passagers, portes et électricité auxiliaire",
+                  "symptomes": [
+                    "Infiltration",
+                    "Porte lente",
+                    "Bruits de structure",
+                    "Batteries qui se déchargent ou climatisation faible"
+                  ],
+                  "kilometrage_apparition": "Variable ; inspection renforcée après 5 à 8 ans de service commercial",
+                  "diagnostic": "Vérifier plaque de transformation et masses, rallonge de châssis, soudures, plancher, ancrages sièges/ceintures, porte et issue de secours, rampe/élévateur, chauffage-climatisation, alternateur, batteries et faisceau carrossier",
+                  "piece_concernee": "Transformation M2/M3 Aveuro et équipements passagers",
+                  "gravite": "Critique si structure, ancrage ou issue affectés",
+                  "frequence": "Assez fréquente avec usage collectif intensif",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 500 à plus de 15 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "W907 eSprinter Aveuro",
+          "annees": "2024–aujourd’hui",
+          "phases": [
+            "Minibus électrique Aveuro sur nouvelle base eSprinter, notamment scolaire 16+1 et urbain jusqu’à 19 assis plus places debout selon homologation"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "eSprinter moteur 100 kW — 136 ch",
+              "code_moteur": "Mercedes-Benz eATS 100 kW",
+              "cylindree": "Sans cylindrée — batterie 81 ou 113 kWh selon châssis",
+              "puissance_ch": 136,
+              "boite": [
+                "Réducteur mono-rapport, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie eSprinter, isolement et refroidissement",
+                  "symptomes": [
+                    "Autonomie insuffisante",
+                    "Charge limitée",
+                    "Alerte haute tension"
+                  ],
+                  "kilometrage_apparition": "Dépend des cycles, de la température, de la masse et du stationnement à charge élevée",
+                  "diagnostic": "Lire SOH, énergie utilisable, dispersion des cellules et isolement ; inspecter blindages sous caisse, refroidissement, contacteurs et compatibilité de la transformation avec les limites de masse",
+                  "piece_concernee": "Batterie haute tension Mercedes-Benz eSprinter",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Parc récent, fréquence non consolidée",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 35 000 €"
+                },
+                {
+                  "probleme": "Moteur électrique, réducteur et charge AC/DC",
+                  "symptomes": [
+                    "Bruit",
+                    "Puissance réduite",
+                    "Charge impossible ou lente"
+                  ],
+                  "kilometrage_apparition": "Variable selon service et nombre de charges rapides",
+                  "diagnostic": "Lire calculateurs HV, tester charge AC/DC, verrouillage et communication, contrôler moteur, onduleur, réducteur, DC/DC, connecteurs et étanchéité ; vérifier les mises à jour constructeur",
+                  "piece_concernee": "Chaîne de traction et système de charge eSprinter",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Occasionnelle, recul limité",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 18 000 €"
+                },
+                {
+                  "probleme": "Transformation Aveuro électrique, portes, chauffage et bilan énergétique",
+                  "symptomes": [
+                    "Autonomie très variable",
+                    "Buée",
+                    "Porte ou rampe inopérante",
+                    "Décharge 12 V"
+                  ],
+                  "kilometrage_apparition": "Variable, particulièrement en hiver et en service scolaire/urbain",
+                  "diagnostic": "Contrôler masse réelle, nombre de places homologué, consommations des chauffages/climatisation, batteries 12 V, DC/DC, porte, rampe, issues, câblage ajouté et absence d’interférence avec les circuits HV",
+                  "piece_concernee": "Carrosserie Aveuro et auxiliaires électriques",
+                  "gravite": "Majeure ; critique si issue ou câblage HV affecté",
+                  "frequence": "À surveiller sur toute conversion",
+                  "cout_reparation_estime": "Élevé : environ 500 à 12 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Électrique",
+              "nom": "eSprinter moteur 150 kW — 204 ch",
+              "code_moteur": "Mercedes-Benz eATS 150 kW",
+              "cylindree": "Sans cylindrée — batterie 81 ou 113 kWh selon châssis",
+              "puissance_ch": 204,
+              "boite": [
+                "Réducteur mono-rapport, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie eSprinter, isolement et refroidissement",
+                  "symptomes": [
+                    "Autonomie insuffisante",
+                    "Charge limitée",
+                    "Alerte haute tension"
+                  ],
+                  "kilometrage_apparition": "Dépend des cycles, de la température, de la masse et du stationnement à charge élevée",
+                  "diagnostic": "Lire SOH, énergie utilisable, dispersion des cellules et isolement ; inspecter blindages sous caisse, refroidissement, contacteurs et compatibilité de la transformation avec les limites de masse",
+                  "piece_concernee": "Batterie haute tension Mercedes-Benz eSprinter",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Parc récent, fréquence non consolidée",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 35 000 €"
+                },
+                {
+                  "probleme": "Moteur électrique, réducteur et charge AC/DC",
+                  "symptomes": [
+                    "Bruit",
+                    "Puissance réduite",
+                    "Charge impossible ou lente"
+                  ],
+                  "kilometrage_apparition": "Variable selon service et nombre de charges rapides",
+                  "diagnostic": "Lire calculateurs HV, tester charge AC/DC, verrouillage et communication, contrôler moteur, onduleur, réducteur, DC/DC, connecteurs et étanchéité ; vérifier les mises à jour constructeur",
+                  "piece_concernee": "Chaîne de traction et système de charge eSprinter",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Occasionnelle, recul limité",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 18 000 €"
+                },
+                {
+                  "probleme": "Transformation Aveuro électrique, portes, chauffage et bilan énergétique",
+                  "symptomes": [
+                    "Autonomie très variable",
+                    "Buée",
+                    "Porte ou rampe inopérante",
+                    "Décharge 12 V"
+                  ],
+                  "kilometrage_apparition": "Variable, particulièrement en hiver et en service scolaire/urbain",
+                  "diagnostic": "Contrôler masse réelle, nombre de places homologué, consommations des chauffages/climatisation, batteries 12 V, DC/DC, porte, rampe, issues, câblage ajouté et absence d’interférence avec les circuits HV",
+                  "piece_concernee": "Carrosserie Aveuro et auxiliaires électriques",
+                  "gravite": "Majeure ; critique si issue ou câblage HV affecté",
+                  "frequence": "À surveiller sur toute conversion",
+                  "cout_reparation_estime": "Élevé : environ 500 à 12 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.ifema.es/en/fiaa/doc/press-kit/dossier-prensa-fiaa-ingles.pdf",
+        "https://www.gov.il/BlobFolder/policy/21-5108/he/21-5108.pdf",
+        "https://www.mercedes-benz.com/en/vehicles/esprinter/"
+      ]
+    }
+  ],
+  "source_catalogue": "VehiclesDB 2026.08.2 (CC-BY 4.0)"
+}

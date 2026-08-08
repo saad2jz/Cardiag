@@ -1,0 +1,141 @@
+{
+  "nom": "Horch",
+  "modeles": [
+    {
+      "nom": "853",
+      "generations": [
+        {
+          "code_chassis": "Typ 853 Sport Cabriolet",
+          "annees": "1935–1937",
+          "phases": [
+            "Audi documente 100 PS à 3 400 tr/min, 135 km/h et 2 650 kg."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "5.0 huit-en-ligne première série — 100 ch",
+              "code_moteur": "Horch Typ 853 OHC",
+              "cylindree": "4 944 cm³",
+              "puissance_ch": 100,
+              "boite": [
+                "Manuelle 4 rapports avec overdrive optionnel, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Königswelle, arbre à cames en tête, lubrification et refroidissement du huit-en-ligne",
+                  "symptomes": [
+                    "Pression faible",
+                    "Claquement, bruit de renvoi vertical ou limaille",
+                    "Surchauffe, fumée ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Âge et qualité de restauration priment ; inspection avant chaque saison",
+                  "diagnostic": "Mesurer compressions/leak-down et pression, analyser huile/filtre, contrôler arbre vertical et engrenages coniques, arbre à cames, soupapes, paliers, pompe, radiateur, thermostat, culasse/joints et corrosion ; distinguer 100 et 120 PS avant réglage",
+                  "piece_concernee": "Huit-cylindres Horch 4 944 cm³ à Königswelle",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé si réfection non documentée",
+                  "cout_reparation_estime": "Extrême : environ 3 000 à plus de 50 000 €"
+                },
+                {
+                  "probleme": "Double carburateur descendant, alimentation et allumage 12 V",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés ou cliquetis",
+                    "Fuite, odeur ou différence de température entre cylindres"
+                  ],
+                  "kilometrage_apparition": "Réglage fréquent et après immobilisation",
+                  "diagnostic": "Nettoyer/synchroniser carburateur(s), contrôler réservoir, pompe, conduites, starter, avance, distributeur, bougies et faisceau 12 V ; régler richesse avec contrôle des huit cylindres et protection incendie, sans pièces modernes non documentées",
+                  "piece_concernee": "Admission, allumage et alimentation Horch 853",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente sur véhicule peu utilisé",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Cadre cruciforme, bois/frêne, boîte avec overdrive, essieux et freins",
+                  "symptomes": [
+                    "Bois affaibli ou corrosion",
+                    "Rapport/overdrive difficile",
+                    "Jeu, shimmy ou freinage faible"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle et historique obligatoire",
+                  "diagnostic": "Inspecter cadre soudé, traverses, structure en frêne, tôles, ancrages, capote et carrosserie ; contrôler boîte synchronisée quatre avec surmultipliée, embrayage, arbre/pont, essieu De Dion/double articulation selon série, direction, lubrification centralisée, freins et provenance 853/853A/carrossier",
+                  "piece_concernee": "Structure, transmission et authenticité Horch 853",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de reconstruction ancienne",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 100 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Typ 853 / 853 A évolution",
+          "annees": "1937–1940",
+          "phases": [
+            "Moteur porté à 120 PS ; 853 et 853 A diffèrent aussi par châssis/essieu et détails de carrosserie."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "5.0 huit-en-ligne 120 PS — 120 ch",
+              "code_moteur": "Horch Typ 853A OHC",
+              "cylindree": "4 944 cm³",
+              "puissance_ch": 120,
+              "boite": [
+                "Manuelle synchronisée 4 rapports avec overdrive, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Königswelle, arbre à cames en tête, lubrification et refroidissement du huit-en-ligne",
+                  "symptomes": [
+                    "Pression faible",
+                    "Claquement, bruit de renvoi vertical ou limaille",
+                    "Surchauffe, fumée ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Âge et qualité de restauration priment ; inspection avant chaque saison",
+                  "diagnostic": "Mesurer compressions/leak-down et pression, analyser huile/filtre, contrôler arbre vertical et engrenages coniques, arbre à cames, soupapes, paliers, pompe, radiateur, thermostat, culasse/joints et corrosion ; distinguer 100 et 120 PS avant réglage",
+                  "piece_concernee": "Huit-cylindres Horch 4 944 cm³ à Königswelle",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé si réfection non documentée",
+                  "cout_reparation_estime": "Extrême : environ 3 000 à plus de 50 000 €"
+                },
+                {
+                  "probleme": "Double carburateur descendant, alimentation et allumage 12 V",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés ou cliquetis",
+                    "Fuite, odeur ou différence de température entre cylindres"
+                  ],
+                  "kilometrage_apparition": "Réglage fréquent et après immobilisation",
+                  "diagnostic": "Nettoyer/synchroniser carburateur(s), contrôler réservoir, pompe, conduites, starter, avance, distributeur, bougies et faisceau 12 V ; régler richesse avec contrôle des huit cylindres et protection incendie, sans pièces modernes non documentées",
+                  "piece_concernee": "Admission, allumage et alimentation Horch 853",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente sur véhicule peu utilisé",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Cadre cruciforme, bois/frêne, boîte avec overdrive, essieux et freins",
+                  "symptomes": [
+                    "Bois affaibli ou corrosion",
+                    "Rapport/overdrive difficile",
+                    "Jeu, shimmy ou freinage faible"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle et historique obligatoire",
+                  "diagnostic": "Inspecter cadre soudé, traverses, structure en frêne, tôles, ancrages, capote et carrosserie ; contrôler boîte synchronisée quatre avec surmultipliée, embrayage, arbre/pont, essieu De Dion/double articulation selon série, direction, lubrification centralisée, freins et provenance 853/853A/carrossier",
+                  "piece_concernee": "Structure, transmission et authenticité Horch 853",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de reconstruction ancienne",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 100 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.audi.com/en/united-to-form-auto-union-ag-17310",
+        "https://www.audi.com/en/photos/detail/horch-853-sport-cabriolet-5-l-8-cylinder-inline-120-hp-1466",
+        "https://www.technik-museum.de/en/discover/exhibits/horch-853-a/"
+      ]
+    }
+  ]
+}

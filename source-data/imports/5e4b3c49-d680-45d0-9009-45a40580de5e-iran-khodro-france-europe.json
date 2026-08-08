@@ -1,0 +1,526 @@
+{
+  "nom": "Iran Khodro",
+  "modeles": [
+    {
+      "nom": "Samand",
+      "generations": [
+        {
+          "code_chassis": "Samand X7 / phase initiale",
+          "annees": "2001–2008",
+          "phases": [
+            "Première carrosserie X7 sur base Peugeot 405 ; XU7 huit et seize soupapes restent deux motorisations distinctes."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "XU7JP/L3 1.8 — 100 ch",
+              "code_moteur": "PSA XU7JP/L3",
+              "cylindree": "1 761 cm³",
+              "puissance_ch": 100,
+              "boite": [
+                "BE3/5 manuelle 5 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Joint de culasse, refroidissement et lubrification du XU7",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Mayonnaise, fumée ou pression dans le vase"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 200 000 km, plus tôt si le circuit a été négligé",
+                  "diagnostic": "Tester pression, bouchon et gaz de combustion, contrôler radiateur, thermostat, pompe, ventilateurs/relais et purge ; mesurer compressions/leak-down, inspecter planéité, joints, reniflard et pression d’huile sans conclure sur la seule présence de dépôt sous bouchon",
+                  "piece_concernee": "Moteur PSA XU7 et circuit de refroidissement Samand",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente après surchauffe ou mauvais liquide",
+                  "cout_reparation_estime": "Moyen à élevé : environ 350 à 2 500 €"
+                },
+                {
+                  "probleme": "Courroie de distribution, injection et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés",
+                    "Voyant moteur, bruit de courroie ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Distribution selon manuel/âge ; capteurs souvent après 100 000 km",
+                  "diagnostic": "Vérifier preuve et état de courroie, galets et pompe, puis lire défauts et données ; contrôler pression essence, injecteurs, papillon, prises d’air, MAP/TPS, température, lambda, bobine, bougies, masses et faisceau avant remplacement",
+                  "piece_concernee": "Distribution et gestion moteur XU7JP/L3-L4",
+                  "gravite": "Critique pour la distribution, majeure pour les périphériques",
+                  "frequence": "Risque élevé sans historique ; pannes périphériques occasionnelles",
+                  "cout_reparation_estime": "Moyen à élevé : environ 120 à 1 500 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte BE3/5, cardans et supports",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection difficile",
+                    "Claquement, vibration ou fuite d’huile"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 120 000 et 220 000 km",
+                  "diagnostic": "Essayer tous les rapports à froid/chaud, contrôler commande, embrayage, butée, huile/fuites, synchros, supports moteur-boîte, cardans, soufflets et roulements ; distinguer vibration moteur, transmission et roue",
+                  "piece_concernee": "Transmission manuelle BE3/5 et train avant",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Moyen à élevé : environ 250 à 2 500 €"
+                },
+                {
+                  "probleme": "Train arrière dérivé 405, suspension, freins et électricité",
+                  "symptomes": [
+                    "Carrossage arrière excessif",
+                    "Grincement ou jeu",
+                    "ABS, ventilation ou accessoires intermittents"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 200 000 km ; inspection systématique",
+                  "diagnostic": "Mesurer hauteur et carrossage, contrôler roulements de bras/traverse arrière, rotules, amortisseurs, direction, pneus et géométrie ; diagnostiquer ABS, conduites, étriers, faisceaux, masses, alternateur, batterie, relais de ventilateur et équipements de caisse",
+                  "piece_concernee": "Trains roulants, freinage et réseau électrique Samand",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente selon routes et entretien",
+                  "cout_reparation_estime": "Variable : environ 150 à 2 500 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "XU7JP4/L4 1.8 16V — 110 ch",
+              "code_moteur": "PSA XU7JP4/L4",
+              "cylindree": "1 761 cm³",
+              "puissance_ch": 110,
+              "boite": [
+                "BE3/5 manuelle 5 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Joint de culasse, refroidissement et lubrification du XU7",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Mayonnaise, fumée ou pression dans le vase"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 200 000 km, plus tôt si le circuit a été négligé",
+                  "diagnostic": "Tester pression, bouchon et gaz de combustion, contrôler radiateur, thermostat, pompe, ventilateurs/relais et purge ; mesurer compressions/leak-down, inspecter planéité, joints, reniflard et pression d’huile sans conclure sur la seule présence de dépôt sous bouchon",
+                  "piece_concernee": "Moteur PSA XU7 et circuit de refroidissement Samand",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente après surchauffe ou mauvais liquide",
+                  "cout_reparation_estime": "Moyen à élevé : environ 350 à 2 500 €"
+                },
+                {
+                  "probleme": "Courroie de distribution, injection et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés",
+                    "Voyant moteur, bruit de courroie ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Distribution selon manuel/âge ; capteurs souvent après 100 000 km",
+                  "diagnostic": "Vérifier preuve et état de courroie, galets et pompe, puis lire défauts et données ; contrôler pression essence, injecteurs, papillon, prises d’air, MAP/TPS, température, lambda, bobine, bougies, masses et faisceau avant remplacement",
+                  "piece_concernee": "Distribution et gestion moteur XU7JP/L3-L4",
+                  "gravite": "Critique pour la distribution, majeure pour les périphériques",
+                  "frequence": "Risque élevé sans historique ; pannes périphériques occasionnelles",
+                  "cout_reparation_estime": "Moyen à élevé : environ 120 à 1 500 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte BE3/5, cardans et supports",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection difficile",
+                    "Claquement, vibration ou fuite d’huile"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 120 000 et 220 000 km",
+                  "diagnostic": "Essayer tous les rapports à froid/chaud, contrôler commande, embrayage, butée, huile/fuites, synchros, supports moteur-boîte, cardans, soufflets et roulements ; distinguer vibration moteur, transmission et roue",
+                  "piece_concernee": "Transmission manuelle BE3/5 et train avant",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Moyen à élevé : environ 250 à 2 500 €"
+                },
+                {
+                  "probleme": "Train arrière dérivé 405, suspension, freins et électricité",
+                  "symptomes": [
+                    "Carrossage arrière excessif",
+                    "Grincement ou jeu",
+                    "ABS, ventilation ou accessoires intermittents"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 200 000 km ; inspection systématique",
+                  "diagnostic": "Mesurer hauteur et carrossage, contrôler roulements de bras/traverse arrière, rotules, amortisseurs, direction, pneus et géométrie ; diagnostiquer ABS, conduites, étriers, faisceaux, masses, alternateur, batterie, relais de ventilateur et équipements de caisse",
+                  "piece_concernee": "Trains roulants, freinage et réseau électrique Samand",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente selon routes et entretien",
+                  "cout_reparation_estime": "Variable : environ 150 à 2 500 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Samand LX / SE XU7",
+          "annees": "2003–2022",
+          "phases": [
+            "Version de grande diffusion ; contrôler précisément finition, norme antipollution et calculateur."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "XU7JP/L3 1.8 — 100 ch",
+              "code_moteur": "PSA XU7JP/L3",
+              "cylindree": "1 761 cm³",
+              "puissance_ch": 100,
+              "boite": [
+                "BE3/5 manuelle 5 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Joint de culasse, refroidissement et lubrification du XU7",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Mayonnaise, fumée ou pression dans le vase"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 200 000 km, plus tôt si le circuit a été négligé",
+                  "diagnostic": "Tester pression, bouchon et gaz de combustion, contrôler radiateur, thermostat, pompe, ventilateurs/relais et purge ; mesurer compressions/leak-down, inspecter planéité, joints, reniflard et pression d’huile sans conclure sur la seule présence de dépôt sous bouchon",
+                  "piece_concernee": "Moteur PSA XU7 et circuit de refroidissement Samand",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente après surchauffe ou mauvais liquide",
+                  "cout_reparation_estime": "Moyen à élevé : environ 350 à 2 500 €"
+                },
+                {
+                  "probleme": "Courroie de distribution, injection et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés",
+                    "Voyant moteur, bruit de courroie ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Distribution selon manuel/âge ; capteurs souvent après 100 000 km",
+                  "diagnostic": "Vérifier preuve et état de courroie, galets et pompe, puis lire défauts et données ; contrôler pression essence, injecteurs, papillon, prises d’air, MAP/TPS, température, lambda, bobine, bougies, masses et faisceau avant remplacement",
+                  "piece_concernee": "Distribution et gestion moteur XU7JP/L3-L4",
+                  "gravite": "Critique pour la distribution, majeure pour les périphériques",
+                  "frequence": "Risque élevé sans historique ; pannes périphériques occasionnelles",
+                  "cout_reparation_estime": "Moyen à élevé : environ 120 à 1 500 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte BE3/5, cardans et supports",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection difficile",
+                    "Claquement, vibration ou fuite d’huile"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 120 000 et 220 000 km",
+                  "diagnostic": "Essayer tous les rapports à froid/chaud, contrôler commande, embrayage, butée, huile/fuites, synchros, supports moteur-boîte, cardans, soufflets et roulements ; distinguer vibration moteur, transmission et roue",
+                  "piece_concernee": "Transmission manuelle BE3/5 et train avant",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Moyen à élevé : environ 250 à 2 500 €"
+                },
+                {
+                  "probleme": "Train arrière dérivé 405, suspension, freins et électricité",
+                  "symptomes": [
+                    "Carrossage arrière excessif",
+                    "Grincement ou jeu",
+                    "ABS, ventilation ou accessoires intermittents"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 200 000 km ; inspection systématique",
+                  "diagnostic": "Mesurer hauteur et carrossage, contrôler roulements de bras/traverse arrière, rotules, amortisseurs, direction, pneus et géométrie ; diagnostiquer ABS, conduites, étriers, faisceaux, masses, alternateur, batterie, relais de ventilateur et équipements de caisse",
+                  "piece_concernee": "Trains roulants, freinage et réseau électrique Samand",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente selon routes et entretien",
+                  "cout_reparation_estime": "Variable : environ 150 à 2 500 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Samand LX / SE TU5",
+          "annees": "2009–2022",
+          "phases": [
+            "Le TU5 16 soupapes ne doit pas être confondu avec le XU7 1.8 malgré une puissance voisine."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "TU5JP4 1.6 16V — 104 ch",
+              "code_moteur": "PSA TU5JP4",
+              "cylindree": "1 587 cm³",
+              "puissance_ch": 104,
+              "boite": [
+                "Manuelle 5 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Courroie de distribution, refroidissement et étanchéité du TU5JP4",
+                  "symptomes": [
+                    "Bruit côté distribution",
+                    "Fuite de liquide",
+                    "Surchauffe ou absence d’historique"
+                  ],
+                  "kilometrage_apparition": "Distribution selon âge/kilométrage du manuel ; contrôle immédiat sans justificatif",
+                  "diagnostic": "Confirmer TU5JP4 1587 cm³, inspecter courroie, galets, pompe et joints, tester radiateur, thermostat, ventilateur et purge ; mesurer compressions et rechercher fuite aux boîtiers/joints sans démarrer si la courroie est détériorée",
+                  "piece_concernee": "Moteur PSA TU5JP4 et distribution",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque important quand l’historique est absent",
+                  "cout_reparation_estime": "Moyen à élevé : environ 250 à 1 500 €"
+                },
+                {
+                  "probleme": "Bobines, injection, papillon et capteurs",
+                  "symptomes": [
+                    "Ratés",
+                    "Voyant moteur",
+                    "Ralenti instable ou manque de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km",
+                  "diagnostic": "Lire défauts et compteurs de ratés, contrôler alimentation/masse, bougies et bobine, pression essence, injecteurs, papillon, prises d’air, MAP, température et lambda ; vérifier compression avant d’attribuer un raté à l’allumage",
+                  "piece_concernee": "Gestion moteur TU5JP4 Samand",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Assez fréquente sur allumage et connectique vieillissants",
+                  "cout_reparation_estime": "Moyen : environ 80 à 900 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte BE, cardans et supports",
+                  "symptomes": [
+                    "Patinage",
+                    "À-coups",
+                    "Craquement de rapport ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 120 000 et 220 000 km",
+                  "diagnostic": "Contrôler embrayage/commande, huile et fuites, synchros, tringlerie, supports, cardans, soufflets et roulements ; effectuer essai en charge et décélération pour isoler transmission, moteur ou roues",
+                  "piece_concernee": "Transmission TU5/BE et traction avant",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Moyen à élevé : environ 250 à 2 300 €"
+                },
+                {
+                  "probleme": "Train arrière, freinage, direction et réseau électrique",
+                  "symptomes": [
+                    "Carrossage arrière",
+                    "Jeu ou usure irrégulière",
+                    "Voyants ou équipements intermittents"
+                  ],
+                  "kilometrage_apparition": "Inspection après 100 000 km puis périodique",
+                  "diagnostic": "Contrôler traverse/roulements de bras arrière, rotules, amortisseurs, direction, géométrie et pneus ; lire ABS/airbag, tester charge batterie, masses, alternateur, relais, ventilation et faisceau, puis vérifier conduites, étriers et liquide",
+                  "piece_concernee": "Châssis et équipements Samand TU5",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente selon usage et routes",
+                  "cout_reparation_estime": "Variable : environ 150 à 2 500 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Samand LX EF7",
+          "annees": "2008–2022",
+          "phases": [
+            "Le bi-carburant conserve deux valeurs de puissance selon le carburant ; vérifier réservoirs et homologation CNG."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "EF7 atmosphérique essence — 114 ch",
+              "code_moteur": "IKCO EF7 NA",
+              "cylindree": "1 645 cm³",
+              "puissance_ch": 114,
+              "boite": [
+                "Manuelle 5 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et culasse du moteur EF7",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Bruit de distribution",
+                    "Fuite, pression dans le vase ou perte de compression"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 200 000 km ; distribution selon manuel",
+                  "diagnostic": "Identifier EF7 essence ou bi-carburant, contrôler courroie/galets/pompe, calage et déphaseur éventuel, tester pression et gaz dans le circuit, radiateur, thermostat et ventilateurs ; mesurer compressions/leak-down et pression d’huile",
+                  "piece_concernee": "Moteur national EF7 1645 cm³",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente si refroidissement ou distribution négligés",
+                  "cout_reparation_estime": "Élevé : environ 300 à 2 500 €"
+                },
+                {
+                  "probleme": "Injection, allumage, CVVT et capteurs EF7",
+                  "symptomes": [
+                    "Voyant moteur",
+                    "Ratés",
+                    "Ralenti instable, manque de couple ou consommation élevée"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km",
+                  "diagnostic": "Lire défauts et paramètres, contrôler pression carburant, injecteurs, bobines/bougies, papillon, prises d’air, MAP, lambda, capteurs arbre/vilebrequin et commande CVVT ; vérifier huile conforme et compression avant remplacement",
+                  "piece_concernee": "Gestion moteur et distribution variable EF7",
+                  "gravite": "Majeure",
+                  "frequence": "Occasionnelle à assez fréquente selon connectique et huile",
+                  "cout_reparation_estime": "Moyen à élevé : environ 100 à 1 200 €"
+                },
+                {
+                  "probleme": "Circuit CNG d’origine et adaptation essence/gaz",
+                  "symptomes": [
+                    "Passage au gaz impossible",
+                    "Perte de puissance",
+                    "Odeur, fuite ou voyant gaz"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et à l’échéance réglementaire des réservoirs",
+                  "diagnostic": "Pour la version bi-fuel, contrôler date/état des bouteilles, vannes, conduites, détendeur, capteurs et injecteurs CNG avec détecteur homologué ; comparer corrections essence/gaz, jeu aux soupapes et compressions, sans desserrer un raccord sous pression",
+                  "piece_concernee": "Réservoirs, détendeur et injection CNG EF7",
+                  "gravite": "Critique en cas de fuite",
+                  "frequence": "Occasionnelle ; vieillissement réglementaire inévitable",
+                  "cout_reparation_estime": "Variable : environ 100 à plus de 2 500 €"
+                },
+                {
+                  "probleme": "Boîte, train arrière, freins et réseau électrique Samand",
+                  "symptomes": [
+                    "Patinage ou rapport difficile",
+                    "Carrossage arrière",
+                    "Voyants, panne de charge ou ventilation"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 km ; inspection périodique",
+                  "diagnostic": "Contrôler embrayage, boîte, supports, cardans et roulements ; mesurer géométrie/traverse arrière, vérifier suspension, pneus, ABS et freins ; tester batterie, alternateur, masses, relais, faisceaux et diagnostics moteur/caisse avec outil compatible",
+                  "piece_concernee": "Transmission, châssis et électricité Samand EF7",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Variable : environ 200 à 3 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence/CNG",
+              "nom": "EF7 bi-carburant, mode essence — 114 ch",
+              "code_moteur": "IKCO EF7 NA Bi-Fuel",
+              "cylindree": "1 645 cm³",
+              "puissance_ch": 114,
+              "boite": [
+                "Manuelle 5 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et culasse du moteur EF7",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Bruit de distribution",
+                    "Fuite, pression dans le vase ou perte de compression"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 200 000 km ; distribution selon manuel",
+                  "diagnostic": "Identifier EF7 essence ou bi-carburant, contrôler courroie/galets/pompe, calage et déphaseur éventuel, tester pression et gaz dans le circuit, radiateur, thermostat et ventilateurs ; mesurer compressions/leak-down et pression d’huile",
+                  "piece_concernee": "Moteur national EF7 1645 cm³",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente si refroidissement ou distribution négligés",
+                  "cout_reparation_estime": "Élevé : environ 300 à 2 500 €"
+                },
+                {
+                  "probleme": "Injection, allumage, CVVT et capteurs EF7",
+                  "symptomes": [
+                    "Voyant moteur",
+                    "Ratés",
+                    "Ralenti instable, manque de couple ou consommation élevée"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km",
+                  "diagnostic": "Lire défauts et paramètres, contrôler pression carburant, injecteurs, bobines/bougies, papillon, prises d’air, MAP, lambda, capteurs arbre/vilebrequin et commande CVVT ; vérifier huile conforme et compression avant remplacement",
+                  "piece_concernee": "Gestion moteur et distribution variable EF7",
+                  "gravite": "Majeure",
+                  "frequence": "Occasionnelle à assez fréquente selon connectique et huile",
+                  "cout_reparation_estime": "Moyen à élevé : environ 100 à 1 200 €"
+                },
+                {
+                  "probleme": "Circuit CNG d’origine et adaptation essence/gaz",
+                  "symptomes": [
+                    "Passage au gaz impossible",
+                    "Perte de puissance",
+                    "Odeur, fuite ou voyant gaz"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et à l’échéance réglementaire des réservoirs",
+                  "diagnostic": "Pour la version bi-fuel, contrôler date/état des bouteilles, vannes, conduites, détendeur, capteurs et injecteurs CNG avec détecteur homologué ; comparer corrections essence/gaz, jeu aux soupapes et compressions, sans desserrer un raccord sous pression",
+                  "piece_concernee": "Réservoirs, détendeur et injection CNG EF7",
+                  "gravite": "Critique en cas de fuite",
+                  "frequence": "Occasionnelle ; vieillissement réglementaire inévitable",
+                  "cout_reparation_estime": "Variable : environ 100 à plus de 2 500 €"
+                },
+                {
+                  "probleme": "Boîte, train arrière, freins et réseau électrique Samand",
+                  "symptomes": [
+                    "Patinage ou rapport difficile",
+                    "Carrossage arrière",
+                    "Voyants, panne de charge ou ventilation"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 km ; inspection périodique",
+                  "diagnostic": "Contrôler embrayage, boîte, supports, cardans et roulements ; mesurer géométrie/traverse arrière, vérifier suspension, pneus, ABS et freins ; tester batterie, alternateur, masses, relais, faisceaux et diagnostics moteur/caisse avec outil compatible",
+                  "piece_concernee": "Transmission, châssis et électricité Samand EF7",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Variable : environ 200 à 3 000 €"
+                }
+              ]
+            },
+            {
+              "type": "CNG/Essence",
+              "nom": "EF7 bi-carburant, mode CNG — 100 ch",
+              "code_moteur": "IKCO EF7 NA Bi-Fuel",
+              "cylindree": "1 645 cm³",
+              "puissance_ch": 100,
+              "boite": [
+                "Manuelle 5 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et culasse du moteur EF7",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Bruit de distribution",
+                    "Fuite, pression dans le vase ou perte de compression"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 200 000 km ; distribution selon manuel",
+                  "diagnostic": "Identifier EF7 essence ou bi-carburant, contrôler courroie/galets/pompe, calage et déphaseur éventuel, tester pression et gaz dans le circuit, radiateur, thermostat et ventilateurs ; mesurer compressions/leak-down et pression d’huile",
+                  "piece_concernee": "Moteur national EF7 1645 cm³",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente si refroidissement ou distribution négligés",
+                  "cout_reparation_estime": "Élevé : environ 300 à 2 500 €"
+                },
+                {
+                  "probleme": "Injection, allumage, CVVT et capteurs EF7",
+                  "symptomes": [
+                    "Voyant moteur",
+                    "Ratés",
+                    "Ralenti instable, manque de couple ou consommation élevée"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km",
+                  "diagnostic": "Lire défauts et paramètres, contrôler pression carburant, injecteurs, bobines/bougies, papillon, prises d’air, MAP, lambda, capteurs arbre/vilebrequin et commande CVVT ; vérifier huile conforme et compression avant remplacement",
+                  "piece_concernee": "Gestion moteur et distribution variable EF7",
+                  "gravite": "Majeure",
+                  "frequence": "Occasionnelle à assez fréquente selon connectique et huile",
+                  "cout_reparation_estime": "Moyen à élevé : environ 100 à 1 200 €"
+                },
+                {
+                  "probleme": "Circuit CNG d’origine et adaptation essence/gaz",
+                  "symptomes": [
+                    "Passage au gaz impossible",
+                    "Perte de puissance",
+                    "Odeur, fuite ou voyant gaz"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et à l’échéance réglementaire des réservoirs",
+                  "diagnostic": "Pour la version bi-fuel, contrôler date/état des bouteilles, vannes, conduites, détendeur, capteurs et injecteurs CNG avec détecteur homologué ; comparer corrections essence/gaz, jeu aux soupapes et compressions, sans desserrer un raccord sous pression",
+                  "piece_concernee": "Réservoirs, détendeur et injection CNG EF7",
+                  "gravite": "Critique en cas de fuite",
+                  "frequence": "Occasionnelle ; vieillissement réglementaire inévitable",
+                  "cout_reparation_estime": "Variable : environ 100 à plus de 2 500 €"
+                },
+                {
+                  "probleme": "Boîte, train arrière, freins et réseau électrique Samand",
+                  "symptomes": [
+                    "Patinage ou rapport difficile",
+                    "Carrossage arrière",
+                    "Voyants, panne de charge ou ventilation"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 km ; inspection périodique",
+                  "diagnostic": "Contrôler embrayage, boîte, supports, cardans et roulements ; mesurer géométrie/traverse arrière, vérifier suspension, pneus, ABS et freins ; tester batterie, alternateur, masses, relais, faisceaux et diagnostics moteur/caisse avec outil compatible",
+                  "piece_concernee": "Transmission, châssis et électricité Samand EF7",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Variable : environ 200 à 3 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://manualzz.com/doc/53328325/iran-khodro-samand-lx-owner-s-manual",
+        "https://www.irex2world.com/files/58/catalog/xrAFBQMtIoKDY02a27C0.pdf"
+      ]
+    }
+  ]
+}

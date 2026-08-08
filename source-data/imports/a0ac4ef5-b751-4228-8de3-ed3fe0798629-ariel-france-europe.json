@@ -1,0 +1,370 @@
+{
+  "nom": "Ariel",
+  "modeles": [
+    {
+      "nom": "Atom",
+      "generations": [
+        {
+          "code_chassis": "Atom 1",
+          "annees": "2000–2003",
+          "phases": [
+            "Première série ; confirmer préparation et conformité route/piste"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.8 Rover K-Series — 120 ch",
+              "code_moteur": "Rover 18K4F",
+              "cylindree": "1 796 cm³",
+              "puissance_ch": 120,
+              "boite": [
+                "Boîte manuelle 5 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, distribution et refroidissement du moteur haute performance",
+                  "symptomes": [
+                    "Pression faible",
+                    "Ratés",
+                    "Surchauffe ou fumée"
+                  ],
+                  "kilometrage_apparition": "À contrôler dès 60 000 km et après usage circuit",
+                  "diagnostic": "Identifier Rover/Honda exact, analyser huile/filtre, mesurer pression/compressions, contrôler chaîne/courroie, VTEC, pompe, radiateur, durites, joints et historique de chauffe/surrégime",
+                  "piece_concernee": "Moteur Rover K ou Honda K20",
+                  "gravite": "Critique en cas de pression faible ou surchauffe",
+                  "frequence": "Variable selon moteur et piste",
+                  "cout_reparation_estime": "Élevé : environ 800 à 10 000 €"
+                },
+                {
+                  "probleme": "Compresseur/turbo, injection et calibration Ariel",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Cliquetis",
+                    "Sifflement ou mélange pauvre"
+                  ],
+                  "kilometrage_apparition": "Selon préparation, carburant et piste",
+                  "diagnostic": "Logger pression, lambda, cliquetis et températures ; contrôler compresseur/turbo, courroie/wastegate, intercooler, injecteurs, pompe, échappement, ECU et conformité de la cartographie",
+                  "piece_concernee": "Suralimentation et gestion moteur",
+                  "gravite": "Critique sous forte charge",
+                  "frequence": "Assez fréquente sur véhicules modifiés",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 8 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, suspension, freins et boîte séquentielle/manuelle",
+                  "symptomes": [
+                    "Fissure",
+                    "Jeu",
+                    "Sélection difficile ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Après piste, vibreurs, choc ou mauvais levage",
+                  "diagnostic": "Inspecter soudures et supports, triangles, rotules, amortisseurs, moyeux, jantes, pneus, disques, harnais, arceau ; contrôler embrayage, synchros/crabots, actionnement et historique piste",
+                  "piece_concernee": "Structure et chaîne cinématique Atom",
+                  "gravite": "Critique",
+                  "frequence": "Variable selon usage circuit",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 1 000 à 20 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.8 Rover K-Series VVC — 190 ch",
+              "code_moteur": "Rover 18K4K préparé",
+              "cylindree": "1 796 cm³",
+              "puissance_ch": 190,
+              "boite": [
+                "Boîte manuelle 5 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, distribution et refroidissement du moteur haute performance",
+                  "symptomes": [
+                    "Pression faible",
+                    "Ratés",
+                    "Surchauffe ou fumée"
+                  ],
+                  "kilometrage_apparition": "À contrôler dès 60 000 km et après usage circuit",
+                  "diagnostic": "Identifier Rover/Honda exact, analyser huile/filtre, mesurer pression/compressions, contrôler chaîne/courroie, VTEC, pompe, radiateur, durites, joints et historique de chauffe/surrégime",
+                  "piece_concernee": "Moteur Rover K ou Honda K20",
+                  "gravite": "Critique en cas de pression faible ou surchauffe",
+                  "frequence": "Variable selon moteur et piste",
+                  "cout_reparation_estime": "Élevé : environ 800 à 10 000 €"
+                },
+                {
+                  "probleme": "Compresseur/turbo, injection et calibration Ariel",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Cliquetis",
+                    "Sifflement ou mélange pauvre"
+                  ],
+                  "kilometrage_apparition": "Selon préparation, carburant et piste",
+                  "diagnostic": "Logger pression, lambda, cliquetis et températures ; contrôler compresseur/turbo, courroie/wastegate, intercooler, injecteurs, pompe, échappement, ECU et conformité de la cartographie",
+                  "piece_concernee": "Suralimentation et gestion moteur",
+                  "gravite": "Critique sous forte charge",
+                  "frequence": "Assez fréquente sur véhicules modifiés",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 8 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, suspension, freins et boîte séquentielle/manuelle",
+                  "symptomes": [
+                    "Fissure",
+                    "Jeu",
+                    "Sélection difficile ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Après piste, vibreurs, choc ou mauvais levage",
+                  "diagnostic": "Inspecter soudures et supports, triangles, rotules, amortisseurs, moyeux, jantes, pneus, disques, harnais, arceau ; contrôler embrayage, synchros/crabots, actionnement et historique piste",
+                  "piece_concernee": "Structure et chaîne cinématique Atom",
+                  "gravite": "Critique",
+                  "frequence": "Variable selon usage circuit",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 1 000 à 20 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Atom 2/3/3.5",
+          "annees": "2003–2018",
+          "phases": [
+            "Nombreuses séries et préparations : confirmer ECU, compresseur et puissance au dossier Ariel"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.0 Honda i-VTEC — 245 ch",
+              "code_moteur": "Honda K20A/K20Z",
+              "cylindree": "1 998 cm³",
+              "puissance_ch": 245,
+              "boite": [
+                "Boîte manuelle 6 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, distribution et refroidissement du moteur haute performance",
+                  "symptomes": [
+                    "Pression faible",
+                    "Ratés",
+                    "Surchauffe ou fumée"
+                  ],
+                  "kilometrage_apparition": "À contrôler dès 60 000 km et après usage circuit",
+                  "diagnostic": "Identifier Rover/Honda exact, analyser huile/filtre, mesurer pression/compressions, contrôler chaîne/courroie, VTEC, pompe, radiateur, durites, joints et historique de chauffe/surrégime",
+                  "piece_concernee": "Moteur Rover K ou Honda K20",
+                  "gravite": "Critique en cas de pression faible ou surchauffe",
+                  "frequence": "Variable selon moteur et piste",
+                  "cout_reparation_estime": "Élevé : environ 800 à 10 000 €"
+                },
+                {
+                  "probleme": "Compresseur/turbo, injection et calibration Ariel",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Cliquetis",
+                    "Sifflement ou mélange pauvre"
+                  ],
+                  "kilometrage_apparition": "Selon préparation, carburant et piste",
+                  "diagnostic": "Logger pression, lambda, cliquetis et températures ; contrôler compresseur/turbo, courroie/wastegate, intercooler, injecteurs, pompe, échappement, ECU et conformité de la cartographie",
+                  "piece_concernee": "Suralimentation et gestion moteur",
+                  "gravite": "Critique sous forte charge",
+                  "frequence": "Assez fréquente sur véhicules modifiés",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 8 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, suspension, freins et boîte séquentielle/manuelle",
+                  "symptomes": [
+                    "Fissure",
+                    "Jeu",
+                    "Sélection difficile ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Après piste, vibreurs, choc ou mauvais levage",
+                  "diagnostic": "Inspecter soudures et supports, triangles, rotules, amortisseurs, moyeux, jantes, pneus, disques, harnais, arceau ; contrôler embrayage, synchros/crabots, actionnement et historique piste",
+                  "piece_concernee": "Structure et chaîne cinématique Atom",
+                  "gravite": "Critique",
+                  "frequence": "Variable selon usage circuit",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 1 000 à 20 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "2.0 Honda i-VTEC Supercharged — 310 ch",
+              "code_moteur": "Honda K20 suralimenté",
+              "cylindree": "1 998 cm³",
+              "puissance_ch": 310,
+              "boite": [
+                "Boîte manuelle 6 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, distribution et refroidissement du moteur haute performance",
+                  "symptomes": [
+                    "Pression faible",
+                    "Ratés",
+                    "Surchauffe ou fumée"
+                  ],
+                  "kilometrage_apparition": "À contrôler dès 60 000 km et après usage circuit",
+                  "diagnostic": "Identifier Rover/Honda exact, analyser huile/filtre, mesurer pression/compressions, contrôler chaîne/courroie, VTEC, pompe, radiateur, durites, joints et historique de chauffe/surrégime",
+                  "piece_concernee": "Moteur Rover K ou Honda K20",
+                  "gravite": "Critique en cas de pression faible ou surchauffe",
+                  "frequence": "Variable selon moteur et piste",
+                  "cout_reparation_estime": "Élevé : environ 800 à 10 000 €"
+                },
+                {
+                  "probleme": "Compresseur/turbo, injection et calibration Ariel",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Cliquetis",
+                    "Sifflement ou mélange pauvre"
+                  ],
+                  "kilometrage_apparition": "Selon préparation, carburant et piste",
+                  "diagnostic": "Logger pression, lambda, cliquetis et températures ; contrôler compresseur/turbo, courroie/wastegate, intercooler, injecteurs, pompe, échappement, ECU et conformité de la cartographie",
+                  "piece_concernee": "Suralimentation et gestion moteur",
+                  "gravite": "Critique sous forte charge",
+                  "frequence": "Assez fréquente sur véhicules modifiés",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 8 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, suspension, freins et boîte séquentielle/manuelle",
+                  "symptomes": [
+                    "Fissure",
+                    "Jeu",
+                    "Sélection difficile ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Après piste, vibreurs, choc ou mauvais levage",
+                  "diagnostic": "Inspecter soudures et supports, triangles, rotules, amortisseurs, moyeux, jantes, pneus, disques, harnais, arceau ; contrôler embrayage, synchros/crabots, actionnement et historique piste",
+                  "piece_concernee": "Structure et chaîne cinématique Atom",
+                  "gravite": "Critique",
+                  "frequence": "Variable selon usage circuit",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 1 000 à 20 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Atom 4",
+          "annees": "2018–aujourd’hui",
+          "phases": [
+            "Atom 4 standard à moteur Civic Type R adapté par Ariel"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.0 Honda Type R Turbo — 320 ch",
+              "code_moteur": "Honda K20C1 Ariel",
+              "cylindree": "1 996 cm³",
+              "puissance_ch": 320,
+              "boite": [
+                "Boîte manuelle 6 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, distribution et refroidissement du moteur haute performance",
+                  "symptomes": [
+                    "Pression faible",
+                    "Ratés",
+                    "Surchauffe ou fumée"
+                  ],
+                  "kilometrage_apparition": "À contrôler dès 60 000 km et après usage circuit",
+                  "diagnostic": "Identifier Rover/Honda exact, analyser huile/filtre, mesurer pression/compressions, contrôler chaîne/courroie, VTEC, pompe, radiateur, durites, joints et historique de chauffe/surrégime",
+                  "piece_concernee": "Moteur Rover K ou Honda K20",
+                  "gravite": "Critique en cas de pression faible ou surchauffe",
+                  "frequence": "Variable selon moteur et piste",
+                  "cout_reparation_estime": "Élevé : environ 800 à 10 000 €"
+                },
+                {
+                  "probleme": "Compresseur/turbo, injection et calibration Ariel",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Cliquetis",
+                    "Sifflement ou mélange pauvre"
+                  ],
+                  "kilometrage_apparition": "Selon préparation, carburant et piste",
+                  "diagnostic": "Logger pression, lambda, cliquetis et températures ; contrôler compresseur/turbo, courroie/wastegate, intercooler, injecteurs, pompe, échappement, ECU et conformité de la cartographie",
+                  "piece_concernee": "Suralimentation et gestion moteur",
+                  "gravite": "Critique sous forte charge",
+                  "frequence": "Assez fréquente sur véhicules modifiés",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 8 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, suspension, freins et boîte séquentielle/manuelle",
+                  "symptomes": [
+                    "Fissure",
+                    "Jeu",
+                    "Sélection difficile ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Après piste, vibreurs, choc ou mauvais levage",
+                  "diagnostic": "Inspecter soudures et supports, triangles, rotules, amortisseurs, moyeux, jantes, pneus, disques, harnais, arceau ; contrôler embrayage, synchros/crabots, actionnement et historique piste",
+                  "piece_concernee": "Structure et chaîne cinématique Atom",
+                  "gravite": "Critique",
+                  "frequence": "Variable selon usage circuit",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 1 000 à 20 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Atom 4R",
+          "annees": "2023–aujourd’hui",
+          "phases": [
+            "Ariel annonce 400 bhp et 500 Nm avec refroidissement et boîte spécifiques"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.0 Honda Type R Turbo — 400 ch",
+              "code_moteur": "Honda K20C1 Ariel 4R",
+              "cylindree": "1 996 cm³",
+              "puissance_ch": 400,
+              "boite": [
+                "Boîte séquentielle paddle-shift 6 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, distribution et refroidissement du moteur haute performance",
+                  "symptomes": [
+                    "Pression faible",
+                    "Ratés",
+                    "Surchauffe ou fumée"
+                  ],
+                  "kilometrage_apparition": "À contrôler dès 60 000 km et après usage circuit",
+                  "diagnostic": "Identifier Rover/Honda exact, analyser huile/filtre, mesurer pression/compressions, contrôler chaîne/courroie, VTEC, pompe, radiateur, durites, joints et historique de chauffe/surrégime",
+                  "piece_concernee": "Moteur Rover K ou Honda K20",
+                  "gravite": "Critique en cas de pression faible ou surchauffe",
+                  "frequence": "Variable selon moteur et piste",
+                  "cout_reparation_estime": "Élevé : environ 800 à 10 000 €"
+                },
+                {
+                  "probleme": "Compresseur/turbo, injection et calibration Ariel",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Cliquetis",
+                    "Sifflement ou mélange pauvre"
+                  ],
+                  "kilometrage_apparition": "Selon préparation, carburant et piste",
+                  "diagnostic": "Logger pression, lambda, cliquetis et températures ; contrôler compresseur/turbo, courroie/wastegate, intercooler, injecteurs, pompe, échappement, ECU et conformité de la cartographie",
+                  "piece_concernee": "Suralimentation et gestion moteur",
+                  "gravite": "Critique sous forte charge",
+                  "frequence": "Assez fréquente sur véhicules modifiés",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 8 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, suspension, freins et boîte séquentielle/manuelle",
+                  "symptomes": [
+                    "Fissure",
+                    "Jeu",
+                    "Sélection difficile ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Après piste, vibreurs, choc ou mauvais levage",
+                  "diagnostic": "Inspecter soudures et supports, triangles, rotules, amortisseurs, moyeux, jantes, pneus, disques, harnais, arceau ; contrôler embrayage, synchros/crabots, actionnement et historique piste",
+                  "piece_concernee": "Structure et chaîne cinématique Atom",
+                  "gravite": "Critique",
+                  "frequence": "Variable selon usage circuit",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 1 000 à 20 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

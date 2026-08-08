@@ -1,0 +1,244 @@
+{
+  "nom": "Sbarro",
+  "modeles": [
+    {
+      "nom": "Challenge",
+      "generations": [
+        {
+          "code_chassis": "Challenge 1",
+          "annees": "1985",
+          "phases": [
+            "Première version : moteur Mercedes central arrière, deux turbos IHI et transmission intégrale non montée sur tous les exemplaires."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Mercedes 5.0 V8 biturbo IHI — 350 ch",
+              "code_moteur": "Mercedes M117 Sbarro biturbo",
+              "cylindree": "4 973 cm³",
+              "puissance_ch": 350,
+              "boite": [
+                "Automatique 2 rapports d’origine Jeep, transmission intégrale selon exemplaire"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et suralimentation du V8 Mercedes biturbo",
+                  "symptomes": [
+                    "Fumée",
+                    "Surchauffe",
+                    "Pression de boost inégale ou bruit de turbo"
+                  ],
+                  "kilometrage_apparition": "Âge et immobilisation priment ; contrôle avant chaque roulage",
+                  "diagnostic": "Confirmer le V8 Mercedes 4 973 cm³ et le montage de deux turbos IHI. Mesurer compressions et pression d’huile, analyser huile, puis contrôler refroidissement, alimentation/retour d’huile des turbos, jeux d’arbres, wastegates, échangeurs, durites et richesse sous charge.",
+                  "piece_concernee": "V8 Mercedes 5,0 l biturbo Challenge 1",
+                  "gravite": "Critique",
+                  "frequence": "Risque très élevé après immobilisation ou modification",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 40 000 €"
+                },
+                {
+                  "probleme": "Injection, allumage et alimentation artisanale",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés",
+                    "Fuite ou mélange pauvre"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et avant mise en charge",
+                  "diagnostic": "Documenter le système réellement monté, contrôler réservoir, pompes, filtres, pressions, injecteurs, régulation, capteurs, allumage, bougies et câblage. Instrumenter richesse et cliquetis sans extrapoler une calibration Mercedes de série.",
+                  "piece_concernee": "Gestion moteur Challenge 1",
+                  "gravite": "Critique",
+                  "frequence": "Inconnue sur très petite série",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 10 000 €"
+                },
+                {
+                  "probleme": "Boîte automatique Jeep, transmission intégrale et refroidissement",
+                  "symptomes": [
+                    "Patinage",
+                    "À-coups",
+                    "Bruit ou température élevée"
+                  ],
+                  "kilometrage_apparition": "Inspection avant roulage et vidange selon état documenté",
+                  "diagnostic": "Identifier précisément la boîte automatique et le montage quatre roues motrices, contrôler huile, pression, convertisseur, refroidisseur, arbres, joints, différentiels et rapports. Vérifier que les quatre pneus ont dimensions et circonférences compatibles.",
+                  "piece_concernee": "Transmission spécifique Challenge 1",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé faute de documentation et de pièces",
+                  "cout_reparation_estime": "Extrême : environ 1 500 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, carrosserie, caméra arrière et authenticité",
+                  "symptomes": [
+                    "Fissure ou déformation",
+                    "Caméra ou essuie-glaces défaillants",
+                    "Géométrie instable"
+                  ],
+                  "kilometrage_apparition": "Expertise avant acquisition et après chaque stockage prolongé",
+                  "diagnostic": "Identifier châssis et configuration parmi les huit Challenge. Inspecter structure, panneaux, vitrages, portes, caméra remplaçant le rétroviseur, essuie-glaces, suspension, direction, freins, roues et pneus ; documenter toute transformation de transmission.",
+                  "piece_concernee": "Structure et équipements Sbarro Challenge",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de vieillissement sur construction artisanale",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 60 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Challenge 2+2",
+          "annees": "1986",
+          "phases": [
+            "Ajout de deux places, nouveau tableau de bord et passage à la mécanique Porsche 930."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Porsche 930 3.3 flat-six turbo — 300 ch",
+              "code_moteur": "Porsche 930 Turbo Sbarro",
+              "cylindree": "3 299 cm³",
+              "puissance_ch": 300,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement d’huile et turbo du flat-six Porsche 930",
+                  "symptomes": [
+                    "Fumée au démarrage ou en charge",
+                    "Fuite d’huile",
+                    "Boost tardif ou irrégulier"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 140 000 km ; âge et immobilisation priment",
+                  "diagnostic": "Distinguer Challenge 2 de 300 ch et Challenge 3 de 400 ch, toutes deux indiquées à 3 299 cm³ par l’archive. Mesurer compressions/leak-down, pression d’huile et richesse, puis contrôler pompe, échangeurs, conduites, turbo, wastegate, injection, goujons et fuites.",
+                  "piece_concernee": "Flat-six Porsche 930 Turbo central arrière",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente sur mécanique 930 âgée ou préparée",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Allumage, injection et réglage de suralimentation",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés sous boost",
+                    "Cliquetis ou manque de puissance"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et avant pleine charge",
+                  "diagnostic": "Contrôler pression carburant, pompes, accumulateur, injecteurs, prises d’air, allumage, avance, bougies et pression de commande du turbo. Valider au banc la configuration 300 ou 400 ch sans augmenter le boost pour masquer une usure moteur.",
+                  "piece_concernee": "Alimentation et gestion Porsche/Sbarro",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente avec carburant moderne et durites âgées",
+                  "cout_reparation_estime": "Élevé : environ 500 à 6 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle cinq rapports, embrayage et propulsion",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Craquement",
+                    "Patinage, vibration ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km, mais historique prime",
+                  "diagnostic": "Identifier la boîte Porsche adaptée par Sbarro, contrôler huile/limaille, tringlerie, synchros, embrayage, supports, arbres et différentiel. Vérifier alignement et refroidissement dans l’implantation centrale arrière spécifique.",
+                  "piece_concernee": "Transmission Challenge 2/3",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure accrue par le couple et la rareté des adaptations",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 15 000 €"
+                },
+                {
+                  "probleme": "Châssis, freinage, carrosserie et provenance des Challenge Porsche",
+                  "symptomes": [
+                    "Fissure ou corrosion",
+                    "Freinage irrégulier",
+                    "Numéro ou configuration incohérente"
+                  ],
+                  "kilometrage_apparition": "Expertise systématique avant achat",
+                  "diagnostic": "Rapprocher numéro de châssis, version 2+2/3 et moteur des archives. Inspecter structure, panneaux, ancrages, géométrie, suspension, direction, freins, roues, pneus, caméra arrière et habitacle sur mesure ; documenter réparations et changements de moteur.",
+                  "piece_concernee": "Structure et authenticité Challenge 2/3",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de transformation parmi huit exemplaires",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 60 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Challenge 3",
+          "annees": "1987",
+          "phases": [
+            "Évolution haute puissance de la Challenge 2 ; huit Challenge de toutes versions auraient été construites."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Porsche 930 3.3 flat-six turbo préparé — 400 ch",
+              "code_moteur": "Porsche 930 Turbo Sbarro 400",
+              "cylindree": "3 299 cm³",
+              "puissance_ch": 400,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement d’huile et turbo du flat-six Porsche 930",
+                  "symptomes": [
+                    "Fumée au démarrage ou en charge",
+                    "Fuite d’huile",
+                    "Boost tardif ou irrégulier"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 140 000 km ; âge et immobilisation priment",
+                  "diagnostic": "Distinguer Challenge 2 de 300 ch et Challenge 3 de 400 ch, toutes deux indiquées à 3 299 cm³ par l’archive. Mesurer compressions/leak-down, pression d’huile et richesse, puis contrôler pompe, échangeurs, conduites, turbo, wastegate, injection, goujons et fuites.",
+                  "piece_concernee": "Flat-six Porsche 930 Turbo central arrière",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente sur mécanique 930 âgée ou préparée",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Allumage, injection et réglage de suralimentation",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés sous boost",
+                    "Cliquetis ou manque de puissance"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et avant pleine charge",
+                  "diagnostic": "Contrôler pression carburant, pompes, accumulateur, injecteurs, prises d’air, allumage, avance, bougies et pression de commande du turbo. Valider au banc la configuration 300 ou 400 ch sans augmenter le boost pour masquer une usure moteur.",
+                  "piece_concernee": "Alimentation et gestion Porsche/Sbarro",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente avec carburant moderne et durites âgées",
+                  "cout_reparation_estime": "Élevé : environ 500 à 6 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle cinq rapports, embrayage et propulsion",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Craquement",
+                    "Patinage, vibration ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km, mais historique prime",
+                  "diagnostic": "Identifier la boîte Porsche adaptée par Sbarro, contrôler huile/limaille, tringlerie, synchros, embrayage, supports, arbres et différentiel. Vérifier alignement et refroidissement dans l’implantation centrale arrière spécifique.",
+                  "piece_concernee": "Transmission Challenge 2/3",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure accrue par le couple et la rareté des adaptations",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 15 000 €"
+                },
+                {
+                  "probleme": "Châssis, freinage, carrosserie et provenance des Challenge Porsche",
+                  "symptomes": [
+                    "Fissure ou corrosion",
+                    "Freinage irrégulier",
+                    "Numéro ou configuration incohérente"
+                  ],
+                  "kilometrage_apparition": "Expertise systématique avant achat",
+                  "diagnostic": "Rapprocher numéro de châssis, version 2+2/3 et moteur des archives. Inspecter structure, panneaux, ancrages, géométrie, suspension, direction, freins, roues, pneus, caméra arrière et habitacle sur mesure ; documenter réparations et changements de moteur.",
+                  "piece_concernee": "Structure et authenticité Challenge 2/3",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de transformation parmi huit exemplaires",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 60 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://sbarro.phcalvet.fr/voitures/Challenge/challenge.html"
+      ]
+    }
+  ]
+}

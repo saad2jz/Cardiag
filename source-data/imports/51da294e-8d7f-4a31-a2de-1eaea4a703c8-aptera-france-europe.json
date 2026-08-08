@@ -1,0 +1,73 @@
+{
+  "nom": "Aptera",
+  "modeles": [
+    {
+      "nom": "Solar EV",
+      "generations": [
+        {
+          "code_chassis": "Aptera Launch Edition — véhicule de préproduction",
+          "annees": "2025–aujourd’hui",
+          "phases": [
+            "Aptera annonce environ 700 W solaires, jusqu’à 40 miles/jour solaire et 400 miles par charge ; véhicule encore en test/validation, spécifications à confirmer à l’homologation"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique solaire",
+              "nom": "Solar EV Launch Edition — 204 ch",
+              "code_moteur": "Vitesco EMR3 150 kW",
+              "cylindree": "Batterie NMC 42/44 kWh cible",
+              "puissance_ch": 204,
+              "boite": [
+                "Réducteur mono-rapport"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "SoH, écart de cellules et gestion thermique de la batterie de lancement",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Charge limitée",
+                    "Alerte haute tension"
+                  ],
+                  "kilometrage_apparition": "Dépend des cycles, du climat et de la validation finale du véhicule",
+                  "diagnostic": "Avec habilitation HV, lire SoH, tensions/températures et isolement ; contrôler pack 21700, modules, busbars, refroidissement, étanchéité et versions BMS. Confirmer toute valeur sur la fiche de production finale",
+                  "piece_concernee": "Batterie NMC et BMS Aptera",
+                  "gravite": "Critique",
+                  "frequence": "Véhicule encore en validation : fréquence non établie",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 25 000 € — estimation"
+                },
+                {
+                  "probleme": "Unité motrice EMR3, onduleur, réducteur et recharge",
+                  "symptomes": [
+                    "Bruit",
+                    "Vibration",
+                    "Puissance réduite ou charge interrompue"
+                  ],
+                  "kilometrage_apparition": "Kilométrage non encore documenté en flotte",
+                  "diagnostic": "Tester isolement/phases/températures, unité Vitesco EMR3, cardans, supports, refroidissement, prise, chargeur, DC/DC, batterie 12 V et logiciel ; vérifier la configuration réellement homologuée",
+                  "piece_concernee": "Propulsion électrique et système de charge",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Non établie avant production en volume",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 15 000 € — estimation"
+                },
+                {
+                  "probleme": "Cellules solaires, composite, ouvrants et train à trois roues",
+                  "symptomes": [
+                    "Production solaire faible",
+                    "Fissure/délamination",
+                    "Usure anormale ou instabilité"
+                  ],
+                  "kilometrage_apparition": "Après choc, vieillissement UV ou défaut d’alignement",
+                  "diagnostic": "Mesurer rendement des zones solaires et MPPT, inspecter encapsulation, câblage, coque composite, collages, suspension, direction, roulements, pneumatiques, géométrie et étanchéité des ouvrants",
+                  "piece_concernee": "Carrosserie solaire et châssis trois roues",
+                  "gravite": "Critique si structure ou direction atteinte",
+                  "frequence": "Données de vieillissement encore limitées",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 500 à plus de 20 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

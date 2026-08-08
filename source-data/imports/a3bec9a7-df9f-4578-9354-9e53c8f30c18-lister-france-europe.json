@@ -1,0 +1,140 @@
+{
+  "nom": "Lister",
+  "modeles": [
+    {
+      "nom": "Storm",
+      "generations": [
+        {
+          "code_chassis": "Storm route",
+          "annees": "1993–1994",
+          "phases": [
+            "Quatre voitures de route généralement recensées ; authentifier chaque spécification individuellement."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Jaguar V12 7.0 — 546 ch",
+              "code_moteur": "Lister/Jaguar V12",
+              "cylindree": "6 996 cm³",
+              "puissance_ch": 546,
+              "boite": [
+                "Getrag manuelle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement, injection et distribution du Jaguar V12 7.0",
+                  "symptomes": [
+                    "Pression d’huile faible",
+                    "Surchauffe",
+                    "Ratés, fuite ou bruit de distribution"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km sur route ; selon heures et épreuves en compétition",
+                  "diagnostic": "Authentifier bloc et préparation Lister, mesurer compressions/leak-down et pression, contrôler chaînes/tendeurs, pompe, grand circuit de refroidissement, ventilateurs, injecteurs, régulateurs, papillons, bobines/allumage et cartographie ; analyser huile et journal de températures avant essai en charge",
+                  "piece_concernee": "Jaguar V12 7 litres préparé Lister",
+                  "gravite": "Critique",
+                  "frequence": "Risque important sur véhicule peu roulé, modifié ou utilisé en course",
+                  "cout_reparation_estime": "Très élevé : environ 4 000 à plus de 50 000 €"
+                },
+                {
+                  "probleme": "Boîte Getrag/Hewland, embrayage, arbre et différentiel",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Vibration, fuite ou bruit de pont"
+                  ],
+                  "kilometrage_apparition": "Variable ; révision selon heures de course sur GT",
+                  "diagnostic": "Identifier boîte route ou séquentielle de compétition, contrôler embrayage multidisque éventuel, synchros/pignons, huile, refroidissement, supports, arbre, cardans et différentiel ; mesurer jeux et rechercher limaille après chaque épreuve",
+                  "piece_concernee": "Transmission et propulsion Storm",
+                  "gravite": "Critique en compétition",
+                  "frequence": "Usure fortement liée au couple et à l’usage",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Châssis spatial, panneaux carbone/Kevlar, suspension, freins et provenance",
+                  "symptomes": [
+                    "Fissure",
+                    "Géométrie instable",
+                    "Jeu, freinage irrégulier ou historique lacunaire"
+                  ],
+                  "kilometrage_apparition": "Contrôle systématique avant acquisition et après choc",
+                  "diagnostic": "Faire authentifier numéro et spécification route/GTS/GT, inspecter tubes, soudures, collages, carbone/Kevlar, points de levage et traces de course ; contrôler triangles, rotules, amortisseurs, crémaillère, freins, roues/réservoirs et dates des équipements de sécurité FIA",
+                  "piece_concernee": "Structure, trains roulants et identité Lister Storm",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé vu rareté et carrière en compétition",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 100 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Storm GTS / GT compétition",
+          "annees": "1995–2003",
+          "phases": [
+            "Versions GTS puis GT engagées en endurance ; puissance et boîte varient par règlement, saison et châssis."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Jaguar V12 7.0 course — 600 ch",
+              "code_moteur": "Lister/Jaguar V12 compétition",
+              "cylindree": "6 996 cm³",
+              "puissance_ch": 600,
+              "boite": [
+                "Boîte compétition manuelle ou séquentielle selon évolution, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement, injection et distribution du Jaguar V12 7.0",
+                  "symptomes": [
+                    "Pression d’huile faible",
+                    "Surchauffe",
+                    "Ratés, fuite ou bruit de distribution"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km sur route ; selon heures et épreuves en compétition",
+                  "diagnostic": "Authentifier bloc et préparation Lister, mesurer compressions/leak-down et pression, contrôler chaînes/tendeurs, pompe, grand circuit de refroidissement, ventilateurs, injecteurs, régulateurs, papillons, bobines/allumage et cartographie ; analyser huile et journal de températures avant essai en charge",
+                  "piece_concernee": "Jaguar V12 7 litres préparé Lister",
+                  "gravite": "Critique",
+                  "frequence": "Risque important sur véhicule peu roulé, modifié ou utilisé en course",
+                  "cout_reparation_estime": "Très élevé : environ 4 000 à plus de 50 000 €"
+                },
+                {
+                  "probleme": "Boîte Getrag/Hewland, embrayage, arbre et différentiel",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Vibration, fuite ou bruit de pont"
+                  ],
+                  "kilometrage_apparition": "Variable ; révision selon heures de course sur GT",
+                  "diagnostic": "Identifier boîte route ou séquentielle de compétition, contrôler embrayage multidisque éventuel, synchros/pignons, huile, refroidissement, supports, arbre, cardans et différentiel ; mesurer jeux et rechercher limaille après chaque épreuve",
+                  "piece_concernee": "Transmission et propulsion Storm",
+                  "gravite": "Critique en compétition",
+                  "frequence": "Usure fortement liée au couple et à l’usage",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Châssis spatial, panneaux carbone/Kevlar, suspension, freins et provenance",
+                  "symptomes": [
+                    "Fissure",
+                    "Géométrie instable",
+                    "Jeu, freinage irrégulier ou historique lacunaire"
+                  ],
+                  "kilometrage_apparition": "Contrôle systématique avant acquisition et après choc",
+                  "diagnostic": "Faire authentifier numéro et spécification route/GTS/GT, inspecter tubes, soudures, collages, carbone/Kevlar, points de levage et traces de course ; contrôler triangles, rotules, amortisseurs, crémaillère, freins, roues/réservoirs et dates des équipements de sécurité FIA",
+                  "piece_concernee": "Structure, trains roulants et identité Lister Storm",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé vu rareté et carrière en compétition",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 100 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.lister.com/",
+        "https://www.jecsw.co.uk/emagazine/279-december-2017/279-december-2017.pdf"
+      ]
+    }
+  ]
+}

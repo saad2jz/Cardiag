@@ -1,0 +1,248 @@
+{
+  "nom": "Togg",
+  "modeles": [
+    {
+      "nom": "T10X",
+      "generations": [
+        {
+          "code_chassis": "T10X V1 RWD autonomie standard",
+          "annees": "2023–aujourd’hui",
+          "phases": [
+            "Version V1 à batterie standard : 160 kW, 350 Nm et autonomie WLTP annoncée de 314 km."
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "RWD batterie 52,4 kWh — 218 ch",
+              "code_moteur": "Togg EDM RWD 160 kW / 52.4",
+              "cylindree": "Électrique, batterie 52,4 kWh",
+              "puissance_ch": 218,
+              "boite": [
+                "Réducteur monorapport, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "État de santé, équilibrage et étanchéité de la batterie haute tension",
+                  "symptomes": [
+                    "Autonomie en baisse",
+                    "Écart de cellules",
+                    "Alerte batterie, limitation de puissance ou défaut d’isolement"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque achat et révision ; vieillissement dépend du temps, cycles, température et charge rapide",
+                  "diagnostic": "Avec diagnostic compatible, relever SOH, énergie utilisable, écarts de tension/température, historiques de charge et défauts BMS ; inspecter carter, protections, prises et traces de choc/eau, puis réaliser essai de capacité si nécessaire sans intervenir hors habilitation électrique",
+                  "piece_concernee": "Batterie 52,4 ou 88,5 kWh, BMS et circuit haute tension T10X",
+                  "gravite": "Critique",
+                  "frequence": "Variable ; dommage de soubassement à exclure systématiquement",
+                  "cout_reparation_estime": "Très élevé : diagnostic 100 à 400 €, module ou pack plusieurs milliers à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Gestion thermique, pompe à chaleur/climatisation et recharge AC/DC",
+                  "symptomes": [
+                    "Charge lente ou interrompue",
+                    "Autonomie réduite par température",
+                    "Habitacle mal chauffé ou refroidi"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et dès anomalie de recharge",
+                  "diagnostic": "Tester AC jusqu’à 22 kW selon borne/câble et DC jusqu’à 180 kW dans de bonnes conditions, lire courbes et défauts ; contrôler ports, verrouillage, OBC, conversion DC, pompes, vannes, radiateurs, ventilateurs, liquide et climatisation, en séparant limite borne, batterie froide/chaude et panne véhicule",
+                  "piece_concernee": "Recharge et gestion thermique T10X",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Occasionnelle ; puissance de charge naturellement variable",
+                  "cout_reparation_estime": "Élevé : environ 150 à 8 000 € selon organe"
+                },
+                {
+                  "probleme": "Moteur(s), onduleur(s), réducteur et arbres de transmission",
+                  "symptomes": [
+                    "Bruit de roulement ou réducteur",
+                    "Vibration",
+                    "Perte de motricité ou puissance limitée"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque entretien et après choc ; pas de seuil universel",
+                  "diagnostic": "Lire défauts et températures/courants, comparer essieux sur 4More, inspecter câbles HV, connecteurs, refroidissement, fixations, joints et huile de réducteur si prévue ; contrôler arbres, cardans, roulements et pneus identiques sur AWD, puis essai progressif récupération/accélération",
+                  "piece_concernee": "Chaîne de traction électrique RWD ou AWD T10X",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Non quantifiable avec le recul disponible",
+                  "cout_reparation_estime": "Très élevé : environ 300 à plus de 15 000 €"
+                },
+                {
+                  "probleme": "Logiciels, batterie 12 V, ADAS, freinage, suspension et pneus",
+                  "symptomes": [
+                    "Écran ou accès indisponible",
+                    "Alertes multiples",
+                    "ADAS ou freinage régénératif perturbé",
+                    "Usure irrégulière des pneus"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque mise à jour, changement de pare-brise, choc ou achat",
+                  "diagnostic": "Vérifier version logicielle, campagnes, connectivité et historique, tester batterie 12 V/DC-DC et mises en veille ; lire tous calculateurs, calibrer caméras/radars si nécessaire, contrôler freins mécaniques, liquide, corrosion des disques, direction, géométrie, suspension, jantes et pneus adaptés au couple/masse",
+                  "piece_concernee": "Réseau électronique, ADAS et châssis T10X",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Mises à jour et calibrages possibles ; usure dépend fortement de la conduite",
+                  "cout_reparation_estime": "Variable : environ 100 à plus de 5 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "T10X V1/V2 RWD grande autonomie",
+          "annees": "2023–aujourd’hui",
+          "phases": [
+            "Batterie grande autonomie : 160 kW, 350 Nm et jusqu’à 523 km WLTP selon le catalogue 2025."
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "RWD batterie 88,5 kWh — 218 ch",
+              "code_moteur": "Togg EDM RWD 160 kW / 88.5",
+              "cylindree": "Électrique, batterie 88,5 kWh",
+              "puissance_ch": 218,
+              "boite": [
+                "Réducteur monorapport, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "État de santé, équilibrage et étanchéité de la batterie haute tension",
+                  "symptomes": [
+                    "Autonomie en baisse",
+                    "Écart de cellules",
+                    "Alerte batterie, limitation de puissance ou défaut d’isolement"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque achat et révision ; vieillissement dépend du temps, cycles, température et charge rapide",
+                  "diagnostic": "Avec diagnostic compatible, relever SOH, énergie utilisable, écarts de tension/température, historiques de charge et défauts BMS ; inspecter carter, protections, prises et traces de choc/eau, puis réaliser essai de capacité si nécessaire sans intervenir hors habilitation électrique",
+                  "piece_concernee": "Batterie 52,4 ou 88,5 kWh, BMS et circuit haute tension T10X",
+                  "gravite": "Critique",
+                  "frequence": "Variable ; dommage de soubassement à exclure systématiquement",
+                  "cout_reparation_estime": "Très élevé : diagnostic 100 à 400 €, module ou pack plusieurs milliers à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Gestion thermique, pompe à chaleur/climatisation et recharge AC/DC",
+                  "symptomes": [
+                    "Charge lente ou interrompue",
+                    "Autonomie réduite par température",
+                    "Habitacle mal chauffé ou refroidi"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et dès anomalie de recharge",
+                  "diagnostic": "Tester AC jusqu’à 22 kW selon borne/câble et DC jusqu’à 180 kW dans de bonnes conditions, lire courbes et défauts ; contrôler ports, verrouillage, OBC, conversion DC, pompes, vannes, radiateurs, ventilateurs, liquide et climatisation, en séparant limite borne, batterie froide/chaude et panne véhicule",
+                  "piece_concernee": "Recharge et gestion thermique T10X",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Occasionnelle ; puissance de charge naturellement variable",
+                  "cout_reparation_estime": "Élevé : environ 150 à 8 000 € selon organe"
+                },
+                {
+                  "probleme": "Moteur(s), onduleur(s), réducteur et arbres de transmission",
+                  "symptomes": [
+                    "Bruit de roulement ou réducteur",
+                    "Vibration",
+                    "Perte de motricité ou puissance limitée"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque entretien et après choc ; pas de seuil universel",
+                  "diagnostic": "Lire défauts et températures/courants, comparer essieux sur 4More, inspecter câbles HV, connecteurs, refroidissement, fixations, joints et huile de réducteur si prévue ; contrôler arbres, cardans, roulements et pneus identiques sur AWD, puis essai progressif récupération/accélération",
+                  "piece_concernee": "Chaîne de traction électrique RWD ou AWD T10X",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Non quantifiable avec le recul disponible",
+                  "cout_reparation_estime": "Très élevé : environ 300 à plus de 15 000 €"
+                },
+                {
+                  "probleme": "Logiciels, batterie 12 V, ADAS, freinage, suspension et pneus",
+                  "symptomes": [
+                    "Écran ou accès indisponible",
+                    "Alertes multiples",
+                    "ADAS ou freinage régénératif perturbé",
+                    "Usure irrégulière des pneus"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque mise à jour, changement de pare-brise, choc ou achat",
+                  "diagnostic": "Vérifier version logicielle, campagnes, connectivité et historique, tester batterie 12 V/DC-DC et mises en veille ; lire tous calculateurs, calibrer caméras/radars si nécessaire, contrôler freins mécaniques, liquide, corrosion des disques, direction, géométrie, suspension, jantes et pneus adaptés au couple/masse",
+                  "piece_concernee": "Réseau électronique, ADAS et châssis T10X",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Mises à jour et calibrages possibles ; usure dépend fortement de la conduite",
+                  "cout_reparation_estime": "Variable : environ 100 à plus de 5 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "T10X V2 4More Obsidian AWD",
+          "annees": "2025–aujourd’hui",
+          "phases": [
+            "Version 4More à deux moteurs : 320 kW, 700 Nm et autonomie WLTP annoncée de 468 km."
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "AWD deux moteurs, batterie 88,5 kWh — 435 ch",
+              "code_moteur": "Togg dual EDM AWD 320 kW / 88.5",
+              "cylindree": "Électrique, batterie 88,5 kWh",
+              "puissance_ch": 435,
+              "boite": [
+                "Deux réducteurs monorapport, transmission intégrale"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "État de santé, équilibrage et étanchéité de la batterie haute tension",
+                  "symptomes": [
+                    "Autonomie en baisse",
+                    "Écart de cellules",
+                    "Alerte batterie, limitation de puissance ou défaut d’isolement"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque achat et révision ; vieillissement dépend du temps, cycles, température et charge rapide",
+                  "diagnostic": "Avec diagnostic compatible, relever SOH, énergie utilisable, écarts de tension/température, historiques de charge et défauts BMS ; inspecter carter, protections, prises et traces de choc/eau, puis réaliser essai de capacité si nécessaire sans intervenir hors habilitation électrique",
+                  "piece_concernee": "Batterie 52,4 ou 88,5 kWh, BMS et circuit haute tension T10X",
+                  "gravite": "Critique",
+                  "frequence": "Variable ; dommage de soubassement à exclure systématiquement",
+                  "cout_reparation_estime": "Très élevé : diagnostic 100 à 400 €, module ou pack plusieurs milliers à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Gestion thermique, pompe à chaleur/climatisation et recharge AC/DC",
+                  "symptomes": [
+                    "Charge lente ou interrompue",
+                    "Autonomie réduite par température",
+                    "Habitacle mal chauffé ou refroidi"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et dès anomalie de recharge",
+                  "diagnostic": "Tester AC jusqu’à 22 kW selon borne/câble et DC jusqu’à 180 kW dans de bonnes conditions, lire courbes et défauts ; contrôler ports, verrouillage, OBC, conversion DC, pompes, vannes, radiateurs, ventilateurs, liquide et climatisation, en séparant limite borne, batterie froide/chaude et panne véhicule",
+                  "piece_concernee": "Recharge et gestion thermique T10X",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Occasionnelle ; puissance de charge naturellement variable",
+                  "cout_reparation_estime": "Élevé : environ 150 à 8 000 € selon organe"
+                },
+                {
+                  "probleme": "Moteur(s), onduleur(s), réducteur et arbres de transmission",
+                  "symptomes": [
+                    "Bruit de roulement ou réducteur",
+                    "Vibration",
+                    "Perte de motricité ou puissance limitée"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque entretien et après choc ; pas de seuil universel",
+                  "diagnostic": "Lire défauts et températures/courants, comparer essieux sur 4More, inspecter câbles HV, connecteurs, refroidissement, fixations, joints et huile de réducteur si prévue ; contrôler arbres, cardans, roulements et pneus identiques sur AWD, puis essai progressif récupération/accélération",
+                  "piece_concernee": "Chaîne de traction électrique RWD ou AWD T10X",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Non quantifiable avec le recul disponible",
+                  "cout_reparation_estime": "Très élevé : environ 300 à plus de 15 000 €"
+                },
+                {
+                  "probleme": "Logiciels, batterie 12 V, ADAS, freinage, suspension et pneus",
+                  "symptomes": [
+                    "Écran ou accès indisponible",
+                    "Alertes multiples",
+                    "ADAS ou freinage régénératif perturbé",
+                    "Usure irrégulière des pneus"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque mise à jour, changement de pare-brise, choc ou achat",
+                  "diagnostic": "Vérifier version logicielle, campagnes, connectivité et historique, tester batterie 12 V/DC-DC et mises en veille ; lire tous calculateurs, calibrer caméras/radars si nécessaire, contrôler freins mécaniques, liquide, corrosion des disques, direction, géométrie, suspension, jantes et pneus adaptés au couple/masse",
+                  "piece_concernee": "Réseau électronique, ADAS et châssis T10X",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Mises à jour et calibrages possibles ; usure dépend fortement de la conduite",
+                  "cout_reparation_estime": "Variable : environ 100 à plus de 5 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.togg.com.tr/t10x",
+        "https://trumore-cdn.togg.cloud/ToggT10XKatalog.pdf"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,315 @@
+{
+  "nom": "Am General",
+  "modeles": [
+    {
+      "nom": "Hummer",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "convertible",
+        "countries": [
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 6
+      },
+      "generations": [
+        {
+          "code_chassis": "HMMWV M998/M1097",
+          "annees": "1984–aujourd’hui",
+          "phases": [
+            "Version militaire : identifier variante, blindage, voltage, masse, ponts et configuration par plaque"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "6.2 V8 diesel — 150 ch",
+              "code_moteur": "Detroit Diesel 6.2",
+              "cylindree": "6 200 cm³",
+              "puissance_ch": 150,
+              "boite": [
+                "TH400 automatique 3 rapports + transfert"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, refroidissement et étanchéité du V8 diesel",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Fumée",
+                    "Surchauffe ou pression d’huile faible"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 km ou usage sévère",
+                  "diagnostic": "Identifier 6.2/6.5/Duramax, mesurer pression/retours, contrôler pompe DB2/DS4 ou common rail, PMD sur 6.5, injecteurs, turbo, radiateur, ventilateur, huile, joints et campagnes militaires",
+                  "piece_concernee": "V8 diesel et gestion thermique",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sur 6.5 ancien ou véhicule longtemps stocké",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 10 000 €"
+                },
+                {
+                  "probleme": "Réducteurs de roues, demi-arbres, différentiels et transfert",
+                  "symptomes": [
+                    "Bruit aux moyeux",
+                    "Fuite",
+                    "Vibration ou transmission qui force"
+                  ],
+                  "kilometrage_apparition": "Variable selon terrain, pneus et charge",
+                  "diagnostic": "Lever les quatre roues, contrôler jeux/fuites/températures des portiques, demi-arbres, arbres, croisillons, différentiels Torsen, transfert, boîtes, niveaux, pneus identiques et traces de choc",
+                  "piece_concernee": "Transmission intégrale et réducteurs portiques",
+                  "gravite": "Critique en cas de roulement ou fixation défaillante",
+                  "frequence": "Assez fréquente après franchissement ou défaut d’entretien",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 15 000 €"
+                },
+                {
+                  "probleme": "Corrosion/fissures du châssis, freins centraux et équipements spécifiques",
+                  "symptomes": [
+                    "Fissure",
+                    "Jeu de caisse",
+                    "Freinage faible ou accessoires inopérants"
+                  ],
+                  "kilometrage_apparition": "À contrôler avant achat, indépendamment du compteur",
+                  "diagnostic": "Inspecter châssis, supports de caisse, bras, direction, freins inboard, moyeux, jantes CTIS/run-flat selon version, câblage 12/24 V, blindage, treuil, modifications et conformité d’immatriculation",
+                  "piece_concernee": "Structure et organes de sécurité HMMWV/Hummer",
+                  "gravite": "Critique",
+                  "frequence": "Variable selon origine militaire et restauration",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 25 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "6.5 V8 diesel — 170 ch",
+              "code_moteur": "Detroit Diesel 6.5",
+              "cylindree": "6 500 cm³",
+              "puissance_ch": 170,
+              "boite": [
+                "4L80E automatique 4 rapports + transfert"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, refroidissement et étanchéité du V8 diesel",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Fumée",
+                    "Surchauffe ou pression d’huile faible"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 km ou usage sévère",
+                  "diagnostic": "Identifier 6.2/6.5/Duramax, mesurer pression/retours, contrôler pompe DB2/DS4 ou common rail, PMD sur 6.5, injecteurs, turbo, radiateur, ventilateur, huile, joints et campagnes militaires",
+                  "piece_concernee": "V8 diesel et gestion thermique",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sur 6.5 ancien ou véhicule longtemps stocké",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 10 000 €"
+                },
+                {
+                  "probleme": "Réducteurs de roues, demi-arbres, différentiels et transfert",
+                  "symptomes": [
+                    "Bruit aux moyeux",
+                    "Fuite",
+                    "Vibration ou transmission qui force"
+                  ],
+                  "kilometrage_apparition": "Variable selon terrain, pneus et charge",
+                  "diagnostic": "Lever les quatre roues, contrôler jeux/fuites/températures des portiques, demi-arbres, arbres, croisillons, différentiels Torsen, transfert, boîtes, niveaux, pneus identiques et traces de choc",
+                  "piece_concernee": "Transmission intégrale et réducteurs portiques",
+                  "gravite": "Critique en cas de roulement ou fixation défaillante",
+                  "frequence": "Assez fréquente après franchissement ou défaut d’entretien",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 15 000 €"
+                },
+                {
+                  "probleme": "Corrosion/fissures du châssis, freins centraux et équipements spécifiques",
+                  "symptomes": [
+                    "Fissure",
+                    "Jeu de caisse",
+                    "Freinage faible ou accessoires inopérants"
+                  ],
+                  "kilometrage_apparition": "À contrôler avant achat, indépendamment du compteur",
+                  "diagnostic": "Inspecter châssis, supports de caisse, bras, direction, freins inboard, moyeux, jantes CTIS/run-flat selon version, câblage 12/24 V, blindage, treuil, modifications et conformité d’immatriculation",
+                  "piece_concernee": "Structure et organes de sécurité HMMWV/Hummer",
+                  "gravite": "Critique",
+                  "frequence": "Variable selon origine militaire et restauration",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 25 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "6.5 V8 turbodiesel — 190 ch",
+              "code_moteur": "AM General Optimizer 6500",
+              "cylindree": "6 500 cm³",
+              "puissance_ch": 190,
+              "boite": [
+                "4L80E automatique 4 rapports + transfert"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, refroidissement et étanchéité du V8 diesel",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Fumée",
+                    "Surchauffe ou pression d’huile faible"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 km ou usage sévère",
+                  "diagnostic": "Identifier 6.2/6.5/Duramax, mesurer pression/retours, contrôler pompe DB2/DS4 ou common rail, PMD sur 6.5, injecteurs, turbo, radiateur, ventilateur, huile, joints et campagnes militaires",
+                  "piece_concernee": "V8 diesel et gestion thermique",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sur 6.5 ancien ou véhicule longtemps stocké",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 10 000 €"
+                },
+                {
+                  "probleme": "Réducteurs de roues, demi-arbres, différentiels et transfert",
+                  "symptomes": [
+                    "Bruit aux moyeux",
+                    "Fuite",
+                    "Vibration ou transmission qui force"
+                  ],
+                  "kilometrage_apparition": "Variable selon terrain, pneus et charge",
+                  "diagnostic": "Lever les quatre roues, contrôler jeux/fuites/températures des portiques, demi-arbres, arbres, croisillons, différentiels Torsen, transfert, boîtes, niveaux, pneus identiques et traces de choc",
+                  "piece_concernee": "Transmission intégrale et réducteurs portiques",
+                  "gravite": "Critique en cas de roulement ou fixation défaillante",
+                  "frequence": "Assez fréquente après franchissement ou défaut d’entretien",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 15 000 €"
+                },
+                {
+                  "probleme": "Corrosion/fissures du châssis, freins centraux et équipements spécifiques",
+                  "symptomes": [
+                    "Fissure",
+                    "Jeu de caisse",
+                    "Freinage faible ou accessoires inopérants"
+                  ],
+                  "kilometrage_apparition": "À contrôler avant achat, indépendamment du compteur",
+                  "diagnostic": "Inspecter châssis, supports de caisse, bras, direction, freins inboard, moyeux, jantes CTIS/run-flat selon version, câblage 12/24 V, blindage, treuil, modifications et conformité d’immatriculation",
+                  "piece_concernee": "Structure et organes de sécurité HMMWV/Hummer",
+                  "gravite": "Critique",
+                  "frequence": "Variable selon origine militaire et restauration",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 25 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Hummer H1 civil",
+          "annees": "1992–2006",
+          "phases": [
+            "Version civile H1 ; distinguer Open Top, Wagon, HMCS et Alpha au VIN"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "6.5 V8 turbodiesel — 195 ch",
+              "code_moteur": "Detroit Diesel/Optimizer 6500",
+              "cylindree": "6 500 cm³",
+              "puissance_ch": 195,
+              "boite": [
+                "4L80E automatique 4 rapports + transfert"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, refroidissement et étanchéité du V8 diesel",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Fumée",
+                    "Surchauffe ou pression d’huile faible"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 km ou usage sévère",
+                  "diagnostic": "Identifier 6.2/6.5/Duramax, mesurer pression/retours, contrôler pompe DB2/DS4 ou common rail, PMD sur 6.5, injecteurs, turbo, radiateur, ventilateur, huile, joints et campagnes militaires",
+                  "piece_concernee": "V8 diesel et gestion thermique",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sur 6.5 ancien ou véhicule longtemps stocké",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 10 000 €"
+                },
+                {
+                  "probleme": "Réducteurs de roues, demi-arbres, différentiels et transfert",
+                  "symptomes": [
+                    "Bruit aux moyeux",
+                    "Fuite",
+                    "Vibration ou transmission qui force"
+                  ],
+                  "kilometrage_apparition": "Variable selon terrain, pneus et charge",
+                  "diagnostic": "Lever les quatre roues, contrôler jeux/fuites/températures des portiques, demi-arbres, arbres, croisillons, différentiels Torsen, transfert, boîtes, niveaux, pneus identiques et traces de choc",
+                  "piece_concernee": "Transmission intégrale et réducteurs portiques",
+                  "gravite": "Critique en cas de roulement ou fixation défaillante",
+                  "frequence": "Assez fréquente après franchissement ou défaut d’entretien",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 15 000 €"
+                },
+                {
+                  "probleme": "Corrosion/fissures du châssis, freins centraux et équipements spécifiques",
+                  "symptomes": [
+                    "Fissure",
+                    "Jeu de caisse",
+                    "Freinage faible ou accessoires inopérants"
+                  ],
+                  "kilometrage_apparition": "À contrôler avant achat, indépendamment du compteur",
+                  "diagnostic": "Inspecter châssis, supports de caisse, bras, direction, freins inboard, moyeux, jantes CTIS/run-flat selon version, câblage 12/24 V, blindage, treuil, modifications et conformité d’immatriculation",
+                  "piece_concernee": "Structure et organes de sécurité HMMWV/Hummer",
+                  "gravite": "Critique",
+                  "frequence": "Variable selon origine militaire et restauration",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 25 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "6.6 V8 Duramax Alpha — 300 ch",
+              "code_moteur": "GM Duramax LLY",
+              "cylindree": "6 599 cm³",
+              "puissance_ch": 300,
+              "boite": [
+                "Allison 1000 automatique 5 rapports + transfert"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, refroidissement et étanchéité du V8 diesel",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Fumée",
+                    "Surchauffe ou pression d’huile faible"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 km ou usage sévère",
+                  "diagnostic": "Identifier 6.2/6.5/Duramax, mesurer pression/retours, contrôler pompe DB2/DS4 ou common rail, PMD sur 6.5, injecteurs, turbo, radiateur, ventilateur, huile, joints et campagnes militaires",
+                  "piece_concernee": "V8 diesel et gestion thermique",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sur 6.5 ancien ou véhicule longtemps stocké",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 10 000 €"
+                },
+                {
+                  "probleme": "Réducteurs de roues, demi-arbres, différentiels et transfert",
+                  "symptomes": [
+                    "Bruit aux moyeux",
+                    "Fuite",
+                    "Vibration ou transmission qui force"
+                  ],
+                  "kilometrage_apparition": "Variable selon terrain, pneus et charge",
+                  "diagnostic": "Lever les quatre roues, contrôler jeux/fuites/températures des portiques, demi-arbres, arbres, croisillons, différentiels Torsen, transfert, boîtes, niveaux, pneus identiques et traces de choc",
+                  "piece_concernee": "Transmission intégrale et réducteurs portiques",
+                  "gravite": "Critique en cas de roulement ou fixation défaillante",
+                  "frequence": "Assez fréquente après franchissement ou défaut d’entretien",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 15 000 €"
+                },
+                {
+                  "probleme": "Corrosion/fissures du châssis, freins centraux et équipements spécifiques",
+                  "symptomes": [
+                    "Fissure",
+                    "Jeu de caisse",
+                    "Freinage faible ou accessoires inopérants"
+                  ],
+                  "kilometrage_apparition": "À contrôler avant achat, indépendamment du compteur",
+                  "diagnostic": "Inspecter châssis, supports de caisse, bras, direction, freins inboard, moyeux, jantes CTIS/run-flat selon version, câblage 12/24 V, blindage, treuil, modifications et conformité d’immatriculation",
+                  "piece_concernee": "Structure et organes de sécurité HMMWV/Hummer",
+                  "gravite": "Critique",
+                  "frequence": "Variable selon origine militaire et restauration",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 25 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "source_catalogue": "VehiclesDB 2026.08.2 (CC-BY 4.0)"
+}

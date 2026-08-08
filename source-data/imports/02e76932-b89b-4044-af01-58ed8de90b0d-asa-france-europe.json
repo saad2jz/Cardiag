@@ -1,0 +1,127 @@
+{
+  "nom": "ASA",
+  "modeles": [
+    {
+      "nom": "1000 GT",
+      "generations": [
+        {
+          "code_chassis": "1000 GT Série",
+          "annees": "1964–1967",
+          "phases": [
+            "Puissance différente selon norme CUNA/SAE ; Coupé et Spider à identifier dans les archives ASA"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.0 I4 Tipo 141 — 84 ch",
+              "code_moteur": "ASA/Ferrari Tipo 141 CUNA",
+              "cylindree": "1 032 cm³",
+              "puissance_ch": 84,
+              "boite": [
+                "Boîte manuelle 4 rapports + overdrive"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Authenticité du moteur Tipo 141, châssis et carrosserie",
+                  "symptomes": [
+                    "Numéros incohérents",
+                    "Pièces Ferrari/ASA absentes",
+                    "Fissures ou corrosion"
+                  ],
+                  "kilometrage_apparition": "À contrôler avant achat, indépendamment du compteur",
+                  "diagnostic": "Comparer numéros moteur/châssis et archives ASA, inspecter cadre tubulaire Bizzarrini, soudures, carrosserie Bertone/Touring selon exemplaire, aluminium/acier, réparations et spécification Coupé/Spider",
+                  "piece_concernee": "Identité, châssis et carrosserie ASA",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque important sur très faible série restaurée",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 50 000 €"
+                },
+                {
+                  "probleme": "Lubrification, carburation Weber et refroidissement du quatre-cylindres",
+                  "symptomes": [
+                    "Pression faible",
+                    "Ratés à haut régime",
+                    "Surchauffe ou fuite"
+                  ],
+                  "kilometrage_apparition": "À contrôler quel que soit le kilométrage",
+                  "diagnostic": "Mesurer compressions, jeux, pression d’huile et température ; synchroniser Weber 40 DCOE, contrôler pompe, allumage, distribution, culasse, radiateur et analyse d’huile",
+                  "piece_concernee": "Moteur Tipo 141 1 032 cm³",
+                  "gravite": "Critique en cas de pression faible ou mélange pauvre",
+                  "frequence": "Assez fréquente sans spécialiste",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 25 000 €"
+                },
+                {
+                  "probleme": "Boîte avec overdrive, pont, freins et suspension",
+                  "symptomes": [
+                    "Overdrive inopérant",
+                    "Rapports difficiles",
+                    "Bruit de pont ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Variable, notamment après immobilisation",
+                  "diagnostic": "Contrôler embrayage, boîte 4 rapports, overdrive des 3e/4e, huile, arbre/pont, roulements, freins à disques, rotules, amortisseurs, roues et pneus adaptés",
+                  "piece_concernee": "Transmission et châssis roulant",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente avec l’âge",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 15 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.0 I4 Tipo 141 — 91 ch",
+              "code_moteur": "ASA/Ferrari Tipo 141 SAE",
+              "cylindree": "1 032 cm³",
+              "puissance_ch": 91,
+              "boite": [
+                "Boîte manuelle 4 rapports + overdrive"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Authenticité du moteur Tipo 141, châssis et carrosserie",
+                  "symptomes": [
+                    "Numéros incohérents",
+                    "Pièces Ferrari/ASA absentes",
+                    "Fissures ou corrosion"
+                  ],
+                  "kilometrage_apparition": "À contrôler avant achat, indépendamment du compteur",
+                  "diagnostic": "Comparer numéros moteur/châssis et archives ASA, inspecter cadre tubulaire Bizzarrini, soudures, carrosserie Bertone/Touring selon exemplaire, aluminium/acier, réparations et spécification Coupé/Spider",
+                  "piece_concernee": "Identité, châssis et carrosserie ASA",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque important sur très faible série restaurée",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 50 000 €"
+                },
+                {
+                  "probleme": "Lubrification, carburation Weber et refroidissement du quatre-cylindres",
+                  "symptomes": [
+                    "Pression faible",
+                    "Ratés à haut régime",
+                    "Surchauffe ou fuite"
+                  ],
+                  "kilometrage_apparition": "À contrôler quel que soit le kilométrage",
+                  "diagnostic": "Mesurer compressions, jeux, pression d’huile et température ; synchroniser Weber 40 DCOE, contrôler pompe, allumage, distribution, culasse, radiateur et analyse d’huile",
+                  "piece_concernee": "Moteur Tipo 141 1 032 cm³",
+                  "gravite": "Critique en cas de pression faible ou mélange pauvre",
+                  "frequence": "Assez fréquente sans spécialiste",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 25 000 €"
+                },
+                {
+                  "probleme": "Boîte avec overdrive, pont, freins et suspension",
+                  "symptomes": [
+                    "Overdrive inopérant",
+                    "Rapports difficiles",
+                    "Bruit de pont ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Variable, notamment après immobilisation",
+                  "diagnostic": "Contrôler embrayage, boîte 4 rapports, overdrive des 3e/4e, huile, arbre/pont, roulements, freins à disques, rotules, amortisseurs, roues et pneus adaptés",
+                  "piece_concernee": "Transmission et châssis roulant",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente avec l’âge",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 15 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1121 @@
+{
+  "nom": "Checker",
+  "modeles": [
+    {
+      "nom": "Marathon",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "sedan",
+        "countries": [
+          "fi",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "A10 Marathon",
+          "annees": "1961–1962",
+          "phases": [
+            "Sedan L-head et wagon/OHV ; carrosserie et moteur doivent être vérifiés ensemble."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Continental 226 L-head — 80 ch",
+              "code_moteur": "Continental Red Seal F-226",
+              "cylindree": "3 707 cm³",
+              "puissance_ch": 80,
+              "boite": [
+                "Manuelle 3 rapports ou automatique Dual-Range, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Moteur, refroidissement et lubrification selon Continental, Chevrolet, Perkins ou Oldsmobile",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée, pression faible ou claquement",
+                    "Démarrage difficile ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, mais service taxi et âge réel priment",
+                  "diagnostic": "Décoder année/VIN et fonderies avant toute pièce ; mesurer compressions/leak-down et pression d’huile, tester radiateur, pompe, thermostat et joint/culasse, puis contrôler distribution, carburation ou injection diesel, allumage/préchauffage et fuites propres au moteur monté",
+                  "piece_concernee": "Groupe motopropulseur Checker Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente à fort kilométrage ou après conversions",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/automatique, arbre et pont Spicer",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile ou engagement tardif",
+                    "Vibration, hurlement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, plus tôt en flotte",
+                  "diagnostic": "Identifier manuelle trois rapports, Borg-Warner/Dual-Range, Powerglide ou Turbo-Hydramatic ; contrôler huile/pression, convertisseur, embrayage, supports, arbre/croisillons, Dana/Spicer 44, demi-arbres et roulements sans mélanger les références de millésime",
+                  "piece_concernee": "Transmission et propulsion Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure fréquente en taxi ou limousine",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Châssis, corrosion, direction, suspension et freinage de véhicule de service",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant ou caisse affaissée",
+                    "Tirage, pédale longue ou usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat, sans se fier au compteur",
+                  "diagnostic": "Inspecter cadre, traverses, planchers, bas de caisse, ancrages, carrosserie sedan/wagon et anciennes réparations ; contrôler bras, ressorts/lames, rotules, boîtier et biellettes dont bague Pitman, roulements, tambours/disques selon année, conduites, pneus et géométrie",
+                  "piece_concernee": "Structure et organes de sécurité Checker",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après décennies de service intensif",
+                  "cout_reparation_estime": "Élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Continental 226 OHV — 122 ch",
+              "code_moteur": "Continental Red Seal OHV 226",
+              "cylindree": "3 707 cm³",
+              "puissance_ch": 122,
+              "boite": [
+                "Manuelle 3 rapports ou automatique Dual-Range, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Moteur, refroidissement et lubrification selon Continental, Chevrolet, Perkins ou Oldsmobile",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée, pression faible ou claquement",
+                    "Démarrage difficile ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, mais service taxi et âge réel priment",
+                  "diagnostic": "Décoder année/VIN et fonderies avant toute pièce ; mesurer compressions/leak-down et pression d’huile, tester radiateur, pompe, thermostat et joint/culasse, puis contrôler distribution, carburation ou injection diesel, allumage/préchauffage et fuites propres au moteur monté",
+                  "piece_concernee": "Groupe motopropulseur Checker Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente à fort kilométrage ou après conversions",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/automatique, arbre et pont Spicer",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile ou engagement tardif",
+                    "Vibration, hurlement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, plus tôt en flotte",
+                  "diagnostic": "Identifier manuelle trois rapports, Borg-Warner/Dual-Range, Powerglide ou Turbo-Hydramatic ; contrôler huile/pression, convertisseur, embrayage, supports, arbre/croisillons, Dana/Spicer 44, demi-arbres et roulements sans mélanger les références de millésime",
+                  "piece_concernee": "Transmission et propulsion Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure fréquente en taxi ou limousine",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Châssis, corrosion, direction, suspension et freinage de véhicule de service",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant ou caisse affaissée",
+                    "Tirage, pédale longue ou usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat, sans se fier au compteur",
+                  "diagnostic": "Inspecter cadre, traverses, planchers, bas de caisse, ancrages, carrosserie sedan/wagon et anciennes réparations ; contrôler bras, ressorts/lames, rotules, boîtier et biellettes dont bague Pitman, roulements, tambours/disques selon année, conduites, pneus et géométrie",
+                  "piece_concernee": "Structure et organes de sécurité Checker",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après décennies de service intensif",
+                  "cout_reparation_estime": "Élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "A11/A12 Continental",
+          "annees": "1963–1964",
+          "phases": [
+            "Première phase A11/A12, avant généralisation des moteurs Chevrolet."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Continental 226 L-head — 80 ch",
+              "code_moteur": "Continental Red Seal F-226",
+              "cylindree": "3 707 cm³",
+              "puissance_ch": 80,
+              "boite": [
+                "Manuelle 3 rapports ou automatique, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Moteur, refroidissement et lubrification selon Continental, Chevrolet, Perkins ou Oldsmobile",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée, pression faible ou claquement",
+                    "Démarrage difficile ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, mais service taxi et âge réel priment",
+                  "diagnostic": "Décoder année/VIN et fonderies avant toute pièce ; mesurer compressions/leak-down et pression d’huile, tester radiateur, pompe, thermostat et joint/culasse, puis contrôler distribution, carburation ou injection diesel, allumage/préchauffage et fuites propres au moteur monté",
+                  "piece_concernee": "Groupe motopropulseur Checker Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente à fort kilométrage ou après conversions",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/automatique, arbre et pont Spicer",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile ou engagement tardif",
+                    "Vibration, hurlement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, plus tôt en flotte",
+                  "diagnostic": "Identifier manuelle trois rapports, Borg-Warner/Dual-Range, Powerglide ou Turbo-Hydramatic ; contrôler huile/pression, convertisseur, embrayage, supports, arbre/croisillons, Dana/Spicer 44, demi-arbres et roulements sans mélanger les références de millésime",
+                  "piece_concernee": "Transmission et propulsion Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure fréquente en taxi ou limousine",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Châssis, corrosion, direction, suspension et freinage de véhicule de service",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant ou caisse affaissée",
+                    "Tirage, pédale longue ou usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat, sans se fier au compteur",
+                  "diagnostic": "Inspecter cadre, traverses, planchers, bas de caisse, ancrages, carrosserie sedan/wagon et anciennes réparations ; contrôler bras, ressorts/lames, rotules, boîtier et biellettes dont bague Pitman, roulements, tambours/disques selon année, conduites, pneus et géométrie",
+                  "piece_concernee": "Structure et organes de sécurité Checker",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après décennies de service intensif",
+                  "cout_reparation_estime": "Élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Continental 226 OHV 2 corps — 141 ch",
+              "code_moteur": "Continental Red Seal OHV 226",
+              "cylindree": "3 707 cm³",
+              "puissance_ch": 141,
+              "boite": [
+                "Manuelle 3 rapports ou automatique, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Moteur, refroidissement et lubrification selon Continental, Chevrolet, Perkins ou Oldsmobile",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée, pression faible ou claquement",
+                    "Démarrage difficile ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, mais service taxi et âge réel priment",
+                  "diagnostic": "Décoder année/VIN et fonderies avant toute pièce ; mesurer compressions/leak-down et pression d’huile, tester radiateur, pompe, thermostat et joint/culasse, puis contrôler distribution, carburation ou injection diesel, allumage/préchauffage et fuites propres au moteur monté",
+                  "piece_concernee": "Groupe motopropulseur Checker Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente à fort kilométrage ou après conversions",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/automatique, arbre et pont Spicer",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile ou engagement tardif",
+                    "Vibration, hurlement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, plus tôt en flotte",
+                  "diagnostic": "Identifier manuelle trois rapports, Borg-Warner/Dual-Range, Powerglide ou Turbo-Hydramatic ; contrôler huile/pression, convertisseur, embrayage, supports, arbre/croisillons, Dana/Spicer 44, demi-arbres et roulements sans mélanger les références de millésime",
+                  "piece_concernee": "Transmission et propulsion Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure fréquente en taxi ou limousine",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Châssis, corrosion, direction, suspension et freinage de véhicule de service",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant ou caisse affaissée",
+                    "Tirage, pédale longue ou usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat, sans se fier au compteur",
+                  "diagnostic": "Inspecter cadre, traverses, planchers, bas de caisse, ancrages, carrosserie sedan/wagon et anciennes réparations ; contrôler bras, ressorts/lames, rotules, boîtier et biellettes dont bague Pitman, roulements, tambours/disques selon année, conduites, pneus et géométrie",
+                  "piece_concernee": "Structure et organes de sécurité Checker",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après décennies de service intensif",
+                  "cout_reparation_estime": "Élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "A11/A12 Chevrolet première phase",
+          "annees": "1965–1968",
+          "phases": [
+            "Chaque small-block et puissance brute reste distinct ; disponibilité variable selon année."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Chevrolet 230 I6 — 140 ch",
+              "code_moteur": "Chevrolet Turbo-Thrift 230",
+              "cylindree": "3 769 cm³",
+              "puissance_ch": 140,
+              "boite": [
+                "Manuelle 3 rapports ou automatique, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Moteur, refroidissement et lubrification selon Continental, Chevrolet, Perkins ou Oldsmobile",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée, pression faible ou claquement",
+                    "Démarrage difficile ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, mais service taxi et âge réel priment",
+                  "diagnostic": "Décoder année/VIN et fonderies avant toute pièce ; mesurer compressions/leak-down et pression d’huile, tester radiateur, pompe, thermostat et joint/culasse, puis contrôler distribution, carburation ou injection diesel, allumage/préchauffage et fuites propres au moteur monté",
+                  "piece_concernee": "Groupe motopropulseur Checker Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente à fort kilométrage ou après conversions",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/automatique, arbre et pont Spicer",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile ou engagement tardif",
+                    "Vibration, hurlement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, plus tôt en flotte",
+                  "diagnostic": "Identifier manuelle trois rapports, Borg-Warner/Dual-Range, Powerglide ou Turbo-Hydramatic ; contrôler huile/pression, convertisseur, embrayage, supports, arbre/croisillons, Dana/Spicer 44, demi-arbres et roulements sans mélanger les références de millésime",
+                  "piece_concernee": "Transmission et propulsion Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure fréquente en taxi ou limousine",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Châssis, corrosion, direction, suspension et freinage de véhicule de service",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant ou caisse affaissée",
+                    "Tirage, pédale longue ou usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat, sans se fier au compteur",
+                  "diagnostic": "Inspecter cadre, traverses, planchers, bas de caisse, ancrages, carrosserie sedan/wagon et anciennes réparations ; contrôler bras, ressorts/lames, rotules, boîtier et biellettes dont bague Pitman, roulements, tambours/disques selon année, conduites, pneus et géométrie",
+                  "piece_concernee": "Structure et organes de sécurité Checker",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après décennies de service intensif",
+                  "cout_reparation_estime": "Élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Chevrolet 283 V8 — 195 ch",
+              "code_moteur": "Chevrolet small-block 283",
+              "cylindree": "4 638 cm³",
+              "puissance_ch": 195,
+              "boite": [
+                "Automatique, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Moteur, refroidissement et lubrification selon Continental, Chevrolet, Perkins ou Oldsmobile",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée, pression faible ou claquement",
+                    "Démarrage difficile ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, mais service taxi et âge réel priment",
+                  "diagnostic": "Décoder année/VIN et fonderies avant toute pièce ; mesurer compressions/leak-down et pression d’huile, tester radiateur, pompe, thermostat et joint/culasse, puis contrôler distribution, carburation ou injection diesel, allumage/préchauffage et fuites propres au moteur monté",
+                  "piece_concernee": "Groupe motopropulseur Checker Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente à fort kilométrage ou après conversions",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/automatique, arbre et pont Spicer",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile ou engagement tardif",
+                    "Vibration, hurlement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, plus tôt en flotte",
+                  "diagnostic": "Identifier manuelle trois rapports, Borg-Warner/Dual-Range, Powerglide ou Turbo-Hydramatic ; contrôler huile/pression, convertisseur, embrayage, supports, arbre/croisillons, Dana/Spicer 44, demi-arbres et roulements sans mélanger les références de millésime",
+                  "piece_concernee": "Transmission et propulsion Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure fréquente en taxi ou limousine",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Châssis, corrosion, direction, suspension et freinage de véhicule de service",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant ou caisse affaissée",
+                    "Tirage, pédale longue ou usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat, sans se fier au compteur",
+                  "diagnostic": "Inspecter cadre, traverses, planchers, bas de caisse, ancrages, carrosserie sedan/wagon et anciennes réparations ; contrôler bras, ressorts/lames, rotules, boîtier et biellettes dont bague Pitman, roulements, tambours/disques selon année, conduites, pneus et géométrie",
+                  "piece_concernee": "Structure et organes de sécurité Checker",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après décennies de service intensif",
+                  "cout_reparation_estime": "Élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Chevrolet 327 V8 — 250 ch",
+              "code_moteur": "Chevrolet small-block 327",
+              "cylindree": "5 354 cm³",
+              "puissance_ch": 250,
+              "boite": [
+                "Automatique, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Moteur, refroidissement et lubrification selon Continental, Chevrolet, Perkins ou Oldsmobile",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée, pression faible ou claquement",
+                    "Démarrage difficile ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, mais service taxi et âge réel priment",
+                  "diagnostic": "Décoder année/VIN et fonderies avant toute pièce ; mesurer compressions/leak-down et pression d’huile, tester radiateur, pompe, thermostat et joint/culasse, puis contrôler distribution, carburation ou injection diesel, allumage/préchauffage et fuites propres au moteur monté",
+                  "piece_concernee": "Groupe motopropulseur Checker Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente à fort kilométrage ou après conversions",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/automatique, arbre et pont Spicer",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile ou engagement tardif",
+                    "Vibration, hurlement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, plus tôt en flotte",
+                  "diagnostic": "Identifier manuelle trois rapports, Borg-Warner/Dual-Range, Powerglide ou Turbo-Hydramatic ; contrôler huile/pression, convertisseur, embrayage, supports, arbre/croisillons, Dana/Spicer 44, demi-arbres et roulements sans mélanger les références de millésime",
+                  "piece_concernee": "Transmission et propulsion Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure fréquente en taxi ou limousine",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Châssis, corrosion, direction, suspension et freinage de véhicule de service",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant ou caisse affaissée",
+                    "Tirage, pédale longue ou usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat, sans se fier au compteur",
+                  "diagnostic": "Inspecter cadre, traverses, planchers, bas de caisse, ancrages, carrosserie sedan/wagon et anciennes réparations ; contrôler bras, ressorts/lames, rotules, boîtier et biellettes dont bague Pitman, roulements, tambours/disques selon année, conduites, pneus et géométrie",
+                  "piece_concernee": "Structure et organes de sécurité Checker",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après décennies de service intensif",
+                  "cout_reparation_estime": "Élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Chevrolet 307 V8 — 200 ch",
+              "code_moteur": "Chevrolet small-block 307",
+              "cylindree": "5 025 cm³",
+              "puissance_ch": 200,
+              "boite": [
+                "Automatique, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Moteur, refroidissement et lubrification selon Continental, Chevrolet, Perkins ou Oldsmobile",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée, pression faible ou claquement",
+                    "Démarrage difficile ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, mais service taxi et âge réel priment",
+                  "diagnostic": "Décoder année/VIN et fonderies avant toute pièce ; mesurer compressions/leak-down et pression d’huile, tester radiateur, pompe, thermostat et joint/culasse, puis contrôler distribution, carburation ou injection diesel, allumage/préchauffage et fuites propres au moteur monté",
+                  "piece_concernee": "Groupe motopropulseur Checker Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente à fort kilométrage ou après conversions",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/automatique, arbre et pont Spicer",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile ou engagement tardif",
+                    "Vibration, hurlement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, plus tôt en flotte",
+                  "diagnostic": "Identifier manuelle trois rapports, Borg-Warner/Dual-Range, Powerglide ou Turbo-Hydramatic ; contrôler huile/pression, convertisseur, embrayage, supports, arbre/croisillons, Dana/Spicer 44, demi-arbres et roulements sans mélanger les références de millésime",
+                  "piece_concernee": "Transmission et propulsion Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure fréquente en taxi ou limousine",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Châssis, corrosion, direction, suspension et freinage de véhicule de service",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant ou caisse affaissée",
+                    "Tirage, pédale longue ou usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat, sans se fier au compteur",
+                  "diagnostic": "Inspecter cadre, traverses, planchers, bas de caisse, ancrages, carrosserie sedan/wagon et anciennes réparations ; contrôler bras, ressorts/lames, rotules, boîtier et biellettes dont bague Pitman, roulements, tambours/disques selon année, conduites, pneus et géométrie",
+                  "piece_concernee": "Structure et organes de sécurité Checker",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après décennies de service intensif",
+                  "cout_reparation_estime": "Élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "A11/A12 haute puissance et diesel Perkins",
+          "annees": "1969–1970",
+          "phases": [
+            "Le Perkins fut une option très rare ; confirmer physiquement pompe, supports et dossier."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Chevrolet 250 I6 — 155 ch",
+              "code_moteur": "Chevrolet Turbo-Thrift 250",
+              "cylindree": "4 095 cm³",
+              "puissance_ch": 155,
+              "boite": [
+                "Manuelle 3 rapports ou automatique, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Moteur, refroidissement et lubrification selon Continental, Chevrolet, Perkins ou Oldsmobile",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée, pression faible ou claquement",
+                    "Démarrage difficile ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, mais service taxi et âge réel priment",
+                  "diagnostic": "Décoder année/VIN et fonderies avant toute pièce ; mesurer compressions/leak-down et pression d’huile, tester radiateur, pompe, thermostat et joint/culasse, puis contrôler distribution, carburation ou injection diesel, allumage/préchauffage et fuites propres au moteur monté",
+                  "piece_concernee": "Groupe motopropulseur Checker Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente à fort kilométrage ou après conversions",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/automatique, arbre et pont Spicer",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile ou engagement tardif",
+                    "Vibration, hurlement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, plus tôt en flotte",
+                  "diagnostic": "Identifier manuelle trois rapports, Borg-Warner/Dual-Range, Powerglide ou Turbo-Hydramatic ; contrôler huile/pression, convertisseur, embrayage, supports, arbre/croisillons, Dana/Spicer 44, demi-arbres et roulements sans mélanger les références de millésime",
+                  "piece_concernee": "Transmission et propulsion Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure fréquente en taxi ou limousine",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Châssis, corrosion, direction, suspension et freinage de véhicule de service",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant ou caisse affaissée",
+                    "Tirage, pédale longue ou usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat, sans se fier au compteur",
+                  "diagnostic": "Inspecter cadre, traverses, planchers, bas de caisse, ancrages, carrosserie sedan/wagon et anciennes réparations ; contrôler bras, ressorts/lames, rotules, boîtier et biellettes dont bague Pitman, roulements, tambours/disques selon année, conduites, pneus et géométrie",
+                  "piece_concernee": "Structure et organes de sécurité Checker",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après décennies de service intensif",
+                  "cout_reparation_estime": "Élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Chevrolet 350 V8 L48 — 300 ch",
+              "code_moteur": "Chevrolet small-block 350 L48",
+              "cylindree": "5 733 cm³",
+              "puissance_ch": 300,
+              "boite": [
+                "Automatique TH, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Moteur, refroidissement et lubrification selon Continental, Chevrolet, Perkins ou Oldsmobile",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée, pression faible ou claquement",
+                    "Démarrage difficile ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, mais service taxi et âge réel priment",
+                  "diagnostic": "Décoder année/VIN et fonderies avant toute pièce ; mesurer compressions/leak-down et pression d’huile, tester radiateur, pompe, thermostat et joint/culasse, puis contrôler distribution, carburation ou injection diesel, allumage/préchauffage et fuites propres au moteur monté",
+                  "piece_concernee": "Groupe motopropulseur Checker Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente à fort kilométrage ou après conversions",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/automatique, arbre et pont Spicer",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile ou engagement tardif",
+                    "Vibration, hurlement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, plus tôt en flotte",
+                  "diagnostic": "Identifier manuelle trois rapports, Borg-Warner/Dual-Range, Powerglide ou Turbo-Hydramatic ; contrôler huile/pression, convertisseur, embrayage, supports, arbre/croisillons, Dana/Spicer 44, demi-arbres et roulements sans mélanger les références de millésime",
+                  "piece_concernee": "Transmission et propulsion Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure fréquente en taxi ou limousine",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Châssis, corrosion, direction, suspension et freinage de véhicule de service",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant ou caisse affaissée",
+                    "Tirage, pédale longue ou usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat, sans se fier au compteur",
+                  "diagnostic": "Inspecter cadre, traverses, planchers, bas de caisse, ancrages, carrosserie sedan/wagon et anciennes réparations ; contrôler bras, ressorts/lames, rotules, boîtier et biellettes dont bague Pitman, roulements, tambours/disques selon année, conduites, pneus et géométrie",
+                  "piece_concernee": "Structure et organes de sécurité Checker",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après décennies de service intensif",
+                  "cout_reparation_estime": "Élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "Perkins 4.236 diesel — 88 ch",
+              "code_moteur": "Perkins 4.236",
+              "cylindree": "3 861 cm³",
+              "puissance_ch": 88,
+              "boite": [
+                "Automatique, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Moteur, refroidissement et lubrification selon Continental, Chevrolet, Perkins ou Oldsmobile",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée, pression faible ou claquement",
+                    "Démarrage difficile ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, mais service taxi et âge réel priment",
+                  "diagnostic": "Décoder année/VIN et fonderies avant toute pièce ; mesurer compressions/leak-down et pression d’huile, tester radiateur, pompe, thermostat et joint/culasse, puis contrôler distribution, carburation ou injection diesel, allumage/préchauffage et fuites propres au moteur monté",
+                  "piece_concernee": "Groupe motopropulseur Checker Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente à fort kilométrage ou après conversions",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/automatique, arbre et pont Spicer",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile ou engagement tardif",
+                    "Vibration, hurlement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, plus tôt en flotte",
+                  "diagnostic": "Identifier manuelle trois rapports, Borg-Warner/Dual-Range, Powerglide ou Turbo-Hydramatic ; contrôler huile/pression, convertisseur, embrayage, supports, arbre/croisillons, Dana/Spicer 44, demi-arbres et roulements sans mélanger les références de millésime",
+                  "piece_concernee": "Transmission et propulsion Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure fréquente en taxi ou limousine",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Châssis, corrosion, direction, suspension et freinage de véhicule de service",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant ou caisse affaissée",
+                    "Tirage, pédale longue ou usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat, sans se fier au compteur",
+                  "diagnostic": "Inspecter cadre, traverses, planchers, bas de caisse, ancrages, carrosserie sedan/wagon et anciennes réparations ; contrôler bras, ressorts/lames, rotules, boîtier et biellettes dont bague Pitman, roulements, tambours/disques selon année, conduites, pneus et géométrie",
+                  "piece_concernee": "Structure et organes de sécurité Checker",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après décennies de service intensif",
+                  "cout_reparation_estime": "Élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "A11/A12 dépolluée",
+          "annees": "1971–1976",
+          "phases": [
+            "Puissances nettes et équipements antipollution remplacent les chiffres bruts antérieurs."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Chevrolet 250 I6 SAE net — 100 ch",
+              "code_moteur": "Chevrolet 250 emissions",
+              "cylindree": "4 095 cm³",
+              "puissance_ch": 100,
+              "boite": [
+                "Automatique TH, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Moteur, refroidissement et lubrification selon Continental, Chevrolet, Perkins ou Oldsmobile",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée, pression faible ou claquement",
+                    "Démarrage difficile ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, mais service taxi et âge réel priment",
+                  "diagnostic": "Décoder année/VIN et fonderies avant toute pièce ; mesurer compressions/leak-down et pression d’huile, tester radiateur, pompe, thermostat et joint/culasse, puis contrôler distribution, carburation ou injection diesel, allumage/préchauffage et fuites propres au moteur monté",
+                  "piece_concernee": "Groupe motopropulseur Checker Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente à fort kilométrage ou après conversions",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/automatique, arbre et pont Spicer",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile ou engagement tardif",
+                    "Vibration, hurlement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, plus tôt en flotte",
+                  "diagnostic": "Identifier manuelle trois rapports, Borg-Warner/Dual-Range, Powerglide ou Turbo-Hydramatic ; contrôler huile/pression, convertisseur, embrayage, supports, arbre/croisillons, Dana/Spicer 44, demi-arbres et roulements sans mélanger les références de millésime",
+                  "piece_concernee": "Transmission et propulsion Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure fréquente en taxi ou limousine",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Châssis, corrosion, direction, suspension et freinage de véhicule de service",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant ou caisse affaissée",
+                    "Tirage, pédale longue ou usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat, sans se fier au compteur",
+                  "diagnostic": "Inspecter cadre, traverses, planchers, bas de caisse, ancrages, carrosserie sedan/wagon et anciennes réparations ; contrôler bras, ressorts/lames, rotules, boîtier et biellettes dont bague Pitman, roulements, tambours/disques selon année, conduites, pneus et géométrie",
+                  "piece_concernee": "Structure et organes de sécurité Checker",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après décennies de service intensif",
+                  "cout_reparation_estime": "Élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Chevrolet 350 V8 SAE net — 145 ch",
+              "code_moteur": "Chevrolet small-block 350 emissions",
+              "cylindree": "5 733 cm³",
+              "puissance_ch": 145,
+              "boite": [
+                "Automatique TH400, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Moteur, refroidissement et lubrification selon Continental, Chevrolet, Perkins ou Oldsmobile",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée, pression faible ou claquement",
+                    "Démarrage difficile ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, mais service taxi et âge réel priment",
+                  "diagnostic": "Décoder année/VIN et fonderies avant toute pièce ; mesurer compressions/leak-down et pression d’huile, tester radiateur, pompe, thermostat et joint/culasse, puis contrôler distribution, carburation ou injection diesel, allumage/préchauffage et fuites propres au moteur monté",
+                  "piece_concernee": "Groupe motopropulseur Checker Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente à fort kilométrage ou après conversions",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/automatique, arbre et pont Spicer",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile ou engagement tardif",
+                    "Vibration, hurlement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, plus tôt en flotte",
+                  "diagnostic": "Identifier manuelle trois rapports, Borg-Warner/Dual-Range, Powerglide ou Turbo-Hydramatic ; contrôler huile/pression, convertisseur, embrayage, supports, arbre/croisillons, Dana/Spicer 44, demi-arbres et roulements sans mélanger les références de millésime",
+                  "piece_concernee": "Transmission et propulsion Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure fréquente en taxi ou limousine",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Châssis, corrosion, direction, suspension et freinage de véhicule de service",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant ou caisse affaissée",
+                    "Tirage, pédale longue ou usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat, sans se fier au compteur",
+                  "diagnostic": "Inspecter cadre, traverses, planchers, bas de caisse, ancrages, carrosserie sedan/wagon et anciennes réparations ; contrôler bras, ressorts/lames, rotules, boîtier et biellettes dont bague Pitman, roulements, tambours/disques selon année, conduites, pneus et géométrie",
+                  "piece_concernee": "Structure et organes de sécurité Checker",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après décennies de service intensif",
+                  "cout_reparation_estime": "Élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "A11/A12 fin de série I6/V8",
+          "annees": "1977–1979",
+          "phases": [
+            "La cylindrée et le code du small-block doivent primer sur la seule apparence."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Chevrolet 250 I6 — 110 ch",
+              "code_moteur": "Chevrolet 250 emissions",
+              "cylindree": "4 095 cm³",
+              "puissance_ch": 110,
+              "boite": [
+                "Automatique TH, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Moteur, refroidissement et lubrification selon Continental, Chevrolet, Perkins ou Oldsmobile",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée, pression faible ou claquement",
+                    "Démarrage difficile ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, mais service taxi et âge réel priment",
+                  "diagnostic": "Décoder année/VIN et fonderies avant toute pièce ; mesurer compressions/leak-down et pression d’huile, tester radiateur, pompe, thermostat et joint/culasse, puis contrôler distribution, carburation ou injection diesel, allumage/préchauffage et fuites propres au moteur monté",
+                  "piece_concernee": "Groupe motopropulseur Checker Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente à fort kilométrage ou après conversions",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/automatique, arbre et pont Spicer",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile ou engagement tardif",
+                    "Vibration, hurlement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, plus tôt en flotte",
+                  "diagnostic": "Identifier manuelle trois rapports, Borg-Warner/Dual-Range, Powerglide ou Turbo-Hydramatic ; contrôler huile/pression, convertisseur, embrayage, supports, arbre/croisillons, Dana/Spicer 44, demi-arbres et roulements sans mélanger les références de millésime",
+                  "piece_concernee": "Transmission et propulsion Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure fréquente en taxi ou limousine",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Châssis, corrosion, direction, suspension et freinage de véhicule de service",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant ou caisse affaissée",
+                    "Tirage, pédale longue ou usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat, sans se fier au compteur",
+                  "diagnostic": "Inspecter cadre, traverses, planchers, bas de caisse, ancrages, carrosserie sedan/wagon et anciennes réparations ; contrôler bras, ressorts/lames, rotules, boîtier et biellettes dont bague Pitman, roulements, tambours/disques selon année, conduites, pneus et géométrie",
+                  "piece_concernee": "Structure et organes de sécurité Checker",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après décennies de service intensif",
+                  "cout_reparation_estime": "Élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Chevrolet 305 V8 — 145 ch",
+              "code_moteur": "Chevrolet small-block 305",
+              "cylindree": "5 001 cm³",
+              "puissance_ch": 145,
+              "boite": [
+                "Automatique TH400, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Moteur, refroidissement et lubrification selon Continental, Chevrolet, Perkins ou Oldsmobile",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée, pression faible ou claquement",
+                    "Démarrage difficile ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, mais service taxi et âge réel priment",
+                  "diagnostic": "Décoder année/VIN et fonderies avant toute pièce ; mesurer compressions/leak-down et pression d’huile, tester radiateur, pompe, thermostat et joint/culasse, puis contrôler distribution, carburation ou injection diesel, allumage/préchauffage et fuites propres au moteur monté",
+                  "piece_concernee": "Groupe motopropulseur Checker Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente à fort kilométrage ou après conversions",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/automatique, arbre et pont Spicer",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile ou engagement tardif",
+                    "Vibration, hurlement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, plus tôt en flotte",
+                  "diagnostic": "Identifier manuelle trois rapports, Borg-Warner/Dual-Range, Powerglide ou Turbo-Hydramatic ; contrôler huile/pression, convertisseur, embrayage, supports, arbre/croisillons, Dana/Spicer 44, demi-arbres et roulements sans mélanger les références de millésime",
+                  "piece_concernee": "Transmission et propulsion Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure fréquente en taxi ou limousine",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Châssis, corrosion, direction, suspension et freinage de véhicule de service",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant ou caisse affaissée",
+                    "Tirage, pédale longue ou usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat, sans se fier au compteur",
+                  "diagnostic": "Inspecter cadre, traverses, planchers, bas de caisse, ancrages, carrosserie sedan/wagon et anciennes réparations ; contrôler bras, ressorts/lames, rotules, boîtier et biellettes dont bague Pitman, roulements, tambours/disques selon année, conduites, pneus et géométrie",
+                  "piece_concernee": "Structure et organes de sécurité Checker",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après décennies de service intensif",
+                  "cout_reparation_estime": "Élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Chevrolet 350 V8 — 165 ch",
+              "code_moteur": "Chevrolet small-block 350",
+              "cylindree": "5 733 cm³",
+              "puissance_ch": 165,
+              "boite": [
+                "Automatique TH400, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Moteur, refroidissement et lubrification selon Continental, Chevrolet, Perkins ou Oldsmobile",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée, pression faible ou claquement",
+                    "Démarrage difficile ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, mais service taxi et âge réel priment",
+                  "diagnostic": "Décoder année/VIN et fonderies avant toute pièce ; mesurer compressions/leak-down et pression d’huile, tester radiateur, pompe, thermostat et joint/culasse, puis contrôler distribution, carburation ou injection diesel, allumage/préchauffage et fuites propres au moteur monté",
+                  "piece_concernee": "Groupe motopropulseur Checker Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente à fort kilométrage ou après conversions",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/automatique, arbre et pont Spicer",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile ou engagement tardif",
+                    "Vibration, hurlement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, plus tôt en flotte",
+                  "diagnostic": "Identifier manuelle trois rapports, Borg-Warner/Dual-Range, Powerglide ou Turbo-Hydramatic ; contrôler huile/pression, convertisseur, embrayage, supports, arbre/croisillons, Dana/Spicer 44, demi-arbres et roulements sans mélanger les références de millésime",
+                  "piece_concernee": "Transmission et propulsion Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure fréquente en taxi ou limousine",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Châssis, corrosion, direction, suspension et freinage de véhicule de service",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant ou caisse affaissée",
+                    "Tirage, pédale longue ou usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat, sans se fier au compteur",
+                  "diagnostic": "Inspecter cadre, traverses, planchers, bas de caisse, ancrages, carrosserie sedan/wagon et anciennes réparations ; contrôler bras, ressorts/lames, rotules, boîtier et biellettes dont bague Pitman, roulements, tambours/disques selon année, conduites, pneus et géométrie",
+                  "piece_concernee": "Structure et organes de sécurité Checker",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après décennies de service intensif",
+                  "cout_reparation_estime": "Élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "A11/A12 dernière phase",
+          "annees": "1980–1982",
+          "phases": [
+            "V6, V8 essence et Oldsmobile diesel sont trois familles mécaniques sans pièces communes majeures."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Chevrolet 229 V6 — 110 ch",
+              "code_moteur": "Chevrolet LC3 229",
+              "cylindree": "3 751 cm³",
+              "puissance_ch": 110,
+              "boite": [
+                "Automatique TH, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Moteur, refroidissement et lubrification selon Continental, Chevrolet, Perkins ou Oldsmobile",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée, pression faible ou claquement",
+                    "Démarrage difficile ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, mais service taxi et âge réel priment",
+                  "diagnostic": "Décoder année/VIN et fonderies avant toute pièce ; mesurer compressions/leak-down et pression d’huile, tester radiateur, pompe, thermostat et joint/culasse, puis contrôler distribution, carburation ou injection diesel, allumage/préchauffage et fuites propres au moteur monté",
+                  "piece_concernee": "Groupe motopropulseur Checker Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente à fort kilométrage ou après conversions",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/automatique, arbre et pont Spicer",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile ou engagement tardif",
+                    "Vibration, hurlement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, plus tôt en flotte",
+                  "diagnostic": "Identifier manuelle trois rapports, Borg-Warner/Dual-Range, Powerglide ou Turbo-Hydramatic ; contrôler huile/pression, convertisseur, embrayage, supports, arbre/croisillons, Dana/Spicer 44, demi-arbres et roulements sans mélanger les références de millésime",
+                  "piece_concernee": "Transmission et propulsion Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure fréquente en taxi ou limousine",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Châssis, corrosion, direction, suspension et freinage de véhicule de service",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant ou caisse affaissée",
+                    "Tirage, pédale longue ou usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat, sans se fier au compteur",
+                  "diagnostic": "Inspecter cadre, traverses, planchers, bas de caisse, ancrages, carrosserie sedan/wagon et anciennes réparations ; contrôler bras, ressorts/lames, rotules, boîtier et biellettes dont bague Pitman, roulements, tambours/disques selon année, conduites, pneus et géométrie",
+                  "piece_concernee": "Structure et organes de sécurité Checker",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après décennies de service intensif",
+                  "cout_reparation_estime": "Élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Chevrolet 305 V8 — 145 ch",
+              "code_moteur": "Chevrolet small-block 305",
+              "cylindree": "5 001 cm³",
+              "puissance_ch": 145,
+              "boite": [
+                "Automatique TH400, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Moteur, refroidissement et lubrification selon Continental, Chevrolet, Perkins ou Oldsmobile",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée, pression faible ou claquement",
+                    "Démarrage difficile ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, mais service taxi et âge réel priment",
+                  "diagnostic": "Décoder année/VIN et fonderies avant toute pièce ; mesurer compressions/leak-down et pression d’huile, tester radiateur, pompe, thermostat et joint/culasse, puis contrôler distribution, carburation ou injection diesel, allumage/préchauffage et fuites propres au moteur monté",
+                  "piece_concernee": "Groupe motopropulseur Checker Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente à fort kilométrage ou après conversions",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/automatique, arbre et pont Spicer",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile ou engagement tardif",
+                    "Vibration, hurlement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, plus tôt en flotte",
+                  "diagnostic": "Identifier manuelle trois rapports, Borg-Warner/Dual-Range, Powerglide ou Turbo-Hydramatic ; contrôler huile/pression, convertisseur, embrayage, supports, arbre/croisillons, Dana/Spicer 44, demi-arbres et roulements sans mélanger les références de millésime",
+                  "piece_concernee": "Transmission et propulsion Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure fréquente en taxi ou limousine",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Châssis, corrosion, direction, suspension et freinage de véhicule de service",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant ou caisse affaissée",
+                    "Tirage, pédale longue ou usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat, sans se fier au compteur",
+                  "diagnostic": "Inspecter cadre, traverses, planchers, bas de caisse, ancrages, carrosserie sedan/wagon et anciennes réparations ; contrôler bras, ressorts/lames, rotules, boîtier et biellettes dont bague Pitman, roulements, tambours/disques selon année, conduites, pneus et géométrie",
+                  "piece_concernee": "Structure et organes de sécurité Checker",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après décennies de service intensif",
+                  "cout_reparation_estime": "Élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "Oldsmobile LF9 350 diesel — 105 ch",
+              "code_moteur": "Oldsmobile LF9",
+              "cylindree": "5 737 cm³",
+              "puissance_ch": 105,
+              "boite": [
+                "Automatique TH400, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Moteur, refroidissement et lubrification selon Continental, Chevrolet, Perkins ou Oldsmobile",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée, pression faible ou claquement",
+                    "Démarrage difficile ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, mais service taxi et âge réel priment",
+                  "diagnostic": "Décoder année/VIN et fonderies avant toute pièce ; mesurer compressions/leak-down et pression d’huile, tester radiateur, pompe, thermostat et joint/culasse, puis contrôler distribution, carburation ou injection diesel, allumage/préchauffage et fuites propres au moteur monté",
+                  "piece_concernee": "Groupe motopropulseur Checker Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente à fort kilométrage ou après conversions",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/automatique, arbre et pont Spicer",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile ou engagement tardif",
+                    "Vibration, hurlement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 250 000 km, plus tôt en flotte",
+                  "diagnostic": "Identifier manuelle trois rapports, Borg-Warner/Dual-Range, Powerglide ou Turbo-Hydramatic ; contrôler huile/pression, convertisseur, embrayage, supports, arbre/croisillons, Dana/Spicer 44, demi-arbres et roulements sans mélanger les références de millésime",
+                  "piece_concernee": "Transmission et propulsion Marathon",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure fréquente en taxi ou limousine",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Châssis, corrosion, direction, suspension et freinage de véhicule de service",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant ou caisse affaissée",
+                    "Tirage, pédale longue ou usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat, sans se fier au compteur",
+                  "diagnostic": "Inspecter cadre, traverses, planchers, bas de caisse, ancrages, carrosserie sedan/wagon et anciennes réparations ; contrôler bras, ressorts/lames, rotules, boîtier et biellettes dont bague Pitman, roulements, tambours/disques selon année, conduites, pneus et géométrie",
+                  "piece_concernee": "Structure et organes de sécurité Checker",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après décennies de service intensif",
+                  "cout_reparation_estime": "Élevé : environ 500 à plus de 12 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.checkerworld.org/library-service-manualls-2",
+        "https://xr793.com/wp-content/uploads/2019/10/1967-Checker-Full-Line.pdf",
+        "https://xr793.com/wp-content/uploads/2019/10/1969-Checker-.pdf",
+        "https://www.hemmings.com/stories/1960-1982-checkers/"
+      ]
+    }
+  ],
+  "source_catalogue": "VehiclesDB 2026.08.2 (CC-BY 4.0)"
+}

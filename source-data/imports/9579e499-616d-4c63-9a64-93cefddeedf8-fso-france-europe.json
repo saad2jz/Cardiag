@@ -1,0 +1,807 @@
+{
+  "nom": "FSO",
+  "modeles": [
+    {
+      "nom": "Polonez",
+      "generations": [
+        {
+          "code_chassis": "MR78–MR86",
+          "annees": "1978–1986",
+          "phases": [
+            "Séries initiales et évolutions MR ; le 2.0 Fiat fut surtout destiné aux services officiels et à de petites séries."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.3 OHV — 65 ch",
+              "code_moteur": "FSO 115C.076",
+              "cylindree": "1 295 cm³",
+              "puissance_ch": 65,
+              "boite": [
+                "Manuelle 4 puis 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, lubrification, refroidissement et alimentation selon moteur",
+                  "symptomes": [
+                    "Claquement",
+                    "Fuite d’huile",
+                    "Surchauffe, ratés ou fumée"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 70 000 et 150 000 km, plus tôt sans entretien",
+                  "diagnostic": "Identifier code FSO OHV, Fiat DOHC, Rover K16 ou Peugeot XUD9, mesurer compressions/pression et contrôler refroidissement ; sur OHV régler culbuteurs, chaîne et carburateur/injection ; sur Fiat vérifier courroie ; sur Rover joint de culasse/circuit et courroie ; sur XUD courroie, pompe, injecteurs et préchauffage",
+                  "piece_concernee": "Moteur Polonez correspondant à la variante",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec âge et entretien irrégulier",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte cinq rapports, arbre et pont arrière",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Hurlement du pont ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 180 000 km",
+                  "diagnostic": "Contrôler embrayage/commande, synchros, huile et fuites de boîte, supports, arbre/croisillons, couple conique, différentiel et demi-arbres ; vérifier rapport de pont selon berline, Kombi, Truck ou moteur et rechercher adaptations non homologuées",
+                  "piece_concernee": "Transmission manuelle et pont rigide Polonez",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 000 €"
+                },
+                {
+                  "probleme": "Corrosion, suspension, direction, freinage et électricité",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant",
+                    "Freinage dissymétrique ou pannes électriques"
+                  ],
+                  "kilometrage_apparition": "Souvent après 8 à 15 ans, indépendamment du kilométrage",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons, passages de roue, supports d’essieu, ancrages et réparations ; contrôler ressorts/amortisseurs, rotules, boîtier/crémaillère selon série, flexibles/étriers, répartiteur, ABS éventuel, faisceaux, masses, alternateur et disponibilité des pièces de carrosserie",
+                  "piece_concernee": "Coque, trains roulants et réseau Polonez",
+                  "gravite": "Critique si structure ou freinage atteint",
+                  "frequence": "Très fréquente en climat humide ou salé",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 8 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.5 OHV — 75 ch",
+              "code_moteur": "FSO 115C.076/AA",
+              "cylindree": "1 481 cm³",
+              "puissance_ch": 75,
+              "boite": [
+                "Manuelle 4 puis 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, lubrification, refroidissement et alimentation selon moteur",
+                  "symptomes": [
+                    "Claquement",
+                    "Fuite d’huile",
+                    "Surchauffe, ratés ou fumée"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 70 000 et 150 000 km, plus tôt sans entretien",
+                  "diagnostic": "Identifier code FSO OHV, Fiat DOHC, Rover K16 ou Peugeot XUD9, mesurer compressions/pression et contrôler refroidissement ; sur OHV régler culbuteurs, chaîne et carburateur/injection ; sur Fiat vérifier courroie ; sur Rover joint de culasse/circuit et courroie ; sur XUD courroie, pompe, injecteurs et préchauffage",
+                  "piece_concernee": "Moteur Polonez correspondant à la variante",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec âge et entretien irrégulier",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte cinq rapports, arbre et pont arrière",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Hurlement du pont ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 180 000 km",
+                  "diagnostic": "Contrôler embrayage/commande, synchros, huile et fuites de boîte, supports, arbre/croisillons, couple conique, différentiel et demi-arbres ; vérifier rapport de pont selon berline, Kombi, Truck ou moteur et rechercher adaptations non homologuées",
+                  "piece_concernee": "Transmission manuelle et pont rigide Polonez",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 000 €"
+                },
+                {
+                  "probleme": "Corrosion, suspension, direction, freinage et électricité",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant",
+                    "Freinage dissymétrique ou pannes électriques"
+                  ],
+                  "kilometrage_apparition": "Souvent après 8 à 15 ans, indépendamment du kilométrage",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons, passages de roue, supports d’essieu, ancrages et réparations ; contrôler ressorts/amortisseurs, rotules, boîtier/crémaillère selon série, flexibles/étriers, répartiteur, ABS éventuel, faisceaux, masses, alternateur et disponibilité des pièces de carrosserie",
+                  "piece_concernee": "Coque, trains roulants et réseau Polonez",
+                  "gravite": "Critique si structure ou freinage atteint",
+                  "frequence": "Très fréquente en climat humide ou salé",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 8 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "2.0 Fiat DOHC — 112 ch",
+              "code_moteur": "Fiat 132 C2.000",
+              "cylindree": "1 995 cm³",
+              "puissance_ch": 112,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, lubrification, refroidissement et alimentation selon moteur",
+                  "symptomes": [
+                    "Claquement",
+                    "Fuite d’huile",
+                    "Surchauffe, ratés ou fumée"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 70 000 et 150 000 km, plus tôt sans entretien",
+                  "diagnostic": "Identifier code FSO OHV, Fiat DOHC, Rover K16 ou Peugeot XUD9, mesurer compressions/pression et contrôler refroidissement ; sur OHV régler culbuteurs, chaîne et carburateur/injection ; sur Fiat vérifier courroie ; sur Rover joint de culasse/circuit et courroie ; sur XUD courroie, pompe, injecteurs et préchauffage",
+                  "piece_concernee": "Moteur Polonez correspondant à la variante",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec âge et entretien irrégulier",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte cinq rapports, arbre et pont arrière",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Hurlement du pont ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 180 000 km",
+                  "diagnostic": "Contrôler embrayage/commande, synchros, huile et fuites de boîte, supports, arbre/croisillons, couple conique, différentiel et demi-arbres ; vérifier rapport de pont selon berline, Kombi, Truck ou moteur et rechercher adaptations non homologuées",
+                  "piece_concernee": "Transmission manuelle et pont rigide Polonez",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 000 €"
+                },
+                {
+                  "probleme": "Corrosion, suspension, direction, freinage et électricité",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant",
+                    "Freinage dissymétrique ou pannes électriques"
+                  ],
+                  "kilometrage_apparition": "Souvent après 8 à 15 ans, indépendamment du kilométrage",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons, passages de roue, supports d’essieu, ancrages et réparations ; contrôler ressorts/amortisseurs, rotules, boîtier/crémaillère selon série, flexibles/étriers, répartiteur, ABS éventuel, faisceaux, masses, alternateur et disponibilité des pièces de carrosserie",
+                  "piece_concernee": "Coque, trains roulants et réseau Polonez",
+                  "gravite": "Critique si structure ou freinage atteint",
+                  "frequence": "Très fréquente en climat humide ou salé",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 8 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "MR87–MR91",
+          "annees": "1987–1991",
+          "phases": [
+            "Le Turbo de route est une très petite série issue des travaux de compétition ; authentification indispensable."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.5 OHV — 82 ch",
+              "code_moteur": "FSO AB",
+              "cylindree": "1 481 cm³",
+              "puissance_ch": 82,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, lubrification, refroidissement et alimentation selon moteur",
+                  "symptomes": [
+                    "Claquement",
+                    "Fuite d’huile",
+                    "Surchauffe, ratés ou fumée"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 70 000 et 150 000 km, plus tôt sans entretien",
+                  "diagnostic": "Identifier code FSO OHV, Fiat DOHC, Rover K16 ou Peugeot XUD9, mesurer compressions/pression et contrôler refroidissement ; sur OHV régler culbuteurs, chaîne et carburateur/injection ; sur Fiat vérifier courroie ; sur Rover joint de culasse/circuit et courroie ; sur XUD courroie, pompe, injecteurs et préchauffage",
+                  "piece_concernee": "Moteur Polonez correspondant à la variante",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec âge et entretien irrégulier",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte cinq rapports, arbre et pont arrière",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Hurlement du pont ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 180 000 km",
+                  "diagnostic": "Contrôler embrayage/commande, synchros, huile et fuites de boîte, supports, arbre/croisillons, couple conique, différentiel et demi-arbres ; vérifier rapport de pont selon berline, Kombi, Truck ou moteur et rechercher adaptations non homologuées",
+                  "piece_concernee": "Transmission manuelle et pont rigide Polonez",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 000 €"
+                },
+                {
+                  "probleme": "Corrosion, suspension, direction, freinage et électricité",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant",
+                    "Freinage dissymétrique ou pannes électriques"
+                  ],
+                  "kilometrage_apparition": "Souvent après 8 à 15 ans, indépendamment du kilométrage",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons, passages de roue, supports d’essieu, ancrages et réparations ; contrôler ressorts/amortisseurs, rotules, boîtier/crémaillère selon série, flexibles/étriers, répartiteur, ABS éventuel, faisceaux, masses, alternateur et disponibilité des pièces de carrosserie",
+                  "piece_concernee": "Coque, trains roulants et réseau Polonez",
+                  "gravite": "Critique si structure ou freinage atteint",
+                  "frequence": "Très fréquente en climat humide ou salé",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 8 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.6 OHV — 87 ch",
+              "code_moteur": "FSO CB",
+              "cylindree": "1 598 cm³",
+              "puissance_ch": 87,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, lubrification, refroidissement et alimentation selon moteur",
+                  "symptomes": [
+                    "Claquement",
+                    "Fuite d’huile",
+                    "Surchauffe, ratés ou fumée"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 70 000 et 150 000 km, plus tôt sans entretien",
+                  "diagnostic": "Identifier code FSO OHV, Fiat DOHC, Rover K16 ou Peugeot XUD9, mesurer compressions/pression et contrôler refroidissement ; sur OHV régler culbuteurs, chaîne et carburateur/injection ; sur Fiat vérifier courroie ; sur Rover joint de culasse/circuit et courroie ; sur XUD courroie, pompe, injecteurs et préchauffage",
+                  "piece_concernee": "Moteur Polonez correspondant à la variante",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec âge et entretien irrégulier",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte cinq rapports, arbre et pont arrière",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Hurlement du pont ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 180 000 km",
+                  "diagnostic": "Contrôler embrayage/commande, synchros, huile et fuites de boîte, supports, arbre/croisillons, couple conique, différentiel et demi-arbres ; vérifier rapport de pont selon berline, Kombi, Truck ou moteur et rechercher adaptations non homologuées",
+                  "piece_concernee": "Transmission manuelle et pont rigide Polonez",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 000 €"
+                },
+                {
+                  "probleme": "Corrosion, suspension, direction, freinage et électricité",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant",
+                    "Freinage dissymétrique ou pannes électriques"
+                  ],
+                  "kilometrage_apparition": "Souvent après 8 à 15 ans, indépendamment du kilométrage",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons, passages de roue, supports d’essieu, ancrages et réparations ; contrôler ressorts/amortisseurs, rotules, boîtier/crémaillère selon série, flexibles/étriers, répartiteur, ABS éventuel, faisceaux, masses, alternateur et disponibilité des pièces de carrosserie",
+                  "piece_concernee": "Coque, trains roulants et réseau Polonez",
+                  "gravite": "Critique si structure ou freinage atteint",
+                  "frequence": "Très fréquente en climat humide ou salé",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 8 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.5 SLE Turbo — 188 ch",
+              "code_moteur": "FSO AA Turbo",
+              "cylindree": "1 481 cm³",
+              "puissance_ch": 188,
+              "boite": [
+                "Manuelle 5 rapports renforcée, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, lubrification, refroidissement et alimentation selon moteur",
+                  "symptomes": [
+                    "Claquement",
+                    "Fuite d’huile",
+                    "Surchauffe, ratés ou fumée"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 70 000 et 150 000 km, plus tôt sans entretien",
+                  "diagnostic": "Identifier code FSO OHV, Fiat DOHC, Rover K16 ou Peugeot XUD9, mesurer compressions/pression et contrôler refroidissement ; sur OHV régler culbuteurs, chaîne et carburateur/injection ; sur Fiat vérifier courroie ; sur Rover joint de culasse/circuit et courroie ; sur XUD courroie, pompe, injecteurs et préchauffage",
+                  "piece_concernee": "Moteur Polonez correspondant à la variante",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec âge et entretien irrégulier",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte cinq rapports, arbre et pont arrière",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Hurlement du pont ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 180 000 km",
+                  "diagnostic": "Contrôler embrayage/commande, synchros, huile et fuites de boîte, supports, arbre/croisillons, couple conique, différentiel et demi-arbres ; vérifier rapport de pont selon berline, Kombi, Truck ou moteur et rechercher adaptations non homologuées",
+                  "piece_concernee": "Transmission manuelle et pont rigide Polonez",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 000 €"
+                },
+                {
+                  "probleme": "Corrosion, suspension, direction, freinage et électricité",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant",
+                    "Freinage dissymétrique ou pannes électriques"
+                  ],
+                  "kilometrage_apparition": "Souvent après 8 à 15 ans, indépendamment du kilométrage",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons, passages de roue, supports d’essieu, ancrages et réparations ; contrôler ressorts/amortisseurs, rotules, boîtier/crémaillère selon série, flexibles/étriers, répartiteur, ABS éventuel, faisceaux, masses, alternateur et disponibilité des pièces de carrosserie",
+                  "piece_concernee": "Coque, trains roulants et réseau Polonez",
+                  "gravite": "Critique si structure ou freinage atteint",
+                  "frequence": "Très fréquente en climat humide ou salé",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 8 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Caro MR91/MR93 et Atu",
+          "annees": "1991–1997",
+          "phases": [
+            "Caro, berline Atu et utilitaires ne partagent pas toujours le rapport de pont ; moteur et carrosserie doivent être confirmés par VIN."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.5 carburateur — 82 ch",
+              "code_moteur": "FSO AB",
+              "cylindree": "1 481 cm³",
+              "puissance_ch": 82,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, lubrification, refroidissement et alimentation selon moteur",
+                  "symptomes": [
+                    "Claquement",
+                    "Fuite d’huile",
+                    "Surchauffe, ratés ou fumée"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 70 000 et 150 000 km, plus tôt sans entretien",
+                  "diagnostic": "Identifier code FSO OHV, Fiat DOHC, Rover K16 ou Peugeot XUD9, mesurer compressions/pression et contrôler refroidissement ; sur OHV régler culbuteurs, chaîne et carburateur/injection ; sur Fiat vérifier courroie ; sur Rover joint de culasse/circuit et courroie ; sur XUD courroie, pompe, injecteurs et préchauffage",
+                  "piece_concernee": "Moteur Polonez correspondant à la variante",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec âge et entretien irrégulier",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte cinq rapports, arbre et pont arrière",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Hurlement du pont ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 180 000 km",
+                  "diagnostic": "Contrôler embrayage/commande, synchros, huile et fuites de boîte, supports, arbre/croisillons, couple conique, différentiel et demi-arbres ; vérifier rapport de pont selon berline, Kombi, Truck ou moteur et rechercher adaptations non homologuées",
+                  "piece_concernee": "Transmission manuelle et pont rigide Polonez",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 000 €"
+                },
+                {
+                  "probleme": "Corrosion, suspension, direction, freinage et électricité",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant",
+                    "Freinage dissymétrique ou pannes électriques"
+                  ],
+                  "kilometrage_apparition": "Souvent après 8 à 15 ans, indépendamment du kilométrage",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons, passages de roue, supports d’essieu, ancrages et réparations ; contrôler ressorts/amortisseurs, rotules, boîtier/crémaillère selon série, flexibles/étriers, répartiteur, ABS éventuel, faisceaux, masses, alternateur et disponibilité des pièces de carrosserie",
+                  "piece_concernee": "Coque, trains roulants et réseau Polonez",
+                  "gravite": "Critique si structure ou freinage atteint",
+                  "frequence": "Très fréquente en climat humide ou salé",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 8 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.6 carburateur — 87 ch",
+              "code_moteur": "FSO CB",
+              "cylindree": "1 598 cm³",
+              "puissance_ch": 87,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, lubrification, refroidissement et alimentation selon moteur",
+                  "symptomes": [
+                    "Claquement",
+                    "Fuite d’huile",
+                    "Surchauffe, ratés ou fumée"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 70 000 et 150 000 km, plus tôt sans entretien",
+                  "diagnostic": "Identifier code FSO OHV, Fiat DOHC, Rover K16 ou Peugeot XUD9, mesurer compressions/pression et contrôler refroidissement ; sur OHV régler culbuteurs, chaîne et carburateur/injection ; sur Fiat vérifier courroie ; sur Rover joint de culasse/circuit et courroie ; sur XUD courroie, pompe, injecteurs et préchauffage",
+                  "piece_concernee": "Moteur Polonez correspondant à la variante",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec âge et entretien irrégulier",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte cinq rapports, arbre et pont arrière",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Hurlement du pont ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 180 000 km",
+                  "diagnostic": "Contrôler embrayage/commande, synchros, huile et fuites de boîte, supports, arbre/croisillons, couple conique, différentiel et demi-arbres ; vérifier rapport de pont selon berline, Kombi, Truck ou moteur et rechercher adaptations non homologuées",
+                  "piece_concernee": "Transmission manuelle et pont rigide Polonez",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 000 €"
+                },
+                {
+                  "probleme": "Corrosion, suspension, direction, freinage et électricité",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant",
+                    "Freinage dissymétrique ou pannes électriques"
+                  ],
+                  "kilometrage_apparition": "Souvent après 8 à 15 ans, indépendamment du kilométrage",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons, passages de roue, supports d’essieu, ancrages et réparations ; contrôler ressorts/amortisseurs, rotules, boîtier/crémaillère selon série, flexibles/étriers, répartiteur, ABS éventuel, faisceaux, masses, alternateur et disponibilité des pièces de carrosserie",
+                  "piece_concernee": "Coque, trains roulants et réseau Polonez",
+                  "gravite": "Critique si structure ou freinage atteint",
+                  "frequence": "Très fréquente en climat humide ou salé",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 8 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.6 GLI injection — 76 ch",
+              "code_moteur": "FSO CE/AE",
+              "cylindree": "1 598 cm³",
+              "puissance_ch": 76,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, lubrification, refroidissement et alimentation selon moteur",
+                  "symptomes": [
+                    "Claquement",
+                    "Fuite d’huile",
+                    "Surchauffe, ratés ou fumée"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 70 000 et 150 000 km, plus tôt sans entretien",
+                  "diagnostic": "Identifier code FSO OHV, Fiat DOHC, Rover K16 ou Peugeot XUD9, mesurer compressions/pression et contrôler refroidissement ; sur OHV régler culbuteurs, chaîne et carburateur/injection ; sur Fiat vérifier courroie ; sur Rover joint de culasse/circuit et courroie ; sur XUD courroie, pompe, injecteurs et préchauffage",
+                  "piece_concernee": "Moteur Polonez correspondant à la variante",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec âge et entretien irrégulier",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte cinq rapports, arbre et pont arrière",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Hurlement du pont ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 180 000 km",
+                  "diagnostic": "Contrôler embrayage/commande, synchros, huile et fuites de boîte, supports, arbre/croisillons, couple conique, différentiel et demi-arbres ; vérifier rapport de pont selon berline, Kombi, Truck ou moteur et rechercher adaptations non homologuées",
+                  "piece_concernee": "Transmission manuelle et pont rigide Polonez",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 000 €"
+                },
+                {
+                  "probleme": "Corrosion, suspension, direction, freinage et électricité",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant",
+                    "Freinage dissymétrique ou pannes électriques"
+                  ],
+                  "kilometrage_apparition": "Souvent après 8 à 15 ans, indépendamment du kilométrage",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons, passages de roue, supports d’essieu, ancrages et réparations ; contrôler ressorts/amortisseurs, rotules, boîtier/crémaillère selon série, flexibles/étriers, répartiteur, ABS éventuel, faisceaux, masses, alternateur et disponibilité des pièces de carrosserie",
+                  "piece_concernee": "Coque, trains roulants et réseau Polonez",
+                  "gravite": "Critique si structure ou freinage atteint",
+                  "frequence": "Très fréquente en climat humide ou salé",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 8 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Rover 1.4 K16 MPI — 103 ch",
+              "code_moteur": "Rover K16 / FSO EL",
+              "cylindree": "1 396 cm³",
+              "puissance_ch": 103,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, lubrification, refroidissement et alimentation selon moteur",
+                  "symptomes": [
+                    "Claquement",
+                    "Fuite d’huile",
+                    "Surchauffe, ratés ou fumée"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 70 000 et 150 000 km, plus tôt sans entretien",
+                  "diagnostic": "Identifier code FSO OHV, Fiat DOHC, Rover K16 ou Peugeot XUD9, mesurer compressions/pression et contrôler refroidissement ; sur OHV régler culbuteurs, chaîne et carburateur/injection ; sur Fiat vérifier courroie ; sur Rover joint de culasse/circuit et courroie ; sur XUD courroie, pompe, injecteurs et préchauffage",
+                  "piece_concernee": "Moteur Polonez correspondant à la variante",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec âge et entretien irrégulier",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte cinq rapports, arbre et pont arrière",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Hurlement du pont ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 180 000 km",
+                  "diagnostic": "Contrôler embrayage/commande, synchros, huile et fuites de boîte, supports, arbre/croisillons, couple conique, différentiel et demi-arbres ; vérifier rapport de pont selon berline, Kombi, Truck ou moteur et rechercher adaptations non homologuées",
+                  "piece_concernee": "Transmission manuelle et pont rigide Polonez",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 000 €"
+                },
+                {
+                  "probleme": "Corrosion, suspension, direction, freinage et électricité",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant",
+                    "Freinage dissymétrique ou pannes électriques"
+                  ],
+                  "kilometrage_apparition": "Souvent après 8 à 15 ans, indépendamment du kilométrage",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons, passages de roue, supports d’essieu, ancrages et réparations ; contrôler ressorts/amortisseurs, rotules, boîtier/crémaillère selon série, flexibles/étriers, répartiteur, ABS éventuel, faisceaux, masses, alternateur et disponibilité des pièces de carrosserie",
+                  "piece_concernee": "Coque, trains roulants et réseau Polonez",
+                  "gravite": "Critique si structure ou freinage atteint",
+                  "frequence": "Très fréquente en climat humide ou salé",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 8 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "Peugeot 1.9 D — 70 ch",
+              "code_moteur": "PSA XUD9 / FSO EJ",
+              "cylindree": "1 905 cm³",
+              "puissance_ch": 70,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, lubrification, refroidissement et alimentation selon moteur",
+                  "symptomes": [
+                    "Claquement",
+                    "Fuite d’huile",
+                    "Surchauffe, ratés ou fumée"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 70 000 et 150 000 km, plus tôt sans entretien",
+                  "diagnostic": "Identifier code FSO OHV, Fiat DOHC, Rover K16 ou Peugeot XUD9, mesurer compressions/pression et contrôler refroidissement ; sur OHV régler culbuteurs, chaîne et carburateur/injection ; sur Fiat vérifier courroie ; sur Rover joint de culasse/circuit et courroie ; sur XUD courroie, pompe, injecteurs et préchauffage",
+                  "piece_concernee": "Moteur Polonez correspondant à la variante",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec âge et entretien irrégulier",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte cinq rapports, arbre et pont arrière",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Hurlement du pont ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 180 000 km",
+                  "diagnostic": "Contrôler embrayage/commande, synchros, huile et fuites de boîte, supports, arbre/croisillons, couple conique, différentiel et demi-arbres ; vérifier rapport de pont selon berline, Kombi, Truck ou moteur et rechercher adaptations non homologuées",
+                  "piece_concernee": "Transmission manuelle et pont rigide Polonez",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 000 €"
+                },
+                {
+                  "probleme": "Corrosion, suspension, direction, freinage et électricité",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant",
+                    "Freinage dissymétrique ou pannes électriques"
+                  ],
+                  "kilometrage_apparition": "Souvent après 8 à 15 ans, indépendamment du kilométrage",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons, passages de roue, supports d’essieu, ancrages et réparations ; contrôler ressorts/amortisseurs, rotules, boîtier/crémaillère selon série, flexibles/étriers, répartiteur, ABS éventuel, faisceaux, masses, alternateur et disponibilité des pièces de carrosserie",
+                  "piece_concernee": "Coque, trains roulants et réseau Polonez",
+                  "gravite": "Critique si structure ou freinage atteint",
+                  "frequence": "Très fréquente en climat humide ou salé",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 8 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Caro Plus / Atu Plus / Kombi",
+          "annees": "1997–2002",
+          "phases": [
+            "Phase Daewoo-FSO : injection et habitacle modernisés ; Kombi, Cargo et Truck ont charges et ponts spécifiques."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.6 GLI Bosch — 78 ch",
+              "code_moteur": "FSO CE Bosch",
+              "cylindree": "1 598 cm³",
+              "puissance_ch": 78,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, lubrification, refroidissement et alimentation selon moteur",
+                  "symptomes": [
+                    "Claquement",
+                    "Fuite d’huile",
+                    "Surchauffe, ratés ou fumée"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 70 000 et 150 000 km, plus tôt sans entretien",
+                  "diagnostic": "Identifier code FSO OHV, Fiat DOHC, Rover K16 ou Peugeot XUD9, mesurer compressions/pression et contrôler refroidissement ; sur OHV régler culbuteurs, chaîne et carburateur/injection ; sur Fiat vérifier courroie ; sur Rover joint de culasse/circuit et courroie ; sur XUD courroie, pompe, injecteurs et préchauffage",
+                  "piece_concernee": "Moteur Polonez correspondant à la variante",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec âge et entretien irrégulier",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte cinq rapports, arbre et pont arrière",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Hurlement du pont ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 180 000 km",
+                  "diagnostic": "Contrôler embrayage/commande, synchros, huile et fuites de boîte, supports, arbre/croisillons, couple conique, différentiel et demi-arbres ; vérifier rapport de pont selon berline, Kombi, Truck ou moteur et rechercher adaptations non homologuées",
+                  "piece_concernee": "Transmission manuelle et pont rigide Polonez",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 000 €"
+                },
+                {
+                  "probleme": "Corrosion, suspension, direction, freinage et électricité",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant",
+                    "Freinage dissymétrique ou pannes électriques"
+                  ],
+                  "kilometrage_apparition": "Souvent après 8 à 15 ans, indépendamment du kilométrage",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons, passages de roue, supports d’essieu, ancrages et réparations ; contrôler ressorts/amortisseurs, rotules, boîtier/crémaillère selon série, flexibles/étriers, répartiteur, ABS éventuel, faisceaux, masses, alternateur et disponibilité des pièces de carrosserie",
+                  "piece_concernee": "Coque, trains roulants et réseau Polonez",
+                  "gravite": "Critique si structure ou freinage atteint",
+                  "frequence": "Très fréquente en climat humide ou salé",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 8 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.6 GSi Multec MPI — 84 ch",
+              "code_moteur": "FSO CE Multec XM",
+              "cylindree": "1 598 cm³",
+              "puissance_ch": 84,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, lubrification, refroidissement et alimentation selon moteur",
+                  "symptomes": [
+                    "Claquement",
+                    "Fuite d’huile",
+                    "Surchauffe, ratés ou fumée"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 70 000 et 150 000 km, plus tôt sans entretien",
+                  "diagnostic": "Identifier code FSO OHV, Fiat DOHC, Rover K16 ou Peugeot XUD9, mesurer compressions/pression et contrôler refroidissement ; sur OHV régler culbuteurs, chaîne et carburateur/injection ; sur Fiat vérifier courroie ; sur Rover joint de culasse/circuit et courroie ; sur XUD courroie, pompe, injecteurs et préchauffage",
+                  "piece_concernee": "Moteur Polonez correspondant à la variante",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec âge et entretien irrégulier",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte cinq rapports, arbre et pont arrière",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Hurlement du pont ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 180 000 km",
+                  "diagnostic": "Contrôler embrayage/commande, synchros, huile et fuites de boîte, supports, arbre/croisillons, couple conique, différentiel et demi-arbres ; vérifier rapport de pont selon berline, Kombi, Truck ou moteur et rechercher adaptations non homologuées",
+                  "piece_concernee": "Transmission manuelle et pont rigide Polonez",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 000 €"
+                },
+                {
+                  "probleme": "Corrosion, suspension, direction, freinage et électricité",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant",
+                    "Freinage dissymétrique ou pannes électriques"
+                  ],
+                  "kilometrage_apparition": "Souvent après 8 à 15 ans, indépendamment du kilométrage",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons, passages de roue, supports d’essieu, ancrages et réparations ; contrôler ressorts/amortisseurs, rotules, boîtier/crémaillère selon série, flexibles/étriers, répartiteur, ABS éventuel, faisceaux, masses, alternateur et disponibilité des pièces de carrosserie",
+                  "piece_concernee": "Coque, trains roulants et réseau Polonez",
+                  "gravite": "Critique si structure ou freinage atteint",
+                  "frequence": "Très fréquente en climat humide ou salé",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 8 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Rover 1.4 K16 MPI — 103 ch",
+              "code_moteur": "Rover K16 / FSO EL",
+              "cylindree": "1 396 cm³",
+              "puissance_ch": 103,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, lubrification, refroidissement et alimentation selon moteur",
+                  "symptomes": [
+                    "Claquement",
+                    "Fuite d’huile",
+                    "Surchauffe, ratés ou fumée"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 70 000 et 150 000 km, plus tôt sans entretien",
+                  "diagnostic": "Identifier code FSO OHV, Fiat DOHC, Rover K16 ou Peugeot XUD9, mesurer compressions/pression et contrôler refroidissement ; sur OHV régler culbuteurs, chaîne et carburateur/injection ; sur Fiat vérifier courroie ; sur Rover joint de culasse/circuit et courroie ; sur XUD courroie, pompe, injecteurs et préchauffage",
+                  "piece_concernee": "Moteur Polonez correspondant à la variante",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec âge et entretien irrégulier",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte cinq rapports, arbre et pont arrière",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Hurlement du pont ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 180 000 km",
+                  "diagnostic": "Contrôler embrayage/commande, synchros, huile et fuites de boîte, supports, arbre/croisillons, couple conique, différentiel et demi-arbres ; vérifier rapport de pont selon berline, Kombi, Truck ou moteur et rechercher adaptations non homologuées",
+                  "piece_concernee": "Transmission manuelle et pont rigide Polonez",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente à fort kilométrage",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 000 €"
+                },
+                {
+                  "probleme": "Corrosion, suspension, direction, freinage et électricité",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu au volant",
+                    "Freinage dissymétrique ou pannes électriques"
+                  ],
+                  "kilometrage_apparition": "Souvent après 8 à 15 ans, indépendamment du kilométrage",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons, passages de roue, supports d’essieu, ancrages et réparations ; contrôler ressorts/amortisseurs, rotules, boîtier/crémaillère selon série, flexibles/étriers, répartiteur, ABS éventuel, faisceaux, masses, alternateur et disponibilité des pièces de carrosserie",
+                  "piece_concernee": "Coque, trains roulants et réseau Polonez",
+                  "gravite": "Critique si structure ou freinage atteint",
+                  "frequence": "Très fréquente en climat humide ou salé",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 8 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.fso-sa.com.pl/kim-jestesmy-rozszerzenie/",
+        "https://www.wkl.com.pl/polonez%2C1%2C1%2C86",
+        "https://muzeumgryf.pl/eksponaty/fso-polonez-1981/"
+      ]
+    }
+  ]
+}

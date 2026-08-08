@@ -1,0 +1,202 @@
+{
+  "nom": "Covini",
+  "modeles": [
+    {
+      "nom": "C6W",
+      "generations": [
+        {
+          "code_chassis": "C6W prototype Genève",
+          "annees": "2004–2007",
+          "phases": [
+            "Prototype et développement : 380 ch rapportés, pas une série commerciale régulière."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Audi 4.2 V8 pré-série — 380 ch",
+              "code_moteur": "Audi 4.2 V8 Covini prototype",
+              "cylindree": "4 172 cm³",
+              "puissance_ch": 380,
+              "boite": [
+                "Manuelle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, injection, refroidissement et lubrification du V8 Audi 4.2",
+                  "symptomes": [
+                    "Bruit de chaîne/courroie selon bloc",
+                    "Surchauffe ou consommation d’huile",
+                    "Ratés, voyant ou manque de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km, mais âge de la petite série prime",
+                  "diagnostic": "Identifier précisément le V8 Audi et calibrage 380/440 ch, lire défauts/adaptations, mesurer compressions, contrôler distribution, guides/tendeurs, refroidissement, ventilation, injection, bobines et échappement spécifiques ; vérifier pièces Covini avant références Audi seules",
+                  "piece_concernee": "V8 Audi 4.2 adapté au C6W",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Non quantifiable ; périphériques Audi connus mais intégration unique",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 20 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle six rapports, embrayage et propulsion",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection difficile",
+                    "Vibration, fuite ou bruit de différentiel"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km ou usage soutenu",
+                  "diagnostic": "Contrôler commande, disque/volant, huile et synchros, supports, arbres, joints, différentiel et roulements ; vérifier géométrie du groupe central arrière et toute adaptation artisanale",
+                  "piece_concernee": "Transmission C6W",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Non quantifiable",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 12 000 €"
+                },
+                {
+                  "probleme": "Double train avant, six freins, châssis et carrosserie composite",
+                  "symptomes": [
+                    "Tirage ou instabilité",
+                    "Usure différente entre les quatre pneus avant",
+                    "Fissure, jeu ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Contrôle de géométrie à chaque changement de pneus et après choc",
+                  "diagnostic": "Mesurer séparément parallélisme, carrossage, chasse et charge des deux essieux avant ; contrôler huit bras, rotules, amortisseurs, six moyeux/disques/étriers, direction, pneus 15 pouces avant, cadre acier/carbone, panneaux, toit amovible et points de levage",
+                  "piece_concernee": "Architecture six roues et structure Covini C6W",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après réglage ou levage incorrect",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 40 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "C6W coupé petite série",
+          "annees": "2008–2016",
+          "phases": [
+            "Fiche Covini : 440 ch à 6 400 tr/min ; vérifier chaque véhicule vu la fabrication artisanale."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Audi 4.2 V8 production — 440 ch",
+              "code_moteur": "Audi 4.2 V8 32V Covini",
+              "cylindree": "4 172 cm³",
+              "puissance_ch": 440,
+              "boite": [
+                "Manuelle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, injection, refroidissement et lubrification du V8 Audi 4.2",
+                  "symptomes": [
+                    "Bruit de chaîne/courroie selon bloc",
+                    "Surchauffe ou consommation d’huile",
+                    "Ratés, voyant ou manque de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km, mais âge de la petite série prime",
+                  "diagnostic": "Identifier précisément le V8 Audi et calibrage 380/440 ch, lire défauts/adaptations, mesurer compressions, contrôler distribution, guides/tendeurs, refroidissement, ventilation, injection, bobines et échappement spécifiques ; vérifier pièces Covini avant références Audi seules",
+                  "piece_concernee": "V8 Audi 4.2 adapté au C6W",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Non quantifiable ; périphériques Audi connus mais intégration unique",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 20 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle six rapports, embrayage et propulsion",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection difficile",
+                    "Vibration, fuite ou bruit de différentiel"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km ou usage soutenu",
+                  "diagnostic": "Contrôler commande, disque/volant, huile et synchros, supports, arbres, joints, différentiel et roulements ; vérifier géométrie du groupe central arrière et toute adaptation artisanale",
+                  "piece_concernee": "Transmission C6W",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Non quantifiable",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 12 000 €"
+                },
+                {
+                  "probleme": "Double train avant, six freins, châssis et carrosserie composite",
+                  "symptomes": [
+                    "Tirage ou instabilité",
+                    "Usure différente entre les quatre pneus avant",
+                    "Fissure, jeu ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Contrôle de géométrie à chaque changement de pneus et après choc",
+                  "diagnostic": "Mesurer séparément parallélisme, carrossage, chasse et charge des deux essieux avant ; contrôler huit bras, rotules, amortisseurs, six moyeux/disques/étriers, direction, pneus 15 pouces avant, cadre acier/carbone, panneaux, toit amovible et points de levage",
+                  "piece_concernee": "Architecture six roues et structure Covini C6W",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après réglage ou levage incorrect",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 40 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "C6W Spider petite série",
+          "annees": "2009–2016",
+          "phases": [
+            "Carrosserie ouverte séparée du coupé, architecture à quatre roues directrices avant identique."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Audi 4.2 V8 Spider — 440 ch",
+              "code_moteur": "Audi 4.2 V8 32V Covini",
+              "cylindree": "4 172 cm³",
+              "puissance_ch": 440,
+              "boite": [
+                "Manuelle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, injection, refroidissement et lubrification du V8 Audi 4.2",
+                  "symptomes": [
+                    "Bruit de chaîne/courroie selon bloc",
+                    "Surchauffe ou consommation d’huile",
+                    "Ratés, voyant ou manque de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km, mais âge de la petite série prime",
+                  "diagnostic": "Identifier précisément le V8 Audi et calibrage 380/440 ch, lire défauts/adaptations, mesurer compressions, contrôler distribution, guides/tendeurs, refroidissement, ventilation, injection, bobines et échappement spécifiques ; vérifier pièces Covini avant références Audi seules",
+                  "piece_concernee": "V8 Audi 4.2 adapté au C6W",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Non quantifiable ; périphériques Audi connus mais intégration unique",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 20 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle six rapports, embrayage et propulsion",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection difficile",
+                    "Vibration, fuite ou bruit de différentiel"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km ou usage soutenu",
+                  "diagnostic": "Contrôler commande, disque/volant, huile et synchros, supports, arbres, joints, différentiel et roulements ; vérifier géométrie du groupe central arrière et toute adaptation artisanale",
+                  "piece_concernee": "Transmission C6W",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Non quantifiable",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 12 000 €"
+                },
+                {
+                  "probleme": "Double train avant, six freins, châssis et carrosserie composite",
+                  "symptomes": [
+                    "Tirage ou instabilité",
+                    "Usure différente entre les quatre pneus avant",
+                    "Fissure, jeu ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Contrôle de géométrie à chaque changement de pneus et après choc",
+                  "diagnostic": "Mesurer séparément parallélisme, carrossage, chasse et charge des deux essieux avant ; contrôler huit bras, rotules, amortisseurs, six moyeux/disques/étriers, direction, pneus 15 pouces avant, cadre acier/carbone, panneaux, toit amovible et points de levage",
+                  "piece_concernee": "Architecture six roues et structure Covini C6W",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après réglage ou levage incorrect",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 40 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.covini.it/covini-c6w/"
+      ]
+    }
+  ]
+}

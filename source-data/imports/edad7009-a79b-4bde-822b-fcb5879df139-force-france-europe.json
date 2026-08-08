@@ -1,0 +1,320 @@
+{
+  "nom": "Force",
+  "modeles": [
+    {
+      "nom": "Gurkha",
+      "generations": [
+        {
+          "code_chassis": "Gurkha première série",
+          "annees": "1997–2013",
+          "phases": [
+            "Premières trois et cinq portes, diesel mécanique dérivé Mercedes."
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "2.6 TD OM616 — 85 ch",
+              "code_moteur": "Force/Mercedes OM616 2.6 TCIC",
+              "cylindree": "2 596 cm³",
+              "puissance_ch": 85,
+              "boite": [
+                "Manuelle 5 rapports avec gamme courte, 4x4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo, refroidissement et dépollution du diesel Mercedes/Force",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Fumée",
+                    "Mode dégradé, fuite ou surchauffe"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 120 000 et 250 000 km, plus tôt en tout-terrain",
+                  "diagnostic": "Identifier OM616/FM2.6 mécanique ou common rail et OM611 2.2, lire défauts si disponible, contrôler compressions, pompe/rail, injecteurs, turbo, intercooler, radiateur, visco/ventilateur, distribution, EGR/DPF/SCR selon norme et contamination après franchissement",
+                  "piece_concernee": "Diesel Force/Mercedes du Gurkha",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente avec eau, poussière ou entretien espacé",
+                  "cout_reparation_estime": "Élevé : environ 500 à 10 000 €"
+                },
+                {
+                  "probleme": "Boîte, embrayage, transfert, blocages avant/arrière et ponts",
+                  "symptomes": [
+                    "Rapports difficiles",
+                    "Patinage",
+                    "Blocage ou 4x4 indisponible, vibration ou fuite"
+                  ],
+                  "kilometrage_apparition": "Inspection après chaque usage sévère et souvent après 100 000 km",
+                  "diagnostic": "Contrôler boîte cinq rapports, embrayage/volant, transfert 2H/4H/4L mécanique ou shift-on-the-fly, blocages manuels, arbres/croisillons, ponts, demi-arbres et moyeux ; analyser huiles pour eau/limaille et vérifier pneus identiques",
+                  "piece_concernee": "Transmission 4x4 et différentiels verrouillables",
+                  "gravite": "Critique en franchissement",
+                  "frequence": "Usure fréquente en usage intensif",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 12 000 €"
+                },
+                {
+                  "probleme": "Châssis échelle, suspension, direction, freins et carrosserie",
+                  "symptomes": [
+                    "Fissure",
+                    "Jeu au volant",
+                    "Tirage, roulis ou freinage faible"
+                  ],
+                  "kilometrage_apparition": "Inspection annuelle et après choc/franchissement",
+                  "diagnostic": "Inspecter longerons, traverses, soudures, supports de caisse, corrosion, protections, essieux rigides et suspension avant indépendante 2024, ressorts/amortisseurs, rotules, direction, freins/ABS, pneus et jantes ; contrôler snorkel, treuil, rehausse et homologation",
+                  "piece_concernee": "Châssis et organes de sécurité Gurkha",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sur véhicule modifié ou de terrain",
+                  "cout_reparation_estime": "Très élevé : environ 600 à plus de 15 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Gurkha Xplorer / Xpedition",
+          "annees": "2013–2020",
+          "phases": [
+            "Le rare Xtreme 2.2 de 140 ch ne doit pas être fusionné avec le 2.6."
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "FM2.6 CR — 85 ch",
+              "code_moteur": "Force FM2.6 CR",
+              "cylindree": "2 596 cm³",
+              "puissance_ch": 85,
+              "boite": [
+                "Manuelle 5 rapports avec gamme courte, 4x4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo, refroidissement et dépollution du diesel Mercedes/Force",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Fumée",
+                    "Mode dégradé, fuite ou surchauffe"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 120 000 et 250 000 km, plus tôt en tout-terrain",
+                  "diagnostic": "Identifier OM616/FM2.6 mécanique ou common rail et OM611 2.2, lire défauts si disponible, contrôler compressions, pompe/rail, injecteurs, turbo, intercooler, radiateur, visco/ventilateur, distribution, EGR/DPF/SCR selon norme et contamination après franchissement",
+                  "piece_concernee": "Diesel Force/Mercedes du Gurkha",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente avec eau, poussière ou entretien espacé",
+                  "cout_reparation_estime": "Élevé : environ 500 à 10 000 €"
+                },
+                {
+                  "probleme": "Boîte, embrayage, transfert, blocages avant/arrière et ponts",
+                  "symptomes": [
+                    "Rapports difficiles",
+                    "Patinage",
+                    "Blocage ou 4x4 indisponible, vibration ou fuite"
+                  ],
+                  "kilometrage_apparition": "Inspection après chaque usage sévère et souvent après 100 000 km",
+                  "diagnostic": "Contrôler boîte cinq rapports, embrayage/volant, transfert 2H/4H/4L mécanique ou shift-on-the-fly, blocages manuels, arbres/croisillons, ponts, demi-arbres et moyeux ; analyser huiles pour eau/limaille et vérifier pneus identiques",
+                  "piece_concernee": "Transmission 4x4 et différentiels verrouillables",
+                  "gravite": "Critique en franchissement",
+                  "frequence": "Usure fréquente en usage intensif",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 12 000 €"
+                },
+                {
+                  "probleme": "Châssis échelle, suspension, direction, freins et carrosserie",
+                  "symptomes": [
+                    "Fissure",
+                    "Jeu au volant",
+                    "Tirage, roulis ou freinage faible"
+                  ],
+                  "kilometrage_apparition": "Inspection annuelle et après choc/franchissement",
+                  "diagnostic": "Inspecter longerons, traverses, soudures, supports de caisse, corrosion, protections, essieux rigides et suspension avant indépendante 2024, ressorts/amortisseurs, rotules, direction, freins/ABS, pneus et jantes ; contrôler snorkel, treuil, rehausse et homologation",
+                  "piece_concernee": "Châssis et organes de sécurité Gurkha",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sur véhicule modifié ou de terrain",
+                  "cout_reparation_estime": "Très élevé : environ 600 à plus de 15 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "Xtreme 2.2 — 140 ch",
+              "code_moteur": "Force/Mercedes OM611",
+              "cylindree": "2 149 cm³",
+              "puissance_ch": 140,
+              "boite": [
+                "Manuelle 5 rapports avec gamme courte, 4x4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo, refroidissement et dépollution du diesel Mercedes/Force",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Fumée",
+                    "Mode dégradé, fuite ou surchauffe"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 120 000 et 250 000 km, plus tôt en tout-terrain",
+                  "diagnostic": "Identifier OM616/FM2.6 mécanique ou common rail et OM611 2.2, lire défauts si disponible, contrôler compressions, pompe/rail, injecteurs, turbo, intercooler, radiateur, visco/ventilateur, distribution, EGR/DPF/SCR selon norme et contamination après franchissement",
+                  "piece_concernee": "Diesel Force/Mercedes du Gurkha",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente avec eau, poussière ou entretien espacé",
+                  "cout_reparation_estime": "Élevé : environ 500 à 10 000 €"
+                },
+                {
+                  "probleme": "Boîte, embrayage, transfert, blocages avant/arrière et ponts",
+                  "symptomes": [
+                    "Rapports difficiles",
+                    "Patinage",
+                    "Blocage ou 4x4 indisponible, vibration ou fuite"
+                  ],
+                  "kilometrage_apparition": "Inspection après chaque usage sévère et souvent après 100 000 km",
+                  "diagnostic": "Contrôler boîte cinq rapports, embrayage/volant, transfert 2H/4H/4L mécanique ou shift-on-the-fly, blocages manuels, arbres/croisillons, ponts, demi-arbres et moyeux ; analyser huiles pour eau/limaille et vérifier pneus identiques",
+                  "piece_concernee": "Transmission 4x4 et différentiels verrouillables",
+                  "gravite": "Critique en franchissement",
+                  "frequence": "Usure fréquente en usage intensif",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 12 000 €"
+                },
+                {
+                  "probleme": "Châssis échelle, suspension, direction, freins et carrosserie",
+                  "symptomes": [
+                    "Fissure",
+                    "Jeu au volant",
+                    "Tirage, roulis ou freinage faible"
+                  ],
+                  "kilometrage_apparition": "Inspection annuelle et après choc/franchissement",
+                  "diagnostic": "Inspecter longerons, traverses, soudures, supports de caisse, corrosion, protections, essieux rigides et suspension avant indépendante 2024, ressorts/amortisseurs, rotules, direction, freins/ABS, pneus et jantes ; contrôler snorkel, treuil, rehausse et homologation",
+                  "piece_concernee": "Châssis et organes de sécurité Gurkha",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sur véhicule modifié ou de terrain",
+                  "cout_reparation_estime": "Très élevé : environ 600 à plus de 15 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Gurkha BS6",
+          "annees": "2021–2023",
+          "phases": [
+            "Nouvelle carrosserie, 91 ch et blocages manuels avant/arrière."
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "FM2.6 CR — 91 ch",
+              "code_moteur": "Force FM2.6 CR BS6",
+              "cylindree": "2 596 cm³",
+              "puissance_ch": 91,
+              "boite": [
+                "Manuelle 5 rapports avec gamme courte, 4x4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo, refroidissement et dépollution du diesel Mercedes/Force",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Fumée",
+                    "Mode dégradé, fuite ou surchauffe"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 120 000 et 250 000 km, plus tôt en tout-terrain",
+                  "diagnostic": "Identifier OM616/FM2.6 mécanique ou common rail et OM611 2.2, lire défauts si disponible, contrôler compressions, pompe/rail, injecteurs, turbo, intercooler, radiateur, visco/ventilateur, distribution, EGR/DPF/SCR selon norme et contamination après franchissement",
+                  "piece_concernee": "Diesel Force/Mercedes du Gurkha",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente avec eau, poussière ou entretien espacé",
+                  "cout_reparation_estime": "Élevé : environ 500 à 10 000 €"
+                },
+                {
+                  "probleme": "Boîte, embrayage, transfert, blocages avant/arrière et ponts",
+                  "symptomes": [
+                    "Rapports difficiles",
+                    "Patinage",
+                    "Blocage ou 4x4 indisponible, vibration ou fuite"
+                  ],
+                  "kilometrage_apparition": "Inspection après chaque usage sévère et souvent après 100 000 km",
+                  "diagnostic": "Contrôler boîte cinq rapports, embrayage/volant, transfert 2H/4H/4L mécanique ou shift-on-the-fly, blocages manuels, arbres/croisillons, ponts, demi-arbres et moyeux ; analyser huiles pour eau/limaille et vérifier pneus identiques",
+                  "piece_concernee": "Transmission 4x4 et différentiels verrouillables",
+                  "gravite": "Critique en franchissement",
+                  "frequence": "Usure fréquente en usage intensif",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 12 000 €"
+                },
+                {
+                  "probleme": "Châssis échelle, suspension, direction, freins et carrosserie",
+                  "symptomes": [
+                    "Fissure",
+                    "Jeu au volant",
+                    "Tirage, roulis ou freinage faible"
+                  ],
+                  "kilometrage_apparition": "Inspection annuelle et après choc/franchissement",
+                  "diagnostic": "Inspecter longerons, traverses, soudures, supports de caisse, corrosion, protections, essieux rigides et suspension avant indépendante 2024, ressorts/amortisseurs, rotules, direction, freins/ABS, pneus et jantes ; contrôler snorkel, treuil, rehausse et homologation",
+                  "piece_concernee": "Châssis et organes de sécurité Gurkha",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sur véhicule modifié ou de terrain",
+                  "cout_reparation_estime": "Très élevé : environ 600 à plus de 15 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Gurkha BS6.2 trois/cinq portes",
+          "annees": "2024–aujourd’hui",
+          "phases": [
+            "Calibrage officiel 140 PS et 320 Nm ; châssis court ou cinq portes."
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "FM2.6 CR — 140 ch",
+              "code_moteur": "Force FM2.6 CR BS6.2",
+              "cylindree": "2 596 cm³",
+              "puissance_ch": 140,
+              "boite": [
+                "Manuelle 5 rapports, shift-on-the-fly 2H/4H/4L"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo, refroidissement et dépollution du diesel Mercedes/Force",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Fumée",
+                    "Mode dégradé, fuite ou surchauffe"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 120 000 et 250 000 km, plus tôt en tout-terrain",
+                  "diagnostic": "Identifier OM616/FM2.6 mécanique ou common rail et OM611 2.2, lire défauts si disponible, contrôler compressions, pompe/rail, injecteurs, turbo, intercooler, radiateur, visco/ventilateur, distribution, EGR/DPF/SCR selon norme et contamination après franchissement",
+                  "piece_concernee": "Diesel Force/Mercedes du Gurkha",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente avec eau, poussière ou entretien espacé",
+                  "cout_reparation_estime": "Élevé : environ 500 à 10 000 €"
+                },
+                {
+                  "probleme": "Boîte, embrayage, transfert, blocages avant/arrière et ponts",
+                  "symptomes": [
+                    "Rapports difficiles",
+                    "Patinage",
+                    "Blocage ou 4x4 indisponible, vibration ou fuite"
+                  ],
+                  "kilometrage_apparition": "Inspection après chaque usage sévère et souvent après 100 000 km",
+                  "diagnostic": "Contrôler boîte cinq rapports, embrayage/volant, transfert 2H/4H/4L mécanique ou shift-on-the-fly, blocages manuels, arbres/croisillons, ponts, demi-arbres et moyeux ; analyser huiles pour eau/limaille et vérifier pneus identiques",
+                  "piece_concernee": "Transmission 4x4 et différentiels verrouillables",
+                  "gravite": "Critique en franchissement",
+                  "frequence": "Usure fréquente en usage intensif",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 12 000 €"
+                },
+                {
+                  "probleme": "Châssis échelle, suspension, direction, freins et carrosserie",
+                  "symptomes": [
+                    "Fissure",
+                    "Jeu au volant",
+                    "Tirage, roulis ou freinage faible"
+                  ],
+                  "kilometrage_apparition": "Inspection annuelle et après choc/franchissement",
+                  "diagnostic": "Inspecter longerons, traverses, soudures, supports de caisse, corrosion, protections, essieux rigides et suspension avant indépendante 2024, ressorts/amortisseurs, rotules, direction, freins/ABS, pneus et jantes ; contrôler snorkel, treuil, rehausse et homologation",
+                  "piece_concernee": "Châssis et organes de sécurité Gurkha",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sur véhicule modifié ou de terrain",
+                  "cout_reparation_estime": "Très élevé : environ 600 à plus de 15 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://forcegurkha.co.in/explore/",
+        "https://forcemotors.com/MEDIA_PAGE_PDF/Press_Release/2024/gurkhapr.pdf"
+      ]
+    }
+  ]
+}

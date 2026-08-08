@@ -1,0 +1,140 @@
+{
+  "nom": "Nikola",
+  "modeles": [
+    {
+      "nom": "Tre",
+      "generations": [
+        {
+          "code_chassis": "Tre BEV Class 8",
+          "annees": "2022–aujourd’hui",
+          "phases": [
+            "Brochure 2023 : 480 kW continus, neuf packs totalisant 733 kWh ; ne pas fusionner avec l’ancienne estimation 753 kWh."
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "BEV 733 kWh — 645 ch",
+              "code_moteur": "Nikola dual e-motor e-axle",
+              "cylindree": "Batterie 733 kWh",
+              "puissance_ch": 645,
+              "boite": [
+                "E-axle à réduction fixe, 6x2"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie de traction, refroidissement, isolement et gestion énergétique",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Dérating",
+                    "Écart de modules, alerte thermique ou défaut d’isolement"
+                  ],
+                  "kilometrage_apparition": "Selon énergie délivrée, charges rapides et service ; suivi télématique permanent",
+                  "diagnostic": "Lire SOH, énergie, températures et défauts Fleet Command, contrôler packs 733 kWh BEV ou batterie tampon FCEV, BMS, contacteurs, liquide, pompes/chillers et isolement ; inspecter packs et protections après choc, appliquer toutes campagnes et procédures constructeur",
+                  "piece_concernee": "Batterie haute tension et gestion thermique Tre",
+                  "gravite": "Critique",
+                  "frequence": "À surveiller en exploitation lourde",
+                  "cout_reparation_estime": "Extrêmement élevé : environ 10 000 à plus de 150 000 €"
+                },
+                {
+                  "probleme": "E-axle, onduleurs, recharge ou pile à combustible/hydrogène",
+                  "symptomes": [
+                    "Puissance limitée",
+                    "Charge impossible",
+                    "Fuite, alerte H2 ou défaut de pile"
+                  ],
+                  "kilometrage_apparition": "Contrôle quotidien et maintenance selon heures/énergie",
+                  "diagnostic": "Sur BEV tester CCS, chargeur, onduleurs, moteurs et réducteur ; sur FCEV contrôler réservoirs 700 bar selon version, dates, valves, détecteurs, conduites, compresseur d’air, humidification, pile et convertisseur ; rechercher fuites avec matériel certifié et consigner HV/H2",
+                  "piece_concernee": "Propulsion électrique et système énergétique BEV/FCEV",
+                  "gravite": "Critique",
+                  "frequence": "Variable ; toute alerte H2 impose immobilisation sécurisée",
+                  "cout_reparation_estime": "Extrêmement élevé : environ 5 000 à plus de 200 000 €"
+                },
+                {
+                  "probleme": "Freinage pneumatique/EBS, châssis Iveco S-Way, suspension et logiciels flotte",
+                  "symptomes": [
+                    "Perte d’air",
+                    "Alerte EBS",
+                    "Usure pneu, géométrie ou véhicule indisponible"
+                  ],
+                  "kilometrage_apparition": "Inspection pré-départ et maintenance réglementaire",
+                  "diagnostic": "Tester compresseur/dessiccateur, réservoirs, valves, EBS/ESC/AEBS, régénération, disques, essieux, suspension pneumatique, direction et pneus ; inspecter châssis/cabine, connectique HV, batteries 24 V, télématique et calibrations, puis confirmer disponibilité pièces/service vu évolution du constructeur",
+                  "piece_concernee": "Châssis, freinage et réseau Nikola Tre",
+                  "gravite": "Critique",
+                  "frequence": "À surveiller systématiquement en poids lourd",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 40 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Tre FCEV Class 8",
+          "annees": "2023–aujourd’hui",
+          "phases": [
+            "Version hydrogène à chaîne électrique et batterie tampon, matériel haute pression et procédures distinctes du BEV."
+          ],
+          "motorisations": [
+            {
+              "type": "Hydrogène",
+              "nom": "Pile à combustible hydrogène — 645 ch",
+              "code_moteur": "Nikola fuel-cell electric powertrain",
+              "cylindree": "Pile à combustible + batterie tampon",
+              "puissance_ch": 645,
+              "boite": [
+                "E-axle à réduction fixe, 6x2"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie de traction, refroidissement, isolement et gestion énergétique",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Dérating",
+                    "Écart de modules, alerte thermique ou défaut d’isolement"
+                  ],
+                  "kilometrage_apparition": "Selon énergie délivrée, charges rapides et service ; suivi télématique permanent",
+                  "diagnostic": "Lire SOH, énergie, températures et défauts Fleet Command, contrôler packs 733 kWh BEV ou batterie tampon FCEV, BMS, contacteurs, liquide, pompes/chillers et isolement ; inspecter packs et protections après choc, appliquer toutes campagnes et procédures constructeur",
+                  "piece_concernee": "Batterie haute tension et gestion thermique Tre",
+                  "gravite": "Critique",
+                  "frequence": "À surveiller en exploitation lourde",
+                  "cout_reparation_estime": "Extrêmement élevé : environ 10 000 à plus de 150 000 €"
+                },
+                {
+                  "probleme": "E-axle, onduleurs, recharge ou pile à combustible/hydrogène",
+                  "symptomes": [
+                    "Puissance limitée",
+                    "Charge impossible",
+                    "Fuite, alerte H2 ou défaut de pile"
+                  ],
+                  "kilometrage_apparition": "Contrôle quotidien et maintenance selon heures/énergie",
+                  "diagnostic": "Sur BEV tester CCS, chargeur, onduleurs, moteurs et réducteur ; sur FCEV contrôler réservoirs 700 bar selon version, dates, valves, détecteurs, conduites, compresseur d’air, humidification, pile et convertisseur ; rechercher fuites avec matériel certifié et consigner HV/H2",
+                  "piece_concernee": "Propulsion électrique et système énergétique BEV/FCEV",
+                  "gravite": "Critique",
+                  "frequence": "Variable ; toute alerte H2 impose immobilisation sécurisée",
+                  "cout_reparation_estime": "Extrêmement élevé : environ 5 000 à plus de 200 000 €"
+                },
+                {
+                  "probleme": "Freinage pneumatique/EBS, châssis Iveco S-Way, suspension et logiciels flotte",
+                  "symptomes": [
+                    "Perte d’air",
+                    "Alerte EBS",
+                    "Usure pneu, géométrie ou véhicule indisponible"
+                  ],
+                  "kilometrage_apparition": "Inspection pré-départ et maintenance réglementaire",
+                  "diagnostic": "Tester compresseur/dessiccateur, réservoirs, valves, EBS/ESC/AEBS, régénération, disques, essieux, suspension pneumatique, direction et pneus ; inspecter châssis/cabine, connectique HV, batteries 24 V, télématique et calibrations, puis confirmer disponibilité pièces/service vu évolution du constructeur",
+                  "piece_concernee": "Châssis, freinage et réseau Nikola Tre",
+                  "gravite": "Critique",
+                  "frequence": "À surveiller systématiquement en poids lourd",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 40 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.nikolamotor.com/wp-content/uploads/2023/04/BEV019_TreBEV-Brochure-2.02.2023.pdf",
+        "https://www.nikolamotor.com/wp-content/uploads/2023/06/FCE003-FCEV-Brochure-06.14.23.pdf"
+      ]
+    }
+  ]
+}

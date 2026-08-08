@@ -1,0 +1,73 @@
+{
+  "nom": "Amilcar",
+  "modeles": [
+    {
+      "nom": "CGSS",
+      "generations": [
+        {
+          "code_chassis": "CGSS / Grand Sport Surbaissé",
+          "annees": "1926–1929",
+          "phases": [
+            "Cyclecar sportif historique ; puissance indicative selon préparation, confirmer châssis, moteur et carrosserie"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.1 I4 à soupapes latérales — 35 ch",
+              "code_moteur": "Amilcar 1074",
+              "cylindree": "1 074 cm³",
+              "puissance_ch": 35,
+              "boite": [
+                "Boîte manuelle 4 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Authenticité du châssis, carrosserie bois/aluminium et corrosion",
+                  "symptomes": [
+                    "Portes ou capot désalignés",
+                    "Fissures",
+                    "Numéros ou pièces incohérents"
+                  ],
+                  "kilometrage_apparition": "Dépend du stockage et des restaurations",
+                  "diagnostic": "Comparer numéros de châssis/moteur et archives de club, inspecter longerons, traverses, essieux, supports, armature bois, panneaux, soudures, géométrie et modifications de compétition",
+                  "piece_concernee": "Châssis, carrosserie et identité CGSS",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Fréquente sur cyclecars restaurés ou transformés",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Usure du quatre-cylindres, graissage et refroidissement",
+                  "symptomes": [
+                    "Pression d’huile faible",
+                    "Fumée",
+                    "Surchauffe ou cognement"
+                  ],
+                  "kilometrage_apparition": "À contrôler indépendamment du compteur",
+                  "diagnostic": "Mesurer compressions, jeux et pression d’huile ; inspecter vilebrequin/paliers, culasse, distribution, carburateur, magnéto/allumage, pompe, radiateur et contamination des fluides",
+                  "piece_concernee": "Moteur Amilcar 1 074 cm³ et périphériques",
+                  "gravite": "Critique en cas de pression faible",
+                  "frequence": "Assez fréquente sans réfection documentée",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 20 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte, pont, freins à câbles et direction",
+                  "symptomes": [
+                    "Rapports difficiles",
+                    "Bruit de pont",
+                    "Freinage ou direction imprécis"
+                  ],
+                  "kilometrage_apparition": "Variable, notamment après immobilisation",
+                  "diagnostic": "Essayer avec spécialiste, contrôler embrayage, pignons, arbre, pont, roulements, câbles/tambours, boîtier, pivots, roues à rayons, moyeux et pneus adaptés",
+                  "piece_concernee": "Transmission et organes de sécurité",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente avec l’âge",
+                  "cout_reparation_estime": "Élevé : environ 1 000 à 12 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

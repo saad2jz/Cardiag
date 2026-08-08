@@ -1,0 +1,247 @@
+{
+  "nom": "Ginetta",
+  "modeles": [
+    {
+      "nom": "G40",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.8 Zetec — 175 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 175,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "État mécanique, corrosion et disponibilité des pièces",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Fuite",
+                    "Usure ou fonctionnement irrégulier"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, le stockage et l’historique réel.",
+                  "diagnostic": "Inspection sur pont, essai routier et contrôle des numéros/équipements spécifiques.",
+                  "piece_concernee": "Groupe motopropulseur, châssis et carrosserie",
+                  "gravite": "À évaluer lors de l’expertise",
+                  "frequence": "À surveiller particulièrement sur véhicule historique",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "probleme": "Freinage, direction et suspension",
+                  "symptomes": [
+                    "Tirage",
+                    "Vibration",
+                    "Jeu au volant"
+                  ],
+                  "kilometrage_apparition": "À contrôler avant toute utilisation routière.",
+                  "diagnostic": "Contrôle des jeux, des flexibles, de la géométrie et de l’efficacité du freinage.",
+                  "piece_concernee": "Trains roulants et freinage",
+                  "gravite": "Majeure si sécurité affectée",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Réseau électrique et connectiques",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Fonction intermittente"
+                  ],
+                  "kilometrage_apparition": "Variable, accentué après immobilisation.",
+                  "diagnostic": "Test de batterie, masses, câblage et charge alternateur/dynamo.",
+                  "piece_concernee": "Circuit électrique",
+                  "gravite": "Faible à modérée",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "G60",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.7 V6 — 310 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 310,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "État mécanique, corrosion et disponibilité des pièces",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Fuite",
+                    "Usure ou fonctionnement irrégulier"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, le stockage et l’historique réel.",
+                  "diagnostic": "Inspection sur pont, essai routier et contrôle des numéros/équipements spécifiques.",
+                  "piece_concernee": "Groupe motopropulseur, châssis et carrosserie",
+                  "gravite": "À évaluer lors de l’expertise",
+                  "frequence": "À surveiller particulièrement sur véhicule historique",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "probleme": "Freinage, direction et suspension",
+                  "symptomes": [
+                    "Tirage",
+                    "Vibration",
+                    "Jeu au volant"
+                  ],
+                  "kilometrage_apparition": "À contrôler avant toute utilisation routière.",
+                  "diagnostic": "Contrôle des jeux, des flexibles, de la géométrie et de l’efficacité du freinage.",
+                  "piece_concernee": "Trains roulants et freinage",
+                  "gravite": "Majeure si sécurité affectée",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Réseau électrique et connectiques",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Fonction intermittente"
+                  ],
+                  "kilometrage_apparition": "Variable, accentué après immobilisation.",
+                  "diagnostic": "Test de batterie, masses, câblage et charge alternateur/dynamo.",
+                  "piece_concernee": "Circuit électrique",
+                  "gravite": "Faible à modérée",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "G15",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "coupe",
+        "countries": [
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 9
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "G4",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "sedan",
+        "countries": [
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 9
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

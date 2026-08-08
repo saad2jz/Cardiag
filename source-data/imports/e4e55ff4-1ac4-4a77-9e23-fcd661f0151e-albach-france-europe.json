@@ -1,0 +1,315 @@
+{
+  "nom": "Albach",
+  "modeles": [
+    {
+      "nom": "Diamant",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "truck",
+        "body_type": null,
+        "countries": [
+          "es",
+          "fi",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 6
+      },
+      "generations": [
+        {
+          "code_chassis": "Diamant 2000 — Volvo Tier 4/Stage V",
+          "annees": "2014–aujourd’hui",
+          "phases": [
+            "Broyeur automoteur forestier homologué route ; distinguer niveau antipollution, moteur et configuration de grue au numéro de machine"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel industriel",
+              "nom": "Volvo Penta TAD1671VE — 612 ch",
+              "code_moteur": "TAD1671VE",
+              "cylindree": "16,1 L",
+              "puissance_ch": 612,
+              "boite": [
+                "Transmission hydromécanique 2 vitesses, 4x4 permanent"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, suralimentation et dépollution du diesel industriel",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Fumée",
+                    "Température élevée ou alerte SCR"
+                  ],
+                  "kilometrage_apparition": "Heures moteur, charge et qualité de maintenance plus pertinentes que le kilométrage",
+                  "diagnostic": "Lire calculateur MAN/Volvo, analyser huiles et liquide, mesurer rail/retours, contrôler filtres, injecteurs, turbo, refroidisseurs, ventilateurs réversibles, EGR/SCR/AdBlue et historique de charge",
+                  "piece_concernee": "Moteur MAN D4276 ou Volvo Penta 16 litres",
+                  "gravite": "Critique en cas de défaut de lubrification ou surchauffe",
+                  "frequence": "Variable, accrue en poussière et charge continue",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 50 000 €"
+                },
+                {
+                  "probleme": "Usure du rotor, couteaux, contre-lame et circuit d’alimentation",
+                  "symptomes": [
+                    "Vibrations",
+                    "Qualité de plaquette irrégulière",
+                    "Baisse de débit ou bruits de choc"
+                  ],
+                  "kilometrage_apparition": "Selon tonnage, essence de bois et corps étrangers",
+                  "diagnostic": "Consigner heures/tonnage, inspecter couteaux, porte-couteaux, contre-lame, rotor, roulements, équilibrage, vis transversales, table d’alimentation, capteurs et détecteurs ; mesurer vibrations avant remise en charge",
+                  "piece_concernee": "Ensemble broyeur et convoyage",
+                  "gravite": "Critique en cas de fissure, déséquilibre ou fixation défaillante",
+                  "frequence": "Fréquente en exploitation forestière intensive",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 40 000 €"
+                },
+                {
+                  "probleme": "Entraînement hydromécanique, hydraulique, essieux et grue",
+                  "symptomes": [
+                    "À-coups de translation",
+                    "Huile chaude",
+                    "Fuite, dérive de grue ou défaut de blocage"
+                  ],
+                  "kilometrage_apparition": "Selon heures, terrain et propreté de l’huile",
+                  "diagnostic": "Prélever huile hydraulique, contrôler pressions/débits, pompes, moteurs, distributeurs, flexibles, vérins, refroidisseur, entraînement deux vitesses, essieux, blocages, direction, freinage, stabilisateurs, grue et graissage centralisé",
+                  "piece_concernee": "Hydraulique de travail et transmission intégrale",
+                  "gravite": "Critique pour la sécurité et la stabilité",
+                  "frequence": "Assez fréquente en environnement abrasif",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 60 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel industriel",
+              "nom": "Volvo Penta TAD1672VE — 700 ch",
+              "code_moteur": "TAD1672VE",
+              "cylindree": "16,1 L",
+              "puissance_ch": 700,
+              "boite": [
+                "Transmission hydromécanique 2 vitesses, 4x4 permanent"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, suralimentation et dépollution du diesel industriel",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Fumée",
+                    "Température élevée ou alerte SCR"
+                  ],
+                  "kilometrage_apparition": "Heures moteur, charge et qualité de maintenance plus pertinentes que le kilométrage",
+                  "diagnostic": "Lire calculateur MAN/Volvo, analyser huiles et liquide, mesurer rail/retours, contrôler filtres, injecteurs, turbo, refroidisseurs, ventilateurs réversibles, EGR/SCR/AdBlue et historique de charge",
+                  "piece_concernee": "Moteur MAN D4276 ou Volvo Penta 16 litres",
+                  "gravite": "Critique en cas de défaut de lubrification ou surchauffe",
+                  "frequence": "Variable, accrue en poussière et charge continue",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 50 000 €"
+                },
+                {
+                  "probleme": "Usure du rotor, couteaux, contre-lame et circuit d’alimentation",
+                  "symptomes": [
+                    "Vibrations",
+                    "Qualité de plaquette irrégulière",
+                    "Baisse de débit ou bruits de choc"
+                  ],
+                  "kilometrage_apparition": "Selon tonnage, essence de bois et corps étrangers",
+                  "diagnostic": "Consigner heures/tonnage, inspecter couteaux, porte-couteaux, contre-lame, rotor, roulements, équilibrage, vis transversales, table d’alimentation, capteurs et détecteurs ; mesurer vibrations avant remise en charge",
+                  "piece_concernee": "Ensemble broyeur et convoyage",
+                  "gravite": "Critique en cas de fissure, déséquilibre ou fixation défaillante",
+                  "frequence": "Fréquente en exploitation forestière intensive",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 40 000 €"
+                },
+                {
+                  "probleme": "Entraînement hydromécanique, hydraulique, essieux et grue",
+                  "symptomes": [
+                    "À-coups de translation",
+                    "Huile chaude",
+                    "Fuite, dérive de grue ou défaut de blocage"
+                  ],
+                  "kilometrage_apparition": "Selon heures, terrain et propreté de l’huile",
+                  "diagnostic": "Prélever huile hydraulique, contrôler pressions/débits, pompes, moteurs, distributeurs, flexibles, vérins, refroidisseur, entraînement deux vitesses, essieux, blocages, direction, freinage, stabilisateurs, grue et graissage centralisé",
+                  "piece_concernee": "Hydraulique de travail et transmission intégrale",
+                  "gravite": "Critique pour la sécurité et la stabilité",
+                  "frequence": "Assez fréquente en environnement abrasif",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 60 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel industriel",
+              "nom": "Volvo Penta TAD1643VE-B — 768 ch",
+              "code_moteur": "TAD1643VE-B",
+              "cylindree": "16,1 L",
+              "puissance_ch": 768,
+              "boite": [
+                "Transmission hydromécanique 2 vitesses, 4x4 permanent"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, suralimentation et dépollution du diesel industriel",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Fumée",
+                    "Température élevée ou alerte SCR"
+                  ],
+                  "kilometrage_apparition": "Heures moteur, charge et qualité de maintenance plus pertinentes que le kilométrage",
+                  "diagnostic": "Lire calculateur MAN/Volvo, analyser huiles et liquide, mesurer rail/retours, contrôler filtres, injecteurs, turbo, refroidisseurs, ventilateurs réversibles, EGR/SCR/AdBlue et historique de charge",
+                  "piece_concernee": "Moteur MAN D4276 ou Volvo Penta 16 litres",
+                  "gravite": "Critique en cas de défaut de lubrification ou surchauffe",
+                  "frequence": "Variable, accrue en poussière et charge continue",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 50 000 €"
+                },
+                {
+                  "probleme": "Usure du rotor, couteaux, contre-lame et circuit d’alimentation",
+                  "symptomes": [
+                    "Vibrations",
+                    "Qualité de plaquette irrégulière",
+                    "Baisse de débit ou bruits de choc"
+                  ],
+                  "kilometrage_apparition": "Selon tonnage, essence de bois et corps étrangers",
+                  "diagnostic": "Consigner heures/tonnage, inspecter couteaux, porte-couteaux, contre-lame, rotor, roulements, équilibrage, vis transversales, table d’alimentation, capteurs et détecteurs ; mesurer vibrations avant remise en charge",
+                  "piece_concernee": "Ensemble broyeur et convoyage",
+                  "gravite": "Critique en cas de fissure, déséquilibre ou fixation défaillante",
+                  "frequence": "Fréquente en exploitation forestière intensive",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 40 000 €"
+                },
+                {
+                  "probleme": "Entraînement hydromécanique, hydraulique, essieux et grue",
+                  "symptomes": [
+                    "À-coups de translation",
+                    "Huile chaude",
+                    "Fuite, dérive de grue ou défaut de blocage"
+                  ],
+                  "kilometrage_apparition": "Selon heures, terrain et propreté de l’huile",
+                  "diagnostic": "Prélever huile hydraulique, contrôler pressions/débits, pompes, moteurs, distributeurs, flexibles, vérins, refroidisseur, entraînement deux vitesses, essieux, blocages, direction, freinage, stabilisateurs, grue et graissage centralisé",
+                  "piece_concernee": "Hydraulique de travail et transmission intégrale",
+                  "gravite": "Critique pour la sécurité et la stabilité",
+                  "frequence": "Assez fréquente en environnement abrasif",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 60 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel industriel",
+              "nom": "Volvo Penta TWD1683VE Stage V — 795 ch",
+              "code_moteur": "TWD1683VE",
+              "cylindree": "16,1 L",
+              "puissance_ch": 795,
+              "boite": [
+                "Transmission hydromécanique 2 vitesses, 4x4 permanent"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, suralimentation et dépollution du diesel industriel",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Fumée",
+                    "Température élevée ou alerte SCR"
+                  ],
+                  "kilometrage_apparition": "Heures moteur, charge et qualité de maintenance plus pertinentes que le kilométrage",
+                  "diagnostic": "Lire calculateur MAN/Volvo, analyser huiles et liquide, mesurer rail/retours, contrôler filtres, injecteurs, turbo, refroidisseurs, ventilateurs réversibles, EGR/SCR/AdBlue et historique de charge",
+                  "piece_concernee": "Moteur MAN D4276 ou Volvo Penta 16 litres",
+                  "gravite": "Critique en cas de défaut de lubrification ou surchauffe",
+                  "frequence": "Variable, accrue en poussière et charge continue",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 50 000 €"
+                },
+                {
+                  "probleme": "Usure du rotor, couteaux, contre-lame et circuit d’alimentation",
+                  "symptomes": [
+                    "Vibrations",
+                    "Qualité de plaquette irrégulière",
+                    "Baisse de débit ou bruits de choc"
+                  ],
+                  "kilometrage_apparition": "Selon tonnage, essence de bois et corps étrangers",
+                  "diagnostic": "Consigner heures/tonnage, inspecter couteaux, porte-couteaux, contre-lame, rotor, roulements, équilibrage, vis transversales, table d’alimentation, capteurs et détecteurs ; mesurer vibrations avant remise en charge",
+                  "piece_concernee": "Ensemble broyeur et convoyage",
+                  "gravite": "Critique en cas de fissure, déséquilibre ou fixation défaillante",
+                  "frequence": "Fréquente en exploitation forestière intensive",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 40 000 €"
+                },
+                {
+                  "probleme": "Entraînement hydromécanique, hydraulique, essieux et grue",
+                  "symptomes": [
+                    "À-coups de translation",
+                    "Huile chaude",
+                    "Fuite, dérive de grue ou défaut de blocage"
+                  ],
+                  "kilometrage_apparition": "Selon heures, terrain et propreté de l’huile",
+                  "diagnostic": "Prélever huile hydraulique, contrôler pressions/débits, pompes, moteurs, distributeurs, flexibles, vérins, refroidisseur, entraînement deux vitesses, essieux, blocages, direction, freinage, stabilisateurs, grue et graissage centralisé",
+                  "piece_concernee": "Hydraulique de travail et transmission intégrale",
+                  "gravite": "Critique pour la sécurité et la stabilité",
+                  "frequence": "Assez fréquente en environnement abrasif",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 60 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Diamant 2000 — MAN Stage V",
+          "annees": "2021–aujourd’hui",
+          "phases": [
+            "Version actuelle donnée pour 581 kW/790 ch par Albach ; contrôler configuration pays et logiciel machine"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel industriel",
+              "nom": "MAN D4276 Stage V — 790 ch",
+              "code_moteur": "MAN D4276",
+              "cylindree": "16,2 L",
+              "puissance_ch": 790,
+              "boite": [
+                "Transmission hydromécanique 2 vitesses, 4x4 permanent"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, suralimentation et dépollution du diesel industriel",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Fumée",
+                    "Température élevée ou alerte SCR"
+                  ],
+                  "kilometrage_apparition": "Heures moteur, charge et qualité de maintenance plus pertinentes que le kilométrage",
+                  "diagnostic": "Lire calculateur MAN/Volvo, analyser huiles et liquide, mesurer rail/retours, contrôler filtres, injecteurs, turbo, refroidisseurs, ventilateurs réversibles, EGR/SCR/AdBlue et historique de charge",
+                  "piece_concernee": "Moteur MAN D4276 ou Volvo Penta 16 litres",
+                  "gravite": "Critique en cas de défaut de lubrification ou surchauffe",
+                  "frequence": "Variable, accrue en poussière et charge continue",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 50 000 €"
+                },
+                {
+                  "probleme": "Usure du rotor, couteaux, contre-lame et circuit d’alimentation",
+                  "symptomes": [
+                    "Vibrations",
+                    "Qualité de plaquette irrégulière",
+                    "Baisse de débit ou bruits de choc"
+                  ],
+                  "kilometrage_apparition": "Selon tonnage, essence de bois et corps étrangers",
+                  "diagnostic": "Consigner heures/tonnage, inspecter couteaux, porte-couteaux, contre-lame, rotor, roulements, équilibrage, vis transversales, table d’alimentation, capteurs et détecteurs ; mesurer vibrations avant remise en charge",
+                  "piece_concernee": "Ensemble broyeur et convoyage",
+                  "gravite": "Critique en cas de fissure, déséquilibre ou fixation défaillante",
+                  "frequence": "Fréquente en exploitation forestière intensive",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 40 000 €"
+                },
+                {
+                  "probleme": "Entraînement hydromécanique, hydraulique, essieux et grue",
+                  "symptomes": [
+                    "À-coups de translation",
+                    "Huile chaude",
+                    "Fuite, dérive de grue ou défaut de blocage"
+                  ],
+                  "kilometrage_apparition": "Selon heures, terrain et propreté de l’huile",
+                  "diagnostic": "Prélever huile hydraulique, contrôler pressions/débits, pompes, moteurs, distributeurs, flexibles, vérins, refroidisseur, entraînement deux vitesses, essieux, blocages, direction, freinage, stabilisateurs, grue et graissage centralisé",
+                  "piece_concernee": "Hydraulique de travail et transmission intégrale",
+                  "gravite": "Critique pour la sécurité et la stabilité",
+                  "frequence": "Assez fréquente en environnement abrasif",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 60 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "source_catalogue": "VehiclesDB 2026.08.2 (CC-BY 4.0)"
+}

@@ -1,0 +1,312 @@
+{
+  "nom": "Bolwell",
+  "modeles": [
+    {
+      "nom": "Nagari",
+      "generations": [
+        {
+          "code_chassis": "Mk VIII Coupé / Sports",
+          "annees": "1970–1974",
+          "phases": [
+            "118 exemplaires documentés (100 coupés et 18 Sports) ; le 302 d’origine développe 220 bhp, la puissance du 351 dépend de la configuration et doit être confirmée au banc/dossier."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Ford 302 Windsor V8 — 223 ch",
+              "code_moteur": "Ford 302 Windsor",
+              "cylindree": "4 958 cm³",
+              "puissance_ch": 223,
+              "boite": [
+                "Ford Toploader manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et carburation du V8 Ford",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Ratés, odeur d’essence ou fumée"
+                  ],
+                  "kilometrage_apparition": "Aucun seuil fiable ; contrôle selon restauration et usage sportif",
+                  "diagnostic": "Identifier 302 Windsor ou 351 Windsor/Cleveland et vérifier conformité au dossier, mesurer compressions/leak-down et pression, contrôler pompe à huile, radiateur transversal, ventilateur, durites, Holley 500, allumage, arbre à cames, culasses et fuites ; surveiller richesse et température en essai",
+                  "piece_concernee": "V8 Ford small-block et périphériques Bolwell",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sur montage ancien ou modifié",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "Toploader, embrayage, arbre et essieu arrière",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Vibration ou bruit de pont"
+                  ],
+                  "kilometrage_apparition": "Variable, plus tôt en compétition ou avec 351 préparé",
+                  "diagnostic": "Contrôler embrayage hydraulique, commande distante, synchros et huile de boîte Ford Toploader, supports, arbre, croisillons, différentiel 2,93 et Powerlok éventuel, roulements, demi-arbres et bras de guidage ; relever toutes les transformations",
+                  "piece_concernee": "Transmission Ford quatre rapports et pont rigide",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure liée au couple et à l’usage",
+                  "cout_reparation_estime": "Élevé : environ 1 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Châssis poutre, coque polyester, trains roulants et authenticité",
+                  "symptomes": [
+                    "Fissures",
+                    "Corrosion de la poutre",
+                    "Jeu, mauvais alignement ou provenance lacunaire"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique avant achat et après usage piste",
+                  "diagnostic": "Faire inspecter sur pont adapté : poutre 14G, soudures, ancrages, corrosion masquée, collage et fissures du polyester, portes/ouvrants ; contrôler triangles avant, essieu guidé, ressorts-amortisseurs, crémaillère Austin 1800, freins avant ventilés/tambours arrière ; authentifier châssis parmi 100 coupés et 18 Sports",
+                  "piece_concernee": "Structure composite, châssis et identité Mk VIII",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque important avec âge, compétition et kits assemblés",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 40 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Ford 351 Windsor/Cleveland V8 — 300 ch",
+              "code_moteur": "Ford 351 Windsor ou Cleveland",
+              "cylindree": "5 752 cm³",
+              "puissance_ch": 300,
+              "boite": [
+                "Ford Toploader manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et carburation du V8 Ford",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Ratés, odeur d’essence ou fumée"
+                  ],
+                  "kilometrage_apparition": "Aucun seuil fiable ; contrôle selon restauration et usage sportif",
+                  "diagnostic": "Identifier 302 Windsor ou 351 Windsor/Cleveland et vérifier conformité au dossier, mesurer compressions/leak-down et pression, contrôler pompe à huile, radiateur transversal, ventilateur, durites, Holley 500, allumage, arbre à cames, culasses et fuites ; surveiller richesse et température en essai",
+                  "piece_concernee": "V8 Ford small-block et périphériques Bolwell",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sur montage ancien ou modifié",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "Toploader, embrayage, arbre et essieu arrière",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Vibration ou bruit de pont"
+                  ],
+                  "kilometrage_apparition": "Variable, plus tôt en compétition ou avec 351 préparé",
+                  "diagnostic": "Contrôler embrayage hydraulique, commande distante, synchros et huile de boîte Ford Toploader, supports, arbre, croisillons, différentiel 2,93 et Powerlok éventuel, roulements, demi-arbres et bras de guidage ; relever toutes les transformations",
+                  "piece_concernee": "Transmission Ford quatre rapports et pont rigide",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure liée au couple et à l’usage",
+                  "cout_reparation_estime": "Élevé : environ 1 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Châssis poutre, coque polyester, trains roulants et authenticité",
+                  "symptomes": [
+                    "Fissures",
+                    "Corrosion de la poutre",
+                    "Jeu, mauvais alignement ou provenance lacunaire"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique avant achat et après usage piste",
+                  "diagnostic": "Faire inspecter sur pont adapté : poutre 14G, soudures, ancrages, corrosion masquée, collage et fissures du polyester, portes/ouvrants ; contrôler triangles avant, essieu guidé, ressorts-amortisseurs, crémaillère Austin 1800, freins avant ventilés/tambours arrière ; authentifier châssis parmi 100 coupés et 18 Sports",
+                  "piece_concernee": "Structure composite, châssis et identité Mk VIII",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque important avec âge, compétition et kits assemblés",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 40 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Nagari 300 Mk X",
+          "annees": "2010–2012",
+          "phases": [
+            "Très faible série : six voitures prototype compris selon le club ; confirmer si la suralimentation optionnelle a été montée et homologuée sur l’exemplaire."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Toyota 2GR-FE V6 atmosphérique — 300 ch",
+              "code_moteur": "Toyota 2GR-FE",
+              "cylindree": "3 456 cm³",
+              "puissance_ch": 300,
+              "boite": [
+                "Automatique 6 rapports ou manuelle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et distribution du moteur central",
+                  "symptomes": [
+                    "Fuite d’huile ou liquide",
+                    "Ratés",
+                    "Surchauffe ou bruit de distribution"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, mais l’âge et l’immobilisation priment sur ces très faibles séries",
+                  "diagnostic": "Identifier 2GR-FE atmosphérique/suralimenté ou LS3, lire défauts, mesurer compressions et pression, contrôler pompe à eau, VVT-i et refroidissement du V6 ; sur version compressée inspecter Sprintex et échangeur ; sur LS3 contrôler circuit d’huile, refroidissement, allumage et cartographie spécifique",
+                  "piece_concernee": "Toyota 2GR-FE ou Chevrolet LS3 selon version",
+                  "gravite": "Critique",
+                  "frequence": "Variable, fortement dépendante du montage et de l’entretien",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 25 000 €"
+                },
+                {
+                  "probleme": "Boîte/transaxle, embrayage et commandes spécifiques",
+                  "symptomes": [
+                    "Rapport indisponible",
+                    "Patinage",
+                    "Craquement, fuite ou vibration"
+                  ],
+                  "kilometrage_apparition": "Variable ; contrôle systématique vu rareté",
+                  "diagnostic": "Identifier automatique/manuelle six rapports du Nagari 300 ou transaxle Audi du 500, contrôler huile, refroidissement, embrayage/convertisseur, câbles/actionneurs, supports, cardans, joints et différentiel ; confirmer les références et pièces de remplacement avant achat",
+                  "piece_concernee": "Transaxle central et chaîne cinématique Nagari",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Rare mais potentiellement immobilisante faute de pièces",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 20 000 €"
+                },
+                {
+                  "probleme": "Cellule carbone/Kevlar, sous-châssis, freins et traçabilité de faible série",
+                  "symptomes": [
+                    "Fissure du composite",
+                    "Géométrie hors tolérance",
+                    "Jeu ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Contrôle systématique, surtout après choc ou piste",
+                  "diagnostic": "Exiger dossier de construction et conformité, mesurer géométrie, inspecter cellule infusée, inserts, collages, sous-châssis et protections ; contrôler triangles, amortisseurs, direction, freins, roues et pneus ; faire expertiser toute réparation composite par un spécialiste et confirmer disponibilité des composants",
+                  "piece_concernee": "Structure composite et trains roulants Nagari 300/500",
+                  "gravite": "Critique",
+                  "frequence": "Risque majeur en cas de choc malgré faible kilométrage",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 50 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Toyota 2GR-FE V6 Sprintex — 380 ch",
+              "code_moteur": "Toyota 2GR-FE + Sprintex",
+              "cylindree": "3 456 cm³",
+              "puissance_ch": 380,
+              "boite": [
+                "Automatique 6 rapports ou manuelle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et distribution du moteur central",
+                  "symptomes": [
+                    "Fuite d’huile ou liquide",
+                    "Ratés",
+                    "Surchauffe ou bruit de distribution"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, mais l’âge et l’immobilisation priment sur ces très faibles séries",
+                  "diagnostic": "Identifier 2GR-FE atmosphérique/suralimenté ou LS3, lire défauts, mesurer compressions et pression, contrôler pompe à eau, VVT-i et refroidissement du V6 ; sur version compressée inspecter Sprintex et échangeur ; sur LS3 contrôler circuit d’huile, refroidissement, allumage et cartographie spécifique",
+                  "piece_concernee": "Toyota 2GR-FE ou Chevrolet LS3 selon version",
+                  "gravite": "Critique",
+                  "frequence": "Variable, fortement dépendante du montage et de l’entretien",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 25 000 €"
+                },
+                {
+                  "probleme": "Boîte/transaxle, embrayage et commandes spécifiques",
+                  "symptomes": [
+                    "Rapport indisponible",
+                    "Patinage",
+                    "Craquement, fuite ou vibration"
+                  ],
+                  "kilometrage_apparition": "Variable ; contrôle systématique vu rareté",
+                  "diagnostic": "Identifier automatique/manuelle six rapports du Nagari 300 ou transaxle Audi du 500, contrôler huile, refroidissement, embrayage/convertisseur, câbles/actionneurs, supports, cardans, joints et différentiel ; confirmer les références et pièces de remplacement avant achat",
+                  "piece_concernee": "Transaxle central et chaîne cinématique Nagari",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Rare mais potentiellement immobilisante faute de pièces",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 20 000 €"
+                },
+                {
+                  "probleme": "Cellule carbone/Kevlar, sous-châssis, freins et traçabilité de faible série",
+                  "symptomes": [
+                    "Fissure du composite",
+                    "Géométrie hors tolérance",
+                    "Jeu ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Contrôle systématique, surtout après choc ou piste",
+                  "diagnostic": "Exiger dossier de construction et conformité, mesurer géométrie, inspecter cellule infusée, inserts, collages, sous-châssis et protections ; contrôler triangles, amortisseurs, direction, freins, roues et pneus ; faire expertiser toute réparation composite par un spécialiste et confirmer disponibilité des composants",
+                  "piece_concernee": "Structure composite et trains roulants Nagari 300/500",
+                  "gravite": "Critique",
+                  "frequence": "Risque majeur en cas de choc malgré faible kilométrage",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 50 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Nagari 500",
+          "annees": "2019–aujourd’hui",
+          "phases": [
+            "Version 500 hp à moteur central, produite à l’unité ; toute spécification doit être rapprochée du dossier de construction."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Chevrolet LS3 V8 — 507 ch",
+              "code_moteur": "GM LS3",
+              "cylindree": "6 162 cm³",
+              "puissance_ch": 507,
+              "boite": [
+                "Transaxle Audi manuelle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et distribution du moteur central",
+                  "symptomes": [
+                    "Fuite d’huile ou liquide",
+                    "Ratés",
+                    "Surchauffe ou bruit de distribution"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, mais l’âge et l’immobilisation priment sur ces très faibles séries",
+                  "diagnostic": "Identifier 2GR-FE atmosphérique/suralimenté ou LS3, lire défauts, mesurer compressions et pression, contrôler pompe à eau, VVT-i et refroidissement du V6 ; sur version compressée inspecter Sprintex et échangeur ; sur LS3 contrôler circuit d’huile, refroidissement, allumage et cartographie spécifique",
+                  "piece_concernee": "Toyota 2GR-FE ou Chevrolet LS3 selon version",
+                  "gravite": "Critique",
+                  "frequence": "Variable, fortement dépendante du montage et de l’entretien",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 25 000 €"
+                },
+                {
+                  "probleme": "Boîte/transaxle, embrayage et commandes spécifiques",
+                  "symptomes": [
+                    "Rapport indisponible",
+                    "Patinage",
+                    "Craquement, fuite ou vibration"
+                  ],
+                  "kilometrage_apparition": "Variable ; contrôle systématique vu rareté",
+                  "diagnostic": "Identifier automatique/manuelle six rapports du Nagari 300 ou transaxle Audi du 500, contrôler huile, refroidissement, embrayage/convertisseur, câbles/actionneurs, supports, cardans, joints et différentiel ; confirmer les références et pièces de remplacement avant achat",
+                  "piece_concernee": "Transaxle central et chaîne cinématique Nagari",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Rare mais potentiellement immobilisante faute de pièces",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 20 000 €"
+                },
+                {
+                  "probleme": "Cellule carbone/Kevlar, sous-châssis, freins et traçabilité de faible série",
+                  "symptomes": [
+                    "Fissure du composite",
+                    "Géométrie hors tolérance",
+                    "Jeu ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Contrôle systématique, surtout après choc ou piste",
+                  "diagnostic": "Exiger dossier de construction et conformité, mesurer géométrie, inspecter cellule infusée, inserts, collages, sous-châssis et protections ; contrôler triangles, amortisseurs, direction, freins, roues et pneus ; faire expertiser toute réparation composite par un spécialiste et confirmer disponibilité des composants",
+                  "piece_concernee": "Structure composite et trains roulants Nagari 300/500",
+                  "gravite": "Critique",
+                  "frequence": "Risque majeur en cas de choc malgré faible kilométrage",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 50 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.bolwellcarclub.com.au/mk8-2/",
+        "https://www.bolwellcarclub.com.au/history/",
+        "https://www.bolwellcarclub.com.au/models/"
+      ]
+    }
+  ]
+}

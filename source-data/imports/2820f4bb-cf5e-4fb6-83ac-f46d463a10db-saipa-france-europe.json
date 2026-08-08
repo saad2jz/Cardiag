@@ -1,0 +1,613 @@
+{
+  "nom": "SAIPA",
+  "modeles": [
+    {
+      "nom": "Pride",
+      "generations": [
+        {
+          "code_chassis": "Pride Saba berline",
+          "annees": "1993–2003",
+          "phases": [
+            "Berline dérivée de la Kia Pride ; carburateur et injection sont conservés séparément."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "B3 1.3 carburateur — 61 ch",
+              "code_moteur": "Mazda/Kia B3",
+              "cylindree": "1 323 cm³",
+              "puissance_ch": 61,
+              "boite": [
+                "Manuelle 5 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Courroie, refroidissement et joint de culasse du B3/M13NI",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Perte de liquide ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, plus tôt avec liquide ou courroie négligés",
+                  "diagnostic": "Identifier moteur à carburateur/injection et code réel, vérifier courroie, galet et pompe, tester radiateur, thermostat, ventilateur/relais, joint et culasse ; mesurer compressions et pression d’huile avant d’ouvrir",
+                  "piece_concernee": "Moteur Mazda/Kia/SAIPA 1.3",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sur véhicules anciens ou entretenus au minimum",
+                  "cout_reparation_estime": "Moyen à élevé : environ 200 à 1 500 €"
+                },
+                {
+                  "probleme": "Carburation ou injection, allumage et émissions",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ralenti instable",
+                    "Ratés, voyant ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 140 000 km",
+                  "diagnostic": "Pour les premières versions, contrôler carburateur, starter, pompe et allumeur ; pour M13NI, lire les défauts puis tester pression, injecteurs, papillon, MAP/TPS, lambda, bobine/bougies, prises d’air, catalyseur et masses sans remplacer au code seul",
+                  "piece_concernee": "Alimentation et gestion moteur Pride",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Assez fréquente avec vieillissement des durites et connecteurs",
+                  "cout_reparation_estime": "Faible à moyen : environ 60 à 800 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte cinq rapports, cardans et roulements",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile",
+                    "Claquement en virage ou grondement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, plus tôt en circulation dense",
+                  "diagnostic": "Contrôler commande, disque/mécanisme, tringlerie, huile/fuites et synchros ; inspecter supports, soufflets, jeux de cardans, moyeux et roulements, puis réaliser essai en charge et décélération",
+                  "piece_concernee": "Transmission manuelle et traction Pride",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage urbain intensif",
+                  "cout_reparation_estime": "Moyen : environ 150 à 1 300 €"
+                },
+                {
+                  "probleme": "Corrosion, coque, suspension, direction, freinage et retenue",
+                  "symptomes": [
+                    "Rouille ou déformation",
+                    "Jeu, tirage ou usure irrégulière",
+                    "Freinage faible, témoin ou ceinture défectueuse"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique avant achat et après choc",
+                  "diagnostic": "Contrôler longerons, planchers, bas de caisse, ancrages, alignement et réparations ; mesurer jeux de direction/suspension, état des ressorts/amortisseurs, pneus et géométrie, puis disques/tambours, conduites, ABS si présent, ceintures, sièges, éclairage et VIN",
+                  "piece_concernee": "Structure et organes de sécurité SAIPA Pride",
+                  "gravite": "Critique",
+                  "frequence": "Risque variable, accru sur anciens taxis et véhicules accidentés",
+                  "cout_reparation_estime": "Variable : environ 150 à plus de 3 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "B3 1.3 injection — 63 ch",
+              "code_moteur": "Mazda/Kia B3 EFi",
+              "cylindree": "1 323 cm³",
+              "puissance_ch": 63,
+              "boite": [
+                "Manuelle 5 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Courroie, refroidissement et joint de culasse du B3/M13NI",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Perte de liquide ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, plus tôt avec liquide ou courroie négligés",
+                  "diagnostic": "Identifier moteur à carburateur/injection et code réel, vérifier courroie, galet et pompe, tester radiateur, thermostat, ventilateur/relais, joint et culasse ; mesurer compressions et pression d’huile avant d’ouvrir",
+                  "piece_concernee": "Moteur Mazda/Kia/SAIPA 1.3",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sur véhicules anciens ou entretenus au minimum",
+                  "cout_reparation_estime": "Moyen à élevé : environ 200 à 1 500 €"
+                },
+                {
+                  "probleme": "Carburation ou injection, allumage et émissions",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ralenti instable",
+                    "Ratés, voyant ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 140 000 km",
+                  "diagnostic": "Pour les premières versions, contrôler carburateur, starter, pompe et allumeur ; pour M13NI, lire les défauts puis tester pression, injecteurs, papillon, MAP/TPS, lambda, bobine/bougies, prises d’air, catalyseur et masses sans remplacer au code seul",
+                  "piece_concernee": "Alimentation et gestion moteur Pride",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Assez fréquente avec vieillissement des durites et connecteurs",
+                  "cout_reparation_estime": "Faible à moyen : environ 60 à 800 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte cinq rapports, cardans et roulements",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile",
+                    "Claquement en virage ou grondement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, plus tôt en circulation dense",
+                  "diagnostic": "Contrôler commande, disque/mécanisme, tringlerie, huile/fuites et synchros ; inspecter supports, soufflets, jeux de cardans, moyeux et roulements, puis réaliser essai en charge et décélération",
+                  "piece_concernee": "Transmission manuelle et traction Pride",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage urbain intensif",
+                  "cout_reparation_estime": "Moyen : environ 150 à 1 300 €"
+                },
+                {
+                  "probleme": "Corrosion, coque, suspension, direction, freinage et retenue",
+                  "symptomes": [
+                    "Rouille ou déformation",
+                    "Jeu, tirage ou usure irrégulière",
+                    "Freinage faible, témoin ou ceinture défectueuse"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique avant achat et après choc",
+                  "diagnostic": "Contrôler longerons, planchers, bas de caisse, ancrages, alignement et réparations ; mesurer jeux de direction/suspension, état des ressorts/amortisseurs, pneus et géométrie, puis disques/tambours, conduites, ABS si présent, ceintures, sièges, éclairage et VIN",
+                  "piece_concernee": "Structure et organes de sécurité SAIPA Pride",
+                  "gravite": "Critique",
+                  "frequence": "Risque variable, accru sur anciens taxis et véhicules accidentés",
+                  "cout_reparation_estime": "Variable : environ 150 à plus de 3 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Pride Nasim hatchback",
+          "annees": "1993–2005",
+          "phases": [
+            "Hatchback à cinq portes ; structure et pièces de carrosserie distinctes de la Saba."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "B3 1.3 carburateur — 61 ch",
+              "code_moteur": "Mazda/Kia B3",
+              "cylindree": "1 323 cm³",
+              "puissance_ch": 61,
+              "boite": [
+                "Manuelle 5 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Courroie, refroidissement et joint de culasse du B3/M13NI",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Perte de liquide ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, plus tôt avec liquide ou courroie négligés",
+                  "diagnostic": "Identifier moteur à carburateur/injection et code réel, vérifier courroie, galet et pompe, tester radiateur, thermostat, ventilateur/relais, joint et culasse ; mesurer compressions et pression d’huile avant d’ouvrir",
+                  "piece_concernee": "Moteur Mazda/Kia/SAIPA 1.3",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sur véhicules anciens ou entretenus au minimum",
+                  "cout_reparation_estime": "Moyen à élevé : environ 200 à 1 500 €"
+                },
+                {
+                  "probleme": "Carburation ou injection, allumage et émissions",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ralenti instable",
+                    "Ratés, voyant ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 140 000 km",
+                  "diagnostic": "Pour les premières versions, contrôler carburateur, starter, pompe et allumeur ; pour M13NI, lire les défauts puis tester pression, injecteurs, papillon, MAP/TPS, lambda, bobine/bougies, prises d’air, catalyseur et masses sans remplacer au code seul",
+                  "piece_concernee": "Alimentation et gestion moteur Pride",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Assez fréquente avec vieillissement des durites et connecteurs",
+                  "cout_reparation_estime": "Faible à moyen : environ 60 à 800 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte cinq rapports, cardans et roulements",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile",
+                    "Claquement en virage ou grondement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, plus tôt en circulation dense",
+                  "diagnostic": "Contrôler commande, disque/mécanisme, tringlerie, huile/fuites et synchros ; inspecter supports, soufflets, jeux de cardans, moyeux et roulements, puis réaliser essai en charge et décélération",
+                  "piece_concernee": "Transmission manuelle et traction Pride",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage urbain intensif",
+                  "cout_reparation_estime": "Moyen : environ 150 à 1 300 €"
+                },
+                {
+                  "probleme": "Corrosion, coque, suspension, direction, freinage et retenue",
+                  "symptomes": [
+                    "Rouille ou déformation",
+                    "Jeu, tirage ou usure irrégulière",
+                    "Freinage faible, témoin ou ceinture défectueuse"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique avant achat et après choc",
+                  "diagnostic": "Contrôler longerons, planchers, bas de caisse, ancrages, alignement et réparations ; mesurer jeux de direction/suspension, état des ressorts/amortisseurs, pneus et géométrie, puis disques/tambours, conduites, ABS si présent, ceintures, sièges, éclairage et VIN",
+                  "piece_concernee": "Structure et organes de sécurité SAIPA Pride",
+                  "gravite": "Critique",
+                  "frequence": "Risque variable, accru sur anciens taxis et véhicules accidentés",
+                  "cout_reparation_estime": "Variable : environ 150 à plus de 3 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "B3 1.3 injection — 63 ch",
+              "code_moteur": "Mazda/Kia B3 EFi",
+              "cylindree": "1 323 cm³",
+              "puissance_ch": 63,
+              "boite": [
+                "Manuelle 5 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Courroie, refroidissement et joint de culasse du B3/M13NI",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Perte de liquide ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, plus tôt avec liquide ou courroie négligés",
+                  "diagnostic": "Identifier moteur à carburateur/injection et code réel, vérifier courroie, galet et pompe, tester radiateur, thermostat, ventilateur/relais, joint et culasse ; mesurer compressions et pression d’huile avant d’ouvrir",
+                  "piece_concernee": "Moteur Mazda/Kia/SAIPA 1.3",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sur véhicules anciens ou entretenus au minimum",
+                  "cout_reparation_estime": "Moyen à élevé : environ 200 à 1 500 €"
+                },
+                {
+                  "probleme": "Carburation ou injection, allumage et émissions",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ralenti instable",
+                    "Ratés, voyant ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 140 000 km",
+                  "diagnostic": "Pour les premières versions, contrôler carburateur, starter, pompe et allumeur ; pour M13NI, lire les défauts puis tester pression, injecteurs, papillon, MAP/TPS, lambda, bobine/bougies, prises d’air, catalyseur et masses sans remplacer au code seul",
+                  "piece_concernee": "Alimentation et gestion moteur Pride",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Assez fréquente avec vieillissement des durites et connecteurs",
+                  "cout_reparation_estime": "Faible à moyen : environ 60 à 800 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte cinq rapports, cardans et roulements",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile",
+                    "Claquement en virage ou grondement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, plus tôt en circulation dense",
+                  "diagnostic": "Contrôler commande, disque/mécanisme, tringlerie, huile/fuites et synchros ; inspecter supports, soufflets, jeux de cardans, moyeux et roulements, puis réaliser essai en charge et décélération",
+                  "piece_concernee": "Transmission manuelle et traction Pride",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage urbain intensif",
+                  "cout_reparation_estime": "Moyen : environ 150 à 1 300 €"
+                },
+                {
+                  "probleme": "Corrosion, coque, suspension, direction, freinage et retenue",
+                  "symptomes": [
+                    "Rouille ou déformation",
+                    "Jeu, tirage ou usure irrégulière",
+                    "Freinage faible, témoin ou ceinture défectueuse"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique avant achat et après choc",
+                  "diagnostic": "Contrôler longerons, planchers, bas de caisse, ancrages, alignement et réparations ; mesurer jeux de direction/suspension, état des ressorts/amortisseurs, pneus et géométrie, puis disques/tambours, conduites, ABS si présent, ceintures, sièges, éclairage et VIN",
+                  "piece_concernee": "Structure et organes de sécurité SAIPA Pride",
+                  "gravite": "Critique",
+                  "frequence": "Risque variable, accru sur anciens taxis et véhicules accidentés",
+                  "cout_reparation_estime": "Variable : environ 150 à plus de 3 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "SAIPA 141 liftback",
+          "annees": "2003–2012",
+          "phases": [
+            "Dérivé à hayon et carrosserie spécifique, moteur M13NI aux normes plus récentes."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "M13NI 1.3 injection — 71 ch",
+              "code_moteur": "SAIPA M13NI",
+              "cylindree": "1 323 cm³",
+              "puissance_ch": 71,
+              "boite": [
+                "Manuelle 5 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Courroie, refroidissement et joint de culasse du B3/M13NI",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Perte de liquide ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, plus tôt avec liquide ou courroie négligés",
+                  "diagnostic": "Identifier moteur à carburateur/injection et code réel, vérifier courroie, galet et pompe, tester radiateur, thermostat, ventilateur/relais, joint et culasse ; mesurer compressions et pression d’huile avant d’ouvrir",
+                  "piece_concernee": "Moteur Mazda/Kia/SAIPA 1.3",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sur véhicules anciens ou entretenus au minimum",
+                  "cout_reparation_estime": "Moyen à élevé : environ 200 à 1 500 €"
+                },
+                {
+                  "probleme": "Carburation ou injection, allumage et émissions",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ralenti instable",
+                    "Ratés, voyant ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 140 000 km",
+                  "diagnostic": "Pour les premières versions, contrôler carburateur, starter, pompe et allumeur ; pour M13NI, lire les défauts puis tester pression, injecteurs, papillon, MAP/TPS, lambda, bobine/bougies, prises d’air, catalyseur et masses sans remplacer au code seul",
+                  "piece_concernee": "Alimentation et gestion moteur Pride",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Assez fréquente avec vieillissement des durites et connecteurs",
+                  "cout_reparation_estime": "Faible à moyen : environ 60 à 800 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte cinq rapports, cardans et roulements",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile",
+                    "Claquement en virage ou grondement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, plus tôt en circulation dense",
+                  "diagnostic": "Contrôler commande, disque/mécanisme, tringlerie, huile/fuites et synchros ; inspecter supports, soufflets, jeux de cardans, moyeux et roulements, puis réaliser essai en charge et décélération",
+                  "piece_concernee": "Transmission manuelle et traction Pride",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage urbain intensif",
+                  "cout_reparation_estime": "Moyen : environ 150 à 1 300 €"
+                },
+                {
+                  "probleme": "Corrosion, coque, suspension, direction, freinage et retenue",
+                  "symptomes": [
+                    "Rouille ou déformation",
+                    "Jeu, tirage ou usure irrégulière",
+                    "Freinage faible, témoin ou ceinture défectueuse"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique avant achat et après choc",
+                  "diagnostic": "Contrôler longerons, planchers, bas de caisse, ancrages, alignement et réparations ; mesurer jeux de direction/suspension, état des ressorts/amortisseurs, pneus et géométrie, puis disques/tambours, conduites, ABS si présent, ceintures, sièges, éclairage et VIN",
+                  "piece_concernee": "Structure et organes de sécurité SAIPA Pride",
+                  "gravite": "Critique",
+                  "frequence": "Risque variable, accru sur anciens taxis et véhicules accidentés",
+                  "cout_reparation_estime": "Variable : environ 150 à plus de 3 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "SAIPA 132 berline",
+          "annees": "2007–2018",
+          "phases": [
+            "Restylage 132 conservé comme variante de carrosserie et période propres."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "M13NI 1.3 injection — 71 ch",
+              "code_moteur": "SAIPA M13NI",
+              "cylindree": "1 323 cm³",
+              "puissance_ch": 71,
+              "boite": [
+                "Manuelle 5 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Courroie, refroidissement et joint de culasse du B3/M13NI",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Perte de liquide ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, plus tôt avec liquide ou courroie négligés",
+                  "diagnostic": "Identifier moteur à carburateur/injection et code réel, vérifier courroie, galet et pompe, tester radiateur, thermostat, ventilateur/relais, joint et culasse ; mesurer compressions et pression d’huile avant d’ouvrir",
+                  "piece_concernee": "Moteur Mazda/Kia/SAIPA 1.3",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sur véhicules anciens ou entretenus au minimum",
+                  "cout_reparation_estime": "Moyen à élevé : environ 200 à 1 500 €"
+                },
+                {
+                  "probleme": "Carburation ou injection, allumage et émissions",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ralenti instable",
+                    "Ratés, voyant ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 140 000 km",
+                  "diagnostic": "Pour les premières versions, contrôler carburateur, starter, pompe et allumeur ; pour M13NI, lire les défauts puis tester pression, injecteurs, papillon, MAP/TPS, lambda, bobine/bougies, prises d’air, catalyseur et masses sans remplacer au code seul",
+                  "piece_concernee": "Alimentation et gestion moteur Pride",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Assez fréquente avec vieillissement des durites et connecteurs",
+                  "cout_reparation_estime": "Faible à moyen : environ 60 à 800 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte cinq rapports, cardans et roulements",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile",
+                    "Claquement en virage ou grondement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, plus tôt en circulation dense",
+                  "diagnostic": "Contrôler commande, disque/mécanisme, tringlerie, huile/fuites et synchros ; inspecter supports, soufflets, jeux de cardans, moyeux et roulements, puis réaliser essai en charge et décélération",
+                  "piece_concernee": "Transmission manuelle et traction Pride",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage urbain intensif",
+                  "cout_reparation_estime": "Moyen : environ 150 à 1 300 €"
+                },
+                {
+                  "probleme": "Corrosion, coque, suspension, direction, freinage et retenue",
+                  "symptomes": [
+                    "Rouille ou déformation",
+                    "Jeu, tirage ou usure irrégulière",
+                    "Freinage faible, témoin ou ceinture défectueuse"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique avant achat et après choc",
+                  "diagnostic": "Contrôler longerons, planchers, bas de caisse, ancrages, alignement et réparations ; mesurer jeux de direction/suspension, état des ressorts/amortisseurs, pneus et géométrie, puis disques/tambours, conduites, ABS si présent, ceintures, sièges, éclairage et VIN",
+                  "piece_concernee": "Structure et organes de sécurité SAIPA Pride",
+                  "gravite": "Critique",
+                  "frequence": "Risque variable, accru sur anciens taxis et véhicules accidentés",
+                  "cout_reparation_estime": "Variable : environ 150 à plus de 3 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "SAIPA 111 hatchback",
+          "annees": "2009–2016",
+          "phases": [
+            "Hatchback tardif, à ne pas fusionner avec les berlines 131/132."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "M13NI 1.3 injection — 71 ch",
+              "code_moteur": "SAIPA M13NI",
+              "cylindree": "1 323 cm³",
+              "puissance_ch": 71,
+              "boite": [
+                "Manuelle 5 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Courroie, refroidissement et joint de culasse du B3/M13NI",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Perte de liquide ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, plus tôt avec liquide ou courroie négligés",
+                  "diagnostic": "Identifier moteur à carburateur/injection et code réel, vérifier courroie, galet et pompe, tester radiateur, thermostat, ventilateur/relais, joint et culasse ; mesurer compressions et pression d’huile avant d’ouvrir",
+                  "piece_concernee": "Moteur Mazda/Kia/SAIPA 1.3",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sur véhicules anciens ou entretenus au minimum",
+                  "cout_reparation_estime": "Moyen à élevé : environ 200 à 1 500 €"
+                },
+                {
+                  "probleme": "Carburation ou injection, allumage et émissions",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ralenti instable",
+                    "Ratés, voyant ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 140 000 km",
+                  "diagnostic": "Pour les premières versions, contrôler carburateur, starter, pompe et allumeur ; pour M13NI, lire les défauts puis tester pression, injecteurs, papillon, MAP/TPS, lambda, bobine/bougies, prises d’air, catalyseur et masses sans remplacer au code seul",
+                  "piece_concernee": "Alimentation et gestion moteur Pride",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Assez fréquente avec vieillissement des durites et connecteurs",
+                  "cout_reparation_estime": "Faible à moyen : environ 60 à 800 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte cinq rapports, cardans et roulements",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile",
+                    "Claquement en virage ou grondement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, plus tôt en circulation dense",
+                  "diagnostic": "Contrôler commande, disque/mécanisme, tringlerie, huile/fuites et synchros ; inspecter supports, soufflets, jeux de cardans, moyeux et roulements, puis réaliser essai en charge et décélération",
+                  "piece_concernee": "Transmission manuelle et traction Pride",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage urbain intensif",
+                  "cout_reparation_estime": "Moyen : environ 150 à 1 300 €"
+                },
+                {
+                  "probleme": "Corrosion, coque, suspension, direction, freinage et retenue",
+                  "symptomes": [
+                    "Rouille ou déformation",
+                    "Jeu, tirage ou usure irrégulière",
+                    "Freinage faible, témoin ou ceinture défectueuse"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique avant achat et après choc",
+                  "diagnostic": "Contrôler longerons, planchers, bas de caisse, ancrages, alignement et réparations ; mesurer jeux de direction/suspension, état des ressorts/amortisseurs, pneus et géométrie, puis disques/tambours, conduites, ABS si présent, ceintures, sièges, éclairage et VIN",
+                  "piece_concernee": "Structure et organes de sécurité SAIPA Pride",
+                  "gravite": "Critique",
+                  "frequence": "Risque variable, accru sur anciens taxis et véhicules accidentés",
+                  "cout_reparation_estime": "Variable : environ 150 à plus de 3 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "SAIPA 131 berline",
+          "annees": "2010–2020",
+          "phases": [
+            "Dernière grande évolution berline de la famille Pride, produite jusqu’en 2020."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "M13NI 1.3 injection — 71 ch",
+              "code_moteur": "SAIPA M13NI",
+              "cylindree": "1 323 cm³",
+              "puissance_ch": 71,
+              "boite": [
+                "Manuelle 5 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Courroie, refroidissement et joint de culasse du B3/M13NI",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Perte de liquide ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, plus tôt avec liquide ou courroie négligés",
+                  "diagnostic": "Identifier moteur à carburateur/injection et code réel, vérifier courroie, galet et pompe, tester radiateur, thermostat, ventilateur/relais, joint et culasse ; mesurer compressions et pression d’huile avant d’ouvrir",
+                  "piece_concernee": "Moteur Mazda/Kia/SAIPA 1.3",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sur véhicules anciens ou entretenus au minimum",
+                  "cout_reparation_estime": "Moyen à élevé : environ 200 à 1 500 €"
+                },
+                {
+                  "probleme": "Carburation ou injection, allumage et émissions",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ralenti instable",
+                    "Ratés, voyant ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 140 000 km",
+                  "diagnostic": "Pour les premières versions, contrôler carburateur, starter, pompe et allumeur ; pour M13NI, lire les défauts puis tester pression, injecteurs, papillon, MAP/TPS, lambda, bobine/bougies, prises d’air, catalyseur et masses sans remplacer au code seul",
+                  "piece_concernee": "Alimentation et gestion moteur Pride",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Assez fréquente avec vieillissement des durites et connecteurs",
+                  "cout_reparation_estime": "Faible à moyen : environ 60 à 800 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte cinq rapports, cardans et roulements",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile",
+                    "Claquement en virage ou grondement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, plus tôt en circulation dense",
+                  "diagnostic": "Contrôler commande, disque/mécanisme, tringlerie, huile/fuites et synchros ; inspecter supports, soufflets, jeux de cardans, moyeux et roulements, puis réaliser essai en charge et décélération",
+                  "piece_concernee": "Transmission manuelle et traction Pride",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage urbain intensif",
+                  "cout_reparation_estime": "Moyen : environ 150 à 1 300 €"
+                },
+                {
+                  "probleme": "Corrosion, coque, suspension, direction, freinage et retenue",
+                  "symptomes": [
+                    "Rouille ou déformation",
+                    "Jeu, tirage ou usure irrégulière",
+                    "Freinage faible, témoin ou ceinture défectueuse"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique avant achat et après choc",
+                  "diagnostic": "Contrôler longerons, planchers, bas de caisse, ancrages, alignement et réparations ; mesurer jeux de direction/suspension, état des ressorts/amortisseurs, pneus et géométrie, puis disques/tambours, conduites, ABS si présent, ceintures, sièges, éclairage et VIN",
+                  "piece_concernee": "Structure et organes de sécurité SAIPA Pride",
+                  "gravite": "Critique",
+                  "frequence": "Risque variable, accru sur anciens taxis et véhicules accidentés",
+                  "cout_reparation_estime": "Variable : environ 150 à plus de 3 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.carfolio.com/saipa-131-625328",
+        "https://www.carfolio.com/saipa-111-625273",
+        "https://www.carfolio.com/saipa-141-625317"
+      ]
+    }
+  ]
+}

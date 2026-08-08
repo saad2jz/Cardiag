@@ -1,0 +1,583 @@
+{
+  "nom": "Austin-Morris",
+  "modeles": [
+    {
+      "nom": "Mini",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "gb"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 3
+      },
+      "generations": [
+        {
+          "code_chassis": "ADO15 Mini Mk I/II",
+          "annees": "1959–1969",
+          "phases": [
+            "Distinguer Austin Mini, Morris Mini-Minor, Cooper et Cooper S par numéro de châssis et moteur"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "848 A-Series — 34 ch",
+              "code_moteur": "BMC 8AM/8MB",
+              "cylindree": "848 cm³",
+              "puissance_ch": 34,
+              "boite": [
+                "Boîte manuelle 4 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion de la coque, berceaux et ancrages",
+                  "symptomes": [
+                    "Planchers ou bas de caisse perforés",
+                    "Portes désalignées",
+                    "Craquements ou géométrie instable"
+                  ],
+                  "kilometrage_apparition": "Après 10 à 20 ans selon climat, plus tôt sur restaurations médiocres",
+                  "diagnostic": "Inspecter ailes avant, baie, bas de caisse internes/externes, planchers, talons, coffre, supports de berceaux, soudures, alignement et réparations masquées",
+                  "piece_concernee": "Coque monocoque et berceaux Mini",
+                  "gravite": "Critique si ancrages atteints",
+                  "frequence": "Très fréquente sur anciennes",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 1 000 à plus de 15 000 €"
+                },
+                {
+                  "probleme": "Fuites, pression d’huile, culasse et carburation du moteur A-Series",
+                  "symptomes": [
+                    "Fumée",
+                    "Cliquetis",
+                    "Surchauffe ou ralenti instable"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km, indépendamment du compteur si restauration inconnue",
+                  "diagnostic": "Mesurer compressions/pression, contrôler joint de culasse entre cylindres, pompe, distribution, radiateur latéral, carburateur SU/injection SPI-MPI, allumage, reniflard et fuites",
+                  "piece_concernee": "Moteur BMC A-Series et refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec l’âge",
+                  "cout_reparation_estime": "Élevé : environ 600 à 5 000 €"
+                },
+                {
+                  "probleme": "Boîte dans le carter moteur, embrayage, cardans et freins",
+                  "symptomes": [
+                    "Rapports qui sautent",
+                    "Craquements",
+                    "Vibration ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km ou mauvais lubrifiant",
+                  "diagnostic": "Contrôler huile commune moteur/boîte, synchros, différentiel, embrayage, joints de sortie, cardans, cônes de suspension, rotules, roulements, tambours/disques et géométrie",
+                  "piece_concernee": "Transmission et trains roulants Mini",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente sur véhicules sollicités",
+                  "cout_reparation_estime": "Élevé : environ 600 à 5 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "998 A-Series — 39 ch",
+              "code_moteur": "BMC 99H",
+              "cylindree": "998 cm³",
+              "puissance_ch": 39,
+              "boite": [
+                "Boîte manuelle 4 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion de la coque, berceaux et ancrages",
+                  "symptomes": [
+                    "Planchers ou bas de caisse perforés",
+                    "Portes désalignées",
+                    "Craquements ou géométrie instable"
+                  ],
+                  "kilometrage_apparition": "Après 10 à 20 ans selon climat, plus tôt sur restaurations médiocres",
+                  "diagnostic": "Inspecter ailes avant, baie, bas de caisse internes/externes, planchers, talons, coffre, supports de berceaux, soudures, alignement et réparations masquées",
+                  "piece_concernee": "Coque monocoque et berceaux Mini",
+                  "gravite": "Critique si ancrages atteints",
+                  "frequence": "Très fréquente sur anciennes",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 1 000 à plus de 15 000 €"
+                },
+                {
+                  "probleme": "Fuites, pression d’huile, culasse et carburation du moteur A-Series",
+                  "symptomes": [
+                    "Fumée",
+                    "Cliquetis",
+                    "Surchauffe ou ralenti instable"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km, indépendamment du compteur si restauration inconnue",
+                  "diagnostic": "Mesurer compressions/pression, contrôler joint de culasse entre cylindres, pompe, distribution, radiateur latéral, carburateur SU/injection SPI-MPI, allumage, reniflard et fuites",
+                  "piece_concernee": "Moteur BMC A-Series et refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec l’âge",
+                  "cout_reparation_estime": "Élevé : environ 600 à 5 000 €"
+                },
+                {
+                  "probleme": "Boîte dans le carter moteur, embrayage, cardans et freins",
+                  "symptomes": [
+                    "Rapports qui sautent",
+                    "Craquements",
+                    "Vibration ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km ou mauvais lubrifiant",
+                  "diagnostic": "Contrôler huile commune moteur/boîte, synchros, différentiel, embrayage, joints de sortie, cardans, cônes de suspension, rotules, roulements, tambours/disques et géométrie",
+                  "piece_concernee": "Transmission et trains roulants Mini",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente sur véhicules sollicités",
+                  "cout_reparation_estime": "Élevé : environ 600 à 5 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Cooper 997 A-Series — 55 ch",
+              "code_moteur": "BMC 9F/Sa",
+              "cylindree": "997 cm³",
+              "puissance_ch": 55,
+              "boite": [
+                "Boîte manuelle 4 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion de la coque, berceaux et ancrages",
+                  "symptomes": [
+                    "Planchers ou bas de caisse perforés",
+                    "Portes désalignées",
+                    "Craquements ou géométrie instable"
+                  ],
+                  "kilometrage_apparition": "Après 10 à 20 ans selon climat, plus tôt sur restaurations médiocres",
+                  "diagnostic": "Inspecter ailes avant, baie, bas de caisse internes/externes, planchers, talons, coffre, supports de berceaux, soudures, alignement et réparations masquées",
+                  "piece_concernee": "Coque monocoque et berceaux Mini",
+                  "gravite": "Critique si ancrages atteints",
+                  "frequence": "Très fréquente sur anciennes",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 1 000 à plus de 15 000 €"
+                },
+                {
+                  "probleme": "Fuites, pression d’huile, culasse et carburation du moteur A-Series",
+                  "symptomes": [
+                    "Fumée",
+                    "Cliquetis",
+                    "Surchauffe ou ralenti instable"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km, indépendamment du compteur si restauration inconnue",
+                  "diagnostic": "Mesurer compressions/pression, contrôler joint de culasse entre cylindres, pompe, distribution, radiateur latéral, carburateur SU/injection SPI-MPI, allumage, reniflard et fuites",
+                  "piece_concernee": "Moteur BMC A-Series et refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec l’âge",
+                  "cout_reparation_estime": "Élevé : environ 600 à 5 000 €"
+                },
+                {
+                  "probleme": "Boîte dans le carter moteur, embrayage, cardans et freins",
+                  "symptomes": [
+                    "Rapports qui sautent",
+                    "Craquements",
+                    "Vibration ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km ou mauvais lubrifiant",
+                  "diagnostic": "Contrôler huile commune moteur/boîte, synchros, différentiel, embrayage, joints de sortie, cardans, cônes de suspension, rotules, roulements, tambours/disques et géométrie",
+                  "piece_concernee": "Transmission et trains roulants Mini",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente sur véhicules sollicités",
+                  "cout_reparation_estime": "Élevé : environ 600 à 5 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Cooper 998 A-Series — 55 ch",
+              "code_moteur": "BMC 9F/Sa/H",
+              "cylindree": "998 cm³",
+              "puissance_ch": 55,
+              "boite": [
+                "Boîte manuelle 4 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion de la coque, berceaux et ancrages",
+                  "symptomes": [
+                    "Planchers ou bas de caisse perforés",
+                    "Portes désalignées",
+                    "Craquements ou géométrie instable"
+                  ],
+                  "kilometrage_apparition": "Après 10 à 20 ans selon climat, plus tôt sur restaurations médiocres",
+                  "diagnostic": "Inspecter ailes avant, baie, bas de caisse internes/externes, planchers, talons, coffre, supports de berceaux, soudures, alignement et réparations masquées",
+                  "piece_concernee": "Coque monocoque et berceaux Mini",
+                  "gravite": "Critique si ancrages atteints",
+                  "frequence": "Très fréquente sur anciennes",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 1 000 à plus de 15 000 €"
+                },
+                {
+                  "probleme": "Fuites, pression d’huile, culasse et carburation du moteur A-Series",
+                  "symptomes": [
+                    "Fumée",
+                    "Cliquetis",
+                    "Surchauffe ou ralenti instable"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km, indépendamment du compteur si restauration inconnue",
+                  "diagnostic": "Mesurer compressions/pression, contrôler joint de culasse entre cylindres, pompe, distribution, radiateur latéral, carburateur SU/injection SPI-MPI, allumage, reniflard et fuites",
+                  "piece_concernee": "Moteur BMC A-Series et refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec l’âge",
+                  "cout_reparation_estime": "Élevé : environ 600 à 5 000 €"
+                },
+                {
+                  "probleme": "Boîte dans le carter moteur, embrayage, cardans et freins",
+                  "symptomes": [
+                    "Rapports qui sautent",
+                    "Craquements",
+                    "Vibration ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km ou mauvais lubrifiant",
+                  "diagnostic": "Contrôler huile commune moteur/boîte, synchros, différentiel, embrayage, joints de sortie, cardans, cônes de suspension, rotules, roulements, tambours/disques et géométrie",
+                  "piece_concernee": "Transmission et trains roulants Mini",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente sur véhicules sollicités",
+                  "cout_reparation_estime": "Élevé : environ 600 à 5 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Cooper S 1071 — 70 ch",
+              "code_moteur": "BMC 9F/Sa",
+              "cylindree": "1 071 cm³",
+              "puissance_ch": 70,
+              "boite": [
+                "Boîte manuelle 4 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion de la coque, berceaux et ancrages",
+                  "symptomes": [
+                    "Planchers ou bas de caisse perforés",
+                    "Portes désalignées",
+                    "Craquements ou géométrie instable"
+                  ],
+                  "kilometrage_apparition": "Après 10 à 20 ans selon climat, plus tôt sur restaurations médiocres",
+                  "diagnostic": "Inspecter ailes avant, baie, bas de caisse internes/externes, planchers, talons, coffre, supports de berceaux, soudures, alignement et réparations masquées",
+                  "piece_concernee": "Coque monocoque et berceaux Mini",
+                  "gravite": "Critique si ancrages atteints",
+                  "frequence": "Très fréquente sur anciennes",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 1 000 à plus de 15 000 €"
+                },
+                {
+                  "probleme": "Fuites, pression d’huile, culasse et carburation du moteur A-Series",
+                  "symptomes": [
+                    "Fumée",
+                    "Cliquetis",
+                    "Surchauffe ou ralenti instable"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km, indépendamment du compteur si restauration inconnue",
+                  "diagnostic": "Mesurer compressions/pression, contrôler joint de culasse entre cylindres, pompe, distribution, radiateur latéral, carburateur SU/injection SPI-MPI, allumage, reniflard et fuites",
+                  "piece_concernee": "Moteur BMC A-Series et refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec l’âge",
+                  "cout_reparation_estime": "Élevé : environ 600 à 5 000 €"
+                },
+                {
+                  "probleme": "Boîte dans le carter moteur, embrayage, cardans et freins",
+                  "symptomes": [
+                    "Rapports qui sautent",
+                    "Craquements",
+                    "Vibration ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km ou mauvais lubrifiant",
+                  "diagnostic": "Contrôler huile commune moteur/boîte, synchros, différentiel, embrayage, joints de sortie, cardans, cônes de suspension, rotules, roulements, tambours/disques et géométrie",
+                  "piece_concernee": "Transmission et trains roulants Mini",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente sur véhicules sollicités",
+                  "cout_reparation_estime": "Élevé : environ 600 à 5 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Cooper S 1275 — 76 ch",
+              "code_moteur": "BMC 9F/Sa/Y",
+              "cylindree": "1 275 cm³",
+              "puissance_ch": 76,
+              "boite": [
+                "Boîte manuelle 4 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion de la coque, berceaux et ancrages",
+                  "symptomes": [
+                    "Planchers ou bas de caisse perforés",
+                    "Portes désalignées",
+                    "Craquements ou géométrie instable"
+                  ],
+                  "kilometrage_apparition": "Après 10 à 20 ans selon climat, plus tôt sur restaurations médiocres",
+                  "diagnostic": "Inspecter ailes avant, baie, bas de caisse internes/externes, planchers, talons, coffre, supports de berceaux, soudures, alignement et réparations masquées",
+                  "piece_concernee": "Coque monocoque et berceaux Mini",
+                  "gravite": "Critique si ancrages atteints",
+                  "frequence": "Très fréquente sur anciennes",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 1 000 à plus de 15 000 €"
+                },
+                {
+                  "probleme": "Fuites, pression d’huile, culasse et carburation du moteur A-Series",
+                  "symptomes": [
+                    "Fumée",
+                    "Cliquetis",
+                    "Surchauffe ou ralenti instable"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km, indépendamment du compteur si restauration inconnue",
+                  "diagnostic": "Mesurer compressions/pression, contrôler joint de culasse entre cylindres, pompe, distribution, radiateur latéral, carburateur SU/injection SPI-MPI, allumage, reniflard et fuites",
+                  "piece_concernee": "Moteur BMC A-Series et refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec l’âge",
+                  "cout_reparation_estime": "Élevé : environ 600 à 5 000 €"
+                },
+                {
+                  "probleme": "Boîte dans le carter moteur, embrayage, cardans et freins",
+                  "symptomes": [
+                    "Rapports qui sautent",
+                    "Craquements",
+                    "Vibration ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km ou mauvais lubrifiant",
+                  "diagnostic": "Contrôler huile commune moteur/boîte, synchros, différentiel, embrayage, joints de sortie, cardans, cônes de suspension, rotules, roulements, tambours/disques et géométrie",
+                  "piece_concernee": "Transmission et trains roulants Mini",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente sur véhicules sollicités",
+                  "cout_reparation_estime": "Élevé : environ 600 à 5 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Mini Mk III à VII Austin/Morris/Rover",
+          "annees": "1969–2000",
+          "phases": [
+            "La marque d’écusson varie selon période ; confirmer carrosserie, injection et réglementation marché"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "998 A-Series — 39 ch",
+              "code_moteur": "BMC/Rover 99H",
+              "cylindree": "998 cm³",
+              "puissance_ch": 39,
+              "boite": [
+                "Boîte manuelle 4 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion de la coque, berceaux et ancrages",
+                  "symptomes": [
+                    "Planchers ou bas de caisse perforés",
+                    "Portes désalignées",
+                    "Craquements ou géométrie instable"
+                  ],
+                  "kilometrage_apparition": "Après 10 à 20 ans selon climat, plus tôt sur restaurations médiocres",
+                  "diagnostic": "Inspecter ailes avant, baie, bas de caisse internes/externes, planchers, talons, coffre, supports de berceaux, soudures, alignement et réparations masquées",
+                  "piece_concernee": "Coque monocoque et berceaux Mini",
+                  "gravite": "Critique si ancrages atteints",
+                  "frequence": "Très fréquente sur anciennes",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 1 000 à plus de 15 000 €"
+                },
+                {
+                  "probleme": "Fuites, pression d’huile, culasse et carburation du moteur A-Series",
+                  "symptomes": [
+                    "Fumée",
+                    "Cliquetis",
+                    "Surchauffe ou ralenti instable"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km, indépendamment du compteur si restauration inconnue",
+                  "diagnostic": "Mesurer compressions/pression, contrôler joint de culasse entre cylindres, pompe, distribution, radiateur latéral, carburateur SU/injection SPI-MPI, allumage, reniflard et fuites",
+                  "piece_concernee": "Moteur BMC A-Series et refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec l’âge",
+                  "cout_reparation_estime": "Élevé : environ 600 à 5 000 €"
+                },
+                {
+                  "probleme": "Boîte dans le carter moteur, embrayage, cardans et freins",
+                  "symptomes": [
+                    "Rapports qui sautent",
+                    "Craquements",
+                    "Vibration ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km ou mauvais lubrifiant",
+                  "diagnostic": "Contrôler huile commune moteur/boîte, synchros, différentiel, embrayage, joints de sortie, cardans, cônes de suspension, rotules, roulements, tambours/disques et géométrie",
+                  "piece_concernee": "Transmission et trains roulants Mini",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente sur véhicules sollicités",
+                  "cout_reparation_estime": "Élevé : environ 600 à 5 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1098 A-Series — 45 ch",
+              "code_moteur": "BMC 10H",
+              "cylindree": "1 098 cm³",
+              "puissance_ch": 45,
+              "boite": [
+                "Boîte manuelle 4 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion de la coque, berceaux et ancrages",
+                  "symptomes": [
+                    "Planchers ou bas de caisse perforés",
+                    "Portes désalignées",
+                    "Craquements ou géométrie instable"
+                  ],
+                  "kilometrage_apparition": "Après 10 à 20 ans selon climat, plus tôt sur restaurations médiocres",
+                  "diagnostic": "Inspecter ailes avant, baie, bas de caisse internes/externes, planchers, talons, coffre, supports de berceaux, soudures, alignement et réparations masquées",
+                  "piece_concernee": "Coque monocoque et berceaux Mini",
+                  "gravite": "Critique si ancrages atteints",
+                  "frequence": "Très fréquente sur anciennes",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 1 000 à plus de 15 000 €"
+                },
+                {
+                  "probleme": "Fuites, pression d’huile, culasse et carburation du moteur A-Series",
+                  "symptomes": [
+                    "Fumée",
+                    "Cliquetis",
+                    "Surchauffe ou ralenti instable"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km, indépendamment du compteur si restauration inconnue",
+                  "diagnostic": "Mesurer compressions/pression, contrôler joint de culasse entre cylindres, pompe, distribution, radiateur latéral, carburateur SU/injection SPI-MPI, allumage, reniflard et fuites",
+                  "piece_concernee": "Moteur BMC A-Series et refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec l’âge",
+                  "cout_reparation_estime": "Élevé : environ 600 à 5 000 €"
+                },
+                {
+                  "probleme": "Boîte dans le carter moteur, embrayage, cardans et freins",
+                  "symptomes": [
+                    "Rapports qui sautent",
+                    "Craquements",
+                    "Vibration ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km ou mauvais lubrifiant",
+                  "diagnostic": "Contrôler huile commune moteur/boîte, synchros, différentiel, embrayage, joints de sortie, cardans, cônes de suspension, rotules, roulements, tambours/disques et géométrie",
+                  "piece_concernee": "Transmission et trains roulants Mini",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente sur véhicules sollicités",
+                  "cout_reparation_estime": "Élevé : environ 600 à 5 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1275 A-Series carburateur — 63 ch",
+              "code_moteur": "Rover 12H",
+              "cylindree": "1 275 cm³",
+              "puissance_ch": 63,
+              "boite": [
+                "Boîte manuelle 4 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion de la coque, berceaux et ancrages",
+                  "symptomes": [
+                    "Planchers ou bas de caisse perforés",
+                    "Portes désalignées",
+                    "Craquements ou géométrie instable"
+                  ],
+                  "kilometrage_apparition": "Après 10 à 20 ans selon climat, plus tôt sur restaurations médiocres",
+                  "diagnostic": "Inspecter ailes avant, baie, bas de caisse internes/externes, planchers, talons, coffre, supports de berceaux, soudures, alignement et réparations masquées",
+                  "piece_concernee": "Coque monocoque et berceaux Mini",
+                  "gravite": "Critique si ancrages atteints",
+                  "frequence": "Très fréquente sur anciennes",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 1 000 à plus de 15 000 €"
+                },
+                {
+                  "probleme": "Fuites, pression d’huile, culasse et carburation du moteur A-Series",
+                  "symptomes": [
+                    "Fumée",
+                    "Cliquetis",
+                    "Surchauffe ou ralenti instable"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km, indépendamment du compteur si restauration inconnue",
+                  "diagnostic": "Mesurer compressions/pression, contrôler joint de culasse entre cylindres, pompe, distribution, radiateur latéral, carburateur SU/injection SPI-MPI, allumage, reniflard et fuites",
+                  "piece_concernee": "Moteur BMC A-Series et refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec l’âge",
+                  "cout_reparation_estime": "Élevé : environ 600 à 5 000 €"
+                },
+                {
+                  "probleme": "Boîte dans le carter moteur, embrayage, cardans et freins",
+                  "symptomes": [
+                    "Rapports qui sautent",
+                    "Craquements",
+                    "Vibration ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km ou mauvais lubrifiant",
+                  "diagnostic": "Contrôler huile commune moteur/boîte, synchros, différentiel, embrayage, joints de sortie, cardans, cônes de suspension, rotules, roulements, tambours/disques et géométrie",
+                  "piece_concernee": "Transmission et trains roulants Mini",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente sur véhicules sollicités",
+                  "cout_reparation_estime": "Élevé : environ 600 à 5 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1275 SPI/MPI — 63 ch",
+              "code_moteur": "Rover 12A/12H injection",
+              "cylindree": "1 275 cm³",
+              "puissance_ch": 63,
+              "boite": [
+                "Boîte manuelle 4 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion de la coque, berceaux et ancrages",
+                  "symptomes": [
+                    "Planchers ou bas de caisse perforés",
+                    "Portes désalignées",
+                    "Craquements ou géométrie instable"
+                  ],
+                  "kilometrage_apparition": "Après 10 à 20 ans selon climat, plus tôt sur restaurations médiocres",
+                  "diagnostic": "Inspecter ailes avant, baie, bas de caisse internes/externes, planchers, talons, coffre, supports de berceaux, soudures, alignement et réparations masquées",
+                  "piece_concernee": "Coque monocoque et berceaux Mini",
+                  "gravite": "Critique si ancrages atteints",
+                  "frequence": "Très fréquente sur anciennes",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 1 000 à plus de 15 000 €"
+                },
+                {
+                  "probleme": "Fuites, pression d’huile, culasse et carburation du moteur A-Series",
+                  "symptomes": [
+                    "Fumée",
+                    "Cliquetis",
+                    "Surchauffe ou ralenti instable"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km, indépendamment du compteur si restauration inconnue",
+                  "diagnostic": "Mesurer compressions/pression, contrôler joint de culasse entre cylindres, pompe, distribution, radiateur latéral, carburateur SU/injection SPI-MPI, allumage, reniflard et fuites",
+                  "piece_concernee": "Moteur BMC A-Series et refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec l’âge",
+                  "cout_reparation_estime": "Élevé : environ 600 à 5 000 €"
+                },
+                {
+                  "probleme": "Boîte dans le carter moteur, embrayage, cardans et freins",
+                  "symptomes": [
+                    "Rapports qui sautent",
+                    "Craquements",
+                    "Vibration ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km ou mauvais lubrifiant",
+                  "diagnostic": "Contrôler huile commune moteur/boîte, synchros, différentiel, embrayage, joints de sortie, cardans, cônes de suspension, rotules, roulements, tambours/disques et géométrie",
+                  "piece_concernee": "Transmission et trains roulants Mini",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente sur véhicules sollicités",
+                  "cout_reparation_estime": "Élevé : environ 600 à 5 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "source_catalogue": "VehiclesDB 2026.08.2 (CC-BY 4.0)"
+}

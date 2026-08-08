@@ -1,0 +1,244 @@
+{
+  "nom": "Aito",
+  "modeles": [
+    {
+      "nom": "M5",
+      "generations": [
+        {
+          "code_chassis": "AITO M5 EREV",
+          "annees": "2022–aujourd’hui",
+          "phases": [
+            "Huawei/Seres ; confirmer millésime, batterie, logiciel et homologation hors Chine"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride rechargeable à prolongateur",
+              "nom": "EREV propulsion — 272 ch",
+              "code_moteur": "1.5T générateur + moteur 200 kW",
+              "cylindree": "1 499 cm³ + batterie HV",
+              "puissance_ch": 272,
+              "boite": [
+                "Réducteur mono-rapport"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "SoH, isolement et gestion thermique de batterie haute tension",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Charge limitée",
+                    "Alerte haute tension"
+                  ],
+                  "kilometrage_apparition": "Dépend des cycles, du climat et de la recharge rapide",
+                  "diagnostic": "Avec habilitation HV, lire SoH, tensions/températures, isolement et historique ; contrôler batterie, pompes, vannes, échangeurs, étanchéité et campagnes logicielles",
+                  "piece_concernee": "Batterie traction et BMS",
+                  "gravite": "Critique",
+                  "frequence": "Données à long terme encore limitées",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "Moteurs, onduleurs, réducteurs et recharge",
+                  "symptomes": [
+                    "Bruit",
+                    "Vibration",
+                    "Charge impossible ou puissance limitée"
+                  ],
+                  "kilometrage_apparition": "Kilométrage variable",
+                  "diagnostic": "Tester moteurs avant/arrière selon version, onduleurs, réducteurs, isolation, prise, chargeur, DC/DC, batterie 12 V, refroidissement et versions logicielles",
+                  "piece_concernee": "Propulsion électrique et système de charge",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Peu fréquente mais coûteuse",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Prolongateur 1.5 turbo, carburant et intégration logicielle EREV",
+                  "symptomes": [
+                    "Démarrage thermique brutal",
+                    "Consommation anormale",
+                    "Messages ou mises à jour défaillantes"
+                  ],
+                  "kilometrage_apparition": "Variable, selon fréquence d’usage du prolongateur",
+                  "diagnostic": "Sur EREV, lire moteur/générateur, injection, huile, refroidissement, échappement et stratégie énergétique ; tester télématique, ADAS, écran, mises à jour et batterie 12 V",
+                  "piece_concernee": "Prolongateur thermique et architecture électronique",
+                  "gravite": "Majeure",
+                  "frequence": "Données de vieillissement encore limitées hors Chine",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 10 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Hybride rechargeable à prolongateur",
+              "nom": "EREV AWD — 496 ch",
+              "code_moteur": "1.5T générateur + moteurs 365 kW",
+              "cylindree": "1 499 cm³ + batterie HV",
+              "puissance_ch": 496,
+              "boite": [
+                "Réducteurs mono-rapport"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "SoH, isolement et gestion thermique de batterie haute tension",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Charge limitée",
+                    "Alerte haute tension"
+                  ],
+                  "kilometrage_apparition": "Dépend des cycles, du climat et de la recharge rapide",
+                  "diagnostic": "Avec habilitation HV, lire SoH, tensions/températures, isolement et historique ; contrôler batterie, pompes, vannes, échangeurs, étanchéité et campagnes logicielles",
+                  "piece_concernee": "Batterie traction et BMS",
+                  "gravite": "Critique",
+                  "frequence": "Données à long terme encore limitées",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "Moteurs, onduleurs, réducteurs et recharge",
+                  "symptomes": [
+                    "Bruit",
+                    "Vibration",
+                    "Charge impossible ou puissance limitée"
+                  ],
+                  "kilometrage_apparition": "Kilométrage variable",
+                  "diagnostic": "Tester moteurs avant/arrière selon version, onduleurs, réducteurs, isolation, prise, chargeur, DC/DC, batterie 12 V, refroidissement et versions logicielles",
+                  "piece_concernee": "Propulsion électrique et système de charge",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Peu fréquente mais coûteuse",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Prolongateur 1.5 turbo, carburant et intégration logicielle EREV",
+                  "symptomes": [
+                    "Démarrage thermique brutal",
+                    "Consommation anormale",
+                    "Messages ou mises à jour défaillantes"
+                  ],
+                  "kilometrage_apparition": "Variable, selon fréquence d’usage du prolongateur",
+                  "diagnostic": "Sur EREV, lire moteur/générateur, injection, huile, refroidissement, échappement et stratégie énergétique ; tester télématique, ADAS, écran, mises à jour et batterie 12 V",
+                  "piece_concernee": "Prolongateur thermique et architecture électronique",
+                  "gravite": "Majeure",
+                  "frequence": "Données de vieillissement encore limitées hors Chine",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 10 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "AITO M5 EV",
+          "annees": "2022–aujourd’hui",
+          "phases": [
+            "Version électrique pure distincte du prolongateur d’autonomie"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "EV propulsion — 272 ch",
+              "code_moteur": "Moteur synchrone 200 kW",
+              "cylindree": "Batterie haute tension",
+              "puissance_ch": 272,
+              "boite": [
+                "Réducteur mono-rapport"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "SoH, isolement et gestion thermique de batterie haute tension",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Charge limitée",
+                    "Alerte haute tension"
+                  ],
+                  "kilometrage_apparition": "Dépend des cycles, du climat et de la recharge rapide",
+                  "diagnostic": "Avec habilitation HV, lire SoH, tensions/températures, isolement et historique ; contrôler batterie, pompes, vannes, échangeurs, étanchéité et campagnes logicielles",
+                  "piece_concernee": "Batterie traction et BMS",
+                  "gravite": "Critique",
+                  "frequence": "Données à long terme encore limitées",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "Moteurs, onduleurs, réducteurs et recharge",
+                  "symptomes": [
+                    "Bruit",
+                    "Vibration",
+                    "Charge impossible ou puissance limitée"
+                  ],
+                  "kilometrage_apparition": "Kilométrage variable",
+                  "diagnostic": "Tester moteurs avant/arrière selon version, onduleurs, réducteurs, isolation, prise, chargeur, DC/DC, batterie 12 V, refroidissement et versions logicielles",
+                  "piece_concernee": "Propulsion électrique et système de charge",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Peu fréquente mais coûteuse",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Prolongateur 1.5 turbo, carburant et intégration logicielle EREV",
+                  "symptomes": [
+                    "Démarrage thermique brutal",
+                    "Consommation anormale",
+                    "Messages ou mises à jour défaillantes"
+                  ],
+                  "kilometrage_apparition": "Variable, selon fréquence d’usage du prolongateur",
+                  "diagnostic": "Sur EREV, lire moteur/générateur, injection, huile, refroidissement, échappement et stratégie énergétique ; tester télématique, ADAS, écran, mises à jour et batterie 12 V",
+                  "piece_concernee": "Prolongateur thermique et architecture électronique",
+                  "gravite": "Majeure",
+                  "frequence": "Données de vieillissement encore limitées hors Chine",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 10 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Électrique",
+              "nom": "EV AWD — 496 ch",
+              "code_moteur": "Deux moteurs 365 kW",
+              "cylindree": "Batterie haute tension",
+              "puissance_ch": 496,
+              "boite": [
+                "Réducteurs mono-rapport"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "SoH, isolement et gestion thermique de batterie haute tension",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Charge limitée",
+                    "Alerte haute tension"
+                  ],
+                  "kilometrage_apparition": "Dépend des cycles, du climat et de la recharge rapide",
+                  "diagnostic": "Avec habilitation HV, lire SoH, tensions/températures, isolement et historique ; contrôler batterie, pompes, vannes, échangeurs, étanchéité et campagnes logicielles",
+                  "piece_concernee": "Batterie traction et BMS",
+                  "gravite": "Critique",
+                  "frequence": "Données à long terme encore limitées",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "Moteurs, onduleurs, réducteurs et recharge",
+                  "symptomes": [
+                    "Bruit",
+                    "Vibration",
+                    "Charge impossible ou puissance limitée"
+                  ],
+                  "kilometrage_apparition": "Kilométrage variable",
+                  "diagnostic": "Tester moteurs avant/arrière selon version, onduleurs, réducteurs, isolation, prise, chargeur, DC/DC, batterie 12 V, refroidissement et versions logicielles",
+                  "piece_concernee": "Propulsion électrique et système de charge",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Peu fréquente mais coûteuse",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Prolongateur 1.5 turbo, carburant et intégration logicielle EREV",
+                  "symptomes": [
+                    "Démarrage thermique brutal",
+                    "Consommation anormale",
+                    "Messages ou mises à jour défaillantes"
+                  ],
+                  "kilometrage_apparition": "Variable, selon fréquence d’usage du prolongateur",
+                  "diagnostic": "Sur EREV, lire moteur/générateur, injection, huile, refroidissement, échappement et stratégie énergétique ; tester télématique, ADAS, écran, mises à jour et batterie 12 V",
+                  "piece_concernee": "Prolongateur thermique et architecture électronique",
+                  "gravite": "Majeure",
+                  "frequence": "Données de vieillissement encore limitées hors Chine",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 10 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "nom": "Crespi",
+  "modeles": [
+    {
+      "nom": "Tulieta",
+      "generations": [
+        {
+          "code_chassis": "Tulieta GT Renault 4/6",
+          "annees": "1972–1975",
+          "phases": [
+            "Petit coupé homologué sur plateforme Renault 4 ; plusieurs mécaniques Renault furent montées en faible série."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Renault 1.1 Cléon-Fonte — 51 ch",
+              "code_moteur": "Renault Cléon-Fonte C1E",
+              "cylindree": "1 108 cm³",
+              "puissance_ch": 51,
+              "boite": [
+                "Manuelle 4 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, distribution et carburation du moteur Renault",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fuite",
+                    "Ratés, bruit de chaîne ou fumée"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, mais âge et restauration priment",
+                  "diagnostic": "Identifier Cléon-Fonte 1.1, 1.3 ou M1400, mesurer compressions/pression, contrôler chaîne, culasse/joint, pompe/radiateur, carburateur, allumage, supports et fuites ; vérifier modifications de puissance et pièces Renault 4/6/12",
+                  "piece_concernee": "Moteur Renault Cléon-Fonte Tulieta",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sans historique",
+                  "cout_reparation_estime": "Élevé : environ 700 à 6 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte, cardans et traction avant Renault",
+                  "symptomes": [
+                    "Sélection difficile",
+                    "Patinage",
+                    "Claquement en braquage ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km",
+                  "diagnostic": "Contrôler commande, disque, synchros, huile/fuites, supports, cardans, soufflets, moyeux et roulements ; identifier la boîte Renault correspondant au moteur et vérifier absence de raccourcissement ou adaptation artisanale non documentée",
+                  "piece_concernee": "Transmission Renault 4/6/12 et train avant",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente avec soufflets rompus ou adaptation",
+                  "cout_reparation_estime": "Élevé : environ 500 à 4 000 €"
+                },
+                {
+                  "probleme": "Coque polyester, plateforme Renault 4, châssis et provenance",
+                  "symptomes": [
+                    "Fissures",
+                    "Corrosion du soubassement",
+                    "Mauvais alignement, jeu ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Expertise systématique avant achat",
+                  "diagnostic": "Authentifier Tulieta/Tulietta GT et année, inspecter polyester, collages, réparations, plateforme, longerons, planchers et ancrages ; contrôler suspension à barres de torsion, direction, freins, roues et géométrie, puis rapprocher numéros et homologation Crespi",
+                  "piece_concernee": "Coque composite, plateforme et identité Tulieta",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé vu production très limitée",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 15 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Renault 1.3 Cléon-Fonte — 64 ch",
+              "code_moteur": "Renault Cléon-Fonte 810",
+              "cylindree": "1 289 cm³",
+              "puissance_ch": 64,
+              "boite": [
+                "Manuelle 4 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, distribution et carburation du moteur Renault",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fuite",
+                    "Ratés, bruit de chaîne ou fumée"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, mais âge et restauration priment",
+                  "diagnostic": "Identifier Cléon-Fonte 1.1, 1.3 ou M1400, mesurer compressions/pression, contrôler chaîne, culasse/joint, pompe/radiateur, carburateur, allumage, supports et fuites ; vérifier modifications de puissance et pièces Renault 4/6/12",
+                  "piece_concernee": "Moteur Renault Cléon-Fonte Tulieta",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sans historique",
+                  "cout_reparation_estime": "Élevé : environ 700 à 6 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte, cardans et traction avant Renault",
+                  "symptomes": [
+                    "Sélection difficile",
+                    "Patinage",
+                    "Claquement en braquage ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km",
+                  "diagnostic": "Contrôler commande, disque, synchros, huile/fuites, supports, cardans, soufflets, moyeux et roulements ; identifier la boîte Renault correspondant au moteur et vérifier absence de raccourcissement ou adaptation artisanale non documentée",
+                  "piece_concernee": "Transmission Renault 4/6/12 et train avant",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente avec soufflets rompus ou adaptation",
+                  "cout_reparation_estime": "Élevé : environ 500 à 4 000 €"
+                },
+                {
+                  "probleme": "Coque polyester, plateforme Renault 4, châssis et provenance",
+                  "symptomes": [
+                    "Fissures",
+                    "Corrosion du soubassement",
+                    "Mauvais alignement, jeu ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Expertise systématique avant achat",
+                  "diagnostic": "Authentifier Tulieta/Tulietta GT et année, inspecter polyester, collages, réparations, plateforme, longerons, planchers et ancrages ; contrôler suspension à barres de torsion, direction, freins, roues et géométrie, puis rapprocher numéros et homologation Crespi",
+                  "piece_concernee": "Coque composite, plateforme et identité Tulieta",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé vu production très limitée",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 15 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Tulieta GT M1400",
+          "annees": "1975–1979",
+          "phases": [
+            "Évolution 1,4 litre ; puissance et année doivent être confirmées sur le dossier Crespi individuel."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Renault M1400 — 71 ch",
+              "code_moteur": "Renault Cléon-Fonte M1400",
+              "cylindree": "1 397 cm³",
+              "puissance_ch": 71,
+              "boite": [
+                "Manuelle 4 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, distribution et carburation du moteur Renault",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fuite",
+                    "Ratés, bruit de chaîne ou fumée"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, mais âge et restauration priment",
+                  "diagnostic": "Identifier Cléon-Fonte 1.1, 1.3 ou M1400, mesurer compressions/pression, contrôler chaîne, culasse/joint, pompe/radiateur, carburateur, allumage, supports et fuites ; vérifier modifications de puissance et pièces Renault 4/6/12",
+                  "piece_concernee": "Moteur Renault Cléon-Fonte Tulieta",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sans historique",
+                  "cout_reparation_estime": "Élevé : environ 700 à 6 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte, cardans et traction avant Renault",
+                  "symptomes": [
+                    "Sélection difficile",
+                    "Patinage",
+                    "Claquement en braquage ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km",
+                  "diagnostic": "Contrôler commande, disque, synchros, huile/fuites, supports, cardans, soufflets, moyeux et roulements ; identifier la boîte Renault correspondant au moteur et vérifier absence de raccourcissement ou adaptation artisanale non documentée",
+                  "piece_concernee": "Transmission Renault 4/6/12 et train avant",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente avec soufflets rompus ou adaptation",
+                  "cout_reparation_estime": "Élevé : environ 500 à 4 000 €"
+                },
+                {
+                  "probleme": "Coque polyester, plateforme Renault 4, châssis et provenance",
+                  "symptomes": [
+                    "Fissures",
+                    "Corrosion du soubassement",
+                    "Mauvais alignement, jeu ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Expertise systématique avant achat",
+                  "diagnostic": "Authentifier Tulieta/Tulietta GT et année, inspecter polyester, collages, réparations, plateforme, longerons, planchers et ancrages ; contrôler suspension à barres de torsion, direction, freins, roues et géométrie, puis rapprocher numéros et homologation Crespi",
+                  "piece_concernee": "Coque composite, plateforme et identité Tulieta",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé vu production très limitée",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 15 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://cdn.motor1.com/pdf-files/crespi-formula-concept-general-catalogue-2024-engpdf.pdf"
+      ]
+    }
+  ]
+}

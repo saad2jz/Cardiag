@@ -1,0 +1,136 @@
+{
+  "nom": "Agrale",
+  "modeles": [
+    {
+      "nom": "Marruá",
+      "generations": [
+        {
+          "code_chassis": "AM2/AM10/AM20",
+          "annees": "2004–2021",
+          "phases": [
+            "Versions civiles, militaires, ambulance ou reconnaissance ; confirmer empattement, blindage et charge"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "2.8 turbodiesel MWM — 132 ch",
+              "code_moteur": "MWM Sprint 4.07 TCE",
+              "cylindree": "2 800 cm³",
+              "puissance_ch": 132,
+              "boite": [
+                "Boîte manuelle Eaton 5 rapports + transfert"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo et refroidissement du diesel Marruá",
+                  "symptomes": [
+                    "Fumée",
+                    "Démarrage long",
+                    "Surchauffe ou manque de puissance"
+                  ],
+                  "kilometrage_apparition": "Heures et usage sévère plus pertinents que le kilométrage",
+                  "diagnostic": "Identifier MWM/Cummins exact, mesurer pression/retours, contrôler pompe, injecteurs, turbo, filtres, huile, radiateur, ventilateur et contamination après stockage",
+                  "piece_concernee": "Moteur diesel et refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente après usage sévère",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte, transfert, ponts et blocages 4x4",
+                  "symptomes": [
+                    "Bruit de pont",
+                    "Transmission qui force",
+                    "Blocage ou gamme inopérante"
+                  ],
+                  "kilometrage_apparition": "Variable selon terrain, charge et entretien",
+                  "diagnostic": "Essayer toutes gammes/blocages, contrôler niveaux, boîte, transfert, arbres, croisillons, ponts, demi-arbres, moyeux, pneus identiques et traces de choc",
+                  "piece_concernee": "Transmission intégrale tout-terrain",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente après franchissement intensif",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 10 000 €"
+                },
+                {
+                  "probleme": "Corrosion/fissures du châssis, freinage et équipements militaires",
+                  "symptomes": [
+                    "Fissures",
+                    "Jeu des ancrages",
+                    "Freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "À contrôler avant toute remise en circulation",
+                  "diagnostic": "Inspecter châssis, soudures, cabine/caisse, suspension, direction, freins, treuil, installation 24 V, équipements ajoutés, pneus et conformité civile/militaire",
+                  "piece_concernee": "Structure et sécurité",
+                  "gravite": "Critique",
+                  "frequence": "Variable selon stockage et mission",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 20 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "AM200/AM23",
+          "annees": "2021–aujourd’hui",
+          "phases": [
+            "Agrale indique 123 kW/167 cv et 600 Nm pour AM23 ; contrôler variante exacte"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "3.8 turbodiesel Cummins — 167 ch",
+              "code_moteur": "Cummins ISF 3.8",
+              "cylindree": "3 760 cm³",
+              "puissance_ch": 167,
+              "boite": [
+                "Boîte manuelle Agrale + transfert"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo et refroidissement du diesel Marruá",
+                  "symptomes": [
+                    "Fumée",
+                    "Démarrage long",
+                    "Surchauffe ou manque de puissance"
+                  ],
+                  "kilometrage_apparition": "Heures et usage sévère plus pertinents que le kilométrage",
+                  "diagnostic": "Identifier MWM/Cummins exact, mesurer pression/retours, contrôler pompe, injecteurs, turbo, filtres, huile, radiateur, ventilateur et contamination après stockage",
+                  "piece_concernee": "Moteur diesel et refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente après usage sévère",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte, transfert, ponts et blocages 4x4",
+                  "symptomes": [
+                    "Bruit de pont",
+                    "Transmission qui force",
+                    "Blocage ou gamme inopérante"
+                  ],
+                  "kilometrage_apparition": "Variable selon terrain, charge et entretien",
+                  "diagnostic": "Essayer toutes gammes/blocages, contrôler niveaux, boîte, transfert, arbres, croisillons, ponts, demi-arbres, moyeux, pneus identiques et traces de choc",
+                  "piece_concernee": "Transmission intégrale tout-terrain",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente après franchissement intensif",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 10 000 €"
+                },
+                {
+                  "probleme": "Corrosion/fissures du châssis, freinage et équipements militaires",
+                  "symptomes": [
+                    "Fissures",
+                    "Jeu des ancrages",
+                    "Freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "À contrôler avant toute remise en circulation",
+                  "diagnostic": "Inspecter châssis, soudures, cabine/caisse, suspension, direction, freins, treuil, installation 24 V, équipements ajoutés, pneus et conformité civile/militaire",
+                  "piece_concernee": "Structure et sécurité",
+                  "gravite": "Critique",
+                  "frequence": "Variable selon stockage et mission",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 20 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

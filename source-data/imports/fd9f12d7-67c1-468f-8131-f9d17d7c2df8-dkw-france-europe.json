@@ -1,0 +1,409 @@
+{
+  "nom": "DKW",
+  "modeles": [
+    {
+      "nom": "F102",
+      "generations": [
+        {
+          "code_chassis": "F102",
+          "annees": "1963–1966",
+          "phases": [
+            "Dernière voiture DKW : première monocoque de la marque, 60 ch à 4 500 tr/min et refroidissement scellé à thermostat."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence deux-temps",
+              "nom": "1.2 trois-cylindres deux-temps — 60 ch",
+              "code_moteur": "DKW 1200 Zweitakt",
+              "cylindree": "1 175 cm³",
+              "puissance_ch": 60,
+              "boite": [
+                "Manuelle 4 rapports avec roue libre, traction"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Graissage deux-temps, vilebrequin assemblé et étanchéité du tricylindre",
+                  "symptomes": [
+                    "Fumée excessive ou insuffisante",
+                    "Claquement ou sifflement",
+                    "Serrage, compression faible ou bougie sèche"
+                  ],
+                  "kilometrage_apparition": "Entretien continu ; risque immédiat si huile ou mélange incorrect",
+                  "diagnostic": "Identifier 900 ou 1 200 cm³ et système de graissage séparé/mélange. Mesurer compressions, contrôler joints spi, roulements de vilebrequin, débit de pompe d’huile, pistons/segments, échappement calaminé et qualité du carburant avant charge.",
+                  "piece_concernee": "Trois-cylindres deux-temps DKW",
+                  "gravite": "Critique",
+                  "frequence": "Pannes graves fréquentes après mauvaise lubrification ou stockage",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 8 000 €"
+                },
+                {
+                  "probleme": "Carburateur, allumage trois bobines et refroidissement",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Un cylindre absent",
+                    "Surchauffe, ratés ou fuite"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après immobilisation",
+                  "diagnostic": "Contrôler réservoir, robinet, pompe, carburateur, starter, prises d’air, trois bobines/vis/condensateurs, bougies, avance, pompe à eau, thermostat et circuit fermé du F102. Comparer couleur/température des trois cylindres.",
+                  "piece_concernee": "Alimentation, allumage et refroidissement DKW",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente sur allumage et carburateur âgés",
+                  "cout_reparation_estime": "Élevé : environ 200 à 2 500 €"
+                },
+                {
+                  "probleme": "Boîte quatre rapports, roue libre, embrayage et cardans",
+                  "symptomes": [
+                    "Rapport difficile",
+                    "Roue libre bloquée",
+                    "Patinage, claquement ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 140 000 km",
+                  "diagnostic": "Contrôler huile compatible, commande au volant/plancher, synchros, roue libre, embrayage, supports, cardans, soufflets, différentiel et freins inboard du F102. Vérifier fonctionnement sans masquer le frein moteur limité du deux-temps.",
+                  "piece_concernee": "Transmission avant DKW",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable, pièces rares",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 5 000 €"
+                },
+                {
+                  "probleme": "Monocoque/châssis, corrosion, suspension à barres de torsion et freins",
+                  "symptomes": [
+                    "Corrosion perforante",
+                    "Affaissement ou jeu",
+                    "Tirage, vibration ou freinage faible"
+                  ],
+                  "kilometrage_apparition": "Inspection structurelle avant achat",
+                  "diagnostic": "Inspecter planchers, longerons, ancrages, passages de roues, caisse et réparations ; contrôler barres de torsion, rotules, amortisseurs, direction, tambours/disques, conduites et pneus. Authentifier F91/F93/F94/F102.",
+                  "piece_concernee": "Structure et liaisons au sol DKW",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion fréquente selon stockage",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 10 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.audi-mediacenter.com/en/publications/more/anniversary-dates-2023-1245/download",
+        "https://www.audi.com/en/company-history-17227"
+      ]
+    },
+    {
+      "nom": "3=6",
+      "generations": [
+        {
+          "code_chassis": "F91 Sonderklasse",
+          "annees": "1953–1955",
+          "phases": [
+            "Berline, coupé, cabriolet et break ; symbole du redémarrage d’Auto Union."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence deux-temps",
+              "nom": "0.9 trois-cylindres deux-temps — 34 ch",
+              "code_moteur": "DKW F91",
+              "cylindree": "896 cm³",
+              "puissance_ch": 34,
+              "boite": [
+                "Manuelle 4 rapports avec roue libre, traction"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Graissage deux-temps, vilebrequin assemblé et étanchéité du tricylindre",
+                  "symptomes": [
+                    "Fumée excessive ou insuffisante",
+                    "Claquement ou sifflement",
+                    "Serrage, compression faible ou bougie sèche"
+                  ],
+                  "kilometrage_apparition": "Entretien continu ; risque immédiat si huile ou mélange incorrect",
+                  "diagnostic": "Identifier 900 ou 1 200 cm³ et système de graissage séparé/mélange. Mesurer compressions, contrôler joints spi, roulements de vilebrequin, débit de pompe d’huile, pistons/segments, échappement calaminé et qualité du carburant avant charge.",
+                  "piece_concernee": "Trois-cylindres deux-temps DKW",
+                  "gravite": "Critique",
+                  "frequence": "Pannes graves fréquentes après mauvaise lubrification ou stockage",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 8 000 €"
+                },
+                {
+                  "probleme": "Carburateur, allumage trois bobines et refroidissement",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Un cylindre absent",
+                    "Surchauffe, ratés ou fuite"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après immobilisation",
+                  "diagnostic": "Contrôler réservoir, robinet, pompe, carburateur, starter, prises d’air, trois bobines/vis/condensateurs, bougies, avance, pompe à eau, thermostat et circuit fermé du F102. Comparer couleur/température des trois cylindres.",
+                  "piece_concernee": "Alimentation, allumage et refroidissement DKW",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente sur allumage et carburateur âgés",
+                  "cout_reparation_estime": "Élevé : environ 200 à 2 500 €"
+                },
+                {
+                  "probleme": "Boîte quatre rapports, roue libre, embrayage et cardans",
+                  "symptomes": [
+                    "Rapport difficile",
+                    "Roue libre bloquée",
+                    "Patinage, claquement ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 140 000 km",
+                  "diagnostic": "Contrôler huile compatible, commande au volant/plancher, synchros, roue libre, embrayage, supports, cardans, soufflets, différentiel et freins inboard du F102. Vérifier fonctionnement sans masquer le frein moteur limité du deux-temps.",
+                  "piece_concernee": "Transmission avant DKW",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable, pièces rares",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 5 000 €"
+                },
+                {
+                  "probleme": "Monocoque/châssis, corrosion, suspension à barres de torsion et freins",
+                  "symptomes": [
+                    "Corrosion perforante",
+                    "Affaissement ou jeu",
+                    "Tirage, vibration ou freinage faible"
+                  ],
+                  "kilometrage_apparition": "Inspection structurelle avant achat",
+                  "diagnostic": "Inspecter planchers, longerons, ancrages, passages de roues, caisse et réparations ; contrôler barres de torsion, rotules, amortisseurs, direction, tambours/disques, conduites et pneus. Authentifier F91/F93/F94/F102.",
+                  "piece_concernee": "Structure et liaisons au sol DKW",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion fréquente selon stockage",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 10 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "F93 3=6",
+          "annees": "1955–1959",
+          "phases": [
+            "Voie élargie et carrosserie modernisée ; 38 ch documentés par Audi Tradition."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence deux-temps",
+              "nom": "0.9 trois-cylindres deux-temps — 38 ch",
+              "code_moteur": "DKW F93",
+              "cylindree": "896 cm³",
+              "puissance_ch": 38,
+              "boite": [
+                "Manuelle 4 rapports avec roue libre, traction"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Graissage deux-temps, vilebrequin assemblé et étanchéité du tricylindre",
+                  "symptomes": [
+                    "Fumée excessive ou insuffisante",
+                    "Claquement ou sifflement",
+                    "Serrage, compression faible ou bougie sèche"
+                  ],
+                  "kilometrage_apparition": "Entretien continu ; risque immédiat si huile ou mélange incorrect",
+                  "diagnostic": "Identifier 900 ou 1 200 cm³ et système de graissage séparé/mélange. Mesurer compressions, contrôler joints spi, roulements de vilebrequin, débit de pompe d’huile, pistons/segments, échappement calaminé et qualité du carburant avant charge.",
+                  "piece_concernee": "Trois-cylindres deux-temps DKW",
+                  "gravite": "Critique",
+                  "frequence": "Pannes graves fréquentes après mauvaise lubrification ou stockage",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 8 000 €"
+                },
+                {
+                  "probleme": "Carburateur, allumage trois bobines et refroidissement",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Un cylindre absent",
+                    "Surchauffe, ratés ou fuite"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après immobilisation",
+                  "diagnostic": "Contrôler réservoir, robinet, pompe, carburateur, starter, prises d’air, trois bobines/vis/condensateurs, bougies, avance, pompe à eau, thermostat et circuit fermé du F102. Comparer couleur/température des trois cylindres.",
+                  "piece_concernee": "Alimentation, allumage et refroidissement DKW",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente sur allumage et carburateur âgés",
+                  "cout_reparation_estime": "Élevé : environ 200 à 2 500 €"
+                },
+                {
+                  "probleme": "Boîte quatre rapports, roue libre, embrayage et cardans",
+                  "symptomes": [
+                    "Rapport difficile",
+                    "Roue libre bloquée",
+                    "Patinage, claquement ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 140 000 km",
+                  "diagnostic": "Contrôler huile compatible, commande au volant/plancher, synchros, roue libre, embrayage, supports, cardans, soufflets, différentiel et freins inboard du F102. Vérifier fonctionnement sans masquer le frein moteur limité du deux-temps.",
+                  "piece_concernee": "Transmission avant DKW",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable, pièces rares",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 5 000 €"
+                },
+                {
+                  "probleme": "Monocoque/châssis, corrosion, suspension à barres de torsion et freins",
+                  "symptomes": [
+                    "Corrosion perforante",
+                    "Affaissement ou jeu",
+                    "Tirage, vibration ou freinage faible"
+                  ],
+                  "kilometrage_apparition": "Inspection structurelle avant achat",
+                  "diagnostic": "Inspecter planchers, longerons, ancrages, passages de roues, caisse et réparations ; contrôler barres de torsion, rotules, amortisseurs, direction, tambours/disques, conduites et pneus. Authentifier F91/F93/F94/F102.",
+                  "piece_concernee": "Structure et liaisons au sol DKW",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion fréquente selon stockage",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 10 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "F94 / 3=6 Sonderklasse",
+          "annees": "1957–1959",
+          "phases": [
+            "Évolution quatre portes/Universal, puissance selon marché à confirmer."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence deux-temps",
+              "nom": "0.9 trois-cylindres deux-temps évolution — 40 ch",
+              "code_moteur": "DKW F94",
+              "cylindree": "896 cm³",
+              "puissance_ch": 40,
+              "boite": [
+                "Manuelle 4 rapports avec roue libre, traction"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Graissage deux-temps, vilebrequin assemblé et étanchéité du tricylindre",
+                  "symptomes": [
+                    "Fumée excessive ou insuffisante",
+                    "Claquement ou sifflement",
+                    "Serrage, compression faible ou bougie sèche"
+                  ],
+                  "kilometrage_apparition": "Entretien continu ; risque immédiat si huile ou mélange incorrect",
+                  "diagnostic": "Identifier 900 ou 1 200 cm³ et système de graissage séparé/mélange. Mesurer compressions, contrôler joints spi, roulements de vilebrequin, débit de pompe d’huile, pistons/segments, échappement calaminé et qualité du carburant avant charge.",
+                  "piece_concernee": "Trois-cylindres deux-temps DKW",
+                  "gravite": "Critique",
+                  "frequence": "Pannes graves fréquentes après mauvaise lubrification ou stockage",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 8 000 €"
+                },
+                {
+                  "probleme": "Carburateur, allumage trois bobines et refroidissement",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Un cylindre absent",
+                    "Surchauffe, ratés ou fuite"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après immobilisation",
+                  "diagnostic": "Contrôler réservoir, robinet, pompe, carburateur, starter, prises d’air, trois bobines/vis/condensateurs, bougies, avance, pompe à eau, thermostat et circuit fermé du F102. Comparer couleur/température des trois cylindres.",
+                  "piece_concernee": "Alimentation, allumage et refroidissement DKW",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente sur allumage et carburateur âgés",
+                  "cout_reparation_estime": "Élevé : environ 200 à 2 500 €"
+                },
+                {
+                  "probleme": "Boîte quatre rapports, roue libre, embrayage et cardans",
+                  "symptomes": [
+                    "Rapport difficile",
+                    "Roue libre bloquée",
+                    "Patinage, claquement ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 140 000 km",
+                  "diagnostic": "Contrôler huile compatible, commande au volant/plancher, synchros, roue libre, embrayage, supports, cardans, soufflets, différentiel et freins inboard du F102. Vérifier fonctionnement sans masquer le frein moteur limité du deux-temps.",
+                  "piece_concernee": "Transmission avant DKW",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable, pièces rares",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 5 000 €"
+                },
+                {
+                  "probleme": "Monocoque/châssis, corrosion, suspension à barres de torsion et freins",
+                  "symptomes": [
+                    "Corrosion perforante",
+                    "Affaissement ou jeu",
+                    "Tirage, vibration ou freinage faible"
+                  ],
+                  "kilometrage_apparition": "Inspection structurelle avant achat",
+                  "diagnostic": "Inspecter planchers, longerons, ancrages, passages de roues, caisse et réparations ; contrôler barres de torsion, rotules, amortisseurs, direction, tambours/disques, conduites et pneus. Authentifier F91/F93/F94/F102.",
+                  "piece_concernee": "Structure et liaisons au sol DKW",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion fréquente selon stockage",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 10 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "3=6 Monza",
+          "annees": "1956–1958",
+          "phases": [
+            "Coupé polyester de petite série après les records de Monza ; moteur préparé selon exemplaire."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence deux-temps",
+              "nom": "0.9 trois-cylindres deux-temps sport — 44 ch",
+              "code_moteur": "DKW F93 Monza",
+              "cylindree": "896 cm³",
+              "puissance_ch": 44,
+              "boite": [
+                "Manuelle 4 rapports avec roue libre, traction"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Graissage deux-temps, vilebrequin assemblé et étanchéité du tricylindre",
+                  "symptomes": [
+                    "Fumée excessive ou insuffisante",
+                    "Claquement ou sifflement",
+                    "Serrage, compression faible ou bougie sèche"
+                  ],
+                  "kilometrage_apparition": "Entretien continu ; risque immédiat si huile ou mélange incorrect",
+                  "diagnostic": "Identifier 900 ou 1 200 cm³ et système de graissage séparé/mélange. Mesurer compressions, contrôler joints spi, roulements de vilebrequin, débit de pompe d’huile, pistons/segments, échappement calaminé et qualité du carburant avant charge.",
+                  "piece_concernee": "Trois-cylindres deux-temps DKW",
+                  "gravite": "Critique",
+                  "frequence": "Pannes graves fréquentes après mauvaise lubrification ou stockage",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 8 000 €"
+                },
+                {
+                  "probleme": "Carburateur, allumage trois bobines et refroidissement",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Un cylindre absent",
+                    "Surchauffe, ratés ou fuite"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après immobilisation",
+                  "diagnostic": "Contrôler réservoir, robinet, pompe, carburateur, starter, prises d’air, trois bobines/vis/condensateurs, bougies, avance, pompe à eau, thermostat et circuit fermé du F102. Comparer couleur/température des trois cylindres.",
+                  "piece_concernee": "Alimentation, allumage et refroidissement DKW",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente sur allumage et carburateur âgés",
+                  "cout_reparation_estime": "Élevé : environ 200 à 2 500 €"
+                },
+                {
+                  "probleme": "Boîte quatre rapports, roue libre, embrayage et cardans",
+                  "symptomes": [
+                    "Rapport difficile",
+                    "Roue libre bloquée",
+                    "Patinage, claquement ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 140 000 km",
+                  "diagnostic": "Contrôler huile compatible, commande au volant/plancher, synchros, roue libre, embrayage, supports, cardans, soufflets, différentiel et freins inboard du F102. Vérifier fonctionnement sans masquer le frein moteur limité du deux-temps.",
+                  "piece_concernee": "Transmission avant DKW",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable, pièces rares",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 5 000 €"
+                },
+                {
+                  "probleme": "Monocoque/châssis, corrosion, suspension à barres de torsion et freins",
+                  "symptomes": [
+                    "Corrosion perforante",
+                    "Affaissement ou jeu",
+                    "Tirage, vibration ou freinage faible"
+                  ],
+                  "kilometrage_apparition": "Inspection structurelle avant achat",
+                  "diagnostic": "Inspecter planchers, longerons, ancrages, passages de roues, caisse et réparations ; contrôler barres de torsion, rotules, amortisseurs, direction, tambours/disques, conduites et pneus. Authentifier F91/F93/F94/F102.",
+                  "piece_concernee": "Structure et liaisons au sol DKW",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion fréquente selon stockage",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 10 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.audi.com/en/press-releases/history-of-the-four-rings-4093",
+        "https://www.audi.com/en/dkw-in-racing-17212",
+        "https://www.audi.com/en/photos/album/dkw-299"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "nom": "Austro-Daimler",
+  "modeles": [
+    {
+      "nom": "AD 6-17",
+      "generations": [
+        {
+          "code_chassis": "AD 6-17 / 17-60 PS",
+          "annees": "1921–1924",
+          "phases": [
+            "Conception Ferdinand Porsche ; Touring T4, Limousine L4 ou carrosserie spéciale à confirmer dans les archives"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "4.4 I6 OHC — 60 ch",
+              "code_moteur": "Austro-Daimler AD 6-17",
+              "cylindree": "4 424 cm³",
+              "puissance_ch": 60,
+              "boite": [
+                "Boîte manuelle 4 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Authenticité, châssis séparé et carrosserie coachbuilt",
+                  "symptomes": [
+                    "Numéros incohérents",
+                    "Bois pourri",
+                    "Fissures ou corrosion"
+                  ],
+                  "kilometrage_apparition": "À contrôler indépendamment du kilométrage",
+                  "diagnostic": "Comparer châssis/moteur et archives, inspecter longerons, traverses, essieux, supports, armature bois, panneaux, soudures, géométrie et type de carrosserie T4/L4/Jagdwagen",
+                  "piece_concernee": "Châssis, carrosserie et identité AD 6-17",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Fréquente sur véhicule centenaire restauré",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 80 000 €"
+                },
+                {
+                  "probleme": "Graissage, arbre à cames royal et refroidissement du six-cylindres",
+                  "symptomes": [
+                    "Pression faible",
+                    "Bruit de distribution",
+                    "Surchauffe ou fumée"
+                  ],
+                  "kilometrage_apparition": "À contrôler quel que soit le compteur",
+                  "diagnostic": "Mesurer compressions, jeux et pression, inspecter entraînement par Königswelle, paliers, pompe, carburateur, magnéto, radiateur, culasse aluminium et contamination des fluides",
+                  "piece_concernee": "Six-cylindres OHC Porsche 4 424 cm³",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sans réfection documentée",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 50 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte 4 rapports, frein de transmission et direction",
+                  "symptomes": [
+                    "Rapports difficiles",
+                    "Freinage faible",
+                    "Jeu important"
+                  ],
+                  "kilometrage_apparition": "Variable, souvent après immobilisation",
+                  "diagnostic": "Contrôler embrayage, pignons, arbre/pont, roulements, frein de transmission, freins arrière, câbles/commandes, boîtier, pivots, lames, roues et pneus",
+                  "piece_concernee": "Transmission et organes de sécurité",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente avec l’âge",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 30 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

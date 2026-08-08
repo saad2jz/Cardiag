@@ -1,0 +1,4929 @@
+{
+  "nom": "Hyundai",
+  "modeles": [
+    {
+      "nom": "i10",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.0 MPI — 67 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 67,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien moteur et qualité des fluides",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage, l’âge et le respect du plan d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des niveaux et examen à froid comme à chaud.",
+                  "piece_concernee": "Groupe motopropulseur",
+                  "gravite": "À évaluer selon les défauts enregistrés",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis atelier recommandé."
+                },
+                {
+                  "probleme": "Usure des trains roulants, freins et pneumatiques",
+                  "symptomes": [
+                    "Vibrations",
+                    "Tirage au freinage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Généralement à contrôler à chaque révision, plus tôt sur routes dégradées.",
+                  "diagnostic": "Contrôle du jeu des articulations, de la géométrie, de l’épaisseur des plaquettes et disques.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le jeu ou l’usure constatée",
+                  "frequence": "Usure normale à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces et main-d’œuvre."
+                },
+                {
+                  "probleme": "Fonctionnement des équipements électriques et électroniques",
+                  "symptomes": [
+                    "Message au combiné",
+                    "Fonction intermittente",
+                    "Batterie 12 V faible"
+                  ],
+                  "kilometrage_apparition": "Variable, particulièrement après immobilisation prolongée.",
+                  "diagnostic": "Test de batterie 12 V, lecture des défauts et vérification des mises à jour disponibles.",
+                  "piece_concernee": "Réseau électrique basse tension et calculateurs",
+                  "gravite": "Faible à modérée selon la fonction affectée",
+                  "frequence": "À surveiller selon l’usage",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "i20",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.0 T-GDi — 100 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 100,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien moteur et qualité des fluides",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage, l’âge et le respect du plan d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des niveaux et examen à froid comme à chaud.",
+                  "piece_concernee": "Groupe motopropulseur",
+                  "gravite": "À évaluer selon les défauts enregistrés",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis atelier recommandé."
+                },
+                {
+                  "probleme": "Usure des trains roulants, freins et pneumatiques",
+                  "symptomes": [
+                    "Vibrations",
+                    "Tirage au freinage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Généralement à contrôler à chaque révision, plus tôt sur routes dégradées.",
+                  "diagnostic": "Contrôle du jeu des articulations, de la géométrie, de l’épaisseur des plaquettes et disques.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le jeu ou l’usure constatée",
+                  "frequence": "Usure normale à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces et main-d’œuvre."
+                },
+                {
+                  "probleme": "Fonctionnement des équipements électriques et électroniques",
+                  "symptomes": [
+                    "Message au combiné",
+                    "Fonction intermittente",
+                    "Batterie 12 V faible"
+                  ],
+                  "kilometrage_apparition": "Variable, particulièrement après immobilisation prolongée.",
+                  "diagnostic": "Test de batterie 12 V, lecture des défauts et vérification des mises à jour disponibles.",
+                  "piece_concernee": "Réseau électrique basse tension et calculateurs",
+                  "gravite": "Faible à modérée selon la fonction affectée",
+                  "frequence": "À surveiller selon l’usage",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "i30",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.5 T-GDi — 160 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 160,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien moteur et qualité des fluides",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage, l’âge et le respect du plan d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des niveaux et examen à froid comme à chaud.",
+                  "piece_concernee": "Groupe motopropulseur",
+                  "gravite": "À évaluer selon les défauts enregistrés",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis atelier recommandé."
+                },
+                {
+                  "probleme": "Usure des trains roulants, freins et pneumatiques",
+                  "symptomes": [
+                    "Vibrations",
+                    "Tirage au freinage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Généralement à contrôler à chaque révision, plus tôt sur routes dégradées.",
+                  "diagnostic": "Contrôle du jeu des articulations, de la géométrie, de l’épaisseur des plaquettes et disques.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le jeu ou l’usure constatée",
+                  "frequence": "Usure normale à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces et main-d’œuvre."
+                },
+                {
+                  "probleme": "Fonctionnement des équipements électriques et électroniques",
+                  "symptomes": [
+                    "Message au combiné",
+                    "Fonction intermittente",
+                    "Batterie 12 V faible"
+                  ],
+                  "kilometrage_apparition": "Variable, particulièrement après immobilisation prolongée.",
+                  "diagnostic": "Test de batterie 12 V, lecture des défauts et vérification des mises à jour disponibles.",
+                  "piece_concernee": "Réseau électrique basse tension et calculateurs",
+                  "gravite": "Faible à modérée selon la fonction affectée",
+                  "frequence": "À surveiller selon l’usage",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Tucson",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride",
+              "nom": "1.6 T-GDi Hybrid — 230 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 230,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fonctionnement du système hybride et de la batterie de traction",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Avertissement traction"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage, l’âge et le respect du plan d’entretien.",
+                  "diagnostic": "Lecture des défauts haute tension par un atelier habilité, contrôle du rapport de santé batterie.",
+                  "piece_concernee": "Batterie haute tension et électronique de puissance",
+                  "gravite": "À évaluer selon les défauts enregistrés",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis atelier recommandé."
+                },
+                {
+                  "probleme": "Usure des trains roulants, freins et pneumatiques",
+                  "symptomes": [
+                    "Vibrations",
+                    "Tirage au freinage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Généralement à contrôler à chaque révision, plus tôt sur routes dégradées.",
+                  "diagnostic": "Contrôle du jeu des articulations, de la géométrie, de l’épaisseur des plaquettes et disques.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le jeu ou l’usure constatée",
+                  "frequence": "Usure normale à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces et main-d’œuvre."
+                },
+                {
+                  "probleme": "Fonctionnement des équipements électriques et électroniques",
+                  "symptomes": [
+                    "Message au combiné",
+                    "Fonction intermittente",
+                    "Batterie 12 V faible"
+                  ],
+                  "kilometrage_apparition": "Variable, particulièrement après immobilisation prolongée.",
+                  "diagnostic": "Test de batterie 12 V, lecture des défauts et vérification des mises à jour disponibles.",
+                  "piece_concernee": "Réseau électrique basse tension et calculateurs",
+                  "gravite": "Faible à modérée selon la fonction affectée",
+                  "frequence": "À surveiller selon l’usage",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Kona",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "Electric 65,4 kWh — 218 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 218,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "État de santé et équilibrage de la batterie haute tension",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Avertissement traction"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage, l’âge et le respect du plan d’entretien.",
+                  "diagnostic": "Lecture des défauts haute tension par un atelier habilité, contrôle du rapport de santé batterie.",
+                  "piece_concernee": "Batterie haute tension et électronique de puissance",
+                  "gravite": "À évaluer selon les défauts enregistrés",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis atelier recommandé."
+                },
+                {
+                  "probleme": "Usure des trains roulants, freins et pneumatiques",
+                  "symptomes": [
+                    "Vibrations",
+                    "Tirage au freinage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Généralement à contrôler à chaque révision, plus tôt sur routes dégradées.",
+                  "diagnostic": "Contrôle du jeu des articulations, de la géométrie, de l’épaisseur des plaquettes et disques.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le jeu ou l’usure constatée",
+                  "frequence": "Usure normale à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces et main-d’œuvre."
+                },
+                {
+                  "probleme": "Fonctionnement des équipements électriques et électroniques",
+                  "symptomes": [
+                    "Message au combiné",
+                    "Fonction intermittente",
+                    "Batterie 12 V faible"
+                  ],
+                  "kilometrage_apparition": "Variable, particulièrement après immobilisation prolongée.",
+                  "diagnostic": "Test de batterie 12 V, lecture des défauts et vérification des mises à jour disponibles.",
+                  "piece_concernee": "Réseau électrique basse tension et calculateurs",
+                  "gravite": "Faible à modérée selon la fonction affectée",
+                  "frequence": "À surveiller selon l’usage",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Ioniq 5",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "77,4 kWh AWD — 325 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 325,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "État de santé et équilibrage de la batterie haute tension",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Avertissement traction"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage, l’âge et le respect du plan d’entretien.",
+                  "diagnostic": "Lecture des défauts haute tension par un atelier habilité, contrôle du rapport de santé batterie.",
+                  "piece_concernee": "Batterie haute tension et électronique de puissance",
+                  "gravite": "À évaluer selon les défauts enregistrés",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis atelier recommandé."
+                },
+                {
+                  "probleme": "Usure des trains roulants, freins et pneumatiques",
+                  "symptomes": [
+                    "Vibrations",
+                    "Tirage au freinage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Généralement à contrôler à chaque révision, plus tôt sur routes dégradées.",
+                  "diagnostic": "Contrôle du jeu des articulations, de la géométrie, de l’épaisseur des plaquettes et disques.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le jeu ou l’usure constatée",
+                  "frequence": "Usure normale à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces et main-d’œuvre."
+                },
+                {
+                  "probleme": "Fonctionnement des équipements électriques et électroniques",
+                  "symptomes": [
+                    "Message au combiné",
+                    "Fonction intermittente",
+                    "Batterie 12 V faible"
+                  ],
+                  "kilometrage_apparition": "Variable, particulièrement après immobilisation prolongée.",
+                  "diagnostic": "Test de batterie 12 V, lecture des défauts et vérification des mises à jour disponibles.",
+                  "piece_concernee": "Réseau électrique basse tension et calculateurs",
+                  "gravite": "Faible à modérée selon la fonction affectée",
+                  "frequence": "À surveiller selon l’usage",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Santa Fe",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride",
+              "nom": "1.6 T-GDi Hybrid — 215 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 215,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fonctionnement du système hybride et de la batterie de traction",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Avertissement traction"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage, l’âge et le respect du plan d’entretien.",
+                  "diagnostic": "Lecture des défauts haute tension par un atelier habilité, contrôle du rapport de santé batterie.",
+                  "piece_concernee": "Batterie haute tension et électronique de puissance",
+                  "gravite": "À évaluer selon les défauts enregistrés",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis atelier recommandé."
+                },
+                {
+                  "probleme": "Usure des trains roulants, freins et pneumatiques",
+                  "symptomes": [
+                    "Vibrations",
+                    "Tirage au freinage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Généralement à contrôler à chaque révision, plus tôt sur routes dégradées.",
+                  "diagnostic": "Contrôle du jeu des articulations, de la géométrie, de l’épaisseur des plaquettes et disques.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le jeu ou l’usure constatée",
+                  "frequence": "Usure normale à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces et main-d’œuvre."
+                },
+                {
+                  "probleme": "Fonctionnement des équipements électriques et électroniques",
+                  "symptomes": [
+                    "Message au combiné",
+                    "Fonction intermittente",
+                    "Batterie 12 V faible"
+                  ],
+                  "kilometrage_apparition": "Variable, particulièrement après immobilisation prolongée.",
+                  "diagnostic": "Test de batterie 12 V, lecture des défauts et vérification des mises à jour disponibles.",
+                  "piece_concernee": "Réseau électrique basse tension et calculateurs",
+                  "gravite": "Faible à modérée selon la fonction affectée",
+                  "frequence": "À surveiller selon l’usage",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "H-1",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "bus",
+        "body_type": null,
+        "countries": [
+          "nz",
+          "ua"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "2.5 CRDi — 170 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 170,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Iload",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "bus",
+        "body_type": null,
+        "countries": [
+          "gb",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "2.5 CRDi — 170 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 170,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Accent",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "sedan",
+        "countries": [
+          "ca",
+          "es",
+          "fi",
+          "gb",
+          "lu",
+          "nl",
+          "nz",
+          "ua",
+          "us"
+        ],
+        "regions": [
+          "eu",
+          "na",
+          "oc"
+        ],
+        "global_decile": 3
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.6 MPI — 120 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 120,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Amica",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "gb",
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.1 — 63 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 63,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Atos",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "es",
+          "fi",
+          "lu",
+          "nl",
+          "ua"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.1 — 63 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 63,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Atoz",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "gb",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.1 — 63 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 63,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Avante",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "my",
+          "nl",
+          "ua"
+        ],
+        "regions": [
+          "as",
+          "eu"
+        ],
+        "global_decile": 8
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.6 MPI — 128 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 128,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Azera",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "sedan",
+        "countries": [
+          "ca",
+          "nl",
+          "ua",
+          "us"
+        ],
+        "regions": [
+          "eu",
+          "na"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.3 V6 — 294 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 294,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Bayon",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "suv",
+        "countries": [
+          "de",
+          "es",
+          "fi",
+          "gb",
+          "ie",
+          "lu",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 3
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.0 T-GDi — 100 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 100,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Centennial",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "sedan",
+        "countries": [
+          "fi",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 9
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "4.6 V8 — 375 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 375,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Coupe",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "coupe",
+        "countries": [
+          "es",
+          "fi",
+          "gb",
+          "lu",
+          "nl",
+          "nz",
+          "ua"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 4
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.0 — 143 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 143,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Creta",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "fi",
+          "my",
+          "nl",
+          "th",
+          "ua"
+        ],
+        "regions": [
+          "as",
+          "eu"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.5 — 115 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 115,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Elantra",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "sedan",
+        "countries": [
+          "ca",
+          "es",
+          "fi",
+          "gb",
+          "nl",
+          "th",
+          "ua",
+          "us"
+        ],
+        "regions": [
+          "as",
+          "eu",
+          "na"
+        ],
+        "global_decile": 4
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.0 MPI — 147 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 147,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Entourage",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "us"
+        ],
+        "regions": [
+          "na"
+        ],
+        "global_decile": null
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.8 V6 — 242 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 242,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Equus",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "sedan",
+        "countries": [
+          "ca",
+          "fi",
+          "nl",
+          "us"
+        ],
+        "regions": [
+          "eu",
+          "na"
+        ],
+        "global_decile": 10
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "4.6 V8 — 372 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 372,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Excel",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "fi",
+          "nl",
+          "nz",
+          "ua",
+          "us"
+        ],
+        "regions": [
+          "eu",
+          "na",
+          "oc"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.5 — 92 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 92,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Galloper",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "es",
+          "fi",
+          "nl",
+          "ua"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "2.5 TD — 99 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 99,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Genesis",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "coupe",
+        "countries": [
+          "ca",
+          "es",
+          "fi",
+          "gb",
+          "nl",
+          "nz",
+          "ua",
+          "us"
+        ],
+        "regions": [
+          "eu",
+          "na",
+          "oc"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.8 V6 — 315 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 315,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Getz",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "es",
+          "fi",
+          "gb",
+          "lu",
+          "nl",
+          "nz",
+          "ua"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 2
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "1.5 CRDi — 110 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 110,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Grand I10",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "nl",
+          "ua"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 10
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.2 MPI — 84 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 84,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Grand Santa FE",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "es",
+          "fi",
+          "lu",
+          "nl",
+          "ua"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 6
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "2.2 CRDi — 197 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 197,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Grand Starex",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "th",
+          "ua"
+        ],
+        "regions": [
+          "as",
+          "eu"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "2.5 CRDi — 170 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 170,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Grandeur",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "sedan",
+        "countries": [
+          "fi",
+          "gb",
+          "nl",
+          "nz",
+          "ua"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride",
+              "nom": "1.6 T-GDi Hybrid — 230 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 230,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "H100",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "gb",
+          "nl",
+          "ua"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 6
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "2.5 CRDi — 130 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 130,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "H200",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "nl",
+          "ua"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 4
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "2.5 CRDi — 170 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 170,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "i40",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "sedan",
+        "countries": [
+          "es",
+          "fi",
+          "gb",
+          "lu",
+          "nl",
+          "nz",
+          "ua"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 3
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "1.7 CRDi — 136 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 136,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "i45",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "nz"
+        ],
+        "regions": [
+          "oc"
+        ],
+        "global_decile": 2
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.4 MPI — 175 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 175,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "i800",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "gb",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "2.5 CRDi — 170 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 170,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Imax",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "mpv",
+        "countries": [
+          "nz"
+        ],
+        "regions": [
+          "oc"
+        ],
+        "global_decile": 1
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "2.5 CRDi — 170 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 170,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Inster",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "suv",
+        "countries": [
+          "de",
+          "es",
+          "fi",
+          "gb",
+          "ie",
+          "lu",
+          "nl",
+          "ua"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 3
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "49 kWh — 115 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 115,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Ioniq",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "es",
+          "fi",
+          "gb",
+          "ie",
+          "lu",
+          "nl",
+          "nz",
+          "th",
+          "ua",
+          "us"
+        ],
+        "regions": [
+          "as",
+          "eu",
+          "na",
+          "oc"
+        ],
+        "global_decile": 3
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride",
+              "nom": "1.6 GDi Hybrid — 141 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 141,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Ioniq 6",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "sedan",
+        "countries": [
+          "ca",
+          "de",
+          "es",
+          "fi",
+          "gb",
+          "ie",
+          "lu",
+          "my",
+          "nl",
+          "nz",
+          "th",
+          "ua",
+          "us"
+        ],
+        "regions": [
+          "as",
+          "eu",
+          "na",
+          "oc"
+        ],
+        "global_decile": 4
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "77,4 kWh AWD — 325 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 325,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Ioniq 9",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "de",
+          "es",
+          "fi",
+          "gb",
+          "ie",
+          "lu",
+          "my",
+          "nl",
+          "ua",
+          "us"
+        ],
+        "regions": [
+          "as",
+          "eu",
+          "na"
+        ],
+        "global_decile": 6
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "110,3 kWh AWD — 428 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 428,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "ix20",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "mpv",
+        "countries": [
+          "es",
+          "fi",
+          "gb",
+          "lu",
+          "nl",
+          "nz",
+          "ua"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 4
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.6 — 125 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 125,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "ix35",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "suv",
+        "countries": [
+          "ar",
+          "es",
+          "fi",
+          "gb",
+          "lu",
+          "nl",
+          "nz",
+          "ua"
+        ],
+        "regions": [
+          "eu",
+          "oc",
+          "sa"
+        ],
+        "global_decile": 2
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "2.0 CRDi — 184 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 184,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "ix55",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "fi",
+          "lu",
+          "nl",
+          "ua"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "3.0 V6 CRDi — 240 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 240,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Kauai",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "fi",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 8
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "65,4 kWh — 218 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 218,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Lantra",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "sedan",
+        "countries": [
+          "gb",
+          "nl",
+          "nz",
+          "ua"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 4
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.8 — 128 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 128,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Lavita",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 6
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.8 — 122 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 122,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Matrix",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "mpv",
+        "countries": [
+          "es",
+          "fi",
+          "gb",
+          "lu",
+          "nl",
+          "nz",
+          "ua"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 4
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "1.5 CRDi — 110 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 110,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Nexo",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "de",
+          "fi",
+          "gb",
+          "nl",
+          "nz",
+          "us"
+        ],
+        "regions": [
+          "eu",
+          "na",
+          "oc"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Hydrogène",
+              "nom": "Pile à combustible — 163 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 163,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Palisade",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "es",
+          "my",
+          "nl",
+          "nz",
+          "th",
+          "ua",
+          "us"
+        ],
+        "regions": [
+          "as",
+          "eu",
+          "na",
+          "oc"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.8 V6 — 291 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 291,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Pony",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "fi",
+          "gb",
+          "nl",
+          "nz",
+          "ua"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.2 — 55 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 55,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "S-Coupe",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "coupe",
+        "countries": [
+          "ca",
+          "gb",
+          "nl",
+          "ua",
+          "us"
+        ],
+        "regions": [
+          "eu",
+          "na"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.5 Turbo — 116 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 116,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Santa Cruz",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "ua",
+          "us"
+        ],
+        "regions": [
+          "eu",
+          "na"
+        ],
+        "global_decile": 6
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.5 Turbo — 281 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 281,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Santamo",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "nl",
+          "ua"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 10
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.0 — 139 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 139,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Solaris",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "fi",
+          "nl",
+          "ua"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 6
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.6 MPI — 123 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 123,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Sonata",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "sedan",
+        "countries": [
+          "ca",
+          "es",
+          "fi",
+          "gb",
+          "lu",
+          "nl",
+          "nz",
+          "ua",
+          "us"
+        ],
+        "regions": [
+          "eu",
+          "na",
+          "oc"
+        ],
+        "global_decile": 4
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride",
+              "nom": "2.0 Hybrid — 192 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 192,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Starex",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "nl",
+          "ua"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "2.5 CRDi — 170 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 170,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Stargazer",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "es",
+          "th"
+        ],
+        "regions": [
+          "as",
+          "eu"
+        ],
+        "global_decile": 6
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.5 MPI — 115 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 115,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Staria",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "de",
+          "es",
+          "fi",
+          "gb",
+          "lu",
+          "my",
+          "nl",
+          "nz",
+          "th",
+          "ua"
+        ],
+        "regions": [
+          "as",
+          "eu",
+          "oc"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "2.2 CRDi — 177 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 177,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Stellar",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "gb",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 9
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.0 — 102 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 102,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Terracan",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "es",
+          "fi",
+          "gb",
+          "lu",
+          "nl",
+          "nz",
+          "ua"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "2.9 CRDi — 163 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 163,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Tiburon",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "coupe",
+        "countries": [
+          "ca",
+          "fi",
+          "nl",
+          "nz",
+          "ua",
+          "us"
+        ],
+        "regions": [
+          "eu",
+          "na",
+          "oc"
+        ],
+        "global_decile": 6
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.7 V6 — 167 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 167,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Trajet",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "fi",
+          "gb",
+          "lu",
+          "my",
+          "nl",
+          "nz",
+          "ua"
+        ],
+        "regions": [
+          "as",
+          "eu",
+          "oc"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "2.0 CRDi — 140 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 140,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Tuscani",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "coupe",
+        "countries": [
+          "fi",
+          "my",
+          "nl"
+        ],
+        "regions": [
+          "as",
+          "eu"
+        ],
+        "global_decile": 9
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.7 V6 — 167 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 167,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Veloster",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "es",
+          "fi",
+          "gb",
+          "lu",
+          "nl",
+          "nz",
+          "ua",
+          "us"
+        ],
+        "regions": [
+          "eu",
+          "na",
+          "oc"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.6 T-GDi — 204 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 204,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Venue",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "es",
+          "nl",
+          "nz",
+          "ua",
+          "us"
+        ],
+        "regions": [
+          "eu",
+          "na",
+          "oc"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.0 T-GDi — 120 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 120,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Veracruz",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "fi",
+          "nl",
+          "ua",
+          "us"
+        ],
+        "regions": [
+          "eu",
+          "na"
+        ],
+        "global_decile": 6
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "3.0 V6 CRDi — 240 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 240,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "XG",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "fi",
+          "gb",
+          "nz",
+          "ua",
+          "us"
+        ],
+        "regions": [
+          "eu",
+          "na",
+          "oc"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.0 V6 — 188 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 188,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "H350",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "van",
+        "body_type": null,
+        "countries": [
+          "es",
+          "fi",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 6
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "2.5 CRDi — 150 ch",
+              "code_moteur": "À confirmer selon VIN",
+              "cylindree": "À confirmer",
+              "puissance_ch": 150,
+              "boite": [
+                "À confirmer selon finition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien du groupe motopropulseur",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Moteur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Freinage et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque révision.",
+                  "diagnostic": "Contrôle des jeux, pneus et organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

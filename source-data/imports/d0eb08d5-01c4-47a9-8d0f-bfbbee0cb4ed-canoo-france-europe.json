@@ -1,0 +1,77 @@
+{
+  "nom": "Canoo",
+  "modeles": [
+    {
+      "nom": "Lifestyle Vehicle",
+      "generations": [
+        {
+          "code_chassis": "LV Gamma / véhicules d’évaluation",
+          "annees": "2019–2024",
+          "phases": [
+            "Concept et véhicules Gamma d’évaluation : aucune production client de série démontrée. L’AWD fut annoncé mais n’est pas ajouté comme version homologuée sans spécification finale vérifiable."
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "Skateboard électrique arrière 80 kWh — 300 ch",
+              "code_moteur": "Canoo rear drive unit",
+              "cylindree": "Batterie 80 kWh",
+              "puissance_ch": 300,
+              "boite": [
+                "Réducteur mono-rapport, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "État, équilibrage, refroidissement et isolement du pack prototype 80 kWh",
+                  "symptomes": [
+                    "Autonomie anormale",
+                    "Écart de cellules",
+                    "Défaut d’isolement, charge limitée ou surchauffe"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant toute remise en service ; absence de recul de flotte client",
+                  "diagnostic": "Accéder uniquement avec les outils et procédures Canoo disponibles, relever tensions/températures/SOH, tester isolement, contacteurs, BMS, pompes, chiller et étanchéité du pack structurel ; inspecter sous caisse et vérifier la version matérielle, le propriétaire des données et la disponibilité des pièces avant toute intervention",
+                  "piece_concernee": "Batterie 400 V de 80 kWh, BMS et circuit thermique",
+                  "gravite": "Critique ; véhicule prototype et haute tension",
+                  "frequence": "Inconnue faute de production et de parc représentatif",
+                  "cout_reparation_estime": "Très élevé ou non réparable : environ 5 000 à plus de 40 000 €"
+                },
+                {
+                  "probleme": "Moteur arrière, onduleur, réducteur, direction by-wire et freinage",
+                  "symptomes": [
+                    "Absence de READY",
+                    "Puissance limitée",
+                    "Bruit de réducteur, direction ou freinage incohérent"
+                  ],
+                  "kilometrage_apparition": "Contrôle complet à chaque usage d’un exemplaire d’évaluation",
+                  "diagnostic": "Lire tous calculateurs, contrôler onduleur, moteur 300 ch, refroidissement, roulements/réducteur et connectique HV ; vérifier redondance, capteurs et actionneurs de direction/freinage, alimentation de secours, calibration et mode dégradé ; ne pas rouler si logiciel ou validation sont inconnus",
+                  "piece_concernee": "Skateboard Canoo, traction électrique et commandes électroniques",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable sur prototypes",
+                  "cout_reparation_estime": "Très élevé ou indisponible : environ 2 000 à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Logiciels, batteries 12 V, télématique et traçabilité du prototype",
+                  "symptomes": [
+                    "Écran noir",
+                    "Décharge 12 V",
+                    "Fonctions intermittentes, véhicule verrouillé ou mise à jour impossible"
+                  ],
+                  "kilometrage_apparition": "Possible après stockage même à très faible kilométrage",
+                  "diagnostic": "Tester batteries basse tension et convertisseur DC-DC, consommation au repos, clés et réseaux CAN/Ethernet ; inventorier calculateurs, versions et certificats, sauvegarder diagnostics avant mise à jour, vérifier homologation, propriété, campagnes, documentation et support résiduel après cessation d’activité",
+                  "piece_concernee": "Réseau basse tension, logiciels et identité Canoo",
+                  "gravite": "Critique si commandes ou accès véhicule affectés",
+                  "frequence": "Risque élevé lié au stockage et à l’absence de support industriel",
+                  "cout_reparation_estime": "Variable, souvent sans solution commerciale"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.sec.gov/Archives/edgar/data/1750153/000121390020031596/ea128679ex99-3_hennessy.htm",
+        "https://www.actualidadmotor.com/wp-content/uploads/2019/09/Canoo-Vehicle-Specifications.pdf"
+      ]
+    }
+  ]
+}

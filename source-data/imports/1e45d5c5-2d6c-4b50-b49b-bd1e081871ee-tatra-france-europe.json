@@ -1,0 +1,408 @@
+{
+  "nom": "Tatra",
+  "modeles": [
+    {
+      "nom": "T77",
+      "generations": [
+        {
+          "code_chassis": "T77",
+          "annees": "1934–1935",
+          "phases": [
+            "Première série aérodynamique, environ 105 voitures, moteur arrière et aileron central."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.0 V8 arrière refroidi par air — 60 ch",
+              "code_moteur": "Tatra 77 V8",
+              "cylindree": "2 968 cm³",
+              "puissance_ch": 60,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement par air et culasses du V8 arrière",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe localisée",
+                    "Fumée, fuite ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Âge et restauration priment ; contrôle avant chaque saison",
+                  "diagnostic": "Identifier T77 3,0, T77a 3,4 ou T603 2,5 et numéro moteur. Mesurer compressions/leak-down et pression, analyser huile, contrôler turbine, tôles de refroidissement, ailettes, courroies, culasses, soupapes, paliers et fuites.",
+                  "piece_concernee": "V8 refroidi par air Tatra",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé si refroidissement incomplet ou conduits obstrués",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 25 000 €"
+                },
+                {
+                  "probleme": "Carburateurs, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés",
+                    "Vapor-lock, fuite ou mélange inégal"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après stockage",
+                  "diagnostic": "Identifier carburateurs et allumage selon phase, contrôler réservoir, pompes, conduites, synchronisation, prises d’air, avance, distributeur(s), bobines et bougies. Comparer températures des deux bancs.",
+                  "piece_concernee": "Admission et allumage Tatra V8",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec carburant moderne et chaleur arrière",
+                  "cout_reparation_estime": "Élevé : environ 300 à 5 000 €"
+                },
+                {
+                  "probleme": "Boîte-pont arrière, embrayage, commande longue et demi-arbres",
+                  "symptomes": [
+                    "Sélection imprécise",
+                    "Rapport qui saute",
+                    "Patinage, vibration ou fuite"
+                  ],
+                  "kilometrage_apparition": "Inspection avant achat et dès bruit",
+                  "diagnostic": "Contrôler huile, commande de boîte longue, synchros, embrayage, supports, différentiel, demi-arbres, joints et roulements. Vérifier géométrie des essieux oscillants et jeux à chaud.",
+                  "piece_concernee": "Transmission arrière Tatra",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable, réglage spécialisé",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 10 000 €"
+                },
+                {
+                  "probleme": "Aérodynamique, châssis/monocoque, essieux oscillants et freins",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Instabilité au vent ou survirage",
+                    "Jeu, usure irrégulière ou freinage faible"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle et essai prudent",
+                  "diagnostic": "Inspecter plateforme/monocoque, tunnel, ancrages, carrosserie, aileron central du T77, suspension, essieux oscillants, direction, tambours, roues et pneus. Vérifier masses arrière et géométrie sans appliquer des valeurs modernes.",
+                  "piece_concernee": "Structure et comportement Tatra",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion et mauvais réglages possibles",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 40 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "T77a",
+          "annees": "1935–1938",
+          "phases": [
+            "Carrosserie allongée à trois phares, cylindrée et puissance augmentées ; 249 T77/T77a plus préséries."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.4 V8 arrière refroidi par air — 75 ch",
+              "code_moteur": "Tatra 77a V8",
+              "cylindree": "3 380 cm³",
+              "puissance_ch": 75,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement par air et culasses du V8 arrière",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe localisée",
+                    "Fumée, fuite ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Âge et restauration priment ; contrôle avant chaque saison",
+                  "diagnostic": "Identifier T77 3,0, T77a 3,4 ou T603 2,5 et numéro moteur. Mesurer compressions/leak-down et pression, analyser huile, contrôler turbine, tôles de refroidissement, ailettes, courroies, culasses, soupapes, paliers et fuites.",
+                  "piece_concernee": "V8 refroidi par air Tatra",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé si refroidissement incomplet ou conduits obstrués",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 25 000 €"
+                },
+                {
+                  "probleme": "Carburateurs, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés",
+                    "Vapor-lock, fuite ou mélange inégal"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après stockage",
+                  "diagnostic": "Identifier carburateurs et allumage selon phase, contrôler réservoir, pompes, conduites, synchronisation, prises d’air, avance, distributeur(s), bobines et bougies. Comparer températures des deux bancs.",
+                  "piece_concernee": "Admission et allumage Tatra V8",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec carburant moderne et chaleur arrière",
+                  "cout_reparation_estime": "Élevé : environ 300 à 5 000 €"
+                },
+                {
+                  "probleme": "Boîte-pont arrière, embrayage, commande longue et demi-arbres",
+                  "symptomes": [
+                    "Sélection imprécise",
+                    "Rapport qui saute",
+                    "Patinage, vibration ou fuite"
+                  ],
+                  "kilometrage_apparition": "Inspection avant achat et dès bruit",
+                  "diagnostic": "Contrôler huile, commande de boîte longue, synchros, embrayage, supports, différentiel, demi-arbres, joints et roulements. Vérifier géométrie des essieux oscillants et jeux à chaud.",
+                  "piece_concernee": "Transmission arrière Tatra",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable, réglage spécialisé",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 10 000 €"
+                },
+                {
+                  "probleme": "Aérodynamique, châssis/monocoque, essieux oscillants et freins",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Instabilité au vent ou survirage",
+                    "Jeu, usure irrégulière ou freinage faible"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle et essai prudent",
+                  "diagnostic": "Inspecter plateforme/monocoque, tunnel, ancrages, carrosserie, aileron central du T77, suspension, essieux oscillants, direction, tambours, roues et pneus. Vérifier masses arrière et géométrie sans appliquer des valeurs modernes.",
+                  "piece_concernee": "Structure et comportement Tatra",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion et mauvais réglages possibles",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 40 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.tatra.cz/o-spolecnosti/tisk-a-media/novinky-a-clanky/historicke-i-soucasne-tatry-zazarily-na-motoristicke-slavnosti-legendy-1/",
+        "https://www.southwardcarmuseum.co.nz/vehicles/tatra-t77a"
+      ]
+    },
+    {
+      "nom": "T603",
+      "generations": [
+        {
+          "code_chassis": "T603-1 trois phares",
+          "annees": "1956–1962",
+          "phases": [
+            "Première phase à trois phares sous verre ; V8 simple arbre central et chambres hémisphériques."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.5 V8 603F — 95 ch",
+              "code_moteur": "Tatra 603F",
+              "cylindree": "2 545 cm³",
+              "puissance_ch": 95,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement par air et culasses du V8 arrière",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe localisée",
+                    "Fumée, fuite ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Âge et restauration priment ; contrôle avant chaque saison",
+                  "diagnostic": "Identifier T77 3,0, T77a 3,4 ou T603 2,5 et numéro moteur. Mesurer compressions/leak-down et pression, analyser huile, contrôler turbine, tôles de refroidissement, ailettes, courroies, culasses, soupapes, paliers et fuites.",
+                  "piece_concernee": "V8 refroidi par air Tatra",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé si refroidissement incomplet ou conduits obstrués",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 25 000 €"
+                },
+                {
+                  "probleme": "Carburateurs, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés",
+                    "Vapor-lock, fuite ou mélange inégal"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après stockage",
+                  "diagnostic": "Identifier carburateurs et allumage selon phase, contrôler réservoir, pompes, conduites, synchronisation, prises d’air, avance, distributeur(s), bobines et bougies. Comparer températures des deux bancs.",
+                  "piece_concernee": "Admission et allumage Tatra V8",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec carburant moderne et chaleur arrière",
+                  "cout_reparation_estime": "Élevé : environ 300 à 5 000 €"
+                },
+                {
+                  "probleme": "Boîte-pont arrière, embrayage, commande longue et demi-arbres",
+                  "symptomes": [
+                    "Sélection imprécise",
+                    "Rapport qui saute",
+                    "Patinage, vibration ou fuite"
+                  ],
+                  "kilometrage_apparition": "Inspection avant achat et dès bruit",
+                  "diagnostic": "Contrôler huile, commande de boîte longue, synchros, embrayage, supports, différentiel, demi-arbres, joints et roulements. Vérifier géométrie des essieux oscillants et jeux à chaud.",
+                  "piece_concernee": "Transmission arrière Tatra",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable, réglage spécialisé",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 10 000 €"
+                },
+                {
+                  "probleme": "Aérodynamique, châssis/monocoque, essieux oscillants et freins",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Instabilité au vent ou survirage",
+                    "Jeu, usure irrégulière ou freinage faible"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle et essai prudent",
+                  "diagnostic": "Inspecter plateforme/monocoque, tunnel, ancrages, carrosserie, aileron central du T77, suspension, essieux oscillants, direction, tambours, roues et pneus. Vérifier masses arrière et géométrie sans appliquer des valeurs modernes.",
+                  "piece_concernee": "Structure et comportement Tatra",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion et mauvais réglages possibles",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 40 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "T2-603 quatre phares",
+          "annees": "1962–1968",
+          "phases": [
+            "Face à quatre phares et moteur amélioré ; les appellations de phases varient selon sources."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.5 V8 603G — 105 ch",
+              "code_moteur": "Tatra 603G",
+              "cylindree": "2 474 cm³",
+              "puissance_ch": 105,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement par air et culasses du V8 arrière",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe localisée",
+                    "Fumée, fuite ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Âge et restauration priment ; contrôle avant chaque saison",
+                  "diagnostic": "Identifier T77 3,0, T77a 3,4 ou T603 2,5 et numéro moteur. Mesurer compressions/leak-down et pression, analyser huile, contrôler turbine, tôles de refroidissement, ailettes, courroies, culasses, soupapes, paliers et fuites.",
+                  "piece_concernee": "V8 refroidi par air Tatra",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé si refroidissement incomplet ou conduits obstrués",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 25 000 €"
+                },
+                {
+                  "probleme": "Carburateurs, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés",
+                    "Vapor-lock, fuite ou mélange inégal"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après stockage",
+                  "diagnostic": "Identifier carburateurs et allumage selon phase, contrôler réservoir, pompes, conduites, synchronisation, prises d’air, avance, distributeur(s), bobines et bougies. Comparer températures des deux bancs.",
+                  "piece_concernee": "Admission et allumage Tatra V8",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec carburant moderne et chaleur arrière",
+                  "cout_reparation_estime": "Élevé : environ 300 à 5 000 €"
+                },
+                {
+                  "probleme": "Boîte-pont arrière, embrayage, commande longue et demi-arbres",
+                  "symptomes": [
+                    "Sélection imprécise",
+                    "Rapport qui saute",
+                    "Patinage, vibration ou fuite"
+                  ],
+                  "kilometrage_apparition": "Inspection avant achat et dès bruit",
+                  "diagnostic": "Contrôler huile, commande de boîte longue, synchros, embrayage, supports, différentiel, demi-arbres, joints et roulements. Vérifier géométrie des essieux oscillants et jeux à chaud.",
+                  "piece_concernee": "Transmission arrière Tatra",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable, réglage spécialisé",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 10 000 €"
+                },
+                {
+                  "probleme": "Aérodynamique, châssis/monocoque, essieux oscillants et freins",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Instabilité au vent ou survirage",
+                    "Jeu, usure irrégulière ou freinage faible"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle et essai prudent",
+                  "diagnostic": "Inspecter plateforme/monocoque, tunnel, ancrages, carrosserie, aileron central du T77, suspension, essieux oscillants, direction, tambours, roues et pneus. Vérifier masses arrière et géométrie sans appliquer des valeurs modernes.",
+                  "piece_concernee": "Structure et comportement Tatra",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion et mauvais réglages possibles",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 40 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "T2-603 II / 603-3",
+          "annees": "1968–1975",
+          "phases": [
+            "Dernière évolution à voie/face modifiées ; nombreuses voitures anciennes ont été remises au standard tardif."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.5 V8 603H — 105 ch",
+              "code_moteur": "Tatra 603H",
+              "cylindree": "2 474 cm³",
+              "puissance_ch": 105,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement par air et culasses du V8 arrière",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe localisée",
+                    "Fumée, fuite ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Âge et restauration priment ; contrôle avant chaque saison",
+                  "diagnostic": "Identifier T77 3,0, T77a 3,4 ou T603 2,5 et numéro moteur. Mesurer compressions/leak-down et pression, analyser huile, contrôler turbine, tôles de refroidissement, ailettes, courroies, culasses, soupapes, paliers et fuites.",
+                  "piece_concernee": "V8 refroidi par air Tatra",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé si refroidissement incomplet ou conduits obstrués",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 25 000 €"
+                },
+                {
+                  "probleme": "Carburateurs, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés",
+                    "Vapor-lock, fuite ou mélange inégal"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après stockage",
+                  "diagnostic": "Identifier carburateurs et allumage selon phase, contrôler réservoir, pompes, conduites, synchronisation, prises d’air, avance, distributeur(s), bobines et bougies. Comparer températures des deux bancs.",
+                  "piece_concernee": "Admission et allumage Tatra V8",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec carburant moderne et chaleur arrière",
+                  "cout_reparation_estime": "Élevé : environ 300 à 5 000 €"
+                },
+                {
+                  "probleme": "Boîte-pont arrière, embrayage, commande longue et demi-arbres",
+                  "symptomes": [
+                    "Sélection imprécise",
+                    "Rapport qui saute",
+                    "Patinage, vibration ou fuite"
+                  ],
+                  "kilometrage_apparition": "Inspection avant achat et dès bruit",
+                  "diagnostic": "Contrôler huile, commande de boîte longue, synchros, embrayage, supports, différentiel, demi-arbres, joints et roulements. Vérifier géométrie des essieux oscillants et jeux à chaud.",
+                  "piece_concernee": "Transmission arrière Tatra",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable, réglage spécialisé",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 10 000 €"
+                },
+                {
+                  "probleme": "Aérodynamique, châssis/monocoque, essieux oscillants et freins",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Instabilité au vent ou survirage",
+                    "Jeu, usure irrégulière ou freinage faible"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle et essai prudent",
+                  "diagnostic": "Inspecter plateforme/monocoque, tunnel, ancrages, carrosserie, aileron central du T77, suspension, essieux oscillants, direction, tambours, roues et pneus. Vérifier masses arrière et géométrie sans appliquer des valeurs modernes.",
+                  "piece_concernee": "Structure et comportement Tatra",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion et mauvais réglages possibles",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 40 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.tatra.cz/data/files/TATRA-TRUCKS-company-profile-web-CZ-1.pdf",
+        "https://www.tatra-register.org.uk/603.htm"
+      ]
+    }
+  ]
+}
