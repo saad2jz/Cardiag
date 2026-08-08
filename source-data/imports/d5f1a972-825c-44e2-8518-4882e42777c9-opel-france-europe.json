@@ -1,0 +1,541 @@
+{
+  "nom": "Opel",
+  "modeles": [
+    {
+      "nom": "Corsa",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.2 Turbo — 100 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 100,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien moteur et qualité des fluides",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage, l’âge et le respect du plan d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des niveaux et examen à froid comme à chaud.",
+                  "piece_concernee": "Groupe motopropulseur",
+                  "gravite": "À évaluer selon les défauts enregistrés",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis atelier recommandé."
+                },
+                {
+                  "probleme": "Usure des trains roulants, freins et pneumatiques",
+                  "symptomes": [
+                    "Vibrations",
+                    "Tirage au freinage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Généralement à contrôler à chaque révision, plus tôt sur routes dégradées.",
+                  "diagnostic": "Contrôle du jeu des articulations, de la géométrie, de l’épaisseur des plaquettes et disques.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le jeu ou l’usure constatée",
+                  "frequence": "Usure normale à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces et main-d’œuvre."
+                },
+                {
+                  "probleme": "Fonctionnement des équipements électriques et électroniques",
+                  "symptomes": [
+                    "Message au combiné",
+                    "Fonction intermittente",
+                    "Batterie 12 V faible"
+                  ],
+                  "kilometrage_apparition": "Variable, particulièrement après immobilisation prolongée.",
+                  "diagnostic": "Test de batterie 12 V, lecture des défauts et vérification des mises à jour disponibles.",
+                  "piece_concernee": "Réseau électrique basse tension et calculateurs",
+                  "gravite": "Faible à modérée selon la fonction affectée",
+                  "frequence": "À surveiller selon l’usage",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Astra",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.2 Turbo — 130 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 130,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien moteur et qualité des fluides",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage, l’âge et le respect du plan d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des niveaux et examen à froid comme à chaud.",
+                  "piece_concernee": "Groupe motopropulseur",
+                  "gravite": "À évaluer selon les défauts enregistrés",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis atelier recommandé."
+                },
+                {
+                  "probleme": "Usure des trains roulants, freins et pneumatiques",
+                  "symptomes": [
+                    "Vibrations",
+                    "Tirage au freinage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Généralement à contrôler à chaque révision, plus tôt sur routes dégradées.",
+                  "diagnostic": "Contrôle du jeu des articulations, de la géométrie, de l’épaisseur des plaquettes et disques.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le jeu ou l’usure constatée",
+                  "frequence": "Usure normale à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces et main-d’œuvre."
+                },
+                {
+                  "probleme": "Fonctionnement des équipements électriques et électroniques",
+                  "symptomes": [
+                    "Message au combiné",
+                    "Fonction intermittente",
+                    "Batterie 12 V faible"
+                  ],
+                  "kilometrage_apparition": "Variable, particulièrement après immobilisation prolongée.",
+                  "diagnostic": "Test de batterie 12 V, lecture des défauts et vérification des mises à jour disponibles.",
+                  "piece_concernee": "Réseau électrique basse tension et calculateurs",
+                  "gravite": "Faible à modérée selon la fonction affectée",
+                  "frequence": "À surveiller selon l’usage",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Mokka",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "Electric 54 kWh — 156 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 156,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "État de santé et équilibrage de la batterie haute tension",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Avertissement traction"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage, l’âge et le respect du plan d’entretien.",
+                  "diagnostic": "Lecture des défauts haute tension par un atelier habilité, contrôle du rapport de santé batterie.",
+                  "piece_concernee": "Batterie haute tension et électronique de puissance",
+                  "gravite": "À évaluer selon les défauts enregistrés",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis atelier recommandé."
+                },
+                {
+                  "probleme": "Usure des trains roulants, freins et pneumatiques",
+                  "symptomes": [
+                    "Vibrations",
+                    "Tirage au freinage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Généralement à contrôler à chaque révision, plus tôt sur routes dégradées.",
+                  "diagnostic": "Contrôle du jeu des articulations, de la géométrie, de l’épaisseur des plaquettes et disques.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le jeu ou l’usure constatée",
+                  "frequence": "Usure normale à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces et main-d’œuvre."
+                },
+                {
+                  "probleme": "Fonctionnement des équipements électriques et électroniques",
+                  "symptomes": [
+                    "Message au combiné",
+                    "Fonction intermittente",
+                    "Batterie 12 V faible"
+                  ],
+                  "kilometrage_apparition": "Variable, particulièrement après immobilisation prolongée.",
+                  "diagnostic": "Test de batterie 12 V, lecture des défauts et vérification des mises à jour disponibles.",
+                  "piece_concernee": "Réseau électrique basse tension et calculateurs",
+                  "gravite": "Faible à modérée selon la fonction affectée",
+                  "frequence": "À surveiller selon l’usage",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Grandland",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride",
+              "nom": "Hybrid 136 — 136 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 136,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fonctionnement du système hybride et de la batterie de traction",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Avertissement traction"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage, l’âge et le respect du plan d’entretien.",
+                  "diagnostic": "Lecture des défauts haute tension par un atelier habilité, contrôle du rapport de santé batterie.",
+                  "piece_concernee": "Batterie haute tension et électronique de puissance",
+                  "gravite": "À évaluer selon les défauts enregistrés",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis atelier recommandé."
+                },
+                {
+                  "probleme": "Usure des trains roulants, freins et pneumatiques",
+                  "symptomes": [
+                    "Vibrations",
+                    "Tirage au freinage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Généralement à contrôler à chaque révision, plus tôt sur routes dégradées.",
+                  "diagnostic": "Contrôle du jeu des articulations, de la géométrie, de l’épaisseur des plaquettes et disques.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le jeu ou l’usure constatée",
+                  "frequence": "Usure normale à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces et main-d’œuvre."
+                },
+                {
+                  "probleme": "Fonctionnement des équipements électriques et électroniques",
+                  "symptomes": [
+                    "Message au combiné",
+                    "Fonction intermittente",
+                    "Batterie 12 V faible"
+                  ],
+                  "kilometrage_apparition": "Variable, particulièrement après immobilisation prolongée.",
+                  "diagnostic": "Test de batterie 12 V, lecture des défauts et vérification des mises à jour disponibles.",
+                  "piece_concernee": "Réseau électrique basse tension et calculateurs",
+                  "gravite": "Faible à modérée selon la fonction affectée",
+                  "frequence": "À surveiller selon l’usage",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Crossland",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.2 Turbo — 130 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 130,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien moteur et qualité des fluides",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage, l’âge et le respect du plan d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des niveaux et examen à froid comme à chaud.",
+                  "piece_concernee": "Groupe motopropulseur",
+                  "gravite": "À évaluer selon les défauts enregistrés",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis atelier recommandé."
+                },
+                {
+                  "probleme": "Usure des trains roulants, freins et pneumatiques",
+                  "symptomes": [
+                    "Vibrations",
+                    "Tirage au freinage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Généralement à contrôler à chaque révision, plus tôt sur routes dégradées.",
+                  "diagnostic": "Contrôle du jeu des articulations, de la géométrie, de l’épaisseur des plaquettes et disques.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le jeu ou l’usure constatée",
+                  "frequence": "Usure normale à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces et main-d’œuvre."
+                },
+                {
+                  "probleme": "Fonctionnement des équipements électriques et électroniques",
+                  "symptomes": [
+                    "Message au combiné",
+                    "Fonction intermittente",
+                    "Batterie 12 V faible"
+                  ],
+                  "kilometrage_apparition": "Variable, particulièrement après immobilisation prolongée.",
+                  "diagnostic": "Test de batterie 12 V, lecture des défauts et vérification des mises à jour disponibles.",
+                  "piece_concernee": "Réseau électrique basse tension et calculateurs",
+                  "gravite": "Faible à modérée selon la fonction affectée",
+                  "frequence": "À surveiller selon l’usage",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Insignia",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "2.0 CDTI — 170 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 170,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien moteur et qualité des fluides",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage, l’âge et le respect du plan d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des niveaux et examen à froid comme à chaud.",
+                  "piece_concernee": "Groupe motopropulseur",
+                  "gravite": "À évaluer selon les défauts enregistrés",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis atelier recommandé."
+                },
+                {
+                  "probleme": "Usure des trains roulants, freins et pneumatiques",
+                  "symptomes": [
+                    "Vibrations",
+                    "Tirage au freinage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Généralement à contrôler à chaque révision, plus tôt sur routes dégradées.",
+                  "diagnostic": "Contrôle du jeu des articulations, de la géométrie, de l’épaisseur des plaquettes et disques.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le jeu ou l’usure constatée",
+                  "frequence": "Usure normale à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces et main-d’œuvre."
+                },
+                {
+                  "probleme": "Fonctionnement des équipements électriques et électroniques",
+                  "symptomes": [
+                    "Message au combiné",
+                    "Fonction intermittente",
+                    "Batterie 12 V faible"
+                  ],
+                  "kilometrage_apparition": "Variable, particulièrement après immobilisation prolongée.",
+                  "diagnostic": "Test de batterie 12 V, lecture des défauts et vérification des mises à jour disponibles.",
+                  "piece_concernee": "Réseau électrique basse tension et calculateurs",
+                  "gravite": "Faible à modérée selon la fonction affectée",
+                  "frequence": "À surveiller selon l’usage",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Zafira",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "2.0 Diesel — 180 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 180,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien moteur et qualité des fluides",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage, l’âge et le respect du plan d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des niveaux et examen à froid comme à chaud.",
+                  "piece_concernee": "Groupe motopropulseur",
+                  "gravite": "À évaluer selon les défauts enregistrés",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis atelier recommandé."
+                },
+                {
+                  "probleme": "Usure des trains roulants, freins et pneumatiques",
+                  "symptomes": [
+                    "Vibrations",
+                    "Tirage au freinage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Généralement à contrôler à chaque révision, plus tôt sur routes dégradées.",
+                  "diagnostic": "Contrôle du jeu des articulations, de la géométrie, de l’épaisseur des plaquettes et disques.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le jeu ou l’usure constatée",
+                  "frequence": "Usure normale à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces et main-d’œuvre."
+                },
+                {
+                  "probleme": "Fonctionnement des équipements électriques et électroniques",
+                  "symptomes": [
+                    "Message au combiné",
+                    "Fonction intermittente",
+                    "Batterie 12 V faible"
+                  ],
+                  "kilometrage_apparition": "Variable, particulièrement après immobilisation prolongée.",
+                  "diagnostic": "Test de batterie 12 V, lecture des défauts et vérification des mises à jour disponibles.",
+                  "piece_concernee": "Réseau électrique basse tension et calculateurs",
+                  "gravite": "Faible à modérée selon la fonction affectée",
+                  "frequence": "À surveiller selon l’usage",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Combo",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "1.5 Diesel — 130 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 130,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien moteur et qualité des fluides",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’usage, l’âge et le respect du plan d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des niveaux et examen à froid comme à chaud.",
+                  "piece_concernee": "Groupe motopropulseur",
+                  "gravite": "À évaluer selon les défauts enregistrés",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis atelier recommandé."
+                },
+                {
+                  "probleme": "Usure des trains roulants, freins et pneumatiques",
+                  "symptomes": [
+                    "Vibrations",
+                    "Tirage au freinage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Généralement à contrôler à chaque révision, plus tôt sur routes dégradées.",
+                  "diagnostic": "Contrôle du jeu des articulations, de la géométrie, de l’épaisseur des plaquettes et disques.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le jeu ou l’usure constatée",
+                  "frequence": "Usure normale à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces et main-d’œuvre."
+                },
+                {
+                  "probleme": "Fonctionnement des équipements électriques et électroniques",
+                  "symptomes": [
+                    "Message au combiné",
+                    "Fonction intermittente",
+                    "Batterie 12 V faible"
+                  ],
+                  "kilometrage_apparition": "Variable, particulièrement après immobilisation prolongée.",
+                  "diagnostic": "Test de batterie 12 V, lecture des défauts et vérification des mises à jour disponibles.",
+                  "piece_concernee": "Réseau électrique basse tension et calculateurs",
+                  "gravite": "Faible à modérée selon la fonction affectée",
+                  "frequence": "À surveiller selon l’usage",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

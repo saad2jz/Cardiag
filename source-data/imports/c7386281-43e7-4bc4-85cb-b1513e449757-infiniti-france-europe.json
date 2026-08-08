@@ -1,0 +1,1946 @@
+{
+  "nom": "Infiniti",
+  "modeles": [
+    {
+      "nom": "EX / QX50",
+      "generations": [
+        {
+          "code_chassis": "J50",
+          "annees": "2008-2017",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "EX37 / QX50 3.7 - 320ch",
+              "code_moteur": "VQ37VHR",
+              "cylindree": "3.7L",
+              "puissance_ch": 320,
+              "boite": [
+                "BVA7"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité mécanique très bonne",
+                  "symptomes": [
+                    "Aucun symptôme préoccupant récurrent majeur identifié"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Contrôle d'usage lors des révisions périodiques standards",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Faible (entretien courant, indicatif)"
+                },
+                {
+                  "probleme": "Consommation élevée",
+                  "symptomes": [
+                    "Consommation moyenne ressentie nettement plus élevée que la valeur homologuée"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Coût des pièces élevé, réseau après-vente restreint en Europe",
+                  "symptomes": [
+                    "Délais et coûts d'approvisionnement de pièces supérieurs à la moyenne"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Boîte automatique 7 rapports globalement fiable mais entretien à respecter scrupuleusement",
+                  "symptomes": [
+                    "À-coups si entretien de l'huile de boîte négligé"
+                  ],
+                  "kilometrage_apparition": "Variable selon respect des vidanges",
+                  "diagnostic": "Contrôle de la qualité et du niveau d'huile de boîte",
+                  "piece_concernee": "Boîte de vitesses / transmission",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel si entretien négligé",
+                  "cout_reparation_estime": "Modéré (indicatif)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "FX / QX70",
+      "generations": [
+        {
+          "code_chassis": "S51",
+          "annees": "2008-2017",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "FX37 / QX70 3.7 - 320ch",
+              "code_moteur": "VQ37VHR",
+              "cylindree": "3.7L",
+              "puissance_ch": 320,
+              "boite": [
+                "BVA7"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité mécanique globalement bonne",
+                  "symptomes": [
+                    "Aucun symptôme préoccupant récurrent majeur identifié"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Contrôle d'usage lors des révisions périodiques standards",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Faible (entretien courant, indicatif)"
+                },
+                {
+                  "probleme": "Consommation très élevée",
+                  "symptomes": [
+                    "Consommation moyenne ressentie nettement plus élevée que la valeur homologuée"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Suspension pneumatique (option) coûteuse en cas de panne",
+                  "symptomes": [
+                    "Affaissement anormal du véhicule d'un côté",
+                    "Compresseur qui tourne fréquemment"
+                  ],
+                  "kilometrage_apparition": "Variable, souvent au-delà de 150 000 km ou avec l'âge",
+                  "diagnostic": "Contrôle du circuit pneumatique et du compresseur",
+                  "piece_concernee": "Trains roulants / suspension",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé (indicatif)"
+                },
+                {
+                  "probleme": "Coût des pièces élevé, réseau après-vente restreint en Europe",
+                  "symptomes": [
+                    "Délais et coûts d'approvisionnement de pièces supérieurs à la moyenne"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "FX30d / QX70 S30d - 238ch",
+              "code_moteur": "V9X (bloc Renault-Nissan, dérivé V9X/dCi)",
+              "cylindree": "3.0L",
+              "puissance_ch": 238,
+              "boite": [
+                "BVA7"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité correcte mais moins de recul que les blocs essence VQ",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "FAP sensible à l'usage urbain",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Système d'alimentation / dépollution",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Turbo à surveiller après 150 000 km",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Vanne EGR encrassée avec le temps",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Système d'alimentation / dépollution",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "FX45 (variante V8 de la FX/QX70)",
+      "generations": [
+        {
+          "code_chassis": "S50",
+          "annees": "2003-2008",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "4.5 V8 - 320ch",
+              "code_moteur": "VK45DE",
+              "cylindree": "4.5L",
+              "puissance_ch": 320,
+              "boite": [
+                "BVA5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité mécanique très bonne, moteur V8 robuste",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Modèle non commercialisé en Europe (marché nord-américain), réseau de pièces local limité",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Consommation très élevée",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Coût d'entretien élevé (gros V8, pièces spécifiques)",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "G / Q50",
+      "generations": [
+        {
+          "code_chassis": "V36 (G37)",
+          "annees": "2007-2013",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "G37 - 320ch",
+              "code_moteur": "VQ37VHR",
+              "cylindree": "3.7L",
+              "puissance_ch": 320,
+              "boite": [
+                "BVM6",
+                "BVA7"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité mécanique très bonne, moteur VQ réputé robuste",
+                  "symptomes": [
+                    "Aucun symptôme préoccupant récurrent majeur identifié"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Contrôle d'usage lors des révisions périodiques standards",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Faible (entretien courant, indicatif)"
+                },
+                {
+                  "probleme": "Consommation de carburant élevée",
+                  "symptomes": [
+                    "Consommation moyenne ressentie nettement plus élevée que la valeur homologuée"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Boîte automatique 7 rapports globalement fiable mais entretien à respecter",
+                  "symptomes": [
+                    "À-coups si entretien de l'huile de boîte négligé"
+                  ],
+                  "kilometrage_apparition": "Variable selon respect des vidanges",
+                  "diagnostic": "Contrôle de la qualité et du niveau d'huile de boîte",
+                  "piece_concernee": "Boîte de vitesses / transmission",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel si entretien négligé",
+                  "cout_reparation_estime": "Modéré (vidange boîte, indicatif)"
+                },
+                {
+                  "probleme": "Pièces spécifiques coûteuses en Europe (faible diffusion de la marque)",
+                  "symptomes": [
+                    "Délais et coûts de pièces supérieurs à un modèle généraliste équivalent"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "V37 (Q50)",
+          "annees": "2013-2023",
+          "phases": [
+            "Phase 1 (2013-2017)",
+            "Phase 2 (2017-2023)"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride",
+              "nom": "Q50 Hybrid - 364ch",
+              "code_moteur": "VQ35HR + moteur électrique",
+              "cylindree": "3.5L",
+              "puissance_ch": 364,
+              "boite": [
+                "BVA7"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Système hybride complexe, diagnostic nécessitant un réseau spécialisé Infiniti",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Batterie lithium-ion coûteuse hors garantie",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Direction Steer-by-Wire (option) source de pannes électroniques documentées",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent (point de vigilance standard sur ce modèle)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Réseau après-vente Infiniti très restreint en Europe (marque retirée du marché européen en 2020)",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "Q50 2.2d - 170ch",
+              "code_moteur": "OM651 (bloc Mercedes)",
+              "cylindree": "2.2L",
+              "puissance_ch": 170,
+              "boite": [
+                "BVA7"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Moteur d'origine Mercedes-Benz relativement fiable mais entretien Infiniti moins répandu",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "FAP sensible à l'usage urbain",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Système d'alimentation / dépollution",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Vanne EGR à surveiller",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Système d'alimentation / dépollution",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Injecteurs à surveiller après 180 000 km",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Système d'alimentation / dépollution",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "G20 (rebadge Nissan Primera)",
+      "generations": [
+        {
+          "code_chassis": "P11",
+          "annees": "1998-2002",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.0i - 140ch",
+              "code_moteur": "SR20DE",
+              "cylindree": "2.0L",
+              "puissance_ch": 140,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité mécanique très bonne, moteur SR20 réputé robuste",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Modèle non commercialisé en Europe, réseau de pièces local limité",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Rouille possible sur bas de caisse en zones salées",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Carrosserie / corrosion",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Suspension multibras avant à surveiller après 150 000 km",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Trains roulants / suspension",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "I30 / I35 (ancêtre de la M/Q70, rebadge Nissan Maxima)",
+      "generations": [
+        {
+          "code_chassis": "A33",
+          "annees": "2000-2004",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "I30 3.0 V6 - 227ch",
+              "code_moteur": "VQ30DE",
+              "cylindree": "3.0L",
+              "puissance_ch": 227,
+              "boite": [
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité mécanique très bonne, moteur VQ réputé robuste",
+                  "symptomes": [
+                    "Aucun symptôme préoccupant récurrent majeur identifié"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Contrôle d'usage lors des révisions périodiques standards",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Faible (entretien courant, indicatif)"
+                },
+                {
+                  "probleme": "Modèle non commercialisé en Europe, réseau de pièces local limité",
+                  "symptomes": [
+                    "Délais et coûts d'approvisionnement de pièces supérieurs en Europe"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Consommation élevée",
+                  "symptomes": [
+                    "Consommation moyenne ressentie nettement plus élevée que la valeur homologuée"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Boîte automatique vieillissante avec l'âge",
+                  "symptomes": [
+                    "À-coups au passage des rapports sur exemplaires âgés"
+                  ],
+                  "kilometrage_apparition": "Généralement au-delà de 150 000-200 000 km",
+                  "diagnostic": "Contrôle de la qualité de l'huile de boîte",
+                  "piece_concernee": "Boîte de vitesses / transmission",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré à élevé (indicatif)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "J30 (berline historique, rebadge Nissan Leopard/Cefiro)",
+      "generations": [
+        {
+          "code_chassis": "Y32",
+          "annees": "1992-1997",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.0 V6 - 210ch",
+              "code_moteur": "VG30DE",
+              "cylindree": "3.0L",
+              "puissance_ch": 210,
+              "boite": [
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité mécanique très bonne, moteur V6 robuste",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Modèle non commercialisé en Europe, réseau de pièces local limité",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Consommation élevée",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Design controversé à l'époque, ayant pénalisé les ventes du modèle",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "M / Q70",
+      "generations": [
+        {
+          "code_chassis": "Y51",
+          "annees": "2010-2019",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride",
+              "nom": "M35h / Q70 Hybrid - 364ch",
+              "code_moteur": "VQ35HR + moteur électrique",
+              "cylindree": "3.5L",
+              "puissance_ch": 364,
+              "boite": [
+                "BVA7"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Système hybride complexe, diagnostic nécessitant un réseau spécialisé Infiniti",
+                  "symptomes": [
+                    "Rare, mais en cas de défaillance : voyant hybride allumé, passage en mode dégradé"
+                  ],
+                  "kilometrage_apparition": "Rare, technologie relativement peu diffusée",
+                  "diagnostic": "Diagnostic spécialisé via outil Infiniti/Nissan",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Élevé si intervention nécessaire (indicatif)"
+                },
+                {
+                  "probleme": "Batterie lithium-ion coûteuse hors garantie",
+                  "symptomes": [
+                    "Baisse progressive de l'autonomie électrique sur exemplaires très âgés"
+                  ],
+                  "kilometrage_apparition": "Généralement au-delà de 150 000-200 000 km avant dégradation notable",
+                  "diagnostic": "Test de capacité de la batterie hybride au diagnostic",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare avant très haut kilométrage",
+                  "cout_reparation_estime": "Très élevé si remplacement nécessaire hors garantie (indicatif)"
+                },
+                {
+                  "probleme": "Réseau après-vente Infiniti très restreint en Europe",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces spécifiques et des techniciens formés"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Consommation réelle supérieure aux annonces en conduite dynamique",
+                  "symptomes": [
+                    "Consommation moyenne ressentie plus élevée que la valeur homologuée"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "M30d / Q70 3.0d - 238ch",
+              "code_moteur": "V9X (bloc Renault-Nissan dCi)",
+              "cylindree": "3.0L",
+              "puissance_ch": 238,
+              "boite": [
+                "BVA7"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité correcte mais moins de recul que les blocs essence VQ",
+                  "symptomes": [
+                    "Aucun symptôme préoccupant récurrent majeur identifié spécifiquement documenté"
+                  ],
+                  "kilometrage_apparition": "Non applicable, manque de recul relatif comparé aux blocs essence historiques",
+                  "diagnostic": "Contrôle d'usage lors des révisions périodiques standards",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré (entretien courant, indicatif)"
+                },
+                {
+                  "probleme": "FAP sensible à l'usage urbain",
+                  "symptomes": [
+                    "Voyant FAP allumé",
+                    "Régénérations fréquentes et incomplètes"
+                  ],
+                  "kilometrage_apparition": "Variable, accéléré par usage urbain exclusif",
+                  "diagnostic": "Lecture du niveau d'encrassement au diagnostic",
+                  "piece_concernee": "Système d'alimentation / dépollution",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent en usage urbain",
+                  "cout_reparation_estime": "Modéré à élevé (indicatif)"
+                },
+                {
+                  "probleme": "Turbo à surveiller après 150 000 km",
+                  "symptomes": [
+                    "Sifflement anormal",
+                    "Fumée bleutée",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Au-delà de 150 000 km généralement",
+                  "diagnostic": "Contrôle du jeu de l'arbre turbo",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré à élevé (indicatif)"
+                },
+                {
+                  "probleme": "Vanne EGR encrassée avec le temps",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Perte de puissance",
+                    "Voyant moteur allumé"
+                  ],
+                  "kilometrage_apparition": "Variable selon usage",
+                  "diagnostic": "Lecture des codes défaut",
+                  "piece_concernee": "Système d'alimentation / dépollution",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent en usage urbain",
+                  "cout_reparation_estime": "Modéré (indicatif)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "M37 / Q70L (version longue empattement)",
+      "generations": [
+        {
+          "code_chassis": "Y51 (empattement long)",
+          "annees": "2010-2019",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.7 V6 - 320ch",
+              "code_moteur": "VQ37VHR",
+              "cylindree": "3.7L",
+              "puissance_ch": 320,
+              "boite": [
+                "BVA7"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité mécanique très bonne, moteur VQ réputé robuste",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Réseau après-vente Infiniti très restreint en Europe (marque retirée en 2020)",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Consommation élevée",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Coût des pièces plus élevé qu'une berline généraliste équivalente",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "M45 (variante V8 de la M/Q70, marché nord-américain)",
+      "generations": [
+        {
+          "code_chassis": "Y50",
+          "annees": "2003-2010",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "4.5 V8 - 340ch",
+              "code_moteur": "VK45DE",
+              "cylindree": "4.5L",
+              "puissance_ch": 340,
+              "boite": [
+                "BVA5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité mécanique très bonne, moteur V8 robuste",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Modèle non commercialisé en Europe (marché nord-américain), réseau de pièces local limité",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Consommation très élevée",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Coût d'entretien élevé (gros V8, pièces spécifiques)",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Q30 / QX30",
+      "generations": [
+        {
+          "code_chassis": "H15",
+          "annees": "2015-2019",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Q30 1.6t - 156ch",
+              "code_moteur": "M270 (bloc Mercedes-Benz)",
+              "cylindree": "1.6L",
+              "puissance_ch": 156,
+              "boite": [
+                "BVM6",
+                "BVA7"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Base technique Mercedes Classe A (plateforme MFA), fiabilité proche des modèles Mercedes contemporains",
+                  "symptomes": [
+                    "Symptômes variables, similaires à ceux rencontrés sur les Mercedes Classe A/CLA/GLA de la même période équipées du bloc M270"
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien, similaire aux modèles Mercedes équivalents",
+                  "diagnostic": "Diagnostic standard essence turbo, comparable à un contrôle Mercedes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré à élevé (indicatif)"
+                },
+                {
+                  "probleme": "Chaîne de distribution à surveiller (défaut connu sur certains blocs M270 Mercedes)",
+                  "symptomes": [
+                    "Bruit de cliquetis métallique à froid au démarrage",
+                    "Cliquetis persistant même moteur chaud dans les cas avancés"
+                  ],
+                  "kilometrage_apparition": "Rapporté parfois dès 60 000-100 000 km sur certains exemplaires (estimation indicative, défaut documenté sur cette famille de blocs Mercedes)",
+                  "diagnostic": "Écoute à froid et à chaud, contrôle du jeu de chaîne par un spécialiste",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent sur certains millésimes de ce bloc",
+                  "cout_reparation_estime": "Élevé (indicatif — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Réseau après-vente Infiniti très restreint en Europe (marque retirée en 2020)",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces spécifiques et des techniciens formés au badge Infiniti"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Valeur de revente pénalisée par la faible diffusion du modèle",
+                  "symptomes": [
+                    "Décote plus rapide qu'un modèle Mercedes équivalent"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Carrosserie / corrosion",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "Q30 1.5d - 109ch",
+              "code_moteur": "OM607 (bloc Mercedes-Benz)",
+              "cylindree": "1.5L",
+              "puissance_ch": 109,
+              "boite": [
+                "BVM6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Bloc Mercedes/Renault fiable mais réseau de pièces Infiniti limité",
+                  "symptomes": [
+                    "Aucun symptôme préoccupant récurrent majeur identifié côté mécanique"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Contrôle d'usage lors des révisions périodiques standards",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Faible (entretien courant, indicatif)"
+                },
+                {
+                  "probleme": "FAP sensible à l'usage urbain",
+                  "symptomes": [
+                    "Voyant FAP allumé",
+                    "Régénérations fréquentes et incomplètes"
+                  ],
+                  "kilometrage_apparition": "Variable, accéléré par usage urbain exclusif",
+                  "diagnostic": "Lecture du niveau d'encrassement au diagnostic",
+                  "piece_concernee": "Système d'alimentation / dépollution",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent en usage urbain",
+                  "cout_reparation_estime": "Modéré à élevé (indicatif)"
+                },
+                {
+                  "probleme": "Vanne EGR à surveiller",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Perte de puissance légère"
+                  ],
+                  "kilometrage_apparition": "Variable selon usage",
+                  "diagnostic": "Lecture des codes défaut",
+                  "piece_concernee": "Système d'alimentation / dépollution",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré (indicatif)"
+                },
+                {
+                  "probleme": "Turbo à contrôler après 150 000 km",
+                  "symptomes": [
+                    "Sifflement anormal",
+                    "Fumée bleutée",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Au-delà de 150 000 km généralement",
+                  "diagnostic": "Contrôle du jeu de l'arbre turbo",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré à élevé (indicatif)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Q45 (première génération de berline de prestige Infiniti)",
+      "generations": [
+        {
+          "code_chassis": "G50",
+          "annees": "1989-1996",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "4.5 V8 - 278ch",
+              "code_moteur": "VH45DE",
+              "cylindree": "4.5L",
+              "puissance_ch": 278,
+              "boite": [
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité mécanique très bonne, moteur V8 robuste (premier modèle de la marque Infiniti au lancement en 1989)",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Modèle non commercialisé en Europe, réseau de pièces local limité",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Consommation très élevée",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Suspension pneumatique (versions équipées) coûteuse en cas de panne sur haut kilométrage",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Trains roulants / suspension",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Q50 (version restylée récente, dernières années de commercialisation)",
+      "generations": [
+        {
+          "code_chassis": "V37 (restylage final)",
+          "annees": "2017-2023",
+          "phases": [
+            "Phase finale avant retrait du marché européen"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Q50 3.0t - 405ch",
+              "code_moteur": "VR30DDTT",
+              "cylindree": "3.0L",
+              "puissance_ch": 405,
+              "boite": [
+                "BVA7"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Bloc VR30DDTT relativement récent, moins de recul sur la fiabilité que les anciens VQ atmosphériques",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Consommation élevée",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Réseau après-vente Infiniti très restreint en Europe (marque retirée en 2020)",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Direction Steer-by-Wire (option) source de pannes électroniques documentées",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent (point de vigilance standard sur ce modèle)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Q60",
+      "generations": [
+        {
+          "code_chassis": "CV37",
+          "annees": "2016-2022",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.0t - 405ch",
+              "code_moteur": "VR30DDTT",
+              "cylindree": "3.0L",
+              "puissance_ch": 405,
+              "boite": [
+                "BVA7"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Bloc VR30DDTT relativement récent à l'époque, moins de recul sur la fiabilité que les anciens VQ atmosphériques",
+                  "symptomes": [
+                    "Peu de retours d'expérience sur très haut kilométrage disponibles"
+                  ],
+                  "kilometrage_apparition": "Non applicable, manque de recul général sur ce bloc",
+                  "diagnostic": "Contrôle d'usage lors des révisions périodiques standards",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré à élevé (indicatif)"
+                },
+                {
+                  "probleme": "Consommation élevée",
+                  "symptomes": [
+                    "Consommation moyenne ressentie nettement plus élevée que la valeur homologuée"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Réseau après-vente Infiniti très restreint en Europe (marque retirée en 2020)",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces spécifiques et des techniciens formés"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Direction Steer-by-Wire (option) source de pannes électroniques documentées",
+                  "symptomes": [
+                    "Message d'anomalie direction au tableau de bord",
+                    "Retour de direction ressenti comme anormal ou artificiel dans certains cas"
+                  ],
+                  "kilometrage_apparition": "Variable, sans lien clair avec le kilométrage, défaut de conception documenté sur ce système",
+                  "diagnostic": "Diagnostic spécifique au système Steer-by-Wire par un technicien formé",
+                  "piece_concernee": "Trains roulants / suspension",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel mais documenté",
+                  "cout_reparation_estime": "Élevé (indicatif — à faire chiffrer par un professionnel)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "QX4 (rebadge Nissan Pathfinder R50)",
+      "generations": [
+        {
+          "code_chassis": "R50",
+          "annees": "1997-2003",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.5 V6 - 240ch",
+              "code_moteur": "VQ35DE",
+              "cylindree": "3.5L",
+              "puissance_ch": 240,
+              "boite": [
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité mécanique très bonne, moteur VQ réputé robuste",
+                  "symptomes": [
+                    "Aucun symptôme préoccupant récurrent majeur identifié"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Contrôle d'usage lors des révisions périodiques standards",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Faible (entretien courant, indicatif)"
+                },
+                {
+                  "probleme": "Modèle non commercialisé en Europe, réseau de pièces local limité",
+                  "symptomes": [
+                    "Délais et coûts d'approvisionnement de pièces supérieurs en Europe"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Consommation élevée",
+                  "symptomes": [
+                    "Consommation moyenne ressentie nettement plus élevée que la valeur homologuée"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Boîte de transfert 4x4 à entretenir régulièrement",
+                  "symptomes": [
+                    "Bruit de roulement anormal en virage serré si huiles non entretenues"
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien des huiles",
+                  "diagnostic": "Contrôle du niveau et de la qualité des huiles de transmission",
+                  "piece_concernee": "Boîte de vitesses / transmission",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel si entretien négligé",
+                  "cout_reparation_estime": "Modéré (indicatif)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "QX50 (2e génération, sur base Nissan)",
+      "generations": [
+        {
+          "code_chassis": "2e génération",
+          "annees": "2018-présent",
+          "phases": [
+            "Phase unique à ce jour"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.0 VC-Turbo - 272ch",
+              "code_moteur": "KR20DDET",
+              "cylindree": "2.0L",
+              "puissance_ch": 272,
+              "boite": [
+                "BVA CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Technologie de taux de compression variable innovante, peu de recul sur la fiabilité à très long terme",
+                  "symptomes": [
+                    "Peu de retours d'expérience sur très haut kilométrage disponibles à ce jour"
+                  ],
+                  "kilometrage_apparition": "Non applicable, manque de recul général sur cette technologie récente",
+                  "diagnostic": "Diagnostic spécifique VC-Turbo par un technicien formé",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré à élevé (indicatif)"
+                },
+                {
+                  "probleme": "Modèle non commercialisé en Europe, réseau de pièces local limité",
+                  "symptomes": [
+                    "Délais et coûts d'approvisionnement de pièces supérieurs en Europe"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Boîte CVT sollicitée par le couple turbo",
+                  "symptomes": [
+                    "À-coups ou patinage ressenti à l'accélération si huile non respectée"
+                  ],
+                  "kilometrage_apparition": "Variable selon respect des vidanges spécifiques",
+                  "diagnostic": "Contrôle de la qualité et du niveau d'huile CVT",
+                  "piece_concernee": "Boîte de vitesses / transmission",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel si entretien négligé",
+                  "cout_reparation_estime": "Modéré à élevé si remplacement nécessaire (indicatif)"
+                },
+                {
+                  "probleme": "Coût de réparation potentiellement élevé en cas de panne du système VC-Turbo",
+                  "symptomes": [
+                    "Se référer au premier point ci-dessus"
+                  ],
+                  "kilometrage_apparition": "Voir premier point",
+                  "diagnostic": "Voir premier point",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé si applicable (indicatif)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "QX55",
+      "generations": [
+        {
+          "code_chassis": "1ère génération",
+          "annees": "2021-présent",
+          "phases": [
+            "Phase unique à ce jour"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.0 VC-Turbo - 268ch",
+              "code_moteur": "KR20DDET",
+              "cylindree": "2.0L",
+              "puissance_ch": 268,
+              "boite": [
+                "BVA CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Technologie de taux de compression variable innovante, peu de recul sur la fiabilité à long terme",
+                  "symptomes": [
+                    "Peu de retours d'expérience sur très haut kilométrage disponibles à ce jour"
+                  ],
+                  "kilometrage_apparition": "Non applicable, manque de recul général sur cette technologie récente",
+                  "diagnostic": "Diagnostic spécifique VC-Turbo par un technicien formé",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré à élevé (indicatif)"
+                },
+                {
+                  "probleme": "Modèle non commercialisé en Europe, réseau de pièces local limité",
+                  "symptomes": [
+                    "Délais et coûts d'approvisionnement de pièces supérieurs en Europe"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Boîte CVT sollicitée par le couple turbo",
+                  "symptomes": [
+                    "À-coups ou patinage ressenti à l'accélération si huile non respectée"
+                  ],
+                  "kilometrage_apparition": "Variable selon respect des vidanges spécifiques",
+                  "diagnostic": "Contrôle de la qualité et du niveau d'huile CVT",
+                  "piece_concernee": "Boîte de vitesses / transmission",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel si entretien négligé",
+                  "cout_reparation_estime": "Modéré à élevé si remplacement nécessaire (indicatif)"
+                },
+                {
+                  "probleme": "Coût de réparation potentiellement élevé en cas de panne du système VC-Turbo",
+                  "symptomes": [
+                    "Se référer au premier point ci-dessus"
+                  ],
+                  "kilometrage_apparition": "Voir premier point",
+                  "diagnostic": "Voir premier point",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé si applicable (indicatif)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "QX60 (2e génération)",
+      "generations": [
+        {
+          "code_chassis": "L51",
+          "annees": "2021-présent",
+          "phases": [
+            "Phase unique à ce jour"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.5 V6 - 295ch",
+              "code_moteur": "VQ35DD",
+              "cylindree": "3.5L",
+              "puissance_ch": 295,
+              "boite": [
+                "BVA9"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Modèle récent, peu de recul sur très haut kilométrage",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Modèle non commercialisé en Europe, réseau de pièces local limité",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Boîte automatique 9 rapports globalement fiable mais peu d'historique long terme",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Boîte de vitesses / transmission",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Consommation élevée pour un SUV familial",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "QX60 / JX",
+      "generations": [
+        {
+          "code_chassis": "L50",
+          "annees": "2013-présent",
+          "phases": [
+            "Phase 1 (2013-2017)",
+            "Phase 2 (2017-présent)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "QX60 3.5 V6 - 265ch",
+              "code_moteur": "VQ35DE",
+              "cylindree": "3.5L",
+              "puissance_ch": 265,
+              "boite": [
+                "BVA CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité mécanique correcte, moteur VQ réputé robuste",
+                  "symptomes": [
+                    "Aucun symptôme préoccupant récurrent majeur identifié"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Contrôle d'usage lors des révisions périodiques standards",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Faible (entretien courant, indicatif)"
+                },
+                {
+                  "probleme": "Boîte CVT sollicitée par le poids du véhicule, entretien strict nécessaire",
+                  "symptomes": [
+                    "À-coups ou patinage ressenti à l'accélération si huile non respectée"
+                  ],
+                  "kilometrage_apparition": "Variable selon respect des vidanges spécifiques",
+                  "diagnostic": "Contrôle de la qualité et du niveau d'huile CVT",
+                  "piece_concernee": "Boîte de vitesses / transmission",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel si entretien négligé",
+                  "cout_reparation_estime": "Modéré à élevé si remplacement nécessaire (indicatif)"
+                },
+                {
+                  "probleme": "Réseau après-vente Infiniti très restreint en Europe (marque retirée en 2020)",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces spécifiques et des techniciens formés"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Consommation élevée pour un SUV familial",
+                  "symptomes": [
+                    "Consommation moyenne ressentie nettement plus élevée que la valeur homologuée"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                }
+              ]
+            },
+            {
+              "type": "Hybride",
+              "nom": "QX60 Hybrid - 250ch",
+              "code_moteur": "QR25DE + moteur électrique",
+              "cylindree": "2.5L",
+              "puissance_ch": 250,
+              "boite": [
+                "BVA e-CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Version hybride peu diffusée, retour d'expérience limité",
+                  "symptomes": [
+                    "Peu de retours d'expérience disponibles"
+                  ],
+                  "kilometrage_apparition": "Non applicable, manque de recul général",
+                  "diagnostic": "Diagnostic hybride spécifique par un technicien formé",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré à élevé (indicatif)"
+                },
+                {
+                  "probleme": "Batterie lithium-ion coûteuse hors garantie",
+                  "symptomes": [
+                    "Baisse progressive de l'autonomie électrique sur exemplaires très âgés"
+                  ],
+                  "kilometrage_apparition": "Généralement au-delà de 150 000-200 000 km avant dégradation notable",
+                  "diagnostic": "Test de capacité de la batterie hybride au diagnostic",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare avant très haut kilométrage",
+                  "cout_reparation_estime": "Élevé si remplacement nécessaire hors garantie (indicatif)"
+                },
+                {
+                  "probleme": "Système hybride complexe nécessitant un diagnostic spécialisé",
+                  "symptomes": [
+                    "Voyant hybride allumé, passage en mode dégradé en cas de défaillance"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Diagnostic hybride spécifique via outil Infiniti/Nissan",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Élevé si intervention nécessaire (indicatif)"
+                },
+                {
+                  "probleme": "Gain de consommation jugé modeste par la presse spécialisée",
+                  "symptomes": [
+                    "Économie de carburant jugée limitée par rapport au surcoût"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "QX80 (2e génération, 2025)",
+      "generations": [
+        {
+          "code_chassis": "2e génération",
+          "annees": "2025-présent",
+          "phases": [
+            "Phase unique à ce jour"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.5 V6 Twin-Turbo - 450ch",
+              "code_moteur": "VR35 (nouveau bloc twin-turbo)",
+              "cylindree": "3.5L",
+              "puissance_ch": 450,
+              "boite": [
+                "BVA9"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Modèle tout nouveau, aucun recul sur la fiabilité",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Rupture technologique par rapport à l'ancien V8 atmosphérique de la génération précédente",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable ; souvent rapporté au-delà de 100 000-150 000 km, parfois plus tôt en cas d'entretien tardif (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Élevé (indicatif, plusieurs centaines à quelques milliers d'euros selon le marché et le pays — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Modèle non commercialisé en Europe, réseau de pièces local limité",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Coût d'entretien élevé attendu (gros SUV twin-turbo haut de gamme)",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "QX80 / QX56",
+      "generations": [
+        {
+          "code_chassis": "Z62",
+          "annees": "2010-présent",
+          "phases": [
+            "Phase unique à ce jour"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "5.6 V8 - 405ch",
+              "code_moteur": "VK56VD",
+              "cylindree": "5.6L",
+              "puissance_ch": 405,
+              "boite": [
+                "BVA7"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité mécanique très bonne, moteur V8 robuste (bloc partagé avec le Nissan Patrol Y62)",
+                  "symptomes": [
+                    "Aucun symptôme préoccupant récurrent majeur identifié"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Contrôle d'usage lors des révisions périodiques standards",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Faible (entretien courant, indicatif)"
+                },
+                {
+                  "probleme": "Consommation très élevée",
+                  "symptomes": [
+                    "Consommation moyenne ressentie nettement plus élevée que la valeur homologuée"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Modèle non commercialisé en Europe, réseau de pièces local limité",
+                  "symptomes": [
+                    "Délais et coûts d'approvisionnement de pièces supérieurs en Europe"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Suspension pneumatique (option) coûteuse en cas de panne sur haut kilométrage",
+                  "symptomes": [
+                    "Affaissement anormal du véhicule d'un côté",
+                    "Compresseur qui tourne fréquemment"
+                  ],
+                  "kilometrage_apparition": "Variable, souvent au-delà de 150 000 km ou avec l'âge",
+                  "diagnostic": "Contrôle du circuit pneumatique et du compresseur",
+                  "piece_concernee": "Trains roulants / suspension",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé (indicatif)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

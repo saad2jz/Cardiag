@@ -1,4 +1,5 @@
 import crypto from 'node:crypto';
+import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import cors from 'cors';
@@ -17,7 +18,8 @@ function isAllowedOrigin(origin) {
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
 function sendPublicFile(res, fileName) {
-  return res.sendFile(path.join(projectRoot, fileName));
+  const filePath = path.join(projectRoot, fileName);
+  return res.type(path.extname(fileName)).send(fs.readFileSync(filePath));
 }
 
 export function createApp({ llmService }) {

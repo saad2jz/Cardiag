@@ -1,0 +1,1774 @@
+{
+  "nom": "Ferrari",
+  "modeles": [
+    {
+      "nom": "296 GTB/GTS",
+      "generations": [
+        {
+          "code_chassis": "F171",
+          "annees": "2021-aujourd'hui",
+          "phases": [
+            "296 GTB",
+            "296 GTS",
+            "296 Speciale"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride",
+              "nom": "V6 3.0L Bi-Turbo + moteur électrique 830ch cumulés",
+              "code_moteur": "F163",
+              "cylindree": "3.0L",
+              "puissance_ch": 830,
+              "boite": [
+                "BVA8 (double embrayage)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie haute tension sensible à la dégradation en cas de recharges fréquentes intensives",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Système hybride complexe nécessitant une maintenance spécialisée en réseau agréé",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Électronique de gestion hybride sujette à bugs sur les premiers exemplaires",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Coût de remplacement de la batterie de traction très élevé hors garantie",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "308/328",
+      "generations": [
+        {
+          "code_chassis": "308 GTB/GTS",
+          "annees": "1975-1985",
+          "phases": [
+            "308 GTB/GTS (1975-1980)",
+            "308 GTBi/GTSi (1980-1982)",
+            "308 Quattrovalvole (1982-1985)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 3.0L Carburateurs / Injection / QV",
+              "code_moteur": "F106 A/B",
+              "cylindree": "3.0L",
+              "puissance_ch": 240,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Courroies de distribution à remplacer strictement tous les 3 ans/30 000 km, risque de casse moteur en cas de négligence",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Carrosserie en fibre de verre (premiers modèles) sujette au vieillissement et à la fissuration du gelcoat",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Corrosion du châssis tubulaire sur les exemplaires mal entretenus",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Carburateurs Weber (versions carburées) délicats à régler et sensibles à l'essence moderne",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Injection K-Jetronic (GTBi/GTSi) capricieuse et sujette au vieillissement des capteurs",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "328 GTB/GTS",
+          "annees": "1985-1989",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 3.2L Quattrovalvole",
+              "code_moteur": "F105",
+              "cylindree": "3.2L",
+              "puissance_ch": 270,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Courroies de distribution à remplacer rigoureusement, risque de casse moteur en cas de négligence",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Injection Bosch K/KE-Jetronic sensible au vieillissement des capteurs et du régulateur de pression",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Corrosion des bas de caisse et du châssis sur les exemplaires peu entretenus",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Embrayage lourd et coûteux à remplacer (dépose moteur nécessaire)",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "348",
+      "generations": [
+        {
+          "code_chassis": "348 tb/ts",
+          "annees": "1989-1995",
+          "phases": [
+            "Phase 1 (1989-1993)",
+            "Phase 2 restylée (1993-1995) - Serie Speciale"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 3.4L",
+              "code_moteur": "F119",
+              "cylindree": "3.4L",
+              "puissance_ch": 300,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Courroies de distribution à remplacer strictement, dépose partielle moteur nécessaire",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Électronique d'injection Bosch Motronic capricieuse et sensible au vieillissement des faisceaux",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Châssis tubulaire sensible à la corrosion si mal entretenu",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Radiateurs et durites de refroidissement latéraux sujets aux fuites",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Embrayage lourd et coûteux à remplacer (accès moteur complexe)",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "360 Modena",
+      "generations": [
+        {
+          "code_chassis": "F131",
+          "annees": "1999-2005",
+          "phases": [
+            "Modena",
+            "Spider",
+            "Challenge Stradale"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 3.6L",
+              "code_moteur": "F131B",
+              "cylindree": "3.6L",
+              "puissance_ch": 400,
+              "boite": [
+                "BVM6",
+                "F1 (boîte robotisée séquentielle)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fissuration des collecteurs d'échappement en Inconel, défaut connu nécessitant remplacement",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Boîte robotisée F1 capricieuse avec usure prématurée de l'embrayage et pompe hydraulique fragile",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Courroies de distribution à remplacer rigoureusement selon préconisations constructeur",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Capteurs de niveau d'huile et faisceaux électriques sensibles au vieillissement",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Châssis en aluminium sensible en cas de choc, réparation nécessitant un centre agréé Ferrari",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "400 / 412",
+      "generations": [
+        {
+          "code_chassis": "Tipo F101",
+          "annees": "1976-1989",
+          "phases": [
+            "400 GT/i (1976-1985)",
+            "412 (1985-1989)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V12 4.8L/4.9L atmosphérique",
+              "code_moteur": "Tipo F101",
+              "cylindree": "4.8L-4.9L",
+              "puissance_ch": 340,
+              "boite": [
+                "BVM5",
+                "BVA3 (GM Turbo Hydramatic)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Courroies de distribution à remplacer strictement, dépose partielle moteur nécessaire",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Corrosion présente sur la carrosserie et le châssis",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Injection Bosch K-Jetronic (versions i) sensible au vieillissement des capteurs",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Boîte automatique GM fragile en cas de manque d'entretien du liquide",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Coût d'entretien très élevé, modèle peu diffusé rendant les pièces rares",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "430",
+      "generations": [
+        {
+          "code_chassis": "F131 (F430)",
+          "annees": "2004-2009",
+          "phases": [
+            "F430",
+            "F430 Spider",
+            "Scuderia"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 4.3L",
+              "code_moteur": "F136E",
+              "cylindree": "4.3L",
+              "puissance_ch": 490,
+              "boite": [
+                "BVM6",
+                "F1 (boîte robotisée séquentielle)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Boîte robotisée F1 capricieuse, embrayage et actionneurs hydrauliques coûteux à remplacer",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Courroies de distribution à remplacer selon intervalle strict (dépose moteur partielle)",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Capteurs de position d'arbre à cames et faisceaux sensibles au vieillissement",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Disques de frein carbone-céramique (option) coûteux à remplacer",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Suspension pilotée (amortisseurs magnétorhéologiques) coûteuse en cas de panne",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "458 Italia",
+      "generations": [
+        {
+          "code_chassis": "F142",
+          "annees": "2009-2015",
+          "phases": [
+            "458 Italia",
+            "458 Spider",
+            "458 Speciale"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 4.5L atmosphérique",
+              "code_moteur": "F136FB",
+              "cylindree": "4.5L",
+              "puissance_ch": 570,
+              "boite": [
+                "BVA7 (double embrayage)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Défaut connu de décollement de la colle du passage de roue provoquant des départs de feu (rappel constructeur effectué, à vérifier sur véhicule d'occasion)",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Boîte double embrayage globalement fiable mais coûteuse en cas de panne d'actionneur",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Suspension pilotée magnétorhéologique coûteuse en cas de panne",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Freins carbone-céramique coûteux à l'entretien",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Consommation d'huile à surveiller sur les moteurs très sollicités en circuit",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Courroies auxiliaires (alternateur, direction assistée) à contrôler régulièrement, accès moteur complexe",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Sièges baquets (carbone) sujets à grincements avec l'âge sur les exemplaires très utilisés",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "488",
+      "generations": [
+        {
+          "code_chassis": "F142M",
+          "annees": "2015-2019",
+          "phases": [
+            "488 GTB",
+            "488 Spider",
+            "488 Pista"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 3.9L Bi-Turbo",
+              "code_moteur": "F154CB",
+              "cylindree": "3.9L",
+              "puissance_ch": 670,
+              "boite": [
+                "BVA7 (double embrayage)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Turbos sollicités fortement, surveillance de la température d'huile recommandée en usage circuit",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Système de refroidissement complexe (multiples radiateurs) sensible aux fuites avec l'âge",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Électronique embarquée (gestion moteur, châssis actif) sujette à bugs nécessitant reprogrammation",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Freins carbone-céramique coûteux à l'entretien",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Coût des pièces et de la main d'œuvre très élevé en dehors du réseau agréé",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "599 GTB Fiorano / 612 Scaglietti",
+      "generations": [
+        {
+          "code_chassis": "F141 (599) / F612",
+          "annees": "2004-2012",
+          "phases": [
+            "599 GTB (2006-2012)",
+            "612 Scaglietti (2004-2011)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V12 5.9L/6.0L atmosphérique",
+              "code_moteur": "F133",
+              "cylindree": "5.9L-6.0L",
+              "puissance_ch": 620,
+              "boite": [
+                "BVM6",
+                "F1 (599)",
+                "BVA6 (612)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Boîte robotisée F1 capricieuse, embrayage et pompe hydraulique coûteux à remplacer",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Consommation d'huile à surveiller sur les moteurs à haut kilométrage",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Suspension pilotée magnétorhéologique coûteuse en cas de panne",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Coût d'entretien général très élevé (courroies, embrayage, freins carbone-céramique en option)",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "812 Superfast / 812 Competizione",
+      "generations": [
+        {
+          "code_chassis": "F169",
+          "annees": "2017-aujourd'hui",
+          "phases": [
+            "812 Superfast",
+            "812 GTS",
+            "812 Competizione"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V12 6.5L atmosphérique",
+              "code_moteur": "F140GA",
+              "cylindree": "6.5L",
+              "puissance_ch": 830,
+              "boite": [
+                "BVA7 (double embrayage)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Consommation d'huile à surveiller en usage sportif intensif",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Freins carbone-céramique coûteux à l'entretien",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Électronique de gestion moteur et châssis actif complexe sujette à bugs",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Coût d'entretien général très élevé (pièces spécifiques V12)",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "California / Portofino / Roma",
+      "generations": [
+        {
+          "code_chassis": "F149 (California) / F164 (Portofino/Roma)",
+          "annees": "2008-aujourd'hui",
+          "phases": [
+            "California (2008-2014)",
+            "California T (2014-2017)",
+            "Portofino (2017-2020)",
+            "Portofino M (2020-2023)",
+            "Roma (2020-aujourd'hui)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 4.3L atmosphérique (California) / 3.9L Bi-Turbo (California T/Portofino/Roma)",
+              "code_moteur": "F136 / F154",
+              "cylindree": "3.9L-4.3L",
+              "puissance_ch": 620,
+              "boite": [
+                "BVA7 (double embrayage)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Toit rigide rétractable (California/Portofino) sujet à pannes de vérins et de capteurs avec l'âge",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Turbos (versions T et suivantes) sollicités en usage sportif, entretien rigoureux nécessaire",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Électronique embarquée complexe sujette à bugs nécessitant reprogrammation",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Coût d'entretien élevé, pièces et main d'œuvre hors réseau agréé onéreuses",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Dino 206/246 GT",
+      "generations": [
+        {
+          "code_chassis": "Tipo 246",
+          "annees": "1967-1974",
+          "phases": [
+            "206 GT (1967-1969)",
+            "246 GT/GTS (1969-1974)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V6 2.0L/2.4L atmosphérique",
+              "code_moteur": "Tipo 135 (206) / Tipo 155 (246)",
+              "cylindree": "2.0L-2.4L",
+              "puissance_ch": 195,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion importante de la carrosserie et du châssis sur les exemplaires non restaurés",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Carburateurs Weber triple corps délicats à synchroniser",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Coût très élevé des pièces mécaniques spécifiques aujourd'hui",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Distribution par chaîne à surveiller sur les blocs anciens",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Enzo",
+      "generations": [
+        {
+          "code_chassis": "F140",
+          "annees": "2002-2004",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V12 6.0L atmosphérique",
+              "code_moteur": "F140B",
+              "cylindree": "6.0L",
+              "puissance_ch": 660,
+              "boite": [
+                "F1 (boîte robotisée séquentielle 6 rapports)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Boîte robotisée F1 (génération ancienne) capricieuse, entretien spécialisé indispensable",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Freins carbone-céramique (première application Ferrari en série) coûteux à l'entretien",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Carrosserie en fibre de carbone coûteuse à réparer en cas de choc",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Production très limitée rendant certaines pièces spécifiques rares et onéreuses",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "F12 Berlinetta / GTC4Lusso",
+      "generations": [
+        {
+          "code_chassis": "F152",
+          "annees": "2012-2020",
+          "phases": [
+            "F12 Berlinetta (2012-2017)",
+            "F12tdf (2015-2016)",
+            "GTC4Lusso (2016-2020)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V12 6.3L atmosphérique",
+              "code_moteur": "F140FC/FD",
+              "cylindree": "6.3L",
+              "puissance_ch": 690,
+              "boite": [
+                "BVA7 (double embrayage)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Consommation d'huile à surveiller en usage sportif intensif",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Freins carbone-céramique coûteux à l'entretien",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Transmission intégrale 4RM (GTC4Lusso) complexe et coûteuse à entretenir",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Électronique de gestion moteur et châssis actif sujette à bugs nécessitant reprogrammation",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "GTC4Lusso T V8 3.9L Bi-Turbo (essence, appellation T)",
+              "code_moteur": "F154",
+              "cylindree": "3.9L",
+              "puissance_ch": 610,
+              "boite": [
+                "BVA7 (double embrayage)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Turbos sollicités en usage sportif, entretien rigoureux nécessaire",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Coût d'entretien général très élevé",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Électronique embarquée complexe sujette à bugs",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "F355",
+      "generations": [
+        {
+          "code_chassis": "F129",
+          "annees": "1994-1999",
+          "phases": [
+            "Berlinetta",
+            "GTS",
+            "Spider"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 3.5L 5 soupapes",
+              "code_moteur": "F129B",
+              "cylindree": "3.5L",
+              "puissance_ch": 380,
+              "boite": [
+                "BVM6",
+                "F1 (boîte robotisée séquentielle)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Guides de soupapes fragiles (défaut connu) provoquant une usure prématurée et une consommation d'huile excessive",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Courroies de distribution à remplacer strictement tous les 3 ans/environ 30 000 km, dépose moteur partielle nécessaire",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Boîte robotisée F1 (première génération) capricieuse, pompe hydraulique et actionneurs fragiles",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Faisceaux électriques et connecteurs sensibles au vieillissement, pannes intermittentes de calculateur",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Corrosion des disques de frein et étriers en cas de faible usage",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "F8 Tributo",
+      "generations": [
+        {
+          "code_chassis": "F142M (évolution)",
+          "annees": "2019-2022",
+          "phases": [
+            "F8 Tributo",
+            "F8 Spider"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 3.9L Bi-Turbo",
+              "code_moteur": "F154CD",
+              "cylindree": "3.9L",
+              "puissance_ch": 720,
+              "boite": [
+                "BVA7 (double embrayage)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Turbos sollicités fortement en usage circuit, entretien rigoureux nécessaire",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Électronique embarquée complexe sujette à bugs et nécessitant reprogrammation",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Freins carbone-céramique coûteux à l'entretien",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Coût des pièces et de la main d'œuvre très élevé hors réseau agréé",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "LaFerrari",
+      "generations": [
+        {
+          "code_chassis": "F150",
+          "annees": "2013-2018",
+          "phases": [
+            "LaFerrari",
+            "LaFerrari Aperta"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride",
+              "nom": "V12 6.3L atmosphérique + moteur électrique, 963ch cumulés",
+              "code_moteur": "F140FE",
+              "cylindree": "6.3L",
+              "puissance_ch": 963,
+              "boite": [
+                "BVA7 (double embrayage)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie haute tension (HY-KERS) sensible au vieillissement, remplacement très coûteux hors garantie",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Complexité mécanique et électronique extrême nécessitant une maintenance exclusivement en réseau agréé",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Freins carbone-céramique coûteux à l'entretien",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Production limitée rendant certaines pièces spécifiques rares et onéreuses",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Mondial",
+      "generations": [
+        {
+          "code_chassis": "Tipo F117/F119",
+          "annees": "1980-1993",
+          "phases": [
+            "Mondial 8 (1980-1982)",
+            "Mondial QV (1982-1985)",
+            "Mondial 3.2 (1985-1989)",
+            "Mondial t (1989-1993)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 3.0L/3.2L/3.4L",
+              "code_moteur": "F105/F119",
+              "cylindree": "3.0L-3.4L",
+              "puissance_ch": 300,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Courroies de distribution à remplacer strictement, coût d'entretien élevé",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Injection Bosch K/KE-Jetronic sensible au vieillissement des capteurs",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Corrosion du châssis sur les exemplaires peu entretenus",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Réputation de fiabilité en retrait par rapport aux autres Ferrari de l'époque, points électriques nombreux à vérifier",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "SF90 Stradale",
+      "generations": [
+        {
+          "code_chassis": "F173",
+          "annees": "2019-aujourd'hui",
+          "phases": [
+            "SF90 Stradale",
+            "SF90 Spider"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride",
+              "nom": "V8 4.0L Bi-Turbo + 3 moteurs électriques, 1000ch cumulés",
+              "code_moteur": "F154FA",
+              "cylindree": "4.0L",
+              "puissance_ch": 1000,
+              "boite": [
+                "BVA8 (double embrayage)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Complexité mécanique et électronique très élevée (4 moteurs au total) rendant la maintenance exclusivement réservée au réseau agréé",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Batterie haute tension sensible en cas d'usage circuit intensif répété",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Coût de remplacement des composants hybrides très élevé hors garantie",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Poids important par rapport aux Ferrari purement thermiques, sollicitant fortement les trains roulants",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Testarossa / 512 TR / F512 M",
+      "generations": [
+        {
+          "code_chassis": "Testarossa",
+          "annees": "1984-1996",
+          "phases": [
+            "Testarossa (1984-1991)",
+            "512 TR (1992-1994)",
+            "F512 M (1994-1996)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Flat-12 4.9L/4.9L",
+              "code_moteur": "F113",
+              "cylindree": "4.9L",
+              "puissance_ch": 428,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Courroies de distribution multiples à remplacer strictement (4 courroies), dépose moteur nécessaire, coût d'entretien très élevé",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Radiateurs latéraux et durites de refroidissement sujets aux fuites avec l'âge",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Carrosserie sensible aux chocs de parking (portières et ailes larges) coûteuse à réparer",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Injection Bosch KE-Jetronic (Testarossa) capricieuse et sensible au vieillissement",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                },
+                {
+                  "probleme": "Consommation d'huile notable sur les exemplaires à haut kilométrage",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Inspection par specialiste, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis specialise."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

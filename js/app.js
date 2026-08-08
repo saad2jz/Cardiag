@@ -1,6 +1,6 @@
-import { initializeLegacyFeatures } from './legacy-features.js?v=20260807-2';
-import { initializeChatExperience } from './chat-experience.js?v=20260807-2';
-import { initializePwa } from './pwa.js?v=20260807-2';
+import { initializeLegacyFeatures } from './legacy-features.js?v=20260808-1';
+import { initializeChatExperience } from './chat-experience.js?v=20260808-1';
+import { initializePwa } from './pwa.js?v=20260808-1';
 
 /**
  * Application entry point. Data loading stays separate from the UI controller
@@ -14,6 +14,11 @@ async function initializeApp() {
     }
     const payload = await window.dbLoader.loadAppData();
     const vehicles = window.buildData(payload);
+    const modelCount = vehicles.reduce((count, brand) => count + brand.modeles.length, 0);
+    const brandCount = document.getElementById('vehicleBrandCount');
+    const modelsCount = document.getElementById('vehicleModelCount');
+    if (brandCount) brandCount.textContent = String(vehicles.length);
+    if (modelsCount) modelsCount.textContent = String(modelCount);
     initializeLegacyFeatures(vehicles);
     initializeChatExperience();
     initializePwa();

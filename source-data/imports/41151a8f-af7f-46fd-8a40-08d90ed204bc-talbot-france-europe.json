@@ -1,0 +1,1077 @@
+{
+  "nom": "Talbot",
+  "modeles": [
+    {
+      "nom": "Horizon",
+      "generations": [
+        {
+          "code_chassis": "Talbot Horizon",
+          "annees": "1978-1987",
+          "phases": [
+            "Simca Horizon (1978-1979)",
+            "Talbot Horizon (1979-1987, après rachat PSA)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.1 — 57 ch",
+              "code_moteur": "Type 349/G1 (Française de Mécanique)",
+              "cylindree": "1118/1294cm3",
+              "puissance_ch": 57,
+              "boite": [
+                "BVM4",
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion de caisse à surveiller comme sur la plupart des productions françaises de cette période",
+                  "symptomes": [
+                    "Traces de rouille sur bas de caisse et passages de roue"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                },
+                {
+                  "probleme": "Distribution (courroie ou culbuterie selon motorisation) à respecter selon les préconisations d'époque",
+                  "symptomes": [
+                    "Aucun symptôme fiable avant la casse sur les versions à courroie"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent en cas de non-respect de l'intervalle",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                },
+                {
+                  "probleme": "Pièces mécaniques et de carrosserie spécifiques devenues rares compte tenu de la fin précoce de la marque Talbot (1986)",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent aujourd'hui",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                }
+              ],
+              "libelle_source": "1.1 / 1.3 — 57 ch"
+            },
+            {
+              "type": "Essence",
+              "nom": "1.3 — 57 ch",
+              "code_moteur": "Type 349/G1 (Française de Mécanique)",
+              "cylindree": "1118/1294cm3",
+              "puissance_ch": 57,
+              "boite": [
+                "BVM4",
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion de caisse à surveiller comme sur la plupart des productions françaises de cette période",
+                  "symptomes": [
+                    "Traces de rouille sur bas de caisse et passages de roue"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                },
+                {
+                  "probleme": "Distribution (courroie ou culbuterie selon motorisation) à respecter selon les préconisations d'époque",
+                  "symptomes": [
+                    "Aucun symptôme fiable avant la casse sur les versions à courroie"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent en cas de non-respect de l'intervalle",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                },
+                {
+                  "probleme": "Pièces mécaniques et de carrosserie spécifiques devenues rares compte tenu de la fin précoce de la marque Talbot (1986)",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent aujourd'hui",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                }
+              ],
+              "libelle_source": "1.1 / 1.3 — 57 ch"
+            },
+            {
+              "type": "Essence",
+              "nom": "1.1 — 68 ch",
+              "code_moteur": "Type 349/G1 (Française de Mécanique)",
+              "cylindree": "1118/1294cm3",
+              "puissance_ch": 68,
+              "boite": [
+                "BVM4",
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion de caisse à surveiller comme sur la plupart des productions françaises de cette période",
+                  "symptomes": [
+                    "Traces de rouille sur bas de caisse et passages de roue"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                },
+                {
+                  "probleme": "Distribution (courroie ou culbuterie selon motorisation) à respecter selon les préconisations d'époque",
+                  "symptomes": [
+                    "Aucun symptôme fiable avant la casse sur les versions à courroie"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent en cas de non-respect de l'intervalle",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                },
+                {
+                  "probleme": "Pièces mécaniques et de carrosserie spécifiques devenues rares compte tenu de la fin précoce de la marque Talbot (1986)",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent aujourd'hui",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                }
+              ],
+              "libelle_source": "1.1 / 1.3 — 68 ch"
+            },
+            {
+              "type": "Essence",
+              "nom": "1.3 — 68 ch",
+              "code_moteur": "Type 349/G1 (Française de Mécanique)",
+              "cylindree": "1118/1294cm3",
+              "puissance_ch": 68,
+              "boite": [
+                "BVM4",
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion de caisse à surveiller comme sur la plupart des productions françaises de cette période",
+                  "symptomes": [
+                    "Traces de rouille sur bas de caisse et passages de roue"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                },
+                {
+                  "probleme": "Distribution (courroie ou culbuterie selon motorisation) à respecter selon les préconisations d'époque",
+                  "symptomes": [
+                    "Aucun symptôme fiable avant la casse sur les versions à courroie"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent en cas de non-respect de l'intervalle",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                },
+                {
+                  "probleme": "Pièces mécaniques et de carrosserie spécifiques devenues rares compte tenu de la fin précoce de la marque Talbot (1986)",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent aujourd'hui",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                }
+              ],
+              "libelle_source": "1.1 / 1.3 — 68 ch"
+            },
+            {
+              "type": "Essence",
+              "nom": "1.6 — 80 ch",
+              "code_moteur": "Type 315 (Française de Mécanique)",
+              "cylindree": "1592cm3",
+              "puissance_ch": 80,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion de caisse à surveiller comme sur la plupart des productions françaises de cette période",
+                  "symptomes": [
+                    "Traces de rouille sur bas de caisse et passages de roue"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                },
+                {
+                  "probleme": "Distribution (courroie ou culbuterie selon motorisation) à respecter selon les préconisations d'époque",
+                  "symptomes": [
+                    "Aucun symptôme fiable avant la casse sur les versions à courroie"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent en cas de non-respect de l'intervalle",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                },
+                {
+                  "probleme": "Pièces mécaniques et de carrosserie spécifiques devenues rares compte tenu de la fin précoce de la marque Talbot (1986)",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent aujourd'hui",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                }
+              ],
+              "libelle_source": "1.6 - 80/88ch"
+            },
+            {
+              "type": "Essence",
+              "nom": "1.6 — 88 ch",
+              "code_moteur": "Type 315 (Française de Mécanique)",
+              "cylindree": "1592cm3",
+              "puissance_ch": 88,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion de caisse à surveiller comme sur la plupart des productions françaises de cette période",
+                  "symptomes": [
+                    "Traces de rouille sur bas de caisse et passages de roue"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                },
+                {
+                  "probleme": "Distribution (courroie ou culbuterie selon motorisation) à respecter selon les préconisations d'époque",
+                  "symptomes": [
+                    "Aucun symptôme fiable avant la casse sur les versions à courroie"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent en cas de non-respect de l'intervalle",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                },
+                {
+                  "probleme": "Pièces mécaniques et de carrosserie spécifiques devenues rares compte tenu de la fin précoce de la marque Talbot (1986)",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent aujourd'hui",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                }
+              ],
+              "libelle_source": "1.6 - 80/88ch"
+            },
+            {
+              "type": "Diesel",
+              "nom": "1.9 D - 65ch",
+              "code_moteur": "XUD9",
+              "cylindree": "1905cm3",
+              "puissance_ch": 65,
+              "boite": [
+                "BVM4",
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Pompe injection Bosch ou Lucas sensible avec l'âge (roulements, joints internes)",
+                  "symptomes": [
+                    "Difficultés de démarrage",
+                    "Fuite de gazole",
+                    "Panne totale d'alimentation en carburant dans les cas avancés"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec un seuil kilométrique précis dans les sources disponibles ; concerne davantage les exemplaires anciens ou peu entretenus",
+                  "diagnostic": "Contrôle de l'étanchéité de la pompe, test du débit d'injection",
+                  "piece_concernee": "Système d'alimentation / injection",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel, plus fréquent sur les pompes Lucas EPIC réputées plus fragiles que les Bosch VE selon certaines sources techniques",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles pour un remplacement complet de pompe"
+                },
+                {
+                  "probleme": "Injecteurs pouvant nécessiter nettoyage ou remplacement",
+                  "symptomes": [
+                    "Fumée noire à l'échappement",
+                    "Perte de puissance",
+                    "Ralenti irrégulier"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec un seuil kilométrique précis dans les sources disponibles",
+                  "diagnostic": "Test de retour injecteur, contrôle de la pulvérisation",
+                  "piece_concernee": "Système d'alimentation / injection",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Nettoyage ou remplacement : 100 à 300€ selon les sources"
+                },
+                {
+                  "probleme": "Système de refroidissement sensible (radiateur obstrué, pompe à eau défaillante)",
+                  "symptomes": [
+                    "Surchauffe moteur",
+                    "Perte de liquide de refroidissement"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec un seuil kilométrique précis dans les sources disponibles ; surveillance régulière recommandée",
+                  "diagnostic": "Contrôle du niveau et de la pression du circuit de refroidissement, inspection du radiateur",
+                  "piece_concernee": "Culasse / circuit de refroidissement",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Remplacement pompe à eau ou radiateur : 200 à 600€"
+                },
+                {
+                  "probleme": "Usure des segments de piston avec le temps, perte de compression",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Perte de puissance progressive",
+                    "Consommation d'huile accrue"
+                  ],
+                  "kilometrage_apparition": "Généralement sur les très gros kilométrages, non documenté avec un seuil précis",
+                  "diagnostic": "Test de compression cylindre par cylindre",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel, essentiellement sur les exemplaires très kilométrés",
+                  "cout_reparation_estime": "500 à 1500€ selon l'étendue des réparations nécessaires"
+                },
+                {
+                  "probleme": "Distribution par courroie à respecter strictement, casse fréquente en cas de négligence",
+                  "symptomes": [
+                    "Aucun symptôme fiable avant la casse"
+                  ],
+                  "kilometrage_apparition": "Intervalle constructeur d'époque, généralement autour de 60 000 à 80 000 km selon les versions",
+                  "diagnostic": "Vérification de la date/kilométrage du dernier remplacement au carnet d'entretien",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent en cas de non-respect de l'intervalle constructeur",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles pour cette opération spécifique"
+                },
+                {
+                  "probleme": "Réglage des jeux de soupapes nécessaire après 100 000 km sur certaines versions (XUD9SD)",
+                  "symptomes": [
+                    "Bruit de cliquetis moteur",
+                    "Fonctionnement irrégulier"
+                  ],
+                  "kilometrage_apparition": "Vers 100 000 km",
+                  "diagnostic": "Contrôle du jeu de soupapes lors d'une révision",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent sur cette version spécifique à 100 000 km",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles"
+                },
+                {
+                  "probleme": "Fiabilité globale exceptionnelle reconnue, l'un des diesels les plus robustes de l'histoire PSA",
+                  "symptomes": [
+                    "De nombreux témoignages de moteurs dépassant 400 000 km sans réparation majeure, y compris après remplacement moteur d'occasion à la casse"
+                  ],
+                  "kilometrage_apparition": "Longévité de plusieurs centaines de milliers de kilomètres largement documentée ; certaines versions (XUD9TE) dépassent facilement les 400 000 km",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information positive (non concernée par la présente échelle de gravité)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Non applicable ; moteur emblématique développé par PSA dans les années 1980-1990, réputé pour sa robustesse, son couple élevé à bas régime et son architecture simple à quatre cylindres en ligne"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Matra-Simca / Talbot-Matra Rancho",
+      "generations": [
+        {
+          "code_chassis": "Rancho (P12, base Simca 1100 VF2, caisses assemblées par Heuliez)",
+          "annees": "1977-1984",
+          "phases": [
+            "Matra-Simca Rancho (1977-1979)",
+            "Talbot-Matra Rancho (1979-1984)",
+            "Versions X / Grand Raid / Découvrable (à partir de 1980)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.4 - 80ch",
+              "code_moteur": "Type 315 (issu de la Simca 1308 GT, 4 cylindres, arbre à cames latéral et culbuteurs, vilebrequin 5 paliers)",
+              "cylindree": "1442cm3",
+              "puissance_ch": 80,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion du châssis acier hérité de la base Simca 1100, principal point noir du modèle malgré une carrosserie composite saine",
+                  "symptomes": [
+                    "Rouille structurelle sur le châssis malgré une carrosserie synthétique en bon état apparent"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec des statistiques modernes chiffrées, mécanique d'avant 1990 sans suivi statistique en ligne",
+                  "diagnostic": "Inspection minutieuse du châssis acier par un spécialiste des youngtimers avant tout achat, la carrosserie composite pouvant masquer une corrosion structurelle sous-jacente",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent, décrit comme le principal point noir du modèle",
+                  "cout_reparation_estime": "Non chiffrable précisément ; coût de restauration complète dépassant quasi systématiquement la valeur vénale du véhicule"
+                },
+                {
+                  "probleme": "Mécanique (moteur, boîte, freins) issue de la banque d'organes Simca/Talbot 1100/1308, se dénichant sans difficulté particulière",
+                  "symptomes": [
+                    "Pièces mécaniques courantes relativement disponibles"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information positive (non concernée par la présente échelle de gravité)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Éléments de carrosserie spécifiques au Rancho devenus quasi introuvables (vitrages spécifiques, hayon arrière, pare-chocs boucliers, certains plastiques de tableau de bord)",
+                  "symptomes": [
+                    "Difficulté extrême à trouver des pièces de carrosserie spécifiques en cas de dommage ou de restauration"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Rejoindre un club de propriétaires spécialisé avant tout projet de restauration ou d'achat",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent compte tenu de la rareté du modèle (22 734 exemplaires Matra-Simca produits au total)",
+                  "cout_reparation_estime": "Non chiffrable ; recours aux clubs de propriétaires et à la refabrication de pièces souvent nécessaire"
+                },
+                {
+                  "probleme": "Absence de transmission intégrale malgré l'allure de tout-terrain (garde au sol de 21cm mais traction avant uniquement), contraintes budgétaires de l'époque ayant empêché le développement d'une version 4x4",
+                  "symptomes": [
+                    "Capacités hors-piste réelles limitées malgré l'apparence robuste du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Systématique (caractéristique de conception)",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Moteur issu de la Simca 1308 GT réputé fiable et éprouvé pour l'époque, précurseur historique du concept crossover ayant directement inspiré le développement du Renault Espace par Matra",
+                  "symptomes": [
+                    "Absence de défaillance structurelle majeure du groupe motopropulseur en usage normal"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable ; considéré comme un achat passion plutôt qu'un investissement financier, la cote montant cependant doucement ces dernières années",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information positive (non concernée par la présente échelle de gravité)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Non applicable"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Matra-Simca Bagheera",
+      "generations": [
+        {
+          "code_chassis": "Matra-Simca Bagheera",
+          "annees": "1973-1980",
+          "phases": [
+            "Bagheera (1973-1976)",
+            "Bagheera S/U8 (1976-1980)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.3 - 84ch",
+              "code_moteur": "Type 315 (Simca 1100, moteur central transversal)",
+              "cylindree": "1294cm3",
+              "puissance_ch": 84,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion de caisse à surveiller comme sur la plupart des productions françaises de cette période",
+                  "symptomes": [
+                    "Traces de rouille sur bas de caisse et passages de roue"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                },
+                {
+                  "probleme": "Distribution (courroie ou culbuterie selon motorisation) à respecter selon les préconisations d'époque",
+                  "symptomes": [
+                    "Aucun symptôme fiable avant la casse sur les versions à courroie"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent en cas de non-respect de l'intervalle",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                },
+                {
+                  "probleme": "Pièces mécaniques et de carrosserie spécifiques devenues rares compte tenu de la fin précoce de la marque Talbot (1986)",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent aujourd'hui",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.4 / S (1442cm3) - 90ch",
+              "code_moteur": "Type 315",
+              "cylindree": "1442cm3",
+              "puissance_ch": 90,
+              "boite": [
+                "BVM4",
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion de caisse à surveiller comme sur la plupart des productions françaises de cette période",
+                  "symptomes": [
+                    "Traces de rouille sur bas de caisse et passages de roue"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                },
+                {
+                  "probleme": "Distribution (courroie ou culbuterie selon motorisation) à respecter selon les préconisations d'époque",
+                  "symptomes": [
+                    "Aucun symptôme fiable avant la casse sur les versions à courroie"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent en cas de non-respect de l'intervalle",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                },
+                {
+                  "probleme": "Pièces mécaniques et de carrosserie spécifiques devenues rares compte tenu de la fin précoce de la marque Talbot (1986)",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent aujourd'hui",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Samba",
+      "generations": [
+        {
+          "code_chassis": "Talbot Samba",
+          "annees": "1981-1986",
+          "phases": [
+            "Berline/Cabriolet (dessin Pininfarina pour le cabriolet)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.1 - 50ch",
+              "code_moteur": "XW",
+              "cylindree": "1124cm3",
+              "puissance_ch": 50,
+              "boite": [
+                "BVM4",
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion de caisse à surveiller comme sur la plupart des productions françaises de cette période",
+                  "symptomes": [
+                    "Traces de rouille sur bas de caisse et passages de roue"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                },
+                {
+                  "probleme": "Distribution (courroie ou culbuterie selon motorisation) à respecter selon les préconisations d'époque",
+                  "symptomes": [
+                    "Aucun symptôme fiable avant la casse sur les versions à courroie"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent en cas de non-respect de l'intervalle",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                },
+                {
+                  "probleme": "Pièces mécaniques et de carrosserie spécifiques devenues rares compte tenu de la fin précoce de la marque Talbot (1986)",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent aujourd'hui",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Rallye - 90ch",
+              "code_moteur": "XZ",
+              "cylindree": "1219cm3",
+              "puissance_ch": 90,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion de caisse à surveiller comme sur la plupart des productions françaises de cette période",
+                  "symptomes": [
+                    "Traces de rouille sur bas de caisse et passages de roue"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                },
+                {
+                  "probleme": "Distribution (courroie ou culbuterie selon motorisation) à respecter selon les préconisations d'époque",
+                  "symptomes": [
+                    "Aucun symptôme fiable avant la casse sur les versions à courroie"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent en cas de non-respect de l'intervalle",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                },
+                {
+                  "probleme": "Pièces mécaniques et de carrosserie spécifiques devenues rares compte tenu de la fin précoce de la marque Talbot (1986)",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent aujourd'hui",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "GLS / Cabriolet - 72ch",
+              "code_moteur": "XY",
+              "cylindree": "1360cm3",
+              "puissance_ch": 72,
+              "boite": [
+                "BVM4",
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion de caisse à surveiller comme sur la plupart des productions françaises de cette période",
+                  "symptomes": [
+                    "Traces de rouille sur bas de caisse et passages de roue"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                },
+                {
+                  "probleme": "Distribution (courroie ou culbuterie selon motorisation) à respecter selon les préconisations d'époque",
+                  "symptomes": [
+                    "Aucun symptôme fiable avant la casse sur les versions à courroie"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent en cas de non-respect de l'intervalle",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                },
+                {
+                  "probleme": "Pièces mécaniques et de carrosserie spécifiques devenues rares compte tenu de la fin précoce de la marque Talbot (1986)",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent aujourd'hui",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Tagora",
+      "generations": [
+        {
+          "code_chassis": "Talbot Tagora",
+          "annees": "1980-1983",
+          "phases": [
+            "Berline unique, échec commercial (20 133 exemplaires produits)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.2 - 116ch",
+              "code_moteur": "Type ZDJL (PRV dérivé)",
+              "cylindree": "2155cm3",
+              "puissance_ch": 116,
+              "boite": [
+                "BVM5",
+                "BVA3"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion de caisse à surveiller comme sur la plupart des productions françaises de cette période",
+                  "symptomes": [
+                    "Traces de rouille sur bas de caisse et passages de roue"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                },
+                {
+                  "probleme": "Distribution (courroie ou culbuterie selon motorisation) à respecter selon les préconisations d'époque",
+                  "symptomes": [
+                    "Aucun symptôme fiable avant la casse sur les versions à courroie"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent en cas de non-respect de l'intervalle",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                },
+                {
+                  "probleme": "Pièces mécaniques et de carrosserie spécifiques devenues rares compte tenu de la fin précoce de la marque Talbot (1986)",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent aujourd'hui",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "V6 SX (2.7 PRV) - 155ch",
+              "code_moteur": "Z7X (PRV)",
+              "cylindree": "2664cm3",
+              "puissance_ch": 155,
+              "boite": [
+                "BVA3"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Absence d'intervalle kilométrique officiel de remplacement de la distribution par chaîne : Renault recommandait de s'inquiéter uniquement en cas de bruit, sans seuil précis",
+                  "symptomes": [
+                    "Bruit de chaîne ou de tendeur devenant progressivement audible, seul signe d'alerte fiable avant une éventuelle défaillance"
+                  ],
+                  "kilometrage_apparition": "Absence de préconisation constructeur précise ; cas documentés de véhicules revendus à 280 000 km sans aucune intervention sur le moteur, tandis que d'autres exemplaires font du bruit dès 186 000 km",
+                  "diagnostic": "Écoute attentive de tout bruit anormal au niveau de la distribution, seul indicateur fiable en l'absence d'intervalle constructeur",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel, variabilité importante d'un exemplaire à l'autre selon l'entretien et la chance",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles pour cette opération, mais nécessite généralement une dépose moteur/boîte du fait de la disposition longitudinale sur certaines applications (Espace II), rendant l'intervention complexe"
+                },
+                {
+                  "probleme": "Tendeurs hydrauliques de chaîne pouvant se boucher en cas de vidanges insuffisamment régulières",
+                  "symptomes": [
+                    "Bruit progressif de la distribution pouvant s'aggraver avec le temps si l'entretien est négligé"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec un seuil kilométrique précis dans les sources disponibles",
+                  "diagnostic": "Vidange régulière recommandée en prévention, seul entretien nécessaire sur ce système à chaîne selon plusieurs témoignages de propriétaires",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel, dépend fortement de la régularité des vidanges",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles"
+                },
+                {
+                  "probleme": "Usure chronique des cames de soupapes d'échappement sur la version à 4 soupapes par cylindre (code Peugeot ZPJ4, non Z7X)",
+                  "symptomes": [
+                    "Non applicable à la version Z7X Renault : ce défaut spécifique concerne la variante PSA ZPJ4 à admission pilotée"
+                  ],
+                  "kilometrage_apparition": "Non applicable à la version Z7X",
+                  "diagnostic": "Non applicable à la version Z7X",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information générale sur la famille PRV (non applicable directement au Z7X)",
+                  "frequence": "Non applicable au Z7X spécifiquement",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Système de lubrification des chemises ajouté sur les blocs produits après juillet 1995 uniquement (les blocs antérieurs, dont ceux montés sur Alpine, en étaient dépourvus)",
+                  "symptomes": [
+                    "Non applicable : évolution de fabrication plutôt qu'un défaut à proprement parler"
+                  ],
+                  "kilometrage_apparition": "Non applicable (lié à la date de production du bloc)",
+                  "diagnostic": "Identifier la référence exacte du bloc (avant/après juillet 1995) lors de toute intervention ou recherche de pièce de rechange",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information positive (non concernée par la présente échelle de gravité)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Fiabilité globale reconnue comme un point fort majeur, moteur increvable si bien entretenu, cas de longévité remarquables documentés par les clubs de propriétaires",
+                  "symptomes": [
+                    "Absence de défaillance moteur sur de nombreux exemplaires malgré l'âge avancé du véhicule"
+                  ],
+                  "kilometrage_apparition": "Cas documenté de véhicule revendu à 280 000 km sans jamais avoir touché au moteur, même pas un réglage de carburateur ; moteur présenté en 1974 et ayant équipé les berlines haut de gamme françaises et suédoises pendant plus de vingt ans",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information positive (non concernée par la présente échelle de gravité)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Non applicable ; architecture en V ouvert à 90° avec bloc et culasses en aluminium, chemises rapportées, vilebrequin à 4 paliers ; a équipé Renault 25/30/Safrane/Espace, Peugeot 604/605, Citroën XM, Talbot Tagora, Volvo 760/960 et Alpine GTA/A610/V6 Turbo, illustrant sa polyvalence entre plusieurs constructeurs"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "2.3 DT - 90ch",
+              "code_moteur": "XD2S",
+              "cylindree": "2304cm3",
+              "puissance_ch": 90,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion de caisse à surveiller comme sur la plupart des productions françaises de cette période",
+                  "symptomes": [
+                    "Traces de rouille sur bas de caisse et passages de roue"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                },
+                {
+                  "probleme": "Distribution (courroie ou culbuterie selon motorisation) à respecter selon les préconisations d'époque",
+                  "symptomes": [
+                    "Aucun symptôme fiable avant la casse sur les versions à courroie"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent en cas de non-respect de l'intervalle",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                },
+                {
+                  "probleme": "Pièces mécaniques et de carrosserie spécifiques devenues rares compte tenu de la fin précoce de la marque Talbot (1986)",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent aujourd'hui",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Talbot-Matra Murena",
+      "generations": [
+        {
+          "code_chassis": "Talbot-Matra Murena",
+          "annees": "1980-1983",
+          "phases": [
+            "1.6 (lancement, sept. 1980)",
+            "2.2 (début 1981)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.6 - 92ch",
+              "code_moteur": "Type 315 (Française de Mécanique/Chrysler)",
+              "cylindree": "1592cm3",
+              "puissance_ch": 92,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion de caisse à surveiller comme sur la plupart des productions françaises de cette période",
+                  "symptomes": [
+                    "Traces de rouille sur bas de caisse et passages de roue"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                },
+                {
+                  "probleme": "Distribution (courroie ou culbuterie selon motorisation) à respecter selon les préconisations d'époque",
+                  "symptomes": [
+                    "Aucun symptôme fiable avant la casse sur les versions à courroie"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent en cas de non-respect de l'intervalle",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                },
+                {
+                  "probleme": "Pièces mécaniques et de carrosserie spécifiques devenues rares compte tenu de la fin précoce de la marque Talbot (1986)",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent aujourd'hui",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "2.2 - 118ch",
+              "code_moteur": "Type ZDJL (dérivé Chrysler/Simca)",
+              "cylindree": "2155cm3",
+              "puissance_ch": 118,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion de caisse à surveiller comme sur la plupart des productions françaises de cette période",
+                  "symptomes": [
+                    "Traces de rouille sur bas de caisse et passages de roue"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                },
+                {
+                  "probleme": "Distribution (courroie ou culbuterie selon motorisation) à respecter selon les préconisations d'époque",
+                  "symptomes": [
+                    "Aucun symptôme fiable avant la casse sur les versions à courroie"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent en cas de non-respect de l'intervalle",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                },
+                {
+                  "probleme": "Pièces mécaniques et de carrosserie spécifiques devenues rares compte tenu de la fin précoce de la marque Talbot (1986)",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule youngtimer rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Inspection par un spécialiste des youngtimers français ou de la marque concernée recommandée",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent aujourd'hui",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; dépend fortement de la disponibilité des pièces, souvent limitée pour ces modèles à faible diffusion"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

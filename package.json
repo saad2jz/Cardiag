@@ -8,6 +8,7 @@
     "start": "node src/server.js",
     "dev": "node --watch src/server.js",
     "test": "node --test",
+    "generate:data": "node scripts/unify-vehicle-data.js",
     "generate:pwa-icons": "node scripts/generate-pwa-icons.mjs"
   },
   "engines": {
