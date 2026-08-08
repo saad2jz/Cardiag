@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Fiche d'Expertise â€” VÃ©hicule d'Occasion</title>
+<title>Fiche d'Expertise — Véhicule d'Occasion</title>
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#0B0A09">
 <meta name="mobile-web-app-capable" content="yes">
@@ -23,124 +23,124 @@
       <img class="brand-logo" src="icons/app-icon.svg" alt="" aria-hidden="true">
       <span class="brand-wordmark">Fiche Expert Auto</span>
     </div>
-    <div class="eyebrow">ContrÃ´le terrain â€¢ Achat vÃ©hicule d'occasion</div>
-    <h1>Fiche d'Expertise DÃ©taillÃ©e</h1>
-    <p class="subtitle">Renseignez chaque point de contrÃ´le pendant votre visite. Tout est sauvegardÃ© automatiquement sur cet appareil.</p>
+    <div class="eyebrow">Contrôle terrain • Achat véhicule d'occasion</div>
+    <h1>Fiche d'Expertise Détaillée</h1>
+    <p class="subtitle">Renseignez chaque point de contrôle pendant votre visite. Tout est sauvegardé automatiquement sur cet appareil.</p>
   </div>
   <div class="toolbar header-inner">
     <div class="toolbar-row">
-      <select id="ficheSelect" title="Changer de fiche vÃ©hicule"></select>
+      <select id="ficheSelect" title="Changer de fiche véhicule"></select>
       <span class="spacer"></span>
-      <span class="save-indicator" id="saveIndicator"><span class="dot"></span><span id="saveIndicatorText">Non enregistrÃ©</span></span>
-      <span class="score-gauge" id="scoreGauge" tabindex="0">Score : â€”</span>
+      <span class="save-indicator" id="saveIndicator"><span class="dot"></span><span id="saveIndicatorText">Non enregistré</span></span>
+      <span class="score-gauge" id="scoreGauge" tabindex="0">Score : —</span>
     </div>
     <div class="toolbar-row" id="toolbarActions">
-      <button class="icon-btn" id="newFicheBtn" type="button">âž• Nouvelle fiche</button>
-      <button class="icon-btn" id="dupFicheBtn" type="button">â§‰ Dupliquer</button>
-      <button class="icon-btn" id="delFicheBtn" type="button">ðŸ—‘ Supprimer</button>
-      <button class="icon-btn" id="compareBtn" type="button">â‡„ Comparer</button>
-      <button class="icon-btn" id="exportBtn" type="button">â¬‡ Export JSON</button>
-      <button class="icon-btn" id="importBtn" type="button">â¬† Import JSON</button>
+      <button class="icon-btn" id="newFicheBtn" type="button">➕ Nouvelle fiche</button>
+      <button class="icon-btn" id="dupFicheBtn" type="button">⧉ Dupliquer</button>
+      <button class="icon-btn" id="delFicheBtn" type="button">🗑 Supprimer</button>
+      <button class="icon-btn" id="compareBtn" type="button">⇄ Comparer</button>
+      <button class="icon-btn" id="exportBtn" type="button">⬇ Export JSON</button>
+      <button class="icon-btn" id="importBtn" type="button">⬆ Import JSON</button>
       <input type="file" id="importFile" accept="application/json" style="display:none">
-      <button class="icon-btn" id="weightSettingsBtn" type="button">âš– PondÃ©ration</button>
-      <button class="icon-btn" id="quickModeToggle" type="button">âš¡ Inspection rapide</button>
-      <button class="icon-btn" id="darkToggle" type="button">ðŸŒ™ Mode sombre</button>
-      <button class="icon-btn" id="installAppBtn" type="button">â¬‡ Installer lâ€™application</button>
+      <button class="icon-btn" id="weightSettingsBtn" type="button">⚖ Pondération</button>
+      <button class="icon-btn" id="quickModeToggle" type="button">⚡ Inspection rapide</button>
+      <button class="icon-btn" id="darkToggle" type="button">🌙 Mode sombre</button>
+      <button class="icon-btn" id="installAppBtn" type="button">⬇ Installer l’application</button>
     </div>
     <p class="install-app-status" id="installAppStatus" role="status"></p>
   </div>
   <div class="progress-wrap"><div class="progress-bar" id="progressBar"></div></div>
   <div class="progress-label">
-    <span id="progressText">0 point vÃ©rifiÃ©</span>
+    <span id="progressText">0 point vérifié</span>
     <span id="progressPct">0%</span>
   </div>
   <div class="storage-meter-wrap">
-    <span class="storage-meter-text">ðŸ’¾</span>
+    <span class="storage-meter-text">💾</span>
     <div class="storage-meter-track"><div class="storage-meter-bar" id="storageMeterBar"></div></div>
-    <span class="storage-meter-text" id="storageMeterText">â€”</span>
+    <span class="storage-meter-text" id="storageMeterText">—</span>
   </div>
 </header>
 
-<nav class="app-tabbar" id="appTabbar" aria-label="Navigation entre les Ã©crans de la fiche">
+<nav class="app-tabbar" id="appTabbar" aria-label="Navigation entre les écrans de la fiche">
   <div class="app-tabbar-inner">
-    <button class="app-tab" type="button" data-goto-section="info"><span class="app-tab-icon">ðŸš—</span>VÃ©hicule</button>
-    <button class="app-tab" type="button" data-goto-section="moteur"><span class="app-tab-icon">ðŸ”§</span>Moteur</button>
-    <button class="app-tab" type="button" data-goto-section="chassis"><span class="app-tab-icon">ðŸ›ž</span>ChÃ¢ssis</button>
-    <button class="app-tab" type="button" data-goto-section="carrosserie"><span class="app-tab-icon">âœ¨</span>Carrosserie</button>
-    <button class="app-tab" type="button" data-goto-section="habitacle"><span class="app-tab-icon">ðŸª‘</span>Habitacle</button>
-    <button class="app-tab" type="button" data-goto-section="essai"><span class="app-tab-icon">ðŸ›£ï¸</span>Essai</button>
-    <button class="app-tab" type="button" data-goto-section="diagnostic"><span class="app-tab-icon">ðŸ“Š</span>Bilan</button>
+    <button class="app-tab" type="button" data-goto-section="info"><span class="app-tab-icon">🚗</span>Véhicule</button>
+    <button class="app-tab" type="button" data-goto-section="moteur"><span class="app-tab-icon">🔧</span>Moteur</button>
+    <button class="app-tab" type="button" data-goto-section="chassis"><span class="app-tab-icon">🛞</span>Châssis</button>
+    <button class="app-tab" type="button" data-goto-section="carrosserie"><span class="app-tab-icon">✨</span>Carrosserie</button>
+    <button class="app-tab" type="button" data-goto-section="habitacle"><span class="app-tab-icon">🪑</span>Habitacle</button>
+    <button class="app-tab" type="button" data-goto-section="essai"><span class="app-tab-icon">🛣️</span>Essai</button>
+    <button class="app-tab" type="button" data-goto-section="diagnostic"><span class="app-tab-icon">📊</span>Bilan</button>
   </div>
 </nav>
 
 <main>
 
-  <div class="quick-mode-banner">âš¡ Mode inspection rapide actif : seuls les ~12 points de contrÃ´le les plus critiques sont affichÃ©s, pour un premier tri avant de dÃ©cider si une inspection complÃ¨te est justifiÃ©e. DÃ©sactivez-le dans la barre d'outils pour tout voir.</div>
+  <div class="quick-mode-banner">⚡ Mode inspection rapide actif : seuls les ~12 points de contrôle les plus critiques sont affichés, pour un premier tri avant de décider si une inspection complète est justifiée. Désactivez-le dans la barre d'outils pour tout voir.</div>
 
   <details class="section" data-section="info" open>
-    <summary><span class="sec-num">1</span> Informations du VÃ©hicule &amp; Vendeur <span class="sec-meta">IdentitÃ© &amp; contexte de vente</span></summary>
+    <summary><span class="sec-num">1</span> Informations du Véhicule &amp; Vendeur <span class="sec-meta">Identité &amp; contexte de vente</span></summary>
     <div class="section-body">
-      <div class="subhead">IdentitÃ© du vÃ©hicule</div>
-      <p class="hint" style="margin:0 0 10px;">SÃ©lectionnez votre vÃ©hicule Ã©tape par Ã©tape (base de <span id="vehicleBrandCount">nombreuses</span> marques et <span id="vehicleModelCount">nombreux</span> modÃ¨les, chargÃ©e Ã  la demande depuis <code>data/</code>). Les gÃ©nÃ©rations et motorisations documentÃ©es sont proposÃ©es quand elles sont disponibles ; vÃ©rifiez toujours le code exact sur la carte grise (champ P3) ou sur le moteur lui-mÃªme avant de commander une piÃ¨ce. Si une marque ou un modÃ¨le n'apparaÃ®t pas (ou hors-ligne sans cache), complÃ©tez le VIN et les champs libres ci-dessous. <span style="color:var(--rouge); font-weight:600;">Les champs marquÃ©s d'un * sont obligatoires.</span></p>
+      <div class="subhead">Identité du véhicule</div>
+      <p class="hint" style="margin:0 0 10px;">Sélectionnez votre véhicule étape par étape (base de <span id="vehicleBrandCount">nombreuses</span> marques et <span id="vehicleModelCount">nombreux</span> modèles, chargée à la demande depuis <code>data/</code>). Les générations et motorisations documentées sont proposées quand elles sont disponibles ; vérifiez toujours le code exact sur la carte grise (champ P3) ou sur le moteur lui-même avant de commander une pièce. Si une marque ou un modèle n'apparaît pas (ou hors-ligne sans cache), complétez le VIN et les champs libres ci-dessous. <span style="color:var(--rouge); font-weight:600;">Les champs marqués d'un * sont obligatoires.</span></p>
 
       <div class="vsearch-panel">
-        <div class="vsearch-title">ðŸ” Recherche rapide (facultatif)</div>
+        <div class="vsearch-title">🔍 Recherche rapide (facultatif)</div>
         <div class="vsearch-fields">
           <div class="vsearch-field-wrap" id="vsearchFieldWrapMarque">
             <div class="vsearch-row" id="vsearchRowMarque">
-              <span class="vsearch-icon">ðŸ”Ž</span>
+              <span class="vsearch-icon">🔎</span>
               <input type="text" id="marqueSearch" class="vsearch-input" placeholder="Filtrer les marques..." autocomplete="off">
-              <button type="button" class="vsearch-clear" id="marqueSearchClear" title="Effacer" aria-label="Effacer la recherche marque">Ã—</button>
+              <button type="button" class="vsearch-clear" id="marqueSearchClear" title="Effacer" aria-label="Effacer la recherche marque">×</button>
             </div>
           </div>
           <div class="vsearch-field-wrap" id="vsearchFieldWrapModele">
             <div class="vsearch-row" id="vsearchRowModele">
-              <span class="vsearch-icon">ðŸ”Ž</span>
-              <input type="text" id="modeleSearch" class="vsearch-input" placeholder="Rechercher un modÃ¨le (toutes marques)..." autocomplete="off">
-              <button type="button" class="vsearch-clear" id="modeleSearchClear" title="Effacer" aria-label="Effacer la recherche modÃ¨le">Ã—</button>
+              <span class="vsearch-icon">🔎</span>
+              <input type="text" id="modeleSearch" class="vsearch-input" placeholder="Rechercher un modèle (toutes marques)..." autocomplete="off">
+              <button type="button" class="vsearch-clear" id="modeleSearchClear" title="Effacer" aria-label="Effacer la recherche modèle">×</button>
             </div>
-            <div class="vsearch-results" id="modeleSearchResults" role="listbox" aria-label="RÃ©sultats de la recherche de modÃ¨le"></div>
+            <div class="vsearch-results" id="modeleSearchResults" role="listbox" aria-label="Résultats de la recherche de modèle"></div>
           </div>
         </div>
-        <p class="vsearch-hint">Le champ Â« marques Â» filtre la liste dÃ©roulante juste au-dessous. Le champ Â« modÃ¨le Â» recherche directement dans toute la base, toutes marques confondues : tapez un nom de modÃ¨le (ex. Â« Golf Â», Â« 308 Â», Â« Clio Â»...) puis cliquez sur un rÃ©sultat pour renseigner automatiquement la marque et le modÃ¨le dans les listes ci-dessous. Vous n'Ãªtes pas obligÃ© de vous en servir : vous pouvez aussi cliquer directement dans les listes dÃ©roulantes pour parcourir toutes les options.</p>
+        <p class="vsearch-hint">Le champ « marques » filtre la liste déroulante juste au-dessous. Le champ « modèle » recherche directement dans toute la base, toutes marques confondues : tapez un nom de modèle (ex. « Golf », « 308 », « Clio »...) puis cliquez sur un résultat pour renseigner automatiquement la marque et le modèle dans les listes ci-dessous. Vous n'êtes pas obligé de vous en servir : vous pouvez aussi cliquer directement dans les listes déroulantes pour parcourir toutes les options.</p>
       </div>
 
       <div class="vsteps">
         <div class="vstep" id="step-marque">
           <span class="vstep-num" id="num-marque">1</span>
           <select id="marqueSelect" name="marque"><option value="">Choisissez une marque... *</option></select>
-          <span class="vstep-chevron">âŒ„</span>
+          <span class="vstep-chevron">⌄</span>
         </div>
         <div class="field" id="marqueManualWrap" style="display:none; padding:0 2px;">
-          <input type="text" id="marqueManualInput" placeholder="Tapez la marque exacte (non listÃ©e / hors-ligne sans cache)...">
+          <input type="text" id="marqueManualInput" placeholder="Tapez la marque exacte (non listée / hors-ligne sans cache)...">
         </div>
         <div class="vstep" id="step-modele">
           <span class="vstep-num" id="num-modele">2</span>
           <select id="modeleSelect" name="modele" disabled><option value="">Choisissez d'abord une marque</option></select>
-          <span class="vstep-chevron">âŒ„</span>
+          <span class="vstep-chevron">⌄</span>
         </div>
         <div class="field" id="modeleManualWrap" style="display:none; padding:0 2px;">
-          <input type="text" id="modeleManualInput" placeholder="Tapez le modÃ¨le exact (non listÃ©)...">
+          <input type="text" id="modeleManualInput" placeholder="Tapez le modèle exact (non listé)...">
         </div>
         <div class="vstep" id="step-generation">
           <span class="vstep-num" id="num-generation">3</span>
-          <select id="generationSelect" name="generation" disabled><option value="">Choisissez d'abord un modÃ¨le</option></select>
-          <span class="vstep-chevron">âŒ„</span>
+          <select id="generationSelect" name="generation" disabled><option value="">Choisissez d'abord un modèle</option></select>
+          <span class="vstep-chevron">⌄</span>
         </div>
-        <div class="result-status" id="result" aria-live="polite">Veuillez sÃ©lectionner une marque et un modÃ¨le.</div>
+        <div class="result-status" id="result" aria-live="polite">Veuillez sélectionner une marque et un modèle.</div>
         <div class="vstep-hint" id="anneeHint"></div>
         <div class="vstep" id="step-annee">
           <span class="vstep-num" id="num-annee">4</span>
-          <select id="anneeSelect" name="annee"><option value="">Choisissez une annÃ©e... *</option></select>
-          <span class="vstep-chevron">âŒ„</span>
+          <select id="anneeSelect" name="annee"><option value="">Choisissez une année... *</option></select>
+          <span class="vstep-chevron">⌄</span>
         </div>
         <div class="vstep" id="step-motorisation">
           <span class="vstep-num" id="num-motorisation">5</span>
-          <select id="motorisationSelect" name="motorisation" disabled><option value="">Choisissez d'abord une gÃ©nÃ©ration</option></select>
-          <span class="vstep-chevron">âŒ„</span>
+          <select id="motorisationSelect" name="motorisation" disabled><option value="">Choisissez d'abord une génération</option></select>
+          <span class="vstep-chevron">⌄</span>
         </div>
         <div class="field" id="motorisationManualWrap" style="display:none; padding:0 2px;">
-          <input type="text" id="motorisationManualInput" placeholder="Ex : 2.0 TDI 150ch â€” code CFFB (voir carte grise ou moteur)">
+          <input type="text" id="motorisationManualInput" placeholder="Ex : 2.0 TDI 150ch — code CFFB (voir carte grise ou moteur)">
         </div>
         <div class="vstep-hint" id="motorisationHint"></div>
         <section class="vehicle-issues" id="vehicleIssues" hidden aria-live="polite">
@@ -151,25 +151,25 @@
         <input type="hidden" name="motorisation_points_faibles">
       </div>
       <div class="grid cols-3" style="margin-top:16px;">
-        <div class="field" id="fieldWrap-kilometrage"><label>KilomÃ©trage <span class="req-star">*</span></label><input type="number" name="kilometrage" placeholder="98000"><span class="req-error">Ce champ est obligatoire.</span></div>
-        <div class="field"><label>NÂ° VIN / Immatriculation</label><input type="text" name="vin" placeholder="VF1XXXXXXXXXXXXXX"></div>
-        <div class="field" id="fieldWrap-valeur"><label>Valeur affichÃ©e / nÃ©gociÃ©e (â‚¬) <span class="req-star">*</span></label><input type="number" name="valeur" placeholder="12500"><span class="req-error">Ce champ est obligatoire.</span></div>
+        <div class="field" id="fieldWrap-kilometrage"><label>Kilométrage <span class="req-star">*</span></label><input type="number" name="kilometrage" placeholder="98000"><span class="req-error">Ce champ est obligatoire.</span></div>
+        <div class="field"><label>N° VIN / Immatriculation</label><input type="text" name="vin" placeholder="VF1XXXXXXXXXXXXXX"></div>
+        <div class="field" id="fieldWrap-valeur"><label>Valeur affichée / négociée (€) <span class="req-star">*</span></label><input type="number" name="valeur" placeholder="12500"><span class="req-error">Ce champ est obligatoire.</span></div>
       </div>
 
       <div class="subhead">Contexte de l'expertise</div>
       <div class="geo-row">
         <div class="field"><label>Date et heure</label><input type="datetime-local" name="date_expertise"></div>
-        <div class="field"><label>Localisation</label><input type="text" name="geoloc" placeholder="Non renseignÃ©e" readonly></div>
-        <button class="btn-mini" id="geoBtn" type="button">ðŸ“ Utiliser ma position</button>
+        <div class="field"><label>Localisation</label><input type="text" name="geoloc" placeholder="Non renseignée" readonly></div>
+        <button class="btn-mini" id="geoBtn" type="button">📍 Utiliser ma position</button>
       </div>
 
-      <div class="subhead">Documents Ã  vÃ©rifier</div>
-      <div class="doc-check"><input type="checkbox" id="doc1" name="doc_carte_grise"><label for="doc1">Carte grise prÃ©sentÃ©e</label></div>
-      <div class="doc-check"><input type="checkbox" id="doc2" name="doc_ct"><label for="doc2">ContrÃ´le technique valide fourni</label></div>
+      <div class="subhead">Documents à vérifier</div>
+      <div class="doc-check"><input type="checkbox" id="doc1" name="doc_carte_grise"><label for="doc1">Carte grise présentée</label></div>
+      <div class="doc-check"><input type="checkbox" id="doc2" name="doc_ct"><label for="doc2">Contrôle technique valide fourni</label></div>
       <div class="doc-check"><input type="checkbox" id="doc3" name="doc_non_gage"><label for="doc3">Certificat de non-gage fourni</label></div>
-      <div class="doc-check"><input type="checkbox" id="doc4" name="doc_factures"><label for="doc4">Factures d'entretien prÃ©sentÃ©es</label></div>
+      <div class="doc-check"><input type="checkbox" id="doc4" name="doc_factures"><label for="doc4">Factures d'entretien présentées</label></div>
 
-      <div class="subhead">Questions Ã  poser au vendeur</div>
+      <div class="subhead">Questions à poser au vendeur</div>
       <div class="grid cols-2">
         <div class="field">
           <label>Historique d'entretien disponible ?</label>
@@ -179,163 +179,163 @@
             <input type="radio" name="q_historique" id="hist_def" value="defaut"><label for="hist_def">Absent</label>
           </div>
         </div>
-        <div class="field"><label>Nombre de propriÃ©taires prÃ©cÃ©dents</label><input type="number" name="proprietaires" placeholder="Ex : 2"></div>
-        <div class="field"><label>Raison de la vente (rÃ©ponse du vendeur)</label><textarea name="raison_vente" placeholder="Notez la rÃ©ponse exacte du vendeur..."></textarea></div>
-        <div class="field"><label>Type d'utilisation dÃ©clarÃ©e</label><textarea name="usage_type" placeholder="Ville, autoroute, trajets courts, usage professionnel..."></textarea></div>
+        <div class="field"><label>Nombre de propriétaires précédents</label><input type="number" name="proprietaires" placeholder="Ex : 2"></div>
+        <div class="field"><label>Raison de la vente (réponse du vendeur)</label><textarea name="raison_vente" placeholder="Notez la réponse exacte du vendeur..."></textarea></div>
+        <div class="field"><label>Type d'utilisation déclarée</label><textarea name="usage_type" placeholder="Ville, autoroute, trajets courts, usage professionnel..."></textarea></div>
       </div>
     </div>
   </details>
 
   <details class="section" data-section="moteur">
-    <summary><span class="sec-num">2</span> Compartiment Moteur &amp; MÃ©canique <span class="sec-meta">VÃ©rifications Ã  froid puis Ã  chaud</span></summary>
+    <summary><span class="sec-num">2</span> Compartiment Moteur &amp; Mécanique <span class="sec-meta">Vérifications à froid puis à chaud</span></summary>
     <div class="section-body">
-      <div class="subhead temp-froid">â„ Avant dÃ©marrage (moteur froid)</div>
+      <div class="subhead temp-froid">❄ Avant démarrage (moteur froid)</div>
       <div class="check-item essential"><div class="label-block"><span class="t">Niveau et couleur de l'huile moteur</span><span class="d">Jauge : niveau correct, huile non noircie ni laiteuse</span></div>
-        <div class="badge-group"><input type="radio" name="huile" id="huile_ok" value="ok"><label for="huile_ok">OK</label><input type="radio" name="huile" id="huile_moy" value="moyen"><label for="huile_moy">Moyen</label><input type="radio" name="huile" id="huile_def" value="defaut"><label for="huile_def">DÃ©faut</label></div></div>
+        <div class="badge-group"><input type="radio" name="huile" id="huile_ok" value="ok"><label for="huile_ok">OK</label><input type="radio" name="huile" id="huile_moy" value="moyen"><label for="huile_moy">Moyen</label><input type="radio" name="huile" id="huile_def" value="defaut"><label for="huile_def">Défaut</label></div></div>
       <div class="check-item essential"><div class="label-block"><span class="t">Liquide de refroidissement (LDR)</span><span class="d">Niveau, couleur, absence de traces d'huile en surface</span></div>
-        <div class="badge-group"><input type="radio" name="ldr" id="ldr_ok" value="ok"><label for="ldr_ok">OK</label><input type="radio" name="ldr" id="ldr_moy" value="moyen"><label for="ldr_moy">Moyen</label><input type="radio" name="ldr" id="ldr_def" value="defaut"><label for="ldr_def">DÃ©faut</label></div></div>
-      <div class="check-item essential"><div class="label-block"><span class="t">Fuites visibles sous le vÃ©hicule</span><span class="d">Huile, liquide de refroidissement, LDS, carburant</span></div>
-        <div class="badge-group"><input type="radio" name="fuites" id="fuites_ok" value="ok"><label for="fuites_ok">OK</label><input type="radio" name="fuites" id="fuites_moy" value="moyen"><label for="fuites_moy">LÃ©ger suintement</label><input type="radio" name="fuites" id="fuites_def" value="defaut"><label for="fuites_def">Fuite active</label></div></div>
+        <div class="badge-group"><input type="radio" name="ldr" id="ldr_ok" value="ok"><label for="ldr_ok">OK</label><input type="radio" name="ldr" id="ldr_moy" value="moyen"><label for="ldr_moy">Moyen</label><input type="radio" name="ldr" id="ldr_def" value="defaut"><label for="ldr_def">Défaut</label></div></div>
+      <div class="check-item essential"><div class="label-block"><span class="t">Fuites visibles sous le véhicule</span><span class="d">Huile, liquide de refroidissement, LDS, carburant</span></div>
+        <div class="badge-group"><input type="radio" name="fuites" id="fuites_ok" value="ok"><label for="fuites_ok">OK</label><input type="radio" name="fuites" id="fuites_moy" value="moyen"><label for="fuites_moy">Léger suintement</label><input type="radio" name="fuites" id="fuites_def" value="defaut"><label for="fuites_def">Fuite active</label></div></div>
 
-      <div class="subhead temp-chaud">ðŸ”¥ AprÃ¨s dÃ©marrage (moteur chaud / en marche)</div>
-      <div class="check-item essential"><div class="label-block"><span class="t">Bruits anormaux au dÃ©marrage / ralenti</span><span class="d">Cliquetis, sifflements, cognements</span></div>
-        <div class="badge-group"><input type="radio" name="bruits" id="bruits_ok" value="ok"><label for="bruits_ok">OK</label><input type="radio" name="bruits" id="bruits_moy" value="moyen"><label for="bruits_moy">Moyen</label><input type="radio" name="bruits" id="bruits_def" value="defaut"><label for="bruits_def">DÃ©faut</label></div></div>
-      <div class="check-item essential"><div class="label-block"><span class="t">FumÃ©e Ã  l'Ã©chappement</span><span class="d">Blanche persistante, bleue ou noire = signal d'alerte</span></div>
-        <div class="badge-group"><input type="radio" name="fumee" id="fumee_ok" value="ok"><label for="fumee_ok">Aucune</label><input type="radio" name="fumee" id="fumee_moy" value="moyen"><label for="fumee_moy">LÃ©gÃ¨re</label><input type="radio" name="fumee" id="fumee_def" value="defaut"><label for="fumee_def">MarquÃ©e</label></div></div>
-      <div class="check-item essential"><div class="label-block"><span class="t">StabilitÃ© du ralenti</span><span class="d">RÃ©gime stable, pas d'Ã -coups ni de calage</span></div>
-        <div class="badge-group"><input type="radio" name="ralenti" id="ralenti_ok" value="ok"><label for="ralenti_ok">OK</label><input type="radio" name="ralenti" id="ralenti_moy" value="moyen"><label for="ralenti_moy">Moyen</label><input type="radio" name="ralenti" id="ralenti_def" value="defaut"><label for="ralenti_def">DÃ©faut</label></div></div>
-      <div class="check-item essential"><div class="label-block"><span class="t">Joint de culasse (indices)</span><span class="d">Ã‰mulsion blanchÃ¢tre sur bouchon d'huile, bulles dans le LDR</span></div>
+      <div class="subhead temp-chaud">🔥 Après démarrage (moteur chaud / en marche)</div>
+      <div class="check-item essential"><div class="label-block"><span class="t">Bruits anormaux au démarrage / ralenti</span><span class="d">Cliquetis, sifflements, cognements</span></div>
+        <div class="badge-group"><input type="radio" name="bruits" id="bruits_ok" value="ok"><label for="bruits_ok">OK</label><input type="radio" name="bruits" id="bruits_moy" value="moyen"><label for="bruits_moy">Moyen</label><input type="radio" name="bruits" id="bruits_def" value="defaut"><label for="bruits_def">Défaut</label></div></div>
+      <div class="check-item essential"><div class="label-block"><span class="t">Fumée à l'échappement</span><span class="d">Blanche persistante, bleue ou noire = signal d'alerte</span></div>
+        <div class="badge-group"><input type="radio" name="fumee" id="fumee_ok" value="ok"><label for="fumee_ok">Aucune</label><input type="radio" name="fumee" id="fumee_moy" value="moyen"><label for="fumee_moy">Légère</label><input type="radio" name="fumee" id="fumee_def" value="defaut"><label for="fumee_def">Marquée</label></div></div>
+      <div class="check-item essential"><div class="label-block"><span class="t">Stabilité du ralenti</span><span class="d">Régime stable, pas d'à-coups ni de calage</span></div>
+        <div class="badge-group"><input type="radio" name="ralenti" id="ralenti_ok" value="ok"><label for="ralenti_ok">OK</label><input type="radio" name="ralenti" id="ralenti_moy" value="moyen"><label for="ralenti_moy">Moyen</label><input type="radio" name="ralenti" id="ralenti_def" value="defaut"><label for="ralenti_def">Défaut</label></div></div>
+      <div class="check-item essential"><div class="label-block"><span class="t">Joint de culasse (indices)</span><span class="d">Émulsion blanchâtre sur bouchon d'huile, bulles dans le LDR</span></div>
         <div class="badge-group"><input type="radio" name="culasse" id="culasse_ok" value="ok"><label for="culasse_ok">OK</label><input type="radio" name="culasse" id="culasse_moy" value="moyen"><label for="culasse_moy">Doute</label><input type="radio" name="culasse" id="culasse_def" value="defaut"><label for="culasse_def">Suspect</label></div></div>
-      <div class="check-item essential"><div class="label-block"><span class="t">Supports moteur</span><span class="d">Ã€-coups anormaux au passage des rapports, vibrations excessives</span></div>
-        <div class="badge-group"><input type="radio" name="supports" id="supports_ok" value="ok"><label for="supports_ok">OK</label><input type="radio" name="supports" id="supports_moy" value="moyen"><label for="supports_moy">Usure</label><input type="radio" name="supports" id="supports_def" value="defaut"><label for="supports_def">DÃ©faut</label></div></div>
+      <div class="check-item essential"><div class="label-block"><span class="t">Supports moteur</span><span class="d">À-coups anormaux au passage des rapports, vibrations excessives</span></div>
+        <div class="badge-group"><input type="radio" name="supports" id="supports_ok" value="ok"><label for="supports_ok">OK</label><input type="radio" name="supports" id="supports_moy" value="moyen"><label for="supports_moy">Usure</label><input type="radio" name="supports" id="supports_def" value="defaut"><label for="supports_def">Défaut</label></div></div>
 
-      <div class="field note-line"><label>Notes moteur</label><textarea name="notes_moteur" placeholder="Observations complÃ©mentaires..."></textarea></div>
+      <div class="field note-line"><label>Notes moteur</label><textarea name="notes_moteur" placeholder="Observations complémentaires..."></textarea></div>
     </div>
   </details>
 
   <details class="section" data-section="chassis">
-    <summary><span class="sec-num">3</span> ChÃ¢ssis, Suspension &amp; Roues <span class="sec-meta">Structure et train roulant</span></summary>
+    <summary><span class="sec-num">3</span> Châssis, Suspension &amp; Roues <span class="sec-meta">Structure et train roulant</span></summary>
     <div class="section-body">
       <div class="subhead">Structure &amp; corrosion</div>
       <div class="check-item"><div class="label-block"><span class="t">Rouille au niveau du plancher</span><span class="d">Sous les tapis, passages de roues, bas de caisse</span></div>
         <div class="badge-group"><input type="radio" name="rouille_plancher" id="rp_ok" value="ok"><label for="rp_ok">OK</label><input type="radio" name="rouille_plancher" id="rp_moy" value="moyen"><label for="rp_moy">Surface</label><input type="radio" name="rouille_plancher" id="rp_def" value="defaut"><label for="rp_def">Perforante</label></div></div>
-      <div class="check-item essential"><div class="label-block"><span class="t">Longerons &amp; points d'ancrage</span><span class="d">DÃ©formation, traces de choc, rÃ©paration grossiÃ¨re</span></div>
-        <div class="badge-group"><input type="radio" name="longerons" id="lg_ok" value="ok"><label for="lg_ok">OK</label><input type="radio" name="longerons" id="lg_moy" value="moyen"><label for="lg_moy">Trace</label><input type="radio" name="longerons" id="lg_def" value="defaut"><label for="lg_def">DÃ©formÃ©</label></div></div>
+      <div class="check-item essential"><div class="label-block"><span class="t">Longerons &amp; points d'ancrage</span><span class="d">Déformation, traces de choc, réparation grossière</span></div>
+        <div class="badge-group"><input type="radio" name="longerons" id="lg_ok" value="ok"><label for="lg_ok">OK</label><input type="radio" name="longerons" id="lg_moy" value="moyen"><label for="lg_moy">Trace</label><input type="radio" name="longerons" id="lg_def" value="defaut"><label for="lg_def">Déformé</label></div></div>
 
       <div class="subhead">Transmission &amp; suspension</div>
-      <div class="check-item"><div class="label-block"><span class="t">Fuites pont / diffÃ©rentiel</span><span class="d">ContrÃ´le visuel autour des cardans et du carter</span></div>
+      <div class="check-item"><div class="label-block"><span class="t">Fuites pont / différentiel</span><span class="d">Contrôle visuel autour des cardans et du carter</span></div>
         <div class="badge-group"><input type="radio" name="pont" id="pont_ok" value="ok"><label for="pont_ok">OK</label><input type="radio" name="pont" id="pont_moy" value="moyen"><label for="pont_moy">Suintement</label><input type="radio" name="pont" id="pont_def" value="defaut"><label for="pont_def">Fuite</label></div></div>
-      <div class="check-item"><div class="label-block"><span class="t">Jeu dans les rotules / triangles</span><span class="d">VÃ©hicule soulevÃ©, faire levier sur la roue</span></div>
-        <div class="badge-group"><input type="radio" name="rotules" id="rot_ok" value="ok"><label for="rot_ok">OK</label><input type="radio" name="rotules" id="rot_moy" value="moyen"><label for="rot_moy">LÃ©ger jeu</label><input type="radio" name="rotules" id="rot_def" value="defaut"><label for="rot_def">Jeu important</label></div></div>
-      <div class="check-item essential"><div class="label-block"><span class="t">Ã‰tat des amortisseurs</span><span class="d">Test de rebond (appui/relÃ¢che), traces d'huile sur la tige</span></div>
-        <div class="badge-group"><input type="radio" name="amortos" id="am_ok" value="ok"><label for="am_ok">OK</label><input type="radio" name="amortos" id="am_moy" value="moyen"><label for="am_moy">FatiguÃ©s</label><input type="radio" name="amortos" id="am_def" value="defaut"><label for="am_def">HS</label></div></div>
-      <div class="check-item"><div class="label-block"><span class="t">Usure des pneus (les 4)</span><span class="d">Profondeur, usure irrÃ©guliÃ¨re (signe de parallÃ©lisme)</span></div>
-        <div class="badge-group"><input type="radio" name="pneus" id="pn_ok" value="ok"><label for="pn_ok">OK</label><input type="radio" name="pneus" id="pn_moy" value="moyen"><label for="pn_moy">Ã€ prÃ©voir</label><input type="radio" name="pneus" id="pn_def" value="defaut"><label for="pn_def">Ã€ changer</label></div></div>
-      <div class="check-item"><div class="label-block"><span class="t">Ã‰tat des jantes</span><span class="d">Voile, impacts de trottoir, fissures</span></div>
-        <div class="badge-group"><input type="radio" name="jantes" id="jt_ok" value="ok"><label for="jt_ok">OK</label><input type="radio" name="jantes" id="jt_moy" value="moyen"><label for="jt_moy">MarquÃ©es</label><input type="radio" name="jantes" id="jt_def" value="defaut"><label for="jt_def">DÃ©formÃ©es</label></div></div>
+      <div class="check-item"><div class="label-block"><span class="t">Jeu dans les rotules / triangles</span><span class="d">Véhicule soulevé, faire levier sur la roue</span></div>
+        <div class="badge-group"><input type="radio" name="rotules" id="rot_ok" value="ok"><label for="rot_ok">OK</label><input type="radio" name="rotules" id="rot_moy" value="moyen"><label for="rot_moy">Léger jeu</label><input type="radio" name="rotules" id="rot_def" value="defaut"><label for="rot_def">Jeu important</label></div></div>
+      <div class="check-item essential"><div class="label-block"><span class="t">État des amortisseurs</span><span class="d">Test de rebond (appui/relâche), traces d'huile sur la tige</span></div>
+        <div class="badge-group"><input type="radio" name="amortos" id="am_ok" value="ok"><label for="am_ok">OK</label><input type="radio" name="amortos" id="am_moy" value="moyen"><label for="am_moy">Fatigués</label><input type="radio" name="amortos" id="am_def" value="defaut"><label for="am_def">HS</label></div></div>
+      <div class="check-item"><div class="label-block"><span class="t">Usure des pneus (les 4)</span><span class="d">Profondeur, usure irrégulière (signe de parallélisme)</span></div>
+        <div class="badge-group"><input type="radio" name="pneus" id="pn_ok" value="ok"><label for="pn_ok">OK</label><input type="radio" name="pneus" id="pn_moy" value="moyen"><label for="pn_moy">À prévoir</label><input type="radio" name="pneus" id="pn_def" value="defaut"><label for="pn_def">À changer</label></div></div>
+      <div class="check-item"><div class="label-block"><span class="t">État des jantes</span><span class="d">Voile, impacts de trottoir, fissures</span></div>
+        <div class="badge-group"><input type="radio" name="jantes" id="jt_ok" value="ok"><label for="jt_ok">OK</label><input type="radio" name="jantes" id="jt_moy" value="moyen"><label for="jt_moy">Marquées</label><input type="radio" name="jantes" id="jt_def" value="defaut"><label for="jt_def">Déformées</label></div></div>
 
-      <div class="field note-line"><label>Notes chÃ¢ssis / roues</label><textarea name="notes_chassis" placeholder="Observations complÃ©mentaires..."></textarea></div>
+      <div class="field note-line"><label>Notes châssis / roues</label><textarea name="notes_chassis" placeholder="Observations complémentaires..."></textarea></div>
     </div>
   </details>
 
   <details class="section" data-section="carrosserie">
-    <summary><span class="sec-num">4</span> Carrosserie &amp; Ã‰clairage <span class="sec-meta">DÃ©tection de chocs et finitions</span></summary>
+    <summary><span class="sec-num">4</span> Carrosserie &amp; Éclairage <span class="sec-meta">Détection de chocs et finitions</span></summary>
     <div class="section-body">
       <div class="subhead">Carrosserie</div>
-      <div class="check-item"><div class="label-block"><span class="t">Alignement des panneaux</span><span class="d">Jeux rÃ©guliers portiÃ¨res/capot/coffre â€” un dÃ©calage trahit un choc</span></div>
-        <div class="badge-group"><input type="radio" name="panneaux" id="pan_ok" value="ok"><label for="pan_ok">OK</label><input type="radio" name="panneaux" id="pan_moy" value="moyen"><label for="pan_moy">LÃ©ger</label><input type="radio" name="panneaux" id="pan_def" value="defaut"><label for="pan_def">DÃ©calage net</label></div></div>
-      <div class="check-item"><div class="label-block"><span class="t">PrÃ©sence de mastic / bondo</span><span class="d">Test de l'aimant sur les ailes, portiÃ¨res, bas de caisse</span></div>
-        <div class="badge-group"><input type="radio" name="mastic" id="ma_ok" value="ok"><label for="ma_ok">Aimant adhÃ¨re</label><input type="radio" name="mastic" id="ma_moy" value="moyen"><label for="ma_moy">Zone douteuse</label><input type="radio" name="mastic" id="ma_def" value="defaut"><label for="ma_def">Aimant dÃ©croche</label></div></div>
-      <div class="check-item"><div class="label-block"><span class="t">QualitÃ© et homogÃ©nÃ©itÃ© de la peinture</span><span class="d">DiffÃ©rence de teinte, effet "peau d'orange", raccords visibles</span></div>
+      <div class="check-item"><div class="label-block"><span class="t">Alignement des panneaux</span><span class="d">Jeux réguliers portières/capot/coffre — un décalage trahit un choc</span></div>
+        <div class="badge-group"><input type="radio" name="panneaux" id="pan_ok" value="ok"><label for="pan_ok">OK</label><input type="radio" name="panneaux" id="pan_moy" value="moyen"><label for="pan_moy">Léger</label><input type="radio" name="panneaux" id="pan_def" value="defaut"><label for="pan_def">Décalage net</label></div></div>
+      <div class="check-item"><div class="label-block"><span class="t">Présence de mastic / bondo</span><span class="d">Test de l'aimant sur les ailes, portières, bas de caisse</span></div>
+        <div class="badge-group"><input type="radio" name="mastic" id="ma_ok" value="ok"><label for="ma_ok">Aimant adhère</label><input type="radio" name="mastic" id="ma_moy" value="moyen"><label for="ma_moy">Zone douteuse</label><input type="radio" name="mastic" id="ma_def" value="defaut"><label for="ma_def">Aimant décroche</label></div></div>
+      <div class="check-item"><div class="label-block"><span class="t">Qualité et homogénéité de la peinture</span><span class="d">Différence de teinte, effet "peau d'orange", raccords visibles</span></div>
         <div class="badge-group"><input type="radio" name="peinture" id="pe_ok" value="ok"><label for="pe_ok">Uniforme</label><input type="radio" name="peinture" id="pe_moy" value="moyen"><label for="pe_moy">Retouches</label><input type="radio" name="peinture" id="pe_def" value="defaut"><label for="pe_def">Repeint</label></div></div>
 
-      <div class="subhead">Ã‰clairage</div>
-      <div class="check-item"><div class="label-block"><span class="t">Feux avant (croisement / route / clignotants)</span><span class="d">Fonctionnement, buÃ©e interne, fissures</span></div>
-        <div class="badge-group"><input type="radio" name="feux_av" id="fav_ok" value="ok"><label for="fav_ok">OK</label><input type="radio" name="feux_av" id="fav_moy" value="moyen"><label for="fav_moy">Moyen</label><input type="radio" name="feux_av" id="fav_def" value="defaut"><label for="fav_def">DÃ©faut</label></div></div>
-      <div class="check-item"><div class="label-block"><span class="t">Feux arriÃ¨re &amp; stop</span><span class="d">Fonctionnement, Ã©tanchÃ©itÃ©</span></div>
-        <div class="badge-group"><input type="radio" name="feux_ar" id="far_ok" value="ok"><label for="far_ok">OK</label><input type="radio" name="feux_ar" id="far_moy" value="moyen"><label for="far_moy">Moyen</label><input type="radio" name="feux_ar" id="far_def" value="defaut"><label for="far_def">DÃ©faut</label></div></div>
-      <div class="check-item"><div class="label-block"><span class="t">Feux de recul &amp; antibrouillard</span><span class="d">Fonctionnement des deux cÃ´tÃ©s</span></div>
-        <div class="badge-group"><input type="radio" name="feux_recul" id="fr_ok" value="ok"><label for="fr_ok">OK</label><input type="radio" name="feux_recul" id="fr_moy" value="moyen"><label for="fr_moy">Moyen</label><input type="radio" name="feux_recul" id="fr_def" value="defaut"><label for="fr_def">DÃ©faut</label></div></div>
+      <div class="subhead">Éclairage</div>
+      <div class="check-item"><div class="label-block"><span class="t">Feux avant (croisement / route / clignotants)</span><span class="d">Fonctionnement, buée interne, fissures</span></div>
+        <div class="badge-group"><input type="radio" name="feux_av" id="fav_ok" value="ok"><label for="fav_ok">OK</label><input type="radio" name="feux_av" id="fav_moy" value="moyen"><label for="fav_moy">Moyen</label><input type="radio" name="feux_av" id="fav_def" value="defaut"><label for="fav_def">Défaut</label></div></div>
+      <div class="check-item"><div class="label-block"><span class="t">Feux arrière &amp; stop</span><span class="d">Fonctionnement, étanchéité</span></div>
+        <div class="badge-group"><input type="radio" name="feux_ar" id="far_ok" value="ok"><label for="far_ok">OK</label><input type="radio" name="feux_ar" id="far_moy" value="moyen"><label for="far_moy">Moyen</label><input type="radio" name="feux_ar" id="far_def" value="defaut"><label for="far_def">Défaut</label></div></div>
+      <div class="check-item"><div class="label-block"><span class="t">Feux de recul &amp; antibrouillard</span><span class="d">Fonctionnement des deux côtés</span></div>
+        <div class="badge-group"><input type="radio" name="feux_recul" id="fr_ok" value="ok"><label for="fr_ok">OK</label><input type="radio" name="feux_recul" id="fr_moy" value="moyen"><label for="fr_moy">Moyen</label><input type="radio" name="feux_recul" id="fr_def" value="defaut"><label for="fr_def">Défaut</label></div></div>
 
-      <div class="field note-line"><label>Notes carrosserie / Ã©clairage</label><textarea name="notes_carrosserie" placeholder="Observations complÃ©mentaires..."></textarea></div>
+      <div class="field note-line"><label>Notes carrosserie / éclairage</label><textarea name="notes_carrosserie" placeholder="Observations complémentaires..."></textarea></div>
     </div>
   </details>
 
   <details class="section" data-section="habitacle">
-    <summary><span class="sec-num">5</span> Habitacle &amp; Ã‰quipements <span class="sec-meta">Confort, Ã©tanchÃ©itÃ©, Ã©lectronique</span></summary>
+    <summary><span class="sec-num">5</span> Habitacle &amp; Équipements <span class="sec-meta">Confort, étanchéité, électronique</span></summary>
     <div class="section-body">
-      <div class="check-item"><div class="label-block"><span class="t">Ã‰tat des siÃ¨ges</span><span class="d">Usure du tissu/cuir, affaissement, mÃ©canismes de rÃ©glage</span></div>
-        <div class="badge-group"><input type="radio" name="sieges" id="si_ok" value="ok"><label for="si_ok">OK</label><input type="radio" name="sieges" id="si_moy" value="moyen"><label for="si_moy">UsÃ©s</label><input type="radio" name="sieges" id="si_def" value="defaut"><label for="si_def">DÃ©chirÃ©s</label></div></div>
-      <div class="check-item"><div class="label-block"><span class="t">Ciel de toit</span><span class="d">DÃ©collement, taches, affaissement</span></div>
-        <div class="badge-group"><input type="radio" name="ciel" id="ci_ok" value="ok"><label for="ci_ok">OK</label><input type="radio" name="ciel" id="ci_moy" value="moyen"><label for="ci_moy">LÃ©ger</label><input type="radio" name="ciel" id="ci_def" value="defaut"><label for="ci_def">DÃ©collÃ©</label></div></div>
-      <div class="check-item"><div class="label-block"><span class="t">Climatisation / chauffage</span><span class="d">EfficacitÃ© du froid et du chaud, bruit du compresseur</span></div>
+      <div class="check-item"><div class="label-block"><span class="t">État des sièges</span><span class="d">Usure du tissu/cuir, affaissement, mécanismes de réglage</span></div>
+        <div class="badge-group"><input type="radio" name="sieges" id="si_ok" value="ok"><label for="si_ok">OK</label><input type="radio" name="sieges" id="si_moy" value="moyen"><label for="si_moy">Usés</label><input type="radio" name="sieges" id="si_def" value="defaut"><label for="si_def">Déchirés</label></div></div>
+      <div class="check-item"><div class="label-block"><span class="t">Ciel de toit</span><span class="d">Décollement, taches, affaissement</span></div>
+        <div class="badge-group"><input type="radio" name="ciel" id="ci_ok" value="ok"><label for="ci_ok">OK</label><input type="radio" name="ciel" id="ci_moy" value="moyen"><label for="ci_moy">Léger</label><input type="radio" name="ciel" id="ci_def" value="defaut"><label for="ci_def">Décollé</label></div></div>
+      <div class="check-item"><div class="label-block"><span class="t">Climatisation / chauffage</span><span class="d">Efficacité du froid et du chaud, bruit du compresseur</span></div>
         <div class="badge-group"><input type="radio" name="clim" id="cl_ok" value="ok"><label for="cl_ok">OK</label><input type="radio" name="clim" id="cl_moy" value="moyen"><label for="cl_moy">Faible</label><input type="radio" name="clim" id="cl_def" value="defaut"><label for="cl_def">HS</label></div></div>
-      <div class="check-item"><div class="label-block"><span class="t">Vitres Ã©lectriques (les 4)</span><span class="d">MontÃ©e/descente fluide sur chaque portiÃ¨re</span></div>
-        <div class="badge-group"><input type="radio" name="vitres" id="vi_ok" value="ok"><label for="vi_ok">OK</label><input type="radio" name="vitres" id="vi_moy" value="moyen"><label for="vi_moy">Lente</label><input type="radio" name="vitres" id="vi_def" value="defaut"><label for="vi_def">BloquÃ©e</label></div></div>
-      <div class="check-item"><div class="label-block"><span class="t">Odeurs / traces d'humiditÃ©</span><span class="d">Moisi, tapis mouillÃ©s, moquette de coffre gorgÃ©e d'eau</span></div>
-        <div class="badge-group"><input type="radio" name="humidite" id="hu_ok" value="ok"><label for="hu_ok">Aucune</label><input type="radio" name="humidite" id="hu_moy" value="moyen"><label for="hu_moy">LÃ©gÃ¨re</label><input type="radio" name="humidite" id="hu_def" value="defaut"><label for="hu_def">MarquÃ©e</label></div></div>
+      <div class="check-item"><div class="label-block"><span class="t">Vitres électriques (les 4)</span><span class="d">Montée/descente fluide sur chaque portière</span></div>
+        <div class="badge-group"><input type="radio" name="vitres" id="vi_ok" value="ok"><label for="vi_ok">OK</label><input type="radio" name="vitres" id="vi_moy" value="moyen"><label for="vi_moy">Lente</label><input type="radio" name="vitres" id="vi_def" value="defaut"><label for="vi_def">Bloquée</label></div></div>
+      <div class="check-item"><div class="label-block"><span class="t">Odeurs / traces d'humidité</span><span class="d">Moisi, tapis mouillés, moquette de coffre gorgée d'eau</span></div>
+        <div class="badge-group"><input type="radio" name="humidite" id="hu_ok" value="ok"><label for="hu_ok">Aucune</label><input type="radio" name="humidite" id="hu_moy" value="moyen"><label for="hu_moy">Légère</label><input type="radio" name="humidite" id="hu_def" value="defaut"><label for="hu_def">Marquée</label></div></div>
 
-      <div class="field note-line"><label>Notes habitacle</label><textarea name="notes_habitacle" placeholder="Observations complÃ©mentaires..."></textarea></div>
+      <div class="field note-line"><label>Notes habitacle</label><textarea name="notes_habitacle" placeholder="Observations complémentaires..."></textarea></div>
     </div>
   </details>
 
   <details class="section" data-section="essai">
-    <summary><span class="sec-num">6</span> Essai Routier Dynamique <span class="sec-meta">Comportement en conditions rÃ©elles</span></summary>
+    <summary><span class="sec-num">6</span> Essai Routier Dynamique <span class="sec-meta">Comportement en conditions réelles</span></summary>
     <div class="section-body">
-      <div class="check-item"><div class="label-block"><span class="t">FluiditÃ© de l'accÃ©lÃ©ration</span><span class="d">RÃ©ponse moteur, absence d'Ã -coups ou de trous</span></div>
-        <div class="badge-group"><input type="radio" name="accel" id="ac_ok" value="ok"><label for="ac_ok">OK</label><input type="radio" name="accel" id="ac_moy" value="moyen"><label for="ac_moy">Moyen</label><input type="radio" name="accel" id="ac_def" value="defaut"><label for="ac_def">DÃ©faut</label></div></div>
-      <div class="check-item"><div class="label-block"><span class="t">Passage des vitesses</span><span class="d">BoÃ®te manuelle : embrayage/synchros â€” boÃ®te auto : Ã -coups, patinage</span></div>
-        <div class="badge-group"><input type="radio" name="vitesses" id="vt_ok" value="ok"><label for="vt_ok">OK</label><input type="radio" name="vitesses" id="vt_moy" value="moyen"><label for="vt_moy">Moyen</label><input type="radio" name="vitesses" id="vt_def" value="defaut"><label for="vt_def">DÃ©faut</label></div></div>
-      <div class="check-item"><div class="label-block"><span class="t">Test de braquage</span><span class="d">Braquage complet des deux cÃ´tÃ©s Ã  l'arrÃªt : bruits en butÃ©e (cardans)</span></div>
-        <div class="badge-group"><input type="radio" name="braquage" id="br_ok" value="ok"><label for="br_ok">Silencieux</label><input type="radio" name="braquage" id="br_moy" value="moyen"><label for="br_moy">LÃ©ger bruit</label><input type="radio" name="braquage" id="br_def" value="defaut"><label for="br_def">Claquement</label></div></div>
-      <div class="check-item essential"><div class="label-block"><span class="t">Freinage</span><span class="d">EfficacitÃ©, pÃ©dale ferme, dÃ©clenchement ABS, absence de dÃ©viation</span></div>
-        <div class="badge-group"><input type="radio" name="freinage" id="fn_ok" value="ok"><label for="fn_ok">OK</label><input type="radio" name="freinage" id="fn_moy" value="moyen"><label for="fn_moy">Moyen</label><input type="radio" name="freinage" id="fn_def" value="defaut"><label for="fn_def">DÃ©faut</label></div></div>
-      <div class="check-item"><div class="label-block"><span class="t">Comportement Ã  vitesse stabilisÃ©e</span><span class="d">Vibrations dans le volant, tenue de trajectoire, bruits de roulement</span></div>
-        <div class="badge-group"><input type="radio" name="stabilite" id="st_ok" value="ok"><label for="st_ok">OK</label><input type="radio" name="stabilite" id="st_moy" value="moyen"><label for="st_moy">Moyen</label><input type="radio" name="stabilite" id="st_def" value="defaut"><label for="st_def">DÃ©faut</label></div></div>
+      <div class="check-item"><div class="label-block"><span class="t">Fluidité de l'accélération</span><span class="d">Réponse moteur, absence d'à-coups ou de trous</span></div>
+        <div class="badge-group"><input type="radio" name="accel" id="ac_ok" value="ok"><label for="ac_ok">OK</label><input type="radio" name="accel" id="ac_moy" value="moyen"><label for="ac_moy">Moyen</label><input type="radio" name="accel" id="ac_def" value="defaut"><label for="ac_def">Défaut</label></div></div>
+      <div class="check-item"><div class="label-block"><span class="t">Passage des vitesses</span><span class="d">Boîte manuelle : embrayage/synchros — boîte auto : à-coups, patinage</span></div>
+        <div class="badge-group"><input type="radio" name="vitesses" id="vt_ok" value="ok"><label for="vt_ok">OK</label><input type="radio" name="vitesses" id="vt_moy" value="moyen"><label for="vt_moy">Moyen</label><input type="radio" name="vitesses" id="vt_def" value="defaut"><label for="vt_def">Défaut</label></div></div>
+      <div class="check-item"><div class="label-block"><span class="t">Test de braquage</span><span class="d">Braquage complet des deux côtés à l'arrêt : bruits en butée (cardans)</span></div>
+        <div class="badge-group"><input type="radio" name="braquage" id="br_ok" value="ok"><label for="br_ok">Silencieux</label><input type="radio" name="braquage" id="br_moy" value="moyen"><label for="br_moy">Léger bruit</label><input type="radio" name="braquage" id="br_def" value="defaut"><label for="br_def">Claquement</label></div></div>
+      <div class="check-item essential"><div class="label-block"><span class="t">Freinage</span><span class="d">Efficacité, pédale ferme, déclenchement ABS, absence de déviation</span></div>
+        <div class="badge-group"><input type="radio" name="freinage" id="fn_ok" value="ok"><label for="fn_ok">OK</label><input type="radio" name="freinage" id="fn_moy" value="moyen"><label for="fn_moy">Moyen</label><input type="radio" name="freinage" id="fn_def" value="defaut"><label for="fn_def">Défaut</label></div></div>
+      <div class="check-item"><div class="label-block"><span class="t">Comportement à vitesse stabilisée</span><span class="d">Vibrations dans le volant, tenue de trajectoire, bruits de roulement</span></div>
+        <div class="badge-group"><input type="radio" name="stabilite" id="st_ok" value="ok"><label for="st_ok">OK</label><input type="radio" name="stabilite" id="st_moy" value="moyen"><label for="st_moy">Moyen</label><input type="radio" name="stabilite" id="st_def" value="defaut"><label for="st_def">Défaut</label></div></div>
 
-      <div class="field note-line"><label>Notes essai routier</label><textarea name="notes_essai" placeholder="Observations complÃ©mentaires..."></textarea></div>
+      <div class="field note-line"><label>Notes essai routier</label><textarea name="notes_essai" placeholder="Observations complémentaires..."></textarea></div>
     </div>
   </details>
 
   <details class="section" data-section="diagnostic">
-    <summary><span class="sec-num">7</span> Diagnostic Ã‰lectronique (OBD2) &amp; Bilan <span class="sec-meta">Codes dÃ©fauts et dÃ©cision finale</span></summary>
+    <summary><span class="sec-num">7</span> Diagnostic Électronique (OBD2) &amp; Bilan <span class="sec-meta">Codes défauts et décision finale</span></summary>
     <div class="section-body">
-      <div class="subhead">RelevÃ© des codes dÃ©fauts</div>
+      <div class="subhead">Relevé des codes défauts</div>
       <div class="grid cols-3">
         <div class="field"><label>Codes ECM (moteur)</label><input type="text" name="codes_ecm" placeholder="Ex : P0300, aucun..."></div>
         <div class="field"><label>Codes ABS</label><input type="text" name="codes_abs" placeholder="Ex : C0035, aucun..."></div>
-        <div class="field"><label>Codes boÃ®te de vitesses</label><input type="text" name="codes_boite" placeholder="Ex : P0700, aucun..."></div>
+        <div class="field"><label>Codes boîte de vitesses</label><input type="text" name="codes_boite" placeholder="Ex : P0700, aucun..."></div>
       </div>
 
       <div class="alert-box">
         <div class="icon">!</div>
-        <div class="txt"><strong>Vigilance code P1000 :</strong> ce code signale un effacement rÃ©cent de la mÃ©moire dÃ©fauts (reset avant vente). Il peut masquer des pannes non rÃ©solues â€” recroisez avec l'historique dÃ©clarÃ© par le vendeur.</div>
+        <div class="txt"><strong>Vigilance code P1000 :</strong> ce code signale un effacement récent de la mémoire défauts (reset avant vente). Il peut masquer des pannes non résolues — recroisez avec l'historique déclaré par le vendeur.</div>
       </div>
-      <div class="check-item essential"><div class="label-block"><span class="t">Code P1000 dÃ©tectÃ© ?</span><span class="d">MÃ©moire rÃ©cemment effacÃ©e</span></div>
-        <div class="badge-group"><input type="radio" name="p1000" id="p1000_ok" value="ok"><label for="p1000_ok">Absent</label><input type="radio" name="p1000" id="p1000_moy" value="moyen"><label for="p1000_moy">Incertain</label><input type="radio" name="p1000" id="p1000_def" value="defaut"><label for="p1000_def">PrÃ©sent</label></div></div>
+      <div class="check-item essential"><div class="label-block"><span class="t">Code P1000 détecté ?</span><span class="d">Mémoire récemment effacée</span></div>
+        <div class="badge-group"><input type="radio" name="p1000" id="p1000_ok" value="ok"><label for="p1000_ok">Absent</label><input type="radio" name="p1000" id="p1000_moy" value="moyen"><label for="p1000_moy">Incertain</label><input type="radio" name="p1000" id="p1000_def" value="defaut"><label for="p1000_def">Présent</label></div></div>
 
-      <div class="field note-line"><label>DÃ©tail des codes / observations diagnostic</label><textarea name="notes_diagnostic" placeholder="DÃ©tails du scan OBD2..."></textarea></div>
+      <div class="field note-line"><label>Détail des codes / observations diagnostic</label><textarea name="notes_diagnostic" placeholder="Détails du scan OBD2..."></textarea></div>
 
-      <div class="subhead">DÃ©cision finale</div>
+      <div class="subhead">Décision finale</div>
       <div id="criticalRiskBannerWrap"></div>
       <div class="verdict-group">
-        <input type="radio" name="verdict" id="v_achat" value="achat"><label for="v_achat" class="verdict-card"><span class="dot"></span><span class="title">ACHAT</span><span class="sub">VÃ©hicule sain, prÃªt Ã  nÃ©gocier</span></label>
-        <input type="radio" name="verdict" id="v_neg" value="negociation"><label for="v_neg" class="verdict-card"><span class="dot"></span><span class="title">NÃ‰GOCIATION</span><span class="sub">DÃ©fauts Ã  chiffrer avant achat</span></label>
-        <input type="radio" name="verdict" id="v_fuir" value="fuir"><label for="v_fuir" class="verdict-card"><span class="dot"></span><span class="title">Ã€ FUIR</span><span class="sub">Risques majeurs identifiÃ©s</span></label>
+        <input type="radio" name="verdict" id="v_achat" value="achat"><label for="v_achat" class="verdict-card"><span class="dot"></span><span class="title">ACHAT</span><span class="sub">Véhicule sain, prêt à négocier</span></label>
+        <input type="radio" name="verdict" id="v_neg" value="negociation"><label for="v_neg" class="verdict-card"><span class="dot"></span><span class="title">NÉGOCIATION</span><span class="sub">Défauts à chiffrer avant achat</span></label>
+        <input type="radio" name="verdict" id="v_fuir" value="fuir"><label for="v_fuir" class="verdict-card"><span class="dot"></span><span class="title">À FUIR</span><span class="sub">Risques majeurs identifiés</span></label>
       </div>
 
       <div class="subhead">Budget</div>
       <div class="grid cols-3">
-        <div class="field"><label>Frais de remise en Ã©tat estimÃ©s (â‚¬)</label><input type="number" name="frais_estimation" id="fraisEstimation" placeholder="Ex : 800"></div>
-        <div class="field"><label>Marge de nÃ©gociation suggÃ©rÃ©e (â‚¬)</label><input type="text" name="marge_negociation" placeholder="Ex : -1200"></div>
-        <div class="field"><label>Budget maximum disponible (â‚¬)</label><input type="number" name="budget_max" id="budgetMax" placeholder="Ex : 13000"></div>
+        <div class="field"><label>Frais de remise en état estimés (€)</label><input type="number" name="frais_estimation" id="fraisEstimation" placeholder="Ex : 800"></div>
+        <div class="field"><label>Marge de négociation suggérée (€)</label><input type="text" name="marge_negociation" placeholder="Ex : -1200"></div>
+        <div class="field"><label>Budget maximum disponible (€)</label><input type="number" name="budget_max" id="budgetMax" placeholder="Ex : 13000"></div>
       </div>
-      <div class="budget-result" id="budgetResult">Renseignez la valeur du vÃ©hicule (section 1), les frais estimÃ©s et votre budget max pour voir le calcul.</div>
+      <div class="budget-result" id="budgetResult">Renseignez la valeur du véhicule (section 1), les frais estimés et votre budget max pour voir le calcul.</div>
 
-      <div class="field note-line" style="margin-top:16px;"><label>SynthÃ¨se / commentaire final</label><textarea name="synthese_finale" placeholder="RÃ©sumÃ© de l'expertise et recommandation..."></textarea></div>
+      <div class="field note-line" style="margin-top:16px;"><label>Synthèse / commentaire final</label><textarea name="synthese_finale" placeholder="Résumé de l'expertise et recommandation..."></textarea></div>
 
       <div class="subhead">Signatures</div>
-      <p class="hint" style="margin:0 0 10px;">Facultatif : signez du doigt ou Ã  la souris pour ajouter une validation des deux parties au rapport final.</p>
+      <p class="hint" style="margin:0 0 10px;">Facultatif : signez du doigt ou à la souris pour ajouter une validation des deux parties au rapport final.</p>
       <div class="ps-signatures-row" style="margin-top:0;">
         <div class="signature-block">
           <span class="lbl">Signature acheteur</span>
@@ -364,89 +364,89 @@
 <section class="diagnostic-workspace" id="chatPanel" hidden aria-label="Console de diagnostic">
   <section class="diagnostic-console">
     <header class="diagnostic-console-head">
-      <div><p class="panel-kicker"><span class="status-light"></span>SYSTÃˆME PRÃŠT</p><h2>Console d'investigation</h2></div>
-      <button type="button" id="chatClose" class="panel-close" aria-label="Fermer la console">Ã—</button>
+      <div><p class="panel-kicker"><span class="status-light"></span>SYSTÈME PRÊT</p><h2>Console d'investigation</h2></div>
+      <button type="button" id="chatClose" class="panel-close" aria-label="Fermer la console">×</button>
     </header>
-    <p class="chat-context">Questions guidÃ©es par le vÃ©hicule sÃ©lectionnÃ©. Les contrÃ´les doivent Ãªtre confirmÃ©s sur le vÃ©hicule.</p>
-    <div class="vehicle-readout" id="diagnosticVehicleReadout">VÃ©hicule : Ã  sÃ©lectionner dans la fiche</div>
+    <p class="chat-context">Questions guidées par le véhicule sélectionné. Les contrôles doivent être confirmés sur le véhicule.</p>
+    <div class="vehicle-readout" id="diagnosticVehicleReadout">Véhicule : à sélectionner dans la fiche</div>
     <div class="chat-messages" id="chatMessages" aria-live="polite"></div>
     <form id="chatForm">
-      <label class="sr-only" for="chatInput">Votre symptÃ´me ou mesure relevÃ©e</label>
-      <textarea id="chatInput" rows="3" maxlength="8000" placeholder="SymptÃ´me, mesure, code dÃ©faut ou rÃ©sultat de contrÃ´leâ€¦"></textarea>
-      <button class="analyze-button" type="submit">Analyser <span aria-hidden="true">â†’</span></button>
+      <label class="sr-only" for="chatInput">Votre symptôme ou mesure relevée</label>
+      <textarea id="chatInput" rows="3" maxlength="8000" placeholder="Symptôme, mesure, code défaut ou résultat de contrôle…"></textarea>
+      <button class="analyze-button" type="submit">Analyser <span aria-hidden="true">→</span></button>
     </form>
     <p class="chat-status" id="chatStatus" role="status"></p>
   </section>
   <section class="diagnostic-report" aria-live="polite">
-    <header class="report-head"><div><p class="panel-kicker">RAPPORT D'INTERVENTION</p><h2>SynthÃ¨se technique</h2></div><button id="chatReset" class="report-reset" type="button">â†» Nouvelle analyse</button></header>
+    <header class="report-head"><div><p class="panel-kicker">RAPPORT D'INTERVENTION</p><h2>Synthèse technique</h2></div><button id="chatReset" class="report-reset" type="button">↻ Nouvelle analyse</button></header>
     <div id="reportContent" class="report-content">
-      <div class="waiting-state"><div class="radar" aria-hidden="true"><span></span></div><p class="waiting-kicker">AUCUN RAPPORT ACTIF</p><h3>En attente des mesures terrain</h3><p>La synthÃ¨se d'intervention apparaÃ®tra ici aprÃ¨s confirmation de la cause probable.</p></div>
+      <div class="waiting-state"><div class="radar" aria-hidden="true"><span></span></div><p class="waiting-kicker">AUCUN RAPPORT ACTIF</p><h3>En attente des mesures terrain</h3><p>La synthèse d'intervention apparaîtra ici après confirmation de la cause probable.</p></div>
     </div>
   </section>
 </section>
 
 <div class="inline-assistant" id="inlineAssistant" hidden role="status">
-  <span class="inline-assistant-icon" aria-hidden="true">ðŸ”§</span>
+  <span class="inline-assistant-icon" aria-hidden="true">🔧</span>
   <span id="inlineAssistantText"></span>
-  <button type="button" class="btn-mini" id="inlineAssistantAsk">Voir comment vÃ©rifier</button>
-  <button type="button" class="inline-assistant-close" id="inlineAssistantClose" aria-label="Fermer">Ã—</button>
+  <button type="button" class="btn-mini" id="inlineAssistantAsk">Voir comment vérifier</button>
+  <button type="button" class="inline-assistant-close" id="inlineAssistantClose" aria-label="Fermer">×</button>
 </div>
 
-<div class="mini-dash" id="miniDash" tabindex="0" role="button" aria-label="Voir le score et la dÃ©cision, aller Ã  la section bilan">
-  <div class="mini-dash-ring" id="miniDashRing"><span id="miniDashScore">â€”</span></div>
+<div class="mini-dash" id="miniDash" tabindex="0" role="button" aria-label="Voir le score et la décision, aller à la section bilan">
+  <div class="mini-dash-ring" id="miniDashRing"><span id="miniDashScore">—</span></div>
   <div class="mini-dash-text">
-    <span class="mini-dash-verdict" id="miniDashVerdict"><span class="mini-dash-dot"></span> â€”</span>
-    <span class="mini-dash-sub" id="miniDashSub">0 / 33 vÃ©rifiÃ©s</span>
+    <span class="mini-dash-verdict" id="miniDashVerdict"><span class="mini-dash-dot"></span> —</span>
+    <span class="mini-dash-sub" id="miniDashSub">0 / 33 vérifiés</span>
   </div>
 
 </div>
 
-<button type="button" class="chat-fab" data-chat-toggle><span class="chat-fab-icon" aria-hidden="true">ðŸ’¬</span>Assistant atelier</button>
+<button type="button" class="chat-fab" data-chat-toggle><span class="chat-fab-icon" aria-hidden="true">💬</span>Assistant atelier</button>
 
 <div class="modal-overlay" id="compareModal">
   <div class="modal">
-    <button class="modal-close" id="closeModal" type="button">Ã—</button>
+    <button class="modal-close" id="closeModal" type="button">×</button>
     <h2>Comparer des fiches</h2>
-    <p class="sub">SÃ©lectionnez 2 ou 3 vÃ©hicules visitÃ©s pour les comparer cÃ´te Ã  cÃ´te.</p>
+    <p class="sub">Sélectionnez 2 ou 3 véhicules visités pour les comparer côte à côte.</p>
     <div id="fichePickList"></div>
     <button class="btn-mini" id="runCompareBtn" type="button" style="margin-top:12px;">Comparer</button>
-    <button class="btn-mini" id="exportCompareBtn" type="button" style="margin-top:12px; margin-left:8px; display:none;">â¬‡ Exporter en CSV</button>
+    <button class="btn-mini" id="exportCompareBtn" type="button" style="margin-top:12px; margin-left:8px; display:none;">⬇ Exporter en CSV</button>
     <div id="compareResult"></div>
   </div>
 </div>
 
 <div class="modal-overlay" id="weightModal">
   <div class="modal">
-    <button class="modal-close" id="closeWeightModal" type="button">Ã—</button>
-    <h2>PondÃ©ration du score</h2>
-    <p class="sub">Ajustez l'importance relative de chaque catÃ©gorie de contrÃ´le dans le calcul du score global. Valeurs par dÃ©faut : 5 / 3 / 1.</p>
+    <button class="modal-close" id="closeWeightModal" type="button">×</button>
+    <h2>Pondération du score</h2>
+    <p class="sub">Ajustez l'importance relative de chaque catégorie de contrôle dans le calcul du score global. Valeurs par défaut : 5 / 3 / 1.</p>
     <div class="weight-settings-row">
       <span class="lbl">Organes vitaux<span class="d">Moteur, code P1000, fuites, joint de culasse...</span></span>
       <input type="number" id="weightVital" min="0" max="20" step="1">
     </div>
     <div class="weight-settings-row">
-      <span class="lbl">ChÃ¢ssis / dynamique<span class="d">Suspension, freinage, essai routier, historique...</span></span>
+      <span class="lbl">Châssis / dynamique<span class="d">Suspension, freinage, essai routier, historique...</span></span>
       <input type="number" id="weightChassis" min="0" max="20" step="1">
     </div>
     <div class="weight-settings-row">
-      <span class="lbl">EsthÃ©tique / confort<span class="d">Peinture, siÃ¨ges, Ã©clairage, vitres...</span></span>
+      <span class="lbl">Esthétique / confort<span class="d">Peinture, sièges, éclairage, vitres...</span></span>
       <input type="number" id="weightEsthetique" min="0" max="20" step="1">
     </div>
-    <button class="btn-mini weight-reset-btn" id="resetWeightsBtn" type="button">â†º RÃ©initialiser (5 / 3 / 1)</button>
+    <button class="btn-mini weight-reset-btn" id="resetWeightsBtn" type="button">↺ Réinitialiser (5 / 3 / 1)</button>
   </div>
 </div>
 
 <div class="snackbar" id="undoSnackbar">
-  <span id="undoSnackbarText">Fiche supprimÃ©e.</span>
+  <span id="undoSnackbarText">Fiche supprimée.</span>
   <button type="button" id="undoDeleteBtn">Annuler</button>
 </div>
 
 <div class="action-bar">
   <div class="missing-fields-banner" id="missingFieldsBanner"></div>
   <div class="action-bar-inner">
-    <button class="btn-secondary" id="resetBtn" type="button">RÃ©initialiser fiche</button>
-    <label class="print-mode-toggle"><input type="checkbox" id="printSummaryToggle" checked> Imprimer la synthÃ¨se uniquement</label>
-    <button class="btn-generate" id="generateBtn" type="button">ðŸ“„ GÃ©nÃ©rer le Rapport PDF / Sauvegarder</button>
+    <button class="btn-secondary" id="resetBtn" type="button">Réinitialiser fiche</button>
+    <label class="print-mode-toggle"><input type="checkbox" id="printSummaryToggle" checked> Imprimer la synthèse uniquement</label>
+    <button class="btn-generate" id="generateBtn" type="button">📄 Générer le Rapport PDF / Sauvegarder</button>
   </div>
 </div>
 

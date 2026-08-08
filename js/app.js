@@ -1,4 +1,4 @@
-﻿import { initializeLegacyFeatures } from './legacy-features.js?v=20260808-2';
+import { initializeLegacyFeatures } from './legacy-features.js?v=20260808-2';
 import { initializeChatExperience } from './chat-experience.js?v=20260808-2';
 import { initializePwa } from './pwa.js?v=20260808-2';
 
@@ -10,7 +10,7 @@ async function initializeApp() {
   const status = document.getElementById('result');
   try {
     if (!window.dbLoader?.loadAppData || !window.buildData) {
-      throw new Error('Le chargeur de donnees nâ€™est pas disponible.');
+      throw new Error('Le chargeur de donnees n’est pas disponible.');
     }
     const payload = await window.dbLoader.loadAppData();
     const vehicles = window.buildData(payload);
