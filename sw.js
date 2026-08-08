@@ -1,4 +1,4 @@
-﻿const CACHE_NAME = 'fiche-expert-auto-v8';
+const CACHE_NAME = 'fiche-expert-auto-v8';
 const APP_SHELL = [
   './',
   './index.html',
@@ -37,7 +37,7 @@ self.addEventListener('fetch', (event) => {
   const url = new URL(event.request.url);
   if (url.origin !== self.location.origin) return;
 
-  // Navigation : rÃ©seau d'abord pour rÃ©cupÃ©rer les mises Ã  jour, puis cache hors ligne.
+  // Navigation : réseau d'abord pour récupérer les mises à jour, puis cache hors ligne.
   if (event.request.mode === 'navigate') {
     event.respondWith(
       fetch(event.request)
@@ -51,7 +51,7 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Les donnÃ©es et ressources locales restent utilisables sans rÃ©seau.
+  // Les données et ressources locales restent utilisables sans réseau.
   event.respondWith(
     caches.match(event.request, { ignoreSearch: true })
       .then((cached) => cached || fetch(event.request).then((response) => {
