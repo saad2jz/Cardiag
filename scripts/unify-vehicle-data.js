@@ -1,8 +1,8 @@
-'use strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const fs = require('fs');
-const path = require('path');
-
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const MODELS_DIRECTORY = path.join(__dirname, '..', 'data', 'modeles');
 const IMPORTS_DIRECTORY = path.join(__dirname, '..', 'source-data', 'imports');
 const BRAND_INDEX_FILE = path.join(__dirname, '..', 'data', 'marques.json');
@@ -13,14 +13,14 @@ function normalizeSources(payload) {
     ? payload
     : payload && Array.isArray(payload.marques)
       ? payload.marques
-      : payload && payload.marque
+      : payload && (payload.marque || payload.nom)
         ? [payload]
         : [];
 
   return entries
-    .filter((entry) => entry && entry.marque)
+    .filter((entry) => entry && (entry.marque || entry.nom))
     .map((entry) => ({
-      marque: String(entry.marque).trim(),
+      marque: String(entry.marque || entry.nom).trim(),
       modeles: Array.isArray(entry.modeles) ? entry.modeles : [],
     }));
 }
@@ -37,6 +37,44 @@ function modelKey(model) {
   return identity(model?.nom || model?.name);
 }
 
+function normalizeModel(model) {
+  const normalized = {
+    ...model,
+    nom: String(model?.nom || model?.name || '').trim(),
+  };
+  const generations = Array.isArray(model?.generations) ? model.generations : [];
+
+  normalized.generations = generations.flatMap((generation) => {
+    if (!generation || typeof generation !== 'object') return [];
+    const phases = Array.isArray(generation.phases) ? generation.phases : [];
+    if (!phases.length || phases.every((phase) => typeof phase !== 'object')) {
+      return [{
+        ...generation,
+        motorisations: Array.isArray(generation.motorisations) ? generation.motorisations : [],
+      }];
+    }
+
+    return phases.map((phase) => ({
+      ...generation,
+      phase: phase.phase || phase.nom || phase.name || '',
+      annees: phase.annees || generation.annees || '',
+      motorisations: Array.isArray(phase.motorisations)
+        ? phase.motorisations
+        : (Array.isArray(generation.motorisations) ? generation.motorisations : []),
+    }));
+  });
+
+  if (!normalized.generations.length && Array.isArray(model?.motorisations)) {
+    normalized.generations = [{
+      code_chassis: model.code_chassis || model.chassis || '',
+      annees: model.annees || '',
+      motorisations: model.motorisations,
+    }];
+  }
+
+  return normalized;
+}
+
 function generationKey(generation) {
   return [
     generation?.code_chassis || generation?.phase || '',
@@ -50,11 +88,11 @@ function mergeModels(existing, incoming) {
   incoming.forEach((candidate) => {
     const key = modelKey(candidate);
     if (!key) return;
+    const normalizedCandidate = normalizeModel(candidate);
 
     const current = byName.get(key);
     if (!current) {
-      const normalized = { ...candidate, nom: String(candidate.nom || candidate.name).trim() };
-      normalized.generations = Array.isArray(candidate.generations) ? candidate.generations : [];
+      const normalized = normalizedCandidate;
       existing.push(normalized);
       byName.set(key, normalized);
       return;
@@ -63,7 +101,7 @@ function mergeModels(existing, incoming) {
     const knownGenerations = new Set(
       (current.generations || []).map(generationKey)
     );
-    (candidate.generations || []).forEach((generation) => {
+    (normalizedCandidate.generations || []).forEach((generation) => {
       const key = generationKey(generation);
       if (!knownGenerations.has(key)) {
         current.generations.push(generation);

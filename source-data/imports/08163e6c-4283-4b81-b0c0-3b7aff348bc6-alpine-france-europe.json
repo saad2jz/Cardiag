@@ -1,0 +1,1400 @@
+{
+  "nom": "Alpine",
+  "modeles": [
+    {
+      "nom": "A110 (Berlinette)",
+      "generations": [
+        {
+          "code_chassis": "A110",
+          "annees": "1962-1977",
+          "phases": [
+            "Berlinette Tour de France",
+            "Cabriolet Michelotti",
+            "GT4"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.1 Gordini — 95 ch",
+              "code_moteur": "Bloc R8 Gordini 807/812 (préparé Mignotet/Gordini)",
+              "cylindree": "956/1108/1149cm3",
+              "puissance_ch": 95,
+              "boite": [
+                "BVM4",
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Blocs moteurs et pièces de préparation devenus très rares aujourd'hui",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange spécifiques"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec un seuil kilométrique précis dans les sources disponibles",
+                  "diagnostic": "Contrôle lors d'une révision ou d'un diagnostic professionnel avant achat",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent compte tenu de l'âge du modèle",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles"
+                },
+                {
+                  "probleme": "Confusion fréquente entre blocs moteurs d'origine et de remplacement lors de restaurations",
+                  "symptomes": [
+                    "Incohérence entre numéro de série et caractéristiques du moteur monté"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Contrôle lors d'une révision ou d'un diagnostic professionnel avant achat",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent sur le marché de la collection",
+                  "cout_reparation_estime": "Non applicable (risque financier lié à l'authenticité, pas un coût de réparation)"
+                },
+                {
+                  "probleme": "Carrosserie polyester sur châssis poutre acier : le châssis est le point de contrôle numéro un",
+                  "symptomes": [
+                    "Corrosion ou fissures du châssis acier"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec un seuil kilométrique précis dans les sources disponibles",
+                  "diagnostic": "Contrôle lors d'une révision ou d'un diagnostic professionnel avant achat",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent sur les exemplaires non restaurés",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.1 Gordini — 103 ch",
+              "code_moteur": "Bloc R8 Gordini 807/812 (préparé Mignotet/Gordini)",
+              "cylindree": "956/1108/1149cm3",
+              "puissance_ch": 103,
+              "boite": [
+                "BVM4",
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Blocs moteurs et pièces de préparation devenus très rares aujourd'hui",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange spécifiques"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec un seuil kilométrique précis dans les sources disponibles",
+                  "diagnostic": "Contrôle lors d'une révision ou d'un diagnostic professionnel avant achat",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent compte tenu de l'âge du modèle",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles"
+                },
+                {
+                  "probleme": "Confusion fréquente entre blocs moteurs d'origine et de remplacement lors de restaurations",
+                  "symptomes": [
+                    "Incohérence entre numéro de série et caractéristiques du moteur monté"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Contrôle lors d'une révision ou d'un diagnostic professionnel avant achat",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent sur le marché de la collection",
+                  "cout_reparation_estime": "Non applicable (risque financier lié à l'authenticité, pas un coût de réparation)"
+                },
+                {
+                  "probleme": "Carrosserie polyester sur châssis poutre acier : le châssis est le point de contrôle numéro un",
+                  "symptomes": [
+                    "Corrosion ou fissures du châssis acier"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec un seuil kilométrique précis dans les sources disponibles",
+                  "diagnostic": "Contrôle lors d'une révision ou d'un diagnostic professionnel avant achat",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent sur les exemplaires non restaurés",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.3 Renault — 110 ch",
+              "code_moteur": "807/844 (Cléon-Alu dérivé R16/R12)",
+              "cylindree": "1289/1470/1565cm3",
+              "puissance_ch": 110,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Blocs moteurs et pièces de préparation devenus très rares aujourd'hui",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange spécifiques"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec un seuil kilométrique précis dans les sources disponibles",
+                  "diagnostic": "Contrôle lors d'une révision ou d'un diagnostic professionnel avant achat",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent compte tenu de l'âge du modèle",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles"
+                },
+                {
+                  "probleme": "Confusion fréquente entre blocs moteurs d'origine et de remplacement lors de restaurations",
+                  "symptomes": [
+                    "Incohérence entre numéro de série et caractéristiques du moteur monté"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Contrôle lors d'une révision ou d'un diagnostic professionnel avant achat",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent sur le marché de la collection",
+                  "cout_reparation_estime": "Non applicable (risque financier lié à l'authenticité, pas un coût de réparation)"
+                },
+                {
+                  "probleme": "Carrosserie polyester sur châssis poutre acier : le châssis est le point de contrôle numéro un",
+                  "symptomes": [
+                    "Corrosion ou fissures du châssis acier"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec un seuil kilométrique précis dans les sources disponibles",
+                  "diagnostic": "Contrôle lors d'une révision ou d'un diagnostic professionnel avant achat",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent sur les exemplaires non restaurés",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.4 Renault — 125 ch",
+              "code_moteur": "807/844 (Cléon-Alu dérivé R16/R12)",
+              "cylindree": "1289/1470/1565cm3",
+              "puissance_ch": 125,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Blocs moteurs et pièces de préparation devenus très rares aujourd'hui",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange spécifiques"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec un seuil kilométrique précis dans les sources disponibles",
+                  "diagnostic": "Contrôle lors d'une révision ou d'un diagnostic professionnel avant achat",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent compte tenu de l'âge du modèle",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles"
+                },
+                {
+                  "probleme": "Confusion fréquente entre blocs moteurs d'origine et de remplacement lors de restaurations",
+                  "symptomes": [
+                    "Incohérence entre numéro de série et caractéristiques du moteur monté"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Contrôle lors d'une révision ou d'un diagnostic professionnel avant achat",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent sur le marché de la collection",
+                  "cout_reparation_estime": "Non applicable (risque financier lié à l'authenticité, pas un coût de réparation)"
+                },
+                {
+                  "probleme": "Carrosserie polyester sur châssis poutre acier : le châssis est le point de contrôle numéro un",
+                  "symptomes": [
+                    "Corrosion ou fissures du châssis acier"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec un seuil kilométrique précis dans les sources disponibles",
+                  "diagnostic": "Contrôle lors d'une révision ou d'un diagnostic professionnel avant achat",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent sur les exemplaires non restaurés",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.6 Renault — 138 ch",
+              "code_moteur": "807/810/824 (R16TX/R17TS dérivé)",
+              "cylindree": "1565/1596/1647cm3",
+              "puissance_ch": 138,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Blocs moteurs et pièces de préparation devenus très rares aujourd'hui",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange spécifiques"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec un seuil kilométrique précis dans les sources disponibles",
+                  "diagnostic": "Contrôle lors d'une révision ou d'un diagnostic professionnel avant achat",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent compte tenu de l'âge du modèle",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles"
+                },
+                {
+                  "probleme": "Confusion fréquente entre blocs moteurs d'origine et de remplacement lors de restaurations",
+                  "symptomes": [
+                    "Incohérence entre numéro de série et caractéristiques du moteur monté"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Contrôle lors d'une révision ou d'un diagnostic professionnel avant achat",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent sur le marché de la collection",
+                  "cout_reparation_estime": "Non applicable (risque financier lié à l'authenticité, pas un coût de réparation)"
+                },
+                {
+                  "probleme": "Carrosserie polyester sur châssis poutre acier : le châssis est le point de contrôle numéro un",
+                  "symptomes": [
+                    "Corrosion ou fissures du châssis acier"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec un seuil kilométrique précis dans les sources disponibles",
+                  "diagnostic": "Contrôle lors d'une révision ou d'un diagnostic professionnel avant achat",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent sur les exemplaires non restaurés",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "A110 (nouvelle génération)",
+          "annees": "2017-présent",
+          "phases": [
+            "Pure/Légende/S/GT (2017-présent)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.8 Turbo — 252 ch",
+              "code_moteur": "H5Ft (Renault-Nissan turbo)",
+              "cylindree": "1798cm3",
+              "puissance_ch": 252,
+              "boite": [
+                "BVA7 (DCT Getrag double embrayage)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Surconsommation d'huile massive et encrassement des segments de piston, principal défaut structurel de ce moteur (Motorgate)",
+                  "symptomes": [
+                    "Consommation d'huile pouvant dépasser 1L/3000km",
+                    "Encrassement des segments de piston",
+                    "Perte de puissance",
+                    "Fumée bleue à l'échappement"
+                  ],
+                  "kilometrage_apparition": "Défauts principalement constatés sur les moteurs produits entre 2012 et 2015 ; problèmes de consommation d'huile pouvant apparaître dès 60 000 km",
+                  "diagnostic": "Contrôle du niveau d'huile sur plusieurs pleins consécutifs, test de compression en cas de doute avancé",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent sur les moteurs 2012-2018, corrigé sur le 1.3 TCe (H5H) qui lui succède",
+                  "cout_reparation_estime": "Décalaminage pouvant retarder l'échéance mais ne réglant pas le fond ; réparation définitive (remplacement des segments) : 2000 à 3500€"
+                },
+                {
+                  "probleme": "Chaîne de distribution fragile s'usant prématurément",
+                  "symptomes": [
+                    "Cliquetis au démarrage à froid",
+                    "Décalage de calage dans les cas avancés"
+                  ],
+                  "kilometrage_apparition": "Usure prématurée dès 60 000 à 80 000 km",
+                  "diagnostic": "Écoute du bruit à froid, contrôle du calage moteur au diagnostic",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent sur les moteurs 2012-2018",
+                  "cout_reparation_estime": "Coût de réparation prohibitif selon les sources, non chiffré précisément mais généralement élevé (plusieurs milliers d'euros en cas de casse)"
+                },
+                {
+                  "probleme": "Turbo et pièces mobiles subissant une usure accélérée en cas de manque de surveillance du niveau d'huile",
+                  "symptomes": [
+                    "Casse catastrophique du moteur possible dans les cas les plus graves"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec un seuil kilométrique précis dans les sources disponibles, dépend fortement de la surveillance du niveau d'huile",
+                  "diagnostic": "Surveillance rapprochée du niveau d'huile (tous les 2000-3000km recommandé)",
+                  "piece_concernee": "Suralimentation (turbocompresseur)",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent en cas de négligence de la surveillance du niveau d'huile",
+                  "cout_reparation_estime": "Coût de réparation dépassant souvent plusieurs milliers d'euros en cas de casse catastrophique"
+                },
+                {
+                  "probleme": "Rappel constructeur de 2017 concernant la poulie de vilebrequin",
+                  "symptomes": [
+                    "Concerne les propriétaires n'ayant pas fait vérifier leur véhicule"
+                  ],
+                  "kilometrage_apparition": "Non applicable (rappel lié à la période de production 2012-2016)",
+                  "diagnostic": "Vérifier auprès du réseau Renault si le véhicule est concerné via le numéro de série (VIN)",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information positive pour les véhicules concernés (prise en charge partielle)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Prise en charge partielle possible dans le cadre du rappel selon une source"
+                },
+                {
+                  "probleme": "Moteur globalement à éviter en occasion selon la quasi-totalité des guides d'achat consultés, remplacé par le 1.3 TCe (H5H) codéveloppé avec Mercedes qui corrige les défauts structurels",
+                  "symptomes": [
+                    "Cumul des défauts ci-dessus (consommation d'huile, chaîne, turbo) concentré sur la période 2012-2018"
+                  ],
+                  "kilometrage_apparition": "Non applicable (recommandation générale)",
+                  "diagnostic": "Vérifier impérativement l'historique d'entretien et privilégier le 1.3 TCe (H5H) en alternative",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Systématique sur la période 2012-2018 selon les sources consultées",
+                  "cout_reparation_estime": "Non applicable (recommandation d'achat, pas un coût de réparation)"
+                },
+                {
+                  "probleme": "Régulateur de pression d'huile pouvant se retrouver bouché par des limailles de fer sur les moteurs assemblés jusqu'en juillet 2019",
+                  "symptomes": [
+                    "Pression d'huile irrégulière",
+                    "Risque d'usure prématurée du moteur"
+                  ],
+                  "kilometrage_apparition": "Non applicable (défaut lié à la période de fabrication)",
+                  "diagnostic": "Contrôle lors d'une révision ou d'un diagnostic professionnel avant achat",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Concerne les véhicules assemblés jusqu'en juillet 2019",
+                  "cout_reparation_estime": "Remplacement du régulateur pris en charge dans le cadre des opérations de contrôle constructeur"
+                },
+                {
+                  "probleme": "Rappel jante (code 0EGT, alerte OR/00007/25) : gravure incorrecte de la largeur de jante arrière (71/2 au lieu de 81/2 X18CH5) sur les modèles produits entre le 03/04/2024 et le 06/09/2024",
+                  "symptomes": [
+                    "Jante non conforme aux spécifications",
+                    "Risque de dommages aux pneus et de perte de stabilité"
+                  ],
+                  "kilometrage_apparition": "Non applicable (rappel lié à la période de production)",
+                  "diagnostic": "Vérifier auprès du réseau Alpine si le véhicule est concerné (code 0EGT)",
+                  "piece_concernee": "Trains roulants / suspension",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Concerne les véhicules produits entre le 03/04/2024 et le 06/09/2024",
+                  "cout_reparation_estime": "Prise en charge dans le cadre du rappel constructeur"
+                },
+                {
+                  "probleme": "Rappel châssis (avril 2023) : déformation possible du châssis en raison d'erreurs de production sur les modèles produits entre le 6 et le 11 janvier 2023",
+                  "symptomes": [
+                    "Déformation du châssis pouvant entraîner une perte de contrôle du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non applicable (rappel lié à la période de production)",
+                  "diagnostic": "Vérifier auprès du réseau Alpine si le véhicule est concerné",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Concerne les véhicules produits entre le 06/01/2023 et le 11/01/2023",
+                  "cout_reparation_estime": "Prise en charge dans le cadre du rappel constructeur"
+                },
+                {
+                  "probleme": "Rappel serrure de coffre avant (simple resserrage)",
+                  "symptomes": [
+                    "Serrure de coffre avant mal fixée"
+                  ],
+                  "kilometrage_apparition": "Non applicable (rappel lié à la période de production)",
+                  "diagnostic": "Contrôle lors d'une révision ou d'un diagnostic professionnel avant achat",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Opération simple prise en charge dans le cadre du rappel constructeur, quasiment réalisable par le client lui-même"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.8 Turbo — 292 ch",
+              "code_moteur": "H5Ft (Renault-Nissan turbo)",
+              "cylindree": "1798cm3",
+              "puissance_ch": 292,
+              "boite": [
+                "BVA7 (DCT Getrag double embrayage)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Surconsommation d'huile massive et encrassement des segments de piston, principal défaut structurel de ce moteur (Motorgate)",
+                  "symptomes": [
+                    "Consommation d'huile pouvant dépasser 1L/3000km",
+                    "Encrassement des segments de piston",
+                    "Perte de puissance",
+                    "Fumée bleue à l'échappement"
+                  ],
+                  "kilometrage_apparition": "Défauts principalement constatés sur les moteurs produits entre 2012 et 2015 ; problèmes de consommation d'huile pouvant apparaître dès 60 000 km",
+                  "diagnostic": "Contrôle du niveau d'huile sur plusieurs pleins consécutifs, test de compression en cas de doute avancé",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent sur les moteurs 2012-2018, corrigé sur le 1.3 TCe (H5H) qui lui succède",
+                  "cout_reparation_estime": "Décalaminage pouvant retarder l'échéance mais ne réglant pas le fond ; réparation définitive (remplacement des segments) : 2000 à 3500€"
+                },
+                {
+                  "probleme": "Chaîne de distribution fragile s'usant prématurément",
+                  "symptomes": [
+                    "Cliquetis au démarrage à froid",
+                    "Décalage de calage dans les cas avancés"
+                  ],
+                  "kilometrage_apparition": "Usure prématurée dès 60 000 à 80 000 km",
+                  "diagnostic": "Écoute du bruit à froid, contrôle du calage moteur au diagnostic",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent sur les moteurs 2012-2018",
+                  "cout_reparation_estime": "Coût de réparation prohibitif selon les sources, non chiffré précisément mais généralement élevé (plusieurs milliers d'euros en cas de casse)"
+                },
+                {
+                  "probleme": "Turbo et pièces mobiles subissant une usure accélérée en cas de manque de surveillance du niveau d'huile",
+                  "symptomes": [
+                    "Casse catastrophique du moteur possible dans les cas les plus graves"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec un seuil kilométrique précis dans les sources disponibles, dépend fortement de la surveillance du niveau d'huile",
+                  "diagnostic": "Surveillance rapprochée du niveau d'huile (tous les 2000-3000km recommandé)",
+                  "piece_concernee": "Suralimentation (turbocompresseur)",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent en cas de négligence de la surveillance du niveau d'huile",
+                  "cout_reparation_estime": "Coût de réparation dépassant souvent plusieurs milliers d'euros en cas de casse catastrophique"
+                },
+                {
+                  "probleme": "Rappel constructeur de 2017 concernant la poulie de vilebrequin",
+                  "symptomes": [
+                    "Concerne les propriétaires n'ayant pas fait vérifier leur véhicule"
+                  ],
+                  "kilometrage_apparition": "Non applicable (rappel lié à la période de production 2012-2016)",
+                  "diagnostic": "Vérifier auprès du réseau Renault si le véhicule est concerné via le numéro de série (VIN)",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information positive pour les véhicules concernés (prise en charge partielle)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Prise en charge partielle possible dans le cadre du rappel selon une source"
+                },
+                {
+                  "probleme": "Moteur globalement à éviter en occasion selon la quasi-totalité des guides d'achat consultés, remplacé par le 1.3 TCe (H5H) codéveloppé avec Mercedes qui corrige les défauts structurels",
+                  "symptomes": [
+                    "Cumul des défauts ci-dessus (consommation d'huile, chaîne, turbo) concentré sur la période 2012-2018"
+                  ],
+                  "kilometrage_apparition": "Non applicable (recommandation générale)",
+                  "diagnostic": "Vérifier impérativement l'historique d'entretien et privilégier le 1.3 TCe (H5H) en alternative",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Systématique sur la période 2012-2018 selon les sources consultées",
+                  "cout_reparation_estime": "Non applicable (recommandation d'achat, pas un coût de réparation)"
+                },
+                {
+                  "probleme": "Régulateur de pression d'huile pouvant se retrouver bouché par des limailles de fer sur les moteurs assemblés jusqu'en juillet 2019",
+                  "symptomes": [
+                    "Pression d'huile irrégulière",
+                    "Risque d'usure prématurée du moteur"
+                  ],
+                  "kilometrage_apparition": "Non applicable (défaut lié à la période de fabrication)",
+                  "diagnostic": "Contrôle lors d'une révision ou d'un diagnostic professionnel avant achat",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Concerne les véhicules assemblés jusqu'en juillet 2019",
+                  "cout_reparation_estime": "Remplacement du régulateur pris en charge dans le cadre des opérations de contrôle constructeur"
+                },
+                {
+                  "probleme": "Rappel jante (code 0EGT, alerte OR/00007/25) : gravure incorrecte de la largeur de jante arrière (71/2 au lieu de 81/2 X18CH5) sur les modèles produits entre le 03/04/2024 et le 06/09/2024",
+                  "symptomes": [
+                    "Jante non conforme aux spécifications",
+                    "Risque de dommages aux pneus et de perte de stabilité"
+                  ],
+                  "kilometrage_apparition": "Non applicable (rappel lié à la période de production)",
+                  "diagnostic": "Vérifier auprès du réseau Alpine si le véhicule est concerné (code 0EGT)",
+                  "piece_concernee": "Trains roulants / suspension",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Concerne les véhicules produits entre le 03/04/2024 et le 06/09/2024",
+                  "cout_reparation_estime": "Prise en charge dans le cadre du rappel constructeur"
+                },
+                {
+                  "probleme": "Rappel châssis (avril 2023) : déformation possible du châssis en raison d'erreurs de production sur les modèles produits entre le 6 et le 11 janvier 2023",
+                  "symptomes": [
+                    "Déformation du châssis pouvant entraîner une perte de contrôle du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non applicable (rappel lié à la période de production)",
+                  "diagnostic": "Vérifier auprès du réseau Alpine si le véhicule est concerné",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Concerne les véhicules produits entre le 06/01/2023 et le 11/01/2023",
+                  "cout_reparation_estime": "Prise en charge dans le cadre du rappel constructeur"
+                },
+                {
+                  "probleme": "Rappel serrure de coffre avant (simple resserrage)",
+                  "symptomes": [
+                    "Serrure de coffre avant mal fixée"
+                  ],
+                  "kilometrage_apparition": "Non applicable (rappel lié à la période de production)",
+                  "diagnostic": "Contrôle lors d'une révision ou d'un diagnostic professionnel avant achat",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Opération simple prise en charge dans le cadre du rappel constructeur, quasiment réalisable par le client lui-même"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.8 Turbo — 300 ch",
+              "code_moteur": "H5Ft (Renault-Nissan turbo)",
+              "cylindree": "1798cm3",
+              "puissance_ch": 300,
+              "boite": [
+                "BVA7 (DCT Getrag double embrayage)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Surconsommation d'huile massive et encrassement des segments de piston, principal défaut structurel de ce moteur (Motorgate)",
+                  "symptomes": [
+                    "Consommation d'huile pouvant dépasser 1L/3000km",
+                    "Encrassement des segments de piston",
+                    "Perte de puissance",
+                    "Fumée bleue à l'échappement"
+                  ],
+                  "kilometrage_apparition": "Défauts principalement constatés sur les moteurs produits entre 2012 et 2015 ; problèmes de consommation d'huile pouvant apparaître dès 60 000 km",
+                  "diagnostic": "Contrôle du niveau d'huile sur plusieurs pleins consécutifs, test de compression en cas de doute avancé",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent sur les moteurs 2012-2018, corrigé sur le 1.3 TCe (H5H) qui lui succède",
+                  "cout_reparation_estime": "Décalaminage pouvant retarder l'échéance mais ne réglant pas le fond ; réparation définitive (remplacement des segments) : 2000 à 3500€"
+                },
+                {
+                  "probleme": "Chaîne de distribution fragile s'usant prématurément",
+                  "symptomes": [
+                    "Cliquetis au démarrage à froid",
+                    "Décalage de calage dans les cas avancés"
+                  ],
+                  "kilometrage_apparition": "Usure prématurée dès 60 000 à 80 000 km",
+                  "diagnostic": "Écoute du bruit à froid, contrôle du calage moteur au diagnostic",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent sur les moteurs 2012-2018",
+                  "cout_reparation_estime": "Coût de réparation prohibitif selon les sources, non chiffré précisément mais généralement élevé (plusieurs milliers d'euros en cas de casse)"
+                },
+                {
+                  "probleme": "Turbo et pièces mobiles subissant une usure accélérée en cas de manque de surveillance du niveau d'huile",
+                  "symptomes": [
+                    "Casse catastrophique du moteur possible dans les cas les plus graves"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec un seuil kilométrique précis dans les sources disponibles, dépend fortement de la surveillance du niveau d'huile",
+                  "diagnostic": "Surveillance rapprochée du niveau d'huile (tous les 2000-3000km recommandé)",
+                  "piece_concernee": "Suralimentation (turbocompresseur)",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent en cas de négligence de la surveillance du niveau d'huile",
+                  "cout_reparation_estime": "Coût de réparation dépassant souvent plusieurs milliers d'euros en cas de casse catastrophique"
+                },
+                {
+                  "probleme": "Rappel constructeur de 2017 concernant la poulie de vilebrequin",
+                  "symptomes": [
+                    "Concerne les propriétaires n'ayant pas fait vérifier leur véhicule"
+                  ],
+                  "kilometrage_apparition": "Non applicable (rappel lié à la période de production 2012-2016)",
+                  "diagnostic": "Vérifier auprès du réseau Renault si le véhicule est concerné via le numéro de série (VIN)",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information positive pour les véhicules concernés (prise en charge partielle)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Prise en charge partielle possible dans le cadre du rappel selon une source"
+                },
+                {
+                  "probleme": "Moteur globalement à éviter en occasion selon la quasi-totalité des guides d'achat consultés, remplacé par le 1.3 TCe (H5H) codéveloppé avec Mercedes qui corrige les défauts structurels",
+                  "symptomes": [
+                    "Cumul des défauts ci-dessus (consommation d'huile, chaîne, turbo) concentré sur la période 2012-2018"
+                  ],
+                  "kilometrage_apparition": "Non applicable (recommandation générale)",
+                  "diagnostic": "Vérifier impérativement l'historique d'entretien et privilégier le 1.3 TCe (H5H) en alternative",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Systématique sur la période 2012-2018 selon les sources consultées",
+                  "cout_reparation_estime": "Non applicable (recommandation d'achat, pas un coût de réparation)"
+                },
+                {
+                  "probleme": "Régulateur de pression d'huile pouvant se retrouver bouché par des limailles de fer sur les moteurs assemblés jusqu'en juillet 2019",
+                  "symptomes": [
+                    "Pression d'huile irrégulière",
+                    "Risque d'usure prématurée du moteur"
+                  ],
+                  "kilometrage_apparition": "Non applicable (défaut lié à la période de fabrication)",
+                  "diagnostic": "Contrôle lors d'une révision ou d'un diagnostic professionnel avant achat",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Concerne les véhicules assemblés jusqu'en juillet 2019",
+                  "cout_reparation_estime": "Remplacement du régulateur pris en charge dans le cadre des opérations de contrôle constructeur"
+                },
+                {
+                  "probleme": "Rappel jante (code 0EGT, alerte OR/00007/25) : gravure incorrecte de la largeur de jante arrière (71/2 au lieu de 81/2 X18CH5) sur les modèles produits entre le 03/04/2024 et le 06/09/2024",
+                  "symptomes": [
+                    "Jante non conforme aux spécifications",
+                    "Risque de dommages aux pneus et de perte de stabilité"
+                  ],
+                  "kilometrage_apparition": "Non applicable (rappel lié à la période de production)",
+                  "diagnostic": "Vérifier auprès du réseau Alpine si le véhicule est concerné (code 0EGT)",
+                  "piece_concernee": "Trains roulants / suspension",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Concerne les véhicules produits entre le 03/04/2024 et le 06/09/2024",
+                  "cout_reparation_estime": "Prise en charge dans le cadre du rappel constructeur"
+                },
+                {
+                  "probleme": "Rappel châssis (avril 2023) : déformation possible du châssis en raison d'erreurs de production sur les modèles produits entre le 6 et le 11 janvier 2023",
+                  "symptomes": [
+                    "Déformation du châssis pouvant entraîner une perte de contrôle du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non applicable (rappel lié à la période de production)",
+                  "diagnostic": "Vérifier auprès du réseau Alpine si le véhicule est concerné",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Concerne les véhicules produits entre le 06/01/2023 et le 11/01/2023",
+                  "cout_reparation_estime": "Prise en charge dans le cadre du rappel constructeur"
+                },
+                {
+                  "probleme": "Rappel serrure de coffre avant (simple resserrage)",
+                  "symptomes": [
+                    "Serrure de coffre avant mal fixée"
+                  ],
+                  "kilometrage_apparition": "Non applicable (rappel lié à la période de production)",
+                  "diagnostic": "Contrôle lors d'une révision ou d'un diagnostic professionnel avant achat",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Opération simple prise en charge dans le cadre du rappel constructeur, quasiment réalisable par le client lui-même"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "A290",
+      "generations": [
+        {
+          "code_chassis": "A290 (plateforme AmpR Small/CMF-EV, base commune Renault 5 E-Tech)",
+          "annees": "2024-présent",
+          "phases": [
+            "Lancement (2024-présent)"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "A290 GT — 180 ch",
+              "code_moteur": "Moteur électrique synchrone (batterie 52 kWh)",
+              "cylindree": "N/A",
+              "puissance_ch": 180,
+              "boite": [
+                "Réducteur monovitesse"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Rappel constructeur partagé avec la Renault 5 E-Tech pour calculateur de l'onduleur du moteur électrique principal (10 exemplaires A290 concernés sur les 16 000 véhicules rappelés au total)",
+                  "symptomes": [
+                    "Message d'alerte au tableau de bord",
+                    "Impossibilité de démarrer, blocage en position \"non prêt\""
+                  ],
+                  "kilometrage_apparition": "Non applicable (rappel lié à la période de production, véhicules produits entre septembre et décembre 2024)",
+                  "diagnostic": "Vérifier auprès du réseau Alpine si le véhicule est concerné par le rappel",
+                  "piece_concernee": "Système électrique / batterie",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Concerne un nombre très restreint d'exemplaires A290 (10 unités)",
+                  "cout_reparation_estime": "Reprogrammation préventive gratuite d'environ 30 minutes dans le cadre du rappel"
+                },
+                {
+                  "probleme": "Volant chauffant inopérant à la première sollicitation, nécessitant plusieurs appuis avant activation, puis chauffe par intermittence",
+                  "symptomes": [
+                    "Fonction volant chauffant peu fiable au déclenchement"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec un seuil kilométrique précis dans les sources disponibles",
+                  "diagnostic": "Contrôle lors d'une révision ou d'un diagnostic professionnel avant achat",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent selon un témoignage détaillé de propriétaire",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles"
+                },
+                {
+                  "probleme": "Bruit de roulement important dans le moteur électrique sans cause identifiée par le réseau après-vente",
+                  "symptomes": [
+                    "Bruit de roulement anormal du moteur électrique non résolu par le SAV"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec un seuil kilométrique précis dans les sources disponibles",
+                  "diagnostic": "Contrôle lors d'une révision ou d'un diagnostic professionnel avant achat",
+                  "piece_concernee": "Système électrique / batterie",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel selon un témoignage documenté",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; réseau après-vente n'ayant pas identifié la cause dans le cas documenté"
+                },
+                {
+                  "probleme": "CarPlay se connectant de façon aléatoire, système multimédia perfectible",
+                  "symptomes": [
+                    "Connexion CarPlay intermittente"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Contrôle lors d'une révision ou d'un diagnostic professionnel avant achat",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Modèle trop récent (2024) pour disposer d'un recul significatif sur la fiabilité à long terme, malgré une base technique éprouvée (plateforme CMF-EV du groupe Renault)",
+                  "symptomes": [
+                    "Absence de statistiques de fiabilité à long terme fiables"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "La motorisation électrique simplifie mécaniquement le véhicule (moins de pièces en mouvement), ce qui devrait favoriser la fiabilité à long terme selon les premières analyses",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information générale (non concernée par la présente échelle de gravité)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Fiabilité globale évaluée à 7/10 selon les premiers retours utilisateurs et tests experts sur la version GTS 220ch, systèmes électroniques notés 6,5/10, durabilité de la batterie évaluée à 7,5/10",
+                  "symptomes": [
+                    "Note de la rédaction Caradisiac de 13,4/20, note des propriétaires nettement supérieure à 17,4/20"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information positive (non concernée par la présente échelle de gravité)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Garantie constructeur de 3 ans et 8 ans/160 000 km sur la batterie"
+                }
+              ]
+            },
+            {
+              "type": "Électrique",
+              "nom": "A290 GT Performance — 220 ch",
+              "code_moteur": "Moteur électrique synchrone (batterie 52 kWh)",
+              "cylindree": "N/A",
+              "puissance_ch": 220,
+              "boite": [
+                "Réducteur monovitesse"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Rappel constructeur partagé avec la Renault 5 E-Tech pour calculateur de l'onduleur du moteur électrique principal (10 exemplaires A290 concernés sur les 16 000 véhicules rappelés au total)",
+                  "symptomes": [
+                    "Message d'alerte au tableau de bord",
+                    "Impossibilité de démarrer, blocage en position \"non prêt\""
+                  ],
+                  "kilometrage_apparition": "Non applicable (rappel lié à la période de production, véhicules produits entre septembre et décembre 2024)",
+                  "diagnostic": "Vérifier auprès du réseau Alpine si le véhicule est concerné par le rappel",
+                  "piece_concernee": "Système électrique / batterie",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Concerne un nombre très restreint d'exemplaires A290 (10 unités)",
+                  "cout_reparation_estime": "Reprogrammation préventive gratuite d'environ 30 minutes dans le cadre du rappel"
+                },
+                {
+                  "probleme": "Volant chauffant inopérant à la première sollicitation, nécessitant plusieurs appuis avant activation, puis chauffe par intermittence",
+                  "symptomes": [
+                    "Fonction volant chauffant peu fiable au déclenchement"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec un seuil kilométrique précis dans les sources disponibles",
+                  "diagnostic": "Contrôle lors d'une révision ou d'un diagnostic professionnel avant achat",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent selon un témoignage détaillé de propriétaire",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles"
+                },
+                {
+                  "probleme": "Bruit de roulement important dans le moteur électrique sans cause identifiée par le réseau après-vente",
+                  "symptomes": [
+                    "Bruit de roulement anormal du moteur électrique non résolu par le SAV"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec un seuil kilométrique précis dans les sources disponibles",
+                  "diagnostic": "Contrôle lors d'une révision ou d'un diagnostic professionnel avant achat",
+                  "piece_concernee": "Système électrique / batterie",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel selon un témoignage documenté",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; réseau après-vente n'ayant pas identifié la cause dans le cas documenté"
+                },
+                {
+                  "probleme": "CarPlay se connectant de façon aléatoire, système multimédia perfectible",
+                  "symptomes": [
+                    "Connexion CarPlay intermittente"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Contrôle lors d'une révision ou d'un diagnostic professionnel avant achat",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Modèle trop récent (2024) pour disposer d'un recul significatif sur la fiabilité à long terme, malgré une base technique éprouvée (plateforme CMF-EV du groupe Renault)",
+                  "symptomes": [
+                    "Absence de statistiques de fiabilité à long terme fiables"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "La motorisation électrique simplifie mécaniquement le véhicule (moins de pièces en mouvement), ce qui devrait favoriser la fiabilité à long terme selon les premières analyses",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information générale (non concernée par la présente échelle de gravité)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Fiabilité globale évaluée à 7/10 selon les premiers retours utilisateurs et tests experts sur la version GTS 220ch, systèmes électroniques notés 6,5/10, durabilité de la batterie évaluée à 7,5/10",
+                  "symptomes": [
+                    "Note de la rédaction Caradisiac de 13,4/20, note des propriétaires nettement supérieure à 17,4/20"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information positive (non concernée par la présente échelle de gravité)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Garantie constructeur de 3 ans et 8 ans/160 000 km sur la batterie"
+                }
+              ]
+            },
+            {
+              "type": "Électrique",
+              "nom": "A290 GTS — 245 ch",
+              "code_moteur": "Moteur électrique synchrone (batterie 52 kWh)",
+              "cylindree": "N/A",
+              "puissance_ch": 245,
+              "boite": [
+                "Réducteur monovitesse"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Rappel constructeur partagé avec la Renault 5 E-Tech pour calculateur de l'onduleur du moteur électrique principal (10 exemplaires A290 concernés sur les 16 000 véhicules rappelés au total)",
+                  "symptomes": [
+                    "Message d'alerte au tableau de bord",
+                    "Impossibilité de démarrer, blocage en position \"non prêt\""
+                  ],
+                  "kilometrage_apparition": "Non applicable (rappel lié à la période de production, véhicules produits entre septembre et décembre 2024)",
+                  "diagnostic": "Vérifier auprès du réseau Alpine si le véhicule est concerné par le rappel",
+                  "piece_concernee": "Système électrique / batterie",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Concerne un nombre très restreint d'exemplaires A290 (10 unités)",
+                  "cout_reparation_estime": "Reprogrammation préventive gratuite d'environ 30 minutes dans le cadre du rappel"
+                },
+                {
+                  "probleme": "Volant chauffant inopérant à la première sollicitation, nécessitant plusieurs appuis avant activation, puis chauffe par intermittence",
+                  "symptomes": [
+                    "Fonction volant chauffant peu fiable au déclenchement"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec un seuil kilométrique précis dans les sources disponibles",
+                  "diagnostic": "Contrôle lors d'une révision ou d'un diagnostic professionnel avant achat",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent selon un témoignage détaillé de propriétaire",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles"
+                },
+                {
+                  "probleme": "Bruit de roulement important dans le moteur électrique sans cause identifiée par le réseau après-vente",
+                  "symptomes": [
+                    "Bruit de roulement anormal du moteur électrique non résolu par le SAV"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec un seuil kilométrique précis dans les sources disponibles",
+                  "diagnostic": "Contrôle lors d'une révision ou d'un diagnostic professionnel avant achat",
+                  "piece_concernee": "Système électrique / batterie",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel selon un témoignage documenté",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles ; réseau après-vente n'ayant pas identifié la cause dans le cas documenté"
+                },
+                {
+                  "probleme": "CarPlay se connectant de façon aléatoire, système multimédia perfectible",
+                  "symptomes": [
+                    "Connexion CarPlay intermittente"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Contrôle lors d'une révision ou d'un diagnostic professionnel avant achat",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Modèle trop récent (2024) pour disposer d'un recul significatif sur la fiabilité à long terme, malgré une base technique éprouvée (plateforme CMF-EV du groupe Renault)",
+                  "symptomes": [
+                    "Absence de statistiques de fiabilité à long terme fiables"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "La motorisation électrique simplifie mécaniquement le véhicule (moins de pièces en mouvement), ce qui devrait favoriser la fiabilité à long terme selon les premières analyses",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information générale (non concernée par la présente échelle de gravité)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Fiabilité globale évaluée à 7/10 selon les premiers retours utilisateurs et tests experts sur la version GTS 220ch, systèmes électroniques notés 6,5/10, durabilité de la batterie évaluée à 7,5/10",
+                  "symptomes": [
+                    "Note de la rédaction Caradisiac de 13,4/20, note des propriétaires nettement supérieure à 17,4/20"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information positive (non concernée par la présente échelle de gravité)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Garantie constructeur de 3 ans et 8 ans/160 000 km sur la batterie"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "A310 / GTA / A610",
+      "generations": [
+        {
+          "code_chassis": "A310",
+          "annees": "1971-1985",
+          "phases": [
+            "A310 1600 4 cylindres (1971-1976)",
+            "A310 V6 (1976-1985)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V6 PRV 2.7 — 150 ch",
+              "code_moteur": "Z7X (PRV)",
+              "cylindree": "2664cm3",
+              "puissance_ch": 150,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Absence d'intervalle kilométrique officiel de remplacement de la distribution par chaîne : Renault recommandait de s'inquiéter uniquement en cas de bruit, sans seuil précis",
+                  "symptomes": [
+                    "Bruit de chaîne ou de tendeur devenant progressivement audible, seul signe d'alerte fiable avant une éventuelle défaillance"
+                  ],
+                  "kilometrage_apparition": "Absence de préconisation constructeur précise ; cas documentés de véhicules revendus à 280 000 km sans aucune intervention sur le moteur, tandis que d'autres exemplaires font du bruit dès 186 000 km",
+                  "diagnostic": "Écoute attentive de tout bruit anormal au niveau de la distribution, seul indicateur fiable en l'absence d'intervalle constructeur",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel, variabilité importante d'un exemplaire à l'autre selon l'entretien et la chance",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles pour cette opération, mais nécessite généralement une dépose moteur/boîte du fait de la disposition longitudinale sur certaines applications (Espace II), rendant l'intervention complexe"
+                },
+                {
+                  "probleme": "Tendeurs hydrauliques de chaîne pouvant se boucher en cas de vidanges insuffisamment régulières",
+                  "symptomes": [
+                    "Bruit progressif de la distribution pouvant s'aggraver avec le temps si l'entretien est négligé"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec un seuil kilométrique précis dans les sources disponibles",
+                  "diagnostic": "Vidange régulière recommandée en prévention, seul entretien nécessaire sur ce système à chaîne selon plusieurs témoignages de propriétaires",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel, dépend fortement de la régularité des vidanges",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles"
+                },
+                {
+                  "probleme": "Usure chronique des cames de soupapes d'échappement sur la version à 4 soupapes par cylindre (code Peugeot ZPJ4, non Z7X)",
+                  "symptomes": [
+                    "Non applicable à la version Z7X Renault : ce défaut spécifique concerne la variante PSA ZPJ4 à admission pilotée"
+                  ],
+                  "kilometrage_apparition": "Non applicable à la version Z7X",
+                  "diagnostic": "Non applicable à la version Z7X",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information générale sur la famille PRV (non applicable directement au Z7X)",
+                  "frequence": "Non applicable au Z7X spécifiquement",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Système de lubrification des chemises ajouté sur les blocs produits après juillet 1995 uniquement (les blocs antérieurs, dont ceux montés sur Alpine, en étaient dépourvus)",
+                  "symptomes": [
+                    "Non applicable : évolution de fabrication plutôt qu'un défaut à proprement parler"
+                  ],
+                  "kilometrage_apparition": "Non applicable (lié à la date de production du bloc)",
+                  "diagnostic": "Identifier la référence exacte du bloc (avant/après juillet 1995) lors de toute intervention ou recherche de pièce de rechange",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information positive (non concernée par la présente échelle de gravité)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Fiabilité globale reconnue comme un point fort majeur, moteur increvable si bien entretenu, cas de longévité remarquables documentés par les clubs de propriétaires",
+                  "symptomes": [
+                    "Absence de défaillance moteur sur de nombreux exemplaires malgré l'âge avancé du véhicule"
+                  ],
+                  "kilometrage_apparition": "Cas documenté de véhicule revendu à 280 000 km sans jamais avoir touché au moteur, même pas un réglage de carburateur ; moteur présenté en 1974 et ayant équipé les berlines haut de gamme françaises et suédoises pendant plus de vingt ans",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information positive (non concernée par la présente échelle de gravité)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Non applicable ; architecture en V ouvert à 90° avec bloc et culasses en aluminium, chemises rapportées, vilebrequin à 4 paliers ; a équipé Renault 25/30/Safrane/Espace, Peugeot 604/605, Citroën XM, Talbot Tagora, Volvo 760/960 et Alpine GTA/A610/V6 Turbo, illustrant sa polyvalence entre plusieurs constructeurs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "GTA (V6 GT / V6 Turbo)",
+          "annees": "1984-1991",
+          "phases": [
+            "V6 GT atmosphérique",
+            "V6 Turbo",
+            "V6 Turbo Le Mans"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V6 GT — 160 ch",
+              "code_moteur": "Z7W (PRV, 2 carburateurs Solex)",
+              "cylindree": "2849cm3",
+              "puissance_ch": 160,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Absence d'intervalle kilométrique officiel de remplacement de la distribution par chaîne : Renault recommandait de s'inquiéter uniquement en cas de bruit, sans seuil précis",
+                  "symptomes": [
+                    "Bruit de chaîne ou de tendeur devenant progressivement audible, seul signe d'alerte fiable avant une éventuelle défaillance"
+                  ],
+                  "kilometrage_apparition": "Absence de préconisation constructeur précise ; cas documentés de véhicules revendus à 280 000 km sans aucune intervention sur le moteur, tandis que d'autres exemplaires font du bruit dès 186 000 km",
+                  "diagnostic": "Écoute attentive de tout bruit anormal au niveau de la distribution, seul indicateur fiable en l'absence d'intervalle constructeur",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel, variabilité importante d'un exemplaire à l'autre selon l'entretien et la chance",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles pour cette opération, mais nécessite généralement une dépose moteur/boîte du fait de la disposition longitudinale sur certaines applications (Espace II), rendant l'intervention complexe"
+                },
+                {
+                  "probleme": "Tendeurs hydrauliques de chaîne pouvant se boucher en cas de vidanges insuffisamment régulières",
+                  "symptomes": [
+                    "Bruit progressif de la distribution pouvant s'aggraver avec le temps si l'entretien est négligé"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec un seuil kilométrique précis dans les sources disponibles",
+                  "diagnostic": "Vidange régulière recommandée en prévention, seul entretien nécessaire sur ce système à chaîne selon plusieurs témoignages de propriétaires",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel, dépend fortement de la régularité des vidanges",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles"
+                },
+                {
+                  "probleme": "Usure chronique des cames de soupapes d'échappement sur la version à 4 soupapes par cylindre (code Peugeot ZPJ4, non Z7X)",
+                  "symptomes": [
+                    "Non applicable à la version Z7X Renault : ce défaut spécifique concerne la variante PSA ZPJ4 à admission pilotée"
+                  ],
+                  "kilometrage_apparition": "Non applicable à la version Z7X",
+                  "diagnostic": "Non applicable à la version Z7X",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information générale sur la famille PRV (non applicable directement au Z7X)",
+                  "frequence": "Non applicable au Z7X spécifiquement",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Système de lubrification des chemises ajouté sur les blocs produits après juillet 1995 uniquement (les blocs antérieurs, dont ceux montés sur Alpine, en étaient dépourvus)",
+                  "symptomes": [
+                    "Non applicable : évolution de fabrication plutôt qu'un défaut à proprement parler"
+                  ],
+                  "kilometrage_apparition": "Non applicable (lié à la date de production du bloc)",
+                  "diagnostic": "Identifier la référence exacte du bloc (avant/après juillet 1995) lors de toute intervention ou recherche de pièce de rechange",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information positive (non concernée par la présente échelle de gravité)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Fiabilité globale reconnue comme un point fort majeur, moteur increvable si bien entretenu, cas de longévité remarquables documentés par les clubs de propriétaires",
+                  "symptomes": [
+                    "Absence de défaillance moteur sur de nombreux exemplaires malgré l'âge avancé du véhicule"
+                  ],
+                  "kilometrage_apparition": "Cas documenté de véhicule revendu à 280 000 km sans jamais avoir touché au moteur, même pas un réglage de carburateur ; moteur présenté en 1974 et ayant équipé les berlines haut de gamme françaises et suédoises pendant plus de vingt ans",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information positive (non concernée par la présente échelle de gravité)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Non applicable ; architecture en V ouvert à 90° avec bloc et culasses en aluminium, chemises rapportées, vilebrequin à 4 paliers ; a équipé Renault 25/30/Safrane/Espace, Peugeot 604/605, Citroën XM, Talbot Tagora, Volvo 760/960 et Alpine GTA/A610/V6 Turbo, illustrant sa polyvalence entre plusieurs constructeurs"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "V6 Turbo — 200 ch",
+              "code_moteur": "Z7W (PRV, 2 carburateurs Solex)",
+              "cylindree": "2849cm3",
+              "puissance_ch": 200,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Absence d'intervalle kilométrique officiel de remplacement de la distribution par chaîne : Renault recommandait de s'inquiéter uniquement en cas de bruit, sans seuil précis",
+                  "symptomes": [
+                    "Bruit de chaîne ou de tendeur devenant progressivement audible, seul signe d'alerte fiable avant une éventuelle défaillance"
+                  ],
+                  "kilometrage_apparition": "Absence de préconisation constructeur précise ; cas documentés de véhicules revendus à 280 000 km sans aucune intervention sur le moteur, tandis que d'autres exemplaires font du bruit dès 186 000 km",
+                  "diagnostic": "Écoute attentive de tout bruit anormal au niveau de la distribution, seul indicateur fiable en l'absence d'intervalle constructeur",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel, variabilité importante d'un exemplaire à l'autre selon l'entretien et la chance",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles pour cette opération, mais nécessite généralement une dépose moteur/boîte du fait de la disposition longitudinale sur certaines applications (Espace II), rendant l'intervention complexe"
+                },
+                {
+                  "probleme": "Tendeurs hydrauliques de chaîne pouvant se boucher en cas de vidanges insuffisamment régulières",
+                  "symptomes": [
+                    "Bruit progressif de la distribution pouvant s'aggraver avec le temps si l'entretien est négligé"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec un seuil kilométrique précis dans les sources disponibles",
+                  "diagnostic": "Vidange régulière recommandée en prévention, seul entretien nécessaire sur ce système à chaîne selon plusieurs témoignages de propriétaires",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel, dépend fortement de la régularité des vidanges",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles"
+                },
+                {
+                  "probleme": "Usure chronique des cames de soupapes d'échappement sur la version à 4 soupapes par cylindre (code Peugeot ZPJ4, non Z7X)",
+                  "symptomes": [
+                    "Non applicable à la version Z7X Renault : ce défaut spécifique concerne la variante PSA ZPJ4 à admission pilotée"
+                  ],
+                  "kilometrage_apparition": "Non applicable à la version Z7X",
+                  "diagnostic": "Non applicable à la version Z7X",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information générale sur la famille PRV (non applicable directement au Z7X)",
+                  "frequence": "Non applicable au Z7X spécifiquement",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Système de lubrification des chemises ajouté sur les blocs produits après juillet 1995 uniquement (les blocs antérieurs, dont ceux montés sur Alpine, en étaient dépourvus)",
+                  "symptomes": [
+                    "Non applicable : évolution de fabrication plutôt qu'un défaut à proprement parler"
+                  ],
+                  "kilometrage_apparition": "Non applicable (lié à la date de production du bloc)",
+                  "diagnostic": "Identifier la référence exacte du bloc (avant/après juillet 1995) lors de toute intervention ou recherche de pièce de rechange",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information positive (non concernée par la présente échelle de gravité)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Fiabilité globale reconnue comme un point fort majeur, moteur increvable si bien entretenu, cas de longévité remarquables documentés par les clubs de propriétaires",
+                  "symptomes": [
+                    "Absence de défaillance moteur sur de nombreux exemplaires malgré l'âge avancé du véhicule"
+                  ],
+                  "kilometrage_apparition": "Cas documenté de véhicule revendu à 280 000 km sans jamais avoir touché au moteur, même pas un réglage de carburateur ; moteur présenté en 1974 et ayant équipé les berlines haut de gamme françaises et suédoises pendant plus de vingt ans",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information positive (non concernée par la présente échelle de gravité)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Non applicable ; architecture en V ouvert à 90° avec bloc et culasses en aluminium, chemises rapportées, vilebrequin à 4 paliers ; a équipé Renault 25/30/Safrane/Espace, Peugeot 604/605, Citroën XM, Talbot Tagora, Volvo 760/960 et Alpine GTA/A610/V6 Turbo, illustrant sa polyvalence entre plusieurs constructeurs"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "V6 Turbo catalyse — 185 ch",
+              "code_moteur": "Z7W (PRV, 2 carburateurs Solex)",
+              "cylindree": "2849cm3",
+              "puissance_ch": 185,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Absence d'intervalle kilométrique officiel de remplacement de la distribution par chaîne : Renault recommandait de s'inquiéter uniquement en cas de bruit, sans seuil précis",
+                  "symptomes": [
+                    "Bruit de chaîne ou de tendeur devenant progressivement audible, seul signe d'alerte fiable avant une éventuelle défaillance"
+                  ],
+                  "kilometrage_apparition": "Absence de préconisation constructeur précise ; cas documentés de véhicules revendus à 280 000 km sans aucune intervention sur le moteur, tandis que d'autres exemplaires font du bruit dès 186 000 km",
+                  "diagnostic": "Écoute attentive de tout bruit anormal au niveau de la distribution, seul indicateur fiable en l'absence d'intervalle constructeur",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel, variabilité importante d'un exemplaire à l'autre selon l'entretien et la chance",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles pour cette opération, mais nécessite généralement une dépose moteur/boîte du fait de la disposition longitudinale sur certaines applications (Espace II), rendant l'intervention complexe"
+                },
+                {
+                  "probleme": "Tendeurs hydrauliques de chaîne pouvant se boucher en cas de vidanges insuffisamment régulières",
+                  "symptomes": [
+                    "Bruit progressif de la distribution pouvant s'aggraver avec le temps si l'entretien est négligé"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec un seuil kilométrique précis dans les sources disponibles",
+                  "diagnostic": "Vidange régulière recommandée en prévention, seul entretien nécessaire sur ce système à chaîne selon plusieurs témoignages de propriétaires",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel, dépend fortement de la régularité des vidanges",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles"
+                },
+                {
+                  "probleme": "Usure chronique des cames de soupapes d'échappement sur la version à 4 soupapes par cylindre (code Peugeot ZPJ4, non Z7X)",
+                  "symptomes": [
+                    "Non applicable à la version Z7X Renault : ce défaut spécifique concerne la variante PSA ZPJ4 à admission pilotée"
+                  ],
+                  "kilometrage_apparition": "Non applicable à la version Z7X",
+                  "diagnostic": "Non applicable à la version Z7X",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information générale sur la famille PRV (non applicable directement au Z7X)",
+                  "frequence": "Non applicable au Z7X spécifiquement",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Système de lubrification des chemises ajouté sur les blocs produits après juillet 1995 uniquement (les blocs antérieurs, dont ceux montés sur Alpine, en étaient dépourvus)",
+                  "symptomes": [
+                    "Non applicable : évolution de fabrication plutôt qu'un défaut à proprement parler"
+                  ],
+                  "kilometrage_apparition": "Non applicable (lié à la date de production du bloc)",
+                  "diagnostic": "Identifier la référence exacte du bloc (avant/après juillet 1995) lors de toute intervention ou recherche de pièce de rechange",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information positive (non concernée par la présente échelle de gravité)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Fiabilité globale reconnue comme un point fort majeur, moteur increvable si bien entretenu, cas de longévité remarquables documentés par les clubs de propriétaires",
+                  "symptomes": [
+                    "Absence de défaillance moteur sur de nombreux exemplaires malgré l'âge avancé du véhicule"
+                  ],
+                  "kilometrage_apparition": "Cas documenté de véhicule revendu à 280 000 km sans jamais avoir touché au moteur, même pas un réglage de carburateur ; moteur présenté en 1974 et ayant équipé les berlines haut de gamme françaises et suédoises pendant plus de vingt ans",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information positive (non concernée par la présente échelle de gravité)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Non applicable ; architecture en V ouvert à 90° avec bloc et culasses en aluminium, chemises rapportées, vilebrequin à 4 paliers ; a équipé Renault 25/30/Safrane/Espace, Peugeot 604/605, Citroën XM, Talbot Tagora, Volvo 760/960 et Alpine GTA/A610/V6 Turbo, illustrant sa polyvalence entre plusieurs constructeurs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "A610",
+          "annees": "1991-1995",
+          "phases": [
+            "Série unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V6 Turbo - 250ch",
+              "code_moteur": "Z7X Turbo (PRV évolué)",
+              "cylindree": "2975cm3",
+              "puissance_ch": 250,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Absence d'intervalle kilométrique officiel de remplacement de la distribution par chaîne : Renault recommandait de s'inquiéter uniquement en cas de bruit, sans seuil précis",
+                  "symptomes": [
+                    "Bruit de chaîne ou de tendeur devenant progressivement audible, seul signe d'alerte fiable avant une éventuelle défaillance"
+                  ],
+                  "kilometrage_apparition": "Absence de préconisation constructeur précise ; cas documentés de véhicules revendus à 280 000 km sans aucune intervention sur le moteur, tandis que d'autres exemplaires font du bruit dès 186 000 km",
+                  "diagnostic": "Écoute attentive de tout bruit anormal au niveau de la distribution, seul indicateur fiable en l'absence d'intervalle constructeur",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel, variabilité importante d'un exemplaire à l'autre selon l'entretien et la chance",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles pour cette opération, mais nécessite généralement une dépose moteur/boîte du fait de la disposition longitudinale sur certaines applications (Espace II), rendant l'intervention complexe"
+                },
+                {
+                  "probleme": "Tendeurs hydrauliques de chaîne pouvant se boucher en cas de vidanges insuffisamment régulières",
+                  "symptomes": [
+                    "Bruit progressif de la distribution pouvant s'aggraver avec le temps si l'entretien est négligé"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec un seuil kilométrique précis dans les sources disponibles",
+                  "diagnostic": "Vidange régulière recommandée en prévention, seul entretien nécessaire sur ce système à chaîne selon plusieurs témoignages de propriétaires",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel, dépend fortement de la régularité des vidanges",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles"
+                },
+                {
+                  "probleme": "Usure chronique des cames de soupapes d'échappement sur la version à 4 soupapes par cylindre (code Peugeot ZPJ4, non Z7X)",
+                  "symptomes": [
+                    "Non applicable à la version Z7X Renault : ce défaut spécifique concerne la variante PSA ZPJ4 à admission pilotée"
+                  ],
+                  "kilometrage_apparition": "Non applicable à la version Z7X",
+                  "diagnostic": "Non applicable à la version Z7X",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information générale sur la famille PRV (non applicable directement au Z7X)",
+                  "frequence": "Non applicable au Z7X spécifiquement",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Système de lubrification des chemises ajouté sur les blocs produits après juillet 1995 uniquement (les blocs antérieurs, dont ceux montés sur Alpine, en étaient dépourvus)",
+                  "symptomes": [
+                    "Non applicable : évolution de fabrication plutôt qu'un défaut à proprement parler"
+                  ],
+                  "kilometrage_apparition": "Non applicable (lié à la date de production du bloc)",
+                  "diagnostic": "Identifier la référence exacte du bloc (avant/après juillet 1995) lors de toute intervention ou recherche de pièce de rechange",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information positive (non concernée par la présente échelle de gravité)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Fiabilité globale reconnue comme un point fort majeur, moteur increvable si bien entretenu, cas de longévité remarquables documentés par les clubs de propriétaires",
+                  "symptomes": [
+                    "Absence de défaillance moteur sur de nombreux exemplaires malgré l'âge avancé du véhicule"
+                  ],
+                  "kilometrage_apparition": "Cas documenté de véhicule revendu à 280 000 km sans jamais avoir touché au moteur, même pas un réglage de carburateur ; moteur présenté en 1974 et ayant équipé les berlines haut de gamme françaises et suédoises pendant plus de vingt ans",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information positive (non concernée par la présente échelle de gravité)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Non applicable ; architecture en V ouvert à 90° avec bloc et culasses en aluminium, chemises rapportées, vilebrequin à 4 paliers ; a équipé Renault 25/30/Safrane/Espace, Peugeot 604/605, Citroën XM, Talbot Tagora, Volvo 760/960 et Alpine GTA/A610/V6 Turbo, illustrant sa polyvalence entre plusieurs constructeurs"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "A390",
+      "generations": [
+        {
+          "code_chassis": "A390 (plateforme AmpR Medium, premier SUV Alpine)",
+          "annees": "2025-présent",
+          "phases": [
+            "Lancement (2025-présent)"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "A390 GT - 400ch (tri-moteur, batterie 89 kWh)",
+              "code_moteur": "1 moteur asynchrone à rotor bobiné (AV, Ampère 7DL) + 2 moteurs synchrones à aimants permanents (AR)",
+              "cylindree": "N/A",
+              "puissance_ch": 400,
+              "boite": [
+                "Réducteur monovitesse (transmission intégrale)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Modèle trop récent (commercialisation 2025) pour disposer de retours de fiabilité consolidés",
+                  "symptomes": [
+                    "Absence de statistiques de panne à ce stade"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Recul insuffisant pour établir des statistiques de fiabilité fiables ; premier SUV et second véhicule électrique de la marque après l'A290",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Architecture tri-moteur et batterie NMC complexes (Verkor, Douai/Nord) partageant potentiellement des composants avec d'autres modèles du groupe Renault électrifiés",
+                  "symptomes": [
+                    "Technologie encore jeune, similitudes possibles avec les défauts déjà documentés sur Renault 5/Mégane E-Tech du même groupe"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Surveiller les éventuelles campagnes de rappel communes à la plateforme AmpR partagée avec d'autres modèles Renault/Alpine électriques récents",
+                  "piece_concernee": "Système électrique / batterie",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Non applicable"
+                }
+              ]
+            },
+            {
+              "type": "Électrique",
+              "nom": "A390 GTS - 470ch (tri-moteur, batterie 89 kWh)",
+              "code_moteur": "1 moteur asynchrone à rotor bobiné (AV) + 2 moteurs synchrones à aimants permanents (AR)",
+              "cylindree": "N/A",
+              "puissance_ch": 470,
+              "boite": [
+                "Réducteur monovitesse (transmission intégrale)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Version la plus sportive et la plus sollicitante pour la chaîne de traction (824 Nm de couple, 0-100 km/h en 3,9s), sollicitation mécanique accrue par rapport à la GT",
+                  "symptomes": [
+                    "Usure potentiellement plus rapide des composants sous forte sollicitation répétée"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Recul insuffisant pour établir des statistiques de fiabilité fiables sur cette version haute performance",
+                  "piece_concernee": "Système électrique / batterie",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Recharge rapide DC jusqu'à 190 kW nécessitant un réseau de bornes compatibles pour une utilisation optimale au quotidien",
+                  "symptomes": [
+                    "Temps de charge nettement rallongé sur des bornes moins puissantes"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Système électrique / batterie",
+                  "gravite": "Information générale (non concernée par la présente échelle de gravité)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Non applicable"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -14,7 +14,7 @@
 <meta name="chat-api" content="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=20260807-9">
+<link rel="stylesheet" href="css/styles.css?v=20260808-1">
 </head>
 <body>
 <header class="app-header">
@@ -41,7 +41,7 @@
       <button class="icon-btn" id="weightSettingsBtn" type="button">⚖ Pondération</button>
       <button class="icon-btn" id="quickModeToggle" type="button">⚡ Inspection rapide</button>
       <button class="icon-btn" id="darkToggle" type="button">🌙 Mode sombre</button>
-      <button class="icon-btn diagnostic-toggle" data-chat-toggle type="button">◆ Console diagnostic</button>
+      <button class="icon-btn" data-chat-toggle type="button">💬 Assistant atelier</button>
       <button class="icon-btn" id="installAppBtn" type="button">⬇ Installer l’application</button>
     </div>
     <p class="install-app-status" id="installAppStatus" role="status"></p>
@@ -66,7 +66,7 @@
     <summary><span class="sec-num">1</span> Informations du Véhicule &amp; Vendeur <span class="sec-meta">Identité &amp; contexte de vente</span></summary>
     <div class="section-body">
       <div class="subhead">Identité du véhicule</div>
-      <p class="hint" style="margin:0 0 10px;">Sélectionnez votre véhicule étape par étape (base de 50 marques dont utilitaires légers, 235 modèles, chargée à la demande depuis <code>data/</code>). Plus de 100 générations disposent de motorisations spécifiques documentées (libellé + code moteur réel) ; pour les autres, une liste générique par type de carburant/puissance est proposée. Vérifiez toujours le code exact sur la carte grise (champ P3) ou sur le moteur lui-même avant de commander une pièce. Si une marque ou un modèle n'apparaît pas (ou hors-ligne sans cache), complétez le VIN et les champs libres ci-dessous. <span style="color:var(--rouge); font-weight:600;">Les champs marqués d'un * sont obligatoires.</span></p>
+      <p class="hint" style="margin:0 0 10px;">Sélectionnez votre véhicule étape par étape (base de <span id="vehicleBrandCount">nombreuses</span> marques et <span id="vehicleModelCount">nombreux</span> modèles, chargée à la demande depuis <code>data/</code>). Les générations et motorisations documentées sont proposées quand elles sont disponibles ; vérifiez toujours le code exact sur la carte grise (champ P3) ou sur le moteur lui-même avant de commander une pièce. Si une marque ou un modèle n'apparaît pas (ou hors-ligne sans cache), complétez le VIN et les champs libres ci-dessous. <span style="color:var(--rouge); font-weight:600;">Les champs marqués d'un * sont obligatoires.</span></p>
 
       <div class="vsearch-panel">
         <div class="vsearch-title">🔍 Recherche rapide (facultatif)</div>
@@ -87,7 +87,7 @@
             <div class="vsearch-results" id="modeleSearchResults" role="listbox" aria-label="Résultats de la recherche de modèle"></div>
           </div>
         </div>
-        <p class="vsearch-hint">Le champ « marques » filtre la liste déroulante juste au-dessous. Le champ « modèle » recherche directement parmi les 235 modèles, toutes marques confondues : tapez un nom de modèle (ex. « Golf », « 308 », « Clio »...) puis cliquez sur un résultat pour renseigner automatiquement la marque et le modèle dans les listes ci-dessous. Vous n'êtes pas obligé de vous en servir : vous pouvez aussi cliquer directement dans les listes déroulantes pour parcourir toutes les options.</p>
+        <p class="vsearch-hint">Le champ « marques » filtre la liste déroulante juste au-dessous. Le champ « modèle » recherche directement dans toute la base, toutes marques confondues : tapez un nom de modèle (ex. « Golf », « 308 », « Clio »...) puis cliquez sur un résultat pour renseigner automatiquement la marque et le modèle dans les listes ci-dessous. Vous n'êtes pas obligé de vous en servir : vous pouvez aussi cliquer directement dans les listes déroulantes pour parcourir toutes les options.</p>
       </div>
 
       <div class="vsteps">
@@ -384,9 +384,6 @@
     <span class="mini-dash-sub" id="miniDashSub">0 / 33 vérifiés</span>
   </div>
 
-  <button class="chat-launcher" data-chat-toggle type="button" aria-label="Ouvrir la console de diagnostic">
-    <span aria-hidden="true">◆</span> Diagnostic
-  </button>
 </div>
 
 <div class="modal-overlay" id="compareModal">
@@ -438,8 +435,8 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<script src="build-data.js?v=20260807-9"></script>
-<script src="js/db-loader.js?v=20260807-9"></script>
-<script type="module" src="js/app.js?v=20260807-9"></script>
+<script src="build-data.js?v=20260808-1"></script>
+<script src="js/db-loader.js?v=20260808-1"></script>
+<script type="module" src="js/app.js?v=20260808-1"></script>
 </body>
 </html>

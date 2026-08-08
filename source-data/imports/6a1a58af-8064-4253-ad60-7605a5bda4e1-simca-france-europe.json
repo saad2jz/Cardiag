@@ -1,0 +1,1516 @@
+{
+  "nom": "Simca",
+  "modeles": [
+    {
+      "nom": "1000",
+      "generations": [
+        {
+          "code_chassis": "Simca 1000 (Type 944)",
+          "annees": "1961-1978",
+          "phases": [
+            "Phase 1 (1961-1968) - moteur 944cm3",
+            "Phase 2 (1968-1978) - moteurs spécifiques par finition"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "944 — 40 ch",
+              "code_moteur": "Type 1D1 (944cm3, moteur arrière)",
+              "cylindree": "944cm3",
+              "puissance_ch": 40,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion généralisée de la caisse, point de contrôle numéro un sur les exemplaires restants",
+                  "symptomes": [
+                    "Traces de rouille visibles"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Pièces mécaniques spécifiques de plus en plus rares sur le marché de la collection",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Carburateur d'époque demandant un réglage régulier",
+                  "symptomes": [
+                    "Ralenti instable si mal réglé"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Système d'alimentation / injection",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ],
+              "libelle_source": "944 - 40/48ch"
+            },
+            {
+              "type": "Essence",
+              "nom": "944 — 48 ch",
+              "code_moteur": "Type 1D1 (944cm3, moteur arrière)",
+              "cylindree": "944cm3",
+              "puissance_ch": 48,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion généralisée de la caisse, point de contrôle numéro un sur les exemplaires restants",
+                  "symptomes": [
+                    "Traces de rouille visibles"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Pièces mécaniques spécifiques de plus en plus rares sur le marché de la collection",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Carburateur d'époque demandant un réglage régulier",
+                  "symptomes": [
+                    "Ralenti instable si mal réglé"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Système d'alimentation / injection",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ],
+              "libelle_source": "944 - 40/48ch"
+            },
+            {
+              "type": "Essence",
+              "nom": "1000 GL/GLS — 39 ch",
+              "code_moteur": "Moteur Poissy dérivé 1100",
+              "cylindree": "944cm3",
+              "puissance_ch": 39,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion généralisée de la caisse, point de contrôle numéro un sur les exemplaires restants",
+                  "symptomes": [
+                    "Traces de rouille visibles"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Pièces mécaniques spécifiques de plus en plus rares sur le marché de la collection",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Carburateur d'époque demandant un réglage régulier",
+                  "symptomes": [
+                    "Ralenti instable si mal réglé"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Système d'alimentation / injection",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ],
+              "libelle_source": "1000 GL/GLS - 39/42ch"
+            },
+            {
+              "type": "Essence",
+              "nom": "1000 GL/GLS — 42 ch",
+              "code_moteur": "Moteur Poissy dérivé 1100",
+              "cylindree": "944cm3",
+              "puissance_ch": 42,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion généralisée de la caisse, point de contrôle numéro un sur les exemplaires restants",
+                  "symptomes": [
+                    "Traces de rouille visibles"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Pièces mécaniques spécifiques de plus en plus rares sur le marché de la collection",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Carburateur d'époque demandant un réglage régulier",
+                  "symptomes": [
+                    "Ralenti instable si mal réglé"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Système d'alimentation / injection",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ],
+              "libelle_source": "1000 GL/GLS - 39/42ch"
+            },
+            {
+              "type": "Essence",
+              "nom": "Rallye 1 — 60 ch",
+              "code_moteur": "1G1 / 1G4 (1294cm3, double carburateur Solex sur Rallye 2/3)",
+              "cylindree": "1294cm3",
+              "puissance_ch": 60,
+              "boite": [
+                "BVM4",
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion généralisée de la caisse, point de contrôle numéro un sur les exemplaires restants",
+                  "symptomes": [
+                    "Traces de rouille visibles"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Pièces mécaniques spécifiques de plus en plus rares sur le marché de la collection",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Carburateur d'époque demandant un réglage régulier",
+                  "symptomes": [
+                    "Ralenti instable si mal réglé"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Système d'alimentation / injection",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ],
+              "libelle_source": "Rallye 1/2/3 — 60 ch"
+            },
+            {
+              "type": "Essence",
+              "nom": "Rallye 2 — 60 ch",
+              "code_moteur": "1G1 / 1G4 (1294cm3, double carburateur Solex sur Rallye 2/3)",
+              "cylindree": "1294cm3",
+              "puissance_ch": 60,
+              "boite": [
+                "BVM4",
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion généralisée de la caisse, point de contrôle numéro un sur les exemplaires restants",
+                  "symptomes": [
+                    "Traces de rouille visibles"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Pièces mécaniques spécifiques de plus en plus rares sur le marché de la collection",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Carburateur d'époque demandant un réglage régulier",
+                  "symptomes": [
+                    "Ralenti instable si mal réglé"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Système d'alimentation / injection",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ],
+              "libelle_source": "Rallye 1/2/3 — 60 ch"
+            },
+            {
+              "type": "Essence",
+              "nom": "Rallye 3 — 60 ch",
+              "code_moteur": "1G1 / 1G4 (1294cm3, double carburateur Solex sur Rallye 2/3)",
+              "cylindree": "1294cm3",
+              "puissance_ch": 60,
+              "boite": [
+                "BVM4",
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion généralisée de la caisse, point de contrôle numéro un sur les exemplaires restants",
+                  "symptomes": [
+                    "Traces de rouille visibles"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Pièces mécaniques spécifiques de plus en plus rares sur le marché de la collection",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Carburateur d'époque demandant un réglage régulier",
+                  "symptomes": [
+                    "Ralenti instable si mal réglé"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Système d'alimentation / injection",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ],
+              "libelle_source": "Rallye 1/2/3 — 60 ch"
+            },
+            {
+              "type": "Essence",
+              "nom": "Rallye 1 — 82 ch",
+              "code_moteur": "1G1 / 1G4 (1294cm3, double carburateur Solex sur Rallye 2/3)",
+              "cylindree": "1294cm3",
+              "puissance_ch": 82,
+              "boite": [
+                "BVM4",
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion généralisée de la caisse, point de contrôle numéro un sur les exemplaires restants",
+                  "symptomes": [
+                    "Traces de rouille visibles"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Pièces mécaniques spécifiques de plus en plus rares sur le marché de la collection",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Carburateur d'époque demandant un réglage régulier",
+                  "symptomes": [
+                    "Ralenti instable si mal réglé"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Système d'alimentation / injection",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ],
+              "libelle_source": "Rallye 1/2/3 — 82 ch"
+            },
+            {
+              "type": "Essence",
+              "nom": "Rallye 2 — 82 ch",
+              "code_moteur": "1G1 / 1G4 (1294cm3, double carburateur Solex sur Rallye 2/3)",
+              "cylindree": "1294cm3",
+              "puissance_ch": 82,
+              "boite": [
+                "BVM4",
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion généralisée de la caisse, point de contrôle numéro un sur les exemplaires restants",
+                  "symptomes": [
+                    "Traces de rouille visibles"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Pièces mécaniques spécifiques de plus en plus rares sur le marché de la collection",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Carburateur d'époque demandant un réglage régulier",
+                  "symptomes": [
+                    "Ralenti instable si mal réglé"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Système d'alimentation / injection",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ],
+              "libelle_source": "Rallye 1/2/3 — 82 ch"
+            },
+            {
+              "type": "Essence",
+              "nom": "Rallye 3 — 82 ch",
+              "code_moteur": "1G1 / 1G4 (1294cm3, double carburateur Solex sur Rallye 2/3)",
+              "cylindree": "1294cm3",
+              "puissance_ch": 82,
+              "boite": [
+                "BVM4",
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion généralisée de la caisse, point de contrôle numéro un sur les exemplaires restants",
+                  "symptomes": [
+                    "Traces de rouille visibles"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Pièces mécaniques spécifiques de plus en plus rares sur le marché de la collection",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Carburateur d'époque demandant un réglage régulier",
+                  "symptomes": [
+                    "Ralenti instable si mal réglé"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Système d'alimentation / injection",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ],
+              "libelle_source": "Rallye 1/2/3 — 82 ch"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "1100",
+      "generations": [
+        {
+          "code_chassis": "Simca 1100",
+          "annees": "1967-1985",
+          "phases": [
+            "Phase 1 (1967-1975)",
+            "Phase 2 (1975-1985)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1100 — 44 ch",
+              "code_moteur": "Type 349/351 (944/1118cm3, moteur Poissy transversal)",
+              "cylindree": "944/1118cm3",
+              "puissance_ch": 44,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion généralisée de la caisse, point de contrôle numéro un sur les exemplaires restants",
+                  "symptomes": [
+                    "Traces de rouille visibles"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Pièces mécaniques spécifiques de plus en plus rares sur le marché de la collection",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Carburateur d'époque demandant un réglage régulier",
+                  "symptomes": [
+                    "Ralenti instable si mal réglé"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Système d'alimentation / injection",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ],
+              "libelle_source": "1100 - 44/50ch"
+            },
+            {
+              "type": "Essence",
+              "nom": "1100 — 50 ch",
+              "code_moteur": "Type 349/351 (944/1118cm3, moteur Poissy transversal)",
+              "cylindree": "944/1118cm3",
+              "puissance_ch": 50,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion généralisée de la caisse, point de contrôle numéro un sur les exemplaires restants",
+                  "symptomes": [
+                    "Traces de rouille visibles"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Pièces mécaniques spécifiques de plus en plus rares sur le marché de la collection",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Carburateur d'époque demandant un réglage régulier",
+                  "symptomes": [
+                    "Ralenti instable si mal réglé"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Système d'alimentation / injection",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ],
+              "libelle_source": "1100 - 44/50ch"
+            },
+            {
+              "type": "Essence",
+              "nom": "1100 Spécial/TI — 75 ch",
+              "code_moteur": "Type 3G2/3G4 (1294cm3)",
+              "cylindree": "1294cm3",
+              "puissance_ch": 75,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion généralisée de la caisse, point de contrôle numéro un sur les exemplaires restants",
+                  "symptomes": [
+                    "Traces de rouille visibles"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Pièces mécaniques spécifiques de plus en plus rares sur le marché de la collection",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Carburateur d'époque demandant un réglage régulier",
+                  "symptomes": [
+                    "Ralenti instable si mal réglé"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Système d'alimentation / injection",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ],
+              "libelle_source": "1100 Spécial/TI - 75/85ch"
+            },
+            {
+              "type": "Essence",
+              "nom": "1100 Spécial/TI — 85 ch",
+              "code_moteur": "Type 3G2/3G4 (1294cm3)",
+              "cylindree": "1294cm3",
+              "puissance_ch": 85,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion généralisée de la caisse, point de contrôle numéro un sur les exemplaires restants",
+                  "symptomes": [
+                    "Traces de rouille visibles"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Pièces mécaniques spécifiques de plus en plus rares sur le marché de la collection",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Carburateur d'époque demandant un réglage régulier",
+                  "symptomes": [
+                    "Ralenti instable si mal réglé"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Système d'alimentation / injection",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ],
+              "libelle_source": "1100 Spécial/TI - 75/85ch"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "1307/1308/1309",
+      "generations": [
+        {
+          "code_chassis": "Simca-Chrysler 1307/1308/1309",
+          "annees": "1975-1986",
+          "phases": [
+            "Simca 1307/1308 (1975-1979)",
+            "Talbot 1307/1308/1309 puis Talbot 1510/Solara (1979-1986)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1307 GLS — 68 ch",
+              "code_moteur": "Type 315 / 6G1 (1294cm3 ohv)",
+              "cylindree": "1294cm3",
+              "puissance_ch": 68,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion généralisée de la caisse, point de contrôle numéro un sur les exemplaires restants",
+                  "symptomes": [
+                    "Traces de rouille visibles"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Pièces mécaniques spécifiques de plus en plus rares sur le marché de la collection",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Carburateur d'époque demandant un réglage régulier",
+                  "symptomes": [
+                    "Ralenti instable si mal réglé"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Système d'alimentation / injection",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ],
+              "libelle_source": "1307 GLS - 68/72ch"
+            },
+            {
+              "type": "Essence",
+              "nom": "1307 GLS — 72 ch",
+              "code_moteur": "Type 315 / 6G1 (1294cm3 ohv)",
+              "cylindree": "1294cm3",
+              "puissance_ch": 72,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion généralisée de la caisse, point de contrôle numéro un sur les exemplaires restants",
+                  "symptomes": [
+                    "Traces de rouille visibles"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Pièces mécaniques spécifiques de plus en plus rares sur le marché de la collection",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Carburateur d'époque demandant un réglage régulier",
+                  "symptomes": [
+                    "Ralenti instable si mal réglé"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Système d'alimentation / injection",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ],
+              "libelle_source": "1307 GLS - 68/72ch"
+            },
+            {
+              "type": "Essence",
+              "nom": "1308 GT - 85ch",
+              "code_moteur": "Type 315 (1442cm3 ohv)",
+              "cylindree": "1442cm3",
+              "puissance_ch": 85,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion généralisée de la caisse, point de contrôle numéro un sur les exemplaires restants",
+                  "symptomes": [
+                    "Traces de rouille visibles"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Pièces mécaniques spécifiques de plus en plus rares sur le marché de la collection",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Carburateur d'époque demandant un réglage régulier",
+                  "symptomes": [
+                    "Ralenti instable si mal réglé"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Système d'alimentation / injection",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1309 SX - 90ch",
+              "code_moteur": "Type 315 (1592cm3 ohv)",
+              "cylindree": "1592cm3",
+              "puissance_ch": 90,
+              "boite": [
+                "BVM4",
+                "BVA3"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion généralisée de la caisse, point de contrôle numéro un sur les exemplaires restants",
+                  "symptomes": [
+                    "Traces de rouille visibles"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Pièces mécaniques spécifiques de plus en plus rares sur le marché de la collection",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Carburateur d'époque demandant un réglage régulier",
+                  "symptomes": [
+                    "Ralenti instable si mal réglé"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Système d'alimentation / injection",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ],
+              "libelle_source": "1309 / 1610 SX - 90ch"
+            },
+            {
+              "type": "Essence",
+              "nom": "1610 SX - 90ch",
+              "code_moteur": "Type 315 (1592cm3 ohv)",
+              "cylindree": "1592cm3",
+              "puissance_ch": 90,
+              "boite": [
+                "BVM4",
+                "BVA3"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion généralisée de la caisse, point de contrôle numéro un sur les exemplaires restants",
+                  "symptomes": [
+                    "Traces de rouille visibles"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Pièces mécaniques spécifiques de plus en plus rares sur le marché de la collection",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Carburateur d'époque demandant un réglage régulier",
+                  "symptomes": [
+                    "Ralenti instable si mal réglé"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Système d'alimentation / injection",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ],
+              "libelle_source": "1309 / 1610 SX - 90ch"
+            },
+            {
+              "type": "Diesel",
+              "nom": "1.9 D - 65ch (marché finlandais uniquement)",
+              "code_moteur": "XUD9",
+              "cylindree": "1905cm3",
+              "puissance_ch": 65,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Pompe injection Bosch ou Lucas sensible avec l'âge (roulements, joints internes)",
+                  "symptomes": [
+                    "Difficultés de démarrage",
+                    "Fuite de gazole",
+                    "Panne totale d'alimentation en carburant dans les cas avancés"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec un seuil kilométrique précis dans les sources disponibles ; concerne davantage les exemplaires anciens ou peu entretenus",
+                  "diagnostic": "Contrôle de l'étanchéité de la pompe, test du débit d'injection",
+                  "piece_concernee": "Système d'alimentation / injection",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel, plus fréquent sur les pompes Lucas EPIC réputées plus fragiles que les Bosch VE selon certaines sources techniques",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles pour un remplacement complet de pompe"
+                },
+                {
+                  "probleme": "Injecteurs pouvant nécessiter nettoyage ou remplacement",
+                  "symptomes": [
+                    "Fumée noire à l'échappement",
+                    "Perte de puissance",
+                    "Ralenti irrégulier"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec un seuil kilométrique précis dans les sources disponibles",
+                  "diagnostic": "Test de retour injecteur, contrôle de la pulvérisation",
+                  "piece_concernee": "Système d'alimentation / injection",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Nettoyage ou remplacement : 100 à 300€ selon les sources"
+                },
+                {
+                  "probleme": "Système de refroidissement sensible (radiateur obstrué, pompe à eau défaillante)",
+                  "symptomes": [
+                    "Surchauffe moteur",
+                    "Perte de liquide de refroidissement"
+                  ],
+                  "kilometrage_apparition": "Non documenté avec un seuil kilométrique précis dans les sources disponibles ; surveillance régulière recommandée",
+                  "diagnostic": "Contrôle du niveau et de la pression du circuit de refroidissement, inspection du radiateur",
+                  "piece_concernee": "Culasse / circuit de refroidissement",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Remplacement pompe à eau ou radiateur : 200 à 600€"
+                },
+                {
+                  "probleme": "Usure des segments de piston avec le temps, perte de compression",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Perte de puissance progressive",
+                    "Consommation d'huile accrue"
+                  ],
+                  "kilometrage_apparition": "Généralement sur les très gros kilométrages, non documenté avec un seuil précis",
+                  "diagnostic": "Test de compression cylindre par cylindre",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel, essentiellement sur les exemplaires très kilométrés",
+                  "cout_reparation_estime": "500 à 1500€ selon l'étendue des réparations nécessaires"
+                },
+                {
+                  "probleme": "Distribution par courroie à respecter strictement, casse fréquente en cas de négligence",
+                  "symptomes": [
+                    "Aucun symptôme fiable avant la casse"
+                  ],
+                  "kilometrage_apparition": "Intervalle constructeur d'époque, généralement autour de 60 000 à 80 000 km selon les versions",
+                  "diagnostic": "Vérification de la date/kilométrage du dernier remplacement au carnet d'entretien",
+                  "piece_concernee": "Système de distribution",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent en cas de non-respect de l'intervalle constructeur",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles pour cette opération spécifique"
+                },
+                {
+                  "probleme": "Réglage des jeux de soupapes nécessaire après 100 000 km sur certaines versions (XUD9SD)",
+                  "symptomes": [
+                    "Bruit de cliquetis moteur",
+                    "Fonctionnement irrégulier"
+                  ],
+                  "kilometrage_apparition": "Vers 100 000 km",
+                  "diagnostic": "Contrôle du jeu de soupapes lors d'une révision",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent sur cette version spécifique à 100 000 km",
+                  "cout_reparation_estime": "Non chiffré précisément dans les sources disponibles"
+                },
+                {
+                  "probleme": "Fiabilité globale exceptionnelle reconnue, l'un des diesels les plus robustes de l'histoire PSA",
+                  "symptomes": [
+                    "De nombreux témoignages de moteurs dépassant 400 000 km sans réparation majeure, y compris après remplacement moteur d'occasion à la casse"
+                  ],
+                  "kilometrage_apparition": "Longévité de plusieurs centaines de milliers de kilomètres largement documentée ; certaines versions (XUD9TE) dépassent facilement les 400 000 km",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information positive (non concernée par la présente échelle de gravité)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Non applicable ; moteur emblématique développé par PSA dans les années 1980-1990, réputé pour sa robustesse, son couple élevé à bas régime et son architecture simple à quatre cylindres en ligne"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Aronde",
+      "generations": [
+        {
+          "code_chassis": "Simca 9 Aronde / Aronde 90A / P60",
+          "annees": "1951-1964",
+          "phases": [
+            "Simca 9 Aronde (1951-1955)",
+            "Aronde 90A / 1300 (1955-1958)",
+            "P60 (1958-1964)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.2 - 45ch (moteur Fiat hérité)",
+              "code_moteur": "Bloc Fiat (issu de la Simca 8 1200)",
+              "cylindree": "1221cm3",
+              "puissance_ch": 45,
+              "boite": [
+                "BVM3"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion généralisée de la caisse, point de contrôle numéro un sur les exemplaires restants",
+                  "symptomes": [
+                    "Traces de rouille visibles"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Pièces mécaniques spécifiques de plus en plus rares sur le marché de la collection",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Carburateur d'époque demandant un réglage régulier",
+                  "symptomes": [
+                    "Ralenti instable si mal réglé"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Système d'alimentation / injection",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Flash (1.3) — 45 ch",
+              "code_moteur": "Moteur \"Flash\" maison Simca",
+              "cylindree": "1290cm3",
+              "puissance_ch": 45,
+              "boite": [
+                "BVM3",
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion généralisée de la caisse, point de contrôle numéro un sur les exemplaires restants",
+                  "symptomes": [
+                    "Traces de rouille visibles"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Pièces mécaniques spécifiques de plus en plus rares sur le marché de la collection",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Carburateur d'époque demandant un réglage régulier",
+                  "symptomes": [
+                    "Ralenti instable si mal réglé"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Système d'alimentation / injection",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ],
+              "libelle_source": "Flash (1.3) - 45/48ch"
+            },
+            {
+              "type": "Essence",
+              "nom": "Flash (1.3) — 48 ch",
+              "code_moteur": "Moteur \"Flash\" maison Simca",
+              "cylindree": "1290cm3",
+              "puissance_ch": 48,
+              "boite": [
+                "BVM3",
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion généralisée de la caisse, point de contrôle numéro un sur les exemplaires restants",
+                  "symptomes": [
+                    "Traces de rouille visibles"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Pièces mécaniques spécifiques de plus en plus rares sur le marché de la collection",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Carburateur d'époque demandant un réglage régulier",
+                  "symptomes": [
+                    "Ralenti instable si mal réglé"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Système d'alimentation / injection",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ],
+              "libelle_source": "Flash (1.3) - 45/48ch"
+            },
+            {
+              "type": "Essence",
+              "nom": "Rush / Rush Super (5 paliers) — 57 ch",
+              "code_moteur": "Moteur \"Rush\" cinq paliers (évolution du Flash, 1961)",
+              "cylindree": "1290cm3",
+              "puissance_ch": 57,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion généralisée de la caisse, point de contrôle numéro un sur les exemplaires restants",
+                  "symptomes": [
+                    "Traces de rouille visibles"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Pièces mécaniques spécifiques de plus en plus rares sur le marché de la collection",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Carburateur d'époque demandant un réglage régulier",
+                  "symptomes": [
+                    "Ralenti instable si mal réglé"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Système d'alimentation / injection",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ],
+              "libelle_source": "Rush / Rush Super (5 paliers) - 57/62ch"
+            },
+            {
+              "type": "Essence",
+              "nom": "Rush / Rush Super (5 paliers) — 62 ch",
+              "code_moteur": "Moteur \"Rush\" cinq paliers (évolution du Flash, 1961)",
+              "cylindree": "1290cm3",
+              "puissance_ch": 62,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion généralisée de la caisse, point de contrôle numéro un sur les exemplaires restants",
+                  "symptomes": [
+                    "Traces de rouille visibles"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Pièces mécaniques spécifiques de plus en plus rares sur le marché de la collection",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Carburateur d'époque demandant un réglage régulier",
+                  "symptomes": [
+                    "Ralenti instable si mal réglé"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Système d'alimentation / injection",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ],
+              "libelle_source": "Rush / Rush Super (5 paliers) - 57/62ch"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Vedette / Ariane",
+      "generations": [
+        {
+          "code_chassis": "Simca Vedette / Ariane / Trianon",
+          "annees": "1954-1963",
+          "phases": [
+            "Vedette (1954-1961, moteur V8 Aquilon)",
+            "Ariane 4 / Trianon (1957-1963, moteur Flash Aronde)",
+            "Ariane 8 (1958-1961, moteur V8 Aquilon)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 Aquilon — 78 ch",
+              "code_moteur": "V8 \"Aquilon\" (hérité Ford France/Vedette)",
+              "cylindree": "2351cm3",
+              "puissance_ch": 78,
+              "boite": [
+                "BVM3"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion généralisée de la caisse, point de contrôle numéro un sur les exemplaires restants",
+                  "symptomes": [
+                    "Traces de rouille visibles"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Pièces mécaniques spécifiques de plus en plus rares sur le marché de la collection",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Carburateur d'époque demandant un réglage régulier",
+                  "symptomes": [
+                    "Ralenti instable si mal réglé"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Système d'alimentation / injection",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ],
+              "libelle_source": "V8 Aquilon - 78/84ch"
+            },
+            {
+              "type": "Essence",
+              "nom": "V8 Aquilon — 84 ch",
+              "code_moteur": "V8 \"Aquilon\" (hérité Ford France/Vedette)",
+              "cylindree": "2351cm3",
+              "puissance_ch": 84,
+              "boite": [
+                "BVM3"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion généralisée de la caisse, point de contrôle numéro un sur les exemplaires restants",
+                  "symptomes": [
+                    "Traces de rouille visibles"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Pièces mécaniques spécifiques de plus en plus rares sur le marché de la collection",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Carburateur d'époque demandant un réglage régulier",
+                  "symptomes": [
+                    "Ralenti instable si mal réglé"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Système d'alimentation / injection",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ],
+              "libelle_source": "V8 Aquilon - 78/84ch"
+            },
+            {
+              "type": "Essence",
+              "nom": "Ariane 4 / Trianon - Flash 1.3 - 47ch",
+              "code_moteur": "Moteur \"Flash\" (issu de l'Aronde)",
+              "cylindree": "1290cm3",
+              "puissance_ch": 47,
+              "boite": [
+                "BVM3"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion généralisée de la caisse, point de contrôle numéro un sur les exemplaires restants",
+                  "symptomes": [
+                    "Traces de rouille visibles"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Carrosserie / châssis",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Pièces mécaniques spécifiques de plus en plus rares sur le marché de la collection",
+                  "symptomes": [
+                    "Difficulté à trouver des pièces de rechange d'origine"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Carburateur d'époque demandant un réglage régulier",
+                  "symptomes": [
+                    "Ralenti instable si mal réglé"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Système d'alimentation / injection",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2205 @@
+{
+  "nom": "Buick",
+  "modeles": [
+    {
+      "nom": "Cascada",
+      "generations": [
+        {
+          "code_chassis": "Génération unique (base Opel Cascada)",
+          "annees": "2016-2019",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.6 Turbo I4 — 200 ch",
+              "code_moteur": "LTG-derived Ecotec 1.6 Turbo (Opel/GM)",
+              "cylindree": "1.6L",
+              "puissance_ch": 200,
+              "boite": [
+                "BVA6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Turbo sujet à défaillance documentée, symptômes de perte de puissance, bruits inhabituels et surconsommation d'huile",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Mécanisme de capote électrique sujet à pannes fréquemment rapportées, capote refusant de s'ouvrir ou de se fermer correctement, réparation coûteuse liée à des défaillances électriques du mécanisme",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Problèmes de transmission documentés sur véhicules à kilométrage plus élevé : passages de vitesses retardés, à-coups au rétrogradage, voire panne complète",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Millésime 2017 particulièrement identifié pour ces problèmes de capote et de transmission, cumulés aux mêmes défauts que 2016",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Century",
+      "generations": [
+        {
+          "code_chassis": "6e génération (dernière, A-body/W-body de transition)",
+          "annees": "1997-2005",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.1 V6 — 160 ch",
+              "code_moteur": "L82 (3.1L V6)",
+              "cylindree": "3.1L",
+              "puissance_ch": 160,
+              "boite": [
+                "BVA4 4T60-E"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Joints de collecteur d'admission sujets à fuites documentées sur ce bloc, provoquant perte de liquide de refroidissement et mélange avec l'huile moteur",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Berline familiale traditionnelle et simple mécaniquement, réputée facile et peu coûteuse à entretenir pour un usage quotidien",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Corrosion des durites de climatisation avec l'âge",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Fiabilité globale jugée correcte pour son segment et son époque, principalement plébiscitée par une clientèle senior recherchant simplicité et confort",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Enclave",
+      "generations": [
+        {
+          "code_chassis": "1ère génération (Lambda, plateforme partagée Traverse/Acadia/Outlook)",
+          "annees": "2008-2017",
+          "phases": [
+            "Phase 1 (2008-2012)",
+            "Phase 2 restylée (2013-2017)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.6 V6 — 275 ch",
+              "code_moteur": "LLT (2008-2011) / LFY (2012-2017)",
+              "cylindree": "3.6L",
+              "puissance_ch": 275,
+              "boite": [
+                "BVA6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Millésime 2008 identifié comme le pire de toute l'histoire du modèle avec plus de 1 000 plaintes NHTSA recensées, problèmes moteur dominants après 100 000 miles (témoin moteur allumé en permanence, accélération poussive, panne moteur complète)",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Étirement de la chaîne de distribution documenté sur le bloc LLT (2008-2011), réparation coûteuse pouvant dépasser 4 000 dollars en cas de remplacement complet du moteur",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Pannes de boîte de vitesses fréquemment rapportées, vibrations et bruits de cognement à l'accélération ou au passage des rapports, typiquement autour de 91 000 miles",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Défaillances de direction assistée documentées sur les mêmes millésimes 2008-2012, partagées avec le Traverse/Acadia de la même plateforme",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "3.6 V6 — 288 ch",
+              "code_moteur": "LLT (2008-2011) / LFY (2012-2017)",
+              "cylindree": "3.6L",
+              "puissance_ch": 288,
+              "boite": [
+                "BVA6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Millésime 2008 identifié comme le pire de toute l'histoire du modèle avec plus de 1 000 plaintes NHTSA recensées, problèmes moteur dominants après 100 000 miles (témoin moteur allumé en permanence, accélération poussive, panne moteur complète)",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Étirement de la chaîne de distribution documenté sur le bloc LLT (2008-2011), réparation coûteuse pouvant dépasser 4 000 dollars en cas de remplacement complet du moteur",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Pannes de boîte de vitesses fréquemment rapportées, vibrations et bruits de cognement à l'accélération ou au passage des rapports, typiquement autour de 91 000 miles",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Défaillances de direction assistée documentées sur les mêmes millésimes 2008-2012, partagées avec le Traverse/Acadia de la même plateforme",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "2e génération",
+          "annees": "2018-2024",
+          "phases": [
+            "Phase 1 (2018-2021)",
+            "Phase 2 restylée Avenir (2022-2024)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.6 LFY V6 — 310 ch",
+              "code_moteur": "LFY (3.6L V6)",
+              "cylindree": "3.6L",
+              "puissance_ch": 310,
+              "boite": [
+                "BVA9"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Millésime de lancement 2018 marqué par des problèmes de freinage (61 plaintes NHTSA recensées, principalement liées au système de freins)",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Rappel constructeur pour module TIPM/BCM pouvant provoquer un court-circuit électrique et un calage moteur",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Fiabilité nettement améliorée à partir de 2019, direction assistée fiabilisée par rapport à la génération précédente",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Millésime 2021 identifié comme une référence de fiabilité au sein de cette génération selon plusieurs analyses de plaintes",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "3e génération",
+          "annees": "2025-présent",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.5 Turbo I4 — 328 ch",
+              "code_moteur": "Ecotec 2.5 Turbo (remplace le V6 atmosphérique)",
+              "cylindree": "2.5L",
+              "puissance_ch": 328,
+              "boite": [
+                "BVA9"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Rupture avec le V6 atmosphérique historique de la gamme, remplacé pour la première fois par un 4 cylindres turbo",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Modèle très récent, aucun recul sur la fiabilité à long terme",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Turbo sensible à l'entretien, vidanges rapprochées recommandées",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Correction des problèmes de performance des phares qui limitaient les générations précédentes, désormais primé Top Safety Pick+ par l'IIHS",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Encore",
+      "generations": [
+        {
+          "code_chassis": "1ère génération (base Chevrolet Trax/Opel Mokka)",
+          "annees": "2013-2022",
+          "phases": [
+            "Phase 1 (2013-2016)",
+            "Phase 2 restylée (2017-2022)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.4 Turbo LUV/LE2 — 138 ch",
+              "code_moteur": "Ecotec LUV (2013-2015) / LE2 (2016+)",
+              "cylindree": "1.4L",
+              "puissance_ch": 138,
+              "boite": [
+                "BVM6",
+                "BVA6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Turbo notoirement fragile documenté sur l'ensemble de la carrière du modèle (2013-2022), cause la plus fréquente de plaintes selon plusieurs analyses consolidées",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Système de refroidissement comportant de nombreuses pièces en plastique (durites, boîtier de thermostat) sujettes à fissures et fuites, en particulier sur les millésimes 2013-2017",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Millésime 2013 marqué par une perte de puissance moteur et une accélération inadéquate nécessitant souvent le remplacement du turbo",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Millésimes 2015-2017 concernés par un rappel constructeur majeur (plus de 3,6 millions de véhicules GM) pour airbags et ceintures de sécurité défaillants",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.4 Turbo LUV/LE2 — 153 ch",
+              "code_moteur": "Ecotec LUV (2013-2015) / LE2 (2016+)",
+              "cylindree": "1.4L",
+              "puissance_ch": 153,
+              "boite": [
+                "BVM6",
+                "BVA6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Turbo notoirement fragile documenté sur l'ensemble de la carrière du modèle (2013-2022), cause la plus fréquente de plaintes selon plusieurs analyses consolidées",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Système de refroidissement comportant de nombreuses pièces en plastique (durites, boîtier de thermostat) sujettes à fissures et fuites, en particulier sur les millésimes 2013-2017",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Millésime 2013 marqué par une perte de puissance moteur et une accélération inadéquate nécessitant souvent le remplacement du turbo",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Millésimes 2015-2017 concernés par un rappel constructeur majeur (plus de 3,6 millions de véhicules GM) pour airbags et ceintures de sécurité défaillants",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Encore GX (crossover distinct, plateforme VSS-F, base Trailblazer)",
+          "annees": "2020-présent",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.2 Turbo - 137 ch",
+              "code_moteur": "LIH (1.2L) / LYX (1.3L)",
+              "cylindree": "1.3L",
+              "puissance_ch": 137,
+              "boite": [
+                "Transmission à variation continue (CVT)",
+                "BVA9"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Millésime 2021 associé à des problèmes de freinage et d'hésitation moteur à l'accélération documentés",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Transmission à variation continue source de retours mitigés sur l'agrément de conduite",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Turbo sensible à l'entretien, vidanges rapprochées recommandées",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Fiabilité globalement meilleure que l'Encore de première génération selon les premiers retours propriétaires",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.3 Turbo - 155 ch",
+              "code_moteur": "LIH (1.2L) / LYX (1.3L)",
+              "cylindree": "1.3L",
+              "puissance_ch": 155,
+              "boite": [
+                "Transmission à variation continue (CVT)",
+                "BVA9"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Millésime 2021 associé à des problèmes de freinage et d'hésitation moteur à l'accélération documentés",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Transmission à variation continue source de retours mitigés sur l'agrément de conduite",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Turbo sensible à l'entretien, vidanges rapprochées recommandées",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Fiabilité globalement meilleure que l'Encore de première génération selon les premiers retours propriétaires",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "LaCrosse",
+      "generations": [
+        {
+          "code_chassis": "1ère génération (W-body, remplace Century/Regal)",
+          "annees": "2005-2009",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.8 Series III V6 — 200 ch",
+              "code_moteur": "3800 Series III (L26)",
+              "cylindree": "3.8L",
+              "puissance_ch": 200,
+              "boite": [
+                "BVA4 4T65-E"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Bloc 3800 Series III considéré comme quasi indestructible, l'un des moteurs GM les plus fiables jamais produits",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Problèmes de transmission largement documentés sur cette génération, principale source de plaintes",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Millésimes 2005-2007 identifiés comme les plus problématiques, notamment défaillance des feux de croisement (rappels NHTSA 14V755000 et 14V355000) avec des pièces de réparation parfois indisponibles",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Électronique et éléments de direction jugés fragiles malgré la robustesse du bloc moteur",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "5.3 V8 — 300 ch",
+              "code_moteur": "Vortec 5300 (LS4, transversal)",
+              "cylindree": "5.3L",
+              "puissance_ch": 300,
+              "boite": [
+                "BVA4 4T65-E-HD"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Première application d'un V8 sur une plateforme à traction avant chez GM, configuration transversale complexe",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Consommation de carburant élevée pour une berline de cette catégorie",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Diffusion limitée, pièces spécifiques V8 transversal moins courantes aujourd'hui",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Boîte automatique renforcée sollicitée fortement par le couple du V8",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "2e génération (Epsilon II)",
+          "annees": "2010-2016",
+          "phases": [
+            "Phase 1 (2010-2013)",
+            "Phase 2 restylée (2014-2016)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.6 V6 — 280 ch",
+              "code_moteur": "LFX (3.6L V6)",
+              "cylindree": "3.6L",
+              "puissance_ch": 280,
+              "boite": [
+                "BVA6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Millésimes 2010-2011 marqués par de sévères problèmes de boîte automatique 6 rapports et de chaîne de distribution du bloc 3.6L, réparations coûteuses",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Encrassement carbone des soupapes d'admission massivement documenté sur ce bloc à injection directe, provoquant témoin moteur allumé en permanence dès 25 000 miles",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Volet de calandre actif (active grille shutter) sujet à blocage fréquemment rapporté",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Fiabilité nettement améliorée à partir de 2012, amélioration continue jusqu'en 2016",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "3.6 V6 — 304 ch",
+              "code_moteur": "LFX (3.6L V6)",
+              "cylindree": "3.6L",
+              "puissance_ch": 304,
+              "boite": [
+                "BVA6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Millésimes 2010-2011 marqués par de sévères problèmes de boîte automatique 6 rapports et de chaîne de distribution du bloc 3.6L, réparations coûteuses",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Encrassement carbone des soupapes d'admission massivement documenté sur ce bloc à injection directe, provoquant témoin moteur allumé en permanence dès 25 000 miles",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Volet de calandre actif (active grille shutter) sujet à blocage fréquemment rapporté",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Fiabilité nettement améliorée à partir de 2012, amélioration continue jusqu'en 2016",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "2.4 eAssist Hybrid - 182ch (combiné)",
+              "code_moteur": "LUK Ecotec 2.4 eAssist (micro-hybride)",
+              "cylindree": "2.4L",
+              "puissance_ch": 182,
+              "boite": [
+                "BVA6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Système micro-hybride eAssist de complexité modérée, gain de consommation jugé limité par plusieurs testeurs",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Batterie du système eAssist à surveiller sur le long terme, coût de remplacement hors garantie",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Diffusion limitée de cette version, pièces spécifiques moins courantes",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Encrassement carbone des soupapes d'admission identique au bloc essence standard",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "3e génération (Epsilon II restylée)",
+          "annees": "2017-2019",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.5 Ecotec I4 — 194 ch",
+              "code_moteur": "LCV Ecotec 2.5",
+              "cylindree": "2.5L",
+              "puissance_ch": 194,
+              "boite": [
+                "BVA8",
+                "BVA9"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Boîte automatique 8/9 rapports nettement plus moderne et fiable, amélioration significative de la chaîne cinématique",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Fiabilité globalement bien meilleure que les générations précédentes selon les retours propriétaires",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Quelques cas de panne du système de climatisation encore rapportés",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Dernière génération avant l'arrêt définitif du nameplate LaCrosse en Amérique du Nord fin 2019",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "3.6 LGX V6 — 310 ch",
+              "code_moteur": "LGX (3.6L V6)",
+              "cylindree": "3.6L",
+              "puissance_ch": 310,
+              "boite": [
+                "BVA9"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité globalement excellente pour cette dernière génération selon plusieurs guides d'achat spécialisés",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Consommation d'huile signalée sur certains exemplaires",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Encrassement carbone des soupapes d'admission toujours possible mais moins problématique que sur le LFX précédent",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Segment berline familiale en net recul aux États-Unis, contribuant à l'arrêt du modèle malgré une fiabilité solide",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "LeSabre / Lucerne",
+      "generations": [
+        {
+          "code_chassis": "LeSabre (8e génération, dernière avant Lucerne)",
+          "annees": "2000-2005",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.8 Series II V6 — 205 ch",
+              "code_moteur": "3800 Series II (L36)",
+              "cylindree": "3.8L",
+              "puissance_ch": 205,
+              "boite": [
+                "BVA4 4T65-E"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Bloc 3800 Series II réputé parmi les plus fiables jamais produits par GM, référence de robustesse mécanique",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Rappel constructeur (2014) pour interrupteur d'allumage pouvant se déplacer hors de la position 'marche', désactivant les airbags, défaut partagé avec plusieurs modèles GM de la même période (Century, LaCrosse, Camaro, Magnum, Rendezvous)",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Corrosion des durites de climatisation et de refroidissement avec l'âge",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Berline traditionnelle appréciée pour sa fiabilité mécanique et son confort, principalement plébiscitée par une clientèle senior",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Lucerne (remplace LeSabre et Park Avenue)",
+          "annees": "2006-2011",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.8 V6 - 197 ch",
+              "code_moteur": "3800 Series III (2006-2008) / High Value 3.9L (2009-2011)",
+              "cylindree": "3.9L",
+              "puissance_ch": 197,
+              "boite": [
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Boîtier de fusibles arrière (sous la banquette) notoirement documenté comme point faible majeur : la borne du relais de pompe à carburant surchauffe et fait fondre le plastique environnant, provoquant calage moteur en roulant ou refus de démarrage",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Millésime 2006 (première année) identifié comme le plus problématique, cumulant fuites d'huile, problèmes électriques et pannes de transmission",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Millésime 2008 marqué par des surchauffes et fuites de liquide de refroidissement documentées sur le bloc V6 3.8L, liées à des joints de collecteur d'admission dégradés",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Millésimes 2009-2010 nettement plus fiables grâce au passage au bloc 3.9L amélioré, souvent recommandés comme meilleur choix d'occasion au sein de cette génération",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "3.9 V6 - 224 ch",
+              "code_moteur": "3800 Series III (2006-2008) / High Value 3.9L (2009-2011)",
+              "cylindree": "3.9L",
+              "puissance_ch": 224,
+              "boite": [
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Boîtier de fusibles arrière (sous la banquette) notoirement documenté comme point faible majeur : la borne du relais de pompe à carburant surchauffe et fait fondre le plastique environnant, provoquant calage moteur en roulant ou refus de démarrage",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Millésime 2006 (première année) identifié comme le plus problématique, cumulant fuites d'huile, problèmes électriques et pannes de transmission",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Millésime 2008 marqué par des surchauffes et fuites de liquide de refroidissement documentées sur le bloc V6 3.8L, liées à des joints de collecteur d'admission dégradés",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Millésimes 2009-2010 nettement plus fiables grâce au passage au bloc 3.9L amélioré, souvent recommandés comme meilleur choix d'occasion au sein de cette génération",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "4.6 Northstar V8 — 275 ch",
+              "code_moteur": "Northstar LD8/L37 (4.6L)",
+              "cylindree": "4.6L",
+              "puissance_ch": 275,
+              "boite": [
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fuites d'huile chroniques documentées au niveau des joints de couvre-culasses et du joint spi de vilebrequin avant, réparation compliquée par le manque d'espace dans le compartiment moteur",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Bloc Northstar de cette période largement débarrassé du défaut historique de boulons de culasse des années 1990, mais coût d'entretien global plus élevé que le V6",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Système de suspension à contrôle magnétique (Magnetic Ride Control, en option) coûteux à réparer en cas de panne de capteur ou d'amortisseur",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Diffusion plus limitée que le V6, généralement recommandé de privilégier un exemplaire à faible kilométrage bien entretenu selon plusieurs propriétaires de longue date",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Regal",
+      "generations": [
+        {
+          "code_chassis": "4e génération (W-body)",
+          "annees": "1997-2004",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.8 Series II V6 — 200 ch",
+              "code_moteur": "3800 Series II (L36/L67 Supercharged GS)",
+              "cylindree": "3.8L",
+              "puissance_ch": 200,
+              "boite": [
+                "BVA4 4T65-E"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Millésimes 1997-2004 identifiés comme à éviter en priorité, problèmes moteur et fuites de liquide de refroidissement documentés",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Millésimes 1998-2001 associés à des problèmes électriques fréquents et une clé de contact se bloquant dans le barillet",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Pompe à eau sujette à défaillance documentée sur les millésimes 1992, 1997, 2000 et 2001",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Bloc 3800 globalement réputé robuste mécaniquement, la plupart des problèmes concernant l'électronique périphérique plutôt que le moteur lui-même",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "3.8 Series II V6 — 240 ch",
+              "code_moteur": "3800 Series II (L36/L67 Supercharged GS)",
+              "cylindree": "3.8L",
+              "puissance_ch": 240,
+              "boite": [
+                "BVA4 4T65-E"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Millésimes 1997-2004 identifiés comme à éviter en priorité, problèmes moteur et fuites de liquide de refroidissement documentés",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Millésimes 1998-2001 associés à des problèmes électriques fréquents et une clé de contact se bloquant dans le barillet",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Pompe à eau sujette à défaillance documentée sur les millésimes 1992, 1997, 2000 et 2001",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Bloc 3800 globalement réputé robuste mécaniquement, la plupart des problèmes concernant l'électronique périphérique plutôt que le moteur lui-même",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "5e génération (Epsilon II, base Opel Insignia)",
+          "annees": "2011-2017",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.4 Ecotec I4 — 182 ch",
+              "code_moteur": "LAF/LEA Ecotec 2.4",
+              "cylindree": "2.4L",
+              "puissance_ch": 182,
+              "boite": [
+                "BVA6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Millésime 2011 identifié comme le plus problématique de cette génération, problèmes moteur majeurs documentés",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Freinage défaillant et problèmes de direction assistée rapportés sur l'ensemble de la génération 2011-2017",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Module de commande de levier de vitesses électronique sujet à mauvais contact documenté, cause fréquente de panne",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Cette génération considérée comme la moins fiable de toute l'histoire du Regal selon plusieurs analyses consolidées, moins fiable qu'une Ford Fusion contemporaine selon certaines comparaisons",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "2.0 Turbo GS — 259 ch",
+              "code_moteur": "LHU Ecotec 2.0 Turbo",
+              "cylindree": "2.0L",
+              "puissance_ch": 259,
+              "boite": [
+                "BVM6",
+                "BVA6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Turbo sensible à l'entretien, vidanges rapprochées recommandées",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Mêmes problèmes de freinage et de direction que le reste de la génération",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Diffusion limitée à la version sportive GS, moins courante sur le marché de l'occasion",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Millésimes 2008-2010 (avant lancement US) et 2015-2016 identifiés comme relativement plus fiables au sein de cette génération",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "6e génération (Epsilon II restylée)",
+          "annees": "2018-2020",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.0 Turbo LTG — 250 ch",
+              "code_moteur": "LTG Ecotec 2.0 Turbo",
+              "cylindree": "2.0L",
+              "puissance_ch": 250,
+              "boite": [
+                "BVA9",
+                "BVA8 double embrayage (GS)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Regal TourX (break à hayon surélevé) unique en son genre sur le marché américain, seul break Regal jamais vendu aux États-Unis",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Regal GS 2018 (édition unique) associant turbo haute pression et transmission intégrale de série, performances les plus abouties de toute l'histoire du nameplate",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Turbo sensible à l'entretien, vidanges rapprochées recommandées",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Dernière génération avant l'arrêt définitif du Regal aux États-Unis en 2020, segment berline/break en net recul face aux SUV",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "2.0 Turbo LTG — 310 ch",
+              "code_moteur": "LTG Ecotec 2.0 Turbo",
+              "cylindree": "2.0L",
+              "puissance_ch": 310,
+              "boite": [
+                "BVA9",
+                "BVA8 double embrayage (GS)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Regal TourX (break à hayon surélevé) unique en son genre sur le marché américain, seul break Regal jamais vendu aux États-Unis",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Regal GS 2018 (édition unique) associant turbo haute pression et transmission intégrale de série, performances les plus abouties de toute l'histoire du nameplate",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Turbo sensible à l'entretien, vidanges rapprochées recommandées",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Dernière génération avant l'arrêt définitif du Regal aux États-Unis en 2020, segment berline/break en net recul face aux SUV",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Riviera",
+      "generations": [
+        {
+          "code_chassis": "7e génération (dernière avant l'arrêt initial)",
+          "annees": "1986-1993",
+          "phases": [
+            "Phase 1 (1986-1990)",
+            "Phase 2 restylée (1990-1993)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.8 Series I/II V6 — 165 ch",
+              "code_moteur": "3800 (Series I puis Series II)",
+              "cylindree": "3.8L",
+              "puissance_ch": 165,
+              "boite": [
+                "BVA4 4T60"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Bloc 3800 réputé robuste et durable, référence de fiabilité au sein de la gamme GM de l'époque",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Écran tactile Graphic Control Center (1986-1989), technologie précoce et peu fiable pour l'époque, souvent source de pannes et remplacé par des commandes classiques en 1990",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Corrosion des durites de climatisation avec l'âge",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Downsizing important par rapport aux générations précédentes, critiqué à l'époque par une partie de la clientèle traditionnelle",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "3.8 Series I/II V6 — 170 ch",
+              "code_moteur": "3800 (Series I puis Series II)",
+              "cylindree": "3.8L",
+              "puissance_ch": 170,
+              "boite": [
+                "BVA4 4T60"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Bloc 3800 réputé robuste et durable, référence de fiabilité au sein de la gamme GM de l'époque",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Écran tactile Graphic Control Center (1986-1989), technologie précoce et peu fiable pour l'époque, souvent source de pannes et remplacé par des commandes classiques en 1990",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Corrosion des durites de climatisation avec l'âge",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Downsizing important par rapport aux générations précédentes, critiqué à l'époque par une partie de la clientèle traditionnelle",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "8e génération (dernière génération avant l'arrêt définitif)",
+          "annees": "1995-1999",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.8 Series II V6 — 205 ch",
+              "code_moteur": "3800 Series II (atmosphérique et Supercharged)",
+              "cylindree": "3.8L",
+              "puissance_ch": 205,
+              "boite": [
+                "BVA4 4T60-E"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Bloc 3800 Series II toujours considéré comme l'un des moteurs GM les plus fiables jamais produits",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Version Supercharged appréciée pour ses performances mais sollicitant davantage la boîte automatique 4T60-E",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Corrosion des durites de climatisation et de refroidissement avec l'âge",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Ventes en déclin continu ayant conduit à l'arrêt définitif du nameplate Riviera fin 1999, modèle aujourd'hui recherché en collection pour son style distinctif des années 1990",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "3.8 Series II V6 — 240 ch",
+              "code_moteur": "3800 Series II (atmosphérique et Supercharged)",
+              "cylindree": "3.8L",
+              "puissance_ch": 240,
+              "boite": [
+                "BVA4 4T60-E"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Bloc 3800 Series II toujours considéré comme l'un des moteurs GM les plus fiables jamais produits",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Version Supercharged appréciée pour ses performances mais sollicitant davantage la boîte automatique 4T60-E",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Corrosion des durites de climatisation et de refroidissement avec l'âge",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Ventes en déclin continu ayant conduit à l'arrêt définitif du nameplate Riviera fin 1999, modèle aujourd'hui recherché en collection pour son style distinctif des années 1990",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Verano",
+      "generations": [
+        {
+          "code_chassis": "1ère génération (unique, plateforme Delta II, base Chevrolet Cruze)",
+          "annees": "2012-2016",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.4 Ecotec I4 — 180 ch",
+              "code_moteur": "LEA Ecotec 2.4",
+              "cylindree": "2.4L",
+              "puissance_ch": 180,
+              "boite": [
+                "BVA6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Consommation d'huile excessive massivement documentée et confirmée par un recours collectif, liée à une vanne PCV positionnée dans le collecteur d'admission qui s'encrasse et génère une surpression forçant l'huile vers le boîtier papillon, GM ayant reconnu le problème sur les GMC Terrain équipés du même bloc",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Millésimes 2012-2014 identifiés comme les plus problématiques pour la consommation d'huile, réparation typique autour de 5 000 à 6 000 dollars en cas de défaillance avancée du joint arrière de vilebrequin",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Jauge de carburant défectueuse documentée, affichage erratique une fois le réservoir sous la moitié",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Millésimes 2014-2016 associés à des pannes de transmission, calages moteur et défaillances du module de commande électronique de boîte de vitesses",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "2.0 Turbo LHU — 250 ch",
+              "code_moteur": "LHU Ecotec 2.0 Turbo",
+              "cylindree": "2.0L",
+              "puissance_ch": 250,
+              "boite": [
+                "BVA6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Turbo sujet à défaillance fréquemment documentée sur les millésimes 2012-2014, réparations coûteuses",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Mêmes problématiques de jauge de carburant et de calages électriques que le reste de la gamme",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Version la plus performante jamais proposée sur une Verano, diffusion limitée",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                },
+                {
+                  "probleme": "Turbo sensible à l'entretien, vidanges rapprochées recommandées",
+                  "symptomes": [
+                    "A confirmer au controle."
+                  ],
+                  "kilometrage_apparition": "Variable selon entretien et usage.",
+                  "diagnostic": "Inspection, essai et lecture des defauts.",
+                  "piece_concernee": "Organe concerne",
+                  "gravite": "A evaluer.",
+                  "frequence": "Variable.",
+                  "cout_reparation_estime": "Devis apres diagnostic."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
