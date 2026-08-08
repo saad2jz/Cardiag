@@ -1454,11 +1454,12 @@ export function initializeLegacyFeatures(vehicleData) {
 
   function parseAnneeRange(annees){
     if(!annees) return null;
-    const parts = annees.split('-').map(s=>s.trim());
+    // Supporte tiret simple, demi-cadratin et cadratin (souvent présents dans les sources).
+    const parts = annees.split(/[-–—]/).map(s=>s.trim());
     const startY = parseInt(parts[0], 10);
     if(isNaN(startY)) return null;
     let endY;
-    if(!parts[1] || /présent/i.test(parts[1])){
+    if(!parts[1] || /présent|aujourd'hui|now/i.test(parts[1])){
       endY = new Date().getFullYear();
     }else{
       endY = parseInt(parts[1], 10);
