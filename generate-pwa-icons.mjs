@@ -25,11 +25,11 @@ function chunk(type, data) {
 function createIcon(size) {
   const pixels = Buffer.alloc(size * size * 4);
   const color = (hex) => [parseInt(hex.slice(1, 3), 16), parseInt(hex.slice(3, 5), 16), parseInt(hex.slice(5, 7), 16), 255];
-  const ink = color('#0A1830');
-  const steel = color('#4778AC');
-  const white = color('#EAF0FA');
-  const green = color('#1B8F58');
-  const gold = color('#E9C46A');
+  const ink = color('#14110D');
+  const steel = color('#2A2620');
+  const white = color('#F5EFE4');
+  const green = color('#C08A3E');
+  const gold = color('#E8B368');
   const setPixel = (x, y, rgba) => {
     if (x < 0 || y < 0 || x >= size || y >= size) return;
     const offset = (y * size + x) * 4;

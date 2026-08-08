@@ -1,8 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="104" fill="#0A1830"/>
-  <path d="M112 302h288l-28-106c-6-24-28-40-53-40H193c-25 0-47 16-53 40l-28 106Z" fill="#4778AC"/>
-  <path d="M120 302v72c0 16 13 30 30 30h20v-40h172v40h20c17 0 30-14 30-30v-72H120Z" fill="#EAF0FA"/>
-  <circle cx="184" cy="310" r="23" fill="#1B8F58"/>
-  <circle cx="328" cy="310" r="23" fill="#1B8F58"/>
-  <path d="M231 82h50v46h-50zM203 105h106v22H203z" fill="#E9C46A"/>
+  <defs>
+    <linearGradient id="fea-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1A1611"/>
+      <stop offset="1" stop-color="#0B0A09"/>
+    </linearGradient>
+    <linearGradient id="fea-brass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E8B368"/>
+      <stop offset="1" stop-color="#B5793A"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="104" fill="url(#fea-bg)"/>
+  <circle cx="256" cy="256" r="164" fill="none" stroke="#33302B" stroke-width="10"/>
+  <circle cx="256" cy="256" r="164" fill="none" stroke="url(#fea-brass)" stroke-width="10" stroke-linecap="round" stroke-dasharray="740" stroke-dashoffset="230"/>
+  <path d="M112 306h288l-28-106c-6-24-28-40-53-40H193c-25 0-47 16-53 40l-28 106Z" fill="#2A2620"/>
+  <path d="M120 306v66c0 16 13 30 30 30h20v-36h172v36h20c17 0 30-14 30-30v-66H120Z" fill="#F5EFE4"/>
+  <circle cx="184" cy="312" r="22" fill="url(#fea-brass)"/>
+  <circle cx="328" cy="312" r="22" fill="url(#fea-brass)"/>
+  <path d="M231 88h50v42h-50zM203 110h106v20H203z" fill="url(#fea-brass)"/>
 </svg>

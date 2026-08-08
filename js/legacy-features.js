@@ -497,6 +497,43 @@ export function initializeLegacyFeatures(vehicleData) {
     });
   }
 
+  function initAppTabbar(){
+    const tabbar = document.getElementById('appTabbar');
+    if(!tabbar) return;
+    const tabs = Array.from(tabbar.querySelectorAll('.app-tab'));
+    const sections = Array.from(document.querySelectorAll('details.section[data-section]'));
+
+    const setActive = (key)=>{
+      tabs.forEach(tab=> tab.classList.toggle('active', tab.dataset.gotoSection === key));
+    };
+
+    const goTo = (key)=>{
+      const target = sections.find(sec=> sec.dataset.section === key);
+      if(!target) return;
+      sections.forEach(sec=>{ sec.open = sec === target; });
+      setActive(key);
+      target.scrollIntoView({behavior:'smooth', block:'start'});
+    };
+
+    tabs.forEach(tab=>{
+      tab.addEventListener('click', ()=> goTo(tab.dataset.gotoSection));
+    });
+
+    // Comportement "application" : une seule section ouverte à la fois, et
+    // l'onglet actif suit la section réellement ouverte par l'utilisateur.
+    sections.forEach(sec=>{
+      sec.addEventListener('toggle', ()=>{
+        if(sec.open){
+          sections.forEach(other=>{ if(other !== sec) other.open = false; });
+          setActive(sec.dataset.section);
+        }
+      });
+    });
+
+    const openSection = sections.find(sec=> sec.open) || sections[0];
+    if(openSection) setActive(openSection.dataset.section);
+  }
+
   function initContext(){
     const dateField = document.querySelector('input[name="date_expertise"]');
     if(dateField && !dateField.value){
@@ -1780,6 +1817,7 @@ export function initializeLegacyFeatures(vehicleData) {
   loadDb();
   buildPhotoBlocks();
   buildNavButtons();
+  initAppTabbar();
   applyToForm(db[currentId].data);
   initCarDropdowns();
   renderAllPhotoGrids();

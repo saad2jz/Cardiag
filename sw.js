@@ -1,4 +1,4 @@
-const CACHE_NAME = 'fiche-expert-auto-v7';
+﻿const CACHE_NAME = 'fiche-expert-auto-v8';
 const APP_SHELL = [
   './',
   './index.html',
@@ -6,13 +6,13 @@ const APP_SHELL = [
   './icons/app-icon.svg',
   './icons/app-icon-192.png',
   './icons/app-icon-512.png',
-  './css/styles.css?v=20260808-1',
-  './build-data.js?v=20260808-1',
-  './js/db-loader.js?v=20260808-1',
-  './js/app.js?v=20260808-1',
-  './js/legacy-features.js?v=20260808-1',
-  './js/chat-experience.js?v=20260808-1',
-  './js/pwa.js?v=20260808-1',
+  './css/styles.css?v=20260808-2',
+  './build-data.js?v=20260808-2',
+  './js/db-loader.js?v=20260808-2',
+  './js/app.js?v=20260808-2',
+  './js/legacy-features.js?v=20260808-2',
+  './js/chat-experience.js?v=20260808-2',
+  './js/pwa.js?v=20260808-2',
   './data/vehicles.json',
 ];
 
@@ -37,7 +37,7 @@ self.addEventListener('fetch', (event) => {
   const url = new URL(event.request.url);
   if (url.origin !== self.location.origin) return;
 
-  // Navigation : réseau d'abord pour récupérer les mises à jour, puis cache hors ligne.
+  // Navigation : rÃ©seau d'abord pour rÃ©cupÃ©rer les mises Ã  jour, puis cache hors ligne.
   if (event.request.mode === 'navigate') {
     event.respondWith(
       fetch(event.request)
@@ -51,7 +51,7 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Les données et ressources locales restent utilisables sans réseau.
+  // Les donnÃ©es et ressources locales restent utilisables sans rÃ©seau.
   event.respondWith(
     caches.match(event.request, { ignoreSearch: true })
       .then((cached) => cached || fetch(event.request).then((response) => {
