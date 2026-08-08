@@ -29,7 +29,7 @@ test('health reports LLM runtime status', async () => {
 test('the combined server serves the frontend without exposing environment files', async () => {
   const page = await fetch(`${baseUrl}/`);
   assert.equal(page.status, 200);
-  assert.match(await page.text(), /Fiche d'Expertise/);
+  assert.match(await page.text(), /Cardiag/);
 
   const envFile = await fetch(`${baseUrl}/.env`);
   assert.equal(envFile.status, 404);

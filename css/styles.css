@@ -187,6 +187,8 @@ input[type="text"], input[type="number"], input[type="date"], input[type="dateti
   background:var(--bg); color:var(--ink); outline:none; transition:border-color .15s, background .15s, box-shadow .15s; width:100%;
 }
 input:focus, select:focus, textarea:focus{border-color:var(--accent); background:var(--surface); box-shadow:var(--focus-ring);}
+select, select option, select optgroup{background:var(--surface); color:var(--ink);}
+select:disabled, select:disabled option{color:var(--muted); background:var(--bg);}
 textarea{resize:vertical; min-height:70px; font-family:'Inter',sans-serif;}
 
 .field.field-invalid input, .field.field-invalid select{
