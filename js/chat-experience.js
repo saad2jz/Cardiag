@@ -291,6 +291,31 @@ export function initializeChatExperience() {
     inline.style.top = `${top}px`;
   }
 
+  function showInlineHelp(text, target) {
+    if (!text) return;
+    selectedText = text;
+    inlineText.textContent = canUseAssistant()
+      ? `Comprendre la vérification : « ${text.slice(0, 120)}${text.length > 120 ? '…' : ''} »`
+      : VEHICLE_CONTEXT_MESSAGE;
+    inline.hidden = false;
+    inlineAsk.textContent = 'Voir comment vérifier';
+    const actionBarHeight = document.querySelector('.action-bar')?.getBoundingClientRect().height || 0;
+    const inlineRect = inline.getBoundingClientRect();
+    const safeBottom = actionBarHeight + 12;
+    const rect = target?.getBoundingClientRect ? target.getBoundingClientRect() : { left: window.innerWidth / 2, top: window.innerHeight / 2, width: 0, height: 0 };
+    const preferredTop = rect.bottom + 8;
+    const top = preferredTop + inlineRect.height <= window.innerHeight - safeBottom
+      ? preferredTop
+      : Math.max(12, rect.top - inlineRect.height - 8);
+    const left = Math.min(
+      window.innerWidth - inlineRect.width - 12,
+      Math.max(12, rect.left + (rect.width / 2) - (inlineRect.width / 2)),
+    );
+    inline.style.left = `${left}px`;
+    inline.style.top = `${top}px`;
+  }
+  window.showInlineHelp = showInlineHelp;
+
   document.addEventListener('selectionchange', showInlineForSelection);
   document.addEventListener('pointerup', showInlineForSelection);
 

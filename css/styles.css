@@ -207,8 +207,14 @@ textarea{resize:vertical; min-height:70px; font-family:'Inter',sans-serif;}
 }
 .check-item:focus-within{border-color:var(--accent-light);}
 .check-item .label-block{flex:1 1 220px; min-width:180px;}
-.check-item .label-block .t{font-weight:600; font-size:14px; color:var(--ink); display:block;}
+.check-item .label-block .t{font-weight:600; font-size:14px; color:var(--ink); display:inline; margin-right:6px;}
 .check-item .label-block .d{font-size:12px; color:var(--muted); display:block; margin-top:2px; line-height:1.4;}
+.check-help-btn{
+  background:transparent; border:none; cursor:pointer; padding:0 2px; font-size:14px; line-height:1;
+  opacity:.65; transition:opacity .15s, transform .15s; vertical-align:middle;
+}
+.check-help-btn:hover{opacity:1; transform:scale(1.15);}
+.check-help-btn:focus-visible{outline:2px solid var(--accent-light); outline-offset:2px; border-radius:4px;}
 
 .badge-group{display:flex; gap:6px; flex-shrink:0;}
 .badge-group input[type="radio"]{position:absolute; opacity:0; width:0;height:0;}

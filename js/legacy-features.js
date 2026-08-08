@@ -469,6 +469,36 @@ export function initializeLegacyFeatures(vehicleData) {
     document.querySelectorAll('details.section[data-section]').forEach(sec=> renderPhotoGrid(sec.dataset.section));
   }
 
+  const SECTION_ICONS = ['🚗','🔧','🛞','✨','🪑','🛣️','📊'];
+
+  function decorateSectionNumbers(){
+    document.querySelectorAll('details.section .sec-num').forEach((el, i)=>{
+      const icon = SECTION_ICONS[i] || String(i + 1);
+      el.textContent = icon;
+      el.setAttribute('aria-hidden','true');
+    });
+  }
+
+  function decorateCheckItems(){
+    document.querySelectorAll('.check-item .label-block .t').forEach(title=>{
+      if(title.nextElementSibling?.classList.contains('check-help-btn')) return;
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'check-help-btn';
+      btn.setAttribute('aria-label', 'Aide : ' + title.textContent);
+      btn.setAttribute('title', 'Comment vérifier : ' + title.textContent);
+      btn.textContent = '🔎';
+      btn.addEventListener('click', (e)=>{
+        e.stopPropagation();
+        e.preventDefault();
+        if(typeof window.showInlineHelp === 'function'){
+          window.showInlineHelp(title.textContent.trim(), btn);
+        }
+      });
+      title.after(btn);
+    });
+  }
+
   function buildNavButtons(){
     const sections = Array.from(document.querySelectorAll('details.section'));
     sections.forEach((sec, i)=>{
@@ -1833,6 +1863,8 @@ export function initializeLegacyFeatures(vehicleData) {
   initWeightSettings();
   initActionBar();
   trackActionBarHeight();
+  decorateSectionNumbers();
+  decorateCheckItems();
   updateProgress();
   updateBudget();
   checkCriticalRisk();
