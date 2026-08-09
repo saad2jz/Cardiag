@@ -7,6 +7,60 @@ const MODELS_DIRECTORY = path.join(__dirname, '..', 'data', 'modeles');
 const IMPORTS_DIRECTORY = path.join(__dirname, '..', 'source-data', 'imports');
 const BRAND_INDEX_FILE = path.join(__dirname, '..', 'data', 'marques.json');
 const OUTPUT_FILE = path.join(__dirname, '..', 'data', 'vehicles.json');
+const US_YEARS_FILE = path.join(__dirname, '..', 'data', 'us-years.json');
+
+const TARGET_BRANDS_FOR_US_YEARS = new Set([
+  'RENAULT', 'PEUGEOT', 'VOLKSWAGEN', 'BMW', 'CITROËN', 'AUDI', 'MERCEDES-BENZ', 'FORD', 'OPEL', 'FIAT',
+  'ABARTH', 'AIXAM', 'ALFA ROMEO', 'ALPINA', 'ALPINE', 'ASTON MARTIN', 'AUDI', 'AUSTIN', 'AUTOBIANCHI',
+  'BENTLEY', 'BMW', 'BYD', 'CADILLAC', 'CHEVROLET', 'CHRYSLER', 'CITROËN', 'CUPRA', 'DACIA', 'DAEWOO',
+  'DAIHATSU', 'DODGE', 'DR', 'DS', 'FERRARI', 'FIAT', 'FORD', 'FORD USA', 'GERMAN E-CARS', 'HONDA',
+  'HUMMER', 'HYUNDAI', 'INFINITI', 'ISUZU', 'IVECO', 'JAGUAR', 'JEEP', 'KG MOBILITY', 'KIA', 'LADA',
+  'LAMBORGHINI', 'LANCIA', 'LAND ROVER', 'LEXUS', 'LOTUS', 'LYNK & CO', 'MAN', 'MASERATI', 'MAXUS',
+  'MAZDA', 'MERCEDES-BENZ', 'MG', 'MICROCAR', 'MINI', 'MITSUBISHI', 'NISSAN', 'OPEL', 'PEUGEOT', 'PIAGGIO',
+  'POLESTAR', 'PONTIAC', 'PORSCHE', 'RAM', 'RENAULT', 'RENAULT TRUCKS', 'ROLLS-ROYCE', 'ROVER', 'SAAB',
+  'SANTANA', 'SEAT', 'SKODA', 'SMART', 'SSANGYONG', 'SUBARU', 'SUZUKI', 'TALBOT', 'TATA (TELCO)', 'TESLA',
+  'TOYOTA', 'TRABANT', 'TRIUMPH', 'VAUXHALL', 'VOLKSWAGEN', 'VOLVO',
+]);
+
+function loadUsYears() {
+  try {
+    return JSON.parse(fs.readFileSync(US_YEARS_FILE, 'utf8'));
+  } catch {
+    return {};
+  }
+}
+
+const US_YEARS = loadUsYears();
+
+function normalizeMatchKey(text) {
+  return String(text || '')
+    .normalize('NFD')
+    .replace(/\p{Diacritic}/gu, '')
+    .replace(/[^a-z0-9]/gi, '')
+    .toLowerCase();
+}
+
+function findUsYearRange(make, model) {
+  if (!TARGET_BRANDS_FOR_US_YEARS.has(make.toUpperCase())) return '';
+  const byMake = US_YEARS[make];
+  if (!byMake) return '';
+  const modelKey = normalizeMatchKey(model);
+  return byMake[modelKey] || '';
+}
+
+function applyUsYearRange(model, makeName) {
+  const range = findUsYearRange(makeName || model.nom, model.nom);
+  if (!range) return;
+  if (!String(model.annees || '').trim()) {
+    model.annees = range;
+  }
+  if (!Array.isArray(model.generations) || !model.generations.length) return;
+  model.generations.forEach((generation) => {
+    if (!String(generation.annees || '').trim()) {
+      generation.annees = range;
+    }
+  });
+}
 
 function normalizeSources(payload) {
   const entries = Array.isArray(payload)
@@ -167,13 +221,14 @@ function generationKey(generation) {
   ].join('|').toLocaleLowerCase('fr');
 }
 
-function mergeModels(existing, incoming) {
+function mergeModels(existing, incoming, makeName) {
   const byName = new Map(existing.map((model) => [modelKey(model), model]));
 
   incoming.forEach((candidate) => {
     const key = modelKey(candidate);
     if (!key) return;
     const normalizedCandidate = normalizeModel(candidate);
+    applyUsYearRange(normalizedCandidate, makeName);
 
     const current = byName.get(key);
     if (!current) {
@@ -225,7 +280,7 @@ function buildVehicleDatabase() {
           if (!brands.has(key)) {
             brands.set(key, { nom: name, modeles: [] });
           }
-          mergeModels(brands.get(key).modeles, Array.isArray(entry.modeles) ? entry.modeles : []);
+          mergeModels(brands.get(key).modeles, Array.isArray(entry.modeles) ? entry.modeles : [], name);
         });
       });
   });
