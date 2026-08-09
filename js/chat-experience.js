@@ -143,7 +143,7 @@ function waitingReport() {
 }
 
 function renderSafeInline(target, html) {
-  const allowed = new Set(['STRONG', 'EM', 'CODE', 'BR']);
+  const allowed = new Set(['STRONG', 'EM', 'CODE', 'BR', 'UL', 'OL', 'LI']);
   const parsed = new DOMParser().parseFromString(html, 'text/html');
   const fragment = document.createDocumentFragment();
 
