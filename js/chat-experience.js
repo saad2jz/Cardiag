@@ -27,6 +27,24 @@ function canUseAssistant() {
   return [context.marque, context.modele, context.motorisation].every(Boolean);
 }
 
+function formatActiveVehicle() {
+  const context = carContext();
+  return [context.marque, context.modele, context.annee ? `(${context.annee})` : '', context.motorisation].filter(Boolean).join(' ') || 'Non renseigné';
+}
+
+function getCheckItemState(element) {
+  const item = element?.closest('.check-item');
+  if (!item) return 'Non renseigné';
+  const checked = item.querySelector('.badge-group input[type="radio"]:checked');
+  if (!checked) return 'Non renseigné';
+  const label = item.querySelector(`label[for="${checked.id}"]`);
+  return label?.textContent.trim() || checked.value;
+}
+
+function buildCombinedPrompt(pointDeControle, etat) {
+  return `Véhicule : ${formatActiveVehicle()}. Point de contrôle : ${pointDeControle}. État : ${etat}. Explique-moi comment vérifier cela sur ce modèle précis.`;
+}
+
 const VEHICLE_CONTEXT_MESSAGE = 'Sélectionnez la marque, le modèle et la motorisation pour obtenir une réponse spécifique à votre véhicule.';
 
 async function request(path, body) {
@@ -165,6 +183,7 @@ export function initializeChatExperience() {
   const submitButton = form.querySelector('button[type="submit"]');
   let messages = [];
   let selectedText = '';
+  let inlineContextElement = null;
 
   if (!toggles.length || !panel || !form || !input || !messagesElement || !status || !reportContent || !inline || !inlineText) return;
 
@@ -210,7 +229,8 @@ export function initializeChatExperience() {
 
     input.value = '';
     appendMessage(messagesElement, 'user', content);
-    messages.push({ role: 'user', content });
+    const promptCombine = buildCombinedPrompt(content, 'Général');
+    messages.push({ role: 'user', content: promptCombine });
     messages = messages.slice(-MAX_MESSAGES);
     const pendingMessage = appendMessage(messagesElement, 'assistant', 'Analyse des schémas électriques en cours…');
     pendingMessage.classList.add('chat-message-pending');
@@ -267,6 +287,7 @@ export function initializeChatExperience() {
     const text = selection?.toString().trim() || '';
     const anchor = selection?.anchorNode?.parentElement;
     if (!anchor?.closest('main') || text.length < 2 || text.length > 1_000) return;
+    inlineContextElement = anchor;
     const range = selection.getRangeAt(0);
     const rect = range.getBoundingClientRect();
     if (!rect.width && !rect.height) return;
@@ -294,6 +315,7 @@ export function initializeChatExperience() {
   function showInlineHelp(text, target) {
     if (!text) return;
     selectedText = text;
+    inlineContextElement = target;
     inlineText.textContent = canUseAssistant()
       ? `Comprendre la vérification : « ${text.slice(0, 120)}${text.length > 120 ? '…' : ''} »`
       : VEHICLE_CONTEXT_MESSAGE;
@@ -329,7 +351,9 @@ export function initializeChatExperience() {
     inlineAsk.disabled = true;
     inlineText.textContent = 'Explication et méthode de vérification en cours…';
     try {
-      const { explanation } = await request('/api/inline', { selectedText, carContext: carContext() });
+      const etat = getCheckItemState(inlineContextElement);
+      const promptCombine = buildCombinedPrompt(selectedText, etat);
+      const { explanation } = await request('/api/inline', { selectedText: promptCombine, carContext: carContext() });
       renderSafeInline(inlineText, explanation);
     } catch (error) {
       inlineText.textContent = `Explication non disponible : ${error.message}`;

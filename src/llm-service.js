@@ -56,6 +56,10 @@ function normalizeChatText(text) {
     .trim();
 }
 
+const INLINE_SYSTEM_INSTRUCTION = `Tu es l'expert mécanicien de CarDiag.online. Ton rôle est de guider l'utilisateur pour vérifier un point de contrôle spécifique.
+RÈGLE ABSOLUE : Tes réponses doivent IMPÉRATIVEMENT se baser sur l'intersection du VÉHICULE EXACT et du POINT DE CONTRÔLE qui te seront fournis.
+Interdiction de donner des conseils génériques. Adapte ta procédure au moteur ciblé. Sois direct, technique, et structure ta réponse par étapes claires.`;
+
 function readJsonObject(text) {
   let normalized = text.trim().replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, '');
   // Extrait le premier objet JSON bien formé (entre { et } correspondants).
@@ -137,22 +141,21 @@ export function createLlmService({ client, provider, model } = {}) {
       return normalizeChatResult(outputText(response, 'openai'));
     },
     async inline(selectedText, carContext) {
-      const instructions = buildInlineInstructions(carContext);
       const input = `<texte_selectionne>${escapePromptData(selectedText.trim())}</texte_selectionne>`;
       const response = activeProvider === 'gemini'
         ? await getClient().models.generateContent({
           model: activeModel,
           contents: input,
-          config: { systemInstruction: instructions, maxOutputTokens: 180 },
+          config: { systemInstruction: INLINE_SYSTEM_INSTRUCTION, maxOutputTokens: 500 },
         })
         : await getClient().responses.create({
           model: activeModel,
-          instructions,
+          instructions: INLINE_SYSTEM_INSTRUCTION,
           input,
-          max_output_tokens: 180,
+          max_output_tokens: 500,
         });
       return sanitizeHtml(outputText(response, activeProvider), {
-        allowedTags: ['strong', 'em', 'code', 'br'],
+        allowedTags: ['strong', 'em', 'code', 'br', 'ul', 'ol', 'li'],
         allowedAttributes: {},
       });
     },
