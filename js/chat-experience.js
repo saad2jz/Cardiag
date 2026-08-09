@@ -253,8 +253,13 @@ export function initializeChatExperience() {
     try {
       const data = await request('/api/chat', { messages, carContext: carContext() });
       pendingMessage.classList.remove('chat-message-pending');
-      if (data.type === 'question') {
-        pendingMessage.textContent = data.content;
+      if (data.type === 'message') {
+        renderSafeInline(pendingMessage, data.content);
+        messages.push({ role: 'assistant', content: data.content });
+        messages = messages.slice(-MAX_MESSAGES);
+        status.textContent = 'Réponse adaptée à votre véhicule.';
+      } else if (data.type === 'question') {
+        renderSafeInline(pendingMessage, data.content);
         messages.push({ role: 'assistant', content: data.content });
         messages = messages.slice(-MAX_MESSAGES);
         status.textContent = 'Contrôle complémentaire requis avant d’établir le rapport.';
@@ -266,7 +271,7 @@ export function initializeChatExperience() {
         submitButton.disabled = true;
         status.textContent = 'Investigation clôturée. Utilisez « Nouvelle analyse » pour ouvrir un nouveau dossier.';
       } else {
-        throw new Error('Format JSON IA invalide : type « question » ou « report » attendu.');
+        throw new Error('Format de réponse IA non reconnu.');
       }
     } catch (error) {
       pendingMessage.textContent = `Réponse non disponible : ${error.message}`;
