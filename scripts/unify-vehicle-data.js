@@ -7,6 +7,60 @@ const MODELS_DIRECTORY = path.join(__dirname, '..', 'data', 'modeles');
 const IMPORTS_DIRECTORY = path.join(__dirname, '..', 'source-data', 'imports');
 const BRAND_INDEX_FILE = path.join(__dirname, '..', 'data', 'marques.json');
 const OUTPUT_FILE = path.join(__dirname, '..', 'data', 'vehicles.json');
+const US_YEARS_FILE = path.join(__dirname, '..', 'data', 'us-years.json');
+
+const TARGET_BRANDS_FOR_US_YEARS = new Set([
+  'RENAULT', 'PEUGEOT', 'VOLKSWAGEN', 'BMW', 'CITROËN', 'AUDI', 'MERCEDES-BENZ', 'FORD', 'OPEL', 'FIAT',
+  'ABARTH', 'AIXAM', 'ALFA ROMEO', 'ALPINA', 'ALPINE', 'ASTON MARTIN', 'AUDI', 'AUSTIN', 'AUTOBIANCHI',
+  'BENTLEY', 'BMW', 'BYD', 'CADILLAC', 'CHEVROLET', 'CHRYSLER', 'CITROËN', 'CUPRA', 'DACIA', 'DAEWOO',
+  'DAIHATSU', 'DODGE', 'DR', 'DS', 'FERRARI', 'FIAT', 'FORD', 'FORD USA', 'GERMAN E-CARS', 'HONDA',
+  'HUMMER', 'HYUNDAI', 'INFINITI', 'ISUZU', 'IVECO', 'JAGUAR', 'JEEP', 'KG MOBILITY', 'KIA', 'LADA',
+  'LAMBORGHINI', 'LANCIA', 'LAND ROVER', 'LEXUS', 'LOTUS', 'LYNK & CO', 'MAN', 'MASERATI', 'MAXUS',
+  'MAZDA', 'MERCEDES-BENZ', 'MG', 'MICROCAR', 'MINI', 'MITSUBISHI', 'NISSAN', 'OPEL', 'PEUGEOT', 'PIAGGIO',
+  'POLESTAR', 'PONTIAC', 'PORSCHE', 'RAM', 'RENAULT', 'RENAULT TRUCKS', 'ROLLS-ROYCE', 'ROVER', 'SAAB',
+  'SANTANA', 'SEAT', 'SKODA', 'SMART', 'SSANGYONG', 'SUBARU', 'SUZUKI', 'TALBOT', 'TATA (TELCO)', 'TESLA',
+  'TOYOTA', 'TRABANT', 'TRIUMPH', 'VAUXHALL', 'VOLKSWAGEN', 'VOLVO',
+]);
+
+function loadUsYears() {
+  try {
+    return JSON.parse(fs.readFileSync(US_YEARS_FILE, 'utf8'));
+  } catch {
+    return {};
+  }
+}
+
+const US_YEARS = loadUsYears();
+
+function normalizeMatchKey(text) {
+  return String(text || '')
+    .normalize('NFD')
+    .replace(/\p{Diacritic}/gu, '')
+    .replace(/[^a-z0-9]/gi, '')
+    .toLowerCase();
+}
+
+function findUsYearRange(make, model) {
+  if (!TARGET_BRANDS_FOR_US_YEARS.has(make.toUpperCase())) return '';
+  const byMake = US_YEARS[make];
+  if (!byMake) return '';
+  const modelKey = normalizeMatchKey(model);
+  return byMake[modelKey] || '';
+}
+
+function applyUsYearRange(model, makeName) {
+  const range = findUsYearRange(makeName || model.nom, model.nom);
+  if (!range) return;
+  if (!String(model.annees || '').trim()) {
+    model.annees = range;
+  }
+  if (!Array.isArray(model.generations) || !model.generations.length) return;
+  model.generations.forEach((generation) => {
+    if (!String(generation.annees || '').trim()) {
+      generation.annees = range;
+    }
+  });
+}
 
 function normalizeSources(payload) {
   const entries = Array.isArray(payload)
@@ -44,12 +98,42 @@ function isPlaceholder(value) {
   return placeholders.some((p) => v === p || v.includes(p));
 }
 
-function cleanMotor(motor, index) {
+function extractYearsFromString(text) {
+  const years = [];
+  const normalized = String(text || '').replace(/[–—]/g, '-');
+  const matches = normalized.match(/\b(19|20)\d{2}\b/g);
+  if (matches) years.push(...matches.map((y) => parseInt(y, 10)));
+  return years;
+}
+
+function inferAnnees(generation, modelAnnees) {
+  const direct = String(generation?.annees || '').trim();
+  if (direct && !isPlaceholder(direct)) return direct;
+
+  const years = [];
+  years.push(...extractYearsFromString(generation?.code_chassis));
+  years.push(...extractYearsFromString(generation?.phase));
+  if (Array.isArray(generation?.phases)) {
+    generation.phases.forEach((phase) => {
+      years.push(...extractYearsFromString(typeof phase === 'string' ? phase : phase?.phase || phase?.nom || phase?.name));
+    });
+  }
+  years.push(...extractYearsFromString(modelAnnees));
+
+  if (!years.length) return '';
+  const min = Math.min(...years);
+  const max = Math.max(...years);
+  const currentYear = new Date().getFullYear();
+  const end = max > currentYear ? `${currentYear}` : max === min ? '' : `${max}`;
+  return end ? `${min}-${end}` : `${min}`;
+}
+
+function cleanMotor(motor) {
   if (typeof motor === 'string') {
-    return isPlaceholder(motor) ? `Motorisation ${index + 1}` : motor;
+    return isPlaceholder(motor) ? null : { nom: motor.trim() };
   }
   if (!motor || typeof motor !== 'object') {
-    return { nom: `Motorisation ${index + 1}` };
+    return null;
   }
   const type = isPlaceholder(motor.type) ? '' : String(motor.type || '').trim();
   const nom = isPlaceholder(motor.nom) ? '' : String(motor.nom || '').trim();
@@ -58,7 +142,8 @@ function cleanMotor(motor, index) {
     : String(motor.code_moteur || motor.code || '').trim();
   const cyl = isPlaceholder(motor.cylindree) ? '' : String(motor.cylindree || '').trim();
   const puissance = motor.puissance_ch || motor.puissance || null;
-  const label = nom || [type, cyl, puissance ? `${puissance} ch` : ''].filter(Boolean).join(' ') || `Motorisation ${index + 1}`;
+  const label = nom || [type, cyl, puissance ? `${puissance} ch` : ''].filter(Boolean).join(' ');
+  if (!label) return null;
   return {
     ...motor,
     type,
@@ -68,20 +153,18 @@ function cleanMotor(motor, index) {
   };
 }
 
-function cleanGeneration(generation, modelName, index) {
+function cleanGeneration(generation, modelName, index, modelAnnees) {
   const phase = String(generation?.phase || '').trim();
   let code_chassis = String(generation?.code_chassis || generation?.chassis || '').trim();
-  let annees = String(generation?.annees || '').trim();
 
   if (isPlaceholder(code_chassis)) {
     code_chassis = phase || `${modelName || 'Version'} ${index + 1}`;
   }
-  if (isPlaceholder(annees)) {
-    annees = '';
-  }
+
+  const annees = inferAnnees({ ...generation, phase }, modelAnnees);
 
   const motors = Array.isArray(generation?.motorisations)
-    ? generation.motorisations.map((m, i) => cleanMotor(m, i))
+    ? generation.motorisations.map((m) => cleanMotor(m)).filter(Boolean)
     : [];
 
   return {
@@ -98,6 +181,7 @@ function normalizeModel(model) {
     nom: String(model?.nom || model?.name || '').trim(),
   };
   const modelName = normalized.nom;
+  const modelAnnees = String(model?.annees || '').trim();
   const generations = Array.isArray(model?.generations) ? model.generations : [];
 
   normalized.generations = generations.flatMap((generation) => {
@@ -107,17 +191,16 @@ function normalizeModel(model) {
       return [cleanGeneration({
         ...generation,
         motorisations: Array.isArray(generation.motorisations) ? generation.motorisations : [],
-      }, modelName, 0)];
+      }, modelName, 0, modelAnnees)];
     }
 
     return phases.map((phase, index) => cleanGeneration({
       ...generation,
       phase: phase.phase || phase.nom || phase.name || '',
-      annees: phase.annees || generation.annees || '',
       motorisations: Array.isArray(phase.motorisations)
         ? phase.motorisations
         : (Array.isArray(generation.motorisations) ? generation.motorisations : []),
-    }, modelName, index));
+    }, modelName, index, modelAnnees));
   });
 
   if (!normalized.generations.length && Array.isArray(model?.motorisations)) {
@@ -125,7 +208,7 @@ function normalizeModel(model) {
       code_chassis: model.code_chassis || model.chassis || '',
       annees: model.annees || '',
       motorisations: model.motorisations,
-    }, modelName, 0)];
+    }, modelName, 0, modelAnnees)];
   }
 
   return normalized;
@@ -138,13 +221,14 @@ function generationKey(generation) {
   ].join('|').toLocaleLowerCase('fr');
 }
 
-function mergeModels(existing, incoming) {
+function mergeModels(existing, incoming, makeName) {
   const byName = new Map(existing.map((model) => [modelKey(model), model]));
 
   incoming.forEach((candidate) => {
     const key = modelKey(candidate);
     if (!key) return;
     const normalizedCandidate = normalizeModel(candidate);
+    applyUsYearRange(normalizedCandidate, makeName);
 
     const current = byName.get(key);
     if (!current) {
@@ -196,7 +280,7 @@ function buildVehicleDatabase() {
           if (!brands.has(key)) {
             brands.set(key, { nom: name, modeles: [] });
           }
-          mergeModels(brands.get(key).modeles, Array.isArray(entry.modeles) ? entry.modeles : []);
+          mergeModels(brands.get(key).modeles, Array.isArray(entry.modeles) ? entry.modeles : [], name);
         });
       });
   });

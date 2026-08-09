@@ -14,7 +14,7 @@
 <meta name="chat-api" content="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=20260808-4">
+<link rel="stylesheet" href="css/styles.css?v=20260809-1">
 </head>
 <body>
 <header class="app-header">
@@ -105,51 +105,53 @@
         <p class="vsearch-hint">Le champ « marques » filtre la liste déroulante juste au-dessous. Le champ « modèle » recherche directement dans toute la base, toutes marques confondues : tapez un nom de modèle (ex. « Golf », « 308 », « Clio »...) puis cliquez sur un résultat pour renseigner automatiquement la marque et le modèle dans les listes ci-dessous. Vous n'êtes pas obligé de vous en servir : vous pouvez aussi cliquer directement dans les listes déroulantes pour parcourir toutes les options.</p>
       </div>
 
-      <div class="vsteps">
+      <div class="vehicle-selector-bar">
         <div class="vstep" id="step-marque">
-          <span class="vstep-num" id="num-marque">1</span>
-          <select id="marqueSelect" name="marque"><option value="">Choisissez une marque... *</option></select>
+          <span class="vstep-num" id="num-marque" title="Marque">🚗</span>
+          <select id="marqueSelect" name="marque"><option value="">Marque *</option></select>
           <span class="vstep-chevron">⌄</span>
-        </div>
-        <div class="field" id="marqueManualWrap" style="display:none; padding:0 2px;">
-          <input type="text" id="marqueManualInput" placeholder="Tapez la marque exacte (non listée / hors-ligne sans cache)...">
         </div>
         <div class="vstep" id="step-modele">
-          <span class="vstep-num" id="num-modele">2</span>
-          <select id="modeleSelect" name="modele" disabled><option value="">Choisissez d'abord une marque</option></select>
+          <span class="vstep-num" id="num-modele" title="Modèle">🔑</span>
+          <select id="modeleSelect" name="modele" disabled><option value="">Modèle</option></select>
           <span class="vstep-chevron">⌄</span>
-        </div>
-        <div class="field" id="modeleManualWrap" style="display:none; padding:0 2px;">
-          <input type="text" id="modeleManualInput" placeholder="Tapez le modèle exact (non listé)...">
         </div>
         <div class="vstep" id="step-generation">
-          <span class="vstep-num" id="num-generation">3</span>
-          <select id="generationSelect" name="generation" disabled><option value="">Choisissez d'abord un modèle</option></select>
+          <span class="vstep-num" id="num-generation" title="Châssis">🧩</span>
+          <select id="generationSelect" name="generation" disabled><option value="">Châssis</option></select>
           <span class="vstep-chevron">⌄</span>
         </div>
-        <div class="result-status" id="result" aria-live="polite">Veuillez sélectionner une marque et un modèle.</div>
-        <div class="vstep-hint" id="anneeHint"></div>
         <div class="vstep" id="step-annee">
-          <span class="vstep-num" id="num-annee">4</span>
-          <select id="anneeSelect" name="annee"><option value="">Choisissez une année... *</option></select>
+          <span class="vstep-num" id="num-annee" title="Année">📅</span>
+          <select id="anneeSelect" name="annee"><option value="">Année *</option></select>
           <span class="vstep-chevron">⌄</span>
         </div>
         <div class="vstep" id="step-motorisation">
-          <span class="vstep-num" id="num-motorisation">5</span>
-          <select id="motorisationSelect" name="motorisation" disabled><option value="">Choisissez d'abord une génération</option></select>
+          <span class="vstep-num" id="num-motorisation" title="Motorisation">⚙️</span>
+          <select id="motorisationSelect" name="motorisation" disabled><option value="">Motorisation</option></select>
           <span class="vstep-chevron">⌄</span>
         </div>
-        <div class="field" id="motorisationManualWrap" style="display:none; padding:0 2px;">
-          <input type="text" id="motorisationManualInput" placeholder="Ex : 2.0 TDI 150ch — code CFFB (voir carte grise ou moteur)">
-        </div>
-        <div class="vstep-hint" id="motorisationHint"></div>
-        <section class="vehicle-issues" id="vehicleIssues" hidden aria-live="polite">
-          <h3>Points de vigilance potentiels</h3>
-          <p id="vehicleIssuesSummary"></p>
-          <ul id="vehicleIssuesList"></ul>
-        </section>
-        <input type="hidden" name="motorisation_points_faibles">
+        <button type="button" class="vstep-confirm" id="vehicleSelectorConfirm" title="Valider le véhicule">Valider</button>
       </div>
+
+      <div class="field" id="marqueManualWrap" style="display:none; margin-top:8px;">
+        <input type="text" id="marqueManualInput" placeholder="Tapez la marque exacte (non listée / hors-ligne sans cache)...">
+      </div>
+      <div class="field" id="modeleManualWrap" style="display:none; margin-top:8px;">
+        <input type="text" id="modeleManualInput" placeholder="Tapez le modèle exact (non listé)...">
+      </div>
+      <div class="field" id="motorisationManualWrap" style="display:none; margin-top:8px;">
+        <input type="text" id="motorisationManualInput" placeholder="Ex : 2.0 TDI 150ch — code CFFB (voir carte grise ou moteur)">
+      </div>
+      <div class="vstep-hint" id="anneeHint"></div>
+      <div class="result-status" id="result" aria-live="polite">Veuillez sélectionner une marque et un modèle.</div>
+      <div class="vstep-hint" id="motorisationHint"></div>
+      <section class="vehicle-issues" id="vehicleIssues" hidden aria-live="polite">
+        <h3>Points de vigilance potentiels</h3>
+        <p id="vehicleIssuesSummary"></p>
+        <ul id="vehicleIssuesList"></ul>
+      </section>
+      <input type="hidden" name="motorisation_points_faibles">
       <div class="grid cols-3" style="margin-top:16px;">
         <div class="field" id="fieldWrap-kilometrage"><label>Kilométrage <span class="req-star">*</span></label><input type="number" name="kilometrage" placeholder="98000"><span class="req-error">Ce champ est obligatoire.</span></div>
         <div class="field"><label>N° VIN / Immatriculation</label><input type="text" name="vin" placeholder="VF1XXXXXXXXXXXXXX"></div>
@@ -452,8 +454,8 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<script src="build-data.js?v=20260808-4"></script>
-<script src="js/db-loader.js?v=20260808-4"></script>
-<script type="module" src="js/app.js?v=20260808-4"></script>
+<script src="build-data.js?v=20260809-1"></script>
+<script src="js/db-loader.js?v=20260809-1"></script>
+<script type="module" src="js/app.js?v=20260809-1"></script>
 </body>
 </html>

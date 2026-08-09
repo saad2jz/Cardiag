@@ -1320,6 +1320,10 @@ export function initializeLegacyFeatures(vehicleData) {
   let marqueSel, modeleSel, generationSel, anneeSel, motorisationSel;
   let marqueSearchEl, modeleSearchEl;
   let ALL_MARQUES = [];
+
+  const MARQUE_TOP_SALES = [
+    'RENAULT','PEUGEOT','VOLKSWAGEN','BMW','CITROËN','AUDI','MERCEDES-BENZ','FORD','OPEL','FIAT'
+  ];
   let ALL_MODELES = [];
   let ALL_MODEL_PAIRS = [];
   let modeleSearchResults = [];
@@ -1341,7 +1345,7 @@ export function initializeLegacyFeatures(vehicleData) {
 
   function renderMarqueOptions(list){
     const kept = marqueSel.value;
-    marqueSel.innerHTML = '<option value="">Choisissez une marque...</option>';
+    marqueSel.innerHTML = '<option value="">Marque</option>';
     list.forEach(marque=>{
       const opt = document.createElement('option');
       opt.value = marque; opt.textContent = marque;
@@ -1423,14 +1427,27 @@ export function initializeLegacyFeatures(vehicleData) {
     if(box){ box.classList.remove('show'); box.innerHTML = ''; }
   }
 
+  function sortMarques(marques){
+    const top = new Set(MARQUE_TOP_SALES.map(s=>s.toLocaleLowerCase('fr')));
+    return marques.slice().sort((a,b)=>{
+      const ai = a.toLocaleLowerCase('fr');
+      const bi = b.toLocaleLowerCase('fr');
+      const at = top.has(ai);
+      const bt = top.has(bi);
+      if(at && !bt) return -1;
+      if(!at && bt) return 1;
+      return a.localeCompare(b, 'fr');
+    });
+  }
+
   function loadMarques(){
-    ALL_MARQUES = Object.keys(vehicleIndex).sort((a,b)=>a.localeCompare(b));
+    ALL_MARQUES = sortMarques(Object.keys(vehicleIndex));
     renderMarqueOptions(ALL_MARQUES);
   }
 
   function loadModeles(marque, preselect){
     if(!marque || marque === '__autre_marque__'){
-      modeleSel.innerHTML = '<option value="">Choisissez d\u2019abord une marque</option>';
+      modeleSel.innerHTML = '<option value="">Marque requise</option>';
       modeleSel.disabled = true;
       ALL_MODELES = [];
       hideManualModele();
@@ -1439,7 +1456,7 @@ export function initializeLegacyFeatures(vehicleData) {
       return;
     }
     modeleSel.disabled = false;
-    modeleSel.innerHTML = '<option value="">Choisissez un modèle...</option>';
+    modeleSel.innerHTML = '<option value="">Modèle</option>';
     const modeles = Object.keys(vehicleIndex[marque] || {}).sort((a,b)=>a.localeCompare(b));
     ALL_MODELES = modeles;
     modeles.forEach(modele=>{
@@ -1458,7 +1475,7 @@ export function initializeLegacyFeatures(vehicleData) {
 
   function loadGenerations(marque, modele, preselect){
     if(!marque || !modele || modele === '__autre__' || !vehicleIndex[marque] || !vehicleIndex[marque][modele]){
-      generationSel.innerHTML = '<option value="">Choisissez d\u2019abord un modèle</option>';
+      generationSel.innerHTML = '<option value="">Modèle requis</option>';
       generationSel.disabled = true;
       document.getElementById('anneeHint').textContent = '';
       updateAnneeOptions(null, '');
@@ -1467,12 +1484,13 @@ export function initializeLegacyFeatures(vehicleData) {
       return;
     }
     generationSel.disabled = false;
-    generationSel.innerHTML = '<option value="">Choisissez une génération / châssis...</option>';
+    generationSel.innerHTML = '<option value="">Châssis</option>';
     vehicleIndex[marque][modele].forEach(entry=>{
       const opt = document.createElement('option');
       opt.value = entry.chassis;
-      opt.textContent = entry.chassis + ' — ' + entry.annees;
-      opt.dataset.annees = entry.annees;
+      const annees = String(entry.annees || '').trim();
+      opt.textContent = entry.chassis.replace(/\s*[-–—]\s*$/,'').trim();
+      opt.dataset.annees = annees;
       generationSel.appendChild(opt);
     });
     if(preselect){
@@ -1482,8 +1500,13 @@ export function initializeLegacyFeatures(vehicleData) {
     updateStepBadges();
   }
 
+  function isEmptyAnnees(annees){
+    const v = String(annees || '').trim();
+    return !v || /^[-–—]+$/.test(v);
+  }
+
   function parseAnneeRange(annees){
-    if(!annees) return null;
+    if(isEmptyAnnees(annees)) return null;
     // Supporte tiret simple, demi-cadratin et cadratin (souvent présents dans les sources).
     const parts = annees.split(/[-–—]/).map(s=>s.trim());
     const startY = parseInt(parts[0], 10);
@@ -1498,13 +1521,27 @@ export function initializeLegacyFeatures(vehicleData) {
     return {min:startY, max:endY};
   }
 
-  function updateAnneeOptions(annees, preselectAnnee){
-    const range = parseAnneeRange(annees);
+  function computeModelYearRange(marque, modele){
+    const entries = vehicleIndex[marque]?.[modele] || [];
+    let min = null, max = null;
+    entries.forEach(entry=>{
+      const range = parseAnneeRange(entry.annees);
+      if(!range) return;
+      if(min === null || range.min < min) min = range.min;
+      if(max === null || range.max > max) max = range.max;
+    });
+    if(min === null || max === null) return null;
+    return {min, max};
+  }
+
+  function updateAnneeOptions(range, preselectAnnee){
     const keepValue = preselectAnnee !== undefined ? preselectAnnee : anneeSel.value;
-    const min = range ? range.min : 1970;
-    const max = range ? range.max : new Date().getFullYear();
-    anneeSel.innerHTML = '<option value="">Choisissez une année...</option>';
-    for(let y = max; y >= min; y--){
+    anneeSel.innerHTML = '<option value="">Année</option>';
+    if(!range){
+      anneeSel.value = '';
+      return;
+    }
+    for(let y = range.max; y >= range.min; y--){
       const opt = document.createElement('option');
       opt.value = y; opt.textContent = y;
       anneeSel.appendChild(opt);
@@ -1519,13 +1556,22 @@ export function initializeLegacyFeatures(vehicleData) {
   function updateAnneeHint(preselectAnnee){
     const opt = generationSel.options[generationSel.selectedIndex];
     const hint = document.getElementById('anneeHint');
-    const annees = (opt && opt.dataset) ? opt.dataset.annees : null;
-    if(annees){
-      hint.textContent = 'Période de production : ' + annees + ' — liste des années limitée à cette plage.';
-    }else{
-      hint.textContent = '';
+    const marque = marqueSel?.value;
+    const modele = modeleSel?.value;
+    const genAnnees = (opt && opt.dataset) ? opt.dataset.annees : null;
+    let range = null;
+    let hintText = '';
+    if(!isEmptyAnnees(genAnnees)){
+      range = parseAnneeRange(genAnnees);
+      hintText = 'Période de production : ' + genAnnees + ' — liste des années limitée à cette plage.';
+    }else if(marque && modele){
+      range = computeModelYearRange(marque, modele);
+      if(range){
+        hintText = 'Années disponibles pour ' + modele + ' : ' + range.min + ' — ' + range.max + '.';
+      }
     }
-    updateAnneeOptions(annees, preselectAnnee);
+    if(hint) hint.textContent = hintText;
+    updateAnneeOptions(range, preselectAnnee);
   }
 
   const GENERIC_MOTORISATIONS = [
@@ -1542,7 +1588,7 @@ export function initializeLegacyFeatures(vehicleData) {
   function loadMotorisations(marque, modele, chassis, preselect){
     hideManualMotorisation();
     if(!marque || !modele || !chassis || chassis === '__autre__'){
-      motorisationSel.innerHTML = '<option value="">Choisissez d\u2019abord une génération</option>';
+      motorisationSel.innerHTML = '<option value="">Châssis requis</option>';
       motorisationSel.disabled = true;
       document.getElementById('motorisationHint').textContent = '';
       renderPotentialIssues();
@@ -1552,12 +1598,17 @@ export function initializeLegacyFeatures(vehicleData) {
     motorisationSel.disabled = false;
     const key = marque + '|' + modele + '|' + chassis;
     const documented = motorIndex[key];
-    motorisationSel.innerHTML = '<option value="">Choisissez une motorisation...</option>';
+    motorisationSel.innerHTML = '<option value="">Motorisation</option>';
     const hint = document.getElementById('motorisationHint');
-    if(documented && documented.length){
-      documented.forEach(m=>{
+    const cleanDocumented = (documented || []).filter(m=>{
+      const label = String(m.label || '').trim();
+      return label && !/^Motorisation\s+\d+$/i.test(label) && !/^[-–—]$/.test(label);
+    });
+    if(cleanDocumented.length){
+      cleanDocumented.forEach(m=>{
         const opt = document.createElement('option');
-        const txt = m.label + (m.code && m.code !== '-' ? ' — code ' + m.code : '');
+        const code = String(m.code || '').trim();
+        const txt = m.label + (code && !/^[-–—]$/.test(code) ? ' — code ' + code : '');
         opt.value = txt; opt.textContent = txt;
         motorisationSel.appendChild(opt);
       });
@@ -1630,7 +1681,7 @@ export function initializeLegacyFeatures(vehicleData) {
       updateAnneeHint(data.annee || '');
       loadMotorisations(marqueSel.value, data.modele || '', data.generation || '', data.motorisation || '');
     }else{
-      modeleSel.innerHTML = '<option value="">Choisissez d\u2019abord une marque</option>';
+      modeleSel.innerHTML = '<option value="">Marque requise</option>';
       modeleSel.disabled = true;
       hideManualModele();
       loadGenerations(null, null, '');
@@ -1772,6 +1823,14 @@ export function initializeLegacyFeatures(vehicleData) {
       updateStepBadges();
     });
     anneeSel.addEventListener('change', updateStepBadges);
+
+    document.getElementById('vehicleSelectorConfirm')?.addEventListener('click', ()=>{
+      const formSection = document.getElementById('info')?.closest('details.section') || document.querySelector('details.section');
+      if(formSection){
+        formSection.open = true;
+        formSection.scrollIntoView({behavior:'smooth', block:'start'});
+      }
+    });
 
     restoreVehicleSelects(db[currentId].data);
   }
