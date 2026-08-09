@@ -44,12 +44,42 @@ function isPlaceholder(value) {
   return placeholders.some((p) => v === p || v.includes(p));
 }
 
-function cleanMotor(motor, index) {
+function extractYearsFromString(text) {
+  const years = [];
+  const normalized = String(text || '').replace(/[–—]/g, '-');
+  const matches = normalized.match(/\b(19|20)\d{2}\b/g);
+  if (matches) years.push(...matches.map((y) => parseInt(y, 10)));
+  return years;
+}
+
+function inferAnnees(generation, modelAnnees) {
+  const direct = String(generation?.annees || '').trim();
+  if (direct && !isPlaceholder(direct)) return direct;
+
+  const years = [];
+  years.push(...extractYearsFromString(generation?.code_chassis));
+  years.push(...extractYearsFromString(generation?.phase));
+  if (Array.isArray(generation?.phases)) {
+    generation.phases.forEach((phase) => {
+      years.push(...extractYearsFromString(typeof phase === 'string' ? phase : phase?.phase || phase?.nom || phase?.name));
+    });
+  }
+  years.push(...extractYearsFromString(modelAnnees));
+
+  if (!years.length) return '';
+  const min = Math.min(...years);
+  const max = Math.max(...years);
+  const currentYear = new Date().getFullYear();
+  const end = max > currentYear ? `${currentYear}` : max === min ? '' : `${max}`;
+  return end ? `${min}-${end}` : `${min}`;
+}
+
+function cleanMotor(motor) {
   if (typeof motor === 'string') {
-    return isPlaceholder(motor) ? `Motorisation ${index + 1}` : motor;
+    return isPlaceholder(motor) ? null : { nom: motor.trim() };
   }
   if (!motor || typeof motor !== 'object') {
-    return { nom: `Motorisation ${index + 1}` };
+    return null;
   }
   const type = isPlaceholder(motor.type) ? '' : String(motor.type || '').trim();
   const nom = isPlaceholder(motor.nom) ? '' : String(motor.nom || '').trim();
@@ -58,7 +88,8 @@ function cleanMotor(motor, index) {
     : String(motor.code_moteur || motor.code || '').trim();
   const cyl = isPlaceholder(motor.cylindree) ? '' : String(motor.cylindree || '').trim();
   const puissance = motor.puissance_ch || motor.puissance || null;
-  const label = nom || [type, cyl, puissance ? `${puissance} ch` : ''].filter(Boolean).join(' ') || `Motorisation ${index + 1}`;
+  const label = nom || [type, cyl, puissance ? `${puissance} ch` : ''].filter(Boolean).join(' ');
+  if (!label) return null;
   return {
     ...motor,
     type,
@@ -68,20 +99,18 @@ function cleanMotor(motor, index) {
   };
 }
 
-function cleanGeneration(generation, modelName, index) {
+function cleanGeneration(generation, modelName, index, modelAnnees) {
   const phase = String(generation?.phase || '').trim();
   let code_chassis = String(generation?.code_chassis || generation?.chassis || '').trim();
-  let annees = String(generation?.annees || '').trim();
 
   if (isPlaceholder(code_chassis)) {
     code_chassis = phase || `${modelName || 'Version'} ${index + 1}`;
   }
-  if (isPlaceholder(annees)) {
-    annees = '';
-  }
+
+  const annees = inferAnnees({ ...generation, phase }, modelAnnees);
 
   const motors = Array.isArray(generation?.motorisations)
-    ? generation.motorisations.map((m, i) => cleanMotor(m, i))
+    ? generation.motorisations.map((m) => cleanMotor(m)).filter(Boolean)
     : [];
 
   return {
@@ -98,6 +127,7 @@ function normalizeModel(model) {
     nom: String(model?.nom || model?.name || '').trim(),
   };
   const modelName = normalized.nom;
+  const modelAnnees = String(model?.annees || '').trim();
   const generations = Array.isArray(model?.generations) ? model.generations : [];
 
   normalized.generations = generations.flatMap((generation) => {
@@ -107,17 +137,16 @@ function normalizeModel(model) {
       return [cleanGeneration({
         ...generation,
         motorisations: Array.isArray(generation.motorisations) ? generation.motorisations : [],
-      }, modelName, 0)];
+      }, modelName, 0, modelAnnees)];
     }
 
     return phases.map((phase, index) => cleanGeneration({
       ...generation,
       phase: phase.phase || phase.nom || phase.name || '',
-      annees: phase.annees || generation.annees || '',
       motorisations: Array.isArray(phase.motorisations)
         ? phase.motorisations
         : (Array.isArray(generation.motorisations) ? generation.motorisations : []),
-    }, modelName, index));
+    }, modelName, index, modelAnnees));
   });
 
   if (!normalized.generations.length && Array.isArray(model?.motorisations)) {
@@ -125,7 +154,7 @@ function normalizeModel(model) {
       code_chassis: model.code_chassis || model.chassis || '',
       annees: model.annees || '',
       motorisations: model.motorisations,
-    }, modelName, 0)];
+    }, modelName, 0, modelAnnees)];
   }
 
   return normalized;
