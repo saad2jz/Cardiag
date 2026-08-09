@@ -98,6 +98,50 @@ function isPlaceholder(value) {
   return placeholders.some((p) => v === p || v.includes(p));
 }
 
+const GENERIC_MOTOR_PATTERNS = [
+  /^Essence\s*[-–—]\s*petite cylindrée/i,
+  /^Essence\s*[-–—]\s*cylindrée moyenne/i,
+  /^Essence\s*[-–—]\s*turbo/i,
+  /^Diesel\s*[-–—]\s*entrée de gamme/i,
+  /^Diesel\s*[-–—]\s*cylindrée moyenne/i,
+  /^Diesel\s*[-–—]\s*puissant/i,
+  /^Hybride$/i,
+  /^Électrique$/i,
+  /^Electrique$/i,
+  /^Motorisation\s*\d+$/i,
+];
+
+function isGenericMotor(label) {
+  const v = String(label || '').trim();
+  if (!v) return true;
+  return GENERIC_MOTOR_PATTERNS.some((re) => re.test(v));
+}
+
+function escapeRegex(string) {
+  return String(string || '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function isPlaceholderChassis(code_chassis, modelName) {
+  const v = String(code_chassis || '').trim();
+  if (!v) return true;
+  const lower = v.toLowerCase();
+  const generic = ['version 1', 'version 2', 'version 3', 'version 4', 'version 5', 'modele 1', 'modèle 1', 'modele -1', 'modèle -1', 'modele 2', 'modèle 2', 'generation 1', 'génération 1', 'non document', 'non documenté', 'à documenter', 'a documenter', 'documenter', 'inconnu'];
+  if (generic.some((p) => lower === p || lower.includes(p))) return true;
+  const modelPart = String(modelName || '').trim();
+  if (modelPart) {
+    const re = new RegExp('^' + escapeRegex(modelPart) + '\\s*-?\\d+$', 'i');
+    if (re.test(v)) return true;
+  }
+  return false;
+}
+
+function hasUsefulGenerationData(generation) {
+  const hasChassis = !isPlaceholderChassis(generation?.code_chassis);
+  const hasAnnees = !isPlaceholder(generation?.annees);
+  const hasMotors = Array.isArray(generation?.motorisations) && generation.motorisations.some((m) => !isGenericMotor(m?.nom || m?.label || m));
+  return hasChassis || hasAnnees || hasMotors;
+}
+
 function extractYearsFromString(text) {
   const years = [];
   const normalized = String(text || '').replace(/[–—]/g, '-');
@@ -130,7 +174,9 @@ function inferAnnees(generation, modelAnnees) {
 
 function cleanMotor(motor) {
   if (typeof motor === 'string') {
-    return isPlaceholder(motor) ? null : { nom: motor.trim() };
+    const v = motor.trim();
+    if (isPlaceholder(v) || isGenericMotor(v)) return null;
+    return { nom: v };
   }
   if (!motor || typeof motor !== 'object') {
     return null;
@@ -143,7 +189,7 @@ function cleanMotor(motor) {
   const cyl = isPlaceholder(motor.cylindree) ? '' : String(motor.cylindree || '').trim();
   const puissance = motor.puissance_ch || motor.puissance || null;
   const label = nom || [type, cyl, puissance ? `${puissance} ch` : ''].filter(Boolean).join(' ');
-  if (!label) return null;
+  if (!label || isGenericMotor(label)) return null;
   return {
     ...motor,
     type,
@@ -158,7 +204,10 @@ function cleanGeneration(generation, modelName, index, modelAnnees) {
   let code_chassis = String(generation?.code_chassis || generation?.chassis || '').trim();
 
   if (isPlaceholder(code_chassis)) {
-    code_chassis = phase || `${modelName || 'Version'} ${index + 1}`;
+    code_chassis = phase || '';
+  }
+  if (isPlaceholderChassis(code_chassis, modelName)) {
+    return null;
   }
 
   const annees = inferAnnees({ ...generation, phase }, modelAnnees);
@@ -167,12 +216,14 @@ function cleanGeneration(generation, modelName, index, modelAnnees) {
     ? generation.motorisations.map((m) => cleanMotor(m)).filter(Boolean)
     : [];
 
-  return {
+  const cleaned = {
     ...generation,
     code_chassis,
     annees,
     motorisations: motors,
   };
+
+  return hasUsefulGenerationData(cleaned) ? cleaned : null;
 }
 
 function normalizeModel(model) {
@@ -201,14 +252,14 @@ function normalizeModel(model) {
         ? phase.motorisations
         : (Array.isArray(generation.motorisations) ? generation.motorisations : []),
     }, modelName, index, modelAnnees));
-  });
+  }).filter(Boolean);
 
   if (!normalized.generations.length && Array.isArray(model?.motorisations)) {
     normalized.generations = [cleanGeneration({
       code_chassis: model.code_chassis || model.chassis || '',
       annees: model.annees || '',
       motorisations: model.motorisations,
-    }, modelName, 0, modelAnnees)];
+    }, modelName, 0, modelAnnees)].filter(Boolean);
   }
 
   return normalized;
@@ -233,6 +284,7 @@ function mergeModels(existing, incoming, makeName) {
     const current = byName.get(key);
     if (!current) {
       const normalized = normalizedCandidate;
+      if (!normalized.generations || normalized.generations.length === 0) return;
       existing.push(normalized);
       byName.set(key, normalized);
       return;
@@ -286,6 +338,11 @@ function buildVehicleDatabase() {
   });
 
   return Array.from(brands.values())
+    .map((brand) => ({
+      nom: brand.nom,
+      modeles: brand.modeles.filter((model) => Array.isArray(model.generations) && model.generations.length > 0),
+    }))
+    .filter((brand) => brand.modeles.length > 0)
     .sort((left, right) => left.nom.localeCompare(right.nom, 'fr'))
     .map((brand) => ({
       nom: brand.nom,

@@ -1574,17 +1574,6 @@ export function initializeLegacyFeatures(vehicleData) {
     updateAnneeOptions(range, preselectAnnee);
   }
 
-  const GENERIC_MOTORISATIONS = [
-    {label:"Essence — petite cylindrée (~70-100ch)", carburant:"Essence"},
-    {label:"Essence — cylindrée moyenne (~100-150ch)", carburant:"Essence"},
-    {label:"Essence — turbo / sportive (150ch+)", carburant:"Essence"},
-    {label:"Diesel — entrée de gamme (~75-100ch)", carburant:"Diesel"},
-    {label:"Diesel — cylindrée moyenne (~110-150ch)", carburant:"Diesel"},
-    {label:"Diesel — puissant (150ch+)", carburant:"Diesel"},
-    {label:"Hybride", carburant:"Hybride"},
-    {label:"Électrique", carburant:"Électrique"}
-  ];
-
   function loadMotorisations(marque, modele, chassis, preselect){
     hideManualMotorisation();
     if(!marque || !modele || !chassis || chassis === '__autre__'){
@@ -1595,16 +1584,16 @@ export function initializeLegacyFeatures(vehicleData) {
       updateStepBadges();
       return;
     }
-    motorisationSel.disabled = false;
     const key = marque + '|' + modele + '|' + chassis;
     const documented = motorIndex[key];
-    motorisationSel.innerHTML = '<option value="">Motorisation</option>';
     const hint = document.getElementById('motorisationHint');
     const cleanDocumented = (documented || []).filter(m=>{
       const label = String(m.label || '').trim();
       return label && !/^Motorisation\s+\d+$/i.test(label) && !/^[-–—]$/.test(label);
     });
     if(cleanDocumented.length){
+      motorisationSel.disabled = false;
+      motorisationSel.innerHTML = '<option value="">Motorisation</option>';
       cleanDocumented.forEach(m=>{
         const opt = document.createElement('option');
         const code = String(m.code || '').trim();
@@ -1613,21 +1602,13 @@ export function initializeLegacyFeatures(vehicleData) {
         motorisationSel.appendChild(opt);
       });
       hint.textContent = 'Codes moteur documentés pour cette génération. Vérifiez toujours sur la carte grise (champ P3) avant commande.';
+      if(preselect){
+        motorisationSel.value = preselect;
+      }
     }else{
-      GENERIC_MOTORISATIONS.forEach(m=>{
-        const opt = document.createElement('option');
-        opt.value = m.label; opt.textContent = m.label;
-        motorisationSel.appendChild(opt);
-      });
-      hint.textContent = 'Code moteur non documenté pour ce modèle dans notre base : indiquez-le manuellement si connu (carte grise champ P3, ou inscrit sur le bloc moteur).';
-    }
-    const autre = document.createElement('option');
-    autre.value = '__autre_motor__';
-    autre.textContent = '✏️ Autre / code moteur précis (saisie libre)';
-    motorisationSel.appendChild(autre);
-    if(preselect){
-      motorisationSel.value = preselect;
-      if(motorisationSel.value !== preselect) setManualMotorisation(preselect);
+      motorisationSel.disabled = true;
+      motorisationSel.innerHTML = '<option value="">Aucune motorisation documentée</option>';
+      hint.textContent = '';
     }
     renderPotentialIssues();
     updateStepBadges();
@@ -1805,13 +1786,7 @@ export function initializeLegacyFeatures(vehicleData) {
       updateStepBadges();
     });
     motorisationSel.addEventListener('change', function(){
-      if(this.value === '__autre_motor__'){
-        document.getElementById('motorisationManualWrap').style.display = '';
-        document.getElementById('motorisationManualInput').value = '';
-        document.getElementById('motorisationManualInput').focus();
-      }else{
-        document.getElementById('motorisationManualWrap').style.display = 'none';
-      }
+      document.getElementById('motorisationManualWrap').style.display = 'none';
       renderPotentialIssues();
       saveCurrent();
       updateStepBadges();

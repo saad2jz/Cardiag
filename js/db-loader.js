@@ -8,7 +8,7 @@
   }
 
   async function loadMarques() {
-    return loadJson('data/vehicles.json?v=20260809-1');
+    return loadJson('data/vehicles.json?v=20260809-2');
   }
 
   async function loadAppData() {
