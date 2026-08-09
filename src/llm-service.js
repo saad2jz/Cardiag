@@ -57,11 +57,17 @@ function normalizeChatText(text) {
 }
 
 function readJsonObject(text) {
-  const normalized = text.trim().replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, '');
+  let normalized = text.trim().replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, '');
+  // Extrait le premier objet JSON bien formé (entre { et } correspondants).
+  const firstOpen = normalized.indexOf('{');
+  const lastClose = normalized.lastIndexOf('}');
+  if (firstOpen !== -1 && lastClose !== -1 && lastClose > firstOpen) {
+    normalized = normalized.slice(firstOpen, lastClose + 1);
+  }
   try {
     return JSON.parse(normalized);
   } catch {
-    throw new Error('Le modèle a renvoyé un diagnostic dans un format JSON invalide.');
+    return null;
   }
 }
 
@@ -75,7 +81,8 @@ function requiredString(value, field) {
 function normalizeChatResult(text) {
   const result = readJsonObject(text);
   if (!result || typeof result !== 'object' || Array.isArray(result)) {
-    throw new Error('Le diagnostic JSON doit être un objet.');
+    // Fallback : le modèle n'a pas respecté le format JSON, on diffuse sa réponse comme question.
+    return { type: 'question', content: normalizeChatText(text) };
   }
   if (result.type === 'question') {
     return { type: 'question', content: requiredString(result.content, 'content') };
@@ -89,7 +96,8 @@ function normalizeChatResult(text) {
       action_plan: requiredString(result.action_plan, 'action_plan'),
     };
   }
-  throw new Error('Le diagnostic JSON doit avoir le type « question » ou « report ».');
+  // Type inconnu : fallback question.
+  return { type: 'question', content: normalizeChatText(text) };
 }
 
 export function createLlmService({ client, provider, model } = {}) {
