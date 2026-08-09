@@ -635,7 +635,9 @@ body.dark.quick-mode .quick-mode-banner{color:var(--ink-soft);}
 .chat-panel header button,.inline-assistant-close{border:0; background:transparent; color:var(--muted); cursor:pointer; font-size:22px; line-height:1;}
 .chat-context,.chat-status{margin:0; color:var(--muted); font-size:11px; line-height:1.4;}
 .chat-messages{display:grid; flex:1; gap:8px; overflow-y:auto; min-height:80px; max-height:min(560px,calc(100dvh - var(--ab-h, 84px) - 160px)); padding-right:2px;}
-.chat-message{max-width:90%; padding:9px 10px; border-radius:var(--radius-sm); font-size:12.5px; line-height:1.45; white-space:pre-wrap;}
+.chat-message{max-width:90%; padding:9px 10px; border-radius:var(--radius-sm); font-size:12.5px; line-height:1.5; white-space:pre-wrap;}
+.chat-message ul,.chat-message ol{margin:6px 0 6px 18px; padding:0;}
+.chat-message li{margin-bottom:3px;}
 .chat-message-user{justify-self:end; background:var(--accent); color:#fff;}
 .chat-message-assistant{background:var(--bg); color:var(--ink);}
 .chat-message-pending{background:var(--surface); color:var(--ink-soft); border:1px solid var(--border); font-style:italic;}

@@ -1,7 +1,7 @@
 import { GoogleGenAI } from '@google/genai';
 import OpenAI from 'openai';
 import sanitizeHtml from 'sanitize-html';
-import { buildChatInstructions, buildInlineInstructions, escapePromptData } from './prompts.js';
+import { buildChatInstructions, escapePromptData } from './prompts.js';
 
 const SUPPORTED_PROVIDERS = new Set(['gemini', 'openai']);
 
@@ -56,6 +56,17 @@ function normalizeChatText(text) {
     .trim();
 }
 
+const CHAT_SYSTEM_INSTRUCTION = `Tu es l'expert mécanicien de CarDiag.online, un chef d'atelier expérimenté qui aide à diagnostiquer et vérifier un véhicule spécifique.
+
+RÈGLES ABSOLUES :
+- Tes réponses doivent IMPÉRATIVEMENT se baser sur le VÉHICULE EXACT fourni (marque, modèle, année, motorisation, VIN).
+- Interdiction de donner des conseils génériques. Adapte chaque procédure au moteur, à la motorisation et à l'année ciblés.
+- Sois direct, technique, et structure ta réponse par étapes claires et actionnables.
+- Si un point de contrôle ou un état est fourni, dis EXACTEMENT comment le vérifier sur ce modèle (où regarder, quoi mesurer, quels outils).
+- Mentionne explicitement la marque, le modèle et la motorisation dans ta réponse quand ils sont connus.
+- Si des informations manquent pour être précis (code moteur, année, VIN), indique cette limite au lieu d'inventer.
+- Quand un risque de sécurité est possible (freinage, direction, carburant, surchauffe, fumée, témoin rouge), recommande l'immobilisation du véhicule.`;
+
 const INLINE_SYSTEM_INSTRUCTION = `Tu es l'expert mécanicien de CarDiag.online. Ton rôle est de guider l'utilisateur pour vérifier un point de contrôle spécifique.
 RÈGLE ABSOLUE : Tes réponses doivent IMPÉRATIVEMENT se baser sur l'intersection du VÉHICULE EXACT et du POINT DE CONTRÔLE qui te seront fournis.
 Interdiction de donner des conseils génériques. Adapte ta procédure au moteur ciblé. Sois direct, technique, et structure ta réponse par étapes claires.`;
@@ -84,24 +95,22 @@ function requiredString(value, field) {
 
 function normalizeChatResult(text) {
   const result = readJsonObject(text);
-  if (!result || typeof result !== 'object' || Array.isArray(result)) {
-    // Fallback : le modèle n'a pas respecté le format JSON, on diffuse sa réponse comme question.
-    return { type: 'question', content: normalizeChatText(text) };
+  if (result && typeof result === 'object' && !Array.isArray(result)) {
+    if (result.type === 'question') {
+      return { type: 'question', content: requiredString(result.content, 'content') };
+    }
+    if (result.type === 'report') {
+      return {
+        type: 'report',
+        vehicle: requiredString(result.vehicle, 'vehicle'),
+        fault_code: requiredString(result.fault_code, 'fault_code'),
+        root_cause: requiredString(result.root_cause, 'root_cause'),
+        action_plan: requiredString(result.action_plan, 'action_plan'),
+      };
+    }
   }
-  if (result.type === 'question') {
-    return { type: 'question', content: requiredString(result.content, 'content') };
-  }
-  if (result.type === 'report') {
-    return {
-      type: 'report',
-      vehicle: requiredString(result.vehicle, 'vehicle'),
-      fault_code: requiredString(result.fault_code, 'fault_code'),
-      root_cause: requiredString(result.root_cause, 'root_cause'),
-      action_plan: requiredString(result.action_plan, 'action_plan'),
-    };
-  }
-  // Type inconnu : fallback question.
-  return { type: 'question', content: normalizeChatText(text) };
+  // Par défaut, diffuser la réponse du modèle comme message texte naturel.
+  return { type: 'message', content: normalizeChatText(text) };
 }
 
 export function createLlmService({ client, provider, model } = {}) {
@@ -127,7 +136,7 @@ export function createLlmService({ client, provider, model } = {}) {
             role: role === 'assistant' ? 'model' : 'user',
             parts: [{ text: content.trim() }],
           })),
-          config: { systemInstruction: instructions, maxOutputTokens: 500 },
+          config: { systemInstruction: instructions, maxOutputTokens: 2048 },
         });
         return normalizeChatResult(outputText(response, 'gemini'));
       }
@@ -136,7 +145,7 @@ export function createLlmService({ client, provider, model } = {}) {
         model: activeModel,
         instructions,
         input: messages.map(({ role, content }) => ({ role, content: content.trim() })),
-        max_output_tokens: 500,
+        max_output_tokens: 2048,
       });
       return normalizeChatResult(outputText(response, 'openai'));
     },
@@ -146,13 +155,13 @@ export function createLlmService({ client, provider, model } = {}) {
         ? await getClient().models.generateContent({
           model: activeModel,
           contents: input,
-          config: { systemInstruction: INLINE_SYSTEM_INSTRUCTION, maxOutputTokens: 500 },
+          config: { systemInstruction: INLINE_SYSTEM_INSTRUCTION, maxOutputTokens: 2048 },
         })
         : await getClient().responses.create({
           model: activeModel,
           instructions: INLINE_SYSTEM_INSTRUCTION,
           input,
-          max_output_tokens: 500,
+          max_output_tokens: 2048,
         });
       return sanitizeHtml(outputText(response, activeProvider), {
         allowedTags: ['strong', 'em', 'code', 'br', 'ul', 'ol', 'li'],
