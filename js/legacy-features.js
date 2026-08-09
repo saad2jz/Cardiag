@@ -1345,7 +1345,7 @@ export function initializeLegacyFeatures(vehicleData) {
 
   function renderMarqueOptions(list){
     const kept = marqueSel.value;
-    marqueSel.innerHTML = '<option value="">Choisissez une marque...</option>';
+    marqueSel.innerHTML = '<option value="">Marque</option>';
     list.forEach(marque=>{
       const opt = document.createElement('option');
       opt.value = marque; opt.textContent = marque;
@@ -1447,7 +1447,7 @@ export function initializeLegacyFeatures(vehicleData) {
 
   function loadModeles(marque, preselect){
     if(!marque || marque === '__autre_marque__'){
-      modeleSel.innerHTML = '<option value="">Choisissez d\u2019abord une marque</option>';
+      modeleSel.innerHTML = '<option value="">Marque requise</option>';
       modeleSel.disabled = true;
       ALL_MODELES = [];
       hideManualModele();
@@ -1456,7 +1456,7 @@ export function initializeLegacyFeatures(vehicleData) {
       return;
     }
     modeleSel.disabled = false;
-    modeleSel.innerHTML = '<option value="">Choisissez un modèle...</option>';
+    modeleSel.innerHTML = '<option value="">Modèle</option>';
     const modeles = Object.keys(vehicleIndex[marque] || {}).sort((a,b)=>a.localeCompare(b));
     ALL_MODELES = modeles;
     modeles.forEach(modele=>{
@@ -1475,7 +1475,7 @@ export function initializeLegacyFeatures(vehicleData) {
 
   function loadGenerations(marque, modele, preselect){
     if(!marque || !modele || modele === '__autre__' || !vehicleIndex[marque] || !vehicleIndex[marque][modele]){
-      generationSel.innerHTML = '<option value="">Choisissez d\u2019abord un modèle</option>';
+      generationSel.innerHTML = '<option value="">Modèle requis</option>';
       generationSel.disabled = true;
       document.getElementById('anneeHint').textContent = '';
       updateAnneeOptions(null, '');
@@ -1484,13 +1484,12 @@ export function initializeLegacyFeatures(vehicleData) {
       return;
     }
     generationSel.disabled = false;
-    generationSel.innerHTML = '<option value="">Choisissez une génération / châssis...</option>';
+    generationSel.innerHTML = '<option value="">Châssis</option>';
     vehicleIndex[marque][modele].forEach(entry=>{
       const opt = document.createElement('option');
       opt.value = entry.chassis;
       const annees = String(entry.annees || '').trim();
-      const hasAnnees = annees && !/^[-–—]+$/.test(annees);
-      opt.textContent = hasAnnees ? entry.chassis + ' — ' + annees : entry.chassis;
+      opt.textContent = entry.chassis.replace(/\s*[-–—]\s*$/,'').trim();
       opt.dataset.annees = annees;
       generationSel.appendChild(opt);
     });
@@ -1537,7 +1536,7 @@ export function initializeLegacyFeatures(vehicleData) {
 
   function updateAnneeOptions(range, preselectAnnee){
     const keepValue = preselectAnnee !== undefined ? preselectAnnee : anneeSel.value;
-    anneeSel.innerHTML = '<option value="">Choisissez une année...</option>';
+    anneeSel.innerHTML = '<option value="">Année</option>';
     if(!range){
       anneeSel.value = '';
       return;
@@ -1589,7 +1588,7 @@ export function initializeLegacyFeatures(vehicleData) {
   function loadMotorisations(marque, modele, chassis, preselect){
     hideManualMotorisation();
     if(!marque || !modele || !chassis || chassis === '__autre__'){
-      motorisationSel.innerHTML = '<option value="">Choisissez d\u2019abord une génération</option>';
+      motorisationSel.innerHTML = '<option value="">Châssis requis</option>';
       motorisationSel.disabled = true;
       document.getElementById('motorisationHint').textContent = '';
       renderPotentialIssues();
@@ -1599,7 +1598,7 @@ export function initializeLegacyFeatures(vehicleData) {
     motorisationSel.disabled = false;
     const key = marque + '|' + modele + '|' + chassis;
     const documented = motorIndex[key];
-    motorisationSel.innerHTML = '<option value="">Choisissez une motorisation...</option>';
+    motorisationSel.innerHTML = '<option value="">Motorisation</option>';
     const hint = document.getElementById('motorisationHint');
     const cleanDocumented = (documented || []).filter(m=>{
       const label = String(m.label || '').trim();
@@ -1682,7 +1681,7 @@ export function initializeLegacyFeatures(vehicleData) {
       updateAnneeHint(data.annee || '');
       loadMotorisations(marqueSel.value, data.modele || '', data.generation || '', data.motorisation || '');
     }else{
-      modeleSel.innerHTML = '<option value="">Choisissez d\u2019abord une marque</option>';
+      modeleSel.innerHTML = '<option value="">Marque requise</option>';
       modeleSel.disabled = true;
       hideManualModele();
       loadGenerations(null, null, '');
@@ -1824,6 +1823,14 @@ export function initializeLegacyFeatures(vehicleData) {
       updateStepBadges();
     });
     anneeSel.addEventListener('change', updateStepBadges);
+
+    document.getElementById('vehicleSelectorConfirm')?.addEventListener('click', ()=>{
+      const formSection = document.getElementById('info')?.closest('details.section') || document.querySelector('details.section');
+      if(formSection){
+        formSection.open = true;
+        formSection.scrollIntoView({behavior:'smooth', block:'start'});
+      }
+    });
 
     restoreVehicleSelects(db[currentId].data);
   }
