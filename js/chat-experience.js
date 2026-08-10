@@ -87,6 +87,28 @@ function appendMessage(list, role, content) {
   return message;
 }
 
+function parseChatResponse(raw) {
+  try {
+    const data = typeof raw === 'string' ? JSON.parse(raw) : raw;
+    if (!data || typeof data !== 'object') return null;
+    if (data.type === 'question' || data.type === 'message') {
+      return { type: data.type, content: String(data.content || '').trim() };
+    }
+    if (data.type === 'report') {
+      return {
+        type: 'report',
+        vehicle: String(data.vehicle || '').trim(),
+        fault_code: String(data.fault_code || '').trim(),
+        root_cause: String(data.root_cause || '').trim(),
+        action_plan: String(data.action_plan || '').trim(),
+      };
+    }
+    return null;
+  } catch {
+    return null;
+  }
+}
+
 function splitActionPlan(plan) {
   return String(plan || '').split(/\n|(?<=[.!?])\s+(?=[A-ZÀ-Ý])/)
     .map((step) => step.trim()).filter(Boolean);
@@ -251,18 +273,19 @@ export function initializeChatExperience() {
     let investigationClosed = false;
 
     try {
-      const data = await request('/api/chat', { messages, carContext: carContext() });
+      const raw = await request('/api/chat', { messages, carContext: carContext() });
+      const data = parseChatResponse(raw);
       pendingMessage.classList.remove('chat-message-pending');
-      if (data.type === 'message') {
+      if (!data) {
+        throw new Error('La réponse de l’IA est mal formatée.');
+      }
+      if (data.type === 'message' || data.type === 'question') {
         renderSafeInline(pendingMessage, data.content);
         messages.push({ role: 'assistant', content: data.content });
         messages = messages.slice(-MAX_MESSAGES);
-        status.textContent = 'Réponse adaptée à votre véhicule.';
-      } else if (data.type === 'question') {
-        renderSafeInline(pendingMessage, data.content);
-        messages.push({ role: 'assistant', content: data.content });
-        messages = messages.slice(-MAX_MESSAGES);
-        status.textContent = 'Contrôle complémentaire requis avant d’établir le rapport.';
+        status.textContent = data.type === 'question'
+          ? 'Contrôle complémentaire requis avant d’établir le rapport.'
+          : 'Réponse adaptée à votre véhicule.';
       } else if (data.type === 'report') {
         investigationClosed = true;
         pendingMessage.textContent = 'Cause probable confirmée. Rapport d’intervention généré.';
