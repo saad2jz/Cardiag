@@ -136,7 +136,7 @@ export function createLlmService({ client, provider, model } = {}) {
             role: role === 'assistant' ? 'model' : 'user',
             parts: [{ text: content.trim() }],
           })),
-          config: { systemInstruction: instructions, maxOutputTokens: 2048 },
+          config: { systemInstruction: instructions, maxOutputTokens: 1000, responseMimeType: 'application/json' },
         });
         return normalizeChatResult(outputText(response, 'gemini'));
       }
@@ -145,7 +145,7 @@ export function createLlmService({ client, provider, model } = {}) {
         model: activeModel,
         instructions,
         input: messages.map(({ role, content }) => ({ role, content: content.trim() })),
-        max_output_tokens: 2048,
+        max_output_tokens: 1000,
       });
       return normalizeChatResult(outputText(response, 'openai'));
     },
@@ -155,13 +155,13 @@ export function createLlmService({ client, provider, model } = {}) {
         ? await getClient().models.generateContent({
           model: activeModel,
           contents: input,
-          config: { systemInstruction: INLINE_SYSTEM_INSTRUCTION, maxOutputTokens: 2048 },
+          config: { systemInstruction: INLINE_SYSTEM_INSTRUCTION, maxOutputTokens: 1000 },
         })
         : await getClient().responses.create({
           model: activeModel,
           instructions: INLINE_SYSTEM_INSTRUCTION,
           input,
-          max_output_tokens: 2048,
+          max_output_tokens: 1000,
         });
       return sanitizeHtml(outputText(response, activeProvider), {
         allowedTags: ['strong', 'em', 'code', 'br', 'ul', 'ol', 'li'],
