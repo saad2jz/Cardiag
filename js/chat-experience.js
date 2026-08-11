@@ -110,8 +110,22 @@ function parseChatResponse(raw) {
 }
 
 function splitActionPlan(plan) {
-  return String(plan || '').split(/\n|(?<=[.!?])\s+(?=[A-ZÀ-Ý])/)
-    .map((step) => step.trim()).filter(Boolean);
+  const normalized = String(plan || '').trim();
+  if (!normalized) return [];
+
+  const numberedSteps = normalized
+    .split(/\n+|\s+(?=\d+[.)]\s+)/)
+    .map((step) => step.replace(/^\d+[.)]\s*/, '').trim())
+    .filter(Boolean);
+
+  if (/^\d+[.)]\s*/.test(normalized) || numberedSteps.length > 1) {
+    return numberedSteps;
+  }
+
+  return normalized
+    .split(/(?<=[.!?])\s+(?=[A-ZÀ-Ý])/)
+    .map((step) => step.trim())
+    .filter(Boolean);
 }
 
 function reportCard(label, value, className = '', full = false) {
@@ -379,9 +393,7 @@ export function initializeChatExperience() {
     inlineAsk.disabled = true;
     inlineText.textContent = 'Explication et méthode de vérification en cours…';
     try {
-      const etat = getCheckItemState(inlineContextElement);
-      const promptCombine = buildCombinedPrompt(selectedText, etat);
-      const { explanation } = await request('/api/inline', { selectedText: promptCombine, carContext: carContext() });
+      const { explanation } = await request('/api/inline', { selectedText, carContext: carContext() });
       renderSafeInline(inlineText, explanation);
     } catch (error) {
       inlineText.textContent = `Explication non disponible : ${error.message}`;

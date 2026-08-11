@@ -1,5 +1,5 @@
 import { initializeLegacyFeatures } from './legacy-features.js?v=20260808-3';
-import { initializeChatExperience } from './chat-experience.js?v=20260808-3';
+import { initializeChatExperience } from './chat-experience.js?v=20260811-2';
 import { initializePwa } from './pwa.js?v=20260808-3';
 
 /**
