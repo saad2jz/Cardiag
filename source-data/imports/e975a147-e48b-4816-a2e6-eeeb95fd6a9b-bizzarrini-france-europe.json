@@ -1,0 +1,194 @@
+{
+  "nom": "Bizzarrini",
+  "modeles": [
+    {
+      "nom": "5300 GT",
+      "generations": [
+        {
+          "code_chassis": "Iso A3/C – 5300 GT Strada/Corsa",
+          "annees": "1964–1968",
+          "phases": [
+            "Valeurs SAE d’époque et préparations varient ; authentifier Strada, America ou Corsa par châssis et archives"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "5300 GT Strada Chevrolet 327 350 SAE bhp — 355 ch",
+              "code_moteur": "Chevrolet Corvette 327 small-block",
+              "cylindree": "5 354 cm³",
+              "puissance_ch": 355,
+              "boite": [
+                "Manuelle 4 rapports selon exemplaire"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et carburation du Chevrolet 327",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Ratés ou odeur d’essence"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 km, mais historique et usage piste priment",
+                  "diagnostic": "Authentifier bloc/culasses et numéro, mesurer compressions/leak-down et pression, contrôler pompe, radiateur, ventilateurs, Weber 45 DCOE/Holley selon Strada/Corsa, allumage, arbre à cames, fuites et richesse sur chaque cylindre",
+                  "piece_concernee": "V8 Chevrolet small-block 327 de 5,3 litres",
+                  "gravite": "Critique en cas de pression ou surchauffe",
+                  "frequence": "Assez fréquente sur réglage ancien ou voiture peu roulée",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 35 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle, embrayage, différentiel et demi-arbres",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Claquement ou vibration"
+                  ],
+                  "kilometrage_apparition": "Variable, plus tôt en compétition",
+                  "diagnostic": "Identifier boîte Borg-Warner/ZF selon exemplaire, contrôler embrayage, synchros, huile, arbre, joints, différentiel à glissement limité, demi-arbres, supports et géométrie du groupe antéro-central",
+                  "piece_concernee": "Transmission manuelle et pont arrière",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure liée à l’usage et aux modifications",
+                  "cout_reparation_estime": "Très élevé : environ 2 500 à 25 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, carrosserie aluminium/composite et authenticité",
+                  "symptomes": [
+                    "Fissure",
+                    "Corrosion galvanique",
+                    "Mauvais alignement ou provenance lacunaire"
+                  ],
+                  "kilometrage_apparition": "Contrôle systématique avant acquisition",
+                  "diagnostic": "Faire une expertise de provenance, comparer numéros et archives Iso A3/C-Bizzarrini, inspecter tubes, soudures, aluminium/composite, ancrages, suspension indépendante, freins, réservoirs et traces de course ou reconstruction",
+                  "piece_concernee": "Structure, carrosserie et identité 5300 GT",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque important vu rareté et reconstructions",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 150 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "5300 GT Corsa Chevrolet 327 compétition — 405 ch",
+              "code_moteur": "Chevrolet 327 préparé Corsa",
+              "cylindree": "5 354 cm³",
+              "puissance_ch": 405,
+              "boite": [
+                "Manuelle 4 rapports compétition"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et carburation du Chevrolet 327",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Ratés ou odeur d’essence"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 km, mais historique et usage piste priment",
+                  "diagnostic": "Authentifier bloc/culasses et numéro, mesurer compressions/leak-down et pression, contrôler pompe, radiateur, ventilateurs, Weber 45 DCOE/Holley selon Strada/Corsa, allumage, arbre à cames, fuites et richesse sur chaque cylindre",
+                  "piece_concernee": "V8 Chevrolet small-block 327 de 5,3 litres",
+                  "gravite": "Critique en cas de pression ou surchauffe",
+                  "frequence": "Assez fréquente sur réglage ancien ou voiture peu roulée",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 35 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle, embrayage, différentiel et demi-arbres",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Claquement ou vibration"
+                  ],
+                  "kilometrage_apparition": "Variable, plus tôt en compétition",
+                  "diagnostic": "Identifier boîte Borg-Warner/ZF selon exemplaire, contrôler embrayage, synchros, huile, arbre, joints, différentiel à glissement limité, demi-arbres, supports et géométrie du groupe antéro-central",
+                  "piece_concernee": "Transmission manuelle et pont arrière",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure liée à l’usage et aux modifications",
+                  "cout_reparation_estime": "Très élevé : environ 2 500 à 25 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, carrosserie aluminium/composite et authenticité",
+                  "symptomes": [
+                    "Fissure",
+                    "Corrosion galvanique",
+                    "Mauvais alignement ou provenance lacunaire"
+                  ],
+                  "kilometrage_apparition": "Contrôle systématique avant acquisition",
+                  "diagnostic": "Faire une expertise de provenance, comparer numéros et archives Iso A3/C-Bizzarrini, inspecter tubes, soudures, aluminium/composite, ancrages, suspension indépendante, freins, réservoirs et traces de course ou reconstruction",
+                  "piece_concernee": "Structure, carrosserie et identité 5300 GT",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque important vu rareté et reconstructions",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 150 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "5300 GT Corsa Revival 24/65",
+          "annees": "2022–aujourd’hui",
+          "phases": [
+            "Série de continuation de 24 exemplaires, puissance constructeur supérieure à 400 hp, à distinguer des originaux"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Corsa Revival V8 5.3 — 405 ch",
+              "code_moteur": "Bizzarrini Revival Chevrolet small-block",
+              "cylindree": "5 300 cm³",
+              "puissance_ch": 405,
+              "boite": [
+                "Manuelle 4 rapports de spécification historique"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et carburation du Chevrolet 327",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Ratés ou odeur d’essence"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 km, mais historique et usage piste priment",
+                  "diagnostic": "Authentifier bloc/culasses et numéro, mesurer compressions/leak-down et pression, contrôler pompe, radiateur, ventilateurs, Weber 45 DCOE/Holley selon Strada/Corsa, allumage, arbre à cames, fuites et richesse sur chaque cylindre",
+                  "piece_concernee": "V8 Chevrolet small-block 327 de 5,3 litres",
+                  "gravite": "Critique en cas de pression ou surchauffe",
+                  "frequence": "Assez fréquente sur réglage ancien ou voiture peu roulée",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 35 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle, embrayage, différentiel et demi-arbres",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Claquement ou vibration"
+                  ],
+                  "kilometrage_apparition": "Variable, plus tôt en compétition",
+                  "diagnostic": "Identifier boîte Borg-Warner/ZF selon exemplaire, contrôler embrayage, synchros, huile, arbre, joints, différentiel à glissement limité, demi-arbres, supports et géométrie du groupe antéro-central",
+                  "piece_concernee": "Transmission manuelle et pont arrière",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure liée à l’usage et aux modifications",
+                  "cout_reparation_estime": "Très élevé : environ 2 500 à 25 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, carrosserie aluminium/composite et authenticité",
+                  "symptomes": [
+                    "Fissure",
+                    "Corrosion galvanique",
+                    "Mauvais alignement ou provenance lacunaire"
+                  ],
+                  "kilometrage_apparition": "Contrôle systématique avant acquisition",
+                  "diagnostic": "Faire une expertise de provenance, comparer numéros et archives Iso A3/C-Bizzarrini, inspecter tubes, soudures, aluminium/composite, ancrages, suspension indépendante, freins, réservoirs et traces de course ou reconstruction",
+                  "piece_concernee": "Structure, carrosserie et identité 5300 GT",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque important vu rareté et reconstructions",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 150 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://it.bizzarrini.com/5300-gt",
+        "https://www.mudeto.it/img/bizzarrini_5300_gt_strada/brochure_bizzarrini_gt_strada_5300.pdf"
+      ]
+    }
+  ]
+}

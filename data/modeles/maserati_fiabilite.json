@@ -1,0 +1,581 @@
+[
+  {
+    "marque": "Maserati",
+    "modeles": [
+      {
+        "nom": "Ghibli (1967)",
+        "generations": [
+          {
+            "code_chassis": "AM115",
+            "annees": "1967-1973",
+            "phases": [
+              "Ghibli",
+              "Ghibli SS",
+              "Ghibli Spyder"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "V8 4.7L/4.9L atmosphérique",
+                "code_moteur": "AM115",
+                "cylindree": "4.7L-4.9L",
+                "puissance_ch": 335,
+                "boite": [
+                  "BVM5",
+                  "BVA3 (Borg-Warner)"
+                ],
+                "points_faibles": [
+                  "Carburateurs Weber quadruple corps délicats à synchroniser",
+                  "Corrosion du châssis et de la carrosserie sur les exemplaires non restaurés",
+                  "Freins à disque de conception ancienne peu endurants en usage moderne",
+                  "Rareté et coût élevé des pièces mécaniques spécifiques aujourd'hui"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Bora / Merak",
+        "generations": [
+          {
+            "code_chassis": "AM117 (Bora) / AM122 (Merak)",
+            "annees": "1971-1983",
+            "phases": [
+              "Bora (1971-1978)",
+              "Merak (1972-1983)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "V8 4.7L/4.9L (Bora) / V6 3.0L (Merak)",
+                "code_moteur": "AM117/AM122",
+                "cylindree": "3.0L-4.9L",
+                "puissance_ch": 310,
+                "boite": [
+                  "BVM5"
+                ],
+                "points_faibles": [
+                  "Corrosion importante du châssis et de la carrosserie sur les exemplaires non restaurés",
+                  "Système hydraulique Citroën (freins, direction, suspension - hérité de la période Citroën) complexe et coûteux à entretenir",
+                  "Carburateurs multiples délicats à régler",
+                  "Rareté des pièces spécifiques aujourd'hui, notamment les éléments hydrauliques"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Khamsin",
+        "generations": [
+          {
+            "code_chassis": "AM120",
+            "annees": "1974-1982",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "V8 4.9L atmosphérique",
+                "code_moteur": "AM120",
+                "cylindree": "4.9L",
+                "puissance_ch": 320,
+                "boite": [
+                  "BVM5",
+                  "BVA3"
+                ],
+                "points_faibles": [
+                  "Système hydraulique Citroën (freins, direction) complexe et coûteux à entretenir",
+                  "Corrosion de la carrosserie et du châssis sur les exemplaires peu préservés",
+                  "Carburateurs Weber délicats à synchroniser",
+                  "Rareté extrême des pièces détachées aujourd'hui"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Biturbo",
+        "generations": [
+          {
+            "code_chassis": "AM331/AM332/AM337",
+            "annees": "1981-1994",
+            "phases": [
+              "Biturbo (1981-1988)",
+              "222/228 (1988-1991)",
+              "Shamal/Ghibli II (1990-1994)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "V6 2.0L/2.5L Bi-Turbo",
+                "code_moteur": "AM452/AM457",
+                "cylindree": "2.0L-2.5L",
+                "puissance_ch": 245,
+                "boite": [
+                  "BVM5",
+                  "BVA3"
+                ],
+                "points_faibles": [
+                  "Turbos IHI fragiles et sensibles à l'entretien rigoureux (vidanges fréquentes impératives)",
+                  "Corrosion très marquée, modèle réputé fragile à la rouille (bas de caisse, ailes)",
+                  "Injection/allumage électronique (premières générations) capricieux et sujet aux pannes",
+                  "Fiabilité générale réputée problématique, nombreux points de vigilance électriques",
+                  "Boîte automatique ZF fragile en cas de manque d'entretien"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Quattroporte",
+        "generations": [
+          {
+            "code_chassis": "AM330 (III)",
+            "annees": "1979-1990",
+            "phases": [
+              "Quattroporte III"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "V8 4.2L/4.9L atmosphérique",
+                "code_moteur": "AM330",
+                "cylindree": "4.2L-4.9L",
+                "puissance_ch": 280,
+                "boite": [
+                  "BVM5",
+                  "BVA3"
+                ],
+                "points_faibles": [
+                  "Corrosion importante de la carrosserie et du châssis",
+                  "Carburateurs/injection Bosch K-Jetronic sensibles au vieillissement",
+                  "Fiabilité électrique généralement problématique",
+                  "Rareté des pièces spécifiques aujourd'hui"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "M139 (IV)",
+            "annees": "1994-2001",
+            "phases": [
+              "Quattroporte IV"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "V6/V8 Bi-Turbo",
+                "code_moteur": "AM570",
+                "cylindree": "2.0L-3.2L",
+                "puissance_ch": 335,
+                "boite": [
+                  "BVM6",
+                  "BVA4"
+                ],
+                "points_faibles": [
+                  "Turbos fragiles nécessitant un entretien rigoureux",
+                  "Électronique embarquée capricieuse, faisceaux vieillissants",
+                  "Corrosion moins marquée que les générations précédentes mais toujours présente",
+                  "Boîte automatique fragile en cas de manque d'entretien du liquide"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "M139 (V)",
+            "annees": "2003-2012",
+            "phases": [
+              "Quattroporte V"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "V8 4.2L/4.7L atmosphérique",
+                "code_moteur": "F136 (dérivé Ferrari)",
+                "cylindree": "4.2L-4.7L",
+                "puissance_ch": 430,
+                "boite": [
+                  "BVM6",
+                  "BVA6 (ZF)",
+                  "DuoSelect (robotisée)"
+                ],
+                "points_faibles": [
+                  "Boîte robotisée DuoSelect capricieuse, à-coups et usure prématurée de l'embrayage",
+                  "Courroies de distribution à remplacer strictement selon préconisations",
+                  "Consommation d'huile à surveiller sur les exemplaires à haut kilométrage",
+                  "Électronique embarquée (climatisation, tableau de bord) sujette à pannes intermittentes",
+                  "Coût d'entretien élevé (pièces dérivées Ferrari)"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "M156 (VI)",
+            "annees": "2013-2023",
+            "phases": [
+              "Phase 1 (2013-2016)",
+              "Phase 2 restylée (2016-2023)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "V6 3.0L Bi-Turbo / V8 3.8L Bi-Turbo",
+                "code_moteur": "F160 (V6, base Ferrari) / F154 (V8)",
+                "cylindree": "3.0L-3.8L",
+                "puissance_ch": 530,
+                "boite": [
+                  "BVA8 (ZF 8HP)"
+                ],
+                "points_faibles": [
+                  "Turbos sollicités en usage sportif, vidanges fréquentes recommandées",
+                  "Électronique et infodivertissement (Maserati Touch Control) sujets à bugs et lenteurs",
+                  "Suspension pneumatique pilotée (Skyhook) coûteuse en cas de panne",
+                  "Coût d'entretien élevé, pièces spécifiques dérivées de blocs Ferrari",
+                  "Système Start-Stop et batterie 12V sensibles aux pannes",
+                  "Poignées de portes électriques rétractables sujettes à pannes de moteurs électriques",
+                  "Sellerie en cuir de qualité variable selon les séries, usure prématurée sur les sièges conducteur"
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "3.0 V6 Diesel 275ch",
+                "code_moteur": "V6 diesel (base groupe VM Motori/FCA)",
+                "cylindree": "3.0L",
+                "puissance_ch": 275,
+                "boite": [
+                  "BVA8 (ZF 8HP)"
+                ],
+                "points_faibles": [
+                  "Vanne EGR et FAP sensibles à l'encrassement en usage urbain",
+                  "Image de marque peu compatible avec le diesel, faible diffusion et rareté de pièces spécifiques",
+                  "Turbo sensible à l'encrassement du circuit d'huile"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "3200 GT / Coupé / Spyder",
+        "generations": [
+          {
+            "code_chassis": "AM338 (3200GT) / M138 (Coupé/Spyder)",
+            "annees": "1998-2007",
+            "phases": [
+              "3200 GT (1998-2002)",
+              "Coupé/Spyder (2001-2007) - GranSport (2003-2007)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "V8 3.2L Bi-Turbo / 4.2L atmosphérique",
+                "code_moteur": "AM585 / F136 (dérivé Ferrari)",
+                "cylindree": "3.2L-4.2L",
+                "puissance_ch": 390,
+                "boite": [
+                  "BVM6",
+                  "Cambiocorsa (robotisée, Coupé/Spyder)"
+                ],
+                "points_faibles": [
+                  "Boîte robotisée Cambiocorsa capricieuse, à-coups et embrayage à usure rapide",
+                  "Turbos (3200 GT) fragiles, entretien rigoureux nécessaire",
+                  "Électronique embarquée capricieuse, faisceaux et calculateurs sensibles au vieillissement",
+                  "Courroies de distribution à remplacer strictement selon préconisations",
+                  "Coût d'entretien élevé, pièces dérivées Ferrari"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "GranTurismo / GranCabrio",
+        "generations": [
+          {
+            "code_chassis": "M145",
+            "annees": "2007-2019",
+            "phases": [
+              "GranTurismo (2007-2019)",
+              "GranTurismo S/MC (2008-2019)",
+              "GranCabrio (2010-2019)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "V8 4.2L/4.7L atmosphérique",
+                "code_moteur": "F136 (dérivé Ferrari)",
+                "cylindree": "4.2L-4.7L",
+                "puissance_ch": 460,
+                "boite": [
+                  "BVA6 (ZF)",
+                  "MC Shift (robotisée, versions S/MC)"
+                ],
+                "points_faibles": [
+                  "Boîte robotisée MC Shift capricieuse sur les versions équipées, à-coups à basse vitesse",
+                  "Consommation d'huile à surveiller sur les exemplaires à haut kilométrage",
+                  "Électronique embarquée (climatisation, infodivertissement) sujette à pannes intermittentes",
+                  "Courroies de distribution à remplacer strictement selon préconisations",
+                  "Coût d'entretien élevé, pièces spécifiques dérivées de blocs Ferrari"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "M192 (Folgore)",
+            "annees": "2023-aujourd'hui",
+            "phases": [
+              "GranTurismo Modena/Trofeo (thermique)",
+              "GranTurismo Folgore (électrique)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "V6 3.0L Bi-Turbo Nettuno",
+                "code_moteur": "F160 (Nettuno)",
+                "cylindree": "3.0L",
+                "puissance_ch": 550,
+                "boite": [
+                  "BVA8 (ZF 8HP)"
+                ],
+                "points_faibles": [
+                  "Technologie de préchambre de combustion (Nettuno) complexe, maintenance spécialisée requise",
+                  "Turbos sollicités en usage sportif intensif",
+                  "Électronique et infodivertissement de nouvelle génération encore jeunes, retours d'expérience limités à ce jour"
+                ]
+              },
+              {
+                "type": "Electrique",
+                "nom": "Folgore - Tri-moteur électrique 760ch",
+                "code_moteur": "3 moteurs électriques synchrones",
+                "cylindree": "N/A",
+                "puissance_ch": 760,
+                "boite": [
+                  "Réducteur fixe par essieu"
+                ],
+                "points_faibles": [
+                  "Batterie haute tension sensible à la dégradation en cas de recharges rapides fréquentes",
+                  "Poids important lié à la batterie sollicitant fortement les trains roulants",
+                  "Modèle récent, retours de fiabilité à long terme encore limités",
+                  "Coût de remplacement de la batterie très élevé hors garantie"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Levante",
+        "generations": [
+          {
+            "code_chassis": "M161/M162",
+            "annees": "2016-aujourd'hui",
+            "phases": [
+              "Phase 1 (2016-2020)",
+              "Phase 2 restylée (2020-aujourd'hui)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "V6 3.0L Bi-Turbo",
+                "code_moteur": "F160 (dérivé Ferrari)",
+                "cylindree": "3.0L",
+                "puissance_ch": 430,
+                "boite": [
+                  "BVA8 (ZF 8HP)"
+                ],
+                "points_faibles": [
+                  "Suspension pneumatique pilotée coûteuse en cas de panne de compresseur",
+                  "Électronique et infodivertissement sujets à bugs et lenteurs",
+                  "Turbos sollicités en usage sportif, entretien rigoureux nécessaire",
+                  "Poids important (SUV) accentuant l'usure des trains roulants et pneumatiques",
+                  "Fiabilité globale jugée en retrait par rapport aux concurrents allemands du segment"
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "3.0 V6 Diesel 250/275ch",
+                "code_moteur": "V6 diesel (base groupe VM Motori/FCA)",
+                "cylindree": "3.0L",
+                "puissance_ch": 275,
+                "boite": [
+                  "BVA8 (ZF 8HP)"
+                ],
+                "points_faibles": [
+                  "Vanne EGR et FAP sensibles à l'encrassement en usage urbain",
+                  "Turbo sensible à l'encrassement du circuit d'huile",
+                  "Faible diffusion rendant certaines pièces spécifiques diesel plus rares",
+                  "Arrêts moteur imprévus rapportés sur certains exemplaires 2017, avec réparations coûteuses",
+                  "Régénération du filtre à particules parfois aléatoire, provoquant des pertes de puissance et interventions coûteuses (cas d'injecteurs remplacés dès 23 000 km rapportés)",
+                  "Haut-parleurs d'échappement électroniques (simulation sonore) sujets à dysfonctionnement, supprimant le son en mode sport",
+                  "Infiltrations d'eau dans l'habitacle rapportées sur certains exemplaires",
+                  "Bloc diesel partagé avec le Jeep Grand Cherokee (ex-groupe FCA/VM Motori), pièces spécifiques Maserati plus onéreuses"
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "Trofeo V8 3.8L Bi-Turbo 580ch",
+                "code_moteur": "F154 (dérivé Ferrari)",
+                "cylindree": "3.8L",
+                "puissance_ch": 580,
+                "boite": [
+                  "BVA8 (ZF 8HP)"
+                ],
+                "points_faibles": [
+                  "Turbos fortement sollicités, entretien rigoureux et vidanges fréquentes recommandées",
+                  "Freins carbone-céramique (option) coûteux à l'entretien",
+                  "Suspension pilotée coûteuse en cas de panne",
+                  "Coût d'entretien général très élevé"
+                ]
+              },
+              {
+                "type": "Hybride",
+                "nom": "Hybrid GT/Executive 2.0 L4 330ch (mild-hybrid 48V)",
+                "code_moteur": "L4 2.0 Turbo (base groupe Stellantis) + module 48V",
+                "cylindree": "2.0L",
+                "puissance_ch": 330,
+                "boite": [
+                  "BVA8 (ZF 8HP)"
+                ],
+                "points_faibles": [
+                  "4 cylindres perçu comme en décalage avec l'image de la marque par rapport aux versions V6/V8",
+                  "Système mild-hybrid à apport limité sur la consommation réelle",
+                  "Modèle encore relativement récent, retours de fiabilité à très haut kilométrage encore limités",
+                  "Turbo sollicité fortement pour compenser le déficit de cylindres par rapport aux versions V6"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "MC20",
+        "generations": [
+          {
+            "code_chassis": "M192",
+            "annees": "2020-aujourd'hui",
+            "phases": [
+              "MC20 Coupé",
+              "MC20 Cielo (cabriolet)",
+              "MC20 Folgore (électrique, à venir)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "V6 3.0L Bi-Turbo Nettuno",
+                "code_moteur": "F160 (Nettuno, préchambre de combustion)",
+                "cylindree": "3.0L",
+                "puissance_ch": 630,
+                "boite": [
+                  "BVA8 (double embrayage)"
+                ],
+                "points_faibles": [
+                  "Technologie de préchambre de combustion (Nettuno) inédite et complexe, maintenance exclusivement réservée au réseau agréé",
+                  "Portières papillon aux vérins sensibles avec l'usage intensif",
+                  "Modèle relativement récent, recul limité sur la fiabilité à long terme",
+                  "Coût d'entretien et de pièces très élevé"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Indy",
+        "generations": [
+          {
+            "code_chassis": "AM116",
+            "annees": "1969-1975",
+            "phases": [
+              "Phase unique avec évolutions moteur"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "V8 4.2L/4.7L/4.9L atmosphérique",
+                "code_moteur": "AM116",
+                "cylindree": "4.2L-4.9L",
+                "puissance_ch": 320,
+                "boite": [
+                  "BVM5",
+                  "BVA3"
+                ],
+                "points_faibles": [
+                  "Carburateurs Weber quadruple corps délicats à synchroniser",
+                  "Corrosion importante du châssis et de la carrosserie sur les exemplaires non restaurés",
+                  "Rareté des pièces mécaniques spécifiques aujourd'hui",
+                  "Freins à disque de conception ancienne peu endurants en usage moderne"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Karif",
+        "generations": [
+          {
+            "code_chassis": "AM342",
+            "annees": "1988-1992",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "V6 2.8L Bi-Turbo",
+                "code_moteur": "AM452",
+                "cylindree": "2.8L",
+                "puissance_ch": 285,
+                "boite": [
+                  "BVM5"
+                ],
+                "points_faibles": [
+                  "Turbos IHI fragiles nécessitant un entretien rigoureux",
+                  "Corrosion marquée, héritage des soucis de la gamme Biturbo",
+                  "Électronique embarquée capricieuse et vieillissante",
+                  "Production très limitée rendant les pièces spécifiques rares aujourd'hui"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Sebring",
+        "generations": [
+          {
+            "code_chassis": "AM339",
+            "annees": "1987-1997",
+            "phases": [
+              "Phase unique avec évolutions moteur"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "V6 2.0L/2.8L Bi-Turbo",
+                "code_moteur": "AM452/AM457",
+                "cylindree": "2.0L-2.8L",
+                "puissance_ch": 279,
+                "boite": [
+                  "BVM5",
+                  "BVA4"
+                ],
+                "points_faibles": [
+                  "Turbos fragiles nécessitant un entretien rigoureux",
+                  "Corrosion marquée héritée de la plateforme Biturbo",
+                  "Électronique embarquée capricieuse",
+                  "Rareté des pièces spécifiques aujourd'hui"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

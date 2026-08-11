@@ -1,0 +1,140 @@
+{
+  "nom": "Bowler",
+  "modeles": [
+    {
+      "nom": "Defender Challenge",
+      "generations": [
+        {
+          "code_chassis": "L316 Defender 90 Hard Top Challenge",
+          "annees": "2014–2016",
+          "phases": [
+            "Rally car routière, 170 bhp et 450 Nm, arceau et log book MSA ; ne pas confondre avec le Defender 2.2 de série 122 ch."
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "2.2 diesel Bowler — 170 ch",
+              "code_moteur": "Ford Duratorq/Puma 224DT préparé Bowler",
+              "cylindree": "2 198 cm³",
+              "puissance_ch": 170,
+              "boite": [
+                "Ford/Getrag MT82 manuelle 6 rapports, transmission intégrale"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo et refroidissement du 2.2 diesel préparé",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Fumée",
+                    "Surchauffe, fuite ou mode dégradé"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque épreuve ; usure possible dès quelques milliers de kilomètres de compétition",
+                  "diagnostic": "Lire l’ECU et confirmer cartographie Bowler 170 bhp/450 Nm, contrôler rail, corrections et retours injecteurs, turbo/wastegate, intercooler/durites, EGR selon règlement, admission, huile, radiateur, ventilateurs et contamination des fluides ; analyser historique d’épreuves et heures moteur",
+                  "piece_concernee": "Ford Duratorq/Puma 2.2 diesel préparé Bowler",
+                  "gravite": "Critique en rallye",
+                  "frequence": "Assez fréquente en conditions poussiéreuses, boueuses ou chaudes",
+                  "cout_reparation_estime": "Élevé : environ 800 à 12 000 €"
+                },
+                {
+                  "probleme": "MT82, embrayage, transfert LT230, ponts et arbres",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Claquement, vibration ou perte de motricité"
+                  ],
+                  "kilometrage_apparition": "Inspection après chaque épreuve et révision selon heures de course",
+                  "diagnostic": "Contrôler embrayage, volant, huile/synchros de MT82, supports, LT230, verrouillage central, arbres, croisillons, différentiels, demi-arbres et moyeux ; rechercher chocs et surchauffe, mesurer jeux et inspecter les huiles pour limaille",
+                  "piece_concernee": "Transmission intégrale mécanique Defender 90",
+                  "gravite": "Critique",
+                  "frequence": "Usure fréquente en rallye",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 15 000 €"
+                },
+                {
+                  "probleme": "Arceau MSA, extincteur, suspension Bilstein, caisse et conformité course",
+                  "symptomes": [
+                    "Tube déformé",
+                    "Fuite d’amortisseur",
+                    "Fissure, jeu ou équipement périmé"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant chaque départ et après tout choc",
+                  "diagnostic": "Vérifier log book MSA, identité Bowler, soudures/fixations de l’arceau, harnais/sièges et dates, extincteur/plombage, coupe-circuit ; inspecter châssis Defender, protections, ancrages, ressorts-amortisseurs Bilstein, barres, silentblocs, direction, freins, roues et fissures de caisse",
+                  "piece_concernee": "Cellule de sécurité et châssis compétition L316",
+                  "gravite": "Critique",
+                  "frequence": "À surveiller systématiquement",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 20 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "L663 Defender 90 P300 Challenge",
+          "annees": "2022–aujourd’hui",
+          "phases": [
+            "Nouvelle série Challenge basée sur le Defender L663 P300 avec cellule, suspension, roues et protections spécifiques Bowler."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "P300 Ingenium turbo essence — 300 ch",
+              "code_moteur": "JLR AJ200P",
+              "cylindree": "1 997 cm³",
+              "puissance_ch": 300,
+              "boite": [
+                "ZF 8HP automatique 8 rapports à palettes, transmission intégrale"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Huile, refroidissement, turbo et injection du P300 Ingenium",
+                  "symptomes": [
+                    "Voyant moteur",
+                    "Ratés",
+                    "Surchauffe ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque épreuve ; le temps de course prévaut sur le kilométrage",
+                  "diagnostic": "Lire Pathfinder/diagnostic compétition, contrôler pression huile/essence, injecteurs, bougies/bobines, turbo, wastegate, admission, radiateurs/intercooler, pompes électriques, durites et contamination ; analyser huile et historique de températures/événements si journal disponible",
+                  "piece_concernee": "AJ200P 2.0 turbo essence P300",
+                  "gravite": "Critique en compétition",
+                  "frequence": "Variable, accrue par poussière, chaleur et chocs",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 15 000 €"
+                },
+                {
+                  "probleme": "ZF 8HP, transfert, différentiels, cardans et refroidissement",
+                  "symptomes": [
+                    "À-coups",
+                    "Rapport indisponible",
+                    "Surchauffe ou bruit de transmission"
+                  ],
+                  "kilometrage_apparition": "Inspection après chaque épreuve",
+                  "diagnostic": "Lire défauts/adaptations/températures, contrôler huile et refroidissement de 8HP, convertisseur, palettes, supports, boîte de transfert, différentiels pilotés, arbres et cardans ; rechercher chocs sous caisse, fuites et limaille puis effectuer les calibrations prescrites",
+                  "piece_concernee": "Transmission automatique intégrale L663",
+                  "gravite": "Critique",
+                  "frequence": "Usure liée aux chocs et fortes charges",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 20 000 €"
+                },
+                {
+                  "probleme": "Arceau, suspension de rallye, soubassement et électronique de sécurité",
+                  "symptomes": [
+                    "Déformation",
+                    "Fuite d’amortisseur",
+                    "Géométrie instable ou alertes multiples"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant/après chaque épreuve et immédiatement après choc",
+                  "diagnostic": "Vérifier homologation/log book, arceau, sièges, harnais, extincteur et coupe-circuit ; inspecter coque aluminium, protections, points de levage, bras, fusées, amortisseurs/ressorts Bowler, freins et roues 18 pouces ; lire réseau, contrôler batteries, capteurs et recalibrer direction/hauteur après géométrie",
+                  "piece_concernee": "Cellule, châssis et électronique Defender L663 de course",
+                  "gravite": "Critique",
+                  "frequence": "À surveiller systématiquement",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 30 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://media.landrover.com/en-gb/news/2014/01/land-rover-supported-defender-challenge-bowler-rally-car-makes-world-debut-autosport",
+        "https://media.landrover.com/news/2021/07/defender-goes-rallying-bowler-transforms-reborn-icon-for-2022-challenge-series"
+      ]
+    }
+  ]
+}

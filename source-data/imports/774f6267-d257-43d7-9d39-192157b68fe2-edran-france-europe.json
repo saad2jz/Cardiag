@@ -1,0 +1,90 @@
+{
+  "nom": "Edran",
+  "modeles": [
+    {
+      "nom": "Enigma",
+      "generations": [
+        {
+          "code_chassis": "Enigma projet",
+          "annees": "2006–aujourd’hui",
+          "phases": [
+            "Spécification publiée par Edran : 820 ch, 1 240 kg, cellule carbone et 340 km/h revendiqués. Conserver le statut projet tant qu’un exemplaire roulant et sa mécanique ne sont pas authentifiés."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 7.2 central arrière annoncé — 820 ch",
+              "code_moteur": "Edran V8 7.2 à identifier",
+              "cylindree": "7 200 cm³",
+              "puissance_ch": 820,
+              "boite": [
+                "Manuelle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Intégrité du V8 7,2 l annoncé et statut réel du projet",
+                  "symptomes": [
+                    "Spécification incohérente",
+                    "Absence de numéro ou de preuve de fonctionnement",
+                    "Fuite, bruit ou surchauffe si prototype roulant"
+                  ],
+                  "kilometrage_apparition": "Avant toute transaction ou tentative de démarrage",
+                  "diagnostic": "Établir d’abord si le véhicule existe comme prototype roulant, maquette ou projet et documenter provenance du V8. Si roulant, mesurer pressions, compressions/leak-down, analyser huile et contrôler distribution, injection, allumage, refroidissement et lubrification avant charge.",
+                  "piece_concernee": "V8 central arrière Edran Enigma",
+                  "gravite": "Critique pour authenticité et sécurité",
+                  "frequence": "Non mesurable : projet annoncé, production non démontrée",
+                  "cout_reparation_estime": "Extrême : expertise et développement sur devis"
+                },
+                {
+                  "probleme": "Boîte manuelle six rapports, embrayage et transmission projetée",
+                  "symptomes": [
+                    "Sélection impossible",
+                    "Patinage",
+                    "Bruit ou incompatibilité de montage"
+                  ],
+                  "kilometrage_apparition": "À valider sur chaque prototype",
+                  "diagnostic": "Identifier fabricant, rapports, couple admissible et pièces réellement montées, puis contrôler commande, embrayage, volant moteur, supports, arbres et différentiel. Ne pas retenir les seules spécifications commerciales comme preuve de réalisation.",
+                  "piece_concernee": "Transmission Enigma",
+                  "gravite": "Critique",
+                  "frequence": "Non documentée en service",
+                  "cout_reparation_estime": "Extrême : fabrication/adaptation sur mesure"
+                },
+                {
+                  "probleme": "Cellule carbone, modules titane et aérodynamique progressive",
+                  "symptomes": [
+                    "Fissure ou délaminage",
+                    "Jeu aux ancrages",
+                    "Système PAS ou hauteur inopérant"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle avant toute utilisation",
+                  "diagnostic": "Contrôler cellule carbone, zones d’absorption, modules de suspension titane, collages/inserts, triangles, amortisseurs, stabilisateurs, fond plat, extracteur, spoilers et réglage de hauteur. Rechercher dossier de calcul et traçabilité matière.",
+                  "piece_concernee": "Châssis et aérodynamique Edran Enigma",
+                  "gravite": "Critique",
+                  "frequence": "Inconnue, projet de très faible diffusion",
+                  "cout_reparation_estime": "Extrême : contrôle non destructif et reconstruction sur devis"
+                },
+                {
+                  "probleme": "Freins carbone-céramique, direction et équipements électriques",
+                  "symptomes": [
+                    "Freinage faible à froid ou fissuré",
+                    "Direction incohérente",
+                    "Portes, affichage ou climatisation en panne"
+                  ],
+                  "kilometrage_apparition": "Avant tout essai dynamique",
+                  "diagnostic": "Inspecter disques/plaquettes et mesurer usure, contrôler assistance de direction proportionnelle, pneus, roulements, airbags annoncés, portes papillon, affichage tête haute, faisceau et alimentations. Distinguer équipement prévu et équipement effectivement installé.",
+                  "piece_concernee": "Systèmes dynamiques et électriques Enigma",
+                  "gravite": "Critique",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "Extrême : composants uniques, devis spécialisé"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.edran.be/nl/Enigma_Specificaties_nl.htm"
+      ]
+    }
+  ]
+}

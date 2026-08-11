@@ -1,0 +1,439 @@
+{
+  "nom": "Gumpert",
+  "modeles": [
+    {
+      "nom": "Apollo",
+      "generations": [
+        {
+          "code_chassis": "Apollo série",
+          "annees": "2005–2012",
+          "phases": [
+            "Trois calibrages proposés par le catalogue Gumpert, à identifier par dossier usine et ECU."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "4.2 V8 biturbo Base — 650 ch",
+              "code_moteur": "Gumpert/Audi 4.2 V8 TT",
+              "cylindree": "4 163 cm³",
+              "puissance_ch": 650,
+              "boite": [
+                "Séquentielle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carter sec, distribution, turbos et refroidissement du V8 Audi préparé",
+                  "symptomes": [
+                    "Pression ou température anormale",
+                    "Fumée, fuite ou boost faible",
+                    "Cliquetis, ratés ou limaille"
+                  ],
+                  "kilometrage_apparition": "Selon heures de piste et historique ; inspection avant tout usage intensif",
+                  "diagnostic": "Analyser huile/filtre, mesurer pression et compressions/leak-down, contrôler réservoir/pompe de carter sec, distribution, VarioCam, refroidissement, deux turbos, wastegates, intercoolers, durites et échappement ; confirmer cartographie 650/700/800 ch avant pleine charge",
+                  "piece_concernee": "V8 4.2 biturbo Gumpert à base Audi",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable sur faible série ; fatigue accélérée sur piste",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 80 000 €"
+                },
+                {
+                  "probleme": "Injection, allumage, alimentation et gestion électronique",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Coupure en charge",
+                    "Lambda, ratés ou puissance incohérente"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et à chaque anomalie",
+                  "diagnostic": "Lire données et défauts, comparer pression carburant, boost, lambda et températures par banc, tester pompes, injecteurs, bobines, débitmètres/capteurs, accélérateur, faisceau et masses ; vérifier carburant et logiciel réellement associés au moteur",
+                  "piece_concernee": "Gestion moteur et alimentation Apollo",
+                  "gravite": "Critique",
+                  "frequence": "Occasionnelle, conséquence sévère à forte charge",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Embrayage double disque, boîte séquentielle et différentiel Torsen",
+                  "symptomes": [
+                    "Sélection dure ou impossible",
+                    "Patinage",
+                    "À-coups, vibration ou limaille"
+                  ],
+                  "kilometrage_apparition": "Inspection selon heures et après chaque journée piste",
+                  "diagnostic": "Contrôler embrayage, commande/palettes selon version, huile/refroidissement, crabots/synchros, capteurs, supports, arbres et différentiel ; analyser limaille et journal de réfection avant apprentissage ou réglage",
+                  "piece_concernee": "Transmission séquentielle six rapports Apollo",
+                  "gravite": "Critique",
+                  "frequence": "Usure attendue en piste, très dépendante du pilotage",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, carbone, aérodynamique, suspension et freins",
+                  "symptomes": [
+                    "Fissure ou délaminage",
+                    "Appui ou géométrie instable",
+                    "Vibration au freinage ou usure pneu"
+                  ],
+                  "kilometrage_apparition": "Expertise avant achat et après piste, choc ou levage",
+                  "diagnostic": "Inspecter environ 200 tubes, soudures, panneaux carbone/GRP, inserts, fond, diffuseur et aileron ; mesurer géométrie/hauteurs, contrôler rotules, amortisseurs, roues, pneus, disques 379 mm/étriers, conduites, réservoir et extincteur, puis authentifier version par VIN",
+                  "piece_concernee": "Structure et sécurité Gumpert Apollo",
+                  "gravite": "Critique",
+                  "frequence": "Risque surtout après choc ou réparation non documentée",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 100 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "4.2 V8 biturbo Sport — 700 ch",
+              "code_moteur": "Gumpert/Audi 4.2 V8 TT Sport",
+              "cylindree": "4 163 cm³",
+              "puissance_ch": 700,
+              "boite": [
+                "Séquentielle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carter sec, distribution, turbos et refroidissement du V8 Audi préparé",
+                  "symptomes": [
+                    "Pression ou température anormale",
+                    "Fumée, fuite ou boost faible",
+                    "Cliquetis, ratés ou limaille"
+                  ],
+                  "kilometrage_apparition": "Selon heures de piste et historique ; inspection avant tout usage intensif",
+                  "diagnostic": "Analyser huile/filtre, mesurer pression et compressions/leak-down, contrôler réservoir/pompe de carter sec, distribution, VarioCam, refroidissement, deux turbos, wastegates, intercoolers, durites et échappement ; confirmer cartographie 650/700/800 ch avant pleine charge",
+                  "piece_concernee": "V8 4.2 biturbo Gumpert à base Audi",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable sur faible série ; fatigue accélérée sur piste",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 80 000 €"
+                },
+                {
+                  "probleme": "Injection, allumage, alimentation et gestion électronique",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Coupure en charge",
+                    "Lambda, ratés ou puissance incohérente"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et à chaque anomalie",
+                  "diagnostic": "Lire données et défauts, comparer pression carburant, boost, lambda et températures par banc, tester pompes, injecteurs, bobines, débitmètres/capteurs, accélérateur, faisceau et masses ; vérifier carburant et logiciel réellement associés au moteur",
+                  "piece_concernee": "Gestion moteur et alimentation Apollo",
+                  "gravite": "Critique",
+                  "frequence": "Occasionnelle, conséquence sévère à forte charge",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Embrayage double disque, boîte séquentielle et différentiel Torsen",
+                  "symptomes": [
+                    "Sélection dure ou impossible",
+                    "Patinage",
+                    "À-coups, vibration ou limaille"
+                  ],
+                  "kilometrage_apparition": "Inspection selon heures et après chaque journée piste",
+                  "diagnostic": "Contrôler embrayage, commande/palettes selon version, huile/refroidissement, crabots/synchros, capteurs, supports, arbres et différentiel ; analyser limaille et journal de réfection avant apprentissage ou réglage",
+                  "piece_concernee": "Transmission séquentielle six rapports Apollo",
+                  "gravite": "Critique",
+                  "frequence": "Usure attendue en piste, très dépendante du pilotage",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, carbone, aérodynamique, suspension et freins",
+                  "symptomes": [
+                    "Fissure ou délaminage",
+                    "Appui ou géométrie instable",
+                    "Vibration au freinage ou usure pneu"
+                  ],
+                  "kilometrage_apparition": "Expertise avant achat et après piste, choc ou levage",
+                  "diagnostic": "Inspecter environ 200 tubes, soudures, panneaux carbone/GRP, inserts, fond, diffuseur et aileron ; mesurer géométrie/hauteurs, contrôler rotules, amortisseurs, roues, pneus, disques 379 mm/étriers, conduites, réservoir et extincteur, puis authentifier version par VIN",
+                  "piece_concernee": "Structure et sécurité Gumpert Apollo",
+                  "gravite": "Critique",
+                  "frequence": "Risque surtout après choc ou réparation non documentée",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 100 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "4.2 V8 biturbo Race — 800 ch",
+              "code_moteur": "Gumpert/Audi 4.2 V8 TT Race",
+              "cylindree": "4 163 cm³",
+              "puissance_ch": 800,
+              "boite": [
+                "Séquentielle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carter sec, distribution, turbos et refroidissement du V8 Audi préparé",
+                  "symptomes": [
+                    "Pression ou température anormale",
+                    "Fumée, fuite ou boost faible",
+                    "Cliquetis, ratés ou limaille"
+                  ],
+                  "kilometrage_apparition": "Selon heures de piste et historique ; inspection avant tout usage intensif",
+                  "diagnostic": "Analyser huile/filtre, mesurer pression et compressions/leak-down, contrôler réservoir/pompe de carter sec, distribution, VarioCam, refroidissement, deux turbos, wastegates, intercoolers, durites et échappement ; confirmer cartographie 650/700/800 ch avant pleine charge",
+                  "piece_concernee": "V8 4.2 biturbo Gumpert à base Audi",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable sur faible série ; fatigue accélérée sur piste",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 80 000 €"
+                },
+                {
+                  "probleme": "Injection, allumage, alimentation et gestion électronique",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Coupure en charge",
+                    "Lambda, ratés ou puissance incohérente"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et à chaque anomalie",
+                  "diagnostic": "Lire données et défauts, comparer pression carburant, boost, lambda et températures par banc, tester pompes, injecteurs, bobines, débitmètres/capteurs, accélérateur, faisceau et masses ; vérifier carburant et logiciel réellement associés au moteur",
+                  "piece_concernee": "Gestion moteur et alimentation Apollo",
+                  "gravite": "Critique",
+                  "frequence": "Occasionnelle, conséquence sévère à forte charge",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Embrayage double disque, boîte séquentielle et différentiel Torsen",
+                  "symptomes": [
+                    "Sélection dure ou impossible",
+                    "Patinage",
+                    "À-coups, vibration ou limaille"
+                  ],
+                  "kilometrage_apparition": "Inspection selon heures et après chaque journée piste",
+                  "diagnostic": "Contrôler embrayage, commande/palettes selon version, huile/refroidissement, crabots/synchros, capteurs, supports, arbres et différentiel ; analyser limaille et journal de réfection avant apprentissage ou réglage",
+                  "piece_concernee": "Transmission séquentielle six rapports Apollo",
+                  "gravite": "Critique",
+                  "frequence": "Usure attendue en piste, très dépendante du pilotage",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, carbone, aérodynamique, suspension et freins",
+                  "symptomes": [
+                    "Fissure ou délaminage",
+                    "Appui ou géométrie instable",
+                    "Vibration au freinage ou usure pneu"
+                  ],
+                  "kilometrage_apparition": "Expertise avant achat et après piste, choc ou levage",
+                  "diagnostic": "Inspecter environ 200 tubes, soudures, panneaux carbone/GRP, inserts, fond, diffuseur et aileron ; mesurer géométrie/hauteurs, contrôler rotules, amortisseurs, roues, pneus, disques 379 mm/étriers, conduites, réservoir et extincteur, puis authentifier version par VIN",
+                  "piece_concernee": "Structure et sécurité Gumpert Apollo",
+                  "gravite": "Critique",
+                  "frequence": "Risque surtout après choc ou réparation non documentée",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 100 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Apollo Speed",
+          "annees": "2009–2012",
+          "phases": [
+            "Carrosserie à faible traînée et trois niveaux de puissance ; ne pas fusionner avec l’Apollo à fort appui."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Speed 4.2 V8 biturbo — 650 ch",
+              "code_moteur": "Gumpert/Audi 4.2 V8 TT Speed",
+              "cylindree": "4 163 cm³",
+              "puissance_ch": 650,
+              "boite": [
+                "Séquentielle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carter sec, distribution, turbos et refroidissement du V8 Audi préparé",
+                  "symptomes": [
+                    "Pression ou température anormale",
+                    "Fumée, fuite ou boost faible",
+                    "Cliquetis, ratés ou limaille"
+                  ],
+                  "kilometrage_apparition": "Selon heures de piste et historique ; inspection avant tout usage intensif",
+                  "diagnostic": "Analyser huile/filtre, mesurer pression et compressions/leak-down, contrôler réservoir/pompe de carter sec, distribution, VarioCam, refroidissement, deux turbos, wastegates, intercoolers, durites et échappement ; confirmer cartographie 650/700/800 ch avant pleine charge",
+                  "piece_concernee": "V8 4.2 biturbo Gumpert à base Audi",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable sur faible série ; fatigue accélérée sur piste",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 80 000 €"
+                },
+                {
+                  "probleme": "Injection, allumage, alimentation et gestion électronique",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Coupure en charge",
+                    "Lambda, ratés ou puissance incohérente"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et à chaque anomalie",
+                  "diagnostic": "Lire données et défauts, comparer pression carburant, boost, lambda et températures par banc, tester pompes, injecteurs, bobines, débitmètres/capteurs, accélérateur, faisceau et masses ; vérifier carburant et logiciel réellement associés au moteur",
+                  "piece_concernee": "Gestion moteur et alimentation Apollo",
+                  "gravite": "Critique",
+                  "frequence": "Occasionnelle, conséquence sévère à forte charge",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Embrayage double disque, boîte séquentielle et différentiel Torsen",
+                  "symptomes": [
+                    "Sélection dure ou impossible",
+                    "Patinage",
+                    "À-coups, vibration ou limaille"
+                  ],
+                  "kilometrage_apparition": "Inspection selon heures et après chaque journée piste",
+                  "diagnostic": "Contrôler embrayage, commande/palettes selon version, huile/refroidissement, crabots/synchros, capteurs, supports, arbres et différentiel ; analyser limaille et journal de réfection avant apprentissage ou réglage",
+                  "piece_concernee": "Transmission séquentielle six rapports Apollo",
+                  "gravite": "Critique",
+                  "frequence": "Usure attendue en piste, très dépendante du pilotage",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, carbone, aérodynamique, suspension et freins",
+                  "symptomes": [
+                    "Fissure ou délaminage",
+                    "Appui ou géométrie instable",
+                    "Vibration au freinage ou usure pneu"
+                  ],
+                  "kilometrage_apparition": "Expertise avant achat et après piste, choc ou levage",
+                  "diagnostic": "Inspecter environ 200 tubes, soudures, panneaux carbone/GRP, inserts, fond, diffuseur et aileron ; mesurer géométrie/hauteurs, contrôler rotules, amortisseurs, roues, pneus, disques 379 mm/étriers, conduites, réservoir et extincteur, puis authentifier version par VIN",
+                  "piece_concernee": "Structure et sécurité Gumpert Apollo",
+                  "gravite": "Critique",
+                  "frequence": "Risque surtout après choc ou réparation non documentée",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 100 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Speed Sport 4.2 V8 biturbo — 700 ch",
+              "code_moteur": "Gumpert/Audi 4.2 V8 TT Speed Sport",
+              "cylindree": "4 163 cm³",
+              "puissance_ch": 700,
+              "boite": [
+                "Séquentielle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carter sec, distribution, turbos et refroidissement du V8 Audi préparé",
+                  "symptomes": [
+                    "Pression ou température anormale",
+                    "Fumée, fuite ou boost faible",
+                    "Cliquetis, ratés ou limaille"
+                  ],
+                  "kilometrage_apparition": "Selon heures de piste et historique ; inspection avant tout usage intensif",
+                  "diagnostic": "Analyser huile/filtre, mesurer pression et compressions/leak-down, contrôler réservoir/pompe de carter sec, distribution, VarioCam, refroidissement, deux turbos, wastegates, intercoolers, durites et échappement ; confirmer cartographie 650/700/800 ch avant pleine charge",
+                  "piece_concernee": "V8 4.2 biturbo Gumpert à base Audi",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable sur faible série ; fatigue accélérée sur piste",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 80 000 €"
+                },
+                {
+                  "probleme": "Injection, allumage, alimentation et gestion électronique",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Coupure en charge",
+                    "Lambda, ratés ou puissance incohérente"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et à chaque anomalie",
+                  "diagnostic": "Lire données et défauts, comparer pression carburant, boost, lambda et températures par banc, tester pompes, injecteurs, bobines, débitmètres/capteurs, accélérateur, faisceau et masses ; vérifier carburant et logiciel réellement associés au moteur",
+                  "piece_concernee": "Gestion moteur et alimentation Apollo",
+                  "gravite": "Critique",
+                  "frequence": "Occasionnelle, conséquence sévère à forte charge",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Embrayage double disque, boîte séquentielle et différentiel Torsen",
+                  "symptomes": [
+                    "Sélection dure ou impossible",
+                    "Patinage",
+                    "À-coups, vibration ou limaille"
+                  ],
+                  "kilometrage_apparition": "Inspection selon heures et après chaque journée piste",
+                  "diagnostic": "Contrôler embrayage, commande/palettes selon version, huile/refroidissement, crabots/synchros, capteurs, supports, arbres et différentiel ; analyser limaille et journal de réfection avant apprentissage ou réglage",
+                  "piece_concernee": "Transmission séquentielle six rapports Apollo",
+                  "gravite": "Critique",
+                  "frequence": "Usure attendue en piste, très dépendante du pilotage",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, carbone, aérodynamique, suspension et freins",
+                  "symptomes": [
+                    "Fissure ou délaminage",
+                    "Appui ou géométrie instable",
+                    "Vibration au freinage ou usure pneu"
+                  ],
+                  "kilometrage_apparition": "Expertise avant achat et après piste, choc ou levage",
+                  "diagnostic": "Inspecter environ 200 tubes, soudures, panneaux carbone/GRP, inserts, fond, diffuseur et aileron ; mesurer géométrie/hauteurs, contrôler rotules, amortisseurs, roues, pneus, disques 379 mm/étriers, conduites, réservoir et extincteur, puis authentifier version par VIN",
+                  "piece_concernee": "Structure et sécurité Gumpert Apollo",
+                  "gravite": "Critique",
+                  "frequence": "Risque surtout après choc ou réparation non documentée",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 100 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Speed Race 4.2 V8 biturbo — 800 ch",
+              "code_moteur": "Gumpert/Audi 4.2 V8 TT Speed Race",
+              "cylindree": "4 163 cm³",
+              "puissance_ch": 800,
+              "boite": [
+                "Séquentielle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carter sec, distribution, turbos et refroidissement du V8 Audi préparé",
+                  "symptomes": [
+                    "Pression ou température anormale",
+                    "Fumée, fuite ou boost faible",
+                    "Cliquetis, ratés ou limaille"
+                  ],
+                  "kilometrage_apparition": "Selon heures de piste et historique ; inspection avant tout usage intensif",
+                  "diagnostic": "Analyser huile/filtre, mesurer pression et compressions/leak-down, contrôler réservoir/pompe de carter sec, distribution, VarioCam, refroidissement, deux turbos, wastegates, intercoolers, durites et échappement ; confirmer cartographie 650/700/800 ch avant pleine charge",
+                  "piece_concernee": "V8 4.2 biturbo Gumpert à base Audi",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable sur faible série ; fatigue accélérée sur piste",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 80 000 €"
+                },
+                {
+                  "probleme": "Injection, allumage, alimentation et gestion électronique",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Coupure en charge",
+                    "Lambda, ratés ou puissance incohérente"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et à chaque anomalie",
+                  "diagnostic": "Lire données et défauts, comparer pression carburant, boost, lambda et températures par banc, tester pompes, injecteurs, bobines, débitmètres/capteurs, accélérateur, faisceau et masses ; vérifier carburant et logiciel réellement associés au moteur",
+                  "piece_concernee": "Gestion moteur et alimentation Apollo",
+                  "gravite": "Critique",
+                  "frequence": "Occasionnelle, conséquence sévère à forte charge",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Embrayage double disque, boîte séquentielle et différentiel Torsen",
+                  "symptomes": [
+                    "Sélection dure ou impossible",
+                    "Patinage",
+                    "À-coups, vibration ou limaille"
+                  ],
+                  "kilometrage_apparition": "Inspection selon heures et après chaque journée piste",
+                  "diagnostic": "Contrôler embrayage, commande/palettes selon version, huile/refroidissement, crabots/synchros, capteurs, supports, arbres et différentiel ; analyser limaille et journal de réfection avant apprentissage ou réglage",
+                  "piece_concernee": "Transmission séquentielle six rapports Apollo",
+                  "gravite": "Critique",
+                  "frequence": "Usure attendue en piste, très dépendante du pilotage",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, carbone, aérodynamique, suspension et freins",
+                  "symptomes": [
+                    "Fissure ou délaminage",
+                    "Appui ou géométrie instable",
+                    "Vibration au freinage ou usure pneu"
+                  ],
+                  "kilometrage_apparition": "Expertise avant achat et après piste, choc ou levage",
+                  "diagnostic": "Inspecter environ 200 tubes, soudures, panneaux carbone/GRP, inserts, fond, diffuseur et aileron ; mesurer géométrie/hauteurs, contrôler rotules, amortisseurs, roues, pneus, disques 379 mm/étriers, conduites, réservoir et extincteur, puis authentifier version par VIN",
+                  "piece_concernee": "Structure et sécurité Gumpert Apollo",
+                  "gravite": "Critique",
+                  "frequence": "Risque surtout après choc ou réparation non documentée",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 100 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.auto-brochures.com/makes/gumpert/Gumpert_int%20Apollo.pdf"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "nom": "Aurus",
+  "modeles": [
+    {
+      "nom": "Senat",
+      "generations": [
+        {
+          "code_chassis": "EMP-4123 Senat berline/Long",
+          "annees": "2018–aujourd’hui",
+          "phases": [
+            "Aurus annonce 598 ch, 880 Nm et moteur électrique 62 ch ; identifier berline, Long et niveau de protection"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride essence",
+              "nom": "4.4 V8 biturbo hybride — 598 ch",
+              "code_moteur": "NAMI-4123 / V8 4.4 + e-motor",
+              "cylindree": "4 400 cm³",
+              "puissance_ch": 598,
+              "boite": [
+                "KATE R932 automatique 9 rapports, transmission intégrale"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection directe, biturbo, lubrification et refroidissement du V8",
+                  "symptomes": [
+                    "Ratés",
+                    "Fumée",
+                    "Pression faible ou température élevée"
+                  ],
+                  "kilometrage_apparition": "Kilométrage variable ; contrôle renforcé après longues immobilisations ou usage protégé",
+                  "diagnostic": "Lire les deux bancs, analyser huile/filtre, mesurer pressions, contrôler pompes HP, injecteurs, turbos, wastegates, intercoolers, pompes à eau, radiateurs, conduites et historique de chauffe",
+                  "piece_concernee": "V8 4.4 biturbo NAMI/Porsche Engineering",
+                  "gravite": "Critique en cas de pression faible ou surchauffe",
+                  "frequence": "Données de flotte publique très limitées",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 40 000 €"
+                },
+                {
+                  "probleme": "Batterie hybride, moteur 62 ch et boîte KATE 9 rapports",
+                  "symptomes": [
+                    "Alerte hybride",
+                    "À-coups",
+                    "Puissance limitée ou défaut d’isolement"
+                  ],
+                  "kilometrage_apparition": "Dépend des cycles, du stockage et de la température",
+                  "diagnostic": "Avec habilitation HV, lire tensions/températures/isolement, contrôler batterie, contacteurs, onduleur, moteur intégré, refroidissement ; lire boîte KATE, adaptations, embrayages, huile et couple transmis",
+                  "piece_concernee": "Chaîne hybride et transmission intégrale",
+                  "gravite": "Critique",
+                  "frequence": "Non documentée sur très faible parc",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 35 000 €"
+                },
+                {
+                  "probleme": "Suspension, freinage, réseau électrique et blindage éventuel",
+                  "symptomes": [
+                    "Caisse basse",
+                    "Décharge 12 V",
+                    "Alertes, ouvrants lourds ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Variable ; usure accélérée sur version blindée",
+                  "diagnostic": "Identifier standard/Long/blindée, lire tous modules, tester batteries/charge, suspension, direction, freins, pneus charge élevée, portes/vitrages, climatisation, dispositifs protégés et masse par essieu",
+                  "piece_concernee": "Châssis, réseau et protection balistique",
+                  "gravite": "Critique",
+                  "frequence": "Variable selon configuration et maintenance officielle",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 50 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

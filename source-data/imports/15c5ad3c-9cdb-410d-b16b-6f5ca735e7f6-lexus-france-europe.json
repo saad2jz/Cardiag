@@ -1,0 +1,2731 @@
+{
+  "nom": "Lexus",
+  "modeles": [
+    {
+      "nom": "CT",
+      "generations": [
+        {
+          "code_chassis": "ZWA10",
+          "annees": "2011-2022",
+          "phases": [
+            "Phase 1 (2011-2014)",
+            "Phase 2 (2014-2018)",
+            "Phase 3 (2018-2022)"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride",
+              "nom": "CT 200h - 136ch",
+              "code_moteur": "2ZR-FXE",
+              "cylindree": "1.8L",
+              "puissance_ch": 136,
+              "boite": [
+                "BVA e-CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité hybride exemplaire",
+                  "symptomes": [
+                    "Aucun symptôme préoccupant récurrent majeur identifié"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Contrôle d'usage lors des révisions périodiques standards",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Faible (entretien courant, indicatif)"
+                },
+                {
+                  "probleme": "Batterie NiMH durable",
+                  "symptomes": [
+                    "Baisse progressive de l'autonomie électrique sur exemplaires très âgés"
+                  ],
+                  "kilometrage_apparition": "Généralement au-delà de 200 000-250 000 km avant dégradation notable",
+                  "diagnostic": "Test de capacité de la batterie hybride au diagnostic",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare avant très haut kilométrage",
+                  "cout_reparation_estime": "Élevé si remplacement nécessaire hors garantie (indicatif)"
+                },
+                {
+                  "probleme": "Insonorisation moteur perfectible en forte accélération (effet CVT)",
+                  "symptomes": [
+                    "Régime moteur qui monte fortement lors d'une accélération franche, bruit moteur ressenti comme intrusif"
+                  ],
+                  "kilometrage_apparition": "Non applicable, caractéristique de conception",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Boîte de vitesses / transmission",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Habitabilité arrière et coffre limités pour la catégorie",
+                  "symptomes": [
+                    "Espace aux jambes arrière et volume de coffre jugés limités par certains testeurs"
+                  ],
+                  "kilometrage_apparition": "Non applicable, caractéristique de conception",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Carrosserie / corrosion",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "ES",
+      "generations": [
+        {
+          "code_chassis": "XV60",
+          "annees": "2018-présent",
+          "phases": [
+            "Phase unique à ce jour"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride",
+              "nom": "ES 300h - 218ch",
+              "code_moteur": "A25A-FXS",
+              "cylindree": "2.5L",
+              "puissance_ch": 218,
+              "boite": [
+                "BVA e-CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité hybride réputée excellente",
+                  "symptomes": [
+                    "Aucun symptôme préoccupant récurrent majeur identifié"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Contrôle d'usage lors des révisions périodiques standards",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Faible (entretien courant, indicatif)"
+                },
+                {
+                  "probleme": "Batterie lithium-ion performante mais coûteuse hors garantie",
+                  "symptomes": [
+                    "Baisse progressive de l'autonomie électrique sur exemplaires très âgés"
+                  ],
+                  "kilometrage_apparition": "Généralement au-delà de 200 000 km avant dégradation notable",
+                  "diagnostic": "Test de capacité de la batterie hybride au diagnostic",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare avant très haut kilométrage",
+                  "cout_reparation_estime": "Élevé si remplacement nécessaire hors garantie (indicatif)"
+                },
+                {
+                  "probleme": "Modèle peu diffusé en Europe, réseau de pièces moins dense",
+                  "symptomes": [
+                    "Délais et coûts d'approvisionnement de pièces spécifiques plus longs en Europe"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Insonorisation moteur perfectible en forte accélération (effet CVT)",
+                  "symptomes": [
+                    "Régime moteur qui monte fortement lors d'une accélération franche, bruit moteur ressenti comme intrusif"
+                  ],
+                  "kilometrage_apparition": "Non applicable, caractéristique de conception",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Boîte de vitesses / transmission",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "ES (ancienne génération XV10)",
+      "generations": [
+        {
+          "code_chassis": "XV10",
+          "annees": "1991-1996",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "ES 300 - 188ch",
+              "code_moteur": "3VZ-FE / 1MZ-FE",
+              "cylindree": "3.0L",
+              "puissance_ch": 188,
+              "boite": [
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité mécanique exceptionnelle, référence de l'industrie automobile pour l'époque",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Modèle peu diffusé en Europe à l'époque (marché principalement nord-américain)",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Consommation élevée",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Coussinets de suspension avant à surveiller après 150 000 km sur exemplaires anciens",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Trains roulants / suspension",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "ES (restylage XV70, 2021-présent)",
+      "generations": [
+        {
+          "code_chassis": "XV70 (restylage)",
+          "annees": "2021-présent",
+          "phases": [
+            "Phase unique à ce jour"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride",
+              "nom": "ES 300h - 218ch",
+              "code_moteur": "A25A-FXS",
+              "cylindree": "2.5L",
+              "puissance_ch": 218,
+              "boite": [
+                "BVA e-CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité hybride réputée excellente",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Batterie lithium-ion performante mais coûteuse hors garantie",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Modèle peu diffusé en Europe, réseau de pièces moins dense",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Insonorisation moteur perfectible en forte accélération (effet CVT)",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "GS",
+      "generations": [
+        {
+          "code_chassis": "S190",
+          "annees": "2005-2011",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride",
+              "nom": "GS 450h - 345ch",
+              "code_moteur": "3GR-FSE + moteur électrique",
+              "cylindree": "3.5L",
+              "puissance_ch": 345,
+              "boite": [
+                "BVA e-CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité hybride exemplaire",
+                  "symptomes": [
+                    "Aucun symptôme préoccupant récurrent majeur identifié"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Contrôle d'usage lors des révisions périodiques standards",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Faible (entretien courant, indicatif)"
+                },
+                {
+                  "probleme": "Batterie NiMH durable",
+                  "symptomes": [
+                    "Baisse progressive de l'autonomie électrique sur exemplaires très âgés"
+                  ],
+                  "kilometrage_apparition": "Généralement au-delà de 200 000 km avant dégradation notable",
+                  "diagnostic": "Test de capacité de la batterie hybride au diagnostic",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare avant très haut kilométrage",
+                  "cout_reparation_estime": "Élevé si remplacement nécessaire hors garantie (indicatif)"
+                },
+                {
+                  "probleme": "Consommation réelle supérieure aux annonces en conduite dynamique",
+                  "symptomes": [
+                    "Consommation moyenne ressentie plus élevée que la valeur homologuée en conduite dynamique"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Coût d'entretien élevé (pièces premium)",
+                  "symptomes": [
+                    "Coût des révisions périodiques supérieur à un modèle généraliste"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable, caractéristique du positionnement premium",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "GS 220d - 175ch",
+              "code_moteur": "2AD-FHV",
+              "cylindree": "2.2L",
+              "puissance_ch": 175,
+              "boite": [
+                "BVA6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Risque de fissure de culasse documenté sur ce bloc (identique aux IS 220d)",
+                  "symptomes": [
+                    "Perte de liquide de refroidissement sans fuite externe visible",
+                    "Surchauffe moteur",
+                    "Voyant température allumé",
+                    "Fumée blanche à l'échappement"
+                  ],
+                  "kilometrage_apparition": "Rapporté fréquemment entre 60 000 et 120 000 km sur les exemplaires touchés (estimation indicative)",
+                  "diagnostic": "Test de pression du circuit de refroidissement, recherche de gaz de combustion dans le liquide de refroidissement",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent sur les millésimes concernés par le défaut",
+                  "cout_reparation_estime": "Élevé, remplacement de culasse (indicatif — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Injecteurs piézo-électriques coûteux",
+                  "symptomes": [
+                    "Démarrage difficile à froid",
+                    "À-coups à l'accélération",
+                    "Voyant moteur allumé"
+                  ],
+                  "kilometrage_apparition": "Généralement au-delà de 150 000 km (estimation indicative)",
+                  "diagnostic": "Lecture des codes défaut, test de débit injecteur",
+                  "piece_concernee": "Système d'alimentation / dépollution",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé (indicatif)"
+                },
+                {
+                  "probleme": "FAP sensible à l'usage urbain",
+                  "symptomes": [
+                    "Voyant FAP allumé",
+                    "Régénérations fréquentes et incomplètes"
+                  ],
+                  "kilometrage_apparition": "Variable, accéléré par usage urbain exclusif",
+                  "diagnostic": "Lecture du niveau d'encrassement au diagnostic",
+                  "piece_concernee": "Système d'alimentation / dépollution",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent en usage urbain",
+                  "cout_reparation_estime": "Modéré à élevé (indicatif)"
+                },
+                {
+                  "probleme": "Vanne EGR à surveiller",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Perte de puissance",
+                    "Voyant moteur allumé"
+                  ],
+                  "kilometrage_apparition": "Variable selon usage",
+                  "diagnostic": "Lecture des codes défaut",
+                  "piece_concernee": "Système d'alimentation / dépollution",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent en usage urbain",
+                  "cout_reparation_estime": "Modéré (indicatif)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "GS F",
+      "generations": [
+        {
+          "code_chassis": "URL10",
+          "annees": "2015-2020",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "5.0 V8 - 477ch",
+              "code_moteur": "2UR-GSE",
+              "cylindree": "5.0L",
+              "puissance_ch": 477,
+              "boite": [
+                "BVA8"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité mécanique très bonne, moteur V8 atmosphérique réputé robuste",
+                  "symptomes": [
+                    "Aucun symptôme préoccupant récurrent majeur identifié"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Contrôle d'usage lors des révisions périodiques standards",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Faible (entretien courant, indicatif)"
+                },
+                {
+                  "probleme": "Consommation très élevée",
+                  "symptomes": [
+                    "Consommation moyenne ressentie nettement plus élevée que la valeur homologuée"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Freins consommables rapidement en usage sportif",
+                  "symptomes": [
+                    "Usure visible rapide des plaquettes en usage sportif",
+                    "Vibrations au freinage sur usage circuit intensif"
+                  ],
+                  "kilometrage_apparition": "Dès 15 000-25 000 km sur usage sportif répété (estimation indicative)",
+                  "diagnostic": "Contrôle visuel de l'épaisseur des plaquettes",
+                  "piece_concernee": "Système de freinage",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent en usage sportif",
+                  "cout_reparation_estime": "Élevé, freins haute performance (indicatif)"
+                },
+                {
+                  "probleme": "Modèle resté confidentiel commercialement face aux rivales allemandes, réseau de pièces performance moins dense",
+                  "symptomes": [
+                    "Délais d'approvisionnement de pièces spécifiques plus longs que les rivales allemandes équivalentes"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "GX",
+      "generations": [
+        {
+          "code_chassis": "J150 (2e génération, base Land Cruiser Prado)",
+          "annees": "2009-présent",
+          "phases": [
+            "Phase unique à ce jour"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "GX 460 - 301ch",
+              "code_moteur": "1UR-FE",
+              "cylindree": "4.6L",
+              "puissance_ch": 301,
+              "boite": [
+                "BVA6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité réputée exceptionnelle, base technique Land Cruiser Prado éprouvée",
+                  "symptomes": [
+                    "Aucun symptôme préoccupant récurrent majeur identifié"
+                  ],
+                  "kilometrage_apparition": "Non applicable, moteur réputé pour dépasser fréquemment 300 000 km avec entretien suivi",
+                  "diagnostic": "Contrôle d'usage lors des révisions périodiques standards",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Faible (entretien courant, indicatif)"
+                },
+                {
+                  "probleme": "Consommation très élevée",
+                  "symptomes": [
+                    "Consommation moyenne ressentie nettement plus élevée que la valeur homologuée"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Modèle non commercialisé en Europe de l'Ouest, réseau de pièces local limité",
+                  "symptomes": [
+                    "Délais et coûts d'approvisionnement de pièces supérieurs en Europe"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Suspension KDSS (stabilisation active) coûteuse en cas de panne",
+                  "symptomes": [
+                    "Comportement routier dégradé (roulis accru) en cas de défaillance du système KDSS",
+                    "Voyant suspension allumé"
+                  ],
+                  "kilometrage_apparition": "Variable, souvent au-delà de 150 000 km",
+                  "diagnostic": "Diagnostic spécifique du système KDSS par un technicien formé",
+                  "piece_concernee": "Trains roulants / suspension",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé (indicatif)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "GX (2e génération récente)",
+      "generations": [
+        {
+          "code_chassis": "J250 (base Land Cruiser Prado récent)",
+          "annees": "2023-présent",
+          "phases": [
+            "Phase unique à ce jour"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "GX 550 3.4 Twin-Turbo V6 - 349ch",
+              "code_moteur": "T24A-FTS",
+              "cylindree": "3.4L",
+              "puissance_ch": 349,
+              "boite": [
+                "BVA10"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Modèle très récent, aucun recul sur la fiabilité à long terme",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Rupture technologique par rapport à l'ancien V8 atmosphérique réputé quasi indestructible",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable ; souvent rapporté au-delà de 100 000-150 000 km, parfois plus tôt en cas d'entretien tardif (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Élevé (indicatif, plusieurs centaines à quelques milliers d'euros selon le marché et le pays — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Modèle non commercialisé en Europe de l'Ouest, réseau de pièces local limité",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Consommation élevée malgré la réduction de cylindrée liée au downsizing turbo",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "GX (2e génération, 2024)",
+      "generations": [
+        {
+          "code_chassis": "J250 (base Land Cruiser Prado)",
+          "annees": "2024-présent",
+          "phases": [
+            "Phase unique à ce jour"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride",
+              "nom": "GX 550h - 366ch",
+              "code_moteur": "T24A-FTS Turbo Hybrid",
+              "cylindree": "2.4L",
+              "puissance_ch": 366,
+              "boite": [
+                "BVA8"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Modèle très récent, aucun recul sur la fiabilité à long terme du nouveau système hybride turbo",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Rupture technologique par rapport à l'ancien V8 atmosphérique de la génération précédente réputé increvable",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable ; souvent rapporté au-delà de 100 000-150 000 km, parfois plus tôt en cas d'entretien tardif (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Élevé (indicatif, plusieurs centaines à quelques milliers d'euros selon le marché et le pays — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Modèle non commercialisé en Europe de l'Ouest, réseau de pièces local limité",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Coût d'entretien du système hybride turbo plus élevé qu'un V8 atmosphérique classique",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent (point de vigilance standard sur ce modèle)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "HS",
+      "generations": [
+        {
+          "code_chassis": "ANF10",
+          "annees": "2009-2012",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride",
+              "nom": "HS 250h - 187ch",
+              "code_moteur": "2AZ-FXE",
+              "cylindree": "2.4L",
+              "puissance_ch": 187,
+              "boite": [
+                "BVA e-CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité hybride exemplaire",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Modèle resté confidentiel commercialement, production arrêtée après seulement 3 ans",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Batterie NiMH durable",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Coût des pièces spécifiques élevé du fait de la faible diffusion",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "IS",
+      "generations": [
+        {
+          "code_chassis": "XE10",
+          "annees": "1999-2005",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "IS 200 - 155ch",
+              "code_moteur": "1G-FE",
+              "cylindree": "2.0L",
+              "puissance_ch": 155,
+              "boite": [
+                "BVM5",
+                "BVA5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité mécanique remarquable, très peu de pannes recensées",
+                  "symptomes": [
+                    "Aucun symptôme préoccupant récurrent majeur identifié"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Contrôle d'usage lors des révisions périodiques standards",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Faible (entretien courant, indicatif)"
+                },
+                {
+                  "probleme": "Consommation élevée pour la puissance délivrée",
+                  "symptomes": [
+                    "Consommation moyenne ressentie plus élevée que la valeur homologuée"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Suspension arrière multibras coûteuse en entretien",
+                  "symptomes": [
+                    "Bruit de cliquetis dans les trains arrière sur revêtement dégradé"
+                  ],
+                  "kilometrage_apparition": "Généralement au-delà de 150 000 km",
+                  "diagnostic": "Contrôle du jeu des trains arrière sur pont élévateur",
+                  "piece_concernee": "Trains roulants / suspension",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré (indicatif)"
+                },
+                {
+                  "probleme": "Électronique embarquée vieillissante (écrans, calculateurs)",
+                  "symptomes": [
+                    "Dysfonctionnements occasionnels de l'écran ou des calculateurs sur exemplaires anciens"
+                  ],
+                  "kilometrage_apparition": "Lié à l'âge du véhicule",
+                  "diagnostic": "Diagnostic électronique complet",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Occasionnel sur exemplaires anciens",
+                  "cout_reparation_estime": "Modéré (indicatif)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "XE20",
+          "annees": "2005-2013",
+          "phases": [
+            "Phase 1 (2005-2008)",
+            "Phase 2 (2008-2013)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "IS 250 - 208ch",
+              "code_moteur": "4GR-FSE",
+              "cylindree": "2.5L",
+              "puissance_ch": 208,
+              "boite": [
+                "BVA6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité mécanique excellente",
+                  "symptomes": [
+                    "Aucun symptôme préoccupant récurrent majeur identifié"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Contrôle d'usage lors des révisions périodiques standards",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Faible (entretien courant, indicatif)"
+                },
+                {
+                  "probleme": "Injection directe D-4 sensible à l'encrassement des soupapes sur très haut kilométrage",
+                  "symptomes": [
+                    "Ralenti irrégulier",
+                    "Légère perte de puissance sur très haut kilométrage"
+                  ],
+                  "kilometrage_apparition": "Généralement au-delà de 200 000 km",
+                  "diagnostic": "Contrôle de l'encrassement des soupapes d'admission, éventuel nettoyage",
+                  "piece_concernee": "Système d'alimentation / dépollution",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel sur très haut kilométrage",
+                  "cout_reparation_estime": "Modéré (nettoyage soupapes, indicatif)"
+                },
+                {
+                  "probleme": "Consommation de carburant assez élevée",
+                  "symptomes": [
+                    "Consommation moyenne ressentie plus élevée que la valeur homologuée"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Coût des pièces plus élevé que la moyenne du segment",
+                  "symptomes": [
+                    "Coût des révisions et pièces supérieur à la moyenne"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "IS 220d - 177ch",
+              "code_moteur": "2AD-FHV",
+              "cylindree": "2.2L",
+              "puissance_ch": 177,
+              "boite": [
+                "BVM6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Risque de fissure de culasse documenté sur ce bloc (identique à certains Toyota RAV4/Avensis de la période)",
+                  "symptomes": [
+                    "Perte de liquide de refroidissement sans fuite externe visible",
+                    "Surchauffe moteur",
+                    "Voyant température allumé",
+                    "Fumée blanche à l'échappement"
+                  ],
+                  "kilometrage_apparition": "Rapporté fréquemment entre 60 000 et 120 000 km sur les exemplaires touchés par ce défaut (estimation indicative)",
+                  "diagnostic": "Test de pression du circuit de refroidissement, recherche de gaz de combustion dans le liquide de refroidissement",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent sur les millésimes concernés par le défaut",
+                  "cout_reparation_estime": "Élevé, remplacement de culasse (indicatif — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Injecteurs piézo-électriques coûteux",
+                  "symptomes": [
+                    "Démarrage difficile à froid",
+                    "À-coups à l'accélération",
+                    "Voyant moteur allumé"
+                  ],
+                  "kilometrage_apparition": "Généralement au-delà de 150 000 km (estimation indicative)",
+                  "diagnostic": "Lecture des codes défaut, test de débit injecteur",
+                  "piece_concernee": "Système d'alimentation / dépollution",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé (indicatif)"
+                },
+                {
+                  "probleme": "FAP sensible à l'usage urbain",
+                  "symptomes": [
+                    "Voyant FAP allumé",
+                    "Régénérations fréquentes et incomplètes"
+                  ],
+                  "kilometrage_apparition": "Variable, accéléré par usage urbain exclusif",
+                  "diagnostic": "Lecture du niveau d'encrassement au diagnostic",
+                  "piece_concernee": "Système d'alimentation / dépollution",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent en usage urbain",
+                  "cout_reparation_estime": "Modéré à élevé (indicatif)"
+                },
+                {
+                  "probleme": "Vanne EGR à surveiller de près",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Perte de puissance",
+                    "Voyant moteur allumé"
+                  ],
+                  "kilometrage_apparition": "Variable selon usage",
+                  "diagnostic": "Lecture des codes défaut",
+                  "piece_concernee": "Système d'alimentation / dépollution",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Fréquent en usage urbain",
+                  "cout_reparation_estime": "Modéré (indicatif)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "XE30",
+          "annees": "2013-2020",
+          "phases": [
+            "Phase 1 (2013-2016)",
+            "Phase 2 (2016-2020)"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride",
+              "nom": "IS 300h - 223ch",
+              "code_moteur": "2AR-FSE",
+              "cylindree": "2.5L",
+              "puissance_ch": 223,
+              "boite": [
+                "BVA e-CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité hybride exemplaire",
+                  "symptomes": [
+                    "Aucun symptôme préoccupant récurrent majeur identifié"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Contrôle d'usage lors des révisions périodiques standards",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Faible (entretien courant, indicatif)"
+                },
+                {
+                  "probleme": "Batterie NiMH durable",
+                  "symptomes": [
+                    "Baisse progressive de l'autonomie électrique sur exemplaires très âgés"
+                  ],
+                  "kilometrage_apparition": "Généralement au-delà de 200 000-250 000 km avant dégradation notable",
+                  "diagnostic": "Test de capacité de la batterie hybride au diagnostic",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare avant très haut kilométrage",
+                  "cout_reparation_estime": "Élevé si remplacement nécessaire hors garantie (indicatif)"
+                },
+                {
+                  "probleme": "Insonorisation moteur perfectible en forte accélération (effet CVT)",
+                  "symptomes": [
+                    "Régime moteur qui monte fortement lors d'une accélération franche, bruit moteur ressenti comme intrusif"
+                  ],
+                  "kilometrage_apparition": "Non applicable, caractéristique de conception",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Boîte de vitesses / transmission",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Coffre réduit par la présence de la batterie hybride",
+                  "symptomes": [
+                    "Volume de chargement inférieur ressenti par rapport à la version essence"
+                  ],
+                  "kilometrage_apparition": "Non applicable, caractéristique de conception",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Carrosserie / corrosion",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "IS (restylage récent, fin de la génération XE30)",
+      "generations": [
+        {
+          "code_chassis": "XE30 (restylage final)",
+          "annees": "2020-présent",
+          "phases": [
+            "Phase finale"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "IS 350 - 313ch",
+              "code_moteur": "2GR-FKS",
+              "cylindree": "3.5L",
+              "puissance_ch": 313,
+              "boite": [
+                "BVA8"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité mécanique très bonne, moteur V6 atmosphérique réputé robuste",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Modèle non commercialisé en Europe sous cette motorisation (marché nord-américain)",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Consommation élevée",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Gamme vieillissante par rapport aux rivales allemandes plus récentes",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "IS F",
+      "generations": [
+        {
+          "code_chassis": "USE20",
+          "annees": "2007-2014",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "5.0 V8 - 423ch",
+              "code_moteur": "2UR-GSE",
+              "cylindree": "5.0L",
+              "puissance_ch": 423,
+              "boite": [
+                "BVA8"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité mécanique très bonne, moteur V8 atmosphérique réputé robuste",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Consommation très élevée",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Freins consommables rapidement en usage sportif",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Système de freinage",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Modèle resté confidentiel commercialement face aux rivales allemandes (M3, C63 AMG)",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "LC",
+      "generations": [
+        {
+          "code_chassis": "XZ100",
+          "annees": "2017-présent",
+          "phases": [
+            "Phase unique à ce jour"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride",
+              "nom": "LC 500h - 359ch",
+              "code_moteur": "2GR-FXS + moteurs électriques (transmission multi-étagée)",
+              "cylindree": "3.5L",
+              "puissance_ch": 359,
+              "boite": [
+                "BVA e-CVT multi-étagée"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Système hybride complexe (boîte multi-étagée combinée à l'e-CVT), diagnostic pointu nécessaire",
+                  "symptomes": [
+                    "Rare, mais en cas de défaillance : voyant hybride (triangle rouge) allumé, passage en mode dégradé"
+                  ],
+                  "kilometrage_apparition": "Rare, technologie encore relativement récente et peu diffusée",
+                  "diagnostic": "Diagnostic spécialisé via outil Toyota/Lexus, lecture des codes défaut hybrides spécifiques",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Très élevé si intervention nécessaire (indicatif — véhicule de prestige à pièces coûteuses)"
+                },
+                {
+                  "probleme": "Batterie lithium-ion performante mais coûteuse hors garantie",
+                  "symptomes": [
+                    "Baisse progressive de l'autonomie électrique sur exemplaires très âgés"
+                  ],
+                  "kilometrage_apparition": "Généralement au-delà de 150 000-200 000 km avant dégradation notable (estimation indicative)",
+                  "diagnostic": "Test de capacité de la batterie hybride au diagnostic",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare avant très haut kilométrage",
+                  "cout_reparation_estime": "Très élevé si remplacement nécessaire hors garantie (indicatif)"
+                },
+                {
+                  "probleme": "Poids important du véhicule sollicitant les trains roulants",
+                  "symptomes": [
+                    "Usure plus rapide des liaisons au sol par rapport à un véhicule plus léger"
+                  ],
+                  "kilometrage_apparition": "Variable selon usage",
+                  "diagnostic": "Contrôle du jeu des trains roulants sur pont élévateur",
+                  "piece_concernee": "Trains roulants / suspension",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré (indicatif)"
+                },
+                {
+                  "probleme": "Coût d'entretien très élevé (modèle grand tourisme haut de gamme)",
+                  "symptomes": [
+                    "Coût des révisions périodiques nettement supérieur à la moyenne du segment"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable, caractéristique du positionnement du modèle",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "LC 500 - 477ch",
+              "code_moteur": "2UR-GSE",
+              "cylindree": "5.0L",
+              "puissance_ch": 477,
+              "boite": [
+                "BVA10"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité mécanique très bonne, moteur V8 atmosphérique robuste",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Consommation très élevée",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Coût d'entretien élevé",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Boîte 10 rapports globalement fiable mais complexe en cas de panne électronique",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Boîte de vitesses / transmission",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "LFA",
+      "generations": [
+        {
+          "code_chassis": "1ère et unique génération",
+          "annees": "2010-2012",
+          "phases": [
+            "Phase unique (production limitée à 500 exemplaires)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "4.8 V10 - 560ch",
+              "code_moteur": "1LR-GUE",
+              "cylindree": "4.8L",
+              "puissance_ch": 560,
+              "boite": [
+                "BVA6 séquentielle robotisée"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Modèle produit en série extrêmement limitée (500 exemplaires mondiaux), fiabilité globalement excellente mais entretien nécessitant un réseau très spécialisé",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Coût d'entretien et de pièces détachées extrêmement élevé du fait de la rareté absolue du modèle",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Boîte robotisée séquentielle à entretien pointu",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Boîte de vitesses / transmission",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Valeur du véhicule tellement élevée que le moindre entretien nécessite des précautions particulières (véhicule de collection)",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "LM (monospace de très haut de gamme)",
+      "generations": [
+        {
+          "code_chassis": "1ère génération",
+          "annees": "2023-présent",
+          "phases": [
+            "Phase unique à ce jour"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride",
+              "nom": "2.5i Hybrid - 250ch",
+              "code_moteur": "A25A-FXS",
+              "cylindree": "2.5L",
+              "puissance_ch": 250,
+              "boite": [
+                "BVA e-CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Modèle très récent, aucun recul sur la fiabilité à long terme",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Modèle réservé principalement aux marchés asiatiques (Chine, Japon), quasi absent d'Europe et d'Amérique du Nord",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Coût d'entretien très élevé (monospace ultra-luxe, pièces sur-mesure)",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Réseau de techniciens qualifiés hors des marchés principaux quasi inexistant",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "LS",
+      "generations": [
+        {
+          "code_chassis": "XF20",
+          "annees": "2000-2006",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "LS 430 - 282ch",
+              "code_moteur": "3UZ-FE",
+              "cylindree": "4.3L",
+              "puissance_ch": 282,
+              "boite": [
+                "BVA6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité mécanique exceptionnelle, référence de l'industrie automobile",
+                  "symptomes": [
+                    "Aucun symptôme préoccupant récurrent majeur identifié, moteur réputé pour dépasser fréquemment 300 000-400 000 km"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Contrôle d'usage lors des révisions périodiques standards",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Faible (entretien courant, indicatif)"
+                },
+                {
+                  "probleme": "Consommation élevée",
+                  "symptomes": [
+                    "Consommation moyenne ressentie nettement plus élevée que la valeur homologuée"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Suspension pneumatique coûteuse en cas de panne sur haut kilométrage",
+                  "symptomes": [
+                    "Affaissement anormal du véhicule d'un côté",
+                    "Compresseur qui tourne fréquemment"
+                  ],
+                  "kilometrage_apparition": "Variable, souvent au-delà de 150 000-200 000 km",
+                  "diagnostic": "Contrôle du circuit pneumatique et du compresseur",
+                  "piece_concernee": "Trains roulants / suspension",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé (indicatif)"
+                },
+                {
+                  "probleme": "Coût des pièces élevé mais fréquence des pannes très faible",
+                  "symptomes": [
+                    "Non applicable"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "XF40",
+          "annees": "2006-2017",
+          "phases": [
+            "Phase 1 (2006-2012)",
+            "Phase 2 (2012-2017)"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride",
+              "nom": "LS 600h - 445ch",
+              "code_moteur": "2UR-FSE + moteur électrique",
+              "cylindree": "5.0L",
+              "puissance_ch": 445,
+              "boite": [
+                "BVA e-CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité hybride exemplaire malgré la complexité du système",
+                  "symptomes": [
+                    "Aucun symptôme préoccupant récurrent majeur identifié"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Contrôle d'usage lors des révisions périodiques standards",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Faible (entretien courant, indicatif)"
+                },
+                {
+                  "probleme": "Batterie NiMH durable",
+                  "symptomes": [
+                    "Baisse progressive de l'autonomie électrique sur exemplaires très âgés"
+                  ],
+                  "kilometrage_apparition": "Généralement au-delà de 200 000-250 000 km avant dégradation notable",
+                  "diagnostic": "Test de capacité de la batterie hybride au diagnostic",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare avant très haut kilométrage",
+                  "cout_reparation_estime": "Élevé si remplacement nécessaire hors garantie (indicatif — rare en pratique)"
+                },
+                {
+                  "probleme": "Coût d'entretien très élevé (pièces haut de gamme spécifiques)",
+                  "symptomes": [
+                    "Coût des révisions périodiques nettement supérieur à la moyenne du segment"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable, caractéristique du positionnement du modèle",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Suspension pneumatique à surveiller sur haut kilométrage",
+                  "symptomes": [
+                    "Affaissement anormal du véhicule d'un côté",
+                    "Compresseur qui tourne fréquemment"
+                  ],
+                  "kilometrage_apparition": "Variable, souvent au-delà de 150 000-200 000 km",
+                  "diagnostic": "Contrôle du circuit pneumatique et du compresseur",
+                  "piece_concernee": "Trains roulants / suspension",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé (indicatif)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "LX",
+      "generations": [
+        {
+          "code_chassis": "J200 (base Toyota Land Cruiser 200)",
+          "annees": "2007-2021",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "LX 570 - 367ch",
+              "code_moteur": "3UR-FE",
+              "cylindree": "5.7L",
+              "puissance_ch": 367,
+              "boite": [
+                "BVA8"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité réputée exceptionnelle, base technique Land Cruiser 200 éprouvée",
+                  "symptomes": [
+                    "Aucun symptôme préoccupant récurrent majeur identifié"
+                  ],
+                  "kilometrage_apparition": "Non applicable, moteur réputé pour dépasser fréquemment 300 000 km avec entretien suivi",
+                  "diagnostic": "Contrôle d'usage lors des révisions périodiques standards",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Faible (entretien courant, indicatif)"
+                },
+                {
+                  "probleme": "Consommation très élevée",
+                  "symptomes": [
+                    "Consommation moyenne ressentie nettement plus élevée que la valeur homologuée"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Modèle non commercialisé en Europe de l'Ouest, réseau de pièces local limité",
+                  "symptomes": [
+                    "Délais et coûts d'approvisionnement de pièces supérieurs en Europe"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Coût d'entretien très élevé (gros V8, pièces premium)",
+                  "symptomes": [
+                    "Coût des révisions périodiques nettement supérieur à la moyenne"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable, caractéristique du positionnement premium",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "NX",
+      "generations": [
+        {
+          "code_chassis": "AZ10",
+          "annees": "2014-2021",
+          "phases": [
+            "Phase 1 (2014-2017)",
+            "Phase 2 (2017-2021)"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride",
+              "nom": "NX 300h - 197ch",
+              "code_moteur": "2AR-FXE",
+              "cylindree": "2.5L",
+              "puissance_ch": 197,
+              "boite": [
+                "BVA e-CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité hybride exemplaire",
+                  "symptomes": [
+                    "Aucun symptôme préoccupant récurrent majeur identifié"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Contrôle d'usage lors des révisions périodiques standards",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Faible (entretien courant, indicatif)"
+                },
+                {
+                  "probleme": "Batterie NiMH durable",
+                  "symptomes": [
+                    "Baisse progressive de l'autonomie électrique sur exemplaires très âgés"
+                  ],
+                  "kilometrage_apparition": "Généralement au-delà de 200 000-250 000 km avant dégradation notable",
+                  "diagnostic": "Test de capacité de la batterie hybride au diagnostic",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare avant très haut kilométrage",
+                  "cout_reparation_estime": "Élevé si remplacement nécessaire hors garantie (indicatif)"
+                },
+                {
+                  "probleme": "Coffre limité par la présence de la batterie",
+                  "symptomes": [
+                    "Volume de chargement inférieur ressenti par rapport à la version essence"
+                  ],
+                  "kilometrage_apparition": "Non applicable, caractéristique de conception",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Carrosserie / corrosion",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Système multimédia à pavé tactile jugé peu intuitif",
+                  "symptomes": [
+                    "Difficulté de manipulation en roulant selon les retours utilisateurs"
+                  ],
+                  "kilometrage_apparition": "Non applicable, caractéristique de conception",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "NX 200t - 238ch",
+              "code_moteur": "8AR-FTS",
+              "cylindree": "2.0L",
+              "puissance_ch": 238,
+              "boite": [
+                "BVA6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Premier moteur turbo essence de Lexus, fiabilité correcte mais moins de recul",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Consommation plus élevée que la version hybride",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Turbo à surveiller sur usage sportif répété",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Coût des pièces spécifiques élevé",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "NX (2e génération)",
+      "generations": [
+        {
+          "code_chassis": "AZ20",
+          "annees": "2021-présent",
+          "phases": [
+            "Phase unique à ce jour"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride rechargeable",
+              "nom": "NX 450h+ Plug-in Hybrid - 309ch",
+              "code_moteur": "A25A-FXS + moteurs électriques",
+              "cylindree": "2.5L",
+              "puissance_ch": 309,
+              "boite": [
+                "BVA e-CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Modèle récent, peu de recul sur la fiabilité à long terme",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Autonomie électrique réelle inférieure aux annonces par temps froid",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Coût de remplacement de la batterie haute tension élevé hors garantie",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Poids important pouvant accélérer l'usure des trains roulants",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                }
+              ]
+            },
+            {
+              "type": "Hybride",
+              "nom": "NX 350h - 243ch",
+              "code_moteur": "A25A-FXS",
+              "cylindree": "2.5L",
+              "puissance_ch": 243,
+              "boite": [
+                "BVA e-CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité hybride réputée excellente",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Batterie lithium-ion performante mais coûteuse hors garantie",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Insonorisation moteur perfectible en forte accélération (effet CVT)",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Consommation réelle plus élevée qu'annoncée en usage autoroutier",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "RC",
+      "generations": [
+        {
+          "code_chassis": "USC10/GSC10",
+          "annees": "2014-présent",
+          "phases": [
+            "Phase 1 (2014-2018)",
+            "Phase 2 (2018-présent)"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride",
+              "nom": "RC 300h - 223ch",
+              "code_moteur": "2AR-FSE",
+              "cylindree": "2.5L",
+              "puissance_ch": 223,
+              "boite": [
+                "BVA e-CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité hybride exemplaire",
+                  "symptomes": [
+                    "Aucun symptôme préoccupant récurrent majeur identifié"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Contrôle d'usage lors des révisions périodiques standards",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Faible (entretien courant, indicatif)"
+                },
+                {
+                  "probleme": "Batterie NiMH durable",
+                  "symptomes": [
+                    "Baisse progressive de l'autonomie électrique sur exemplaires très âgés"
+                  ],
+                  "kilometrage_apparition": "Généralement au-delà de 200 000-250 000 km avant dégradation notable",
+                  "diagnostic": "Test de capacité de la batterie hybride au diagnostic",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare avant très haut kilométrage",
+                  "cout_reparation_estime": "Élevé si remplacement nécessaire hors garantie (indicatif)"
+                },
+                {
+                  "probleme": "Visibilité arrière réduite par le design (lunette étroite)",
+                  "symptomes": [
+                    "Angle mort arrière important ressenti par les conducteurs"
+                  ],
+                  "kilometrage_apparition": "Non applicable, caractéristique de conception",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Carrosserie / corrosion",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Insonorisation moteur perfectible en forte accélération (effet CVT)",
+                  "symptomes": [
+                    "Régime moteur qui monte fortement lors d'une accélération franche, bruit moteur ressenti comme intrusif"
+                  ],
+                  "kilometrage_apparition": "Non applicable, caractéristique de conception",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Boîte de vitesses / transmission",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "RC F - 477ch",
+              "code_moteur": "2UR-GSE",
+              "cylindree": "5.0L",
+              "puissance_ch": 477,
+              "boite": [
+                "BVA8"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité mécanique très bonne, moteur V8 atmosphérique réputé robuste",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Consommation très élevée",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Freins consommables rapidement en usage sportif",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Système de freinage",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Coût d'entretien élevé (pièces performance spécifiques)",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "RX",
+      "generations": [
+        {
+          "code_chassis": "XU30",
+          "annees": "2003-2009",
+          "phases": [
+            "Phase 1 (2003-2006)",
+            "Phase 2 (2006-2009)"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride",
+              "nom": "RX 400h - 272ch",
+              "code_moteur": "3MZ-FE + moteurs électriques",
+              "cylindree": "3.3L",
+              "puissance_ch": 272,
+              "boite": [
+                "BVA e-CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité hybride pionnière déjà très bonne",
+                  "symptomes": [
+                    "Aucun symptôme préoccupant récurrent majeur identifié"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Contrôle d'usage lors des révisions périodiques standards",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Faible (entretien courant, indicatif)"
+                },
+                {
+                  "probleme": "Batterie NiMH durable sur le long terme",
+                  "symptomes": [
+                    "Baisse progressive de l'autonomie électrique sur exemplaires très âgés"
+                  ],
+                  "kilometrage_apparition": "Généralement au-delà de 200 000-250 000 km avant dégradation notable",
+                  "diagnostic": "Test de capacité de la batterie hybride au diagnostic",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare avant très haut kilométrage",
+                  "cout_reparation_estime": "Élevé si remplacement nécessaire hors garantie (indicatif)"
+                },
+                {
+                  "probleme": "Consommation réelle supérieure aux annonces sur autoroute",
+                  "symptomes": [
+                    "Consommation moyenne ressentie plus élevée que la valeur homologuée en usage autoroutier"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Coût d'entretien plus élevé que la moyenne du segment",
+                  "symptomes": [
+                    "Coût des révisions périodiques supérieur à la moyenne"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable, caractéristique du positionnement premium",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "RX 300 - 204ch",
+              "code_moteur": "1MZ-FE",
+              "cylindree": "3.0L",
+              "puissance_ch": 204,
+              "boite": [
+                "BVA5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité mécanique excellente",
+                  "symptomes": [
+                    "Aucun symptôme préoccupant récurrent majeur identifié"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Contrôle d'usage lors des révisions périodiques standards",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Faible (entretien courant, indicatif)"
+                },
+                {
+                  "probleme": "Consommation élevée",
+                  "symptomes": [
+                    "Consommation moyenne ressentie nettement plus élevée que la valeur homologuée"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Joint de culasse à surveiller sur très haut kilométrage",
+                  "symptomes": [
+                    "Perte de liquide de refroidissement sans fuite visible externe sur exemplaires très kilométrés"
+                  ],
+                  "kilometrage_apparition": "Généralement au-delà de 250 000 km",
+                  "diagnostic": "Test de pression du circuit de refroidissement",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Élevé si applicable (indicatif)"
+                },
+                {
+                  "probleme": "Suspension pneumatique (option) coûteuse en cas de panne",
+                  "symptomes": [
+                    "Affaissement anormal du véhicule d'un côté",
+                    "Compresseur qui tourne fréquemment"
+                  ],
+                  "kilometrage_apparition": "Variable, souvent au-delà de 150 000 km ou avec l'âge",
+                  "diagnostic": "Contrôle du circuit pneumatique et du compresseur",
+                  "piece_concernee": "Trains roulants / suspension",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé (indicatif)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "XU60",
+          "annees": "2015-2022",
+          "phases": [
+            "Phase 1 (2015-2019)",
+            "Phase 2 (2019-2022)"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride",
+              "nom": "RX 450h - 313ch",
+              "code_moteur": "2GR-FXE",
+              "cylindree": "3.5L",
+              "puissance_ch": 313,
+              "boite": [
+                "BVA e-CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité hybride exemplaire",
+                  "symptomes": [
+                    "Aucun symptôme préoccupant récurrent majeur identifié"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Contrôle d'usage lors des révisions périodiques standards",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Faible (entretien courant, indicatif)"
+                },
+                {
+                  "probleme": "Batterie NiMH toujours durable",
+                  "symptomes": [
+                    "Baisse progressive de l'autonomie électrique sur exemplaires très âgés"
+                  ],
+                  "kilometrage_apparition": "Généralement au-delà de 200 000-250 000 km avant dégradation notable",
+                  "diagnostic": "Test de capacité de la batterie hybride au diagnostic",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare avant très haut kilométrage",
+                  "cout_reparation_estime": "Élevé si remplacement nécessaire hors garantie (indicatif — rare en pratique)"
+                },
+                {
+                  "probleme": "Coût d'entretien élevé (pièces premium)",
+                  "symptomes": [
+                    "Coût des révisions périodiques supérieur à un SUV généraliste"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Non applicable, caractéristique du positionnement premium",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Système multimédia à pavé tactile (remote touch) jugé peu ergonomique",
+                  "symptomes": [
+                    "Difficulté de manipulation en roulant selon les retours utilisateurs"
+                  ],
+                  "kilometrage_apparition": "Non applicable, caractéristique de conception",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "RX 350L / RX 450hL (version longue 3 rangées)",
+      "generations": [
+        {
+          "code_chassis": "XU60 (empattement long)",
+          "annees": "2017-2022",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride",
+              "nom": "RX 450hL - 313ch",
+              "code_moteur": "2GR-FXE",
+              "cylindree": "3.5L",
+              "puissance_ch": 313,
+              "boite": [
+                "BVA e-CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité hybride exemplaire",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Troisième rangée de sièges très étroite, adaptée aux enfants uniquement",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Modèle non commercialisé partout, disponibilité variable selon les marchés",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Coffre très réduit lorsque la troisième rangée est utilisée",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "RZ",
+      "generations": [
+        {
+          "code_chassis": "1ère génération",
+          "annees": "2022-présent",
+          "phases": [
+            "Phase unique à ce jour"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "71,4 kWh - 313ch (bi-moteur, transmission intégrale de série)",
+              "code_moteur": "Moteurs synchrones à aimants permanents (plateforme partagée avec bZ4X/Solterra)",
+              "cylindree": "N/A",
+              "puissance_ch": 313,
+              "boite": [
+                "Réducteur fixe monovitesse"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Modèle très récent, aucun recul sur la fiabilité à long terme",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Plateforme partagée avec le Toyota bZ4X ayant connu un rappel majeur pour risque de désserrage des boulons de roue",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable ; souvent rapporté au-delà de 100 000-150 000 km, parfois plus tôt en cas d'entretien tardif (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Fréquent (point de vigilance standard sur ce modèle)",
+                  "cout_reparation_estime": "Élevé (indicatif, plusieurs centaines à quelques milliers d'euros selon le marché et le pays — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Autonomie réelle inférieure aux annonces par temps froid, comme la majorité des véhicules électriques",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Coût de remplacement de la batterie potentiellement très élevé hors garantie",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "SC",
+      "generations": [
+        {
+          "code_chassis": "Z40",
+          "annees": "2001-2010",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "SC 430 - 288ch",
+              "code_moteur": "3UZ-FE",
+              "cylindree": "4.3L",
+              "puissance_ch": 288,
+              "boite": [
+                "BVA5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité mécanique exceptionnelle, référence de l'industrie automobile",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Toit rigide rétractable au mécanisme complexe, coûteux en cas de panne hors garantie",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Consommation élevée",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Coffre très réduit lorsque le toit est ouvert",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "TX",
+      "generations": [
+        {
+          "code_chassis": "1ère génération",
+          "annees": "2023-présent",
+          "phases": [
+            "Phase unique à ce jour"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride",
+              "nom": "TX 500h - 366ch",
+              "code_moteur": "T24A-FTS + moteur électrique",
+              "cylindree": "2.4L",
+              "puissance_ch": 366,
+              "boite": [
+                "BVA8"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Modèle très récent, aucun recul sur la fiabilité à long terme",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Modèle non commercialisé en Europe (marché nord-américain principalement), réseau de pièces local limité",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Système hybride avec turbo, complexité accrue par rapport aux hybrides atmosphériques Toyota/Lexus habituels",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                },
+                {
+                  "probleme": "Coût d'entretien élevé (SUV 3 rangées haut de gamme)",
+                  "symptomes": [
+                    "Symptômes variables selon le cas — se référer à la description du problème ci-dessus; un diagnostic professionnel reste nécessaire pour confirmation"
+                  ],
+                  "kilometrage_apparition": "Variable selon l'usage et l'entretien ; peut apparaître à tout kilométrage (estimation indicative, non garantie)",
+                  "diagnostic": "Contrôle visuel et/ou lecture des codes défaut lors d'une révision ou d'un diagnostic pré-achat par un professionnel qualifié",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Modérée (gênant mais rarement immobilisant)",
+                  "frequence": "Occasionnel (dépend fortement de l'usage et de l'entretien)",
+                  "cout_reparation_estime": "Modéré (indicatif, quelques centaines d'euros — à faire chiffrer par un professionnel)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "UX",
+      "generations": [
+        {
+          "code_chassis": "MZAA10",
+          "annees": "2018-présent",
+          "phases": [
+            "Phase unique à ce jour"
+          ],
+          "motorisations": [
+            {
+              "type": "Hybride",
+              "nom": "UX 250h - 184ch",
+              "code_moteur": "M20A-FXS",
+              "cylindree": "2.0L",
+              "puissance_ch": 184,
+              "boite": [
+                "BVA e-CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Fiabilité hybride réputée excellente, technologie mature",
+                  "symptomes": [
+                    "Aucun symptôme préoccupant récurrent majeur identifié"
+                  ],
+                  "kilometrage_apparition": "Non applicable",
+                  "diagnostic": "Contrôle d'usage lors des révisions périodiques standards",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare",
+                  "cout_reparation_estime": "Faible (entretien courant, indicatif)"
+                },
+                {
+                  "probleme": "Batterie lithium-ion performante mais coûteuse hors garantie",
+                  "symptomes": [
+                    "Baisse progressive de l'autonomie électrique sur exemplaires très âgés"
+                  ],
+                  "kilometrage_apparition": "Généralement au-delà de 200 000 km avant dégradation notable",
+                  "diagnostic": "Test de capacité de la batterie hybride au diagnostic",
+                  "piece_concernee": "Électronique embarquée",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "Rare avant très haut kilométrage",
+                  "cout_reparation_estime": "Élevé si remplacement nécessaire hors garantie (indicatif)"
+                },
+                {
+                  "probleme": "Espace intérieur et coffre limités pour la catégorie",
+                  "symptomes": [
+                    "Volume de chargement et habitabilité arrière jugés en retrait par rapport à la concurrence"
+                  ],
+                  "kilometrage_apparition": "Non applicable, caractéristique de conception",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Carrosserie / corrosion",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                },
+                {
+                  "probleme": "Insonorisation moteur perfectible en forte accélération (effet CVT)",
+                  "symptomes": [
+                    "Régime moteur qui monte fortement lors d'une accélération franche, bruit moteur ressenti comme intrusif"
+                  ],
+                  "kilometrage_apparition": "Non applicable, caractéristique de conception",
+                  "diagnostic": "Non applicable, non lié à une panne",
+                  "piece_concernee": "Boîte de vitesses / transmission",
+                  "gravite": "Mineure (usure normale ou gêne limitée)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Non applicable"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

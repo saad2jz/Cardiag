@@ -1,0 +1,245 @@
+{
+  "nom": "Isdera",
+  "modeles": [
+    {
+      "nom": "Commendatore",
+      "generations": [
+        {
+          "code_chassis": "Commendatore 112i prototype",
+          "annees": "1993",
+          "phases": [
+            "Prototype unique présenté à Francfort : moteur central arrière, châssis tubulaire, aérofrein et suspension active Bilstein."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "M120 6.0 V12 — 408 ch",
+              "code_moteur": "Mercedes-Benz M120 Isdera",
+              "cylindree": "5 987 cm³",
+              "puissance_ch": 408,
+              "boite": [
+                "Manuelle 6 rapports Getrag/RUF, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et distribution du Mercedes M120 préparé",
+                  "symptomes": [
+                    "Pression d’huile faible ou bruit de chaîne",
+                    "Température instable",
+                    "Fumée, fuite ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "L’âge, l’immobilisation et la qualité de la préparation priment sur le kilométrage ; contrôle avant chaque roulage",
+                  "diagnostic": "Identifier le M120 6,0 ou la transformation 6,9 l avant toute commande. Mesurer pression d’huile, compressions et étanchéité des cylindres, analyser huile et filtre, puis contrôler chaînes, guides, tendeurs, pompes, radiateurs, ventilateurs, durites, joints et reniflards.",
+                  "piece_concernee": "V12 Mercedes-Benz M120 central arrière",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé sur prototype immobilisé ou moteur modifié sans dossier",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 50 000 €"
+                },
+                {
+                  "probleme": "Injection, allumage et gestion moteur spécifique Isdera",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés sous charge",
+                    "Puissance incohérente ou voyant"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et après chaque immobilisation prolongée",
+                  "diagnostic": "Lire les calculateurs avec l’outillage compatible Mercedes de l’époque, vérifier tensions et masses, capteurs vilebrequin/arbre à cames, débitmètres, pressions carburant, injecteurs, bobines, bougies et faisceau adapté par Isdera. Comparer les références à la configuration documentée du véhicule.",
+                  "piece_concernee": "Gestion moteur, injection et allumage Commendatore",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Occasionnelle mais complexe faute de pièces spécifiques",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 12 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle six rapports, embrayage, différentiel et arbres",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage ou vibration",
+                    "Bruit de roulement ou fuite"
+                  ],
+                  "kilometrage_apparition": "À chaque expertise et dès apparition d’un bruit",
+                  "diagnostic": "Identifier la boîte six rapports Getrag/RUF réellement montée, contrôler huile et limaille, commande, synchros, embrayage, volant moteur, supports, arbres, joints et différentiel. Vérifier alignement moteur-boîte et absence de contrainte du châssis tubulaire.",
+                  "piece_concernee": "Transmission spécifique Isdera",
+                  "gravite": "Critique",
+                  "frequence": "Faible en usage normal, mais remise en état très spécialisée",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, aérodynamique active, suspension et authenticité du prototype",
+                  "symptomes": [
+                    "Jeu ou fissure",
+                    "Assiette active inopérante",
+                    "Aérofrein défaillant ou géométrie instable"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle avant acquisition et contrôle avant usage rapide",
+                  "diagnostic": "Documenter l’état 1993 ou Silver Arrow, moteur, carrosserie et provenance. Inspecter tubes et soudures, panneaux composites, portes papillon, hydraulique/électronique de suspension Bilstein, aérofrein, freins Brembo, roues BBS, pneus, géométrie et fixations de carrosserie.",
+                  "piece_concernee": "Structure, trains roulants et systèmes actifs Commendatore",
+                  "gravite": "Critique pour la sécurité et la valeur",
+                  "frequence": "Risque élevé de vieillissement et de modification sur exemplaire unique",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 100 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Silver Arrow C112i évolution",
+          "annees": "1999–2016",
+          "phases": [
+            "Évolution du même exemplaire en 6,9 l, surnommée Silver Arrow ; restaurée ensuite par Isdera dans sa présentation 1993."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "M120 6.9 V12 — 620 ch",
+              "code_moteur": "Mercedes-Benz M120 6.9 Isdera",
+              "cylindree": "6 900 cm³",
+              "puissance_ch": 620,
+              "boite": [
+                "Manuelle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et distribution du Mercedes M120 préparé",
+                  "symptomes": [
+                    "Pression d’huile faible ou bruit de chaîne",
+                    "Température instable",
+                    "Fumée, fuite ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "L’âge, l’immobilisation et la qualité de la préparation priment sur le kilométrage ; contrôle avant chaque roulage",
+                  "diagnostic": "Identifier le M120 6,0 ou la transformation 6,9 l avant toute commande. Mesurer pression d’huile, compressions et étanchéité des cylindres, analyser huile et filtre, puis contrôler chaînes, guides, tendeurs, pompes, radiateurs, ventilateurs, durites, joints et reniflards.",
+                  "piece_concernee": "V12 Mercedes-Benz M120 central arrière",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé sur prototype immobilisé ou moteur modifié sans dossier",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 50 000 €"
+                },
+                {
+                  "probleme": "Injection, allumage et gestion moteur spécifique Isdera",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés sous charge",
+                    "Puissance incohérente ou voyant"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et après chaque immobilisation prolongée",
+                  "diagnostic": "Lire les calculateurs avec l’outillage compatible Mercedes de l’époque, vérifier tensions et masses, capteurs vilebrequin/arbre à cames, débitmètres, pressions carburant, injecteurs, bobines, bougies et faisceau adapté par Isdera. Comparer les références à la configuration documentée du véhicule.",
+                  "piece_concernee": "Gestion moteur, injection et allumage Commendatore",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Occasionnelle mais complexe faute de pièces spécifiques",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 12 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle six rapports, embrayage, différentiel et arbres",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage ou vibration",
+                    "Bruit de roulement ou fuite"
+                  ],
+                  "kilometrage_apparition": "À chaque expertise et dès apparition d’un bruit",
+                  "diagnostic": "Identifier la boîte six rapports Getrag/RUF réellement montée, contrôler huile et limaille, commande, synchros, embrayage, volant moteur, supports, arbres, joints et différentiel. Vérifier alignement moteur-boîte et absence de contrainte du châssis tubulaire.",
+                  "piece_concernee": "Transmission spécifique Isdera",
+                  "gravite": "Critique",
+                  "frequence": "Faible en usage normal, mais remise en état très spécialisée",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, aérodynamique active, suspension et authenticité du prototype",
+                  "symptomes": [
+                    "Jeu ou fissure",
+                    "Assiette active inopérante",
+                    "Aérofrein défaillant ou géométrie instable"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle avant acquisition et contrôle avant usage rapide",
+                  "diagnostic": "Documenter l’état 1993 ou Silver Arrow, moteur, carrosserie et provenance. Inspecter tubes et soudures, panneaux composites, portes papillon, hydraulique/électronique de suspension Bilstein, aérofrein, freins Brembo, roues BBS, pneus, géométrie et fixations de carrosserie.",
+                  "piece_concernee": "Structure, trains roulants et systèmes actifs Commendatore",
+                  "gravite": "Critique pour la sécurité et la valeur",
+                  "frequence": "Risque élevé de vieillissement et de modification sur exemplaire unique",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 100 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Commendatore GT concept",
+          "annees": "2018",
+          "phases": [
+            "Concept dévoilé à Pékin : puissance combinée officielle de 600 kW et 1 060 Nm ; ne pas le présenter comme une série commercialisée."
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "Double moteur électrique — 816 ch",
+              "code_moteur": "Isdera dual electric 600 kW",
+              "cylindree": "Électrique",
+              "puissance_ch": 816,
+              "boite": [
+                "Transmission électrique, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie de traction, isolation haute tension et refroidissement",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Alerte d’isolation ou puissance limitée",
+                    "Écart de température ou de tension entre modules"
+                  ],
+                  "kilometrage_apparition": "Dès apparition d’une alerte ; vieillissement calendaire déterminant sur prototype",
+                  "diagnostic": "Consigner le véhicule selon la procédure haute tension Isdera, lire tensions, températures, résistance d’isolement et équilibrage de chaque module, puis contrôler circuits de refroidissement, contacteurs, précharge, connecteurs et traces d’humidité. Ne jamais intervenir sans habilitation électrique.",
+                  "piece_concernee": "Batterie et réseau haute tension Commendatore GT",
+                  "gravite": "Critique",
+                  "frequence": "Inconnue, véhicule concept à très faible diffusion",
+                  "cout_reparation_estime": "Extrême : diagnostic spécialisé puis réparation sur devis, potentiellement plus de 50 000 €"
+                },
+                {
+                  "probleme": "Onduleurs, deux moteurs électriques et stratégie de couple",
+                  "symptomes": [
+                    "Perte de motricité",
+                    "À-coups ou bruit de réducteur",
+                    "Défaut d’onduleur"
+                  ],
+                  "kilometrage_apparition": "Selon alertes et historique d’essais",
+                  "diagnostic": "Comparer les défauts des deux chaînes de traction, vérifier températures, courants de phase, capteurs de position, isolation des moteurs, onduleurs, câbles et réducteurs. Contrôler la cohérence du couple total annoncé de 1 060 Nm sans essai pleine charge avant validation.",
+                  "piece_concernee": "Double groupe motopropulseur électrique arrière",
+                  "gravite": "Critique",
+                  "frequence": "Inconnue sur concept",
+                  "cout_reparation_estime": "Extrême : composants prototypes, réparation uniquement avec support constructeur"
+                },
+                {
+                  "probleme": "Chargeur, convertisseur DC/DC et batterie auxiliaire",
+                  "symptomes": [
+                    "Charge impossible",
+                    "Batterie 12 V déchargée",
+                    "Mise sous tension refusée"
+                  ],
+                  "kilometrage_apparition": "Contrôle périodique et avant exposition ou stockage",
+                  "diagnostic": "Contrôler alimentation externe, verrouillage de prise, chargeur embarqué, convertisseur DC/DC, batterie auxiliaire, boucle d’interverrouillage et séquence de précharge. Maintenir les batteries dans la fenêtre de stockage prescrite et journaliser chaque cycle.",
+                  "piece_concernee": "Système de charge et alimentation basse tension",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru après stockage prolongé",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 15 000 €"
+                },
+                {
+                  "probleme": "Châssis carbone, freinage, pneumatiques et fonctions de prototype",
+                  "symptomes": [
+                    "Fissure ou délaminage",
+                    "Freinage irrégulier",
+                    "Fonction électronique indisponible"
+                  ],
+                  "kilometrage_apparition": "Inspection avant chaque démonstration dynamique",
+                  "diagnostic": "Inspecter monocoque et points d’ancrage carbone selon méthode non destructive adaptée, freins, pneus, roulements, direction et suspension. Vérifier logiciels, capteurs et actionneurs à faible diffusion, puis conserver une traçabilité photographique de toute intervention.",
+                  "piece_concernee": "Structure et systèmes dynamiques Commendatore GT",
+                  "gravite": "Critique",
+                  "frequence": "Inconnue, dépend des conditions de conservation",
+                  "cout_reparation_estime": "Extrême : expertise et fabrication de pièces sur devis"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.isdera.com/?page_id=9447",
+        "https://www.autozeitung.de/isdera-commendatore-classic-cars-206634.html"
+      ]
+    }
+  ]
+}

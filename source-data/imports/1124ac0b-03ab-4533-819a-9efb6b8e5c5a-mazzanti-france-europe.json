@@ -1,0 +1,401 @@
+{
+  "nom": "Mazzanti",
+  "modeles": [
+    {
+      "nom": "Evantra",
+      "generations": [
+        {
+          "code_chassis": "Evantra première série",
+          "annees": "2013–2014",
+          "phases": [
+            "Première configuration publique de l’Evantra, révélée à Top Marques Monaco 2013."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "LS7 7.0 V8 atmosphérique — 701 ch",
+              "code_moteur": "GM LS7 préparé Mazzanti",
+              "cylindree": "7 011 cm³",
+              "puissance_ch": 701,
+              "boite": [
+                "Séquentielle robotisée 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et intégrité du V8 atmosphérique à haut régime",
+                  "symptomes": [
+                    "Pression d’huile instable",
+                    "Surchauffe",
+                    "Cliquetis, fumée ou perte de compression"
+                  ],
+                  "kilometrage_apparition": "Dès 20 000 à 50 000 km en usage intensif ; temps de fonctionnement et entretien priment",
+                  "diagnostic": "Identifier précisément Evantra 701, 751 ou 771 et cylindrée 7,0/7,4 l. Mesurer pression d’huile à chaud, compressions/leak-down, analyser huile et filtre, puis contrôler carter sec éventuel, pompes, radiateurs, échangeurs, thermostat, distribution, soupapes et étanchéité.",
+                  "piece_concernee": "V8 atmosphérique Mazzanti/GM préparé",
+                  "gravite": "Critique",
+                  "frequence": "Risque accru sur circuit ou entretien non documenté",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 35 000 €"
+                },
+                {
+                  "probleme": "Admission, injection, allumage et calibration spécifique",
+                  "symptomes": [
+                    "Ratés à haut régime",
+                    "Mélange pauvre ou cliquetis",
+                    "Puissance inférieure à la spécification"
+                  ],
+                  "kilometrage_apparition": "À chaque anomalie et après modification",
+                  "diagnostic": "Lire les données et défauts, contrôler pression/débit carburant, injecteurs, papillon, prises d’air, capteurs de pression/température, sondes lambda, bobines et bougies. Valider la cartographie correspondant au moteur et au carburant au banc instrumenté.",
+                  "piece_concernee": "Gestion moteur Evantra atmosphérique",
+                  "gravite": "Critique",
+                  "frequence": "Occasionnelle, mais conséquences sévères à pleine charge",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 10 000 €"
+                },
+                {
+                  "probleme": "Boîte séquentielle/robotisée, embrayage et différentiel",
+                  "symptomes": [
+                    "Passage lent ou refusé",
+                    "Patinage",
+                    "À-coups, fuite ou surchauffe"
+                  ],
+                  "kilometrage_apparition": "Contrôle fréquent en usage sportif",
+                  "diagnostic": "Identifier la transmission installée sur l’exemplaire, lire températures et défauts, contrôler huile, actionneurs, calibrage AMT, embrayage, volant moteur, supports, arbres et différentiel. Effectuer l’apprentissage uniquement selon la procédure Mazzanti.",
+                  "piece_concernee": "Transmission arrière Evantra",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure sensible aux départs arrêtés et au circuit",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 20 000 €"
+                },
+                {
+                  "probleme": "Cadre acier/chrome-molybdène, carbone, freins et provenance",
+                  "symptomes": [
+                    "Fissure ou réparation visible",
+                    "Géométrie instable",
+                    "Freinage vibrant ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Expertise avant achat et après tout choc",
+                  "diagnostic": "Vérifier numéro d’exemplaire, configuration de livraison et évolutions constructeur. Inspecter cadre caissonné, arceau chrome-molybdène, panneaux carbone, ancrages, suspension réglable, freins Brembo, disques carbone-céramique éventuels, roues et pneus.",
+                  "piece_concernee": "Structure, trains roulants et authenticité Evantra",
+                  "gravite": "Critique pour la sécurité et la valeur",
+                  "frequence": "Risque faible mais coût élevé sur fabrication artisanale",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 80 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Evantra évolution 2015",
+          "annees": "2015–2016",
+          "phases": [
+            "Évolution annoncée officiellement à 751 hp ; vérifier la cylindrée et le montage propres à chaque exemplaire."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 atmosphérique évolution — 751 ch",
+              "code_moteur": "Mazzanti V8 751",
+              "cylindree": "7 000–7 400 cm³ selon exemplaire",
+              "puissance_ch": 751,
+              "boite": [
+                "Séquentielle robotisée 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et intégrité du V8 atmosphérique à haut régime",
+                  "symptomes": [
+                    "Pression d’huile instable",
+                    "Surchauffe",
+                    "Cliquetis, fumée ou perte de compression"
+                  ],
+                  "kilometrage_apparition": "Dès 20 000 à 50 000 km en usage intensif ; temps de fonctionnement et entretien priment",
+                  "diagnostic": "Identifier précisément Evantra 701, 751 ou 771 et cylindrée 7,0/7,4 l. Mesurer pression d’huile à chaud, compressions/leak-down, analyser huile et filtre, puis contrôler carter sec éventuel, pompes, radiateurs, échangeurs, thermostat, distribution, soupapes et étanchéité.",
+                  "piece_concernee": "V8 atmosphérique Mazzanti/GM préparé",
+                  "gravite": "Critique",
+                  "frequence": "Risque accru sur circuit ou entretien non documenté",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 35 000 €"
+                },
+                {
+                  "probleme": "Admission, injection, allumage et calibration spécifique",
+                  "symptomes": [
+                    "Ratés à haut régime",
+                    "Mélange pauvre ou cliquetis",
+                    "Puissance inférieure à la spécification"
+                  ],
+                  "kilometrage_apparition": "À chaque anomalie et après modification",
+                  "diagnostic": "Lire les données et défauts, contrôler pression/débit carburant, injecteurs, papillon, prises d’air, capteurs de pression/température, sondes lambda, bobines et bougies. Valider la cartographie correspondant au moteur et au carburant au banc instrumenté.",
+                  "piece_concernee": "Gestion moteur Evantra atmosphérique",
+                  "gravite": "Critique",
+                  "frequence": "Occasionnelle, mais conséquences sévères à pleine charge",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 10 000 €"
+                },
+                {
+                  "probleme": "Boîte séquentielle/robotisée, embrayage et différentiel",
+                  "symptomes": [
+                    "Passage lent ou refusé",
+                    "Patinage",
+                    "À-coups, fuite ou surchauffe"
+                  ],
+                  "kilometrage_apparition": "Contrôle fréquent en usage sportif",
+                  "diagnostic": "Identifier la transmission installée sur l’exemplaire, lire températures et défauts, contrôler huile, actionneurs, calibrage AMT, embrayage, volant moteur, supports, arbres et différentiel. Effectuer l’apprentissage uniquement selon la procédure Mazzanti.",
+                  "piece_concernee": "Transmission arrière Evantra",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure sensible aux départs arrêtés et au circuit",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 20 000 €"
+                },
+                {
+                  "probleme": "Cadre acier/chrome-molybdène, carbone, freins et provenance",
+                  "symptomes": [
+                    "Fissure ou réparation visible",
+                    "Géométrie instable",
+                    "Freinage vibrant ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Expertise avant achat et après tout choc",
+                  "diagnostic": "Vérifier numéro d’exemplaire, configuration de livraison et évolutions constructeur. Inspecter cadre caissonné, arceau chrome-molybdène, panneaux carbone, ancrages, suspension réglable, freins Brembo, disques carbone-céramique éventuels, roues et pneus.",
+                  "piece_concernee": "Structure, trains roulants et authenticité Evantra",
+                  "gravite": "Critique pour la sécurité et la valeur",
+                  "frequence": "Risque faible mais coût élevé sur fabrication artisanale",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 80 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Evantra 771",
+          "annees": "2017–aujourd’hui",
+          "phases": [
+            "Version atmosphérique de 771 hp et 870 Nm : elle ne doit pas être classée comme biturbo."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 7.4 atmosphérique — 771 ch",
+              "code_moteur": "Mazzanti V8 771",
+              "cylindree": "7 400 cm³",
+              "puissance_ch": 771,
+              "boite": [
+                "Séquentielle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et intégrité du V8 atmosphérique à haut régime",
+                  "symptomes": [
+                    "Pression d’huile instable",
+                    "Surchauffe",
+                    "Cliquetis, fumée ou perte de compression"
+                  ],
+                  "kilometrage_apparition": "Dès 20 000 à 50 000 km en usage intensif ; temps de fonctionnement et entretien priment",
+                  "diagnostic": "Identifier précisément Evantra 701, 751 ou 771 et cylindrée 7,0/7,4 l. Mesurer pression d’huile à chaud, compressions/leak-down, analyser huile et filtre, puis contrôler carter sec éventuel, pompes, radiateurs, échangeurs, thermostat, distribution, soupapes et étanchéité.",
+                  "piece_concernee": "V8 atmosphérique Mazzanti/GM préparé",
+                  "gravite": "Critique",
+                  "frequence": "Risque accru sur circuit ou entretien non documenté",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 35 000 €"
+                },
+                {
+                  "probleme": "Admission, injection, allumage et calibration spécifique",
+                  "symptomes": [
+                    "Ratés à haut régime",
+                    "Mélange pauvre ou cliquetis",
+                    "Puissance inférieure à la spécification"
+                  ],
+                  "kilometrage_apparition": "À chaque anomalie et après modification",
+                  "diagnostic": "Lire les données et défauts, contrôler pression/débit carburant, injecteurs, papillon, prises d’air, capteurs de pression/température, sondes lambda, bobines et bougies. Valider la cartographie correspondant au moteur et au carburant au banc instrumenté.",
+                  "piece_concernee": "Gestion moteur Evantra atmosphérique",
+                  "gravite": "Critique",
+                  "frequence": "Occasionnelle, mais conséquences sévères à pleine charge",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 10 000 €"
+                },
+                {
+                  "probleme": "Boîte séquentielle/robotisée, embrayage et différentiel",
+                  "symptomes": [
+                    "Passage lent ou refusé",
+                    "Patinage",
+                    "À-coups, fuite ou surchauffe"
+                  ],
+                  "kilometrage_apparition": "Contrôle fréquent en usage sportif",
+                  "diagnostic": "Identifier la transmission installée sur l’exemplaire, lire températures et défauts, contrôler huile, actionneurs, calibrage AMT, embrayage, volant moteur, supports, arbres et différentiel. Effectuer l’apprentissage uniquement selon la procédure Mazzanti.",
+                  "piece_concernee": "Transmission arrière Evantra",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure sensible aux départs arrêtés et au circuit",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 20 000 €"
+                },
+                {
+                  "probleme": "Cadre acier/chrome-molybdène, carbone, freins et provenance",
+                  "symptomes": [
+                    "Fissure ou réparation visible",
+                    "Géométrie instable",
+                    "Freinage vibrant ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Expertise avant achat et après tout choc",
+                  "diagnostic": "Vérifier numéro d’exemplaire, configuration de livraison et évolutions constructeur. Inspecter cadre caissonné, arceau chrome-molybdène, panneaux carbone, ancrages, suspension réglable, freins Brembo, disques carbone-céramique éventuels, roues et pneus.",
+                  "piece_concernee": "Structure, trains roulants et authenticité Evantra",
+                  "gravite": "Critique pour la sécurité et la valeur",
+                  "frequence": "Risque faible mais coût élevé sur fabrication artisanale",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 80 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Evantra Millecavalli prototype",
+          "annees": "2016",
+          "phases": [
+            "Premier prototype présenté à Turin en 2016 ; puissance évoquée par l’appellation Millecavalli."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 7.2 biturbo — 1000 ch",
+              "code_moteur": "Mazzanti Millecavalli V8",
+              "cylindree": "7 200 cm³",
+              "puissance_ch": 1000,
+              "boite": [
+                "Séquentielle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et pression du V8 biturbo",
+                  "symptomes": [
+                    "Fumée",
+                    "Pression de suralimentation irrégulière",
+                    "Surchauffe ou pression d’huile faible"
+                  ],
+                  "kilometrage_apparition": "Contrôle après chaque usage circuit ; vieillissement selon temps de fonctionnement",
+                  "diagnostic": "Distinguer Millecavalli 7,2 l et Millecavalli R 7,4 l avant intervention. Journaliser pressions huile/carburant/suralimentation et températures, analyser huile, puis contrôler pompes, échangeurs, turbos, jeux d’arbres, wastegates, soupapes de décharge et toutes les conduites.",
+                  "piece_concernee": "V8 biturbo Mazzanti",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé sous charge extrême",
+                  "cout_reparation_estime": "Extrême : environ 3 000 à plus de 60 000 €"
+                },
+                {
+                  "probleme": "Injection, allumage et calibration moteur à 1 000 ch ou plus",
+                  "symptomes": [
+                    "Ratés sous boost",
+                    "Détonation",
+                    "Mode dégradé ou puissance limitée"
+                  ],
+                  "kilometrage_apparition": "À la moindre anomalie et avant pleine charge",
+                  "diagnostic": "Lire défauts, corrections, richesse, pression rail et cliquetis cylindre par cylindre. Contrôler pompes, injecteurs, bobines, bougies, capteurs et carburant, puis confirmer que cartographie, limite de boost et échappement correspondent à la version certifiée.",
+                  "piece_concernee": "Gestion moteur Millecavalli",
+                  "gravite": "Critique immédiate",
+                  "frequence": "Occasionnelle mais destructrice si ignorée",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "Boîte séquentielle six rapports, embrayage et transmission arrière",
+                  "symptomes": [
+                    "Rapport refusé",
+                    "Patinage",
+                    "Bruit de pignon ou surchauffe"
+                  ],
+                  "kilometrage_apparition": "Inspection fréquente selon heures de piste",
+                  "diagnostic": "Contrôler journal d’utilisation, huile et limaille, actionneurs/palettes, embrayage multidisque, refroidissement, arbres, joints et différentiel. Mesurer l’usure et recalibrer la commande sans effectuer de launch control avant validation.",
+                  "piece_concernee": "Transmission Millecavalli",
+                  "gravite": "Critique",
+                  "frequence": "Usure élevée en départs répétés",
+                  "cout_reparation_estime": "Extrême : environ 3 000 à plus de 35 000 €"
+                },
+                {
+                  "probleme": "Aérodynamique, châssis, freins et pneumatiques très haute vitesse",
+                  "symptomes": [
+                    "Instabilité",
+                    "Vibration de freinage",
+                    "Usure ou fissure carbone"
+                  ],
+                  "kilometrage_apparition": "Avant chaque utilisation rapide et après choc",
+                  "diagnostic": "Inspecter cadre/arceau, panneaux et appendices, fixations, fond plat, géométrie, amortisseurs, roulements, disques, étriers, roues et pneus avec date/indice adaptés. Toute revendication de très haute vitesse exige un contrôle constructeur complet.",
+                  "piece_concernee": "Structure et systèmes dynamiques Millecavalli",
+                  "gravite": "Critique",
+                  "frequence": "Dépend fortement de l’usage et du stockage",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 100 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Evantra Millecavalli R",
+          "annees": "2021–aujourd’hui",
+          "phases": [
+            "Spécification constructeur : 1 121 hp, 1 210 Nm, faible série/configuration sur commande."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 7.4 biturbo — 1121 ch",
+              "code_moteur": "Mazzanti Millecavalli R V8",
+              "cylindree": "7 400 cm³",
+              "puissance_ch": 1121,
+              "boite": [
+                "Séquentielle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et pression du V8 biturbo",
+                  "symptomes": [
+                    "Fumée",
+                    "Pression de suralimentation irrégulière",
+                    "Surchauffe ou pression d’huile faible"
+                  ],
+                  "kilometrage_apparition": "Contrôle après chaque usage circuit ; vieillissement selon temps de fonctionnement",
+                  "diagnostic": "Distinguer Millecavalli 7,2 l et Millecavalli R 7,4 l avant intervention. Journaliser pressions huile/carburant/suralimentation et températures, analyser huile, puis contrôler pompes, échangeurs, turbos, jeux d’arbres, wastegates, soupapes de décharge et toutes les conduites.",
+                  "piece_concernee": "V8 biturbo Mazzanti",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé sous charge extrême",
+                  "cout_reparation_estime": "Extrême : environ 3 000 à plus de 60 000 €"
+                },
+                {
+                  "probleme": "Injection, allumage et calibration moteur à 1 000 ch ou plus",
+                  "symptomes": [
+                    "Ratés sous boost",
+                    "Détonation",
+                    "Mode dégradé ou puissance limitée"
+                  ],
+                  "kilometrage_apparition": "À la moindre anomalie et avant pleine charge",
+                  "diagnostic": "Lire défauts, corrections, richesse, pression rail et cliquetis cylindre par cylindre. Contrôler pompes, injecteurs, bobines, bougies, capteurs et carburant, puis confirmer que cartographie, limite de boost et échappement correspondent à la version certifiée.",
+                  "piece_concernee": "Gestion moteur Millecavalli",
+                  "gravite": "Critique immédiate",
+                  "frequence": "Occasionnelle mais destructrice si ignorée",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "Boîte séquentielle six rapports, embrayage et transmission arrière",
+                  "symptomes": [
+                    "Rapport refusé",
+                    "Patinage",
+                    "Bruit de pignon ou surchauffe"
+                  ],
+                  "kilometrage_apparition": "Inspection fréquente selon heures de piste",
+                  "diagnostic": "Contrôler journal d’utilisation, huile et limaille, actionneurs/palettes, embrayage multidisque, refroidissement, arbres, joints et différentiel. Mesurer l’usure et recalibrer la commande sans effectuer de launch control avant validation.",
+                  "piece_concernee": "Transmission Millecavalli",
+                  "gravite": "Critique",
+                  "frequence": "Usure élevée en départs répétés",
+                  "cout_reparation_estime": "Extrême : environ 3 000 à plus de 35 000 €"
+                },
+                {
+                  "probleme": "Aérodynamique, châssis, freins et pneumatiques très haute vitesse",
+                  "symptomes": [
+                    "Instabilité",
+                    "Vibration de freinage",
+                    "Usure ou fissure carbone"
+                  ],
+                  "kilometrage_apparition": "Avant chaque utilisation rapide et après choc",
+                  "diagnostic": "Inspecter cadre/arceau, panneaux et appendices, fixations, fond plat, géométrie, amortisseurs, roulements, disques, étriers, roues et pneus avec date/indice adaptés. Toute revendication de très haute vitesse exige un contrôle constructeur complet.",
+                  "piece_concernee": "Structure et systèmes dynamiques Millecavalli",
+                  "gravite": "Critique",
+                  "frequence": "Dépend fortement de l’usage et du stockage",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 100 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.mazzantiautomobili.it/en/news-events-en/news-events-en/46-events/232-mazzanti-evantra-star-of-monacoen.html",
+        "https://www.mazzantiautomobili.it/en/evantra-en/771.html",
+        "https://www.mazzantiautomobili.it/it/news-events/news-events.html",
+        "https://mazzantiautomobili.it/evantra-millecavalli-r/"
+      ]
+    }
+  ]
+}

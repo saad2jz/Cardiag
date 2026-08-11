@@ -1,0 +1,258 @@
+{
+  "nom": "Cisitalia",
+  "modeles": [
+    {
+      "nom": "202",
+      "generations": [
+        {
+          "code_chassis": "202 GT / Gran Sport Pinin Farina",
+          "annees": "1947–1952",
+          "phases": [
+            "Le MoMA documente 50 hp ; certaines Gran Sport reçurent une préparation d’environ 55 ch."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Fiat 1100 routier — 50 ch",
+              "code_moteur": "Fiat 1100 Cisitalia 202 GT",
+              "cylindree": "1 089 cm³",
+              "puissance_ch": 50,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et culasse du Fiat 1100 préparé",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée, fuite ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Âge et historique de compétition priment ; contrôle à chaque révision",
+                  "diagnostic": "Authentifier bloc/culasse et préparation Abarth/Cisitalia, mesurer compressions/leak-down et pression, inspecter carter sec éventuel, pompe, radiateur, distribution, soupapes et joints ; comparer 50, 55 et 65 ch au dossier historique",
+                  "piece_concernee": "Quatre-cylindres Fiat 1089 cm³ Cisitalia",
+                  "gravite": "Critique pour fiabilité et valeur",
+                  "frequence": "Risque élevé sans restauration documentée",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 15 000 €"
+                },
+                {
+                  "probleme": "Carburateur, pompe, allumage et échappement",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés ou trou à l’accélération",
+                    "Fuite carburant, cliquetis ou surchauffe locale"
+                  ],
+                  "kilometrage_apparition": "Réglage fréquent, notamment avant épreuve historique",
+                  "diagnostic": "Contrôler réservoir, durites, pompe, carburateur simple/double selon préparation, niveau de cuve, gicleurs, avance, distributeur, bougies et collecteur ; régler sur analyse des quatre cylindres avec carburant adapté",
+                  "piece_concernee": "Alimentation et allumage 202",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après immobilisation",
+                  "cout_reparation_estime": "Élevé : environ 200 à 3 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, aluminium, boîte et authenticité de carrosserie",
+                  "symptomes": [
+                    "Fissure ou corrosion",
+                    "Rapport difficile, jeu ou freinage inégal",
+                    "Numéros ou carrosserie incohérents"
+                  ],
+                  "kilometrage_apparition": "Expertise historique et structurelle obligatoire avant acquisition",
+                  "diagnostic": "Rapprocher numéro, carrosserie Pinin Farina/Vignale/Stabilimenti Farina et type GT/SMM/CMM des archives ; inspecter tubes, aluminium, soudures, suspension Fiat, direction, boîte quatre, pont, roues et freins, ainsi que réparations de course",
+                  "piece_concernee": "Structure, transmission et provenance Cisitalia 202",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de reconstruction ou pièces non conformes",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 50 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Fiat 1100 Gran Sport — 55 ch",
+              "code_moteur": "Fiat 1100 Cisitalia 202 GS",
+              "cylindree": "1 089 cm³",
+              "puissance_ch": 55,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et culasse du Fiat 1100 préparé",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée, fuite ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Âge et historique de compétition priment ; contrôle à chaque révision",
+                  "diagnostic": "Authentifier bloc/culasse et préparation Abarth/Cisitalia, mesurer compressions/leak-down et pression, inspecter carter sec éventuel, pompe, radiateur, distribution, soupapes et joints ; comparer 50, 55 et 65 ch au dossier historique",
+                  "piece_concernee": "Quatre-cylindres Fiat 1089 cm³ Cisitalia",
+                  "gravite": "Critique pour fiabilité et valeur",
+                  "frequence": "Risque élevé sans restauration documentée",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 15 000 €"
+                },
+                {
+                  "probleme": "Carburateur, pompe, allumage et échappement",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés ou trou à l’accélération",
+                    "Fuite carburant, cliquetis ou surchauffe locale"
+                  ],
+                  "kilometrage_apparition": "Réglage fréquent, notamment avant épreuve historique",
+                  "diagnostic": "Contrôler réservoir, durites, pompe, carburateur simple/double selon préparation, niveau de cuve, gicleurs, avance, distributeur, bougies et collecteur ; régler sur analyse des quatre cylindres avec carburant adapté",
+                  "piece_concernee": "Alimentation et allumage 202",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après immobilisation",
+                  "cout_reparation_estime": "Élevé : environ 200 à 3 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, aluminium, boîte et authenticité de carrosserie",
+                  "symptomes": [
+                    "Fissure ou corrosion",
+                    "Rapport difficile, jeu ou freinage inégal",
+                    "Numéros ou carrosserie incohérents"
+                  ],
+                  "kilometrage_apparition": "Expertise historique et structurelle obligatoire avant acquisition",
+                  "diagnostic": "Rapprocher numéro, carrosserie Pinin Farina/Vignale/Stabilimenti Farina et type GT/SMM/CMM des archives ; inspecter tubes, aluminium, soudures, suspension Fiat, direction, boîte quatre, pont, roues et freins, ainsi que réparations de course",
+                  "piece_concernee": "Structure, transmission et provenance Cisitalia 202",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de reconstruction ou pièces non conformes",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 50 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "202 CMM / SMM compétition",
+          "annees": "1946–1948",
+          "phases": [
+            "Coupé Mille Miglia et Spyder Nuvolari : préparation et carrosseries de course distinctes des GT."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence compétition",
+              "nom": "Fiat 1100 compétition carter sec — 65 ch",
+              "code_moteur": "Fiat 1100 Cisitalia-Abarth SMM",
+              "cylindree": "1 089 cm³",
+              "puissance_ch": 65,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et culasse du Fiat 1100 préparé",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée, fuite ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Âge et historique de compétition priment ; contrôle à chaque révision",
+                  "diagnostic": "Authentifier bloc/culasse et préparation Abarth/Cisitalia, mesurer compressions/leak-down et pression, inspecter carter sec éventuel, pompe, radiateur, distribution, soupapes et joints ; comparer 50, 55 et 65 ch au dossier historique",
+                  "piece_concernee": "Quatre-cylindres Fiat 1089 cm³ Cisitalia",
+                  "gravite": "Critique pour fiabilité et valeur",
+                  "frequence": "Risque élevé sans restauration documentée",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 15 000 €"
+                },
+                {
+                  "probleme": "Carburateur, pompe, allumage et échappement",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés ou trou à l’accélération",
+                    "Fuite carburant, cliquetis ou surchauffe locale"
+                  ],
+                  "kilometrage_apparition": "Réglage fréquent, notamment avant épreuve historique",
+                  "diagnostic": "Contrôler réservoir, durites, pompe, carburateur simple/double selon préparation, niveau de cuve, gicleurs, avance, distributeur, bougies et collecteur ; régler sur analyse des quatre cylindres avec carburant adapté",
+                  "piece_concernee": "Alimentation et allumage 202",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après immobilisation",
+                  "cout_reparation_estime": "Élevé : environ 200 à 3 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, aluminium, boîte et authenticité de carrosserie",
+                  "symptomes": [
+                    "Fissure ou corrosion",
+                    "Rapport difficile, jeu ou freinage inégal",
+                    "Numéros ou carrosserie incohérents"
+                  ],
+                  "kilometrage_apparition": "Expertise historique et structurelle obligatoire avant acquisition",
+                  "diagnostic": "Rapprocher numéro, carrosserie Pinin Farina/Vignale/Stabilimenti Farina et type GT/SMM/CMM des archives ; inspecter tubes, aluminium, soudures, suspension Fiat, direction, boîte quatre, pont, roues et freins, ainsi que réparations de course",
+                  "piece_concernee": "Structure, transmission et provenance Cisitalia 202",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de reconstruction ou pièces non conformes",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 50 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "202 SC Cabriolet",
+          "annees": "1948–1952",
+          "phases": [
+            "Cabriolet de tourisme à ne pas confondre avec le SMM ouvert de compétition."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Fiat 1100 Cabriolet — 55 ch",
+              "code_moteur": "Fiat 1100 Cisitalia 202 SC",
+              "cylindree": "1 089 cm³",
+              "puissance_ch": 55,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et culasse du Fiat 1100 préparé",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée, fuite ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Âge et historique de compétition priment ; contrôle à chaque révision",
+                  "diagnostic": "Authentifier bloc/culasse et préparation Abarth/Cisitalia, mesurer compressions/leak-down et pression, inspecter carter sec éventuel, pompe, radiateur, distribution, soupapes et joints ; comparer 50, 55 et 65 ch au dossier historique",
+                  "piece_concernee": "Quatre-cylindres Fiat 1089 cm³ Cisitalia",
+                  "gravite": "Critique pour fiabilité et valeur",
+                  "frequence": "Risque élevé sans restauration documentée",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 15 000 €"
+                },
+                {
+                  "probleme": "Carburateur, pompe, allumage et échappement",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés ou trou à l’accélération",
+                    "Fuite carburant, cliquetis ou surchauffe locale"
+                  ],
+                  "kilometrage_apparition": "Réglage fréquent, notamment avant épreuve historique",
+                  "diagnostic": "Contrôler réservoir, durites, pompe, carburateur simple/double selon préparation, niveau de cuve, gicleurs, avance, distributeur, bougies et collecteur ; régler sur analyse des quatre cylindres avec carburant adapté",
+                  "piece_concernee": "Alimentation et allumage 202",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après immobilisation",
+                  "cout_reparation_estime": "Élevé : environ 200 à 3 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, aluminium, boîte et authenticité de carrosserie",
+                  "symptomes": [
+                    "Fissure ou corrosion",
+                    "Rapport difficile, jeu ou freinage inégal",
+                    "Numéros ou carrosserie incohérents"
+                  ],
+                  "kilometrage_apparition": "Expertise historique et structurelle obligatoire avant acquisition",
+                  "diagnostic": "Rapprocher numéro, carrosserie Pinin Farina/Vignale/Stabilimenti Farina et type GT/SMM/CMM des archives ; inspecter tubes, aluminium, soudures, suspension Fiat, direction, boîte quatre, pont, roues et freins, ainsi que réparations de course",
+                  "piece_concernee": "Structure, transmission et provenance Cisitalia 202",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de reconstruction ou pièces non conformes",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 50 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.moma.org/momaorg/shared/pdfs/docs/press_archives/4923/releases/MOMA_1972_0152_135.pdf",
+        "https://www.museoauto.com/en/qrcode/history-technique-and-style-cisitalia-202-smm-spider-nuvolari/",
+        "https://www.museocisitalia.org/MOMA"
+      ]
+    }
+  ]
+}

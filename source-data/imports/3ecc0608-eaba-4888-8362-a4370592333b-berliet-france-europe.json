@@ -1,0 +1,193 @@
+{
+  "nom": "Berliet",
+  "modeles": [
+    {
+      "nom": "VIRP",
+      "generations": [
+        {
+          "code_chassis": "Dauphine VIRP 9/11",
+          "annees": "1934–1938",
+          "phases": [
+            "Berline, coach, roadster ou cabriolet sur châssis Berliet ; confirmer type fiscal et empattement"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "VIRP 9 quatre-cylindres OHV — 40 ch",
+              "code_moteur": "Berliet VIRP 9",
+              "cylindree": "1 600 cm³",
+              "puissance_ch": 40,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et culasse du quatre-cylindres Berliet",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée ou cognement"
+                  ],
+                  "kilometrage_apparition": "Aucun seuil fiable ; contrôle avant roulage après immobilisation",
+                  "diagnostic": "Identifier VIRP 9, VIRP 11 ou VIRP2, mesurer compressions et pression à chaud, contrôler soupapes en tête, pompe, radiateur, carburateur, allumage, culasse et contamination des fluides",
+                  "piece_concernee": "Moteur Berliet quatre-cylindres OHV",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sans réfection documentée",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à 25 000 €"
+                },
+                {
+                  "probleme": "Boîte 4 rapports, pont, direction et freins mécaniques",
+                  "symptomes": [
+                    "Rapports qui craquent",
+                    "Jeu au volant",
+                    "Freinage faible ou tirage"
+                  ],
+                  "kilometrage_apparition": "Variable, inspection avant toute route",
+                  "diagnostic": "Contrôler embrayage, pignons, arbre/pont, roulements, crémaillère, train avant indépendant, lames arrière, câbles et tambours auto-serreurs ; mesurer efficacité sur banc adapté",
+                  "piece_concernee": "Transmission et organes de sécurité VIRP",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente avec l’âge",
+                  "cout_reparation_estime": "Élevé : environ 1 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Corrosion, bois de carrosserie et authenticité Dauphine/Peugeot 402B",
+                  "symptomes": [
+                    "Caisse affaissée",
+                    "Rouille perforante",
+                    "Portes désalignées ou numéros incohérents"
+                  ],
+                  "kilometrage_apparition": "Contrôle systématique",
+                  "diagnostic": "Comparer châssis/moteur aux archives Fondation Berliet, inspecter longerons, planchers, ancrages, ossature, caisse Berliet ou 402B du VIRP2, soudures, calandre, intérieur et réparations masquées",
+                  "piece_concernee": "Châssis, carrosserie et identité historique",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Fréquente sur véhicule restauré anciennement",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 60 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "VIRP 11 quatre-cylindres OHV — 50 ch",
+              "code_moteur": "Berliet VIRP 11",
+              "cylindree": "1 990 cm³",
+              "puissance_ch": 50,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et culasse du quatre-cylindres Berliet",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée ou cognement"
+                  ],
+                  "kilometrage_apparition": "Aucun seuil fiable ; contrôle avant roulage après immobilisation",
+                  "diagnostic": "Identifier VIRP 9, VIRP 11 ou VIRP2, mesurer compressions et pression à chaud, contrôler soupapes en tête, pompe, radiateur, carburateur, allumage, culasse et contamination des fluides",
+                  "piece_concernee": "Moteur Berliet quatre-cylindres OHV",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sans réfection documentée",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à 25 000 €"
+                },
+                {
+                  "probleme": "Boîte 4 rapports, pont, direction et freins mécaniques",
+                  "symptomes": [
+                    "Rapports qui craquent",
+                    "Jeu au volant",
+                    "Freinage faible ou tirage"
+                  ],
+                  "kilometrage_apparition": "Variable, inspection avant toute route",
+                  "diagnostic": "Contrôler embrayage, pignons, arbre/pont, roulements, crémaillère, train avant indépendant, lames arrière, câbles et tambours auto-serreurs ; mesurer efficacité sur banc adapté",
+                  "piece_concernee": "Transmission et organes de sécurité VIRP",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente avec l’âge",
+                  "cout_reparation_estime": "Élevé : environ 1 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Corrosion, bois de carrosserie et authenticité Dauphine/Peugeot 402B",
+                  "symptomes": [
+                    "Caisse affaissée",
+                    "Rouille perforante",
+                    "Portes désalignées ou numéros incohérents"
+                  ],
+                  "kilometrage_apparition": "Contrôle systématique",
+                  "diagnostic": "Comparer châssis/moteur aux archives Fondation Berliet, inspecter longerons, planchers, ancrages, ossature, caisse Berliet ou 402B du VIRP2, soudures, calandre, intérieur et réparations masquées",
+                  "piece_concernee": "Châssis, carrosserie et identité historique",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Fréquente sur véhicule restauré anciennement",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 60 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Dauphine VIRP2 caisse 402B",
+          "annees": "1938–1943",
+          "phases": [
+            "Caisse Peugeot 402B adaptée, châssis et mécanique Berliet ; environ 542 exemplaires selon la Fondation"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "VIRP2 quatre-cylindres OHV — 50 ch",
+              "code_moteur": "Berliet VIRP2",
+              "cylindree": "1 990 cm³",
+              "puissance_ch": 50,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et culasse du quatre-cylindres Berliet",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée ou cognement"
+                  ],
+                  "kilometrage_apparition": "Aucun seuil fiable ; contrôle avant roulage après immobilisation",
+                  "diagnostic": "Identifier VIRP 9, VIRP 11 ou VIRP2, mesurer compressions et pression à chaud, contrôler soupapes en tête, pompe, radiateur, carburateur, allumage, culasse et contamination des fluides",
+                  "piece_concernee": "Moteur Berliet quatre-cylindres OHV",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sans réfection documentée",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à 25 000 €"
+                },
+                {
+                  "probleme": "Boîte 4 rapports, pont, direction et freins mécaniques",
+                  "symptomes": [
+                    "Rapports qui craquent",
+                    "Jeu au volant",
+                    "Freinage faible ou tirage"
+                  ],
+                  "kilometrage_apparition": "Variable, inspection avant toute route",
+                  "diagnostic": "Contrôler embrayage, pignons, arbre/pont, roulements, crémaillère, train avant indépendant, lames arrière, câbles et tambours auto-serreurs ; mesurer efficacité sur banc adapté",
+                  "piece_concernee": "Transmission et organes de sécurité VIRP",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente avec l’âge",
+                  "cout_reparation_estime": "Élevé : environ 1 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Corrosion, bois de carrosserie et authenticité Dauphine/Peugeot 402B",
+                  "symptomes": [
+                    "Caisse affaissée",
+                    "Rouille perforante",
+                    "Portes désalignées ou numéros incohérents"
+                  ],
+                  "kilometrage_apparition": "Contrôle systématique",
+                  "diagnostic": "Comparer châssis/moteur aux archives Fondation Berliet, inspecter longerons, planchers, ancrages, ossature, caisse Berliet ou 402B du VIRP2, soudures, calandre, intérieur et réparations masquées",
+                  "piece_concernee": "Châssis, carrosserie et identité historique",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Fréquente sur véhicule restauré anciennement",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 60 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.fondationberliet.org/la-collection/les-dernieres-actus-vehicules/berliet-automobile-dauphine-944-1920-1930/"
+      ]
+    }
+  ]
+}

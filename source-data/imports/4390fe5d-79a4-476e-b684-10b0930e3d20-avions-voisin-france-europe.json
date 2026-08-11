@@ -1,0 +1,77 @@
+{
+  "nom": "Avions Voisin",
+  "modeles": [
+    {
+      "nom": "C6",
+      "generations": [
+        {
+          "code_chassis": "Type C6 Laboratoire Grand Prix",
+          "annees": "1923–1924",
+          "phases": [
+            "Quatre voitures de Grand Prix furent construites ; les survivantes exposées sont des reconstructions : authentifier provenance, moteur et châssis"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Six-cylindres Knight à chemises louvoyantes — 80 ch",
+              "code_moteur": "Voisin C6 Laboratoire / Knight",
+              "cylindree": "1 984 cm³",
+              "puissance_ch": 80,
+              "boite": [
+                "Boîte manuelle 3 rapports, propulsion sans différentiel sur voitures de course"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Usure et étanchéité du six-cylindres à chemises louvoyantes Knight",
+                  "symptomes": [
+                    "Fumée bleue importante",
+                    "Compression faible",
+                    "Consommation d’huile ou démarrage difficile"
+                  ],
+                  "kilometrage_apparition": "À contrôler indépendamment du kilométrage sur ce véhicule centenaire",
+                  "diagnostic": "Mesurer compressions et pression d’huile à chaud, inspecter chemises coulissantes, bielles de commande, paliers, deux carburateurs Zenith, allumage et présence de pièces non conformes ; faire intervenir un spécialiste des moteurs sans soupapes",
+                  "piece_concernee": "Six-cylindres 1 984 cm³ à distribution Knight",
+                  "gravite": "Critique pour la mécanique et l’authenticité",
+                  "frequence": "Risque élevé après immobilisation ou restauration incomplète",
+                  "cout_reparation_estime": "Très élevé : environ 8 000 à plus de 60 000 €"
+                },
+                {
+                  "probleme": "Lubrification, pompe à eau entraînée par hélice et refroidissement",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Baisse de pression",
+                    "Fuite ou émulsion"
+                  ],
+                  "kilometrage_apparition": "À vérifier avant chaque roulage et après toute immobilisation",
+                  "diagnostic": "Contrôler réservoir/circulation d’huile, pompe, conduites, radiateur, pompe à eau frontale, hélice d’entraînement, courroies/accouplements et contamination ; surveiller températures et pression pendant un essai très progressif",
+                  "piece_concernee": "Circuits de lubrification et refroidissement C6 Laboratoire",
+                  "gravite": "Critique",
+                  "frequence": "Très sensible à l’état de restauration",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 25 000 €"
+                },
+                {
+                  "probleme": "Authenticité de la monocoque aluminium, essieu arrière étroit et freins à tambour",
+                  "symptomes": [
+                    "Rivets desserrés",
+                    "Fissures",
+                    "Instabilité",
+                    "Freinage faible ou dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Contrôle systématique, aucun kilométrage pertinent",
+                  "diagnostic": "Comparer aux archives et à la provenance, inspecter panneaux/rivets/renforts, géométrie, essieux, ressorts à lames, amortisseurs à friction, direction, roues et tambours ; identifier clairement original, reconstruction ou réplique",
+                  "piece_concernee": "Structure aérodynamique, châssis et organes de sécurité",
+                  "gravite": "Critique pour sécurité et valeur historique",
+                  "frequence": "Fréquente sur reconstruction ou véhicule très ancien",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 100 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://mullinautomotivemuseum.com/wp-content/uploads/2020/02/Voisin-Type-C6.pdf"
+      ]
+    }
+  ]
+}

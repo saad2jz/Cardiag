@@ -1,0 +1,319 @@
+{
+  "nom": "Iso",
+  "modeles": [
+    {
+      "nom": "Grifo",
+      "generations": [
+        {
+          "code_chassis": "Grifo GL série I",
+          "annees": "1965–1970",
+          "phases": [
+            "GL300 et GL350 séparées ; Targa disponible à partir de 1966 en très faible nombre."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Chevrolet 327 GL300 — 300 ch",
+              "code_moteur": "Chevrolet small-block 327 GL300",
+              "cylindree": "5 354 cm³",
+              "puissance_ch": 300,
+              "boite": [
+                "Borg-Warner manuelle 4 rapports ou automatique, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification et intégrité du V8 Chevrolet ou Ford",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression faible, fumée ou claquement",
+                    "Fuite, ratés ou puissance incohérente"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, mais préparation et restauration priment",
+                  "diagnostic": "Décoder bloc, culasses et date pour distinguer 327, 427 L71, 454 et Ford 351 ; mesurer compressions/leak-down et pression, analyser huile, contrôler distribution, radiateur, pompe, ventilateurs, joints, reniflard et échappement avant sollicitation",
+                  "piece_concernee": "V8 américain Iso Grifo",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé de moteur remplacé ou modifié",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 20 000 €"
+                },
+                {
+                  "probleme": "Carburation, allumage et alimentation haute puissance",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Trou, cliquetis ou odeur de carburant",
+                    "Ratés sous charge ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après immobilisation",
+                  "diagnostic": "Identifier carburateur simple/Quadrajet/Tri-Power et préparation, contrôler réservoir, pompes, durites, cuves, starter, avance, distributeur, bobine et bougies ; régler au banc avec carburant adapté sans masquer une compression faible",
+                  "piece_concernee": "Admission et allumage Grifo",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec carburant moderne et flexibles âgés",
+                  "cout_reparation_estime": "Élevé : environ 250 à 4 000 €"
+                },
+                {
+                  "probleme": "Châssis, carrosserie Bertone, transmission et authenticité",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Rapport difficile, vibration ou bruit de pont",
+                    "Freinage inégal ou identité incohérente"
+                  ],
+                  "kilometrage_apparition": "Expertise obligatoire avant acquisition",
+                  "diagnostic": "Rapprocher VIN, type GL/7 Litri/IR8/Can Am, coupé ou Targa et moteur des archives ; inspecter plateforme, longerons, soudures, aluminium/acier, boîte Borg-Warner/ZF/automatique, embrayage, arbre, pont Salisbury, suspension De Dion, direction, freins et roues",
+                  "piece_concernee": "Structure, transmission et provenance Iso Grifo",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de transformation ou reconstruction",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 80 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Chevrolet 327 GL350 — 350 ch",
+              "code_moteur": "Chevrolet small-block 327 GL350",
+              "cylindree": "5 354 cm³",
+              "puissance_ch": 350,
+              "boite": [
+                "Borg-Warner manuelle 4 rapports ou automatique, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification et intégrité du V8 Chevrolet ou Ford",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression faible, fumée ou claquement",
+                    "Fuite, ratés ou puissance incohérente"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, mais préparation et restauration priment",
+                  "diagnostic": "Décoder bloc, culasses et date pour distinguer 327, 427 L71, 454 et Ford 351 ; mesurer compressions/leak-down et pression, analyser huile, contrôler distribution, radiateur, pompe, ventilateurs, joints, reniflard et échappement avant sollicitation",
+                  "piece_concernee": "V8 américain Iso Grifo",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé de moteur remplacé ou modifié",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 20 000 €"
+                },
+                {
+                  "probleme": "Carburation, allumage et alimentation haute puissance",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Trou, cliquetis ou odeur de carburant",
+                    "Ratés sous charge ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après immobilisation",
+                  "diagnostic": "Identifier carburateur simple/Quadrajet/Tri-Power et préparation, contrôler réservoir, pompes, durites, cuves, starter, avance, distributeur, bobine et bougies ; régler au banc avec carburant adapté sans masquer une compression faible",
+                  "piece_concernee": "Admission et allumage Grifo",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec carburant moderne et flexibles âgés",
+                  "cout_reparation_estime": "Élevé : environ 250 à 4 000 €"
+                },
+                {
+                  "probleme": "Châssis, carrosserie Bertone, transmission et authenticité",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Rapport difficile, vibration ou bruit de pont",
+                    "Freinage inégal ou identité incohérente"
+                  ],
+                  "kilometrage_apparition": "Expertise obligatoire avant acquisition",
+                  "diagnostic": "Rapprocher VIN, type GL/7 Litri/IR8/Can Am, coupé ou Targa et moteur des archives ; inspecter plateforme, longerons, soudures, aluminium/acier, boîte Borg-Warner/ZF/automatique, embrayage, arbre, pont Salisbury, suspension De Dion, direction, freins et roues",
+                  "piece_concernee": "Structure, transmission et provenance Iso Grifo",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de transformation ou reconstruction",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 80 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Grifo 7 Litri",
+          "annees": "1968–1970",
+          "phases": [
+            "Capot rehaussé spécifique au big-block ; 435 ch à 5 800 tr/min annoncés par Iso."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Chevrolet 427 L71 Tri-Power — 435 ch",
+              "code_moteur": "Chevrolet big-block 427 L71",
+              "cylindree": "6 997 cm³",
+              "puissance_ch": 435,
+              "boite": [
+                "ZF manuelle 5 rapports ou automatique, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification et intégrité du V8 Chevrolet ou Ford",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression faible, fumée ou claquement",
+                    "Fuite, ratés ou puissance incohérente"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, mais préparation et restauration priment",
+                  "diagnostic": "Décoder bloc, culasses et date pour distinguer 327, 427 L71, 454 et Ford 351 ; mesurer compressions/leak-down et pression, analyser huile, contrôler distribution, radiateur, pompe, ventilateurs, joints, reniflard et échappement avant sollicitation",
+                  "piece_concernee": "V8 américain Iso Grifo",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé de moteur remplacé ou modifié",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 20 000 €"
+                },
+                {
+                  "probleme": "Carburation, allumage et alimentation haute puissance",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Trou, cliquetis ou odeur de carburant",
+                    "Ratés sous charge ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après immobilisation",
+                  "diagnostic": "Identifier carburateur simple/Quadrajet/Tri-Power et préparation, contrôler réservoir, pompes, durites, cuves, starter, avance, distributeur, bobine et bougies ; régler au banc avec carburant adapté sans masquer une compression faible",
+                  "piece_concernee": "Admission et allumage Grifo",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec carburant moderne et flexibles âgés",
+                  "cout_reparation_estime": "Élevé : environ 250 à 4 000 €"
+                },
+                {
+                  "probleme": "Châssis, carrosserie Bertone, transmission et authenticité",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Rapport difficile, vibration ou bruit de pont",
+                    "Freinage inégal ou identité incohérente"
+                  ],
+                  "kilometrage_apparition": "Expertise obligatoire avant acquisition",
+                  "diagnostic": "Rapprocher VIN, type GL/7 Litri/IR8/Can Am, coupé ou Targa et moteur des archives ; inspecter plateforme, longerons, soudures, aluminium/acier, boîte Borg-Warner/ZF/automatique, embrayage, arbre, pont Salisbury, suspension De Dion, direction, freins et roues",
+                  "piece_concernee": "Structure, transmission et provenance Iso Grifo",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de transformation ou reconstruction",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 80 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Grifo série II IR8",
+          "annees": "1970–1974",
+          "phases": [
+            "Nouvelle face à phares escamotables et passage au moteur Ford."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Ford 351 Cleveland — 325 ch",
+              "code_moteur": "Ford 351 Cleveland Iso IR8",
+              "cylindree": "5 763 cm³",
+              "puissance_ch": 325,
+              "boite": [
+                "ZF manuelle 5 rapports ou automatique, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification et intégrité du V8 Chevrolet ou Ford",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression faible, fumée ou claquement",
+                    "Fuite, ratés ou puissance incohérente"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, mais préparation et restauration priment",
+                  "diagnostic": "Décoder bloc, culasses et date pour distinguer 327, 427 L71, 454 et Ford 351 ; mesurer compressions/leak-down et pression, analyser huile, contrôler distribution, radiateur, pompe, ventilateurs, joints, reniflard et échappement avant sollicitation",
+                  "piece_concernee": "V8 américain Iso Grifo",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé de moteur remplacé ou modifié",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 20 000 €"
+                },
+                {
+                  "probleme": "Carburation, allumage et alimentation haute puissance",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Trou, cliquetis ou odeur de carburant",
+                    "Ratés sous charge ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après immobilisation",
+                  "diagnostic": "Identifier carburateur simple/Quadrajet/Tri-Power et préparation, contrôler réservoir, pompes, durites, cuves, starter, avance, distributeur, bobine et bougies ; régler au banc avec carburant adapté sans masquer une compression faible",
+                  "piece_concernee": "Admission et allumage Grifo",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec carburant moderne et flexibles âgés",
+                  "cout_reparation_estime": "Élevé : environ 250 à 4 000 €"
+                },
+                {
+                  "probleme": "Châssis, carrosserie Bertone, transmission et authenticité",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Rapport difficile, vibration ou bruit de pont",
+                    "Freinage inégal ou identité incohérente"
+                  ],
+                  "kilometrage_apparition": "Expertise obligatoire avant acquisition",
+                  "diagnostic": "Rapprocher VIN, type GL/7 Litri/IR8/Can Am, coupé ou Targa et moteur des archives ; inspecter plateforme, longerons, soudures, aluminium/acier, boîte Borg-Warner/ZF/automatique, embrayage, arbre, pont Salisbury, suspension De Dion, direction, freins et roues",
+                  "piece_concernee": "Structure, transmission et provenance Iso Grifo",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de transformation ou reconstruction",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 80 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Grifo Can Am",
+          "annees": "1970–1972",
+          "phases": [
+            "Dernière évolution big-block 454, distincte du 427 7 Litri."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Chevrolet 454 — 395 ch",
+              "code_moteur": "Chevrolet big-block 454 Can Am",
+              "cylindree": "7 440 cm³",
+              "puissance_ch": 395,
+              "boite": [
+                "ZF manuelle 5 rapports ou automatique, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification et intégrité du V8 Chevrolet ou Ford",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression faible, fumée ou claquement",
+                    "Fuite, ratés ou puissance incohérente"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, mais préparation et restauration priment",
+                  "diagnostic": "Décoder bloc, culasses et date pour distinguer 327, 427 L71, 454 et Ford 351 ; mesurer compressions/leak-down et pression, analyser huile, contrôler distribution, radiateur, pompe, ventilateurs, joints, reniflard et échappement avant sollicitation",
+                  "piece_concernee": "V8 américain Iso Grifo",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé de moteur remplacé ou modifié",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 20 000 €"
+                },
+                {
+                  "probleme": "Carburation, allumage et alimentation haute puissance",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Trou, cliquetis ou odeur de carburant",
+                    "Ratés sous charge ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après immobilisation",
+                  "diagnostic": "Identifier carburateur simple/Quadrajet/Tri-Power et préparation, contrôler réservoir, pompes, durites, cuves, starter, avance, distributeur, bobine et bougies ; régler au banc avec carburant adapté sans masquer une compression faible",
+                  "piece_concernee": "Admission et allumage Grifo",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec carburant moderne et flexibles âgés",
+                  "cout_reparation_estime": "Élevé : environ 250 à 4 000 €"
+                },
+                {
+                  "probleme": "Châssis, carrosserie Bertone, transmission et authenticité",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Rapport difficile, vibration ou bruit de pont",
+                    "Freinage inégal ou identité incohérente"
+                  ],
+                  "kilometrage_apparition": "Expertise obligatoire avant acquisition",
+                  "diagnostic": "Rapprocher VIN, type GL/7 Litri/IR8/Can Am, coupé ou Targa et moteur des archives ; inspecter plateforme, longerons, soudures, aluminium/acier, boîte Borg-Warner/ZF/automatique, embrayage, arbre, pont Salisbury, suspension De Dion, direction, freins et roues",
+                  "piece_concernee": "Structure, transmission et provenance Iso Grifo",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de transformation ou reconstruction",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 80 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://isorivoltaofficial.com/isorivolta-grifo-it.html"
+      ]
+    }
+  ]
+}

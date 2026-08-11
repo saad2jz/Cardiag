@@ -1,0 +1,4097 @@
+[
+  {
+    "marque": "Mercedes-Benz",
+    "modeles": [
+      {
+        "nom": "Classe A",
+        "generations": [
+          {
+            "code_chassis": "W168",
+            "annees": "1997-2004",
+            "phases": [
+              "Phase 1 (1997-2001)",
+              "Phase 2 (2001-2004)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "A160/A190 - 75 à 125ch",
+                "code_moteur": "M166",
+                "cylindree": "1.6L / 1.9L",
+                "puissance_ch": 125,
+                "boite": [
+                  "BVM5",
+                  "Autotronic CVT"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Fragilité de la boîte Autotronic CVT",
+                    "symptomes": "À-coups, patinage de la courroie, voyant boîte, refus de passer les rapports",
+                    "pieces_concernees": "Courroie CVT, variateurs, calculateur de boîte",
+                    "kilometrage_critique": "Fréquent au-delà de 120 000-150 000 km",
+                    "cout_estime_eur": "1500 à 3000€"
+                  },
+                  {
+                    "panne": "Corrosion des passages de roue arrière",
+                    "symptomes": "Perforations visibles, bulles de peinture",
+                    "pieces_concernees": "Passages de roue arrière",
+                    "kilometrage_critique": "Fréquent au-delà de 20 ans d'âge",
+                    "cout_estime_eur": "300 à 900€"
+                  },
+                  {
+                    "panne": "Sensibilité du plancher sandwich (fixations capot)",
+                    "symptomes": "Grincements, jeu au niveau du capot moteur",
+                    "pieces_concernees": "Fixations du plancher sandwich",
+                    "kilometrage_critique": "Variable selon entretien",
+                    "cout_estime_eur": "100 à 300€"
+                  },
+                  {
+                    "panne": "Sensibilité des faisceaux sous le plancher sandwich à l'humidité",
+                    "symptomes": "Pannes électriques intermittentes",
+                    "pieces_concernees": "Faisceaux électriques sous plancher",
+                    "kilometrage_critique": "Au-delà de 20-25 ans d'âge",
+                    "cout_estime_eur": "150 à 500€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "A160 CDI/A170 CDI - 60 à 95ch",
+                "code_moteur": "OM668",
+                "cylindree": "1.7L",
+                "puissance_ch": 95,
+                "boite": [
+                  "BVM5"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Fragilité de la pompe injection rotative",
+                    "symptomes": "Perte de puissance, fumées, démarrage difficile",
+                    "pieces_concernees": "Pompe injection rotative",
+                    "kilometrage_critique": "Au-delà de 180 000-200 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  },
+                  {
+                    "panne": "Usure du volant moteur bi-masse",
+                    "symptomes": "Bruit métallique au ralenti, vibrations",
+                    "pieces_concernees": "Volant moteur bi-masse",
+                    "kilometrage_critique": "Entre 150 000 et 200 000 km",
+                    "cout_estime_eur": "600 à 1000€"
+                  },
+                  {
+                    "panne": "Sensibilité du turbo à l'encrassement si vidanges espacées",
+                    "symptomes": "Perte de puissance, sifflement, fumée",
+                    "pieces_concernees": "Turbocompresseur",
+                    "kilometrage_critique": "Si intervalles de vidange > 10 000 km",
+                    "cout_estime_eur": "600 à 1100€"
+                  },
+                  {
+                    "panne": "Fumées fréquentes à froid sur exemplaires mal entretenus",
+                    "symptomes": "Fumée blanche/bleue au démarrage à froid",
+                    "pieces_concernees": "Segments, joints",
+                    "kilometrage_critique": "Variable selon entretien",
+                    "cout_estime_eur": "Diagnostic 80-150€ ; réparation variable selon cause"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "W176",
+            "annees": "2012-2018",
+            "phases": [
+              "Phase 1 (2012-2015)",
+              "Phase 2 restylée (2015-2018)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "A180/A200 - 122 à 156ch",
+                "code_moteur": "M270",
+                "cylindree": "1.6L turbo",
+                "puissance_ch": 156,
+                "boite": [
+                  "BVM6",
+                  "7G-DCT"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Étirement de la chaîne de distribution M270",
+                    "symptomes": "Bruit de chaîne au démarrage à froid",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "Avant 100 000 km sur certains blocs",
+                    "cout_estime_eur": "700 à 1300€"
+                  },
+                  {
+                    "panne": "Consommation d'huile élevée sur certains blocs",
+                    "symptomes": "Niveau d'huile qui baisse rapidement entre vidanges",
+                    "pieces_concernees": "Segments",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "Surveillance requise"
+                  },
+                  {
+                    "panne": "À-coups du double embrayage 7G-DCT à basse vitesse",
+                    "symptomes": "Secousses en manœuvre lente, hésitation au démarrage",
+                    "pieces_concernees": "Mécatronique 7G-DCT",
+                    "kilometrage_critique": "Fréquent dès les premiers 30 000 km",
+                    "cout_estime_eur": "800 à 1800€ si panne mécatronique avérée"
+                  },
+                  {
+                    "panne": "Fragilité du vase d'expansion et des durites plastiques",
+                    "symptomes": "Fuites de liquide de refroidissement, surchauffe",
+                    "pieces_concernees": "Vase d'expansion, durites",
+                    "kilometrage_critique": "Remplacement fréquent vers 100 000-130 000 km",
+                    "cout_estime_eur": "150 à 350€"
+                  }
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "A45 AMG - 360 à 381ch",
+                "code_moteur": "M133",
+                "cylindree": "2.0L turbo",
+                "puissance_ch": 381,
+                "boite": [
+                  "7G-DCT"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Turbo fortement sollicité",
+                    "symptomes": "Sifflement, perte de puissance en cas d'entretien négligé",
+                    "pieces_concernees": "Turbocompresseur",
+                    "kilometrage_critique": "Entretien rigoureux requis dès l'achat, contrôle recommandé dès 60 000 km",
+                    "cout_estime_eur": "1200 à 2200€ en cas de remplacement"
+                  },
+                  {
+                    "panne": "Usure de l'embrayage double AMG Speedshift",
+                    "symptomes": "À-coups, patinage en usage sportif intensif",
+                    "pieces_concernees": "Embrayages doubles AMG Speedshift",
+                    "kilometrage_critique": "Dès 50 000-70 000 km en conduite sportive",
+                    "cout_estime_eur": "1500 à 2800€"
+                  },
+                  {
+                    "panne": "Consommation d'huile à surveiller en usage sportif",
+                    "symptomes": "Niveau qui baisse rapidement entre vidanges",
+                    "pieces_concernees": "Segments",
+                    "kilometrage_critique": "Dès 40 000-50 000 km en conduite sportive",
+                    "cout_estime_eur": "Surveillance rigoureuse requise"
+                  },
+                  {
+                    "panne": "Sensibilité du système de refroidissement sophistiqué à l'encrassement",
+                    "symptomes": "Surchauffe en usage intensif, mode dégradé",
+                    "pieces_concernees": "Radiateurs, durites, intercooler",
+                    "kilometrage_critique": "Entretien rigoureux dès la première année en usage sportif",
+                    "cout_estime_eur": "400 à 1200€ selon élément"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "A180 CDI/A200 CDI - 109 à 136ch",
+                "code_moteur": "OM651",
+                "cylindree": "2.2L",
+                "puissance_ch": 136,
+                "boite": [
+                  "BVM6",
+                  "7G-DCT"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Encrassement des injecteurs Piezo avec calamine",
+                    "symptomes": "Ratés, fumée, voyant moteur, à-coups",
+                    "pieces_concernees": "Injecteurs Piezo",
+                    "kilometrage_critique": "Fréquent au-delà de 150 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  },
+                  {
+                    "panne": "Encrassement de la vanne EGR",
+                    "symptomes": "Perte de puissance en usage urbain",
+                    "pieces_concernees": "Vanne EGR",
+                    "kilometrage_critique": "Dès 100 000-120 000 km",
+                    "cout_estime_eur": "250 à 500€"
+                  },
+                  {
+                    "panne": "Usure du tendeur de la chaîne de distribution avant",
+                    "symptomes": "Bruit de chaîne léger au démarrage",
+                    "pieces_concernees": "Tendeur de chaîne",
+                    "kilometrage_critique": "À surveiller au-delà de 180 000 km",
+                    "cout_estime_eur": "400 à 800€"
+                  },
+                  {
+                    "panne": "Colmatage du FAP sur petits trajets répétés",
+                    "symptomes": "Voyant FAP, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules diesel",
+                    "kilometrage_critique": "Dès 80 000-100 000 km en usage urbain",
+                    "cout_estime_eur": "300 à 1000€"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Classe C",
+        "generations": [
+          {
+            "code_chassis": "W202",
+            "annees": "1993-2000",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "C180/C200 - 122 à 136ch",
+                "code_moteur": "M111",
+                "cylindree": "1.8L / 2.0L",
+                "puissance_ch": 136,
+                "boite": [
+                  "BVM5",
+                  "BVA4/5"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Usure du tendeur hydraulique de chaîne M111",
+                    "symptomes": "Bruit de chaîne au démarrage à froid",
+                    "pieces_concernees": "Chaîne de distribution, tendeur hydraulique",
+                    "kilometrage_critique": "À surveiller au-delà de 200 000 km",
+                    "cout_estime_eur": "400 à 800€"
+                  },
+                  {
+                    "panne": "Dégradation du câblage du faisceau moteur",
+                    "symptomes": "Pannes électriques intermittentes, gaine du faisceau qui se désagrège visuellement",
+                    "pieces_concernees": "Faisceau électrique moteur",
+                    "kilometrage_critique": "Fréquent au-delà de 20-25 ans d'âge",
+                    "cout_estime_eur": "200 à 600€"
+                  },
+                  {
+                    "panne": "Corrosion des bas de caisse et passages de roue",
+                    "symptomes": "Perforations visibles, bulles de peinture",
+                    "pieces_concernees": "Bas de caisse, passages de roue",
+                    "kilometrage_critique": "Fréquent au-delà de 25-30 ans d'âge",
+                    "cout_estime_eur": "500 à 2000€"
+                  },
+                  {
+                    "panne": "Défaillance du capteur de cliquetis",
+                    "symptomes": "Voyant moteur, à-coups, perte de puissance",
+                    "pieces_concernees": "Capteur de cliquetis",
+                    "kilometrage_critique": "Variable, usure normale",
+                    "cout_estime_eur": "100 à 250€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "C200D/C220D - 75 à 95ch",
+                "code_moteur": "OM604 / OM605",
+                "cylindree": "2.0L / 2.2L",
+                "puissance_ch": 95,
+                "boite": [
+                  "BVM5",
+                  "BVA4"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Pompe injection à surveiller sur très gros kilométrage",
+                    "symptomes": "Perte de puissance, fumées",
+                    "pieces_concernees": "Pompe injection",
+                    "kilometrage_critique": "Au-delà de 300 000-400 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  },
+                  {
+                    "panne": "Corrosion carrosserie sur exemplaires mal entretenus",
+                    "symptomes": "Perforations, bulles de peinture",
+                    "pieces_concernees": "Carrosserie",
+                    "kilometrage_critique": "Fréquent au-delà de 20-25 ans d'âge",
+                    "cout_estime_eur": "500 à 2000€"
+                  },
+                  {
+                    "panne": "Usure du joint de culasse",
+                    "symptomes": "Perte de liquide de refroidissement, surchauffe",
+                    "pieces_concernees": "Joint de culasse",
+                    "kilometrage_critique": "À surveiller après 300 000 km",
+                    "cout_estime_eur": "600 à 1100€"
+                  },
+                  {
+                    "panne": "Démarreur sollicité et fatigué",
+                    "symptomes": "Démarrage laborieux, bruit de grincement",
+                    "pieces_concernees": "Démarreur",
+                    "kilometrage_critique": "Usure normale au-delà de 250 000 km",
+                    "cout_estime_eur": "150 à 350€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "W203",
+            "annees": "2000-2007",
+            "phases": [
+              "Phase 1 (2000-2004)",
+              "Phase 2 restylée (2004-2007)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "C180/C200 Kompressor - 143 à 163ch",
+                "code_moteur": "M111 / M271",
+                "cylindree": "1.8L compresseur",
+                "puissance_ch": 163,
+                "boite": [
+                  "BVM6",
+                  "BVA5"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Usure du compresseur mécanique (Kompressor)",
+                    "symptomes": "Sifflement anormal, perte de puissance à haut régime",
+                    "pieces_concernees": "Compresseur volumétrique",
+                    "kilometrage_critique": "Au-delà de 150 000 km",
+                    "cout_estime_eur": "800 à 1500€"
+                  },
+                  {
+                    "panne": "Étirement de la chaîne de distribution M271",
+                    "symptomes": "Bruit de chaîne au démarrage",
+                    "pieces_concernees": "Chaîne de distribution",
+                    "kilometrage_critique": "À surveiller dès 150 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  },
+                  {
+                    "panne": "Corrosion sur passages de roue et bas de portières",
+                    "symptomes": "Perforations, bulles de peinture",
+                    "pieces_concernees": "Passages de roue, bas de portières",
+                    "kilometrage_critique": "Fréquent au-delà de 18-20 ans d'âge",
+                    "cout_estime_eur": "400 à 1500€"
+                  },
+                  {
+                    "panne": "Pannes électroniques du calculateur SAM",
+                    "symptomes": "Dysfonctionnements électriques multiples et variés",
+                    "pieces_concernees": "Calculateur SAM (Signal Acquisition Module)",
+                    "kilometrage_critique": "Fréquent au-delà de 150 000 km ou 15-18 ans",
+                    "cout_estime_eur": "400 à 900€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "C220 CDI/C270 CDI - 143 à 170ch",
+                "code_moteur": "OM646 / OM612",
+                "cylindree": "2.1L / 2.7L",
+                "puissance_ch": 170,
+                "boite": [
+                  "BVM6",
+                  "BVA5"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Encrassement des injecteurs CDI première génération",
+                    "symptomes": "Ratés, fumée, démarrage difficile",
+                    "pieces_concernees": "Injecteurs CDI",
+                    "kilometrage_critique": "Fréquent au-delà de 180 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Usure du volant moteur bi-masse",
+                    "symptomes": "Bruit métallique au ralenti, vibrations",
+                    "pieces_concernees": "Volant moteur bi-masse",
+                    "kilometrage_critique": "Entre 150 000 et 200 000 km",
+                    "cout_estime_eur": "600 à 1100€"
+                  },
+                  {
+                    "panne": "Encrassement de la vanne EGR",
+                    "symptomes": "Perte de puissance en usage urbain",
+                    "pieces_concernees": "Vanne EGR",
+                    "kilometrage_critique": "Dès 120 000-150 000 km",
+                    "cout_estime_eur": "250 à 500€"
+                  },
+                  {
+                    "panne": "Sensibilité du turbo à géométrie variable",
+                    "symptomes": "Perte de puissance, sifflement",
+                    "pieces_concernees": "Turbocompresseur",
+                    "kilometrage_critique": "Au-delà de 180 000 km",
+                    "cout_estime_eur": "800 à 1400€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "W204",
+            "annees": "2007-2014",
+            "phases": [
+              "Phase 1 (2007-2011)",
+              "Phase 2 restylée (2011-2014)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "C180/C200/C250 - 156 à 204ch",
+                "code_moteur": "M271",
+                "cylindree": "1.8L turbo",
+                "puissance_ch": 204,
+                "boite": [
+                  "BVM6",
+                  "BVA7G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Étirement prématuré de la chaîne de distribution M271",
+                    "symptomes": "Bruit caractéristique de chaîne au démarrage",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "Risque dès 100 000-130 000 km",
+                    "cout_estime_eur": "600 à 1200€"
+                  },
+                  {
+                    "panne": "Sensibilité du turbo sur versions puissantes",
+                    "symptomes": "Perte de puissance, sifflement",
+                    "pieces_concernees": "Turbocompresseur",
+                    "kilometrage_critique": "Au-delà de 150 000 km",
+                    "cout_estime_eur": "800 à 1400€"
+                  },
+                  {
+                    "panne": "Consommation d'huile signalée sur certains exemplaires",
+                    "symptomes": "Niveau qui baisse entre vidanges",
+                    "pieces_concernees": "Segments",
+                    "kilometrage_critique": "Dès 80 000-100 000 km",
+                    "cout_estime_eur": "Surveillance requise"
+                  },
+                  {
+                    "panne": "Dérive du capteur de niveau d'huile",
+                    "symptomes": "Message d'erreur niveau d'huile erroné",
+                    "pieces_concernees": "Capteur de niveau d'huile",
+                    "kilometrage_critique": "Au-delà de 100 000 km",
+                    "cout_estime_eur": "100 à 250€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "C200 CDI/C220 CDI/C250 CDI - 136 à 204ch",
+                "code_moteur": "OM646 / OM651",
+                "cylindree": "2.1L",
+                "puissance_ch": 204,
+                "boite": [
+                  "BVM6",
+                  "BVA7G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Fuites des injecteurs Piezo OM651 et encrassement",
+                    "symptomes": "Ratés, fumée, voyant moteur, odeur de carburant",
+                    "pieces_concernees": "Injecteurs Piezo",
+                    "kilometrage_critique": "Fréquent au-delà de 150 000-180 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  },
+                  {
+                    "panne": "Encrassement vanne EGR et FAP",
+                    "symptomes": "Perte de puissance, régénérations fréquentes",
+                    "pieces_concernees": "Vanne EGR, FAP",
+                    "kilometrage_critique": "Dès 100 000-120 000 km en usage urbain",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Tendeur de la chaîne de distribution avant parfois défaillant",
+                    "symptomes": "Bruit de chaîne au démarrage",
+                    "pieces_concernees": "Tendeur de chaîne",
+                    "kilometrage_critique": "À surveiller au-delà de 180 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  },
+                  {
+                    "panne": "Coût élevé de remplacement du turbo à géométrie variable",
+                    "symptomes": "Perte de puissance, sifflement",
+                    "pieces_concernees": "Turbocompresseur à géométrie variable",
+                    "kilometrage_critique": "Au-delà de 180 000 km",
+                    "cout_estime_eur": "900 à 1600€"
+                  }
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "C63 AMG - 457ch",
+                "code_moteur": "M156 (V8 atmo)",
+                "cylindree": "6.2L",
+                "puissance_ch": 457,
+                "boite": [
+                  "BVA7G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "MALADIE CONNUE M156 : usure prématurée des guides de soupapes",
+                    "symptomes": "Fumée bleue caractéristique au démarrage à froid, se dissipant après quelques secondes",
+                    "pieces_concernees": "Guides de soupapes, culasses",
+                    "kilometrage_critique": "Fréquent entre 60 000 et 100 000 km",
+                    "cout_estime_eur": "2500 à 4000€ (refection des 2 culasses)"
+                  },
+                  {
+                    "panne": "Usure de la chaîne de distribution et des tendeurs",
+                    "symptomes": "Bruit de chaîne au démarrage",
+                    "pieces_concernees": "Chaîne de distribution, tendeurs",
+                    "kilometrage_critique": "À surveiller dès 80 000-100 000 km",
+                    "cout_estime_eur": "800 à 1500€"
+                  },
+                  {
+                    "panne": "Consommation d'huile élevée entre vidanges",
+                    "symptomes": "Niveau qui baisse rapidement",
+                    "pieces_concernees": "Guides de soupapes, segments",
+                    "kilometrage_critique": "Dès 50 000-70 000 km",
+                    "cout_estime_eur": "Surveillance ; réparation identique aux guides de soupapes"
+                  },
+                  {
+                    "panne": "Coûts d'entretien très élevés (pneus, freins, vidanges fréquentes)",
+                    "symptomes": "Usure rapide typique d'un V8 haute performance",
+                    "pieces_concernees": "Pneumatiques, plaquettes/disques, huile moteur",
+                    "kilometrage_critique": "Vidanges recommandées tous les 10 000 km",
+                    "cout_estime_eur": "2000 à 3500€/an en usage régulier"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "W205",
+            "annees": "2014-2021",
+            "phases": [
+              "Phase 1 (2014-2018)",
+              "Phase 2 restylée (2018-2021)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "C180/C200/C300 - 156 à 258ch",
+                "code_moteur": "M264",
+                "cylindree": "1.5L / 2.0L turbo",
+                "puissance_ch": 258,
+                "boite": [
+                  "BVM6",
+                  "9G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Système mild-hybrid EQ Boost parfois capricieux",
+                    "symptomes": "Comportement de démarrage/relance électrique irrégulier",
+                    "pieces_concernees": "Module mild-hybrid, batterie 48V",
+                    "kilometrage_critique": "Variable",
+                    "cout_estime_eur": "300 à 900€ selon panne"
+                  },
+                  {
+                    "panne": "À-coups de la boîte 9G-Tronic à froid",
+                    "symptomes": "Secousses lors des premiers passages de rapport après démarrage",
+                    "pieces_concernees": "Boîte 9G-Tronic",
+                    "kilometrage_critique": "Comportement présent dès l'origine, s'accentue avec l'usure",
+                    "cout_estime_eur": "N/A (comportement normal, sauf aggravation)"
+                  },
+                  {
+                    "panne": "Encrassement du filtre à particules essence",
+                    "symptomes": "Voyant moteur, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules essence",
+                    "kilometrage_critique": "Sur petits trajets dès 60 000-80 000 km",
+                    "cout_estime_eur": "700 à 1400€"
+                  },
+                  {
+                    "panne": "Dérive des capteurs de suralimentation",
+                    "symptomes": "Voyant moteur, à-coups",
+                    "pieces_concernees": "Capteurs de pression turbo",
+                    "kilometrage_critique": "Au-delà de 100 000 km",
+                    "cout_estime_eur": "150 à 350€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "C200d/C220d/C250d - 160 à 204ch",
+                "code_moteur": "OM651 / OM654",
+                "cylindree": "2.0L / 2.1L",
+                "puissance_ch": 204,
+                "boite": [
+                  "BVM6",
+                  "9G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité du système AdBlue (OM654)",
+                    "symptomes": "Voyant AdBlue, limitation de démarrages",
+                    "pieces_concernees": "Capteur NOx, pompe de dosage AdBlue",
+                    "kilometrage_critique": "Dès 80 000-100 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement vanne EGR et FAP en usage urbain",
+                    "symptomes": "Perte de puissance, régénérations fréquentes",
+                    "pieces_concernees": "Vanne EGR, FAP",
+                    "kilometrage_critique": "Dès 100 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Défaillance du capteur NOx",
+                    "symptomes": "Voyant AdBlue/dépollution, message d'erreur",
+                    "pieces_concernees": "Capteur NOx",
+                    "kilometrage_critique": "Fréquent au-delà de 100 000-120 000 km",
+                    "cout_estime_eur": "300 à 600€"
+                  },
+                  {
+                    "panne": "Coût élevé de remplacement des injecteurs",
+                    "symptomes": "Ratés, fumée",
+                    "pieces_concernees": "Injecteurs",
+                    "kilometrage_critique": "Au-delà de 180 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  }
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "C63 AMG - 476 à 510ch",
+                "code_moteur": "M177 (V8 biturbo)",
+                "cylindree": "4.0L",
+                "puissance_ch": 510,
+                "boite": [
+                  "AMG Speedshift MCT9"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Consommation d'huile à surveiller en usage sportif intensif",
+                    "symptomes": "Niveau qui baisse rapidement entre vidanges",
+                    "pieces_concernees": "Segments",
+                    "kilometrage_critique": "Dès 40 000-60 000 km en usage sportif",
+                    "cout_estime_eur": "Surveillance rigoureuse requise"
+                  },
+                  {
+                    "panne": "Sensibilité du système de refroidissement sophistiqué",
+                    "symptomes": "Surchauffe en usage intensif, mode dégradé",
+                    "pieces_concernees": "Radiateurs, durites, intercoolers",
+                    "kilometrage_critique": "Entretien rigoureux dès la première année en usage sportif",
+                    "cout_estime_eur": "500 à 1500€ selon élément"
+                  },
+                  {
+                    "panne": "Usure de l'embrayage humide MCT en conduite sportive",
+                    "symptomes": "Patinage, usure accélérée en usage intensif",
+                    "pieces_concernees": "Embrayage humide MCT9",
+                    "kilometrage_critique": "Dès 40 000-60 000 km en conduite sportive",
+                    "cout_estime_eur": "1500 à 2800€"
+                  },
+                  {
+                    "panne": "Coûts de pneus et freins élevés",
+                    "symptomes": "Usure rapide typique d'un V8 biturbo haute performance",
+                    "pieces_concernees": "Pneumatiques, disques et plaquettes de frein",
+                    "kilometrage_critique": "Dès 10 000-15 000 km en usage sportif",
+                    "cout_estime_eur": "2000 à 4000€"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Classe E",
+        "generations": [
+          {
+            "code_chassis": "W124",
+            "annees": "1984-1996",
+            "phases": [
+              "Phase 1 (1984-1993)",
+              "Phase 2 restylée (1993-1996)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "E200/E220 - 122 à 150ch",
+                "code_moteur": "M102 / M111",
+                "cylindree": "2.0L / 2.2L",
+                "puissance_ch": 150,
+                "boite": [
+                  "BVM5",
+                  "BVA4"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Usure de la chaîne de distribution sur très gros kilométrage",
+                    "symptomes": "Bruit de chaîne léger, à surveiller sur exemplaires à très haut kilométrage",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "Au-delà de 350 000-400 000 km",
+                    "cout_estime_eur": "500 à 900€"
+                  },
+                  {
+                    "panne": "Corrosion possible sur bas de caisse malgré galvanisation",
+                    "symptomes": "Perforations localisées malgré la bonne protection d'origine",
+                    "pieces_concernees": "Bas de caisse",
+                    "kilometrage_critique": "Fréquent au-delà de 30 ans d'âge sur exemplaires mal entretenus",
+                    "cout_estime_eur": "500 à 1500€"
+                  },
+                  {
+                    "panne": "Vieillissement des faisceaux électriques",
+                    "symptomes": "Pannes électriques intermittentes",
+                    "pieces_concernees": "Faisceaux électriques, connecteurs",
+                    "kilometrage_critique": "Au-delà de 30-35 ans d'âge",
+                    "cout_estime_eur": "150 à 500€"
+                  },
+                  {
+                    "panne": "Fuites de la suspension pneumatique (versions équipées)",
+                    "symptomes": "Affaissement, compresseur bruyant",
+                    "pieces_concernees": "Compresseur, coussins d'air",
+                    "kilometrage_critique": "Fréquent sur exemplaires de plus de 25-30 ans",
+                    "cout_estime_eur": "500 à 1200€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "E200D/E250D/E300D - 72 à 113ch",
+                "code_moteur": "OM601 / OM602 / OM603",
+                "cylindree": "2.0L / 2.5L / 3.0L",
+                "puissance_ch": 113,
+                "boite": [
+                  "BVM5",
+                  "BVA4"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Robustesse exceptionnelle du bloc, panne rare avec entretien",
+                    "symptomes": "N/A (fiabilité intrinsèque élevée)",
+                    "pieces_concernees": "N/A",
+                    "kilometrage_critique": "Souvent au-delà de 500 000-700 000 km avec entretien rigoureux",
+                    "cout_estime_eur": "N/A"
+                  },
+                  {
+                    "panne": "Usure de la pompe injection sur très gros kilométrage",
+                    "symptomes": "Perte de puissance, fumées",
+                    "pieces_concernees": "Pompe injection",
+                    "kilometrage_critique": "Au-delà de 400 000-500 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  },
+                  {
+                    "panne": "Corrosion carrosserie sur exemplaires mal entretenus",
+                    "symptomes": "Perforations visibles",
+                    "pieces_concernees": "Carrosserie",
+                    "kilometrage_critique": "Fréquent au-delà de 30 ans sans entretien anticorrosion",
+                    "cout_estime_eur": "500 à 2000€"
+                  },
+                  {
+                    "panne": "Usure du joint de culasse après très gros kilométrage",
+                    "symptomes": "Perte de liquide de refroidissement",
+                    "pieces_concernees": "Joint de culasse",
+                    "kilometrage_critique": "Au-delà de 400 000-500 000 km",
+                    "cout_estime_eur": "600 à 1100€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "W210",
+            "annees": "1995-2002",
+            "phases": [
+              "Phase 1 (1995-1999)",
+              "Phase 2 restylée (1999-2002)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "E200/E240 - 136 à 170ch",
+                "code_moteur": "M111 / M112",
+                "cylindree": "2.0L / 2.4L V6",
+                "puissance_ch": 170,
+                "boite": [
+                  "BVM5",
+                  "BVA5"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "MALADIE CONNUE W210 : corrosion prématurée généralisée",
+                    "symptomes": "Perforations rapides sur ailes, bas de caisse, passages de roue, planchers, souvent dès 10-12 ans",
+                    "pieces_concernees": "Ailes, bas de caisse, passages de roue, planchers",
+                    "kilometrage_critique": "Indépendant du kilométrage, lié à un défaut de traitement anticorrosion d'usine",
+                    "cout_estime_eur": "1500 à 4000€ selon étendue, parfois véhicule économiquement irréparable"
+                  },
+                  {
+                    "panne": "Usure du tendeur hydraulique de chaîne de distribution",
+                    "symptomes": "Bruit de chaîne au démarrage",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "À surveiller au-delà de 200 000 km",
+                    "cout_estime_eur": "400 à 800€"
+                  },
+                  {
+                    "panne": "Sensibilité du faisceau électrique et connectiques à l'humidité",
+                    "symptomes": "Pannes électriques intermittentes, notamment sous la banquette arrière",
+                    "pieces_concernees": "Faisceaux électriques, connecteurs",
+                    "kilometrage_critique": "Fréquent au-delà de 20-25 ans",
+                    "cout_estime_eur": "200 à 700€"
+                  },
+                  {
+                    "panne": "Fragilité de la suspension pneumatique AIRMATIC",
+                    "symptomes": "Affaissement, compresseur bruyant, hauteur irrégulière",
+                    "pieces_concernees": "Compresseur, coussins d'air",
+                    "kilometrage_critique": "Fréquent au-delà de 150 000 km",
+                    "cout_estime_eur": "700 à 1800€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "E220 CDI/E300 CDI - 125 à 197ch",
+                "code_moteur": "OM611 / OM613",
+                "cylindree": "2.2L / 3.0L",
+                "puissance_ch": 197,
+                "boite": [
+                  "BVM5",
+                  "BVA5"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Corrosion carrosserie identique à toute la gamme W210",
+                    "symptomes": "Perforations rapides, indépendantes du kilométrage",
+                    "pieces_concernees": "Ailes, bas de caisse, passages de roue, planchers",
+                    "kilometrage_critique": "Défaut d'usine, souvent visible dès 10-12 ans",
+                    "cout_estime_eur": "1500 à 4000€ selon étendue"
+                  },
+                  {
+                    "panne": "Sensibilité des injecteurs première génération CDI",
+                    "symptomes": "Ratés, fumée, démarrage difficile",
+                    "pieces_concernees": "Injecteurs CDI",
+                    "kilometrage_critique": "Fréquent au-delà de 200 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Usure du volant moteur bi-masse",
+                    "symptomes": "Bruit métallique au ralenti",
+                    "pieces_concernees": "Volant moteur bi-masse",
+                    "kilometrage_critique": "Entre 150 000 et 200 000 km",
+                    "cout_estime_eur": "600 à 1100€"
+                  },
+                  {
+                    "panne": "Usure du turbo sur versions haute puissance",
+                    "symptomes": "Perte de puissance, sifflement",
+                    "pieces_concernees": "Turbocompresseur",
+                    "kilometrage_critique": "Au-delà de 200 000 km",
+                    "cout_estime_eur": "700 à 1300€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "W211",
+            "annees": "2002-2009",
+            "phases": [
+              "Phase 1 (2002-2006)",
+              "Phase 2 restylée (2006-2009)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "E200/E280/E350 - 163 à 272ch",
+                "code_moteur": "M271 / M272",
+                "cylindree": "1.8L turbo / 2.5L-3.5L V6",
+                "puissance_ch": 272,
+                "boite": [
+                  "BVM6",
+                  "BVA7G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Étirement de la chaîne de distribution M272 (V6)",
+                    "symptomes": "Bruit de chaîne caractéristique au démarrage",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "Risque dès 120 000-150 000 km",
+                    "cout_estime_eur": "700 à 1300€"
+                  },
+                  {
+                    "panne": "Fragilité de la suspension pneumatique AIRMATIC",
+                    "symptomes": "Affaissement, compresseur bruyant",
+                    "pieces_concernees": "Compresseur, coussins d'air",
+                    "kilometrage_critique": "Fréquent au-delà de 130 000-150 000 km",
+                    "cout_estime_eur": "800 à 2000€"
+                  },
+                  {
+                    "panne": "Corrosion sur passages de roue (moindre que W210)",
+                    "symptomes": "Perforations localisées",
+                    "pieces_concernees": "Passages de roue",
+                    "kilometrage_critique": "Fréquent au-delà de 15-20 ans",
+                    "cout_estime_eur": "300 à 900€"
+                  },
+                  {
+                    "panne": "Pannes du calculateur SAM",
+                    "symptomes": "Dysfonctionnements électriques divers",
+                    "pieces_concernees": "Calculateur SAM",
+                    "kilometrage_critique": "Fréquent au-delà de 150 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "E220 CDI/E320 CDI - 150 à 224ch",
+                "code_moteur": "OM646 / OM642",
+                "cylindree": "2.1L / 3.0L V6",
+                "puissance_ch": 224,
+                "boite": [
+                  "BVM6",
+                  "BVA7G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Usure de la chaîne de distribution sur très gros kilométrage (OM642)",
+                    "symptomes": "Bruit de chaîne léger",
+                    "pieces_concernees": "Chaîne de distribution",
+                    "kilometrage_critique": "Au-delà de 300 000 km",
+                    "cout_estime_eur": "700 à 1300€"
+                  },
+                  {
+                    "panne": "Encrassement vanne EGR et FAP en usage urbain",
+                    "symptomes": "Perte de puissance",
+                    "pieces_concernees": "Vanne EGR, FAP",
+                    "kilometrage_critique": "Dès 120 000-150 000 km",
+                    "cout_estime_eur": "300 à 1000€"
+                  },
+                  {
+                    "panne": "Coût élevé d'entretien de la suspension AIRMATIC",
+                    "symptomes": "Affaissement",
+                    "pieces_concernees": "Compresseur, coussins d'air",
+                    "kilometrage_critique": "Au-delà de 130 000-150 000 km",
+                    "cout_estime_eur": "800 à 2000€"
+                  },
+                  {
+                    "panne": "Sensibilité des injecteurs Piezo à l'encrassement",
+                    "symptomes": "Ratés, fumée",
+                    "pieces_concernees": "Injecteurs Piezo",
+                    "kilometrage_critique": "Au-delà de 180 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "W212",
+            "annees": "2009-2016",
+            "phases": [
+              "Phase 1 (2009-2013)",
+              "Phase 2 restylée (2013-2016)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "E200/E250/E350 - 184 à 306ch",
+                "code_moteur": "M271 / M276",
+                "cylindree": "1.8L turbo / 3.5L V6",
+                "puissance_ch": 306,
+                "boite": [
+                  "BVM6",
+                  "BVA7G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Étirement prématuré de la chaîne de distribution M271",
+                    "symptomes": "Bruit de chaîne au démarrage",
+                    "pieces_concernees": "Chaîne de distribution",
+                    "kilometrage_critique": "Risque dès 100 000-130 000 km",
+                    "cout_estime_eur": "600 à 1200€"
+                  },
+                  {
+                    "panne": "Fragilité et coût élevé de la suspension AIRMATIC",
+                    "symptomes": "Affaissement, compresseur bruyant",
+                    "pieces_concernees": "Compresseur, coussins d'air",
+                    "kilometrage_critique": "Au-delà de 130 000-150 000 km",
+                    "cout_estime_eur": "900 à 2200€"
+                  },
+                  {
+                    "panne": "Consommation d'huile signalée sur certains blocs",
+                    "symptomes": "Niveau qui baisse entre vidanges",
+                    "pieces_concernees": "Segments",
+                    "kilometrage_critique": "Dès 80 000-100 000 km",
+                    "cout_estime_eur": "Surveillance requise"
+                  },
+                  {
+                    "panne": "Défaillance de capteurs électroniques multiples",
+                    "symptomes": "Voyants divers, dysfonctionnements variés",
+                    "pieces_concernees": "Capteurs multiples",
+                    "kilometrage_critique": "Variable, fréquent au-delà de 130 000 km",
+                    "cout_estime_eur": "150 à 500€ par capteur"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "E220 CDI/E250 CDI/E350 CDI - 170 à 252ch",
+                "code_moteur": "OM651 / OM642",
+                "cylindree": "2.1L / 3.0L V6",
+                "puissance_ch": 252,
+                "boite": [
+                  "BVM6",
+                  "BVA7G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Fuites et encrassement des injecteurs Piezo OM651",
+                    "symptomes": "Ratés, fumée, odeur de carburant",
+                    "pieces_concernees": "Injecteurs Piezo",
+                    "kilometrage_critique": "Fréquent au-delà de 150 000-180 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  },
+                  {
+                    "panne": "Encrassement vanne EGR et FAP en usage urbain",
+                    "symptomes": "Perte de puissance, régénérations fréquentes",
+                    "pieces_concernees": "Vanne EGR, FAP",
+                    "kilometrage_critique": "Dès 100 000-120 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Coût élevé d'entretien de la suspension AIRMATIC",
+                    "symptomes": "Affaissement",
+                    "pieces_concernees": "Compresseur, coussins d'air",
+                    "kilometrage_critique": "Au-delà de 130 000-150 000 km",
+                    "cout_estime_eur": "900 à 2200€"
+                  },
+                  {
+                    "panne": "Sensibilité du turbo à géométrie variable",
+                    "symptomes": "Perte de puissance, sifflement",
+                    "pieces_concernees": "Turbocompresseur",
+                    "kilometrage_critique": "Au-delà de 180 000 km",
+                    "cout_estime_eur": "900 à 1600€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "W213",
+            "annees": "2016-2023",
+            "phases": [
+              "Phase 1 (2016-2020)",
+              "Phase 2 restylée (2020-2023)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "E200/E300/E350 - 184 à 299ch",
+                "code_moteur": "M264 / M256 (mild-hybrid 6 cyl.)",
+                "cylindree": "2.0L turbo / 3.0L",
+                "puissance_ch": 299,
+                "boite": [
+                  "9G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Complexité du système mild-hybrid EQ Boost (M256)",
+                    "symptomes": "Comportement de démarrage/relance électrique irrégulier, messages d'erreur",
+                    "pieces_concernees": "Module mild-hybrid, batterie 48V",
+                    "kilometrage_critique": "Variable",
+                    "cout_estime_eur": "500 à 1500€ hors garantie selon panne"
+                  },
+                  {
+                    "panne": "Encrassement du filtre à particules essence",
+                    "symptomes": "Voyant moteur, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules essence",
+                    "kilometrage_critique": "Sur petits trajets dès 60 000-80 000 km",
+                    "cout_estime_eur": "800 à 1600€"
+                  },
+                  {
+                    "panne": "Bugs logiciels ponctuels de la boîte 9G-Tronic",
+                    "symptomes": "À-coups occasionnels, passages hésitants",
+                    "pieces_concernees": "Calculateur de boîte 9G-Tronic",
+                    "kilometrage_critique": "Souvent résolu par mise à jour logicielle",
+                    "cout_estime_eur": "0€ si mise à jour, sinon 300-600€"
+                  },
+                  {
+                    "panne": "Dérive des capteurs de suralimentation",
+                    "symptomes": "Voyant moteur, à-coups",
+                    "pieces_concernees": "Capteurs de pression turbo",
+                    "kilometrage_critique": "Au-delà de 100 000 km",
+                    "cout_estime_eur": "150 à 350€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "E220d/E300d/E350d - 194 à 286ch",
+                "code_moteur": "OM654 / OM656",
+                "cylindree": "2.0L / 3.0L V6",
+                "puissance_ch": 286,
+                "boite": [
+                  "9G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité du système AdBlue/SCR",
+                    "symptomes": "Voyant AdBlue, limitation de démarrages",
+                    "pieces_concernees": "Capteur NOx, pompe de dosage",
+                    "kilometrage_critique": "Dès 80 000-100 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement du FAP sur usage urbain répété",
+                    "symptomes": "Voyant FAP, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "OM654 globalement plus fiable mais encore jeune, recul limité sur très haut kilométrage",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Ensemble du groupe motopropulseur",
+                    "kilometrage_critique": "Peu de recul au-delà de 250 000 km",
+                    "cout_estime_eur": "Non déterminable précisément à très haut kilométrage"
+                  },
+                  {
+                    "panne": "Coûts d'entretien élevés liés à l'électronique de dépollution",
+                    "symptomes": "Voyants multiples récurrents",
+                    "pieces_concernees": "Ensemble SCR/EGR/FAP",
+                    "kilometrage_critique": "Sur toute la durée de vie",
+                    "cout_estime_eur": "150 à 400€/an en moyenne"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "GLE (ex-Classe M)",
+        "generations": [
+          {
+            "code_chassis": "W163",
+            "annees": "1997-2005",
+            "phases": [
+              "Phase 1 (1997-2001)",
+              "Phase 2 restylée (2001-2005)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "ML230/ML320/ML430 - 150 à 272ch",
+                "code_moteur": "M111 / M112 (V6) / M113 (V8)",
+                "cylindree": "2.3L à 4.3L",
+                "puissance_ch": 272,
+                "boite": [
+                  "BVA5"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Qualité de finition et de rouille critiquée à l'époque",
+                    "symptomes": "Perforations sur bas de caisse et passages de roue",
+                    "pieces_concernees": "Bas de caisse, passages de roue",
+                    "kilometrage_critique": "Fréquent au-delà de 20-25 ans d'âge",
+                    "cout_estime_eur": "500 à 2000€"
+                  },
+                  {
+                    "panne": "Usure du tendeur hydraulique de chaîne de distribution",
+                    "symptomes": "Bruit de chaîne au démarrage",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "À surveiller au-delà de 200 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  },
+                  {
+                    "panne": "Coût élevé de réparation de la boîte de transfert 4x4",
+                    "symptomes": "Bruits anormaux en 4x4, vibrations",
+                    "pieces_concernees": "Boîte de transfert",
+                    "kilometrage_critique": "Au-delà de 180 000-200 000 km",
+                    "cout_estime_eur": "1200 à 2200€"
+                  },
+                  {
+                    "panne": "Sensibilité des faisceaux électriques à l'humidité",
+                    "symptomes": "Pannes électriques intermittentes",
+                    "pieces_concernees": "Faisceaux électriques",
+                    "kilometrage_critique": "Au-delà de 20-25 ans d'âge",
+                    "cout_estime_eur": "200 à 600€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "ML270 CDI - 163ch",
+                "code_moteur": "OM612",
+                "cylindree": "2.7L",
+                "puissance_ch": 163,
+                "boite": [
+                  "BVA5"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité des injecteurs première génération CDI",
+                    "symptomes": "Ratés, fumée, démarrage difficile",
+                    "pieces_concernees": "Injecteurs CDI",
+                    "kilometrage_critique": "Fréquent au-delà de 180 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Usure du volant moteur bi-masse",
+                    "symptomes": "Bruit métallique au ralenti",
+                    "pieces_concernees": "Volant moteur bi-masse",
+                    "kilometrage_critique": "Entre 150 000 et 200 000 km",
+                    "cout_estime_eur": "600 à 1100€"
+                  },
+                  {
+                    "panne": "Corrosion carrosserie fréquente",
+                    "symptomes": "Perforations visibles",
+                    "pieces_concernees": "Carrosserie",
+                    "kilometrage_critique": "Fréquent au-delà de 20-25 ans d'âge",
+                    "cout_estime_eur": "500 à 2000€"
+                  },
+                  {
+                    "panne": "Sensibilité du turbo à géométrie variable",
+                    "symptomes": "Perte de puissance, sifflement",
+                    "pieces_concernees": "Turbocompresseur",
+                    "kilometrage_critique": "Au-delà de 200 000 km",
+                    "cout_estime_eur": "700 à 1300€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "W164",
+            "annees": "2005-2011",
+            "phases": [
+              "Phase 1 (2005-2008)",
+              "Phase 2 restylée (2008-2011)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "ML350/ML500/ML63 AMG - 272 à 510ch",
+                "code_moteur": "M272 (V6) / M273 (V8) / M156 (V8 AMG)",
+                "cylindree": "3.5L à 6.3L",
+                "puissance_ch": 510,
+                "boite": [
+                  "BVA7G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Étirement de la chaîne de distribution M272/M273",
+                    "symptomes": "Bruit de chaîne au démarrage",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "Risque dès 120 000-150 000 km",
+                    "cout_estime_eur": "700 à 1400€"
+                  },
+                  {
+                    "panne": "MALADIE CONNUE M156 (AMG) : usure des guides de soupapes",
+                    "symptomes": "Fumée bleue caractéristique au démarrage à froid",
+                    "pieces_concernees": "Guides de soupapes, culasses",
+                    "kilometrage_critique": "Fréquent entre 60 000 et 100 000 km",
+                    "cout_estime_eur": "2500 à 4000€"
+                  },
+                  {
+                    "panne": "Coût élevé d'entretien de la suspension AIRMATIC",
+                    "symptomes": "Affaissement, compresseur bruyant",
+                    "pieces_concernees": "Compresseur, coussins d'air",
+                    "kilometrage_critique": "Au-delà de 130 000-150 000 km",
+                    "cout_estime_eur": "900 à 2200€"
+                  },
+                  {
+                    "panne": "Pannes des calculateurs électroniques nombreux",
+                    "symptomes": "Dysfonctionnements électriques divers",
+                    "pieces_concernees": "Calculateurs multiples",
+                    "kilometrage_critique": "Variable, fréquent au-delà de 130 000 km",
+                    "cout_estime_eur": "300 à 900€ selon calculateur"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "ML280 CDI/ML320 CDI/ML420 CDI - 190 à 306ch",
+                "code_moteur": "OM642 (V6)",
+                "cylindree": "3.0L / 4.0L V8",
+                "puissance_ch": 306,
+                "boite": [
+                  "BVA7G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Usure de la chaîne de distribution (OM642, sur gros kilométrage)",
+                    "symptomes": "Bruit de chaîne léger",
+                    "pieces_concernees": "Chaîne de distribution",
+                    "kilometrage_critique": "Au-delà de 250 000-300 000 km",
+                    "cout_estime_eur": "700 à 1300€"
+                  },
+                  {
+                    "panne": "Coût élevé d'entretien de la suspension pneumatique",
+                    "symptomes": "Affaissement",
+                    "pieces_concernees": "Compresseur, coussins d'air",
+                    "kilometrage_critique": "Au-delà de 130 000-150 000 km",
+                    "cout_estime_eur": "900 à 2200€"
+                  },
+                  {
+                    "panne": "Encrassement vanne EGR et FAP en usage urbain",
+                    "symptomes": "Perte de puissance",
+                    "pieces_concernees": "Vanne EGR, FAP",
+                    "kilometrage_critique": "Dès 120 000-150 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Sensibilité des injecteurs Piezo à l'encrassement",
+                    "symptomes": "Ratés, fumée",
+                    "pieces_concernees": "Injecteurs Piezo",
+                    "kilometrage_critique": "Au-delà de 180 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "W166 (GLE dès 2015)",
+            "annees": "2011-2019",
+            "phases": [
+              "Phase 1 ML (2011-2015)",
+              "Phase 2 restylée GLE (2015-2019)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "ML/GLE 350/400/63 AMG - 306 à 585ch",
+                "code_moteur": "M276 (V6) / M157/M178 (V8 AMG)",
+                "cylindree": "3.5L à 5.5L",
+                "puissance_ch": 585,
+                "boite": [
+                  "BVA7G/9G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Coût très élevé d'entretien de la suspension AIRMATIC",
+                    "symptomes": "Affaissement, comportement dynamique dégradé",
+                    "pieces_concernees": "Compresseur, coussins d'air, capteurs de hauteur",
+                    "kilometrage_critique": "Au-delà de 130 000-150 000 km",
+                    "cout_estime_eur": "1200 à 2800€"
+                  },
+                  {
+                    "panne": "Consommation d'huile signalée sur certains blocs V8",
+                    "symptomes": "Niveau qui baisse entre vidanges",
+                    "pieces_concernees": "Segments",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "Surveillance requise"
+                  },
+                  {
+                    "panne": "Complexité du système mild-hybrid (versions récentes)",
+                    "symptomes": "Messages d'erreur électronique potentiels",
+                    "pieces_concernees": "Module mild-hybrid",
+                    "kilometrage_critique": "Peu de recul",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  },
+                  {
+                    "panne": "Pannes diverses de l'électronique très dense",
+                    "symptomes": "Voyants multiples, dysfonctionnements variés",
+                    "pieces_concernees": "Calculateurs multiples",
+                    "kilometrage_critique": "Variable, fréquent au-delà de 100 000 km",
+                    "cout_estime_eur": "300 à 1000€ selon calculateur"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "GLE 250d/350d/400d - 204 à 340ch",
+                "code_moteur": "OM651 / OM642 / OM656",
+                "cylindree": "2.1L à 3.0L",
+                "puissance_ch": 340,
+                "boite": [
+                  "BVA7G/9G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité du système AdBlue/SCR",
+                    "symptomes": "Voyant AdBlue, limitation de démarrages",
+                    "pieces_concernees": "Capteur NOx, pompe de dosage",
+                    "kilometrage_critique": "Dès 80 000-100 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement du FAP sur petits trajets répétés",
+                    "symptomes": "Voyant FAP, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Coût élevé d'entretien de la suspension pneumatique",
+                    "symptomes": "Affaissement",
+                    "pieces_concernees": "Compresseur, coussins d'air",
+                    "kilometrage_critique": "Au-delà de 130 000-150 000 km",
+                    "cout_estime_eur": "1200 à 2800€"
+                  },
+                  {
+                    "panne": "Sensibilité des injecteurs Piezo à l'encrassement",
+                    "symptomes": "Ratés, fumée",
+                    "pieces_concernees": "Injecteurs Piezo",
+                    "kilometrage_critique": "Au-delà de 180 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "V167",
+            "annees": "2019-aujourd'hui",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "GLE 350/450/63 S AMG - 299 à 612ch",
+                "code_moteur": "M254 (mild-hybrid) / M177 (AMG)",
+                "cylindree": "2.0L à 4.0L",
+                "puissance_ch": 612,
+                "boite": [
+                  "BVA9G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Manque de recul sur la fiabilité long terme",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Ensemble du groupe motopropulseur",
+                    "kilometrage_critique": "Modèle récent",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  },
+                  {
+                    "panne": "Complexité du système mild-hybrid EQ Boost",
+                    "symptomes": "Messages d'erreur électronique potentiels",
+                    "pieces_concernees": "Module mild-hybrid, batterie 48V",
+                    "kilometrage_critique": "Peu de recul",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  },
+                  {
+                    "panne": "Coût très élevé de la suspension E-Active Body Control",
+                    "symptomes": "Affaissement, comportement dynamique dégradé",
+                    "pieces_concernees": "Vérins actifs, capteurs, compresseur",
+                    "kilometrage_critique": "Au-delà de 100 000-130 000 km",
+                    "cout_estime_eur": "2000 à 4500€"
+                  },
+                  {
+                    "panne": "Bugs de l'électronique MBUX",
+                    "symptomes": "Écran figé, fonctions capricieuses",
+                    "pieces_concernees": "Calculateur MBUX",
+                    "kilometrage_critique": "Variable",
+                    "cout_estime_eur": "0€ si résolu par mise à jour, sinon 300 à 800€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "GLE 300d/400d - 245 à 330ch",
+                "code_moteur": "OM654 / OM656",
+                "cylindree": "2.0L / 3.0L",
+                "puissance_ch": 330,
+                "boite": [
+                  "BVA9G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité du système AdBlue/SCR",
+                    "symptomes": "Voyant AdBlue, limitation de démarrages",
+                    "pieces_concernees": "Capteur NOx, pompe de dosage",
+                    "kilometrage_critique": "Dès 80 000-100 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement du FAP sur petits trajets répétés",
+                    "symptomes": "Voyant FAP, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Manque de recul sur la fiabilité long terme",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Ensemble du groupe motopropulseur",
+                    "kilometrage_critique": "Modèle récent",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  },
+                  {
+                    "panne": "Coût élevé de la suspension pneumatique",
+                    "symptomes": "Affaissement",
+                    "pieces_concernees": "Compresseur, coussins d'air",
+                    "kilometrage_critique": "Au-delà de 100 000-130 000 km",
+                    "cout_estime_eur": "1500 à 3500€"
+                  }
+                ]
+              },
+              {
+                "type": "Hybride rechargeable",
+                "nom": "GLE 350de/400e - 320 à 381ch",
+                "code_moteur": "OM654 + moteur électrique",
+                "cylindree": "2.0L + électrique",
+                "puissance_ch": 381,
+                "boite": [
+                  "BVA9G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Vieillissement de la batterie HT sur le long terme",
+                    "symptomes": "Autonomie électrique réduite",
+                    "pieces_concernees": "Batterie haute tension",
+                    "kilometrage_critique": "Dégradation après 5-7 ans/100 000 km",
+                    "cout_estime_eur": "5500 à 9000€ hors garantie"
+                  },
+                  {
+                    "panne": "Complexité du système hybride, coûts de réparation élevés hors garantie",
+                    "symptomes": "Messages d'erreur électronique, transitions moteur thermique/électrique à surveiller",
+                    "pieces_concernees": "Module hybride, calculateur dédié",
+                    "kilometrage_critique": "Variable",
+                    "cout_estime_eur": "1000 à 4000€ selon panne"
+                  },
+                  {
+                    "panne": "Sollicitation très forte des trains roulants et freins",
+                    "symptomes": "Usure accélérée pneus/freins du fait du poids très élevé",
+                    "pieces_concernees": "Pneumatiques, plaquettes, disques",
+                    "kilometrage_critique": "Usure 15-25% plus rapide",
+                    "cout_estime_eur": "Surcoût entretien courant important"
+                  },
+                  {
+                    "panne": "Bugs logiciels de gestion hybride",
+                    "symptomes": "Transitions essence/électrique erratiques",
+                    "pieces_concernees": "Calculateur hybride",
+                    "kilometrage_critique": "Variable",
+                    "cout_estime_eur": "0 à 300€"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "CLA",
+        "generations": [
+          {
+            "code_chassis": "C117",
+            "annees": "2013-2019",
+            "phases": [
+              "Phase 1 (2013-2016)",
+              "Phase 2 restylée (2016-2019)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "CLA180/CLA250/CLA45 AMG - 122 à 381ch",
+                "code_moteur": "M270 / M133 (AMG)",
+                "cylindree": "1.6L à 2.0L turbo",
+                "puissance_ch": 381,
+                "boite": [
+                  "BVM6",
+                  "7G-DCT"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Étirement prématuré de la chaîne de distribution M270",
+                    "symptomes": "Bruit de chaîne au démarrage à froid",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "Risque dès 100 000-130 000 km",
+                    "cout_estime_eur": "600 à 1200€"
+                  },
+                  {
+                    "panne": "Consommation d'huile élevée signalée sur certains blocs",
+                    "symptomes": "Niveau qui baisse rapidement entre vidanges",
+                    "pieces_concernees": "Segments",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "Surveillance requise"
+                  },
+                  {
+                    "panne": "À-coups du double embrayage 7G-DCT à basse vitesse",
+                    "symptomes": "Secousses en manœuvre lente, hésitation au démarrage",
+                    "pieces_concernees": "Mécatronique 7G-DCT",
+                    "kilometrage_critique": "Fréquent dès les premiers 30 000 km",
+                    "cout_estime_eur": "800 à 1800€ si panne mécatronique avérée"
+                  },
+                  {
+                    "panne": "Turbo fortement sollicité sur CLA45 AMG",
+                    "symptomes": "Sifflement, perte de puissance si entretien négligé",
+                    "pieces_concernees": "Turbocompresseur",
+                    "kilometrage_critique": "Entretien rigoureux requis dès l'achat",
+                    "cout_estime_eur": "1200 à 2200€ en cas de remplacement"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "CLA200 CDI/CLA220 CDI - 109 à 177ch",
+                "code_moteur": "OM651",
+                "cylindree": "2.2L",
+                "puissance_ch": 177,
+                "boite": [
+                  "BVM6",
+                  "7G-DCT"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Encrassement des injecteurs Piezo",
+                    "symptomes": "Ratés, fumée, voyant moteur",
+                    "pieces_concernees": "Injecteurs Piezo",
+                    "kilometrage_critique": "Fréquent au-delà de 150 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  },
+                  {
+                    "panne": "Encrassement de la vanne EGR en usage urbain",
+                    "symptomes": "Perte de puissance",
+                    "pieces_concernees": "Vanne EGR",
+                    "kilometrage_critique": "Dès 100 000-120 000 km",
+                    "cout_estime_eur": "250 à 500€"
+                  },
+                  {
+                    "panne": "Colmatage du FAP sur petits trajets répétés",
+                    "symptomes": "Voyant FAP, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules diesel",
+                    "kilometrage_critique": "Dès 80 000-100 000 km en usage urbain",
+                    "cout_estime_eur": "300 à 1000€"
+                  },
+                  {
+                    "panne": "Usure du tendeur de la chaîne de distribution avant",
+                    "symptomes": "Bruit de chaîne léger au démarrage",
+                    "pieces_concernees": "Tendeur de chaîne",
+                    "kilometrage_critique": "À surveiller au-delà de 180 000 km",
+                    "cout_estime_eur": "400 à 800€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "C118",
+            "annees": "2019-aujourd'hui",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "CLA200/CLA250/CLA45 S AMG - 163 à 421ch",
+                "code_moteur": "M270 / M139 (AMG)",
+                "cylindree": "1.3L à 2.0L turbo",
+                "puissance_ch": 421,
+                "boite": [
+                  "7G-DCT"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Encrassement du filtre à particules essence",
+                    "symptomes": "Voyant moteur, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules essence",
+                    "kilometrage_critique": "Sur petits trajets dès 60 000-80 000 km",
+                    "cout_estime_eur": "700 à 1400€"
+                  },
+                  {
+                    "panne": "Turbo très sollicité sur CLA45 S AMG",
+                    "symptomes": "Sifflement, perte de puissance si entretien négligé",
+                    "pieces_concernees": "Turbocompresseur",
+                    "kilometrage_critique": "Entretien rigoureux requis dès l'achat",
+                    "cout_estime_eur": "1300 à 2400€ en cas de remplacement"
+                  },
+                  {
+                    "panne": "Consommation d'huile signalée sur certains blocs",
+                    "symptomes": "Niveau qui baisse entre vidanges",
+                    "pieces_concernees": "Segments",
+                    "kilometrage_critique": "Dès 50 000-70 000 km",
+                    "cout_estime_eur": "Surveillance requise"
+                  },
+                  {
+                    "panne": "À-coups de la boîte 7G-DCT à froid",
+                    "symptomes": "Secousses lors des premiers passages de rapport",
+                    "pieces_concernees": "Mécatronique 7G-DCT",
+                    "kilometrage_critique": "Comportement présent dès l'origine",
+                    "cout_estime_eur": "N/A (comportement normal, sauf aggravation)"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "CLA180d/CLA200d - 116 à 150ch",
+                "code_moteur": "OM608 (1.3L, base Renault/Mercedes)",
+                "cylindree": "1.3L",
+                "puissance_ch": 150,
+                "boite": [
+                  "7G-DCT"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité du système AdBlue/SCR",
+                    "symptomes": "Voyant AdBlue, limitation de démarrages",
+                    "pieces_concernees": "Capteur NOx, pompe de dosage",
+                    "kilometrage_critique": "Dès 80 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement du FAP sur petits trajets répétés",
+                    "symptomes": "Voyant FAP, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Manque de recul sur la fiabilité long terme",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Ensemble du groupe motopropulseur",
+                    "kilometrage_critique": "Modèle récent",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  },
+                  {
+                    "panne": "Bloc partagé avec le groupe Renault-Nissan, retour d'expérience limité",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Ensemble du bloc 1.3L",
+                    "kilometrage_critique": "Peu de recul spécifique à cette application Mercedes",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Classe G",
+        "generations": [
+          {
+            "code_chassis": "W463 (I)",
+            "annees": "1990-2018",
+            "phases": [
+              "Phase 1 (1990-2000)",
+              "Phase 2 restylée (2000-2012)",
+              "Phase 3 restylée (2012-2018)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "G500/G55 AMG - 296 à 507ch",
+                "code_moteur": "M113 (V8) / M113K (compresseur AMG)",
+                "cylindree": "5.0L / 5.5L V8",
+                "puissance_ch": 507,
+                "boite": [
+                  "BVA5G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Entretien spécifique coûteux des boîtes de transfert et ponts",
+                    "symptomes": "Bruits en 4x4, vibrations en virage serré",
+                    "pieces_concernees": "Boîte de transfert, ponts avant/arrière",
+                    "kilometrage_critique": "Entretien spécifique dès 100 000-150 000 km",
+                    "cout_estime_eur": "800 à 2500€ selon élément"
+                  },
+                  {
+                    "panne": "Consommation très élevée du fait du poids et de l'aérodynamique",
+                    "symptomes": "Consommation de 15-20L/100km en usage mixte",
+                    "pieces_concernees": "N/A (caractéristique structurelle)",
+                    "kilometrage_critique": "N/A",
+                    "cout_estime_eur": "Coût carburant élevé à budgétiser"
+                  },
+                  {
+                    "panne": "Corrosion possible sur bas de caisse",
+                    "symptomes": "Perforations localisées malgré la robustesse générale",
+                    "pieces_concernees": "Bas de caisse",
+                    "kilometrage_critique": "Fréquent au-delà de 15-20 ans sans entretien anticorrosion",
+                    "cout_estime_eur": "500 à 1800€"
+                  },
+                  {
+                    "panne": "Suspension à ressorts rude (pas de pneumatique)",
+                    "symptomes": "Confort de suspension limité, ressenti routier ferme",
+                    "pieces_concernees": "N/A (caractéristique de conception)",
+                    "kilometrage_critique": "N/A",
+                    "cout_estime_eur": "N/A"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "G270 CDI/G320 CDI - 156 à 224ch",
+                "code_moteur": "OM612 / OM642",
+                "cylindree": "2.7L / 3.0L V6",
+                "puissance_ch": 224,
+                "boite": [
+                  "BVA5G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Bloc réputé très robuste en usage tout-terrain",
+                    "symptomes": "N/A (fiabilité intrinsèque élevée)",
+                    "pieces_concernees": "N/A",
+                    "kilometrage_critique": "Souvent au-delà de 350 000-400 000 km avec entretien rigoureux",
+                    "cout_estime_eur": "N/A"
+                  },
+                  {
+                    "panne": "Encrassement vanne EGR et FAP en usage urbain",
+                    "symptomes": "Perte de puissance, régénérations fréquentes",
+                    "pieces_concernees": "Vanne EGR, FAP",
+                    "kilometrage_critique": "Dès 120 000-150 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Sensibilité du turbo à géométrie variable",
+                    "symptomes": "Perte de puissance, sifflement",
+                    "pieces_concernees": "Turbocompresseur",
+                    "kilometrage_critique": "Au-delà de 200 000 km",
+                    "cout_estime_eur": "800 à 1500€"
+                  },
+                  {
+                    "panne": "Encrassement des injecteurs Piezo (OM642)",
+                    "symptomes": "Ratés, fumée",
+                    "pieces_concernees": "Injecteurs Piezo",
+                    "kilometrage_critique": "Au-delà de 200 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "W463 (II)",
+            "annees": "2018-aujourd'hui",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "G500/G63 AMG - 421 à 585ch",
+                "code_moteur": "M176 (V8) / M177 (AMG)",
+                "cylindree": "4.0L biturbo",
+                "puissance_ch": 585,
+                "boite": [
+                  "BVA9G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Manque de recul sur la fiabilité long terme",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Ensemble du groupe motopropulseur",
+                    "kilometrage_critique": "Modèle récent",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  },
+                  {
+                    "panne": "Consommation très élevée malgré amélioration aérodynamique",
+                    "symptomes": "Consommation de 14-18L/100km en usage mixte",
+                    "pieces_concernees": "N/A",
+                    "kilometrage_critique": "N/A",
+                    "cout_estime_eur": "Coût carburant élevé à budgétiser"
+                  },
+                  {
+                    "panne": "Complexité du système mild-hybrid (versions récentes)",
+                    "symptomes": "Messages d'erreur électronique potentiels",
+                    "pieces_concernees": "Module mild-hybrid",
+                    "kilometrage_critique": "Peu de recul",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  },
+                  {
+                    "panne": "Coûts d'entretien et de pneumatiques très élevés",
+                    "symptomes": "Usure rapide des pneus larges hautes performances",
+                    "pieces_concernees": "Pneumatiques, plaquettes de frein",
+                    "kilometrage_critique": "Dès 20 000-25 000 km",
+                    "cout_estime_eur": "1500 à 3000€ pour un train de pneus"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "G350d - 286ch",
+                "code_moteur": "OM656",
+                "cylindree": "3.0L",
+                "puissance_ch": 286,
+                "boite": [
+                  "BVA9G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité du système AdBlue/SCR",
+                    "symptomes": "Voyant AdBlue, limitation de démarrages",
+                    "pieces_concernees": "Capteur NOx, pompe de dosage",
+                    "kilometrage_critique": "Dès 80 000-100 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement du FAP sur petits trajets répétés",
+                    "symptomes": "Voyant FAP, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Manque de recul sur la fiabilité long terme",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Ensemble du groupe motopropulseur",
+                    "kilometrage_critique": "Modèle récent",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  },
+                  {
+                    "panne": "Coûts d'entretien élevés liés à l'électronique de dépollution",
+                    "symptomes": "Voyants multiples récurrents",
+                    "pieces_concernees": "Ensemble SCR/EGR/FAP",
+                    "kilometrage_critique": "Sur toute la durée de vie",
+                    "cout_estime_eur": "150 à 400€/an en moyenne"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "GLA",
+        "generations": [
+          {
+            "code_chassis": "X156",
+            "annees": "2013-2020",
+            "phases": [
+              "Phase 1 (2013-2017)",
+              "Phase 2 restylée (2017-2020)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "GLA180/GLA250/GLA45 AMG - 122 à 381ch",
+                "code_moteur": "M270 / M133 (AMG)",
+                "cylindree": "1.6L à 2.0L turbo",
+                "puissance_ch": 381,
+                "boite": [
+                  "BVM6",
+                  "7G-DCT"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Étirement prématuré de la chaîne de distribution M270",
+                    "symptomes": "Bruit de chaîne au démarrage à froid",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "Risque dès 100 000-130 000 km",
+                    "cout_estime_eur": "600 à 1200€"
+                  },
+                  {
+                    "panne": "Consommation d'huile élevée signalée sur certains blocs",
+                    "symptomes": "Niveau qui baisse rapidement entre vidanges",
+                    "pieces_concernees": "Segments",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "Surveillance requise"
+                  },
+                  {
+                    "panne": "À-coups du double embrayage 7G-DCT à basse vitesse",
+                    "symptomes": "Secousses en manœuvre lente, hésitation au démarrage",
+                    "pieces_concernees": "Mécatronique 7G-DCT",
+                    "kilometrage_critique": "Fréquent dès les premiers 30 000 km",
+                    "cout_estime_eur": "800 à 1800€ si panne mécatronique avérée"
+                  },
+                  {
+                    "panne": "Turbo fortement sollicité sur GLA45 AMG",
+                    "symptomes": "Sifflement, perte de puissance si entretien négligé",
+                    "pieces_concernees": "Turbocompresseur",
+                    "kilometrage_critique": "Entretien rigoureux requis dès l'achat",
+                    "cout_estime_eur": "1200 à 2200€ en cas de remplacement"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "GLA200 CDI/GLA220 CDI - 136 à 177ch",
+                "code_moteur": "OM651",
+                "cylindree": "2.1L",
+                "puissance_ch": 177,
+                "boite": [
+                  "BVM6",
+                  "7G-DCT"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Encrassement des injecteurs Piezo",
+                    "symptomes": "Ratés, fumée, voyant moteur",
+                    "pieces_concernees": "Injecteurs Piezo",
+                    "kilometrage_critique": "Fréquent au-delà de 150 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  },
+                  {
+                    "panne": "Encrassement de la vanne EGR en usage urbain",
+                    "symptomes": "Perte de puissance",
+                    "pieces_concernees": "Vanne EGR",
+                    "kilometrage_critique": "Dès 100 000-120 000 km",
+                    "cout_estime_eur": "250 à 500€"
+                  },
+                  {
+                    "panne": "Colmatage du FAP sur petits trajets répétés",
+                    "symptomes": "Voyant FAP, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules diesel",
+                    "kilometrage_critique": "Dès 80 000-100 000 km en usage urbain",
+                    "cout_estime_eur": "300 à 1000€"
+                  },
+                  {
+                    "panne": "Usure du tendeur de la chaîne de distribution avant",
+                    "symptomes": "Bruit de chaîne léger au démarrage",
+                    "pieces_concernees": "Tendeur de chaîne",
+                    "kilometrage_critique": "À surveiller au-delà de 180 000 km",
+                    "cout_estime_eur": "400 à 800€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "H247",
+            "annees": "2020-aujourd'hui",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "GLA200/GLA250/GLA45 S AMG - 163 à 421ch",
+                "code_moteur": "M270 / M139 (AMG)",
+                "cylindree": "1.3L à 2.0L turbo",
+                "puissance_ch": 421,
+                "boite": [
+                  "7G-DCT"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Encrassement du filtre à particules essence",
+                    "symptomes": "Voyant moteur, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules essence",
+                    "kilometrage_critique": "Sur petits trajets dès 60 000-80 000 km",
+                    "cout_estime_eur": "700 à 1400€"
+                  },
+                  {
+                    "panne": "Turbo très sollicité sur GLA45 S AMG",
+                    "symptomes": "Sifflement, perte de puissance si entretien négligé",
+                    "pieces_concernees": "Turbocompresseur",
+                    "kilometrage_critique": "Entretien rigoureux requis dès l'achat",
+                    "cout_estime_eur": "1300 à 2400€ en cas de remplacement"
+                  },
+                  {
+                    "panne": "Consommation d'huile signalée sur certains blocs",
+                    "symptomes": "Niveau qui baisse entre vidanges",
+                    "pieces_concernees": "Segments",
+                    "kilometrage_critique": "Dès 50 000-70 000 km",
+                    "cout_estime_eur": "Surveillance requise"
+                  },
+                  {
+                    "panne": "À-coups de la boîte 7G-DCT à froid",
+                    "symptomes": "Secousses lors des premiers passages de rapport",
+                    "pieces_concernees": "Mécatronique 7G-DCT",
+                    "kilometrage_critique": "Comportement présent dès l'origine",
+                    "cout_estime_eur": "N/A (comportement normal, sauf aggravation)"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "GLA180d/GLA200d - 116 à 150ch",
+                "code_moteur": "OM608",
+                "cylindree": "1.3L",
+                "puissance_ch": 150,
+                "boite": [
+                  "7G-DCT"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité du système AdBlue/SCR",
+                    "symptomes": "Voyant AdBlue, limitation de démarrages",
+                    "pieces_concernees": "Capteur NOx, pompe de dosage",
+                    "kilometrage_critique": "Dès 80 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement du FAP sur petits trajets répétés",
+                    "symptomes": "Voyant FAP, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Manque de recul sur la fiabilité long terme",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Ensemble du groupe motopropulseur",
+                    "kilometrage_critique": "Modèle récent",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  },
+                  {
+                    "panne": "Bloc partagé avec le groupe Renault-Nissan, retour d'expérience limité",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Ensemble du bloc 1.3L",
+                    "kilometrage_critique": "Peu de recul spécifique à cette application Mercedes",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "CLS",
+        "generations": [
+          {
+            "code_chassis": "C219",
+            "annees": "2004-2010",
+            "phases": [
+              "Phase 1 (2004-2008)",
+              "Phase 2 restylée (2008-2010)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "CLS350/CLS500/CLS63 AMG - 272 à 507ch",
+                "code_moteur": "M272 / M273 (V8) / M156 (AMG)",
+                "cylindree": "3.5L à 6.2L",
+                "puissance_ch": 507,
+                "boite": [
+                  "BVA7G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Étirement de la chaîne de distribution M272/M273",
+                    "symptomes": "Bruit de chaîne caractéristique au démarrage",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "Risque dès 120 000-150 000 km",
+                    "cout_estime_eur": "700 à 1400€"
+                  },
+                  {
+                    "panne": "MALADIE CONNUE M156 (AMG) : usure des guides de soupapes",
+                    "symptomes": "Fumée bleue caractéristique au démarrage à froid",
+                    "pieces_concernees": "Guides de soupapes, culasses",
+                    "kilometrage_critique": "Fréquent entre 60 000 et 100 000 km",
+                    "cout_estime_eur": "2500 à 4000€"
+                  },
+                  {
+                    "panne": "Coût élevé d'entretien de la suspension AIRMATIC",
+                    "symptomes": "Affaissement, compresseur bruyant",
+                    "pieces_concernees": "Compresseur, coussins d'air",
+                    "kilometrage_critique": "Au-delà de 130 000-150 000 km",
+                    "cout_estime_eur": "900 à 2200€"
+                  },
+                  {
+                    "panne": "Pannes des calculateurs électroniques nombreux",
+                    "symptomes": "Dysfonctionnements électriques divers et variés",
+                    "pieces_concernees": "Calculateurs multiples",
+                    "kilometrage_critique": "Variable, fréquent au-delà de 130 000 km",
+                    "cout_estime_eur": "300 à 900€ selon calculateur"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "CLS320 CDI/CLS350 CDI - 224 à 265ch",
+                "code_moteur": "OM642 (V6)",
+                "cylindree": "3.0L",
+                "puissance_ch": 265,
+                "boite": [
+                  "BVA7G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "OM642 réputé robuste mais chaîne de distribution à surveiller",
+                    "symptomes": "Bruit de chaîne léger sur gros kilométrage",
+                    "pieces_concernees": "Chaîne de distribution",
+                    "kilometrage_critique": "Au-delà de 250 000-300 000 km",
+                    "cout_estime_eur": "700 à 1300€"
+                  },
+                  {
+                    "panne": "Coût élevé d'entretien de la suspension pneumatique",
+                    "symptomes": "Affaissement, compresseur bruyant",
+                    "pieces_concernees": "Compresseur, coussins d'air",
+                    "kilometrage_critique": "Au-delà de 130 000-150 000 km",
+                    "cout_estime_eur": "900 à 2200€"
+                  },
+                  {
+                    "panne": "Encrassement vanne EGR et FAP en usage urbain",
+                    "symptomes": "Perte de puissance, régénérations fréquentes",
+                    "pieces_concernees": "Vanne EGR, FAP",
+                    "kilometrage_critique": "Dès 120 000-150 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Sensibilité des injecteurs Piezo à l'encrassement",
+                    "symptomes": "Ratés, fumée",
+                    "pieces_concernees": "Injecteurs Piezo",
+                    "kilometrage_critique": "Au-delà de 180 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "C218",
+            "annees": "2010-2018",
+            "phases": [
+              "Phase 1 (2010-2014)",
+              "Phase 2 restylée (2014-2018)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "CLS350/CLS500/CLS63 AMG - 306 à 585ch",
+                "code_moteur": "M276 (V6) / M278 (V8) / M157 (AMG)",
+                "cylindree": "3.5L à 5.5L biturbo",
+                "puissance_ch": 585,
+                "boite": [
+                  "BVA7G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Coût très élevé d'entretien de la suspension AIRMATIC",
+                    "symptomes": "Affaissement, comportement dynamique dégradé",
+                    "pieces_concernees": "Compresseur, coussins d'air, capteurs de hauteur",
+                    "kilometrage_critique": "Au-delà de 130 000-150 000 km",
+                    "cout_estime_eur": "1200 à 2800€"
+                  },
+                  {
+                    "panne": "Consommation d'huile signalée sur certains blocs V8",
+                    "symptomes": "Niveau qui baisse entre vidanges",
+                    "pieces_concernees": "Segments",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "Surveillance requise"
+                  },
+                  {
+                    "panne": "Encrassement des injecteurs directs",
+                    "symptomes": "Ratés, perte de puissance",
+                    "pieces_concernees": "Injecteurs à injection directe",
+                    "kilometrage_critique": "Fréquent au-delà de 150 000 km",
+                    "cout_estime_eur": "500 à 1200€"
+                  },
+                  {
+                    "panne": "Pannes diverses de l'électronique dense (nombreux capteurs)",
+                    "symptomes": "Voyants multiples, dysfonctionnements variés",
+                    "pieces_concernees": "Calculateurs multiples, capteurs",
+                    "kilometrage_critique": "Variable, fréquent au-delà de 130 000 km",
+                    "cout_estime_eur": "300 à 1000€ selon élément"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "CLS250 CDI/CLS350 CDI - 204 à 265ch",
+                "code_moteur": "OM651 / OM642",
+                "cylindree": "2.1L / 3.0L",
+                "puissance_ch": 265,
+                "boite": [
+                  "BVA7G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Encrassement des injecteurs Piezo OM651",
+                    "symptomes": "Ratés, fumée, odeur de carburant",
+                    "pieces_concernees": "Injecteurs Piezo",
+                    "kilometrage_critique": "Fréquent au-delà de 150 000-180 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  },
+                  {
+                    "panne": "Encrassement vanne EGR et FAP en usage urbain",
+                    "symptomes": "Perte de puissance, régénérations fréquentes",
+                    "pieces_concernees": "Vanne EGR, FAP",
+                    "kilometrage_critique": "Dès 100 000-120 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Coût élevé d'entretien de la suspension pneumatique",
+                    "symptomes": "Affaissement",
+                    "pieces_concernees": "Compresseur, coussins d'air",
+                    "kilometrage_critique": "Au-delà de 130 000-150 000 km",
+                    "cout_estime_eur": "1200 à 2800€"
+                  },
+                  {
+                    "panne": "Usure du tendeur de la chaîne de distribution avant",
+                    "symptomes": "Bruit de chaîne au démarrage",
+                    "pieces_concernees": "Tendeur de chaîne",
+                    "kilometrage_critique": "À surveiller au-delà de 180 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "C257",
+            "annees": "2018-2023",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "CLS350/CLS450 - 299 à 367ch",
+                "code_moteur": "M264 / M256 (mild-hybrid 6 cyl.)",
+                "cylindree": "2.0L / 3.0L",
+                "puissance_ch": 367,
+                "boite": [
+                  "BVA9G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Complexité du système mild-hybrid EQ Boost (M256)",
+                    "symptomes": "Comportement de démarrage/relance électrique irrégulier",
+                    "pieces_concernees": "Module mild-hybrid, batterie 48V",
+                    "kilometrage_critique": "Variable",
+                    "cout_estime_eur": "500 à 1500€ hors garantie selon panne"
+                  },
+                  {
+                    "panne": "Encrassement du filtre à particules essence",
+                    "symptomes": "Voyant moteur, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules essence",
+                    "kilometrage_critique": "Sur petits trajets dès 60 000-80 000 km",
+                    "cout_estime_eur": "800 à 1600€"
+                  },
+                  {
+                    "panne": "Bugs logiciels ponctuels de la boîte 9G-Tronic",
+                    "symptomes": "À-coups occasionnels, passages hésitants",
+                    "pieces_concernees": "Calculateur de boîte 9G-Tronic",
+                    "kilometrage_critique": "Souvent résolu par mise à jour logicielle",
+                    "cout_estime_eur": "0€ si mise à jour, sinon 300-600€"
+                  },
+                  {
+                    "panne": "Dérive des capteurs de suralimentation",
+                    "symptomes": "Voyant moteur, à-coups",
+                    "pieces_concernees": "Capteurs de pression turbo",
+                    "kilometrage_critique": "Au-delà de 100 000 km",
+                    "cout_estime_eur": "150 à 350€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "CLS300d/CLS400d - 245 à 340ch",
+                "code_moteur": "OM654 / OM656",
+                "cylindree": "2.0L / 3.0L V6",
+                "puissance_ch": 340,
+                "boite": [
+                  "BVA9G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité du système AdBlue/SCR",
+                    "symptomes": "Voyant AdBlue, limitation de démarrages",
+                    "pieces_concernees": "Capteur NOx, pompe de dosage",
+                    "kilometrage_critique": "Dès 80 000-100 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement du FAP sur petits trajets répétés",
+                    "symptomes": "Voyant FAP, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "OM654 globalement fiable mais jeune, recul limité",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Ensemble du groupe motopropulseur",
+                    "kilometrage_critique": "Peu de recul au-delà de 250 000 km",
+                    "cout_estime_eur": "Non déterminable précisément à très haut kilométrage"
+                  },
+                  {
+                    "panne": "Coûts d'entretien élevés liés à l'électronique de dépollution",
+                    "symptomes": "Voyants multiples récurrents",
+                    "pieces_concernees": "Ensemble SCR/EGR/FAP",
+                    "kilometrage_critique": "Sur toute la durée de vie",
+                    "cout_estime_eur": "150 à 400€/an en moyenne"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "SLK / SLC",
+        "generations": [
+          {
+            "code_chassis": "R170",
+            "annees": "1996-2004",
+            "phases": [
+              "Phase 1 (1996-2000)",
+              "Phase 2 restylée (2000-2004)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "SLK200/SLK230 Kompressor - 136 à 197ch",
+                "code_moteur": "M111",
+                "cylindree": "2.0L / 2.3L compresseur",
+                "puissance_ch": 197,
+                "boite": [
+                  "BVM5",
+                  "BVA5"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Usure du compresseur mécanique (Kompressor)",
+                    "symptomes": "Sifflement anormal, perte de puissance à haut régime",
+                    "pieces_concernees": "Compresseur volumétrique",
+                    "kilometrage_critique": "Au-delà de 150 000 km",
+                    "cout_estime_eur": "800 à 1500€"
+                  },
+                  {
+                    "panne": "Panne du toit rigide rétractable (Vario-roof)",
+                    "symptomes": "Toit qui ne s'ouvre/ferme plus, bruit anormal du mécanisme",
+                    "pieces_concernees": "Vérins hydrauliques, capteurs, moteurs électriques du toit",
+                    "kilometrage_critique": "Au-delà de 15-20 ans d'âge",
+                    "cout_estime_eur": "1000 à 2500€"
+                  },
+                  {
+                    "panne": "Usure du tendeur hydraulique de chaîne de distribution",
+                    "symptomes": "Bruit de chaîne au démarrage",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "À surveiller au-delà de 180 000-200 000 km",
+                    "cout_estime_eur": "400 à 800€"
+                  },
+                  {
+                    "panne": "Corrosion des passages de roue sur exemplaires mal entretenus",
+                    "symptomes": "Perforations visibles",
+                    "pieces_concernees": "Passages de roue",
+                    "kilometrage_critique": "Fréquent au-delà de 20-25 ans d'âge",
+                    "cout_estime_eur": "300 à 900€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "R171",
+            "annees": "2004-2011",
+            "phases": [
+              "Phase 1 (2004-2008)",
+              "Phase 2 restylée (2008-2011)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "SLK200/SLK350/SLK55 AMG - 163 à 360ch",
+                "code_moteur": "M271 / M272 (V6) / M113 (AMG V8)",
+                "cylindree": "1.8L à 5.4L",
+                "puissance_ch": 360,
+                "boite": [
+                  "BVM6",
+                  "BVA7G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Étirement de la chaîne de distribution M271/M272",
+                    "symptomes": "Bruit de chaîne au démarrage à froid",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "Risque dès 120 000-150 000 km",
+                    "cout_estime_eur": "600 à 1300€"
+                  },
+                  {
+                    "panne": "Panne du toit rigide rétractable",
+                    "symptomes": "Toit qui ne s'ouvre/ferme plus, bruit anormal du mécanisme hydraulique",
+                    "pieces_concernees": "Vérins hydrauliques, capteurs, moteurs électriques",
+                    "kilometrage_critique": "Au-delà de 12-15 ans d'âge",
+                    "cout_estime_eur": "1200 à 2800€"
+                  },
+                  {
+                    "panne": "Consommation d'huile à surveiller sur SLK55 AMG",
+                    "symptomes": "Niveau qui baisse entre vidanges",
+                    "pieces_concernees": "Segments",
+                    "kilometrage_critique": "Dès 60 000-80 000 km en usage sportif",
+                    "cout_estime_eur": "Surveillance requise"
+                  },
+                  {
+                    "panne": "Points de contrôle habituels Mercedes de l'époque (corrosion moindre)",
+                    "symptomes": "Perforations localisées possibles",
+                    "pieces_concernees": "Passages de roue, bas de caisse",
+                    "kilometrage_critique": "Variable, à contrôler au-delà de 15 ans",
+                    "cout_estime_eur": "300 à 900€ si nécessaire"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "R172 (SLC dès 2016)",
+            "annees": "2011-2020",
+            "phases": [
+              "Phase 1 SLK (2011-2016)",
+              "Phase 2 restylée SLC (2016-2020)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "SLK/SLC 200/250/43 AMG - 184 à 367ch",
+                "code_moteur": "M274 / M276 (V6, AMG)",
+                "cylindree": "2.0L / 3.0L",
+                "puissance_ch": 367,
+                "boite": [
+                  "BVM6",
+                  "BVA7G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Panne du toit rigide rétractable",
+                    "symptomes": "Toit qui ne s'ouvre/ferme plus, bruit anormal du mécanisme",
+                    "pieces_concernees": "Vérins hydrauliques, capteurs, moteurs électriques du toit",
+                    "kilometrage_critique": "Au-delà de 10-12 ans d'âge",
+                    "cout_estime_eur": "1200 à 2800€"
+                  },
+                  {
+                    "panne": "Encrassement du filtre à particules essence (versions récentes)",
+                    "symptomes": "Voyant moteur, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules essence",
+                    "kilometrage_critique": "Sur petits trajets dès 60 000-80 000 km",
+                    "cout_estime_eur": "700 à 1400€"
+                  },
+                  {
+                    "panne": "Consommation d'huile signalée sur certains blocs",
+                    "symptomes": "Niveau qui baisse entre vidanges",
+                    "pieces_concernees": "Segments",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "Surveillance requise"
+                  },
+                  {
+                    "panne": "Dérive des capteurs de suralimentation",
+                    "symptomes": "Voyant moteur, à-coups",
+                    "pieces_concernees": "Capteurs de pression turbo",
+                    "kilometrage_critique": "Au-delà de 100 000 km",
+                    "cout_estime_eur": "150 à 350€"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "GLS (ex-GL)",
+        "generations": [
+          {
+            "code_chassis": "X164 (GL)",
+            "annees": "2006-2012",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "GL450/GL500 - 340 à 388ch",
+                "code_moteur": "M273 (V8)",
+                "cylindree": "4.7L / 5.5L V8",
+                "puissance_ch": 388,
+                "boite": [
+                  "BVA7G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Étirement de la chaîne de distribution M273",
+                    "symptomes": "Bruit de chaîne au démarrage",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "Risque dès 120 000-150 000 km",
+                    "cout_estime_eur": "800 à 1600€"
+                  },
+                  {
+                    "panne": "Coût élevé d'entretien de la suspension AIRMATIC",
+                    "symptomes": "Affaissement, compresseur bruyant",
+                    "pieces_concernees": "Compresseur, coussins d'air",
+                    "kilometrage_critique": "Au-delà de 130 000-150 000 km",
+                    "cout_estime_eur": "1000 à 2500€"
+                  },
+                  {
+                    "panne": "Consommation élevée typique d'un grand SUV V8",
+                    "symptomes": "Consommation de 14-18L/100km en usage mixte",
+                    "pieces_concernees": "N/A",
+                    "kilometrage_critique": "N/A",
+                    "cout_estime_eur": "Coût carburant élevé à budgétiser"
+                  },
+                  {
+                    "panne": "Coût élevé de réparation de la boîte de transfert 4Matic",
+                    "symptomes": "Bruits en 4x4, vibrations en virage",
+                    "pieces_concernees": "Boîte de transfert 4Matic",
+                    "kilometrage_critique": "Au-delà de 150 000-180 000 km",
+                    "cout_estime_eur": "1200 à 2500€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "GL320 CDI/GL350 CDI - 224 à 265ch",
+                "code_moteur": "OM642 (V6)",
+                "cylindree": "3.0L",
+                "puissance_ch": 265,
+                "boite": [
+                  "BVA7G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "OM642 réputé robuste mais chaîne de distribution à surveiller",
+                    "symptomes": "Bruit de chaîne léger sur gros kilométrage",
+                    "pieces_concernees": "Chaîne de distribution",
+                    "kilometrage_critique": "Au-delà de 250 000-300 000 km",
+                    "cout_estime_eur": "700 à 1300€"
+                  },
+                  {
+                    "panne": "Coût élevé d'entretien de la suspension pneumatique",
+                    "symptomes": "Affaissement, compresseur bruyant",
+                    "pieces_concernees": "Compresseur, coussins d'air",
+                    "kilometrage_critique": "Au-delà de 130 000-150 000 km",
+                    "cout_estime_eur": "1000 à 2500€"
+                  },
+                  {
+                    "panne": "Encrassement vanne EGR et FAP en usage urbain",
+                    "symptomes": "Perte de puissance, régénérations fréquentes",
+                    "pieces_concernees": "Vanne EGR, FAP",
+                    "kilometrage_critique": "Dès 120 000-150 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Sensibilité des injecteurs Piezo à l'encrassement",
+                    "symptomes": "Ratés, fumée",
+                    "pieces_concernees": "Injecteurs Piezo",
+                    "kilometrage_critique": "Au-delà de 180 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "X166 (GL puis GLS)",
+            "annees": "2012-2019",
+            "phases": [
+              "Phase 1 GL (2012-2015)",
+              "Phase 2 restylée GLS (2015-2019)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "GL/GLS 400/500/63 AMG - 333 à 585ch",
+                "code_moteur": "M276 (V6) / M157/M178 (V8 AMG)",
+                "cylindree": "3.5L à 5.5L",
+                "puissance_ch": 585,
+                "boite": [
+                  "BVA7G/9G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Coût très élevé d'entretien de la suspension AIRMATIC",
+                    "symptomes": "Affaissement, comportement dynamique dégradé",
+                    "pieces_concernees": "Compresseur, coussins d'air, capteurs de hauteur",
+                    "kilometrage_critique": "Au-delà de 130 000-150 000 km",
+                    "cout_estime_eur": "1200 à 2800€"
+                  },
+                  {
+                    "panne": "Consommation d'huile signalée sur certains blocs V8",
+                    "symptomes": "Niveau qui baisse entre vidanges",
+                    "pieces_concernees": "Segments",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "Surveillance requise"
+                  },
+                  {
+                    "panne": "Complexité du système mild-hybrid (versions récentes)",
+                    "symptomes": "Messages d'erreur électronique potentiels",
+                    "pieces_concernees": "Module mild-hybrid",
+                    "kilometrage_critique": "Peu de recul",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  },
+                  {
+                    "panne": "Coûts d'entretien globalement très élevés du fait du poids et du gabarit",
+                    "symptomes": "Usure rapide des pneus et freins",
+                    "pieces_concernees": "Pneumatiques, disques et plaquettes de frein",
+                    "kilometrage_critique": "Dès 25 000-30 000 km",
+                    "cout_estime_eur": "1800 à 3500€ pour un train de pneus + freins"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "GL/GLS 350d/400d - 258 à 340ch",
+                "code_moteur": "OM642 / OM642 Biturbo",
+                "cylindree": "3.0L",
+                "puissance_ch": 340,
+                "boite": [
+                  "BVA7G/9G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité du système AdBlue/SCR",
+                    "symptomes": "Voyant AdBlue, limitation de démarrages",
+                    "pieces_concernees": "Capteur NOx, pompe de dosage",
+                    "kilometrage_critique": "Dès 80 000-100 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement du FAP sur petits trajets répétés",
+                    "symptomes": "Voyant FAP, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Coût élevé d'entretien de la suspension pneumatique",
+                    "symptomes": "Affaissement",
+                    "pieces_concernees": "Compresseur, coussins d'air",
+                    "kilometrage_critique": "Au-delà de 130 000-150 000 km",
+                    "cout_estime_eur": "1200 à 2800€"
+                  },
+                  {
+                    "panne": "Sensibilité des injecteurs Piezo à l'encrassement",
+                    "symptomes": "Ratés, fumée",
+                    "pieces_concernees": "Injecteurs Piezo",
+                    "kilometrage_critique": "Au-delà de 180 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "X167",
+            "annees": "2019-aujourd'hui",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "GLS450/GLS580/GLS63 AMG - 367 à 612ch",
+                "code_moteur": "M256 (mild-hybrid) / M177 (AMG)",
+                "cylindree": "3.0L à 4.0L",
+                "puissance_ch": 612,
+                "boite": [
+                  "BVA9G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Manque de recul sur la fiabilité long terme",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Ensemble du groupe motopropulseur",
+                    "kilometrage_critique": "Modèle récent",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  },
+                  {
+                    "panne": "Complexité du système mild-hybrid EQ Boost",
+                    "symptomes": "Messages d'erreur électronique potentiels",
+                    "pieces_concernees": "Module mild-hybrid, batterie 48V",
+                    "kilometrage_critique": "Peu de recul",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  },
+                  {
+                    "panne": "Coût très élevé de la suspension E-Active Body Control (versions équipées)",
+                    "symptomes": "Affaissement, comportement dynamique dégradé",
+                    "pieces_concernees": "Vérins actifs, capteurs, compresseur",
+                    "kilometrage_critique": "Au-delà de 100 000-130 000 km",
+                    "cout_estime_eur": "2000 à 4500€"
+                  },
+                  {
+                    "panne": "Bugs de l'électronique MBUX",
+                    "symptomes": "Écran figé, fonctions capricieuses",
+                    "pieces_concernees": "Calculateur MBUX",
+                    "kilometrage_critique": "Variable",
+                    "cout_estime_eur": "0€ si résolu par mise à jour, sinon 300 à 800€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "GLS400d - 330ch",
+                "code_moteur": "OM656",
+                "cylindree": "3.0L",
+                "puissance_ch": 330,
+                "boite": [
+                  "BVA9G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité du système AdBlue/SCR",
+                    "symptomes": "Voyant AdBlue, limitation de démarrages",
+                    "pieces_concernees": "Capteur NOx, pompe de dosage",
+                    "kilometrage_critique": "Dès 80 000-100 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement du FAP sur petits trajets répétés",
+                    "symptomes": "Voyant FAP, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Manque de recul sur la fiabilité long terme",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Ensemble du groupe motopropulseur",
+                    "kilometrage_critique": "Modèle récent",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  },
+                  {
+                    "panne": "Coût élevé de la suspension pneumatique",
+                    "symptomes": "Affaissement",
+                    "pieces_concernees": "Compresseur, coussins d'air",
+                    "kilometrage_critique": "Au-delà de 100 000-130 000 km",
+                    "cout_estime_eur": "1500 à 3500€"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Classe V",
+        "generations": [
+          {
+            "code_chassis": "W447",
+            "annees": "2014-aujourd'hui",
+            "phases": [
+              "Phase 1 (2014-2019)",
+              "Phase 2 restylée (2019-)"
+            ],
+            "motorisations": [
+              {
+                "type": "Diesel",
+                "nom": "V200d/V220d/V300d - 122 à 239ch",
+                "code_moteur": "OM651 / OM654",
+                "cylindree": "2.1L / 2.0L",
+                "puissance_ch": 239,
+                "boite": [
+                  "BVM6",
+                  "BVA7G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité des injecteurs Piezo (OM651)",
+                    "symptomes": "Ratés, fumée, voyant moteur",
+                    "pieces_concernees": "Injecteurs Piezo",
+                    "kilometrage_critique": "Fréquent au-delà de 150 000-180 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  },
+                  {
+                    "panne": "Encrassement vanne EGR et FAP en usage utilitaire/urbain intensif",
+                    "symptomes": "Perte de puissance, régénérations fréquentes",
+                    "pieces_concernees": "Vanne EGR, FAP",
+                    "kilometrage_critique": "Dès 100 000-120 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Usure du volant moteur bi-masse sur gros kilométrage",
+                    "symptomes": "Bruit métallique au ralenti, vibrations",
+                    "pieces_concernees": "Volant moteur bi-masse",
+                    "kilometrage_critique": "Entre 150 000 et 200 000 km",
+                    "cout_estime_eur": "700 à 1300€"
+                  },
+                  {
+                    "panne": "Sollicitation de la suspension arrière (transport de personnes fréquent)",
+                    "symptomes": "Bruits de suspension, affaissement",
+                    "pieces_concernees": "Ressorts, amortisseurs arrière",
+                    "kilometrage_critique": "Usure accélérée en usage professionnel intensif",
+                    "cout_estime_eur": "500 à 1200€"
+                  }
+                ]
+              },
+              {
+                "type": "Hybride rechargeable",
+                "nom": "EQV/V300e - 218ch",
+                "code_moteur": "OM654 + moteur électrique (EQV = 100% électrique)",
+                "cylindree": "2.0L + électrique / 100% électrique (EQV)",
+                "puissance_ch": 218,
+                "boite": [
+                  "BVA7G-Tronic",
+                  "Réducteur (EQV)"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Autonomie limitée de l'EQV pour un usage professionnel intensif",
+                    "symptomes": "Autonomie réelle insuffisante pour de longues tournées quotidiennes",
+                    "pieces_concernees": "Batterie haute tension",
+                    "kilometrage_critique": "Caractéristique dès l'achat",
+                    "cout_estime_eur": "N/A (limite technique)"
+                  },
+                  {
+                    "panne": "Vieillissement de la batterie HT sur le long terme",
+                    "symptomes": "Autonomie électrique réduite",
+                    "pieces_concernees": "Batterie haute tension",
+                    "kilometrage_critique": "Dégradation après 5-7 ans/100 000 km",
+                    "cout_estime_eur": "5000 à 8000€ hors garantie"
+                  },
+                  {
+                    "panne": "Coût élevé de remplacement de la batterie hors garantie",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Batterie HT complète",
+                    "kilometrage_critique": "Au-delà de 8 ans",
+                    "cout_estime_eur": "5000 à 8000€"
+                  },
+                  {
+                    "panne": "Sollicitation forte des trains roulants et freins (poids élevé)",
+                    "symptomes": "Usure accélérée pneus/freins",
+                    "pieces_concernees": "Pneumatiques, plaquettes, disques",
+                    "kilometrage_critique": "Usure 15-20% plus rapide",
+                    "cout_estime_eur": "Surcoût entretien courant important"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "GLB",
+        "generations": [
+          {
+            "code_chassis": "X247",
+            "annees": "2019-aujourd'hui",
+            "phases": [
+              "Phase 1 (2019-2023)",
+              "Phase 2 restylée (2023-)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "GLB200/GLB250/GLB35 AMG - 163 à 306ch",
+                "code_moteur": "M270 / M260 (35 AMG)",
+                "cylindree": "1.3L à 2.0L turbo",
+                "puissance_ch": 306,
+                "boite": [
+                  "BVM6",
+                  "7G-DCT"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Encrassement du filtre à particules essence",
+                    "symptomes": "Voyant moteur, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules essence",
+                    "kilometrage_critique": "Sur petits trajets dès 60 000-80 000 km",
+                    "cout_estime_eur": "700 à 1400€"
+                  },
+                  {
+                    "panne": "Consommation d'huile signalée sur certains blocs",
+                    "symptomes": "Niveau qui baisse entre vidanges",
+                    "pieces_concernees": "Segments",
+                    "kilometrage_critique": "Dès 60 000 km",
+                    "cout_estime_eur": "Surveillance requise"
+                  },
+                  {
+                    "panne": "Turbo sollicité sur GLB35 AMG",
+                    "symptomes": "Sifflement, perte de puissance si entretien négligé",
+                    "pieces_concernees": "Turbocompresseur",
+                    "kilometrage_critique": "Entretien rigoureux requis dès l'achat",
+                    "cout_estime_eur": "1200 à 2200€ en cas de remplacement"
+                  },
+                  {
+                    "panne": "À-coups de la boîte 7G-DCT à froid",
+                    "symptomes": "Secousses lors des premiers passages de rapport",
+                    "pieces_concernees": "Mécatronique 7G-DCT",
+                    "kilometrage_critique": "Comportement présent dès l'origine",
+                    "cout_estime_eur": "N/A (comportement normal, sauf aggravation)"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "GLB180d/GLB200d/GLB220d - 116 à 190ch",
+                "code_moteur": "OM608 / OM654",
+                "cylindree": "1.3L / 2.0L",
+                "puissance_ch": 190,
+                "boite": [
+                  "7G-DCT"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité du système AdBlue/SCR",
+                    "symptomes": "Voyant AdBlue, limitation de démarrages",
+                    "pieces_concernees": "Capteur NOx, pompe de dosage",
+                    "kilometrage_critique": "Dès 80 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement du FAP sur petits trajets répétés",
+                    "symptomes": "Voyant FAP, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Manque de recul sur la fiabilité long terme",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Ensemble du groupe motopropulseur",
+                    "kilometrage_critique": "Modèle récent",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  },
+                  {
+                    "panne": "Bloc 1.3L partagé avec le groupe Renault-Nissan, retour d'expérience limité",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Ensemble du bloc 1.3L",
+                    "kilometrage_critique": "Peu de recul spécifique à cette application Mercedes",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Mercedes-AMG GT",
+        "generations": [
+          {
+            "code_chassis": "C190/R190",
+            "annees": "2014-2023",
+            "phases": [
+              "Phase 1 (2014-2018)",
+              "Phase 2 restylée (2018-2023)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "GT/GT S/GT R/GT Black Series - 462 à 730ch",
+                "code_moteur": "M178 (V8 biturbo)",
+                "cylindree": "4.0L",
+                "puissance_ch": 730,
+                "boite": [
+                  "AMG Speedshift DCT7"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Consommation d'huile en usage circuit intensif",
+                    "symptomes": "Niveau qui baisse rapidement en usage sportif",
+                    "pieces_concernees": "Segments",
+                    "kilometrage_critique": "Dès 30 000-50 000 km en usage circuit intensif",
+                    "cout_estime_eur": "Surveillance rigoureuse requise"
+                  },
+                  {
+                    "panne": "Sensibilité du système de refroidissement sophistiqué",
+                    "symptomes": "Surchauffe en usage intensif, mode dégradé",
+                    "pieces_concernees": "Radiateurs, durites, intercoolers",
+                    "kilometrage_critique": "Entretien rigoureux dès la première année en usage sportif",
+                    "cout_estime_eur": "600 à 1800€ selon élément"
+                  },
+                  {
+                    "panne": "GT Black Series : mécanique poussée à l'extrême",
+                    "symptomes": "Entretien très spécialisé requis même pour opérations courantes",
+                    "pieces_concernees": "Ensemble du groupe motopropulseur haute performance",
+                    "kilometrage_critique": "N/A (caractéristique structurelle)",
+                    "cout_estime_eur": "Coûts d'entretien 2 à 3 fois supérieurs à la GT standard"
+                  },
+                  {
+                    "panne": "Coûts de pneus, freins et entretien très élevés",
+                    "symptomes": "Usure rapide typique d'une supercar",
+                    "pieces_concernees": "Pneumatiques, disques et plaquettes de frein",
+                    "kilometrage_critique": "Dès 10 000-15 000 km en usage sportif",
+                    "cout_estime_eur": "3000 à 6000€ (train de pneus + freins hautes performances)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "X290 (4 portes)",
+            "annees": "2018-aujourd'hui",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "GT43/GT53/GT63 - 367 à 585ch",
+                "code_moteur": "M256 (mild-hybrid) / M177 (V8 AMG)",
+                "cylindree": "3.0L / 4.0L",
+                "puissance_ch": 585,
+                "boite": [
+                  "BVA9G-Tronic",
+                  "AMG Speedshift MCT9"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Complexité du système mild-hybrid EQ Boost",
+                    "symptomes": "Comportement de démarrage/relance électrique irrégulier, messages d'erreur",
+                    "pieces_concernees": "Module mild-hybrid, batterie 48V",
+                    "kilometrage_critique": "Variable",
+                    "cout_estime_eur": "500 à 1500€ hors garantie selon panne"
+                  },
+                  {
+                    "panne": "Consommation d'huile signalée sur certains blocs V8",
+                    "symptomes": "Niveau qui baisse entre vidanges",
+                    "pieces_concernees": "Segments",
+                    "kilometrage_critique": "Dès 40 000-60 000 km",
+                    "cout_estime_eur": "Surveillance requise"
+                  },
+                  {
+                    "panne": "Coût élevé d'entretien de la suspension active",
+                    "symptomes": "Affaissement, comportement dynamique dégradé",
+                    "pieces_concernees": "Amortisseurs actifs, capteurs",
+                    "kilometrage_critique": "Au-delà de 80 000-100 000 km",
+                    "cout_estime_eur": "1500 à 3000€"
+                  },
+                  {
+                    "panne": "Manque de recul sur la fiabilité long terme",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Ensemble du groupe motopropulseur",
+                    "kilometrage_critique": "Modèle récent",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  }
+                ]
+              },
+              {
+                "type": "Hybride rechargeable",
+                "nom": "GT63 S E Performance - 843ch",
+                "code_moteur": "M177 + moteur électrique",
+                "cylindree": "4.0L + électrique",
+                "puissance_ch": 843,
+                "boite": [
+                  "AMG Speedshift MCT9"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Technologie hybride haute performance inédite",
+                    "symptomes": "Très peu de recul sur la fiabilité, messages d'erreur potentiels",
+                    "pieces_concernees": "Module hybride, moteur électrique arrière, batterie HT",
+                    "kilometrage_critique": "Modèle très récent",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  },
+                  {
+                    "panne": "Vieillissement de la batterie HT volumineuse sur le long terme",
+                    "symptomes": "Autonomie/assistance électrique réduite",
+                    "pieces_concernees": "Batterie haute tension",
+                    "kilometrage_critique": "À surveiller sur la durée, aucun recul actuellement",
+                    "cout_estime_eur": "6000 à 10000€+ hors garantie en cas de remplacement"
+                  },
+                  {
+                    "panne": "Coûts de réparation potentiellement très élevés hors garantie",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Ensemble du système hybride haute performance",
+                    "kilometrage_critique": "N/A",
+                    "cout_estime_eur": "3000 à 10000€ selon panne"
+                  },
+                  {
+                    "panne": "Sollicitation très forte des trains roulants et freins",
+                    "symptomes": "Usure accélérée des pneumatiques et disques de frein du fait du poids élevé",
+                    "pieces_concernees": "Pneumatiques, disques et plaquettes de frein",
+                    "kilometrage_critique": "Usure accélérée dès 10 000-15 000 km",
+                    "cout_estime_eur": "3000 à 5000€"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Classe X",
+        "generations": [
+          {
+            "code_chassis": "470 (base Nissan Navara)",
+            "annees": "2017-2020",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Diesel",
+                "nom": "X220d/X250d/X350d - 163 à 258ch",
+                "code_moteur": "YS23DDTT (base Nissan) / OM642 (V6, X350d)",
+                "cylindree": "2.3L 4 cyl. / 3.0L V6",
+                "puissance_ch": 258,
+                "boite": [
+                  "BVM6",
+                  "BVA7G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Identité mécanique hybride critiquée (base Nissan Navara/Alliance)",
+                    "symptomes": "Perception de valeur réduite, écart de fiabilité entre pièces Mercedes et Nissan",
+                    "pieces_concernees": "Ensemble du châssis et du groupe motopropulseur",
+                    "kilometrage_critique": "N/A (facteur commercial/perception)",
+                    "cout_estime_eur": "N/A"
+                  },
+                  {
+                    "panne": "Disponibilité des pièces à vérifier suite à l'arrêt de commercialisation dès 2020",
+                    "symptomes": "Délais d'approvisionnement plus longs selon le pays",
+                    "pieces_concernees": "Pièces spécifiques au modèle",
+                    "kilometrage_critique": "N/A",
+                    "cout_estime_eur": "Coûts potentiellement plus élevés du fait de la rareté"
+                  },
+                  {
+                    "panne": "Encrassement vanne EGR et FAP sur usage utilitaire",
+                    "symptomes": "Perte de puissance, régénérations fréquentes",
+                    "pieces_concernees": "Vanne EGR, FAP",
+                    "kilometrage_critique": "Dès 100 000-120 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Sollicitation de la suspension arrière en usage charge lourde",
+                    "symptomes": "Affaissement, bruits de suspension",
+                    "pieces_concernees": "Ressorts, amortisseurs arrière",
+                    "kilometrage_critique": "Usure accélérée en usage utilitaire intensif",
+                    "cout_estime_eur": "500 à 1200€"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "SL",
+        "generations": [
+          {
+            "code_chassis": "R129",
+            "annees": "1989-2001",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "SL320/SL500/SL600 - 231 à 394ch",
+                "code_moteur": "M104 / M119 (V8) / M120 (V12)",
+                "cylindree": "3.2L à 6.0L",
+                "puissance_ch": 394,
+                "boite": [
+                  "BVA4/5"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Blocs mécaniques increvables avec entretien régulier",
+                    "symptomes": "N/A (fiabilité intrinsèque élevée)",
+                    "pieces_concernees": "N/A",
+                    "kilometrage_critique": "Souvent au-delà de 300 000 km avec entretien rigoureux",
+                    "cout_estime_eur": "N/A"
+                  },
+                  {
+                    "panne": "Panne du toit rigide rétractable (mécanisme complexe pour l'époque)",
+                    "symptomes": "Toit qui ne s'ouvre/ferme plus, bruit anormal du mécanisme hydraulique",
+                    "pieces_concernees": "Vérins hydrauliques, capteurs, mécanisme du toit",
+                    "kilometrage_critique": "Fréquent au-delà de 20-25 ans d'âge",
+                    "cout_estime_eur": "1500 à 3500€"
+                  },
+                  {
+                    "panne": "Fragilité de la suspension pneumatique/ADS (versions équipées)",
+                    "symptomes": "Affaissement, comportement dynamique dégradé",
+                    "pieces_concernees": "Compresseur, coussins d'air, amortisseurs ADS",
+                    "kilometrage_critique": "Fréquent au-delà de 150 000 km ou 20-25 ans",
+                    "cout_estime_eur": "1000 à 2500€"
+                  },
+                  {
+                    "panne": "Vieillissement des faisceaux électriques complexes",
+                    "symptomes": "Pannes électriques intermittentes",
+                    "pieces_concernees": "Faisceaux électriques, connecteurs",
+                    "kilometrage_critique": "Au-delà de 20-25 ans d'âge",
+                    "cout_estime_eur": "300 à 900€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "R230",
+            "annees": "2001-2011",
+            "phases": [
+              "Phase 1 (2001-2005)",
+              "Phase 2 restylée (2005-2011)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "SL350/SL500/SL65 AMG - 245 à 612ch",
+                "code_moteur": "M272 / M273 (V8) / M275 (V12 AMG)",
+                "cylindree": "3.5L à 6.0L V12",
+                "puissance_ch": 612,
+                "boite": [
+                  "BVA7G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "MALADIE CONNUE : suspension ABC (Active Body Control) hydraulique très fragile",
+                    "symptomes": "Affaissement, voyant suspension, comportement dynamique très dégradé, fuites hydrauliques",
+                    "pieces_concernees": "Sphères hydrauliques ABC, pompe haute pression, calculateur ABC",
+                    "kilometrage_critique": "Fréquent au-delà de 100 000-130 000 km",
+                    "cout_estime_eur": "3000 à 6000€ (réfection complète du système ABC)"
+                  },
+                  {
+                    "panne": "Panne du toit rigide rétractable complexe",
+                    "symptomes": "Toit qui ne s'ouvre/ferme plus, capteurs défaillants",
+                    "pieces_concernees": "Vérins, capteurs, mécanisme du toit",
+                    "kilometrage_critique": "Au-delà de 15-18 ans d'âge",
+                    "cout_estime_eur": "1500 à 3500€"
+                  },
+                  {
+                    "panne": "Étirement de la chaîne de distribution M272/M273",
+                    "symptomes": "Bruit de chaîne au démarrage",
+                    "pieces_concernees": "Chaîne de distribution, tendeur",
+                    "kilometrage_critique": "Risque dès 120 000-150 000 km",
+                    "cout_estime_eur": "700 à 1400€"
+                  },
+                  {
+                    "panne": "Pannes diverses de l'électronique embarquée dense",
+                    "symptomes": "Voyants multiples, dysfonctionnements variés",
+                    "pieces_concernees": "Calculateurs multiples",
+                    "kilometrage_critique": "Variable, fréquent au-delà de 130 000 km",
+                    "cout_estime_eur": "300 à 1000€ selon calculateur"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "R231",
+            "annees": "2012-2020",
+            "phases": [
+              "Phase 1 (2012-2016)",
+              "Phase 2 restylée (2016-2020)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "SL400/SL500/SL63 AMG - 333 à 585ch",
+                "code_moteur": "M276 (V6) / M278 (V8) / M157 (AMG)",
+                "cylindree": "3.0L à 5.5L biturbo",
+                "puissance_ch": 585,
+                "boite": [
+                  "BVA7G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Coût très élevé d'entretien de la suspension ABC/Magic Body Control",
+                    "symptomes": "Affaissement, comportement dynamique dégradé",
+                    "pieces_concernees": "Sphères hydrauliques ABC, capteurs, calculateur",
+                    "kilometrage_critique": "Fréquent au-delà de 100 000-130 000 km",
+                    "cout_estime_eur": "2500 à 5500€"
+                  },
+                  {
+                    "panne": "Panne du toit rigide rétractable complexe",
+                    "symptomes": "Toit qui ne s'ouvre/ferme plus",
+                    "pieces_concernees": "Vérins, capteurs, mécanisme du toit",
+                    "kilometrage_critique": "Au-delà de 10-12 ans d'âge",
+                    "cout_estime_eur": "1500 à 3000€"
+                  },
+                  {
+                    "panne": "Consommation d'huile signalée sur certains blocs V8",
+                    "symptomes": "Niveau qui baisse entre vidanges",
+                    "pieces_concernees": "Segments",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "Surveillance requise"
+                  },
+                  {
+                    "panne": "Coût élevé de réparation de la carrosserie aluminium",
+                    "symptomes": "Réparations en cas de choc plus complexes et coûteuses",
+                    "pieces_concernees": "Carrosserie en aluminium",
+                    "kilometrage_critique": "N/A (dépend des sinistres)",
+                    "cout_estime_eur": "Réparation carrosserie 1.5 à 2 fois plus chère qu'un véhicule acier"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "R232",
+            "annees": "2021-aujourd'hui",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "SL43/SL55/SL63 AMG - 381 à 585ch",
+                "code_moteur": "M139 (mild-hybrid 4 cyl.) / M177 (V8 AMG)",
+                "cylindree": "2.0L / 4.0L biturbo",
+                "puissance_ch": 585,
+                "boite": [
+                  "AMG Speedshift MCT9"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Manque de recul sur la fiabilité long terme (retour au toit souple)",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Ensemble du groupe motopropulseur, toit souple",
+                    "kilometrage_critique": "Modèle récent",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  },
+                  {
+                    "panne": "Complexité du système mild-hybrid 48V",
+                    "symptomes": "Messages d'erreur électronique potentiels",
+                    "pieces_concernees": "Module mild-hybrid, batterie 48V",
+                    "kilometrage_critique": "Peu de recul, système récent",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  },
+                  {
+                    "panne": "Coût élevé d'entretien de la traction intégrale AMG et des 4 roues directrices",
+                    "symptomes": "Comportement dynamique dégradé en cas de panne",
+                    "pieces_concernees": "Système 4Matic+, direction arrière active",
+                    "kilometrage_critique": "Au-delà de 80 000-100 000 km",
+                    "cout_estime_eur": "1500 à 3500€ selon élément"
+                  },
+                  {
+                    "panne": "Coûts d'entretien et de pneumatiques très élevés",
+                    "symptomes": "Usure rapide typique d'un roadster haute performance",
+                    "pieces_concernees": "Pneumatiques, plaquettes de frein",
+                    "kilometrage_critique": "Dès 15 000-20 000 km en usage dynamique",
+                    "cout_estime_eur": "2000 à 4000€"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "EQA / EQB",
+        "generations": [
+          {
+            "code_chassis": "H243 (EQA)",
+            "annees": "2021-aujourd'hui",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Électrique",
+                "nom": "EQA250/EQA300/EQA350 - 190 à 292ch",
+                "code_moteur": "Moteur(s) électrique(s) synchrone(s)",
+                "cylindree": "N/A",
+                "puissance_ch": 292,
+                "boite": [
+                  "Réducteur monovitesse"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Compromis d'architecture lié à la base plateforme thermique (GLA)",
+                    "symptomes": "Autonomie et habitabilité inférieures aux concurrents sur plateforme dédiée électrique",
+                    "pieces_concernees": "N/A (architecture générale)",
+                    "kilometrage_critique": "N/A (caractéristique structurelle)",
+                    "cout_estime_eur": "N/A"
+                  },
+                  {
+                    "panne": "Vieillissement de la batterie sur le long terme",
+                    "symptomes": "Autonomie réduite progressivement",
+                    "pieces_concernees": "Batterie haute tension",
+                    "kilometrage_critique": "Dégradation après 5-7 ans/100 000 km",
+                    "cout_estime_eur": "5000 à 8000€ hors garantie"
+                  },
+                  {
+                    "panne": "Bugs du logiciel MBUX électrique",
+                    "symptomes": "Écran figé, fonctions de gestion énergie capricieuses",
+                    "pieces_concernees": "Calculateur MBUX électrique",
+                    "kilometrage_critique": "Variable",
+                    "cout_estime_eur": "0€ si résolu par mise à jour, sinon 300 à 800€"
+                  },
+                  {
+                    "panne": "Coût très élevé de remplacement de la batterie hors garantie",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Batterie haute tension complète",
+                    "kilometrage_critique": "Au-delà de 8 ans/160 000 km",
+                    "cout_estime_eur": "5000 à 8000€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "X243 (EQB)",
+            "annees": "2021-aujourd'hui",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Électrique",
+                "nom": "EQB250/EQB300/EQB350 - 190 à 292ch",
+                "code_moteur": "Moteur(s) électrique(s) synchrone(s)",
+                "cylindree": "N/A",
+                "puissance_ch": 292,
+                "boite": [
+                  "Réducteur monovitesse"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Compromis d'architecture lié à la base plateforme thermique (GLB)",
+                    "symptomes": "Autonomie inférieure aux concurrents sur plateforme dédiée électrique",
+                    "pieces_concernees": "N/A (architecture générale)",
+                    "kilometrage_critique": "N/A (caractéristique structurelle)",
+                    "cout_estime_eur": "N/A"
+                  },
+                  {
+                    "panne": "Vieillissement de la batterie sur le long terme",
+                    "symptomes": "Autonomie réduite progressivement",
+                    "pieces_concernees": "Batterie haute tension",
+                    "kilometrage_critique": "Dégradation après 5-7 ans/100 000 km",
+                    "cout_estime_eur": "5000 à 8000€ hors garantie"
+                  },
+                  {
+                    "panne": "Bugs du logiciel MBUX électrique",
+                    "symptomes": "Écran figé, fonctions de gestion énergie capricieuses",
+                    "pieces_concernees": "Calculateur MBUX électrique",
+                    "kilometrage_critique": "Variable",
+                    "cout_estime_eur": "0€ si résolu par mise à jour, sinon 300 à 800€"
+                  },
+                  {
+                    "panne": "Consommation électrique élevée en hiver",
+                    "symptomes": "Autonomie réelle nettement inférieure à l'autonomie WLTP par temps froid",
+                    "pieces_concernees": "Batterie, système de gestion thermique",
+                    "kilometrage_critique": "N/A (caractéristique saisonnière)",
+                    "cout_estime_eur": "N/A"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "EQE / EQS",
+        "generations": [
+          {
+            "code_chassis": "V295 (EQE)",
+            "annees": "2022-aujourd'hui",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Électrique",
+                "nom": "EQE300/EQE350/EQE500/AMG EQE - 245 à 686ch",
+                "code_moteur": "Moteur(s) électrique(s) synchrone(s), plateforme EVA2 dédiée électrique",
+                "cylindree": "N/A",
+                "puissance_ch": 686,
+                "boite": [
+                  "Réducteur monovitesse"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Manque de recul sur la fiabilité long terme (plateforme 100% électrique dédiée)",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Ensemble du groupe motopropulseur, batterie",
+                    "kilometrage_critique": "Modèle récent",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  },
+                  {
+                    "panne": "Bugs du logiciel MBUX Hyperscreen (versions équipées)",
+                    "symptomes": "Écran figé, fonctions capricieuses, lenteurs",
+                    "pieces_concernees": "Calculateur MBUX Hyperscreen",
+                    "kilometrage_critique": "Variable",
+                    "cout_estime_eur": "0€ si résolu par mise à jour, sinon 500 à 1500€"
+                  },
+                  {
+                    "panne": "Coût très élevé de remplacement de la batterie hors garantie",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Batterie haute tension complète",
+                    "kilometrage_critique": "Au-delà de 8 ans/160 000 km",
+                    "cout_estime_eur": "7000 à 12000€"
+                  },
+                  {
+                    "panne": "Coût élevé de la direction arrière active (versions équipées)",
+                    "symptomes": "Comportement dynamique dégradé en cas de panne",
+                    "pieces_concernees": "Système de direction arrière",
+                    "kilometrage_critique": "Au-delà de 80 000-100 000 km",
+                    "cout_estime_eur": "1500 à 3500€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "V297 (EQS)",
+            "annees": "2021-aujourd'hui",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Électrique",
+                "nom": "EQS450/EQS580/AMG EQS - 333 à 761ch",
+                "code_moteur": "Moteur(s) électrique(s) synchrone(s), plateforme EVA2 dédiée électrique",
+                "cylindree": "N/A",
+                "puissance_ch": 761,
+                "boite": [
+                  "Réducteur monovitesse"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Électronique et logiciels très denses, sensibles aux bugs",
+                    "symptomes": "Écran figé, fonctions capricieuses, nécessité de mises à jour fréquentes",
+                    "pieces_concernees": "Calculateurs multiples, MBUX",
+                    "kilometrage_critique": "Variable",
+                    "cout_estime_eur": "0€ si résolu par mise à jour, sinon 300 à 1500€"
+                  },
+                  {
+                    "panne": "Coût élevé en cas de panne/remplacement du MBUX Hyperscreen",
+                    "symptomes": "Écran pleine largeur défaillant ou fissuré",
+                    "pieces_concernees": "Écran Hyperscreen complet",
+                    "kilometrage_critique": "N/A (dépend des pannes/chocs)",
+                    "cout_estime_eur": "3000 à 6000€"
+                  },
+                  {
+                    "panne": "Coût très élevé de remplacement de la batterie hors garantie",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Batterie haute tension complète",
+                    "kilometrage_critique": "Au-delà de 8 ans/160 000 km",
+                    "cout_estime_eur": "8000 à 14000€"
+                  },
+                  {
+                    "panne": "Coût très élevé de la suspension E-Active Body Control",
+                    "symptomes": "Affaissement, comportement dynamique dégradé",
+                    "pieces_concernees": "Vérins actifs, capteurs, compresseur",
+                    "kilometrage_critique": "Au-delà de 100 000-130 000 km",
+                    "cout_estime_eur": "2500 à 5000€"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "CLE",
+        "generations": [
+          {
+            "code_chassis": "C236 (Coupé) / A236 (Cabriolet)",
+            "annees": "2023-aujourd'hui",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "CLE200/CLE300/CLE450 AMG - 204 à 408ch",
+                "code_moteur": "M254 (mild-hybrid)",
+                "cylindree": "2.0L turbo",
+                "puissance_ch": 408,
+                "boite": [
+                  "BVA9G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Aucun recul sur la fiabilité long terme (modèle très récent)",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Ensemble du groupe motopropulseur",
+                    "kilometrage_critique": "Modèle commercialisé depuis 2023",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  },
+                  {
+                    "panne": "Complexité du système mild-hybrid 48V",
+                    "symptomes": "Messages d'erreur électronique potentiels",
+                    "pieces_concernees": "Module mild-hybrid, batterie 48V",
+                    "kilometrage_critique": "Peu de recul, système récent",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  },
+                  {
+                    "panne": "Encrassement du filtre à particules essence",
+                    "symptomes": "Voyant moteur, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules essence",
+                    "kilometrage_critique": "Sur petits trajets dès 60 000-80 000 km",
+                    "cout_estime_eur": "800 à 1600€"
+                  },
+                  {
+                    "panne": "Bugs de l'électronique MBUX",
+                    "symptomes": "Écran figé, fonctions capricieuses",
+                    "pieces_concernees": "Calculateur MBUX",
+                    "kilometrage_critique": "Variable",
+                    "cout_estime_eur": "0€ si résolu par mise à jour, sinon 300 à 800€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "CLE220d/CLE300d - 197 à 269ch",
+                "code_moteur": "OM654",
+                "cylindree": "2.0L",
+                "puissance_ch": 269,
+                "boite": [
+                  "BVA9G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité du système AdBlue/SCR",
+                    "symptomes": "Voyant AdBlue, limitation de démarrages",
+                    "pieces_concernees": "Capteur NOx, pompe de dosage",
+                    "kilometrage_critique": "Dès 80 000-100 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement du FAP sur petits trajets répétés",
+                    "symptomes": "Voyant FAP, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules",
+                    "kilometrage_critique": "Dès 60 000-80 000 km",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Aucun recul sur la fiabilité long terme (modèle très récent)",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Ensemble du groupe motopropulseur",
+                    "kilometrage_critique": "Modèle commercialisé depuis 2023",
+                    "cout_estime_eur": "Non déterminable à ce stade"
+                  },
+                  {
+                    "panne": "Coûts d'entretien élevés liés à l'électronique de dépollution",
+                    "symptomes": "Voyants multiples récurrents",
+                    "pieces_concernees": "Ensemble SCR/EGR/FAP",
+                    "kilometrage_critique": "Sur toute la durée de vie",
+                    "cout_estime_eur": "150 à 400€/an en moyenne"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Vito / Sprinter",
+        "generations": [
+          {
+            "code_chassis": "W639 (Vito II)",
+            "annees": "2003-2014",
+            "phases": [
+              "Phase 1 (2003-2010)",
+              "Phase 2 restylée (2010-2014)"
+            ],
+            "motorisations": [
+              {
+                "type": "Diesel",
+                "nom": "Vito 109/115/120 CDI - 88 à 224ch",
+                "code_moteur": "OM611 / OM646 / OM642 (V6)",
+                "cylindree": "2.1L / 3.0L V6",
+                "puissance_ch": 224,
+                "boite": [
+                  "BVM5/6",
+                  "BVA5 Tiptronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité des injecteurs première génération CDI",
+                    "symptomes": "Ratés, fumée, démarrage difficile",
+                    "pieces_concernees": "Injecteurs CDI",
+                    "kilometrage_critique": "Fréquent au-delà de 200 000 km",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Sollicitation forte de la suspension et des trains roulants",
+                    "symptomes": "Usure accélérée en usage professionnel intensif",
+                    "pieces_concernees": "Amortisseurs, ressorts, rotules",
+                    "kilometrage_critique": "Usure accélérée dès 150 000 km en usage utilitaire",
+                    "cout_estime_eur": "500 à 1200€"
+                  },
+                  {
+                    "panne": "Encrassement de la vanne EGR en usage urbain",
+                    "symptomes": "Perte de puissance",
+                    "pieces_concernees": "Vanne EGR",
+                    "kilometrage_critique": "Dès 150 000-180 000 km",
+                    "cout_estime_eur": "300 à 600€"
+                  },
+                  {
+                    "panne": "Sollicitation du volant moteur bi-masse par l'usage utilitaire",
+                    "symptomes": "Bruit métallique au ralenti, vibrations",
+                    "pieces_concernees": "Volant moteur bi-masse",
+                    "kilometrage_critique": "Entre 150 000 et 200 000 km",
+                    "cout_estime_eur": "700 à 1300€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "W447 (Vito III)",
+            "annees": "2014-aujourd'hui",
+            "phases": [
+              "Phase 1 (2014-2019)",
+              "Phase 2 restylée (2019-)"
+            ],
+            "motorisations": [
+              {
+                "type": "Diesel",
+                "nom": "Vito 109/114/119 CDI - 88 à 190ch",
+                "code_moteur": "OM622 / OM651 / OM654",
+                "cylindree": "1.6L à 2.1L",
+                "puissance_ch": 190,
+                "boite": [
+                  "BVM6",
+                  "BVA7G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité du système AdBlue/SCR",
+                    "symptomes": "Voyant AdBlue, limitation de démarrages",
+                    "pieces_concernees": "Capteur NOx, pompe de dosage",
+                    "kilometrage_critique": "Dès 80 000-100 000 km en usage professionnel urbain",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement du FAP avec arrêts fréquents",
+                    "symptomes": "Voyant FAP, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules",
+                    "kilometrage_critique": "Dès 60 000-80 000 km en usage majoritairement urbain",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Sollicitation de la suspension et des trains roulants par les charges lourdes",
+                    "symptomes": "Usure accélérée, affaissement",
+                    "pieces_concernees": "Amortisseurs, ressorts",
+                    "kilometrage_critique": "Usure accélérée dès 150 000 km",
+                    "cout_estime_eur": "500 à 1200€"
+                  },
+                  {
+                    "panne": "Encrassement des injecteurs",
+                    "symptomes": "Ratés, fumée",
+                    "pieces_concernees": "Injecteurs",
+                    "kilometrage_critique": "Au-delà de 150 000-180 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  }
+                ]
+              },
+              {
+                "type": "Électrique",
+                "nom": "eVito - 116ch",
+                "code_moteur": "Moteur électrique synchrone",
+                "cylindree": "N/A",
+                "puissance_ch": 116,
+                "boite": [
+                  "Réducteur monovitesse"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Autonomie limitée pour un usage professionnel intensif",
+                    "symptomes": "Autonomie réelle insuffisante pour de longues tournées quotidiennes",
+                    "pieces_concernees": "Batterie haute tension",
+                    "kilometrage_critique": "Caractéristique dès l'achat",
+                    "cout_estime_eur": "N/A (limite technique)"
+                  },
+                  {
+                    "panne": "Vieillissement de la batterie sur le long terme",
+                    "symptomes": "Autonomie réduite progressivement",
+                    "pieces_concernees": "Batterie haute tension",
+                    "kilometrage_critique": "Dégradation après 5-7 ans/100 000 km",
+                    "cout_estime_eur": "4500 à 7500€ hors garantie"
+                  },
+                  {
+                    "panne": "Coût élevé de remplacement de la batterie hors garantie",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Batterie HT complète",
+                    "kilometrage_critique": "Au-delà de 8 ans",
+                    "cout_estime_eur": "4500 à 7500€"
+                  },
+                  {
+                    "panne": "Charge utile réduite par le poids de la batterie",
+                    "symptomes": "Volume de chargement utile inférieur à la version thermique équivalente",
+                    "pieces_concernees": "N/A (caractéristique structurelle)",
+                    "kilometrage_critique": "N/A",
+                    "cout_estime_eur": "N/A"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "Sprinter (W906/NCV3)",
+            "annees": "2006-2018",
+            "phases": [
+              "Phase 1 (2006-2013)",
+              "Phase 2 restylée (2013-2018)"
+            ],
+            "motorisations": [
+              {
+                "type": "Diesel",
+                "nom": "Sprinter 213/316/519 CDI - 109 à 190ch",
+                "code_moteur": "OM646 / OM651 / OM642 (V6)",
+                "cylindree": "2.1L / 3.0L V6",
+                "puissance_ch": 190,
+                "boite": [
+                  "BVM6",
+                  "BVA5/7G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sollicitation très forte de la suspension et des trains roulants",
+                    "symptomes": "Usure accélérée en usage professionnel intensif",
+                    "pieces_concernees": "Amortisseurs, ressorts, rotules",
+                    "kilometrage_critique": "Usure accélérée dès 150 000-180 000 km",
+                    "cout_estime_eur": "600 à 1500€"
+                  },
+                  {
+                    "panne": "Sensibilité des injecteurs Piezo (OM651) à l'encrassement",
+                    "symptomes": "Ratés, fumée, voyant moteur",
+                    "pieces_concernees": "Injecteurs Piezo",
+                    "kilometrage_critique": "Fréquent au-delà de 180 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  },
+                  {
+                    "panne": "Encrassement de la vanne EGR en usage urbain",
+                    "symptomes": "Perte de puissance",
+                    "pieces_concernees": "Vanne EGR",
+                    "kilometrage_critique": "Dès 150 000-180 000 km",
+                    "cout_estime_eur": "300 à 600€"
+                  },
+                  {
+                    "panne": "Sensibilité du turbo à géométrie variable en cas d'entretien espacé",
+                    "symptomes": "Perte de puissance, sifflement",
+                    "pieces_concernees": "Turbocompresseur à géométrie variable",
+                    "kilometrage_critique": "Si intervalles de vidange > 15 000-20 000 km",
+                    "cout_estime_eur": "900 à 1600€"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "Sprinter (VS30, dès 2018)",
+            "annees": "2018-aujourd'hui",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Diesel",
+                "nom": "Sprinter 314/317/319 CDI - 143 à 190ch",
+                "code_moteur": "OM651 / OM654",
+                "cylindree": "2.1L / 2.0L",
+                "puissance_ch": 190,
+                "boite": [
+                  "BVM6",
+                  "BVA9G-Tronic"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Sensibilité du système AdBlue/SCR",
+                    "symptomes": "Voyant AdBlue, limitation de démarrages",
+                    "pieces_concernees": "Capteur NOx, pompe de dosage",
+                    "kilometrage_critique": "Dès 80 000-100 000 km en usage professionnel urbain",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Encrassement du FAP avec arrêts fréquents",
+                    "symptomes": "Voyant FAP, régénérations fréquentes",
+                    "pieces_concernees": "Filtre à particules",
+                    "kilometrage_critique": "Dès 60 000-80 000 km en usage majoritairement urbain",
+                    "cout_estime_eur": "300 à 1200€"
+                  },
+                  {
+                    "panne": "Sollicitation très forte de la suspension et des trains roulants",
+                    "symptomes": "Usure accélérée, affaissement",
+                    "pieces_concernees": "Amortisseurs, ressorts",
+                    "kilometrage_critique": "Usure accélérée dès 150 000 km",
+                    "cout_estime_eur": "600 à 1500€"
+                  },
+                  {
+                    "panne": "Coûts d'entretien cumulés de l'électronique de dépollution",
+                    "symptomes": "Voyants multiples récurrents",
+                    "pieces_concernees": "Ensemble SCR/EGR/FAP",
+                    "kilometrage_critique": "Sur toute la durée de vie",
+                    "cout_estime_eur": "150 à 400€/an en moyenne"
+                  }
+                ]
+              },
+              {
+                "type": "Électrique",
+                "nom": "eSprinter - 122 à 150ch",
+                "code_moteur": "Moteur électrique synchrone",
+                "cylindree": "N/A",
+                "puissance_ch": 150,
+                "boite": [
+                  "Réducteur monovitesse"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Autonomie limitée pour un usage professionnel intensif sur longue distance",
+                    "symptomes": "Autonomie réelle insuffisante pour de longues tournées quotidiennes",
+                    "pieces_concernees": "Batterie haute tension",
+                    "kilometrage_critique": "Caractéristique dès l'achat",
+                    "cout_estime_eur": "N/A (limite technique)"
+                  },
+                  {
+                    "panne": "Vieillissement de la batterie sur le long terme",
+                    "symptomes": "Autonomie réduite progressivement",
+                    "pieces_concernees": "Batterie haute tension",
+                    "kilometrage_critique": "Dégradation après 5-7 ans/100 000 km",
+                    "cout_estime_eur": "5500 à 9000€ hors garantie"
+                  },
+                  {
+                    "panne": "Coût très élevé de remplacement de la batterie hors garantie",
+                    "symptomes": "N/A",
+                    "pieces_concernees": "Batterie HT complète",
+                    "kilometrage_critique": "Au-delà de 8 ans",
+                    "cout_estime_eur": "5500 à 9000€"
+                  },
+                  {
+                    "panne": "Charge utile réduite par le poids de la batterie",
+                    "symptomes": "Volume de chargement utile inférieur à la version thermique équivalente",
+                    "pieces_concernees": "N/A (caractéristique structurelle)",
+                    "kilometrage_critique": "N/A",
+                    "cout_estime_eur": "N/A"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "190 (W201, précurseur Classe C)",
+        "generations": [
+          {
+            "code_chassis": "W201",
+            "annees": "1982-1993",
+            "phases": [
+              "Phase 1 (1982-1988)",
+              "Phase 2 restylée (1988-1993)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "190E/190E 2.3-16/190E 2.5-16 Evo - 90 à 235ch",
+                "code_moteur": "M102 / M102 Evo (culasse Cosworth)",
+                "cylindree": "1.8L à 2.5L",
+                "puissance_ch": 235,
+                "boite": [
+                  "BVM5",
+                  "BVA4"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Robustesse mécanique exceptionnelle avec entretien",
+                    "symptomes": "N/A (fiabilité intrinsèque élevée)",
+                    "pieces_concernees": "N/A",
+                    "kilometrage_critique": "Souvent au-delà de 400 000-500 000 km avec entretien rigoureux",
+                    "cout_estime_eur": "N/A"
+                  },
+                  {
+                    "panne": "Entretien pointu et pièces rares sur version Cosworth (2.3-16/2.5-16)",
+                    "symptomes": "Délais et coûts de réparation supérieurs à une 190E standard",
+                    "pieces_concernees": "Culasse Cosworth 16 soupapes, pièces spécifiques",
+                    "kilometrage_critique": "N/A (rareté croissante des pièces avec l'âge du modèle)",
+                    "cout_estime_eur": "Surcoût significatif par rapport à une 190E standard"
+                  },
+                  {
+                    "panne": "Usure des silentblocs de la suspension multibras",
+                    "symptomes": "Bruits de suspension, tenue de route imprécise",
+                    "pieces_concernees": "Silentblocs, bras de suspension multibras",
+                    "kilometrage_critique": "À surveiller au-delà de 30-35 ans d'âge",
+                    "cout_estime_eur": "400 à 900€"
+                  },
+                  {
+                    "panne": "Corrosion possible sur exemplaires mal entretenus",
+                    "symptomes": "Perforations localisées malgré une bonne protection d'origine",
+                    "pieces_concernees": "Bas de caisse, passages de roue",
+                    "kilometrage_critique": "Fréquent au-delà de 35-40 ans sans entretien anticorrosion",
+                    "cout_estime_eur": "500 à 2000€"
+                  }
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "190D/190D 2.5 Turbo - 72 à 122ch",
+                "code_moteur": "OM601 / OM602",
+                "cylindree": "2.0L à 2.5L",
+                "puissance_ch": 122,
+                "boite": [
+                  "BVM5",
+                  "BVA4"
+                ],
+                "points_faibles": [
+                  {
+                    "panne": "Bloc réputé quasi indestructible avec entretien régulier",
+                    "symptomes": "N/A (fiabilité intrinsèque exceptionnelle)",
+                    "pieces_concernees": "N/A",
+                    "kilometrage_critique": "Souvent au-delà de 500 000-700 000 km avec entretien rigoureux",
+                    "cout_estime_eur": "N/A"
+                  },
+                  {
+                    "panne": "Usure de la pompe injection sur très gros kilométrage",
+                    "symptomes": "Perte de puissance, fumées",
+                    "pieces_concernees": "Pompe injection",
+                    "kilometrage_critique": "Au-delà de 400 000-500 000 km",
+                    "cout_estime_eur": "500 à 1000€"
+                  },
+                  {
+                    "panne": "Corrosion carrosserie sur exemplaires mal entretenus",
+                    "symptomes": "Perforations visibles",
+                    "pieces_concernees": "Carrosserie, bas de caisse",
+                    "kilometrage_critique": "Fréquent au-delà de 35-40 ans sans entretien anticorrosion",
+                    "cout_estime_eur": "500 à 2000€"
+                  },
+                  {
+                    "panne": "Usure du turbo sur gros kilométrage (version 2.5 Turbo)",
+                    "symptomes": "Perte de puissance, sifflement, fumée",
+                    "pieces_concernees": "Turbocompresseur",
+                    "kilometrage_critique": "Au-delà de 300 000-350 000 km",
+                    "cout_estime_eur": "600 à 1100€"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

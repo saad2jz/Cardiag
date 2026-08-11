@@ -1,0 +1,266 @@
+{
+  "nom": "Salmson",
+  "modeles": [
+    {
+      "nom": "S4",
+      "generations": [
+        {
+          "code_chassis": "S4C",
+          "annees": "1932–1934",
+          "phases": [
+            "Première S4 de série, 8 CV fiscaux."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.5 double arbre — 41 ch",
+              "code_moteur": "Salmson S4C",
+              "cylindree": "1 465 cm³",
+              "puissance_ch": 41,
+              "boite": [
+                "Manuelle 4 rapports ou Cotal, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et distribution double arbre Salmson",
+                  "symptomes": [
+                    "Pression faible",
+                    "Bruit de distribution",
+                    "Surchauffe ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "Aucun seuil fiable ; souvent après restauration ancienne ou immobilisation",
+                  "diagnostic": "Identifier S4C/D/DA/61/E, mesurer compressions et pression, contrôler entraînement des deux arbres, jeux, paliers, pompe/radiateur, carburateur Solex, magnéto/bobine, culasse et fuites ; vérifier sens et calage spécifiques avant démontage",
+                  "piece_concernee": "Quatre-cylindres Salmson double arbre",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sans spécialiste ou pièces correctes",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Boîte mécanique/Cotal, embrayage, arbre et pont",
+                  "symptomes": [
+                    "Présélection inopérante",
+                    "Rapport qui saute",
+                    "Patinage, fuite ou vibration"
+                  ],
+                  "kilometrage_apparition": "Variable ; contrôle à chaque entretien",
+                  "diagnostic": "Identifier boîte 4 rapports ou électromagnétique Cotal, tester alimentation, contacteurs et présélecteur, contrôler huile, embrayage, supports, arbre, croisillons, pont et roulements ; utiliser la procédure correcte plutôt qu’un essai forcé",
+                  "piece_concernee": "Transmission Salmson et boîte Cotal éventuelle",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente avec câblage ou réglage dégradé",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Corrosion, ossature, suspension, freins et provenance",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Portes désalignées",
+                    "Jeu ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique",
+                  "diagnostic": "Authentifier châssis, moteur et carrosserie, inspecter châssis, planchers, ossature, aluminium/acier, supports, ressorts, amortisseurs, direction, tambours/hydraulique selon série et roues ; comparer empattement S4-61/S4E et réparations aux archives du club",
+                  "piece_concernee": "Structure et organes de sécurité S4",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente sur véhicule non restauré ou anciennement restauré",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 40 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "S4D",
+          "annees": "1934–1936",
+          "phases": [
+            "Évolution 1,6 litre ; boîte Cotal disponible."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.6 double arbre — 50 ch",
+              "code_moteur": "Salmson S4D",
+              "cylindree": "1 596 cm³",
+              "puissance_ch": 50,
+              "boite": [
+                "Manuelle 4 rapports ou Cotal, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et distribution double arbre Salmson",
+                  "symptomes": [
+                    "Pression faible",
+                    "Bruit de distribution",
+                    "Surchauffe ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "Aucun seuil fiable ; souvent après restauration ancienne ou immobilisation",
+                  "diagnostic": "Identifier S4C/D/DA/61/E, mesurer compressions et pression, contrôler entraînement des deux arbres, jeux, paliers, pompe/radiateur, carburateur Solex, magnéto/bobine, culasse et fuites ; vérifier sens et calage spécifiques avant démontage",
+                  "piece_concernee": "Quatre-cylindres Salmson double arbre",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sans spécialiste ou pièces correctes",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Boîte mécanique/Cotal, embrayage, arbre et pont",
+                  "symptomes": [
+                    "Présélection inopérante",
+                    "Rapport qui saute",
+                    "Patinage, fuite ou vibration"
+                  ],
+                  "kilometrage_apparition": "Variable ; contrôle à chaque entretien",
+                  "diagnostic": "Identifier boîte 4 rapports ou électromagnétique Cotal, tester alimentation, contacteurs et présélecteur, contrôler huile, embrayage, supports, arbre, croisillons, pont et roulements ; utiliser la procédure correcte plutôt qu’un essai forcé",
+                  "piece_concernee": "Transmission Salmson et boîte Cotal éventuelle",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente avec câblage ou réglage dégradé",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Corrosion, ossature, suspension, freins et provenance",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Portes désalignées",
+                    "Jeu ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique",
+                  "diagnostic": "Authentifier châssis, moteur et carrosserie, inspecter châssis, planchers, ossature, aluminium/acier, supports, ressorts, amortisseurs, direction, tambours/hydraulique selon série et roues ; comparer empattement S4-61/S4E et réparations aux archives du club",
+                  "piece_concernee": "Structure et organes de sécurité S4",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente sur véhicule non restauré ou anciennement restauré",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 40 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "S4DA / S4-61",
+          "annees": "1936–1952",
+          "phases": [
+            "S4-61 produite avant et après guerre ; carrosseries et puissance évoluent."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.7 double arbre — 55 ch",
+              "code_moteur": "Salmson S4DA / S4-61",
+              "cylindree": "1 731 cm³",
+              "puissance_ch": 55,
+              "boite": [
+                "Manuelle 4 rapports ou Cotal, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et distribution double arbre Salmson",
+                  "symptomes": [
+                    "Pression faible",
+                    "Bruit de distribution",
+                    "Surchauffe ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "Aucun seuil fiable ; souvent après restauration ancienne ou immobilisation",
+                  "diagnostic": "Identifier S4C/D/DA/61/E, mesurer compressions et pression, contrôler entraînement des deux arbres, jeux, paliers, pompe/radiateur, carburateur Solex, magnéto/bobine, culasse et fuites ; vérifier sens et calage spécifiques avant démontage",
+                  "piece_concernee": "Quatre-cylindres Salmson double arbre",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sans spécialiste ou pièces correctes",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Boîte mécanique/Cotal, embrayage, arbre et pont",
+                  "symptomes": [
+                    "Présélection inopérante",
+                    "Rapport qui saute",
+                    "Patinage, fuite ou vibration"
+                  ],
+                  "kilometrage_apparition": "Variable ; contrôle à chaque entretien",
+                  "diagnostic": "Identifier boîte 4 rapports ou électromagnétique Cotal, tester alimentation, contacteurs et présélecteur, contrôler huile, embrayage, supports, arbre, croisillons, pont et roulements ; utiliser la procédure correcte plutôt qu’un essai forcé",
+                  "piece_concernee": "Transmission Salmson et boîte Cotal éventuelle",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente avec câblage ou réglage dégradé",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Corrosion, ossature, suspension, freins et provenance",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Portes désalignées",
+                    "Jeu ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique",
+                  "diagnostic": "Authentifier châssis, moteur et carrosserie, inspecter châssis, planchers, ossature, aluminium/acier, supports, ressorts, amortisseurs, direction, tambours/hydraulique selon série et roues ; comparer empattement S4-61/S4E et réparations aux archives du club",
+                  "piece_concernee": "Structure et organes de sécurité S4",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente sur véhicule non restauré ou anciennement restauré",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 40 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "S4E",
+          "annees": "1937–1951",
+          "phases": [
+            "Grand modèle à empattement et capot allongés, distinct de la S4-61 1,7 litre."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.3 double arbre — 70 ch",
+              "code_moteur": "Salmson S4E",
+              "cylindree": "2 312 cm³",
+              "puissance_ch": 70,
+              "boite": [
+                "Cotal électromagnétique 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et distribution double arbre Salmson",
+                  "symptomes": [
+                    "Pression faible",
+                    "Bruit de distribution",
+                    "Surchauffe ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "Aucun seuil fiable ; souvent après restauration ancienne ou immobilisation",
+                  "diagnostic": "Identifier S4C/D/DA/61/E, mesurer compressions et pression, contrôler entraînement des deux arbres, jeux, paliers, pompe/radiateur, carburateur Solex, magnéto/bobine, culasse et fuites ; vérifier sens et calage spécifiques avant démontage",
+                  "piece_concernee": "Quatre-cylindres Salmson double arbre",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sans spécialiste ou pièces correctes",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Boîte mécanique/Cotal, embrayage, arbre et pont",
+                  "symptomes": [
+                    "Présélection inopérante",
+                    "Rapport qui saute",
+                    "Patinage, fuite ou vibration"
+                  ],
+                  "kilometrage_apparition": "Variable ; contrôle à chaque entretien",
+                  "diagnostic": "Identifier boîte 4 rapports ou électromagnétique Cotal, tester alimentation, contacteurs et présélecteur, contrôler huile, embrayage, supports, arbre, croisillons, pont et roulements ; utiliser la procédure correcte plutôt qu’un essai forcé",
+                  "piece_concernee": "Transmission Salmson et boîte Cotal éventuelle",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente avec câblage ou réglage dégradé",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Corrosion, ossature, suspension, freins et provenance",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Portes désalignées",
+                    "Jeu ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique",
+                  "diagnostic": "Authentifier châssis, moteur et carrosserie, inspecter châssis, planchers, ossature, aluminium/acier, supports, ressorts, amortisseurs, direction, tambours/hydraulique selon série et roues ; comparer empattement S4-61/S4E et réparations aux archives du club",
+                  "piece_concernee": "Structure et organes de sécurité S4",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente sur véhicule non restauré ou anciennement restauré",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 40 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.club-salmson.fr/",
+        "https://fr.wikipedia.org/wiki/Salmson_S4"
+      ]
+    }
+  ]
+}

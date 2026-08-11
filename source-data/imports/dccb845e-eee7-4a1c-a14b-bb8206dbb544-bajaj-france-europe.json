@@ -1,0 +1,302 @@
+{
+  "nom": "Bajaj",
+  "modeles": [
+    {
+      "nom": "Qute",
+      "generations": [
+        {
+          "code_chassis": "RE60/Qute première série export",
+          "annees": "2013–2023",
+          "phases": [
+            "Quadricycle quatre places ; 9,9 kW selon marché, soit environ 13 ch métriques, vitesse maximale annoncée 70 km/h"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "DTS-i essence 216,6 cm³ — 13 ch",
+              "code_moteur": "Bajaj DTS-i FI 216.6",
+              "cylindree": "216,6 cm³",
+              "puissance_ch": 13,
+              "boite": [
+                "Manuelle constant-mesh 5 rapports + marche arrière"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Surchauffe, injection/carburation et usure du monocylindre",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Perte de puissance en charge",
+                    "Fumée ou température élevée"
+                  ],
+                  "kilometrage_apparition": "Souvent après 30 000 à 70 000 km en service taxi intensif, plus tôt si refroidissement ou filtration négligés",
+                  "diagnostic": "Identifier cylindrée et carburant exacts, mesurer compression et jeu aux soupapes, contrôler injection/carburation, bougie ou injection diesel, filtre, huile, ventilateur, pompe, radiateur et qualité CNG/LPG",
+                  "piece_concernee": "Monocylindre DTS-i ou diesel Qute et refroidissement",
+                  "gravite": "Majeure à critique si surchauffe ou manque d’huile",
+                  "frequence": "Assez fréquente en exploitation intensive",
+                  "cout_reparation_estime": "Modéré : environ 150 à 1 800 € selon marché"
+                },
+                {
+                  "probleme": "Embrayage et boîte mécanique 5 rapports avec marche arrière",
+                  "symptomes": [
+                    "Patinage",
+                    "Vitesses difficiles",
+                    "Craquement ou vibration de transmission"
+                  ],
+                  "kilometrage_apparition": "Généralement entre 30 000 et 80 000 km selon charge et circulation",
+                  "diagnostic": "Contrôler commande, câble, embrayage multidisque humide ou monodisque sec selon version, huile de boîte, synchros/crabots, cardans, supports et jeu du différentiel ; essai en côte à pleine charge autorisée",
+                  "piece_concernee": "Embrayage, boîte constant-mesh et arbres de roues",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquente sur taxi ou surcharge",
+                  "cout_reparation_estime": "Modéré : environ 150 à 1 500 €"
+                },
+                {
+                  "probleme": "Freins à tambour, suspension légère et structure monocoque",
+                  "symptomes": [
+                    "Freinage long ou dissymétrique",
+                    "Claquement",
+                    "Usure irrégulière ou fissure"
+                  ],
+                  "kilometrage_apparition": "Contrôle tous les 10 000 à 20 000 km en usage commercial",
+                  "diagnostic": "Mesurer ovalisation et efficacité des quatre tambours, contrôler cylindres/canalisations, pneus 12 pouces, roulements, bras, ressorts, amortisseurs, corrosion et réparations de monocoque ; vérifier PTAC et nombre de places",
+                  "piece_concernee": "Freinage, trains roulants et coque haute résistance",
+                  "gravite": "Critique si freinage ou structure affecté",
+                  "frequence": "Fréquente avec routes dégradées et surcharge",
+                  "cout_reparation_estime": "Modéré à élevé : environ 100 à 2 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Qute RE gamme multicarburant",
+          "annees": "2023–aujourd’hui",
+          "phases": [
+            "Puissances constructeur 7,6/6,9/7,42/6,24 kW arrondies au cheval métrique ; variantes non interchangeables de carburant et embrayage"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "RE Petrol 236,2 cm³ — 10 ch",
+              "code_moteur": "Bajaj RE Petrol 236.2",
+              "cylindree": "236,2 cm³",
+              "puissance_ch": 10,
+              "boite": [
+                "Manuelle constant-mesh 5 rapports + marche arrière, embrayage multidisque humide"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Surchauffe, injection/carburation et usure du monocylindre",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Perte de puissance en charge",
+                    "Fumée ou température élevée"
+                  ],
+                  "kilometrage_apparition": "Souvent après 30 000 à 70 000 km en service taxi intensif, plus tôt si refroidissement ou filtration négligés",
+                  "diagnostic": "Identifier cylindrée et carburant exacts, mesurer compression et jeu aux soupapes, contrôler injection/carburation, bougie ou injection diesel, filtre, huile, ventilateur, pompe, radiateur et qualité CNG/LPG",
+                  "piece_concernee": "Monocylindre DTS-i ou diesel Qute et refroidissement",
+                  "gravite": "Majeure à critique si surchauffe ou manque d’huile",
+                  "frequence": "Assez fréquente en exploitation intensive",
+                  "cout_reparation_estime": "Modéré : environ 150 à 1 800 € selon marché"
+                },
+                {
+                  "probleme": "Embrayage et boîte mécanique 5 rapports avec marche arrière",
+                  "symptomes": [
+                    "Patinage",
+                    "Vitesses difficiles",
+                    "Craquement ou vibration de transmission"
+                  ],
+                  "kilometrage_apparition": "Généralement entre 30 000 et 80 000 km selon charge et circulation",
+                  "diagnostic": "Contrôler commande, câble, embrayage multidisque humide ou monodisque sec selon version, huile de boîte, synchros/crabots, cardans, supports et jeu du différentiel ; essai en côte à pleine charge autorisée",
+                  "piece_concernee": "Embrayage, boîte constant-mesh et arbres de roues",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquente sur taxi ou surcharge",
+                  "cout_reparation_estime": "Modéré : environ 150 à 1 500 €"
+                },
+                {
+                  "probleme": "Freins à tambour, suspension légère et structure monocoque",
+                  "symptomes": [
+                    "Freinage long ou dissymétrique",
+                    "Claquement",
+                    "Usure irrégulière ou fissure"
+                  ],
+                  "kilometrage_apparition": "Contrôle tous les 10 000 à 20 000 km en usage commercial",
+                  "diagnostic": "Mesurer ovalisation et efficacité des quatre tambours, contrôler cylindres/canalisations, pneus 12 pouces, roulements, bras, ressorts, amortisseurs, corrosion et réparations de monocoque ; vérifier PTAC et nombre de places",
+                  "piece_concernee": "Freinage, trains roulants et coque haute résistance",
+                  "gravite": "Critique si freinage ou structure affecté",
+                  "frequence": "Fréquente avec routes dégradées et surcharge",
+                  "cout_reparation_estime": "Modéré à élevé : environ 100 à 2 000 €"
+                }
+              ]
+            },
+            {
+              "type": "GNV",
+              "nom": "RE CNG 236,2 cm³ — 9 ch",
+              "code_moteur": "Bajaj RE CNG 236.2",
+              "cylindree": "236,2 cm³",
+              "puissance_ch": 9,
+              "boite": [
+                "Manuelle constant-mesh 5 rapports + marche arrière, embrayage multidisque humide"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Surchauffe, injection/carburation et usure du monocylindre",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Perte de puissance en charge",
+                    "Fumée ou température élevée"
+                  ],
+                  "kilometrage_apparition": "Souvent après 30 000 à 70 000 km en service taxi intensif, plus tôt si refroidissement ou filtration négligés",
+                  "diagnostic": "Identifier cylindrée et carburant exacts, mesurer compression et jeu aux soupapes, contrôler injection/carburation, bougie ou injection diesel, filtre, huile, ventilateur, pompe, radiateur et qualité CNG/LPG",
+                  "piece_concernee": "Monocylindre DTS-i ou diesel Qute et refroidissement",
+                  "gravite": "Majeure à critique si surchauffe ou manque d’huile",
+                  "frequence": "Assez fréquente en exploitation intensive",
+                  "cout_reparation_estime": "Modéré : environ 150 à 1 800 € selon marché"
+                },
+                {
+                  "probleme": "Embrayage et boîte mécanique 5 rapports avec marche arrière",
+                  "symptomes": [
+                    "Patinage",
+                    "Vitesses difficiles",
+                    "Craquement ou vibration de transmission"
+                  ],
+                  "kilometrage_apparition": "Généralement entre 30 000 et 80 000 km selon charge et circulation",
+                  "diagnostic": "Contrôler commande, câble, embrayage multidisque humide ou monodisque sec selon version, huile de boîte, synchros/crabots, cardans, supports et jeu du différentiel ; essai en côte à pleine charge autorisée",
+                  "piece_concernee": "Embrayage, boîte constant-mesh et arbres de roues",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquente sur taxi ou surcharge",
+                  "cout_reparation_estime": "Modéré : environ 150 à 1 500 €"
+                },
+                {
+                  "probleme": "Freins à tambour, suspension légère et structure monocoque",
+                  "symptomes": [
+                    "Freinage long ou dissymétrique",
+                    "Claquement",
+                    "Usure irrégulière ou fissure"
+                  ],
+                  "kilometrage_apparition": "Contrôle tous les 10 000 à 20 000 km en usage commercial",
+                  "diagnostic": "Mesurer ovalisation et efficacité des quatre tambours, contrôler cylindres/canalisations, pneus 12 pouces, roulements, bras, ressorts, amortisseurs, corrosion et réparations de monocoque ; vérifier PTAC et nombre de places",
+                  "piece_concernee": "Freinage, trains roulants et coque haute résistance",
+                  "gravite": "Critique si freinage ou structure affecté",
+                  "frequence": "Fréquente avec routes dégradées et surcharge",
+                  "cout_reparation_estime": "Modéré à élevé : environ 100 à 2 000 €"
+                }
+              ]
+            },
+            {
+              "type": "GPL",
+              "nom": "RE LPG 236,2 cm³ — 10 ch",
+              "code_moteur": "Bajaj RE LPG 236.2",
+              "cylindree": "236,2 cm³",
+              "puissance_ch": 10,
+              "boite": [
+                "Manuelle constant-mesh 5 rapports + marche arrière, embrayage multidisque humide"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Surchauffe, injection/carburation et usure du monocylindre",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Perte de puissance en charge",
+                    "Fumée ou température élevée"
+                  ],
+                  "kilometrage_apparition": "Souvent après 30 000 à 70 000 km en service taxi intensif, plus tôt si refroidissement ou filtration négligés",
+                  "diagnostic": "Identifier cylindrée et carburant exacts, mesurer compression et jeu aux soupapes, contrôler injection/carburation, bougie ou injection diesel, filtre, huile, ventilateur, pompe, radiateur et qualité CNG/LPG",
+                  "piece_concernee": "Monocylindre DTS-i ou diesel Qute et refroidissement",
+                  "gravite": "Majeure à critique si surchauffe ou manque d’huile",
+                  "frequence": "Assez fréquente en exploitation intensive",
+                  "cout_reparation_estime": "Modéré : environ 150 à 1 800 € selon marché"
+                },
+                {
+                  "probleme": "Embrayage et boîte mécanique 5 rapports avec marche arrière",
+                  "symptomes": [
+                    "Patinage",
+                    "Vitesses difficiles",
+                    "Craquement ou vibration de transmission"
+                  ],
+                  "kilometrage_apparition": "Généralement entre 30 000 et 80 000 km selon charge et circulation",
+                  "diagnostic": "Contrôler commande, câble, embrayage multidisque humide ou monodisque sec selon version, huile de boîte, synchros/crabots, cardans, supports et jeu du différentiel ; essai en côte à pleine charge autorisée",
+                  "piece_concernee": "Embrayage, boîte constant-mesh et arbres de roues",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquente sur taxi ou surcharge",
+                  "cout_reparation_estime": "Modéré : environ 150 à 1 500 €"
+                },
+                {
+                  "probleme": "Freins à tambour, suspension légère et structure monocoque",
+                  "symptomes": [
+                    "Freinage long ou dissymétrique",
+                    "Claquement",
+                    "Usure irrégulière ou fissure"
+                  ],
+                  "kilometrage_apparition": "Contrôle tous les 10 000 à 20 000 km en usage commercial",
+                  "diagnostic": "Mesurer ovalisation et efficacité des quatre tambours, contrôler cylindres/canalisations, pneus 12 pouces, roulements, bras, ressorts, amortisseurs, corrosion et réparations de monocoque ; vérifier PTAC et nombre de places",
+                  "piece_concernee": "Freinage, trains roulants et coque haute résistance",
+                  "gravite": "Critique si freinage ou structure affecté",
+                  "frequence": "Fréquente avec routes dégradées et surcharge",
+                  "cout_reparation_estime": "Modéré à élevé : environ 100 à 2 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "RE Diesel 470,5 cm³ — 8 ch",
+              "code_moteur": "Bajaj RE Diesel 470.5",
+              "cylindree": "470,5 cm³",
+              "puissance_ch": 8,
+              "boite": [
+                "Manuelle constant-mesh 5 rapports + marche arrière, embrayage monodisque sec"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Surchauffe, injection/carburation et usure du monocylindre",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Perte de puissance en charge",
+                    "Fumée ou température élevée"
+                  ],
+                  "kilometrage_apparition": "Souvent après 30 000 à 70 000 km en service taxi intensif, plus tôt si refroidissement ou filtration négligés",
+                  "diagnostic": "Identifier cylindrée et carburant exacts, mesurer compression et jeu aux soupapes, contrôler injection/carburation, bougie ou injection diesel, filtre, huile, ventilateur, pompe, radiateur et qualité CNG/LPG",
+                  "piece_concernee": "Monocylindre DTS-i ou diesel Qute et refroidissement",
+                  "gravite": "Majeure à critique si surchauffe ou manque d’huile",
+                  "frequence": "Assez fréquente en exploitation intensive",
+                  "cout_reparation_estime": "Modéré : environ 150 à 1 800 € selon marché"
+                },
+                {
+                  "probleme": "Embrayage et boîte mécanique 5 rapports avec marche arrière",
+                  "symptomes": [
+                    "Patinage",
+                    "Vitesses difficiles",
+                    "Craquement ou vibration de transmission"
+                  ],
+                  "kilometrage_apparition": "Généralement entre 30 000 et 80 000 km selon charge et circulation",
+                  "diagnostic": "Contrôler commande, câble, embrayage multidisque humide ou monodisque sec selon version, huile de boîte, synchros/crabots, cardans, supports et jeu du différentiel ; essai en côte à pleine charge autorisée",
+                  "piece_concernee": "Embrayage, boîte constant-mesh et arbres de roues",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquente sur taxi ou surcharge",
+                  "cout_reparation_estime": "Modéré : environ 150 à 1 500 €"
+                },
+                {
+                  "probleme": "Freins à tambour, suspension légère et structure monocoque",
+                  "symptomes": [
+                    "Freinage long ou dissymétrique",
+                    "Claquement",
+                    "Usure irrégulière ou fissure"
+                  ],
+                  "kilometrage_apparition": "Contrôle tous les 10 000 à 20 000 km en usage commercial",
+                  "diagnostic": "Mesurer ovalisation et efficacité des quatre tambours, contrôler cylindres/canalisations, pneus 12 pouces, roulements, bras, ressorts, amortisseurs, corrosion et réparations de monocoque ; vérifier PTAC et nombre de places",
+                  "piece_concernee": "Freinage, trains roulants et coque haute résistance",
+                  "gravite": "Critique si freinage ou structure affecté",
+                  "frequence": "Fréquente avec routes dégradées et surcharge",
+                  "cout_reparation_estime": "Modéré à élevé : environ 100 à 2 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.bajajauto.com/three-wheelers/qute/specifications",
+        "https://www.bajajauto.com/en-gh/three-wheelers/qute"
+      ]
+    }
+  ]
+}

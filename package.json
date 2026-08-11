@@ -1,0 +1,25 @@
+{
+  "name": "cardiag-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API de diagnostic et d'explication technique pour Cardiag",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test",
+    "generate:data": "node scripts/unify-vehicle-data.js",
+    "generate:pwa-icons": "node scripts/generate-pwa-icons.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@google/genai": "^1.30.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "openai": "^6.9.1",
+    "sanitize-html": "^2.17.0"
+  }
+}

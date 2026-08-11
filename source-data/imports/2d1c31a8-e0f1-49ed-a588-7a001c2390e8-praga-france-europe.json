@@ -1,0 +1,324 @@
+{
+  "nom": "Praga",
+  "modeles": [
+    {
+      "nom": "R1",
+      "generations": [
+        {
+          "code_chassis": "R1 atmosphérique",
+          "annees": "2012–2014",
+          "phases": [
+            "Première R1 de course à moteur atmosphérique ; puissance à confirmer par fiche châssis et règlement."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence compétition",
+              "nom": "Renault Sport F4R atmosphérique — 210 ch",
+              "code_moteur": "Renault Sport F4R 832 / Praga",
+              "cylindree": "1 998 cm³",
+              "puissance_ch": 210,
+              "boite": [
+                "Hewland séquentielle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Usure de compétition, lubrification et refroidissement du F4R/R-A Praga T",
+                  "symptomes": [
+                    "Pression ou température anormale",
+                    "Fumée, souffle ou consommation d’huile",
+                    "Perte de compression ou limaille"
+                  ],
+                  "kilometrage_apparition": "Selon heures et kilomètres de piste ; la R1 2021 est donnée pour une réfection moteur après environ 4 500 km de course",
+                  "diagnostic": "Exiger journal d’heures, cartographies et réfections, analyser huile/filtre, mesurer compressions/leak-down et pression, contrôler carter sec ou bâche selon version, pompes, échangeurs, radiateurs, durites, turbo/intercooler et traces de surrégime ; appliquer les limites Praga de la configuration exacte",
+                  "piece_concernee": "Moteur Renault Sport/Alpine F4R et préparation Praga",
+                  "gravite": "Critique",
+                  "frequence": "Usure normale mais accélérée en compétition",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "Turbo, alimentation, gestion moteur et échappement de course",
+                  "symptomes": [
+                    "Coupure en charge",
+                    "Boost instable",
+                    "Mélange pauvre, ratés ou température échappement élevée"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant chaque roulage et révision selon heures",
+                  "diagnostic": "Télécharger les données ECU, comparer boost, lambda, pression carburant/huile, cliquetis et températures ; inspecter pompes principale/secours, réservoir FIA, injecteurs, faisceau, wastegate, turbo, collecteur, intercooler et fuites, puis vérifier carburant et cartographie autorisés par le règlement",
+                  "piece_concernee": "Suralimentation et gestion R1 Turbo/EVO/2021",
+                  "gravite": "Critique",
+                  "frequence": "Occasionnelle, mais conséquence sévère à pleine charge",
+                  "cout_reparation_estime": "Élevé : environ 500 à 12 000 €"
+                },
+                {
+                  "probleme": "Embrayage multidisque, boîte Hewland séquentielle et transmission",
+                  "symptomes": [
+                    "Passage lent ou refusé",
+                    "Rapport qui saute",
+                    "À-coups, vibration ou limaille"
+                  ],
+                  "kilometrage_apparition": "Inspection après chaque épreuve ; révision selon heures et journal de boîte",
+                  "diagnostic": "Lire compteurs de changements, contrôler palettes, compresseur/actuateur, capteurs, coupure et auto-blip ; examiner embrayage triple disque selon version, huile/aimants, crabots, pignons, différentiel, arbres, joints et couples de serrage, puis effectuer apprentissage sans masquer une usure mécanique",
+                  "piece_concernee": "Boîte Hewland JFR six rapports et transmission R1",
+                  "gravite": "Critique",
+                  "frequence": "Usure attendue en course, dépend du pilotage",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 20 000 €"
+                },
+                {
+                  "probleme": "Monocoque carbone, aérodynamique, freins et équipements FIA",
+                  "symptomes": [
+                    "Fissure ou délaminage",
+                    "Variation d’appui",
+                    "Pédale longue, vibration ou date d’équipement dépassée"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant chaque roulage, après sortie de piste et aux échéances FIA",
+                  "diagnostic": "Faire inspecter monocoque, Zylon, crash-boxes, fond, splitter, diffuseur, aileron et inserts par spécialiste composite ; contrôler hauteur/coins, rotules, amortisseurs, jantes, pneus, disques AP 280 mm/étriers, conduites, extincteur, réservoir, harnais, siège, colonne et journal des chocs",
+                  "piece_concernee": "Structure carbone, aérodynamique et sécurité Praga R1",
+                  "gravite": "Critique",
+                  "frequence": "Risque directement lié aux contacts, vibreurs et fatigue de piste",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 30 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "R1 Turbo",
+          "annees": "2014–2017",
+          "phases": [
+            "Première évolution turbocompressée, avec cartographies de championnat variables."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence compétition",
+              "nom": "F4R 2.0 Turbo — 340 ch",
+              "code_moteur": "Renault Sport F4R Turbo / Praga",
+              "cylindree": "1 998 cm³",
+              "puissance_ch": 340,
+              "boite": [
+                "Hewland JFR séquentielle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Usure de compétition, lubrification et refroidissement du F4R/R-A Praga T",
+                  "symptomes": [
+                    "Pression ou température anormale",
+                    "Fumée, souffle ou consommation d’huile",
+                    "Perte de compression ou limaille"
+                  ],
+                  "kilometrage_apparition": "Selon heures et kilomètres de piste ; la R1 2021 est donnée pour une réfection moteur après environ 4 500 km de course",
+                  "diagnostic": "Exiger journal d’heures, cartographies et réfections, analyser huile/filtre, mesurer compressions/leak-down et pression, contrôler carter sec ou bâche selon version, pompes, échangeurs, radiateurs, durites, turbo/intercooler et traces de surrégime ; appliquer les limites Praga de la configuration exacte",
+                  "piece_concernee": "Moteur Renault Sport/Alpine F4R et préparation Praga",
+                  "gravite": "Critique",
+                  "frequence": "Usure normale mais accélérée en compétition",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "Turbo, alimentation, gestion moteur et échappement de course",
+                  "symptomes": [
+                    "Coupure en charge",
+                    "Boost instable",
+                    "Mélange pauvre, ratés ou température échappement élevée"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant chaque roulage et révision selon heures",
+                  "diagnostic": "Télécharger les données ECU, comparer boost, lambda, pression carburant/huile, cliquetis et températures ; inspecter pompes principale/secours, réservoir FIA, injecteurs, faisceau, wastegate, turbo, collecteur, intercooler et fuites, puis vérifier carburant et cartographie autorisés par le règlement",
+                  "piece_concernee": "Suralimentation et gestion R1 Turbo/EVO/2021",
+                  "gravite": "Critique",
+                  "frequence": "Occasionnelle, mais conséquence sévère à pleine charge",
+                  "cout_reparation_estime": "Élevé : environ 500 à 12 000 €"
+                },
+                {
+                  "probleme": "Embrayage multidisque, boîte Hewland séquentielle et transmission",
+                  "symptomes": [
+                    "Passage lent ou refusé",
+                    "Rapport qui saute",
+                    "À-coups, vibration ou limaille"
+                  ],
+                  "kilometrage_apparition": "Inspection après chaque épreuve ; révision selon heures et journal de boîte",
+                  "diagnostic": "Lire compteurs de changements, contrôler palettes, compresseur/actuateur, capteurs, coupure et auto-blip ; examiner embrayage triple disque selon version, huile/aimants, crabots, pignons, différentiel, arbres, joints et couples de serrage, puis effectuer apprentissage sans masquer une usure mécanique",
+                  "piece_concernee": "Boîte Hewland JFR six rapports et transmission R1",
+                  "gravite": "Critique",
+                  "frequence": "Usure attendue en course, dépend du pilotage",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 20 000 €"
+                },
+                {
+                  "probleme": "Monocoque carbone, aérodynamique, freins et équipements FIA",
+                  "symptomes": [
+                    "Fissure ou délaminage",
+                    "Variation d’appui",
+                    "Pédale longue, vibration ou date d’équipement dépassée"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant chaque roulage, après sortie de piste et aux échéances FIA",
+                  "diagnostic": "Faire inspecter monocoque, Zylon, crash-boxes, fond, splitter, diffuseur, aileron et inserts par spécialiste composite ; contrôler hauteur/coins, rotules, amortisseurs, jantes, pneus, disques AP 280 mm/étriers, conduites, extincteur, réservoir, harnais, siège, colonne et journal des chocs",
+                  "piece_concernee": "Structure carbone, aérodynamique et sécurité Praga R1",
+                  "gravite": "Critique",
+                  "frequence": "Risque directement lié aux contacts, vibreurs et fatigue de piste",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 30 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "R1T EVO",
+          "annees": "2018–2020",
+          "phases": [
+            "Puissance réglable officiellement d’environ 330 à 380 ch ; enregistrée ici au maximum homologué."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence compétition",
+              "nom": "F4R 2.0 Turbo EVO réglable — 380 ch",
+              "code_moteur": "Renault Sport F4R Turbo / Praga EVO",
+              "cylindree": "1 998 cm³",
+              "puissance_ch": 380,
+              "boite": [
+                "Hewland JFR séquentielle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Usure de compétition, lubrification et refroidissement du F4R/R-A Praga T",
+                  "symptomes": [
+                    "Pression ou température anormale",
+                    "Fumée, souffle ou consommation d’huile",
+                    "Perte de compression ou limaille"
+                  ],
+                  "kilometrage_apparition": "Selon heures et kilomètres de piste ; la R1 2021 est donnée pour une réfection moteur après environ 4 500 km de course",
+                  "diagnostic": "Exiger journal d’heures, cartographies et réfections, analyser huile/filtre, mesurer compressions/leak-down et pression, contrôler carter sec ou bâche selon version, pompes, échangeurs, radiateurs, durites, turbo/intercooler et traces de surrégime ; appliquer les limites Praga de la configuration exacte",
+                  "piece_concernee": "Moteur Renault Sport/Alpine F4R et préparation Praga",
+                  "gravite": "Critique",
+                  "frequence": "Usure normale mais accélérée en compétition",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "Turbo, alimentation, gestion moteur et échappement de course",
+                  "symptomes": [
+                    "Coupure en charge",
+                    "Boost instable",
+                    "Mélange pauvre, ratés ou température échappement élevée"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant chaque roulage et révision selon heures",
+                  "diagnostic": "Télécharger les données ECU, comparer boost, lambda, pression carburant/huile, cliquetis et températures ; inspecter pompes principale/secours, réservoir FIA, injecteurs, faisceau, wastegate, turbo, collecteur, intercooler et fuites, puis vérifier carburant et cartographie autorisés par le règlement",
+                  "piece_concernee": "Suralimentation et gestion R1 Turbo/EVO/2021",
+                  "gravite": "Critique",
+                  "frequence": "Occasionnelle, mais conséquence sévère à pleine charge",
+                  "cout_reparation_estime": "Élevé : environ 500 à 12 000 €"
+                },
+                {
+                  "probleme": "Embrayage multidisque, boîte Hewland séquentielle et transmission",
+                  "symptomes": [
+                    "Passage lent ou refusé",
+                    "Rapport qui saute",
+                    "À-coups, vibration ou limaille"
+                  ],
+                  "kilometrage_apparition": "Inspection après chaque épreuve ; révision selon heures et journal de boîte",
+                  "diagnostic": "Lire compteurs de changements, contrôler palettes, compresseur/actuateur, capteurs, coupure et auto-blip ; examiner embrayage triple disque selon version, huile/aimants, crabots, pignons, différentiel, arbres, joints et couples de serrage, puis effectuer apprentissage sans masquer une usure mécanique",
+                  "piece_concernee": "Boîte Hewland JFR six rapports et transmission R1",
+                  "gravite": "Critique",
+                  "frequence": "Usure attendue en course, dépend du pilotage",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 20 000 €"
+                },
+                {
+                  "probleme": "Monocoque carbone, aérodynamique, freins et équipements FIA",
+                  "symptomes": [
+                    "Fissure ou délaminage",
+                    "Variation d’appui",
+                    "Pédale longue, vibration ou date d’équipement dépassée"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant chaque roulage, après sortie de piste et aux échéances FIA",
+                  "diagnostic": "Faire inspecter monocoque, Zylon, crash-boxes, fond, splitter, diffuseur, aileron et inserts par spécialiste composite ; contrôler hauteur/coins, rotules, amortisseurs, jantes, pneus, disques AP 280 mm/étriers, conduites, extincteur, réservoir, harnais, siège, colonne et journal des chocs",
+                  "piece_concernee": "Structure carbone, aérodynamique et sécurité Praga R1",
+                  "gravite": "Critique",
+                  "frequence": "Risque directement lié aux contacts, vibreurs et fatigue de piste",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 30 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "R1 seconde génération carbone",
+          "annees": "2021–aujourd’hui",
+          "phases": [
+            "Monocoque et aérodynamique revues, 643 kg à sec, 395 Nm et durée moteur indicative de 4 500 km avant réfection."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence compétition",
+              "nom": "R-A Praga T 2.0 Turbo — 365 ch",
+              "code_moteur": "R-A Praga T",
+              "cylindree": "1 998 cm³",
+              "puissance_ch": 365,
+              "boite": [
+                "Hewland JFR séquentielle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Usure de compétition, lubrification et refroidissement du F4R/R-A Praga T",
+                  "symptomes": [
+                    "Pression ou température anormale",
+                    "Fumée, souffle ou consommation d’huile",
+                    "Perte de compression ou limaille"
+                  ],
+                  "kilometrage_apparition": "Selon heures et kilomètres de piste ; la R1 2021 est donnée pour une réfection moteur après environ 4 500 km de course",
+                  "diagnostic": "Exiger journal d’heures, cartographies et réfections, analyser huile/filtre, mesurer compressions/leak-down et pression, contrôler carter sec ou bâche selon version, pompes, échangeurs, radiateurs, durites, turbo/intercooler et traces de surrégime ; appliquer les limites Praga de la configuration exacte",
+                  "piece_concernee": "Moteur Renault Sport/Alpine F4R et préparation Praga",
+                  "gravite": "Critique",
+                  "frequence": "Usure normale mais accélérée en compétition",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "Turbo, alimentation, gestion moteur et échappement de course",
+                  "symptomes": [
+                    "Coupure en charge",
+                    "Boost instable",
+                    "Mélange pauvre, ratés ou température échappement élevée"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant chaque roulage et révision selon heures",
+                  "diagnostic": "Télécharger les données ECU, comparer boost, lambda, pression carburant/huile, cliquetis et températures ; inspecter pompes principale/secours, réservoir FIA, injecteurs, faisceau, wastegate, turbo, collecteur, intercooler et fuites, puis vérifier carburant et cartographie autorisés par le règlement",
+                  "piece_concernee": "Suralimentation et gestion R1 Turbo/EVO/2021",
+                  "gravite": "Critique",
+                  "frequence": "Occasionnelle, mais conséquence sévère à pleine charge",
+                  "cout_reparation_estime": "Élevé : environ 500 à 12 000 €"
+                },
+                {
+                  "probleme": "Embrayage multidisque, boîte Hewland séquentielle et transmission",
+                  "symptomes": [
+                    "Passage lent ou refusé",
+                    "Rapport qui saute",
+                    "À-coups, vibration ou limaille"
+                  ],
+                  "kilometrage_apparition": "Inspection après chaque épreuve ; révision selon heures et journal de boîte",
+                  "diagnostic": "Lire compteurs de changements, contrôler palettes, compresseur/actuateur, capteurs, coupure et auto-blip ; examiner embrayage triple disque selon version, huile/aimants, crabots, pignons, différentiel, arbres, joints et couples de serrage, puis effectuer apprentissage sans masquer une usure mécanique",
+                  "piece_concernee": "Boîte Hewland JFR six rapports et transmission R1",
+                  "gravite": "Critique",
+                  "frequence": "Usure attendue en course, dépend du pilotage",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 20 000 €"
+                },
+                {
+                  "probleme": "Monocoque carbone, aérodynamique, freins et équipements FIA",
+                  "symptomes": [
+                    "Fissure ou délaminage",
+                    "Variation d’appui",
+                    "Pédale longue, vibration ou date d’équipement dépassée"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant chaque roulage, après sortie de piste et aux échéances FIA",
+                  "diagnostic": "Faire inspecter monocoque, Zylon, crash-boxes, fond, splitter, diffuseur, aileron et inserts par spécialiste composite ; contrôler hauteur/coins, rotules, amortisseurs, jantes, pneus, disques AP 280 mm/étriers, conduites, extincteur, réservoir, harnais, siège, colonne et journal des chocs",
+                  "piece_concernee": "Structure carbone, aérodynamique et sécurité Praga R1",
+                  "gravite": "Critique",
+                  "frequence": "Risque directement lié aux contacts, vibreurs et fatigue de piste",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 30 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://pragaglobal.com/cars/praga-r1/",
+        "https://pragaglobal.com/praga-launches-new-all-carbon-r1/",
+        "https://pragaglobal.com/praga-r1t-evo-fastest-praga-r1-yet/",
+        "https://pragaglobal.com/wp-content/uploads/2018/05/Praga-Cars-R1-R1R-Brochure_2018_fin_WEB.pdf"
+      ]
+    }
+  ]
+}

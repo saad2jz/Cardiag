@@ -1,0 +1,747 @@
+[
+  {
+    "marque": "GMC",
+    "modeles": [
+      {
+        "nom": "Sierra",
+        "generations": [
+          {
+            "code_chassis": "GMT800 (1ère génération moderne)",
+            "annees": "1999-2006",
+            "phases": [
+              "Phase 1 (1999-2002)",
+              "Phase 2 restylée (2003-2006)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "5.3 Vortec V8 - 285 à 295ch",
+                "code_moteur": "Vortec 5300 (LM7/LM4, partagé avec Silverado)",
+                "cylindree": "5.3L",
+                "puissance_ch": 295,
+                "boite": [
+                  "BVM5",
+                  "BVA4 4L60-E"
+                ],
+                "points_faibles": [
+                  "Génération jumelle du Silverado GMT800, réputée pour sa fiabilité mécanique exceptionnelle",
+                  "Pompe à carburant sujette à défaillance documentée (condition de non-démarrage) sur les premiers millésimes 1999-2003",
+                  "Tableau de bord numérique sujet à affichages erratiques sur certains exemplaires",
+                  "Corrosion du châssis en échelle sur véhicules exposés au sel de déneigement"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "GMT900 (2e génération)",
+            "annees": "2007-2013",
+            "phases": [
+              "Phase 1 (2007-2009)",
+              "Phase 2 restylée (2010-2013)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "5.3 Vortec V8 AFM - 315ch",
+                "code_moteur": "Vortec 5300 (LMG/LC9, avec Active Fuel Management)",
+                "cylindree": "5.3L",
+                "puissance_ch": 315,
+                "boite": [
+                  "BVA4 4L60-E",
+                  "BVA6 6L80"
+                ],
+                "points_faibles": [
+                  "Même défaillance des poussoirs hydrauliques du système AFM que le Silverado jumeau (2007-2011), causant le 'tick' caractéristique et une consommation d'huile excessive",
+                  "Amélioration significative de la fiabilité à partir de 2011-2013 grâce à des révisions de conception",
+                  "Corrosion du châssis en échelle sur véhicules exposés au sel",
+                  "Finition Denali haut de gamme introduisant des équipements électroniques supplémentaires, source additionnelle de pannes ponctuelles"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "K2XX (3e génération)",
+            "annees": "2014-2018",
+            "phases": [
+              "Phase 1 (2014-2015)",
+              "Phase 2 restylée (2016-2018)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "5.3 EcoTec3 V8 - 355ch",
+                "code_moteur": "EcoTec3 L83",
+                "cylindree": "5.3L",
+                "puissance_ch": 355,
+                "boite": [
+                  "BVA6 6L80",
+                  "BVA8 8L90"
+                ],
+                "points_faibles": [
+                  "À-coups et broutements documentés sur la boîte automatique 8 rapports 8L90 des millésimes 2015-2019, ayant donné lieu à des recours collectifs à l'échelle de la gamme GM",
+                  "Fuites de condenseur de climatisation fréquemment rapportées sur les millésimes 2014-2016",
+                  "Encrassement carbone des soupapes d'admission caractéristique de l'injection directe",
+                  "Vibrations d'habitacle rapportées sur certains exemplaires des premiers millésimes"
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "6.2 EcoTec3 V8 Denali - 420ch",
+                "code_moteur": "EcoTec3 L86",
+                "cylindree": "6.2L",
+                "puissance_ch": 420,
+                "boite": [
+                  "BVA8 8L90"
+                ],
+                "points_faibles": [
+                  "Même problématique de shudder de boîte 8L90 que le 5.3L de cette génération",
+                  "Réservé exclusivement à la finition Denali haut de gamme",
+                  "Consommation de carburant nettement plus élevée que le 5.3L",
+                  "Encrassement carbone des soupapes d'admission à surveiller"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "T1XX (4e génération)",
+            "annees": "2019-présent",
+            "phases": [
+              "Phase 1 (2019-2021)",
+              "Phase 2 restylée (2022-présent)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "5.3 EcoTec3 V8 DFM - 355ch",
+                "code_moteur": "EcoTec3 L84/L82",
+                "cylindree": "5.3L",
+                "puissance_ch": 355,
+                "boite": [
+                  "BVA8 8L90",
+                  "BVA10 10L80"
+                ],
+                "points_faibles": [
+                  "Défaillances de poussoirs hydrauliques (lifter failure) documentées sur ce bloc, sujet récurrent de discussion selon plusieurs analyses spécialisées de 2025-2026",
+                  "Défaillances de roulements moteur rapportées sur les millésimes 2019-2021",
+                  "Encrassement carbone des soupapes d'admission caractéristique de l'injection directe",
+                  "Rappel constructeur pour transmission ETRS (Electronic Transmission Range Selector, boîtier de sélection électronique) sur certains millésimes"
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "6.2 EcoTec3 L87 V8 Denali - 420ch",
+                "code_moteur": "EcoTec3 L87",
+                "cylindree": "6.2L",
+                "puissance_ch": 420,
+                "boite": [
+                  "BVA10 10L90"
+                ],
+                "points_faibles": [
+                  "Rappel constructeur majeur (NHTSA, environ 600 000 véhicules 2021-2024 concernés, Sierra/Silverado/Tahoe/Suburban/Yukon/Escalade) pour bielles et vilebrequin potentiellement défectueux avec débris dans les canaux d'huile, pouvant provoquer une panne moteur totale",
+                  "Cas documenté et très récent (fin 2025) d'un Sierra/Yukon 2026 tombé en panne moteur complète après seulement 1 500 miles malgré la population théoriquement corrigée par le rappel, soulevant des interrogations sur l'étendue réelle du défaut",
+                  "Enquête NHTSA élargie à deux reprises, incluant désormais les véhicules ayant déjà reçu un moteur de remplacement sous le rappel initial",
+                  "Vérification impérative que le rappel du vilebrequin/bielles a été effectué à l'achat d'occasion, y compris sur les millésimes les plus récents"
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "3.0 Duramax I6 - 305ch",
+                "code_moteur": "Duramax LM2/LZ0 (I6)",
+                "cylindree": "3.0L",
+                "puissance_ch": 305,
+                "boite": [
+                  "BVA10 10L90"
+                ],
+                "points_faibles": [
+                  "Motorisation la plus fiable de la génération selon les données de plaintes consolidées, nettement moins de réclamations que le bloc 6.2L L87",
+                  "Système AdBlue/DEF sensible aux pannes de capteur NOx",
+                  "FAP sensible à l'encrassement en usage majoritairement urbain",
+                  "Version LZ0 (2025) trop récente pour évaluer la fiabilité à long terme"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Yukon",
+        "generations": [
+          {
+            "code_chassis": "1ère génération",
+            "annees": "1992-1999",
+            "phases": [
+              "2 portes (1992-1994)",
+              "4 portes introduites (1995-1999)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "5.7 Vortec V8 - 255ch",
+                "code_moteur": "Vortec 5700 (L31)",
+                "cylindree": "5.7L",
+                "puissance_ch": 255,
+                "boite": [
+                  "BVA4 4L60-E"
+                ],
+                "points_faibles": [
+                  "Système d'injection CSFI à soupapes poppet sujet à encrassement, provoquant démarrage difficile et odeur d'essence crue",
+                  "Corrosion du châssis en échelle sur véhicules exposés au sel de déneigement",
+                  "Le moins recommandé des générations Yukon en occasion aujourd'hui du fait de son ancienneté et de la disponibilité de générations ultérieures plus fiables",
+                  "Boîte automatique 4L60-E globalement robuste mais convertisseur de couple sensible en usage de remorquage intensif"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "GMT800 (2e génération)",
+            "annees": "2000-2006",
+            "phases": [
+              "Phase 1 (2000-2002)",
+              "Phase 2 restylée (2003-2006)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "5.3 Vortec V8 - 285 à 295ch",
+                "code_moteur": "Vortec 5300 (LM7/LM4)",
+                "cylindree": "5.3L",
+                "puissance_ch": 295,
+                "boite": [
+                  "BVA4 4L60-E"
+                ],
+                "points_faibles": [
+                  "Millésime 2003 identifié comme l'un des pires de toute l'histoire du Yukon (64 plaintes CarComplaints, 515 plaintes NHTSA), problèmes de freins récurrents et pannes/calages moteur documentés",
+                  "Millésimes 2003-2006 particulièrement touchés par des problèmes non résolus par GMC, cumul de défauts hérités et nouveaux",
+                  "Millésime 2001 identifié comme le plus fiable de cette génération selon plusieurs analyses de plaintes consolidées",
+                  "Défaillance du combiné d'instruments (aiguilles bloquées) documentée, identique au Tahoe/Suburban de la même génération"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "GMT900 (3e génération)",
+            "annees": "2007-2014",
+            "phases": [
+              "Phase 1 (2007-2010)",
+              "Phase 2 restylée (2011-2014)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "5.3 Vortec V8 AFM - 320ch",
+                "code_moteur": "Vortec 5300 (avec Active Fuel Management)",
+                "cylindree": "5.3L",
+                "puissance_ch": 320,
+                "boite": [
+                  "BVA4 4L60-E",
+                  "BVA6 6L80"
+                ],
+                "points_faibles": [
+                  "Millésime 2007 identifié comme problématique du fait de fuites d'huile moteur et de problèmes de refroidissement",
+                  "Même défaillance des poussoirs hydrauliques AFM que sur le Tahoe/Silverado jumeaux (2007-2011)",
+                  "Version hybride (6.0L Vortec, introduite en 2008) technologiquement complexe et peu diffusée",
+                  "Amélioration significative de la fiabilité à partir de 2011-2012"
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "6.2 Vortec V8 Denali - 403ch",
+                "code_moteur": "Vortec 6200 (L94)",
+                "cylindree": "6.2L",
+                "puissance_ch": 403,
+                "boite": [
+                  "BVA6 6L90"
+                ],
+                "points_faibles": [
+                  "2015 Yukon XL avec 6.2L L86 sujet à fuites du carter de boîte, du joint de carter d'huile et de la boîte de transfert (bien que ce millésime appartienne techniquement à la génération suivante)",
+                  "Consommation de carburant nettement plus élevée que le 5.3L",
+                  "Réservé aux finitions Denali haut de gamme",
+                  "Pneus d'origine (jantes 20/22 pouces) sujets à usure irrégulière rapportée sur plusieurs exemplaires"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "K2XL (4e génération)",
+            "annees": "2015-2020",
+            "phases": [
+              "Phase unique avec restylage mineur 2018"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "5.3 EcoTec3 V8 - 355ch",
+                "code_moteur": "EcoTec3 L83",
+                "cylindree": "5.3L",
+                "puissance_ch": 355,
+                "boite": [
+                  "BVA6 6L80",
+                  "BVA8 8L90"
+                ],
+                "points_faibles": [
+                  "Fuites de joint de carter de transmission, de joint de carter d'huile et de boîte de transfert documentées sur le millésime 2015 (L86 sur XL notamment)",
+                  "Usure irrégulière des pneumatiques d'origine rapportée dès 30 000 miles sur plusieurs exemplaires 2015",
+                  "Broutement de boîte 8L90 sur les millésimes 2015-2019, mêmes défauts que le reste de la gamme GM de cette période",
+                  "Millésime 2014 (première année, techniquement) identifié comme relativement solide selon plusieurs retours propriétaires"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "T1XX (5e génération)",
+            "annees": "2021-présent",
+            "phases": [
+              "Phase 1 (2021-présent)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "5.3 EcoTec3 V8 DFM - 355ch",
+                "code_moteur": "EcoTec3 L84/L82",
+                "cylindree": "5.3L",
+                "puissance_ch": 355,
+                "boite": [
+                  "BVA10 10L80"
+                ],
+                "points_faibles": [
+                  "Volume de plaintes NHTSA sept fois supérieur à la médiane du segment SUV grand format sur cette génération (1 238 plaintes sur 5 millésimes, 20 campagnes de rappel)",
+                  "Défaillances de poussoirs du système DFM rapportées, moins fréquentes que sur le bloc 6.2L L87",
+                  "Suspension pneumatique arrière (option Air Ride) sujette à pannes de compresseur documentées",
+                  "Le bloc 5.3L identifié comme nettement plus fiable que le 6.2L L87 au sein de cette même génération"
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "6.2 EcoTec3 L87 V8 Denali - 420ch",
+                "code_moteur": "EcoTec3 L87",
+                "cylindree": "6.2L",
+                "puissance_ch": 420,
+                "boite": [
+                  "BVA10 10L90"
+                ],
+                "points_faibles": [
+                  "Le bloc L87 concentre 894 des 1 238 plaintes recensées sur l'ensemble de la génération T1XX, très largement le moteur le plus problématique du segment",
+                  "Rappel constructeur majeur (NHTSA 25V-274) pour bielles et vilebrequin défectueux, environ 600 000 véhicules concernés (Yukon, Tahoe, Suburban, Silverado, Sierra, Escalade)",
+                  "Cas documenté d'un Yukon Denali/AT4 2026 tombé en panne moteur totale après seulement 1 500 miles malgré la population théoriquement couverte par le rappel, enquête NHTSA élargie en conséquence",
+                  "Vérification impérative que le rappel du vilebrequin/bielles a été effectué à l'achat d'occasion, quel que soit le millésime"
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "3.0 Duramax I6 - 277 à 305ch",
+                "code_moteur": "Duramax LM2/LZ0",
+                "cylindree": "3.0L",
+                "puissance_ch": 305,
+                "boite": [
+                  "BVA10 10L90"
+                ],
+                "points_faibles": [
+                  "Motorisation la plus fiable de la génération selon les données consolidées (49 plaintes contre 894 pour le L87)",
+                  "Système AdBlue/DEF sensible aux pannes de capteur NOx",
+                  "FAP sensible à l'encrassement en usage majoritairement urbain",
+                  "Version LZ0 (2025) encore trop récente pour évaluer la fiabilité à long terme"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Acadia",
+        "generations": [
+          {
+            "code_chassis": "1ère génération (Lambda, plateforme partagée Traverse/Enclave)",
+            "annees": "2007-2016",
+            "phases": [
+              "Phase 1 (2007-2012)",
+              "Phase 2 restylée (2013-2016)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "3.6 V6 - 275 à 288ch",
+                "code_moteur": "LLT (2007-2011) / LFX (2012-2016)",
+                "cylindree": "3.6L",
+                "puissance_ch": 288,
+                "boite": [
+                  "BVA6"
+                ],
+                "points_faibles": [
+                  "Étirement de la chaîne de distribution documenté sur le bloc LLT jusqu'en 2010, provoquant fuite d'huile ou saisie moteur complète",
+                  "Rappel d'assemblage documenté en décembre 2006 pour supports moteur sans trous de drainage, provoquant accumulation d'eau",
+                  "Transmission complètement défaillante rapportée sur le millésime de lancement 2007, remplacement coûteux (environ 4 000 dollars) hors garantie",
+                  "Retour de problèmes moteur sur les millésimes 2012-2013 : niveaux d'huile incorrects, fuites de liquide de refroidissement, fuites de joint, réparations pouvant dépasser 7 000 dollars"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "2e génération (C1XX, downsizée)",
+            "annees": "2017-2023",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "2.5 Ecotec I4 - 193ch",
+                "code_moteur": "LCV Ecotec 2.5",
+                "cylindree": "2.5L",
+                "puissance_ch": 193,
+                "boite": [
+                  "BVA6",
+                  "BVA9"
+                ],
+                "points_faibles": [
+                  "Millésime de lancement 2017 marqué par un système start-stop automatique problématique : redémarrages difficiles, hésitations, désactivation intempestive du système",
+                  "Problèmes d'arbre de transmission et rappels de sécurité importants rapportés sur les millésimes 2017-2018",
+                  "Vibration notable à vitesse constante rapportée sur le V6 à désactivation de cylindres, corrigée par mise à jour logicielle",
+                  "Modèles 2019 et suivants ne présentant plus de problème moteur intrinsèque significatif selon plusieurs analyses"
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "3.6 LGX V6 - 310ch",
+                "code_moteur": "LGX (3.6L V6, avec désactivation de cylindres)",
+                "cylindree": "3.6L",
+                "puissance_ch": 310,
+                "boite": [
+                  "BVA9"
+                ],
+                "points_faibles": [
+                  "Vibration notable à vitesse constante rapportée sur premiers millésimes 2017, liée au système de désactivation de cylindres, corrigée par mise à jour logicielle",
+                  "Fiabilité globalement bien meilleure que la première génération selon les données de plaintes consolidées",
+                  "Système start-stop toujours source de retours mitigés sur cette génération",
+                  "Downsizing significatif par rapport à la première génération, habitabilité en retrait critiquée par une partie de la clientèle"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "3e génération",
+            "annees": "2024-présent",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "2.5 Turbo I4 - 328ch",
+                "code_moteur": "Ecotec 2.5 Turbo (remplace le V6)",
+                "cylindree": "2.5L",
+                "puissance_ch": 328,
+                "boite": [
+                  "BVA9"
+                ],
+                "points_faibles": [
+                  "Retour à un gabarit plus grand après le downsizing de la 2e génération, avec abandon définitif du V6 au profit d'un 4 cylindres turbo",
+                  "Modèle encore récent, données de fiabilité à long terme encore en cours d'accumulation",
+                  "Turbo sensible à l'entretien, vidanges rapprochées recommandées",
+                  "Rappel logiciel (2025-2026) concernant le manuel électronique du propriétaire non correctement configuré en usine, partagé avec de nombreux autres modèles GM"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Terrain",
+        "generations": [
+          {
+            "code_chassis": "1ère génération (Theta, base Chevrolet Equinox)",
+            "annees": "2010-2017",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "2.4 Ecotec I4 - 182ch",
+                "code_moteur": "LAF Ecotec 2.4",
+                "cylindree": "2.4L",
+                "puissance_ch": 182,
+                "boite": [
+                  "BVA6 6T45"
+                ],
+                "points_faibles": [
+                  "Consommation d'huile excessive massivement documentée sur ce bloc, défaut partagé avec l'Equinox jumeau, due à l'usure prématurée des segments de piston",
+                  "Système PCV sujet à défaillance aggravant la consommation d'huile",
+                  "Calages et arrêts moteur intempestifs rapportés sur plusieurs milliers de plaintes NHTSA",
+                  "Recalls et rappels de sécurité fréquemment documentés sur cette génération"
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "3.6 SIDI V6 - 301ch",
+                "code_moteur": "LFX (3.6L V6)",
+                "cylindree": "3.6L",
+                "puissance_ch": 301,
+                "boite": [
+                  "BVA6 6T75"
+                ],
+                "points_faibles": [
+                  "Mêmes problématiques de consommation d'huile que le 4 cylindres, documentées sur cette génération",
+                  "Chaîne de distribution et tendeurs sujets à usure prématurée",
+                  "Consommation de carburant élevée pour la catégorie",
+                  "Coût de réparation moteur potentiellement élevé en cas de casse liée à la consommation d'huile"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "2e génération (downsizée)",
+            "annees": "2018-présent",
+            "phases": [
+              "Phase 1 (2018-2020)",
+              "Phase 2 restylée (2021-présent)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.5 Turbo LFV - 170ch",
+                "code_moteur": "LFV Ecotec 1.5 Turbo",
+                "cylindree": "1.5L",
+                "puissance_ch": 170,
+                "boite": [
+                  "BVA9"
+                ],
+                "points_faibles": [
+                  "Turbo sensible à l'entretien, vidanges rapprochées recommandées",
+                  "Réduction significative de poids par rapport à la génération précédente, fiabilité nettement améliorée selon les retours propriétaires",
+                  "Consommation d'huile résiduelle signalée sur certains exemplaires mais bien moins fréquente que sur le 2.4L précédent",
+                  "Diesel 1.6L Duramax proposé sur les tout premiers millésimes puis rapidement retiré de la gamme nord-américaine"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Canyon",
+        "generations": [
+          {
+            "code_chassis": "GMT355 (1ère génération, jumeau du Colorado)",
+            "annees": "2004-2012",
+            "phases": [
+              "Phase 1 (2004-2006)",
+              "Phase 2 restylée (2007-2012)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "3.5/3.7 Atlas I5 - 220 à 242ch",
+                "code_moteur": "Atlas 3.5L (2004-2006) / 3.7L (2007+)",
+                "cylindree": "3.7L",
+                "puissance_ch": 242,
+                "boite": [
+                  "BVM5",
+                  "BVA4"
+                ],
+                "points_faibles": [
+                  "Ratés moteur documentés massivement sur les millésimes 2004-2009, dus à l'usure prématurée des sièges de soupapes, défaut identique au Colorado jumeau",
+                  "Perte d'assistance de direction fréquente sur les millésimes 2004-2008",
+                  "Millésimes 2004-2006 à éviter en priorité selon plusieurs guides d'achat spécialisés",
+                  "Fiabilité nettement améliorée à partir du restylage 2007"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "GMT 31XX / RG (2e génération, jumeau du Colorado)",
+            "annees": "2015-2022",
+            "phases": [
+              "Phase 1 (2015-2020)",
+              "Phase 2 restylée (2021-2022)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "3.6 HFV6 V6 - 305 à 308ch",
+                "code_moteur": "LFX/LGZ HFV6",
+                "cylindree": "3.6L",
+                "puissance_ch": 308,
+                "boite": [
+                  "BVA6",
+                  "BVA8"
+                ],
+                "points_faibles": [
+                  "Cette génération définie par des défaillances de direction documentées comme problème central de fiabilité",
+                  "Broutement/vibration sévère du convertisseur de couple massivement documenté sur les millésimes 2015-2018, identique au Colorado jumeau",
+                  "Vérification impérative que le rinçage complet du liquide de transmission (bulletin technique GM) a été effectué à l'achat d'un modèle 2015-2018",
+                  "Diesel 2.8L Duramax I4 (2016-2022) réputé plus robuste, retiré lors du passage à la génération suivante"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "3e génération",
+            "annees": "2023-présent",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "2.7 Turbo I4 - 237 à 310ch",
+                "code_moteur": "L3B (bas régime) / TurboMax L2R (haute performance)",
+                "cylindree": "2.7L",
+                "puissance_ch": 310,
+                "boite": [
+                  "BVA8"
+                ],
+                "points_faibles": [
+                  "Redesign complet sur nouvelle plateforme, l'histoire de fiabilité se lit très différemment de la génération précédente selon plusieurs analyses spécialisées récentes",
+                  "Abandon complet de l'ancienne gamme de moteurs (V6, diesel) au profit d'un unique 4 cylindres turbo",
+                  "Turbo sensible à l'entretien, vidanges rapprochées recommandées, spécification d'huile différente selon la version",
+                  "Rappel logiciel (2025-2026) pour le manuel électronique du propriétaire, ainsi qu'un rappel spécifique aux versions AT4X AEV 2024-2026"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Hummer EV",
+        "generations": [
+          {
+            "code_chassis": "1ère génération (plateforme Ultium, pickup et SUV)",
+            "annees": "2022-présent",
+            "phases": [
+              "Hummer EV Pickup (2022-présent)",
+              "Hummer EV SUV (2023-présent)"
+            ],
+            "motorisations": [
+              {
+                "type": "Électrique",
+                "nom": "Hummer EV 2X/3X/Edition 1 - 625 à 1000ch",
+                "code_moteur": "Deux ou trois moteurs électriques (Ultium, jusqu'à triple moteur sur Edition 1)",
+                "cylindree": "N/A",
+                "puissance_ch": 1000,
+                "boite": [
+                  "Réducteur monovitesse par essieu",
+                  "Direction à quatre roues (CrabWalk)"
+                ],
+                "points_faibles": [
+                  "Rappel constructeur (2022) pour environ 735 véhicules concernant un boîtier de batterie haute tension mal scellé en usine, pouvant laisser l'eau s'infiltrer dans le pack, GM ayant confirmé trois cas avérés d'infiltration",
+                  "Cas documentés de défaillance complète de la batterie nécessitant un remplacement intégral, y compris sur des véhicules très récents (moins de 5 000 miles), avec des délais de réparation pouvant atteindre 7 semaines faute de pièces disponibles",
+                  "Infiltrations d'eau au niveau des montants de caisse et des connecteurs de câblage rapportées, provoquant des dysfonctionnements électroniques divers",
+                  "Complexité technologique très élevée (CrabWalk, direction 4 roues, suspension pneumatique adaptative, différentiels verrouillables, pack Ultium volumineux) source de davantage de bizarreries et de rappels qu'un pickup thermique GMC classique, production à faible volume limitant le retour d'expérience"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Envoy",
+        "generations": [
+          {
+            "code_chassis": "GMT360/370 (jumeau du Chevrolet Trailblazer)",
+            "annees": "2002-2009",
+            "phases": [
+              "Phase 1 (2002-2005)",
+              "Phase 2 restylée (2006-2009)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "4.2 Vortec I6 - 270 à 291ch",
+                "code_moteur": "Atlas L6 (LL8)",
+                "cylindree": "4.2L",
+                "puissance_ch": 291,
+                "boite": [
+                  "BVA4 4L60-E"
+                ],
+                "points_faibles": [
+                  "Problèmes électriques et d'accessoires largement documentés, identiques au Trailblazer jumeau : instrumentation (jauge carburant, compte-tours), non-démarrage intermittent lié au module antidémarrage",
+                  "Comportement routier jugé imprécis par plusieurs testeurs, direction manquant de retour",
+                  "Qualité des matériaux intérieurs critiquée comme un point faible récurrent de cette génération",
+                  "Retiré définitivement de la gamme GMC en 2009 lors de l'arrêt de la plateforme GMT360/370, remplacé par le Terrain/Acadia"
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "5.3 Vortec V8 (Envoy XUV/Denali) - 300ch",
+                "code_moteur": "Vortec 5300 (LM4)",
+                "cylindree": "5.3L",
+                "puissance_ch": 300,
+                "boite": [
+                  "BVA4 4L60-E"
+                ],
+                "points_faibles": [
+                  "Version Envoy XUV dotée d'un toit ouvrant coulissant arrière novateur mais mécaniquement complexe et sujet à pannes documentées",
+                  "Consommation de carburant élevée pour la catégorie",
+                  "Diffusion limitée, pièces spécifiques V8 moins courantes aujourd'hui que le I6",
+                  "Finition Denali haut de gamme introduisant des équipements électroniques supplémentaires, source additionnelle de pannes ponctuelles"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Jimmy",
+        "generations": [
+          {
+            "code_chassis": "S-15 Jimmy (base compacte, jumeau Chevrolet S-10 Blazer)",
+            "annees": "1992-2001",
+            "phases": [
+              "Phase 1 (1992-1994)",
+              "Phase 2 restylée (1995-2001)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "4.3 Vortec V6 - 155 à 190ch",
+                "code_moteur": "Vortec 4300 (CPI puis CSFI puis Vortec véritable)",
+                "cylindree": "4.3L",
+                "puissance_ch": 190,
+                "boite": [
+                  "BVM5",
+                  "BVA4"
+                ],
+                "points_faibles": [
+                  "Injecteurs 'araignée' (spider injector) du système d'injection centrale CPI/CSFI sujets à fuites de carburant documentées, cause fréquente de ralenti irrégulier, démarrage difficile et forte odeur d'essence dans l'habitacle",
+                  "Capuchon de distributeur sujet à condensation par temps humide, provoquant ratés moteur et code défaut P0300 (bulletin technique GM #03-06-04-041 documentant ce problème récurrent)",
+                  "Joints de collecteur d'admission sujets à fuites avec l'âge sur les blocs les plus récents équipés du véritable système Vortec",
+                  "1ère génération (1992-1994) classée parmi les plus fiables de l'histoire GMC selon plusieurs analyses de plaintes, très peu de défauts majeurs recensés"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Safari",
+        "generations": [
+          {
+            "code_chassis": "Génération unique (jumeau du Chevrolet Astro)",
+            "annees": "1985-2005",
+            "phases": [
+              "Phase 1 (1985-1994)",
+              "Phase 2 restylée (1995-2005)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "4.3 Vortec V6 - 190ch",
+                "code_moteur": "Vortec 4300",
+                "cylindree": "4.3L",
+                "puissance_ch": 190,
+                "boite": [
+                  "BVA4 4L60-E"
+                ],
+                "points_faibles": [
+                  "Joint du collecteur d'admission inférieur sujet à fuites documentées sur le bloc 4.3L V6 (1996-2005), défaut identique au Chevrolet Astro jumeau, réparation rendue plus complexe par la position du moteur sous le tableau de bord (accès limité)",
+                  "Portes arrière à l'ancienne (à la hollandaise, vitre haute/panneau bas) sujettes à défaillance des loquets et à usure des charnières, la vitre haute pouvant ne plus se verrouiller correctement",
+                  "Système d'injection central 'spider injector' sujet aux mêmes fuites de carburant que le Jimmy/S-10 Blazer de la même famille de moteurs",
+                  "Réputation de très grande longévité mécanique lorsqu'entretenu correctement, plusieurs témoignages documentés de véhicules dépassant les 270 000-300 000 miles avec le moteur et la transmission d'origine"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

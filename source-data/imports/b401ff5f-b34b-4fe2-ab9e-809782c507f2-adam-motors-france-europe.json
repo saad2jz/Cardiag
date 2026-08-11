@@ -1,0 +1,127 @@
+{
+  "nom": "Adam Motors",
+  "modeles": [
+    {
+      "nom": "Revo",
+      "generations": [
+        {
+          "code_chassis": "Revo 80/105",
+          "annees": "2005–2006",
+          "phases": [
+            "Petite série pakistanaise ; vérifier disponibilité locale des pièces et identité moteur"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "0.8 I4 carburateur Revo 80 — 35 ch",
+              "code_moteur": "Wuling 797",
+              "cylindree": "797 cm³",
+              "puissance_ch": 35,
+              "boite": [
+                "Boîte manuelle 4 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carburation, allumage et disponibilité des pièces moteur",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés",
+                    "Consommation ou fumée"
+                  ],
+                  "kilometrage_apparition": "À contrôler dès 60 000 km et après immobilisation",
+                  "diagnostic": "Mesurer compressions/pression, nettoyer et régler carburateur, contrôler pompe, filtre, allumeur/bobine, bougies, jeu aux soupapes, refroidissement et références moteur",
+                  "piece_concernee": "Moteur quatre cylindres et alimentation",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente sans entretien suivi",
+                  "cout_reparation_estime": "Moyen à élevé : environ 250 à 2 500 € selon disponibilité locale"
+                },
+                {
+                  "probleme": "Boîte manuelle, embrayage et cardans",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapports difficiles",
+                    "Claquement en braquage"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km",
+                  "diagnostic": "Contrôler embrayage/câble, synchros, huile, supports, cardans, soufflets, roulements et fuites ; confirmer compatibilité des pièces",
+                  "piece_concernee": "Transmission manuelle et train avant",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente avec l’âge",
+                  "cout_reparation_estime": "Moyen à élevé : environ 300 à 2 500 €"
+                },
+                {
+                  "probleme": "Corrosion, freinage et structure de petite série",
+                  "symptomes": [
+                    "Rouille",
+                    "Freinage dissymétrique",
+                    "Jeu ou fissure"
+                  ],
+                  "kilometrage_apparition": "Après 10 ans selon climat",
+                  "diagnostic": "Inspecter planchers, longerons, ancrages, soudures, conduites, maître-cylindre, étriers/tambours, direction, suspension et pneus ; rechercher réparations artisanales",
+                  "piece_concernee": "Structure et organes de sécurité",
+                  "gravite": "Critique si corrosion structurelle ou freinage atteint",
+                  "frequence": "Fréquente sur véhicules rares mal stockés",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.05 I4 carburateur Revo 105 — 56 ch",
+              "code_moteur": "Wuling 1051",
+              "cylindree": "1 051 cm³",
+              "puissance_ch": 56,
+              "boite": [
+                "Boîte manuelle 5 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carburation, allumage et disponibilité des pièces moteur",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés",
+                    "Consommation ou fumée"
+                  ],
+                  "kilometrage_apparition": "À contrôler dès 60 000 km et après immobilisation",
+                  "diagnostic": "Mesurer compressions/pression, nettoyer et régler carburateur, contrôler pompe, filtre, allumeur/bobine, bougies, jeu aux soupapes, refroidissement et références moteur",
+                  "piece_concernee": "Moteur quatre cylindres et alimentation",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente sans entretien suivi",
+                  "cout_reparation_estime": "Moyen à élevé : environ 250 à 2 500 € selon disponibilité locale"
+                },
+                {
+                  "probleme": "Boîte manuelle, embrayage et cardans",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapports difficiles",
+                    "Claquement en braquage"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km",
+                  "diagnostic": "Contrôler embrayage/câble, synchros, huile, supports, cardans, soufflets, roulements et fuites ; confirmer compatibilité des pièces",
+                  "piece_concernee": "Transmission manuelle et train avant",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente avec l’âge",
+                  "cout_reparation_estime": "Moyen à élevé : environ 300 à 2 500 €"
+                },
+                {
+                  "probleme": "Corrosion, freinage et structure de petite série",
+                  "symptomes": [
+                    "Rouille",
+                    "Freinage dissymétrique",
+                    "Jeu ou fissure"
+                  ],
+                  "kilometrage_apparition": "Après 10 ans selon climat",
+                  "diagnostic": "Inspecter planchers, longerons, ancrages, soudures, conduites, maître-cylindre, étriers/tambours, direction, suspension et pneus ; rechercher réparations artisanales",
+                  "piece_concernee": "Structure et organes de sécurité",
+                  "gravite": "Critique si corrosion structurelle ou freinage atteint",
+                  "frequence": "Fréquente sur véhicules rares mal stockés",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

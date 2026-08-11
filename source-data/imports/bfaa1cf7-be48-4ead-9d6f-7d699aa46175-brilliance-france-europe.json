@@ -1,0 +1,302 @@
+{
+  "nom": "Brilliance",
+  "modeles": [
+    {
+      "nom": "BS6",
+      "generations": [
+        {
+          "code_chassis": "Zhonghua / M1 première série",
+          "annees": "2000–2006",
+          "phases": [
+            "Commercialisée comme Zhonghua puis M1/BS6 selon marché ; 2.0 et 2.4 restent distinctes."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.0 16V — 122 ch",
+              "code_moteur": "Mitsubishi 4G63S4M",
+              "cylindree": "1 997 cm³",
+              "puissance_ch": 122,
+              "boite": [
+                "Manuelle 5 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement, fuites et injection du moteur essence",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Fuite d’huile",
+                    "Surchauffe, ratés ou voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 160 000 km ; courroie à traiter selon échéance",
+                  "diagnostic": "Identifier Mitsubishi 4G63/4G64 ou Brilliance BL18T, relever défauts/adaptations, mesurer compressions, contrôler courroie/galets/pompe à eau, radiateur/thermostat, joints, bobines/bougies et injection ; sur 1.8T inspecter turbo, wastegate, durites, intercooler, alimentation/retour d’huile et ventilation de carter",
+                  "piece_concernee": "Moteur 2.0, 2.4 ou 1.8T BS6",
+                  "gravite": "Majeure à critique en cas de rupture de distribution ou surchauffe",
+                  "frequence": "Assez fréquente sans historique documenté",
+                  "cout_reparation_estime": "Élevé : environ 500 à 7 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/automatique, embrayage et transmission avant",
+                  "symptomes": [
+                    "À-coups",
+                    "Patinage",
+                    "Sélection dure, fuite ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 200 000 km",
+                  "diagnostic": "Identifier boîte et calibrage par VIN, contrôler embrayage/volant et synchros ou niveau/état d’ATF, solénoïdes et pressions ; inspecter supports moteur-boîte, cardans, soufflets, roulements et géométrie, puis essai à froid et à chaud",
+                  "piece_concernee": "Transmission et train avant BS6",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente avec entretien inconnu",
+                  "cout_reparation_estime": "Élevé : environ 600 à 6 000 €"
+                },
+                {
+                  "probleme": "Corrosion, trains roulants, freinage et disponibilité des pièces",
+                  "symptomes": [
+                    "Claquement",
+                    "Usure irrégulière",
+                    "Voyant ABS/airbag ou rouille"
+                  ],
+                  "kilometrage_apparition": "Souvent après 8 à 12 ans ou 100 000 km",
+                  "diagnostic": "Inspecter bas de caisse, berceaux, ancrages et planchers, mesurer géométrie, contrôler bras/silentblocs, amortisseurs, direction, roulements, flexibles/étriers, ABS et airbags ; vérifier pare-brise, optiques, panneaux et calculateurs disponibles avant achat, ainsi que réparations de collision",
+                  "piece_concernee": "Coque, châssis et systèmes de sécurité BS6",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru sur import peu suivi ou accidenté",
+                  "cout_reparation_estime": "Élevé : environ 400 à 8 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "2.4 16V — 130 ch",
+              "code_moteur": "Mitsubishi 4G64S4M",
+              "cylindree": "2 351 cm³",
+              "puissance_ch": 130,
+              "boite": [
+                "Manuelle 5 rapports ou automatique 4 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement, fuites et injection du moteur essence",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Fuite d’huile",
+                    "Surchauffe, ratés ou voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 160 000 km ; courroie à traiter selon échéance",
+                  "diagnostic": "Identifier Mitsubishi 4G63/4G64 ou Brilliance BL18T, relever défauts/adaptations, mesurer compressions, contrôler courroie/galets/pompe à eau, radiateur/thermostat, joints, bobines/bougies et injection ; sur 1.8T inspecter turbo, wastegate, durites, intercooler, alimentation/retour d’huile et ventilation de carter",
+                  "piece_concernee": "Moteur 2.0, 2.4 ou 1.8T BS6",
+                  "gravite": "Majeure à critique en cas de rupture de distribution ou surchauffe",
+                  "frequence": "Assez fréquente sans historique documenté",
+                  "cout_reparation_estime": "Élevé : environ 500 à 7 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/automatique, embrayage et transmission avant",
+                  "symptomes": [
+                    "À-coups",
+                    "Patinage",
+                    "Sélection dure, fuite ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 200 000 km",
+                  "diagnostic": "Identifier boîte et calibrage par VIN, contrôler embrayage/volant et synchros ou niveau/état d’ATF, solénoïdes et pressions ; inspecter supports moteur-boîte, cardans, soufflets, roulements et géométrie, puis essai à froid et à chaud",
+                  "piece_concernee": "Transmission et train avant BS6",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente avec entretien inconnu",
+                  "cout_reparation_estime": "Élevé : environ 600 à 6 000 €"
+                },
+                {
+                  "probleme": "Corrosion, trains roulants, freinage et disponibilité des pièces",
+                  "symptomes": [
+                    "Claquement",
+                    "Usure irrégulière",
+                    "Voyant ABS/airbag ou rouille"
+                  ],
+                  "kilometrage_apparition": "Souvent après 8 à 12 ans ou 100 000 km",
+                  "diagnostic": "Inspecter bas de caisse, berceaux, ancrages et planchers, mesurer géométrie, contrôler bras/silentblocs, amortisseurs, direction, roulements, flexibles/étriers, ABS et airbags ; vérifier pare-brise, optiques, panneaux et calculateurs disponibles avant achat, ainsi que réparations de collision",
+                  "piece_concernee": "Coque, châssis et systèmes de sécurité BS6",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru sur import peu suivi ou accidenté",
+                  "cout_reparation_estime": "Élevé : environ 400 à 8 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "BS6 / M1 restylée",
+          "annees": "2006–2010",
+          "phases": [
+            "Le 1.8T développé par Brilliance ne doit pas être fusionné avec les Mitsubishi atmosphériques."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.0 16V — 122 ch",
+              "code_moteur": "Mitsubishi 4G63S4M",
+              "cylindree": "1 997 cm³",
+              "puissance_ch": 122,
+              "boite": [
+                "Manuelle 5 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement, fuites et injection du moteur essence",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Fuite d’huile",
+                    "Surchauffe, ratés ou voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 160 000 km ; courroie à traiter selon échéance",
+                  "diagnostic": "Identifier Mitsubishi 4G63/4G64 ou Brilliance BL18T, relever défauts/adaptations, mesurer compressions, contrôler courroie/galets/pompe à eau, radiateur/thermostat, joints, bobines/bougies et injection ; sur 1.8T inspecter turbo, wastegate, durites, intercooler, alimentation/retour d’huile et ventilation de carter",
+                  "piece_concernee": "Moteur 2.0, 2.4 ou 1.8T BS6",
+                  "gravite": "Majeure à critique en cas de rupture de distribution ou surchauffe",
+                  "frequence": "Assez fréquente sans historique documenté",
+                  "cout_reparation_estime": "Élevé : environ 500 à 7 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/automatique, embrayage et transmission avant",
+                  "symptomes": [
+                    "À-coups",
+                    "Patinage",
+                    "Sélection dure, fuite ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 200 000 km",
+                  "diagnostic": "Identifier boîte et calibrage par VIN, contrôler embrayage/volant et synchros ou niveau/état d’ATF, solénoïdes et pressions ; inspecter supports moteur-boîte, cardans, soufflets, roulements et géométrie, puis essai à froid et à chaud",
+                  "piece_concernee": "Transmission et train avant BS6",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente avec entretien inconnu",
+                  "cout_reparation_estime": "Élevé : environ 600 à 6 000 €"
+                },
+                {
+                  "probleme": "Corrosion, trains roulants, freinage et disponibilité des pièces",
+                  "symptomes": [
+                    "Claquement",
+                    "Usure irrégulière",
+                    "Voyant ABS/airbag ou rouille"
+                  ],
+                  "kilometrage_apparition": "Souvent après 8 à 12 ans ou 100 000 km",
+                  "diagnostic": "Inspecter bas de caisse, berceaux, ancrages et planchers, mesurer géométrie, contrôler bras/silentblocs, amortisseurs, direction, roulements, flexibles/étriers, ABS et airbags ; vérifier pare-brise, optiques, panneaux et calculateurs disponibles avant achat, ainsi que réparations de collision",
+                  "piece_concernee": "Coque, châssis et systèmes de sécurité BS6",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru sur import peu suivi ou accidenté",
+                  "cout_reparation_estime": "Élevé : environ 400 à 8 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "2.4 16V — 130 ch",
+              "code_moteur": "Mitsubishi 4G64S4M",
+              "cylindree": "2 351 cm³",
+              "puissance_ch": 130,
+              "boite": [
+                "Automatique 4 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement, fuites et injection du moteur essence",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Fuite d’huile",
+                    "Surchauffe, ratés ou voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 160 000 km ; courroie à traiter selon échéance",
+                  "diagnostic": "Identifier Mitsubishi 4G63/4G64 ou Brilliance BL18T, relever défauts/adaptations, mesurer compressions, contrôler courroie/galets/pompe à eau, radiateur/thermostat, joints, bobines/bougies et injection ; sur 1.8T inspecter turbo, wastegate, durites, intercooler, alimentation/retour d’huile et ventilation de carter",
+                  "piece_concernee": "Moteur 2.0, 2.4 ou 1.8T BS6",
+                  "gravite": "Majeure à critique en cas de rupture de distribution ou surchauffe",
+                  "frequence": "Assez fréquente sans historique documenté",
+                  "cout_reparation_estime": "Élevé : environ 500 à 7 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/automatique, embrayage et transmission avant",
+                  "symptomes": [
+                    "À-coups",
+                    "Patinage",
+                    "Sélection dure, fuite ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 200 000 km",
+                  "diagnostic": "Identifier boîte et calibrage par VIN, contrôler embrayage/volant et synchros ou niveau/état d’ATF, solénoïdes et pressions ; inspecter supports moteur-boîte, cardans, soufflets, roulements et géométrie, puis essai à froid et à chaud",
+                  "piece_concernee": "Transmission et train avant BS6",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente avec entretien inconnu",
+                  "cout_reparation_estime": "Élevé : environ 600 à 6 000 €"
+                },
+                {
+                  "probleme": "Corrosion, trains roulants, freinage et disponibilité des pièces",
+                  "symptomes": [
+                    "Claquement",
+                    "Usure irrégulière",
+                    "Voyant ABS/airbag ou rouille"
+                  ],
+                  "kilometrage_apparition": "Souvent après 8 à 12 ans ou 100 000 km",
+                  "diagnostic": "Inspecter bas de caisse, berceaux, ancrages et planchers, mesurer géométrie, contrôler bras/silentblocs, amortisseurs, direction, roulements, flexibles/étriers, ABS et airbags ; vérifier pare-brise, optiques, panneaux et calculateurs disponibles avant achat, ainsi que réparations de collision",
+                  "piece_concernee": "Coque, châssis et systèmes de sécurité BS6",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru sur import peu suivi ou accidenté",
+                  "cout_reparation_estime": "Élevé : environ 400 à 8 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.8T — 170 ch",
+              "code_moteur": "Brilliance BL18T",
+              "cylindree": "1 793 cm³",
+              "puissance_ch": 170,
+              "boite": [
+                "Manuelle 5 rapports ou automatique selon marché, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement, fuites et injection du moteur essence",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Fuite d’huile",
+                    "Surchauffe, ratés ou voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 160 000 km ; courroie à traiter selon échéance",
+                  "diagnostic": "Identifier Mitsubishi 4G63/4G64 ou Brilliance BL18T, relever défauts/adaptations, mesurer compressions, contrôler courroie/galets/pompe à eau, radiateur/thermostat, joints, bobines/bougies et injection ; sur 1.8T inspecter turbo, wastegate, durites, intercooler, alimentation/retour d’huile et ventilation de carter",
+                  "piece_concernee": "Moteur 2.0, 2.4 ou 1.8T BS6",
+                  "gravite": "Majeure à critique en cas de rupture de distribution ou surchauffe",
+                  "frequence": "Assez fréquente sans historique documenté",
+                  "cout_reparation_estime": "Élevé : environ 500 à 7 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/automatique, embrayage et transmission avant",
+                  "symptomes": [
+                    "À-coups",
+                    "Patinage",
+                    "Sélection dure, fuite ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 200 000 km",
+                  "diagnostic": "Identifier boîte et calibrage par VIN, contrôler embrayage/volant et synchros ou niveau/état d’ATF, solénoïdes et pressions ; inspecter supports moteur-boîte, cardans, soufflets, roulements et géométrie, puis essai à froid et à chaud",
+                  "piece_concernee": "Transmission et train avant BS6",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente avec entretien inconnu",
+                  "cout_reparation_estime": "Élevé : environ 600 à 6 000 €"
+                },
+                {
+                  "probleme": "Corrosion, trains roulants, freinage et disponibilité des pièces",
+                  "symptomes": [
+                    "Claquement",
+                    "Usure irrégulière",
+                    "Voyant ABS/airbag ou rouille"
+                  ],
+                  "kilometrage_apparition": "Souvent après 8 à 12 ans ou 100 000 km",
+                  "diagnostic": "Inspecter bas de caisse, berceaux, ancrages et planchers, mesurer géométrie, contrôler bras/silentblocs, amortisseurs, direction, roulements, flexibles/étriers, ABS et airbags ; vérifier pare-brise, optiques, panneaux et calculateurs disponibles avant achat, ainsi que réparations de collision",
+                  "piece_concernee": "Coque, châssis et systèmes de sécurité BS6",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru sur import peu suivi ou accidenté",
+                  "cout_reparation_estime": "Élevé : environ 400 à 8 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.engineindetail.com/cars/brilliance/bs6/bs6-2007-2010",
+        "https://www.euroncap.com/en/results/brilliance/bs6/15675"
+      ]
+    }
+  ]
+}

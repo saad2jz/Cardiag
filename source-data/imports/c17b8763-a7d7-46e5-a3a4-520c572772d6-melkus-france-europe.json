@@ -1,0 +1,375 @@
+{
+  "nom": "Melkus",
+  "modeles": [
+    {
+      "nom": "RS 1000",
+      "generations": [
+        {
+          "code_chassis": "RS 1000 route 992",
+          "annees": "1969–1979",
+          "phases": [
+            "Version routière officielle : 51 kW/70 PS, trois carburateurs BVF."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence deux-temps",
+              "nom": "Wartburg 353 deux-temps — 70 ch",
+              "code_moteur": "AWE 353/1 Melkus",
+              "cylindree": "992,8 cm³",
+              "puissance_ch": 70,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification par mélange, refroidissement et étanchéité du trois-cylindres deux-temps",
+                  "symptomes": [
+                    "Serrage ou perte de puissance",
+                    "Fumée anormale",
+                    "Surchauffe, bruit de roulement ou compression faible"
+                  ],
+                  "kilometrage_apparition": "Contrôle fréquent ; réfection souvent après 40 000 à 80 000 km ou usage course",
+                  "diagnostic": "Identifier 992,8 ou 1119 cm³ et préparation, mesurer compressions, contrôler dosage/huile deux-temps, roulements et joints de vilebrequin, pistons/cylindres, pompe, radiateur, thermosiphon/ventilation et échappement ; ne jamais rouler avec mélange ou prise d’air inconnus",
+                  "piece_concernee": "Moteur Wartburg 353 deux-temps Melkus",
+                  "gravite": "Critique",
+                  "frequence": "Usure élevée si mélange, refroidissement ou réglage incorrect",
+                  "cout_reparation_estime": "Élevé : environ 500 à 6 000 €"
+                },
+                {
+                  "probleme": "Trois carburateurs BVF, allumage trois cylindres et échappement accordé",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés ou température inégale",
+                    "Trou, cliquetis ou fumée excessive"
+                  ],
+                  "kilometrage_apparition": "Synchronisation régulière et avant compétition",
+                  "diagnostic": "Nettoyer/synchroniser les trois carburateurs à aiguille, contrôler réservoir, pompe, niveaux, prises d’air, avance et allumage de chaque cylindre, bougies et pots de détente ; comparer EGT/couleur sans appauvrir pour réduire la fumée",
+                  "piece_concernee": "Carburation, allumage et échappement RS 1000",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après immobilisation",
+                  "cout_reparation_estime": "Élevé : environ 150 à 2 500 €"
+                },
+                {
+                  "probleme": "Boîte cinq rapports, châssis Wartburg, carrosserie et portes papillon",
+                  "symptomes": [
+                    "Rapport difficile",
+                    "Jeu, vibration ou bruit de transmission",
+                    "Fissure, corrosion ou porte mal verrouillée"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat et après piste",
+                  "diagnostic": "Contrôler embrayage, commande, huile, pignons, différentiel, arbres et roulements ; inspecter cadre Wartburg modifié, soudures, GRP/aluminium, charnières/verrous de portes, suspension, direction, freins et roues, puis authentifier original 1969–1979, réédition ou GTR",
+                  "piece_concernee": "Structure, transmission et identité Melkus RS 1000",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après compétition ou reconstruction",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 15 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "RS 1000 compétition 992",
+          "annees": "1969–1979",
+          "phases": [
+            "Réglages de compétition 90–100 ch selon moteur et règlement."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence deux-temps compétition",
+              "nom": "Wartburg 353 course — 90 ch",
+              "code_moteur": "AWE 353/1 Melkus Renn",
+              "cylindree": "992,8 cm³",
+              "puissance_ch": 90,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification par mélange, refroidissement et étanchéité du trois-cylindres deux-temps",
+                  "symptomes": [
+                    "Serrage ou perte de puissance",
+                    "Fumée anormale",
+                    "Surchauffe, bruit de roulement ou compression faible"
+                  ],
+                  "kilometrage_apparition": "Contrôle fréquent ; réfection souvent après 40 000 à 80 000 km ou usage course",
+                  "diagnostic": "Identifier 992,8 ou 1119 cm³ et préparation, mesurer compressions, contrôler dosage/huile deux-temps, roulements et joints de vilebrequin, pistons/cylindres, pompe, radiateur, thermosiphon/ventilation et échappement ; ne jamais rouler avec mélange ou prise d’air inconnus",
+                  "piece_concernee": "Moteur Wartburg 353 deux-temps Melkus",
+                  "gravite": "Critique",
+                  "frequence": "Usure élevée si mélange, refroidissement ou réglage incorrect",
+                  "cout_reparation_estime": "Élevé : environ 500 à 6 000 €"
+                },
+                {
+                  "probleme": "Trois carburateurs BVF, allumage trois cylindres et échappement accordé",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés ou température inégale",
+                    "Trou, cliquetis ou fumée excessive"
+                  ],
+                  "kilometrage_apparition": "Synchronisation régulière et avant compétition",
+                  "diagnostic": "Nettoyer/synchroniser les trois carburateurs à aiguille, contrôler réservoir, pompe, niveaux, prises d’air, avance et allumage de chaque cylindre, bougies et pots de détente ; comparer EGT/couleur sans appauvrir pour réduire la fumée",
+                  "piece_concernee": "Carburation, allumage et échappement RS 1000",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après immobilisation",
+                  "cout_reparation_estime": "Élevé : environ 150 à 2 500 €"
+                },
+                {
+                  "probleme": "Boîte cinq rapports, châssis Wartburg, carrosserie et portes papillon",
+                  "symptomes": [
+                    "Rapport difficile",
+                    "Jeu, vibration ou bruit de transmission",
+                    "Fissure, corrosion ou porte mal verrouillée"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat et après piste",
+                  "diagnostic": "Contrôler embrayage, commande, huile, pignons, différentiel, arbres et roulements ; inspecter cadre Wartburg modifié, soudures, GRP/aluminium, charnières/verrous de portes, suspension, direction, freins et roues, puis authentifier original 1969–1979, réédition ou GTR",
+                  "piece_concernee": "Structure, transmission et identité Melkus RS 1000",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après compétition ou reconstruction",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 15 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence deux-temps compétition",
+              "nom": "Wartburg 353 course évolution — 100 ch",
+              "code_moteur": "AWE 353/1 Melkus Renn évolution",
+              "cylindree": "992,8 cm³",
+              "puissance_ch": 100,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification par mélange, refroidissement et étanchéité du trois-cylindres deux-temps",
+                  "symptomes": [
+                    "Serrage ou perte de puissance",
+                    "Fumée anormale",
+                    "Surchauffe, bruit de roulement ou compression faible"
+                  ],
+                  "kilometrage_apparition": "Contrôle fréquent ; réfection souvent après 40 000 à 80 000 km ou usage course",
+                  "diagnostic": "Identifier 992,8 ou 1119 cm³ et préparation, mesurer compressions, contrôler dosage/huile deux-temps, roulements et joints de vilebrequin, pistons/cylindres, pompe, radiateur, thermosiphon/ventilation et échappement ; ne jamais rouler avec mélange ou prise d’air inconnus",
+                  "piece_concernee": "Moteur Wartburg 353 deux-temps Melkus",
+                  "gravite": "Critique",
+                  "frequence": "Usure élevée si mélange, refroidissement ou réglage incorrect",
+                  "cout_reparation_estime": "Élevé : environ 500 à 6 000 €"
+                },
+                {
+                  "probleme": "Trois carburateurs BVF, allumage trois cylindres et échappement accordé",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés ou température inégale",
+                    "Trou, cliquetis ou fumée excessive"
+                  ],
+                  "kilometrage_apparition": "Synchronisation régulière et avant compétition",
+                  "diagnostic": "Nettoyer/synchroniser les trois carburateurs à aiguille, contrôler réservoir, pompe, niveaux, prises d’air, avance et allumage de chaque cylindre, bougies et pots de détente ; comparer EGT/couleur sans appauvrir pour réduire la fumée",
+                  "piece_concernee": "Carburation, allumage et échappement RS 1000",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après immobilisation",
+                  "cout_reparation_estime": "Élevé : environ 150 à 2 500 €"
+                },
+                {
+                  "probleme": "Boîte cinq rapports, châssis Wartburg, carrosserie et portes papillon",
+                  "symptomes": [
+                    "Rapport difficile",
+                    "Jeu, vibration ou bruit de transmission",
+                    "Fissure, corrosion ou porte mal verrouillée"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat et après piste",
+                  "diagnostic": "Contrôler embrayage, commande, huile, pignons, différentiel, arbres et roulements ; inspecter cadre Wartburg modifié, soudures, GRP/aluminium, charnières/verrous de portes, suspension, direction, freins et roues, puis authentifier original 1969–1979, réédition ou GTR",
+                  "piece_concernee": "Structure, transmission et identité Melkus RS 1000",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après compétition ou reconstruction",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 15 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "RS 1000 1119",
+          "annees": "1972–1979",
+          "phases": [
+            "Cylindrée accrue sur certains exemplaires ; confirmer carters et alésage."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence deux-temps",
+              "nom": "Wartburg réalésé 1119 route — 70 ch",
+              "code_moteur": "AWE/Melkus 1119",
+              "cylindree": "1 119 cm³",
+              "puissance_ch": 70,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification par mélange, refroidissement et étanchéité du trois-cylindres deux-temps",
+                  "symptomes": [
+                    "Serrage ou perte de puissance",
+                    "Fumée anormale",
+                    "Surchauffe, bruit de roulement ou compression faible"
+                  ],
+                  "kilometrage_apparition": "Contrôle fréquent ; réfection souvent après 40 000 à 80 000 km ou usage course",
+                  "diagnostic": "Identifier 992,8 ou 1119 cm³ et préparation, mesurer compressions, contrôler dosage/huile deux-temps, roulements et joints de vilebrequin, pistons/cylindres, pompe, radiateur, thermosiphon/ventilation et échappement ; ne jamais rouler avec mélange ou prise d’air inconnus",
+                  "piece_concernee": "Moteur Wartburg 353 deux-temps Melkus",
+                  "gravite": "Critique",
+                  "frequence": "Usure élevée si mélange, refroidissement ou réglage incorrect",
+                  "cout_reparation_estime": "Élevé : environ 500 à 6 000 €"
+                },
+                {
+                  "probleme": "Trois carburateurs BVF, allumage trois cylindres et échappement accordé",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés ou température inégale",
+                    "Trou, cliquetis ou fumée excessive"
+                  ],
+                  "kilometrage_apparition": "Synchronisation régulière et avant compétition",
+                  "diagnostic": "Nettoyer/synchroniser les trois carburateurs à aiguille, contrôler réservoir, pompe, niveaux, prises d’air, avance et allumage de chaque cylindre, bougies et pots de détente ; comparer EGT/couleur sans appauvrir pour réduire la fumée",
+                  "piece_concernee": "Carburation, allumage et échappement RS 1000",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après immobilisation",
+                  "cout_reparation_estime": "Élevé : environ 150 à 2 500 €"
+                },
+                {
+                  "probleme": "Boîte cinq rapports, châssis Wartburg, carrosserie et portes papillon",
+                  "symptomes": [
+                    "Rapport difficile",
+                    "Jeu, vibration ou bruit de transmission",
+                    "Fissure, corrosion ou porte mal verrouillée"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat et après piste",
+                  "diagnostic": "Contrôler embrayage, commande, huile, pignons, différentiel, arbres et roulements ; inspecter cadre Wartburg modifié, soudures, GRP/aluminium, charnières/verrous de portes, suspension, direction, freins et roues, puis authentifier original 1969–1979, réédition ou GTR",
+                  "piece_concernee": "Structure, transmission et identité Melkus RS 1000",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après compétition ou reconstruction",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 15 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence deux-temps compétition",
+              "nom": "Wartburg réalésé 1119 course — 90 ch",
+              "code_moteur": "AWE/Melkus 1119 Renn",
+              "cylindree": "1 119 cm³",
+              "puissance_ch": 90,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification par mélange, refroidissement et étanchéité du trois-cylindres deux-temps",
+                  "symptomes": [
+                    "Serrage ou perte de puissance",
+                    "Fumée anormale",
+                    "Surchauffe, bruit de roulement ou compression faible"
+                  ],
+                  "kilometrage_apparition": "Contrôle fréquent ; réfection souvent après 40 000 à 80 000 km ou usage course",
+                  "diagnostic": "Identifier 992,8 ou 1119 cm³ et préparation, mesurer compressions, contrôler dosage/huile deux-temps, roulements et joints de vilebrequin, pistons/cylindres, pompe, radiateur, thermosiphon/ventilation et échappement ; ne jamais rouler avec mélange ou prise d’air inconnus",
+                  "piece_concernee": "Moteur Wartburg 353 deux-temps Melkus",
+                  "gravite": "Critique",
+                  "frequence": "Usure élevée si mélange, refroidissement ou réglage incorrect",
+                  "cout_reparation_estime": "Élevé : environ 500 à 6 000 €"
+                },
+                {
+                  "probleme": "Trois carburateurs BVF, allumage trois cylindres et échappement accordé",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés ou température inégale",
+                    "Trou, cliquetis ou fumée excessive"
+                  ],
+                  "kilometrage_apparition": "Synchronisation régulière et avant compétition",
+                  "diagnostic": "Nettoyer/synchroniser les trois carburateurs à aiguille, contrôler réservoir, pompe, niveaux, prises d’air, avance et allumage de chaque cylindre, bougies et pots de détente ; comparer EGT/couleur sans appauvrir pour réduire la fumée",
+                  "piece_concernee": "Carburation, allumage et échappement RS 1000",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après immobilisation",
+                  "cout_reparation_estime": "Élevé : environ 150 à 2 500 €"
+                },
+                {
+                  "probleme": "Boîte cinq rapports, châssis Wartburg, carrosserie et portes papillon",
+                  "symptomes": [
+                    "Rapport difficile",
+                    "Jeu, vibration ou bruit de transmission",
+                    "Fissure, corrosion ou porte mal verrouillée"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat et après piste",
+                  "diagnostic": "Contrôler embrayage, commande, huile, pignons, différentiel, arbres et roulements ; inspecter cadre Wartburg modifié, soudures, GRP/aluminium, charnières/verrous de portes, suspension, direction, freins et roues, puis authentifier original 1969–1979, réédition ou GTR",
+                  "piece_concernee": "Structure, transmission et identité Melkus RS 1000",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après compétition ou reconstruction",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 15 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Edition Heinz Melkus / reconstruction",
+          "annees": "2006–aujourd’hui",
+          "phases": [
+            "Reconstruction artisanale homologuée route ; GTR course disponible séparément sur commande."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence deux-temps",
+              "nom": "Wartburg 353 reconstruction route — 70 ch",
+              "code_moteur": "AWE 353/1 Melkus reconstruction",
+              "cylindree": "992,8 cm³",
+              "puissance_ch": 70,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification par mélange, refroidissement et étanchéité du trois-cylindres deux-temps",
+                  "symptomes": [
+                    "Serrage ou perte de puissance",
+                    "Fumée anormale",
+                    "Surchauffe, bruit de roulement ou compression faible"
+                  ],
+                  "kilometrage_apparition": "Contrôle fréquent ; réfection souvent après 40 000 à 80 000 km ou usage course",
+                  "diagnostic": "Identifier 992,8 ou 1119 cm³ et préparation, mesurer compressions, contrôler dosage/huile deux-temps, roulements et joints de vilebrequin, pistons/cylindres, pompe, radiateur, thermosiphon/ventilation et échappement ; ne jamais rouler avec mélange ou prise d’air inconnus",
+                  "piece_concernee": "Moteur Wartburg 353 deux-temps Melkus",
+                  "gravite": "Critique",
+                  "frequence": "Usure élevée si mélange, refroidissement ou réglage incorrect",
+                  "cout_reparation_estime": "Élevé : environ 500 à 6 000 €"
+                },
+                {
+                  "probleme": "Trois carburateurs BVF, allumage trois cylindres et échappement accordé",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés ou température inégale",
+                    "Trou, cliquetis ou fumée excessive"
+                  ],
+                  "kilometrage_apparition": "Synchronisation régulière et avant compétition",
+                  "diagnostic": "Nettoyer/synchroniser les trois carburateurs à aiguille, contrôler réservoir, pompe, niveaux, prises d’air, avance et allumage de chaque cylindre, bougies et pots de détente ; comparer EGT/couleur sans appauvrir pour réduire la fumée",
+                  "piece_concernee": "Carburation, allumage et échappement RS 1000",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après immobilisation",
+                  "cout_reparation_estime": "Élevé : environ 150 à 2 500 €"
+                },
+                {
+                  "probleme": "Boîte cinq rapports, châssis Wartburg, carrosserie et portes papillon",
+                  "symptomes": [
+                    "Rapport difficile",
+                    "Jeu, vibration ou bruit de transmission",
+                    "Fissure, corrosion ou porte mal verrouillée"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat et après piste",
+                  "diagnostic": "Contrôler embrayage, commande, huile, pignons, différentiel, arbres et roulements ; inspecter cadre Wartburg modifié, soudures, GRP/aluminium, charnières/verrous de portes, suspension, direction, freins et roues, puis authentifier original 1969–1979, réédition ou GTR",
+                  "piece_concernee": "Structure, transmission et identité Melkus RS 1000",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après compétition ou reconstruction",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 15 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.melkus-motorsport.de/melkus_rs1000.html",
+        "https://ame-eisenach.de/fahrzeuge/melkus-rs-1000/",
+        "https://www.melkus-motorsport.de/60-jahre-melkus-sportwagen-motorsport.html"
+      ]
+    }
+  ]
+}

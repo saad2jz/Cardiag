@@ -1,0 +1,571 @@
+{
+  "nom": "Excalibur",
+  "modeles": [
+    {
+      "nom": "Phaeton",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "convertible",
+        "countries": [
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 6
+      },
+      "generations": [
+        {
+          "code_chassis": "Series I Phaeton",
+          "annees": "1966–1969",
+          "phases": [
+            "Phaeton quatre places ajouté fin 1966 ; certains moteurs et préparations sont annoncés à 350 hp et doivent être authentifiés séparément."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Chevrolet 327 V8 — 300 ch",
+              "code_moteur": "Chevrolet small-block 327",
+              "cylindree": "5 354 cm³",
+              "puissance_ch": 300,
+              "boite": [
+                "Manuelle 4 rapports ou automatique, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et identification du V8 Chevrolet",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression faible",
+                    "Fumée, fuite ou claquement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km ; âge, immobilisation et restauration priment",
+                  "diagnostic": "Décoder série, millésime, bloc et culasses avant commande : 327 small-block, 454 big-block, 305 small-block ou LT1. Mesurer compressions/leak-down et pression, analyser huile, puis contrôler chaîne, pompe, radiateur, ventilateurs, joints, poussoirs et modifications.",
+                  "piece_concernee": "V8 Chevrolet de l’Excalibur Phaeton",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente si moteur remplacé, préparé ou longtemps immobilisé",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 15 000 €"
+                },
+                {
+                  "probleme": "Carburation/injection, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Vapor-lock ou odeur",
+                    "Ratés, cliquetis ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après stockage",
+                  "diagnostic": "Identifier carburateur et allumeur ou injection LT1, contrôler réservoir, pompe, conduites proches des échappements latéraux, starter, avance, bobine, bougies et faisceau. Sur LT1, contrôler OptiSpark, pression carburant et données avant remplacement.",
+                  "piece_concernee": "Admission et allumage Excalibur",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente avec carburant moderne et chaleur",
+                  "cout_reparation_estime": "Élevé : environ 250 à 4 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/Hydra-Matic, embrayage, arbre et pont",
+                  "symptomes": [
+                    "Patinage",
+                    "Engagement tardif",
+                    "Vibration, fuite ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km",
+                  "diagnostic": "Identifier manuelle quatre rapports, Turbo-Hydramatic ou automatique à verrouillage selon série ; contrôler huile/pression, convertisseur ou embrayage, supports, arbre/croisillons, différentiel Positraction et roulements.",
+                  "piece_concernee": "Transmission Excalibur Phaeton",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable selon masse et couple",
+                  "cout_reparation_estime": "Très élevé : environ 600 à 7 000 €"
+                },
+                {
+                  "probleme": "Cadre, carrosserie polyester, freins Corvette et authenticité",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Jeu, affaissement ou freinage irrégulier",
+                    "Numéro, moteur ou échappement incohérent"
+                  ],
+                  "kilometrage_apparition": "Expertise complète avant achat",
+                  "diagnostic": "Authentifier série I à VI, Phaeton quatre places et moteur de naissance. Inspecter cadre et sections boulonnées, soudures, polyester, supports de caisse, ouvrants, direction, suspension GM modifiée, quatre freins à disque, Positraction, roues, pneus, échappements latéraux fonctionnels selon série et équipements.",
+                  "piece_concernee": "Structure, sécurité et provenance Excalibur",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de transformation sur véhicule artisanal",
+                  "cout_reparation_estime": "Très élevé : environ 800 à plus de 25 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Series II Phaeton première phase",
+          "annees": "1970–1972",
+          "phases": [
+            "Nouvelle Series II sur châssis allongé ; puissance brute/SAE et calibrage changent selon année."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Chevrolet 454 V8 haute puissance — 365 ch",
+              "code_moteur": "Chevrolet big-block 454",
+              "cylindree": "7 443 cm³",
+              "puissance_ch": 365,
+              "boite": [
+                "Manuelle 4 rapports ou Turbo-Hydramatic 3 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et identification du V8 Chevrolet",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression faible",
+                    "Fumée, fuite ou claquement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km ; âge, immobilisation et restauration priment",
+                  "diagnostic": "Décoder série, millésime, bloc et culasses avant commande : 327 small-block, 454 big-block, 305 small-block ou LT1. Mesurer compressions/leak-down et pression, analyser huile, puis contrôler chaîne, pompe, radiateur, ventilateurs, joints, poussoirs et modifications.",
+                  "piece_concernee": "V8 Chevrolet de l’Excalibur Phaeton",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente si moteur remplacé, préparé ou longtemps immobilisé",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 15 000 €"
+                },
+                {
+                  "probleme": "Carburation/injection, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Vapor-lock ou odeur",
+                    "Ratés, cliquetis ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après stockage",
+                  "diagnostic": "Identifier carburateur et allumeur ou injection LT1, contrôler réservoir, pompe, conduites proches des échappements latéraux, starter, avance, bobine, bougies et faisceau. Sur LT1, contrôler OptiSpark, pression carburant et données avant remplacement.",
+                  "piece_concernee": "Admission et allumage Excalibur",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente avec carburant moderne et chaleur",
+                  "cout_reparation_estime": "Élevé : environ 250 à 4 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/Hydra-Matic, embrayage, arbre et pont",
+                  "symptomes": [
+                    "Patinage",
+                    "Engagement tardif",
+                    "Vibration, fuite ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km",
+                  "diagnostic": "Identifier manuelle quatre rapports, Turbo-Hydramatic ou automatique à verrouillage selon série ; contrôler huile/pression, convertisseur ou embrayage, supports, arbre/croisillons, différentiel Positraction et roulements.",
+                  "piece_concernee": "Transmission Excalibur Phaeton",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable selon masse et couple",
+                  "cout_reparation_estime": "Très élevé : environ 600 à 7 000 €"
+                },
+                {
+                  "probleme": "Cadre, carrosserie polyester, freins Corvette et authenticité",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Jeu, affaissement ou freinage irrégulier",
+                    "Numéro, moteur ou échappement incohérent"
+                  ],
+                  "kilometrage_apparition": "Expertise complète avant achat",
+                  "diagnostic": "Authentifier série I à VI, Phaeton quatre places et moteur de naissance. Inspecter cadre et sections boulonnées, soudures, polyester, supports de caisse, ouvrants, direction, suspension GM modifiée, quatre freins à disque, Positraction, roues, pneus, échappements latéraux fonctionnels selon série et équipements.",
+                  "piece_concernee": "Structure, sécurité et provenance Excalibur",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de transformation sur véhicule artisanal",
+                  "cout_reparation_estime": "Très élevé : environ 800 à plus de 25 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Series II Phaeton antipollution",
+          "annees": "1973–1974",
+          "phases": [
+            "Calibrage abaissé par les normes américaines ; 270 hp documentés pour 1974."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Chevrolet 454 V8 — 270 ch",
+              "code_moteur": "Chevrolet big-block 454",
+              "cylindree": "7 443 cm³",
+              "puissance_ch": 270,
+              "boite": [
+                "Manuelle 4 rapports ou Turbo-Hydramatic 3 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et identification du V8 Chevrolet",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression faible",
+                    "Fumée, fuite ou claquement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km ; âge, immobilisation et restauration priment",
+                  "diagnostic": "Décoder série, millésime, bloc et culasses avant commande : 327 small-block, 454 big-block, 305 small-block ou LT1. Mesurer compressions/leak-down et pression, analyser huile, puis contrôler chaîne, pompe, radiateur, ventilateurs, joints, poussoirs et modifications.",
+                  "piece_concernee": "V8 Chevrolet de l’Excalibur Phaeton",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente si moteur remplacé, préparé ou longtemps immobilisé",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 15 000 €"
+                },
+                {
+                  "probleme": "Carburation/injection, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Vapor-lock ou odeur",
+                    "Ratés, cliquetis ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après stockage",
+                  "diagnostic": "Identifier carburateur et allumeur ou injection LT1, contrôler réservoir, pompe, conduites proches des échappements latéraux, starter, avance, bobine, bougies et faisceau. Sur LT1, contrôler OptiSpark, pression carburant et données avant remplacement.",
+                  "piece_concernee": "Admission et allumage Excalibur",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente avec carburant moderne et chaleur",
+                  "cout_reparation_estime": "Élevé : environ 250 à 4 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/Hydra-Matic, embrayage, arbre et pont",
+                  "symptomes": [
+                    "Patinage",
+                    "Engagement tardif",
+                    "Vibration, fuite ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km",
+                  "diagnostic": "Identifier manuelle quatre rapports, Turbo-Hydramatic ou automatique à verrouillage selon série ; contrôler huile/pression, convertisseur ou embrayage, supports, arbre/croisillons, différentiel Positraction et roulements.",
+                  "piece_concernee": "Transmission Excalibur Phaeton",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable selon masse et couple",
+                  "cout_reparation_estime": "Très élevé : environ 600 à 7 000 €"
+                },
+                {
+                  "probleme": "Cadre, carrosserie polyester, freins Corvette et authenticité",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Jeu, affaissement ou freinage irrégulier",
+                    "Numéro, moteur ou échappement incohérent"
+                  ],
+                  "kilometrage_apparition": "Expertise complète avant achat",
+                  "diagnostic": "Authentifier série I à VI, Phaeton quatre places et moteur de naissance. Inspecter cadre et sections boulonnées, soudures, polyester, supports de caisse, ouvrants, direction, suspension GM modifiée, quatre freins à disque, Positraction, roues, pneus, échappements latéraux fonctionnels selon série et équipements.",
+                  "piece_concernee": "Structure, sécurité et provenance Excalibur",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de transformation sur véhicule artisanal",
+                  "cout_reparation_estime": "Très élevé : environ 800 à plus de 25 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Series III Phaeton",
+          "annees": "1975–1979",
+          "phases": [
+            "Big-block à 215 hp SAE net ; production plus élevée et qualité d’assemblage à examiner attentivement."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Chevrolet 454 V8 truck tune — 215 ch",
+              "code_moteur": "Chevrolet big-block 454",
+              "cylindree": "7 443 cm³",
+              "puissance_ch": 215,
+              "boite": [
+                "Manuelle 4 rapports ou Turbo-Hydramatic 3 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et identification du V8 Chevrolet",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression faible",
+                    "Fumée, fuite ou claquement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km ; âge, immobilisation et restauration priment",
+                  "diagnostic": "Décoder série, millésime, bloc et culasses avant commande : 327 small-block, 454 big-block, 305 small-block ou LT1. Mesurer compressions/leak-down et pression, analyser huile, puis contrôler chaîne, pompe, radiateur, ventilateurs, joints, poussoirs et modifications.",
+                  "piece_concernee": "V8 Chevrolet de l’Excalibur Phaeton",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente si moteur remplacé, préparé ou longtemps immobilisé",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 15 000 €"
+                },
+                {
+                  "probleme": "Carburation/injection, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Vapor-lock ou odeur",
+                    "Ratés, cliquetis ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après stockage",
+                  "diagnostic": "Identifier carburateur et allumeur ou injection LT1, contrôler réservoir, pompe, conduites proches des échappements latéraux, starter, avance, bobine, bougies et faisceau. Sur LT1, contrôler OptiSpark, pression carburant et données avant remplacement.",
+                  "piece_concernee": "Admission et allumage Excalibur",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente avec carburant moderne et chaleur",
+                  "cout_reparation_estime": "Élevé : environ 250 à 4 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/Hydra-Matic, embrayage, arbre et pont",
+                  "symptomes": [
+                    "Patinage",
+                    "Engagement tardif",
+                    "Vibration, fuite ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km",
+                  "diagnostic": "Identifier manuelle quatre rapports, Turbo-Hydramatic ou automatique à verrouillage selon série ; contrôler huile/pression, convertisseur ou embrayage, supports, arbre/croisillons, différentiel Positraction et roulements.",
+                  "piece_concernee": "Transmission Excalibur Phaeton",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable selon masse et couple",
+                  "cout_reparation_estime": "Très élevé : environ 600 à 7 000 €"
+                },
+                {
+                  "probleme": "Cadre, carrosserie polyester, freins Corvette et authenticité",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Jeu, affaissement ou freinage irrégulier",
+                    "Numéro, moteur ou échappement incohérent"
+                  ],
+                  "kilometrage_apparition": "Expertise complète avant achat",
+                  "diagnostic": "Authentifier série I à VI, Phaeton quatre places et moteur de naissance. Inspecter cadre et sections boulonnées, soudures, polyester, supports de caisse, ouvrants, direction, suspension GM modifiée, quatre freins à disque, Positraction, roues, pneus, échappements latéraux fonctionnels selon série et équipements.",
+                  "piece_concernee": "Structure, sécurité et provenance Excalibur",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de transformation sur véhicule artisanal",
+                  "cout_reparation_estime": "Très élevé : environ 800 à plus de 25 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Series IV Phaeton",
+          "annees": "1980–1984",
+          "phases": [
+            "Refonte importante, vitres descendantes et échappements latéraux devenus décoratifs ; édition 20e anniversaire en 1984."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Chevrolet 305 V8 — 155 ch",
+              "code_moteur": "Chevrolet small-block 305",
+              "cylindree": "5 001 cm³",
+              "puissance_ch": 155,
+              "boite": [
+                "Automatique 3 rapports à convertisseur verrouillable, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et identification du V8 Chevrolet",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression faible",
+                    "Fumée, fuite ou claquement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km ; âge, immobilisation et restauration priment",
+                  "diagnostic": "Décoder série, millésime, bloc et culasses avant commande : 327 small-block, 454 big-block, 305 small-block ou LT1. Mesurer compressions/leak-down et pression, analyser huile, puis contrôler chaîne, pompe, radiateur, ventilateurs, joints, poussoirs et modifications.",
+                  "piece_concernee": "V8 Chevrolet de l’Excalibur Phaeton",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente si moteur remplacé, préparé ou longtemps immobilisé",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 15 000 €"
+                },
+                {
+                  "probleme": "Carburation/injection, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Vapor-lock ou odeur",
+                    "Ratés, cliquetis ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après stockage",
+                  "diagnostic": "Identifier carburateur et allumeur ou injection LT1, contrôler réservoir, pompe, conduites proches des échappements latéraux, starter, avance, bobine, bougies et faisceau. Sur LT1, contrôler OptiSpark, pression carburant et données avant remplacement.",
+                  "piece_concernee": "Admission et allumage Excalibur",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente avec carburant moderne et chaleur",
+                  "cout_reparation_estime": "Élevé : environ 250 à 4 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/Hydra-Matic, embrayage, arbre et pont",
+                  "symptomes": [
+                    "Patinage",
+                    "Engagement tardif",
+                    "Vibration, fuite ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km",
+                  "diagnostic": "Identifier manuelle quatre rapports, Turbo-Hydramatic ou automatique à verrouillage selon série ; contrôler huile/pression, convertisseur ou embrayage, supports, arbre/croisillons, différentiel Positraction et roulements.",
+                  "piece_concernee": "Transmission Excalibur Phaeton",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable selon masse et couple",
+                  "cout_reparation_estime": "Très élevé : environ 600 à 7 000 €"
+                },
+                {
+                  "probleme": "Cadre, carrosserie polyester, freins Corvette et authenticité",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Jeu, affaissement ou freinage irrégulier",
+                    "Numéro, moteur ou échappement incohérent"
+                  ],
+                  "kilometrage_apparition": "Expertise complète avant achat",
+                  "diagnostic": "Authentifier série I à VI, Phaeton quatre places et moteur de naissance. Inspecter cadre et sections boulonnées, soudures, polyester, supports de caisse, ouvrants, direction, suspension GM modifiée, quatre freins à disque, Positraction, roues, pneus, échappements latéraux fonctionnels selon série et équipements.",
+                  "piece_concernee": "Structure, sécurité et provenance Excalibur",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de transformation sur véhicule artisanal",
+                  "cout_reparation_estime": "Très élevé : environ 800 à plus de 25 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Series V Phaeton",
+          "annees": "1985–1990",
+          "phases": [
+            "Évolution de la Series IV ; puissance indicative variable avec le millésime et les règles antipollution."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Chevrolet 305 V8 — 170 ch",
+              "code_moteur": "Chevrolet small-block 305",
+              "cylindree": "5 001 cm³",
+              "puissance_ch": 170,
+              "boite": [
+                "Automatique GM, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et identification du V8 Chevrolet",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression faible",
+                    "Fumée, fuite ou claquement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km ; âge, immobilisation et restauration priment",
+                  "diagnostic": "Décoder série, millésime, bloc et culasses avant commande : 327 small-block, 454 big-block, 305 small-block ou LT1. Mesurer compressions/leak-down et pression, analyser huile, puis contrôler chaîne, pompe, radiateur, ventilateurs, joints, poussoirs et modifications.",
+                  "piece_concernee": "V8 Chevrolet de l’Excalibur Phaeton",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente si moteur remplacé, préparé ou longtemps immobilisé",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 15 000 €"
+                },
+                {
+                  "probleme": "Carburation/injection, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Vapor-lock ou odeur",
+                    "Ratés, cliquetis ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après stockage",
+                  "diagnostic": "Identifier carburateur et allumeur ou injection LT1, contrôler réservoir, pompe, conduites proches des échappements latéraux, starter, avance, bobine, bougies et faisceau. Sur LT1, contrôler OptiSpark, pression carburant et données avant remplacement.",
+                  "piece_concernee": "Admission et allumage Excalibur",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente avec carburant moderne et chaleur",
+                  "cout_reparation_estime": "Élevé : environ 250 à 4 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/Hydra-Matic, embrayage, arbre et pont",
+                  "symptomes": [
+                    "Patinage",
+                    "Engagement tardif",
+                    "Vibration, fuite ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km",
+                  "diagnostic": "Identifier manuelle quatre rapports, Turbo-Hydramatic ou automatique à verrouillage selon série ; contrôler huile/pression, convertisseur ou embrayage, supports, arbre/croisillons, différentiel Positraction et roulements.",
+                  "piece_concernee": "Transmission Excalibur Phaeton",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable selon masse et couple",
+                  "cout_reparation_estime": "Très élevé : environ 600 à 7 000 €"
+                },
+                {
+                  "probleme": "Cadre, carrosserie polyester, freins Corvette et authenticité",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Jeu, affaissement ou freinage irrégulier",
+                    "Numéro, moteur ou échappement incohérent"
+                  ],
+                  "kilometrage_apparition": "Expertise complète avant achat",
+                  "diagnostic": "Authentifier série I à VI, Phaeton quatre places et moteur de naissance. Inspecter cadre et sections boulonnées, soudures, polyester, supports de caisse, ouvrants, direction, suspension GM modifiée, quatre freins à disque, Positraction, roues, pneus, échappements latéraux fonctionnels selon série et équipements.",
+                  "piece_concernee": "Structure, sécurité et provenance Excalibur",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de transformation sur véhicule artisanal",
+                  "cout_reparation_estime": "Très élevé : environ 800 à plus de 25 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Series VI Phaeton",
+          "annees": "1993–1997",
+          "phases": [
+            "Ultime reprise à moteur Corvette LT1 ; production artisanale très faible et spécification à confirmer véhicule par véhicule."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Chevrolet LT1 5.7 V8 — 300 ch",
+              "code_moteur": "Chevrolet LT1 Gen II",
+              "cylindree": "5 733 cm³",
+              "puissance_ch": 300,
+              "boite": [
+                "Automatique GM 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et identification du V8 Chevrolet",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression faible",
+                    "Fumée, fuite ou claquement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km ; âge, immobilisation et restauration priment",
+                  "diagnostic": "Décoder série, millésime, bloc et culasses avant commande : 327 small-block, 454 big-block, 305 small-block ou LT1. Mesurer compressions/leak-down et pression, analyser huile, puis contrôler chaîne, pompe, radiateur, ventilateurs, joints, poussoirs et modifications.",
+                  "piece_concernee": "V8 Chevrolet de l’Excalibur Phaeton",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente si moteur remplacé, préparé ou longtemps immobilisé",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 15 000 €"
+                },
+                {
+                  "probleme": "Carburation/injection, alimentation et allumage",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Vapor-lock ou odeur",
+                    "Ratés, cliquetis ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et après stockage",
+                  "diagnostic": "Identifier carburateur et allumeur ou injection LT1, contrôler réservoir, pompe, conduites proches des échappements latéraux, starter, avance, bobine, bougies et faisceau. Sur LT1, contrôler OptiSpark, pression carburant et données avant remplacement.",
+                  "piece_concernee": "Admission et allumage Excalibur",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente avec carburant moderne et chaleur",
+                  "cout_reparation_estime": "Élevé : environ 250 à 4 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/Hydra-Matic, embrayage, arbre et pont",
+                  "symptomes": [
+                    "Patinage",
+                    "Engagement tardif",
+                    "Vibration, fuite ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km",
+                  "diagnostic": "Identifier manuelle quatre rapports, Turbo-Hydramatic ou automatique à verrouillage selon série ; contrôler huile/pression, convertisseur ou embrayage, supports, arbre/croisillons, différentiel Positraction et roulements.",
+                  "piece_concernee": "Transmission Excalibur Phaeton",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable selon masse et couple",
+                  "cout_reparation_estime": "Très élevé : environ 600 à 7 000 €"
+                },
+                {
+                  "probleme": "Cadre, carrosserie polyester, freins Corvette et authenticité",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "Jeu, affaissement ou freinage irrégulier",
+                    "Numéro, moteur ou échappement incohérent"
+                  ],
+                  "kilometrage_apparition": "Expertise complète avant achat",
+                  "diagnostic": "Authentifier série I à VI, Phaeton quatre places et moteur de naissance. Inspecter cadre et sections boulonnées, soudures, polyester, supports de caisse, ouvrants, direction, suspension GM modifiée, quatre freins à disque, Positraction, roues, pneus, échappements latéraux fonctionnels selon série et équipements.",
+                  "piece_concernee": "Structure, sécurité et provenance Excalibur",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de transformation sur véhicule artisanal",
+                  "cout_reparation_estime": "Très élevé : environ 800 à plus de 25 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.excaliburclassics.com/the-excalibur-story-2/",
+        "https://www.excaliburclassics.com/excaliburs/",
+        "https://ww2.arb.ca.gov/sites/default/files/classic/msprog/nvepb/executive_orders/EO%20Web%20Files/PC-LDT-MDV/1974/0001/pc-ldt-mdv_pc_a-25-1.pdf"
+      ]
+    }
+  ],
+  "source_catalogue": "VehiclesDB 2026.08.2 (CC-BY 4.0)"
+}

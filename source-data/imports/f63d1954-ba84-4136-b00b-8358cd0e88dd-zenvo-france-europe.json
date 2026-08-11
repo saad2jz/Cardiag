@@ -1,0 +1,70 @@
+{
+  "nom": "Zenvo",
+  "modeles": [
+    {
+      "nom": "TSR-S",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "5.8 V8 Biturbo — 1193 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 1193,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "État du groupe motopropulseur, historique d’entretien et disponibilité des pièces",
+                  "symptomes": [
+                    "Bruit, voyant ou fonctionnement irrégulier"
+                  ],
+                  "kilometrage_apparition": "Variable selon âge, usage et entretien.",
+                  "diagnostic": "Inspection ciblée, lecture des défauts si disponible et essai routier.",
+                  "piece_concernee": "Groupe motopropulseur et périphériques",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Trains roulants, direction et freinage",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque inspection.",
+                  "diagnostic": "Contrôle des jeux, de la géométrie et des éléments de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Circuit électrique et alimentation",
+                  "symptomes": [
+                    "Message tableau de bord",
+                    "Démarrage difficile"
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Test de batterie, charge et connectiques.",
+                  "piece_concernee": "Circuit électrique",
+                  "gravite": "À évaluer",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

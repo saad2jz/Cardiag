@@ -1,0 +1,2656 @@
+{
+  "nom": "Maserati",
+  "modeles": [
+    {
+      "nom": "3200 GT / Coupé / Spyder",
+      "generations": [
+        {
+          "code_chassis": "AM338 (3200GT) / M138 (Coupé/Spyder)",
+          "annees": "1998-2007",
+          "phases": [
+            "3200 GT (1998-2002)",
+            "Coupé/Spyder (2001-2007) - GranSport (2003-2007)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 3.2 Bi-Turbo",
+              "code_moteur": "AM585 / F136 (dérivé Ferrari)",
+              "cylindree": "3.2L-4.2L",
+              "puissance_ch": 370,
+              "boite": [
+                "BVM6",
+                "Cambiocorsa (robotisée, Coupé/Spyder)"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Boîte robotisée Cambiocorsa capricieuse, à-coups et embrayage à usure rapide",
+                  "symptomes": [
+                    "Boîte robotisée Cambiocorsa capricieuse, à-coups et embrayage à usure rapide"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Turbos (3200 GT) fragiles, entretien rigoureux nécessaire",
+                  "symptomes": [
+                    "Turbos (3200 GT) fragiles, entretien rigoureux nécessaire"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Électronique embarquée capricieuse, faisceaux et calculateurs sensibles au vieillissement",
+                  "symptomes": [
+                    "Électronique embarquée capricieuse, faisceaux et calculateurs sensibles au vieillissement"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Courroies de distribution à remplacer strictement selon préconisations",
+                  "symptomes": [
+                    "Courroies de distribution à remplacer strictement selon préconisations"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Coût d'entretien élevé, pièces dérivées Ferrari",
+                  "symptomes": [
+                    "Coût d'entretien élevé, pièces dérivées Ferrari"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "V8 4.2 atmosphérique",
+              "code_moteur": "AM585 / F136 (dérivé Ferrari)",
+              "cylindree": "3.2L-4.2L",
+              "puissance_ch": 390,
+              "boite": [
+                "BVM6",
+                "Cambiocorsa (robotisée, Coupé/Spyder)"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Boîte robotisée Cambiocorsa capricieuse, à-coups et embrayage à usure rapide",
+                  "symptomes": [
+                    "Boîte robotisée Cambiocorsa capricieuse, à-coups et embrayage à usure rapide"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Turbos (3200 GT) fragiles, entretien rigoureux nécessaire",
+                  "symptomes": [
+                    "Turbos (3200 GT) fragiles, entretien rigoureux nécessaire"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Électronique embarquée capricieuse, faisceaux et calculateurs sensibles au vieillissement",
+                  "symptomes": [
+                    "Électronique embarquée capricieuse, faisceaux et calculateurs sensibles au vieillissement"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Courroies de distribution à remplacer strictement selon préconisations",
+                  "symptomes": [
+                    "Courroies de distribution à remplacer strictement selon préconisations"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Coût d'entretien élevé, pièces dérivées Ferrari",
+                  "symptomes": [
+                    "Coût d'entretien élevé, pièces dérivées Ferrari"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Biturbo",
+      "generations": [
+        {
+          "code_chassis": "AM331/AM332/AM337",
+          "annees": "1981-1994",
+          "phases": [
+            "Biturbo (1981-1988)",
+            "222/228 (1988-1991)",
+            "Shamal/Ghibli II (1990-1994)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V6 2.0 Bi-Turbo",
+              "code_moteur": "AM452/AM457",
+              "cylindree": "2.0L-2.5L",
+              "puissance_ch": 180,
+              "boite": [
+                "BVM5",
+                "BVA3"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Turbos IHI fragiles et sensibles à l'entretien rigoureux (vidanges fréquentes impératives)",
+                  "symptomes": [
+                    "Turbos IHI fragiles et sensibles à l'entretien rigoureux (vidanges fréquentes impératives)"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Corrosion très marquée, modèle réputé fragile à la rouille (bas de caisse, ailes)",
+                  "symptomes": [
+                    "Corrosion très marquée, modèle réputé fragile à la rouille (bas de caisse, ailes)"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Injection/allumage électronique (premières générations) capricieux et sujet aux pannes",
+                  "symptomes": [
+                    "Injection/allumage électronique (premières générations) capricieux et sujet aux pannes"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Fiabilité générale réputée problématique, nombreux points de vigilance électriques",
+                  "symptomes": [
+                    "Fiabilité générale réputée problématique, nombreux points de vigilance électriques"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Boîte automatique ZF fragile en cas de manque d'entretien",
+                  "symptomes": [
+                    "Boîte automatique ZF fragile en cas de manque d'entretien"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "V6 2.5 Bi-Turbo",
+              "code_moteur": "AM452/AM457",
+              "cylindree": "2.0L-2.5L",
+              "puissance_ch": 245,
+              "boite": [
+                "BVM5",
+                "BVA3"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Turbos IHI fragiles et sensibles à l'entretien rigoureux (vidanges fréquentes impératives)",
+                  "symptomes": [
+                    "Turbos IHI fragiles et sensibles à l'entretien rigoureux (vidanges fréquentes impératives)"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Corrosion très marquée, modèle réputé fragile à la rouille (bas de caisse, ailes)",
+                  "symptomes": [
+                    "Corrosion très marquée, modèle réputé fragile à la rouille (bas de caisse, ailes)"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Injection/allumage électronique (premières générations) capricieux et sujet aux pannes",
+                  "symptomes": [
+                    "Injection/allumage électronique (premières générations) capricieux et sujet aux pannes"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Fiabilité générale réputée problématique, nombreux points de vigilance électriques",
+                  "symptomes": [
+                    "Fiabilité générale réputée problématique, nombreux points de vigilance électriques"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Boîte automatique ZF fragile en cas de manque d'entretien",
+                  "symptomes": [
+                    "Boîte automatique ZF fragile en cas de manque d'entretien"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Bora / Merak",
+      "generations": [
+        {
+          "code_chassis": "AM117 (Bora) / AM122 (Merak)",
+          "annees": "1971-1983",
+          "phases": [
+            "Bora (1971-1978)",
+            "Merak (1972-1983)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Bora V8 4.7",
+              "code_moteur": "AM117/AM122",
+              "cylindree": "3.0L-4.9L",
+              "puissance_ch": 310,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Corrosion importante du châssis et de la carrosserie sur les exemplaires non restaurés",
+                  "symptomes": [
+                    "Corrosion importante du châssis et de la carrosserie sur les exemplaires non restaurés"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Système hydraulique Citroën (freins, direction, suspension - hérité de la période Citroën) complexe et coûteux à entretenir",
+                  "symptomes": [
+                    "Système hydraulique Citroën (freins, direction, suspension - hérité de la période Citroën) complexe et coûteux à entretenir"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Carburateurs multiples délicats à régler",
+                  "symptomes": [
+                    "Carburateurs multiples délicats à régler"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Rareté des pièces spécifiques aujourd'hui, notamment les éléments hydrauliques",
+                  "symptomes": [
+                    "Rareté des pièces spécifiques aujourd'hui, notamment les éléments hydrauliques"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Bora V8 4.9",
+              "code_moteur": "AM117/AM122",
+              "cylindree": "3.0L-4.9L",
+              "puissance_ch": 320,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Corrosion importante du châssis et de la carrosserie sur les exemplaires non restaurés",
+                  "symptomes": [
+                    "Corrosion importante du châssis et de la carrosserie sur les exemplaires non restaurés"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Système hydraulique Citroën (freins, direction, suspension - hérité de la période Citroën) complexe et coûteux à entretenir",
+                  "symptomes": [
+                    "Système hydraulique Citroën (freins, direction, suspension - hérité de la période Citroën) complexe et coûteux à entretenir"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Carburateurs multiples délicats à régler",
+                  "symptomes": [
+                    "Carburateurs multiples délicats à régler"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Rareté des pièces spécifiques aujourd'hui, notamment les éléments hydrauliques",
+                  "symptomes": [
+                    "Rareté des pièces spécifiques aujourd'hui, notamment les éléments hydrauliques"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Merak V6 3.0",
+              "code_moteur": "AM117/AM122",
+              "cylindree": "3.0L-4.9L",
+              "puissance_ch": 190,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Corrosion importante du châssis et de la carrosserie sur les exemplaires non restaurés",
+                  "symptomes": [
+                    "Corrosion importante du châssis et de la carrosserie sur les exemplaires non restaurés"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Système hydraulique Citroën (freins, direction, suspension - hérité de la période Citroën) complexe et coûteux à entretenir",
+                  "symptomes": [
+                    "Système hydraulique Citroën (freins, direction, suspension - hérité de la période Citroën) complexe et coûteux à entretenir"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Carburateurs multiples délicats à régler",
+                  "symptomes": [
+                    "Carburateurs multiples délicats à régler"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Rareté des pièces spécifiques aujourd'hui, notamment les éléments hydrauliques",
+                  "symptomes": [
+                    "Rareté des pièces spécifiques aujourd'hui, notamment les éléments hydrauliques"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Ghibli (1967)",
+      "generations": [
+        {
+          "code_chassis": "AM115",
+          "annees": "1967-1973",
+          "phases": [
+            "Ghibli",
+            "Ghibli SS",
+            "Ghibli Spyder"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 4.7 atmosphérique",
+              "code_moteur": "AM115",
+              "cylindree": "4.7L-4.9L",
+              "puissance_ch": 310,
+              "boite": [
+                "BVM5",
+                "BVA3 (Borg-Warner)"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Carburateurs Weber quadruple corps délicats à synchroniser",
+                  "symptomes": [
+                    "Carburateurs Weber quadruple corps délicats à synchroniser"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Corrosion du châssis et de la carrosserie sur les exemplaires non restaurés",
+                  "symptomes": [
+                    "Corrosion du châssis et de la carrosserie sur les exemplaires non restaurés"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Freins à disque de conception ancienne peu endurants en usage moderne",
+                  "symptomes": [
+                    "Freins à disque de conception ancienne peu endurants en usage moderne"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Rareté et coût élevé des pièces mécaniques spécifiques aujourd'hui",
+                  "symptomes": [
+                    "Rareté et coût élevé des pièces mécaniques spécifiques aujourd'hui"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "V8 4.9 atmosphérique",
+              "code_moteur": "AM115",
+              "cylindree": "4.7L-4.9L",
+              "puissance_ch": 335,
+              "boite": [
+                "BVM5",
+                "BVA3 (Borg-Warner)"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Carburateurs Weber quadruple corps délicats à synchroniser",
+                  "symptomes": [
+                    "Carburateurs Weber quadruple corps délicats à synchroniser"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Corrosion du châssis et de la carrosserie sur les exemplaires non restaurés",
+                  "symptomes": [
+                    "Corrosion du châssis et de la carrosserie sur les exemplaires non restaurés"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Freins à disque de conception ancienne peu endurants en usage moderne",
+                  "symptomes": [
+                    "Freins à disque de conception ancienne peu endurants en usage moderne"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Rareté et coût élevé des pièces mécaniques spécifiques aujourd'hui",
+                  "symptomes": [
+                    "Rareté et coût élevé des pièces mécaniques spécifiques aujourd'hui"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "GranTurismo / GranCabrio",
+      "generations": [
+        {
+          "code_chassis": "M145",
+          "annees": "2007-2019",
+          "phases": [
+            "GranTurismo (2007-2019)",
+            "GranTurismo S/MC (2008-2019)",
+            "GranCabrio (2010-2019)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 4.2 atmosphérique",
+              "code_moteur": "F136 (dérivé Ferrari)",
+              "cylindree": "4.2L-4.7L",
+              "puissance_ch": 405,
+              "boite": [
+                "BVA6 (ZF)",
+                "MC Shift (robotisée, versions S/MC)"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Boîte robotisée MC Shift capricieuse sur les versions équipées, à-coups à basse vitesse",
+                  "symptomes": [
+                    "Boîte robotisée MC Shift capricieuse sur les versions équipées, à-coups à basse vitesse"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Consommation d'huile à surveiller sur les exemplaires à haut kilométrage",
+                  "symptomes": [
+                    "Consommation d'huile à surveiller sur les exemplaires à haut kilométrage"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Électronique embarquée (climatisation, infodivertissement) sujette à pannes intermittentes",
+                  "symptomes": [
+                    "Électronique embarquée (climatisation, infodivertissement) sujette à pannes intermittentes"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Courroies de distribution à remplacer strictement selon préconisations",
+                  "symptomes": [
+                    "Courroies de distribution à remplacer strictement selon préconisations"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Coût d'entretien élevé, pièces spécifiques dérivées de blocs Ferrari",
+                  "symptomes": [
+                    "Coût d'entretien élevé, pièces spécifiques dérivées de blocs Ferrari"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "V8 4.7 atmosphérique",
+              "code_moteur": "F136 (dérivé Ferrari)",
+              "cylindree": "4.2L-4.7L",
+              "puissance_ch": 460,
+              "boite": [
+                "BVA6 (ZF)",
+                "MC Shift (robotisée, versions S/MC)"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Boîte robotisée MC Shift capricieuse sur les versions équipées, à-coups à basse vitesse",
+                  "symptomes": [
+                    "Boîte robotisée MC Shift capricieuse sur les versions équipées, à-coups à basse vitesse"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Consommation d'huile à surveiller sur les exemplaires à haut kilométrage",
+                  "symptomes": [
+                    "Consommation d'huile à surveiller sur les exemplaires à haut kilométrage"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Électronique embarquée (climatisation, infodivertissement) sujette à pannes intermittentes",
+                  "symptomes": [
+                    "Électronique embarquée (climatisation, infodivertissement) sujette à pannes intermittentes"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Courroies de distribution à remplacer strictement selon préconisations",
+                  "symptomes": [
+                    "Courroies de distribution à remplacer strictement selon préconisations"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Coût d'entretien élevé, pièces spécifiques dérivées de blocs Ferrari",
+                  "symptomes": [
+                    "Coût d'entretien élevé, pièces spécifiques dérivées de blocs Ferrari"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "M192 (Folgore)",
+          "annees": "2023-aujourd'hui",
+          "phases": [
+            "GranTurismo Modena/Trofeo (thermique)",
+            "GranTurismo Folgore (électrique)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V6 3.0L Bi-Turbo Nettuno",
+              "code_moteur": "F160 (Nettuno)",
+              "cylindree": "3.0L",
+              "puissance_ch": 550,
+              "boite": [
+                "BVA8 (ZF 8HP)"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Technologie de préchambre de combustion (Nettuno) complexe, maintenance spécialisée requise",
+                  "symptomes": [
+                    "Technologie de préchambre de combustion (Nettuno) complexe, maintenance spécialisée requise"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Turbos sollicités en usage sportif intensif",
+                  "symptomes": [
+                    "Turbos sollicités en usage sportif intensif"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Électronique et infodivertissement de nouvelle génération encore jeunes, retours d'expérience limités à ce jour",
+                  "symptomes": [
+                    "Électronique et infodivertissement de nouvelle génération encore jeunes, retours d'expérience limités à ce jour"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            },
+            {
+              "type": "Electrique",
+              "nom": "Folgore - Tri-moteur électrique 760ch",
+              "code_moteur": "3 moteurs électriques synchrones",
+              "cylindree": "N/A",
+              "puissance_ch": 760,
+              "boite": [
+                "Réducteur fixe par essieu"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Batterie haute tension sensible à la dégradation en cas de recharges rapides fréquentes",
+                  "symptomes": [
+                    "Batterie haute tension sensible à la dégradation en cas de recharges rapides fréquentes"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Poids important lié à la batterie sollicitant fortement les trains roulants",
+                  "symptomes": [
+                    "Poids important lié à la batterie sollicitant fortement les trains roulants"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Modèle récent, retours de fiabilité à long terme encore limités",
+                  "symptomes": [
+                    "Modèle récent, retours de fiabilité à long terme encore limités"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Coût de remplacement de la batterie très élevé hors garantie",
+                  "symptomes": [
+                    "Coût de remplacement de la batterie très élevé hors garantie"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Indy",
+      "generations": [
+        {
+          "code_chassis": "AM116",
+          "annees": "1969-1975",
+          "phases": [
+            "Phase unique avec évolutions moteur"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 4.2 atmosphérique",
+              "code_moteur": "AM116",
+              "cylindree": "4.2L-4.9L",
+              "puissance_ch": 260,
+              "boite": [
+                "BVM5",
+                "BVA3"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Carburateurs Weber quadruple corps délicats à synchroniser",
+                  "symptomes": [
+                    "Carburateurs Weber quadruple corps délicats à synchroniser"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Corrosion importante du châssis et de la carrosserie sur les exemplaires non restaurés",
+                  "symptomes": [
+                    "Corrosion importante du châssis et de la carrosserie sur les exemplaires non restaurés"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Rareté des pièces mécaniques spécifiques aujourd'hui",
+                  "symptomes": [
+                    "Rareté des pièces mécaniques spécifiques aujourd'hui"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Freins à disque de conception ancienne peu endurants en usage moderne",
+                  "symptomes": [
+                    "Freins à disque de conception ancienne peu endurants en usage moderne"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "V8 4.7 atmosphérique",
+              "code_moteur": "AM116",
+              "cylindree": "4.2L-4.9L",
+              "puissance_ch": 290,
+              "boite": [
+                "BVM5",
+                "BVA3"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Carburateurs Weber quadruple corps délicats à synchroniser",
+                  "symptomes": [
+                    "Carburateurs Weber quadruple corps délicats à synchroniser"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Corrosion importante du châssis et de la carrosserie sur les exemplaires non restaurés",
+                  "symptomes": [
+                    "Corrosion importante du châssis et de la carrosserie sur les exemplaires non restaurés"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Rareté des pièces mécaniques spécifiques aujourd'hui",
+                  "symptomes": [
+                    "Rareté des pièces mécaniques spécifiques aujourd'hui"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Freins à disque de conception ancienne peu endurants en usage moderne",
+                  "symptomes": [
+                    "Freins à disque de conception ancienne peu endurants en usage moderne"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "V8 4.9 atmosphérique",
+              "code_moteur": "AM116",
+              "cylindree": "4.2L-4.9L",
+              "puissance_ch": 320,
+              "boite": [
+                "BVM5",
+                "BVA3"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Carburateurs Weber quadruple corps délicats à synchroniser",
+                  "symptomes": [
+                    "Carburateurs Weber quadruple corps délicats à synchroniser"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Corrosion importante du châssis et de la carrosserie sur les exemplaires non restaurés",
+                  "symptomes": [
+                    "Corrosion importante du châssis et de la carrosserie sur les exemplaires non restaurés"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Rareté des pièces mécaniques spécifiques aujourd'hui",
+                  "symptomes": [
+                    "Rareté des pièces mécaniques spécifiques aujourd'hui"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Freins à disque de conception ancienne peu endurants en usage moderne",
+                  "symptomes": [
+                    "Freins à disque de conception ancienne peu endurants en usage moderne"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Karif",
+      "generations": [
+        {
+          "code_chassis": "AM342",
+          "annees": "1988-1992",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V6 2.8L Bi-Turbo",
+              "code_moteur": "AM452",
+              "cylindree": "2.8L",
+              "puissance_ch": 285,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Turbos IHI fragiles nécessitant un entretien rigoureux",
+                  "symptomes": [
+                    "Turbos IHI fragiles nécessitant un entretien rigoureux"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Corrosion marquée, héritage des soucis de la gamme Biturbo",
+                  "symptomes": [
+                    "Corrosion marquée, héritage des soucis de la gamme Biturbo"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Électronique embarquée capricieuse et vieillissante",
+                  "symptomes": [
+                    "Électronique embarquée capricieuse et vieillissante"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Production très limitée rendant les pièces spécifiques rares aujourd'hui",
+                  "symptomes": [
+                    "Production très limitée rendant les pièces spécifiques rares aujourd'hui"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Khamsin",
+      "generations": [
+        {
+          "code_chassis": "AM120",
+          "annees": "1974-1982",
+          "phases": [
+            "Phase unique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 4.9L atmosphérique",
+              "code_moteur": "AM120",
+              "cylindree": "4.9L",
+              "puissance_ch": 320,
+              "boite": [
+                "BVM5",
+                "BVA3"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Système hydraulique Citroën (freins, direction) complexe et coûteux à entretenir",
+                  "symptomes": [
+                    "Système hydraulique Citroën (freins, direction) complexe et coûteux à entretenir"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Corrosion de la carrosserie et du châssis sur les exemplaires peu préservés",
+                  "symptomes": [
+                    "Corrosion de la carrosserie et du châssis sur les exemplaires peu préservés"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Carburateurs Weber délicats à synchroniser",
+                  "symptomes": [
+                    "Carburateurs Weber délicats à synchroniser"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Rareté extrême des pièces détachées aujourd'hui",
+                  "symptomes": [
+                    "Rareté extrême des pièces détachées aujourd'hui"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Levante",
+      "generations": [
+        {
+          "code_chassis": "M161/M162",
+          "annees": "2016-aujourd'hui",
+          "phases": [
+            "Phase 1 (2016-2020)",
+            "Phase 2 restylée (2020-aujourd'hui)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V6 3.0L Bi-Turbo",
+              "code_moteur": "F160 (dérivé Ferrari)",
+              "cylindree": "3.0L",
+              "puissance_ch": 430,
+              "boite": [
+                "BVA8 (ZF 8HP)"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Suspension pneumatique pilotée coûteuse en cas de panne de compresseur",
+                  "symptomes": [
+                    "Suspension pneumatique pilotée coûteuse en cas de panne de compresseur"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Électronique et infodivertissement sujets à bugs et lenteurs",
+                  "symptomes": [
+                    "Électronique et infodivertissement sujets à bugs et lenteurs"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Turbos sollicités en usage sportif, entretien rigoureux nécessaire",
+                  "symptomes": [
+                    "Turbos sollicités en usage sportif, entretien rigoureux nécessaire"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Poids important (SUV) accentuant l'usure des trains roulants et pneumatiques",
+                  "symptomes": [
+                    "Poids important (SUV) accentuant l'usure des trains roulants et pneumatiques"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Fiabilité globale jugée en retrait par rapport aux concurrents allemands du segment",
+                  "symptomes": [
+                    "Fiabilité globale jugée en retrait par rapport aux concurrents allemands du segment"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "V6 Diesel 3.0",
+              "code_moteur": "V6 diesel (base groupe VM Motori/FCA)",
+              "cylindree": "3.0L",
+              "puissance_ch": 250,
+              "boite": [
+                "BVA8 (ZF 8HP)"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Vanne EGR et FAP sensibles à l'encrassement en usage urbain",
+                  "symptomes": [
+                    "Vanne EGR et FAP sensibles à l'encrassement en usage urbain"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Turbo sensible à l'encrassement du circuit d'huile",
+                  "symptomes": [
+                    "Turbo sensible à l'encrassement du circuit d'huile"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Faible diffusion rendant certaines pièces spécifiques diesel plus rares",
+                  "symptomes": [
+                    "Faible diffusion rendant certaines pièces spécifiques diesel plus rares"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Arrêts moteur imprévus rapportés sur certains exemplaires 2017, avec réparations coûteuses",
+                  "symptomes": [
+                    "Arrêts moteur imprévus rapportés sur certains exemplaires 2017, avec réparations coûteuses"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Régénération du filtre à particules parfois aléatoire, provoquant des pertes de puissance et interventions coûteuses (cas d'injecteurs remplacés dès 23 000 km rapportés)",
+                  "symptomes": [
+                    "Régénération du filtre à particules parfois aléatoire, provoquant des pertes de puissance et interventions coûteuses (cas d'injecteurs remplacés dès 23 000 km rapportés)"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Haut-parleurs d'échappement électroniques (simulation sonore) sujets à dysfonctionnement, supprimant le son en mode sport",
+                  "symptomes": [
+                    "Haut-parleurs d'échappement électroniques (simulation sonore) sujets à dysfonctionnement, supprimant le son en mode sport"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Infiltrations d'eau dans l'habitacle rapportées sur certains exemplaires",
+                  "symptomes": [
+                    "Infiltrations d'eau dans l'habitacle rapportées sur certains exemplaires"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Bloc diesel partagé avec le Jeep Grand Cherokee (ex-groupe FCA/VM Motori), pièces spécifiques Maserati plus onéreuses",
+                  "symptomes": [
+                    "Bloc diesel partagé avec le Jeep Grand Cherokee (ex-groupe FCA/VM Motori), pièces spécifiques Maserati plus onéreuses"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "V6 Diesel 3.0",
+              "code_moteur": "V6 diesel (base groupe VM Motori/FCA)",
+              "cylindree": "3.0L",
+              "puissance_ch": 275,
+              "boite": [
+                "BVA8 (ZF 8HP)"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Vanne EGR et FAP sensibles à l'encrassement en usage urbain",
+                  "symptomes": [
+                    "Vanne EGR et FAP sensibles à l'encrassement en usage urbain"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Turbo sensible à l'encrassement du circuit d'huile",
+                  "symptomes": [
+                    "Turbo sensible à l'encrassement du circuit d'huile"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Faible diffusion rendant certaines pièces spécifiques diesel plus rares",
+                  "symptomes": [
+                    "Faible diffusion rendant certaines pièces spécifiques diesel plus rares"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Arrêts moteur imprévus rapportés sur certains exemplaires 2017, avec réparations coûteuses",
+                  "symptomes": [
+                    "Arrêts moteur imprévus rapportés sur certains exemplaires 2017, avec réparations coûteuses"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Régénération du filtre à particules parfois aléatoire, provoquant des pertes de puissance et interventions coûteuses (cas d'injecteurs remplacés dès 23 000 km rapportés)",
+                  "symptomes": [
+                    "Régénération du filtre à particules parfois aléatoire, provoquant des pertes de puissance et interventions coûteuses (cas d'injecteurs remplacés dès 23 000 km rapportés)"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Haut-parleurs d'échappement électroniques (simulation sonore) sujets à dysfonctionnement, supprimant le son en mode sport",
+                  "symptomes": [
+                    "Haut-parleurs d'échappement électroniques (simulation sonore) sujets à dysfonctionnement, supprimant le son en mode sport"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Infiltrations d'eau dans l'habitacle rapportées sur certains exemplaires",
+                  "symptomes": [
+                    "Infiltrations d'eau dans l'habitacle rapportées sur certains exemplaires"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Bloc diesel partagé avec le Jeep Grand Cherokee (ex-groupe FCA/VM Motori), pièces spécifiques Maserati plus onéreuses",
+                  "symptomes": [
+                    "Bloc diesel partagé avec le Jeep Grand Cherokee (ex-groupe FCA/VM Motori), pièces spécifiques Maserati plus onéreuses"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Trofeo V8 3.8L Bi-Turbo 580ch",
+              "code_moteur": "F154 (dérivé Ferrari)",
+              "cylindree": "3.8L",
+              "puissance_ch": 580,
+              "boite": [
+                "BVA8 (ZF 8HP)"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Turbos fortement sollicités, entretien rigoureux et vidanges fréquentes recommandées",
+                  "symptomes": [
+                    "Turbos fortement sollicités, entretien rigoureux et vidanges fréquentes recommandées"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Freins carbone-céramique (option) coûteux à l'entretien",
+                  "symptomes": [
+                    "Freins carbone-céramique (option) coûteux à l'entretien"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Suspension pilotée coûteuse en cas de panne",
+                  "symptomes": [
+                    "Suspension pilotée coûteuse en cas de panne"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Coût d'entretien général très élevé",
+                  "symptomes": [
+                    "Coût d'entretien général très élevé"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            },
+            {
+              "type": "Hybride",
+              "nom": "Hybrid GT 2.0",
+              "code_moteur": "L4 2.0 Turbo (base groupe Stellantis) + module 48V",
+              "cylindree": "2.0L",
+              "puissance_ch": 330,
+              "boite": [
+                "BVA8 (ZF 8HP)"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "4 cylindres perçu comme en décalage avec l'image de la marque par rapport aux versions V6/V8",
+                  "symptomes": [
+                    "4 cylindres perçu comme en décalage avec l'image de la marque par rapport aux versions V6/V8"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Système mild-hybrid à apport limité sur la consommation réelle",
+                  "symptomes": [
+                    "Système mild-hybrid à apport limité sur la consommation réelle"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Modèle encore relativement récent, retours de fiabilité à très haut kilométrage encore limités",
+                  "symptomes": [
+                    "Modèle encore relativement récent, retours de fiabilité à très haut kilométrage encore limités"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Turbo sollicité fortement pour compenser le déficit de cylindres par rapport aux versions V6",
+                  "symptomes": [
+                    "Turbo sollicité fortement pour compenser le déficit de cylindres par rapport aux versions V6"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            },
+            {
+              "type": "Hybride",
+              "nom": "Hybrid Executive 2.0",
+              "code_moteur": "L4 2.0 Turbo (base groupe Stellantis) + module 48V",
+              "cylindree": "2.0L",
+              "puissance_ch": 330,
+              "boite": [
+                "BVA8 (ZF 8HP)"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "4 cylindres perçu comme en décalage avec l'image de la marque par rapport aux versions V6/V8",
+                  "symptomes": [
+                    "4 cylindres perçu comme en décalage avec l'image de la marque par rapport aux versions V6/V8"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Système mild-hybrid à apport limité sur la consommation réelle",
+                  "symptomes": [
+                    "Système mild-hybrid à apport limité sur la consommation réelle"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Modèle encore relativement récent, retours de fiabilité à très haut kilométrage encore limités",
+                  "symptomes": [
+                    "Modèle encore relativement récent, retours de fiabilité à très haut kilométrage encore limités"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Turbo sollicité fortement pour compenser le déficit de cylindres par rapport aux versions V6",
+                  "symptomes": [
+                    "Turbo sollicité fortement pour compenser le déficit de cylindres par rapport aux versions V6"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "MC20",
+      "generations": [
+        {
+          "code_chassis": "M192",
+          "annees": "2020-aujourd'hui",
+          "phases": [
+            "MC20 Coupé",
+            "MC20 Cielo (cabriolet)",
+            "MC20 Folgore (électrique, à venir)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V6 3.0L Bi-Turbo Nettuno",
+              "code_moteur": "F160 (Nettuno, préchambre de combustion)",
+              "cylindree": "3.0L",
+              "puissance_ch": 630,
+              "boite": [
+                "BVA8 (double embrayage)"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Technologie de préchambre de combustion (Nettuno) inédite et complexe, maintenance exclusivement réservée au réseau agréé",
+                  "symptomes": [
+                    "Technologie de préchambre de combustion (Nettuno) inédite et complexe, maintenance exclusivement réservée au réseau agréé"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Portières papillon aux vérins sensibles avec l'usage intensif",
+                  "symptomes": [
+                    "Portières papillon aux vérins sensibles avec l'usage intensif"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Modèle relativement récent, recul limité sur la fiabilité à long terme",
+                  "symptomes": [
+                    "Modèle relativement récent, recul limité sur la fiabilité à long terme"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Coût d'entretien et de pièces très élevé",
+                  "symptomes": [
+                    "Coût d'entretien et de pièces très élevé"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Quattroporte",
+      "generations": [
+        {
+          "code_chassis": "AM330 (III)",
+          "annees": "1979-1990",
+          "phases": [
+            "Quattroporte III"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 4.2 atmosphérique",
+              "code_moteur": "AM330",
+              "cylindree": "4.2L-4.9L",
+              "puissance_ch": 260,
+              "boite": [
+                "BVM5",
+                "BVA3"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Corrosion importante de la carrosserie et du châssis",
+                  "symptomes": [
+                    "Corrosion importante de la carrosserie et du châssis"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Carburateurs/injection Bosch K-Jetronic sensibles au vieillissement",
+                  "symptomes": [
+                    "Carburateurs/injection Bosch K-Jetronic sensibles au vieillissement"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Fiabilité électrique généralement problématique",
+                  "symptomes": [
+                    "Fiabilité électrique généralement problématique"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Rareté des pièces spécifiques aujourd'hui",
+                  "symptomes": [
+                    "Rareté des pièces spécifiques aujourd'hui"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "V8 4.9 atmosphérique",
+              "code_moteur": "AM330",
+              "cylindree": "4.2L-4.9L",
+              "puissance_ch": 280,
+              "boite": [
+                "BVM5",
+                "BVA3"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Corrosion importante de la carrosserie et du châssis",
+                  "symptomes": [
+                    "Corrosion importante de la carrosserie et du châssis"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Carburateurs/injection Bosch K-Jetronic sensibles au vieillissement",
+                  "symptomes": [
+                    "Carburateurs/injection Bosch K-Jetronic sensibles au vieillissement"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Fiabilité électrique généralement problématique",
+                  "symptomes": [
+                    "Fiabilité électrique généralement problématique"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Rareté des pièces spécifiques aujourd'hui",
+                  "symptomes": [
+                    "Rareté des pièces spécifiques aujourd'hui"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "M139 (IV)",
+          "annees": "1994-2001",
+          "phases": [
+            "Quattroporte IV"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V6 Bi-Turbo",
+              "code_moteur": "AM570",
+              "cylindree": "2.0L-3.2L",
+              "puissance_ch": 285,
+              "boite": [
+                "BVM6",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Turbos fragiles nécessitant un entretien rigoureux",
+                  "symptomes": [
+                    "Turbos fragiles nécessitant un entretien rigoureux"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Électronique embarquée capricieuse, faisceaux vieillissants",
+                  "symptomes": [
+                    "Électronique embarquée capricieuse, faisceaux vieillissants"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Corrosion moins marquée que les générations précédentes mais toujours présente",
+                  "symptomes": [
+                    "Corrosion moins marquée que les générations précédentes mais toujours présente"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Boîte automatique fragile en cas de manque d'entretien du liquide",
+                  "symptomes": [
+                    "Boîte automatique fragile en cas de manque d'entretien du liquide"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "V8 Bi-Turbo",
+              "code_moteur": "AM570",
+              "cylindree": "2.0L-3.2L",
+              "puissance_ch": 335,
+              "boite": [
+                "BVM6",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Turbos fragiles nécessitant un entretien rigoureux",
+                  "symptomes": [
+                    "Turbos fragiles nécessitant un entretien rigoureux"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Électronique embarquée capricieuse, faisceaux vieillissants",
+                  "symptomes": [
+                    "Électronique embarquée capricieuse, faisceaux vieillissants"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Corrosion moins marquée que les générations précédentes mais toujours présente",
+                  "symptomes": [
+                    "Corrosion moins marquée que les générations précédentes mais toujours présente"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Boîte automatique fragile en cas de manque d'entretien du liquide",
+                  "symptomes": [
+                    "Boîte automatique fragile en cas de manque d'entretien du liquide"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "M139 (V)",
+          "annees": "2003-2012",
+          "phases": [
+            "Quattroporte V"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 4.2 atmosphérique",
+              "code_moteur": "F136 (dérivé Ferrari)",
+              "cylindree": "4.2L-4.7L",
+              "puissance_ch": 405,
+              "boite": [
+                "BVM6",
+                "BVA6 (ZF)",
+                "DuoSelect (robotisée)"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Boîte robotisée DuoSelect capricieuse, à-coups et usure prématurée de l'embrayage",
+                  "symptomes": [
+                    "Boîte robotisée DuoSelect capricieuse, à-coups et usure prématurée de l'embrayage"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Courroies de distribution à remplacer strictement selon préconisations",
+                  "symptomes": [
+                    "Courroies de distribution à remplacer strictement selon préconisations"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Consommation d'huile à surveiller sur les exemplaires à haut kilométrage",
+                  "symptomes": [
+                    "Consommation d'huile à surveiller sur les exemplaires à haut kilométrage"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Électronique embarquée (climatisation, tableau de bord) sujette à pannes intermittentes",
+                  "symptomes": [
+                    "Électronique embarquée (climatisation, tableau de bord) sujette à pannes intermittentes"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Coût d'entretien élevé (pièces dérivées Ferrari)",
+                  "symptomes": [
+                    "Coût d'entretien élevé (pièces dérivées Ferrari)"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "V8 4.7 atmosphérique",
+              "code_moteur": "F136 (dérivé Ferrari)",
+              "cylindree": "4.2L-4.7L",
+              "puissance_ch": 460,
+              "boite": [
+                "BVM6",
+                "BVA6 (ZF)",
+                "DuoSelect (robotisée)"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Boîte robotisée DuoSelect capricieuse, à-coups et usure prématurée de l'embrayage",
+                  "symptomes": [
+                    "Boîte robotisée DuoSelect capricieuse, à-coups et usure prématurée de l'embrayage"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Courroies de distribution à remplacer strictement selon préconisations",
+                  "symptomes": [
+                    "Courroies de distribution à remplacer strictement selon préconisations"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Consommation d'huile à surveiller sur les exemplaires à haut kilométrage",
+                  "symptomes": [
+                    "Consommation d'huile à surveiller sur les exemplaires à haut kilométrage"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Électronique embarquée (climatisation, tableau de bord) sujette à pannes intermittentes",
+                  "symptomes": [
+                    "Électronique embarquée (climatisation, tableau de bord) sujette à pannes intermittentes"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Coût d'entretien élevé (pièces dérivées Ferrari)",
+                  "symptomes": [
+                    "Coût d'entretien élevé (pièces dérivées Ferrari)"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "M156 (VI)",
+          "annees": "2013-2023",
+          "phases": [
+            "Phase 1 (2013-2016)",
+            "Phase 2 restylée (2016-2023)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V6 Bi-Turbo 3.0",
+              "code_moteur": "F160 (V6, base Ferrari) / F154 (V8)",
+              "cylindree": "3.0L-3.8L",
+              "puissance_ch": 350,
+              "boite": [
+                "BVA8 (ZF 8HP)"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Turbos sollicités en usage sportif, vidanges fréquentes recommandées",
+                  "symptomes": [
+                    "Turbos sollicités en usage sportif, vidanges fréquentes recommandées"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Électronique et infodivertissement (Maserati Touch Control) sujets à bugs et lenteurs",
+                  "symptomes": [
+                    "Électronique et infodivertissement (Maserati Touch Control) sujets à bugs et lenteurs"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Suspension pneumatique pilotée (Skyhook) coûteuse en cas de panne",
+                  "symptomes": [
+                    "Suspension pneumatique pilotée (Skyhook) coûteuse en cas de panne"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Coût d'entretien élevé, pièces spécifiques dérivées de blocs Ferrari",
+                  "symptomes": [
+                    "Coût d'entretien élevé, pièces spécifiques dérivées de blocs Ferrari"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Système Start-Stop et batterie 12V sensibles aux pannes",
+                  "symptomes": [
+                    "Système Start-Stop et batterie 12V sensibles aux pannes"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Poignées de portes électriques rétractables sujettes à pannes de moteurs électriques",
+                  "symptomes": [
+                    "Poignées de portes électriques rétractables sujettes à pannes de moteurs électriques"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Sellerie en cuir de qualité variable selon les séries, usure prématurée sur les sièges conducteur",
+                  "symptomes": [
+                    "Sellerie en cuir de qualité variable selon les séries, usure prématurée sur les sièges conducteur"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "V8 Bi-Turbo 3.8",
+              "code_moteur": "F160 (V6, base Ferrari) / F154 (V8)",
+              "cylindree": "3.0L-3.8L",
+              "puissance_ch": 530,
+              "boite": [
+                "BVA8 (ZF 8HP)"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Turbos sollicités en usage sportif, vidanges fréquentes recommandées",
+                  "symptomes": [
+                    "Turbos sollicités en usage sportif, vidanges fréquentes recommandées"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Électronique et infodivertissement (Maserati Touch Control) sujets à bugs et lenteurs",
+                  "symptomes": [
+                    "Électronique et infodivertissement (Maserati Touch Control) sujets à bugs et lenteurs"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Suspension pneumatique pilotée (Skyhook) coûteuse en cas de panne",
+                  "symptomes": [
+                    "Suspension pneumatique pilotée (Skyhook) coûteuse en cas de panne"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Coût d'entretien élevé, pièces spécifiques dérivées de blocs Ferrari",
+                  "symptomes": [
+                    "Coût d'entretien élevé, pièces spécifiques dérivées de blocs Ferrari"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Système Start-Stop et batterie 12V sensibles aux pannes",
+                  "symptomes": [
+                    "Système Start-Stop et batterie 12V sensibles aux pannes"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Poignées de portes électriques rétractables sujettes à pannes de moteurs électriques",
+                  "symptomes": [
+                    "Poignées de portes électriques rétractables sujettes à pannes de moteurs électriques"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Sellerie en cuir de qualité variable selon les séries, usure prématurée sur les sièges conducteur",
+                  "symptomes": [
+                    "Sellerie en cuir de qualité variable selon les séries, usure prématurée sur les sièges conducteur"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "3.0 V6 Diesel 275ch",
+              "code_moteur": "V6 diesel (base groupe VM Motori/FCA)",
+              "cylindree": "3.0L",
+              "puissance_ch": 275,
+              "boite": [
+                "BVA8 (ZF 8HP)"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Vanne EGR et FAP sensibles à l'encrassement en usage urbain",
+                  "symptomes": [
+                    "Vanne EGR et FAP sensibles à l'encrassement en usage urbain"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Image de marque peu compatible avec le diesel, faible diffusion et rareté de pièces spécifiques",
+                  "symptomes": [
+                    "Image de marque peu compatible avec le diesel, faible diffusion et rareté de pièces spécifiques"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Turbo sensible à l'encrassement du circuit d'huile",
+                  "symptomes": [
+                    "Turbo sensible à l'encrassement du circuit d'huile"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Sebring",
+      "generations": [
+        {
+          "code_chassis": "AM339",
+          "annees": "1987-1997",
+          "phases": [
+            "Phase unique avec évolutions moteur"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V6 Bi-Turbo 2.0",
+              "code_moteur": "AM452/AM457",
+              "cylindree": "2.0L-2.8L",
+              "puissance_ch": 220,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Turbos fragiles nécessitant un entretien rigoureux",
+                  "symptomes": [
+                    "Turbos fragiles nécessitant un entretien rigoureux"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Corrosion marquée héritée de la plateforme Biturbo",
+                  "symptomes": [
+                    "Corrosion marquée héritée de la plateforme Biturbo"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Électronique embarquée capricieuse",
+                  "symptomes": [
+                    "Électronique embarquée capricieuse"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Rareté des pièces spécifiques aujourd'hui",
+                  "symptomes": [
+                    "Rareté des pièces spécifiques aujourd'hui"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "V6 Bi-Turbo 2.8",
+              "code_moteur": "AM452/AM457",
+              "cylindree": "2.0L-2.8L",
+              "puissance_ch": 279,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "panne": "Turbos fragiles nécessitant un entretien rigoureux",
+                  "symptomes": [
+                    "Turbos fragiles nécessitant un entretien rigoureux"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Corrosion marquée héritée de la plateforme Biturbo",
+                  "symptomes": [
+                    "Corrosion marquée héritée de la plateforme Biturbo"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Électronique embarquée capricieuse",
+                  "symptomes": [
+                    "Électronique embarquée capricieuse"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "panne": "Rareté des pièces spécifiques aujourd'hui",
+                  "symptomes": [
+                    "Rareté des pièces spécifiques aujourd'hui"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, l’usage et le suivi d’entretien.",
+                  "diagnostic": "Lecture des défauts, contrôle des valeurs constructeur et inspection par un spécialiste de la marque.",
+                  "piece_concernee": "À confirmer lors du diagnostic",
+                  "gravite": "À évaluer selon les symptômes",
+                  "frequence": "À surveiller selon l’historique documenté",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

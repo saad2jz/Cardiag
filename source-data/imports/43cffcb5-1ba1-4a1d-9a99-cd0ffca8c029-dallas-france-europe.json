@@ -1,0 +1,477 @@
+{
+  "nom": "Dallas",
+  "modeles": [
+    {
+      "nom": "Jeep",
+      "generations": [
+        {
+          "code_chassis": "Hrubon plateforme Renault 4",
+          "annees": "1981–1987",
+          "phases": [
+            "Plateforme Renault 4 GTL raccourcie de 47 cm ; caisse acier jusqu’en 1984 puis polyester. Des kits imposent une identification au châssis."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Renault Cléon-Fonte 1.1 — 34 ch",
+              "code_moteur": "Renault C1E 688",
+              "cylindree": "1 108 cm³",
+              "puissance_ch": 34,
+              "boite": [
+                "Manuelle 4 rapports, traction"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification et étanchéité du Cléon-Fonte 1,1 l",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fuite d’huile ou liquide",
+                    "Claquement, fumée ou perte de compression"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km ; âge des joints déterminant",
+                  "diagnostic": "Confirmer le 1 108 cm³ de Renault 4 GTL, mesurer compressions et pression, puis contrôler chemises/joints, pompe à eau, radiateur, ventilateur, durites, carburateur, allumage, chaîne et supports. Rechercher corrosion et boues après immobilisation.",
+                  "piece_concernee": "Moteur Renault Cléon-Fonte de la Dallas Hrubon",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente avec joints et refroidissement âgés",
+                  "cout_reparation_estime": "Moyen à élevé : environ 300 à 3 500 €"
+                },
+                {
+                  "probleme": "Boîte Renault 4, cardans et traction avant sur châssis raccourci",
+                  "symptomes": [
+                    "Craquement",
+                    "Rapport qui saute",
+                    "Claquement en braquage ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km, plus tôt en usage plage/chemins",
+                  "diagnostic": "Contrôler huile, tringlerie, synchros, embrayage, supports, soufflets et jeux de cardans, roulements et géométrie. Vérifier que le raccourcissement de plateforme et les ancrages n’imposent aucune contrainte à la transmission.",
+                  "piece_concernee": "Transmission Renault 4 Dallas",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente sur véhicule utilisé hors route",
+                  "cout_reparation_estime": "Moyen à élevé : environ 300 à 2 500 €"
+                },
+                {
+                  "probleme": "Plateforme Renault 4 raccourcie, corrosion et identité Hrubon",
+                  "symptomes": [
+                    "Corrosion des longerons/planchers",
+                    "Caisse affaissée",
+                    "Numéro ou date incohérents"
+                  ],
+                  "kilometrage_apparition": "Expertise obligatoire avant acquisition",
+                  "diagnostic": "Identifier fabrication usine ou kit et contrôler numéro de châssis, plateforme, brancards, planchers, ancrages, soudures de raccourcissement, caisse acier 1981–1984 ou polyester ensuite, arceau et ceintures. Ne pas dater un kit uniquement par sa première immatriculation.",
+                  "piece_concernee": "Châssis et carrosserie Dallas première série",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé sur plateformes anciennes ou kits modifiés",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 8 000 €"
+                },
+                {
+                  "probleme": "Freins, direction et suspension hérités de la Renault 4",
+                  "symptomes": [
+                    "Tirage",
+                    "Pédale longue",
+                    "Jeu, grincement ou usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À chaque contrôle technique et avant roulage après stockage",
+                  "diagnostic": "Contrôler maître-cylindre, étriers/cylindres, flexibles, conduites, rotules, crémaillère, barres de torsion, amortisseurs, roulements et pneus. Vérifier le réglage de hauteur et la compatibilité des pièces avec l’année de la plateforme donneuse.",
+                  "piece_concernee": "Freinage et trains roulants Dallas Renault",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente sur véhicules de loisirs peu roulants",
+                  "cout_reparation_estime": "Moyen à élevé : environ 300 à 3 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Grandin châssis Peugeot première série",
+          "annees": "1987–1988",
+          "phases": [
+            "Nouveau châssis galvanisé et mécanique Peugeot 104 ; ne pas confondre le XY8 à chaîne avec les moteurs TU."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "PSA XY8 1.4 double carburateur — 85 ch",
+              "code_moteur": "PSA XY8",
+              "cylindree": "1 360 cm³",
+              "puissance_ch": 85,
+              "boite": [
+                "Manuelle 4/5 rapports selon donneuse, traction"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et culasse des moteurs essence PSA XY/TU",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fuite ou mayonnaise",
+                    "Bruit de distribution, ratés ou fumée"
+                  ],
+                  "kilometrage_apparition": "Courroie TU selon âge et préconisation ; joints souvent après 100 000 à 180 000 km",
+                  "diagnostic": "Distinguer XY8 à chaîne, TU3S à carburateur et TU3M/Z à injection avant commande. Mesurer compressions, contrôler huile/liquide, radiateur, pompe, thermostat, ventilateur, joint de culasse et, sur TU, courroie/galets avec preuve de date.",
+                  "piece_concernee": "Moteur essence PSA de la Dallas Grandin",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente si entretien ou refroidissement négligé",
+                  "cout_reparation_estime": "Moyen à élevé : environ 350 à 3 500 €"
+                },
+                {
+                  "probleme": "Injection/carburation, allumage et alimentation",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Trou à l’accélération",
+                    "Odeur d’essence, ratés ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Après immobilisation et dès 60 000 km",
+                  "diagnostic": "Identifier Weber 35 IBSH, Solex 32-34 Z2 ou injection monopoint TU3M/Z ; contrôler réservoir, pompe, filtres, durites, carburateur/injecteur, prises d’air, bobine, distributeur/capteurs, bougies et charge. Régler avec analyse des gaz.",
+                  "piece_concernee": "Alimentation et allumage Dallas PSA essence",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquente avec carburant ancien et durites poreuses",
+                  "cout_reparation_estime": "Moyen : environ 150 à 1 800 €"
+                },
+                {
+                  "probleme": "Boîte, cardans et train avant issus de Peugeot 104/205",
+                  "symptomes": [
+                    "Craquement de synchro",
+                    "Patinage",
+                    "Claquement en braquage ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km",
+                  "diagnostic": "Contrôler identification de boîte, niveau/fuites, commande, embrayage, supports, cardans, moyeux, roulements et géométrie. Vérifier adaptations au châssis galvanisé et absence de contact en débattement.",
+                  "piece_concernee": "Transmission avant Dallas Grandin",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage chemins et plage",
+                  "cout_reparation_estime": "Moyen à élevé : environ 300 à 2 500 €"
+                },
+                {
+                  "probleme": "Châssis galvanisé, polyester, freinage et conformité",
+                  "symptomes": [
+                    "Fissure du gelcoat",
+                    "Jeu ou corrosion aux assemblages",
+                    "Freinage déséquilibré ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Inspection annuelle et avant achat",
+                  "diagnostic": "Contrôler châssis galvanisé 1987+, soudures, corrosion aux perçages, supports de caisse, stratifié polyester, arceau, ceintures, freins, suspension, direction et pneus. Authentifier phase 1987, évolution TU 1988 ou restylage long 1993.",
+                  "piece_concernee": "Structure et sécurité Dallas Grandin",
+                  "gravite": "Critique",
+                  "frequence": "Vieillissement variable selon exposition et modifications",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 400 à plus de 7 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Grandin phase TU carburateur",
+          "annees": "1988–1992",
+          "phases": [
+            "Moteur de type Peugeot 205 XS/Citroën AX GT à carburateur double corps."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "PSA TU3S 1.4 — 85 ch",
+              "code_moteur": "PSA TU3S K2A/K2B",
+              "cylindree": "1 360 cm³",
+              "puissance_ch": 85,
+              "boite": [
+                "Manuelle 5 rapports, traction"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et culasse des moteurs essence PSA XY/TU",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fuite ou mayonnaise",
+                    "Bruit de distribution, ratés ou fumée"
+                  ],
+                  "kilometrage_apparition": "Courroie TU selon âge et préconisation ; joints souvent après 100 000 à 180 000 km",
+                  "diagnostic": "Distinguer XY8 à chaîne, TU3S à carburateur et TU3M/Z à injection avant commande. Mesurer compressions, contrôler huile/liquide, radiateur, pompe, thermostat, ventilateur, joint de culasse et, sur TU, courroie/galets avec preuve de date.",
+                  "piece_concernee": "Moteur essence PSA de la Dallas Grandin",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente si entretien ou refroidissement négligé",
+                  "cout_reparation_estime": "Moyen à élevé : environ 350 à 3 500 €"
+                },
+                {
+                  "probleme": "Injection/carburation, allumage et alimentation",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Trou à l’accélération",
+                    "Odeur d’essence, ratés ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Après immobilisation et dès 60 000 km",
+                  "diagnostic": "Identifier Weber 35 IBSH, Solex 32-34 Z2 ou injection monopoint TU3M/Z ; contrôler réservoir, pompe, filtres, durites, carburateur/injecteur, prises d’air, bobine, distributeur/capteurs, bougies et charge. Régler avec analyse des gaz.",
+                  "piece_concernee": "Alimentation et allumage Dallas PSA essence",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquente avec carburant ancien et durites poreuses",
+                  "cout_reparation_estime": "Moyen : environ 150 à 1 800 €"
+                },
+                {
+                  "probleme": "Boîte, cardans et train avant issus de Peugeot 104/205",
+                  "symptomes": [
+                    "Craquement de synchro",
+                    "Patinage",
+                    "Claquement en braquage ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km",
+                  "diagnostic": "Contrôler identification de boîte, niveau/fuites, commande, embrayage, supports, cardans, moyeux, roulements et géométrie. Vérifier adaptations au châssis galvanisé et absence de contact en débattement.",
+                  "piece_concernee": "Transmission avant Dallas Grandin",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage chemins et plage",
+                  "cout_reparation_estime": "Moyen à élevé : environ 300 à 2 500 €"
+                },
+                {
+                  "probleme": "Châssis galvanisé, polyester, freinage et conformité",
+                  "symptomes": [
+                    "Fissure du gelcoat",
+                    "Jeu ou corrosion aux assemblages",
+                    "Freinage déséquilibré ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Inspection annuelle et avant achat",
+                  "diagnostic": "Contrôler châssis galvanisé 1987+, soudures, corrosion aux perçages, supports de caisse, stratifié polyester, arceau, ceintures, freins, suspension, direction et pneus. Authentifier phase 1987, évolution TU 1988 ou restylage long 1993.",
+                  "piece_concernee": "Structure et sécurité Dallas Grandin",
+                  "gravite": "Critique",
+                  "frequence": "Vieillissement variable selon exposition et modifications",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 400 à plus de 7 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Grandin injection / restylage long",
+          "annees": "1992–1998",
+          "phases": [
+            "Injection et puissance réduite à 75 ch ; châssis allongé et carrosserie arrondie à partir de 1993."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "PSA TU3M/Z 1.4 injection — 75 ch",
+              "code_moteur": "PSA TU3M/Z KDY/KDZ",
+              "cylindree": "1 360 cm³",
+              "puissance_ch": 75,
+              "boite": [
+                "Manuelle 5 rapports, traction"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et culasse des moteurs essence PSA XY/TU",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fuite ou mayonnaise",
+                    "Bruit de distribution, ratés ou fumée"
+                  ],
+                  "kilometrage_apparition": "Courroie TU selon âge et préconisation ; joints souvent après 100 000 à 180 000 km",
+                  "diagnostic": "Distinguer XY8 à chaîne, TU3S à carburateur et TU3M/Z à injection avant commande. Mesurer compressions, contrôler huile/liquide, radiateur, pompe, thermostat, ventilateur, joint de culasse et, sur TU, courroie/galets avec preuve de date.",
+                  "piece_concernee": "Moteur essence PSA de la Dallas Grandin",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente si entretien ou refroidissement négligé",
+                  "cout_reparation_estime": "Moyen à élevé : environ 350 à 3 500 €"
+                },
+                {
+                  "probleme": "Injection/carburation, allumage et alimentation",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Trou à l’accélération",
+                    "Odeur d’essence, ratés ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Après immobilisation et dès 60 000 km",
+                  "diagnostic": "Identifier Weber 35 IBSH, Solex 32-34 Z2 ou injection monopoint TU3M/Z ; contrôler réservoir, pompe, filtres, durites, carburateur/injecteur, prises d’air, bobine, distributeur/capteurs, bougies et charge. Régler avec analyse des gaz.",
+                  "piece_concernee": "Alimentation et allumage Dallas PSA essence",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquente avec carburant ancien et durites poreuses",
+                  "cout_reparation_estime": "Moyen : environ 150 à 1 800 €"
+                },
+                {
+                  "probleme": "Boîte, cardans et train avant issus de Peugeot 104/205",
+                  "symptomes": [
+                    "Craquement de synchro",
+                    "Patinage",
+                    "Claquement en braquage ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km",
+                  "diagnostic": "Contrôler identification de boîte, niveau/fuites, commande, embrayage, supports, cardans, moyeux, roulements et géométrie. Vérifier adaptations au châssis galvanisé et absence de contact en débattement.",
+                  "piece_concernee": "Transmission avant Dallas Grandin",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage chemins et plage",
+                  "cout_reparation_estime": "Moyen à élevé : environ 300 à 2 500 €"
+                },
+                {
+                  "probleme": "Châssis galvanisé, polyester, freinage et conformité",
+                  "symptomes": [
+                    "Fissure du gelcoat",
+                    "Jeu ou corrosion aux assemblages",
+                    "Freinage déséquilibré ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Inspection annuelle et avant achat",
+                  "diagnostic": "Contrôler châssis galvanisé 1987+, soudures, corrosion aux perçages, supports de caisse, stratifié polyester, arceau, ceintures, freins, suspension, direction et pneus. Authentifier phase 1987, évolution TU 1988 ou restylage long 1993.",
+                  "piece_concernee": "Structure et sécurité Dallas Grandin",
+                  "gravite": "Critique",
+                  "frequence": "Vieillissement variable selon exposition et modifications",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 400 à plus de 7 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Grandin diesel / restylage long",
+          "annees": "1992–1998",
+          "phases": [
+            "Option diesel PSA de 59 ch environ, à entretenir séparément des essence TU."
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "PSA XUD7 1.8 diesel — 59 ch",
+              "code_moteur": "PSA XUD7 161A/XUD7",
+              "cylindree": "1 769 cm³",
+              "puissance_ch": 59,
+              "boite": [
+                "Manuelle 5 rapports, traction"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et culasse du XUD7 1,8 diesel",
+                  "symptomes": [
+                    "Démarrage à froid difficile",
+                    "Fumée",
+                    "Surchauffe ou mayonnaise"
+                  ],
+                  "kilometrage_apparition": "Courroie selon âge/préconisation ; culasse à surveiller au-delà de 150 000 km",
+                  "diagnostic": "Confirmer le XUD7 1 769 cm³, vérifier historique courroie/galets/pompe, compressions, bougies de préchauffage, injecteurs, pompe, refroidissement, joint et fissures de culasse. Contrôler prises d’air et retour de gazole.",
+                  "piece_concernee": "Moteur PSA XUD7 Dallas",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente si surchauffe ou distribution négligée",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 500 €"
+                },
+                {
+                  "probleme": "Pompe d’injection, alimentation et préchauffage",
+                  "symptomes": [
+                    "Démarrage long",
+                    "Ralenti instable",
+                    "Fuite de gazole ou manque de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 km ou immobilisation",
+                  "diagnostic": "Contrôler batterie/démarreur, relais et bougies, filtre, poire et durites, pompe Bosch/Lucas selon montage, calage, injecteurs et retours. Rechercher fuite d’axe ou prise d’air avant de dérégler la pompe.",
+                  "piece_concernee": "Injection diesel XUD7",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquente avec joints et durites âgés",
+                  "cout_reparation_estime": "Moyen à élevé : environ 200 à 2 500 €"
+                },
+                {
+                  "probleme": "Boîte, embrayage, cardans et supports",
+                  "symptomes": [
+                    "Vibration",
+                    "Craquement",
+                    "Patinage ou claquement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km",
+                  "diagnostic": "Contrôler huile de boîte, tringlerie, synchros, câble, embrayage, supports plus sollicités par le diesel, soufflets, cardans et roulements. Vérifier géométrie et adaptations du châssis.",
+                  "piece_concernee": "Transmission Dallas diesel",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage utilitaire",
+                  "cout_reparation_estime": "Moyen à élevé : environ 350 à 2 800 €"
+                },
+                {
+                  "probleme": "Châssis galvanisé, polyester et sécurité",
+                  "symptomes": [
+                    "Fissure",
+                    "Corrosion localisée",
+                    "Jeu de direction ou freinage faible"
+                  ],
+                  "kilometrage_apparition": "Inspection annuelle et avant acquisition",
+                  "diagnostic": "Inspecter perçages/soudures du châssis galvanisé, ancrages de caisse et de suspension, carrosserie, arceau, ceintures, freins, pneus et faisceau de préchauffage. Vérifier charge utile et conformité de la transformation.",
+                  "piece_concernee": "Structure et trains roulants Dallas diesel",
+                  "gravite": "Critique",
+                  "frequence": "Variable selon usage et stockage",
+                  "cout_reparation_estime": "Élevé : environ 400 à plus de 7 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Dallas 2CV très petite série",
+          "annees": "Années 1980",
+          "phases": [
+            "Rare adaptation sur plateforme et mécanique 2CV ; authentification indispensable, sans l’assimiler à la série Renault 4."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Citroën 602 cm³ flat-twin — 29 ch",
+              "code_moteur": "Citroën M28/1",
+              "cylindree": "602 cm³",
+              "puissance_ch": 29,
+              "boite": [
+                "Manuelle 4 rapports, traction"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification et étanchéité du Cléon-Fonte 1,1 l",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fuite d’huile ou liquide",
+                    "Claquement, fumée ou perte de compression"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km ; âge des joints déterminant",
+                  "diagnostic": "Confirmer le 1 108 cm³ de Renault 4 GTL, mesurer compressions et pression, puis contrôler chemises/joints, pompe à eau, radiateur, ventilateur, durites, carburateur, allumage, chaîne et supports. Rechercher corrosion et boues après immobilisation.",
+                  "piece_concernee": "Moteur Renault Cléon-Fonte de la Dallas Hrubon",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente avec joints et refroidissement âgés",
+                  "cout_reparation_estime": "Moyen à élevé : environ 300 à 3 500 €"
+                },
+                {
+                  "probleme": "Boîte Renault 4, cardans et traction avant sur châssis raccourci",
+                  "symptomes": [
+                    "Craquement",
+                    "Rapport qui saute",
+                    "Claquement en braquage ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km, plus tôt en usage plage/chemins",
+                  "diagnostic": "Contrôler huile, tringlerie, synchros, embrayage, supports, soufflets et jeux de cardans, roulements et géométrie. Vérifier que le raccourcissement de plateforme et les ancrages n’imposent aucune contrainte à la transmission.",
+                  "piece_concernee": "Transmission Renault 4 Dallas",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente sur véhicule utilisé hors route",
+                  "cout_reparation_estime": "Moyen à élevé : environ 300 à 2 500 €"
+                },
+                {
+                  "probleme": "Plateforme Renault 4 raccourcie, corrosion et identité Hrubon",
+                  "symptomes": [
+                    "Corrosion des longerons/planchers",
+                    "Caisse affaissée",
+                    "Numéro ou date incohérents"
+                  ],
+                  "kilometrage_apparition": "Expertise obligatoire avant acquisition",
+                  "diagnostic": "Identifier fabrication usine ou kit et contrôler numéro de châssis, plateforme, brancards, planchers, ancrages, soudures de raccourcissement, caisse acier 1981–1984 ou polyester ensuite, arceau et ceintures. Ne pas dater un kit uniquement par sa première immatriculation.",
+                  "piece_concernee": "Châssis et carrosserie Dallas première série",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé sur plateformes anciennes ou kits modifiés",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 8 000 €"
+                },
+                {
+                  "probleme": "Freins, direction et suspension hérités de la Renault 4",
+                  "symptomes": [
+                    "Tirage",
+                    "Pédale longue",
+                    "Jeu, grincement ou usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "À chaque contrôle technique et avant roulage après stockage",
+                  "diagnostic": "Contrôler maître-cylindre, étriers/cylindres, flexibles, conduites, rotules, crémaillère, barres de torsion, amortisseurs, roulements et pneus. Vérifier le réglage de hauteur et la compatibilité des pièces avec l’année de la plateforme donneuse.",
+                  "piece_concernee": "Freinage et trains roulants Dallas Renault",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente sur véhicules de loisirs peu roulants",
+                  "cout_reparation_estime": "Moyen à élevé : environ 300 à 3 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.jeepdallas.fr/jeep-dallas/jeep-dallas-hrubon-en-detail/",
+        "https://www.jeepdallas.fr/jeep-dallas/jeep-dallas-grandin/",
+        "https://www.dallas-club.eu/page/2020757-histoire"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "nom": "Puma",
+  "modeles": [
+    {
+      "nom": "GT",
+      "generations": [
+        {
+          "code_chassis": "P1 Puma GT DKW",
+          "annees": "1966–1968",
+          "phases": [
+            "Version de route dérivée du GT Malzoni, plateforme DKW raccourcie et trois carburateurs ; valeurs d’époque souvent exprimées en ch SAE."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence 2-temps",
+              "nom": "DKW-Vemag trois-cylindres 2-temps — 60 ch",
+              "code_moteur": "DKW-Vemag S",
+              "cylindree": "981 cm³",
+              "puissance_ch": 60,
+              "boite": [
+                "Manuelle 4 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et alimentation DKW ou VW",
+                  "symptomes": [
+                    "Fumée bleue",
+                    "Surchauffe",
+                    "Ratés, fuite d’essence ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Aucun seuil fiable ; contrôle selon restauration et préparation",
+                  "diagnostic": "Sur DKW, vérifier mélange/Lubrimat, compressions des trois cylindres, thermosiphon, carburateurs et allumage ; sur VW 1500, contrôler pression, jeu aux soupapes, turbine/tôles, fuites, deux Solex, pompe et avance ; identifier toute cylindrée ou préparation non d’origine",
+                  "piece_concernee": "DKW trois-cylindres deux-temps ou VW boxer 1500",
+                  "gravite": "Critique en cas de défaut de lubrification ou refroidissement",
+                  "frequence": "Assez fréquente sur voiture ancienne ou modifiée",
+                  "cout_reparation_estime": "Élevé : environ 1 000 à 8 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte, cardans et transmission selon architecture",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection dure",
+                    "Claquement ou vibration"
+                  ],
+                  "kilometrage_apparition": "Variable ; souvent après immobilisation ou usage sportif",
+                  "diagnostic": "Distinguer traction DKW et propulsion VW, contrôler embrayage/câble, synchros, tringlerie, huile, supports, cardans DKW ou trompettes/joints et différentiel VW ; vérifier rapports, montage raccourci et absence de contact avec la coque",
+                  "piece_concernee": "Transmission Puma GT P1 ou P2",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente avec âge et transformations",
+                  "cout_reparation_estime": "Élevé : environ 800 à 6 000 €"
+                },
+                {
+                  "probleme": "Coque polyester, châssis raccourci, trains roulants et authenticité",
+                  "symptomes": [
+                    "Fissures en étoile",
+                    "Corrosion du châssis",
+                    "Portes mal alignées, jeu ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Expertise systématique avant acquisition",
+                  "diagnostic": "Authentifier Puma GT DKW P1 ou GT 1500 P2 par châssis et détails de carrosserie, inspecter polyester, collages, réparations, châssis DKW/VW raccourci, soudures et ancrages ; contrôler suspension, direction, freins, roues et géométrie, puis documenter conversions 1600 fréquentes",
+                  "piece_concernee": "Coque composite, plateforme et identité Puma GT",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de modification ou restauration non conforme",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 20 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "P2 Puma GT 1500",
+          "annees": "1968–1970",
+          "phases": [
+            "Nouvelle carrosserie sur châssis Karmann-Ghia raccourci. Le passage au 1.6 correspond ensuite à la Puma GTE, modèle distinct."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Volkswagen boxer 1500 double carburateur — 50 ch",
+              "code_moteur": "Volkswagen Type 1 1500",
+              "cylindree": "1 493 cm³",
+              "puissance_ch": 50,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et alimentation DKW ou VW",
+                  "symptomes": [
+                    "Fumée bleue",
+                    "Surchauffe",
+                    "Ratés, fuite d’essence ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Aucun seuil fiable ; contrôle selon restauration et préparation",
+                  "diagnostic": "Sur DKW, vérifier mélange/Lubrimat, compressions des trois cylindres, thermosiphon, carburateurs et allumage ; sur VW 1500, contrôler pression, jeu aux soupapes, turbine/tôles, fuites, deux Solex, pompe et avance ; identifier toute cylindrée ou préparation non d’origine",
+                  "piece_concernee": "DKW trois-cylindres deux-temps ou VW boxer 1500",
+                  "gravite": "Critique en cas de défaut de lubrification ou refroidissement",
+                  "frequence": "Assez fréquente sur voiture ancienne ou modifiée",
+                  "cout_reparation_estime": "Élevé : environ 1 000 à 8 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte, cardans et transmission selon architecture",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection dure",
+                    "Claquement ou vibration"
+                  ],
+                  "kilometrage_apparition": "Variable ; souvent après immobilisation ou usage sportif",
+                  "diagnostic": "Distinguer traction DKW et propulsion VW, contrôler embrayage/câble, synchros, tringlerie, huile, supports, cardans DKW ou trompettes/joints et différentiel VW ; vérifier rapports, montage raccourci et absence de contact avec la coque",
+                  "piece_concernee": "Transmission Puma GT P1 ou P2",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente avec âge et transformations",
+                  "cout_reparation_estime": "Élevé : environ 800 à 6 000 €"
+                },
+                {
+                  "probleme": "Coque polyester, châssis raccourci, trains roulants et authenticité",
+                  "symptomes": [
+                    "Fissures en étoile",
+                    "Corrosion du châssis",
+                    "Portes mal alignées, jeu ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Expertise systématique avant acquisition",
+                  "diagnostic": "Authentifier Puma GT DKW P1 ou GT 1500 P2 par châssis et détails de carrosserie, inspecter polyester, collages, réparations, châssis DKW/VW raccourci, soudures et ancrages ; contrôler suspension, direction, freins, roues et géométrie, puis documenter conversions 1600 fréquentes",
+                  "piece_concernee": "Coque composite, plateforme et identité Puma GT",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de modification ou restauration non conforme",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 20 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://pumaautomoveis.com.br/historia/"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,318 @@
+{
+  "nom": "Bürstner Gmbh",
+  "modeles": [
+    {
+      "nom": "BC6003",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "es",
+          "lu"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "Campeo C 600 sur Ducato X290",
+          "annees": "2020–2021",
+          "phases": [
+            "BC6003 est une désignation d’homologation du Campeo C 600 ; vérifier moteur, PTAC, toit relevable et masse réelle sur chaque carte grise."
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "Ducato 2.3 MultiJet II — 140 ch",
+              "code_moteur": "Fiat F1AGL411",
+              "cylindree": "2 287 cm³",
+              "puissance_ch": 140,
+              "boite": [
+                "Manuelle 6 rapports ou automatique 9 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo, distribution et dépollution du Ducato MultiJet",
+                  "symptomes": [
+                    "Voyant moteur",
+                    "Mode dégradé",
+                    "Régénérations fréquentes ou compte à rebours AdBlue"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 180 000 km, plus tôt avec longues immobilisations et petits trajets",
+                  "diagnostic": "Identifier F1AGL 2.3 ou F1A 2.2 et puissance 140/160/180, lire rail/corrections, contrôler injecteurs, turbo, EGR, DPF, capteurs NOx, SCR/AdBlue, courroie de distribution selon moteur, refroidissement et alternateur renforcé ; vérifier entretien annuel malgré faible kilométrage",
+                  "piece_concernee": "Fiat Ducato MultiJet et dépollution Euro 6",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente en camping-car à usage intermittent",
+                  "cout_reparation_estime": "Élevé : environ 500 à 10 000 €"
+                },
+                {
+                  "probleme": "Boîte, embrayage/automatique 9 rapports, pneus et surcharge",
+                  "symptomes": [
+                    "Patinage",
+                    "À-coups",
+                    "Pneus déformés ou tenue de route instable"
+                  ],
+                  "kilometrage_apparition": "Dès 50 000 à 140 000 km selon charge et stationnement",
+                  "diagnostic": "Peser chaque essieu avec passagers, eau, gaz et bagages, comparer PTAC et charge utile ; contrôler embrayage/volant ou AT9, huile, supports, cardans, roulements, lames/amortisseurs, freins et pneus CP avec âge/pression/indice adaptés ; vérifier porte-à-faux et accessoires ajoutés",
+                  "piece_concernee": "Porteur Ducato, transmission et répartition des masses",
+                  "gravite": "Critique en surcharge ou avec pneus dégradés",
+                  "frequence": "Fréquente sur fourgon aménagé chargé",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Étanchéité, gaz, chauffage, eau et installation électrique de cellule",
+                  "symptomes": [
+                    "Humidité",
+                    "Odeur de gaz",
+                    "Chauffage ou réfrigérateur en panne, batterie cellule faible"
+                  ],
+                  "kilometrage_apparition": "Test annuel, et immédiatement après gel, choc ou pose d’accessoire",
+                  "diagnostic": "Mesurer humidité autour lanterneaux/baies/toit relevable, inspecter joints, plancher et fixations ; faire contrôler détendeur, lyres, coffre 2×11 kg, étanchéité gaz et Truma Combi ; tester eau propre/usée, pompe, chauffe-eau, cassette, batterie 95 Ah, booster 45 A, 230 V, chargeur, différentiel, panneaux solaires éventuels et ventilation",
+                  "piece_concernee": "Cellule Campeo C 600 et équipements habitables",
+                  "gravite": "Critique en cas de fuite de gaz, CO ou défaut 230 V",
+                  "frequence": "À surveiller systématiquement",
+                  "cout_reparation_estime": "Élevé : environ 200 à plus de 15 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "Ducato 2.3 MultiJet II — 160 ch",
+              "code_moteur": "Fiat F1AGL411D",
+              "cylindree": "2 287 cm³",
+              "puissance_ch": 160,
+              "boite": [
+                "Manuelle 6 rapports ou automatique 9 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo, distribution et dépollution du Ducato MultiJet",
+                  "symptomes": [
+                    "Voyant moteur",
+                    "Mode dégradé",
+                    "Régénérations fréquentes ou compte à rebours AdBlue"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 180 000 km, plus tôt avec longues immobilisations et petits trajets",
+                  "diagnostic": "Identifier F1AGL 2.3 ou F1A 2.2 et puissance 140/160/180, lire rail/corrections, contrôler injecteurs, turbo, EGR, DPF, capteurs NOx, SCR/AdBlue, courroie de distribution selon moteur, refroidissement et alternateur renforcé ; vérifier entretien annuel malgré faible kilométrage",
+                  "piece_concernee": "Fiat Ducato MultiJet et dépollution Euro 6",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente en camping-car à usage intermittent",
+                  "cout_reparation_estime": "Élevé : environ 500 à 10 000 €"
+                },
+                {
+                  "probleme": "Boîte, embrayage/automatique 9 rapports, pneus et surcharge",
+                  "symptomes": [
+                    "Patinage",
+                    "À-coups",
+                    "Pneus déformés ou tenue de route instable"
+                  ],
+                  "kilometrage_apparition": "Dès 50 000 à 140 000 km selon charge et stationnement",
+                  "diagnostic": "Peser chaque essieu avec passagers, eau, gaz et bagages, comparer PTAC et charge utile ; contrôler embrayage/volant ou AT9, huile, supports, cardans, roulements, lames/amortisseurs, freins et pneus CP avec âge/pression/indice adaptés ; vérifier porte-à-faux et accessoires ajoutés",
+                  "piece_concernee": "Porteur Ducato, transmission et répartition des masses",
+                  "gravite": "Critique en surcharge ou avec pneus dégradés",
+                  "frequence": "Fréquente sur fourgon aménagé chargé",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Étanchéité, gaz, chauffage, eau et installation électrique de cellule",
+                  "symptomes": [
+                    "Humidité",
+                    "Odeur de gaz",
+                    "Chauffage ou réfrigérateur en panne, batterie cellule faible"
+                  ],
+                  "kilometrage_apparition": "Test annuel, et immédiatement après gel, choc ou pose d’accessoire",
+                  "diagnostic": "Mesurer humidité autour lanterneaux/baies/toit relevable, inspecter joints, plancher et fixations ; faire contrôler détendeur, lyres, coffre 2×11 kg, étanchéité gaz et Truma Combi ; tester eau propre/usée, pompe, chauffe-eau, cassette, batterie 95 Ah, booster 45 A, 230 V, chargeur, différentiel, panneaux solaires éventuels et ventilation",
+                  "piece_concernee": "Cellule Campeo C 600 et équipements habitables",
+                  "gravite": "Critique en cas de fuite de gaz, CO ou défaut 230 V",
+                  "frequence": "À surveiller systématiquement",
+                  "cout_reparation_estime": "Élevé : environ 200 à plus de 15 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "Ducato 2.3 MultiJet II — 180 ch",
+              "code_moteur": "Fiat F1AGL411C",
+              "cylindree": "2 287 cm³",
+              "puissance_ch": 180,
+              "boite": [
+                "Automatique 9 rapports selon option, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo, distribution et dépollution du Ducato MultiJet",
+                  "symptomes": [
+                    "Voyant moteur",
+                    "Mode dégradé",
+                    "Régénérations fréquentes ou compte à rebours AdBlue"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 180 000 km, plus tôt avec longues immobilisations et petits trajets",
+                  "diagnostic": "Identifier F1AGL 2.3 ou F1A 2.2 et puissance 140/160/180, lire rail/corrections, contrôler injecteurs, turbo, EGR, DPF, capteurs NOx, SCR/AdBlue, courroie de distribution selon moteur, refroidissement et alternateur renforcé ; vérifier entretien annuel malgré faible kilométrage",
+                  "piece_concernee": "Fiat Ducato MultiJet et dépollution Euro 6",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente en camping-car à usage intermittent",
+                  "cout_reparation_estime": "Élevé : environ 500 à 10 000 €"
+                },
+                {
+                  "probleme": "Boîte, embrayage/automatique 9 rapports, pneus et surcharge",
+                  "symptomes": [
+                    "Patinage",
+                    "À-coups",
+                    "Pneus déformés ou tenue de route instable"
+                  ],
+                  "kilometrage_apparition": "Dès 50 000 à 140 000 km selon charge et stationnement",
+                  "diagnostic": "Peser chaque essieu avec passagers, eau, gaz et bagages, comparer PTAC et charge utile ; contrôler embrayage/volant ou AT9, huile, supports, cardans, roulements, lames/amortisseurs, freins et pneus CP avec âge/pression/indice adaptés ; vérifier porte-à-faux et accessoires ajoutés",
+                  "piece_concernee": "Porteur Ducato, transmission et répartition des masses",
+                  "gravite": "Critique en surcharge ou avec pneus dégradés",
+                  "frequence": "Fréquente sur fourgon aménagé chargé",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Étanchéité, gaz, chauffage, eau et installation électrique de cellule",
+                  "symptomes": [
+                    "Humidité",
+                    "Odeur de gaz",
+                    "Chauffage ou réfrigérateur en panne, batterie cellule faible"
+                  ],
+                  "kilometrage_apparition": "Test annuel, et immédiatement après gel, choc ou pose d’accessoire",
+                  "diagnostic": "Mesurer humidité autour lanterneaux/baies/toit relevable, inspecter joints, plancher et fixations ; faire contrôler détendeur, lyres, coffre 2×11 kg, étanchéité gaz et Truma Combi ; tester eau propre/usée, pompe, chauffe-eau, cassette, batterie 95 Ah, booster 45 A, 230 V, chargeur, différentiel, panneaux solaires éventuels et ventilation",
+                  "piece_concernee": "Cellule Campeo C 600 et équipements habitables",
+                  "gravite": "Critique en cas de fuite de gaz, CO ou défaut 230 V",
+                  "frequence": "À surveiller systématiquement",
+                  "cout_reparation_estime": "Élevé : environ 200 à plus de 15 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Campeo C 600 sur Ducato série 8",
+          "annees": "2022–aujourd’hui",
+          "phases": [
+            "Version actuelle : 140 ch manuelle de série, 140 ou 180 ch automatique en option selon millésime/marché."
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "Ducato 2.2 MultiJet 3 — 140 ch",
+              "code_moteur": "Fiat F1A 2.2 Euro 6",
+              "cylindree": "2 184 cm³",
+              "puissance_ch": 140,
+              "boite": [
+                "Manuelle 6 rapports ou automatique 9 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo, distribution et dépollution du Ducato MultiJet",
+                  "symptomes": [
+                    "Voyant moteur",
+                    "Mode dégradé",
+                    "Régénérations fréquentes ou compte à rebours AdBlue"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 180 000 km, plus tôt avec longues immobilisations et petits trajets",
+                  "diagnostic": "Identifier F1AGL 2.3 ou F1A 2.2 et puissance 140/160/180, lire rail/corrections, contrôler injecteurs, turbo, EGR, DPF, capteurs NOx, SCR/AdBlue, courroie de distribution selon moteur, refroidissement et alternateur renforcé ; vérifier entretien annuel malgré faible kilométrage",
+                  "piece_concernee": "Fiat Ducato MultiJet et dépollution Euro 6",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente en camping-car à usage intermittent",
+                  "cout_reparation_estime": "Élevé : environ 500 à 10 000 €"
+                },
+                {
+                  "probleme": "Boîte, embrayage/automatique 9 rapports, pneus et surcharge",
+                  "symptomes": [
+                    "Patinage",
+                    "À-coups",
+                    "Pneus déformés ou tenue de route instable"
+                  ],
+                  "kilometrage_apparition": "Dès 50 000 à 140 000 km selon charge et stationnement",
+                  "diagnostic": "Peser chaque essieu avec passagers, eau, gaz et bagages, comparer PTAC et charge utile ; contrôler embrayage/volant ou AT9, huile, supports, cardans, roulements, lames/amortisseurs, freins et pneus CP avec âge/pression/indice adaptés ; vérifier porte-à-faux et accessoires ajoutés",
+                  "piece_concernee": "Porteur Ducato, transmission et répartition des masses",
+                  "gravite": "Critique en surcharge ou avec pneus dégradés",
+                  "frequence": "Fréquente sur fourgon aménagé chargé",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Étanchéité, gaz, chauffage, eau et installation électrique de cellule",
+                  "symptomes": [
+                    "Humidité",
+                    "Odeur de gaz",
+                    "Chauffage ou réfrigérateur en panne, batterie cellule faible"
+                  ],
+                  "kilometrage_apparition": "Test annuel, et immédiatement après gel, choc ou pose d’accessoire",
+                  "diagnostic": "Mesurer humidité autour lanterneaux/baies/toit relevable, inspecter joints, plancher et fixations ; faire contrôler détendeur, lyres, coffre 2×11 kg, étanchéité gaz et Truma Combi ; tester eau propre/usée, pompe, chauffe-eau, cassette, batterie 95 Ah, booster 45 A, 230 V, chargeur, différentiel, panneaux solaires éventuels et ventilation",
+                  "piece_concernee": "Cellule Campeo C 600 et équipements habitables",
+                  "gravite": "Critique en cas de fuite de gaz, CO ou défaut 230 V",
+                  "frequence": "À surveiller systématiquement",
+                  "cout_reparation_estime": "Élevé : environ 200 à plus de 15 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "Ducato 2.2 MultiJet 3 — 180 ch",
+              "code_moteur": "Fiat F1A 2.2 Euro 6",
+              "cylindree": "2 184 cm³",
+              "puissance_ch": 180,
+              "boite": [
+                "Automatique 9 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo, distribution et dépollution du Ducato MultiJet",
+                  "symptomes": [
+                    "Voyant moteur",
+                    "Mode dégradé",
+                    "Régénérations fréquentes ou compte à rebours AdBlue"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 80 000 et 180 000 km, plus tôt avec longues immobilisations et petits trajets",
+                  "diagnostic": "Identifier F1AGL 2.3 ou F1A 2.2 et puissance 140/160/180, lire rail/corrections, contrôler injecteurs, turbo, EGR, DPF, capteurs NOx, SCR/AdBlue, courroie de distribution selon moteur, refroidissement et alternateur renforcé ; vérifier entretien annuel malgré faible kilométrage",
+                  "piece_concernee": "Fiat Ducato MultiJet et dépollution Euro 6",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente en camping-car à usage intermittent",
+                  "cout_reparation_estime": "Élevé : environ 500 à 10 000 €"
+                },
+                {
+                  "probleme": "Boîte, embrayage/automatique 9 rapports, pneus et surcharge",
+                  "symptomes": [
+                    "Patinage",
+                    "À-coups",
+                    "Pneus déformés ou tenue de route instable"
+                  ],
+                  "kilometrage_apparition": "Dès 50 000 à 140 000 km selon charge et stationnement",
+                  "diagnostic": "Peser chaque essieu avec passagers, eau, gaz et bagages, comparer PTAC et charge utile ; contrôler embrayage/volant ou AT9, huile, supports, cardans, roulements, lames/amortisseurs, freins et pneus CP avec âge/pression/indice adaptés ; vérifier porte-à-faux et accessoires ajoutés",
+                  "piece_concernee": "Porteur Ducato, transmission et répartition des masses",
+                  "gravite": "Critique en surcharge ou avec pneus dégradés",
+                  "frequence": "Fréquente sur fourgon aménagé chargé",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                },
+                {
+                  "probleme": "Étanchéité, gaz, chauffage, eau et installation électrique de cellule",
+                  "symptomes": [
+                    "Humidité",
+                    "Odeur de gaz",
+                    "Chauffage ou réfrigérateur en panne, batterie cellule faible"
+                  ],
+                  "kilometrage_apparition": "Test annuel, et immédiatement après gel, choc ou pose d’accessoire",
+                  "diagnostic": "Mesurer humidité autour lanterneaux/baies/toit relevable, inspecter joints, plancher et fixations ; faire contrôler détendeur, lyres, coffre 2×11 kg, étanchéité gaz et Truma Combi ; tester eau propre/usée, pompe, chauffe-eau, cassette, batterie 95 Ah, booster 45 A, 230 V, chargeur, différentiel, panneaux solaires éventuels et ventilation",
+                  "piece_concernee": "Cellule Campeo C 600 et équipements habitables",
+                  "gravite": "Critique en cas de fuite de gaz, CO ou défaut 230 V",
+                  "frequence": "À surveiller systématiquement",
+                  "cout_reparation_estime": "Élevé : environ 200 à plus de 15 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.buerstner.com/fr/fr/fourgons-amenages/fourgons-amenages/campeo-c",
+        "https://www.buerstner.com/buerstner/downloads/technische-daten/2025/gb/uk_burstner_technical-data_campervans_september_2024.pdf"
+      ]
+    }
+  ],
+  "source_catalogue": "VehiclesDB 2026.08.2 (CC-BY 4.0)"
+}

@@ -1,0 +1,170 @@
+{
+  "nom": "Rimac",
+  "modeles": [
+    {
+      "nom": "Nevera",
+      "generations": [
+        {
+          "code_chassis": "Nevera",
+          "annees": "2021–aujourd’hui",
+          "phases": [
+            "Nevera d’origine : 1 408 kW, 2 340 Nm aux moteurs et batterie structurelle en H de 120 kWh."
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "Quatre moteurs, batterie 120 kWh — 1914 ch",
+              "code_moteur": "Rimac quad e-motor 1408 kW",
+              "cylindree": "Électrique, batterie 120 kWh",
+              "puissance_ch": 1914,
+              "boite": [
+                "Quatre réducteurs monorapport, transmission intégrale"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie structurelle, BMS, équilibrage et isolement haute tension",
+                  "symptomes": [
+                    "Autonomie ou puissance réduite",
+                    "Écart de cellules",
+                    "Défaut d’isolement, température ou charge"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant chaque achat, après choc et selon calendrier Rimac",
+                  "diagnostic": "Relever SOH, énergie, tensions/températures des modules, isolement et historiques, tester capacité si autorisé ; inspecter monocoque autour du pack en H, carter, refroidissement, connecteurs et traces d’impact/eau, avec consignation et outillage Rimac exclusivement",
+                  "piece_concernee": "Batterie 120 kWh Nevera ou 108 kWh Nevera R et BMS",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable ; dommages de soubassement à exclure systématiquement",
+                  "cout_reparation_estime": "Extrême : diagnostic 500 à 2 000 €, réparation plusieurs milliers à plus de 200 000 €"
+                },
+                {
+                  "probleme": "Quatre moteurs, quatre onduleurs, torque vectoring et réducteurs",
+                  "symptomes": [
+                    "Puissance limitée",
+                    "Écart de couple",
+                    "Vibration, bruit ou alerte R-AWTV"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque alerte et après usage piste",
+                  "diagnostic": "Télécharger défauts, courants, couples et températures roue par roue, tester refroidissement huile/eau, onduleurs, capteurs, câbles et connecteurs ; inspecter réducteurs, arbres, joints, roulements et pneus, puis recalibrer le torque vectoring uniquement selon procédure Rimac",
+                  "piece_concernee": "Chaîne de traction quatre moteurs Nevera",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable sur faible série",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 150 000 €"
+                },
+                {
+                  "probleme": "Recharge DC, gestion thermique, climatisation et réseau 12 V",
+                  "symptomes": [
+                    "Recharge interrompue",
+                    "Puissance de charge faible",
+                    "Pompe/ventilateur bruyant, écran ou accès indisponible"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et avant trajet/piste",
+                  "diagnostic": "Comparer charge à différentes températures/SOC, lire limites borne-véhicule, inspecter prise, verrouillage, contacteurs, convertisseurs et câbles ; tester pompes, vannes, échangeurs, groupes froid, liquide, batterie 12 V, DC-DC, mises en veille, logiciel et campagnes",
+                  "piece_concernee": "Recharge, refroidissement et alimentation auxiliaire Nevera",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Occasionnelle ; puissance de charge varie normalement avec conditions",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Monocoque carbone, freins carbone-céramique, aéro active, ADAS et pneus",
+                  "symptomes": [
+                    "Trace de choc ou délaminage",
+                    "Vibration au freinage",
+                    "Alerte aéro/ADAS ou usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Inspection avant achat et après piste, choc, levage ou remplacement de vitrage",
+                  "diagnostic": "Inspecter monocoque/pack structurel et inserts par spécialiste, tester ailes/volets actifs, direction et suspension ; peser/mesurer disques, contrôler étriers, liquide, jantes, pneus et géométrie, puis calibrer caméras/radars et vérifier télémétrie sans essai maximal sur route",
+                  "piece_concernee": "Structure, aérodynamique et sécurité Rimac Nevera",
+                  "gravite": "Critique",
+                  "frequence": "Usure fortement dépendante de piste et accélérations extrêmes",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 250 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Nevera R",
+          "annees": "2024–aujourd’hui",
+          "phases": [
+            "Évolution R plus légère et plus puissante : 1 550 kW/2 107 ch et batterie de nouvelle génération 108 kWh."
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "Quatre moteurs, batterie 108 kWh — 2107 ch",
+              "code_moteur": "Rimac quad e-motor 1550 kW",
+              "cylindree": "Électrique, batterie 108 kWh",
+              "puissance_ch": 2107,
+              "boite": [
+                "Quatre réducteurs monorapport, transmission intégrale"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie structurelle, BMS, équilibrage et isolement haute tension",
+                  "symptomes": [
+                    "Autonomie ou puissance réduite",
+                    "Écart de cellules",
+                    "Défaut d’isolement, température ou charge"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant chaque achat, après choc et selon calendrier Rimac",
+                  "diagnostic": "Relever SOH, énergie, tensions/températures des modules, isolement et historiques, tester capacité si autorisé ; inspecter monocoque autour du pack en H, carter, refroidissement, connecteurs et traces d’impact/eau, avec consignation et outillage Rimac exclusivement",
+                  "piece_concernee": "Batterie 120 kWh Nevera ou 108 kWh Nevera R et BMS",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable ; dommages de soubassement à exclure systématiquement",
+                  "cout_reparation_estime": "Extrême : diagnostic 500 à 2 000 €, réparation plusieurs milliers à plus de 200 000 €"
+                },
+                {
+                  "probleme": "Quatre moteurs, quatre onduleurs, torque vectoring et réducteurs",
+                  "symptomes": [
+                    "Puissance limitée",
+                    "Écart de couple",
+                    "Vibration, bruit ou alerte R-AWTV"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque alerte et après usage piste",
+                  "diagnostic": "Télécharger défauts, courants, couples et températures roue par roue, tester refroidissement huile/eau, onduleurs, capteurs, câbles et connecteurs ; inspecter réducteurs, arbres, joints, roulements et pneus, puis recalibrer le torque vectoring uniquement selon procédure Rimac",
+                  "piece_concernee": "Chaîne de traction quatre moteurs Nevera",
+                  "gravite": "Critique",
+                  "frequence": "Non quantifiable sur faible série",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 150 000 €"
+                },
+                {
+                  "probleme": "Recharge DC, gestion thermique, climatisation et réseau 12 V",
+                  "symptomes": [
+                    "Recharge interrompue",
+                    "Puissance de charge faible",
+                    "Pompe/ventilateur bruyant, écran ou accès indisponible"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et avant trajet/piste",
+                  "diagnostic": "Comparer charge à différentes températures/SOC, lire limites borne-véhicule, inspecter prise, verrouillage, contacteurs, convertisseurs et câbles ; tester pompes, vannes, échangeurs, groupes froid, liquide, batterie 12 V, DC-DC, mises en veille, logiciel et campagnes",
+                  "piece_concernee": "Recharge, refroidissement et alimentation auxiliaire Nevera",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Occasionnelle ; puissance de charge varie normalement avec conditions",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Monocoque carbone, freins carbone-céramique, aéro active, ADAS et pneus",
+                  "symptomes": [
+                    "Trace de choc ou délaminage",
+                    "Vibration au freinage",
+                    "Alerte aéro/ADAS ou usure irrégulière"
+                  ],
+                  "kilometrage_apparition": "Inspection avant achat et après piste, choc, levage ou remplacement de vitrage",
+                  "diagnostic": "Inspecter monocoque/pack structurel et inserts par spécialiste, tester ailes/volets actifs, direction et suspension ; peser/mesurer disques, contrôler étriers, liquide, jantes, pneus et géométrie, puis calibrer caméras/radars et vérifier télémétrie sans essai maximal sur route",
+                  "piece_concernee": "Structure, aérodynamique et sécurité Rimac Nevera",
+                  "gravite": "Critique",
+                  "frequence": "Usure fortement dépendante de piste et accélérations extrêmes",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 250 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.rimac-automobili.com/nevera/",
+        "https://www.rimac-automobili.com/nevera/engineering/",
+        "https://www.rimac-automobili.com/NeveraR/",
+        "https://web-cdn.rimac-automobili.com/wp-content/uploads/2023/11/20171226/Nevera_Technical-specifications.pdf"
+      ]
+    }
+  ]
+}

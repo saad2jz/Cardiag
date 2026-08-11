@@ -1,0 +1,399 @@
+{
+  "nom": "Radical",
+  "modeles": [
+    {
+      "nom": "SR3",
+      "generations": [
+        {
+          "code_chassis": "SR3 première génération",
+          "annees": "2002–2008",
+          "phases": [
+            "Première SR3 ; puissance dépend du millésime et de la préparation homologuée."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence compétition",
+              "nom": "RPE 1300 — 205 ch",
+              "code_moteur": "RPE Suzuki 1300",
+              "cylindree": "1 300 cm³",
+              "puissance_ch": 205,
+              "boite": [
+                "Séquentielle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Usure horaire, lubrification et refroidissement du moteur RPE Suzuki",
+                  "symptomes": [
+                    "Pression ou température élevée",
+                    "Fumée, perte de compression ou limaille",
+                    "Bruit de distribution ou surrégime enregistré"
+                  ],
+                  "kilometrage_apparition": "Selon heures et kilomètres de piste ; appliquer strictement les limites RPE de chaque génération",
+                  "diagnostic": "Exiger journal moteur, ECU et réfections, analyser huile/filtre, mesurer compressions/leak-down, contrôler carter sec, pompe, radiateurs, durites, chaîne/distribution, culasse et traces de surrégime ; identifier 1300/1340/1500 Gen 3-5",
+                  "piece_concernee": "Moteur moto RPE Radical SR3",
+                  "gravite": "Critique",
+                  "frequence": "Réfection périodique normale en compétition",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 18 000 €"
+                },
+                {
+                  "probleme": "Injection, papillons, échappement et données ECU",
+                  "symptomes": [
+                    "Ratés",
+                    "Réponse irrégulière",
+                    "Mélange pauvre, coupure ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant chaque roulage et après alerte",
+                  "diagnostic": "Télécharger régime, températures, lambda et pression, synchroniser papillons, contrôler pompes, filtre, injecteurs, bobines, capteurs, faisceau et échappement ; confirmer carburant et cartographie Radical Cup autorisés",
+                  "piece_concernee": "Gestion moteur et alimentation SR3",
+                  "gravite": "Critique",
+                  "frequence": "Occasionnelle, conséquence sévère à haut régime",
+                  "cout_reparation_estime": "Élevé : environ 300 à 5 000 €"
+                },
+                {
+                  "probleme": "Boîte séquentielle, embrayage, différentiel et transmission",
+                  "symptomes": [
+                    "Rapport manqué",
+                    "Faux point mort",
+                    "À-coups, vibration ou limaille"
+                  ],
+                  "kilometrage_apparition": "Inspection après chaque épreuve et révision selon heures",
+                  "diagnostic": "Contrôler palettes/levier, coupure et auto-blip, embrayage, chaîne ou transmission finale selon phase, crabots, pignons, différentiel, joints et roulements ; analyser huile et compteurs de changements avant réglage",
+                  "piece_concernee": "Transmission séquentielle Radical SR3",
+                  "gravite": "Critique",
+                  "frequence": "Usure attendue en piste",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 12 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, carrosserie, aéro, freins et équipements de course",
+                  "symptomes": [
+                    "Fissure",
+                    "Variation d’appui ou de hauteur",
+                    "Pédale longue, vibration ou harnais expiré"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant chaque roulage et après contact",
+                  "diagnostic": "Inspecter tubes/soudures, panneaux et fixations, fond, splitter, diffuseur et aileron ; régler coins/hauteurs, contrôler rotules, amortisseurs, roulements, pneus, disques/étriers AP sur XXR, conduites, réservoir, extincteur, siège et harnais",
+                  "piece_concernee": "Structure et sécurité Radical SR3",
+                  "gravite": "Critique",
+                  "frequence": "Fatigue directement liée aux vibreurs et contacts",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 20 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "SR3 RS",
+          "annees": "2009–2014",
+          "phases": [
+            "Évolution RS 1500 ; vérifier limite de régime et durée de réfection du numéro moteur."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence compétition",
+              "nom": "RPE 1500 — 260 ch",
+              "code_moteur": "RPE Suzuki 1500 Gen 3",
+              "cylindree": "1 500 cm³",
+              "puissance_ch": 260,
+              "boite": [
+                "Séquentielle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Usure horaire, lubrification et refroidissement du moteur RPE Suzuki",
+                  "symptomes": [
+                    "Pression ou température élevée",
+                    "Fumée, perte de compression ou limaille",
+                    "Bruit de distribution ou surrégime enregistré"
+                  ],
+                  "kilometrage_apparition": "Selon heures et kilomètres de piste ; appliquer strictement les limites RPE de chaque génération",
+                  "diagnostic": "Exiger journal moteur, ECU et réfections, analyser huile/filtre, mesurer compressions/leak-down, contrôler carter sec, pompe, radiateurs, durites, chaîne/distribution, culasse et traces de surrégime ; identifier 1300/1340/1500 Gen 3-5",
+                  "piece_concernee": "Moteur moto RPE Radical SR3",
+                  "gravite": "Critique",
+                  "frequence": "Réfection périodique normale en compétition",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 18 000 €"
+                },
+                {
+                  "probleme": "Injection, papillons, échappement et données ECU",
+                  "symptomes": [
+                    "Ratés",
+                    "Réponse irrégulière",
+                    "Mélange pauvre, coupure ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant chaque roulage et après alerte",
+                  "diagnostic": "Télécharger régime, températures, lambda et pression, synchroniser papillons, contrôler pompes, filtre, injecteurs, bobines, capteurs, faisceau et échappement ; confirmer carburant et cartographie Radical Cup autorisés",
+                  "piece_concernee": "Gestion moteur et alimentation SR3",
+                  "gravite": "Critique",
+                  "frequence": "Occasionnelle, conséquence sévère à haut régime",
+                  "cout_reparation_estime": "Élevé : environ 300 à 5 000 €"
+                },
+                {
+                  "probleme": "Boîte séquentielle, embrayage, différentiel et transmission",
+                  "symptomes": [
+                    "Rapport manqué",
+                    "Faux point mort",
+                    "À-coups, vibration ou limaille"
+                  ],
+                  "kilometrage_apparition": "Inspection après chaque épreuve et révision selon heures",
+                  "diagnostic": "Contrôler palettes/levier, coupure et auto-blip, embrayage, chaîne ou transmission finale selon phase, crabots, pignons, différentiel, joints et roulements ; analyser huile et compteurs de changements avant réglage",
+                  "piece_concernee": "Transmission séquentielle Radical SR3",
+                  "gravite": "Critique",
+                  "frequence": "Usure attendue en piste",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 12 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, carrosserie, aéro, freins et équipements de course",
+                  "symptomes": [
+                    "Fissure",
+                    "Variation d’appui ou de hauteur",
+                    "Pédale longue, vibration ou harnais expiré"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant chaque roulage et après contact",
+                  "diagnostic": "Inspecter tubes/soudures, panneaux et fixations, fond, splitter, diffuseur et aileron ; régler coins/hauteurs, contrôler rotules, amortisseurs, roulements, pneus, disques/étriers AP sur XXR, conduites, réservoir, extincteur, siège et harnais",
+                  "piece_concernee": "Structure et sécurité Radical SR3",
+                  "gravite": "Critique",
+                  "frequence": "Fatigue directement liée aux vibreurs et contacts",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 20 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "SR3 RSX",
+          "annees": "2015–2018",
+          "phases": [
+            "Calibrage endurance/compétition selon marché ; fiche châssis prioritaire."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence compétition",
+              "nom": "RPE 1500 — 210 ch",
+              "code_moteur": "RPE Suzuki 1500 Gen 3 RSX",
+              "cylindree": "1 500 cm³",
+              "puissance_ch": 210,
+              "boite": [
+                "Séquentielle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Usure horaire, lubrification et refroidissement du moteur RPE Suzuki",
+                  "symptomes": [
+                    "Pression ou température élevée",
+                    "Fumée, perte de compression ou limaille",
+                    "Bruit de distribution ou surrégime enregistré"
+                  ],
+                  "kilometrage_apparition": "Selon heures et kilomètres de piste ; appliquer strictement les limites RPE de chaque génération",
+                  "diagnostic": "Exiger journal moteur, ECU et réfections, analyser huile/filtre, mesurer compressions/leak-down, contrôler carter sec, pompe, radiateurs, durites, chaîne/distribution, culasse et traces de surrégime ; identifier 1300/1340/1500 Gen 3-5",
+                  "piece_concernee": "Moteur moto RPE Radical SR3",
+                  "gravite": "Critique",
+                  "frequence": "Réfection périodique normale en compétition",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 18 000 €"
+                },
+                {
+                  "probleme": "Injection, papillons, échappement et données ECU",
+                  "symptomes": [
+                    "Ratés",
+                    "Réponse irrégulière",
+                    "Mélange pauvre, coupure ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant chaque roulage et après alerte",
+                  "diagnostic": "Télécharger régime, températures, lambda et pression, synchroniser papillons, contrôler pompes, filtre, injecteurs, bobines, capteurs, faisceau et échappement ; confirmer carburant et cartographie Radical Cup autorisés",
+                  "piece_concernee": "Gestion moteur et alimentation SR3",
+                  "gravite": "Critique",
+                  "frequence": "Occasionnelle, conséquence sévère à haut régime",
+                  "cout_reparation_estime": "Élevé : environ 300 à 5 000 €"
+                },
+                {
+                  "probleme": "Boîte séquentielle, embrayage, différentiel et transmission",
+                  "symptomes": [
+                    "Rapport manqué",
+                    "Faux point mort",
+                    "À-coups, vibration ou limaille"
+                  ],
+                  "kilometrage_apparition": "Inspection après chaque épreuve et révision selon heures",
+                  "diagnostic": "Contrôler palettes/levier, coupure et auto-blip, embrayage, chaîne ou transmission finale selon phase, crabots, pignons, différentiel, joints et roulements ; analyser huile et compteurs de changements avant réglage",
+                  "piece_concernee": "Transmission séquentielle Radical SR3",
+                  "gravite": "Critique",
+                  "frequence": "Usure attendue en piste",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 12 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, carrosserie, aéro, freins et équipements de course",
+                  "symptomes": [
+                    "Fissure",
+                    "Variation d’appui ou de hauteur",
+                    "Pédale longue, vibration ou harnais expiré"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant chaque roulage et après contact",
+                  "diagnostic": "Inspecter tubes/soudures, panneaux et fixations, fond, splitter, diffuseur et aileron ; régler coins/hauteurs, contrôler rotules, amortisseurs, roulements, pneus, disques/étriers AP sur XXR, conduites, réservoir, extincteur, siège et harnais",
+                  "piece_concernee": "Structure et sécurité Radical SR3",
+                  "gravite": "Critique",
+                  "frequence": "Fatigue directement liée aux vibreurs et contacts",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 20 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "SR3 XX",
+          "annees": "2020–2022",
+          "phases": [
+            "Électronique et aérodynamique XX revues."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence compétition",
+              "nom": "RPE 1500 Gen 4 — 226 ch",
+              "code_moteur": "RPE Suzuki 1500 Gen 4",
+              "cylindree": "1 500 cm³",
+              "puissance_ch": 226,
+              "boite": [
+                "Séquentielle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Usure horaire, lubrification et refroidissement du moteur RPE Suzuki",
+                  "symptomes": [
+                    "Pression ou température élevée",
+                    "Fumée, perte de compression ou limaille",
+                    "Bruit de distribution ou surrégime enregistré"
+                  ],
+                  "kilometrage_apparition": "Selon heures et kilomètres de piste ; appliquer strictement les limites RPE de chaque génération",
+                  "diagnostic": "Exiger journal moteur, ECU et réfections, analyser huile/filtre, mesurer compressions/leak-down, contrôler carter sec, pompe, radiateurs, durites, chaîne/distribution, culasse et traces de surrégime ; identifier 1300/1340/1500 Gen 3-5",
+                  "piece_concernee": "Moteur moto RPE Radical SR3",
+                  "gravite": "Critique",
+                  "frequence": "Réfection périodique normale en compétition",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 18 000 €"
+                },
+                {
+                  "probleme": "Injection, papillons, échappement et données ECU",
+                  "symptomes": [
+                    "Ratés",
+                    "Réponse irrégulière",
+                    "Mélange pauvre, coupure ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant chaque roulage et après alerte",
+                  "diagnostic": "Télécharger régime, températures, lambda et pression, synchroniser papillons, contrôler pompes, filtre, injecteurs, bobines, capteurs, faisceau et échappement ; confirmer carburant et cartographie Radical Cup autorisés",
+                  "piece_concernee": "Gestion moteur et alimentation SR3",
+                  "gravite": "Critique",
+                  "frequence": "Occasionnelle, conséquence sévère à haut régime",
+                  "cout_reparation_estime": "Élevé : environ 300 à 5 000 €"
+                },
+                {
+                  "probleme": "Boîte séquentielle, embrayage, différentiel et transmission",
+                  "symptomes": [
+                    "Rapport manqué",
+                    "Faux point mort",
+                    "À-coups, vibration ou limaille"
+                  ],
+                  "kilometrage_apparition": "Inspection après chaque épreuve et révision selon heures",
+                  "diagnostic": "Contrôler palettes/levier, coupure et auto-blip, embrayage, chaîne ou transmission finale selon phase, crabots, pignons, différentiel, joints et roulements ; analyser huile et compteurs de changements avant réglage",
+                  "piece_concernee": "Transmission séquentielle Radical SR3",
+                  "gravite": "Critique",
+                  "frequence": "Usure attendue en piste",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 12 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, carrosserie, aéro, freins et équipements de course",
+                  "symptomes": [
+                    "Fissure",
+                    "Variation d’appui ou de hauteur",
+                    "Pédale longue, vibration ou harnais expiré"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant chaque roulage et après contact",
+                  "diagnostic": "Inspecter tubes/soudures, panneaux et fixations, fond, splitter, diffuseur et aileron ; régler coins/hauteurs, contrôler rotules, amortisseurs, roulements, pneus, disques/étriers AP sur XXR, conduites, réservoir, extincteur, siège et harnais",
+                  "piece_concernee": "Structure et sécurité Radical SR3",
+                  "gravite": "Critique",
+                  "frequence": "Fatigue directement liée aux vibreurs et contacts",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 20 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "SR3 XXR",
+          "annees": "2023–aujourd’hui",
+          "phases": [
+            "Spécification officielle actuelle : 232 bhp, 620 kg et freins AP Racing."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence ou biocarburant compatible",
+              "nom": "RPE 1500 Gen 5 biofuel-ready — 232 ch",
+              "code_moteur": "RPE Suzuki 1500 Gen 5",
+              "cylindree": "1 500 cm³",
+              "puissance_ch": 232,
+              "boite": [
+                "Séquentielle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Usure horaire, lubrification et refroidissement du moteur RPE Suzuki",
+                  "symptomes": [
+                    "Pression ou température élevée",
+                    "Fumée, perte de compression ou limaille",
+                    "Bruit de distribution ou surrégime enregistré"
+                  ],
+                  "kilometrage_apparition": "Selon heures et kilomètres de piste ; appliquer strictement les limites RPE de chaque génération",
+                  "diagnostic": "Exiger journal moteur, ECU et réfections, analyser huile/filtre, mesurer compressions/leak-down, contrôler carter sec, pompe, radiateurs, durites, chaîne/distribution, culasse et traces de surrégime ; identifier 1300/1340/1500 Gen 3-5",
+                  "piece_concernee": "Moteur moto RPE Radical SR3",
+                  "gravite": "Critique",
+                  "frequence": "Réfection périodique normale en compétition",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 18 000 €"
+                },
+                {
+                  "probleme": "Injection, papillons, échappement et données ECU",
+                  "symptomes": [
+                    "Ratés",
+                    "Réponse irrégulière",
+                    "Mélange pauvre, coupure ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant chaque roulage et après alerte",
+                  "diagnostic": "Télécharger régime, températures, lambda et pression, synchroniser papillons, contrôler pompes, filtre, injecteurs, bobines, capteurs, faisceau et échappement ; confirmer carburant et cartographie Radical Cup autorisés",
+                  "piece_concernee": "Gestion moteur et alimentation SR3",
+                  "gravite": "Critique",
+                  "frequence": "Occasionnelle, conséquence sévère à haut régime",
+                  "cout_reparation_estime": "Élevé : environ 300 à 5 000 €"
+                },
+                {
+                  "probleme": "Boîte séquentielle, embrayage, différentiel et transmission",
+                  "symptomes": [
+                    "Rapport manqué",
+                    "Faux point mort",
+                    "À-coups, vibration ou limaille"
+                  ],
+                  "kilometrage_apparition": "Inspection après chaque épreuve et révision selon heures",
+                  "diagnostic": "Contrôler palettes/levier, coupure et auto-blip, embrayage, chaîne ou transmission finale selon phase, crabots, pignons, différentiel, joints et roulements ; analyser huile et compteurs de changements avant réglage",
+                  "piece_concernee": "Transmission séquentielle Radical SR3",
+                  "gravite": "Critique",
+                  "frequence": "Usure attendue en piste",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 12 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, carrosserie, aéro, freins et équipements de course",
+                  "symptomes": [
+                    "Fissure",
+                    "Variation d’appui ou de hauteur",
+                    "Pédale longue, vibration ou harnais expiré"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant chaque roulage et après contact",
+                  "diagnostic": "Inspecter tubes/soudures, panneaux et fixations, fond, splitter, diffuseur et aileron ; régler coins/hauteurs, contrôler rotules, amortisseurs, roulements, pneus, disques/étriers AP sur XXR, conduites, réservoir, extincteur, siège et harnais",
+                  "piece_concernee": "Structure et sécurité Radical SR3",
+                  "gravite": "Critique",
+                  "frequence": "Fatigue directement liée aux vibreurs et contacts",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 20 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://radicalmotorsport.com/news/new-radical-sr3-xxr",
+        "https://radicalmotorsport.com/cars/sr3"
+      ]
+    }
+  ]
+}

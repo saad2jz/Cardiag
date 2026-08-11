@@ -1,0 +1,270 @@
+{
+  "nom": "Altas Auto",
+  "modeles": [
+    {
+      "nom": "Sprinter",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "bus",
+        "body_type": null,
+        "countries": [
+          "es",
+          "fi",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 6
+      },
+      "generations": [
+        {
+          "code_chassis": "Mercedes-Benz Sprinter W906 — conversion Altas",
+          "annees": "2006–2018",
+          "phases": [
+            "Marque complète Altas Auto ; Minibus Altas/Altas Auto ; confirmer Novus/Ecoline/Cityline/Multiline, places, empattement et PTAC par plaque carrossier"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "2.1 CDI — 163 ch",
+              "code_moteur": "Mercedes OM651",
+              "cylindree": "2 143 cm³",
+              "puissance_ch": 163,
+              "boite": [
+                "Boîte manuelle 6 rapports / automatique 7G-Tronic"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo et chaîne de dépollution du Sprinter",
+                  "symptomes": [
+                    "Démarrage long",
+                    "Mode dégradé",
+                    "Fumée ou codes NOx/AdBlue"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 220 000 km, plus tôt en desserte urbaine",
+                  "diagnostic": "Lire CDI/SCR, mesurer pression rail et retours, inspecter filtre/pompe/injecteurs, turbo, durites, EGR, FAP, capteurs NOx, dosage AdBlue et historique de régénération ; vérifier campagnes au VIN",
+                  "piece_concernee": "Moteur OM651/OM654 et dépollution",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente en cycles courts",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte, arbre, pont et trains roulants du minibus chargé",
+                  "symptomes": [
+                    "À-coups",
+                    "Vibration",
+                    "Usure irrégulière ou caisse penchée"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 km selon PTAC et service",
+                  "diagnostic": "Contrôler fluide/adaptations, embrayage ou convertisseur, boîte, arbre, croisillons, pont, ressorts, amortisseurs, moyeux, direction, pneus, géométrie et poids par essieu",
+                  "piece_concernee": "Transmission et châssis Mercedes-Benz",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en service professionnel",
+                  "cout_reparation_estime": "Élevé : environ 800 à 8 000 €"
+                },
+                {
+                  "probleme": "Intégration Altas : portes, réseau électrique, chauffage et sécurité passagers",
+                  "symptomes": [
+                    "Porte ou marche inopérante",
+                    "Décharge batterie",
+                    "Chauffage/climatisation défaillant"
+                  ],
+                  "kilometrage_apparition": "Variable selon fréquence d’ouverture et exploitation",
+                  "diagnostic": "Contrôler CAN carrossier, alternateur/batteries, masses, multiplexage, faisceaux ajoutés, portes/marches, chauffage auxiliaire, climatisation, sièges/ceintures, issues de secours, extincteur, éclairage et homologation",
+                  "piece_concernee": "Carrosserie et équipements passagers Altas",
+                  "gravite": "Critique si évacuation, freinage ou ceinture atteints",
+                  "frequence": "Assez fréquente avec l’âge et l’usage intensif",
+                  "cout_reparation_estime": "Élevé : environ 500 à 10 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Mercedes-Benz Sprinter W907/W910 — conversion Altas",
+          "annees": "2018–aujourd’hui",
+          "phases": [
+            "Marque complète Altas Auto ; Distinguer propulsion/traction, classe M2/M3, nombre de places et équipements de transport public"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "2.0 CDI — 150 ch",
+              "code_moteur": "Mercedes OM654",
+              "cylindree": "1 950 cm³",
+              "puissance_ch": 150,
+              "boite": [
+                "Boîte manuelle 6 rapports / automatique 9G-Tronic"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo et chaîne de dépollution du Sprinter",
+                  "symptomes": [
+                    "Démarrage long",
+                    "Mode dégradé",
+                    "Fumée ou codes NOx/AdBlue"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 220 000 km, plus tôt en desserte urbaine",
+                  "diagnostic": "Lire CDI/SCR, mesurer pression rail et retours, inspecter filtre/pompe/injecteurs, turbo, durites, EGR, FAP, capteurs NOx, dosage AdBlue et historique de régénération ; vérifier campagnes au VIN",
+                  "piece_concernee": "Moteur OM651/OM654 et dépollution",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente en cycles courts",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte, arbre, pont et trains roulants du minibus chargé",
+                  "symptomes": [
+                    "À-coups",
+                    "Vibration",
+                    "Usure irrégulière ou caisse penchée"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 km selon PTAC et service",
+                  "diagnostic": "Contrôler fluide/adaptations, embrayage ou convertisseur, boîte, arbre, croisillons, pont, ressorts, amortisseurs, moyeux, direction, pneus, géométrie et poids par essieu",
+                  "piece_concernee": "Transmission et châssis Mercedes-Benz",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en service professionnel",
+                  "cout_reparation_estime": "Élevé : environ 800 à 8 000 €"
+                },
+                {
+                  "probleme": "Intégration Altas : portes, réseau électrique, chauffage et sécurité passagers",
+                  "symptomes": [
+                    "Porte ou marche inopérante",
+                    "Décharge batterie",
+                    "Chauffage/climatisation défaillant"
+                  ],
+                  "kilometrage_apparition": "Variable selon fréquence d’ouverture et exploitation",
+                  "diagnostic": "Contrôler CAN carrossier, alternateur/batteries, masses, multiplexage, faisceaux ajoutés, portes/marches, chauffage auxiliaire, climatisation, sièges/ceintures, issues de secours, extincteur, éclairage et homologation",
+                  "piece_concernee": "Carrosserie et équipements passagers Altas",
+                  "gravite": "Critique si évacuation, freinage ou ceinture atteints",
+                  "frequence": "Assez fréquente avec l’âge et l’usage intensif",
+                  "cout_reparation_estime": "Élevé : environ 500 à 10 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "2.0 CDI — 190 ch",
+              "code_moteur": "Mercedes OM654",
+              "cylindree": "1 950 cm³",
+              "puissance_ch": 190,
+              "boite": [
+                "Boîte automatique 9G-Tronic"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo et chaîne de dépollution du Sprinter",
+                  "symptomes": [
+                    "Démarrage long",
+                    "Mode dégradé",
+                    "Fumée ou codes NOx/AdBlue"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 220 000 km, plus tôt en desserte urbaine",
+                  "diagnostic": "Lire CDI/SCR, mesurer pression rail et retours, inspecter filtre/pompe/injecteurs, turbo, durites, EGR, FAP, capteurs NOx, dosage AdBlue et historique de régénération ; vérifier campagnes au VIN",
+                  "piece_concernee": "Moteur OM651/OM654 et dépollution",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente en cycles courts",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte, arbre, pont et trains roulants du minibus chargé",
+                  "symptomes": [
+                    "À-coups",
+                    "Vibration",
+                    "Usure irrégulière ou caisse penchée"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 km selon PTAC et service",
+                  "diagnostic": "Contrôler fluide/adaptations, embrayage ou convertisseur, boîte, arbre, croisillons, pont, ressorts, amortisseurs, moyeux, direction, pneus, géométrie et poids par essieu",
+                  "piece_concernee": "Transmission et châssis Mercedes-Benz",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en service professionnel",
+                  "cout_reparation_estime": "Élevé : environ 800 à 8 000 €"
+                },
+                {
+                  "probleme": "Intégration Altas : portes, réseau électrique, chauffage et sécurité passagers",
+                  "symptomes": [
+                    "Porte ou marche inopérante",
+                    "Décharge batterie",
+                    "Chauffage/climatisation défaillant"
+                  ],
+                  "kilometrage_apparition": "Variable selon fréquence d’ouverture et exploitation",
+                  "diagnostic": "Contrôler CAN carrossier, alternateur/batteries, masses, multiplexage, faisceaux ajoutés, portes/marches, chauffage auxiliaire, climatisation, sièges/ceintures, issues de secours, extincteur, éclairage et homologation",
+                  "piece_concernee": "Carrosserie et équipements passagers Altas",
+                  "gravite": "Critique si évacuation, freinage ou ceinture atteints",
+                  "frequence": "Assez fréquente avec l’âge et l’usage intensif",
+                  "cout_reparation_estime": "Élevé : environ 500 à 10 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Mercedes-Benz eSprinter Ecoline",
+          "annees": "2024–aujourd’hui",
+          "phases": [
+            "Marque complète Altas Auto ; Altas annonce 150 kW, 400 Nm et batteries LFP 81/113 kWh ; confirmer capacité, chargeur et configuration passagers"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "eSprinter Ecoline moteur arrière 150 kW — 204 ch",
+              "code_moteur": "Mercedes eATS 150 kW",
+              "cylindree": "Batterie LFP 81/113 kWh",
+              "puissance_ch": 204,
+              "boite": [
+                "Réducteur mono-rapport i=13,174"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "SoH, isolement et gestion thermique de la batterie LFP",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Charge limitée",
+                    "Alerte haute tension"
+                  ],
+                  "kilometrage_apparition": "Dépend des cycles, du climat, du PTAC et de la recharge rapide",
+                  "diagnostic": "Avec habilitation HV, lire SoH, écarts de tension/température et isolement ; contrôler boîtier 81/113 kWh, connecteurs, refroidissement, pompes, vannes, étanchéité et campagnes Mercedes au VIN",
+                  "piece_concernee": "Batterie haute tension et BMS eSprinter",
+                  "gravite": "Critique",
+                  "frequence": "Données de flotte à long terme encore en accumulation",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 35 000 €"
+                },
+                {
+                  "probleme": "Moteur arrière 150 kW, onduleur, réducteur et recharge",
+                  "symptomes": [
+                    "Bruit",
+                    "Vibration",
+                    "Puissance limitée ou charge interrompue"
+                  ],
+                  "kilometrage_apparition": "Kilométrage variable",
+                  "diagnostic": "Tester isolement, phases/températures, moteur synchrone, onduleur, réducteur, cardans, prise CCS2, chargeur 11/22 kW, charge DC 50/115 kW, DC/DC et refroidissement",
+                  "piece_concernee": "Propulsion électrique et système de charge",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Peu fréquente mais coûteuse",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 20 000 €"
+                },
+                {
+                  "probleme": "Batterie 12 V, réseau carrossier et équipements thermiques passagers",
+                  "symptomes": [
+                    "Véhicule impossible à réveiller",
+                    "Porte ou chauffage inopérant",
+                    "Autonomie fortement dégradée"
+                  ],
+                  "kilometrage_apparition": "Variable ; batterie 12 V souvent après 4 à 7 ans",
+                  "diagnostic": "Tester batterie 12 V, DC/DC, consommations au repos, masses, CAN Altas/Mercedes, PTC, chauffage liquide diesel optionnel, climatisation avant/arrière, portes, marche, éclairage, sécurité passagers et mises à jour",
+                  "piece_concernee": "Réseau basse tension et conversion minibus",
+                  "gravite": "Majeure",
+                  "frequence": "Occasionnelle, accrue par les auxiliaires",
+                  "cout_reparation_estime": "Élevé : environ 400 à 10 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "source_catalogue": "VehiclesDB 2026.08.2 (CC-BY 4.0)"
+}

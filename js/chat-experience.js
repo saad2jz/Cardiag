@@ -1,0 +1,404 @@
+const MAX_MESSAGES = 30;
+const RENDER_API_URL = 'https://fiche-expert-auto.onrender.com/';
+const API_BASE_URL = ['localhost', '127.0.0.1'].includes(window.location.hostname)
+  || window.location.hostname.endsWith('.onrender.com')
+  ? `${window.location.origin}/`
+  : RENDER_API_URL;
+const API_TIMEOUT_MS = 60_000;
+
+function carContext() {
+  const selectOrManual = (selectId, manualId) => {
+    const manualValue = document.getElementById(manualId)?.value.trim();
+    return manualValue || document.getElementById(selectId)?.value || '';
+  };
+
+  return {
+    marque: selectOrManual('marqueSelect', 'marqueManualInput'),
+    modele: selectOrManual('modeleSelect', 'modeleManualInput'),
+    generation: document.getElementById('generationSelect')?.value || '',
+    annee: document.getElementById('anneeSelect')?.value || '',
+    motorisation: selectOrManual('motorisationSelect', 'motorisationManualInput'),
+    vin: document.querySelector('[name="vin"]')?.value.trim() || '',
+  };
+}
+
+function canUseAssistant() {
+  const context = carContext();
+  return [context.marque, context.modele, context.motorisation].every(Boolean);
+}
+
+function formatActiveVehicle() {
+  const context = carContext();
+  return [context.marque, context.modele, context.annee ? `(${context.annee})` : '', context.motorisation].filter(Boolean).join(' ') || 'Non renseigné';
+}
+
+function getCheckItemState(element) {
+  const item = element?.closest('.check-item');
+  if (!item) return 'Non renseigné';
+  const checked = item.querySelector('.badge-group input[type="radio"]:checked');
+  if (!checked) return 'Non renseigné';
+  const label = item.querySelector(`label[for="${checked.id}"]`);
+  return label?.textContent.trim() || checked.value;
+}
+
+function buildCombinedPrompt(pointDeControle, etat) {
+  return `Véhicule : ${formatActiveVehicle()}. Point de contrôle : ${pointDeControle}. État : ${etat}. Explique-moi comment vérifier cela sur ce modèle précis.`;
+}
+
+const VEHICLE_CONTEXT_MESSAGE = 'Sélectionnez la marque, le modèle et la motorisation pour obtenir une réponse spécifique à votre véhicule.';
+
+async function request(path, body) {
+  const controller = new AbortController();
+  const timeout = window.setTimeout(() => controller.abort(), API_TIMEOUT_MS);
+
+  try {
+    const response = await fetch(`${API_BASE_URL}${path.replace(/^\//, '')}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+      signal: controller.signal,
+    });
+    const payload = await response.json().catch(() => ({}));
+    if (!response.ok) {
+      const error = new Error(payload.error || `Le service est indisponible (erreur ${response.status}).`);
+      error.code = payload.code;
+      throw error;
+    }
+    return payload;
+  } catch (error) {
+    if (error.name === 'AbortError') {
+      throw new Error('Le service met trop de temps à répondre. Il peut être en cours de démarrage : réessayez dans quelques instants.');
+    }
+    if (error instanceof TypeError) {
+      throw new Error('Impossible de joindre le service de diagnostic. Vérifiez votre connexion puis réessayez.');
+    }
+    throw error;
+  } finally {
+    window.clearTimeout(timeout);
+  }
+}
+
+function appendMessage(list, role, content) {
+  const message = document.createElement('article');
+  message.className = `chat-message chat-message-${role}`;
+  message.textContent = content;
+  list.appendChild(message);
+  list.scrollTop = list.scrollHeight;
+  return message;
+}
+
+function parseChatResponse(raw) {
+  try {
+    const data = typeof raw === 'string' ? JSON.parse(raw) : raw;
+    if (!data || typeof data !== 'object') return null;
+    if (data.type === 'question' || data.type === 'message') {
+      return { type: data.type, content: String(data.content || '').trim() };
+    }
+    if (data.type === 'report') {
+      return {
+        type: 'report',
+        vehicle: String(data.vehicle || '').trim(),
+        fault_code: String(data.fault_code || '').trim(),
+        root_cause: String(data.root_cause || '').trim(),
+        action_plan: String(data.action_plan || '').trim(),
+      };
+    }
+    return null;
+  } catch {
+    return null;
+  }
+}
+
+function splitActionPlan(plan) {
+  const normalized = String(plan || '').trim();
+  if (!normalized) return [];
+
+  const numberedSteps = normalized
+    .split(/\n+|\s+(?=\d+[.)]\s+)/)
+    .map((step) => step.replace(/^\d+[.)]\s*/, '').trim())
+    .filter(Boolean);
+
+  if (/^\d+[.)]\s*/.test(normalized) || numberedSteps.length > 1) {
+    return numberedSteps;
+  }
+
+  return normalized
+    .split(/(?<=[.!?])\s+(?=[A-ZÀ-Ý])/)
+    .map((step) => step.trim())
+    .filter(Boolean);
+}
+
+function reportCard(label, value, className = '', full = false) {
+  const card = document.createElement('article');
+  card.className = `report-card ${className} ${full ? 'full' : ''}`.trim();
+  const title = document.createElement('p');
+  title.className = 'report-label';
+  title.textContent = label;
+  const content = document.createElement('p');
+  content.className = 'report-value';
+  content.textContent = value || 'Non renseigné';
+  card.append(title, content);
+  return card;
+}
+
+function renderReport(target, data) {
+  target.replaceChildren();
+  const grid = document.createElement('section');
+  grid.className = 'report-grid';
+  const summary = document.createElement('p');
+  summary.className = 'report-summary';
+  summary.textContent = 'CAUSE PROBABLE IDENTIFIÉE';
+  grid.append(summary, reportCard('VÉHICULE', data.vehicle, '', true));
+  const fault = reportCard('CODE DÉFAUT', data.fault_code, 'fault');
+  fault.querySelector('.report-value').className = 'fault-code';
+  grid.append(fault, reportCard('ÉTAT SYSTÈME', 'Anomalie à confirmer après contrôle', 'warning'));
+  grid.append(reportCard('CAUSE RACINE', data.root_cause, 'fault', true));
+  const plan = document.createElement('article');
+  plan.className = 'report-card full warning';
+  const planTitle = document.createElement('p');
+  planTitle.className = 'report-label';
+  planTitle.textContent = "PLAN D'ACTION ATELIER";
+  const list = document.createElement('ol');
+  list.className = 'plan-list';
+  const steps = splitActionPlan(data.action_plan);
+  (steps.length ? steps : ['Aucune opération détaillée fournie.']).forEach((step) => {
+    const item = document.createElement('li');
+    item.textContent = step;
+    list.append(item);
+  });
+  plan.append(planTitle, list);
+  grid.append(plan);
+  target.append(grid);
+}
+
+function waitingReport() {
+  const state = document.createElement('div');
+  state.className = 'waiting-state';
+  state.innerHTML = '<div class="radar" aria-hidden="true"><span></span></div><p class="waiting-kicker">AUCUN RAPPORT ACTIF</p><h3>En attente des mesures terrain</h3><p>La synthèse d’intervention apparaîtra ici après confirmation de la cause probable.</p>';
+  return state;
+}
+
+function renderSafeInline(target, html) {
+  const allowed = new Set(['STRONG', 'EM', 'CODE', 'BR', 'UL', 'OL', 'LI']);
+  const parsed = new DOMParser().parseFromString(html, 'text/html');
+  const fragment = document.createDocumentFragment();
+
+  function copy(node, parent) {
+    if (node.nodeType === Node.TEXT_NODE) {
+      parent.appendChild(document.createTextNode(node.textContent));
+    } else if (node.nodeType === Node.ELEMENT_NODE) {
+      if (!allowed.has(node.tagName)) {
+        node.childNodes.forEach((child) => copy(child, parent));
+        return;
+      }
+      const safeNode = document.createElement(node.tagName.toLowerCase());
+      node.childNodes.forEach((child) => copy(child, safeNode));
+      parent.appendChild(safeNode);
+    }
+  }
+
+  parsed.body.childNodes.forEach((node) => copy(node, fragment));
+  target.replaceChildren(fragment);
+}
+
+export function initializeChatExperience() {
+  const toggles = document.querySelectorAll('[data-chat-toggle]');
+  const panel = document.getElementById('chatPanel');
+  const close = document.getElementById('chatClose');
+  const form = document.getElementById('chatForm');
+  const input = document.getElementById('chatInput');
+  const messagesElement = document.getElementById('chatMessages');
+  const status = document.getElementById('chatStatus');
+  const reportContent = document.getElementById('reportContent');
+  const reset = document.getElementById('chatReset');
+  const vehicleReadout = document.getElementById('diagnosticVehicleReadout');
+  const inline = document.getElementById('inlineAssistant');
+  const inlineText = document.getElementById('inlineAssistantText');
+  const inlineClose = document.getElementById('inlineAssistantClose');
+  const inlineAsk = document.getElementById('inlineAssistantAsk');
+  const submitButton = form.querySelector('button[type="submit"]');
+  let messages = [];
+  let selectedText = '';
+  let inlineContextElement = null;
+
+  if (!toggles.length || !panel || !form || !input || !messagesElement || !status || !reportContent || !inline || !inlineText) return;
+
+  function updateVehicleReadout() {
+    const context = carContext();
+    const title = [context.marque, context.modele, context.annee ? `(${context.annee})` : '', context.motorisation].filter(Boolean).join(' · ');
+    vehicleReadout.textContent = title ? `Véhicule actif : ${title}` : 'Véhicule : à sélectionner dans la fiche';
+  }
+
+  function openPanel() {
+    panel.hidden = false;
+    updateVehicleReadout();
+    input.focus();
+  }
+
+  toggles.forEach((toggle) => toggle.addEventListener('click', openPanel));
+  close?.addEventListener('click', () => { panel.hidden = true; });
+  reset?.addEventListener('click', () => {
+    messages = [];
+    messagesElement.replaceChildren();
+    reportContent.replaceChildren(waitingReport());
+    input.disabled = false;
+    submitButton.disabled = false;
+    status.textContent = '';
+    updateVehicleReadout();
+    input.focus();
+  });
+  input.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter' && !event.shiftKey) {
+      event.preventDefault();
+      form.requestSubmit();
+    }
+  });
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    panel.hidden = false;
+    const content = input.value.trim();
+    if (!content) return;
+    if (!canUseAssistant()) {
+      status.textContent = VEHICLE_CONTEXT_MESSAGE;
+      return;
+    }
+
+    input.value = '';
+    appendMessage(messagesElement, 'user', content);
+    const promptCombine = buildCombinedPrompt(content, 'Général');
+    messages.push({ role: 'user', content: promptCombine });
+    messages = messages.slice(-MAX_MESSAGES);
+    const pendingMessage = appendMessage(messagesElement, 'assistant', 'Analyse des schémas électriques en cours…');
+    pendingMessage.classList.add('chat-message-pending');
+    const thinkingSteps = [
+      'Analyse des schémas électriques en cours…',
+      'Recoupement des symptômes et des mesures…',
+      'Préparation du prochain contrôle atelier…',
+    ];
+    let thinkingStep = 0;
+    const thinkingTimer = window.setInterval(() => {
+      thinkingStep = (thinkingStep + 1) % thinkingSteps.length;
+      pendingMessage.textContent = thinkingSteps[thinkingStep];
+      messagesElement.scrollTop = messagesElement.scrollHeight;
+    }, 2_500);
+    status.textContent = 'L’assistant prépare une réponse spécifique à votre véhicule.';
+    submitButton.disabled = true;
+    messagesElement.setAttribute('aria-busy', 'true');
+    let investigationClosed = false;
+
+    try {
+      const raw = await request('/api/chat', { messages, carContext: carContext() });
+      const data = parseChatResponse(raw);
+      pendingMessage.classList.remove('chat-message-pending');
+      if (!data) {
+        throw new Error('La réponse de l’IA est mal formatée.');
+      }
+      if (data.type === 'message' || data.type === 'question') {
+        renderSafeInline(pendingMessage, data.content);
+        messages.push({ role: 'assistant', content: data.content });
+        messages = messages.slice(-MAX_MESSAGES);
+        status.textContent = data.type === 'question'
+          ? 'Contrôle complémentaire requis avant d’établir le rapport.'
+          : 'Réponse adaptée à votre véhicule.';
+      } else if (data.type === 'report') {
+        investigationClosed = true;
+        pendingMessage.textContent = 'Cause probable confirmée. Rapport d’intervention généré.';
+        renderReport(reportContent, data);
+        input.disabled = true;
+        submitButton.disabled = true;
+        status.textContent = 'Investigation clôturée. Utilisez « Nouvelle analyse » pour ouvrir un nouveau dossier.';
+      } else {
+        throw new Error('Format de réponse IA non reconnu.');
+      }
+    } catch (error) {
+      pendingMessage.textContent = `Réponse non disponible : ${error.message}`;
+      pendingMessage.classList.remove('chat-message-pending');
+      pendingMessage.classList.add('chat-message-error');
+      status.textContent = 'Vous pouvez réessayer dans quelques instants.';
+    } finally {
+      window.clearInterval(thinkingTimer);
+      if (!investigationClosed) submitButton.disabled = false;
+      messagesElement.removeAttribute('aria-busy');
+      panel.hidden = false;
+      if (!investigationClosed) input.focus();
+    }
+  });
+
+  function showInlineForSelection() {
+    const selection = window.getSelection();
+    const text = selection?.toString().trim() || '';
+    const anchor = selection?.anchorNode?.parentElement;
+    if (!anchor?.closest('main') || text.length < 2 || text.length > 1_000) return;
+    inlineContextElement = anchor;
+    const range = selection.getRangeAt(0);
+    const rect = range.getBoundingClientRect();
+    if (!rect.width && !rect.height) return;
+    selectedText = text;
+    inlineText.textContent = canUseAssistant()
+      ? `Comprendre la vérification : « ${text.slice(0, 120)}${text.length > 120 ? '…' : ''} »`
+      : VEHICLE_CONTEXT_MESSAGE;
+    inline.hidden = false;
+    inlineAsk.textContent = 'Voir comment vérifier';
+    const actionBarHeight = document.querySelector('.action-bar')?.getBoundingClientRect().height || 0;
+    const inlineRect = inline.getBoundingClientRect();
+    const safeBottom = actionBarHeight + 12;
+    const preferredTop = rect.bottom + 8;
+    const top = preferredTop + inlineRect.height <= window.innerHeight - safeBottom
+      ? preferredTop
+      : Math.max(12, rect.top - inlineRect.height - 8);
+    const left = Math.min(
+      window.innerWidth - inlineRect.width - 12,
+      Math.max(12, rect.left + (rect.width / 2) - (inlineRect.width / 2)),
+    );
+    inline.style.left = `${left}px`;
+    inline.style.top = `${top}px`;
+  }
+
+  function showInlineHelp(text, target) {
+    if (!text) return;
+    selectedText = text;
+    inlineContextElement = target;
+    inlineText.textContent = canUseAssistant()
+      ? `Comprendre la vérification : « ${text.slice(0, 120)}${text.length > 120 ? '…' : ''} »`
+      : VEHICLE_CONTEXT_MESSAGE;
+    inline.hidden = false;
+    inlineAsk.textContent = 'Voir comment vérifier';
+    const actionBarHeight = document.querySelector('.action-bar')?.getBoundingClientRect().height || 0;
+    const inlineRect = inline.getBoundingClientRect();
+    const safeBottom = actionBarHeight + 12;
+    const rect = target?.getBoundingClientRect ? target.getBoundingClientRect() : { left: window.innerWidth / 2, top: window.innerHeight / 2, width: 0, height: 0 };
+    const preferredTop = rect.bottom + 8;
+    const top = preferredTop + inlineRect.height <= window.innerHeight - safeBottom
+      ? preferredTop
+      : Math.max(12, rect.top - inlineRect.height - 8);
+    const left = Math.min(
+      window.innerWidth - inlineRect.width - 12,
+      Math.max(12, rect.left + (rect.width / 2) - (inlineRect.width / 2)),
+    );
+    inline.style.left = `${left}px`;
+    inline.style.top = `${top}px`;
+  }
+  window.showInlineHelp = showInlineHelp;
+
+  document.addEventListener('selectionchange', showInlineForSelection);
+  document.addEventListener('pointerup', showInlineForSelection);
+
+  inlineClose?.addEventListener('click', () => { inline.hidden = true; });
+  inlineAsk?.addEventListener('click', async () => {
+    if (!selectedText) return;
+    if (!canUseAssistant()) {
+      inlineText.textContent = VEHICLE_CONTEXT_MESSAGE;
+      return;
+    }
+    inlineAsk.disabled = true;
+    inlineText.textContent = 'Explication et méthode de vérification en cours…';
+    try {
+      const { explanation } = await request('/api/inline', { selectedText, carContext: carContext() });
+      renderSafeInline(inlineText, explanation);
+    } catch (error) {
+      inlineText.textContent = `Explication non disponible : ${error.message}`;
+    } finally {
+      inlineAsk.disabled = false;
+    }
+  });
+}

@@ -1,0 +1,1510 @@
+{
+  "nom": "Abarth",
+  "modeles": [
+    {
+      "nom": "124 Spider",
+      "generations": [
+        {
+          "code_chassis": "348 (base Mazda MX-5 ND)",
+          "annees": "2016-2019",
+          "phases": [
+            "Abarth 124 Spider"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.4 MultiAir Turbo — 170 ch",
+              "code_moteur": "955 A7.000",
+              "cylindree": "1.4L",
+              "puissance_ch": 170,
+              "boite": [
+                "BVM6",
+                "BVA6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Module MultiAir : qualité d’huile et crépine à contrôler",
+                  "symptomes": [
+                    "Ralenti irrégulier",
+                    "Ratés",
+                    "Voyant moteur et défauts de commande soupapes"
+                  ],
+                  "kilometrage_apparition": "Variable ; le risque augmente avec huile inadaptée ou vidanges retardées.",
+                  "diagnostic": "Lire les défauts, vérifier niveau/qualité d’huile et contrôler le circuit de lubrification avant remplacer le module.",
+                  "piece_concernee": "Module électro-hydraulique MultiAir et filtration d’huile",
+                  "gravite": "Majeure : panne coûteuse pouvant provoquer ratés persistants.",
+                  "frequence": "À surveiller impérativement si historique incomplet.",
+                  "cout_reparation_estime": "Environ 900 à 2 000 € selon diagnostic et remplacement."
+                },
+                {
+                  "probleme": "Turbocompresseur : lubrification et jeu à contrôler",
+                  "symptomes": [
+                    "Sifflement anormal",
+                    "Fumée bleue à l’accélération",
+                    "Manque de pression de suralimentation"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 km ou plus tôt si vidanges espacées / usage intensif.",
+                  "diagnostic": "Lire la pression de suralimentation, contrôler les durites et le jeu de l’axe moteur froid.",
+                  "piece_concernee": "Turbocompresseur, alimentation et retour d’huile",
+                  "gravite": "Majeure si fumée, jeu ou manque de pression confirmé.",
+                  "frequence": "À surveiller sur véhicule préparé ou utilisé sur circuit.",
+                  "cout_reparation_estime": "Environ 900 à 2 000 € posé, selon turbo et périphériques."
+                },
+                {
+                  "probleme": "Distribution par courroie : échéance à documenter",
+                  "symptomes": [
+                    "Bruit de galet",
+                    "Historique absent",
+                    "Traces d’huile dans le carter de distribution"
+                  ],
+                  "kilometrage_apparition": "Selon préconisation constructeur et âge ; la date prime sur le kilométrage.",
+                  "diagnostic": "Exiger facture avec courroie, galets et pompe à eau ; contrôler l’absence de fuite avant remplacement.",
+                  "piece_concernee": "Courroie, tendeurs, galets et pompe à eau",
+                  "gravite": "Critique en cas d’échéance dépassée : risque de dégâts moteur.",
+                  "frequence": "Fréquent quand l’historique est incomplet.",
+                  "cout_reparation_estime": "Environ 500 à 1 000 € pour un kit complet, selon atelier."
+                },
+                {
+                  "probleme": "Embrayage et boîte robotisée MTA/Dualogic",
+                  "symptomes": [
+                    "À-coups au démarrage",
+                    "Passages de rapports lents",
+                    "Patinage ou odeur de garniture"
+                  ],
+                  "kilometrage_apparition": "Variable ; accéléré par conduite urbaine, démarrages sportifs et reprogrammation.",
+                  "diagnostic": "Essai routier à froid et chaud, lecture des défauts MTA et contrôle de l’apprentissage embrayage.",
+                  "piece_concernee": "Embrayage, actionneur MTA et commande hydraulique",
+                  "gravite": "Modérée à majeure selon défaut de commande.",
+                  "frequence": "À contrôler particulièrement sur les versions robotisées.",
+                  "cout_reparation_estime": "Environ 800 à 2 500 € selon embrayage/actionneur."
+                },
+                {
+                  "probleme": "Capote et évacuations d’eau",
+                  "symptomes": [
+                    "Humidité dans l’habitacle",
+                    "Moisissures",
+                    "Bruits aérodynamiques"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque visite, surtout véhicule stationné dehors.",
+                  "diagnostic": "Arroser capote fermée, contrôler joints, drains et état de la toile.",
+                  "piece_concernee": "Capote, joints et évacuations",
+                  "gravite": "Faible à modérée ; risque de corrosion / problèmes électriques si infiltration.",
+                  "frequence": "Dépend du stationnement et de l’entretien.",
+                  "cout_reparation_estime": "Environ 100 à 1 500 € selon joints, toile ou mécanisme."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "500 / 595 / 695",
+      "generations": [
+        {
+          "code_chassis": "312 (base Fiat 500)",
+          "annees": "2008-aujourd'hui",
+          "phases": [
+            "Abarth 500 (2008-2015)",
+            "595 (2015-aujourd'hui)",
+            "695 (séries limitées)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.4 T-Jet — 135 ch",
+              "code_moteur": "312 A2.000 (à confirmer au VIN)",
+              "cylindree": "1.4L",
+              "puissance_ch": 135,
+              "boite": [
+                "BVM5",
+                "BVM6",
+                "MTA/Dualogic selon version"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Turbocompresseur : lubrification et jeu à contrôler",
+                  "symptomes": [
+                    "Sifflement anormal",
+                    "Fumée bleue à l’accélération",
+                    "Manque de pression de suralimentation"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 km ou plus tôt si vidanges espacées / usage intensif.",
+                  "diagnostic": "Lire la pression de suralimentation, contrôler les durites et le jeu de l’axe moteur froid.",
+                  "piece_concernee": "Turbocompresseur, alimentation et retour d’huile",
+                  "gravite": "Majeure si fumée, jeu ou manque de pression confirmé.",
+                  "frequence": "À surveiller sur véhicule préparé ou utilisé sur circuit.",
+                  "cout_reparation_estime": "Environ 900 à 2 000 € posé, selon turbo et périphériques."
+                },
+                {
+                  "probleme": "Distribution par courroie : échéance à documenter",
+                  "symptomes": [
+                    "Bruit de galet",
+                    "Historique absent",
+                    "Traces d’huile dans le carter de distribution"
+                  ],
+                  "kilometrage_apparition": "Selon préconisation constructeur et âge ; la date prime sur le kilométrage.",
+                  "diagnostic": "Exiger facture avec courroie, galets et pompe à eau ; contrôler l’absence de fuite avant remplacement.",
+                  "piece_concernee": "Courroie, tendeurs, galets et pompe à eau",
+                  "gravite": "Critique en cas d’échéance dépassée : risque de dégâts moteur.",
+                  "frequence": "Fréquent quand l’historique est incomplet.",
+                  "cout_reparation_estime": "Environ 500 à 1 000 € pour un kit complet, selon atelier."
+                },
+                {
+                  "probleme": "Embrayage et boîte robotisée MTA/Dualogic",
+                  "symptomes": [
+                    "À-coups au démarrage",
+                    "Passages de rapports lents",
+                    "Patinage ou odeur de garniture"
+                  ],
+                  "kilometrage_apparition": "Variable ; accéléré par conduite urbaine, démarrages sportifs et reprogrammation.",
+                  "diagnostic": "Essai routier à froid et chaud, lecture des défauts MTA et contrôle de l’apprentissage embrayage.",
+                  "piece_concernee": "Embrayage, actionneur MTA et commande hydraulique",
+                  "gravite": "Modérée à majeure selon défaut de commande.",
+                  "frequence": "À contrôler particulièrement sur les versions robotisées.",
+                  "cout_reparation_estime": "Environ 800 à 2 500 € selon embrayage/actionneur."
+                },
+                {
+                  "probleme": "Train avant et supports moteur sollicités",
+                  "symptomes": [
+                    "Claquement sur route dégradée",
+                    "Vibrations à l’accélération",
+                    "Direction imprécise"
+                  ],
+                  "kilometrage_apparition": "Souvent à partir de 60 000 à 100 000 km selon usage et état des routes.",
+                  "diagnostic": "Contrôler jeu des biellettes, bras, coupelles, support anti-couple et géométrie.",
+                  "piece_concernee": "Bras, biellettes, amortisseurs et supports moteur",
+                  "gravite": "Modérée ; influence la tenue de route et l’usure des pneus.",
+                  "frequence": "Assez fréquent sur usage sportif.",
+                  "cout_reparation_estime": "Environ 250 à 1 200 € suivant les éléments remplacés."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.4 T-Jet — 145 ch",
+              "code_moteur": "312 A2.000 (à confirmer au VIN)",
+              "cylindree": "1.4L",
+              "puissance_ch": 145,
+              "boite": [
+                "BVM5",
+                "BVM6",
+                "MTA/Dualogic selon version"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Turbocompresseur : lubrification et jeu à contrôler",
+                  "symptomes": [
+                    "Sifflement anormal",
+                    "Fumée bleue à l’accélération",
+                    "Manque de pression de suralimentation"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 km ou plus tôt si vidanges espacées / usage intensif.",
+                  "diagnostic": "Lire la pression de suralimentation, contrôler les durites et le jeu de l’axe moteur froid.",
+                  "piece_concernee": "Turbocompresseur, alimentation et retour d’huile",
+                  "gravite": "Majeure si fumée, jeu ou manque de pression confirmé.",
+                  "frequence": "À surveiller sur véhicule préparé ou utilisé sur circuit.",
+                  "cout_reparation_estime": "Environ 900 à 2 000 € posé, selon turbo et périphériques."
+                },
+                {
+                  "probleme": "Distribution par courroie : échéance à documenter",
+                  "symptomes": [
+                    "Bruit de galet",
+                    "Historique absent",
+                    "Traces d’huile dans le carter de distribution"
+                  ],
+                  "kilometrage_apparition": "Selon préconisation constructeur et âge ; la date prime sur le kilométrage.",
+                  "diagnostic": "Exiger facture avec courroie, galets et pompe à eau ; contrôler l’absence de fuite avant remplacement.",
+                  "piece_concernee": "Courroie, tendeurs, galets et pompe à eau",
+                  "gravite": "Critique en cas d’échéance dépassée : risque de dégâts moteur.",
+                  "frequence": "Fréquent quand l’historique est incomplet.",
+                  "cout_reparation_estime": "Environ 500 à 1 000 € pour un kit complet, selon atelier."
+                },
+                {
+                  "probleme": "Embrayage et boîte robotisée MTA/Dualogic",
+                  "symptomes": [
+                    "À-coups au démarrage",
+                    "Passages de rapports lents",
+                    "Patinage ou odeur de garniture"
+                  ],
+                  "kilometrage_apparition": "Variable ; accéléré par conduite urbaine, démarrages sportifs et reprogrammation.",
+                  "diagnostic": "Essai routier à froid et chaud, lecture des défauts MTA et contrôle de l’apprentissage embrayage.",
+                  "piece_concernee": "Embrayage, actionneur MTA et commande hydraulique",
+                  "gravite": "Modérée à majeure selon défaut de commande.",
+                  "frequence": "À contrôler particulièrement sur les versions robotisées.",
+                  "cout_reparation_estime": "Environ 800 à 2 500 € selon embrayage/actionneur."
+                },
+                {
+                  "probleme": "Train avant et supports moteur sollicités",
+                  "symptomes": [
+                    "Claquement sur route dégradée",
+                    "Vibrations à l’accélération",
+                    "Direction imprécise"
+                  ],
+                  "kilometrage_apparition": "Souvent à partir de 60 000 à 100 000 km selon usage et état des routes.",
+                  "diagnostic": "Contrôler jeu des biellettes, bras, coupelles, support anti-couple et géométrie.",
+                  "piece_concernee": "Bras, biellettes, amortisseurs et supports moteur",
+                  "gravite": "Modérée ; influence la tenue de route et l’usure des pneus.",
+                  "frequence": "Assez fréquent sur usage sportif.",
+                  "cout_reparation_estime": "Environ 250 à 1 200 € suivant les éléments remplacés."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.4 T-Jet — 160 ch",
+              "code_moteur": "312 A2.000 (à confirmer au VIN)",
+              "cylindree": "1.4L",
+              "puissance_ch": 160,
+              "boite": [
+                "BVM5",
+                "BVM6",
+                "MTA/Dualogic selon version"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Turbocompresseur : lubrification et jeu à contrôler",
+                  "symptomes": [
+                    "Sifflement anormal",
+                    "Fumée bleue à l’accélération",
+                    "Manque de pression de suralimentation"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 km ou plus tôt si vidanges espacées / usage intensif.",
+                  "diagnostic": "Lire la pression de suralimentation, contrôler les durites et le jeu de l’axe moteur froid.",
+                  "piece_concernee": "Turbocompresseur, alimentation et retour d’huile",
+                  "gravite": "Majeure si fumée, jeu ou manque de pression confirmé.",
+                  "frequence": "À surveiller sur véhicule préparé ou utilisé sur circuit.",
+                  "cout_reparation_estime": "Environ 900 à 2 000 € posé, selon turbo et périphériques."
+                },
+                {
+                  "probleme": "Distribution par courroie : échéance à documenter",
+                  "symptomes": [
+                    "Bruit de galet",
+                    "Historique absent",
+                    "Traces d’huile dans le carter de distribution"
+                  ],
+                  "kilometrage_apparition": "Selon préconisation constructeur et âge ; la date prime sur le kilométrage.",
+                  "diagnostic": "Exiger facture avec courroie, galets et pompe à eau ; contrôler l’absence de fuite avant remplacement.",
+                  "piece_concernee": "Courroie, tendeurs, galets et pompe à eau",
+                  "gravite": "Critique en cas d’échéance dépassée : risque de dégâts moteur.",
+                  "frequence": "Fréquent quand l’historique est incomplet.",
+                  "cout_reparation_estime": "Environ 500 à 1 000 € pour un kit complet, selon atelier."
+                },
+                {
+                  "probleme": "Embrayage et boîte robotisée MTA/Dualogic",
+                  "symptomes": [
+                    "À-coups au démarrage",
+                    "Passages de rapports lents",
+                    "Patinage ou odeur de garniture"
+                  ],
+                  "kilometrage_apparition": "Variable ; accéléré par conduite urbaine, démarrages sportifs et reprogrammation.",
+                  "diagnostic": "Essai routier à froid et chaud, lecture des défauts MTA et contrôle de l’apprentissage embrayage.",
+                  "piece_concernee": "Embrayage, actionneur MTA et commande hydraulique",
+                  "gravite": "Modérée à majeure selon défaut de commande.",
+                  "frequence": "À contrôler particulièrement sur les versions robotisées.",
+                  "cout_reparation_estime": "Environ 800 à 2 500 € selon embrayage/actionneur."
+                },
+                {
+                  "probleme": "Train avant et supports moteur sollicités",
+                  "symptomes": [
+                    "Claquement sur route dégradée",
+                    "Vibrations à l’accélération",
+                    "Direction imprécise"
+                  ],
+                  "kilometrage_apparition": "Souvent à partir de 60 000 à 100 000 km selon usage et état des routes.",
+                  "diagnostic": "Contrôler jeu des biellettes, bras, coupelles, support anti-couple et géométrie.",
+                  "piece_concernee": "Bras, biellettes, amortisseurs et supports moteur",
+                  "gravite": "Modérée ; influence la tenue de route et l’usure des pneus.",
+                  "frequence": "Assez fréquent sur usage sportif.",
+                  "cout_reparation_estime": "Environ 250 à 1 200 € suivant les éléments remplacés."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.4 T-Jet — 180 ch",
+              "code_moteur": "312 A2.000 (à confirmer au VIN)",
+              "cylindree": "1.4L",
+              "puissance_ch": 180,
+              "boite": [
+                "BVM5",
+                "BVM6",
+                "MTA/Dualogic selon version"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Turbocompresseur : lubrification et jeu à contrôler",
+                  "symptomes": [
+                    "Sifflement anormal",
+                    "Fumée bleue à l’accélération",
+                    "Manque de pression de suralimentation"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 km ou plus tôt si vidanges espacées / usage intensif.",
+                  "diagnostic": "Lire la pression de suralimentation, contrôler les durites et le jeu de l’axe moteur froid.",
+                  "piece_concernee": "Turbocompresseur, alimentation et retour d’huile",
+                  "gravite": "Majeure si fumée, jeu ou manque de pression confirmé.",
+                  "frequence": "À surveiller sur véhicule préparé ou utilisé sur circuit.",
+                  "cout_reparation_estime": "Environ 900 à 2 000 € posé, selon turbo et périphériques."
+                },
+                {
+                  "probleme": "Distribution par courroie : échéance à documenter",
+                  "symptomes": [
+                    "Bruit de galet",
+                    "Historique absent",
+                    "Traces d’huile dans le carter de distribution"
+                  ],
+                  "kilometrage_apparition": "Selon préconisation constructeur et âge ; la date prime sur le kilométrage.",
+                  "diagnostic": "Exiger facture avec courroie, galets et pompe à eau ; contrôler l’absence de fuite avant remplacement.",
+                  "piece_concernee": "Courroie, tendeurs, galets et pompe à eau",
+                  "gravite": "Critique en cas d’échéance dépassée : risque de dégâts moteur.",
+                  "frequence": "Fréquent quand l’historique est incomplet.",
+                  "cout_reparation_estime": "Environ 500 à 1 000 € pour un kit complet, selon atelier."
+                },
+                {
+                  "probleme": "Embrayage et boîte robotisée MTA/Dualogic",
+                  "symptomes": [
+                    "À-coups au démarrage",
+                    "Passages de rapports lents",
+                    "Patinage ou odeur de garniture"
+                  ],
+                  "kilometrage_apparition": "Variable ; accéléré par conduite urbaine, démarrages sportifs et reprogrammation.",
+                  "diagnostic": "Essai routier à froid et chaud, lecture des défauts MTA et contrôle de l’apprentissage embrayage.",
+                  "piece_concernee": "Embrayage, actionneur MTA et commande hydraulique",
+                  "gravite": "Modérée à majeure selon défaut de commande.",
+                  "frequence": "À contrôler particulièrement sur les versions robotisées.",
+                  "cout_reparation_estime": "Environ 800 à 2 500 € selon embrayage/actionneur."
+                },
+                {
+                  "probleme": "Train avant et supports moteur sollicités",
+                  "symptomes": [
+                    "Claquement sur route dégradée",
+                    "Vibrations à l’accélération",
+                    "Direction imprécise"
+                  ],
+                  "kilometrage_apparition": "Souvent à partir de 60 000 à 100 000 km selon usage et état des routes.",
+                  "diagnostic": "Contrôler jeu des biellettes, bras, coupelles, support anti-couple et géométrie.",
+                  "piece_concernee": "Bras, biellettes, amortisseurs et supports moteur",
+                  "gravite": "Modérée ; influence la tenue de route et l’usure des pneus.",
+                  "frequence": "Assez fréquent sur usage sportif.",
+                  "cout_reparation_estime": "Environ 250 à 1 200 € suivant les éléments remplacés."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "850 TC / OT 1300",
+      "generations": [
+        {
+          "code_chassis": "Fiat 600/850 base",
+          "annees": "1960-1971",
+          "phases": [
+            "850 TC",
+            "OT 1000/1300"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "850 TC — 76 ch",
+              "code_moteur": "Fiat 100 préparé Abarth",
+              "cylindree": "0.85L",
+              "puissance_ch": 76,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion structurelle",
+                  "symptomes": [
+                    "Perforations de plancher",
+                    "Bas de caisse affaissés",
+                    "Fixations de suspension dégradées"
+                  ],
+                  "kilometrage_apparition": "Priorité absolue, indépendamment du kilométrage.",
+                  "diagnostic": "Inspection sur pont des longerons, planchers, passages de roues et ancrages de suspension.",
+                  "piece_concernee": "Caisse, longerons et ancrages",
+                  "gravite": "Critique si structure atteinte.",
+                  "frequence": "Très fréquent sur véhicule non restauré.",
+                  "cout_reparation_estime": "De 1 000 € à restauration complète selon état."
+                },
+                {
+                  "probleme": "Carburation double corps : réglage et étanchéité",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Odeur d’essence",
+                    "Trou à l’accélération"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge et à l’immobilisation plus qu’au kilométrage.",
+                  "diagnostic": "Contrôler pompe, filtres, joints, niveau de cuve et réglage richesse/allumage.",
+                  "piece_concernee": "Carburateurs, pompe mécanique et durites",
+                  "gravite": "Modérée ; risque incendie en cas de fuite.",
+                  "frequence": "Fréquent sur exemplaire immobilisé.",
+                  "cout_reparation_estime": "Environ 200 à 900 € selon remise en état."
+                },
+                {
+                  "probleme": "Disponibilité des pièces spécifiques Abarth",
+                  "symptomes": [
+                    "Réparation différée",
+                    "Montages non conformes",
+                    "Absence de références"
+                  ],
+                  "kilometrage_apparition": "À vérifier avant achat.",
+                  "diagnostic": "Comparer numéros de série, consulter spécialiste et inventorier les pièces manquantes.",
+                  "piece_concernee": "Pièces moteur et carrosserie spécifiques",
+                  "gravite": "Majeure pour valeur et délai de remise en état.",
+                  "frequence": "Structurel sur modèle de collection.",
+                  "cout_reparation_estime": "Très variable, parfois sans équivalent neuf."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Grande Punto Abarth / Punto Evo Abarth",
+      "generations": [
+        {
+          "code_chassis": "199",
+          "annees": "2007-2012",
+          "phases": [
+            "Grande Punto Abarth (2007-2009)",
+            "Punto Evo Abarth (2010-2012)",
+            "Punto Abarth SS"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.4 T-Jet — 155 ch",
+              "code_moteur": "199 A4.000 (à confirmer au VIN)",
+              "cylindree": "1.4L",
+              "puissance_ch": 155,
+              "boite": [
+                "BVM5",
+                "BVM6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Turbocompresseur : lubrification et jeu à contrôler",
+                  "symptomes": [
+                    "Sifflement anormal",
+                    "Fumée bleue à l’accélération",
+                    "Manque de pression de suralimentation"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 km ou plus tôt si vidanges espacées / usage intensif.",
+                  "diagnostic": "Lire la pression de suralimentation, contrôler les durites et le jeu de l’axe moteur froid.",
+                  "piece_concernee": "Turbocompresseur, alimentation et retour d’huile",
+                  "gravite": "Majeure si fumée, jeu ou manque de pression confirmé.",
+                  "frequence": "À surveiller sur véhicule préparé ou utilisé sur circuit.",
+                  "cout_reparation_estime": "Environ 900 à 2 000 € posé, selon turbo et périphériques."
+                },
+                {
+                  "probleme": "Distribution par courroie : échéance à documenter",
+                  "symptomes": [
+                    "Bruit de galet",
+                    "Historique absent",
+                    "Traces d’huile dans le carter de distribution"
+                  ],
+                  "kilometrage_apparition": "Selon préconisation constructeur et âge ; la date prime sur le kilométrage.",
+                  "diagnostic": "Exiger facture avec courroie, galets et pompe à eau ; contrôler l’absence de fuite avant remplacement.",
+                  "piece_concernee": "Courroie, tendeurs, galets et pompe à eau",
+                  "gravite": "Critique en cas d’échéance dépassée : risque de dégâts moteur.",
+                  "frequence": "Fréquent quand l’historique est incomplet.",
+                  "cout_reparation_estime": "Environ 500 à 1 000 € pour un kit complet, selon atelier."
+                },
+                {
+                  "probleme": "Embrayage et boîte robotisée MTA/Dualogic",
+                  "symptomes": [
+                    "À-coups au démarrage",
+                    "Passages de rapports lents",
+                    "Patinage ou odeur de garniture"
+                  ],
+                  "kilometrage_apparition": "Variable ; accéléré par conduite urbaine, démarrages sportifs et reprogrammation.",
+                  "diagnostic": "Essai routier à froid et chaud, lecture des défauts MTA et contrôle de l’apprentissage embrayage.",
+                  "piece_concernee": "Embrayage, actionneur MTA et commande hydraulique",
+                  "gravite": "Modérée à majeure selon défaut de commande.",
+                  "frequence": "À contrôler particulièrement sur les versions robotisées.",
+                  "cout_reparation_estime": "Environ 800 à 2 500 € selon embrayage/actionneur."
+                },
+                {
+                  "probleme": "Train avant et supports moteur sollicités",
+                  "symptomes": [
+                    "Claquement sur route dégradée",
+                    "Vibrations à l’accélération",
+                    "Direction imprécise"
+                  ],
+                  "kilometrage_apparition": "Souvent à partir de 60 000 à 100 000 km selon usage et état des routes.",
+                  "diagnostic": "Contrôler jeu des biellettes, bras, coupelles, support anti-couple et géométrie.",
+                  "piece_concernee": "Bras, biellettes, amortisseurs et supports moteur",
+                  "gravite": "Modérée ; influence la tenue de route et l’usure des pneus.",
+                  "frequence": "Assez fréquent sur usage sportif.",
+                  "cout_reparation_estime": "Environ 250 à 1 200 € suivant les éléments remplacés."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.4 T-Jet — 180 ch",
+              "code_moteur": "199 A4.000 (à confirmer au VIN)",
+              "cylindree": "1.4L",
+              "puissance_ch": 180,
+              "boite": [
+                "BVM5",
+                "BVM6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Turbocompresseur : lubrification et jeu à contrôler",
+                  "symptomes": [
+                    "Sifflement anormal",
+                    "Fumée bleue à l’accélération",
+                    "Manque de pression de suralimentation"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 km ou plus tôt si vidanges espacées / usage intensif.",
+                  "diagnostic": "Lire la pression de suralimentation, contrôler les durites et le jeu de l’axe moteur froid.",
+                  "piece_concernee": "Turbocompresseur, alimentation et retour d’huile",
+                  "gravite": "Majeure si fumée, jeu ou manque de pression confirmé.",
+                  "frequence": "À surveiller sur véhicule préparé ou utilisé sur circuit.",
+                  "cout_reparation_estime": "Environ 900 à 2 000 € posé, selon turbo et périphériques."
+                },
+                {
+                  "probleme": "Distribution par courroie : échéance à documenter",
+                  "symptomes": [
+                    "Bruit de galet",
+                    "Historique absent",
+                    "Traces d’huile dans le carter de distribution"
+                  ],
+                  "kilometrage_apparition": "Selon préconisation constructeur et âge ; la date prime sur le kilométrage.",
+                  "diagnostic": "Exiger facture avec courroie, galets et pompe à eau ; contrôler l’absence de fuite avant remplacement.",
+                  "piece_concernee": "Courroie, tendeurs, galets et pompe à eau",
+                  "gravite": "Critique en cas d’échéance dépassée : risque de dégâts moteur.",
+                  "frequence": "Fréquent quand l’historique est incomplet.",
+                  "cout_reparation_estime": "Environ 500 à 1 000 € pour un kit complet, selon atelier."
+                },
+                {
+                  "probleme": "Embrayage et boîte robotisée MTA/Dualogic",
+                  "symptomes": [
+                    "À-coups au démarrage",
+                    "Passages de rapports lents",
+                    "Patinage ou odeur de garniture"
+                  ],
+                  "kilometrage_apparition": "Variable ; accéléré par conduite urbaine, démarrages sportifs et reprogrammation.",
+                  "diagnostic": "Essai routier à froid et chaud, lecture des défauts MTA et contrôle de l’apprentissage embrayage.",
+                  "piece_concernee": "Embrayage, actionneur MTA et commande hydraulique",
+                  "gravite": "Modérée à majeure selon défaut de commande.",
+                  "frequence": "À contrôler particulièrement sur les versions robotisées.",
+                  "cout_reparation_estime": "Environ 800 à 2 500 € selon embrayage/actionneur."
+                },
+                {
+                  "probleme": "Train avant et supports moteur sollicités",
+                  "symptomes": [
+                    "Claquement sur route dégradée",
+                    "Vibrations à l’accélération",
+                    "Direction imprécise"
+                  ],
+                  "kilometrage_apparition": "Souvent à partir de 60 000 à 100 000 km selon usage et état des routes.",
+                  "diagnostic": "Contrôler jeu des biellettes, bras, coupelles, support anti-couple et géométrie.",
+                  "piece_concernee": "Bras, biellettes, amortisseurs et supports moteur",
+                  "gravite": "Modérée ; influence la tenue de route et l’usure des pneus.",
+                  "frequence": "Assez fréquent sur usage sportif.",
+                  "cout_reparation_estime": "Environ 250 à 1 200 € suivant les éléments remplacés."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "500",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "es",
+          "gb",
+          "lu",
+          "nl",
+          "nz",
+          "ua"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "312",
+          "annees": "2008-2016",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.4 T-Jet — 135 ch",
+              "code_moteur": "312A1000",
+              "cylindree": "1 368 cm³",
+              "puissance_ch": 135,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Suralimentation et circuit d’admission",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Sifflement ou souffle anormal",
+                    "Mode dégradé"
+                  ],
+                  "kilometrage_apparition": "Souvent à surveiller après 60 000 km, plus tôt en usage sportif.",
+                  "diagnostic": "Contrôle des durites, de la wastegate, de la pression demandée/réelle et du jeu du turbocompresseur.",
+                  "piece_concernee": "Turbo IHI/Garrett, wastegate, échangeur et durites",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Accélérée par les fortes températures et les vidanges espacées",
+                  "cout_reparation_estime": "Environ 150 à 2 000 € selon durite, commande ou turbo complet."
+                },
+                {
+                  "probleme": "Refroidissement et lubrification en usage soutenu",
+                  "symptomes": [
+                    "Température élevée",
+                    "Odeur de liquide ou d’huile",
+                    "Consommation d’huile"
+                  ],
+                  "kilometrage_apparition": "Variable ; contrôle indispensable après circuit ou préparation moteur.",
+                  "diagnostic": "Mise sous pression du circuit, inspection des fuites, contrôle du niveau et de la pression d’huile.",
+                  "piece_concernee": "Radiateur, thermostat, durites, carter et circuit d’huile",
+                  "gravite": "Majeure si surchauffe ou pression d’huile insuffisante",
+                  "frequence": "À surveiller sur véhicule modifié ou conduit sportivement",
+                  "cout_reparation_estime": "Environ 150 à 2 500 € selon origine."
+                },
+                {
+                  "probleme": "Boîte, embrayage et trains roulants sportifs",
+                  "symptomes": [
+                    "Patinage",
+                    "Craquement au passage des rapports",
+                    "Claquement ou vibration"
+                  ],
+                  "kilometrage_apparition": "Généralement à partir de 50 000 à 100 000 km selon usage.",
+                  "diagnostic": "Essai à chaud, contrôle de l’embrayage, des supports, rotules, amortisseurs et freins.",
+                  "piece_concernee": "Embrayage, boîte/MTA, supports, suspension et freinage",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Usure fortement dépendante de la conduite",
+                  "cout_reparation_estime": "Environ 300 à 3 500 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.4 T-Jet Esseesse — 160 ch",
+              "code_moteur": "312A1000",
+              "cylindree": "1 368 cm³",
+              "puissance_ch": 160,
+              "boite": [
+                "BVM5",
+                "MTA5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Suralimentation et circuit d’admission",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Sifflement ou souffle anormal",
+                    "Mode dégradé"
+                  ],
+                  "kilometrage_apparition": "Souvent à surveiller après 60 000 km, plus tôt en usage sportif.",
+                  "diagnostic": "Contrôle des durites, de la wastegate, de la pression demandée/réelle et du jeu du turbocompresseur.",
+                  "piece_concernee": "Turbo IHI/Garrett, wastegate, échangeur et durites",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Accélérée par les fortes températures et les vidanges espacées",
+                  "cout_reparation_estime": "Environ 150 à 2 000 € selon durite, commande ou turbo complet."
+                },
+                {
+                  "probleme": "Refroidissement et lubrification en usage soutenu",
+                  "symptomes": [
+                    "Température élevée",
+                    "Odeur de liquide ou d’huile",
+                    "Consommation d’huile"
+                  ],
+                  "kilometrage_apparition": "Variable ; contrôle indispensable après circuit ou préparation moteur.",
+                  "diagnostic": "Mise sous pression du circuit, inspection des fuites, contrôle du niveau et de la pression d’huile.",
+                  "piece_concernee": "Radiateur, thermostat, durites, carter et circuit d’huile",
+                  "gravite": "Majeure si surchauffe ou pression d’huile insuffisante",
+                  "frequence": "À surveiller sur véhicule modifié ou conduit sportivement",
+                  "cout_reparation_estime": "Environ 150 à 2 500 € selon origine."
+                },
+                {
+                  "probleme": "Boîte, embrayage et trains roulants sportifs",
+                  "symptomes": [
+                    "Patinage",
+                    "Craquement au passage des rapports",
+                    "Claquement ou vibration"
+                  ],
+                  "kilometrage_apparition": "Généralement à partir de 50 000 à 100 000 km selon usage.",
+                  "diagnostic": "Essai à chaud, contrôle de l’embrayage, des supports, rotules, amortisseurs et freins.",
+                  "piece_concernee": "Embrayage, boîte/MTA, supports, suspension et freinage",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Usure fortement dépendante de la conduite",
+                  "cout_reparation_estime": "Environ 300 à 3 500 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "595",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "gb",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "312",
+          "annees": "2012-2024",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.4 T-Jet — 145 ch",
+              "code_moteur": "312A1000",
+              "cylindree": "1 368 cm³",
+              "puissance_ch": 145,
+              "boite": [
+                "BVM5",
+                "MTA5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Suralimentation et circuit d’admission",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Sifflement ou souffle anormal",
+                    "Mode dégradé"
+                  ],
+                  "kilometrage_apparition": "Souvent à surveiller après 60 000 km, plus tôt en usage sportif.",
+                  "diagnostic": "Contrôle des durites, de la wastegate, de la pression demandée/réelle et du jeu du turbocompresseur.",
+                  "piece_concernee": "Turbo IHI/Garrett, wastegate, échangeur et durites",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Accélérée par les fortes températures et les vidanges espacées",
+                  "cout_reparation_estime": "Environ 150 à 2 000 € selon durite, commande ou turbo complet."
+                },
+                {
+                  "probleme": "Refroidissement et lubrification en usage soutenu",
+                  "symptomes": [
+                    "Température élevée",
+                    "Odeur de liquide ou d’huile",
+                    "Consommation d’huile"
+                  ],
+                  "kilometrage_apparition": "Variable ; contrôle indispensable après circuit ou préparation moteur.",
+                  "diagnostic": "Mise sous pression du circuit, inspection des fuites, contrôle du niveau et de la pression d’huile.",
+                  "piece_concernee": "Radiateur, thermostat, durites, carter et circuit d’huile",
+                  "gravite": "Majeure si surchauffe ou pression d’huile insuffisante",
+                  "frequence": "À surveiller sur véhicule modifié ou conduit sportivement",
+                  "cout_reparation_estime": "Environ 150 à 2 500 € selon origine."
+                },
+                {
+                  "probleme": "Boîte, embrayage et trains roulants sportifs",
+                  "symptomes": [
+                    "Patinage",
+                    "Craquement au passage des rapports",
+                    "Claquement ou vibration"
+                  ],
+                  "kilometrage_apparition": "Généralement à partir de 50 000 à 100 000 km selon usage.",
+                  "diagnostic": "Essai à chaud, contrôle de l’embrayage, des supports, rotules, amortisseurs et freins.",
+                  "piece_concernee": "Embrayage, boîte/MTA, supports, suspension et freinage",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Usure fortement dépendante de la conduite",
+                  "cout_reparation_estime": "Environ 300 à 3 500 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.4 T-Jet Turismo — 165 ch",
+              "code_moteur": "312B4000",
+              "cylindree": "1 368 cm³",
+              "puissance_ch": 165,
+              "boite": [
+                "BVM5",
+                "MTA5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Suralimentation et circuit d’admission",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Sifflement ou souffle anormal",
+                    "Mode dégradé"
+                  ],
+                  "kilometrage_apparition": "Souvent à surveiller après 60 000 km, plus tôt en usage sportif.",
+                  "diagnostic": "Contrôle des durites, de la wastegate, de la pression demandée/réelle et du jeu du turbocompresseur.",
+                  "piece_concernee": "Turbo IHI/Garrett, wastegate, échangeur et durites",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Accélérée par les fortes températures et les vidanges espacées",
+                  "cout_reparation_estime": "Environ 150 à 2 000 € selon durite, commande ou turbo complet."
+                },
+                {
+                  "probleme": "Refroidissement et lubrification en usage soutenu",
+                  "symptomes": [
+                    "Température élevée",
+                    "Odeur de liquide ou d’huile",
+                    "Consommation d’huile"
+                  ],
+                  "kilometrage_apparition": "Variable ; contrôle indispensable après circuit ou préparation moteur.",
+                  "diagnostic": "Mise sous pression du circuit, inspection des fuites, contrôle du niveau et de la pression d’huile.",
+                  "piece_concernee": "Radiateur, thermostat, durites, carter et circuit d’huile",
+                  "gravite": "Majeure si surchauffe ou pression d’huile insuffisante",
+                  "frequence": "À surveiller sur véhicule modifié ou conduit sportivement",
+                  "cout_reparation_estime": "Environ 150 à 2 500 € selon origine."
+                },
+                {
+                  "probleme": "Boîte, embrayage et trains roulants sportifs",
+                  "symptomes": [
+                    "Patinage",
+                    "Craquement au passage des rapports",
+                    "Claquement ou vibration"
+                  ],
+                  "kilometrage_apparition": "Généralement à partir de 50 000 à 100 000 km selon usage.",
+                  "diagnostic": "Essai à chaud, contrôle de l’embrayage, des supports, rotules, amortisseurs et freins.",
+                  "piece_concernee": "Embrayage, boîte/MTA, supports, suspension et freinage",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Usure fortement dépendante de la conduite",
+                  "cout_reparation_estime": "Environ 300 à 3 500 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.4 T-Jet Competizione — 180 ch",
+              "code_moteur": "312A3000",
+              "cylindree": "1 368 cm³",
+              "puissance_ch": 180,
+              "boite": [
+                "BVM5",
+                "MTA5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Suralimentation et circuit d’admission",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Sifflement ou souffle anormal",
+                    "Mode dégradé"
+                  ],
+                  "kilometrage_apparition": "Souvent à surveiller après 60 000 km, plus tôt en usage sportif.",
+                  "diagnostic": "Contrôle des durites, de la wastegate, de la pression demandée/réelle et du jeu du turbocompresseur.",
+                  "piece_concernee": "Turbo IHI/Garrett, wastegate, échangeur et durites",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Accélérée par les fortes températures et les vidanges espacées",
+                  "cout_reparation_estime": "Environ 150 à 2 000 € selon durite, commande ou turbo complet."
+                },
+                {
+                  "probleme": "Refroidissement et lubrification en usage soutenu",
+                  "symptomes": [
+                    "Température élevée",
+                    "Odeur de liquide ou d’huile",
+                    "Consommation d’huile"
+                  ],
+                  "kilometrage_apparition": "Variable ; contrôle indispensable après circuit ou préparation moteur.",
+                  "diagnostic": "Mise sous pression du circuit, inspection des fuites, contrôle du niveau et de la pression d’huile.",
+                  "piece_concernee": "Radiateur, thermostat, durites, carter et circuit d’huile",
+                  "gravite": "Majeure si surchauffe ou pression d’huile insuffisante",
+                  "frequence": "À surveiller sur véhicule modifié ou conduit sportivement",
+                  "cout_reparation_estime": "Environ 150 à 2 500 € selon origine."
+                },
+                {
+                  "probleme": "Boîte, embrayage et trains roulants sportifs",
+                  "symptomes": [
+                    "Patinage",
+                    "Craquement au passage des rapports",
+                    "Claquement ou vibration"
+                  ],
+                  "kilometrage_apparition": "Généralement à partir de 50 000 à 100 000 km selon usage.",
+                  "diagnostic": "Essai à chaud, contrôle de l’embrayage, des supports, rotules, amortisseurs et freins.",
+                  "piece_concernee": "Embrayage, boîte/MTA, supports, suspension et freinage",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Usure fortement dépendante de la conduite",
+                  "cout_reparation_estime": "Environ 300 à 3 500 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "600E",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "es",
+          "gb",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 6
+      },
+      "generations": [
+        {
+          "code_chassis": "364",
+          "annees": "2024-aujourd’hui",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "600e Turismo 54 kWh — 175 kW — 240 ch",
+              "code_moteur": "Moteur synchrone avant",
+              "cylindree": "Non applicable",
+              "puissance_ch": 240,
+              "boite": [
+                "Réducteur à rapport unique"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie de traction, BMS et refroidissement",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Puissance limitée",
+                    "Défaut de charge"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge, des cycles, de la température et des recharges rapides.",
+                  "diagnostic": "Lecture du SOH, des écarts de cellules, températures, isolement et test de charge AC/DC.",
+                  "piece_concernee": "Batterie 54 kWh, BMS et circuit thermique",
+                  "gravite": "Majeure en cas de défaut haute tension",
+                  "frequence": "À contrôler avant achat et après alerte",
+                  "cout_reparation_estime": "De quelques centaines d’euros à plus de 10 000 € selon module."
+                },
+                {
+                  "probleme": "Moteur, onduleur et différentiel Torsen",
+                  "symptomes": [
+                    "Bruit de transmission",
+                    "Perte de motricité",
+                    "Voyant chaîne de traction"
+                  ],
+                  "kilometrage_apparition": "À surveiller après usage intensif ou choc sous caisse.",
+                  "diagnostic": "Lecture des calculateurs, contrôle des fuites, des températures et essai de motricité.",
+                  "piece_concernee": "Moteur avant, réducteur, onduleur et différentiel",
+                  "gravite": "Majeure",
+                  "frequence": "Encore peu documentée sur véhicule récent",
+                  "cout_reparation_estime": "Élevé — devis spécialisé."
+                },
+                {
+                  "probleme": "Freins et pneumatiques haute performance",
+                  "symptomes": [
+                    "Vibration au freinage",
+                    "Usure intérieure des pneus",
+                    "Bruit de roulement"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque entretien.",
+                  "diagnostic": "Mesure disques/plaquettes, inspection pneus et géométrie.",
+                  "piece_concernee": "Freins Alcon, pneus 20 pouces et trains roulants",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Usure dépendante de la conduite",
+                  "cout_reparation_estime": "Environ 500 à 3 000 € par intervention complète."
+                }
+              ]
+            },
+            {
+              "type": "Électrique",
+              "nom": "600e Scorpionissima / Competizione 54 kWh — 207 kW — 280 ch",
+              "code_moteur": "Moteur synchrone avant",
+              "cylindree": "Non applicable",
+              "puissance_ch": 280,
+              "boite": [
+                "Réducteur à rapport unique"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie de traction, BMS et refroidissement",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Puissance limitée",
+                    "Défaut de charge"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge, des cycles, de la température et des recharges rapides.",
+                  "diagnostic": "Lecture du SOH, des écarts de cellules, températures, isolement et test de charge AC/DC.",
+                  "piece_concernee": "Batterie 54 kWh, BMS et circuit thermique",
+                  "gravite": "Majeure en cas de défaut haute tension",
+                  "frequence": "À contrôler avant achat et après alerte",
+                  "cout_reparation_estime": "De quelques centaines d’euros à plus de 10 000 € selon module."
+                },
+                {
+                  "probleme": "Moteur, onduleur et différentiel Torsen",
+                  "symptomes": [
+                    "Bruit de transmission",
+                    "Perte de motricité",
+                    "Voyant chaîne de traction"
+                  ],
+                  "kilometrage_apparition": "À surveiller après usage intensif ou choc sous caisse.",
+                  "diagnostic": "Lecture des calculateurs, contrôle des fuites, des températures et essai de motricité.",
+                  "piece_concernee": "Moteur avant, réducteur, onduleur et différentiel",
+                  "gravite": "Majeure",
+                  "frequence": "Encore peu documentée sur véhicule récent",
+                  "cout_reparation_estime": "Élevé — devis spécialisé."
+                },
+                {
+                  "probleme": "Freins et pneumatiques haute performance",
+                  "symptomes": [
+                    "Vibration au freinage",
+                    "Usure intérieure des pneus",
+                    "Bruit de roulement"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque entretien.",
+                  "diagnostic": "Mesure disques/plaquettes, inspection pneus et géométrie.",
+                  "piece_concernee": "Freins Alcon, pneus 20 pouces et trains roulants",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Usure dépendante de la conduite",
+                  "cout_reparation_estime": "Environ 500 à 3 000 € par intervention complète."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "695",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "gb",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "312",
+          "annees": "2011-2024",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.4 T-Jet Rivale / Tributo — 180 ch",
+              "code_moteur": "312A3000",
+              "cylindree": "1 368 cm³",
+              "puissance_ch": 180,
+              "boite": [
+                "BVM5",
+                "MTA5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Suralimentation et circuit d’admission",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Sifflement ou souffle anormal",
+                    "Mode dégradé"
+                  ],
+                  "kilometrage_apparition": "Souvent à surveiller après 60 000 km, plus tôt en usage sportif.",
+                  "diagnostic": "Contrôle des durites, de la wastegate, de la pression demandée/réelle et du jeu du turbocompresseur.",
+                  "piece_concernee": "Turbo IHI/Garrett, wastegate, échangeur et durites",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Accélérée par les fortes températures et les vidanges espacées",
+                  "cout_reparation_estime": "Environ 150 à 2 000 € selon durite, commande ou turbo complet."
+                },
+                {
+                  "probleme": "Refroidissement et lubrification en usage soutenu",
+                  "symptomes": [
+                    "Température élevée",
+                    "Odeur de liquide ou d’huile",
+                    "Consommation d’huile"
+                  ],
+                  "kilometrage_apparition": "Variable ; contrôle indispensable après circuit ou préparation moteur.",
+                  "diagnostic": "Mise sous pression du circuit, inspection des fuites, contrôle du niveau et de la pression d’huile.",
+                  "piece_concernee": "Radiateur, thermostat, durites, carter et circuit d’huile",
+                  "gravite": "Majeure si surchauffe ou pression d’huile insuffisante",
+                  "frequence": "À surveiller sur véhicule modifié ou conduit sportivement",
+                  "cout_reparation_estime": "Environ 150 à 2 500 € selon origine."
+                },
+                {
+                  "probleme": "Boîte, embrayage et trains roulants sportifs",
+                  "symptomes": [
+                    "Patinage",
+                    "Craquement au passage des rapports",
+                    "Claquement ou vibration"
+                  ],
+                  "kilometrage_apparition": "Généralement à partir de 50 000 à 100 000 km selon usage.",
+                  "diagnostic": "Essai à chaud, contrôle de l’embrayage, des supports, rotules, amortisseurs et freins.",
+                  "piece_concernee": "Embrayage, boîte/MTA, supports, suspension et freinage",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Usure fortement dépendante de la conduite",
+                  "cout_reparation_estime": "Environ 300 à 3 500 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.4 T-Jet Biposto — 190 ch",
+              "code_moteur": "312A3000",
+              "cylindree": "1 368 cm³",
+              "puissance_ch": 190,
+              "boite": [
+                "BVM5 à crabots selon version"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Suralimentation et circuit d’admission",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Sifflement ou souffle anormal",
+                    "Mode dégradé"
+                  ],
+                  "kilometrage_apparition": "Souvent à surveiller après 60 000 km, plus tôt en usage sportif.",
+                  "diagnostic": "Contrôle des durites, de la wastegate, de la pression demandée/réelle et du jeu du turbocompresseur.",
+                  "piece_concernee": "Turbo IHI/Garrett, wastegate, échangeur et durites",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Accélérée par les fortes températures et les vidanges espacées",
+                  "cout_reparation_estime": "Environ 150 à 2 000 € selon durite, commande ou turbo complet."
+                },
+                {
+                  "probleme": "Refroidissement et lubrification en usage soutenu",
+                  "symptomes": [
+                    "Température élevée",
+                    "Odeur de liquide ou d’huile",
+                    "Consommation d’huile"
+                  ],
+                  "kilometrage_apparition": "Variable ; contrôle indispensable après circuit ou préparation moteur.",
+                  "diagnostic": "Mise sous pression du circuit, inspection des fuites, contrôle du niveau et de la pression d’huile.",
+                  "piece_concernee": "Radiateur, thermostat, durites, carter et circuit d’huile",
+                  "gravite": "Majeure si surchauffe ou pression d’huile insuffisante",
+                  "frequence": "À surveiller sur véhicule modifié ou conduit sportivement",
+                  "cout_reparation_estime": "Environ 150 à 2 500 € selon origine."
+                },
+                {
+                  "probleme": "Boîte, embrayage et trains roulants sportifs",
+                  "symptomes": [
+                    "Patinage",
+                    "Craquement au passage des rapports",
+                    "Claquement ou vibration"
+                  ],
+                  "kilometrage_apparition": "Généralement à partir de 50 000 à 100 000 km selon usage.",
+                  "diagnostic": "Essai à chaud, contrôle de l’embrayage, des supports, rotules, amortisseurs et freins.",
+                  "piece_concernee": "Embrayage, boîte/MTA, supports, suspension et freinage",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Usure fortement dépendante de la conduite",
+                  "cout_reparation_estime": "Environ 300 à 3 500 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Punto",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "gb",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 8
+      },
+      "generations": [
+        {
+          "code_chassis": "199",
+          "annees": "2007-2014",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.4 T-Jet Grande Punto — 155 ch",
+              "code_moteur": "199A8000",
+              "cylindree": "1 368 cm³",
+              "puissance_ch": 155,
+              "boite": [
+                "BVM6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Suralimentation et circuit d’admission",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Sifflement ou souffle anormal",
+                    "Mode dégradé"
+                  ],
+                  "kilometrage_apparition": "Souvent à surveiller après 60 000 km, plus tôt en usage sportif.",
+                  "diagnostic": "Contrôle des durites, de la wastegate, de la pression demandée/réelle et du jeu du turbocompresseur.",
+                  "piece_concernee": "Turbo IHI/Garrett, wastegate, échangeur et durites",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Accélérée par les fortes températures et les vidanges espacées",
+                  "cout_reparation_estime": "Environ 150 à 2 000 € selon durite, commande ou turbo complet."
+                },
+                {
+                  "probleme": "Refroidissement et lubrification en usage soutenu",
+                  "symptomes": [
+                    "Température élevée",
+                    "Odeur de liquide ou d’huile",
+                    "Consommation d’huile"
+                  ],
+                  "kilometrage_apparition": "Variable ; contrôle indispensable après circuit ou préparation moteur.",
+                  "diagnostic": "Mise sous pression du circuit, inspection des fuites, contrôle du niveau et de la pression d’huile.",
+                  "piece_concernee": "Radiateur, thermostat, durites, carter et circuit d’huile",
+                  "gravite": "Majeure si surchauffe ou pression d’huile insuffisante",
+                  "frequence": "À surveiller sur véhicule modifié ou conduit sportivement",
+                  "cout_reparation_estime": "Environ 150 à 2 500 € selon origine."
+                },
+                {
+                  "probleme": "Boîte, embrayage et trains roulants sportifs",
+                  "symptomes": [
+                    "Patinage",
+                    "Craquement au passage des rapports",
+                    "Claquement ou vibration"
+                  ],
+                  "kilometrage_apparition": "Généralement à partir de 50 000 à 100 000 km selon usage.",
+                  "diagnostic": "Essai à chaud, contrôle de l’embrayage, des supports, rotules, amortisseurs et freins.",
+                  "piece_concernee": "Embrayage, boîte/MTA, supports, suspension et freinage",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Usure fortement dépendante de la conduite",
+                  "cout_reparation_estime": "Environ 300 à 3 500 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.4 MultiAir Punto Evo — 165 ch",
+              "code_moteur": "955A8000",
+              "cylindree": "1 368 cm³",
+              "puissance_ch": 165,
+              "boite": [
+                "BVM6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Suralimentation et circuit d’admission",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Sifflement ou souffle anormal",
+                    "Mode dégradé"
+                  ],
+                  "kilometrage_apparition": "Souvent à surveiller après 60 000 km, plus tôt en usage sportif.",
+                  "diagnostic": "Contrôle des durites, de la wastegate, de la pression demandée/réelle et du jeu du turbocompresseur.",
+                  "piece_concernee": "Turbo IHI/Garrett, wastegate, échangeur et durites",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Accélérée par les fortes températures et les vidanges espacées",
+                  "cout_reparation_estime": "Environ 150 à 2 000 € selon durite, commande ou turbo complet."
+                },
+                {
+                  "probleme": "Refroidissement et lubrification en usage soutenu",
+                  "symptomes": [
+                    "Température élevée",
+                    "Odeur de liquide ou d’huile",
+                    "Consommation d’huile"
+                  ],
+                  "kilometrage_apparition": "Variable ; contrôle indispensable après circuit ou préparation moteur.",
+                  "diagnostic": "Mise sous pression du circuit, inspection des fuites, contrôle du niveau et de la pression d’huile.",
+                  "piece_concernee": "Radiateur, thermostat, durites, carter et circuit d’huile",
+                  "gravite": "Majeure si surchauffe ou pression d’huile insuffisante",
+                  "frequence": "À surveiller sur véhicule modifié ou conduit sportivement",
+                  "cout_reparation_estime": "Environ 150 à 2 500 € selon origine."
+                },
+                {
+                  "probleme": "Boîte, embrayage et trains roulants sportifs",
+                  "symptomes": [
+                    "Patinage",
+                    "Craquement au passage des rapports",
+                    "Claquement ou vibration"
+                  ],
+                  "kilometrage_apparition": "Généralement à partir de 50 000 à 100 000 km selon usage.",
+                  "diagnostic": "Essai à chaud, contrôle de l’embrayage, des supports, rotules, amortisseurs et freins.",
+                  "piece_concernee": "Embrayage, boîte/MTA, supports, suspension et freinage",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Usure fortement dépendante de la conduite",
+                  "cout_reparation_estime": "Environ 300 à 3 500 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.4 MultiAir Supersport — 180 ch",
+              "code_moteur": "955A8000",
+              "cylindree": "1 368 cm³",
+              "puissance_ch": 180,
+              "boite": [
+                "BVM6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Suralimentation et circuit d’admission",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Sifflement ou souffle anormal",
+                    "Mode dégradé"
+                  ],
+                  "kilometrage_apparition": "Souvent à surveiller après 60 000 km, plus tôt en usage sportif.",
+                  "diagnostic": "Contrôle des durites, de la wastegate, de la pression demandée/réelle et du jeu du turbocompresseur.",
+                  "piece_concernee": "Turbo IHI/Garrett, wastegate, échangeur et durites",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Accélérée par les fortes températures et les vidanges espacées",
+                  "cout_reparation_estime": "Environ 150 à 2 000 € selon durite, commande ou turbo complet."
+                },
+                {
+                  "probleme": "Refroidissement et lubrification en usage soutenu",
+                  "symptomes": [
+                    "Température élevée",
+                    "Odeur de liquide ou d’huile",
+                    "Consommation d’huile"
+                  ],
+                  "kilometrage_apparition": "Variable ; contrôle indispensable après circuit ou préparation moteur.",
+                  "diagnostic": "Mise sous pression du circuit, inspection des fuites, contrôle du niveau et de la pression d’huile.",
+                  "piece_concernee": "Radiateur, thermostat, durites, carter et circuit d’huile",
+                  "gravite": "Majeure si surchauffe ou pression d’huile insuffisante",
+                  "frequence": "À surveiller sur véhicule modifié ou conduit sportivement",
+                  "cout_reparation_estime": "Environ 150 à 2 500 € selon origine."
+                },
+                {
+                  "probleme": "Boîte, embrayage et trains roulants sportifs",
+                  "symptomes": [
+                    "Patinage",
+                    "Craquement au passage des rapports",
+                    "Claquement ou vibration"
+                  ],
+                  "kilometrage_apparition": "Généralement à partir de 50 000 à 100 000 km selon usage.",
+                  "diagnostic": "Essai à chaud, contrôle de l’embrayage, des supports, rotules, amortisseurs et freins.",
+                  "piece_concernee": "Embrayage, boîte/MTA, supports, suspension et freinage",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Usure fortement dépendante de la conduite",
+                  "cout_reparation_estime": "Environ 300 à 3 500 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Spider",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "gb"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "348",
+          "annees": "2016-2020",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.4 MultiAir Turbo — 170 ch",
+              "code_moteur": "55253268",
+              "cylindree": "1 368 cm³",
+              "puissance_ch": 170,
+              "boite": [
+                "BVM6",
+                "BVA6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Suralimentation et circuit d’admission",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Sifflement ou souffle anormal",
+                    "Mode dégradé"
+                  ],
+                  "kilometrage_apparition": "Souvent à surveiller après 60 000 km, plus tôt en usage sportif.",
+                  "diagnostic": "Contrôle des durites, de la wastegate, de la pression demandée/réelle et du jeu du turbocompresseur.",
+                  "piece_concernee": "Turbo IHI/Garrett, wastegate, échangeur et durites",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Accélérée par les fortes températures et les vidanges espacées",
+                  "cout_reparation_estime": "Environ 150 à 2 000 € selon durite, commande ou turbo complet."
+                },
+                {
+                  "probleme": "Refroidissement et lubrification en usage soutenu",
+                  "symptomes": [
+                    "Température élevée",
+                    "Odeur de liquide ou d’huile",
+                    "Consommation d’huile"
+                  ],
+                  "kilometrage_apparition": "Variable ; contrôle indispensable après circuit ou préparation moteur.",
+                  "diagnostic": "Mise sous pression du circuit, inspection des fuites, contrôle du niveau et de la pression d’huile.",
+                  "piece_concernee": "Radiateur, thermostat, durites, carter et circuit d’huile",
+                  "gravite": "Majeure si surchauffe ou pression d’huile insuffisante",
+                  "frequence": "À surveiller sur véhicule modifié ou conduit sportivement",
+                  "cout_reparation_estime": "Environ 150 à 2 500 € selon origine."
+                },
+                {
+                  "probleme": "Boîte, embrayage et trains roulants sportifs",
+                  "symptomes": [
+                    "Patinage",
+                    "Craquement au passage des rapports",
+                    "Claquement ou vibration"
+                  ],
+                  "kilometrage_apparition": "Généralement à partir de 50 000 à 100 000 km selon usage.",
+                  "diagnostic": "Essai à chaud, contrôle de l’embrayage, des supports, rotules, amortisseurs et freins.",
+                  "piece_concernee": "Embrayage, boîte/MTA, supports, suspension et freinage",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Usure fortement dépendante de la conduite",
+                  "cout_reparation_estime": "Environ 300 à 3 500 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

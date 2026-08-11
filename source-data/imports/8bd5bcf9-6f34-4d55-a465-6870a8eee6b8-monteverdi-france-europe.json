@@ -1,0 +1,455 @@
+{
+  "nom": "Monteverdi",
+  "modeles": [
+    {
+      "nom": "High Speed",
+      "generations": [
+        {
+          "code_chassis": "375 S / L Frua",
+          "annees": "1967–1969",
+          "phases": [
+            "Premiers coupés Frua, deux places S puis rare 2+2 L."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Chrysler 440 Magnum — 375 ch",
+              "code_moteur": "Chrysler RB 440 Magnum",
+              "cylindree": "7 206 cm³",
+              "puissance_ch": 375,
+              "boite": [
+                "A833 manuelle 4 rapports ou TorqueFlite 3 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carter, refroidissement et lubrification du Chrysler 440/426 Hemi",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression faible, fumée ou claquement",
+                    "Fuite, ratés ou puissance insuffisante"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, mais restauration et faible usage priment",
+                  "diagnostic": "Décoder 440 Magnum ou 426 Hemi, mesurer compressions/leak-down et pression, analyser huile, contrôler chaîne, pompe, radiateur, ventilateurs, culasses/joints, reniflard et échappement ; distinguer puissances SAE et DIN avant comparaison",
+                  "piece_concernee": "V8 Chrysler Monteverdi High Speed",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après immobilisation ou préparation inconnue",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 25 000 €"
+                },
+                {
+                  "probleme": "Carburation, alimentation et allumage Mopar",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Vapor-lock, odeur ou fuite",
+                    "Trou, cliquetis ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et avant long trajet",
+                  "diagnostic": "Identifier carburateur quatre corps ou double montage Hemi, contrôler réservoir, pompe, conduites proches de la chaleur, niveaux, starter, avance, distributeur, bobine et bougies ; régler richesse au banc avec refroidissement validé",
+                  "piece_concernee": "Admission et allumage High Speed",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec carburant moderne et chaleur",
+                  "cout_reparation_estime": "Élevé : environ 250 à 5 000 €"
+                },
+                {
+                  "probleme": "Cadre caissonné, carrosserie Frua/Fissore, TorqueFlite/A833 et freins",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "À-coup, patinage ou vibration",
+                    "Jeu, freinage dissymétrique ou provenance incertaine"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle et historique systématique",
+                  "diagnostic": "Authentifier 375S/L/C/4, 400 SS, Berlinetta ou Palm Beach, carrossier et VIN ; inspecter cadre Stahlbau, soudures, panneaux, boîte A833 ou TorqueFlite, arbre/pont, suspension, direction, freins, pneus, équipements de limousine et réparations",
+                  "piece_concernee": "Structure, transmission et identité Monteverdi",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé vu production artisanale",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 70 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "400 SS Frua",
+          "annees": "1968–1969",
+          "phases": [
+            "Très rare option Hemi, à ne pas confondre avec le 440 Magnum."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Chrysler 426 Hemi — 406 ch",
+              "code_moteur": "Chrysler 426 Hemi Monteverdi",
+              "cylindree": "6 974 cm³",
+              "puissance_ch": 406,
+              "boite": [
+                "A833 manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carter, refroidissement et lubrification du Chrysler 440/426 Hemi",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression faible, fumée ou claquement",
+                    "Fuite, ratés ou puissance insuffisante"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, mais restauration et faible usage priment",
+                  "diagnostic": "Décoder 440 Magnum ou 426 Hemi, mesurer compressions/leak-down et pression, analyser huile, contrôler chaîne, pompe, radiateur, ventilateurs, culasses/joints, reniflard et échappement ; distinguer puissances SAE et DIN avant comparaison",
+                  "piece_concernee": "V8 Chrysler Monteverdi High Speed",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après immobilisation ou préparation inconnue",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 25 000 €"
+                },
+                {
+                  "probleme": "Carburation, alimentation et allumage Mopar",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Vapor-lock, odeur ou fuite",
+                    "Trou, cliquetis ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et avant long trajet",
+                  "diagnostic": "Identifier carburateur quatre corps ou double montage Hemi, contrôler réservoir, pompe, conduites proches de la chaleur, niveaux, starter, avance, distributeur, bobine et bougies ; régler richesse au banc avec refroidissement validé",
+                  "piece_concernee": "Admission et allumage High Speed",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec carburant moderne et chaleur",
+                  "cout_reparation_estime": "Élevé : environ 250 à 5 000 €"
+                },
+                {
+                  "probleme": "Cadre caissonné, carrosserie Frua/Fissore, TorqueFlite/A833 et freins",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "À-coup, patinage ou vibration",
+                    "Jeu, freinage dissymétrique ou provenance incertaine"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle et historique systématique",
+                  "diagnostic": "Authentifier 375S/L/C/4, 400 SS, Berlinetta ou Palm Beach, carrossier et VIN ; inspecter cadre Stahlbau, soudures, panneaux, boîte A833 ou TorqueFlite, arbre/pont, suspension, direction, freins, pneus, équipements de limousine et réparations",
+                  "piece_concernee": "Structure, transmission et identité Monteverdi",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé vu production artisanale",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 70 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "375 L Fissore",
+          "annees": "1969–1976",
+          "phases": [
+            "Principal coupé 2+2 à carrosserie Fissore ; puissance 375 SAE."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Chrysler 440 Magnum — 375 ch",
+              "code_moteur": "Chrysler RB 440 Magnum",
+              "cylindree": "7 206 cm³",
+              "puissance_ch": 375,
+              "boite": [
+                "A833 manuelle 4 rapports ou TorqueFlite 3 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carter, refroidissement et lubrification du Chrysler 440/426 Hemi",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression faible, fumée ou claquement",
+                    "Fuite, ratés ou puissance insuffisante"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, mais restauration et faible usage priment",
+                  "diagnostic": "Décoder 440 Magnum ou 426 Hemi, mesurer compressions/leak-down et pression, analyser huile, contrôler chaîne, pompe, radiateur, ventilateurs, culasses/joints, reniflard et échappement ; distinguer puissances SAE et DIN avant comparaison",
+                  "piece_concernee": "V8 Chrysler Monteverdi High Speed",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après immobilisation ou préparation inconnue",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 25 000 €"
+                },
+                {
+                  "probleme": "Carburation, alimentation et allumage Mopar",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Vapor-lock, odeur ou fuite",
+                    "Trou, cliquetis ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et avant long trajet",
+                  "diagnostic": "Identifier carburateur quatre corps ou double montage Hemi, contrôler réservoir, pompe, conduites proches de la chaleur, niveaux, starter, avance, distributeur, bobine et bougies ; régler richesse au banc avec refroidissement validé",
+                  "piece_concernee": "Admission et allumage High Speed",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec carburant moderne et chaleur",
+                  "cout_reparation_estime": "Élevé : environ 250 à 5 000 €"
+                },
+                {
+                  "probleme": "Cadre caissonné, carrosserie Frua/Fissore, TorqueFlite/A833 et freins",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "À-coup, patinage ou vibration",
+                    "Jeu, freinage dissymétrique ou provenance incertaine"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle et historique systématique",
+                  "diagnostic": "Authentifier 375S/L/C/4, 400 SS, Berlinetta ou Palm Beach, carrossier et VIN ; inspecter cadre Stahlbau, soudures, panneaux, boîte A833 ou TorqueFlite, arbre/pont, suspension, direction, freins, pneus, équipements de limousine et réparations",
+                  "piece_concernee": "Structure, transmission et identité Monteverdi",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé vu production artisanale",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 70 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "375 C Fissore",
+          "annees": "1971–1974",
+          "phases": [
+            "Seulement deux cabriolets 375 C, dont un transformé ensuite en Palm Beach."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Chrysler 440 Magnum — 375 ch",
+              "code_moteur": "Chrysler RB 440 Magnum",
+              "cylindree": "7 206 cm³",
+              "puissance_ch": 375,
+              "boite": [
+                "TorqueFlite 3 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carter, refroidissement et lubrification du Chrysler 440/426 Hemi",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression faible, fumée ou claquement",
+                    "Fuite, ratés ou puissance insuffisante"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, mais restauration et faible usage priment",
+                  "diagnostic": "Décoder 440 Magnum ou 426 Hemi, mesurer compressions/leak-down et pression, analyser huile, contrôler chaîne, pompe, radiateur, ventilateurs, culasses/joints, reniflard et échappement ; distinguer puissances SAE et DIN avant comparaison",
+                  "piece_concernee": "V8 Chrysler Monteverdi High Speed",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après immobilisation ou préparation inconnue",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 25 000 €"
+                },
+                {
+                  "probleme": "Carburation, alimentation et allumage Mopar",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Vapor-lock, odeur ou fuite",
+                    "Trou, cliquetis ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et avant long trajet",
+                  "diagnostic": "Identifier carburateur quatre corps ou double montage Hemi, contrôler réservoir, pompe, conduites proches de la chaleur, niveaux, starter, avance, distributeur, bobine et bougies ; régler richesse au banc avec refroidissement validé",
+                  "piece_concernee": "Admission et allumage High Speed",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec carburant moderne et chaleur",
+                  "cout_reparation_estime": "Élevé : environ 250 à 5 000 €"
+                },
+                {
+                  "probleme": "Cadre caissonné, carrosserie Frua/Fissore, TorqueFlite/A833 et freins",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "À-coup, patinage ou vibration",
+                    "Jeu, freinage dissymétrique ou provenance incertaine"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle et historique systématique",
+                  "diagnostic": "Authentifier 375S/L/C/4, 400 SS, Berlinetta ou Palm Beach, carrossier et VIN ; inspecter cadre Stahlbau, soudures, panneaux, boîte A833 ou TorqueFlite, arbre/pont, suspension, direction, freins, pneus, équipements de limousine et réparations",
+                  "piece_concernee": "Structure, transmission et identité Monteverdi",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé vu production artisanale",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 70 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "375/4 berline",
+          "annees": "1971–1976",
+          "phases": [
+            "Berline longue : valeur DIN séparée du chiffre commercial SAE 375."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Chrysler 440 Magnum DIN — 340 ch",
+              "code_moteur": "Chrysler RB 440 Magnum 375/4",
+              "cylindree": "7 206 cm³",
+              "puissance_ch": 340,
+              "boite": [
+                "TorqueFlite 3 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carter, refroidissement et lubrification du Chrysler 440/426 Hemi",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression faible, fumée ou claquement",
+                    "Fuite, ratés ou puissance insuffisante"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, mais restauration et faible usage priment",
+                  "diagnostic": "Décoder 440 Magnum ou 426 Hemi, mesurer compressions/leak-down et pression, analyser huile, contrôler chaîne, pompe, radiateur, ventilateurs, culasses/joints, reniflard et échappement ; distinguer puissances SAE et DIN avant comparaison",
+                  "piece_concernee": "V8 Chrysler Monteverdi High Speed",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après immobilisation ou préparation inconnue",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 25 000 €"
+                },
+                {
+                  "probleme": "Carburation, alimentation et allumage Mopar",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Vapor-lock, odeur ou fuite",
+                    "Trou, cliquetis ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et avant long trajet",
+                  "diagnostic": "Identifier carburateur quatre corps ou double montage Hemi, contrôler réservoir, pompe, conduites proches de la chaleur, niveaux, starter, avance, distributeur, bobine et bougies ; régler richesse au banc avec refroidissement validé",
+                  "piece_concernee": "Admission et allumage High Speed",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec carburant moderne et chaleur",
+                  "cout_reparation_estime": "Élevé : environ 250 à 5 000 €"
+                },
+                {
+                  "probleme": "Cadre caissonné, carrosserie Frua/Fissore, TorqueFlite/A833 et freins",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "À-coup, patinage ou vibration",
+                    "Jeu, freinage dissymétrique ou provenance incertaine"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle et historique systématique",
+                  "diagnostic": "Authentifier 375S/L/C/4, 400 SS, Berlinetta ou Palm Beach, carrossier et VIN ; inspecter cadre Stahlbau, soudures, panneaux, boîte A833 ou TorqueFlite, arbre/pont, suspension, direction, freins, pneus, équipements de limousine et réparations",
+                  "piece_concernee": "Structure, transmission et identité Monteverdi",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé vu production artisanale",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 70 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Berlinetta High Speed",
+          "annees": "1972–1976",
+          "phases": [
+            "Coupé court modernisé à moteur 7,0 litres ; spécification individuelle à confirmer."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Chrysler 426 Hemi — 390 ch",
+              "code_moteur": "Chrysler 426 Hemi Berlinetta",
+              "cylindree": "6 974 cm³",
+              "puissance_ch": 390,
+              "boite": [
+                "A833 manuelle 4 rapports ou TorqueFlite, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carter, refroidissement et lubrification du Chrysler 440/426 Hemi",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression faible, fumée ou claquement",
+                    "Fuite, ratés ou puissance insuffisante"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, mais restauration et faible usage priment",
+                  "diagnostic": "Décoder 440 Magnum ou 426 Hemi, mesurer compressions/leak-down et pression, analyser huile, contrôler chaîne, pompe, radiateur, ventilateurs, culasses/joints, reniflard et échappement ; distinguer puissances SAE et DIN avant comparaison",
+                  "piece_concernee": "V8 Chrysler Monteverdi High Speed",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après immobilisation ou préparation inconnue",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 25 000 €"
+                },
+                {
+                  "probleme": "Carburation, alimentation et allumage Mopar",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Vapor-lock, odeur ou fuite",
+                    "Trou, cliquetis ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et avant long trajet",
+                  "diagnostic": "Identifier carburateur quatre corps ou double montage Hemi, contrôler réservoir, pompe, conduites proches de la chaleur, niveaux, starter, avance, distributeur, bobine et bougies ; régler richesse au banc avec refroidissement validé",
+                  "piece_concernee": "Admission et allumage High Speed",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec carburant moderne et chaleur",
+                  "cout_reparation_estime": "Élevé : environ 250 à 5 000 €"
+                },
+                {
+                  "probleme": "Cadre caissonné, carrosserie Frua/Fissore, TorqueFlite/A833 et freins",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "À-coup, patinage ou vibration",
+                    "Jeu, freinage dissymétrique ou provenance incertaine"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle et historique systématique",
+                  "diagnostic": "Authentifier 375S/L/C/4, 400 SS, Berlinetta ou Palm Beach, carrossier et VIN ; inspecter cadre Stahlbau, soudures, panneaux, boîte A833 ou TorqueFlite, arbre/pont, suspension, direction, freins, pneus, équipements de limousine et réparations",
+                  "piece_concernee": "Structure, transmission et identité Monteverdi",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé vu production artisanale",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 70 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Palm Beach one-off",
+          "annees": "1975",
+          "phases": [
+            "Cabriolet unique dérivé d’un 375 C : conservé comme one-off, pas comme série."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Chrysler 440 Magnum — 375 ch",
+              "code_moteur": "Chrysler RB 440 Magnum Palm Beach",
+              "cylindree": "7 206 cm³",
+              "puissance_ch": 375,
+              "boite": [
+                "TorqueFlite 3 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carter, refroidissement et lubrification du Chrysler 440/426 Hemi",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression faible, fumée ou claquement",
+                    "Fuite, ratés ou puissance insuffisante"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, mais restauration et faible usage priment",
+                  "diagnostic": "Décoder 440 Magnum ou 426 Hemi, mesurer compressions/leak-down et pression, analyser huile, contrôler chaîne, pompe, radiateur, ventilateurs, culasses/joints, reniflard et échappement ; distinguer puissances SAE et DIN avant comparaison",
+                  "piece_concernee": "V8 Chrysler Monteverdi High Speed",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après immobilisation ou préparation inconnue",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 25 000 €"
+                },
+                {
+                  "probleme": "Carburation, alimentation et allumage Mopar",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Vapor-lock, odeur ou fuite",
+                    "Trou, cliquetis ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et avant long trajet",
+                  "diagnostic": "Identifier carburateur quatre corps ou double montage Hemi, contrôler réservoir, pompe, conduites proches de la chaleur, niveaux, starter, avance, distributeur, bobine et bougies ; régler richesse au banc avec refroidissement validé",
+                  "piece_concernee": "Admission et allumage High Speed",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec carburant moderne et chaleur",
+                  "cout_reparation_estime": "Élevé : environ 250 à 5 000 €"
+                },
+                {
+                  "probleme": "Cadre caissonné, carrosserie Frua/Fissore, TorqueFlite/A833 et freins",
+                  "symptomes": [
+                    "Corrosion ou fissure",
+                    "À-coup, patinage ou vibration",
+                    "Jeu, freinage dissymétrique ou provenance incertaine"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle et historique systématique",
+                  "diagnostic": "Authentifier 375S/L/C/4, 400 SS, Berlinetta ou Palm Beach, carrossier et VIN ; inspecter cadre Stahlbau, soudures, panneaux, boîte A833 ou TorqueFlite, arbre/pont, suspension, direction, freins, pneus, équipements de limousine et réparations",
+                  "piece_concernee": "Structure, transmission et identité Monteverdi",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé vu production artisanale",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 70 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.rmw.lv/car/en/high-speed-375l-by-fissore/",
+        "https://www.rmw.lv/car/lv/high-speed-3754-by-fissore"
+      ]
+    }
+  ]
+}

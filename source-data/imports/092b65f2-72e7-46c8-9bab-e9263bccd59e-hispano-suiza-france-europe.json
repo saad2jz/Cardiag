@@ -1,0 +1,485 @@
+{
+  "nom": "Hispano-Suiza",
+  "modeles": [
+    {
+      "nom": "H6",
+      "generations": [
+        {
+          "code_chassis": "H6 / H6B 32 CV",
+          "annees": "1919–1934",
+          "phases": [
+            "Moteur en alliage inspiré de l’aéronautique et premier servofrein mécanique aux quatre roues."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "6.6 six-cylindres OHC — 135 ch",
+              "code_moteur": "Hispano-Suiza H6/H6B",
+              "cylindree": "6 597 cm³",
+              "puissance_ch": 135,
+              "boite": [
+                "Manuelle 3 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Arbre à cames en tête, vilebrequin usiné et lubrification du six-cylindres",
+                  "symptomes": [
+                    "Pression faible",
+                    "Bruit de distribution ou paliers",
+                    "Fumée, compression inégale ou limaille"
+                  ],
+                  "kilometrage_apparition": "Âge et restauration priment ; contrôle avant chaque saison",
+                  "diagnostic": "Identifier H6/H6B 6,6 l ou H6C 8,0 l, mesurer compressions/leak-down et pression, analyser huile, puis contrôler arbre à cames en tête, renvois, soupapes, paliers, pompe, carter et étanchéité. Ne pas appliquer des jeux modernes sans dossier de réfection.",
+                  "piece_concernee": "Six-cylindres Hispano-Suiza H6",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé sur mécanique aéronautique centenaire",
+                  "cout_reparation_estime": "Extrême : environ 5 000 à plus de 80 000 €"
+                },
+                {
+                  "probleme": "Carburation, double allumage éventuel et refroidissement",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés ou différence de température",
+                    "Surchauffe, fuite ou vapor-lock"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant chaque sortie",
+                  "diagnostic": "Identifier carburateur(s) et allumage, vérifier réservoir, pompes, cuves, avance, magnétos/distributeurs, bougies, radiateur, pompe à eau, ventilateur et galeries. Régler avec instrumentation et protection incendie.",
+                  "piece_concernee": "Alimentation, allumage et refroidissement H6",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après immobilisation",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 12 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle, embrayage, arbre et pont",
+                  "symptomes": [
+                    "Craquement",
+                    "Patinage",
+                    "Rapport qui saute, vibration ou fuite"
+                  ],
+                  "kilometrage_apparition": "Inspection annuelle et avant grand trajet",
+                  "diagnostic": "Contrôler huile compatible, pignons, fourchettes, embrayage, butée, supports, arbre/cardan, pont et roulements. Employer le double débrayage et valider les jeux à chaud.",
+                  "piece_concernee": "Transmission Hispano-Suiza H6",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable selon graissage et carrosserie lourde",
+                  "cout_reparation_estime": "Extrême : environ 1 500 à plus de 20 000 €"
+                },
+                {
+                  "probleme": "Servofrein mécanique, cadre, carrosserie et provenance",
+                  "symptomes": [
+                    "Assistance absente",
+                    "Tirage ou échauffement",
+                    "Cadre/bois affaibli ou identité incohérente"
+                  ],
+                  "kilometrage_apparition": "Expertise obligatoire avant circulation",
+                  "diagnostic": "Contrôler servo entraîné par transmission, câbles/tiges, tambours et réglages des quatre roues. Inspecter cadre, rivets, bois, panneaux, essieux, ressorts, direction, roues et pneus ; authentifier châssis, moteur et carrossier.",
+                  "piece_concernee": "Freinage assisté, structure et carrosserie H6",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de reconstruction ancienne",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 150 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "H6C 46 CV",
+          "annees": "1924–1933",
+          "phases": [
+            "Évolution 8 litres ; puissance standard autour de 160 ch, carrosseries et rapports variables."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "8.0 six-cylindres OHC — 160 ch",
+              "code_moteur": "Hispano-Suiza H6C",
+              "cylindree": "7 983 cm³",
+              "puissance_ch": 160,
+              "boite": [
+                "Manuelle 3 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Arbre à cames en tête, vilebrequin usiné et lubrification du six-cylindres",
+                  "symptomes": [
+                    "Pression faible",
+                    "Bruit de distribution ou paliers",
+                    "Fumée, compression inégale ou limaille"
+                  ],
+                  "kilometrage_apparition": "Âge et restauration priment ; contrôle avant chaque saison",
+                  "diagnostic": "Identifier H6/H6B 6,6 l ou H6C 8,0 l, mesurer compressions/leak-down et pression, analyser huile, puis contrôler arbre à cames en tête, renvois, soupapes, paliers, pompe, carter et étanchéité. Ne pas appliquer des jeux modernes sans dossier de réfection.",
+                  "piece_concernee": "Six-cylindres Hispano-Suiza H6",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé sur mécanique aéronautique centenaire",
+                  "cout_reparation_estime": "Extrême : environ 5 000 à plus de 80 000 €"
+                },
+                {
+                  "probleme": "Carburation, double allumage éventuel et refroidissement",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés ou différence de température",
+                    "Surchauffe, fuite ou vapor-lock"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant chaque sortie",
+                  "diagnostic": "Identifier carburateur(s) et allumage, vérifier réservoir, pompes, cuves, avance, magnétos/distributeurs, bougies, radiateur, pompe à eau, ventilateur et galeries. Régler avec instrumentation et protection incendie.",
+                  "piece_concernee": "Alimentation, allumage et refroidissement H6",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après immobilisation",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 12 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle, embrayage, arbre et pont",
+                  "symptomes": [
+                    "Craquement",
+                    "Patinage",
+                    "Rapport qui saute, vibration ou fuite"
+                  ],
+                  "kilometrage_apparition": "Inspection annuelle et avant grand trajet",
+                  "diagnostic": "Contrôler huile compatible, pignons, fourchettes, embrayage, butée, supports, arbre/cardan, pont et roulements. Employer le double débrayage et valider les jeux à chaud.",
+                  "piece_concernee": "Transmission Hispano-Suiza H6",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable selon graissage et carrosserie lourde",
+                  "cout_reparation_estime": "Extrême : environ 1 500 à plus de 20 000 €"
+                },
+                {
+                  "probleme": "Servofrein mécanique, cadre, carrosserie et provenance",
+                  "symptomes": [
+                    "Assistance absente",
+                    "Tirage ou échauffement",
+                    "Cadre/bois affaibli ou identité incohérente"
+                  ],
+                  "kilometrage_apparition": "Expertise obligatoire avant circulation",
+                  "diagnostic": "Contrôler servo entraîné par transmission, câbles/tiges, tambours et réglages des quatre roues. Inspecter cadre, rivets, bois, panneaux, essieux, ressorts, direction, roues et pneus ; authentifier châssis, moteur et carrossier.",
+                  "piece_concernee": "Freinage assisté, structure et carrosserie H6",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de reconstruction ancienne",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 150 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "H6C Sport / compétition",
+          "annees": "1924–1933",
+          "phases": [
+            "Préparations sportives proches de 200 ch, dont certains châssis surbaissés ; authentification moteur indispensable."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "8.0 six-cylindres haute puissance — 200 ch",
+              "code_moteur": "Hispano-Suiza H6C Sport",
+              "cylindree": "7 983 cm³",
+              "puissance_ch": 200,
+              "boite": [
+                "Manuelle 3 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Arbre à cames en tête, vilebrequin usiné et lubrification du six-cylindres",
+                  "symptomes": [
+                    "Pression faible",
+                    "Bruit de distribution ou paliers",
+                    "Fumée, compression inégale ou limaille"
+                  ],
+                  "kilometrage_apparition": "Âge et restauration priment ; contrôle avant chaque saison",
+                  "diagnostic": "Identifier H6/H6B 6,6 l ou H6C 8,0 l, mesurer compressions/leak-down et pression, analyser huile, puis contrôler arbre à cames en tête, renvois, soupapes, paliers, pompe, carter et étanchéité. Ne pas appliquer des jeux modernes sans dossier de réfection.",
+                  "piece_concernee": "Six-cylindres Hispano-Suiza H6",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé sur mécanique aéronautique centenaire",
+                  "cout_reparation_estime": "Extrême : environ 5 000 à plus de 80 000 €"
+                },
+                {
+                  "probleme": "Carburation, double allumage éventuel et refroidissement",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés ou différence de température",
+                    "Surchauffe, fuite ou vapor-lock"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant chaque sortie",
+                  "diagnostic": "Identifier carburateur(s) et allumage, vérifier réservoir, pompes, cuves, avance, magnétos/distributeurs, bougies, radiateur, pompe à eau, ventilateur et galeries. Régler avec instrumentation et protection incendie.",
+                  "piece_concernee": "Alimentation, allumage et refroidissement H6",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après immobilisation",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 12 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle, embrayage, arbre et pont",
+                  "symptomes": [
+                    "Craquement",
+                    "Patinage",
+                    "Rapport qui saute, vibration ou fuite"
+                  ],
+                  "kilometrage_apparition": "Inspection annuelle et avant grand trajet",
+                  "diagnostic": "Contrôler huile compatible, pignons, fourchettes, embrayage, butée, supports, arbre/cardan, pont et roulements. Employer le double débrayage et valider les jeux à chaud.",
+                  "piece_concernee": "Transmission Hispano-Suiza H6",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable selon graissage et carrosserie lourde",
+                  "cout_reparation_estime": "Extrême : environ 1 500 à plus de 20 000 €"
+                },
+                {
+                  "probleme": "Servofrein mécanique, cadre, carrosserie et provenance",
+                  "symptomes": [
+                    "Assistance absente",
+                    "Tirage ou échauffement",
+                    "Cadre/bois affaibli ou identité incohérente"
+                  ],
+                  "kilometrage_apparition": "Expertise obligatoire avant circulation",
+                  "diagnostic": "Contrôler servo entraîné par transmission, câbles/tiges, tambours et réglages des quatre roues. Inspecter cadre, rivets, bois, panneaux, essieux, ressorts, direction, roues et pneus ; authentifier châssis, moteur et carrossier.",
+                  "piece_concernee": "Freinage assisté, structure et carrosserie H6",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de reconstruction ancienne",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 150 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://toyota-automobile-museum.jp/en/archives/car-database/detail.html?id=301",
+        "https://hispanosuizaandclassic.com/project/our-cars/1927-h6c-coupe-vanvooren-4671"
+      ]
+    },
+    {
+      "nom": "Carmen",
+      "generations": [
+        {
+          "code_chassis": "Carmen",
+          "annees": "2019–aujourd’hui",
+          "phases": [
+            "Version initiale de 750 kW, 1 000 Nm et moins de 3 s de 0 à 100 km/h."
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "Quad-motor électrique — 1019 ch",
+              "code_moteur": "Hispano Suiza Carmen 750 kW",
+              "cylindree": "Électrique — batterie 80 kWh/700 V",
+              "puissance_ch": 1019,
+              "boite": [
+                "Réducteurs électriques, propulsion à vectorisation de couple"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie haute tension 80/103 kWh, isolation et refroidissement",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Écart de tension ou température",
+                    "Alerte d’isolation, charge limitée ou puissance réduite"
+                  ],
+                  "kilometrage_apparition": "Suivi calendaire et à chaque entretien",
+                  "diagnostic": "Consigner selon procédure Hispano Suiza, lire état de santé, tensions/températures des modules, équilibrage et isolation. Contrôler contacteurs, précharge, refroidissement liquide, connecteurs et étanchéité ; distinguer pack 80 kWh et évolution Sagrera 103 kWh.",
+                  "piece_concernee": "Batterie haute tension Carmen",
+                  "gravite": "Critique",
+                  "frequence": "Faible diffusion ; vieillissement encore peu documenté",
+                  "cout_reparation_estime": "Extrême : diagnostic constructeur puis réparation sur devis"
+                },
+                {
+                  "probleme": "Quatre moteurs arrière, onduleurs et vectorisation de couple",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "À-coups",
+                    "Écart de couple, surchauffe ou défaut d’onduleur"
+                  ],
+                  "kilometrage_apparition": "Dès alerte ou comportement dissymétrique",
+                  "diagnostic": "Comparer courants, températures, vitesses et défauts de chaque moteur/onduleur, contrôler câbles, isolation, capteurs et refroidissement. Valider progressivement la vectorisation et les 750/820 kW sans pleine charge avant diagnostic.",
+                  "piece_concernee": "Chaîne de traction électrique Carmen",
+                  "gravite": "Critique",
+                  "frequence": "Peu documentée hors réseau constructeur",
+                  "cout_reparation_estime": "Extrême : composants spécifiques, potentiellement plus de 50 000 €"
+                },
+                {
+                  "probleme": "Chargeur, convertisseur DC/DC, batterie 12 V et logiciels",
+                  "symptomes": [
+                    "Charge impossible",
+                    "Mise sous tension refusée",
+                    "Fonction intermittente ou batterie auxiliaire vide"
+                  ],
+                  "kilometrage_apparition": "Contrôle périodique et après stockage",
+                  "diagnostic": "Vérifier prise/verrouillage, chargeur, boucle HVIL, convertisseur DC/DC, batterie auxiliaire, masses, réseaux CAN et versions logicielles. Effectuer mises à jour et calibrations uniquement avec alimentation stabilisée et procédure constructeur.",
+                  "piece_concernee": "Charge et électronique basse tension Carmen",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru après stockage prolongé",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 15 000 €"
+                },
+                {
+                  "probleme": "Monocoque carbone, aérodynamique, suspension et freins carbone-céramique",
+                  "symptomes": [
+                    "Fissure ou délaminage",
+                    "Géométrie instable",
+                    "Vibration ou usure de freinage"
+                  ],
+                  "kilometrage_apparition": "Inspection après choc et avant usage intensif",
+                  "diagnostic": "Inspecter monocoque, sous-châssis, inserts, batterie structurelle, appendices, suspension à doubles triangles, direction, disques/plaquettes, roues et pneus. Sur Sagrera, contrôler l’aileron arrière et les évolutions aérodynamiques.",
+                  "piece_concernee": "Structure et systèmes dynamiques Carmen",
+                  "gravite": "Critique",
+                  "frequence": "Variable selon usage et chocs",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 100 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Carmen Boulogne",
+          "annees": "2020–aujourd’hui",
+          "phases": [
+            "Évolution allégée à 820 kW, distincte de la Carmen 1 019 ch."
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "Quad-motor électrique haute puissance — 1114 ch",
+              "code_moteur": "Hispano Suiza Boulogne 820 kW",
+              "cylindree": "Électrique — batterie 80 kWh",
+              "puissance_ch": 1114,
+              "boite": [
+                "Réducteurs électriques, propulsion à vectorisation de couple"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie haute tension 80/103 kWh, isolation et refroidissement",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Écart de tension ou température",
+                    "Alerte d’isolation, charge limitée ou puissance réduite"
+                  ],
+                  "kilometrage_apparition": "Suivi calendaire et à chaque entretien",
+                  "diagnostic": "Consigner selon procédure Hispano Suiza, lire état de santé, tensions/températures des modules, équilibrage et isolation. Contrôler contacteurs, précharge, refroidissement liquide, connecteurs et étanchéité ; distinguer pack 80 kWh et évolution Sagrera 103 kWh.",
+                  "piece_concernee": "Batterie haute tension Carmen",
+                  "gravite": "Critique",
+                  "frequence": "Faible diffusion ; vieillissement encore peu documenté",
+                  "cout_reparation_estime": "Extrême : diagnostic constructeur puis réparation sur devis"
+                },
+                {
+                  "probleme": "Quatre moteurs arrière, onduleurs et vectorisation de couple",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "À-coups",
+                    "Écart de couple, surchauffe ou défaut d’onduleur"
+                  ],
+                  "kilometrage_apparition": "Dès alerte ou comportement dissymétrique",
+                  "diagnostic": "Comparer courants, températures, vitesses et défauts de chaque moteur/onduleur, contrôler câbles, isolation, capteurs et refroidissement. Valider progressivement la vectorisation et les 750/820 kW sans pleine charge avant diagnostic.",
+                  "piece_concernee": "Chaîne de traction électrique Carmen",
+                  "gravite": "Critique",
+                  "frequence": "Peu documentée hors réseau constructeur",
+                  "cout_reparation_estime": "Extrême : composants spécifiques, potentiellement plus de 50 000 €"
+                },
+                {
+                  "probleme": "Chargeur, convertisseur DC/DC, batterie 12 V et logiciels",
+                  "symptomes": [
+                    "Charge impossible",
+                    "Mise sous tension refusée",
+                    "Fonction intermittente ou batterie auxiliaire vide"
+                  ],
+                  "kilometrage_apparition": "Contrôle périodique et après stockage",
+                  "diagnostic": "Vérifier prise/verrouillage, chargeur, boucle HVIL, convertisseur DC/DC, batterie auxiliaire, masses, réseaux CAN et versions logicielles. Effectuer mises à jour et calibrations uniquement avec alimentation stabilisée et procédure constructeur.",
+                  "piece_concernee": "Charge et électronique basse tension Carmen",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru après stockage prolongé",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 15 000 €"
+                },
+                {
+                  "probleme": "Monocoque carbone, aérodynamique, suspension et freins carbone-céramique",
+                  "symptomes": [
+                    "Fissure ou délaminage",
+                    "Géométrie instable",
+                    "Vibration ou usure de freinage"
+                  ],
+                  "kilometrage_apparition": "Inspection après choc et avant usage intensif",
+                  "diagnostic": "Inspecter monocoque, sous-châssis, inserts, batterie structurelle, appendices, suspension à doubles triangles, direction, disques/plaquettes, roues et pneus. Sur Sagrera, contrôler l’aileron arrière et les évolutions aérodynamiques.",
+                  "piece_concernee": "Structure et systèmes dynamiques Carmen",
+                  "gravite": "Critique",
+                  "frequence": "Variable selon usage et chocs",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 100 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Carmen Sagrera",
+          "annees": "2024–aujourd’hui",
+          "phases": [
+            "Batterie portée à 103 kWh, 1 150 Nm, autonomie annoncée 480 km et 0–100 km/h en 2,6 s."
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "Quad-motor électrique 820 kW — 1114 ch",
+              "code_moteur": "Hispano Suiza Sagrera 820 kW",
+              "cylindree": "Électrique — batterie 103 kWh",
+              "puissance_ch": 1114,
+              "boite": [
+                "Réducteurs électriques, propulsion à vectorisation de couple"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie haute tension 80/103 kWh, isolation et refroidissement",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Écart de tension ou température",
+                    "Alerte d’isolation, charge limitée ou puissance réduite"
+                  ],
+                  "kilometrage_apparition": "Suivi calendaire et à chaque entretien",
+                  "diagnostic": "Consigner selon procédure Hispano Suiza, lire état de santé, tensions/températures des modules, équilibrage et isolation. Contrôler contacteurs, précharge, refroidissement liquide, connecteurs et étanchéité ; distinguer pack 80 kWh et évolution Sagrera 103 kWh.",
+                  "piece_concernee": "Batterie haute tension Carmen",
+                  "gravite": "Critique",
+                  "frequence": "Faible diffusion ; vieillissement encore peu documenté",
+                  "cout_reparation_estime": "Extrême : diagnostic constructeur puis réparation sur devis"
+                },
+                {
+                  "probleme": "Quatre moteurs arrière, onduleurs et vectorisation de couple",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "À-coups",
+                    "Écart de couple, surchauffe ou défaut d’onduleur"
+                  ],
+                  "kilometrage_apparition": "Dès alerte ou comportement dissymétrique",
+                  "diagnostic": "Comparer courants, températures, vitesses et défauts de chaque moteur/onduleur, contrôler câbles, isolation, capteurs et refroidissement. Valider progressivement la vectorisation et les 750/820 kW sans pleine charge avant diagnostic.",
+                  "piece_concernee": "Chaîne de traction électrique Carmen",
+                  "gravite": "Critique",
+                  "frequence": "Peu documentée hors réseau constructeur",
+                  "cout_reparation_estime": "Extrême : composants spécifiques, potentiellement plus de 50 000 €"
+                },
+                {
+                  "probleme": "Chargeur, convertisseur DC/DC, batterie 12 V et logiciels",
+                  "symptomes": [
+                    "Charge impossible",
+                    "Mise sous tension refusée",
+                    "Fonction intermittente ou batterie auxiliaire vide"
+                  ],
+                  "kilometrage_apparition": "Contrôle périodique et après stockage",
+                  "diagnostic": "Vérifier prise/verrouillage, chargeur, boucle HVIL, convertisseur DC/DC, batterie auxiliaire, masses, réseaux CAN et versions logicielles. Effectuer mises à jour et calibrations uniquement avec alimentation stabilisée et procédure constructeur.",
+                  "piece_concernee": "Charge et électronique basse tension Carmen",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru après stockage prolongé",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 15 000 €"
+                },
+                {
+                  "probleme": "Monocoque carbone, aérodynamique, suspension et freins carbone-céramique",
+                  "symptomes": [
+                    "Fissure ou délaminage",
+                    "Géométrie instable",
+                    "Vibration ou usure de freinage"
+                  ],
+                  "kilometrage_apparition": "Inspection après choc et avant usage intensif",
+                  "diagnostic": "Inspecter monocoque, sous-châssis, inserts, batterie structurelle, appendices, suspension à doubles triangles, direction, disques/plaquettes, roues et pneus. Sur Sagrera, contrôler l’aileron arrière et les évolutions aérodynamiques.",
+                  "piece_concernee": "Structure et systèmes dynamiques Carmen",
+                  "gravite": "Critique",
+                  "frequence": "Variable selon usage et chocs",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 100 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.hispanosuizacars.com/carmen/",
+        "https://www.hispanosuizacars.com/carmen-sagrera/"
+      ]
+    }
+  ]
+}

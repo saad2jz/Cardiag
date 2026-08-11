@@ -1,0 +1,158 @@
+{
+  "nom": "Bricklin",
+  "modeles": [
+    {
+      "nom": "SV1",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "coupe",
+        "countries": [
+          "fi",
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "SV-1 AMC",
+          "annees": "1974",
+          "phases": [
+            "772 à environ 780 exemplaires selon les registres ; la rare boîte manuelle n’existe que sur la version AMC 1974."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "AMC 360 V8 — 220 ch",
+              "code_moteur": "AMC 360",
+              "cylindree": "5 896 cm³",
+              "puissance_ch": 220,
+              "boite": [
+                "Borg-Warner T-10 manuelle 4 rapports ou Torque Command automatique 3 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification, carburation et allumage du V8",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression d’huile faible",
+                    "Ratés, vapor-lock ou odeur d’essence"
+                  ],
+                  "kilometrage_apparition": "Aucun seuil fiable ; contrôle selon âge, stockage et restauration",
+                  "diagnostic": "Identifier AMC 360 ou Ford 351W, mesurer compressions/leak-down et pression, contrôler radiateur, ventilateurs, pompe, durites, culasses/joints, carburateur quatre corps AMC ou deux corps Ford, pompe/conduites d’essence, allumeur et faisceau ; vérifier conformité antipollution et absence de carburant dans l’huile",
+                  "piece_concernee": "V8 AMC 360 ou Ford Windsor 351",
+                  "gravite": "Critique en cas de fuite carburant, pression faible ou surchauffe",
+                  "frequence": "Assez fréquente sur voiture immobilisée ou modifiée",
+                  "cout_reparation_estime": "Élevé : environ 1 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Boîte, embrayage/convertisseur, arbre et pont",
+                  "symptomes": [
+                    "Patinage",
+                    "Passage brutal",
+                    "Rapport qui saute, fuite ou vibration"
+                  ],
+                  "kilometrage_apparition": "Variable ; souvent après longues immobilisations ou mauvais réglage",
+                  "diagnostic": "Sur AMC, identifier Borg-Warner T-10 manuelle ou Torque Command 727 automatique ; sur Ford, contrôler FMX automatique, tringlerie, refroidissement, pression et huile ; inspecter supports, arbre, croisillons, pont, roulements et frein de stationnement, puis essai à chaud",
+                  "piece_concernee": "Transmission et pont arrière SV-1",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente selon entretien et étanchéité",
+                  "cout_reparation_estime": "Élevé : environ 1 000 à 10 000 €"
+                },
+                {
+                  "probleme": "Portes papillon, carrosserie acrylique, structure et sécurité",
+                  "symptomes": [
+                    "Portes lentes ou qui chutent",
+                    "Fissures/délamination",
+                    "Rouille du cadre ou mauvais alignement"
+                  ],
+                  "kilometrage_apparition": "Contrôle systématique avant achat et après stockage",
+                  "diagnostic": "Tester vérins/actuateurs hydrauliques ou conversion pneumatique, câblage, flexibles et ouverture de secours ; inspecter peau acrylique collée au polyester, déformations thermiques, cadre-caisson, arceau intégré, longerons, soudures, ancrages et corrosion cachée ; contrôler suspension, direction, freins, pare-chocs et authentifier VIN/couleur",
+                  "piece_concernee": "Portes, panneaux composites et châssis intégré Bricklin",
+                  "gravite": "Critique pour évacuation, structure et valeur",
+                  "frequence": "Fréquente sur système de portes d’origine et panneaux vieillissants",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 30 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "SV-1 Ford",
+          "annees": "1975–1976",
+          "phases": [
+            "Version Ford uniquement automatique ; quelques voitures achevées ont reçu un millésime 1976."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Ford 351 Windsor V8 — 175 ch",
+              "code_moteur": "Ford 351W",
+              "cylindree": "5 752 cm³",
+              "puissance_ch": 175,
+              "boite": [
+                "Ford FMX automatique 3 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification, carburation et allumage du V8",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression d’huile faible",
+                    "Ratés, vapor-lock ou odeur d’essence"
+                  ],
+                  "kilometrage_apparition": "Aucun seuil fiable ; contrôle selon âge, stockage et restauration",
+                  "diagnostic": "Identifier AMC 360 ou Ford 351W, mesurer compressions/leak-down et pression, contrôler radiateur, ventilateurs, pompe, durites, culasses/joints, carburateur quatre corps AMC ou deux corps Ford, pompe/conduites d’essence, allumeur et faisceau ; vérifier conformité antipollution et absence de carburant dans l’huile",
+                  "piece_concernee": "V8 AMC 360 ou Ford Windsor 351",
+                  "gravite": "Critique en cas de fuite carburant, pression faible ou surchauffe",
+                  "frequence": "Assez fréquente sur voiture immobilisée ou modifiée",
+                  "cout_reparation_estime": "Élevé : environ 1 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Boîte, embrayage/convertisseur, arbre et pont",
+                  "symptomes": [
+                    "Patinage",
+                    "Passage brutal",
+                    "Rapport qui saute, fuite ou vibration"
+                  ],
+                  "kilometrage_apparition": "Variable ; souvent après longues immobilisations ou mauvais réglage",
+                  "diagnostic": "Sur AMC, identifier Borg-Warner T-10 manuelle ou Torque Command 727 automatique ; sur Ford, contrôler FMX automatique, tringlerie, refroidissement, pression et huile ; inspecter supports, arbre, croisillons, pont, roulements et frein de stationnement, puis essai à chaud",
+                  "piece_concernee": "Transmission et pont arrière SV-1",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente selon entretien et étanchéité",
+                  "cout_reparation_estime": "Élevé : environ 1 000 à 10 000 €"
+                },
+                {
+                  "probleme": "Portes papillon, carrosserie acrylique, structure et sécurité",
+                  "symptomes": [
+                    "Portes lentes ou qui chutent",
+                    "Fissures/délamination",
+                    "Rouille du cadre ou mauvais alignement"
+                  ],
+                  "kilometrage_apparition": "Contrôle systématique avant achat et après stockage",
+                  "diagnostic": "Tester vérins/actuateurs hydrauliques ou conversion pneumatique, câblage, flexibles et ouverture de secours ; inspecter peau acrylique collée au polyester, déformations thermiques, cadre-caisson, arceau intégré, longerons, soudures, ancrages et corrosion cachée ; contrôler suspension, direction, freins, pare-chocs et authentifier VIN/couleur",
+                  "piece_concernee": "Portes, panneaux composites et châssis intégré Bricklin",
+                  "gravite": "Critique pour évacuation, structure et valeur",
+                  "frequence": "Fréquente sur système de portes d’origine et panneaux vieillissants",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 30 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.bricklin.org/bi_aboutthebricklin.htm",
+        "https://www.canadianautomotivemuseum.com/cars/1975-bricklin-sv-1"
+      ]
+    }
+  ],
+  "source_catalogue": "VehiclesDB 2026.08.2 (CC-BY 4.0)"
+}

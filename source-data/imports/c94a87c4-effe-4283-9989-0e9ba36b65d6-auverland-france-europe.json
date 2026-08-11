@@ -1,0 +1,298 @@
+{
+  "nom": "Auverland",
+  "modeles": [
+    {
+      "nom": "A3",
+      "generations": [
+        {
+          "code_chassis": "A3 première série",
+          "annees": "1988–1996",
+          "phases": [
+            "Court/long, bâché/hard-top et 4x2/4x4 : confirmer châssis et transmission"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "1.9 D Peugeot — 64 ch",
+              "code_moteur": "PSA XUD9",
+              "cylindree": "1 905 cm³",
+              "puissance_ch": 64,
+              "boite": [
+                "Boîte manuelle 5 rapports + transfert"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, distribution et refroidissement des moteurs Peugeot",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Fumée",
+                    "Surchauffe ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km",
+                  "diagnostic": "Identifier XUD/Indenor/XU exact, contrôler courroie/galets/pompe à eau, compressions, pompe/injecteurs ou allumage, turbo XUD9TE, radiateur, huile et fuites",
+                  "piece_concernee": "Moteur Peugeot et périphériques",
+                  "gravite": "Majeure à critique en cas de distribution",
+                  "frequence": "Assez fréquente sans historique",
+                  "cout_reparation_estime": "Élevé : environ 500 à 4 500 €"
+                },
+                {
+                  "probleme": "Boîte, transfert, ponts, blocages et arbres 4x4",
+                  "symptomes": [
+                    "Bruit",
+                    "Vibration",
+                    "Gamme ou blocage inopérant"
+                  ],
+                  "kilometrage_apparition": "Variable selon terrain et entretien",
+                  "diagnostic": "Tester toutes gammes/4x4/blocages, contrôler huiles, boîte, transfert, arbres, croisillons, ponts, demi-arbres, moyeux, pneus identiques et traces de choc",
+                  "piece_concernee": "Transmission tout-terrain Auverland",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente après franchissement",
+                  "cout_reparation_estime": "Élevé : environ 700 à 6 000 €"
+                },
+                {
+                  "probleme": "Corrosion/fissures du châssis, direction et freinage",
+                  "symptomes": [
+                    "Rouille",
+                    "Jeu",
+                    "Freinage dissymétrique ou caisse désalignée"
+                  ],
+                  "kilometrage_apparition": "Après 10 à 20 ans selon usage",
+                  "diagnostic": "Inspecter longerons, traverses, supports de caisse, soudures, ancrages, lames/ressorts, direction, conduites, maître-cylindre, étriers/tambours, roues et modifications militaires/civiles",
+                  "piece_concernee": "Structure et organes de sécurité",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sur véhicules de service",
+                  "cout_reparation_estime": "Élevé : environ 700 à plus de 8 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "2.3 D Indenor — 70 ch",
+              "code_moteur": "Peugeot XD2",
+              "cylindree": "2 304 cm³",
+              "puissance_ch": 70,
+              "boite": [
+                "Boîte manuelle 5 rapports + transfert"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, distribution et refroidissement des moteurs Peugeot",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Fumée",
+                    "Surchauffe ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km",
+                  "diagnostic": "Identifier XUD/Indenor/XU exact, contrôler courroie/galets/pompe à eau, compressions, pompe/injecteurs ou allumage, turbo XUD9TE, radiateur, huile et fuites",
+                  "piece_concernee": "Moteur Peugeot et périphériques",
+                  "gravite": "Majeure à critique en cas de distribution",
+                  "frequence": "Assez fréquente sans historique",
+                  "cout_reparation_estime": "Élevé : environ 500 à 4 500 €"
+                },
+                {
+                  "probleme": "Boîte, transfert, ponts, blocages et arbres 4x4",
+                  "symptomes": [
+                    "Bruit",
+                    "Vibration",
+                    "Gamme ou blocage inopérant"
+                  ],
+                  "kilometrage_apparition": "Variable selon terrain et entretien",
+                  "diagnostic": "Tester toutes gammes/4x4/blocages, contrôler huiles, boîte, transfert, arbres, croisillons, ponts, demi-arbres, moyeux, pneus identiques et traces de choc",
+                  "piece_concernee": "Transmission tout-terrain Auverland",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente après franchissement",
+                  "cout_reparation_estime": "Élevé : environ 700 à 6 000 €"
+                },
+                {
+                  "probleme": "Corrosion/fissures du châssis, direction et freinage",
+                  "symptomes": [
+                    "Rouille",
+                    "Jeu",
+                    "Freinage dissymétrique ou caisse désalignée"
+                  ],
+                  "kilometrage_apparition": "Après 10 à 20 ans selon usage",
+                  "diagnostic": "Inspecter longerons, traverses, supports de caisse, soudures, ancrages, lames/ressorts, direction, conduites, maître-cylindre, étriers/tambours, roues et modifications militaires/civiles",
+                  "piece_concernee": "Structure et organes de sécurité",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sur véhicules de service",
+                  "cout_reparation_estime": "Élevé : environ 700 à plus de 8 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "2.5 D Indenor — 76 ch",
+              "code_moteur": "Peugeot XD3",
+              "cylindree": "2 498 cm³",
+              "puissance_ch": 76,
+              "boite": [
+                "Boîte manuelle 5 rapports + transfert"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, distribution et refroidissement des moteurs Peugeot",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Fumée",
+                    "Surchauffe ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km",
+                  "diagnostic": "Identifier XUD/Indenor/XU exact, contrôler courroie/galets/pompe à eau, compressions, pompe/injecteurs ou allumage, turbo XUD9TE, radiateur, huile et fuites",
+                  "piece_concernee": "Moteur Peugeot et périphériques",
+                  "gravite": "Majeure à critique en cas de distribution",
+                  "frequence": "Assez fréquente sans historique",
+                  "cout_reparation_estime": "Élevé : environ 500 à 4 500 €"
+                },
+                {
+                  "probleme": "Boîte, transfert, ponts, blocages et arbres 4x4",
+                  "symptomes": [
+                    "Bruit",
+                    "Vibration",
+                    "Gamme ou blocage inopérant"
+                  ],
+                  "kilometrage_apparition": "Variable selon terrain et entretien",
+                  "diagnostic": "Tester toutes gammes/4x4/blocages, contrôler huiles, boîte, transfert, arbres, croisillons, ponts, demi-arbres, moyeux, pneus identiques et traces de choc",
+                  "piece_concernee": "Transmission tout-terrain Auverland",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente après franchissement",
+                  "cout_reparation_estime": "Élevé : environ 700 à 6 000 €"
+                },
+                {
+                  "probleme": "Corrosion/fissures du châssis, direction et freinage",
+                  "symptomes": [
+                    "Rouille",
+                    "Jeu",
+                    "Freinage dissymétrique ou caisse désalignée"
+                  ],
+                  "kilometrage_apparition": "Après 10 à 20 ans selon usage",
+                  "diagnostic": "Inspecter longerons, traverses, supports de caisse, soudures, ancrages, lames/ressorts, direction, conduites, maître-cylindre, étriers/tambours, roues et modifications militaires/civiles",
+                  "piece_concernee": "Structure et organes de sécurité",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sur véhicules de service",
+                  "cout_reparation_estime": "Élevé : environ 700 à plus de 8 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "A3 seconde série",
+          "annees": "1997–2005",
+          "phases": [
+            "Versions civiles, administrations et militaires ; vérifier blocages, ponts et homologation"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "1.9 TD Peugeot — 90 ch",
+              "code_moteur": "PSA XUD9TE",
+              "cylindree": "1 905 cm³",
+              "puissance_ch": 90,
+              "boite": [
+                "Boîte manuelle 5 rapports + transfert"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, distribution et refroidissement des moteurs Peugeot",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Fumée",
+                    "Surchauffe ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km",
+                  "diagnostic": "Identifier XUD/Indenor/XU exact, contrôler courroie/galets/pompe à eau, compressions, pompe/injecteurs ou allumage, turbo XUD9TE, radiateur, huile et fuites",
+                  "piece_concernee": "Moteur Peugeot et périphériques",
+                  "gravite": "Majeure à critique en cas de distribution",
+                  "frequence": "Assez fréquente sans historique",
+                  "cout_reparation_estime": "Élevé : environ 500 à 4 500 €"
+                },
+                {
+                  "probleme": "Boîte, transfert, ponts, blocages et arbres 4x4",
+                  "symptomes": [
+                    "Bruit",
+                    "Vibration",
+                    "Gamme ou blocage inopérant"
+                  ],
+                  "kilometrage_apparition": "Variable selon terrain et entretien",
+                  "diagnostic": "Tester toutes gammes/4x4/blocages, contrôler huiles, boîte, transfert, arbres, croisillons, ponts, demi-arbres, moyeux, pneus identiques et traces de choc",
+                  "piece_concernee": "Transmission tout-terrain Auverland",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente après franchissement",
+                  "cout_reparation_estime": "Élevé : environ 700 à 6 000 €"
+                },
+                {
+                  "probleme": "Corrosion/fissures du châssis, direction et freinage",
+                  "symptomes": [
+                    "Rouille",
+                    "Jeu",
+                    "Freinage dissymétrique ou caisse désalignée"
+                  ],
+                  "kilometrage_apparition": "Après 10 à 20 ans selon usage",
+                  "diagnostic": "Inspecter longerons, traverses, supports de caisse, soudures, ancrages, lames/ressorts, direction, conduites, maître-cylindre, étriers/tambours, roues et modifications militaires/civiles",
+                  "piece_concernee": "Structure et organes de sécurité",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sur véhicules de service",
+                  "cout_reparation_estime": "Élevé : environ 700 à plus de 8 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "2.0 essence Peugeot — 135 ch",
+              "code_moteur": "PSA XU10J2",
+              "cylindree": "1 998 cm³",
+              "puissance_ch": 135,
+              "boite": [
+                "Boîte manuelle 5 rapports + transfert"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, distribution et refroidissement des moteurs Peugeot",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Fumée",
+                    "Surchauffe ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km",
+                  "diagnostic": "Identifier XUD/Indenor/XU exact, contrôler courroie/galets/pompe à eau, compressions, pompe/injecteurs ou allumage, turbo XUD9TE, radiateur, huile et fuites",
+                  "piece_concernee": "Moteur Peugeot et périphériques",
+                  "gravite": "Majeure à critique en cas de distribution",
+                  "frequence": "Assez fréquente sans historique",
+                  "cout_reparation_estime": "Élevé : environ 500 à 4 500 €"
+                },
+                {
+                  "probleme": "Boîte, transfert, ponts, blocages et arbres 4x4",
+                  "symptomes": [
+                    "Bruit",
+                    "Vibration",
+                    "Gamme ou blocage inopérant"
+                  ],
+                  "kilometrage_apparition": "Variable selon terrain et entretien",
+                  "diagnostic": "Tester toutes gammes/4x4/blocages, contrôler huiles, boîte, transfert, arbres, croisillons, ponts, demi-arbres, moyeux, pneus identiques et traces de choc",
+                  "piece_concernee": "Transmission tout-terrain Auverland",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente après franchissement",
+                  "cout_reparation_estime": "Élevé : environ 700 à 6 000 €"
+                },
+                {
+                  "probleme": "Corrosion/fissures du châssis, direction et freinage",
+                  "symptomes": [
+                    "Rouille",
+                    "Jeu",
+                    "Freinage dissymétrique ou caisse désalignée"
+                  ],
+                  "kilometrage_apparition": "Après 10 à 20 ans selon usage",
+                  "diagnostic": "Inspecter longerons, traverses, supports de caisse, soudures, ancrages, lames/ressorts, direction, conduites, maître-cylindre, étriers/tambours, roues et modifications militaires/civiles",
+                  "piece_concernee": "Structure et organes de sécurité",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sur véhicules de service",
+                  "cout_reparation_estime": "Élevé : environ 700 à plus de 8 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

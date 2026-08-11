@@ -1,0 +1,194 @@
+{
+  "nom": "Bufori",
+  "modeles": [
+    {
+      "nom": "Geneva",
+      "generations": [
+        {
+          "code_chassis": "Mk VI Geneva phase 1",
+          "annees": "2010–2015",
+          "phases": [
+            "Limousine artisanale à spécification client ; confirmer puissance, compresseur et équipements sur la fiche usine individuelle."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "6.1 HEMI V8 atmosphérique — 430 ch",
+              "code_moteur": "Chrysler 6.1 HEMI",
+              "cylindree": "6 059 cm³",
+              "puissance_ch": 430,
+              "boite": [
+                "Automatique 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement, distribution et gestion du HEMI",
+                  "symptomes": [
+                    "Cliquetis",
+                    "Ratés",
+                    "Surchauffe, pression faible ou témoin moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, plus tôt en usage urbain chaud ou suralimenté",
+                  "diagnostic": "Identifier 6.1 ou 6.4 HEMI et préparation Bufori, lire défauts/ratés, mesurer pression/compressions, contrôler poussoirs/came et MDS si présent, pompes, radiateurs, ventilateurs, thermostat, bobines/bougies et fuites ; sur version à compresseur contrôler courroie, huile, échangeur, richesse et cliquetis en charge",
+                  "piece_concernee": "Chrysler HEMI V8 et calibration Bufori",
+                  "gravite": "Critique",
+                  "frequence": "Variable, accrue par chaleur et faible kilométrage annuel",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 20 000 €"
+                },
+                {
+                  "probleme": "Automatique, refroidissement de boîte, arbre et différentiel",
+                  "symptomes": [
+                    "À-coups",
+                    "Patinage",
+                    "Surchauffe, fuite ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km ou plus tôt avec 560 ch",
+                  "diagnostic": "Lire adaptations/températures, identifier la boîte cinq rapports et son calibrage, contrôler huile, carter, solénoïdes, convertisseur et refroidisseur ; inspecter supports, arbre, croisillons, différentiel autobloquant, demi-arbres et pneus arrière, puis essai progressif à chaud",
+                  "piece_concernee": "Transmission automatique et propulsion Geneva",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sans vidange préventive ou sur version suralimentée",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 12 000 €"
+                },
+                {
+                  "probleme": "Structure hybride, carrosserie carbone/Kevlar, suspension et équipements sur mesure",
+                  "symptomes": [
+                    "Fissure",
+                    "Géométrie instable",
+                    "Décharge batterie ou fonction habitacle inopérante"
+                  ],
+                  "kilometrage_apparition": "Contrôle systématique vu fabrication artisanale et faible série",
+                  "diagnostic": "Exiger fiche de construction et historique usine, inspecter châssis spatial/monocoque, collages et panneaux composites, points de levage, suspension adaptative, direction et freins ; tester toutes fonctions sur mesure, faisceaux, batteries, climatisation, caméras et modules, puis faire expertiser toute réparation structurelle",
+                  "piece_concernee": "Structure, châssis et électronique bespoke Geneva",
+                  "gravite": "Critique pour structure et valeur",
+                  "frequence": "Rare mais potentiellement très coûteuse faute de pièces standard",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 50 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "6.1 HEMI V8 suralimenté — 560 ch",
+              "code_moteur": "Chrysler 6.1 HEMI Supercharged",
+              "cylindree": "6 059 cm³",
+              "puissance_ch": 560,
+              "boite": [
+                "Automatique 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement, distribution et gestion du HEMI",
+                  "symptomes": [
+                    "Cliquetis",
+                    "Ratés",
+                    "Surchauffe, pression faible ou témoin moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, plus tôt en usage urbain chaud ou suralimenté",
+                  "diagnostic": "Identifier 6.1 ou 6.4 HEMI et préparation Bufori, lire défauts/ratés, mesurer pression/compressions, contrôler poussoirs/came et MDS si présent, pompes, radiateurs, ventilateurs, thermostat, bobines/bougies et fuites ; sur version à compresseur contrôler courroie, huile, échangeur, richesse et cliquetis en charge",
+                  "piece_concernee": "Chrysler HEMI V8 et calibration Bufori",
+                  "gravite": "Critique",
+                  "frequence": "Variable, accrue par chaleur et faible kilométrage annuel",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 20 000 €"
+                },
+                {
+                  "probleme": "Automatique, refroidissement de boîte, arbre et différentiel",
+                  "symptomes": [
+                    "À-coups",
+                    "Patinage",
+                    "Surchauffe, fuite ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km ou plus tôt avec 560 ch",
+                  "diagnostic": "Lire adaptations/températures, identifier la boîte cinq rapports et son calibrage, contrôler huile, carter, solénoïdes, convertisseur et refroidisseur ; inspecter supports, arbre, croisillons, différentiel autobloquant, demi-arbres et pneus arrière, puis essai progressif à chaud",
+                  "piece_concernee": "Transmission automatique et propulsion Geneva",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sans vidange préventive ou sur version suralimentée",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 12 000 €"
+                },
+                {
+                  "probleme": "Structure hybride, carrosserie carbone/Kevlar, suspension et équipements sur mesure",
+                  "symptomes": [
+                    "Fissure",
+                    "Géométrie instable",
+                    "Décharge batterie ou fonction habitacle inopérante"
+                  ],
+                  "kilometrage_apparition": "Contrôle systématique vu fabrication artisanale et faible série",
+                  "diagnostic": "Exiger fiche de construction et historique usine, inspecter châssis spatial/monocoque, collages et panneaux composites, points de levage, suspension adaptative, direction et freins ; tester toutes fonctions sur mesure, faisceaux, batteries, climatisation, caméras et modules, puis faire expertiser toute réparation structurelle",
+                  "piece_concernee": "Structure, châssis et électronique bespoke Geneva",
+                  "gravite": "Critique pour structure et valeur",
+                  "frequence": "Rare mais potentiellement très coûteuse faute de pièces standard",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 50 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Mk VI Geneva 6.4",
+          "annees": "2016–2024",
+          "phases": [
+            "Évolution 6.4 litres annoncée à 470 ch et 630 Nm ; production sur commande et spécifications variables."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "6.4 HEMI V8 — 470 ch",
+              "code_moteur": "Chrysler 6.4 HEMI",
+              "cylindree": "6 417 cm³",
+              "puissance_ch": 470,
+              "boite": [
+                "Automatique 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement, distribution et gestion du HEMI",
+                  "symptomes": [
+                    "Cliquetis",
+                    "Ratés",
+                    "Surchauffe, pression faible ou témoin moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, plus tôt en usage urbain chaud ou suralimenté",
+                  "diagnostic": "Identifier 6.1 ou 6.4 HEMI et préparation Bufori, lire défauts/ratés, mesurer pression/compressions, contrôler poussoirs/came et MDS si présent, pompes, radiateurs, ventilateurs, thermostat, bobines/bougies et fuites ; sur version à compresseur contrôler courroie, huile, échangeur, richesse et cliquetis en charge",
+                  "piece_concernee": "Chrysler HEMI V8 et calibration Bufori",
+                  "gravite": "Critique",
+                  "frequence": "Variable, accrue par chaleur et faible kilométrage annuel",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 20 000 €"
+                },
+                {
+                  "probleme": "Automatique, refroidissement de boîte, arbre et différentiel",
+                  "symptomes": [
+                    "À-coups",
+                    "Patinage",
+                    "Surchauffe, fuite ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km ou plus tôt avec 560 ch",
+                  "diagnostic": "Lire adaptations/températures, identifier la boîte cinq rapports et son calibrage, contrôler huile, carter, solénoïdes, convertisseur et refroidisseur ; inspecter supports, arbre, croisillons, différentiel autobloquant, demi-arbres et pneus arrière, puis essai progressif à chaud",
+                  "piece_concernee": "Transmission automatique et propulsion Geneva",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sans vidange préventive ou sur version suralimentée",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 12 000 €"
+                },
+                {
+                  "probleme": "Structure hybride, carrosserie carbone/Kevlar, suspension et équipements sur mesure",
+                  "symptomes": [
+                    "Fissure",
+                    "Géométrie instable",
+                    "Décharge batterie ou fonction habitacle inopérante"
+                  ],
+                  "kilometrage_apparition": "Contrôle systématique vu fabrication artisanale et faible série",
+                  "diagnostic": "Exiger fiche de construction et historique usine, inspecter châssis spatial/monocoque, collages et panneaux composites, points de levage, suspension adaptative, direction et freins ; tester toutes fonctions sur mesure, faisceaux, batteries, climatisation, caméras et modules, puis faire expertiser toute réparation structurelle",
+                  "piece_concernee": "Structure, châssis et électronique bespoke Geneva",
+                  "gravite": "Critique pour structure et valeur",
+                  "frequence": "Rare mais potentiellement très coûteuse faute de pièces standard",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 50 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://bufori.com/",
+        "https://www.mot.sk/media/casopis/2010/MOT_04_2010.pdf"
+      ]
+    }
+  ]
+}

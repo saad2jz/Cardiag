@@ -1,0 +1,139 @@
+{
+  "nom": "Polski Fiat",
+  "modeles": [
+    {
+      "nom": "126p",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "0.65 — 24 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 24,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "État mécanique, corrosion et disponibilité des pièces",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Fuite",
+                    "Usure ou fonctionnement irrégulier"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, le stockage et l’historique réel.",
+                  "diagnostic": "Inspection sur pont, essai routier et contrôle des numéros/équipements spécifiques.",
+                  "piece_concernee": "Groupe motopropulseur, châssis et carrosserie",
+                  "gravite": "À évaluer lors de l’expertise",
+                  "frequence": "À surveiller particulièrement sur véhicule historique",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "probleme": "Freinage, direction et suspension",
+                  "symptomes": [
+                    "Tirage",
+                    "Vibration",
+                    "Jeu au volant"
+                  ],
+                  "kilometrage_apparition": "À contrôler avant toute utilisation routière.",
+                  "diagnostic": "Contrôle des jeux, des flexibles, de la géométrie et de l’efficacité du freinage.",
+                  "piece_concernee": "Trains roulants et freinage",
+                  "gravite": "Majeure si sécurité affectée",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Réseau électrique et connectiques",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Fonction intermittente"
+                  ],
+                  "kilometrage_apparition": "Variable, accentué après immobilisation.",
+                  "diagnostic": "Test de batterie, masses, câblage et charge alternateur/dynamo.",
+                  "piece_concernee": "Circuit électrique",
+                  "gravite": "Faible à modérée",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "125p",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.5 — 75 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 75,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "État mécanique, corrosion et disponibilité des pièces",
+                  "symptomes": [
+                    "Bruit anormal",
+                    "Fuite",
+                    "Usure ou fonctionnement irrégulier"
+                  ],
+                  "kilometrage_apparition": "Variable selon l’âge, le stockage et l’historique réel.",
+                  "diagnostic": "Inspection sur pont, essai routier et contrôle des numéros/équipements spécifiques.",
+                  "piece_concernee": "Groupe motopropulseur, châssis et carrosserie",
+                  "gravite": "À évaluer lors de l’expertise",
+                  "frequence": "À surveiller particulièrement sur véhicule historique",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "probleme": "Freinage, direction et suspension",
+                  "symptomes": [
+                    "Tirage",
+                    "Vibration",
+                    "Jeu au volant"
+                  ],
+                  "kilometrage_apparition": "À contrôler avant toute utilisation routière.",
+                  "diagnostic": "Contrôle des jeux, des flexibles, de la géométrie et de l’efficacité du freinage.",
+                  "piece_concernee": "Trains roulants et freinage",
+                  "gravite": "Majeure si sécurité affectée",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Réseau électrique et connectiques",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Fonction intermittente"
+                  ],
+                  "kilometrage_apparition": "Variable, accentué après immobilisation.",
+                  "diagnostic": "Test de batterie, masses, câblage et charge alternateur/dynamo.",
+                  "piece_concernee": "Circuit électrique",
+                  "gravite": "Faible à modérée",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

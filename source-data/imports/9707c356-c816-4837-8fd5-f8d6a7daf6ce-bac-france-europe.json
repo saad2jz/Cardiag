@@ -1,0 +1,336 @@
+{
+  "nom": "BAC",
+  "modeles": [
+    {
+      "nom": "Mono",
+      "generations": [
+        {
+          "code_chassis": "Mono première génération 2.3",
+          "annees": "2011–2016",
+          "phases": [
+            "Puissance constructeur 280 bhp, soit environ 284 ch métriques ; identifier numéro de voiture et mises à niveau BAC"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.3 Cosworth atmosphérique 280 bhp — 284 ch",
+              "code_moteur": "Ford Duratec/Cosworth 2.3",
+              "cylindree": "2 261 cm³",
+              "puissance_ch": 284,
+              "boite": [
+                "Hewland FTR séquentielle 6 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification par carter sec et moteur quatre-cylindres préparé",
+                  "symptomes": [
+                    "Pression d’huile instable",
+                    "Cliquetis",
+                    "Fumée ou température élevée"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque révision ; risque accru après circuit, sur-régime ou immobilisation",
+                  "diagnostic": "Vérifier historique BAC/Mountune/Cosworth, niveau selon procédure, pression à chaud, analyse d’huile et filtre, compression/leak-down, réservoir, pompes de récupération, conduites, refroidissement, admission individuelle ou turbo selon version",
+                  "piece_concernee": "Moteur Ford Duratec préparé et circuit de carter sec",
+                  "gravite": "Critique",
+                  "frequence": "Dépend fortement de l’usage piste et de l’entretien",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "Boîte séquentielle Hewland, embrayage et transmission",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Rapport qui saute",
+                    "Limaille ou claquement de différentiel"
+                  ],
+                  "kilometrage_apparition": "Entretien exprimé en heures/cycles piste plutôt qu’en kilométrage",
+                  "diagnostic": "Contrôler journal d’heures, stratégie de changement de rapport, embrayage, coupure d’allumage, tambour/fourchettes, crabots, huile, différentiel, arbres et supports ; vidanger selon programme piste",
+                  "piece_concernee": "Boîte Hewland séquentielle 6 rapports et différentiel",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure attendue en usage circuit",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 18 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, carbone, suspension et freinage de type monoplace",
+                  "symptomes": [
+                    "Fissure",
+                    "Jeu",
+                    "Géométrie instable",
+                    "Pédale longue ou vibration"
+                  ],
+                  "kilometrage_apparition": "Inspection avant/après chaque journée piste et après tout contact",
+                  "diagnostic": "Mesurer géométrie, inspecter soudures, crash-box carbone, panneaux, triangles, rotules, porte-moyeux, Öhlins/Sachs, ressorts, AP Racing ou carbone-céramique, roues et pneus ; rechercher impacts de fond plat et réparations non homologuées",
+                  "piece_concernee": "Structure, trains roulants et freins BAC Mono",
+                  "gravite": "Critique",
+                  "frequence": "Usure directement liée à la piste et aux vibreurs",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 40 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Mono 2.5 atmosphérique",
+          "annees": "2015–2023",
+          "phases": [
+            "Deuxième motorisation standard ; ne pas confondre avec Mono R malgré la cylindrée commune"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.5 Mountune atmosphérique 305 bhp — 309 ch",
+              "code_moteur": "Ford Duratec/Mountune 2.5",
+              "cylindree": "2 488 cm³",
+              "puissance_ch": 309,
+              "boite": [
+                "Hewland FTR séquentielle 6 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification par carter sec et moteur quatre-cylindres préparé",
+                  "symptomes": [
+                    "Pression d’huile instable",
+                    "Cliquetis",
+                    "Fumée ou température élevée"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque révision ; risque accru après circuit, sur-régime ou immobilisation",
+                  "diagnostic": "Vérifier historique BAC/Mountune/Cosworth, niveau selon procédure, pression à chaud, analyse d’huile et filtre, compression/leak-down, réservoir, pompes de récupération, conduites, refroidissement, admission individuelle ou turbo selon version",
+                  "piece_concernee": "Moteur Ford Duratec préparé et circuit de carter sec",
+                  "gravite": "Critique",
+                  "frequence": "Dépend fortement de l’usage piste et de l’entretien",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "Boîte séquentielle Hewland, embrayage et transmission",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Rapport qui saute",
+                    "Limaille ou claquement de différentiel"
+                  ],
+                  "kilometrage_apparition": "Entretien exprimé en heures/cycles piste plutôt qu’en kilométrage",
+                  "diagnostic": "Contrôler journal d’heures, stratégie de changement de rapport, embrayage, coupure d’allumage, tambour/fourchettes, crabots, huile, différentiel, arbres et supports ; vidanger selon programme piste",
+                  "piece_concernee": "Boîte Hewland séquentielle 6 rapports et différentiel",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure attendue en usage circuit",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 18 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, carbone, suspension et freinage de type monoplace",
+                  "symptomes": [
+                    "Fissure",
+                    "Jeu",
+                    "Géométrie instable",
+                    "Pédale longue ou vibration"
+                  ],
+                  "kilometrage_apparition": "Inspection avant/après chaque journée piste et après tout contact",
+                  "diagnostic": "Mesurer géométrie, inspecter soudures, crash-box carbone, panneaux, triangles, rotules, porte-moyeux, Öhlins/Sachs, ressorts, AP Racing ou carbone-céramique, roues et pneus ; rechercher impacts de fond plat et réparations non homologuées",
+                  "piece_concernee": "Structure, trains roulants et freins BAC Mono",
+                  "gravite": "Critique",
+                  "frequence": "Usure directement liée à la piste et aux vibreurs",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 40 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Mono R",
+          "annees": "2019–aujourd’hui",
+          "phases": [
+            "Série très limitée, 555 kg à sec et freins carbone-céramique ; 343 bhp équivalent à environ 348 ch métriques"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.5 Mountune atmosphérique 343 bhp — 348 ch",
+              "code_moteur": "BAC/Mountune 2.5 Mono R",
+              "cylindree": "2 488 cm³",
+              "puissance_ch": 348,
+              "boite": [
+                "Hewland FTR magnésium séquentielle 6 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification par carter sec et moteur quatre-cylindres préparé",
+                  "symptomes": [
+                    "Pression d’huile instable",
+                    "Cliquetis",
+                    "Fumée ou température élevée"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque révision ; risque accru après circuit, sur-régime ou immobilisation",
+                  "diagnostic": "Vérifier historique BAC/Mountune/Cosworth, niveau selon procédure, pression à chaud, analyse d’huile et filtre, compression/leak-down, réservoir, pompes de récupération, conduites, refroidissement, admission individuelle ou turbo selon version",
+                  "piece_concernee": "Moteur Ford Duratec préparé et circuit de carter sec",
+                  "gravite": "Critique",
+                  "frequence": "Dépend fortement de l’usage piste et de l’entretien",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "Boîte séquentielle Hewland, embrayage et transmission",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Rapport qui saute",
+                    "Limaille ou claquement de différentiel"
+                  ],
+                  "kilometrage_apparition": "Entretien exprimé en heures/cycles piste plutôt qu’en kilométrage",
+                  "diagnostic": "Contrôler journal d’heures, stratégie de changement de rapport, embrayage, coupure d’allumage, tambour/fourchettes, crabots, huile, différentiel, arbres et supports ; vidanger selon programme piste",
+                  "piece_concernee": "Boîte Hewland séquentielle 6 rapports et différentiel",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure attendue en usage circuit",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 18 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, carbone, suspension et freinage de type monoplace",
+                  "symptomes": [
+                    "Fissure",
+                    "Jeu",
+                    "Géométrie instable",
+                    "Pédale longue ou vibration"
+                  ],
+                  "kilometrage_apparition": "Inspection avant/après chaque journée piste et après tout contact",
+                  "diagnostic": "Mesurer géométrie, inspecter soudures, crash-box carbone, panneaux, triangles, rotules, porte-moyeux, Öhlins/Sachs, ressorts, AP Racing ou carbone-céramique, roues et pneus ; rechercher impacts de fond plat et réparations non homologuées",
+                  "piece_concernee": "Structure, trains roulants et freins BAC Mono",
+                  "gravite": "Critique",
+                  "frequence": "Usure directement liée à la piste et aux vibreurs",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 40 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Mono nouvelle génération Euro 6d",
+          "annees": "2020–aujourd’hui",
+          "phases": [
+            "Version turbocompressée homologuée Euro 6d ; 332 bhp et plus de 400 Nm"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.3 Mountune turbo 332 bhp — 337 ch",
+              "code_moteur": "Ford Duratec/Mountune 2.3 turbo",
+              "cylindree": "2 300 cm³",
+              "puissance_ch": 337,
+              "boite": [
+                "Hewland séquentielle 6 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification par carter sec et moteur quatre-cylindres préparé",
+                  "symptomes": [
+                    "Pression d’huile instable",
+                    "Cliquetis",
+                    "Fumée ou température élevée"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque révision ; risque accru après circuit, sur-régime ou immobilisation",
+                  "diagnostic": "Vérifier historique BAC/Mountune/Cosworth, niveau selon procédure, pression à chaud, analyse d’huile et filtre, compression/leak-down, réservoir, pompes de récupération, conduites, refroidissement, admission individuelle ou turbo selon version",
+                  "piece_concernee": "Moteur Ford Duratec préparé et circuit de carter sec",
+                  "gravite": "Critique",
+                  "frequence": "Dépend fortement de l’usage piste et de l’entretien",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "Boîte séquentielle Hewland, embrayage et transmission",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Rapport qui saute",
+                    "Limaille ou claquement de différentiel"
+                  ],
+                  "kilometrage_apparition": "Entretien exprimé en heures/cycles piste plutôt qu’en kilométrage",
+                  "diagnostic": "Contrôler journal d’heures, stratégie de changement de rapport, embrayage, coupure d’allumage, tambour/fourchettes, crabots, huile, différentiel, arbres et supports ; vidanger selon programme piste",
+                  "piece_concernee": "Boîte Hewland séquentielle 6 rapports et différentiel",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure attendue en usage circuit",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 18 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, carbone, suspension et freinage de type monoplace",
+                  "symptomes": [
+                    "Fissure",
+                    "Jeu",
+                    "Géométrie instable",
+                    "Pédale longue ou vibration"
+                  ],
+                  "kilometrage_apparition": "Inspection avant/après chaque journée piste et après tout contact",
+                  "diagnostic": "Mesurer géométrie, inspecter soudures, crash-box carbone, panneaux, triangles, rotules, porte-moyeux, Öhlins/Sachs, ressorts, AP Racing ou carbone-céramique, roues et pneus ; rechercher impacts de fond plat et réparations non homologuées",
+                  "piece_concernee": "Structure, trains roulants et freins BAC Mono",
+                  "gravite": "Critique",
+                  "frequence": "Usure directement liée à la piste et aux vibreurs",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 40 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Mono nouvelle génération atmosphérique",
+          "annees": "2023–aujourd’hui",
+          "phases": [
+            "Nouvelle carrosserie et évolution du moteur 2.5 ; 311 bhp équivalent à environ 315 ch métriques"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.5 Mountune atmosphérique 311 bhp — 315 ch",
+              "code_moteur": "BAC/Mountune 2.5 MY2024",
+              "cylindree": "2 488 cm³",
+              "puissance_ch": 315,
+              "boite": [
+                "Hewland séquentielle 6 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification par carter sec et moteur quatre-cylindres préparé",
+                  "symptomes": [
+                    "Pression d’huile instable",
+                    "Cliquetis",
+                    "Fumée ou température élevée"
+                  ],
+                  "kilometrage_apparition": "Contrôle à chaque révision ; risque accru après circuit, sur-régime ou immobilisation",
+                  "diagnostic": "Vérifier historique BAC/Mountune/Cosworth, niveau selon procédure, pression à chaud, analyse d’huile et filtre, compression/leak-down, réservoir, pompes de récupération, conduites, refroidissement, admission individuelle ou turbo selon version",
+                  "piece_concernee": "Moteur Ford Duratec préparé et circuit de carter sec",
+                  "gravite": "Critique",
+                  "frequence": "Dépend fortement de l’usage piste et de l’entretien",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "Boîte séquentielle Hewland, embrayage et transmission",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Rapport qui saute",
+                    "Limaille ou claquement de différentiel"
+                  ],
+                  "kilometrage_apparition": "Entretien exprimé en heures/cycles piste plutôt qu’en kilométrage",
+                  "diagnostic": "Contrôler journal d’heures, stratégie de changement de rapport, embrayage, coupure d’allumage, tambour/fourchettes, crabots, huile, différentiel, arbres et supports ; vidanger selon programme piste",
+                  "piece_concernee": "Boîte Hewland séquentielle 6 rapports et différentiel",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure attendue en usage circuit",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 18 000 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, carbone, suspension et freinage de type monoplace",
+                  "symptomes": [
+                    "Fissure",
+                    "Jeu",
+                    "Géométrie instable",
+                    "Pédale longue ou vibration"
+                  ],
+                  "kilometrage_apparition": "Inspection avant/après chaque journée piste et après tout contact",
+                  "diagnostic": "Mesurer géométrie, inspecter soudures, crash-box carbone, panneaux, triangles, rotules, porte-moyeux, Öhlins/Sachs, ressorts, AP Racing ou carbone-céramique, roues et pneus ; rechercher impacts de fond plat et réparations non homologuées",
+                  "piece_concernee": "Structure, trains roulants et freins BAC Mono",
+                  "gravite": "Critique",
+                  "frequence": "Usure directement liée à la piste et aux vibreurs",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 40 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.bac-mono.com/gallery2",
+        "https://www.bac-mono.com/mono-specification",
+        "https://www.bac-mono.com/monorspecification",
+        "https://www.bac-mono.com/new-monopower"
+      ]
+    }
+  ]
+}

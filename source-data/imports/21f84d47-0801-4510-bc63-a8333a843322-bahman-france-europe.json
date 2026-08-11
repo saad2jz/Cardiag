@@ -1,0 +1,194 @@
+{
+  "nom": "Bahman",
+  "modeles": [
+    {
+      "nom": "Fidelity",
+      "generations": [
+        {
+          "code_chassis": "Fidelity Prime / Jetour X70",
+          "annees": "2021–aujourd’hui",
+          "phases": [
+            "Versions 5 ou 7 places assemblées par Bahman ; la boîte humide remplace progressivement la première DCT sèche et doit être identifiée séparément"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.5 turbo Prime, 6DCT sèche — 155 ch",
+              "code_moteur": "Chery SQRE4T15C",
+              "cylindree": "1 498 cm³",
+              "puissance_ch": 155,
+              "boite": [
+                "Double embrayage sèche 6 rapports, traction"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, lubrification et suralimentation du 1.5 turbo",
+                  "symptomes": [
+                    "Cliquetis au démarrage",
+                    "Fumée",
+                    "Consommation d’huile ou manque de puissance"
+                  ],
+                  "kilometrage_apparition": "Généralement entre 60 000 et 140 000 km, plus tôt avec huile inadaptée, forte chaleur ou intervalles espacés",
+                  "diagnostic": "Identifier le SQRE4T15C, lire adaptations et pression de suralimentation, mesurer compressions/pression d’huile, contrôler chaîne et tendeur, turbo, wastegate, reniflard, intercooler, refroidissement et dépôts d’admission",
+                  "piece_concernee": "Moteur Chery/Jetour SQRE4T15C 1.5 turbo",
+                  "gravite": "Majeure à critique si pression d’huile ou distribution affectée",
+                  "frequence": "Assez fréquente sur usage sévère mal entretenu ; recul européen limité",
+                  "cout_reparation_estime": "Élevé : environ 600 à 6 000 € selon disponibilité locale"
+                },
+                {
+                  "probleme": "Boîte double embrayage sèche ou humide et calibrations",
+                  "symptomes": [
+                    "Broutement",
+                    "À-coups à basse vitesse",
+                    "Surchauffe ou rapport indisponible"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 40 000 et 100 000 km en circulation dense ; dépend fortement de la version de boîte",
+                  "diagnostic": "Identifier DCT sèche ou humide par VIN/plaque, lire températures et usure, contrôler huile si DCT humide, embrayages, mécatronique, apprentissages, supports et mises à jour ; effectuer essai à froid et à chaud",
+                  "piece_concernee": "Boîte 6DCT et double embrayage",
+                  "gravite": "Majeure, immobilisante si perte de motricité",
+                  "frequence": "Assez fréquente sur double embrayage sollicité en trafic",
+                  "cout_reparation_estime": "Élevé : environ 800 à 6 500 €"
+                },
+                {
+                  "probleme": "Électronique, climatisation et pièces spécifiques au marché iranien",
+                  "symptomes": [
+                    "Écran ou caméra intermittent",
+                    "Décharge 12 V",
+                    "Climatisation faible ou voyant multiple"
+                  ],
+                  "kilometrage_apparition": "Variable, souvent après batterie faible, chaleur extrême ou ajout d’accessoires",
+                  "diagnostic": "Scanner tous les calculateurs avec protocole compatible, tester batterie/alternateur et masses, faisceaux, multiplexage, climatisation arrière, toit ouvrant, caméras et capteurs ; confirmer l’accès aux références Bahman avant achat",
+                  "piece_concernee": "Réseau électrique, équipements de carrosserie et pièces de marché",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Occasionnelle ; disponibilité hors Iran potentiellement faible",
+                  "cout_reparation_estime": "Modéré à élevé : environ 200 à 4 000 €, délai de pièces variable"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.5 turbo Prime/Elite, 6DCT humide — 155 ch",
+              "code_moteur": "Chery SQRE4T15C",
+              "cylindree": "1 498 cm³",
+              "puissance_ch": 155,
+              "boite": [
+                "Double embrayage humide 6 rapports, traction"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, lubrification et suralimentation du 1.5 turbo",
+                  "symptomes": [
+                    "Cliquetis au démarrage",
+                    "Fumée",
+                    "Consommation d’huile ou manque de puissance"
+                  ],
+                  "kilometrage_apparition": "Généralement entre 60 000 et 140 000 km, plus tôt avec huile inadaptée, forte chaleur ou intervalles espacés",
+                  "diagnostic": "Identifier le SQRE4T15C, lire adaptations et pression de suralimentation, mesurer compressions/pression d’huile, contrôler chaîne et tendeur, turbo, wastegate, reniflard, intercooler, refroidissement et dépôts d’admission",
+                  "piece_concernee": "Moteur Chery/Jetour SQRE4T15C 1.5 turbo",
+                  "gravite": "Majeure à critique si pression d’huile ou distribution affectée",
+                  "frequence": "Assez fréquente sur usage sévère mal entretenu ; recul européen limité",
+                  "cout_reparation_estime": "Élevé : environ 600 à 6 000 € selon disponibilité locale"
+                },
+                {
+                  "probleme": "Boîte double embrayage sèche ou humide et calibrations",
+                  "symptomes": [
+                    "Broutement",
+                    "À-coups à basse vitesse",
+                    "Surchauffe ou rapport indisponible"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 40 000 et 100 000 km en circulation dense ; dépend fortement de la version de boîte",
+                  "diagnostic": "Identifier DCT sèche ou humide par VIN/plaque, lire températures et usure, contrôler huile si DCT humide, embrayages, mécatronique, apprentissages, supports et mises à jour ; effectuer essai à froid et à chaud",
+                  "piece_concernee": "Boîte 6DCT et double embrayage",
+                  "gravite": "Majeure, immobilisante si perte de motricité",
+                  "frequence": "Assez fréquente sur double embrayage sollicité en trafic",
+                  "cout_reparation_estime": "Élevé : environ 800 à 6 500 €"
+                },
+                {
+                  "probleme": "Électronique, climatisation et pièces spécifiques au marché iranien",
+                  "symptomes": [
+                    "Écran ou caméra intermittent",
+                    "Décharge 12 V",
+                    "Climatisation faible ou voyant multiple"
+                  ],
+                  "kilometrage_apparition": "Variable, souvent après batterie faible, chaleur extrême ou ajout d’accessoires",
+                  "diagnostic": "Scanner tous les calculateurs avec protocole compatible, tester batterie/alternateur et masses, faisceaux, multiplexage, climatisation arrière, toit ouvrant, caméras et capteurs ; confirmer l’accès aux références Bahman avant achat",
+                  "piece_concernee": "Réseau électrique, équipements de carrosserie et pièces de marché",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Occasionnelle ; disponibilité hors Iran potentiellement faible",
+                  "cout_reparation_estime": "Modéré à élevé : environ 200 à 4 000 €, délai de pièces variable"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Fidelity Prestige / Jetour X70 Plus",
+          "annees": "2023–aujourd’hui",
+          "phases": [
+            "Carrosserie, moteur 197 ch et 7DCT distincts de Fidelity Prime ; confirmer VIN iranien et disponibilité de pièces hors marché"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.6 TGDI Prestige — 197 ch",
+              "code_moteur": "Chery SQRF4J16",
+              "cylindree": "1 598 cm³",
+              "puissance_ch": 197,
+              "boite": [
+                "Double embrayage humide 7 rapports, traction"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection directe, turbo et refroidissement du 1.6 TGDI",
+                  "symptomes": [
+                    "Ratés",
+                    "Fumée",
+                    "Perte de puissance ou température élevée"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 130 000 km, plus tôt avec carburant ou huile inadaptés",
+                  "diagnostic": "Lire pression rail, corrections et cliquetis, contrôler injecteurs, pompe HP, bobines, bougies, turbo, wastegate, intercooler, pompe à eau, thermostat, chaîne et dépôts sur soupapes ; analyser huile et liquide",
+                  "piece_concernee": "Moteur SQRF4J16 1.6 TGDI",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Recul limité sur Fidelity Prestige ; risques typiques d’un TGDI",
+                  "cout_reparation_estime": "Élevé : environ 700 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte 7DCT humide et gestion du couple",
+                  "symptomes": [
+                    "À-coups",
+                    "Patinage",
+                    "Surchauffe ou message transmission"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 140 000 km selon trafic, remorquage et entretien",
+                  "diagnostic": "Lire défauts, températures et valeurs d’embrayage, vérifier huile/niveau/contamination, mécatronique, refroidissement, adaptations et supports ; essai progressif à froid puis chaud",
+                  "piece_concernee": "Boîte double embrayage humide 7 rapports",
+                  "gravite": "Majeure",
+                  "frequence": "À surveiller en trafic urbain intense",
+                  "cout_reparation_estime": "Élevé : environ 900 à 7 500 €"
+                },
+                {
+                  "probleme": "ADAS, alimentation 12 V et équipements Prestige",
+                  "symptomes": [
+                    "Alertes caméra/radar",
+                    "Écran figé",
+                    "Fonctions intermittentes ou batterie déchargée"
+                  ],
+                  "kilometrage_apparition": "Variable, notamment après choc de pare-chocs/pare-brise ou batterie faible",
+                  "diagnostic": "Faire un diagnostic réseau complet, mesurer courant de repos, vérifier mises à jour, calibrer caméra/radars, contrôler capteurs 360°, toit, hayon, climatisation et connecteurs ; inspecter réparations de carrosserie",
+                  "piece_concernee": "Réseau CAN, ADAS et équipements de confort",
+                  "gravite": "Majeure si aide de sécurité indisponible",
+                  "frequence": "Occasionnelle, données de parc limitées",
+                  "cout_reparation_estime": "Modéré à élevé : environ 250 à 5 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://bahman.ir/",
+        "https://digiato.com/article/2022/11/24/bahman-fidelity-prime-new-gearbox-and-review"
+      ]
+    }
+  ]
+}
