@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cardiag-v13';
+const CACHE_NAME = 'cardiag-v15';
 const APP_SHELL = [
   './',
   './index.html',
@@ -8,10 +8,10 @@ const APP_SHELL = [
   './icons/app-icon-512.png',
   './css/styles.css?v=20260810-3',
   './build-data.js?v=20260810-3',
-  './js/db-loader.js?v=20260810-3',
-  './js/app.js?v=20260810-3',
+  './js/db-loader.js?v=20260811-1',
+  './js/app.js?v=20260811-2',
   './js/legacy-features.js?v=20260810-3',
-  './js/chat-experience.js?v=20260810-3',
+  './js/chat-experience.js?v=20260811-2',
   './js/pwa.js?v=20260810-3',
   './data/vehicles.json',
 ];
