@@ -14,7 +14,7 @@
 <meta name="chat-api" content="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=20260809-1">
+<link rel="stylesheet" href="css/styles.css?v=20260812-3">
 </head>
 <body>
 <header class="app-header">
@@ -372,6 +372,7 @@
     <p class="chat-context">Questions guidées par le véhicule sélectionné. Les contrôles doivent être confirmés sur le véhicule.</p>
     <div class="vehicle-readout" id="diagnosticVehicleReadout">Véhicule : à sélectionner dans la fiche</div>
     <div class="chat-messages" id="chatMessages" aria-live="polite"></div>
+    <div class="chat-suggestions" id="chatSuggestions" aria-label="Réponses proposées"></div>
     <form id="chatForm">
       <label class="sr-only" for="chatInput">Votre symptôme ou mesure relevée</label>
       <textarea id="chatInput" rows="3" maxlength="8000" placeholder="Symptôme, mesure, code défaut ou résultat de contrôle…"></textarea>
@@ -456,6 +457,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script src="build-data.js?v=20260809-1"></script>
 <script src="js/db-loader.js?v=20260811-1"></script>
-<script type="module" src="js/app.js?v=20260811-2"></script>
+<script type="module" src="js/app.js?v=20260812-3"></script>
 </body>
 </html>

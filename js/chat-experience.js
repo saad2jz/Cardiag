@@ -5,6 +5,16 @@ const API_BASE_URL = ['localhost', '127.0.0.1'].includes(window.location.hostnam
   ? `${window.location.origin}/`
   : RENDER_API_URL;
 const API_TIMEOUT_MS = 60_000;
+const INITIAL_SYMPTOM_OPTIONS = [
+  'Voyant moteur allumé',
+  'Démarrage difficile à froid',
+  'Perte de puissance',
+  'Bruit moteur anormal',
+  'Fumée à l’échappement',
+  'Vibrations ou à-coups',
+  'Freinage anormal',
+  'Odeur de carburant',
+];
 
 function carContext() {
   const selectOrManual = (selectId, manualId) => {
@@ -92,21 +102,39 @@ function parseChatResponse(raw) {
     const data = typeof raw === 'string' ? JSON.parse(raw) : raw;
     if (!data || typeof data !== 'object') return null;
     if (data.type === 'question' || data.type === 'message') {
-      return { type: data.type, content: String(data.content || '').trim() };
+      return {
+        type: data.type,
+        content: String(data.content || '').trim(),
+        suggestions: normalizeSuggestionList(data.suggestions),
+      };
     }
     if (data.type === 'report') {
       return {
         type: 'report',
+        content: String(data.content || '').trim(),
         vehicle: String(data.vehicle || '').trim(),
         fault_code: String(data.fault_code || '').trim(),
         root_cause: String(data.root_cause || '').trim(),
         action_plan: String(data.action_plan || '').trim(),
+        confidence: ['preliminary', 'probable', 'confirmed'].includes(data.confidence)
+          ? data.confidence
+          : 'probable',
+        suggestions: normalizeSuggestionList(data.suggestions),
       };
     }
     return null;
   } catch {
     return null;
   }
+}
+
+function normalizeSuggestionList(suggestions, limit = 4) {
+  if (!Array.isArray(suggestions)) return [];
+  return [...new Set(suggestions
+    .filter((suggestion) => typeof suggestion === 'string')
+    .map((suggestion) => suggestion.trim().slice(0, 120))
+    .filter(Boolean))]
+    .slice(0, limit);
 }
 
 function splitActionPlan(plan) {
@@ -147,7 +175,12 @@ function renderReport(target, data) {
   grid.className = 'report-grid';
   const summary = document.createElement('p');
   summary.className = 'report-summary';
-  summary.textContent = 'CAUSE PROBABLE IDENTIFIÉE';
+  const summaryLabels = {
+    preliminary: 'SYNTHÈSE TECHNIQUE PROVISOIRE',
+    probable: 'CAUSE PROBABLE — SYNTHÈSE ÉVOLUTIVE',
+    confirmed: 'CAUSE RACINE CONFIRMÉE',
+  };
+  summary.textContent = summaryLabels[data.confidence] || summaryLabels.probable;
   grid.append(summary, reportCard('VÉHICULE', data.vehicle, '', true));
   const fault = reportCard('CODE DÉFAUT', data.fault_code, 'fault');
   fault.querySelector('.report-value').className = 'fault-code';
@@ -171,10 +204,21 @@ function renderReport(target, data) {
   target.append(grid);
 }
 
+function reportHistoryContent(data) {
+  return [
+    data.content,
+    `Synthèse technique (${data.confidence})`,
+    `Véhicule : ${data.vehicle}`,
+    `Code défaut : ${data.fault_code}`,
+    `Cause/hypothèses : ${data.root_cause}`,
+    `Plan de tests : ${data.action_plan}`,
+  ].filter(Boolean).join('\n');
+}
+
 function waitingReport() {
   const state = document.createElement('div');
   state.className = 'waiting-state';
-  state.innerHTML = '<div class="radar" aria-hidden="true"><span></span></div><p class="waiting-kicker">AUCUN RAPPORT ACTIF</p><h3>En attente des mesures terrain</h3><p>La synthèse d’intervention apparaîtra ici après confirmation de la cause probable.</p>';
+  state.innerHTML = '<div class="radar" aria-hidden="true"><span></span></div><p class="waiting-kicker">SYNTHÈSE À INITIALISER</p><h3>Décrivez le premier symptôme</h3><p>Une synthèse technique provisoire apparaîtra dès le premier échange et évoluera avec chaque nouvelle observation.</p>';
   return state;
 }
 
@@ -208,6 +252,7 @@ export function initializeChatExperience() {
   const form = document.getElementById('chatForm');
   const input = document.getElementById('chatInput');
   const messagesElement = document.getElementById('chatMessages');
+  const suggestionsElement = document.getElementById('chatSuggestions');
   const status = document.getElementById('chatStatus');
   const reportContent = document.getElementById('reportContent');
   const reset = document.getElementById('chatReset');
@@ -221,7 +266,48 @@ export function initializeChatExperience() {
   let selectedText = '';
   let inlineContextElement = null;
 
-  if (!toggles.length || !panel || !form || !input || !messagesElement || !status || !reportContent || !inline || !inlineText) return;
+  if (!toggles.length || !panel || !form || !input || !messagesElement || !suggestionsElement || !status || !reportContent || !inline || !inlineText) return;
+
+  function renderSuggestions(options = [], initial = false) {
+    suggestionsElement.replaceChildren();
+    const normalizedOptions = normalizeSuggestionList(options, initial ? 8 : 4);
+    const heading = document.createElement('p');
+    heading.className = 'chat-suggestions-label';
+    heading.textContent = initial
+      ? 'Choisissez un symptôme fréquent ou décrivez-le avec vos mots'
+      : 'Réponses proposées';
+    suggestionsElement.append(heading);
+
+    const choices = document.createElement('div');
+    choices.className = 'chat-suggestion-list';
+    normalizedOptions.forEach((option) => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'chat-suggestion-chip';
+      button.textContent = option;
+      button.addEventListener('click', () => {
+        input.value = option;
+        form.requestSubmit();
+      });
+      choices.append(button);
+    });
+
+    const customButton = document.createElement('button');
+    customButton.type = 'button';
+    customButton.className = 'chat-suggestion-chip chat-suggestion-custom';
+    customButton.textContent = '✎ Décrire un autre symptôme';
+    customButton.addEventListener('click', () => {
+      input.value = '';
+      input.placeholder = 'Décrivez librement ce que vous voyez, entendez ou ressentez…';
+      input.focus();
+    });
+    choices.append(customButton);
+    suggestionsElement.append(choices);
+  }
+
+  function showInitialSuggestions() {
+    renderSuggestions(INITIAL_SYMPTOM_OPTIONS, true);
+  }
 
   function updateVehicleReadout() {
     const context = carContext();
@@ -232,6 +318,7 @@ export function initializeChatExperience() {
   function openPanel() {
     panel.hidden = false;
     updateVehicleReadout();
+    if (!messages.length && !suggestionsElement.childElementCount) showInitialSuggestions();
     input.focus();
   }
 
@@ -240,6 +327,7 @@ export function initializeChatExperience() {
   reset?.addEventListener('click', () => {
     messages = [];
     messagesElement.replaceChildren();
+    showInitialSuggestions();
     reportContent.replaceChildren(waitingReport());
     input.disabled = false;
     submitButton.disabled = false;
@@ -264,6 +352,7 @@ export function initializeChatExperience() {
     }
 
     input.value = '';
+    suggestionsElement.replaceChildren();
     appendMessage(messagesElement, 'user', content);
     const promptCombine = buildCombinedPrompt(content, 'Général');
     messages.push({ role: 'user', content: promptCombine });
@@ -284,8 +373,6 @@ export function initializeChatExperience() {
     status.textContent = 'L’assistant prépare une réponse spécifique à votre véhicule.';
     submitButton.disabled = true;
     messagesElement.setAttribute('aria-busy', 'true');
-    let investigationClosed = false;
-
     try {
       const raw = await request('/api/chat', { messages, carContext: carContext() });
       const data = parseChatResponse(raw);
@@ -300,13 +387,19 @@ export function initializeChatExperience() {
         status.textContent = data.type === 'question'
           ? 'Contrôle complémentaire requis avant d’établir le rapport.'
           : 'Réponse adaptée à votre véhicule.';
+        renderSuggestions(data.suggestions);
       } else if (data.type === 'report') {
-        investigationClosed = true;
-        pendingMessage.textContent = 'Cause probable confirmée. Rapport d’intervention généré.';
+        const assistantContent = data.content
+          || 'Synthèse technique mise à jour. Ajoutez une observation ou une mesure pour poursuivre l’analyse.';
+        renderSafeInline(pendingMessage, assistantContent);
+        messages.push({ role: 'assistant', content: reportHistoryContent(data) });
+        messages = messages.slice(-MAX_MESSAGES);
         renderReport(reportContent, data);
-        input.disabled = true;
-        submitButton.disabled = true;
-        status.textContent = 'Investigation clôturée. Utilisez « Nouvelle analyse » pour ouvrir un nouveau dossier.';
+        input.disabled = false;
+        status.textContent = data.confidence === 'confirmed'
+          ? 'Cause racine confirmée. Vous pouvez encore ajouter une mesure pour documenter le dossier.'
+          : 'Synthèse technique mise à jour. Ajoutez vos observations pour affiner la cause racine.';
+        renderSuggestions(data.suggestions);
       } else {
         throw new Error('Format de réponse IA non reconnu.');
       }
@@ -315,14 +408,17 @@ export function initializeChatExperience() {
       pendingMessage.classList.remove('chat-message-pending');
       pendingMessage.classList.add('chat-message-error');
       status.textContent = 'Vous pouvez réessayer dans quelques instants.';
+      renderSuggestions([], false);
     } finally {
       window.clearInterval(thinkingTimer);
-      if (!investigationClosed) submitButton.disabled = false;
+      submitButton.disabled = false;
       messagesElement.removeAttribute('aria-busy');
       panel.hidden = false;
-      if (!investigationClosed) input.focus();
+      input.focus();
     }
   });
+
+  showInitialSuggestions();
 
   function showInlineForSelection() {
     const selection = window.getSelection();
