@@ -14,7 +14,7 @@
 <meta name="chat-api" content="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=20260812-3">
+<link rel="stylesheet" href="css/styles.css?v=20260812-5">
 </head>
 <body>
 <header class="app-header">
@@ -23,9 +23,9 @@
       <img class="brand-logo" src="icons/app-icon.svg" alt="" aria-hidden="true">
       <span class="brand-wordmark">Cardiag</span>
     </div>
-    <div class="eyebrow">Contrôle terrain • Achat véhicule d'occasion</div>
+    <div class="eyebrow" id="appScenarioEyebrow">Contrôle terrain • Achat véhicule d'occasion</div>
     <h1>Diagnostic &amp; Expertise Auto</h1>
-    <p class="subtitle">Renseignez chaque point de contrôle pendant votre visite. Tout est sauvegardé automatiquement sur cet appareil.</p>
+    <p class="subtitle" id="appScenarioSubtitle">Renseignez chaque point de contrôle pendant votre visite. Tout est sauvegardé automatiquement sur cet appareil.</p>
   </div>
   <div class="toolbar header-inner">
     <div class="toolbar-row">
@@ -76,6 +76,40 @@
 <main>
 
   <div class="quick-mode-banner">⚡ Mode inspection rapide actif : seuls les ~12 points de contrôle les plus critiques sont affichés, pour un premier tri avant de décider si une inspection complète est justifiée. Désactivez-le dans la barre d'outils pour tout voir.</div>
+
+  <section class="usage-scenario-panel" aria-labelledby="usageScenarioTitle">
+    <div class="usage-scenario-head">
+      <p class="panel-kicker">PARCOURS PERSONNALISÉ</p>
+      <h2 id="usageScenarioTitle">Quel est votre objectif ?</h2>
+      <p>Le questionnaire, l’assistant et la synthèse s’adaptent automatiquement à votre situation.</p>
+    </div>
+    <div class="usage-scenario-grid">
+      <label class="usage-scenario-card">
+        <input type="radio" name="usage_scenario" value="buyer" checked>
+        <span class="usage-scenario-icon" aria-hidden="true">🔍</span>
+        <strong>Acheteur</strong>
+        <span>Contrôler le véhicule avant achat, détecter les risques et préparer la négociation.</span>
+      </label>
+      <label class="usage-scenario-card">
+        <input type="radio" name="usage_scenario" value="mechanic">
+        <span class="usage-scenario-icon" aria-hidden="true">🔧</span>
+        <strong>Garagiste</strong>
+        <span>Documenter l’état initial et la plainte client avant la prise en charge en atelier.</span>
+      </label>
+      <label class="usage-scenario-card">
+        <input type="radio" name="usage_scenario" value="seller">
+        <span class="usage-scenario-icon" aria-hidden="true">📄</span>
+        <strong>Vendeur</strong>
+        <span>Créer un rapport transparent et complet à transmettre à un futur acheteur.</span>
+      </label>
+      <label class="usage-scenario-card">
+        <input type="radio" name="usage_scenario" value="owner">
+        <span class="usage-scenario-icon" aria-hidden="true">🚗</span>
+        <strong>Propriétaire</strong>
+        <span>Suivre le véhicule, comprendre ses problèmes et effectuer les contrôles simples en sécurité.</span>
+      </label>
+    </div>
+  </section>
 
   <details class="section" data-section="info" open>
     <summary><span class="sec-num">1</span> Informations du Véhicule &amp; Vendeur <span class="sec-meta">Identité &amp; contexte de vente</span></summary>
@@ -369,7 +403,7 @@
       <div><p class="panel-kicker"><span class="status-light"></span>SYSTÈME PRÊT</p><h2>Console d'investigation</h2></div>
       <button type="button" id="chatClose" class="panel-close" aria-label="Fermer la console">×</button>
     </header>
-    <p class="chat-context">Questions guidées par le véhicule sélectionné. Les contrôles doivent être confirmés sur le véhicule.</p>
+    <p class="chat-context" id="diagnosticScenarioContext">Questions guidées par le véhicule sélectionné. Les contrôles doivent être confirmés sur le véhicule.</p>
     <div class="vehicle-readout" id="diagnosticVehicleReadout">Véhicule : à sélectionner dans la fiche</div>
     <div class="chat-messages" id="chatMessages" aria-live="polite"></div>
     <div class="chat-suggestions" id="chatSuggestions" aria-label="Réponses proposées"></div>
@@ -381,7 +415,7 @@
     <p class="chat-status" id="chatStatus" role="status"></p>
   </section>
   <section class="diagnostic-report" aria-live="polite">
-    <header class="report-head"><div><p class="panel-kicker">RAPPORT D'INTERVENTION</p><h2>Synthèse technique</h2></div><button id="chatReset" class="report-reset" type="button">↻ Nouvelle analyse</button></header>
+    <header class="report-head"><div><p class="panel-kicker" id="diagnosticReportKicker">RAPPORT D'INTERVENTION</p><h2 id="diagnosticReportTitle">Synthèse technique</h2></div><button id="chatReset" class="report-reset" type="button">↻ Nouvelle analyse</button></header>
     <div id="reportContent" class="report-content">
       <div class="waiting-state"><div class="radar" aria-hidden="true"><span></span></div><p class="waiting-kicker">AUCUN RAPPORT ACTIF</p><h3>En attente des mesures terrain</h3><p>La synthèse d'intervention apparaîtra ici après confirmation de la cause probable.</p></div>
     </div>
@@ -457,6 +491,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script src="build-data.js?v=20260809-1"></script>
 <script src="js/db-loader.js?v=20260811-1"></script>
-<script type="module" src="js/app.js?v=20260812-3"></script>
+<script type="module" src="js/app.js?v=20260812-6"></script>
 </body>
 </html>
