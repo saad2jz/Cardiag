@@ -27,7 +27,8 @@ Render. Ne placez jamais la clé API dans le frontend.
 ## Déploiement unique sur Render
 
 Ce dossier contient le frontend et le backend. Déployez-le avec `npm start`,
-définissez `LLM_PROVIDER=gemini` et `GEMINI_API_KEY`. Le modèle Gemini est
-verrouillé côté serveur sur `gemini-3.6-flash`, puis
+définissez `LLM_PROVIDER=gemini` et `GEMINI_API_KEY`. Le diagnostic utilise
+`gemini-3.5-flash-lite` par défaut et bascule sur `gemini-3.6-flash` uniquement
+pour les dossiers longs ou sensibles, puis
 ouvrez l'URL Render : Express sert l'interface et les routes `/api/chat` et
 `/api/inline` depuis le même domaine.

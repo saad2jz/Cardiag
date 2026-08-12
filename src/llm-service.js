@@ -5,15 +5,30 @@ import { buildChatInstructions } from './prompts.js';
 
 const SUPPORTED_PROVIDERS = new Set(['gemini', 'openai']);
 const DEFAULT_MODELS = {
-  gemini: 'gemini-3.6-flash',
+  gemini: 'gemini-3.5-flash-lite',
   openai: 'gpt-4o',
 };
+const ADVANCED_GEMINI_MODEL = 'gemini-3.6-flash';
+const MAX_LLM_OUTPUT_TOKENS = 1800;
+const MAX_LLM_HISTORY_MESSAGES = 6;
+const MAX_LLM_MESSAGE_LENGTH = 3500;
 
 const INLINE_FALLBACK = '<i>Procédure non standardisée. Veuillez vous référer à la documentation technique constructeur.</i>';
 
 const CHAT_SAFETY_FALLBACK = {
   type: 'question',
   content: "Désolé, j'ai rencontré une anomalie lors de l'analyse. Pouvez-vous reformuler vos symptômes ou vérifier le code ?",
+};
+
+const AMBIGUOUS_INPUT_FALLBACK = {
+  type: 'question',
+  content: 'Je n’ai pas assez d’éléments pour identifier le symptôme. Indiquez ce que vous voyez, entendez ou ressentez, et dans quelles conditions cela apparaît.',
+  suggestions: [
+    'Un bruit anormal',
+    'Un voyant est allumé',
+    'Une vibration ou un à-coup',
+    'Une fumée ou une odeur',
+  ],
 };
 
 const CHAT_RESPONSE_SCHEMA = {
@@ -280,6 +295,48 @@ function hasAssistantMessage(messages) {
   return messages.some((message) => message?.role === 'assistant');
 }
 
+function extractUserObservation(message) {
+  const value = String(message ?? '').trim();
+  const wrappedObservation = value.match(/Point de contr(?:ô|o)le\s*:\s*(.*?)\.\s*[ÉE]tat\s*:/i);
+  return wrappedObservation?.[1]?.trim() || value;
+}
+
+function isClearlyAmbiguous(message) {
+  const normalized = normalizeText(extractUserObservation(message))
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
+  if (!normalized) return true;
+  if (['oui', 'non'].includes(normalized)) return false;
+  return normalized.length <= 2 || ['ok', 'fr', 'jsp', '???'].includes(normalized);
+}
+
+function compactMessagesForLlm(messages) {
+  if (messages.length <= MAX_LLM_HISTORY_MESSAGES) {
+    return messages.map(({ role, content }) => ({
+      role,
+      content: content.trim().slice(0, MAX_LLM_MESSAGE_LENGTH),
+    }));
+  }
+
+  const firstUserMessage = messages.find((message) => message?.role === 'user');
+  const recentMessages = messages.slice(-(MAX_LLM_HISTORY_MESSAGES - 1));
+  const compacted = firstUserMessage && !recentMessages.includes(firstUserMessage)
+    ? [firstUserMessage, ...recentMessages]
+    : recentMessages;
+
+  return compacted.map(({ role, content }) => ({
+    role,
+    content: content.trim().slice(0, MAX_LLM_MESSAGE_LENGTH),
+  }));
+}
+
+function shouldUseAdvancedGemini(messages, lastUserMessage) {
+  const userTurns = messages.filter((message) => message?.role === 'user').length;
+  const normalized = normalizeText(lastUserMessage);
+  const safetyCritical = /frein|direction|airbag|haute tension|batterie traction|surchauff|fuite carburant|incendie/.test(normalized);
+  return userTurns >= 5 || safetyCritical;
+}
+
 function readJsonObject(text) {
   let normalized = String(text ?? '')
     .trim()
@@ -395,23 +452,33 @@ export function createLlmService({ client, provider, model } = {}) {
         }
       }
 
+      if (isClearlyAmbiguous(lastUserMessage)) {
+        return { ...AMBIGUOUS_INPUT_FALLBACK };
+      }
+
       const instructions = buildChatInstructions(carContext);
+      const compactedMessages = compactMessagesForLlm(messages);
 
       if (activeProvider === 'gemini') {
-        const contents = messages.map(({ role, content }) => ({
+        const requestModel = model || (
+          shouldUseAdvancedGemini(compactedMessages, lastUserMessage)
+            ? ADVANCED_GEMINI_MODEL
+            : activeModel
+        );
+        const contents = compactedMessages.map(({ role, content }) => ({
             role: role === 'assistant' ? 'model' : 'user',
             parts: [{ text: content.trim() }],
           }));
 
         for (let attempt = 0; attempt < 2; attempt += 1) {
           const response = await getClient().models.generateContent({
-            model: activeModel,
+            model: requestModel,
             contents,
             config: {
               systemInstruction: attempt === 0
                 ? instructions
                 : `${instructions}\n\nCORRECTION DE FORMAT : la tentative précédente était invalide. Régénère intégralement un unique objet JSON conforme au schéma, sans Markdown ni texte autour.`,
-              maxOutputTokens: 3000,
+              maxOutputTokens: MAX_LLM_OUTPUT_TOKENS,
               temperature: 0.2,
               responseMimeType: 'application/json',
               responseJsonSchema: CHAT_RESPONSE_SCHEMA,
@@ -428,11 +495,11 @@ export function createLlmService({ client, provider, model } = {}) {
       const response = await getClient().responses.create({
         model: activeModel,
         instructions,
-        input: messages.map(({ role, content }) => ({
+        input: compactedMessages.map(({ role, content }) => ({
           role,
           content: content.trim(),
         })),
-        max_output_tokens: 3000,
+        max_output_tokens: MAX_LLM_OUTPUT_TOKENS,
       });
 
       return normalizeChatResult(outputText(response, 'openai'));
