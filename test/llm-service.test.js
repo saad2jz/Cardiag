@@ -10,11 +10,11 @@ const carContext = {
 };
 
 test('runtime uses the required Gemini and OpenAI models by default', () => {
-  assert.equal(getLlmRuntimeConfig({ LLM_PROVIDER: 'gemini' }).model, 'gemini-3.6-flash');
+  assert.equal(getLlmRuntimeConfig({ LLM_PROVIDER: 'gemini' }).model, 'gemini-3.5-flash-lite');
   assert.equal(getLlmRuntimeConfig({ LLM_PROVIDER: 'openai' }).model, 'gpt-4o');
   assert.equal(
     getLlmRuntimeConfig({ LLM_PROVIDER: 'gemini', GEMINI_MODEL: 'gemini-1.5-flash' }).model,
-    'gemini-3.6-flash',
+    'gemini-3.5-flash-lite',
   );
   assert.equal(
     getLlmRuntimeConfig({ LLM_PROVIDER: 'openai', OPENAI_MODEL: 'gpt-5.6' }).model,
@@ -42,7 +42,7 @@ test('Gemini fallback receives converted history, JSON mode and system instructi
   assert.deepEqual(result, { type: 'question', content: 'Quel témoin est allumé ?' });
   assert.equal(captured.model, 'gemini-test');
   assert.equal(captured.config.responseMimeType, 'application/json');
-  assert.equal(captured.config.maxOutputTokens, 3000);
+  assert.equal(captured.config.maxOutputTokens, 1800);
   assert.match(captured.config.systemInstruction, /chef d'atelier/i);
   assert.match(captured.config.systemInstruction, /historique complet/i);
   assert.match(captured.config.systemInstruction, /cause racine/i);
