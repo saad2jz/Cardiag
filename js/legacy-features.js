@@ -203,7 +203,12 @@ export function initializeLegacyFeatures(vehicleData) {
   function applyToForm(data){
     data = data || {};
     fieldEls().forEach(el=>{
-      if(el.type === 'radio'){ el.checked = (data[el.name] === el.value); }
+      if(el.type === 'radio'){
+        const savedValue = el.name === 'usage_scenario' && data[el.name] === undefined
+          ? 'buyer'
+          : data[el.name];
+        el.checked = (savedValue === el.value);
+      }
       else if(el.type === 'checkbox'){ el.checked = !!data[el.name]; }
       else { el.value = data[el.name] !== undefined ? data[el.name] : ''; }
     });
@@ -233,6 +238,7 @@ export function initializeLegacyFeatures(vehicleData) {
     updateBudget();
     checkCriticalRisk();
     validateRequiredFields();
+    window.dispatchEvent(new CustomEvent('cardiag:scenario-change'));
   }
 
   function refreshSelector(){
@@ -859,6 +865,14 @@ export function initializeLegacyFeatures(vehicleData) {
 
   function buildPrintSynthesis(){
     const d = db[currentId].data;
+    const scenarioLabels = {
+      buyer: 'Contrôle avant achat',
+      mechanic: 'État initial avant prise en charge atelier',
+      seller: 'Rapport transparent avant vente',
+      owner: 'Suivi et historique du véhicule'
+    };
+    const usageScenario = d.usage_scenario || 'buyer';
+    const scenarioLabel = scenarioLabels[usageScenario];
     const verdict = d.verdict;
     const verdictLabel = verdict==='achat'?'ACHAT':verdict==='negociation'?'NÉGOCIATION':verdict==='fuir'?'À FUIR':'NON DÉFINI';
     const issues = [];
@@ -878,8 +892,13 @@ export function initializeLegacyFeatures(vehicleData) {
     const triggeredCritical = CRITICAL_RULES.filter(rule => rule.test(d));
 
     let html = '<h1>Fiche d\u2019Expertise — '+[d.marque,d.modele,d.annee].filter(Boolean).join(' ')+'</h1>';
+    html += '<p><strong>Objet du rapport :</strong> '+scenarioLabel+'</p>';
     html += '<p>Kilométrage : '+(d.kilometrage||'—')+' km · Valeur : '+(d.valeur||'—')+' € · Date : '+(d.date_expertise||'—')+'</p>';
-    html += '<div class="ps-verdict '+(verdict||'')+'">Décision : '+verdictLabel+'</div>';
+    if(usageScenario === 'buyer'){
+      html += '<div class="ps-verdict '+(verdict||'')+'">Décision : '+verdictLabel+'</div>';
+    }else{
+      html += '<div class="ps-verdict">Statut : '+scenarioLabel+'</div>';
+    }
 
     if(triggeredCritical.length){
       triggeredCritical.forEach(rule=>{
@@ -888,9 +907,12 @@ export function initializeLegacyFeatures(vehicleData) {
     }
 
     html += '<table><tr><th>Score pondéré global</th><td>'+(scoreFor(db[currentId]) ?? '—')+'%</td></tr>';
-    html += '<tr><th>Frais estimés</th><td>'+(d.frais_estimation||'—')+' €</td></tr>';
-    html += '<tr><th>Budget max</th><td>'+(d.budget_max||'—')+' €</td></tr>';
-    html += '<tr><th>Marge de négociation</th><td>'+(d.marge_negociation||'—')+'</td></tr></table>';
+    if(usageScenario === 'buyer'){
+      html += '<tr><th>Frais estimés</th><td>'+(d.frais_estimation||'—')+' €</td></tr>';
+      html += '<tr><th>Budget max</th><td>'+(d.budget_max||'—')+' €</td></tr>';
+      html += '<tr><th>Marge de négociation</th><td>'+(d.marge_negociation||'—')+'</td></tr>';
+    }
+    html += '</table>';
 
     html += '<h3>Détail du score par catégorie de gravité</h3>';
     html += '<table class="ps-cat-table"><tr><th>Catégorie (coefficient)</th><th>Sous-score</th><th>Points contrôlés</th></tr>';
@@ -1811,7 +1833,10 @@ export function initializeLegacyFeatures(vehicleData) {
   }
 
   document.addEventListener('change', (e)=>{
-    if(e.target.closest('main')){ saveCurrent(); updateProgress(); updateBudget(); checkCriticalRisk(); validateRequiredFields(); }
+    if(e.target.closest('main')){
+      saveCurrent(); updateProgress(); updateBudget(); checkCriticalRisk(); validateRequiredFields();
+      if(e.target.name === 'usage_scenario') window.dispatchEvent(new CustomEvent('cardiag:scenario-change'));
+    }
   });
   document.addEventListener('input', (e)=>{
     if(e.target.closest('main') && (e.target.type==='text' || e.target.type==='number' || e.target.tagName==='TEXTAREA')){

@@ -72,6 +72,25 @@ const DEFAULT_FOLLOW_UP_SUGGESTIONS = [
   'J’ai un code défaut',
 ];
 
+const LOCAL_SCENARIO_GUIDANCE = {
+  buyer: {
+    content: 'Première synthèse avant achat disponible. Précisez les conditions d’apparition et demandez les justificatifs ou mesures disponibles.',
+    suggestions: ['Présent à froid', 'Présent à chaud', 'Un justificatif est disponible', 'Aucun contrôle encore effectué'],
+  },
+  mechanic: {
+    content: 'État initial enregistré. Complétez avec la plainte exacte du client, les conditions de reproduction et les premières mesures atelier.',
+    suggestions: ['Défaut permanent', 'Défaut intermittent', 'Codes relevés sans effacement', 'Intervention antérieure connue'],
+  },
+  seller: {
+    content: 'Élément ajouté au rapport vendeur. Complétez avec la date, le kilométrage, les justificatifs et les éventuelles limites du contrôle.',
+    suggestions: ['Facture disponible', 'Réparation récente', 'Défaut connu non réparé', 'Photo ajoutée au dossier'],
+  },
+  owner: {
+    content: 'Première synthèse de suivi disponible. Précisez depuis quand le symptôme existe, sa fréquence et son évolution.',
+    suggestions: ['Apparu récemment', 'Le symptôme s’aggrave', 'Le symptôme est intermittent', 'Entretien effectué récemment'],
+  },
+};
+
 export function getLlmRuntimeConfig(env = process.env) {
   const inferredProvider = env.GEMINI_API_KEY || env.GOOGLE_API_KEY ? 'gemini' : 'openai';
   const provider = (env.LLM_PROVIDER || inferredProvider).trim().toLowerCase();
@@ -179,14 +198,19 @@ function cloneLocalScenario(scenario, carContext) {
   void motsClesSnakeCase;
   void motsCles;
 
+  const usageScenario = ['buyer', 'mechanic', 'seller', 'owner'].includes(carContext?.usageScenario)
+    ? carContext.usageScenario
+    : 'buyer';
+  const guidance = LOCAL_SCENARIO_GUIDANCE[usageScenario];
+
   return {
     ...result,
     vehicle: formatVehicle(carContext),
     content: typeof result.content === 'string' && result.content.trim()
       ? result.content.trim()
-      : 'Synthèse technique initiale disponible. Pour l’affiner, précisez les conditions exactes d’apparition du symptôme et toute mesure déjà effectuée.',
+      : guidance.content,
     confidence: result.confidence || 'probable',
-    suggestions: normalizeSuggestions(result.suggestions, DEFAULT_FOLLOW_UP_SUGGESTIONS),
+    suggestions: normalizeSuggestions(result.suggestions, guidance.suggestions),
   };
 }
 

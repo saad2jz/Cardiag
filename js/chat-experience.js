@@ -5,16 +5,52 @@ const API_BASE_URL = ['localhost', '127.0.0.1'].includes(window.location.hostnam
   ? `${window.location.origin}/`
   : RENDER_API_URL;
 const API_TIMEOUT_MS = 60_000;
-const INITIAL_SYMPTOM_OPTIONS = [
-  'Voyant moteur allumé',
-  'Démarrage difficile à froid',
-  'Perte de puissance',
-  'Bruit moteur anormal',
-  'Fumée à l’échappement',
-  'Vibrations ou à-coups',
-  'Freinage anormal',
-  'Odeur de carburant',
-];
+const USAGE_SCENARIOS = {
+  buyer: {
+    label: 'Acheteur — contrôle avant achat',
+    eyebrow: 'Contrôle terrain • Achat de véhicule d’occasion',
+    subtitle: 'Vérifiez les organes critiques, identifiez les risques et préparez une décision d’achat argumentée.',
+    reportTitle: 'Rapport d’aide à l’achat',
+    context: 'Inspection guidée avant achat : risques, contrôles prioritaires et éléments de négociation.',
+    placeholder: 'Défaut observé, point à vérifier, code OBD ou réponse du vendeur…',
+    options: ['Démarrage à froid', 'Historique d’entretien incomplet', 'Voyant moteur allumé', 'Bruit moteur anormal', 'Fumée à l’échappement', 'Traces d’accident', 'Essai routier anormal', 'Codes OBD effacés'],
+  },
+  mechanic: {
+    label: 'Garagiste — prise en charge atelier',
+    eyebrow: 'Atelier • État initial contradictoire',
+    subtitle: 'Consignez la plainte client, l’état d’entrée, les codes et les premières mesures avant intervention.',
+    reportTitle: 'Rapport de prise en charge',
+    context: 'État initial contradictoire, plainte client, codes et premières mesures avant intervention.',
+    placeholder: 'Plainte client, condition d’apparition, code défaut ou première mesure…',
+    options: ['Consigner la plainte client', 'Relever les codes défaut', 'État initial carrosserie', 'Bruit à reproduire', 'Fuite ou niveau anormal', 'Démarrage difficile', 'Vibrations ou à-coups', 'Intervention antérieure'],
+  },
+  seller: {
+    label: 'Vendeur — rapport avant vente',
+    eyebrow: 'Transparence • Dossier avant vente',
+    subtitle: 'Documentez objectivement l’entretien, les contrôles et les défauts connus à transmettre à l’acheteur.',
+    reportTitle: 'Rapport de transparence vendeur',
+    context: 'Dossier factuel à transmettre : état, entretien, défauts connus et contrôles réalisés.',
+    placeholder: 'Entretien effectué, défaut connu, réparation, mesure ou document disponible…',
+    options: ['Créer un état général', 'Ajouter l’historique d’entretien', 'Déclarer un défaut connu', 'Ajouter une réparation récente', 'Contrôler les voyants', 'Ajouter les codes OBD', 'Documenter les pneus et freins', 'Préparer les photos du rapport'],
+  },
+  owner: {
+    label: 'Propriétaire — suivi du véhicule',
+    eyebrow: 'Carnet de bord • Suivi technique',
+    subtitle: 'Conservez l’historique, comprenez les symptômes et réalisez les vérifications simples en sécurité.',
+    reportTitle: 'Carnet de suivi technique',
+    context: 'Comprendre un problème, conserver son évolution et réaliser uniquement les contrôles accessibles en sécurité.',
+    placeholder: 'Décrivez ce que vous voyez, entendez ou ressentez et quand cela arrive…',
+    options: ['Voyant moteur allumé', 'Démarrage difficile', 'Bruit nouveau', 'Perte de puissance', 'Fumée ou odeur', 'Consommation anormale', 'Vibrations ou à-coups', 'Ajouter une opération d’entretien'],
+  },
+};
+
+function selectedUsageScenario() {
+  return document.querySelector('[name="usage_scenario"]:checked')?.value || 'buyer';
+}
+
+function usageScenarioConfig() {
+  return USAGE_SCENARIOS[selectedUsageScenario()] || USAGE_SCENARIOS.buyer;
+}
 
 function carContext() {
   const selectOrManual = (selectId, manualId) => {
@@ -29,6 +65,7 @@ function carContext() {
     annee: document.getElementById('anneeSelect')?.value || '',
     motorisation: selectOrManual('motorisationSelect', 'motorisationManualInput'),
     vin: document.querySelector('[name="vin"]')?.value.trim() || '',
+    usageScenario: selectedUsageScenario(),
   };
 }
 
@@ -62,19 +99,29 @@ async function request(path, body) {
   const timeout = window.setTimeout(() => controller.abort(), API_TIMEOUT_MS);
 
   try {
-    const response = await fetch(`${API_BASE_URL}${path.replace(/^\//, '')}`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(body),
-      signal: controller.signal,
-    });
-    const payload = await response.json().catch(() => ({}));
-    if (!response.ok) {
+    for (let attempt = 0; attempt < 2; attempt += 1) {
+      const response = await fetch(`${API_BASE_URL}${path.replace(/^\//, '')}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body),
+        signal: controller.signal,
+      });
+      const payload = await response.json().catch(() => ({}));
+      if (response.ok) return payload;
+
+      const retryable = response.status === 429 || response.status >= 500;
+      if (retryable && attempt === 0) {
+        const retryAfterSeconds = Number.parseInt(response.headers.get('Retry-After') || '0', 10);
+        const delay = Math.min(Math.max(retryAfterSeconds * 1000, 1500), 5000);
+        await new Promise((resolve) => window.setTimeout(resolve, delay));
+        continue;
+      }
+
       const error = new Error(payload.error || `Le service est indisponible (erreur ${response.status}).`);
       error.code = payload.code;
       throw error;
     }
-    return payload;
+    throw new Error('Le service reste indisponible après une nouvelle tentative.');
   } catch (error) {
     if (error.name === 'AbortError') {
       throw new Error('Le service met trop de temps à répondre. Il peut être en cours de démarrage : réessayez dans quelques instants.');
@@ -181,7 +228,9 @@ function renderReport(target, data) {
     confirmed: 'CAUSE RACINE CONFIRMÉE',
   };
   summary.textContent = summaryLabels[data.confidence] || summaryLabels.probable;
-  grid.append(summary, reportCard('VÉHICULE', data.vehicle, '', true));
+  const scenario = usageScenarioConfig();
+  grid.append(summary, reportCard('OBJECTIF DU DOSSIER', scenario.label, '', true));
+  grid.append(reportCard('VÉHICULE', data.vehicle, '', true));
   const fault = reportCard('CODE DÉFAUT', data.fault_code, 'fault');
   fault.querySelector('.report-value').className = 'fault-code';
   grid.append(fault, reportCard('ÉTAT SYSTÈME', 'Anomalie à confirmer après contrôle', 'warning'));
@@ -208,6 +257,7 @@ function reportHistoryContent(data) {
   return [
     data.content,
     `Synthèse technique (${data.confidence})`,
+    `Objectif du dossier : ${usageScenarioConfig().label}`,
     `Véhicule : ${data.vehicle}`,
     `Code défaut : ${data.fault_code}`,
     `Cause/hypothèses : ${data.root_cause}`,
@@ -216,9 +266,10 @@ function reportHistoryContent(data) {
 }
 
 function waitingReport() {
+  const scenario = usageScenarioConfig();
   const state = document.createElement('div');
   state.className = 'waiting-state';
-  state.innerHTML = '<div class="radar" aria-hidden="true"><span></span></div><p class="waiting-kicker">SYNTHÈSE À INITIALISER</p><h3>Décrivez le premier symptôme</h3><p>Une synthèse technique provisoire apparaîtra dès le premier échange et évoluera avec chaque nouvelle observation.</p>';
+  state.innerHTML = `<div class="radar" aria-hidden="true"><span></span></div><p class="waiting-kicker">${scenario.reportTitle.toUpperCase()}</p><h3>Commencez votre dossier</h3><p>${scenario.context}</p>`;
   return state;
 }
 
@@ -257,6 +308,11 @@ export function initializeChatExperience() {
   const reportContent = document.getElementById('reportContent');
   const reset = document.getElementById('chatReset');
   const vehicleReadout = document.getElementById('diagnosticVehicleReadout');
+  const scenarioContext = document.getElementById('diagnosticScenarioContext');
+  const reportKicker = document.getElementById('diagnosticReportKicker');
+  const reportTitle = document.getElementById('diagnosticReportTitle');
+  const appEyebrow = document.getElementById('appScenarioEyebrow');
+  const appSubtitle = document.getElementById('appScenarioSubtitle');
   const inline = document.getElementById('inlineAssistant');
   const inlineText = document.getElementById('inlineAssistantText');
   const inlineClose = document.getElementById('inlineAssistantClose');
@@ -306,13 +362,31 @@ export function initializeChatExperience() {
   }
 
   function showInitialSuggestions() {
-    renderSuggestions(INITIAL_SYMPTOM_OPTIONS, true);
+    renderSuggestions(usageScenarioConfig().options, true);
+  }
+
+  function applyUsageScenario() {
+    const scenario = usageScenarioConfig();
+    document.body.dataset.usageScenario = selectedUsageScenario();
+    if (scenarioContext) scenarioContext.textContent = scenario.context;
+    if (reportKicker) reportKicker.textContent = scenario.label.toUpperCase();
+    if (reportTitle) reportTitle.textContent = scenario.reportTitle;
+    if (appEyebrow) appEyebrow.textContent = scenario.eyebrow;
+    if (appSubtitle) appSubtitle.textContent = scenario.subtitle;
+    input.placeholder = scenario.placeholder;
+    if (!messages.length) {
+      showInitialSuggestions();
+      reportContent.replaceChildren(waitingReport());
+    }
+    updateVehicleReadout();
   }
 
   function updateVehicleReadout() {
     const context = carContext();
     const title = [context.marque, context.modele, context.annee ? `(${context.annee})` : '', context.motorisation].filter(Boolean).join(' · ');
-    vehicleReadout.textContent = title ? `Véhicule actif : ${title}` : 'Véhicule : à sélectionner dans la fiche';
+    vehicleReadout.textContent = title
+      ? `${usageScenarioConfig().label} · Véhicule actif : ${title}`
+      : `${usageScenarioConfig().label} · Véhicule à sélectionner dans la fiche`;
   }
 
   function openPanel() {
@@ -323,6 +397,7 @@ export function initializeChatExperience() {
   }
 
   toggles.forEach((toggle) => toggle.addEventListener('click', openPanel));
+  window.addEventListener('cardiag:scenario-change', applyUsageScenario);
   close?.addEventListener('click', () => { panel.hidden = true; });
   reset?.addEventListener('click', () => {
     messages = [];
@@ -407,7 +482,9 @@ export function initializeChatExperience() {
       pendingMessage.textContent = `Réponse non disponible : ${error.message}`;
       pendingMessage.classList.remove('chat-message-pending');
       pendingMessage.classList.add('chat-message-error');
-      status.textContent = 'Vous pouvez réessayer dans quelques instants.';
+      status.textContent = error.code === 'LLM_RATE_LIMITED'
+        ? 'Quota Gemini atteint. Patientez avant de relancer la même analyse.'
+        : 'Vous pouvez réessayer dans quelques instants.';
       renderSuggestions([], false);
     } finally {
       window.clearInterval(thinkingTimer);
@@ -418,7 +495,7 @@ export function initializeChatExperience() {
     }
   });
 
-  showInitialSuggestions();
+  applyUsageScenario();
 
   function showInlineForSelection() {
     const selection = window.getSelection();
