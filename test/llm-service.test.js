@@ -42,7 +42,7 @@ test('Gemini fallback receives converted history, JSON mode and system instructi
   assert.deepEqual(result, { type: 'question', content: 'Quel témoin est allumé ?' });
   assert.equal(captured.model, 'gemini-test');
   assert.equal(captured.config.responseMimeType, 'application/json');
-  assert.equal(captured.config.maxOutputTokens, 2000);
+  assert.equal(captured.config.maxOutputTokens, 3000);
   assert.match(captured.config.systemInstruction, /chef d'atelier/i);
   assert.match(captured.config.systemInstruction, /historique complet/i);
   assert.match(captured.config.systemInstruction, /cause racine/i);

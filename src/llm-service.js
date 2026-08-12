@@ -16,6 +16,47 @@ const CHAT_SAFETY_FALLBACK = {
   content: "Désolé, j'ai rencontré une anomalie lors de l'analyse. Pouvez-vous reformuler vos symptômes ou vérifier le code ?",
 };
 
+const CHAT_RESPONSE_SCHEMA = {
+  type: 'object',
+  additionalProperties: false,
+  properties: {
+    type: { type: 'string', enum: ['report'] },
+    content: {
+      type: 'string',
+      description: 'Message destiné à poursuivre le diagnostic, avec au maximum une question technique ciblée.',
+    },
+    vehicle: { type: 'string' },
+    fault_code: { type: 'string' },
+    root_cause: {
+      type: 'string',
+      description: 'Synthèse technique évolutive : hypothèses au début, puis cause probable lorsque les preuves convergent.',
+    },
+    action_plan: {
+      type: 'string',
+      description: 'Tests numérotés, sûrs et discriminants, adaptés aux informations déjà collectées.',
+    },
+    confidence: {
+      type: 'string',
+      enum: ['preliminary', 'probable', 'confirmed'],
+    },
+    suggestions: {
+      type: 'array',
+      description: 'Deux à quatre réponses courtes que l’utilisateur peut choisir pour répondre à la question de suivi.',
+      minItems: 2,
+      maxItems: 4,
+      items: { type: 'string' },
+    },
+  },
+  required: ['type', 'content', 'vehicle', 'fault_code', 'root_cause', 'action_plan', 'confidence', 'suggestions'],
+};
+
+const DEFAULT_FOLLOW_UP_SUGGESTIONS = [
+  'Le symptôme est permanent',
+  'Le symptôme est intermittent',
+  'Un voyant est allumé',
+  'J’ai un code défaut',
+];
+
 export function getLlmRuntimeConfig(env = process.env) {
   const inferredProvider = env.GEMINI_API_KEY || env.GOOGLE_API_KEY ? 'gemini' : 'openai';
   const provider = (env.LLM_PROVIDER || inferredProvider).trim().toLowerCase();
@@ -126,6 +167,11 @@ function cloneLocalScenario(scenario, carContext) {
   return {
     ...result,
     vehicle: formatVehicle(carContext),
+    content: typeof result.content === 'string' && result.content.trim()
+      ? result.content.trim()
+      : 'Synthèse technique initiale disponible. Pour l’affiner, précisez les conditions exactes d’apparition du symptôme et toute mesure déjà effectuée.',
+    confidence: result.confidence || 'probable',
+    suggestions: normalizeSuggestions(result.suggestions, DEFAULT_FOLLOW_UP_SUGGESTIONS),
   };
 }
 
@@ -161,6 +207,43 @@ function getSymptomKeywords(databaseKey, scenario) {
   return keywords.map(normalizeText).filter(Boolean);
 }
 
+function editDistance(left, right) {
+  const previous = Array.from({ length: right.length + 1 }, (_, index) => index);
+
+  for (let leftIndex = 1; leftIndex <= left.length; leftIndex += 1) {
+    const current = [leftIndex];
+    for (let rightIndex = 1; rightIndex <= right.length; rightIndex += 1) {
+      current[rightIndex] = Math.min(
+        current[rightIndex - 1] + 1,
+        previous[rightIndex] + 1,
+        previous[rightIndex - 1] + (left[leftIndex - 1] === right[rightIndex - 1] ? 0 : 1),
+      );
+    }
+    previous.splice(0, previous.length, ...current);
+  }
+
+  return previous[right.length];
+}
+
+function tokensApproximatelyMatch(message, keyword) {
+  const messageTokens = message.split(/[^a-z0-9]+/).filter((token) => token.length > 1);
+  const keywordTokens = keyword.split(/[^a-z0-9]+/).filter((token) => token.length > 1);
+  if (!messageTokens.length || !keywordTokens.length) return false;
+
+  let matchedTokens = 0;
+  for (const keywordToken of keywordTokens) {
+    const threshold = keywordToken.length >= 8 ? 2 : keywordToken.length >= 4 ? 1 : 0;
+    if (messageTokens.some((messageToken) => (
+      Math.abs(messageToken.length - keywordToken.length) <= threshold
+      && editDistance(messageToken, keywordToken) <= threshold
+    ))) {
+      matchedTokens += 1;
+    }
+  }
+
+  return matchedTokens >= Math.ceil(keywordTokens.length * 0.75);
+}
+
 function findSymptomScenario(message) {
   const normalizedMessage = normalizeText(message);
 
@@ -170,7 +253,10 @@ function findSymptomScenario(message) {
 
   for (const [databaseKey, scenario] of Object.entries(SYMPTOMS_DATABASE)) {
     const hasMatchingKeyword = getSymptomKeywords(databaseKey, scenario)
-      .some((keyword) => normalizedMessage.includes(keyword));
+      .some((keyword) => (
+        normalizedMessage.includes(keyword)
+        || tokensApproximatelyMatch(normalizedMessage, keyword)
+      ));
 
     if (hasMatchingKeyword) {
       return scenario;
@@ -188,6 +274,10 @@ function findLastUserMessage(messages) {
   }
 
   return '';
+}
+
+function hasAssistantMessage(messages) {
+  return messages.some((message) => message?.role === 'assistant');
 }
 
 function readJsonObject(text) {
@@ -218,11 +308,20 @@ function requiredString(value, field) {
   return value.trim();
 }
 
-function normalizeChatResult(text) {
+function normalizeSuggestions(value, fallback = []) {
+  const source = Array.isArray(value) ? value : fallback;
+  return [...new Set(source
+    .filter((suggestion) => typeof suggestion === 'string')
+    .map((suggestion) => suggestion.trim().slice(0, 120))
+    .filter(Boolean))]
+    .slice(0, 4);
+}
+
+function tryNormalizeChatResult(text) {
   const result = readJsonObject(text);
 
   if (!result || typeof result !== 'object' || Array.isArray(result)) {
-    return { ...CHAT_SAFETY_FALLBACK };
+    return null;
   }
 
   try {
@@ -236,17 +335,28 @@ function normalizeChatResult(text) {
     if (result.type === 'report') {
       return {
         type: 'report',
+        content: typeof result.content === 'string' && result.content.trim()
+          ? result.content.trim()
+          : 'Synthèse technique mise à jour. Ajoutez une observation ou une mesure pour poursuivre l’analyse.',
         vehicle: requiredString(result.vehicle, 'vehicle'),
         fault_code: requiredString(result.fault_code, 'fault_code'),
         root_cause: requiredString(result.root_cause, 'root_cause'),
         action_plan: requiredString(result.action_plan, 'action_plan'),
+        confidence: ['preliminary', 'probable', 'confirmed'].includes(result.confidence)
+          ? result.confidence
+          : 'probable',
+        suggestions: normalizeSuggestions(result.suggestions, DEFAULT_FOLLOW_UP_SUGGESTIONS),
       };
     }
   } catch {
-    return { ...CHAT_SAFETY_FALLBACK };
+    return null;
   }
 
-  return { ...CHAT_SAFETY_FALLBACK };
+  return null;
+}
+
+function normalizeChatResult(text) {
+  return tryNormalizeChatResult(text) || { ...CHAT_SAFETY_FALLBACK };
 }
 
 export function createLlmService({ client, provider, model } = {}) {
@@ -267,8 +377,9 @@ export function createLlmService({ client, provider, model } = {}) {
   return {
     async chat(messages, carContext) {
       const lastUserMessage = findLastUserMessage(messages);
+      const isFirstDiagnosticExchange = !hasAssistantMessage(messages);
 
-      const obdScenario = findObdScenario(lastUserMessage);
+      const obdScenario = isFirstDiagnosticExchange && findObdScenario(lastUserMessage);
       if (obdScenario) {
         const localResult = cloneLocalScenario(obdScenario, carContext);
         if (localResult) {
@@ -276,7 +387,7 @@ export function createLlmService({ client, provider, model } = {}) {
         }
       }
 
-      const symptomScenario = findSymptomScenario(lastUserMessage);
+      const symptomScenario = isFirstDiagnosticExchange && findSymptomScenario(lastUserMessage);
       if (symptomScenario) {
         const localResult = cloneLocalScenario(symptomScenario, carContext);
         if (localResult) {
@@ -287,20 +398,31 @@ export function createLlmService({ client, provider, model } = {}) {
       const instructions = buildChatInstructions(carContext);
 
       if (activeProvider === 'gemini') {
-        const response = await getClient().models.generateContent({
-          model: activeModel,
-          contents: messages.map(({ role, content }) => ({
+        const contents = messages.map(({ role, content }) => ({
             role: role === 'assistant' ? 'model' : 'user',
             parts: [{ text: content.trim() }],
-          })),
-          config: {
-            systemInstruction: instructions,
-            maxOutputTokens: 2000,
-            responseMimeType: 'application/json',
-          },
-        });
+          }));
 
-        return normalizeChatResult(outputText(response, 'gemini'));
+        for (let attempt = 0; attempt < 2; attempt += 1) {
+          const response = await getClient().models.generateContent({
+            model: activeModel,
+            contents,
+            config: {
+              systemInstruction: attempt === 0
+                ? instructions
+                : `${instructions}\n\nCORRECTION DE FORMAT : la tentative précédente était invalide. Régénère intégralement un unique objet JSON conforme au schéma, sans Markdown ni texte autour.`,
+              maxOutputTokens: 3000,
+              temperature: 0.2,
+              responseMimeType: 'application/json',
+              responseJsonSchema: CHAT_RESPONSE_SCHEMA,
+            },
+          });
+
+          const result = tryNormalizeChatResult(outputText(response, 'gemini'));
+          if (result) return result;
+        }
+
+        return { ...CHAT_SAFETY_FALLBACK };
       }
 
       const response = await getClient().responses.create({
@@ -310,7 +432,7 @@ export function createLlmService({ client, provider, model } = {}) {
           role,
           content: content.trim(),
         })),
-        max_output_tokens: 2000,
+        max_output_tokens: 3000,
       });
 
       return normalizeChatResult(outputText(response, 'openai'));
