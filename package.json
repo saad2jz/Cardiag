@@ -11,6 +11,7 @@
     "generate:data": "node scripts/unify-vehicle-data.js",
     "generate:pwa-icons": "node scripts/generate-pwa-icons.mjs",
     "generate:report-fixture": "node scripts/generate-complete-report-fixture.mjs",
+    "generate:demo-report": "node scripts/generate-demo-report.mjs",
     "native:prepare": "node scripts/prepare-native-web.mjs",
     "cap:sync": "npm run native:prepare && npx cap sync",
     "cap:add:android": "npm run native:prepare && npx cap add android",

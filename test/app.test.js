@@ -29,7 +29,23 @@ test('health reports LLM runtime status', async () => {
 test('the combined server serves the frontend without exposing environment files', async () => {
   const page = await fetch(`${baseUrl}/`);
   assert.equal(page.status, 200);
-  assert.match(await page.text(), /Cardiag/);
+  const html = await page.text();
+  assert.match(html, /Inspectez un véhicule d'occasion comme un expert/);
+  assert.match(html, /rel="canonical" href="https:\/\/cardiag\.online\/"/);
+
+  const [robots, sitemap, landingImage, demoReport] = await Promise.all([
+    fetch(`${baseUrl}/robots.txt`), fetch(`${baseUrl}/sitemap.xml`),
+    fetch(`${baseUrl}/assets/landing/cardiag-inspection.webp`),
+    fetch(`${baseUrl}/assets/demo/rapport-expertise-demo-cardiag.pdf`),
+  ]);
+  assert.equal(robots.status, 200);
+  assert.match(await robots.text(), /Sitemap: https:\/\/cardiag\.online\/sitemap\.xml/);
+  assert.equal(sitemap.status, 200);
+  assert.match(await sitemap.text(), /<loc>https:\/\/cardiag\.online\/<\/loc>/);
+  assert.equal(landingImage.status, 200);
+  assert.match(landingImage.headers.get('content-type'), /image\/webp/);
+  assert.equal(demoReport.status, 200);
+  assert.match(demoReport.headers.get('content-type'), /application\/pdf/);
 
   const envFile = await fetch(`${baseUrl}/.env`);
   assert.equal(envFile.status, 404);

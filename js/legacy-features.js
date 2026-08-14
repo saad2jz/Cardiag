@@ -149,10 +149,11 @@ export function initializeLegacyFeatures(vehicleData) {
       const now = new Date();
       const hh = String(now.getHours()).padStart(2,'0');
       const mm = String(now.getMinutes()).padStart(2,'0');
-      txt.textContent = 'Enregistré à '+hh+':'+mm;
+      const savedAt = window.cardiagI18n?.t?.('save.savedAt', 'Sauvegardé sur cet appareil à') || 'Sauvegardé sur cet appareil à';
+      txt.textContent = savedAt+' '+hh+':'+mm;
     }else{
       el.classList.add('saving');
-      txt.textContent = 'Échec de sauvegarde';
+      txt.textContent = window.cardiagI18n?.t?.('save.failed', 'Sauvegarde locale indisponible — exportez la fiche') || 'Sauvegarde locale indisponible — exportez la fiche';
     }
   }
 
@@ -972,7 +973,7 @@ export function initializeLegacyFeatures(vehicleData) {
       total: CHECK_NAMES.length,
       categories: categoryScoresFor(fiche),
       verdict,
-      verdictLabel: verdict === 'achat' ? 'ACHAT' : verdict === 'negociation' ? 'NÉGOCIATION' : verdict === 'fuir' ? 'À FUIR' : 'EN COURS',
+      verdictLabel: verdict === 'achat' ? 'ACHAT' : verdict === 'negociation' ? 'NÉGOCIATION' : verdict === 'fuir' ? 'À FUIR' : 'INSPECTION À COMPLÉTER',
       points,
       photos: allPhotos,
       mainPhoto: (photos.info || [])[0] || allPhotos[0] || null,

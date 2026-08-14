@@ -101,7 +101,7 @@ function buildSurface() {
   return layer;
 }
 
-export async function initializeProfileOnboarding() {
+export async function initializeProfileOnboarding(options = {}) {
   let current = readProfile();
   const layer = buildSurface();
   const languageCard = layer.querySelector('[data-language-first]');
@@ -175,7 +175,11 @@ export async function initializeProfileOnboarding() {
 
   function open(options = {}) {
     editing = Boolean(options.edit);
-    fill(current || { type: 'personal', role: 'owner' });
+    const suggestedRole = ['buyer', 'seller', 'owner', 'mechanic', 'rental'].includes(options.suggestedRole) ? options.suggestedRole : 'owner';
+    const suggestedProfile = ['mechanic', 'rental'].includes(suggestedRole)
+      ? { type: 'professional', professionalKind: suggestedRole, role: suggestedRole }
+      : { type: 'personal', role: suggestedRole };
+    fill(current || suggestedProfile);
     applyTranslations();
     closeButton.hidden = !editing && !current;
     languageCard.hidden = true;
@@ -193,11 +197,15 @@ export async function initializeProfileOnboarding() {
     requestAnimationFrame(() => layer.classList.add('is-open'));
   }
 
-  function close() {
-    if (!current) return;
+  function hideLayer() {
     layer.classList.remove('is-open');
     document.body.classList.remove('profile-onboarding-open');
     setTimeout(() => { layer.hidden = true; }, 180);
+  }
+
+  function close() {
+    if (!current) return;
+    hideLayer();
   }
 
   form.addEventListener('change', event => { if (event.target.name === 'profile_type' || event.target.name === 'professionalKind') renderType(); });
@@ -205,7 +213,10 @@ export async function initializeProfileOnboarding() {
     const language = button.dataset.firstLanguage;
     persistInitialLanguage(language);
     window.cardiagI18n?.setLanguage?.(language);
-    open();
+    if (options.deferProfile) {
+      hideLayer();
+      window.dispatchEvent(new CustomEvent('cardiag:first-language-selected', { detail: { language } }));
+    } else open();
   }));
   closeButton.addEventListener('click', close);
   form.addEventListener('submit', async event => {
@@ -240,8 +251,9 @@ export async function initializeProfileOnboarding() {
   window.addEventListener('cardiag:language-change', applyTranslations);
 
   window.cardiagLocalProfile = { get current() { return current ? { ...current } : null; }, open };
+  window.dispatchEvent(new CustomEvent('cardiag:profile-onboarding-ready'));
   const hasLanguageChoice = ['fr', 'en', 'auto'].includes(readSettings().language);
   if (!current && !hasLanguageChoice) openFirstLanguage();
-  else if (!current) open();
+  else if (!current && !options.deferProfile) open();
   return current;
 }
