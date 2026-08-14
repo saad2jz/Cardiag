@@ -24,6 +24,15 @@ d'un texte sélectionné. Le serveur Node protège la clé Gemini et expose
 Le frontend utilise `https://fiche-expert-auto.onrender.com/` comme backend
 Render. Ne placez jamais la clé API dans le frontend.
 
+## Parcours métier
+
+Chaque fiche conserve son propre parcours : Acheteur (contrôle avant achat),
+Garagiste (état initial avant prise en charge), Vendeur (rapport transparent
+avant vente) ou Propriétaire (suivi technique et contrôles simples). Les
+suggestions, les instructions de diagnostic et le rapport imprimé s’adaptent
+au parcours sélectionné. Les anciennes fiches utilisent automatiquement le
+parcours Acheteur.
+
 ## Déploiement unique sur Render
 
 Ce dossier contient le frontend et le backend. Déployez-le avec `npm start`,

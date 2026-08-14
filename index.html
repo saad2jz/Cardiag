@@ -14,7 +14,15 @@
 <meta name="chat-api" content="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=20260812-5">
+<link rel="stylesheet" href="css/styles.css?v=20260813-4">
+<link rel="stylesheet" href="css/wizard/premium.css?v=20260813-1">
+<link rel="stylesheet" href="css/theming/themes.css?v=20260813-1">
+<link rel="stylesheet" href="css/media/media.css?v=20260813-1">
+<link rel="stylesheet" href="css/auth/auth.css?v=20260813-1">
+<link rel="stylesheet" href="css/native/native.css?v=20260813-1">
+<link rel="stylesheet" href="css/settings/settings.css?v=20260813-1">
+<link rel="stylesheet" href="css/score/score.css?v=20260813-1">
+<link rel="stylesheet" href="css/reports/premium-report.css?v=20260813-1">
 </head>
 <body>
 <header class="app-header">
@@ -73,6 +81,15 @@
   </div>
 </nav>
 
+<header class="wizard-header" id="wizardHeader" hidden>
+  <button class="wizard-back" id="wizardBack" type="button" aria-label="Revenir à l’étape précédente">←</button>
+  <div class="wizard-progress" aria-label="Progression du parcours">
+    <p id="wizardStepLabel">Étape 1 sur 4</p>
+    <div class="wizard-progress-track"><span id="wizardProgressBar"></span></div>
+    <div class="wizard-dots" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+  </div>
+</header>
+
 <main>
 
   <div class="quick-mode-banner">⚡ Mode inspection rapide actif : seuls les ~12 points de contrôle les plus critiques sont affichés, pour un premier tri avant de décider si une inspection complète est justifiée. Désactivez-le dans la barre d'outils pour tout voir.</div>
@@ -108,6 +125,39 @@
         <strong>Propriétaire</strong>
         <span>Suivre le véhicule, comprendre ses problèmes et effectuer les contrôles simples en sécurité.</span>
       </label>
+    </div>
+  </section>
+
+  <section class="profile-context-panel" id="profileContextPanel" aria-labelledby="profileContextTitle">
+    <p class="panel-kicker">CONTEXTE DU DOSSIER</p>
+    <h2 id="profileContextTitle">Précisez votre situation</h2>
+    <p class="profile-context-intro" id="profileContextIntro"></p>
+
+    <div class="profile-context-fields" data-context-profile="buyer">
+      <div class="field"><label>Lien de l’annonce</label><input type="url" name="annonce_url" inputmode="url" placeholder="https://…"></div>
+      <div class="field"><label>Informations annoncées par le vendeur</label><textarea name="seller_claims" placeholder="Entretien, réparations, défauts déclarés, nombre de propriétaires…"></textarea></div>
+      <div class="field"><label>Priorité de l’inspection</label><select name="inspection_priority"><option value="">Choisir</option><option>Mécanique et fiabilité</option><option>Carrosserie et traces d’accident</option><option>Budget et négociation</option><option>Contrôle complet</option></select></div>
+    </div>
+
+    <div class="profile-context-fields" data-context-profile="mechanic">
+      <div class="field"><label>Plainte exacte du client</label><textarea name="client_complaint" placeholder="Reprendre les mots du client sans interprétation…"></textarea></div>
+      <div class="field"><label>Conditions d’apparition</label><textarea name="symptom_conditions" placeholder="À froid/chaud, vitesse, charge, fréquence, météo…"></textarea></div>
+      <div class="field"><label>Valeurs déjà mesurées</label><textarea name="measured_values" placeholder="Tensions, pressions, températures, corrections, codes OBD…"></textarea></div>
+      <div class="field"><label>Périmètre autorisé</label><select name="work_authorization"><option value="">Choisir</option><option>Diagnostic uniquement</option><option>Diagnostic et devis</option><option>Travaux urgents autorisés</option><option>À confirmer avec le client</option></select></div>
+    </div>
+
+    <div class="profile-context-fields" data-context-profile="seller">
+      <div class="field"><label>Historique d’entretien justifiable</label><textarea name="maintenance_history" placeholder="Dates, kilométrages, opérations et factures disponibles…"></textarea></div>
+      <div class="field"><label>Réparations récentes</label><textarea name="recent_repairs" placeholder="Pièces remplacées, date, kilométrage, professionnel…"></textarea></div>
+      <div class="field"><label>Défauts connus à déclarer</label><textarea name="known_defects" placeholder="Même mineurs : rayures, bruit, voyant, équipement inopérant…"></textarea></div>
+      <div class="field"><label>Pièces disponibles pour le rapport</label><input type="text" name="report_documents" placeholder="Factures, contrôle technique, photos, diagnostic OBD…"></div>
+    </div>
+
+    <div class="profile-context-fields" data-context-profile="owner">
+      <div class="field"><label>Symptômes constatés</label><textarea name="owner_symptoms" placeholder="Ce que vous voyez, entendez ou ressentez…"></textarea></div>
+      <div class="field"><label>Évolution du problème</label><textarea name="symptom_history" placeholder="Date d’apparition, fréquence, aggravation, conditions…"></textarea></div>
+      <div class="field"><label>Derniers entretiens ou réparations</label><textarea name="maintenance_log" placeholder="Vidange, batterie, freins, pneus, distribution…"></textarea></div>
+      <div class="field"><label>Niveau d’autonomie</label><select name="diy_level"><option value="">Choisir</option><option>Observations uniquement</option><option>Contrôles simples avec multimètre/valise</option><option>Entretien courant</option><option>Je préfère consulter un professionnel</option></select></div>
     </div>
   </section>
 
@@ -422,6 +472,12 @@
   </section>
 </section>
 
+<nav class="wizard-bottom-bar" id="wizardBottomBar" hidden aria-label="Navigation du parcours">
+  <button class="wizard-secondary" id="wizardBottomBack" type="button">Retour</button>
+  <button class="wizard-primary" id="wizardNext" type="button">Suivant</button>
+  <button class="wizard-primary" id="wizardGenerate" type="button" hidden>Générer le rapport</button>
+</nav>
+
 <div class="inline-assistant" id="inlineAssistant" hidden role="status">
   <span class="inline-assistant-icon" aria-hidden="true">🔧</span>
   <span id="inlineAssistantText"></span>
@@ -482,15 +538,18 @@
   <div class="missing-fields-banner" id="missingFieldsBanner"></div>
   <div class="action-bar-inner">
     <button class="btn-secondary" id="resetBtn" type="button">Réinitialiser fiche</button>
-    <label class="print-mode-toggle"><input type="checkbox" id="printSummaryToggle" checked> Imprimer la synthèse uniquement</label>
-    <button class="btn-generate" id="generateBtn" type="button">📄 Générer le Rapport PDF / Sauvegarder</button>
+    <input type="checkbox" id="printSummaryToggle" checked hidden>
+    <button class="btn-secondary" id="shortPrintBtn" type="button">Imprimer la synthèse</button>
+    <button class="btn-secondary" id="shareReportBtn" type="button">Partager par lien</button>
+    <button class="btn-generate" id="generateBtn" type="button">📄 Générer le rapport PDF premium</button>
   </div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="vendor/jspdf.umd.min.js"></script>
+<script src="vendor/qrcode.js"></script>
 <script src="build-data.js?v=20260809-1"></script>
 <script src="js/db-loader.js?v=20260811-1"></script>
-<script type="module" src="js/app.js?v=20260812-6"></script>
+<script type="module" src="js/app.js?v=20260814-1"></script>
 </body>
 </html>

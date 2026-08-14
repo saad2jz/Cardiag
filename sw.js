@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cardiag-v19';
+const CACHE_NAME = 'cardiag-v24';
 const APP_SHELL = [
   './',
   './index.html',
@@ -6,14 +6,47 @@ const APP_SHELL = [
   './icons/app-icon.svg',
   './icons/app-icon-192.png',
   './icons/app-icon-512.png',
-  './css/styles.css?v=20260812-3',
+  './css/styles.css?v=20260813-4',
+  './css/wizard/premium.css?v=20260813-1',
+  './css/theming/themes.css?v=20260813-1',
+  './css/media/media.css?v=20260813-1',
+  './css/auth/auth.css?v=20260813-1',
+  './css/native/native.css?v=20260813-1',
+  './css/settings/settings.css?v=20260813-1',
+  './css/score/score.css?v=20260813-1',
+  './css/reports/premium-report.css?v=20260813-1',
+  './css/shared-report.css?v=20260813-1',
   './build-data.js?v=20260810-3',
   './js/db-loader.js?v=20260811-1',
-  './js/app.js?v=20260812-4',
-  './js/legacy-features.js?v=20260810-3',
-  './js/chat-experience.js?v=20260812-4',
+  './js/app.js?v=20260814-1',
+  './js/wizard.js?v=20260813-1',
+  './js/legacy-features.js?v=20260814-1',
+  './js/wizard/interactions.js?v=20260813-1',
+  './js/theming/theme-manager.js?v=20260813-1',
+  './js/media/media-manager.js?v=20260813-2',
+  './js/auth/firebase-client.js?v=20260814-1',
+  './js/auth/auth-ui.js?v=20260814-1',
+  './js/auth/consent.js?v=20260813-1',
+  './js/native/permissions.js?v=20260813-1',
+  './js/native/connectivity.js?v=20260813-1',
+  './js/native/sync-queue.js?v=20260814-1',
+  './js/native/app-links.js?v=20260813-1',
+  './js/native/push.js?v=20260813-1',
+  './js/settings/settings.js?v=20260813-1',
+  './js/score/score-visuals.js?v=20260813-1',
+  './js/records/records-gallery.js?v=20260813-1',
+  './js/reports/premium-report.js?v=20260813-2',
+  './js/reports/report-sharing.js?v=20260813-1',
+  './js/reports/shared-report.js?v=20260813-1',
+  './js/chat-experience.js?v=20260813-1',
   './js/pwa.js?v=20260810-3',
   './data/vehicles.json',
+  './privacy.html',
+  './terms.html',
+  './account-deletion.html',
+  './shared-report.html',
+  './vendor/jspdf.umd.min.js',
+  './vendor/qrcode.js',
 ];
 
 self.addEventListener('install', (event) => {
@@ -36,24 +69,30 @@ self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
   const url = new URL(event.request.url);
   if (url.origin !== self.location.origin) return;
+  // Les réponses API peuvent contenir un diagnostic ou un rapport partagé :
+  // elles ne doivent jamais être placées dans le Cache Storage du PWA.
+  if (url.pathname.startsWith('/api/')) return;
 
   // Navigation : réseau d'abord pour récupérer les mises à jour, puis cache hors ligne.
   if (event.request.mode === 'navigate') {
+    const staticPages = new Set(['/privacy.html','/terms.html','/account-deletion.html','/shared-report.html']);
+    const fallbackKey = url.pathname.startsWith('/r/') ? './shared-report.html'
+      : staticPages.has(url.pathname) ? `.${url.pathname}` : './index.html';
     event.respondWith(
       fetch(event.request)
         .then((response) => {
           const copy = response.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put('./index.html', copy));
+          caches.open(CACHE_NAME).then((cache) => cache.put(fallbackKey, copy));
           return response;
         })
-        .catch(() => caches.match('./index.html'))
+        .catch(() => caches.match(fallbackKey))
     );
     return;
   }
 
   // Les données et ressources locales restent utilisables sans réseau.
   event.respondWith(
-    caches.match(event.request, { ignoreSearch: true })
+    caches.match(event.request)
       .then((cached) => cached || fetch(event.request).then((response) => {
         if (response.ok) caches.open(CACHE_NAME).then((cache) => cache.put(event.request, response.clone()));
         return response;
