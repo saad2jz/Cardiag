@@ -3,3 +3,10 @@ node_modules/
 npm-debug.log*
 coverage/
 autodoc.html
+www/
+android/.gradle/
+android/local.properties
+android/keystore.properties
+android/app/google-services.json
+*.jks
+*.keystore

@@ -6,13 +6,23 @@ import cors from 'cors';
 import express from 'express';
 import { getLlmRuntimeConfig } from './llm-service.js';
 import { validateChatBody, validateInlineBody } from './validation.js';
+import { createAccountRouter } from './auth/account-routes.js';
+
+const DEFAULT_FRONTEND_ORIGINS = new Set([
+  'https://cardiag.online',
+  'https://www.cardiag.online',
+  'https://localhost',
+  'capacitor://localhost',
+]);
 
 function isAllowedOrigin(origin) {
   if (!origin) return true;
   const configured = (process.env.FRONTEND_ORIGINS || '').split(',').map((value) => value.trim().replace(/\/$/, ''));
-  return configured.includes(origin.replace(/\/$/, ''))
-    || /^https:\/\/[a-z0-9-]+\.github\.io$/i.test(origin)
-    || /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/i.test(origin);
+  const normalizedOrigin = origin.replace(/\/$/, '');
+  return DEFAULT_FRONTEND_ORIGINS.has(normalizedOrigin)
+    || configured.includes(normalizedOrigin)
+    || /^https:\/\/[a-z0-9-]+\.github\.io$/i.test(normalizedOrigin)
+    || /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/i.test(normalizedOrigin);
 }
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -22,13 +32,19 @@ function sendPublicFile(res, fileName) {
   return res.type(path.extname(fileName)).send(fs.readFileSync(filePath));
 }
 
-export function createApp({ llmService }) {
+export function createApp({ llmService, accountService = null }) {
   if (!llmService) throw new Error('llmService est requis.');
   const app = express();
   app.disable('x-powered-by');
   app.use((req, res, next) => { req.requestId = crypto.randomUUID(); res.setHeader('X-Request-Id', req.requestId); next(); });
-  app.use(cors({ origin: (origin, callback) => callback(null, isAllowedOrigin(origin)), methods: ['GET', 'POST', 'OPTIONS'] }));
-  app.use(express.json({ limit: '100kb' }));
+  app.use(cors({
+    origin: (origin, callback) => callback(null, isAllowedOrigin(origin)),
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+  }));
+  // L'historique synchronisé est plafonné et nettoyé par le routeur de compte.
+  // La limite globale reste suffisamment basse pour protéger les autres routes.
+  app.use(express.json({ limit: '950kb' }));
 
   // Le même dossier peut être déployé sur Render : seuls les fichiers publics
   // nécessaires au frontend sont exposés, jamais .env ni le code du serveur.
@@ -36,9 +52,30 @@ export function createApp({ llmService }) {
   app.use('/js', express.static(path.join(projectRoot, 'js')));
   app.use('/data', express.static(path.join(projectRoot, 'data')));
   app.use('/icons', express.static(path.join(projectRoot, 'icons')));
+  app.use('/vendor', express.static(path.join(projectRoot, 'vendor')));
   app.get('/', (_req, res) => sendPublicFile(res, 'index.html'));
   app.get('/build-data.js', (_req, res) => sendPublicFile(res, 'build-data.js'));
   app.get('/manifest.json', (_req, res) => sendPublicFile(res, 'manifest.json'));
+  app.get('/firebase-config.json', (_req, res) => sendPublicFile(res, 'firebase-config.json'));
+  app.get('/privacy.html', (_req, res) => sendPublicFile(res, 'privacy.html'));
+  app.get('/terms.html', (_req, res) => sendPublicFile(res, 'terms.html'));
+  app.get('/account-deletion.html', (_req, res) => sendPublicFile(res, 'account-deletion.html'));
+  app.get('/shared-report.html', (_req, res) => sendPublicFile(res, 'shared-report.html'));
+  app.get('/fiche/:id', (_req, res) => sendPublicFile(res, 'index.html'));
+  app.get('/r/:id', (_req, res) => sendPublicFile(res, 'shared-report.html'));
+  app.get('/.well-known/assetlinks.json', (_req, res) => {
+    const fingerprints = String(process.env.ANDROID_APP_LINK_SHA256 || '')
+      .split(',').map((value) => value.trim()).filter(Boolean);
+    if (!fingerprints.length) return res.status(404).json({ error: 'Empreinte App Links non configurée.' });
+    return res.json([{
+      relation: ['delegate_permission/common.handle_all_urls'],
+      target: {
+        namespace: 'android_app',
+        package_name: 'com.cardiag.online',
+        sha256_cert_fingerprints: fingerprints,
+      },
+    }]);
+  });
   app.get('/sw.js', (_req, res) => sendPublicFile(res, 'sw.js'));
   app.get('/health', (_req, res) => {
     const llm = getLlmRuntimeConfig();
@@ -64,6 +101,7 @@ export function createApp({ llmService }) {
           return res.status(503).json({ error: 'Le modèle Gemini configuré est indisponible. Vérifiez GEMINI_MODEL.', code: 'LLM_MODEL_NOT_FOUND', requestId: req.requestId });
         }
         if (upstreamStatus === 429) {
+          res.setHeader('Retry-After', serviceError?.headers?.get?.('retry-after') || '5');
           return res.status(429).json({ error: 'La limite Gemini est atteinte. Réessayez dans quelques instants.', code: 'LLM_RATE_LIMITED', requestId: req.requestId });
         }
         return res.status(500).json({ error: 'Le service IA est temporairement indisponible.', requestId: req.requestId });
@@ -73,6 +111,17 @@ export function createApp({ llmService }) {
 
   app.post('/api/chat', route(validateChatBody, async ({ messages, carContext }) => llmService.chat(messages, carContext)));
   app.post('/api/inline', route(validateInlineBody, async ({ selectedText, carContext }) => ({ explanation: await llmService.inline(selectedText, carContext) })));
+  app.get('/api/shared-reports/:id', async (req, res) => {
+    if (!accountService) return res.status(503).json({ error: 'Partage indisponible.' });
+    const id = String(req.params.id || '');
+    if (!/^[a-zA-Z0-9_-]{20,80}$/.test(id)) return res.status(404).json({ error: 'Rapport introuvable.' });
+    const shared = await accountService.getReportShare(id);
+    if (!shared) return res.status(404).json({ error: 'Rapport introuvable ou expiré.' });
+    res.setHeader('Cache-Control', 'private, no-store');
+    return res.json(shared);
+  });
+  if (accountService) app.use('/api/account', createAccountRouter(accountService));
+  else app.use('/api/account', (_req, res) => res.status(503).json({ error: 'Firebase Admin non configuré.', code: 'AUTH_NOT_CONFIGURED' }));
   app.use((_req, res) => res.status(404).json({ error: 'Route introuvable.' }));
   return app;
 }

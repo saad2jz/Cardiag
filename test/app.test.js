@@ -35,6 +35,23 @@ test('the combined server serves the frontend without exposing environment files
   assert.equal(envFile.status, 404);
 });
 
+test('CORS allows the web and native production frontends', async () => {
+  for (const origin of ['https://cardiag.online', 'https://localhost']) {
+    const response = await fetch(`${baseUrl}/api/chat`, {
+      method: 'OPTIONS',
+      headers: {
+        Origin: origin,
+        'Access-Control-Request-Method': 'POST',
+        'Access-Control-Request-Headers': 'content-type',
+      },
+    });
+
+    assert.equal(response.status, 204);
+    assert.equal(response.headers.get('access-control-allow-origin'), origin);
+    assert.match(response.headers.get('access-control-allow-methods'), /POST/);
+  }
+});
+
 test('chat and inline routes call the configured service', async () => {
   const payload = { carContext: { marque: 'Renault', modele: 'Clio IV', motorisation: '1.5 dCi' } };
   const chat = await fetch(`${baseUrl}/api/chat`, {

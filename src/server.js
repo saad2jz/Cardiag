@@ -1,9 +1,10 @@
 import 'dotenv/config';
 import { createApp } from './app.js';
 import { createLlmService, getLlmRuntimeConfig } from './llm-service.js';
+import { createFirebaseAccountService } from './auth/firebase-admin.js';
 
 const port = Number.parseInt(process.env.PORT || '3000', 10);
-const app = createApp({ llmService: createLlmService() });
+const app = createApp({ llmService: createLlmService(), accountService: createFirebaseAccountService() });
 app.listen(port, () => {
   const llm = getLlmRuntimeConfig();
   console.log(`Cardiag API disponible sur http://localhost:${port}`);

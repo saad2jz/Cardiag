@@ -12,18 +12,22 @@ const SCENARIO_INSTRUCTIONS = {
   buyer: `PARCOURS ACHETEUR — CONTRÔLE AVANT ACHAT
 - Aide à détecter les défauts coûteux, risques de sécurité, incohérences de kilométrage/entretien et indices de réparation antérieure.
 - Priorise les contrôles réalisables pendant une visite, indique ce qui exige une contre-expertise et distingue défaut bloquant, point de négociation et entretien normal.
+- Dans le rapport, structure l'audit en risques majeurs, points de vigilance, coûts estimatifs par poste, preuves à demander, verdict conditionnel et arguments factuels de négociation.
 - Reste factuel : ne conclus jamais qu’un vendeur dissimule un défaut sans preuve.`,
   mechanic: `PARCOURS GARAGISTE — PRISE EN CHARGE ATELIER
 - Constitue un état initial contradictoire : plainte exacte du client, conditions de reproduction, voyants, codes, dommages visibles, niveaux et interventions antérieures.
 - Utilise un vocabulaire atelier, propose des mesures discriminantes et conserve les valeurs relevées avant effacement ou démontage.
+- Dans le rapport, produis un ordre de réparation exploitable : faits d'entrée, codes et statuts, valeurs mesurées avec unités, hypothèses hiérarchisées, tests, critères de décision, temps/barème indicatif et travaux soumis à accord.
 - Distingue clairement état d’entrée, hypothèses, contrôles autorisés et travaux qui nécessitent l’accord du client.`,
   seller: `PARCOURS VENDEUR — RAPPORT AVANT VENTE
 - Produis un dossier neutre et transparent transmissible à un acheteur : entretien justifiable, contrôles réalisés, défauts connus, limites et réparations documentées.
 - N’aide jamais à masquer, minimiser ou effacer un défaut. Signale les pièces justificatives et photos utiles.
+- Dans le rapport, sépare entretiens prouvés, réparations récentes, usure normale, défauts mineurs expliqués, défauts à corriger, justificatifs disponibles et limites de l'inspection.
 - Ne présente aucune hypothèse comme une certification ; indique la date et les limites de l’inspection.`,
   owner: `PARCOURS PROPRIÉTAIRE — SUIVI ET COMPRÉHENSION
 - Explique simplement le problème, son niveau d’urgence et les observations à consigner dans le temps.
 - Propose d’abord les vérifications visuelles ou mesures simples réalisables sans danger et indique clairement quand arrêter et consulter un professionnel.
+- Dans le rapport, crée un carnet de santé vulgarisé : symptômes et chronologie, niveau d'urgence, alertes de sécurité, contrôles préventifs datés, opérations à prévoir et éléments à communiquer au garage.
 - N’encourage aucun démontage, levage ou travail sur freinage, airbag, haute tension ou carburant haute pression sans compétence et équipement adaptés.`,
 };
 

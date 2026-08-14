@@ -122,13 +122,14 @@ export function initializeLegacyFeatures(vehicleData) {
   let db = {};
   let currentId = null;
 
-  function persist(){
+  function persist(notify=true){
     try{
       const serialized = JSON.stringify(db);
       safeStorage.setItem(DB_KEY, serialized);
       safeStorage.setItem(CUR_KEY, currentId);
       updateSaveIndicator(true);
       updateStorageMeter(serialized);
+      if(notify) window.dispatchEvent(new CustomEvent('cardiag:data-change', { detail: { currentId } }));
       return true;
     }catch(e){
       console.error('Erreur de sauvegarde locale (quota dépassé ?):', e);
@@ -409,6 +410,31 @@ export function initializeLegacyFeatures(vehicleData) {
       });
     });
   }
+  function buildPointPhotoControls(){
+    CHECK_NAMES.forEach(name=>{
+      const input = document.querySelector('input[type="radio"][name="'+cssEscape(name)+'"]');
+      const item = input?.closest('.check-item,.field');
+      if(!input || !item || item.querySelector('.point-photo-control')) return;
+      const key = 'point:'+name;
+      const control = document.createElement('div');
+      control.className = 'point-photo-control';
+      control.innerHTML = '<button type="button" class="point-photo-button" aria-label="Ajouter une photo pour '+reportEscape(CHECK_LABELS[name] || name)+'">📷 <span>Photo</span></button>'+
+        '<input type="file" accept="image/*" capture="environment" hidden>'+
+        '<div class="photo-grid point-photo-grid" data-photo-grid="'+key+'"></div>';
+      const fileInput = control.querySelector('input');
+      control.querySelector('button').addEventListener('click', async()=>{
+        if(window.cardiagCapturePhoto){
+          const handled = await window.cardiagCapturePhoto(key);
+          if(handled) return;
+        }
+        fileInput.click();
+      });
+      fileInput.addEventListener('change', async()=>{
+        await handlePhotoUpload(key, fileInput.files || [], fileInput);
+      });
+      item.append(control);
+    });
+  }
   function compressImage(file, maxDim, quality){
     maxDim = maxDim || 1280; quality = quality || 0.72;
     return new Promise((resolve, reject)=>{
@@ -452,7 +478,12 @@ export function initializeLegacyFeatures(vehicleData) {
       alert(failedCount + ' photo(s) n\u2019ont pas pu être traitées.');
     }
     renderPhotoGrid(sectionKey);
+    window.dispatchEvent(new CustomEvent('cardiag:media-change', { detail: { sectionKey, photos: getCurrentPhotos() } }));
     if(inputEl) inputEl.value = '';
+  }
+  function getCurrentPhotos(){
+    const groups = db[currentId]?.photos || {};
+    return Object.entries(groups).flatMap(([sectionKey, photos])=>(photos || []).map((photo,index)=>({ ...photo, sectionKey, index })));
   }
   function renderPhotoGrid(sectionKey){
     const grid = document.querySelector('[data-photo-grid="'+sectionKey+'"]');
@@ -467,12 +498,13 @@ export function initializeLegacyFeatures(vehicleData) {
         db[currentId].photos[sectionKey].splice(idx,1);
         persist();
         renderPhotoGrid(sectionKey);
+        window.dispatchEvent(new CustomEvent('cardiag:media-change', { detail: { sectionKey, photos: getCurrentPhotos() } }));
       });
       grid.appendChild(thumb);
     });
   }
   function renderAllPhotoGrids(){
-    document.querySelectorAll('details.section[data-section]').forEach(sec=> renderPhotoGrid(sec.dataset.section));
+    document.querySelectorAll('[data-photo-grid]').forEach(grid=> renderPhotoGrid(grid.dataset.photoGrid));
   }
 
   const SECTION_ICONS = ['🚗','🔧','🛞','✨','🪑','🛣️','📊'];
@@ -858,10 +890,132 @@ export function initializeLegacyFeatures(vehicleData) {
     }));
   }
 
+  function categoryScoresFor(fiche){
+    const buckets = { vital:{sum:0,w:0,done:0,total:0}, chassis:{sum:0,w:0,done:0,total:0}, esthetique:{sum:0,w:0,done:0,total:0} };
+    const data = fiche?.data || {};
+    CHECK_NAMES.forEach(name=>{
+      const cat = CATEGORY_OF[name] || 'esthetique';
+      const weight = getWeight(name);
+      const value = data[name];
+      buckets[cat].total++;
+      if(value){
+        buckets[cat].done++;
+        buckets[cat].w += weight;
+        buckets[cat].sum += weight * (value === 'ok' ? 1 : value === 'moyen' ? 0.55 : 0);
+      }
+    });
+    return ['vital','chassis','esthetique'].map(category=>({
+      category,
+      label: WEIGHT_CATEGORY_LABELS[category],
+      weight: categoryWeights[category],
+      score: buckets[category].w ? Math.round((buckets[category].sum / buckets[category].w) * 100) : null,
+      done: buckets[category].done,
+      total: buckets[category].total,
+    }));
+  }
+
+  function reportModelFor(fiche){
+    if(!fiche) return null;
+    const data = fiche.data || {};
+    const photos = fiche.photos || {};
+    const points = CHECK_NAMES.map(name=>{
+      const input = document.querySelector('input[name="'+cssEscape(name)+'"]');
+      const section = input?.closest('details.section')?.dataset.section || 'info';
+      return {
+        name,
+        label: CHECK_LABELS[name] || name,
+        section,
+        sectionLabel: SECTION_TITLES[section] || section,
+        category: CATEGORY_OF[name] || 'esthetique',
+        weight: getWeight(name),
+        status: data[name] || '',
+        note: data[name+'_note'] || data['notes_'+section] || (section === 'diagnostic' ? data.notes_diagnostic : ''),
+        photos: JSON.parse(JSON.stringify(photos['point:'+name] || [])),
+      };
+    });
+    const allPhotos = Object.entries(photos).flatMap(([key, values])=>(values || []).map(photo=>({ ...photo, key })));
+    const done = points.filter(point=>point.status).length;
+    const score = scoreFor(fiche);
+    const verdict = data.verdict || '';
+    return {
+      id: fiche.id,
+      title: ficheLabel(fiche),
+      createdAt: fiche.createdAt,
+      data: JSON.parse(JSON.stringify(data)),
+      score,
+      done,
+      total: CHECK_NAMES.length,
+      categories: categoryScoresFor(fiche),
+      verdict,
+      verdictLabel: verdict === 'achat' ? 'ACHAT' : verdict === 'negociation' ? 'NÉGOCIATION' : verdict === 'fuir' ? 'À FUIR' : 'EN COURS',
+      points,
+      photos: allPhotos,
+      mainPhoto: (photos.info || [])[0] || allPhotos[0] || null,
+      signatures: JSON.parse(JSON.stringify(fiche.signatures || {})),
+      shareUrl: fiche.shareUrl || '',
+      assistantSummary: fiche.id === currentId ? (document.getElementById('reportContent')?.innerText?.trim() || '') : '',
+    };
+  }
+
   const SECTION_TITLES = {
     info:"Informations du véhicule", moteur:"Compartiment moteur", chassis:"Châssis, suspension & roues",
     carrosserie:"Carrosserie & éclairage", habitacle:"Habitacle & équipements", essai:"Essai routier", diagnostic:"Diagnostic électronique"
   };
+
+  function reportEscape(value){
+    return String(value ?? '—').replace(/[&<>"']/g, char=>({
+      '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'
+    })[char]);
+  }
+
+  function reportRows(rows){
+    return '<table>'+rows.map(([label,value])=>'<tr><th>'+reportEscape(label)+'</th><td>'+reportEscape(value || '—')+'</td></tr>').join('')+'</table>';
+  }
+
+  function buildScenarioReportSection(scenario, d){
+    if(scenario === 'mechanic'){
+      return '<h2>Ordre de réparation technique</h2>'+reportRows([
+        ['Plainte exacte du client', d.client_complaint],
+        ['Conditions de reproduction', d.symptom_conditions],
+        ['Valeurs et codes relevés avant intervention', d.measured_values],
+        ['Périmètre autorisé', d.work_authorization],
+        ['Codes moteur / antipollution', d.codes_ecm],
+        ['Codes ABS / ESP', d.codes_abs],
+        ['Codes transmission', d.codes_boitier],
+        ['Observations du diagnostic', d.notes_diagnostic],
+      ])+'<h3>Plan d’action atelier</h3><p>'+reportEscape(d.synthese_finale || 'À compléter avec les mesures, tests discriminants, valeurs attendues et validation du client.')+'</p>';
+    }
+    if(scenario === 'seller'){
+      return '<h2>Dossier de transparence avant vente</h2>'+reportRows([
+        ['Historique d’entretien justifiable', d.maintenance_history],
+        ['Réparations récentes', d.recent_repairs],
+        ['Défauts connus déclarés', d.known_defects],
+        ['Justificatifs disponibles', d.report_documents],
+        ['Contrôle technique / diagnostic', d.notes_diagnostic],
+        ['État et limites de l’inspection', d.synthese_finale],
+      ])+'<p><strong>Déclaration :</strong> ce dossier décrit les contrôles et documents disponibles à la date de l’expertise. Il ne masque pas les défauts connus et ne remplace pas une garantie mécanique.</p>';
+    }
+    if(scenario === 'owner'){
+      return '<h2>Carnet de santé du véhicule</h2>'+reportRows([
+        ['Symptômes actuels', d.owner_symptoms],
+        ['Évolution et conditions d’apparition', d.symptom_history],
+        ['Historique d’entretien', d.maintenance_log],
+        ['Niveau d’intervention souhaité', d.diy_level],
+        ['Alertes et codes enregistrés', [d.codes_ecm,d.codes_abs,d.codes_boitier].filter(Boolean).join(' · ')],
+        ['Synthèse vulgarisée', d.synthese_finale],
+      ])+'<h3>Contrôles préventifs</h3><p>Consigner la date, le kilométrage et l’évolution de chaque symptôme. Immobiliser le véhicule en présence d’un témoin rouge, d’une perte de freinage ou direction, d’une fuite de carburant ou d’une surchauffe.</p>';
+    }
+    return '<h2>Audit de risque avant achat</h2>'+reportRows([
+      ['Lien de l’annonce', d.annonce_url],
+      ['Déclarations du vendeur', d.seller_claims],
+      ['Priorité de l’inspection', d.inspection_priority],
+      ['Prix / valeur annoncée', d.valeur ? d.valeur+' €' : '—'],
+      ['Réparations estimées', d.frais_estimation ? d.frais_estimation+' €' : '—'],
+      ['Budget maximal', d.budget_max ? d.budget_max+' €' : '—'],
+      ['Marge et arguments de négociation', d.marge_negociation],
+      ['Conclusion de l’audit', d.synthese_finale],
+    ]);
+  }
 
   function buildPrintSynthesis(){
     const d = db[currentId].data;
@@ -871,7 +1025,7 @@ export function initializeLegacyFeatures(vehicleData) {
       seller: 'Rapport transparent avant vente',
       owner: 'Suivi et historique du véhicule'
     };
-    const usageScenario = d.usage_scenario || 'buyer';
+    const usageScenario = document.querySelector('[name="usage_scenario"]:checked')?.value || d.usage_scenario || 'buyer';
     const scenarioLabel = scenarioLabels[usageScenario];
     const verdict = d.verdict;
     const verdictLabel = verdict==='achat'?'ACHAT':verdict==='negociation'?'NÉGOCIATION':verdict==='fuir'?'À FUIR':'NON DÉFINI';
@@ -891,13 +1045,20 @@ export function initializeLegacyFeatures(vehicleData) {
 
     const triggeredCritical = CRITICAL_RULES.filter(rule => rule.test(d));
 
-    let html = '<h1>Fiche d\u2019Expertise — '+[d.marque,d.modele,d.annee].filter(Boolean).join(' ')+'</h1>';
+    let html = (window.cardiagBranding?.pdfHeaderHtml?.() || '')+'<h1>Fiche d\u2019Expertise — '+reportEscape([d.marque,d.modele,d.annee].filter(Boolean).join(' '))+'</h1>';
     html += '<p><strong>Objet du rapport :</strong> '+scenarioLabel+'</p>';
     html += '<p>Kilométrage : '+(d.kilometrage||'—')+' km · Valeur : '+(d.valeur||'—')+' € · Date : '+(d.date_expertise||'—')+'</p>';
     if(usageScenario === 'buyer'){
       html += '<div class="ps-verdict '+(verdict||'')+'">Décision : '+verdictLabel+'</div>';
     }else{
       html += '<div class="ps-verdict">Statut : '+scenarioLabel+'</div>';
+    }
+
+    html += buildScenarioReportSection(usageScenario, d);
+
+    const evolvingReport = document.getElementById('reportContent')?.innerText?.trim();
+    if(evolvingReport && !evolvingReport.includes('EN ATTENTE DE DONNÉES')){
+      html += '<h3>Synthèse technique évolutive de l’assistant</h3><p>'+reportEscape(evolvingReport).replace(/\n/g,'<br>')+'</p>';
     }
 
     if(triggeredCritical.length){
@@ -923,7 +1084,7 @@ export function initializeLegacyFeatures(vehicleData) {
 
     html += '<h3>Points à surveiller / défauts relevés (triés par gravité)</h3>';
     html += issues.length ? ('<ul class="ps-issues">'+issues.map(i=>'<li>'+i.label+' — '+i.badge+' <span class="ps-w ps-w-'+i.cat+'">×'+i.weight+'</span></li>').join('')+'</ul>') : '<p>Aucun défaut ou point moyen relevé.</p>';
-    html += '<h3>Synthèse</h3><p>'+(d.synthese_finale || '—')+'</p>';
+    html += '<h3>Conclusion consignée</h3><p>'+reportEscape(d.synthese_finale || '—')+'</p>';
 
     const sigs = (db[currentId].signatures) || {};
     const sigNamesPresent = SIGNATURE_NAMES.filter(n=> sigs[n]);
@@ -958,9 +1119,7 @@ export function initializeLegacyFeatures(vehicleData) {
   const REQUIRED_FIELDS = [
     { key:'marque', label:'Marque', type:'vehicle-select', el:()=>marqueSel, wrapId:'step-marque' },
     { key:'modele', label:'Modèle', type:'vehicle-model', wrapId:'step-modele' },
-    { key:'annee', label:'Année', type:'vehicle-select', el:()=>anneeSel, wrapId:'step-annee' },
-    { key:'kilometrage', label:'Kilométrage', type:'text', el:()=>document.querySelector('input[name="kilometrage"]'), wrapId:'fieldWrap-kilometrage' },
-    { key:'valeur', label:'Valeur affichée / négociée', type:'text', el:()=>document.querySelector('input[name="valeur"]'), wrapId:'fieldWrap-valeur' }
+    { key:'annee', label:'Année', type:'vehicle-select', el:()=>anneeSel, wrapId:'step-annee' }
   ];
 
   function isFieldFilled(spec){
@@ -1082,6 +1241,11 @@ export function initializeLegacyFeatures(vehicleData) {
 
       const btn = document.getElementById('generateBtn');
       const originalText = btn.textContent;
+
+      if(window.cardiagPremiumReport?.generate){
+        await window.cardiagPremiumReport.generate();
+        return;
+      }
 
       if(typeof html2canvas === 'undefined' || typeof window.jspdf === 'undefined'){
         printFallback(btn, originalText);
@@ -1906,6 +2070,85 @@ export function initializeLegacyFeatures(vehicleData) {
   loadCategoryWeights();
   loadDb();
   buildPhotoBlocks();
+  buildPointPhotoControls();
+  window.cardiagMediaBridge = {
+    addFiles: (sectionKey, files)=>handlePhotoUpload(sectionKey || 'diagnostic', files),
+    getPhotos: ()=>getCurrentPhotos(),
+  };
+  window.cardiagDataBridge = {
+    exportRecords: ()=>Object.values(db).map(fiche=>JSON.parse(JSON.stringify(fiche))),
+    getCurrentRecord: ()=>JSON.parse(JSON.stringify(db[currentId])),
+    getReportModel: (id=currentId)=>reportModelFor(db[id]),
+    listReportModels: ()=>Object.values(db).map(reportModelFor).filter(Boolean),
+    createRecord: ()=>{
+      saveCurrent();
+      const id = createFiche();
+      currentId = id;
+      safeStorage.setItem(CUR_KEY,currentId);
+      populateSelect();
+      applyToForm({});
+      restoreVehicleSelects({});
+      renderAllPhotoGrids();
+      updateAll();
+      return id;
+    },
+    setShareUrl: (id, shareUrl)=>{
+      if(!db[id]) return false;
+      db[id].shareUrl = String(shareUrl || '');
+      persist();
+      return true;
+    },
+    setSyncVersion: (id, version)=>{
+      if(!db[id] || !Number.isSafeInteger(version) || version < 0) return false;
+      db[id].syncVersion = version;
+      delete db[id].syncConflict;
+      persist(false);
+      return true;
+    },
+    markConflict: (id, serverRecord, serverVersion)=>{
+      if(!db[id]) return false;
+      db[id].syncConflict = {
+        serverVersion: Number.isSafeInteger(serverVersion) ? serverVersion : 0,
+        serverRecord: JSON.parse(JSON.stringify(serverRecord || {})),
+        detectedAt: new Date().toISOString(),
+      };
+      persist(false);
+      window.dispatchEvent(new CustomEvent('cardiag:sync-conflict',{detail:{id,serverVersion:db[id].syncConflict.serverVersion}}));
+      window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback',{detail:{type:'error',message:'Conflit de synchronisation détecté pour une fiche. Les données locales ont été conservées.'}}));
+      return true;
+    },
+    mergeRecords: (records=[])=>{
+      records.forEach(record=>{
+        if(!record?.id) return;
+        const remoteVersion = Number.isSafeInteger(record.syncVersion) ? record.syncVersion : 0;
+        const local = db[record.id];
+        const localVersion = Number.isSafeInteger(local?.syncVersion) ? local.syncVersion : 0;
+        if(!local || (!local.syncConflict && remoteVersion > localVersion)) {
+          const remote = JSON.parse(JSON.stringify(record));
+          db[record.id] = {
+            ...(local || {}),
+            ...remote,
+            photos: local?.photos || remote.photos || {},
+            signatures: local?.signatures || remote.signatures || {},
+          };
+          delete db[record.id].syncConflict;
+        }
+      });
+      persist(false);
+      populateSelect();
+      return Object.keys(db).length;
+    },
+    openRecord: (id)=>{
+      if(!db[id]) return false;
+      saveCurrent(); currentId=id; safeStorage.setItem(CUR_KEY,currentId); populateSelect(); applyToForm(db[currentId].data); restoreVehicleSelects(db[currentId].data); renderAllPhotoGrids(); updateAll();
+      window.dispatchEvent(new CustomEvent('cardiag:record-open', { detail:{ id } }));
+      return true;
+    },
+    printShort: ()=>{
+      const button = document.getElementById('shortPrintBtn') || document.getElementById('generateBtn');
+      printFallback(button, button.textContent);
+    },
+  };
   buildNavButtons();
   initAppTabbar();
   applyToForm(db[currentId].data);

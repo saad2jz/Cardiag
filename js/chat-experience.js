@@ -1,8 +1,9 @@
 const MAX_MESSAGES = 30;
 const RENDER_API_URL = 'https://fiche-expert-auto.onrender.com/';
-const API_BASE_URL = ['localhost', '127.0.0.1'].includes(window.location.hostname)
+const IS_NATIVE_APP = window.Capacitor?.isNativePlatform?.() === true;
+const API_BASE_URL = !IS_NATIVE_APP && (['localhost', '127.0.0.1'].includes(window.location.hostname)
   || window.location.hostname.endsWith('.onrender.com')
-  ? `${window.location.origin}/`
+  ) ? `${window.location.origin}/`
   : RENDER_API_URL;
 const API_TIMEOUT_MS = 60_000;
 const USAGE_SCENARIOS = {
