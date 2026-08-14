@@ -1,6 +1,6 @@
 import { authClient } from './firebase-client.js?v=20260814-1';
 
-const ROLES = {buyer:'Acheteur',mechanic:'Garagiste',seller:'Vendeur',owner:'Propriétaire'};
+const ROLES = {buyer:'Acheteur',mechanic:'Garagiste / Mécanicien',rental:'Agence de location',seller:'Vendeur',owner:'Propriétaire'};
 function message(panel,text,type='') { const node=panel.querySelector('[data-auth-status]'); node.textContent=text; node.dataset.type=type; }
 function createAuthSurface() {
   const panel=document.createElement('section');

@@ -135,6 +135,11 @@ export async function initializeThemeManager() {
 
   window.cardiagBranding = {
     get current() { return { ...state }; },
+    async update(values={}) {
+      state = { ...state, ...values };
+      await persist();
+      return { ...state };
+    },
     pdfHeaderHtml() {
       const logo = state.logo ? `<img src="${state.logo}" alt="">` : '';
       const bannerStyle = state.banner ? ` style="background-image:url('${state.banner}')"` : '';

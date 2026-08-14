@@ -35,8 +35,16 @@ export function initializeRecordsGallery() {
         ? `<img src="${record.mainPhoto.dataUrl}" alt="Photo de ${escapeHtml(record.title)}">`
         : '<div class="record-card-placeholder">🚗</div>';
       const locale=window.cardiagI18n?.language==='en'?'en-GB':'fr-FR';
-      card.innerHTML = `<button type="button" class="record-card-open" aria-label="${translate('records.open','Ouvrir')} ${escapeHtml(record.title)}"><div class="record-card-media">${photo}<span class="record-verdict ${verdictClass(record.verdict)}">${escapeHtml(record.verdictLabel)}</span></div><div class="record-card-body"><div class="record-card-donut" style="--score:${record.score || 0};--score-color:${scoreColor(record.score)}"><strong>${record.score == null ? '—' : `${record.score}%`}</strong></div><div><h3>${escapeHtml(record.title)}</h3><p>${new Date(record.createdAt || Date.now()).toLocaleDateString(locale)} · ${record.done}/${record.total} ${window.cardiagI18n?.language==='en'?'checked':'vérifiés'}</p></div></div></button><div class="record-card-actions"><button type="button" data-record-open>${translate('records.open','Ouvrir')}</button><button type="button" data-record-download>⬇ ${translate('records.download','Télécharger le PDF')}</button></div>`;
-      const open=()=>{window.cardiagDataBridge.openRecord(record.id);window.cardiagWizard?.goToStep?.(4);close()};
+      const trackedMileage=record.data?.rental_mileage_in||record.data?.rental_mileage_out||record.data?.release_mileage||record.data?.kilometrage;
+      const fleetMeta=[record.data?.fleet_vehicle_id,trackedMileage?`${Number(trackedMileage).toLocaleString(locale)} km`:''].filter(Boolean).join(' · ');
+      card.innerHTML = `<button type="button" class="record-card-open" aria-label="${translate('records.open','Ouvrir')} ${escapeHtml(record.title)}"><div class="record-card-media">${photo}<span class="record-verdict ${verdictClass(record.verdict)}">${escapeHtml(record.verdictLabel)}</span></div><div class="record-card-body"><div class="record-card-donut" style="--score:${record.score || 0};--score-color:${scoreColor(record.score)}"><strong>${record.score == null ? '—' : `${record.score}%`}</strong></div><div><h3>${escapeHtml(record.title)}</h3><p>${new Date(record.createdAt || Date.now()).toLocaleDateString(locale)} · ${record.done}/${record.total} ${window.cardiagI18n?.language==='en'?'checked':'vérifiés'}</p>${fleetMeta?`<p>${escapeHtml(fleetMeta)}</p>`:''}</div></div></button><div class="record-card-actions"><button type="button" data-record-open>${translate('records.open','Ouvrir')}</button><button type="button" data-record-download>⬇ ${translate('records.download','Télécharger le PDF')}</button></div>`;
+      const open=async()=>{
+        const opened=await window.cardiagDataBridge?.openRecord?.(record.id);
+        if(!opened)return;
+        window.cardiagWizard?.goToStep?.(2);
+        close();
+        window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback',{detail:{type:'success',message:translate('records.loaded','Fiche chargée : vous pouvez la consulter ou la modifier.')}}));
+      };
       card.querySelector('.record-card-open').addEventListener('click',open);
       card.querySelector('[data-record-open]').addEventListener('click',open);
       card.querySelector('[data-record-download]').addEventListener('click',async(event)=>{const action=event.currentTarget;const original=action.textContent;action.disabled=true;action.textContent='⏳ PDF…';try{await window.cardiagPremiumReport?.download?.(record.id)}finally{action.disabled=false;action.textContent=original}});
@@ -45,7 +53,13 @@ export function initializeRecordsGallery() {
   };
   trigger.addEventListener('click', () => { render(); sheet.hidden = false; requestAnimationFrame(() => sheet.classList.add('is-open')); });
   sheet.querySelector('[data-records-close]').addEventListener('click', close);
-  sheet.querySelector('[data-records-new]').addEventListener('click', () => { window.cardiagDataBridge?.createRecord?.(); window.cardiagWizard?.goToStep?.(1); close(); });
+  sheet.querySelector('[data-records-new]').addEventListener('click', () => {
+    const profile=window.cardiagLocalProfile?.current;
+    const role=profile?.role || 'buyer';
+    window.cardiagDataBridge?.createRecord?.({usage_scenario:role});
+    window.cardiagWizard?.goToStep?.(profile?.type==='professional'?2:1);
+    close();
+  });
   window.addEventListener('cardiag:data-change', () => { if (!sheet.hidden) render(); });
   window.addEventListener('cardiag:language-change',()=>{refreshTrigger();if(!sheet.hidden)render()});
   window.cardiagRecords = { open: () => trigger.click(), close };

@@ -28,5 +28,6 @@ test('buyer and seller negotiation margins increase when the documented conditio
 
 test('negotiation is not added to mechanic or owner reports', () => {
   assert.equal(calculateNegotiation({ ...base, data: { ...base.data, usage_scenario: 'mechanic' }, score: 60 }), null);
+  assert.equal(calculateNegotiation({ ...base, data: { ...base.data, usage_scenario: 'rental' }, score: 60 }), null);
   assert.equal(calculateNegotiation({ ...base, data: { ...base.data, usage_scenario: 'owner' }, score: 60 }), null);
 });

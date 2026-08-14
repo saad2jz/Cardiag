@@ -74,7 +74,7 @@ export function createFirebaseAccountService(env = process.env) {
       const sanitized = {
         displayName: String(profile.displayName || '').slice(0, 80),
         avatar: String(profile.avatar || '').slice(0, 400_000),
-        role: ['buyer','mechanic','seller','owner'].includes(profile.role) ? profile.role : 'buyer',
+        role: ['buyer','mechanic','rental','seller','owner'].includes(profile.role) ? profile.role : 'buyer',
         consent: Boolean(profile.consent),
         consentAt: profile.consent ? new Date().toISOString() : null,
         updatedAt: new Date().toISOString(),
