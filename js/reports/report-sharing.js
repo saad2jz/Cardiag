@@ -9,7 +9,7 @@ function shareSnapshot(model) {
     id:model.id,title:model.title,createdAt:model.createdAt,score:model.score,done:model.done,total:model.total,
     verdict:model.verdict,verdictLabel:model.verdictLabel,categories:model.categories,
     vehicle:{marque:data.marque,modele:data.modele,annee:data.annee,motorisation:data.motorisation,kilometrage:data.kilometrage,vin:data.vin},
-    budget:{valeur:data.valeur,frais:data.frais_estimation,marge:data.marge_negociation,budgetMax:data.budget_max},
+    budget:{valeur:data.valeur,frais:data.frais_estimation,marge:model.negotiation?.label||data.marge_negociation,budgetMax:data.budget_max,prixCible:model.negotiation?.targetPrice||null,arguments:model.negotiation?.arguments||[]},
     summary:String(data.synthese_finale||model.assistantSummary||'').slice(0,5000),
     points:model.points.map(({name,label,section,sectionLabel,category,weight,status,note})=>({name,label,section,sectionLabel,category,weight,status,note:String(note||'').slice(0,1200)})),
     mainPhoto:model.mainPhoto?.dataUrl?.length<420000?model.mainPhoto:null,

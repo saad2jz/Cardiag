@@ -3,6 +3,12 @@ node_modules/
 npm-debug.log*
 coverage/
 autodoc.html
+.idea/
+.artifacts/
+output/
+outputs/
+tmp/
+work/
 www/
 android/.gradle/
 android/local.properties

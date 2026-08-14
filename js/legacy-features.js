@@ -1,3 +1,5 @@
+import { calculateNegotiation } from './reports/negotiation.js?v=20260814-1';
+
 // Restored feature controller. It is initialized once by js/app.js after dbLoader loads data/vehicles.json.
 
 export function initializeLegacyFeatures(vehicleData) {
@@ -529,9 +531,9 @@ export function initializeLegacyFeatures(vehicleData) {
       btn.addEventListener('click', (e)=>{
         e.stopPropagation();
         e.preventDefault();
-        if(typeof window.showInlineHelp === 'function'){
-          window.showInlineHelp(title.textContent.trim(), btn);
-        }
+        window.dispatchEvent(new CustomEvent('cardiag:inline-help', {
+          detail: { text: title.textContent.trim(), target: btn }
+        }));
       });
       title.after(btn);
     });
@@ -735,20 +737,26 @@ export function initializeLegacyFeatures(vehicleData) {
     });
   }
 
-  function initComparator(){
-    document.getElementById('compareBtn').addEventListener('click', ()=>{
+  function openComparison(preselectedIds=[]){
       saveCurrent();
       const list = document.getElementById('fichePickList');
       list.innerHTML = '';
       Object.values(db).forEach(f=>{
         const row = document.createElement('div');
         row.className = 'fiche-pick';
-        row.innerHTML = '<input type="checkbox" value="'+f.id+'" id="pick_'+f.id+'"><label for="pick_'+f.id+'">'+ficheLabel(f)+'</label>';
+        const selected = preselectedIds.includes(f.id) ? ' checked' : '';
+        row.innerHTML = '<input type="checkbox" value="'+f.id+'" id="pick_'+f.id+'"'+selected+'><label for="pick_'+f.id+'">'+ficheLabel(f)+'</label>';
         list.appendChild(row);
       });
       document.getElementById('compareResult').innerHTML = '';
       document.getElementById('exportCompareBtn').style.display = 'none';
       document.getElementById('compareModal').classList.add('show');
+      if(preselectedIds.length >= 2) renderComparison(preselectedIds);
+  }
+
+  function initComparator(){
+    document.getElementById('compareBtn').addEventListener('click', ()=>{
+      openComparison();
     });
     document.getElementById('closeModal').addEventListener('click', ()=>{
       document.getElementById('compareModal').classList.remove('show');
@@ -937,6 +945,7 @@ export function initializeLegacyFeatures(vehicleData) {
     const done = points.filter(point=>point.status).length;
     const score = scoreFor(fiche);
     const verdict = data.verdict || '';
+    const negotiation = calculateNegotiation({ data, score, points });
     return {
       id: fiche.id,
       title: ficheLabel(fiche),
@@ -954,6 +963,7 @@ export function initializeLegacyFeatures(vehicleData) {
       signatures: JSON.parse(JSON.stringify(fiche.signatures || {})),
       shareUrl: fiche.shareUrl || '',
       assistantSummary: fiche.id === currentId ? (document.getElementById('reportContent')?.innerText?.trim() || '') : '',
+      negotiation,
     };
   }
 
@@ -972,7 +982,7 @@ export function initializeLegacyFeatures(vehicleData) {
     return '<table>'+rows.map(([label,value])=>'<tr><th>'+reportEscape(label)+'</th><td>'+reportEscape(value || '—')+'</td></tr>').join('')+'</table>';
   }
 
-  function buildScenarioReportSection(scenario, d){
+  function buildScenarioReportSection(scenario, d, negotiation){
     if(scenario === 'mechanic'){
       return '<h2>Ordre de réparation technique</h2>'+reportRows([
         ['Plainte exacte du client', d.client_complaint],
@@ -992,6 +1002,8 @@ export function initializeLegacyFeatures(vehicleData) {
         ['Défauts connus déclarés', d.known_defects],
         ['Justificatifs disponibles', d.report_documents],
         ['Contrôle technique / diagnostic', d.notes_diagnostic],
+        ['Marge de négociation basée sur l’état', negotiation?.label],
+        ['Arguments factuels', negotiation?.arguments?.join(' · ')],
         ['État et limites de l’inspection', d.synthese_finale],
       ])+'<p><strong>Déclaration :</strong> ce dossier décrit les contrôles et documents disponibles à la date de l’expertise. Il ne masque pas les défauts connus et ne remplace pas une garantie mécanique.</p>';
     }
@@ -1008,11 +1020,11 @@ export function initializeLegacyFeatures(vehicleData) {
     return '<h2>Audit de risque avant achat</h2>'+reportRows([
       ['Lien de l’annonce', d.annonce_url],
       ['Déclarations du vendeur', d.seller_claims],
-      ['Priorité de l’inspection', d.inspection_priority],
       ['Prix / valeur annoncée', d.valeur ? d.valeur+' €' : '—'],
       ['Réparations estimées', d.frais_estimation ? d.frais_estimation+' €' : '—'],
       ['Budget maximal', d.budget_max ? d.budget_max+' €' : '—'],
-      ['Marge et arguments de négociation', d.marge_negociation],
+      ['Marge calculée selon l’état', negotiation?.label || d.marge_negociation],
+      ['Arguments factuels', negotiation?.arguments?.join(' · ')],
       ['Conclusion de l’audit', d.synthese_finale],
     ]);
   }
@@ -1054,7 +1066,8 @@ export function initializeLegacyFeatures(vehicleData) {
       html += '<div class="ps-verdict">Statut : '+scenarioLabel+'</div>';
     }
 
-    html += buildScenarioReportSection(usageScenario, d);
+    const negotiation = calculateNegotiation(reportModelFor(db[currentId]));
+    html += buildScenarioReportSection(usageScenario, d, negotiation);
 
     const evolvingReport = document.getElementById('reportContent')?.innerText?.trim();
     if(evolvingReport && !evolvingReport.includes('EN ATTENTE DE DONNÉES')){
@@ -1068,10 +1081,10 @@ export function initializeLegacyFeatures(vehicleData) {
     }
 
     html += '<table><tr><th>Score pondéré global</th><td>'+(scoreFor(db[currentId]) ?? '—')+'%</td></tr>';
-    if(usageScenario === 'buyer'){
+    if(usageScenario === 'buyer' || usageScenario === 'seller'){
       html += '<tr><th>Frais estimés</th><td>'+(d.frais_estimation||'—')+' €</td></tr>';
       html += '<tr><th>Budget max</th><td>'+(d.budget_max||'—')+' €</td></tr>';
-      html += '<tr><th>Marge de négociation</th><td>'+(d.marge_negociation||'—')+'</td></tr>';
+      html += '<tr><th>Marge de négociation</th><td>'+reportEscape(negotiation?.label || d.marge_negociation || '—')+'</td></tr>';
     }
     html += '</table>';
 
@@ -2080,21 +2093,45 @@ export function initializeLegacyFeatures(vehicleData) {
     getCurrentRecord: ()=>JSON.parse(JSON.stringify(db[currentId])),
     getReportModel: (id=currentId)=>reportModelFor(db[id]),
     listReportModels: ()=>Object.values(db).map(reportModelFor).filter(Boolean),
-    createRecord: ()=>{
+    createRecord: (initialData={})=>{
       saveCurrent();
-      const id = createFiche();
+      const id = createFiche({data:initialData});
       currentId = id;
       safeStorage.setItem(CUR_KEY,currentId);
       populateSelect();
-      applyToForm({});
-      restoreVehicleSelects({});
+      applyToForm(initialData);
+      restoreVehicleSelects(initialData);
       renderAllPhotoGrids();
       updateAll();
       return id;
     },
+    useVehicleFromRecord: async (sourceId)=>{
+      const source = db[sourceId];
+      if(!source || !db[currentId]) return false;
+      saveCurrent();
+      const vehicleKeys = ['marque','modele','generation','annee','motorisation','motorisation_points_faibles','kilometrage','vin'];
+      const merged = {...db[currentId].data};
+      vehicleKeys.forEach(key=>{if(source.data?.[key] !== undefined)merged[key]=source.data[key]});
+      db[currentId].data = merged;
+      db[currentId].titre = ficheLabel(db[currentId]);
+      applyToForm(merged);
+      await restoreVehicleSelects(merged);
+      updateAll();
+      persist();
+      window.dispatchEvent(new CustomEvent('cardiag:vehicle-selected',{detail:{sourceId,currentId}}));
+      return true;
+    },
+    openComparison: (ids=[])=>openComparison(ids),
     setShareUrl: (id, shareUrl)=>{
       if(!db[id]) return false;
       db[id].shareUrl = String(shareUrl || '');
+      persist();
+      return true;
+    },
+    markReportGenerated: (id=currentId)=>{
+      if(!db[id]) return false;
+      db[id].data = db[id].data || {};
+      db[id].data._report_generated_at = new Date().toISOString();
       persist();
       return true;
     },

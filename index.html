@@ -14,15 +14,15 @@
 <meta name="chat-api" content="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=20260813-4">
+<link rel="stylesheet" href="css/styles.css?v=20260814-3">
 <link rel="stylesheet" href="css/wizard/premium.css?v=20260813-1">
 <link rel="stylesheet" href="css/theming/themes.css?v=20260813-1">
 <link rel="stylesheet" href="css/media/media.css?v=20260813-1">
 <link rel="stylesheet" href="css/auth/auth.css?v=20260813-1">
 <link rel="stylesheet" href="css/native/native.css?v=20260813-1">
-<link rel="stylesheet" href="css/settings/settings.css?v=20260813-1">
-<link rel="stylesheet" href="css/score/score.css?v=20260813-1">
-<link rel="stylesheet" href="css/reports/premium-report.css?v=20260813-1">
+<link rel="stylesheet" href="css/settings/settings.css?v=20260814-2">
+<link rel="stylesheet" href="css/score/score.css?v=20260814-2">
+<link rel="stylesheet" href="css/reports/premium-report.css?v=20260814-2">
 </head>
 <body>
 <header class="app-header">
@@ -136,7 +136,6 @@
     <div class="profile-context-fields" data-context-profile="buyer">
       <div class="field"><label>Lien de l’annonce</label><input type="url" name="annonce_url" inputmode="url" placeholder="https://…"></div>
       <div class="field"><label>Informations annoncées par le vendeur</label><textarea name="seller_claims" placeholder="Entretien, réparations, défauts déclarés, nombre de propriétaires…"></textarea></div>
-      <div class="field"><label>Priorité de l’inspection</label><select name="inspection_priority"><option value="">Choisir</option><option>Mécanique et fiabilité</option><option>Carrosserie et traces d’accident</option><option>Budget et négociation</option><option>Contrôle complet</option></select></div>
     </div>
 
     <div class="profile-context-fields" data-context-profile="mechanic">
@@ -540,8 +539,8 @@
     <button class="btn-secondary" id="resetBtn" type="button">Réinitialiser fiche</button>
     <input type="checkbox" id="printSummaryToggle" checked hidden>
     <button class="btn-secondary" id="shortPrintBtn" type="button">Imprimer la synthèse</button>
-    <button class="btn-secondary" id="shareReportBtn" type="button">Partager par lien</button>
-    <button class="btn-generate" id="generateBtn" type="button">📄 Générer le rapport PDF premium</button>
+    <button class="btn-secondary" id="shareReportBtn" type="button" hidden>Partager par lien</button>
+    <button class="btn-generate" id="generateBtn" type="button">📄 Générer le rapport</button>
   </div>
 </div>
 
@@ -550,6 +549,6 @@
 <script src="vendor/qrcode.js"></script>
 <script src="build-data.js?v=20260809-1"></script>
 <script src="js/db-loader.js?v=20260811-1"></script>
-<script type="module" src="js/app.js?v=20260814-1"></script>
+<script type="module" src="js/app.js?v=20260814-4"></script>
 </body>
 </html>
