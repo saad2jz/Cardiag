@@ -10,8 +10,8 @@ if (outputDir !== join(projectRoot, 'www')) {
   throw new Error('Destination native invalide.');
 }
 
-const files = ['index.html', 'manifest.json', 'sw.js', 'build-data.js', 'firebase-config.json', 'privacy.html', 'terms.html', 'account-deletion.html', 'shared-report.html'];
-const directories = ['css', 'data', 'icons', 'js', 'vendor'];
+const files = ['index.html', 'manifest.json', 'sw.js', 'build-data.js', 'firebase-config.json', 'robots.txt', 'sitemap.xml', 'privacy.html', 'terms.html', 'account-deletion.html', 'shared-report.html'];
+const directories = ['assets', 'css', 'data', 'icons', 'js', 'vendor'];
 
 await rm(outputDir, { recursive: true, force: true });
 await mkdir(outputDir, { recursive: true });

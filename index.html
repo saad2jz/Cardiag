@@ -3,7 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Cardiag — Diagnostic & Expertise Auto</title>
+<title>Inspection voiture d'occasion et rapport automobile | CarDiag</title>
+<meta name="description" content="Inspectez une voiture d'occasion point par point, documentez les défauts et générez un rapport PDF automobile complet avec CarDiag.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://cardiag.online/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="CarDiag">
+<meta property="og:title" content="Inspectez un véhicule d'occasion comme un expert | CarDiag">
+<meta property="og:description" content="Checklist guidée, preuves photo, score pondéré et rapport PDF détaillé pour acheter, vendre, réparer ou suivre un véhicule.">
+<meta property="og:url" content="https://cardiag.online/">
+<meta property="og:image" content="https://cardiag.online/assets/landing/cardiag-inspection.webp">
+<meta property="og:image:width" content="1376">
+<meta property="og:image:height" content="768">
+<meta property="og:image:alt" content="Véhicule inspecté dans un atelier avec aperçu du rapport CarDiag">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Inspectez un véhicule d'occasion comme un expert | CarDiag">
+<meta name="twitter:description" content="Une inspection guidée et un rapport PDF clair pour décider avec des faits.">
+<meta name="twitter:image" content="https://cardiag.online/assets/landing/cardiag-inspection.webp">
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#0B0A09">
 <meta name="mobile-web-app-capable" content="yes">
@@ -17,6 +34,7 @@
 <link rel="stylesheet" href="css/styles.css?v=20260814-4">
 <link rel="stylesheet" href="css/wizard/premium.css?v=20260813-1">
 <link rel="stylesheet" href="css/theming/themes.css?v=20260813-1">
+<link rel="stylesheet" href="css/landing/landing.css?v=20260814-1">
 <link rel="stylesheet" href="css/media/media.css?v=20260813-1">
 <link rel="stylesheet" href="css/auth/auth.css?v=20260813-1">
 <link rel="stylesheet" href="css/onboarding/profile-onboarding.css?v=20260814-3">
@@ -24,8 +42,101 @@
 <link rel="stylesheet" href="css/settings/settings.css?v=20260814-2">
 <link rel="stylesheet" href="css/score/score.css?v=20260814-2">
 <link rel="stylesheet" href="css/reports/premium-report.css?v=20260814-2">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"CarDiag","url":"https://cardiag.online/","applicationCategory":"AutomotiveApplication","operatingSystem":"Web, Android, iOS","inLanguage":["fr","en"],"description":"Application d'inspection automobile guidée avec rapport PDF détaillé.","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}
+</script>
 </head>
-<body>
+<body class="landing-active">
+<section class="marketing-landing" id="marketingLanding" aria-label="Accueil CarDiag" data-landing-aria-label="ariaHome">
+  <div class="landing-shell">
+    <nav class="landing-nav" aria-label="Navigation principale" data-landing-aria-label="ariaNav">
+      <a class="landing-brand" href="/" aria-label="CarDiag, accueil" data-landing-aria-label="ariaBrand"><img src="icons/app-icon.svg" alt="" width="38" height="38"><strong>CarDiag</strong></a>
+      <div class="landing-nav-links">
+        <a href="#howItWorks" data-landing-i18n="navHow">Comment ça marche</a>
+        <a href="#reportPreview" data-landing-i18n="navReport">Le rapport</a>
+      </div>
+      <div class="landing-language" aria-label="Langue" data-landing-aria-label="ariaLanguage">
+        <button type="button" data-landing-language="fr" aria-pressed="true">FR</button>
+        <button type="button" data-landing-language="en" aria-pressed="false">EN</button>
+      </div>
+      <button class="landing-nav-cta" type="button" data-landing-enter data-landing-i18n="navStart">Ouvrir l'application</button>
+    </nav>
+
+    <div class="landing-hero">
+      <div>
+        <p class="landing-kicker" data-landing-i18n="kicker">INSPECTION OCCASION · RAPPORT PROFESSIONNEL</p>
+        <h1 data-landing-i18n="title">Inspectez un véhicule d'occasion comme un expert, <span>en 15 minutes.</span></h1>
+        <p class="landing-lead" data-landing-i18n="lead">Une checklist guidée, des preuves documentées et un rapport PDF clair pour acheter, vendre, réparer ou suivre un véhicule en confiance.</p>
+        <div class="landing-actions">
+          <button class="landing-button" type="button" data-landing-enter data-landing-i18n="start">Commencer une inspection</button>
+          <a class="landing-button landing-button-secondary" href="assets/demo/rapport-expertise-demo-cardiag.pdf" target="_blank" rel="noopener" data-landing-i18n="demo">Voir un exemple de rapport</a>
+        </div>
+        <ul class="landing-reassurance">
+          <li data-landing-i18n="local">Fonctionne hors ligne</li>
+          <li data-landing-i18n="private">Données conservées sur votre appareil</li>
+          <li data-landing-i18n="noCard">Aucune carte bancaire requise</li>
+        </ul>
+      </div>
+      <div class="landing-visual" aria-label="Aperçu de l'expérience CarDiag" data-landing-aria-label="ariaExperience">
+        <div class="landing-visual-frame">
+          <img src="assets/landing/cardiag-inspection.webp" width="1376" height="768" fetchpriority="high" decoding="async" alt="Véhicule dans un atelier à côté d'une tablette affichant un rapport d'inspection CarDiag" data-alt-fr="Véhicule dans un atelier à côté d'une tablette affichant un rapport d'inspection CarDiag">
+        </div>
+        <div class="landing-report-chip" aria-label="Aperçu du score du rapport" data-landing-aria-label="ariaScore">
+          <div class="landing-report-head"><span data-landing-i18n="reportHeader">RAPPORT D'EXPERTISE</span><strong data-landing-i18n="decision">NÉGOCIATION</strong></div>
+          <div class="landing-report-score"><div class="landing-report-donut"><span>72%</span></div><p>24 / 33<small data-landing-i18n="verified">points vérifiés</small></p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="landing-facts landing-shell" aria-label="Fonctionnalités incluses" data-landing-aria-label="ariaFeatures">
+    <div class="landing-fact"><strong>33</strong><span data-landing-i18n="factsPoints">points de contrôle structurés</span></div>
+    <div class="landing-fact"><strong>7</strong><span data-landing-i18n="factsSections">sections techniques</span></div>
+    <div class="landing-fact"><strong>PDF</strong><span data-landing-i18n="factsReport">rapport professionnel exportable</span></div>
+  </div>
+
+  <section class="landing-section landing-shell" id="paths" aria-labelledby="pathsTitle">
+    <div class="landing-section-head"><h2 id="pathsTitle" data-landing-i18n="pathsTitle">Une méthode, adaptée à votre objectif.</h2><p data-landing-i18n="pathsIntro">Choisissez votre situation. CarDiag ouvre le tunnel existant avec les contrôles et le rapport appropriés.</p></div>
+    <div class="landing-path-grid">
+      <button class="landing-path-card" type="button" data-landing-enter data-landing-role="buyer"><span class="landing-path-icon" aria-hidden="true">⌕</span><h3 data-landing-i18n="buyer">Acheteur</h3><p data-landing-i18n="buyerText">Identifier les risques majeurs, estimer les frais et préparer une négociation factuelle.</p><strong data-landing-i18n="openPath">Choisir ce parcours</strong></button>
+      <button class="landing-path-card" type="button" data-landing-enter data-landing-role="mechanic"><span class="landing-path-icon" aria-hidden="true">⌁</span><h3 data-landing-i18n="mechanic">Garagiste</h3><p data-landing-i18n="mechanicText">Documenter la réception client, les mesures, les réparations et le contrôle final.</p><strong data-landing-i18n="openPath">Choisir ce parcours</strong></button>
+      <button class="landing-path-card" type="button" data-landing-enter data-landing-role="seller"><span class="landing-path-icon" aria-hidden="true">◇</span><h3 data-landing-i18n="seller">Vendeur</h3><p data-landing-i18n="sellerText">Constituer un dossier transparent à transmettre à un futur acheteur.</p><strong data-landing-i18n="openPath">Choisir ce parcours</strong></button>
+      <button class="landing-path-card" type="button" data-landing-enter data-landing-role="owner"><span class="landing-path-icon" aria-hidden="true">◎</span><h3 data-landing-i18n="owner">Propriétaire</h3><p data-landing-i18n="ownerText">Garder un carnet de santé clair et comprendre les problèmes sans jargon.</p><strong data-landing-i18n="openPath">Choisir ce parcours</strong></button>
+    </div>
+  </section>
+
+  <section class="landing-process" id="howItWorks" aria-labelledby="processTitle">
+    <div class="landing-section landing-shell">
+      <div class="landing-section-head"><h2 id="processTitle" data-landing-i18n="processTitle">Du véhicule à une décision défendable.</h2><p data-landing-i18n="processIntro">L'expérience vous guide sans remplacer un contrôle technique officiel ni l'avis d'un professionnel qualifié.</p></div>
+      <div class="landing-steps">
+        <article class="landing-step"><span class="landing-step-number">01</span><h3 data-landing-i18n="step1Title">Identifier</h3><p data-landing-i18n="step1Text">Sélectionnez le véhicule et ajoutez kilométrage, VIN et contexte utile.</p></article>
+        <article class="landing-step"><span class="landing-step-number">02</span><h3 data-landing-i18n="step2Title">Inspecter</h3><p data-landing-i18n="step2Text">Complétez les sept sections et rattachez chaque photo au point exact.</p></article>
+        <article class="landing-step"><span class="landing-step-number">03</span><h3 data-landing-i18n="step3Title">Décider</h3><p data-landing-i18n="step3Text">Consultez le score pondéré, les frais estimés et exportez le rapport détaillé.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="landing-section landing-shell landing-value" id="reportPreview" aria-labelledby="valueTitle">
+    <div class="landing-value-copy">
+      <p class="landing-kicker" data-landing-i18n="valueKicker">LE LIVRABLE</p>
+      <h2 id="valueTitle" data-landing-i18n="valueTitle">Un rapport conçu pour être lu, partagé et compris.</h2>
+      <p data-landing-i18n="valueText">Le document final transforme les observations terrain en dossier structuré, sans inventer les contrôles qui n'ont pas été réalisés.</p>
+      <ul class="landing-value-list"><li data-landing-i18n="value1">Synthèse visuelle, score pondéré et couverture du contrôle</li><li data-landing-i18n="value2">Photos replacées dans leur section technique exacte</li><li data-landing-i18n="value3">Alertes, frais estimés et marge de négociation</li><li data-landing-i18n="value4">Signatures, limites légales et partage privé optionnel</li></ul>
+    </div>
+    <div class="landing-document" aria-label="Maquette du rapport PDF CarDiag" data-landing-aria-label="ariaReportMockup">
+      <div class="landing-document-bar"><strong>CarDiag · PDF Premium</strong><span data-landing-i18n="decision">NÉGOCIATION</span></div>
+      <div class="landing-document-page">
+        <div class="landing-document-title"><div><small data-landing-i18n="reportHeaderFull">RAPPORT D'EXPERTISE AUTOMOBILE</small><h3 data-landing-i18n="reportTitle">Rapport d'expertise automobile</h3></div><span class="landing-document-badge" data-landing-i18n="decision">NÉGOCIATION</span></div>
+        <div class="landing-document-grid"><div class="landing-document-ring"><span>72%</span></div><div class="landing-document-lines"><div class="landing-document-line"><span data-landing-i18n="organs">Organes vitaux</span><strong>68%</strong><i style="--line-value:68%"></i></div><div class="landing-document-line"><span data-landing-i18n="chassis">Châssis</span><strong>76%</strong><i style="--line-value:76%"></i></div><div class="landing-document-line"><span data-landing-i18n="appearance">Esthétique</span><strong>81%</strong><i style="--line-value:81%"></i></div></div></div>
+      </div>
+      <a class="landing-demo-action" href="assets/demo/rapport-expertise-demo-cardiag.pdf" target="_blank" rel="noopener" data-landing-i18n="downloadDemo">Télécharger le PDF fictif de démonstration →</a>
+    </div>
+  </section>
+
+  <section class="landing-testimonials landing-shell" id="landingTestimonials" hidden data-enabled="false" aria-label="Témoignages utilisateurs"></section>
+  <section class="landing-final landing-shell"><h2 data-landing-i18n="finalTitle">Prenez votre prochaine décision automobile avec des preuves.</h2><p data-landing-i18n="finalText">Commencez gratuitement. Le rapport peut être rempli et exporté sans utiliser l'assistant IA.</p><button class="landing-button" type="button" data-landing-enter data-landing-i18n="finalButton">Créer ma première inspection</button></section>
+  <footer class="landing-footer"><div class="landing-shell"><span data-landing-i18n="footerText">CarDiag · Inspection guidée et traçabilité automobile</span><nav aria-label="Informations légales" data-landing-aria-label="ariaLegal"><a href="privacy.html" data-landing-i18n="privacy">Confidentialité</a><a href="terms.html" data-landing-i18n="terms">Conditions</a><a href="account-deletion.html" data-landing-i18n="account">Suppression du compte</a></nav></div></footer>
+</section>
 <header class="app-header">
   <div class="header-inner">
     <div class="brand-row">
@@ -40,7 +151,7 @@
     <div class="toolbar-row">
       <select id="ficheSelect" title="Changer de fiche véhicule"></select>
       <span class="spacer"></span>
-      <span class="save-indicator" id="saveIndicator"><span class="dot"></span><span id="saveIndicatorText">Non enregistré</span></span>
+      <span class="save-indicator" id="saveIndicator"><span class="dot"></span><span id="saveIndicatorText">Sauvegardé automatiquement sur cet appareil</span></span>
       <span class="score-gauge" id="scoreGauge" tabindex="0">Score : —</span>
     </div>
     <div class="toolbar-row" id="toolbarActions">
@@ -576,8 +687,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="vendor/jspdf.umd.min.js"></script>
 <script src="vendor/qrcode.js"></script>
-<script src="build-data.js?v=20260809-1"></script>
+<script src="build-data.js?v=20260810-3"></script>
 <script src="js/db-loader.js?v=20260811-1"></script>
-<script type="module" src="js/app.js?v=20260814-14"></script>
+<script type="module" src="js/app.js?v=20260814-18"></script>
 </body>
 </html>

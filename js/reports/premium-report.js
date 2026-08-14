@@ -22,7 +22,7 @@ function firstLines(value,max=5) { return String(value||'').split(/\n+/).map(lin
 function qrDataUrl(value) { try { const qr=window.qrcode(0,'M');qr.addData(value);qr.make();return qr.createDataURL(5,0); } catch { return ''; } }
 function scoreBand(score) { return score == null ? { label:'Non évalué', color:[100,116,139] } : score > 80 ? { label:'Sain', color:[22,163,74] } : score >= 50 ? { label:'Vigilance', color:[217,119,6] } : { label:'À risque', color:[185,28,28] }; }
 function generationLabel(date=new Date()) { return date.toLocaleString('fr-FR',{day:'2-digit',month:'long',year:'numeric',hour:'2-digit',minute:'2-digit'}).replace(' à ', ' à '); }
-function effectiveDecision(model) { return model.done < model.total ? { label:'EN COURS', verdict:'' } : model.verdict ? { label:model.verdictLabel, verdict:model.verdict } : { label:'DÉCISION REQUISE', verdict:'' }; }
+function effectiveDecision(model) { return model.done < model.total ? { label:'INSPECTION À COMPLÉTER', verdict:'' } : model.verdict ? { label:model.verdictLabel, verdict:model.verdict } : { label:'DÉCISION À CONFIRMER', verdict:'' }; }
 
 function drawVehicleBrandBadge(pdf, brand, x, y, palette) {
   const name=String(brand||'Véhicule').trim().slice(0,24);

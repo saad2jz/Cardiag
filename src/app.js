@@ -52,11 +52,14 @@ export function createApp({ llmService, accountService = null }) {
   app.use('/js', express.static(path.join(projectRoot, 'js')));
   app.use('/data', express.static(path.join(projectRoot, 'data')));
   app.use('/icons', express.static(path.join(projectRoot, 'icons')));
+  app.use('/assets', express.static(path.join(projectRoot, 'assets')));
   app.use('/vendor', express.static(path.join(projectRoot, 'vendor')));
   app.get('/', (_req, res) => sendPublicFile(res, 'index.html'));
   app.get('/build-data.js', (_req, res) => sendPublicFile(res, 'build-data.js'));
   app.get('/manifest.json', (_req, res) => sendPublicFile(res, 'manifest.json'));
   app.get('/firebase-config.json', (_req, res) => sendPublicFile(res, 'firebase-config.json'));
+  app.get('/robots.txt', (_req, res) => sendPublicFile(res, 'robots.txt'));
+  app.get('/sitemap.xml', (_req, res) => sendPublicFile(res, 'sitemap.xml'));
   app.get('/privacy.html', (_req, res) => sendPublicFile(res, 'privacy.html'));
   app.get('/terms.html', (_req, res) => sendPublicFile(res, 'terms.html'));
   app.get('/account-deletion.html', (_req, res) => sendPublicFile(res, 'account-deletion.html'));

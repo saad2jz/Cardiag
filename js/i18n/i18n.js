@@ -58,6 +58,9 @@ const EN = {
   'report.link': 'Share a private link',
   'report.cancel': 'Cancel',
   'report.short': 'Print summary',
+  'save.local': 'Automatically saved on this device',
+  'save.savedAt': 'Saved on this device at',
+  'save.failed': 'Local storage unavailable — export the report',
   'settings.language': 'Language',
   'chat.title': 'Investigation console',
   'chat.placeholder': 'Symptom, measurement, fault code or inspection result…',
@@ -108,6 +111,12 @@ const EN_TEXT = {
   'Connexion':'Sign in','Compte':'Account','Mon compte':'My account','Email':'Email','Mot de passe':'Password','Se connecter':'Sign in','Continuer avec Google':'Continue with Google','Mot de passe oublié':'Forgot password','Créer un compte':'Create account','Rôle':'Role',"J’accepte la politique de confidentialité et la synchronisation de mes fiches.":'I accept the privacy policy and report synchronization.','Créer mon compte':'Create my account','Déjà inscrit':'Already registered','Envoyer le lien':'Send link','Retour à la connexion':'Back to sign in','Vérifiez votre adresse email':'Verify your email address','Renvoyer le lien':'Resend link','Mon profil':'My profile','Nom affiché':'Display name','Avatar':'Avatar','Enregistrer':'Save','Exporter mes données':'Export my data','Se déconnecter':'Sign out','Supprimer définitivement le compte':'Permanently delete account',
   'Comparer des fiches':'Compare reports','Sélectionnez 2 ou 3 véhicules visités pour les comparer côte à côte.':'Select 2 or 3 inspected vehicles to compare side by side.','Exporter en CSV':'Export CSV','Pondération du score':'Score weighting','Réinitialiser (5 / 3 / 1)':'Reset (5 / 3 / 1)','Console d’investigation':'Investigation console','Nouvelle analyse':'New analysis','AUCUN RAPPORT ACTIF':'NO ACTIVE REPORT','En attente des mesures terrain':'Waiting for field measurements','Votre symptôme ou mesure relevée':'Your symptom or measured value','Assistant atelier':'Workshop assistant',
 };
+
+Object.assign(EN_TEXT, {
+  'Sauvegardé automatiquement sur cet appareil': 'Automatically saved on this device',
+  'INSPECTION À COMPLÉTER': 'INSPECTION TO COMPLETE',
+  'DÉCISION À CONFIRMER': 'DECISION TO CONFIRM',
+});
 
 Object.assign(EN_TEXT, {
   'ÉTAPE 1 / 4': 'STEP 1 / 4',
