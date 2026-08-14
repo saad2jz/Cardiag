@@ -3,11 +3,26 @@ function openDb(){return new Promise((resolve,reject)=>{const request=indexedDB.
 async function transact(mode,callback){const db=await openDb();return new Promise((resolve,reject)=>{const tx=db.transaction(STORE,mode);const store=tx.objectStore(STORE);callback(store);tx.oncomplete=()=>{db.close();resolve()};tx.onerror=()=>reject(tx.error)})}
 async function put(job){return transact('readwrite',store=>store.put(job))} async function remove(id){return transact('readwrite',store=>store.delete(id))}
 async function all(){const db=await openDb();return new Promise((resolve,reject)=>{const req=db.transaction(STORE).objectStore(STORE).getAll();req.onsuccess=()=>{db.close();resolve(req.result)};req.onerror=()=>reject(req.error)})}
-function syncRecords(){return (window.cardiagDataBridge?.exportRecords?.()||[]).map(record=>({id:record.id,titre:record.titre,data:record.data,createdAt:record.createdAt,hasLocalMedia:Boolean(Object.values(record.photos||{}).some(items=>items?.length)),updatedAt:new Date().toISOString()}))}
+export function buildSyncRecords(records=[]) {
+  return records.filter(record=>!record?.syncConflict).map(record=>({
+    id:record.id,
+    titre:record.titre,
+    data:record.data,
+    createdAt:record.createdAt,
+    hasLocalMedia:Boolean(Object.values(record.photos||{}).some(items=>items?.length)),
+    syncVersion:Number.isSafeInteger(record.syncVersion)&&record.syncVersion>=0?record.syncVersion:0,
+  }));
+}
+function syncRecords(){return buildSyncRecords(window.cardiagDataBridge?.exportRecords?.()||[])}
+export function applySyncResult(result={},bridge=window.cardiagDataBridge){
+  (result.synced||[]).forEach(({id,syncVersion})=>bridge?.setSyncVersion?.(id,syncVersion));
+  (result.conflicts||[]).forEach(({id,serverVersion,serverRecord})=>bridge?.markConflict?.(id,serverRecord,serverVersion));
+  return {synced:(result.synced||[]).length,conflicts:(result.conflicts||[]).length};
+}
 export async function initializeSyncQueue(){
   let timer,draining=false;
-  async function enqueue(){if(!window.cardiagAuth?.user)return;await put({id:'history',type:'history',records:syncRecords(),createdAt:Date.now()});if(window.cardiagConnectivity?.online)drain()}
-  async function drain(){if(draining||!window.cardiagConnectivity?.online||!window.cardiagAuth?.user)return;draining=true;try{for(const job of await all()){if(job.type==='history')await window.cardiagAuth.api('/api/account/history',{method:'PUT',body:JSON.stringify({records:job.records})});await remove(job.id)}window.dispatchEvent(new CustomEvent('cardiag:sync-status',{detail:{state:'synced'}}))}catch{window.dispatchEvent(new CustomEvent('cardiag:sync-status',{detail:{state:'pending'}}))}finally{draining=false}}
+  async function enqueue(){if(!window.cardiagAuth?.user)return;const records=syncRecords();if(!records.length){await remove('history');return;}await put({id:'history',type:'history',records,createdAt:Date.now()});if(window.cardiagConnectivity?.online)drain()}
+  async function drain(){if(draining||!window.cardiagConnectivity?.online||!window.cardiagAuth?.user)return;draining=true;let conflictCount=0;try{for(const job of await all()){if(job.type==='history'){try{const result=await window.cardiagAuth.api('/api/account/history',{method:'PUT',body:JSON.stringify({records:job.records})});applySyncResult(result);}catch(error){if(error.status!==409||!error.payload)throw error;const applied=applySyncResult(error.payload);conflictCount+=applied.conflicts;}}await remove(job.id)}window.dispatchEvent(new CustomEvent('cardiag:sync-status',{detail:{state:conflictCount?'conflict':'synced',conflicts:conflictCount}}))}catch{window.dispatchEvent(new CustomEvent('cardiag:sync-status',{detail:{state:'pending'}}))}finally{draining=false}}
   window.addEventListener('cardiag:data-change',()=>{clearTimeout(timer);timer=setTimeout(enqueue,1600)});
   window.cardiagConnectivity?.subscribe(({online})=>{if(online)drain()});
   window.cardiagAuth?.onChange?.(async user=>{if(!user)return;try{const remote=await window.cardiagAuth.api('/api/account/history');window.cardiagDataBridge?.mergeRecords?.(remote.records||[]);await enqueue()}catch{/* Une session peut exister pendant que le serveur redémarre. */}});

@@ -14,15 +14,16 @@
 <meta name="chat-api" content="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=20260813-4">
+<link rel="stylesheet" href="css/styles.css?v=20260814-4">
 <link rel="stylesheet" href="css/wizard/premium.css?v=20260813-1">
 <link rel="stylesheet" href="css/theming/themes.css?v=20260813-1">
 <link rel="stylesheet" href="css/media/media.css?v=20260813-1">
 <link rel="stylesheet" href="css/auth/auth.css?v=20260813-1">
+<link rel="stylesheet" href="css/onboarding/profile-onboarding.css?v=20260814-3">
 <link rel="stylesheet" href="css/native/native.css?v=20260813-1">
-<link rel="stylesheet" href="css/settings/settings.css?v=20260813-1">
-<link rel="stylesheet" href="css/score/score.css?v=20260813-1">
-<link rel="stylesheet" href="css/reports/premium-report.css?v=20260813-1">
+<link rel="stylesheet" href="css/settings/settings.css?v=20260814-2">
+<link rel="stylesheet" href="css/score/score.css?v=20260814-2">
+<link rel="stylesheet" href="css/reports/premium-report.css?v=20260814-2">
 </head>
 <body>
 <header class="app-header">
@@ -114,6 +115,12 @@
         <span>Documenter l’état initial et la plainte client avant la prise en charge en atelier.</span>
       </label>
       <label class="usage-scenario-card">
+        <input type="radio" name="usage_scenario" value="rental">
+        <span class="usage-scenario-icon" aria-hidden="true">🚙</span>
+        <strong>Agence de location</strong>
+        <span>Gérer la flotte, le kilométrage et les états des lieux avant et après location.</span>
+      </label>
+      <label class="usage-scenario-card">
         <input type="radio" name="usage_scenario" value="seller">
         <span class="usage-scenario-icon" aria-hidden="true">📄</span>
         <strong>Vendeur</strong>
@@ -136,14 +143,35 @@
     <div class="profile-context-fields" data-context-profile="buyer">
       <div class="field"><label>Lien de l’annonce</label><input type="url" name="annonce_url" inputmode="url" placeholder="https://…"></div>
       <div class="field"><label>Informations annoncées par le vendeur</label><textarea name="seller_claims" placeholder="Entretien, réparations, défauts déclarés, nombre de propriétaires…"></textarea></div>
-      <div class="field"><label>Priorité de l’inspection</label><select name="inspection_priority"><option value="">Choisir</option><option>Mécanique et fiabilité</option><option>Carrosserie et traces d’accident</option><option>Budget et négociation</option><option>Contrôle complet</option></select></div>
     </div>
 
     <div class="profile-context-fields" data-context-profile="mechanic">
+      <div class="field"><label>Référence de l’ordre de réparation</label><input name="work_order_reference" placeholder="OR-2026-001"></div>
+      <div class="field"><label>Kilométrage à la réception</label><input type="number" name="intake_mileage" min="0" placeholder="98000"></div>
       <div class="field"><label>Plainte exacte du client</label><textarea name="client_complaint" placeholder="Reprendre les mots du client sans interprétation…"></textarea></div>
+      <div class="field" data-context-photo-key="mechanic_intake_condition"><label>État du véhicule à la réception</label><textarea name="mechanic_intake_condition" placeholder="Carrosserie, habitacle, voyants, niveaux, accessoires confiés…"></textarea></div>
       <div class="field"><label>Conditions d’apparition</label><textarea name="symptom_conditions" placeholder="À froid/chaud, vitesse, charge, fréquence, météo…"></textarea></div>
       <div class="field"><label>Valeurs déjà mesurées</label><textarea name="measured_values" placeholder="Tensions, pressions, températures, corrections, codes OBD…"></textarea></div>
       <div class="field"><label>Périmètre autorisé</label><select name="work_authorization"><option value="">Choisir</option><option>Diagnostic uniquement</option><option>Diagnostic et devis</option><option>Travaux urgents autorisés</option><option>À confirmer avec le client</option></select></div>
+      <div class="field"><label>Travaux réalisés</label><textarea name="repair_work_completed" placeholder="Pièces, opérations, couples, fluides et références utilisés…"></textarea></div>
+      <div class="field"><label>Contrôles après réparation</label><textarea name="post_repair_checks" placeholder="Essai, mesures finales, codes, absence de fuite et validation…"></textarea></div>
+      <div class="field" data-context-photo-key="mechanic_release_condition"><label>État du véhicule à la restitution</label><textarea name="mechanic_release_condition" placeholder="État final, réserves, recommandations et éléments restitués…"></textarea></div>
+      <div class="field"><label>Kilométrage à la restitution</label><input type="number" name="release_mileage" min="0" placeholder="98012"></div>
+    </div>
+
+    <div class="profile-context-fields" data-context-profile="rental">
+      <div class="field"><label>Identifiant du véhicule dans la flotte</label><input name="fleet_vehicle_id" placeholder="FLOTTE-001"></div>
+      <div class="field"><label>Référence du contrat de location</label><input name="rental_contract_reference" placeholder="LOC-2026-001"></div>
+      <div class="field"><label>Référence du locataire</label><input name="renter_reference" placeholder="Nom ou identifiant interne"></div>
+      <div class="field"><label>Départ de location</label><input type="datetime-local" name="rental_start"></div>
+      <div class="field"><label>Retour de location</label><input type="datetime-local" name="rental_end"></div>
+      <div class="field"><label>Kilométrage au départ</label><input type="number" name="rental_mileage_out" min="0" placeholder="42000"></div>
+      <div class="field"><label>Kilométrage au retour</label><input type="number" name="rental_mileage_in" min="0" placeholder="42580"></div>
+      <div class="field"><label>Niveau de carburant / charge au départ</label><input name="rental_energy_out" placeholder="Plein, 75 %, 320 km d’autonomie…"></div>
+      <div class="field"><label>Niveau de carburant / charge au retour</label><input name="rental_energy_in" placeholder="3/4, 42 %, 180 km d’autonomie…"></div>
+      <div class="field" data-context-photo-key="rental_condition_out"><label>État des lieux avant location</label><textarea name="rental_condition_out" placeholder="Carrosserie, jantes, pneus, vitrage, habitacle, accessoires et voyants…"></textarea></div>
+      <div class="field" data-context-photo-key="rental_condition_in"><label>État des lieux après location</label><textarea name="rental_condition_in" placeholder="État au retour et différences constatées par rapport au départ…"></textarea></div>
+      <div class="field" data-context-photo-key="rental_damage_delta"><label>Nouveaux dommages / écarts constatés</label><textarea name="rental_damage_delta" placeholder="Localisation précise, type de dommage, photo associée et réserve…"></textarea></div>
     </div>
 
     <div class="profile-context-fields" data-context-profile="seller">
@@ -540,8 +568,8 @@
     <button class="btn-secondary" id="resetBtn" type="button">Réinitialiser fiche</button>
     <input type="checkbox" id="printSummaryToggle" checked hidden>
     <button class="btn-secondary" id="shortPrintBtn" type="button">Imprimer la synthèse</button>
-    <button class="btn-secondary" id="shareReportBtn" type="button">Partager par lien</button>
-    <button class="btn-generate" id="generateBtn" type="button">📄 Générer le rapport PDF premium</button>
+    <button class="btn-secondary" id="shareReportBtn" type="button" hidden>Partager par lien</button>
+    <button class="btn-generate" id="generateBtn" type="button">📄 Générer le rapport</button>
   </div>
 </div>
 
@@ -550,6 +578,6 @@
 <script src="vendor/qrcode.js"></script>
 <script src="build-data.js?v=20260809-1"></script>
 <script src="js/db-loader.js?v=20260811-1"></script>
-<script type="module" src="js/app.js?v=20260813-8"></script>
+<script type="module" src="js/app.js?v=20260814-14"></script>
 </body>
 </html>

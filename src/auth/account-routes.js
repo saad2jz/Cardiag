@@ -24,9 +24,18 @@ export function createAccountRouter(service) {
   router.put('/profile', async (req, res) => res.json({ profile: await service.saveProfile(req.user.uid, req.body || {}) }));
   router.get('/history', verifiedOnly, async (req, res) => res.json({ records: await service.getHistory(req.user.uid) }));
   router.put('/history', verifiedOnly, async (req, res) => {
-    if (!Array.isArray(req.body?.records)) return res.status(400).json({ error: 'records doit être un tableau.' });
-    if (JSON.stringify(req.body).length > 900_000) return res.status(413).json({ error: 'Synchronisation trop volumineuse.' });
-    return res.json(await service.saveHistory(req.user.uid, req.body.records));
+    if (!Array.isArray(req.body?.records)) return res.status(400).json({ error: 'records doit être un tableau.', code: 'INVALID_RECORDS' });
+    if (req.body.records.length > 100) return res.status(400).json({ error: 'Maximum 100 fiches par synchronisation.', code: 'TOO_MANY_RECORDS' });
+    if (JSON.stringify(req.body).length > 900_000) return res.status(413).json({ error: 'Synchronisation trop volumineuse.', code: 'SYNC_TOO_LARGE' });
+    try {
+      const result = await service.saveHistory(req.user.uid, req.body.records);
+      return res.status(result.conflicts?.length ? 409 : 200).json(result);
+    } catch (error) {
+      if (['INVALID_RECORD_ID','DUPLICATE_RECORD_ID'].includes(error?.code)) {
+        return res.status(400).json({ error: error.message, code: error.code });
+      }
+      return res.status(500).json({ error: 'La synchronisation est temporairement indisponible.', code: 'HISTORY_SYNC_FAILED' });
+    }
   });
   router.post('/push-token', verifiedOnly, async (req, res) => {
     const token = String(req.body?.token || '');

@@ -754,6 +754,11 @@ body.wizard-active{min-height:100dvh;overflow-x:hidden;padding-bottom:calc(92px 
 @keyframes wizard-slide-forward{from{opacity:0;transform:translateX(min(10vw,72px));}to{opacity:1;transform:translateX(0);}}
 @keyframes wizard-slide-back{from{opacity:0;transform:translateX(max(-10vw,-72px));}to{opacity:1;transform:translateX(0);}}
 @media (prefers-reduced-motion:reduce){.wizard-view.slide-in-forward,.wizard-view.slide-in-back{animation:none;}.wizard-progress-track span{transition:none;}}
+@media (max-width:520px){
+  .wizard-header{gap:6px;padding-left:max(9px,env(safe-area-inset-left));padding-right:max(9px,env(safe-area-inset-right));}
+  .wizard-progress{flex:1 1 auto;min-width:0;margin:0;}
+  .wizard-header>button{flex-shrink:0;}
+}
 .wizard-view-heading{max-width:780px;margin:0 auto 22px;}
 .wizard-view-heading>p{margin:0 0 7px;color:var(--muted);font:700 10px 'JetBrains Mono',monospace;letter-spacing:.14em;}
 .wizard-view-heading h1{margin:0;font:700 clamp(25px,5vw,42px)/1.1 'Sora',sans-serif;color:var(--ink);}
@@ -782,6 +787,35 @@ body.wizard-active{min-height:100dvh;overflow-x:hidden;padding-bottom:calc(92px 
 .wizard-view[data-wizard-step="2"] #vehicleIssues{max-width:780px;margin:10px auto 0;}
 .wizard-view[data-wizard-step="2"] #result:not(:empty){display:block;padding:10px 12px;border-radius:7px;background:var(--rouge-fond);color:var(--ink);}
 
+/* Identification : garage personnel et comparaison avant achat. */
+.saved-vehicles-panel{max-width:780px;margin:0 auto 22px;padding:18px;border:1px solid var(--border);border-radius:16px;background:var(--surface);box-shadow:var(--ombre-sm);}
+.saved-vehicles-panel[hidden],.buyer-comparison[hidden],.buyer-comparison-fields[hidden]{display:none!important;}
+.saved-vehicles-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;}
+.saved-vehicles-head h2{margin:5px 0 6px;font:800 clamp(20px,4vw,27px)/1.15 'Sora',sans-serif;color:var(--ink);}
+.saved-vehicles-head>div>p:last-child{margin:0;color:var(--muted);line-height:1.45;}
+.saved-vehicles-head>[data-add-vehicle]{min-height:48px;padding:10px 14px;border:1px solid var(--primary);border-radius:10px;background:var(--primary);color:#090909;font-weight:900;cursor:pointer;white-space:nowrap;}
+.saved-vehicles-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:16px;}
+.saved-vehicle-card{display:grid;grid-template-columns:48px minmax(0,1fr) auto;align-items:center;gap:11px;min-height:76px;padding:10px;border:1px solid var(--border);border-radius:12px;background:var(--bg);color:var(--ink);cursor:pointer;text-align:left;transition:border-color .16s ease,transform .16s ease,box-shadow .16s ease;}
+.saved-vehicle-card:hover,.saved-vehicle-card:focus-visible{border-color:var(--primary);transform:translateY(-1px);box-shadow:var(--ombre-sm);outline:none;}
+.saved-vehicle-card.is-active{border-color:var(--primary);background:color-mix(in srgb,var(--primary) 9%,var(--surface));}
+.saved-vehicle-card img,.saved-vehicle-placeholder{width:48px;height:48px;border-radius:9px;object-fit:cover;}
+.saved-vehicle-placeholder{display:grid;place-items:center;background:var(--surface);font-size:24px;}
+.saved-vehicle-card>span:nth-child(2){display:grid;gap:4px;min-width:0;}
+.saved-vehicle-card strong,.saved-vehicle-card small{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.saved-vehicle-card strong{font-size:13px;}.saved-vehicle-card small{color:var(--muted);font-size:11px;}
+.saved-vehicle-card em{padding:4px 7px;border-radius:999px;background:var(--primary);color:#090909;font-size:9px;font-style:normal;font-weight:900;text-transform:uppercase;}
+.saved-vehicles-empty{grid-column:1/-1;margin:0;padding:15px;border:1px dashed var(--border);border-radius:10px;color:var(--muted);text-align:center;}
+.buyer-comparison{margin-top:16px;padding-top:16px;border-top:1px solid var(--border);}
+.buyer-comparison-toggle{display:flex;align-items:center;gap:12px;min-height:52px;padding:10px 12px;border:1px solid var(--border);border-radius:11px;background:var(--bg);cursor:pointer;}
+.buyer-comparison-toggle:has(input:disabled){opacity:.55;cursor:not-allowed;}
+.buyer-comparison-toggle input{width:24px;height:24px;flex:0 0 24px;accent-color:var(--primary);}
+.buyer-comparison-toggle span{display:grid;gap:3px;}.buyer-comparison-toggle small{color:var(--muted);line-height:1.35;}
+.buyer-comparison-fields{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:9px;margin-top:11px;}
+.buyer-comparison-fields label{grid-column:1/-1;font-weight:800;font-size:12px;}
+.buyer-comparison-fields select,.buyer-comparison-fields button{min-height:48px;border-radius:9px;}
+.buyer-comparison-fields button{padding:10px 15px;border:1px solid var(--primary);background:var(--primary);color:#090909;font-weight:900;cursor:pointer;}
+.buyer-comparison-fields button:disabled{opacity:.45;cursor:not-allowed;}
+
 .profile-context-panel{max-width:780px;margin:auto;padding:clamp(18px,4vw,30px);}
 .profile-context-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:22px;}
 .profile-context-fields[hidden]{display:none!important;}
@@ -797,6 +831,8 @@ body.wizard-active{min-height:100dvh;overflow-x:hidden;padding-bottom:calc(92px 
 .wizard-checklist{margin-top:22px;}
 .wizard-checklist-heading{margin-bottom:12px;}
 .wizard-checklist details{max-width:100%;}
+.assistant-after-report{display:flex;align-items:center;justify-content:space-between;gap:18px;max-width:1080px;margin:24px auto;padding:20px;border:1px solid var(--primary);border-radius:16px;background:linear-gradient(135deg,color-mix(in srgb,var(--primary) 13%,var(--surface)),var(--surface));box-shadow:var(--ombre-sm)}
+.assistant-after-report[hidden]{display:none!important}.assistant-after-report h2{margin:5px 0 7px;font:800 23px 'Sora',sans-serif}.assistant-after-report p:last-child{margin:0;color:var(--muted);line-height:1.5}.assistant-after-report button{min-width:180px;min-height:48px;padding:11px 15px;border:1px solid var(--primary);border-radius:10px;background:var(--primary);color:#090909;font-weight:900;cursor:pointer}
 
 .wizard-bottom-bar{
   position:fixed;z-index:110;left:0;right:0;bottom:0;display:flex;justify-content:center;gap:10px;
@@ -821,9 +857,12 @@ body.wizard-active{min-height:100dvh;overflow-x:hidden;padding-bottom:calc(92px 
   .wizard-active .diagnostic-workspace .chat-messages{max-height:45vh;min-height:220px;}
   .wizard-active .diagnostic-workspace #chatForm{bottom:calc(72px + env(safe-area-inset-bottom));grid-template-columns:1fr;background:#0f0f0f;padding-bottom:8px;}
   .wizard-active .analyze-button{width:100%;min-height:48px;}
+  .assistant-after-report{display:grid}.assistant-after-report button{width:100%}
   .wizard-bottom-bar{padding-left:10px;padding-right:10px;}
   .wizard-bottom-bar .wizard-secondary{min-width:52px;width:52px;padding:10px;font-size:0;}
   .wizard-bottom-bar .wizard-secondary::before{content:'←';font-size:20px;}
+  .saved-vehicles-head{display:grid;}.saved-vehicles-head>[data-add-vehicle]{width:100%;}
+  .saved-vehicles-list{grid-template-columns:1fr;}.buyer-comparison-fields{grid-template-columns:1fr;}.buyer-comparison-fields label{grid-column:auto;}
 }
 @media (max-width:380px){.wizard-header{padding-left:9px;padding-right:9px;}.wizard-back{width:44px;height:44px;flex-basis:44px;}.wizard-active main{padding:0 7px;}}
 @media print{.wizard-header,.wizard-bottom-bar,.wizard-view-heading,.wizard-expertise-intro{display:none!important;}body.wizard-active{padding:0;}.wizard-active main{max-width:none;padding:0;}}

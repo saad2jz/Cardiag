@@ -6,6 +6,7 @@ let server;
 let baseUrl;
 let deleted = false;
 let shareDeleted = false;
+let historySaveOverride = null;
 const accountService = {
   async verifyToken(token) {
     if (token === 'verified') return { uid: 'user-1', email_verified: true };
@@ -15,7 +16,10 @@ const accountService = {
   async getProfile() { return { role: 'buyer' }; },
   async saveProfile(_uid, profile) { return { ...profile, role: profile.role || 'buyer' }; },
   async getHistory() { return [{ id: 'fiche-1' }]; },
-  async saveHistory(_uid, records) { return { synced: records.length }; },
+  async saveHistory(_uid, records) {
+    if (historySaveOverride) return historySaveOverride(records);
+    return { synced: records.map((record) => ({ id: record.id, syncVersion: 1 })), conflicts: [] };
+  },
   async savePushToken() {},
   async sendPush() { return { successCount: 1, failureCount: 0 }; },
   async createReportShare() { return { id: 'share-token-12345678901234567890', expiresAt: '2099-01-01T00:00:00.000Z' }; },
@@ -45,8 +49,37 @@ test('verified accounts can synchronize history and receive push tests', async (
   const headers = { Authorization: 'Bearer verified', 'Content-Type': 'application/json' };
   const sync = await fetch(`${baseUrl}/api/account/history`, { method: 'PUT', headers, body: JSON.stringify({ records: [{ id: 'fiche-1' }] }) });
   const push = await fetch(`${baseUrl}/api/account/notifications/test`, { method: 'POST', headers });
-  assert.deepEqual(await sync.json(), { synced: 1 });
+  assert.deepEqual(await sync.json(), { synced: [{ id: 'fiche-1', syncVersion: 1 }], conflicts: [] });
   assert.deepEqual(await push.json(), { successCount: 1, failureCount: 0 });
+});
+
+test('history synchronization exposes partial conflicts with status 409', async () => {
+  historySaveOverride = async () => ({
+    synced: [{ id: 'fiche-ok', syncVersion: 2 }],
+    conflicts: [{ id: 'fiche-conflict', serverVersion: 3, serverRecord: { id: 'fiche-conflict' } }],
+  });
+  const response = await fetch(`${baseUrl}/api/account/history`, {
+    method: 'PUT',
+    headers: { Authorization: 'Bearer verified', 'Content-Type': 'application/json' },
+    body: JSON.stringify({ records: [{ id: 'fiche-ok' }, { id: 'fiche-conflict' }] }),
+  });
+  historySaveOverride = null;
+  assert.equal(response.status, 409);
+  const payload = await response.json();
+  assert.equal(payload.synced[0].id, 'fiche-ok');
+  assert.equal(payload.conflicts[0].serverVersion, 3);
+});
+
+test('history synchronization translates validation failures and limits bulk size', async () => {
+  historySaveOverride = async () => { throw Object.assign(new Error('ID de fiche invalide.'), { code: 'INVALID_RECORD_ID' }); };
+  const headers = { Authorization: 'Bearer verified', 'Content-Type': 'application/json' };
+  const invalid = await fetch(`${baseUrl}/api/account/history`, { method: 'PUT', headers, body: JSON.stringify({ records: [{ id: 'bad/id' }] }) });
+  historySaveOverride = null;
+  const excessive = await fetch(`${baseUrl}/api/account/history`, { method: 'PUT', headers, body: JSON.stringify({ records: Array.from({ length: 101 }, (_, index) => ({ id: `f-${index}` })) }) });
+  assert.equal(invalid.status, 400);
+  assert.equal((await invalid.json()).code, 'INVALID_RECORD_ID');
+  assert.equal(excessive.status, 400);
+  assert.equal((await excessive.json()).code, 'TOO_MANY_RECORDS');
 });
 
 test('unverified email cannot synchronize account data', async () => {

@@ -1,3 +1,5 @@
+import { calculateNegotiation } from './reports/negotiation.js?v=20260814-1';
+
 // Restored feature controller. It is initialized once by js/app.js after dbLoader loads data/vehicles.json.
 
 export function initializeLegacyFeatures(vehicleData) {
@@ -122,14 +124,14 @@ export function initializeLegacyFeatures(vehicleData) {
   let db = {};
   let currentId = null;
 
-  function persist(){
+  function persist(notify=true){
     try{
       const serialized = JSON.stringify(db);
       safeStorage.setItem(DB_KEY, serialized);
       safeStorage.setItem(CUR_KEY, currentId);
       updateSaveIndicator(true);
       updateStorageMeter(serialized);
-      window.dispatchEvent(new CustomEvent('cardiag:data-change', { detail: { currentId } }));
+      if(notify) window.dispatchEvent(new CustomEvent('cardiag:data-change', { detail: { currentId } }));
       return true;
     }catch(e){
       console.error('Erreur de sauvegarde locale (quota dépassé ?):', e);
@@ -411,17 +413,15 @@ export function initializeLegacyFeatures(vehicleData) {
     });
   }
   function buildPointPhotoControls(){
-    CHECK_NAMES.forEach(name=>{
-      const input = document.querySelector('input[type="radio"][name="'+cssEscape(name)+'"]');
-      const item = input?.closest('.check-item,.field');
-      if(!input || !item || item.querySelector('.point-photo-control')) return;
-      const key = 'point:'+name;
+    const appendControl = (item,key,label)=>{
+      if(!item || item.querySelector('.point-photo-control')) return;
       const control = document.createElement('div');
       control.className = 'point-photo-control';
-      control.innerHTML = '<button type="button" class="point-photo-button" aria-label="Ajouter une photo pour '+reportEscape(CHECK_LABELS[name] || name)+'">📷 <span>Photo</span></button>'+
+      control.innerHTML = '<button type="button" class="point-photo-button" aria-label="Ajouter une photo pour '+reportEscape(label)+'">📷 <span>Photo</span></button>'+
         '<input type="file" accept="image/*" capture="environment" hidden>'+
         '<div class="photo-grid point-photo-grid" data-photo-grid="'+key+'"></div>';
       const fileInput = control.querySelector('input');
+      control.querySelector('button').dataset.photoLabel = label;
       control.querySelector('button').addEventListener('click', async()=>{
         if(window.cardiagCapturePhoto){
           const handled = await window.cardiagCapturePhoto(key);
@@ -433,6 +433,24 @@ export function initializeLegacyFeatures(vehicleData) {
         await handlePhotoUpload(key, fileInput.files || [], fileInput);
       });
       item.append(control);
+    };
+    CHECK_NAMES.forEach(name=>{
+      const input = document.querySelector('input[type="radio"][name="'+cssEscape(name)+'"]');
+      appendControl(input?.closest('.check-item,.field'),'point:'+name,CHECK_LABELS[name] || name);
+    });
+    document.querySelectorAll('[data-context-photo-key]').forEach(item=>{
+      const name=item.dataset.contextPhotoKey;
+      const label=item.querySelector('label')?.textContent.trim() || name;
+      appendControl(item,'context:'+name,label);
+    });
+    updatePointPhotoTranslations();
+  }
+  function updatePointPhotoTranslations(){
+    const english = window.cardiagI18n?.language === 'en';
+    document.querySelectorAll('.point-photo-button[data-photo-label]').forEach(button=>{
+      const source = button.dataset.photoLabel;
+      const label = window.cardiagI18n?.translateUiText?.(source, english ? 'en' : 'fr') || source;
+      button.setAttribute('aria-label', english ? `Add a photo for ${label}` : `Ajouter une photo pour ${label}`);
     });
   }
   function compressImage(file, maxDim, quality){
@@ -529,9 +547,9 @@ export function initializeLegacyFeatures(vehicleData) {
       btn.addEventListener('click', (e)=>{
         e.stopPropagation();
         e.preventDefault();
-        if(typeof window.showInlineHelp === 'function'){
-          window.showInlineHelp(title.textContent.trim(), btn);
-        }
+        window.dispatchEvent(new CustomEvent('cardiag:inline-help', {
+          detail: { text: title.textContent.trim(), target: btn }
+        }));
       });
       title.after(btn);
     });
@@ -735,20 +753,26 @@ export function initializeLegacyFeatures(vehicleData) {
     });
   }
 
-  function initComparator(){
-    document.getElementById('compareBtn').addEventListener('click', ()=>{
+  function openComparison(preselectedIds=[]){
       saveCurrent();
       const list = document.getElementById('fichePickList');
       list.innerHTML = '';
       Object.values(db).forEach(f=>{
         const row = document.createElement('div');
         row.className = 'fiche-pick';
-        row.innerHTML = '<input type="checkbox" value="'+f.id+'" id="pick_'+f.id+'"><label for="pick_'+f.id+'">'+ficheLabel(f)+'</label>';
+        const selected = preselectedIds.includes(f.id) ? ' checked' : '';
+        row.innerHTML = '<input type="checkbox" value="'+f.id+'" id="pick_'+f.id+'"'+selected+'><label for="pick_'+f.id+'">'+ficheLabel(f)+'</label>';
         list.appendChild(row);
       });
       document.getElementById('compareResult').innerHTML = '';
       document.getElementById('exportCompareBtn').style.display = 'none';
       document.getElementById('compareModal').classList.add('show');
+      if(preselectedIds.length >= 2) renderComparison(preselectedIds);
+  }
+
+  function initComparator(){
+    document.getElementById('compareBtn').addEventListener('click', ()=>{
+      openComparison();
     });
     document.getElementById('closeModal').addEventListener('click', ()=>{
       document.getElementById('compareModal').classList.remove('show');
@@ -937,6 +961,7 @@ export function initializeLegacyFeatures(vehicleData) {
     const done = points.filter(point=>point.status).length;
     const score = scoreFor(fiche);
     const verdict = data.verdict || '';
+    const negotiation = calculateNegotiation({ data, score, points });
     return {
       id: fiche.id,
       title: ficheLabel(fiche),
@@ -954,6 +979,7 @@ export function initializeLegacyFeatures(vehicleData) {
       signatures: JSON.parse(JSON.stringify(fiche.signatures || {})),
       shareUrl: fiche.shareUrl || '',
       assistantSummary: fiche.id === currentId ? (document.getElementById('reportContent')?.innerText?.trim() || '') : '',
+      negotiation,
     };
   }
 
@@ -972,9 +998,12 @@ export function initializeLegacyFeatures(vehicleData) {
     return '<table>'+rows.map(([label,value])=>'<tr><th>'+reportEscape(label)+'</th><td>'+reportEscape(value || '—')+'</td></tr>').join('')+'</table>';
   }
 
-  function buildScenarioReportSection(scenario, d){
+  function buildScenarioReportSection(scenario, d, negotiation){
     if(scenario === 'mechanic'){
       return '<h2>Ordre de réparation technique</h2>'+reportRows([
+        ['Référence de l’ordre de réparation', d.work_order_reference],
+        ['Kilométrage à la réception', d.intake_mileage ? d.intake_mileage+' km' : '—'],
+        ['État du véhicule à la réception', d.mechanic_intake_condition],
         ['Plainte exacte du client', d.client_complaint],
         ['Conditions de reproduction', d.symptom_conditions],
         ['Valeurs et codes relevés avant intervention', d.measured_values],
@@ -983,7 +1012,30 @@ export function initializeLegacyFeatures(vehicleData) {
         ['Codes ABS / ESP', d.codes_abs],
         ['Codes transmission', d.codes_boitier],
         ['Observations du diagnostic', d.notes_diagnostic],
+        ['Travaux réalisés', d.repair_work_completed],
+        ['Contrôles après réparation', d.post_repair_checks],
+        ['État du véhicule à la restitution', d.mechanic_release_condition],
+        ['Kilométrage à la restitution', d.release_mileage ? d.release_mileage+' km' : '—'],
       ])+'<h3>Plan d’action atelier</h3><p>'+reportEscape(d.synthese_finale || 'À compléter avec les mesures, tests discriminants, valeurs attendues et validation du client.')+'</p>';
+    }
+    if(scenario === 'rental'){
+      const mileageOut = Number(d.rental_mileage_out) || 0;
+      const mileageIn = Number(d.rental_mileage_in) || 0;
+      const distance = mileageOut && mileageIn >= mileageOut ? mileageIn - mileageOut : '';
+      return '<h2>Suivi de flotte — état avant / après location</h2>'+reportRows([
+        ['Identifiant flotte', d.fleet_vehicle_id],
+        ['Contrat de location', d.rental_contract_reference],
+        ['Référence locataire', d.renter_reference],
+        ['Départ / retour', [d.rental_start,d.rental_end].filter(Boolean).join(' → ')],
+        ['Kilométrage départ', mileageOut ? mileageOut+' km' : '—'],
+        ['Kilométrage retour', mileageIn ? mileageIn+' km' : '—'],
+        ['Distance parcourue', distance !== '' ? distance+' km' : 'À vérifier'],
+        ['Carburant / charge départ', d.rental_energy_out],
+        ['Carburant / charge retour', d.rental_energy_in],
+        ['État avant location', d.rental_condition_out],
+        ['État après location', d.rental_condition_in],
+        ['Nouveaux dommages / écarts', d.rental_damage_delta],
+      ])+'<p><strong>Traçabilité :</strong> les écarts doivent être confirmés par des observations datées et des photos rattachées aux points de contrôle concernés.</p>';
     }
     if(scenario === 'seller'){
       return '<h2>Dossier de transparence avant vente</h2>'+reportRows([
@@ -992,6 +1044,8 @@ export function initializeLegacyFeatures(vehicleData) {
         ['Défauts connus déclarés', d.known_defects],
         ['Justificatifs disponibles', d.report_documents],
         ['Contrôle technique / diagnostic', d.notes_diagnostic],
+        ['Marge de négociation basée sur l’état', negotiation?.label],
+        ['Arguments factuels', negotiation?.arguments?.join(' · ')],
         ['État et limites de l’inspection', d.synthese_finale],
       ])+'<p><strong>Déclaration :</strong> ce dossier décrit les contrôles et documents disponibles à la date de l’expertise. Il ne masque pas les défauts connus et ne remplace pas une garantie mécanique.</p>';
     }
@@ -1008,11 +1062,11 @@ export function initializeLegacyFeatures(vehicleData) {
     return '<h2>Audit de risque avant achat</h2>'+reportRows([
       ['Lien de l’annonce', d.annonce_url],
       ['Déclarations du vendeur', d.seller_claims],
-      ['Priorité de l’inspection', d.inspection_priority],
       ['Prix / valeur annoncée', d.valeur ? d.valeur+' €' : '—'],
       ['Réparations estimées', d.frais_estimation ? d.frais_estimation+' €' : '—'],
       ['Budget maximal', d.budget_max ? d.budget_max+' €' : '—'],
-      ['Marge et arguments de négociation', d.marge_negociation],
+      ['Marge calculée selon l’état', negotiation?.label || d.marge_negociation],
+      ['Arguments factuels', negotiation?.arguments?.join(' · ')],
       ['Conclusion de l’audit', d.synthese_finale],
     ]);
   }
@@ -1022,6 +1076,7 @@ export function initializeLegacyFeatures(vehicleData) {
     const scenarioLabels = {
       buyer: 'Contrôle avant achat',
       mechanic: 'État initial avant prise en charge atelier',
+      rental: 'Suivi de flotte avant et après location',
       seller: 'Rapport transparent avant vente',
       owner: 'Suivi et historique du véhicule'
     };
@@ -1054,7 +1109,8 @@ export function initializeLegacyFeatures(vehicleData) {
       html += '<div class="ps-verdict">Statut : '+scenarioLabel+'</div>';
     }
 
-    html += buildScenarioReportSection(usageScenario, d);
+    const negotiation = calculateNegotiation(reportModelFor(db[currentId]));
+    html += buildScenarioReportSection(usageScenario, d, negotiation);
 
     const evolvingReport = document.getElementById('reportContent')?.innerText?.trim();
     if(evolvingReport && !evolvingReport.includes('EN ATTENTE DE DONNÉES')){
@@ -1068,10 +1124,10 @@ export function initializeLegacyFeatures(vehicleData) {
     }
 
     html += '<table><tr><th>Score pondéré global</th><td>'+(scoreFor(db[currentId]) ?? '—')+'%</td></tr>';
-    if(usageScenario === 'buyer'){
+    if(usageScenario === 'buyer' || usageScenario === 'seller'){
       html += '<tr><th>Frais estimés</th><td>'+(d.frais_estimation||'—')+' €</td></tr>';
       html += '<tr><th>Budget max</th><td>'+(d.budget_max||'—')+' €</td></tr>';
-      html += '<tr><th>Marge de négociation</th><td>'+(d.marge_negociation||'—')+'</td></tr>';
+      html += '<tr><th>Marge de négociation</th><td>'+reportEscape(negotiation?.label || d.marge_negociation || '—')+'</td></tr>';
     }
     html += '</table>';
 
@@ -1160,6 +1216,15 @@ export function initializeLegacyFeatures(vehicleData) {
       genBtn.disabled = false;
     }
     return missing;
+  }
+
+  function updateAll(){
+    updateProgress();
+    updateBudget();
+    checkCriticalRisk();
+    updateStepBadges();
+    renderPotentialIssues();
+    refreshAllSignaturePads();
   }
 
   function scrollToFirstMissing(){
@@ -1526,6 +1591,15 @@ export function initializeLegacyFeatures(vehicleData) {
     st(document.getElementById('num-generation'), !!generationSel.value, !!modeleSel.value && !generationSel.value);
     st(document.getElementById('num-annee'), !!anneeSel.value, !anneeSel.value);
     st(document.getElementById('num-motorisation'), !!motorisationSel.value, !!generationSel.value && !motorisationSel.value);
+    const result = document.getElementById('result');
+    if(result){
+      const make = marqueSel.value || document.getElementById('marqueManualInput')?.value.trim();
+      const model = modeleSel.value || document.getElementById('modeleManualInput')?.value.trim();
+      const english = window.cardiagI18n?.language === 'en';
+      result.textContent = make && model
+        ? (english ? 'Vehicle identified. All fields remain editable.' : 'Véhicule identifié. Tous les champs restent modifiables.')
+        : (english ? 'Please select a make and model.' : 'Veuillez sélectionner une marque et un modèle.');
+    }
     validateRequiredFields();
   }
 
@@ -2071,6 +2145,7 @@ export function initializeLegacyFeatures(vehicleData) {
   loadDb();
   buildPhotoBlocks();
   buildPointPhotoControls();
+  window.addEventListener('cardiag:language-change', updatePointPhotoTranslations);
   window.cardiagMediaBridge = {
     addFiles: (sectionKey, files)=>handlePhotoUpload(sectionKey || 'diagnostic', files),
     getPhotos: ()=>getCurrentPhotos(),
@@ -2080,35 +2155,91 @@ export function initializeLegacyFeatures(vehicleData) {
     getCurrentRecord: ()=>JSON.parse(JSON.stringify(db[currentId])),
     getReportModel: (id=currentId)=>reportModelFor(db[id]),
     listReportModels: ()=>Object.values(db).map(reportModelFor).filter(Boolean),
-    createRecord: ()=>{
+    createRecord: (initialData={})=>{
       saveCurrent();
-      const id = createFiche();
+      const id = createFiche({data:initialData});
       currentId = id;
       safeStorage.setItem(CUR_KEY,currentId);
-      populateSelect();
-      applyToForm({});
-      restoreVehicleSelects({});
+      refreshSelector();
+      applyToForm(initialData);
+      restoreVehicleSelects(initialData);
       renderAllPhotoGrids();
       updateAll();
       return id;
     },
+    useVehicleFromRecord: async (sourceId)=>{
+      const source = db[sourceId];
+      if(!source || !db[currentId]) return false;
+      saveCurrent();
+      const vehicleKeys = ['marque','modele','generation','annee','motorisation','motorisation_points_faibles','kilometrage','vin'];
+      const merged = {...db[currentId].data};
+      vehicleKeys.forEach(key=>{if(source.data?.[key] !== undefined)merged[key]=source.data[key]});
+      db[currentId].data = merged;
+      db[currentId].titre = ficheLabel(db[currentId]);
+      applyToForm(merged);
+      await restoreVehicleSelects(merged);
+      updateAll();
+      persist();
+      window.dispatchEvent(new CustomEvent('cardiag:vehicle-selected',{detail:{sourceId,currentId}}));
+      return true;
+    },
+    openComparison: (ids=[])=>openComparison(ids),
     setShareUrl: (id, shareUrl)=>{
       if(!db[id]) return false;
       db[id].shareUrl = String(shareUrl || '');
       persist();
       return true;
     },
+    markReportGenerated: (id=currentId)=>{
+      if(!db[id]) return false;
+      db[id].data = db[id].data || {};
+      db[id].data._report_generated_at = new Date().toISOString();
+      persist();
+      return true;
+    },
+    setSyncVersion: (id, version)=>{
+      if(!db[id] || !Number.isSafeInteger(version) || version < 0) return false;
+      db[id].syncVersion = version;
+      delete db[id].syncConflict;
+      persist(false);
+      return true;
+    },
+    markConflict: (id, serverRecord, serverVersion)=>{
+      if(!db[id]) return false;
+      db[id].syncConflict = {
+        serverVersion: Number.isSafeInteger(serverVersion) ? serverVersion : 0,
+        serverRecord: JSON.parse(JSON.stringify(serverRecord || {})),
+        detectedAt: new Date().toISOString(),
+      };
+      persist(false);
+      window.dispatchEvent(new CustomEvent('cardiag:sync-conflict',{detail:{id,serverVersion:db[id].syncConflict.serverVersion}}));
+      window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback',{detail:{type:'error',message:'Conflit de synchronisation détecté pour une fiche. Les données locales ont été conservées.'}}));
+      return true;
+    },
     mergeRecords: (records=[])=>{
       records.forEach(record=>{
-        if(record?.id && !db[record.id]) db[record.id] = JSON.parse(JSON.stringify(record));
+        if(!record?.id) return;
+        const remoteVersion = Number.isSafeInteger(record.syncVersion) ? record.syncVersion : 0;
+        const local = db[record.id];
+        const localVersion = Number.isSafeInteger(local?.syncVersion) ? local.syncVersion : 0;
+        if(!local || (!local.syncConflict && remoteVersion > localVersion)) {
+          const remote = JSON.parse(JSON.stringify(record));
+          db[record.id] = {
+            ...(local || {}),
+            ...remote,
+            photos: local?.photos || remote.photos || {},
+            signatures: local?.signatures || remote.signatures || {},
+          };
+          delete db[record.id].syncConflict;
+        }
       });
-      persist();
-      populateSelect();
+      persist(false);
+      refreshSelector();
       return Object.keys(db).length;
     },
-    openRecord: (id)=>{
+    openRecord: async (id)=>{
       if(!db[id]) return false;
-      saveCurrent(); currentId=id; safeStorage.setItem(CUR_KEY,currentId); populateSelect(); applyToForm(db[currentId].data); restoreVehicleSelects(db[currentId].data); renderAllPhotoGrids(); updateAll();
+      saveCurrent(); currentId=id; safeStorage.setItem(CUR_KEY,currentId); refreshSelector(); applyToForm(db[currentId].data); await restoreVehicleSelects(db[currentId].data); renderAllPhotoGrids(); updateAll();
       window.dispatchEvent(new CustomEvent('cardiag:record-open', { detail:{ id } }));
       return true;
     },

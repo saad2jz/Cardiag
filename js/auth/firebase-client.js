@@ -104,7 +104,12 @@ export const authClient = {
     });
     if (response.status === 204) return null;
     const payload = await response.json().catch(()=>({}));
-    if (!response.ok) throw new Error(payload.error || 'Erreur du compte.');
+    if (!response.ok) {
+      const error = new Error(payload.error || 'Erreur du compte.');
+      error.status = response.status;
+      error.payload = payload;
+      throw error;
+    }
     return payload;
   },
   async signOut() {

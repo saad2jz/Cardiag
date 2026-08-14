@@ -25,6 +25,15 @@ const USAGE_SCENARIOS = {
     placeholder: 'Plainte client, condition d’apparition, code défaut ou première mesure…',
     options: ['Consigner la plainte client', 'Relever les codes défaut', 'État initial carrosserie', 'Bruit à reproduire', 'Fuite ou niveau anormal', 'Démarrage difficile', 'Vibrations ou à-coups', 'Intervention antérieure'],
   },
+  rental: {
+    label: 'Agence de location — gestion de flotte',
+    eyebrow: 'FLOTTE · ÉTAT AVANT / APRÈS LOCATION',
+    subtitle: 'Comparez le kilométrage, les niveaux et l’état précis du véhicule entre le départ et le retour.',
+    reportTitle: 'Rapport de suivi de location',
+    context: 'Traçabilité de flotte : état contradictoire, kilométrage, énergie, dommages nouveaux et actions requises.',
+    placeholder: 'Dommage, écart kilométrique, voyant, niveau ou anomalie constatée au retour…',
+    options: ['État avant location', 'État au retour', 'Kilométrage départ / retour', 'Niveau carburant ou charge', 'Nouveau dommage carrosserie', 'Jante ou pneu endommagé', 'Voyant apparu pendant la location', 'Accessoire manquant'],
+  },
   seller: {
     label: 'Vendeur — rapport avant vente',
     eyebrow: 'Transparence • Dossier avant vente',
@@ -45,12 +54,65 @@ const USAGE_SCENARIOS = {
   },
 };
 
+const USAGE_SCENARIOS_EN = {
+  buyer: {
+    label: 'Buyer — pre-purchase inspection',
+    eyebrow: 'FIELD CHECK · USED-VEHICLE PURCHASE',
+    subtitle: 'Check critical components, identify risks and prepare a documented purchase decision.',
+    reportTitle: 'Pre-purchase inspection report',
+    context: 'Guided pre-purchase inspection: risks, priority checks and negotiation points.',
+    placeholder: 'Observed fault, item to check, OBD code or seller statement…',
+    options: ['Cold start', 'Incomplete service history', 'Check-engine light on', 'Abnormal engine noise', 'Exhaust smoke', 'Signs of collision', 'Abnormal road test', 'Cleared OBD codes'],
+  },
+  mechanic: {
+    label: 'Mechanic — workshop intake',
+    eyebrow: 'WORKSHOP · INITIAL CONDITION REPORT',
+    subtitle: 'Record the customer complaint, intake condition, codes and first measurements before work begins.',
+    reportTitle: 'Workshop intake report',
+    context: 'Initial condition, customer complaint, fault codes and first measurements before any repair.',
+    placeholder: 'Customer complaint, occurrence conditions, fault code or first measurement…',
+    options: ['Record the customer complaint', 'Read fault codes', 'Initial bodywork condition', 'Noise to reproduce', 'Leak or abnormal level', 'Difficult starting', 'Vibration or jerking', 'Previous repair'],
+  },
+  rental: {
+    label: 'Rental agency — fleet management',
+    eyebrow: 'FLEET · PRE / POST-RENTAL CONDITION',
+    subtitle: 'Compare mileage, levels and the precise vehicle condition between check-out and return.',
+    reportTitle: 'Rental tracking report',
+    context: 'Fleet traceability: condition report, mileage, energy, new damage and required action.',
+    placeholder: 'Damage, mileage discrepancy, warning light, level or issue found on return…',
+    options: ['Pre-rental condition', 'Return condition', 'Check-out / return mileage', 'Fuel or charge level', 'New bodywork damage', 'Damaged wheel or tyre', 'Warning light during rental', 'Missing accessory'],
+  },
+  seller: {
+    label: 'Seller — pre-sale report',
+    eyebrow: 'TRANSPARENCY · PRE-SALE FILE',
+    subtitle: 'Document maintenance, checks and known faults objectively for the future buyer.',
+    reportTitle: 'Seller transparency report',
+    context: 'Factual file to share: condition, servicing, known faults and completed checks.',
+    placeholder: 'Completed maintenance, known fault, repair, measurement or available document…',
+    options: ['Create an overall condition report', 'Add service history', 'Disclose a known fault', 'Add a recent repair', 'Check warning lights', 'Add OBD codes', 'Document tyres and brakes', 'Prepare report photos'],
+  },
+  owner: {
+    label: 'Owner — vehicle monitoring',
+    eyebrow: 'VEHICLE LOG · TECHNICAL MONITORING',
+    subtitle: 'Keep the history, understand symptoms and carry out simple checks safely.',
+    reportTitle: 'Vehicle health record',
+    context: 'Understand a problem, track its development and perform only checks that are safely accessible.',
+    placeholder: 'Describe what you see, hear or feel and when it occurs…',
+    options: ['Check-engine light on', 'Difficult starting', 'New noise', 'Loss of power', 'Smoke or smell', 'Abnormal consumption', 'Vibration or jerking', 'Add a maintenance operation'],
+  },
+};
+
+function isEnglish() {
+  return window.cardiagI18n?.language === 'en';
+}
+
 function selectedUsageScenario() {
   return document.querySelector('[name="usage_scenario"]:checked')?.value || 'buyer';
 }
 
 function usageScenarioConfig() {
-  return USAGE_SCENARIOS[selectedUsageScenario()] || USAGE_SCENARIOS.buyer;
+  const scenarios = isEnglish() ? USAGE_SCENARIOS_EN : USAGE_SCENARIOS;
+  return scenarios[selectedUsageScenario()] || scenarios.buyer;
 }
 
 function carContext() {
@@ -59,6 +121,7 @@ function carContext() {
     return manualValue || document.getElementById(selectId)?.value || '';
   };
 
+  const fieldValue = (name) => document.querySelector(`[name="${name}"]`)?.value?.trim?.() || '';
   return {
     marque: selectOrManual('marqueSelect', 'marqueManualInput'),
     modele: selectOrManual('modeleSelect', 'modeleManualInput'),
@@ -67,6 +130,25 @@ function carContext() {
     motorisation: selectOrManual('motorisationSelect', 'motorisationManualInput'),
     vin: document.querySelector('[name="vin"]')?.value.trim() || '',
     usageScenario: selectedUsageScenario(),
+    language: window.cardiagI18n?.language === 'en' ? 'en' : 'fr',
+    workOrderReference: fieldValue('work_order_reference'),
+    intakeMileage: fieldValue('intake_mileage'),
+    releaseMileage: fieldValue('release_mileage'),
+    intakeCondition: fieldValue('mechanic_intake_condition'),
+    repairWorkCompleted: fieldValue('repair_work_completed'),
+    postRepairChecks: fieldValue('post_repair_checks'),
+    releaseCondition: fieldValue('mechanic_release_condition'),
+    fleetVehicleId: fieldValue('fleet_vehicle_id'),
+    rentalContractReference: fieldValue('rental_contract_reference'),
+    rentalStart: fieldValue('rental_start'),
+    rentalEnd: fieldValue('rental_end'),
+    rentalMileageOut: fieldValue('rental_mileage_out'),
+    rentalMileageIn: fieldValue('rental_mileage_in'),
+    rentalEnergyOut: fieldValue('rental_energy_out'),
+    rentalEnergyIn: fieldValue('rental_energy_in'),
+    rentalConditionOut: fieldValue('rental_condition_out'),
+    rentalConditionIn: fieldValue('rental_condition_in'),
+    rentalDamageDelta: fieldValue('rental_damage_delta'),
   };
 }
 
@@ -77,7 +159,7 @@ function canUseAssistant() {
 
 function formatActiveVehicle() {
   const context = carContext();
-  return [context.marque, context.modele, context.annee ? `(${context.annee})` : '', context.motorisation].filter(Boolean).join(' ') || 'Non renseigné';
+  return [context.marque, context.modele, context.annee ? `(${context.annee})` : '', context.motorisation].filter(Boolean).join(' ') || (isEnglish() ? 'Not provided' : 'Non renseigné');
 }
 
 function getCheckItemState(element) {
@@ -90,10 +172,15 @@ function getCheckItemState(element) {
 }
 
 function buildCombinedPrompt(pointDeControle, etat) {
+  if (isEnglish()) return `Vehicle: ${formatActiveVehicle()}. Inspection item: ${pointDeControle}. Status: ${etat}. Explain how to check it on this exact model.`;
   return `Véhicule : ${formatActiveVehicle()}. Point de contrôle : ${pointDeControle}. État : ${etat}. Explique-moi comment vérifier cela sur ce modèle précis.`;
 }
 
-const VEHICLE_CONTEXT_MESSAGE = 'Sélectionnez la marque, le modèle et la motorisation pour obtenir une réponse spécifique à votre véhicule.';
+function vehicleContextMessage() {
+  return isEnglish()
+    ? 'Select the make, model and powertrain to receive a vehicle-specific answer.'
+    : 'Sélectionnez la marque, le modèle et la motorisation pour obtenir une réponse spécifique à votre véhicule.';
+}
 
 async function request(path, body) {
   const controller = new AbortController();
@@ -212,7 +299,7 @@ function reportCard(label, value, className = '', full = false) {
   title.textContent = label;
   const content = document.createElement('p');
   content.className = 'report-value';
-  content.textContent = value || 'Non renseigné';
+  content.textContent = value || (isEnglish() ? 'Not provided' : 'Non renseigné');
   card.append(title, content);
   return card;
 }
@@ -223,28 +310,28 @@ function renderReport(target, data) {
   grid.className = 'report-grid';
   const summary = document.createElement('p');
   summary.className = 'report-summary';
-  const summaryLabels = {
-    preliminary: 'SYNTHÈSE TECHNIQUE PROVISOIRE',
-    probable: 'CAUSE PROBABLE — SYNTHÈSE ÉVOLUTIVE',
-    confirmed: 'CAUSE RACINE CONFIRMÉE',
+  const summaryLabels = isEnglish() ? {
+    preliminary: 'PRELIMINARY TECHNICAL SUMMARY', probable: 'PROBABLE CAUSE — LIVE SUMMARY', confirmed: 'ROOT CAUSE CONFIRMED',
+  } : {
+    preliminary: 'SYNTHÈSE TECHNIQUE PROVISOIRE', probable: 'CAUSE PROBABLE — SYNTHÈSE ÉVOLUTIVE', confirmed: 'CAUSE RACINE CONFIRMÉE',
   };
   summary.textContent = summaryLabels[data.confidence] || summaryLabels.probable;
   const scenario = usageScenarioConfig();
-  grid.append(summary, reportCard('OBJECTIF DU DOSSIER', scenario.label, '', true));
-  grid.append(reportCard('VÉHICULE', data.vehicle, '', true));
-  const fault = reportCard('CODE DÉFAUT', data.fault_code, 'fault');
+  grid.append(summary, reportCard(isEnglish() ? 'REPORT PURPOSE' : 'OBJECTIF DU DOSSIER', scenario.label, '', true));
+  grid.append(reportCard(isEnglish() ? 'VEHICLE' : 'VÉHICULE', data.vehicle, '', true));
+  const fault = reportCard(isEnglish() ? 'FAULT CODE' : 'CODE DÉFAUT', data.fault_code, 'fault');
   fault.querySelector('.report-value').className = 'fault-code';
-  grid.append(fault, reportCard('ÉTAT SYSTÈME', 'Anomalie à confirmer après contrôle', 'warning'));
-  grid.append(reportCard('CAUSE RACINE', data.root_cause, 'fault', true));
+  grid.append(fault, reportCard(isEnglish() ? 'SYSTEM STATUS' : 'ÉTAT SYSTÈME', isEnglish() ? 'Issue to confirm after inspection' : 'Anomalie à confirmer après contrôle', 'warning'));
+  grid.append(reportCard(isEnglish() ? 'ROOT CAUSE' : 'CAUSE RACINE', data.root_cause, 'fault', true));
   const plan = document.createElement('article');
   plan.className = 'report-card full warning';
   const planTitle = document.createElement('p');
   planTitle.className = 'report-label';
-  planTitle.textContent = "PLAN D'ACTION ATELIER";
+  planTitle.textContent = isEnglish() ? 'WORKSHOP ACTION PLAN' : "PLAN D'ACTION ATELIER";
   const list = document.createElement('ol');
   list.className = 'plan-list';
   const steps = splitActionPlan(data.action_plan);
-  (steps.length ? steps : ['Aucune opération détaillée fournie.']).forEach((step) => {
+  (steps.length ? steps : [isEnglish() ? 'No detailed operation provided.' : 'Aucune opération détaillée fournie.']).forEach((step) => {
     const item = document.createElement('li');
     item.textContent = step;
     list.append(item);
@@ -270,7 +357,7 @@ function waitingReport() {
   const scenario = usageScenarioConfig();
   const state = document.createElement('div');
   state.className = 'waiting-state';
-  state.innerHTML = `<div class="radar" aria-hidden="true"><span></span></div><p class="waiting-kicker">${scenario.reportTitle.toUpperCase()}</p><h3>Commencez votre dossier</h3><p>${scenario.context}</p>`;
+  state.innerHTML = `<div class="radar" aria-hidden="true"><span></span></div><p class="waiting-kicker">${scenario.reportTitle.toUpperCase()}</p><h3>${isEnglish() ? 'Start your report' : 'Commencez votre dossier'}</h3><p>${scenario.context}</p>`;
   return state;
 }
 
@@ -331,8 +418,8 @@ export function initializeChatExperience() {
     const heading = document.createElement('p');
     heading.className = 'chat-suggestions-label';
     heading.textContent = initial
-      ? 'Choisissez un symptôme fréquent ou décrivez-le avec vos mots'
-      : 'Réponses proposées';
+      ? (isEnglish() ? 'Choose a common symptom or describe it in your own words' : 'Choisissez un symptôme fréquent ou décrivez-le avec vos mots')
+      : (isEnglish() ? 'Suggested answers' : 'Réponses proposées');
     suggestionsElement.append(heading);
 
     const choices = document.createElement('div');
@@ -352,10 +439,10 @@ export function initializeChatExperience() {
     const customButton = document.createElement('button');
     customButton.type = 'button';
     customButton.className = 'chat-suggestion-chip chat-suggestion-custom';
-    customButton.textContent = '✎ Décrire un autre symptôme';
+    customButton.textContent = isEnglish() ? '✎ Describe another symptom' : '✎ Décrire un autre symptôme';
     customButton.addEventListener('click', () => {
       input.value = '';
-      input.placeholder = 'Décrivez librement ce que vous voyez, entendez ou ressentez…';
+      input.placeholder = isEnglish() ? 'Describe freely what you see, hear or feel…' : 'Décrivez librement ce que vous voyez, entendez ou ressentez…';
       input.focus();
     });
     choices.append(customButton);
@@ -386,8 +473,8 @@ export function initializeChatExperience() {
     const context = carContext();
     const title = [context.marque, context.modele, context.annee ? `(${context.annee})` : '', context.motorisation].filter(Boolean).join(' · ');
     vehicleReadout.textContent = title
-      ? `${usageScenarioConfig().label} · Véhicule actif : ${title}`
-      : `${usageScenarioConfig().label} · Véhicule à sélectionner dans la fiche`;
+      ? `${usageScenarioConfig().label} · ${isEnglish() ? 'Active vehicle' : 'Véhicule actif'} : ${title}`
+      : `${usageScenarioConfig().label} · ${isEnglish() ? 'Select a vehicle in the report' : 'Véhicule à sélectionner dans la fiche'}`;
   }
 
   function openPanel() {
@@ -399,6 +486,7 @@ export function initializeChatExperience() {
 
   toggles.forEach((toggle) => toggle.addEventListener('click', openPanel));
   window.addEventListener('cardiag:scenario-change', applyUsageScenario);
+  window.addEventListener('cardiag:language-change', applyUsageScenario);
   close?.addEventListener('click', () => { panel.hidden = true; });
   reset?.addEventListener('click', () => {
     messages = [];
@@ -423,7 +511,7 @@ export function initializeChatExperience() {
     const content = input.value.trim();
     if (!content) return;
     if (!canUseAssistant()) {
-      status.textContent = VEHICLE_CONTEXT_MESSAGE;
+      status.textContent = vehicleContextMessage();
       return;
     }
 
@@ -510,8 +598,9 @@ export function initializeChatExperience() {
     selectedText = text;
     inlineText.textContent = canUseAssistant()
       ? `Comprendre la vérification : « ${text.slice(0, 120)}${text.length > 120 ? '…' : ''} »`
-      : VEHICLE_CONTEXT_MESSAGE;
+      : vehicleContextMessage();
     inline.hidden = false;
+    inlineAsk.hidden = false;
     inlineAsk.textContent = 'Voir comment vérifier';
     const actionBarHeight = document.querySelector('.action-bar')?.getBoundingClientRect().height || 0;
     const inlineRect = inline.getBoundingClientRect();
@@ -528,15 +617,32 @@ export function initializeChatExperience() {
     inline.style.top = `${top}px`;
   }
 
+  async function loadInlineExplanation() {
+    if (!selectedText) return;
+    inlineAsk.hidden = true;
+    if (!canUseAssistant()) {
+      inlineText.textContent = vehicleContextMessage();
+      return;
+    }
+    inlineAsk.disabled = true;
+    inlineText.textContent = 'Explication et méthode de vérification en cours…';
+    try {
+      const { explanation } = await request('/api/inline', { selectedText, carContext: carContext() });
+      renderSafeInline(inlineText, explanation);
+    } catch (error) {
+      inlineText.textContent = `Explication non disponible : ${error.message}`;
+    } finally {
+      inlineAsk.disabled = false;
+    }
+  }
+
   function showInlineHelp(text, target) {
     if (!text) return;
     selectedText = text;
     inlineContextElement = target;
-    inlineText.textContent = canUseAssistant()
-      ? `Comprendre la vérification : « ${text.slice(0, 120)}${text.length > 120 ? '…' : ''} »`
-      : VEHICLE_CONTEXT_MESSAGE;
+    inlineText.textContent = 'Ouverture de la procédure de contrôle…';
     inline.hidden = false;
-    inlineAsk.textContent = 'Voir comment vérifier';
+    inlineAsk.hidden = true;
     const actionBarHeight = document.querySelector('.action-bar')?.getBoundingClientRect().height || 0;
     const inlineRect = inline.getBoundingClientRect();
     const safeBottom = actionBarHeight + 12;
@@ -551,28 +657,16 @@ export function initializeChatExperience() {
     );
     inline.style.left = `${left}px`;
     inline.style.top = `${top}px`;
+    void loadInlineExplanation();
   }
   window.showInlineHelp = showInlineHelp;
+  window.addEventListener('cardiag:inline-help', (event) => {
+    showInlineHelp(event.detail?.text, event.detail?.target);
+  });
 
   document.addEventListener('selectionchange', showInlineForSelection);
   document.addEventListener('pointerup', showInlineForSelection);
 
   inlineClose?.addEventListener('click', () => { inline.hidden = true; });
-  inlineAsk?.addEventListener('click', async () => {
-    if (!selectedText) return;
-    if (!canUseAssistant()) {
-      inlineText.textContent = VEHICLE_CONTEXT_MESSAGE;
-      return;
-    }
-    inlineAsk.disabled = true;
-    inlineText.textContent = 'Explication et méthode de vérification en cours…';
-    try {
-      const { explanation } = await request('/api/inline', { selectedText, carContext: carContext() });
-      renderSafeInline(inlineText, explanation);
-    } catch (error) {
-      inlineText.textContent = `Explication non disponible : ${error.message}`;
-    } finally {
-      inlineAsk.disabled = false;
-    }
-  });
+  inlineAsk?.addEventListener('click', loadInlineExplanation);
 }

@@ -13,6 +13,7 @@ test('each usage scenario receives dedicated diagnostic instructions', () => {
   const expectations = {
     buyer: /PARCOURS ACHETEUR.*négociation/is,
     mechanic: /PARCOURS GARAGISTE.*plainte exacte/is,
+    rental: /PARCOURS AGENCE DE LOCATION.*kilométrage/is,
     seller: /PARCOURS VENDEUR.*transparent/is,
     owner: /PARCOURS PROPRIÉTAIRE.*vérifications visuelles/is,
   };
@@ -25,4 +26,11 @@ test('each usage scenario receives dedicated diagnostic instructions', () => {
 test('an unknown scenario safely falls back to the buyer workflow', () => {
   assert.match(buildChatInstructions({ ...vehicle, usageScenario: 'invalid' }), /PARCOURS ACHETEUR/);
   assert.match(formatCarContext({ ...vehicle, usageScenario: '<script>' }), /&lt;script&gt;/);
+});
+
+test('English interface forces every AI response field to English', () => {
+  assert.match(
+    buildChatInstructions({ ...vehicle, usageScenario: 'owner', language: 'en' }),
+    /réponds intégralement en anglais.*champs JSON.*suggestions/is,
+  );
 });

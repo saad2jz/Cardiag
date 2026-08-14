@@ -8,13 +8,13 @@ if (keystorePropertiesFile.exists()) {
 
 android {
     namespace = "com.cardiag.online"
-    compileSdk = rootProject.ext.compileSdkVersion
+    compileSdk 36
     defaultConfig {
         applicationId "com.cardiag.online"
-        minSdkVersion rootProject.ext.minSdkVersion
-        targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode (System.getenv('CARDIAG_VERSION_CODE') ?: '1').toInteger()
-        versionName System.getenv('CARDIAG_VERSION_NAME') ?: "1.0.0"
+        minSdk 24
+        targetSdk 36
+        versionCode 1
+        versionName "1.0.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         aaptOptions {
              // Files and dirs to omit from the packaged assets dir, modified to accommodate modern web apps.
@@ -64,9 +64,18 @@ apply from: 'capacitor.build.gradle'
 
 try {
     def servicesJSON = file('google-services.json')
-    if (servicesJSON.text) {
+    def servicesConfig = servicesJSON.exists()
+        ? new groovy.json.JsonSlurper().parse(servicesJSON)
+        : null
+    def hasMatchingAndroidClient = servicesConfig?.client?.any { client ->
+        client?.client_info?.android_client_info?.package_name == android.defaultConfig.applicationId
+    }
+
+    if (hasMatchingAndroidClient) {
         apply plugin: 'com.google.gms.google-services'
+    } else {
+        logger.warn("google-services.json is missing a client for ${android.defaultConfig.applicationId}; Firebase native services are disabled for this build.")
     }
 } catch(Exception e) {
-    logger.info("google-services.json not found, google-services plugin not applied. Push Notifications won't work")
+    logger.warn("google-services.json is invalid; Firebase native services are disabled for this build.")
 }

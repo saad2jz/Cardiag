@@ -6,6 +6,24 @@ const CONTEXT_FIELDS = [
   ['annee', 'Année'],
   ['vin', 'VIN'],
   ['usageScenario', 'Parcours'],
+  ['workOrderReference', 'Ordre de réparation'],
+  ['intakeMileage', 'Kilométrage réception'],
+  ['releaseMileage', 'Kilométrage restitution'],
+  ['intakeCondition', 'État à la réception'],
+  ['repairWorkCompleted', 'Travaux réalisés'],
+  ['postRepairChecks', 'Contrôles après réparation'],
+  ['releaseCondition', 'État à la restitution'],
+  ['fleetVehicleId', 'Identifiant flotte'],
+  ['rentalContractReference', 'Contrat de location'],
+  ['rentalStart', 'Départ location'],
+  ['rentalEnd', 'Retour location'],
+  ['rentalMileageOut', 'Kilométrage départ'],
+  ['rentalMileageIn', 'Kilométrage retour'],
+  ['rentalEnergyOut', 'Énergie départ'],
+  ['rentalEnergyIn', 'Énergie retour'],
+  ['rentalConditionOut', 'État avant location'],
+  ['rentalConditionIn', 'État après location'],
+  ['rentalDamageDelta', 'Dommages nouveaux'],
 ];
 
 const SCENARIO_INSTRUCTIONS = {
@@ -19,6 +37,11 @@ const SCENARIO_INSTRUCTIONS = {
 - Utilise un vocabulaire atelier, propose des mesures discriminantes et conserve les valeurs relevées avant effacement ou démontage.
 - Dans le rapport, produis un ordre de réparation exploitable : faits d'entrée, codes et statuts, valeurs mesurées avec unités, hypothèses hiérarchisées, tests, critères de décision, temps/barème indicatif et travaux soumis à accord.
 - Distingue clairement état d’entrée, hypothèses, contrôles autorisés et travaux qui nécessitent l’accord du client.`,
+  rental: `PARCOURS AGENCE DE LOCATION — GESTION DE FLOTTE
+- Compare systématiquement l’état avant location et l’état au retour : kilométrage, carburant ou charge, carrosserie, vitrage, roues, habitacle, accessoires, voyants et fonctionnement.
+- Distingue les dommages préexistants des écarts nouveaux et ne formule aucune imputation au locataire sans preuve datée, contradictoire et photographique.
+- Dans le rapport, indique la référence du véhicule et du contrat, les heures de départ/retour, les kilométrages, la distance parcourue, les niveaux d’énergie, les écarts constatés et les actions d’entretien ou d’immobilisation.
+- Signale les incohérences de kilométrage, les risques de sécurité et les contrôles nécessaires avant la prochaine mise en location.`,
   seller: `PARCOURS VENDEUR — RAPPORT AVANT VENTE
 - Produis un dossier neutre et transparent transmissible à un acheteur : entretien justifiable, contrôles réalisés, défauts connus, limites et réparations documentées.
 - N’aide jamais à masquer, minimiser ou effacer un défaut. Signale les pièces justificatives et photos utiles.
@@ -53,10 +76,15 @@ export function formatCarContext(carContext) {
 }
 
 export function buildChatInstructions(carContext) {
-  const scenarioKey = ['buyer', 'mechanic', 'seller', 'owner'].includes(carContext?.usageScenario)
+  const scenarioKey = ['buyer', 'mechanic', 'rental', 'seller', 'owner'].includes(carContext?.usageScenario)
     ? carContext.usageScenario
     : 'buyer';
+  const outputLanguage = carContext?.language === 'en'
+    ? 'LANGUE DE SORTIE OBLIGATOIRE : réponds intégralement en anglais, y compris tous les champs JSON, explications, questions, plans de test et suggestions.'
+    : 'LANGUE DE SORTIE OBLIGATOIRE : réponds intégralement en français.';
   return `Tu es l'expert mécanicien de CarDiag.online, un chef d'atelier expérimenté qui aide à diagnostiquer et vérifier un véhicule spécifique.
+
+${outputLanguage}
 
 ${SCENARIO_INSTRUCTIONS[scenarioKey]}
 

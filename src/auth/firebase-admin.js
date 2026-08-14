@@ -15,6 +15,48 @@ function adminCredential(env) {
   return applicationDefault();
 }
 
+export function validateHistoryRecords(records) {
+  const validated = [];
+  const seenIds = new Set();
+  for (const record of records) {
+    const id = String(record?.id || '');
+    if (!/^[a-zA-Z0-9_-]{1,100}$/.test(id)) {
+      throw Object.assign(new Error('ID de fiche invalide.'), { code: 'INVALID_RECORD_ID' });
+    }
+    if (seenIds.has(id)) {
+      throw Object.assign(new Error('ID de fiche dupliqué.'), { code: 'DUPLICATE_RECORD_ID' });
+    }
+    seenIds.add(id);
+    validated.push({ record, id });
+  }
+  return validated;
+}
+
+function safeVersion(value) {
+  return Number.isSafeInteger(value) && value >= 0 ? value : 0;
+}
+
+export function planHistoryRecord({ record, id }, serverData, exists, now) {
+  const serverVersion = safeVersion(serverData?.syncVersion);
+  const clientVersion = safeVersion(record.syncVersion);
+  if (exists && serverVersion > clientVersion) {
+    return { conflict: { id, serverVersion, serverRecord: serverData } };
+  }
+  const syncVersion = serverVersion + 1;
+  return {
+    synced: { id, syncVersion },
+    value: {
+      id,
+      titre: String(record.titre || '').slice(0, 160),
+      data: record.data && typeof record.data === 'object' && !Array.isArray(record.data) ? record.data : {},
+      createdAt: String(exists ? (serverData?.createdAt || record.createdAt || now) : (record.createdAt || now)).slice(0, 40),
+      hasLocalMedia: Boolean(record.hasLocalMedia),
+      syncVersion,
+      updatedAt: now,
+    },
+  };
+}
+
 export function createFirebaseAccountService(env = process.env) {
   if (!env.FIREBASE_PROJECT_ID) return null;
   const app = getApps()[0] || initializeApp({ credential: adminCredential(env), projectId: env.FIREBASE_PROJECT_ID });
@@ -32,7 +74,7 @@ export function createFirebaseAccountService(env = process.env) {
       const sanitized = {
         displayName: String(profile.displayName || '').slice(0, 80),
         avatar: String(profile.avatar || '').slice(0, 400_000),
-        role: ['buyer','mechanic','seller','owner'].includes(profile.role) ? profile.role : 'buyer',
+        role: ['buyer','mechanic','rental','seller','owner'].includes(profile.role) ? profile.role : 'buyer',
         consent: Boolean(profile.consent),
         consentAt: profile.consent ? new Date().toISOString() : null,
         updatedAt: new Date().toISOString(),
@@ -45,23 +87,29 @@ export function createFirebaseAccountService(env = process.env) {
       return snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
     },
     async saveHistory(uid, records) {
-      const batch = firestore.batch();
-      for (const record of records.slice(0, 100)) {
-        const id = String(record.id || '').replace(/[^a-zA-Z0-9_-]/g, '').slice(0, 100);
-        if (!id) continue;
-        const ref = firestore.collection('users').doc(uid).collection('history').doc(id);
-        const safeRecord = {
+      const uniqueRecords = validateHistoryRecords(records);
+      const now = new Date().toISOString();
+      return firestore.runTransaction(async (transaction) => {
+        const entries = uniqueRecords.map(({ record, id }) => ({
+          record,
           id,
-          titre: String(record.titre || '').slice(0, 160),
-          data: record.data && typeof record.data === 'object' ? record.data : {},
-          createdAt: String(record.createdAt || '').slice(0, 40),
-          hasLocalMedia: Boolean(record.hasLocalMedia),
-          updatedAt: new Date().toISOString(),
-        };
-        batch.set(ref, safeRecord, { merge: true });
-      }
-      await batch.commit();
-      return { synced: records.length };
+          ref: firestore.collection('users').doc(uid).collection('history').doc(id),
+        }));
+        const snapshots = entries.length ? await transaction.getAll(...entries.map(({ ref }) => ref)) : [];
+        const synced = [];
+        const conflicts = [];
+        entries.forEach((entry, index) => {
+          const snapshot = snapshots[index];
+          const serverData = snapshot?.exists ? snapshot.data() : null;
+          const plan = planHistoryRecord(entry, serverData, Boolean(snapshot?.exists), now);
+          if (plan.conflict) conflicts.push(plan.conflict);
+          else {
+            transaction.set(entry.ref, plan.value, { merge: true });
+            synced.push(plan.synced);
+          }
+        });
+        return { synced, conflicts };
+      });
     },
     async savePushToken(uid, token) {
       const deviceId = createHash('sha256').update(token).digest('hex');
