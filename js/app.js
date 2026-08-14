@@ -1,8 +1,10 @@
-import { initializeLegacyFeatures } from './legacy-features.js?v=20260814-1';
-import { initializeChatExperience } from './chat-experience.js?v=20260813-1';
+import { initializeLegacyFeatures } from './legacy-features.js?v=20260814-4';
+import { initializeChatExperience } from './chat-experience.js?v=20260814-3';
 import { initializePwa } from './pwa.js?v=20260808-3';
-import { initializeWizard } from './wizard.js?v=20260813-1';
+import { initializeWizard } from './wizard.js?v=20260814-2';
+import { initializeI18n } from './i18n/i18n.js?v=20260814-1';
 import { initializeWizardInteractions } from './wizard/interactions.js?v=20260813-1';
+import { initializeVehiclePicker } from './wizard/vehicle-picker.js?v=20260814-1';
 import { initializeThemeManager } from './theming/theme-manager.js?v=20260813-1';
 import { initializeMediaManager } from './media/media-manager.js?v=20260813-2';
 import { initializeAuthUi } from './auth/auth-ui.js?v=20260814-1';
@@ -11,12 +13,12 @@ import { initializeConnectivity } from './native/connectivity.js?v=20260813-1';
 import { initializeSyncQueue } from './native/sync-queue.js?v=20260814-1';
 import { initializeAppLinks } from './native/app-links.js?v=20260813-1';
 import { initializePush } from './native/push.js?v=20260813-1';
-import { initializeSettings } from './settings/settings.js?v=20260813-1';
+import { initializeSettings } from './settings/settings.js?v=20260814-2';
 import { initializeConsent } from './auth/consent.js?v=20260813-1';
 import { initializeScoreVisuals } from './score/score-visuals.js?v=20260813-1';
-import { initializeRecordsGallery } from './records/records-gallery.js?v=20260813-1';
-import { initializePremiumReport } from './reports/premium-report.js?v=20260813-2';
-import { initializeReportSharing } from './reports/report-sharing.js?v=20260813-1';
+import { initializeRecordsGallery } from './records/records-gallery.js?v=20260814-2';
+import { initializePremiumReport } from './reports/premium-report.js?v=20260814-2';
+import { initializeReportSharing } from './reports/report-sharing.js?v=20260814-2';
 
 /**
  * Application entry point. Data loading stays separate from the UI controller
@@ -35,9 +37,11 @@ async function initializeApp() {
     const modelsCount = document.getElementById('vehicleModelCount');
     if (brandCount) brandCount.textContent = String(vehicles.length);
     if (modelsCount) modelsCount.textContent = String(modelCount);
+    initializeI18n();
     initializeLegacyFeatures(vehicles);
     initializeChatExperience();
     initializeWizard();
+    initializeVehiclePicker();
     initializeWizardInteractions();
     await initializeThemeManager();
     initializeMediaManager();

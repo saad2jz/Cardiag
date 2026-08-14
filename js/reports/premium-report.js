@@ -1,3 +1,5 @@
+import { calculateNegotiation } from './negotiation.js?v=20260814-1';
+
 const SECTION_ORDER = ['info','moteur','chassis','carrosserie','habitacle','essai','diagnostic'];
 const STATUS = {
   ok:{ label:'OK', color:[22,163,74] },
@@ -35,7 +37,9 @@ export function executiveSummary(model) {
   else if(warnings.length) parts.push(`Points à chiffrer : ${warnings.slice(0,3).map(point=>point.label).join(', ')}.`);
   const price=Number(model.data.valeur)||0, repairs=Number(model.data.frais_estimation)||0, budget=Number(model.data.budget_max)||0;
   const budgetText=budget ? ((price+repairs)<=budget ? `le coût projeté de ${numberLabel(price+repairs)} € reste dans le budget` : `le coût projeté dépasse le budget de ${numberLabel(price+repairs-budget)} €`) : 'le budget maximal n’est pas renseigné';
-  parts.push(model.verdict ? `Conclusion : décision ${model.verdictLabel} ; ${budgetText}.` : `Conclusion : décision finale à consigner ; ${budgetText}.`);
+  const negotiation=model.negotiation || calculateNegotiation(model);
+  const negotiationText=negotiation?.amount ? ` Marge de négociation calculée selon l’état : ${numberLabel(negotiation.amount)} €.` : '';
+  parts.push((model.verdict ? `Conclusion : décision ${model.verdictLabel} ; ${budgetText}.` : `Conclusion : décision finale à consigner ; ${budgetText}.`) + negotiationText);
   return parts.join(' ');
 }
 
@@ -73,7 +77,7 @@ function addFooter(pdf,palette,reference,page,total,generatedAt,decision) {
 export async function createPdf(model,branding) {
   if(!window.jspdf?.jsPDF) throw new Error('jsPDF indisponible');
   const { jsPDF }=window.jspdf;const pdf=new jsPDF({orientation:'portrait',unit:'mm',format:'a4',compress:true});
-  const palette=THEMES[branding?.theme] || THEMES.carbon;const w=210,h=297;const ref=String(model.id||Date.now()).replace(/^t/,'CD-').toUpperCase();const generatedAt=new Date();const decision=effectiveDecision(model);
+  const palette=THEMES[branding?.theme] || THEMES.carbon;const w=210,h=297;const ref=String(model.id||Date.now()).replace(/^t/,'CD-').toUpperCase();const generatedAt=new Date();const decision=effectiveDecision(model);const negotiation=model.negotiation || calculateNegotiation(model);
 
   // Couverture
   pdf.setFillColor(...palette.page);pdf.rect(0,0,w,h,'F');
@@ -142,9 +146,12 @@ export async function createPdf(model,branding) {
 
   // Budget et négociation
   pdf.addPage();y=setupPage(pdf,palette,'Budget & négociation');
-  const price=Number(model.data.valeur)||0,repairs=Number(model.data.frais_estimation)||0,budget=Number(model.data.budget_max)||0;const suggested=String(model.data.marge_negociation||'').trim()|| (repairs?`-${repairs.toLocaleString('fr-FR')} €`:'—');
-  [['Valeur affichée',euro(price)],['Frais de remise en état estimés',euro(repairs)],['Marge de négociation suggérée',suggested],['Budget maximum',euro(budget)]].forEach(([label,value],index)=>{pdf.setFillColor(...(index%2?palette.page:palette.surface));pdf.rect(16,y,178,18,'F');pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','normal');pdf.setFontSize(8);pdf.text(label,21,y+11);pdf.setTextColor(...palette.text);pdf.setFont('helvetica','bold');pdf.setFontSize(11);pdf.text(value,188,y+11,{align:'right'});y+=18;});
-  y+=14;pdf.setTextColor(...palette.text);pdf.setFontSize(12);pdf.text('Lecture financière',16,y);y+=9;pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','normal');pdf.setFontSize(9);const financial=price?`Coût d’acquisition projeté après remise en état : ${numberLabel(price+repairs)} €. ${budget?((price+repairs)<=budget?'Le projet reste dans le budget annoncé.':`Le budget est dépassé de ${numberLabel(price+repairs-budget)} €.`):'Le budget maximal reste à renseigner.'}`:'La valeur affichée doit être renseignée pour calculer le coût global.';pdf.text(pdf.splitTextToSize(financial,178),16,y,{lineHeightFactor:1.5});
+  const price=Number(model.data.valeur)||0,repairs=Number(model.data.frais_estimation)||0,budget=Number(model.data.budget_max)||0;const suggested=negotiation?.amount ? `-${numberLabel(negotiation.amount)} €` : String(model.data.marge_negociation||'').trim()|| (repairs?`-${repairs.toLocaleString('fr-FR')} €`:'—');
+  const financialRows=[['Valeur affichée',euro(price)],['Frais de remise en état estimés',euro(repairs)],['Marge de négociation basée sur l’état',suggested]];
+  if(negotiation?.targetPrice)financialRows.push(['Prix cible conseillé',euro(negotiation.targetPrice)]);
+  financialRows.push(['Budget maximum',euro(budget)]);
+  financialRows.forEach(([label,value],index)=>{pdf.setFillColor(...(index%2?palette.page:palette.surface));pdf.rect(16,y,178,18,'F');pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','normal');pdf.setFontSize(8);pdf.text(label,21,y+11);pdf.setTextColor(...palette.text);pdf.setFont('helvetica','bold');pdf.setFontSize(11);pdf.text(value,188,y+11,{align:'right'});y+=18;});
+  y+=14;pdf.setTextColor(...palette.text);pdf.setFontSize(12);pdf.text('Lecture financière',16,y);y+=9;pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','normal');pdf.setFontSize(9);const financial=price?`Coût d’acquisition projeté après remise en état : ${numberLabel(price+repairs)} €. ${budget?((price+repairs)<=budget?'Le projet reste dans le budget annoncé.':`Le budget est dépassé de ${numberLabel(price+repairs-budget)} €.`):'Le budget maximal reste à renseigner.'}${negotiation?.label?` ${negotiation.label}`:''}${negotiation?.arguments?.length?` Arguments factuels : ${negotiation.arguments.join(', ')}.`:''}`:'La valeur affichée doit être renseignée pour calculer le coût global.';pdf.text(pdf.splitTextToSize(financial,178),16,y,{lineHeightFactor:1.5});
 
   // Signatures et validation
   pdf.addPage();y=setupPage(pdf,palette,'Signatures & validation');
@@ -159,18 +166,55 @@ export async function createPdf(model,branding) {
 export function initializePremiumReport() {
   const button=document.getElementById('generateBtn');const shortButton=document.getElementById('shortPrintBtn');
   shortButton?.addEventListener('click',()=>window.cardiagDataBridge?.printShort?.());
+  const translate=(key,fallback)=>window.cardiagI18n?.t?.(key,fallback)||fallback;
+
+  function filenameFor(model){return `CarDiag_${model.title||model.id}`.replace(/[^a-z0-9_-]+/gi,'_')+'.pdf';}
+
+  function chooseAction(){
+    return new Promise((resolve)=>{
+      const layer=document.createElement('section');layer.className='report-action-sheet';
+      layer.innerHTML=`<div role="dialog" aria-modal="true" aria-labelledby="reportActionTitle"><p class="panel-kicker">RAPPORT PDF PREMIUM</p><h2 id="reportActionTitle">${translate('report.choose','Que souhaitez-vous faire avec le rapport ?')}</h2><div class="report-action-options"><button type="button" data-report-action="download">⬇ <span>${translate('report.download','Télécharger le PDF')}</span></button><button type="button" data-report-action="share">↗ <span>${translate('report.share','Partager le PDF')}</span></button><button type="button" data-report-action="link">🔗 <span>${translate('report.link','Partager un lien privé')}</span></button><button type="button" class="report-action-cancel" data-report-action="cancel">${translate('report.cancel','Annuler')}</button></div></div>`;
+      const finish=(value)=>{layer.remove();resolve(value)};
+      layer.addEventListener('click',(event)=>{const action=event.target.closest('[data-report-action]')?.dataset.reportAction;if(action)finish(action==='cancel'?'':action);else if(event.target===layer)finish('')});
+      document.body.append(layer);layer.querySelector('[data-report-action="download"]')?.focus();
+    });
+  }
+
+  function markGenerated(model){
+    window.cardiagDataBridge?.markReportGenerated?.(model.id);
+    window.dispatchEvent(new CustomEvent('cardiag:report-generated',{detail:{id:model.id}}));
+  }
+
+  async function perform(action,id){
+    const model=window.cardiagDataBridge?.getReportModel?.(id);if(!model)return false;
+    if(action==='link'){
+      markGenerated(model);
+      document.getElementById('shareReportBtn')?.click();
+      return true;
+    }
+    const branding=window.cardiagBranding?.current||{theme:'carbon',workshopName:'CarDiag'};
+    const {pdf}=await createPdf(model,branding);const filename=filenameFor(model);
+    if(action==='share'){
+      const blob=pdf.output('blob');const file=new File([blob],filename,{type:'application/pdf'});
+      if(navigator.canShare?.({files:[file]}))await navigator.share({files:[file],title:'Rapport CarDiag'});
+      else {pdf.save(filename);window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback',{detail:{type:'selection',message:'Le partage de fichiers n’est pas disponible : le PDF a été téléchargé.'}}));}
+    }else{
+      pdf.save(filename);
+    }
+    markGenerated(model);
+    window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback',{detail:{type:'success',message:action==='share'?'Rapport prêt à partager':'Rapport PDF téléchargé'}}));
+    return true;
+  }
+
+  async function run(action,id){
+    const original=button?.textContent; if(button){button.disabled=true;button.textContent='⏳ Composition du rapport…';}
+    try{return await perform(action,id)}catch(error){console.error('PDF premium:',error);window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback',{detail:{type:'error',message:'Rapport premium temporairement indisponible'}}));return false}finally{if(button){button.disabled=false;button.textContent=original}}
+  }
+
   window.cardiagPremiumReport={
-    async generate(){
-      const model=window.cardiagDataBridge?.getReportModel?.();if(!model)return;
-      const original=button.textContent;button.disabled=true;button.textContent='⏳ Composition du rapport…';
-      try{
-        const branding=window.cardiagBranding?.current||{theme:'carbon',workshopName:'CarDiag'};const {pdf}=await createPdf(model,branding);const filename=`CarDiag_${model.title||model.id}`.replace(/[^a-z0-9_-]+/gi,'_')+'.pdf';const blob=pdf.output('blob');let shared=false;
-        try{const file=new File([blob],filename,{type:'application/pdf'});if(navigator.canShare?.({files:[file]})){await navigator.share({files:[file],title:'Rapport CarDiag'});shared=true;}}catch{/* Téléchargement classique ci-dessous. */}
-        if(!shared)pdf.save(filename);
-        window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback',{detail:{type:'success',message:'Rapport PDF premium généré'}}));
-      }catch(error){console.error('PDF premium:',error);window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback',{detail:{type:'error',message:'Rapport premium indisponible, ouverture de la version courte'}}));window.cardiagDataBridge?.printShort?.();}
-      finally{button.disabled=false;button.textContent=original;}
-    },
+    async generate(id){const action=await chooseAction();return action?run(action,id):false},
+    download:(id)=>run('download',id),
+    share:(id)=>run('share',id),
     createPdf,
   };
 }
