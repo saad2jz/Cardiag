@@ -1,0 +1,144 @@
+{
+  "nom": "Auburn",
+  "modeles": [
+    {
+      "nom": "851",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "convertible",
+        "countries": [
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "851 / 851SC",
+          "annees": "1935",
+          "phases": [
+            "Berlines, cabriolets et 851SC Speedster ; toute Speedster doit être expertisée pour exclure une réplique"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "4.6 I8 Lycoming atmosphérique — 115 ch",
+              "code_moteur": "Lycoming GG/280 ci",
+              "cylindree": "4 585 cm³",
+              "puissance_ch": 115,
+              "boite": [
+                "Boîte manuelle 3 rapports + pont Dual-Ratio"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Authenticité 851/851SC et détection des répliques",
+                  "symptomes": [
+                    "Numéros/plaque absents",
+                    "Carrosserie ou mécanique moderne",
+                    "Détails incohérents"
+                  ],
+                  "kilometrage_apparition": "À contrôler avant toute valorisation",
+                  "diagnostic": "Vérifier numéros de châssis, Lycoming, plaques Ab Jenkins, carrosserie et archives Auburn Cord Duesenberg ; distinguer berline/cabriolet/Speedster, atmosphérique, SC et réplique moderne",
+                  "piece_concernee": "Identité, châssis et carrosserie Auburn",
+                  "gravite": "Critique pour valeur et conformité",
+                  "frequence": "Risque très élevé de réplique pour les Speedster",
+                  "cout_reparation_estime": "Variable à très élevé : expertise spécialisée indispensable"
+                },
+                {
+                  "probleme": "Lubrification, compresseur et carburation du Lycoming huit-en-ligne",
+                  "symptomes": [
+                    "Pression faible",
+                    "Fumée",
+                    "Surchauffe ou manque de puissance"
+                  ],
+                  "kilometrage_apparition": "À contrôler indépendamment du compteur",
+                  "diagnostic": "Mesurer compressions/pression, inspecter paliers, soupapes latérales, pompe, radiateur, Stromberg, allumage, compresseur Schwitzer-Cummins, huile et fuites ; analyser bruit à chaud",
+                  "piece_concernee": "Lycoming 280 ci et suralimentation",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sans réfection documentée",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 60 000 €"
+                },
+                {
+                  "probleme": "Boîte trois rapports, pont Dual-Ratio, freins et direction",
+                  "symptomes": [
+                    "Rapports difficiles",
+                    "Pont court/long inopérant",
+                    "Freinage ou direction imprécis"
+                  ],
+                  "kilometrage_apparition": "Variable, souvent après immobilisation",
+                  "diagnostic": "Contrôler embrayage, pignons, commande Dual-Ratio, arbre/pont, roulements, câbles/hydraulique de frein, tambours, boîtier, pivots, roues à rayons et pneus",
+                  "piece_concernee": "Transmission et organes de sécurité",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente avec l’âge",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 30 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "4.6 I8 Lycoming Supercharged — 150 ch",
+              "code_moteur": "Lycoming GH/280 ci SC",
+              "cylindree": "4 585 cm³",
+              "puissance_ch": 150,
+              "boite": [
+                "Boîte manuelle 3 rapports + pont Dual-Ratio"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Authenticité 851/851SC et détection des répliques",
+                  "symptomes": [
+                    "Numéros/plaque absents",
+                    "Carrosserie ou mécanique moderne",
+                    "Détails incohérents"
+                  ],
+                  "kilometrage_apparition": "À contrôler avant toute valorisation",
+                  "diagnostic": "Vérifier numéros de châssis, Lycoming, plaques Ab Jenkins, carrosserie et archives Auburn Cord Duesenberg ; distinguer berline/cabriolet/Speedster, atmosphérique, SC et réplique moderne",
+                  "piece_concernee": "Identité, châssis et carrosserie Auburn",
+                  "gravite": "Critique pour valeur et conformité",
+                  "frequence": "Risque très élevé de réplique pour les Speedster",
+                  "cout_reparation_estime": "Variable à très élevé : expertise spécialisée indispensable"
+                },
+                {
+                  "probleme": "Lubrification, compresseur et carburation du Lycoming huit-en-ligne",
+                  "symptomes": [
+                    "Pression faible",
+                    "Fumée",
+                    "Surchauffe ou manque de puissance"
+                  ],
+                  "kilometrage_apparition": "À contrôler indépendamment du compteur",
+                  "diagnostic": "Mesurer compressions/pression, inspecter paliers, soupapes latérales, pompe, radiateur, Stromberg, allumage, compresseur Schwitzer-Cummins, huile et fuites ; analyser bruit à chaud",
+                  "piece_concernee": "Lycoming 280 ci et suralimentation",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sans réfection documentée",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 60 000 €"
+                },
+                {
+                  "probleme": "Boîte trois rapports, pont Dual-Ratio, freins et direction",
+                  "symptomes": [
+                    "Rapports difficiles",
+                    "Pont court/long inopérant",
+                    "Freinage ou direction imprécis"
+                  ],
+                  "kilometrage_apparition": "Variable, souvent après immobilisation",
+                  "diagnostic": "Contrôler embrayage, pignons, commande Dual-Ratio, arbre/pont, roulements, câbles/hydraulique de frein, tambours, boîtier, pivots, roues à rayons et pneus",
+                  "piece_concernee": "Transmission et organes de sécurité",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente avec l’âge",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 30 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "source_catalogue": "VehiclesDB 2026.08.2 (CC-BY 4.0)"
+}

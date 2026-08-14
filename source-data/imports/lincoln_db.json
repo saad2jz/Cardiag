@@ -1,0 +1,867 @@
+[
+  {
+    "marque": "Lincoln",
+    "modeles": [
+      {
+        "nom": "Navigator",
+        "generations": [
+          {
+            "code_chassis": "1ère génération (base Ford Expedition)",
+            "annees": "1998-2002",
+            "phases": [
+              "Phase 1 (1998-2000)",
+              "Phase 2 restylée (2001-2002)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "5.4 Triton V8 - 230 à 260ch",
+                "code_moteur": "Triton 5.4 SOHC 2V",
+                "cylindree": "5.4L",
+                "puissance_ch": 260,
+                "boite": [
+                  "BVA4"
+                ],
+                "points_faibles": [
+                  "Millésimes 1998-2000 identifiés comme les plus problématiques de toute l'histoire du Navigator, fuites de joint de culasse documentées avec odeur d'huile brûlée et fumée légère, consommation d'huile supérieure à la normale",
+                  "Rappel constructeur pour risque d'incendie moteur sur le millésime 2001",
+                  "Suspension pneumatique sujette à défaillance complète documentée, provoquant un affaissement dangereux du véhicule notamment à vitesse autoroutière (2003, techniquement génération suivante, mais défaut hérité)",
+                  "Millésime 2002 identifié comme le plus fiable de cette première génération, nettement moins de plaintes que les années précédentes"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "2e génération",
+            "annees": "2003-2006",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "5.4 Triton 3V V8 - 300ch",
+                "code_moteur": "Triton 5.4 3V",
+                "cylindree": "5.4L",
+                "puissance_ch": 300,
+                "boite": [
+                  "BVA4"
+                ],
+                "points_faibles": [
+                  "Défaillance de suspension complète massivement documentée sur cette génération, provoquant un affaissement soudain et dangereux du véhicule, réparations coûteuses répétées (airbags, bras de suspension)",
+                  "Millésime 2003 (redesign) concerné par de nombreuses plaintes touchant moteur, électricité et suspension simultanément",
+                  "Millésime 2006 particulièrement marqué par des problèmes persistants de suspension pneumatique",
+                  "Millésime 2005 identifié comme le meilleur choix de cette génération, moins de plaintes et de défauts sévères"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "3e génération",
+            "annees": "2007-2017",
+            "phases": [
+              "Phase 1 (2007-2014)",
+              "Phase 2 restylée (2015-2017)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "5.4 Triton 3V V8 - 310ch",
+                "code_moteur": "Triton 5.4 3V",
+                "cylindree": "5.4L",
+                "puissance_ch": 310,
+                "boite": [
+                  "BVA6"
+                ],
+                "points_faibles": [
+                  "Bougies d'allumage 3 électrodes cassantes documentées sur ce bloc, défaut historique partagé avec le F-150 de la même période",
+                  "Millésime 2014 associé à un petit volume de plaintes moteur et transmission mais globalement peu problématique",
+                  "Fiabilité globale nettement meilleure à partir de 2011, cette génération étant considérée comme majoritairement positive de 2011 à 2017",
+                  "Millésimes 2015-2017 identifiés comme les plus fiables, mécanique inchangée mais record de fiabilité continu depuis la 3e génération"
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "3.5 EcoBoost Twin-Turbo V6 - 380ch (à partir de 2015)",
+                "code_moteur": "EcoBoost 3.5 Twin-Turbo V6",
+                "cylindree": "3.5L",
+                "puissance_ch": 380,
+                "boite": [
+                  "BVA6"
+                ],
+                "points_faibles": [
+                  "Remplacement du V8 historique par un V6 biturbo EcoBoost lors du restylage 2015, rupture avec la tradition V8 du Navigator",
+                  "Cas de fuites moteur et de liquide de refroidissement rapportés, particulièrement sur ce bloc turbocompressé",
+                  "Turbo sensible à l'entretien, vidanges rapprochées recommandées",
+                  "Fiabilité globale toujours considérée comme solide sur cette phase restylée"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "4e génération",
+            "annees": "2018-présent",
+            "phases": [
+              "Phase 1 (2018-2021)",
+              "Phase 2 restylée (2022-présent)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "3.5 EcoBoost Twin-Turbo V6 - 450ch",
+                "code_moteur": "EcoBoost 3.5 Twin-Turbo V6 (révisé, boîte 10 rapports)",
+                "cylindree": "3.5L",
+                "puissance_ch": 450,
+                "boite": [
+                  "BVA10"
+                ],
+                "points_faibles": [
+                  "Millésimes 2018-2019 (redesign) identifiés comme problématiques : problèmes de calage de distribution (camshaft timing) et bruits moteur documentés, cumulés à de nombreux rappels constructeur",
+                  "Rappel constructeur (2021-2026) pour capuchon de moteur mal aligné pouvant provoquer une fuite d'huile rapide sur les blocs 3.5L GTDI",
+                  "Rappel constructeur pour module de remorquage intégré (ITRM) pouvant perdre la communication avec le véhicule, provoquant une perte des feux de freinage/clignotants voire une perte de freinage lors du remorquage",
+                  "Fiabilité nettement améliorée sur les millésimes 2020-2023, considérés comme les plus fiables de cette 4e génération"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Continental / MKS",
+        "generations": [
+          {
+            "code_chassis": "Mark VI (personal luxury, Panther)",
+            "annees": "1980-1983",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "5.0/5.8 Windsor V8 - 130 à 160ch",
+                "code_moteur": "Windsor 302/351",
+                "cylindree": "5.8L",
+                "puissance_ch": 160,
+                "boite": [
+                  "BVA4 AOD"
+                ],
+                "points_faibles": [
+                  "Puissance en net recul du fait des normes anti-pollution et de la crise pétrolière de l'époque",
+                  "Corrosion des bas de caisse et longerons typique des véhicules américains de cette période",
+                  "Consommation de carburant élevée malgré la puissance modeste",
+                  "Faible valeur de collection aujourd'hui comparée aux Continental des générations antérieures"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "9e génération (FWD, plateforme FN10)",
+            "annees": "1988-2002",
+            "phases": [
+              "Phase 1 (1988-1994)",
+              "Phase 2 restylée (1995-2002)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "4.6 InTech/Modular V8 - 260 à 275ch",
+                "code_moteur": "InTech 4.6 DOHC (1993-1994) / Modular 4.6 (1995+)",
+                "cylindree": "4.6L",
+                "puissance_ch": 275,
+                "boite": [
+                  "BVA4 AXOD-E"
+                ],
+                "points_faibles": [
+                  "Suspension pneumatique électronique (Air Ride) sujette à pannes documentées, coûteuse à réparer",
+                  "Boîte automatique AXOD-E sensible en usage intensif",
+                  "Corrosion des durites de climatisation avec l'âge",
+                  "Retiré définitivement de la gamme en 2002, laissant place à la gamme MKS/MKZ à partir de 2006"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "MKS (10e génération, hiatus du nom Continental)",
+            "annees": "2009-2016",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "3.7 Ti-VCT V6 - 273 à 304ch",
+                "code_moteur": "Cyclone 3.7 Ti-VCT",
+                "cylindree": "3.7L",
+                "puissance_ch": 304,
+                "boite": [
+                  "BVA6"
+                ],
+                "points_faibles": [
+                  "Nom Continental temporairement remplacé par MKS dans le cadre de la nomenclature alphanumérique de Lincoln (2007-2019)",
+                  "Base technique partagée avec la Ford Taurus contemporaine (plateforme D3/D4)",
+                  "Consommation de carburant élevée pour la catégorie",
+                  "Fiabilité mécanique globale jugée correcte, bloc Cyclone réputé robuste"
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "3.5 EcoBoost Twin-Turbo V6 - 365ch",
+                "code_moteur": "EcoBoost 3.5 Twin-Turbo V6",
+                "cylindree": "3.5L",
+                "puissance_ch": 365,
+                "boite": [
+                  "BVA6"
+                ],
+                "points_faibles": [
+                  "Turbos fortement sollicités, entretien rigoureux nécessaire",
+                  "Traction intégrale disponible en série sur cette version haute performance",
+                  "Consommation de carburant élevée malgré le downsizing",
+                  "Diffusion limitée, retiré de la gamme en 2016 avant le retour du nom Continental en 2017"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "10e génération (retour officiel du nom Continental)",
+            "annees": "2017-2020",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "3.7 Ti-VCT V6 - 305ch",
+                "code_moteur": "Cyclone 3.7 Ti-VCT",
+                "cylindree": "3.7L",
+                "puissance_ch": 305,
+                "boite": [
+                  "BVA6"
+                ],
+                "points_faibles": [
+                  "Retour du nom Continental après 15 ans d'absence, mais ventes décevantes ayant conduit à l'arrêt définitif du modèle dès 2020",
+                  "Boîte automatique 6 rapports jugée en retrait face à la concurrence allemande disposant de boîtes 8-9 rapports",
+                  "Consommation de carburant plus élevée que les concurrents équipés de moteurs turbo downsizés",
+                  "Retiré de la gamme sans successeur direct, Lincoln se recentrant entièrement sur les SUV"
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "2.7 EcoBoost Twin-Turbo V6 - 335ch",
+                "code_moteur": "EcoBoost Nano 2.7 Twin-Turbo",
+                "cylindree": "2.7L",
+                "puissance_ch": 335,
+                "boite": [
+                  "BVA6"
+                ],
+                "points_faibles": [
+                  "Pompe à eau correctement dimensionnée sur ce bloc selon plusieurs retours propriétaires, contrairement aux inquiétudes exprimées sur la position de la pompe à huile",
+                  "Turbo sollicité fortement en usage dynamique, entretien rigoureux recommandé",
+                  "Version essentiellement à traction avant, transaxle potentiellement sollicité par le couple élevé du bloc",
+                  "Consommation de carburant très correcte pour la catégorie selon plusieurs retours d'utilisateurs à haut kilométrage"
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "3.0 EcoBoost Twin-Turbo V6 - 400ch",
+                "code_moteur": "EcoBoost 3.0 Twin-Turbo V6",
+                "cylindree": "3.0L",
+                "puissance_ch": 400,
+                "boite": [
+                  "BVA6"
+                ],
+                "points_faibles": [
+                  "Version la plus performante de la gamme Continental, traction intégrale de série avec différentiel arrière à vectorisation de couple",
+                  "Turbos fortement sollicités, entretien rigoureux nécessaire",
+                  "Diffusion très limitée, dernière et plus puissante Continental avant l'arrêt définitif du modèle",
+                  "Coût d'entretien plus élevé que les autres motorisations de la gamme"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "MKZ / Zephyr",
+        "generations": [
+          {
+            "code_chassis": "1ère génération (Zephyr 2006 puis MKZ, base Ford Fusion CD3)",
+            "annees": "2006-2012",
+            "phases": [
+              "Zephyr (2006)",
+              "MKZ (2007-2012)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "3.5 Duratec V6 - 263ch",
+                "code_moteur": "Duratec 35 (3.5L V6)",
+                "cylindree": "3.5L",
+                "puissance_ch": 263,
+                "boite": [
+                  "BVA6"
+                ],
+                "points_faibles": [
+                  "Première génération identifiée comme la moins fiable des deux générations MKZ selon le système PainRank de Lincoln Problems",
+                  "Rappel constructeur pour bloc hydraulique ABS défaillant, défaut partagé avec la Ford Fusion contemporaine",
+                  "Corrosion des durites de climatisation avec l'âge",
+                  "Base technique partagée avec la Ford Fusion/Mercury Milan de la même plateforme CD3"
+                ]
+              },
+              {
+                "type": "Hybride",
+                "nom": "2.5 MKZ Hybrid - 191ch (combiné)",
+                "code_moteur": "Duratec 2.5 Atkinson + moteur électrique (à partir de 2011)",
+                "cylindree": "2.5L",
+                "puissance_ch": 191,
+                "boite": [
+                  "Transmission à variation continue (eCVT)"
+                ],
+                "points_faibles": [
+                  "Batterie NiMH sujette à dégradation avec l'âge et le kilométrage",
+                  "Complexité de diagnostic en dehors du réseau Lincoln pour la partie hybride",
+                  "Coût de remplacement de la batterie élevé hors garantie",
+                  "Diffusion limitée, première application hybride sur la gamme MKZ"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "2e génération (base Ford Fusion CD4)",
+            "annees": "2013-2020",
+            "phases": [
+              "Phase 1 (2013-2016)",
+              "Phase 2 restylée (2017-2020)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "2.0 EcoBoost - 240ch",
+                "code_moteur": "EcoBoost 2.0 Turbo I4",
+                "cylindree": "2.0L",
+                "puissance_ch": 240,
+                "boite": [
+                  "BVA6"
+                ],
+                "points_faibles": [
+                  "Action en justice alléguant des défauts sur les moteurs EcoBoost 1.5L/1.6L/2.0L causant une intrusion de liquide de refroidissement dans les cylindres, pouvant provoquer surchauffe, panne et départ de feu",
+                  "Millésime 2016 spécifiquement identifié comme problématique par plusieurs organismes de garantie tierce, problèmes moteur et transmission rapportés",
+                  "Turbo sensible à l'entretien, vidanges rapprochées recommandées",
+                  "Rappel constructeur pour risque de fissure du réservoir de carburant, défaut partagé avec plusieurs autres modèles Lincoln de cette période"
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "3.0 EcoBoost Twin-Turbo V6 - 400ch",
+                "code_moteur": "EcoBoost 3.0 Twin-Turbo V6",
+                "cylindree": "3.0L",
+                "puissance_ch": 400,
+                "boite": [
+                  "BVA6"
+                ],
+                "points_faibles": [
+                  "Turbos fortement sollicités en usage dynamique, entretien rigoureux nécessaire",
+                  "Traction intégrale disponible en série sur cette version haute performance",
+                  "Consommation de carburant élevée malgré le downsizing",
+                  "Modèle rangé 14e sur 15 en fiabilité au sein de la gamme Lincoln selon le système PainRank de Lincoln Problems"
+                ]
+              },
+              {
+                "type": "Hybride",
+                "nom": "2.0 MKZ Hybrid - 188ch (combiné)",
+                "code_moteur": "Duratec 2.0 Atkinson + moteur électrique",
+                "cylindree": "2.0L",
+                "puissance_ch": 188,
+                "boite": [
+                  "Transmission à variation continue (eCVT)"
+                ],
+                "points_faibles": [
+                  "Coût de remplacement de la batterie hybride élevé hors garantie",
+                  "Complexité de réparation en dehors du réseau Lincoln",
+                  "Dernière génération avant l'arrêt définitif du MKZ en 2020",
+                  "Diffusion en net recul en fin de carrière, segment berline compacte de luxe en déclin face aux SUV"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Town Car",
+        "generations": [
+          {
+            "code_chassis": "1ère génération (Panther)",
+            "annees": "1981-1989",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "5.0 Windsor V8 - 130ch",
+                "code_moteur": "Windsor 302 (5.0L)",
+                "cylindree": "5.0L",
+                "puissance_ch": 130,
+                "boite": [
+                  "BVA4 AOD"
+                ],
+                "points_faibles": [
+                  "Puissance très modeste caractéristique de l'époque post-choc pétrolier",
+                  "Corrosion du châssis en échelle sur véhicules exposés au sel de déneigement",
+                  "Consommation de carburant élevée malgré la puissance limitée",
+                  "Mécanique globalement simple et robuste, référence de confort et de fiabilité pour son usage de limousine/flotte"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "2e génération (Panther restylée)",
+            "annees": "1990-1997",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "4.6 Modular V8 - 190 à 210ch",
+                "code_moteur": "Modular SOHC 4.6L 2V",
+                "cylindree": "4.6L",
+                "puissance_ch": 210,
+                "boite": [
+                  "BVA4 AOD-E"
+                ],
+                "points_faibles": [
+                  "Fuites d'huile au joint de carter et de couvre-culasses",
+                  "Corrosion du châssis en échelle persistante sur véhicules exposés au sel",
+                  "Mécanique globalement fiable, référence de confort et de longévité pour un usage de limousine/flotte",
+                  "Suspension pneumatique arrière (en option) sujette à fuites avec l'âge"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "3e génération (Panther finale)",
+            "annees": "1998-2011",
+            "phases": [
+              "Phase 1 (1998-2002)",
+              "Phase 2 restylée (2003-2011)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "4.6 Modular V8 - 220 à 239ch",
+                "code_moteur": "Modular SOHC 4.6L 2V",
+                "cylindree": "4.6L",
+                "puissance_ch": 239,
+                "boite": [
+                  "BVA4 4R70W"
+                ],
+                "points_faibles": [
+                  "Mécanique Modular V8 réputée robuste et durable, plébiscitée par les flottes de limousines pour sa longévité",
+                  "Corrosion du châssis en échelle persistante sur véhicules exposés au sel de déneigement",
+                  "Suspension pneumatique arrière sujette à fuites avec l'âge, coût de réparation modéré",
+                  "Dernier grand porte-drapeau à propulsion et châssis en échelle de la gamme Lincoln avant l'arrêt définitif en 2011"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Aviator",
+        "generations": [
+          {
+            "code_chassis": "1ère génération (base Ford Explorer U152)",
+            "annees": "2003-2005",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "4.6 Modular V8 - 239ch",
+                "code_moteur": "Modular SOHC 4.6L 2V",
+                "cylindree": "4.6L",
+                "puissance_ch": 239,
+                "boite": [
+                  "BVA5"
+                ],
+                "points_faibles": [
+                  "Millésime 2003 (lancement) identifié comme le plus problématique de toute la génération, problèmes de transmission, moteur et suspension massivement documentés",
+                  "Millésime 2004 encore marqué par des défauts significatifs bien que moins nombreux que 2003",
+                  "Diffusion très limitée dans le temps (seulement 3 ans), pièces spécifiques Aviator de première génération rares aujourd'hui",
+                  "Base technique partagée avec le Ford Explorer/Mercury Mountaineer de la même génération U152"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "2e génération (retour du nom, base Ford Explorer U625)",
+            "annees": "2020-présent",
+            "phases": [
+              "Phase 1 (2020-2023)",
+              "Phase 2 restylée (2024-présent)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "3.0 EcoBoost Twin-Turbo V6 - 400ch",
+                "code_moteur": "EcoBoost Nano 3.0 Twin-Turbo",
+                "cylindree": "3.0L",
+                "puissance_ch": 400,
+                "boite": [
+                  "BVA10"
+                ],
+                "points_faibles": [
+                  "Rappel constructeur majeur pour véhicules 2021-2022 équipés du bloc Nano 2.7L/3.0L EcoBoost (partagé avec Bronco, F-150, Edge, Explorer, Nautilus) : les soupapes d'admission peuvent se briser en roulant, provoquant une panne moteur totale et une perte de motricité",
+                  "Millésimes 2020-2021 (lancement de la 2e génération) identifiés comme à éviter en priorité selon plusieurs guides d'achat spécialisés",
+                  "Génération globalement plus fiable que la première selon les données consolidées, mais années 2020-2021 restant les plus problématiques",
+                  "Rappel logiciel pour caméra de recul affichant une image gelée ou inversée, défaut partagé avec plusieurs autres modèles Ford/Lincoln"
+                ]
+              },
+              {
+                "type": "Hybride",
+                "nom": "3.0 EcoBoost Grand Touring Plug-In Hybrid - 494ch (combiné)",
+                "code_moteur": "EcoBoost Nano 3.0 Twin-Turbo + moteur électrique + batterie 13.6 kWh",
+                "cylindree": "3.0L",
+                "puissance_ch": 494,
+                "boite": [
+                  "BVA10 hybride"
+                ],
+                "points_faibles": [
+                  "Même problématique de rupture des soupapes d'admission que la version essence standard sur les blocs Nano concernés",
+                  "Complexité de réparation nécessitant impérativement un réseau Lincoln spécialisé dans l'hybride",
+                  "Coût de remplacement de la batterie très élevé hors garantie",
+                  "Autonomie électrique réelle inférieure par temps froid selon plusieurs retours propriétaires"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "MKX / Nautilus",
+        "generations": [
+          {
+            "code_chassis": "MKX 1ère génération (base Ford Edge U387)",
+            "annees": "2007-2015",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "3.5/3.7 Duratec V6 - 265 à 305ch",
+                "code_moteur": "Duratec 35 (2007-2010) / Duratec 37 (2011-2015)",
+                "cylindree": "3.7L",
+                "puissance_ch": 305,
+                "boite": [
+                  "BVA6"
+                ],
+                "points_faibles": [
+                  "1ère génération identifiée comme la moins fiable des deux générations MKX/Nautilus selon le système PainRank de Lincoln Problems",
+                  "Millésimes 2008, 2011 et 2016 identifiés comme les pires années pour les problèmes moteur, réparation moyenne autour de 7 200 dollars à 41 000 miles",
+                  "Boîte automatique 6 rapports sujette à à-coups et pannes de solénoïdes documentées",
+                  "Système MyLincoln Touch sujet à bugs et gels tactiles sur les millésimes les plus récents de cette génération"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "MKX 2e génération puis Nautilus (base Ford Edge CD539, renommé Nautilus en 2019)",
+            "annees": "2016-présent",
+            "phases": [
+              "MKX (2016-2018)",
+              "Nautilus (2019-présent)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "2.0 EcoBoost - 245ch",
+                "code_moteur": "EcoBoost 2.0 Turbo I4",
+                "cylindree": "2.0L",
+                "puissance_ch": 245,
+                "boite": [
+                  "BVA6",
+                  "BVA8 (Nautilus, à partir de 2019)"
+                ],
+                "points_faibles": [
+                  "Rappel constructeur pour véhicules équipés du bloc Nano 2.7L (soupapes d'admission cassantes), même défaut que sur l'Aviator/Edge/Explorer/F-150/Bronco de la même famille de moteurs",
+                  "Système start-stop sujet à retours mitigés sur l'agrément de conduite",
+                  "Millésime 2016 (dernier MKX) identifié comme l'un des pires pour les problèmes moteur au sein de cette génération",
+                  "Renommage en Nautilus à partir de 2019 accompagné d'une nette amélioration de la fiabilité perçue selon plusieurs retours propriétaires"
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "2.7 EcoBoost Twin-Turbo V6 - 335ch",
+                "code_moteur": "EcoBoost Nano 2.7 Twin-Turbo",
+                "cylindree": "2.7L",
+                "puissance_ch": 335,
+                "boite": [
+                  "BVA6",
+                  "BVA8"
+                ],
+                "points_faibles": [
+                  "Concerné par le rappel majeur de rupture des soupapes d'admission (véhicules 2021-2022 principalement)",
+                  "Turbos fortement sollicités, entretien rigoureux nécessaire",
+                  "Consommation de carburant élevée malgré le downsizing",
+                  "Rappel logiciel pour caméra de recul (image gelée/absente) partagé avec de nombreux autres modèles Ford/Lincoln"
+                ]
+              },
+              {
+                "type": "Hybride",
+                "nom": "Nautilus Hybrid (3e génération, 2024+) - 310ch (combiné)",
+                "code_moteur": "2.0 EcoBoost + moteur électrique (redesign complet)",
+                "cylindree": "2.0L",
+                "puissance_ch": 310,
+                "boite": [
+                  "BVA hybride"
+                ],
+                "points_faibles": [
+                  "Redesign complet pour le millésime 2024, technologie encore trop récente pour évaluer la fiabilité à long terme",
+                  "Rappel constructeur (2024-2025) pour véhicules équipés d'un bloc 1.5L/2.0L MPC et d'un réchauffeur de bloc moteur",
+                  "Complexité de réparation nécessitant impérativement un réseau Lincoln spécialisé dans l'hybride",
+                  "Coût de remplacement de la batterie potentiellement élevé hors garantie"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Corsair / MKC",
+        "generations": [
+          {
+            "code_chassis": "MKC (base Ford Escape C520)",
+            "annees": "2015-2019",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "2.0/2.3 EcoBoost - 240 à 285ch",
+                "code_moteur": "EcoBoost 2.0/2.3 Turbo I4",
+                "cylindree": "2.3L",
+                "puissance_ch": 285,
+                "boite": [
+                  "BVA6"
+                ],
+                "points_faibles": [
+                  "Historique de surchauffe moteur et de risque d'incendie documenté sur le bloc 1.6L EcoBoost partagé avec le Ford Escape de la même plateforme, bien que le MKC utilise principalement le 2.0/2.3L",
+                  "Turbo sensible à l'entretien, vidanges rapprochées recommandées",
+                  "Système MyLincoln Touch sujet à bugs et gels tactiles",
+                  "Remplacé par le Corsair en 2020, dernier modèle Lincoln à porter une dénomination alphanumérique MK"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "Corsair (base Ford Escape CX482)",
+            "annees": "2020-présent",
+            "phases": [
+              "Phase 1 (2020-2024)",
+              "Phase 2 restylée (2025-présent)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "2.0 EcoBoost - 250ch",
+                "code_moteur": "EcoBoost 2.0 Turbo I4",
+                "cylindree": "2.0L",
+                "puissance_ch": 250,
+                "boite": [
+                  "BVA8"
+                ],
+                "points_faibles": [
+                  "Rappel constructeur pour véhicules équipés d'un bloc 1.5L/2.0L MPC et d'un réchauffeur de bloc moteur (millésimes 2023 et 2025)",
+                  "Rappel logiciel pour caméra de recul (image gelée, absente ou retardée), défaut partagé avec de nombreux autres modèles Ford/Lincoln de la même période",
+                  "Retours propriétaires globalement positifs sur la fiabilité générale selon plusieurs témoignages de forums spécialisés (millésime 2023 notamment cité comme 'zéro problème')",
+                  "Quelques cas isolés de défauts de fabrication ponctuels (pneus défectueux, bruits de caisse) rapportés sur certains exemplaires 2024"
+                ]
+              },
+              {
+                "type": "Hybride",
+                "nom": "Corsair Grand Touring Plug-In Hybrid - 266ch (combiné)",
+                "code_moteur": "2.5 Atkinson + moteur électrique + batterie 14.4 kWh",
+                "cylindree": "2.5L",
+                "puissance_ch": 266,
+                "boite": [
+                  "Transmission à variation continue (eCVT)"
+                ],
+                "points_faibles": [
+                  "Complexité de réparation nécessitant impérativement un réseau Lincoln spécialisé dans l'hybride",
+                  "Coût de remplacement de la batterie élevé hors garantie",
+                  "Autonomie électrique réelle inférieure par temps froid selon plusieurs retours propriétaires",
+                  "Retours d'expérience à très haut kilométrage encore limités sur cette motorisation relativement récente"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Mark VII / Mark VIII",
+        "generations": [
+          {
+            "code_chassis": "Mark VII",
+            "annees": "1984-1992",
+            "phases": [
+              "Phase 1 (1984-1987)",
+              "Phase 2 restylée (1988-1992)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "5.0 Windsor V8 - 140 à 225ch",
+                "code_moteur": "Windsor 302 (5.0L, partagé avec la Ford Mustang)",
+                "cylindree": "5.0L",
+                "puissance_ch": 225,
+                "boite": [
+                  "BVA4 AOD"
+                ],
+                "points_faibles": [
+                  "Suspension pneumatique électronique à 4 coins sujette à pannes documentées, coûteuse à réparer",
+                  "Version HO (High Output) 225ch introduite en 1988, partagée avec la Mustang GT de la même période, appréciée pour ses performances",
+                  "Boîte automatique AOD globalement robuste mais fuites fréquentes avec l'âge",
+                  "Corrosion des bas de caisse et des passages de roue sur véhicules exposés au sel"
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "2.4 BMW Turbodiesel I6 - 114ch (1984-1985 uniquement)",
+                "code_moteur": "BMW M21 (2.4L Turbodiesel)",
+                "cylindree": "2.4L",
+                "puissance_ch": 114,
+                "boite": [
+                  "BVA4 AOD"
+                ],
+                "points_faibles": [
+                  "Motorisation d'origine BMW extrêmement rare, retirée de la gamme après seulement 2 ans faute de succès commercial",
+                  "Diffusion quasi confidentielle aujourd'hui, pièces spécifiques BMW diesel adaptées à ce montage quasiment introuvables",
+                  "Performances modestes pour un véhicule de ce gabarit",
+                  "Curiosité historique plus que choix pratique, très peu d'exemplaires survivants aujourd'hui"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "Mark VIII",
+            "annees": "1993-1998",
+            "phases": [
+              "Phase 1 (1993-1996)",
+              "Phase 2 restylée (1997-1998)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "4.6 Modular InTech DOHC V8 - 280 à 290ch",
+                "code_moteur": "Modular InTech 4.6L DOHC (32 soupapes, tout aluminium)",
+                "cylindree": "4.6L",
+                "puissance_ch": 290,
+                "boite": [
+                  "BVA4 4R70W"
+                ],
+                "points_faibles": [
+                  "Ressorts de soupapes faibles documentés sur les blocs des tout premiers millésimes 1993-1994, cause de problèmes de distribution corrigés progressivement jusqu'en 1995",
+                  "Bottes en caoutchouc reliant les bobines d'allumage individuelles aux bougies sujettes à fuites électriques avec l'âge, provoquant des ratés moteur difficiles à diagnostiquer",
+                  "Suspension pneumatique électronique à contrôle indépendant sur les 4 roues, technologiquement avancée pour l'époque mais coûteuse à réparer en cas de panne de capteur ou de compresseur",
+                  "Version LSC (Luxury Sport Coupe, à partir de 1995) dotée de phares HID à courant continu, une première mondiale pour l'industrie automobile à l'époque"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "LS / MKT",
+        "generations": [
+          {
+            "code_chassis": "LS (base Ford DEW98, partagée avec Jaguar S-Type)",
+            "annees": "2000-2006",
+            "phases": [
+              "Phase 1 (2000-2002)",
+              "Phase 2 restylée (2003-2006)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "3.0 Duratec V6 - 210 à 232ch",
+                "code_moteur": "Duratec 30 V6",
+                "cylindree": "3.0L",
+                "puissance_ch": 232,
+                "boite": [
+                  "BVM5",
+                  "BVA5"
+                ],
+                "points_faibles": [
+                  "Première Lincoln proposée avec boîte manuelle depuis des décennies, positionnement inhabituel pour la marque orienté conduite plutôt que confort pur",
+                  "Base technique partagée avec la Jaguar S-Type de la même plateforme DEW98, complexité mécanique supérieure à une Lincoln classique",
+                  "Corrosion des durites de climatisation avec l'âge",
+                  "Retiré de la gamme en 2006, Lincoln se recentrant sur des berlines plus traditionnelles (MKZ/Zephyr)"
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "3.9/4.0 AJ V8 - 252 à 280ch",
+                "code_moteur": "AJ (3.9L puis 4.0L, origine Jaguar/Ford)",
+                "cylindree": "4.0L",
+                "puissance_ch": 280,
+                "boite": [
+                  "BVA5"
+                ],
+                "points_faibles": [
+                  "Bloc d'origine Jaguar/Ford AJ, entretien plus coûteux qu'un V8 Ford classique",
+                  "Diffusion plus limitée que le V6, pièces spécifiques V8 moins courantes aujourd'hui",
+                  "Consommation de carburant plus élevée que le V6",
+                  "Fiabilité globale jugée correcte mais complexité mécanique supérieure à la moyenne Lincoln de l'époque"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "MKT (grand SUV/crossover, base Ford D4/Taurus)",
+            "annees": "2010-2019",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "3.7 Ti-VCT V6 - 268ch",
+                "code_moteur": "Cyclone 3.7 Ti-VCT",
+                "cylindree": "3.7L",
+                "puissance_ch": 268,
+                "boite": [
+                  "BVA6"
+                ],
+                "points_faibles": [
+                  "Style controversé (calandre proéminente, hayon incliné) mal accueilli par une partie de la clientèle dès le lancement",
+                  "Consommation de carburant élevée pour la catégorie",
+                  "Diffusion réduite en fin de carrière, principalement utilisé comme véhicule de flotte (limousine Town Car) sur ses dernières années",
+                  "Fiabilité mécanique globale correcte, bloc Cyclone réputé robuste"
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "3.5 EcoBoost Twin-Turbo V6 - 365ch",
+                "code_moteur": "EcoBoost 3.5 Twin-Turbo V6",
+                "cylindree": "3.5L",
+                "puissance_ch": 365,
+                "boite": [
+                  "BVA6"
+                ],
+                "points_faibles": [
+                  "Turbos fortement sollicités, entretien rigoureux nécessaire",
+                  "Traction intégrale disponible en série sur cette version haute performance",
+                  "Retiré définitivement de la gamme en 2019 sans successeur direct, Lincoln réorientant sa gamme SUV vers l'Aviator et le Navigator",
+                  "Consommation de carburant élevée malgré le downsizing"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

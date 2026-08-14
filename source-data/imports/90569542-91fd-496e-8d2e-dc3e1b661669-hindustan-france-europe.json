@@ -1,0 +1,634 @@
+{
+  "nom": "Hindustan",
+  "modeles": [
+    {
+      "nom": "Ambassador",
+      "generations": [
+        {
+          "code_chassis": "Mark I–IV",
+          "annees": "1957–1990",
+          "phases": [
+            "Mark I à IV : carrosserie Oxford III progressivement modernisée, avec essence puis diesel taxi."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "BMC 1.5 essence — 55 ch",
+              "code_moteur": "BMC B-Series / HM 1489",
+              "cylindree": "1 489 cm³",
+              "puissance_ch": 55,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification, injection/carburation et distribution selon moteur",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Démarrage difficile, fuite ou ratés"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 220 000 km ; plus tôt en taxi ou sans entretien",
+                  "diagnostic": "Identifier BMC 1.5/1.76, HM diesel 1.5, Isuzu G180 1.8 ou 2.0 diesel, mesurer compressions/pression, contrôler chaîne/courroie selon moteur, culasse, radiateur, pompe, carburateur/MPFI, pompe/injecteurs et turbo ; vérifier conversion CNG/LPG et étanchéité",
+                  "piece_concernee": "Moteur Ambassador correspondant à la version",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente à fort kilométrage ou en service taxi",
+                  "cout_reparation_estime": "Élevé : environ 400 à 6 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte quatre/cinq rapports, arbre et pont",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection dure",
+                    "Hurlement du pont ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 220 000 km",
+                  "diagnostic": "Contrôler embrayage/commande, boîte, overdrive éventuel, huile, supports, arbre/croisillons, différentiel, demi-arbres et roulements ; vérifier rapport de pont correspondant au moteur et pièces Morris/Isuzu/HM montées",
+                  "piece_concernee": "Transmission manuelle et propulsion Ambassador",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage intensif",
+                  "cout_reparation_estime": "Élevé : environ 300 à 4 000 €"
+                },
+                {
+                  "probleme": "Corrosion, monocoque Oxford, suspension, direction et freinage",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu important",
+                    "Caisse affaissée ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat, surtout ancien taxi",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons intégrés, passages de roue, ancrages, réparations et alignement ; contrôler pivots, ressorts, amortisseurs, direction, roulements, flexibles, maître-cylindre, tambours/disques, pneus et faisceau ; authentifier Mark/Nova/Classic/Grand/Avigo",
+                  "piece_concernee": "Coque, trains roulants et sécurité Ambassador",
+                  "gravite": "Critique si structure ou freinage atteint",
+                  "frequence": "Fréquente avec âge, humidité et service commercial",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 8 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "HM 1.5 diesel — 36 ch",
+              "code_moteur": "Hindustan 1500 DSL",
+              "cylindree": "1 489 cm³",
+              "puissance_ch": 36,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification, injection/carburation et distribution selon moteur",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Démarrage difficile, fuite ou ratés"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 220 000 km ; plus tôt en taxi ou sans entretien",
+                  "diagnostic": "Identifier BMC 1.5/1.76, HM diesel 1.5, Isuzu G180 1.8 ou 2.0 diesel, mesurer compressions/pression, contrôler chaîne/courroie selon moteur, culasse, radiateur, pompe, carburateur/MPFI, pompe/injecteurs et turbo ; vérifier conversion CNG/LPG et étanchéité",
+                  "piece_concernee": "Moteur Ambassador correspondant à la version",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente à fort kilométrage ou en service taxi",
+                  "cout_reparation_estime": "Élevé : environ 400 à 6 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte quatre/cinq rapports, arbre et pont",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection dure",
+                    "Hurlement du pont ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 220 000 km",
+                  "diagnostic": "Contrôler embrayage/commande, boîte, overdrive éventuel, huile, supports, arbre/croisillons, différentiel, demi-arbres et roulements ; vérifier rapport de pont correspondant au moteur et pièces Morris/Isuzu/HM montées",
+                  "piece_concernee": "Transmission manuelle et propulsion Ambassador",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage intensif",
+                  "cout_reparation_estime": "Élevé : environ 300 à 4 000 €"
+                },
+                {
+                  "probleme": "Corrosion, monocoque Oxford, suspension, direction et freinage",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu important",
+                    "Caisse affaissée ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat, surtout ancien taxi",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons intégrés, passages de roue, ancrages, réparations et alignement ; contrôler pivots, ressorts, amortisseurs, direction, roulements, flexibles, maître-cylindre, tambours/disques, pneus et faisceau ; authentifier Mark/Nova/Classic/Grand/Avigo",
+                  "piece_concernee": "Coque, trains roulants et sécurité Ambassador",
+                  "gravite": "Critique si structure ou freinage atteint",
+                  "frequence": "Fréquente avec âge, humidité et service commercial",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 8 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "BMC 1.76 essence — 60 ch",
+              "code_moteur": "BMC B-Series 1760",
+              "cylindree": "1 760 cm³",
+              "puissance_ch": 60,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification, injection/carburation et distribution selon moteur",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Démarrage difficile, fuite ou ratés"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 220 000 km ; plus tôt en taxi ou sans entretien",
+                  "diagnostic": "Identifier BMC 1.5/1.76, HM diesel 1.5, Isuzu G180 1.8 ou 2.0 diesel, mesurer compressions/pression, contrôler chaîne/courroie selon moteur, culasse, radiateur, pompe, carburateur/MPFI, pompe/injecteurs et turbo ; vérifier conversion CNG/LPG et étanchéité",
+                  "piece_concernee": "Moteur Ambassador correspondant à la version",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente à fort kilométrage ou en service taxi",
+                  "cout_reparation_estime": "Élevé : environ 400 à 6 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte quatre/cinq rapports, arbre et pont",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection dure",
+                    "Hurlement du pont ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 220 000 km",
+                  "diagnostic": "Contrôler embrayage/commande, boîte, overdrive éventuel, huile, supports, arbre/croisillons, différentiel, demi-arbres et roulements ; vérifier rapport de pont correspondant au moteur et pièces Morris/Isuzu/HM montées",
+                  "piece_concernee": "Transmission manuelle et propulsion Ambassador",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage intensif",
+                  "cout_reparation_estime": "Élevé : environ 300 à 4 000 €"
+                },
+                {
+                  "probleme": "Corrosion, monocoque Oxford, suspension, direction et freinage",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu important",
+                    "Caisse affaissée ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat, surtout ancien taxi",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons intégrés, passages de roue, ancrages, réparations et alignement ; contrôler pivots, ressorts, amortisseurs, direction, roulements, flexibles, maître-cylindre, tambours/disques, pneus et faisceau ; authentifier Mark/Nova/Classic/Grand/Avigo",
+                  "piece_concernee": "Coque, trains roulants et sécurité Ambassador",
+                  "gravite": "Critique si structure ou freinage atteint",
+                  "frequence": "Fréquente avec âge, humidité et service commercial",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 8 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Nova",
+          "annees": "1990–1999",
+          "phases": [
+            "Nova et 1800 ISZ : le moteur Isuzu injecté est séparé des anciens BMC/HM."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "HM 1.5 essence — 55 ch",
+              "code_moteur": "Hindustan 1500",
+              "cylindree": "1 489 cm³",
+              "puissance_ch": 55,
+              "boite": [
+                "Manuelle 4/5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification, injection/carburation et distribution selon moteur",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Démarrage difficile, fuite ou ratés"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 220 000 km ; plus tôt en taxi ou sans entretien",
+                  "diagnostic": "Identifier BMC 1.5/1.76, HM diesel 1.5, Isuzu G180 1.8 ou 2.0 diesel, mesurer compressions/pression, contrôler chaîne/courroie selon moteur, culasse, radiateur, pompe, carburateur/MPFI, pompe/injecteurs et turbo ; vérifier conversion CNG/LPG et étanchéité",
+                  "piece_concernee": "Moteur Ambassador correspondant à la version",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente à fort kilométrage ou en service taxi",
+                  "cout_reparation_estime": "Élevé : environ 400 à 6 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte quatre/cinq rapports, arbre et pont",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection dure",
+                    "Hurlement du pont ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 220 000 km",
+                  "diagnostic": "Contrôler embrayage/commande, boîte, overdrive éventuel, huile, supports, arbre/croisillons, différentiel, demi-arbres et roulements ; vérifier rapport de pont correspondant au moteur et pièces Morris/Isuzu/HM montées",
+                  "piece_concernee": "Transmission manuelle et propulsion Ambassador",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage intensif",
+                  "cout_reparation_estime": "Élevé : environ 300 à 4 000 €"
+                },
+                {
+                  "probleme": "Corrosion, monocoque Oxford, suspension, direction et freinage",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu important",
+                    "Caisse affaissée ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat, surtout ancien taxi",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons intégrés, passages de roue, ancrages, réparations et alignement ; contrôler pivots, ressorts, amortisseurs, direction, roulements, flexibles, maître-cylindre, tambours/disques, pneus et faisceau ; authentifier Mark/Nova/Classic/Grand/Avigo",
+                  "piece_concernee": "Coque, trains roulants et sécurité Ambassador",
+                  "gravite": "Critique si structure ou freinage atteint",
+                  "frequence": "Fréquente avec âge, humidité et service commercial",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 8 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "HM 1.5 diesel — 36 ch",
+              "code_moteur": "Hindustan 1500 DSL",
+              "cylindree": "1 489 cm³",
+              "puissance_ch": 36,
+              "boite": [
+                "Manuelle 4/5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification, injection/carburation et distribution selon moteur",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Démarrage difficile, fuite ou ratés"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 220 000 km ; plus tôt en taxi ou sans entretien",
+                  "diagnostic": "Identifier BMC 1.5/1.76, HM diesel 1.5, Isuzu G180 1.8 ou 2.0 diesel, mesurer compressions/pression, contrôler chaîne/courroie selon moteur, culasse, radiateur, pompe, carburateur/MPFI, pompe/injecteurs et turbo ; vérifier conversion CNG/LPG et étanchéité",
+                  "piece_concernee": "Moteur Ambassador correspondant à la version",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente à fort kilométrage ou en service taxi",
+                  "cout_reparation_estime": "Élevé : environ 400 à 6 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte quatre/cinq rapports, arbre et pont",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection dure",
+                    "Hurlement du pont ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 220 000 km",
+                  "diagnostic": "Contrôler embrayage/commande, boîte, overdrive éventuel, huile, supports, arbre/croisillons, différentiel, demi-arbres et roulements ; vérifier rapport de pont correspondant au moteur et pièces Morris/Isuzu/HM montées",
+                  "piece_concernee": "Transmission manuelle et propulsion Ambassador",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage intensif",
+                  "cout_reparation_estime": "Élevé : environ 300 à 4 000 €"
+                },
+                {
+                  "probleme": "Corrosion, monocoque Oxford, suspension, direction et freinage",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu important",
+                    "Caisse affaissée ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat, surtout ancien taxi",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons intégrés, passages de roue, ancrages, réparations et alignement ; contrôler pivots, ressorts, amortisseurs, direction, roulements, flexibles, maître-cylindre, tambours/disques, pneus et faisceau ; authentifier Mark/Nova/Classic/Grand/Avigo",
+                  "piece_concernee": "Coque, trains roulants et sécurité Ambassador",
+                  "gravite": "Critique si structure ou freinage atteint",
+                  "frequence": "Fréquente avec âge, humidité et service commercial",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 8 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Isuzu 1.8 ISZ MPFI — 75 ch",
+              "code_moteur": "Isuzu G180Z / HM ISZ",
+              "cylindree": "1 817 cm³",
+              "puissance_ch": 75,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification, injection/carburation et distribution selon moteur",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Démarrage difficile, fuite ou ratés"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 220 000 km ; plus tôt en taxi ou sans entretien",
+                  "diagnostic": "Identifier BMC 1.5/1.76, HM diesel 1.5, Isuzu G180 1.8 ou 2.0 diesel, mesurer compressions/pression, contrôler chaîne/courroie selon moteur, culasse, radiateur, pompe, carburateur/MPFI, pompe/injecteurs et turbo ; vérifier conversion CNG/LPG et étanchéité",
+                  "piece_concernee": "Moteur Ambassador correspondant à la version",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente à fort kilométrage ou en service taxi",
+                  "cout_reparation_estime": "Élevé : environ 400 à 6 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte quatre/cinq rapports, arbre et pont",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection dure",
+                    "Hurlement du pont ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 220 000 km",
+                  "diagnostic": "Contrôler embrayage/commande, boîte, overdrive éventuel, huile, supports, arbre/croisillons, différentiel, demi-arbres et roulements ; vérifier rapport de pont correspondant au moteur et pièces Morris/Isuzu/HM montées",
+                  "piece_concernee": "Transmission manuelle et propulsion Ambassador",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage intensif",
+                  "cout_reparation_estime": "Élevé : environ 300 à 4 000 €"
+                },
+                {
+                  "probleme": "Corrosion, monocoque Oxford, suspension, direction et freinage",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu important",
+                    "Caisse affaissée ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat, surtout ancien taxi",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons intégrés, passages de roue, ancrages, réparations et alignement ; contrôler pivots, ressorts, amortisseurs, direction, roulements, flexibles, maître-cylindre, tambours/disques, pneus et faisceau ; authentifier Mark/Nova/Classic/Grand/Avigo",
+                  "piece_concernee": "Coque, trains roulants et sécurité Ambassador",
+                  "gravite": "Critique si structure ou freinage atteint",
+                  "frequence": "Fréquente avec âge, humidité et service commercial",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 8 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Classic / Grand / Avigo",
+          "annees": "1998–2014",
+          "phases": [
+            "Dernières finitions et carburants multiples ; vérifier moteur, norme Bharat et réservoirs gaz sur le VIN."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence ou CNG/LPG",
+              "nom": "Isuzu 1.8 ISZ MPFI — 75 ch",
+              "code_moteur": "Isuzu G180Z / HM ISZ",
+              "cylindree": "1 817 cm³",
+              "puissance_ch": 75,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification, injection/carburation et distribution selon moteur",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Démarrage difficile, fuite ou ratés"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 220 000 km ; plus tôt en taxi ou sans entretien",
+                  "diagnostic": "Identifier BMC 1.5/1.76, HM diesel 1.5, Isuzu G180 1.8 ou 2.0 diesel, mesurer compressions/pression, contrôler chaîne/courroie selon moteur, culasse, radiateur, pompe, carburateur/MPFI, pompe/injecteurs et turbo ; vérifier conversion CNG/LPG et étanchéité",
+                  "piece_concernee": "Moteur Ambassador correspondant à la version",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente à fort kilométrage ou en service taxi",
+                  "cout_reparation_estime": "Élevé : environ 400 à 6 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte quatre/cinq rapports, arbre et pont",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection dure",
+                    "Hurlement du pont ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 220 000 km",
+                  "diagnostic": "Contrôler embrayage/commande, boîte, overdrive éventuel, huile, supports, arbre/croisillons, différentiel, demi-arbres et roulements ; vérifier rapport de pont correspondant au moteur et pièces Morris/Isuzu/HM montées",
+                  "piece_concernee": "Transmission manuelle et propulsion Ambassador",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage intensif",
+                  "cout_reparation_estime": "Élevé : environ 300 à 4 000 €"
+                },
+                {
+                  "probleme": "Corrosion, monocoque Oxford, suspension, direction et freinage",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu important",
+                    "Caisse affaissée ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat, surtout ancien taxi",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons intégrés, passages de roue, ancrages, réparations et alignement ; contrôler pivots, ressorts, amortisseurs, direction, roulements, flexibles, maître-cylindre, tambours/disques, pneus et faisceau ; authentifier Mark/Nova/Classic/Grand/Avigo",
+                  "piece_concernee": "Coque, trains roulants et sécurité Ambassador",
+                  "gravite": "Critique si structure ou freinage atteint",
+                  "frequence": "Fréquente avec âge, humidité et service commercial",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 8 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence/CNG/LPG",
+              "nom": "HM 1.5 CNG/LPG — 40 ch",
+              "code_moteur": "Hindustan 1500 bi-fuel",
+              "cylindree": "1 489 cm³",
+              "puissance_ch": 40,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification, injection/carburation et distribution selon moteur",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Démarrage difficile, fuite ou ratés"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 220 000 km ; plus tôt en taxi ou sans entretien",
+                  "diagnostic": "Identifier BMC 1.5/1.76, HM diesel 1.5, Isuzu G180 1.8 ou 2.0 diesel, mesurer compressions/pression, contrôler chaîne/courroie selon moteur, culasse, radiateur, pompe, carburateur/MPFI, pompe/injecteurs et turbo ; vérifier conversion CNG/LPG et étanchéité",
+                  "piece_concernee": "Moteur Ambassador correspondant à la version",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente à fort kilométrage ou en service taxi",
+                  "cout_reparation_estime": "Élevé : environ 400 à 6 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte quatre/cinq rapports, arbre et pont",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection dure",
+                    "Hurlement du pont ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 220 000 km",
+                  "diagnostic": "Contrôler embrayage/commande, boîte, overdrive éventuel, huile, supports, arbre/croisillons, différentiel, demi-arbres et roulements ; vérifier rapport de pont correspondant au moteur et pièces Morris/Isuzu/HM montées",
+                  "piece_concernee": "Transmission manuelle et propulsion Ambassador",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage intensif",
+                  "cout_reparation_estime": "Élevé : environ 300 à 4 000 €"
+                },
+                {
+                  "probleme": "Corrosion, monocoque Oxford, suspension, direction et freinage",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu important",
+                    "Caisse affaissée ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat, surtout ancien taxi",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons intégrés, passages de roue, ancrages, réparations et alignement ; contrôler pivots, ressorts, amortisseurs, direction, roulements, flexibles, maître-cylindre, tambours/disques, pneus et faisceau ; authentifier Mark/Nova/Classic/Grand/Avigo",
+                  "piece_concernee": "Coque, trains roulants et sécurité Ambassador",
+                  "gravite": "Critique si structure ou freinage atteint",
+                  "frequence": "Fréquente avec âge, humidité et service commercial",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 8 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "HM 1.5 diesel — 36 ch",
+              "code_moteur": "Hindustan 1500 DSL",
+              "cylindree": "1 489 cm³",
+              "puissance_ch": 36,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification, injection/carburation et distribution selon moteur",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Démarrage difficile, fuite ou ratés"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 220 000 km ; plus tôt en taxi ou sans entretien",
+                  "diagnostic": "Identifier BMC 1.5/1.76, HM diesel 1.5, Isuzu G180 1.8 ou 2.0 diesel, mesurer compressions/pression, contrôler chaîne/courroie selon moteur, culasse, radiateur, pompe, carburateur/MPFI, pompe/injecteurs et turbo ; vérifier conversion CNG/LPG et étanchéité",
+                  "piece_concernee": "Moteur Ambassador correspondant à la version",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente à fort kilométrage ou en service taxi",
+                  "cout_reparation_estime": "Élevé : environ 400 à 6 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte quatre/cinq rapports, arbre et pont",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection dure",
+                    "Hurlement du pont ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 220 000 km",
+                  "diagnostic": "Contrôler embrayage/commande, boîte, overdrive éventuel, huile, supports, arbre/croisillons, différentiel, demi-arbres et roulements ; vérifier rapport de pont correspondant au moteur et pièces Morris/Isuzu/HM montées",
+                  "piece_concernee": "Transmission manuelle et propulsion Ambassador",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage intensif",
+                  "cout_reparation_estime": "Élevé : environ 300 à 4 000 €"
+                },
+                {
+                  "probleme": "Corrosion, monocoque Oxford, suspension, direction et freinage",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu important",
+                    "Caisse affaissée ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat, surtout ancien taxi",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons intégrés, passages de roue, ancrages, réparations et alignement ; contrôler pivots, ressorts, amortisseurs, direction, roulements, flexibles, maître-cylindre, tambours/disques, pneus et faisceau ; authentifier Mark/Nova/Classic/Grand/Avigo",
+                  "piece_concernee": "Coque, trains roulants et sécurité Ambassador",
+                  "gravite": "Critique si structure ou freinage atteint",
+                  "frequence": "Fréquente avec âge, humidité et service commercial",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 8 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "Isuzu 2.0 DSZ diesel — 51 ch",
+              "code_moteur": "Isuzu 4FC1 / HM DSZ",
+              "cylindree": "1 995 cm³",
+              "puissance_ch": 51,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification, injection/carburation et distribution selon moteur",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Démarrage difficile, fuite ou ratés"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 220 000 km ; plus tôt en taxi ou sans entretien",
+                  "diagnostic": "Identifier BMC 1.5/1.76, HM diesel 1.5, Isuzu G180 1.8 ou 2.0 diesel, mesurer compressions/pression, contrôler chaîne/courroie selon moteur, culasse, radiateur, pompe, carburateur/MPFI, pompe/injecteurs et turbo ; vérifier conversion CNG/LPG et étanchéité",
+                  "piece_concernee": "Moteur Ambassador correspondant à la version",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente à fort kilométrage ou en service taxi",
+                  "cout_reparation_estime": "Élevé : environ 400 à 6 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte quatre/cinq rapports, arbre et pont",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection dure",
+                    "Hurlement du pont ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 220 000 km",
+                  "diagnostic": "Contrôler embrayage/commande, boîte, overdrive éventuel, huile, supports, arbre/croisillons, différentiel, demi-arbres et roulements ; vérifier rapport de pont correspondant au moteur et pièces Morris/Isuzu/HM montées",
+                  "piece_concernee": "Transmission manuelle et propulsion Ambassador",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage intensif",
+                  "cout_reparation_estime": "Élevé : environ 300 à 4 000 €"
+                },
+                {
+                  "probleme": "Corrosion, monocoque Oxford, suspension, direction et freinage",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu important",
+                    "Caisse affaissée ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat, surtout ancien taxi",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons intégrés, passages de roue, ancrages, réparations et alignement ; contrôler pivots, ressorts, amortisseurs, direction, roulements, flexibles, maître-cylindre, tambours/disques, pneus et faisceau ; authentifier Mark/Nova/Classic/Grand/Avigo",
+                  "piece_concernee": "Coque, trains roulants et sécurité Ambassador",
+                  "gravite": "Critique si structure ou freinage atteint",
+                  "frequence": "Fréquente avec âge, humidité et service commercial",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 8 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "Isuzu 2.0 DSZ turbo — 60 ch",
+              "code_moteur": "Isuzu 4FC1-T / HM DSZ Turbo",
+              "cylindree": "1 995 cm³",
+              "puissance_ch": 60,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification, injection/carburation et distribution selon moteur",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Démarrage difficile, fuite ou ratés"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 220 000 km ; plus tôt en taxi ou sans entretien",
+                  "diagnostic": "Identifier BMC 1.5/1.76, HM diesel 1.5, Isuzu G180 1.8 ou 2.0 diesel, mesurer compressions/pression, contrôler chaîne/courroie selon moteur, culasse, radiateur, pompe, carburateur/MPFI, pompe/injecteurs et turbo ; vérifier conversion CNG/LPG et étanchéité",
+                  "piece_concernee": "Moteur Ambassador correspondant à la version",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente à fort kilométrage ou en service taxi",
+                  "cout_reparation_estime": "Élevé : environ 400 à 6 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte quatre/cinq rapports, arbre et pont",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection dure",
+                    "Hurlement du pont ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 220 000 km",
+                  "diagnostic": "Contrôler embrayage/commande, boîte, overdrive éventuel, huile, supports, arbre/croisillons, différentiel, demi-arbres et roulements ; vérifier rapport de pont correspondant au moteur et pièces Morris/Isuzu/HM montées",
+                  "piece_concernee": "Transmission manuelle et propulsion Ambassador",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage intensif",
+                  "cout_reparation_estime": "Élevé : environ 300 à 4 000 €"
+                },
+                {
+                  "probleme": "Corrosion, monocoque Oxford, suspension, direction et freinage",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu important",
+                    "Caisse affaissée ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant achat, surtout ancien taxi",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons intégrés, passages de roue, ancrages, réparations et alignement ; contrôler pivots, ressorts, amortisseurs, direction, roulements, flexibles, maître-cylindre, tambours/disques, pneus et faisceau ; authentifier Mark/Nova/Classic/Grand/Avigo",
+                  "piece_concernee": "Coque, trains roulants et sécurité Ambassador",
+                  "gravite": "Critique si structure ou freinage atteint",
+                  "frequence": "Fréquente avec âge, humidité et service commercial",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 8 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.ausbon.com/index.php/en/item/22-ambassador-technical-specifications"
+      ]
+    }
+  ]
+}

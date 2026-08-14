@@ -1,0 +1,3830 @@
+{
+  "nom": "Daewoo",
+  "modeles": [
+    {
+      "nom": "Matiz",
+      "generations": [
+        {
+          "code_chassis": "M100/M150",
+          "annees": "1998-2005",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "0.8 SOHC — 52 ch",
+              "code_moteur": "F8CV",
+              "cylindree": "796 cm³",
+              "puissance_ch": 52,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.0 SOHC — 64 ch",
+              "code_moteur": "B10S1",
+              "cylindree": "995 cm³",
+              "puissance_ch": 64,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Kalos",
+      "generations": [
+        {
+          "code_chassis": "T200/T250",
+          "annees": "2002-2008",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.2 SOHC — 72 ch",
+              "code_moteur": "B12S1",
+              "cylindree": "1 150 cm³",
+              "puissance_ch": 72,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.4 16V — 94 ch",
+              "code_moteur": "F14D3",
+              "cylindree": "1 399 cm³",
+              "puissance_ch": 94,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.6 16V — 106 ch",
+              "code_moteur": "F16D3",
+              "cylindree": "1 598 cm³",
+              "puissance_ch": 106,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Lacetti",
+      "generations": [
+        {
+          "code_chassis": "J200",
+          "annees": "2002-2009",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.4 16V — 95 ch",
+              "code_moteur": "F14D3",
+              "cylindree": "1 399 cm³",
+              "puissance_ch": 95,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.6 16V — 109 ch",
+              "code_moteur": "F16D3",
+              "cylindree": "1 598 cm³",
+              "puissance_ch": 109,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.8 16V — 122 ch",
+              "code_moteur": "T18SED",
+              "cylindree": "1 799 cm³",
+              "puissance_ch": 122,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "2.0 16V — 133 ch",
+              "code_moteur": "U20SED",
+              "cylindree": "1 998 cm³",
+              "puissance_ch": 133,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Nubira",
+      "generations": [
+        {
+          "code_chassis": "J100/J150/J200",
+          "annees": "1997-2008",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.6 16V — 106 ch",
+              "code_moteur": "A16DMS",
+              "cylindree": "1 598 cm³",
+              "puissance_ch": 106,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.8 16V — 122 ch",
+              "code_moteur": "C18SED",
+              "cylindree": "1 799 cm³",
+              "puissance_ch": 122,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "2.0 16V — 133 ch",
+              "code_moteur": "X20SED",
+              "cylindree": "1 998 cm³",
+              "puissance_ch": 133,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Cielo",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "sedan",
+        "countries": [
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "N100",
+          "annees": "1994-2008",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.5 SOHC — 75 ch",
+              "code_moteur": "G15MF",
+              "cylindree": "1 498 cm³",
+              "puissance_ch": 75,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.5 DOHC — 90 ch",
+              "code_moteur": "A15MF",
+              "cylindree": "1 498 cm³",
+              "puissance_ch": 90,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Espero",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "sedan",
+        "countries": [
+          "gb",
+          "nl",
+          "nz",
+          "ua"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "KLEJ",
+          "annees": "1990-1999",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.5 DOHC — 90 ch",
+              "code_moteur": "A15MF",
+              "cylindree": "1 498 cm³",
+              "puissance_ch": 90,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.8 SOHC — 95 ch",
+              "code_moteur": "C18LE",
+              "cylindree": "1 796 cm³",
+              "puissance_ch": 95,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "2.0 SOHC — 105 ch",
+              "code_moteur": "C20LE",
+              "cylindree": "1 998 cm³",
+              "puissance_ch": 105,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Evanda",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "sedan",
+        "countries": [
+          "fi",
+          "nl",
+          "ua"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 6
+      },
+      "generations": [
+        {
+          "code_chassis": "V200",
+          "annees": "2002-2006",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.0 16V — 131 ch",
+              "code_moteur": "X20SED",
+              "cylindree": "1 998 cm³",
+              "puissance_ch": 131,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Gentra",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "fi",
+          "ua"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 6
+      },
+      "generations": [
+        {
+          "code_chassis": "T250",
+          "annees": "2005-2011",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.2 16V — 85 ch",
+              "code_moteur": "B12D1",
+              "cylindree": "1 206 cm³",
+              "puissance_ch": 85,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.5 16V — 107 ch",
+              "code_moteur": "B15D2",
+              "cylindree": "1 485 cm³",
+              "puissance_ch": 107,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Lanos",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "gb",
+          "nl",
+          "nz",
+          "ua",
+          "us"
+        ],
+        "regions": [
+          "eu",
+          "na",
+          "oc"
+        ],
+        "global_decile": 3
+      },
+      "generations": [
+        {
+          "code_chassis": "T100/T150",
+          "annees": "1997-2020",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.4 SOHC — 75 ch",
+              "code_moteur": "A14SMS",
+              "cylindree": "1 349 cm³",
+              "puissance_ch": 75,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.5 SOHC — 86 ch",
+              "code_moteur": "A15SMS",
+              "cylindree": "1 498 cm³",
+              "puissance_ch": 86,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.5 DOHC — 100 ch",
+              "code_moteur": "A15DMS",
+              "cylindree": "1 498 cm³",
+              "puissance_ch": 100,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.6 DOHC — 106 ch",
+              "code_moteur": "A16DMS",
+              "cylindree": "1 598 cm³",
+              "puissance_ch": 106,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Leganza",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "sedan",
+        "countries": [
+          "ca",
+          "gb",
+          "nl",
+          "nz",
+          "ua",
+          "us"
+        ],
+        "regions": [
+          "eu",
+          "na",
+          "oc"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "V100",
+          "annees": "1997-2002",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.0 16V — 133 ch",
+              "code_moteur": "X20SED",
+              "cylindree": "1 998 cm³",
+              "puissance_ch": 133,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "2.2 16V — 136 ch",
+              "code_moteur": "T22SED",
+              "cylindree": "2 198 cm³",
+              "puissance_ch": 136,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Magnus",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "sedan",
+        "countries": [
+          "nl",
+          "us"
+        ],
+        "regions": [
+          "eu",
+          "na"
+        ],
+        "global_decile": 9
+      },
+      "generations": [
+        {
+          "code_chassis": "V200",
+          "annees": "2000-2006",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.0 16V — 116 ch",
+              "code_moteur": "C20SED",
+              "cylindree": "1 998 cm³",
+              "puissance_ch": 116,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "2.5 24V 6 cylindres — 155 ch",
+              "code_moteur": "X25D1",
+              "cylindree": "2 492 cm³",
+              "puissance_ch": 155,
+              "boite": [
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Musso",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "gb",
+          "ua"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 8
+      },
+      "generations": [
+        {
+          "code_chassis": "FJ",
+          "annees": "1998-2002",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "2.3 Diesel — 80 ch",
+              "code_moteur": "OM601 D23",
+              "cylindree": "2 299 cm³",
+              "puissance_ch": 80,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement et culasse des diesels Mercedes sous licence",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression dans le vase",
+                    "Fumée blanche"
+                  ],
+                  "kilometrage_apparition": "À surveiller dès 120 000 km, surtout après remorquage ou entretien incomplet.",
+                  "diagnostic": "Test CO₂, pression du circuit, compression et inspection radiateur/viscocoupleur.",
+                  "piece_concernee": "Culasse, joint, radiateur, pompe à eau et viscocoupleur",
+                  "gravite": "Majeure",
+                  "frequence": "Risque accru après surchauffe",
+                  "cout_reparation_estime": "Environ 800 à 4 000 €."
+                },
+                {
+                  "probleme": "Injection mécanique, préchauffage et turbocompresseur",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Fumée noire",
+                    "Manque de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 150 000 km.",
+                  "diagnostic": "Contrôle bougies de préchauffage, calage/pression d’injection, injecteurs, durites et pression turbo.",
+                  "piece_concernee": "Pompe, injecteurs, préchauffage et turbo OM662LA",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Dépend de la qualité du carburant et de l’entretien",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Transmission 4x4, ponts et rouille du châssis",
+                  "symptomes": [
+                    "Vibration",
+                    "Claquement en charge",
+                    "Enclenchement 4x4 difficile"
+                  ],
+                  "kilometrage_apparition": "Variable selon usage tout-terrain et graissage.",
+                  "diagnostic": "Contrôle huiles, croisillons, moyeux, transfert, ponts, ancrages et corrosion du châssis.",
+                  "piece_concernee": "Boîte, transfert, arbres, ponts et châssis",
+                  "gravite": "Majeure",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 500 à 5 000 €."
+                },
+                {
+                  "probleme": "Freinage et direction",
+                  "symptomes": [
+                    "Tirage",
+                    "Jeu au volant",
+                    "Freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque entretien.",
+                  "diagnostic": "Inspection rotules, boîtier de direction, flexibles, étriers et correcteur de freinage.",
+                  "piece_concernee": "Direction, suspension et freinage",
+                  "gravite": "Majeure si jeu ou fuite importante",
+                  "frequence": "Usure liée à l’âge et à l’usage",
+                  "cout_reparation_estime": "Environ 200 à 2 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "2.9 Diesel — 95 ch",
+              "code_moteur": "OM602 D29",
+              "cylindree": "2 874 cm³",
+              "puissance_ch": 95,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement et culasse des diesels Mercedes sous licence",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression dans le vase",
+                    "Fumée blanche"
+                  ],
+                  "kilometrage_apparition": "À surveiller dès 120 000 km, surtout après remorquage ou entretien incomplet.",
+                  "diagnostic": "Test CO₂, pression du circuit, compression et inspection radiateur/viscocoupleur.",
+                  "piece_concernee": "Culasse, joint, radiateur, pompe à eau et viscocoupleur",
+                  "gravite": "Majeure",
+                  "frequence": "Risque accru après surchauffe",
+                  "cout_reparation_estime": "Environ 800 à 4 000 €."
+                },
+                {
+                  "probleme": "Injection mécanique, préchauffage et turbocompresseur",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Fumée noire",
+                    "Manque de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 150 000 km.",
+                  "diagnostic": "Contrôle bougies de préchauffage, calage/pression d’injection, injecteurs, durites et pression turbo.",
+                  "piece_concernee": "Pompe, injecteurs, préchauffage et turbo OM662LA",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Dépend de la qualité du carburant et de l’entretien",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Transmission 4x4, ponts et rouille du châssis",
+                  "symptomes": [
+                    "Vibration",
+                    "Claquement en charge",
+                    "Enclenchement 4x4 difficile"
+                  ],
+                  "kilometrage_apparition": "Variable selon usage tout-terrain et graissage.",
+                  "diagnostic": "Contrôle huiles, croisillons, moyeux, transfert, ponts, ancrages et corrosion du châssis.",
+                  "piece_concernee": "Boîte, transfert, arbres, ponts et châssis",
+                  "gravite": "Majeure",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 500 à 5 000 €."
+                },
+                {
+                  "probleme": "Freinage et direction",
+                  "symptomes": [
+                    "Tirage",
+                    "Jeu au volant",
+                    "Freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque entretien.",
+                  "diagnostic": "Inspection rotules, boîtier de direction, flexibles, étriers et correcteur de freinage.",
+                  "piece_concernee": "Direction, suspension et freinage",
+                  "gravite": "Majeure si jeu ou fuite importante",
+                  "frequence": "Usure liée à l’âge et à l’usage",
+                  "cout_reparation_estime": "Environ 200 à 2 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "2.9 Turbo Diesel — 120 ch",
+              "code_moteur": "OM662LA",
+              "cylindree": "2 874 cm³",
+              "puissance_ch": 120,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement et culasse des diesels Mercedes sous licence",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression dans le vase",
+                    "Fumée blanche"
+                  ],
+                  "kilometrage_apparition": "À surveiller dès 120 000 km, surtout après remorquage ou entretien incomplet.",
+                  "diagnostic": "Test CO₂, pression du circuit, compression et inspection radiateur/viscocoupleur.",
+                  "piece_concernee": "Culasse, joint, radiateur, pompe à eau et viscocoupleur",
+                  "gravite": "Majeure",
+                  "frequence": "Risque accru après surchauffe",
+                  "cout_reparation_estime": "Environ 800 à 4 000 €."
+                },
+                {
+                  "probleme": "Injection mécanique, préchauffage et turbocompresseur",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Fumée noire",
+                    "Manque de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 150 000 km.",
+                  "diagnostic": "Contrôle bougies de préchauffage, calage/pression d’injection, injecteurs, durites et pression turbo.",
+                  "piece_concernee": "Pompe, injecteurs, préchauffage et turbo OM662LA",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Dépend de la qualité du carburant et de l’entretien",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Transmission 4x4, ponts et rouille du châssis",
+                  "symptomes": [
+                    "Vibration",
+                    "Claquement en charge",
+                    "Enclenchement 4x4 difficile"
+                  ],
+                  "kilometrage_apparition": "Variable selon usage tout-terrain et graissage.",
+                  "diagnostic": "Contrôle huiles, croisillons, moyeux, transfert, ponts, ancrages et corrosion du châssis.",
+                  "piece_concernee": "Boîte, transfert, arbres, ponts et châssis",
+                  "gravite": "Majeure",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 500 à 5 000 €."
+                },
+                {
+                  "probleme": "Freinage et direction",
+                  "symptomes": [
+                    "Tirage",
+                    "Jeu au volant",
+                    "Freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque entretien.",
+                  "diagnostic": "Inspection rotules, boîtier de direction, flexibles, étriers et correcteur de freinage.",
+                  "piece_concernee": "Direction, suspension et freinage",
+                  "gravite": "Majeure si jeu ou fuite importante",
+                  "frequence": "Usure liée à l’âge et à l’usage",
+                  "cout_reparation_estime": "Environ 200 à 2 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Nexia",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "fi",
+          "gb",
+          "nl",
+          "ua"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "N100/N150",
+          "annees": "1995-2016",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.5 SOHC — 75 ch",
+              "code_moteur": "G15MF",
+              "cylindree": "1 498 cm³",
+              "puissance_ch": 75,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.5 DOHC — 90 ch",
+              "code_moteur": "A15MF",
+              "cylindree": "1 498 cm³",
+              "puissance_ch": 90,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.6 DOHC — 109 ch",
+              "code_moteur": "F16D3",
+              "cylindree": "1 598 cm³",
+              "puissance_ch": 109,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Nubira Wagon",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ca",
+          "us"
+        ],
+        "regions": [
+          "na"
+        ],
+        "global_decile": null
+      },
+      "generations": [
+        {
+          "code_chassis": "J100/J150",
+          "annees": "1997-2004",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.6 16V — 106 ch",
+              "code_moteur": "A16DMS",
+              "cylindree": "1 598 cm³",
+              "puissance_ch": 106,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "2.0 16V — 133 ch",
+              "code_moteur": "X20SED",
+              "cylindree": "1 998 cm³",
+              "puissance_ch": 133,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Racer",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "nl",
+          "ua"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 8
+      },
+      "generations": [
+        {
+          "code_chassis": "T-Car",
+          "annees": "1986-1997",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.5 SOHC — 75 ch",
+              "code_moteur": "G15MF",
+              "cylindree": "1 498 cm³",
+              "puissance_ch": 75,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.5 DOHC — 90 ch",
+              "code_moteur": "A15MF",
+              "cylindree": "1 498 cm³",
+              "puissance_ch": 90,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Rezzo",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "nl",
+          "ua"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 9
+      },
+      "generations": [
+        {
+          "code_chassis": "U100",
+          "annees": "2000-2008",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.6 16V — 105 ch",
+              "code_moteur": "A16DMS",
+              "cylindree": "1 598 cm³",
+              "puissance_ch": 105,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "2.0 16V — 121 ch",
+              "code_moteur": "X20SED",
+              "cylindree": "1 998 cm³",
+              "puissance_ch": 121,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Sens",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ua"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 1
+      },
+      "generations": [
+        {
+          "code_chassis": "T100",
+          "annees": "2002-2017",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.3 SOHC — 70 ch",
+              "code_moteur": "MeMZ-307",
+              "cylindree": "1 299 cm³",
+              "puissance_ch": 70,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Tacuma",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "fi",
+          "gb",
+          "nl",
+          "nz",
+          "ua"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "U100",
+          "annees": "2000-2008",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.6 16V — 105 ch",
+              "code_moteur": "A16DMS",
+              "cylindree": "1 598 cm³",
+              "puissance_ch": 105,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "2.0 16V — 121 ch",
+              "code_moteur": "X20SED",
+              "cylindree": "1 998 cm³",
+              "puissance_ch": 121,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Tico",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "nl",
+          "ua"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 8
+      },
+      "generations": [
+        {
+          "code_chassis": "KLY3",
+          "annees": "1991-2001",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "0.8 SOHC — 48 ch",
+              "code_moteur": "F8C",
+              "cylindree": "796 cm³",
+              "puissance_ch": 48,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Korando",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "van",
+        "body_type": null,
+        "countries": [
+          "gb",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 9
+      },
+      "generations": [
+        {
+          "code_chassis": "KJ",
+          "annees": "1999-2001",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "2.3 Diesel — 80 ch",
+              "code_moteur": "OM601 D23",
+              "cylindree": "2 299 cm³",
+              "puissance_ch": 80,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement et culasse des diesels Mercedes sous licence",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression dans le vase",
+                    "Fumée blanche"
+                  ],
+                  "kilometrage_apparition": "À surveiller dès 120 000 km, surtout après remorquage ou entretien incomplet.",
+                  "diagnostic": "Test CO₂, pression du circuit, compression et inspection radiateur/viscocoupleur.",
+                  "piece_concernee": "Culasse, joint, radiateur, pompe à eau et viscocoupleur",
+                  "gravite": "Majeure",
+                  "frequence": "Risque accru après surchauffe",
+                  "cout_reparation_estime": "Environ 800 à 4 000 €."
+                },
+                {
+                  "probleme": "Injection mécanique, préchauffage et turbocompresseur",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Fumée noire",
+                    "Manque de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 150 000 km.",
+                  "diagnostic": "Contrôle bougies de préchauffage, calage/pression d’injection, injecteurs, durites et pression turbo.",
+                  "piece_concernee": "Pompe, injecteurs, préchauffage et turbo OM662LA",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Dépend de la qualité du carburant et de l’entretien",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Transmission 4x4, ponts et rouille du châssis",
+                  "symptomes": [
+                    "Vibration",
+                    "Claquement en charge",
+                    "Enclenchement 4x4 difficile"
+                  ],
+                  "kilometrage_apparition": "Variable selon usage tout-terrain et graissage.",
+                  "diagnostic": "Contrôle huiles, croisillons, moyeux, transfert, ponts, ancrages et corrosion du châssis.",
+                  "piece_concernee": "Boîte, transfert, arbres, ponts et châssis",
+                  "gravite": "Majeure",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 500 à 5 000 €."
+                },
+                {
+                  "probleme": "Freinage et direction",
+                  "symptomes": [
+                    "Tirage",
+                    "Jeu au volant",
+                    "Freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque entretien.",
+                  "diagnostic": "Inspection rotules, boîtier de direction, flexibles, étriers et correcteur de freinage.",
+                  "piece_concernee": "Direction, suspension et freinage",
+                  "gravite": "Majeure si jeu ou fuite importante",
+                  "frequence": "Usure liée à l’âge et à l’usage",
+                  "cout_reparation_estime": "Environ 200 à 2 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "2.9 Diesel — 95 ch",
+              "code_moteur": "OM602 D29",
+              "cylindree": "2 874 cm³",
+              "puissance_ch": 95,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement et culasse des diesels Mercedes sous licence",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression dans le vase",
+                    "Fumée blanche"
+                  ],
+                  "kilometrage_apparition": "À surveiller dès 120 000 km, surtout après remorquage ou entretien incomplet.",
+                  "diagnostic": "Test CO₂, pression du circuit, compression et inspection radiateur/viscocoupleur.",
+                  "piece_concernee": "Culasse, joint, radiateur, pompe à eau et viscocoupleur",
+                  "gravite": "Majeure",
+                  "frequence": "Risque accru après surchauffe",
+                  "cout_reparation_estime": "Environ 800 à 4 000 €."
+                },
+                {
+                  "probleme": "Injection mécanique, préchauffage et turbocompresseur",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Fumée noire",
+                    "Manque de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 150 000 km.",
+                  "diagnostic": "Contrôle bougies de préchauffage, calage/pression d’injection, injecteurs, durites et pression turbo.",
+                  "piece_concernee": "Pompe, injecteurs, préchauffage et turbo OM662LA",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Dépend de la qualité du carburant et de l’entretien",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Transmission 4x4, ponts et rouille du châssis",
+                  "symptomes": [
+                    "Vibration",
+                    "Claquement en charge",
+                    "Enclenchement 4x4 difficile"
+                  ],
+                  "kilometrage_apparition": "Variable selon usage tout-terrain et graissage.",
+                  "diagnostic": "Contrôle huiles, croisillons, moyeux, transfert, ponts, ancrages et corrosion du châssis.",
+                  "piece_concernee": "Boîte, transfert, arbres, ponts et châssis",
+                  "gravite": "Majeure",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 500 à 5 000 €."
+                },
+                {
+                  "probleme": "Freinage et direction",
+                  "symptomes": [
+                    "Tirage",
+                    "Jeu au volant",
+                    "Freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque entretien.",
+                  "diagnostic": "Inspection rotules, boîtier de direction, flexibles, étriers et correcteur de freinage.",
+                  "piece_concernee": "Direction, suspension et freinage",
+                  "gravite": "Majeure si jeu ou fuite importante",
+                  "frequence": "Usure liée à l’âge et à l’usage",
+                  "cout_reparation_estime": "Environ 200 à 2 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "2.9 Turbo Diesel — 120 ch",
+              "code_moteur": "OM662LA",
+              "cylindree": "2 874 cm³",
+              "puissance_ch": 120,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement et culasse des diesels Mercedes sous licence",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression dans le vase",
+                    "Fumée blanche"
+                  ],
+                  "kilometrage_apparition": "À surveiller dès 120 000 km, surtout après remorquage ou entretien incomplet.",
+                  "diagnostic": "Test CO₂, pression du circuit, compression et inspection radiateur/viscocoupleur.",
+                  "piece_concernee": "Culasse, joint, radiateur, pompe à eau et viscocoupleur",
+                  "gravite": "Majeure",
+                  "frequence": "Risque accru après surchauffe",
+                  "cout_reparation_estime": "Environ 800 à 4 000 €."
+                },
+                {
+                  "probleme": "Injection mécanique, préchauffage et turbocompresseur",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Fumée noire",
+                    "Manque de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 150 000 km.",
+                  "diagnostic": "Contrôle bougies de préchauffage, calage/pression d’injection, injecteurs, durites et pression turbo.",
+                  "piece_concernee": "Pompe, injecteurs, préchauffage et turbo OM662LA",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Dépend de la qualité du carburant et de l’entretien",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Transmission 4x4, ponts et rouille du châssis",
+                  "symptomes": [
+                    "Vibration",
+                    "Claquement en charge",
+                    "Enclenchement 4x4 difficile"
+                  ],
+                  "kilometrage_apparition": "Variable selon usage tout-terrain et graissage.",
+                  "diagnostic": "Contrôle huiles, croisillons, moyeux, transfert, ponts, ancrages et corrosion du châssis.",
+                  "piece_concernee": "Boîte, transfert, arbres, ponts et châssis",
+                  "gravite": "Majeure",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 500 à 5 000 €."
+                },
+                {
+                  "probleme": "Freinage et direction",
+                  "symptomes": [
+                    "Tirage",
+                    "Jeu au volant",
+                    "Freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque entretien.",
+                  "diagnostic": "Inspection rotules, boîtier de direction, flexibles, étriers et correcteur de freinage.",
+                  "piece_concernee": "Direction, suspension et freinage",
+                  "gravite": "Majeure si jeu ou fuite importante",
+                  "frequence": "Usure liée à l’âge et à l’usage",
+                  "cout_reparation_estime": "Environ 200 à 2 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "3.2 essence 6 cylindres — 220 ch",
+              "code_moteur": "M104 E32",
+              "cylindree": "3 199 cm³",
+              "puissance_ch": 220,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement et joint de culasse",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou démarrage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Courroie à contrôler selon l’échéance constructeur ; refroidissement souvent à surveiller après 80 000 km.",
+                  "diagnostic": "Vérifier historique de distribution, mise sous pression du circuit, test CO₂ et compression.",
+                  "piece_concernee": "Courroie, galets, pompe à eau, thermostat et joint de culasse",
+                  "gravite": "Majeure à critique en cas de rupture ou surchauffe",
+                  "frequence": "Risque accru sans historique documenté",
+                  "cout_reparation_estime": "Environ 400 à 2 500 € ; davantage si moteur endommagé."
+                },
+                {
+                  "probleme": "Ralenti, injection et allumage",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Généralement après 60 000 à 120 000 km ou avec le vieillissement des durites.",
+                  "diagnostic": "Lecture des défauts, contrôle bougies/bobines, pression carburant, prises d’air et capteurs MAP/TPS/sonde lambda.",
+                  "piece_concernee": "Allumage, injecteurs, capteurs et admission",
+                  "gravite": "Modérée, majeure si mélange pauvre prolongé",
+                  "frequence": "Assez courante sur véhicules âgés",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, trains roulants et freinage",
+                  "symptomes": [
+                    "Claquement",
+                    "Tenue de route imprécise",
+                    "Corrosion visible ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge, au climat et à l’état des routes.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, conduites de frein, rotules, silentblocs et amortisseurs.",
+                  "piece_concernee": "Caisse, berceaux, suspension et freinage",
+                  "gravite": "Modérée à critique si structure ou conduite de frein touchée",
+                  "frequence": "À contrôler systématiquement avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 € selon corrosion."
+                },
+                {
+                  "probleme": "Disponibilité des pièces et réparations antérieures",
+                  "symptomes": [
+                    "Pièces adaptables inadaptées",
+                    "Faisceau modifié",
+                    "Fuites ou assemblages non conformes"
+                  ],
+                  "kilometrage_apparition": "Indépendant du kilométrage.",
+                  "diagnostic": "Comparer références moteur/VIN, contrôler factures, qualité des pièces et modifications.",
+                  "piece_concernee": "Ensemble du véhicule",
+                  "gravite": "Variable",
+                  "frequence": "Importante sur modèles dont le réseau a disparu",
+                  "cout_reparation_estime": "Variable — confirmer la disponibilité avant achat."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

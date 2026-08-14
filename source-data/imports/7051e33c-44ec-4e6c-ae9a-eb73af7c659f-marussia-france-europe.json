@@ -1,0 +1,227 @@
+{
+  "nom": "Marussia",
+  "modeles": [
+    {
+      "nom": "B2",
+      "generations": [
+        {
+          "code_chassis": "B2 prototype / présérie",
+          "annees": "2010–2014",
+          "phases": [
+            "Trois calibrages annoncés pour la B2. Production restée extrêmement limitée : authentifier prototype, présérie et moteur réellement monté."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "VQ35DE 3.5 V6 atmosphérique — 300 ch",
+              "code_moteur": "Nissan VQ35DE Marussia",
+              "cylindree": "3 498 cm³",
+              "puissance_ch": 300,
+              "boite": [
+                "Automatique 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification et étanchéité du V6 Nissan/Cosworth",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression d’huile faible",
+                    "Fumée, bruit ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "Dès 40 000 à 80 000 km pour le VQ35 ; temps d’essai et stockage priment sur les prototypes",
+                  "diagnostic": "Identifier le VQ35DE 3,5 atmosphérique ou le 2,8 Cosworth biturbo et son niveau 360/420 ch. Mesurer pressions, compressions/leak-down, analyser huile, contrôler pompes, radiateurs, échangeurs, distribution, joints et, sur turbo, jeux et conduites de suralimentation.",
+                  "piece_concernee": "V6 central arrière Marussia B2",
+                  "gravite": "Critique",
+                  "frequence": "Inconnue à fréquente selon préparation et conservation",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "Injection, allumage et faisceau de petite série",
+                  "symptomes": [
+                    "Démarrage impossible",
+                    "Ratés",
+                    "Mode dégradé ou communication diagnostic absente"
+                  ],
+                  "kilometrage_apparition": "À chaque anomalie et après stockage",
+                  "diagnostic": "Vérifier batterie, masses, alimentation calculateurs, réseau CAN, antidémarrage, capteurs, pression carburant, injecteurs, bobines et bougies. Identifier calculateur et calibration Cosworth/Marussia avant remplacement et sauvegarder les données lorsque la communication est encore possible.",
+                  "piece_concernee": "Gestion moteur et réseau électrique B2",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque élevé de panne immobilisante faute de support constructeur",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 12 000 €"
+                },
+                {
+                  "probleme": "Boîte automatique six rapports, embrayages et transmission",
+                  "symptomes": [
+                    "À-coups",
+                    "Rapport refusé",
+                    "Patinage, fuite ou surchauffe"
+                  ],
+                  "kilometrage_apparition": "Selon usage ; contrôle impératif avant roulage d’un exemplaire stocké",
+                  "diagnostic": "Identifier la boîte réellement installée, lire défauts et températures, contrôler niveau/état d’huile selon procédure, actionneurs, refroidissement, supports, arbres, joints et différentiel. Éviter toute vidange dynamique sans documentation technique.",
+                  "piece_concernee": "Transmission B2",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Inconnue sur très faible production",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 15 000 €"
+                },
+                {
+                  "probleme": "Semi-monocoque aluminium, panneaux composites et authenticité",
+                  "symptomes": [
+                    "Corrosion galvanique",
+                    "Fissure ou délaminage",
+                    "Géométrie incohérente ou origine incertaine"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle avant acquisition ou remise en route",
+                  "diagnostic": "Établir numéro, état prototype/pré-série et historique. Inspecter collages, rivets, soudures, inserts, points de levage, panneaux, portes, vitrages, suspension, direction, freins et pneus ; rechercher chocs et corrosion entre aluminium et carbone sans ponçage destructif.",
+                  "piece_concernee": "Châssis et carrosserie Marussia B2",
+                  "gravite": "Critique pour sécurité et authenticité",
+                  "frequence": "Risque élevé compte tenu des prototypes inachevés et restaurations",
+                  "cout_reparation_estime": "Extrême : expertise puis fabrication sur mesure, souvent plus de 20 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Cosworth 2.8 V6 biturbo — 360 ch",
+              "code_moteur": "Marussia-Cosworth 2.8T 360",
+              "cylindree": "2 800 cm³",
+              "puissance_ch": 360,
+              "boite": [
+                "Automatique 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification et étanchéité du V6 Nissan/Cosworth",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression d’huile faible",
+                    "Fumée, bruit ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "Dès 40 000 à 80 000 km pour le VQ35 ; temps d’essai et stockage priment sur les prototypes",
+                  "diagnostic": "Identifier le VQ35DE 3,5 atmosphérique ou le 2,8 Cosworth biturbo et son niveau 360/420 ch. Mesurer pressions, compressions/leak-down, analyser huile, contrôler pompes, radiateurs, échangeurs, distribution, joints et, sur turbo, jeux et conduites de suralimentation.",
+                  "piece_concernee": "V6 central arrière Marussia B2",
+                  "gravite": "Critique",
+                  "frequence": "Inconnue à fréquente selon préparation et conservation",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "Injection, allumage et faisceau de petite série",
+                  "symptomes": [
+                    "Démarrage impossible",
+                    "Ratés",
+                    "Mode dégradé ou communication diagnostic absente"
+                  ],
+                  "kilometrage_apparition": "À chaque anomalie et après stockage",
+                  "diagnostic": "Vérifier batterie, masses, alimentation calculateurs, réseau CAN, antidémarrage, capteurs, pression carburant, injecteurs, bobines et bougies. Identifier calculateur et calibration Cosworth/Marussia avant remplacement et sauvegarder les données lorsque la communication est encore possible.",
+                  "piece_concernee": "Gestion moteur et réseau électrique B2",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque élevé de panne immobilisante faute de support constructeur",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 12 000 €"
+                },
+                {
+                  "probleme": "Boîte automatique six rapports, embrayages et transmission",
+                  "symptomes": [
+                    "À-coups",
+                    "Rapport refusé",
+                    "Patinage, fuite ou surchauffe"
+                  ],
+                  "kilometrage_apparition": "Selon usage ; contrôle impératif avant roulage d’un exemplaire stocké",
+                  "diagnostic": "Identifier la boîte réellement installée, lire défauts et températures, contrôler niveau/état d’huile selon procédure, actionneurs, refroidissement, supports, arbres, joints et différentiel. Éviter toute vidange dynamique sans documentation technique.",
+                  "piece_concernee": "Transmission B2",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Inconnue sur très faible production",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 15 000 €"
+                },
+                {
+                  "probleme": "Semi-monocoque aluminium, panneaux composites et authenticité",
+                  "symptomes": [
+                    "Corrosion galvanique",
+                    "Fissure ou délaminage",
+                    "Géométrie incohérente ou origine incertaine"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle avant acquisition ou remise en route",
+                  "diagnostic": "Établir numéro, état prototype/pré-série et historique. Inspecter collages, rivets, soudures, inserts, points de levage, panneaux, portes, vitrages, suspension, direction, freins et pneus ; rechercher chocs et corrosion entre aluminium et carbone sans ponçage destructif.",
+                  "piece_concernee": "Châssis et carrosserie Marussia B2",
+                  "gravite": "Critique pour sécurité et authenticité",
+                  "frequence": "Risque élevé compte tenu des prototypes inachevés et restaurations",
+                  "cout_reparation_estime": "Extrême : expertise puis fabrication sur mesure, souvent plus de 20 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Cosworth 2.8 V6 biturbo haute puissance — 420 ch",
+              "code_moteur": "Marussia-Cosworth 2.8T 420",
+              "cylindree": "2 800 cm³",
+              "puissance_ch": 420,
+              "boite": [
+                "Automatique 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification et étanchéité du V6 Nissan/Cosworth",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression d’huile faible",
+                    "Fumée, bruit ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "Dès 40 000 à 80 000 km pour le VQ35 ; temps d’essai et stockage priment sur les prototypes",
+                  "diagnostic": "Identifier le VQ35DE 3,5 atmosphérique ou le 2,8 Cosworth biturbo et son niveau 360/420 ch. Mesurer pressions, compressions/leak-down, analyser huile, contrôler pompes, radiateurs, échangeurs, distribution, joints et, sur turbo, jeux et conduites de suralimentation.",
+                  "piece_concernee": "V6 central arrière Marussia B2",
+                  "gravite": "Critique",
+                  "frequence": "Inconnue à fréquente selon préparation et conservation",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "Injection, allumage et faisceau de petite série",
+                  "symptomes": [
+                    "Démarrage impossible",
+                    "Ratés",
+                    "Mode dégradé ou communication diagnostic absente"
+                  ],
+                  "kilometrage_apparition": "À chaque anomalie et après stockage",
+                  "diagnostic": "Vérifier batterie, masses, alimentation calculateurs, réseau CAN, antidémarrage, capteurs, pression carburant, injecteurs, bobines et bougies. Identifier calculateur et calibration Cosworth/Marussia avant remplacement et sauvegarder les données lorsque la communication est encore possible.",
+                  "piece_concernee": "Gestion moteur et réseau électrique B2",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque élevé de panne immobilisante faute de support constructeur",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 12 000 €"
+                },
+                {
+                  "probleme": "Boîte automatique six rapports, embrayages et transmission",
+                  "symptomes": [
+                    "À-coups",
+                    "Rapport refusé",
+                    "Patinage, fuite ou surchauffe"
+                  ],
+                  "kilometrage_apparition": "Selon usage ; contrôle impératif avant roulage d’un exemplaire stocké",
+                  "diagnostic": "Identifier la boîte réellement installée, lire défauts et températures, contrôler niveau/état d’huile selon procédure, actionneurs, refroidissement, supports, arbres, joints et différentiel. Éviter toute vidange dynamique sans documentation technique.",
+                  "piece_concernee": "Transmission B2",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Inconnue sur très faible production",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 15 000 €"
+                },
+                {
+                  "probleme": "Semi-monocoque aluminium, panneaux composites et authenticité",
+                  "symptomes": [
+                    "Corrosion galvanique",
+                    "Fissure ou délaminage",
+                    "Géométrie incohérente ou origine incertaine"
+                  ],
+                  "kilometrage_apparition": "Expertise structurelle avant acquisition ou remise en route",
+                  "diagnostic": "Établir numéro, état prototype/pré-série et historique. Inspecter collages, rivets, soudures, inserts, points de levage, panneaux, portes, vitrages, suspension, direction, freins et pneus ; rechercher chocs et corrosion entre aluminium et carbone sans ponçage destructif.",
+                  "piece_concernee": "Châssis et carrosserie Marussia B2",
+                  "gravite": "Critique pour sécurité et authenticité",
+                  "frequence": "Risque élevé compte tenu des prototypes inachevés et restaurations",
+                  "cout_reparation_estime": "Extrême : expertise puis fabrication sur mesure, souvent plus de 20 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.allcarcentral.com/Marussia_pdf/press_Internation_Autoshow_Frankfurt_2009.pdf",
+        "https://www.ultimatecarpage.com/spec/5182/Marussia-B2.html"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,988 @@
+[
+  {
+    "marque": "Skoda",
+    "modeles": [
+      {
+        "nom": "Octavia",
+        "generations": [
+          {
+            "code_chassis": "1U (Octavia I)",
+            "annees": "1996-2010",
+            "phases": [
+              "Phase 1 (1996-2000)",
+              "Phase 2 restylée (2000-2010, Tour)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.8T/2.0 - 125 à 180ch",
+                "code_moteur": "AGU / APK / AGP",
+                "cylindree": "1.8L turbo / 2.0L",
+                "puissance_ch": 180,
+                "boite": [
+                  "BVM5"
+                ],
+                "points_faibles": [
+                  "Consommation d'huile excessive sur 1.8T (encrassement carter/segments)",
+                  "Turbo K03/K04 sensible en cas de manque d'entretien",
+                  "Corrosion moindre que les VW de l'époque mais toujours présente",
+                  "Distribution à surveiller strictement (courroie)"
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.9 TDI - 90 à 130ch",
+                "code_moteur": "AGR / ASV / ASZ",
+                "cylindree": "1.9L",
+                "puissance_ch": 130,
+                "boite": [
+                  "BVM5"
+                ],
+                "points_faibles": [
+                  "MOTEUR TRÈS RÉPUTÉ POUR SA FIABILITÉ ET SA LONGÉVITÉ (souvent 400 000+ km)",
+                  "Pompe injection rotative fragile en cas de manque d'entretien",
+                  "Volant moteur bi-masse à surveiller",
+                  "Injecteurs pompe-injecteurs (versions ASZ) plus fragiles"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "1Z (Octavia II)",
+            "annees": "2004-2013",
+            "phases": [
+              "Phase 1 (2004-2008)",
+              "Phase 2 restylée (2008-2013)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.4 TSI/2.0 TFSI RS - 122 à 200ch",
+                "code_moteur": "CAXA / BWA",
+                "cylindree": "1.4L / 2.0L turbo",
+                "puissance_ch": 200,
+                "boite": [
+                  "BVM5/6",
+                  "DSG6"
+                ],
+                "points_faibles": [
+                  "MALADIE CONNUE 1.4 TSI première génération : risque de rupture de courroie interne au compresseur, casse moteur possible",
+                  "Chaîne de distribution 2.0 TFSI pouvant s'étirer prématurément",
+                  "Mécatronique DSG6 fragile",
+                  "Pompe à haute pression FSI sensible"
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.9 TDI/2.0 TDI - 105 à 170ch",
+                "code_moteur": "BXE / BKD / CBAB",
+                "cylindree": "1.9L / 2.0L",
+                "puissance_ch": 170,
+                "boite": [
+                  "BVM5/6",
+                  "DSG6"
+                ],
+                "points_faibles": [
+                  "Volant moteur bi-masse à surveiller",
+                  "Injecteurs pompe-injecteurs (versions PD) fragiles et coûteux",
+                  "Vanne EGR et FAP encrassés",
+                  "Certaines versions concernées par le Dieselgate"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "5E (Octavia III)",
+            "annees": "2012-2020",
+            "phases": [
+              "Phase 1 (2012-2016)",
+              "Phase 2 restylée (2016-2020)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.2 TSI/1.4 TSI/2.0 TSI RS - 86 à 245ch",
+                "code_moteur": "CJZC / CHPA / CJXC",
+                "cylindree": "1.2L / 1.4L / 2.0L turbo",
+                "puissance_ch": 245,
+                "boite": [
+                  "BVM5/6",
+                  "DSG6/7"
+                ],
+                "points_faibles": [
+                  "Chaîne de distribution EA888 Gen3 (2.0 TSI) plus fiable mais tendeur à surveiller",
+                  "1.4 TSI ACT : électrovanne de désactivation de cylindres parfois défaillante",
+                  "Mécatronique DSG7 à sec sensible à l'usure",
+                  "Consommation d'huile signalée sur certains blocs"
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.6 TDI/2.0 TDI - 90 à 184ch",
+                "code_moteur": "CLHA / CRBC / CUNA",
+                "cylindree": "1.6L / 2.0L",
+                "puissance_ch": 184,
+                "boite": [
+                  "BVM5/6",
+                  "DSG6/7"
+                ],
+                "points_faibles": [
+                  "Concernés par le Dieselgate (mise à jour logicielle effectuée)",
+                  "Vanne EGR et FAP encrassés sur usage urbain",
+                  "Injecteurs sensibles à l'encrassement",
+                  "Système AdBlue capteur NOx parfois défaillant"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "NX (Octavia IV)",
+            "annees": "2019-aujourd'hui",
+            "phases": [
+              "Phase 1 (2019-2024)",
+              "Phase 2 restylée (2024-)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.0 TSI/1.5 TSI/2.0 TSI RS - 110 à 245ch",
+                "code_moteur": "DKR / DPCA / DNPA",
+                "cylindree": "1.0L / 1.5L / 2.0L turbo",
+                "puissance_ch": 245,
+                "boite": [
+                  "BVM6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  "Système mild-hybrid 48V (eTSI) complexe, jeune, recul limité",
+                  "Filtre à particules essence sensible sur petits trajets",
+                  "Interface infodivertissement partagée VAG parfois sujette à bugs",
+                  "Chaîne de distribution 2.0 TSI plus fiable mais tendeur à surveiller"
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "2.0 TDI - 115 à 200ch",
+                "code_moteur": "DTSA / DTUA",
+                "cylindree": "2.0L",
+                "puissance_ch": 200,
+                "boite": [
+                  "BVM6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  "Système AdBlue/SCR sensible sur usage urbain",
+                  "FAP encrassé sur petits trajets répétés",
+                  "Vanne EGR à nettoyer préventivement",
+                  "Modèle récent : peu de recul sur fiabilité long terme"
+                ]
+              },
+              {
+                "type": "Hybride rechargeable",
+                "nom": "iV - 204ch",
+                "code_moteur": "EA211 TSI evo + moteur électrique",
+                "cylindree": "1.4L + électrique",
+                "puissance_ch": 204,
+                "boite": [
+                  "DSG6"
+                ],
+                "points_faibles": [
+                  "Vieillissement de la batterie HT à surveiller sur premiers modèles",
+                  "Logiciel de gestion hybride parfois capricieux",
+                  "Poids supplémentaire sollicitant trains roulants et freins",
+                  "Coût de remplacement batterie élevé hors garantie"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Superb",
+        "generations": [
+          {
+            "code_chassis": "3T (Superb II)",
+            "annees": "2008-2015",
+            "phases": [
+              "Phase 1 (2008-2013)",
+              "Phase 2 restylée (2013-2015)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.8 TSI/3.6 FSI V6 - 152 à 260ch",
+                "code_moteur": "CDAA / BWS (V6)",
+                "cylindree": "1.8L / 3.6L V6",
+                "puissance_ch": 260,
+                "boite": [
+                  "BVM6",
+                  "DSG6"
+                ],
+                "points_faibles": [
+                  "Chaîne de distribution 1.8 TSI EA888 pouvant s'étirer prématurément",
+                  "Pompe à haute pression sensible à l'encrassement",
+                  "Mécatronique DSG6 fragile",
+                  "Traction 4x4 (versions équipées) coûteuse en entretien"
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "2.0 TDI - 140 à 170ch",
+                "code_moteur": "CFFB / CBAB",
+                "cylindree": "2.0L",
+                "puissance_ch": 170,
+                "boite": [
+                  "BVM6",
+                  "DSG6"
+                ],
+                "points_faibles": [
+                  "Volant moteur bi-masse à surveiller",
+                  "Vanne EGR et FAP encrassés",
+                  "Injecteurs sensibles à l'encrassement",
+                  "Certaines versions concernées par le Dieselgate"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "3V (Superb III)",
+            "annees": "2015-2023",
+            "phases": [
+              "Phase 1 (2015-2019)",
+              "Phase 2 restylée (2019-2023)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.4 TSI/2.0 TSI - 125 à 272ch",
+                "code_moteur": "CZDA / CZPB",
+                "cylindree": "1.4L / 2.0L turbo",
+                "puissance_ch": 272,
+                "boite": [
+                  "BVM6",
+                  "DSG6/7"
+                ],
+                "points_faibles": [
+                  "Chaîne de distribution EA888 Gen3 plus fiable mais tendeur à surveiller",
+                  "Consommation d'huile signalée sur certains blocs",
+                  "Mécatronique DSG à surveiller sur gros kilométrage",
+                  "Système Start&Stop parfois capricieux"
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.6 TDI/2.0 TDI - 120 à 240ch",
+                "code_moteur": "DDYA / DFHA",
+                "cylindree": "1.6L / 2.0L",
+                "puissance_ch": 240,
+                "boite": [
+                  "BVM6",
+                  "DSG6/7"
+                ],
+                "points_faibles": [
+                  "Système AdBlue/SCR sensible sur usage urbain",
+                  "FAP encrassé sur petits trajets répétés",
+                  "Injecteurs sensibles à l'encrassement",
+                  "Vanne EGR à nettoyer préventivement"
+                ]
+              },
+              {
+                "type": "Hybride rechargeable",
+                "nom": "iV - 218ch",
+                "code_moteur": "EA211 TSI + moteur électrique",
+                "cylindree": "1.4L + électrique",
+                "puissance_ch": 218,
+                "boite": [
+                  "DSG6"
+                ],
+                "points_faibles": [
+                  "Vieillissement de la batterie HT à surveiller",
+                  "Logiciel de gestion hybride parfois capricieux",
+                  "Poids supplémentaire sollicitant trains roulants",
+                  "Coût de remplacement batterie élevé hors garantie"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Fabia",
+        "generations": [
+          {
+            "code_chassis": "6Y (Fabia I)",
+            "annees": "1999-2007",
+            "phases": [
+              "Phase 1 (1999-2004)",
+              "Phase 2 restylée (2004-2007)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.2/1.4/1.4 vRS - 60 à 100ch",
+                "code_moteur": "AWY / AUB",
+                "cylindree": "1.2L / 1.4L",
+                "puissance_ch": 100,
+                "boite": [
+                  "BVM5"
+                ],
+                "points_faibles": [
+                  "Distribution à courroie/chaîne à surveiller selon motorisation",
+                  "Radiateur et durites vieillissants",
+                  "Corrosion moindre que les Golf de l'époque",
+                  "Suspension arrière à vérifier avec l'âge"
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.4 TDI/1.9 TDI - 68 à 130ch",
+                "code_moteur": "AMF / ASZ (vRS)",
+                "cylindree": "1.4L / 1.9L",
+                "puissance_ch": 130,
+                "boite": [
+                  "BVM5"
+                ],
+                "points_faibles": [
+                  "Volant moteur bi-masse à surveiller",
+                  "Injecteurs pompe-injecteurs fragiles sur versions PD",
+                  "Vanne EGR encrassée sur usage urbain",
+                  "Turbo sensible à l'entretien"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "5J (Fabia II)",
+            "annees": "2007-2014",
+            "phases": [
+              "Phase 1 (2007-2010)",
+              "Phase 2 restylée (2010-2014)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.2 HTP/1.2 TSI/1.4 - 60 à 105ch",
+                "code_moteur": "BME / CBZB (TSI)",
+                "cylindree": "1.2L / 1.4L",
+                "puissance_ch": 105,
+                "boite": [
+                  "BVM5"
+                ],
+                "points_faibles": [
+                  "Chaîne de distribution 1.2 TSI pouvant s'étirer avec l'âge",
+                  "Pompe à haute pression sensible sur versions TSI",
+                  "Corrosion réduite mais points de contrôle habituels VAG",
+                  "Radiateur plastique fragile"
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.2 TDI/1.6 TDI - 75 à 105ch",
+                "code_moteur": "CFWA / CAYC",
+                "cylindree": "1.2L / 1.6L",
+                "puissance_ch": 105,
+                "boite": [
+                  "BVM5"
+                ],
+                "points_faibles": [
+                  "Injecteurs Common Rail sensibles à l'encrassement",
+                  "Vanne EGR et FAP encrassés sur usage urbain",
+                  "Volant moteur bi-masse à surveiller",
+                  "Certaines versions concernées par le Dieselgate"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "NJ (Fabia III)",
+            "annees": "2014-2021",
+            "phases": [
+              "Phase 1 (2014-2018)",
+              "Phase 2 restylée (2018-2021)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.0 MPI/1.0 TSI/1.2 TSI - 60 à 110ch",
+                "code_moteur": "CHYB / CHZB (TSI)",
+                "cylindree": "1.0L / 1.2L",
+                "puissance_ch": 110,
+                "boite": [
+                  "BVM5"
+                ],
+                "points_faibles": [
+                  "1.0 MPI atmo réputé très fiable et simple",
+                  "1.0 TSI 3 cylindres : bruit/vibrations caractéristiques, chaîne à surveiller",
+                  "Consommation d'huile résiduelle possible sur versions TSI",
+                  "Boîte robotisée non disponible sur cette génération, uniquement BVM"
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.4 TDI - 75 à 90ch",
+                "code_moteur": "CUTA",
+                "cylindree": "1.4L",
+                "puissance_ch": 90,
+                "boite": [
+                  "BVM5"
+                ],
+                "points_faibles": [
+                  "Système AdBlue absent sur cette génération, vanne EGR à surveiller",
+                  "FAP encrassé sur petits trajets répétés",
+                  "Injecteurs sensibles à l'encrassement",
+                  "Volant moteur bi-masse à surveiller"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "PJ (Fabia IV)",
+            "annees": "2021-aujourd'hui",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.0 MPI/1.0 TSI - 65 à 150ch",
+                "code_moteur": "DKR / DKRF",
+                "cylindree": "1.0L",
+                "puissance_ch": 150,
+                "boite": [
+                  "BVM5",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  "Modèle récent : peu de recul sur fiabilité long terme",
+                  "1.0 TSI 3 cylindres : bruit caractéristique, chaîne de distribution à surveiller",
+                  "Filtre à particules essence sensible sur petits trajets",
+                  "Interface infodivertissement partagée VAG parfois sujette à bugs"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Kodiaq",
+        "generations": [
+          {
+            "code_chassis": "NS (Kodiaq I)",
+            "annees": "2016-2023",
+            "phases": [
+              "Phase 1 (2016-2021)",
+              "Phase 2 restylée (2021-2023)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.4 TSI/2.0 TSI - 125 à 190ch",
+                "code_moteur": "CZDA / CZPB",
+                "cylindree": "1.4L / 2.0L turbo",
+                "puissance_ch": 190,
+                "boite": [
+                  "BVM6",
+                  "DSG6/7"
+                ],
+                "points_faibles": [
+                  "Chaîne de distribution EA888 Gen3 plus fiable mais tendeur à surveiller",
+                  "Consommation d'huile signalée sur certains blocs",
+                  "Mécatronique DSG à surveiller sur gros kilométrage",
+                  "Traction 4x4 (versions équipées) coûteuse en entretien"
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "2.0 TDI - 150 à 200ch",
+                "code_moteur": "DFHA / DFGB",
+                "cylindree": "2.0L",
+                "puissance_ch": 200,
+                "boite": [
+                  "BVM6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  "Système AdBlue/SCR sensible sur usage urbain",
+                  "FAP encrassé sur petits trajets répétés",
+                  "Injecteurs sensibles à l'encrassement",
+                  "Vanne EGR à nettoyer préventivement"
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "NV (Kodiaq II)",
+            "annees": "2023-aujourd'hui",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.5 TSI/2.0 TSI - 150 à 265ch",
+                "code_moteur": "DPCA / DNPA",
+                "cylindree": "1.5L / 2.0L turbo",
+                "puissance_ch": 265,
+                "boite": [
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  "Modèle récent : peu de recul sur fiabilité long terme",
+                  "Système mild-hybrid 48V complexe",
+                  "Filtre à particules essence sensible sur petits trajets",
+                  "Interface infodivertissement dense sujette à bugs"
+                ]
+              },
+              {
+                "type": "Hybride rechargeable",
+                "nom": "iV - 204 à 245ch",
+                "code_moteur": "1.5 TSI + moteur électrique",
+                "cylindree": "1.5L + électrique",
+                "puissance_ch": 245,
+                "boite": [
+                  "DSG6"
+                ],
+                "points_faibles": [
+                  "Vieillissement de la batterie HT à surveiller sur le long terme",
+                  "Logiciel de gestion hybride parfois capricieux",
+                  "Poids supplémentaire sollicitant trains roulants",
+                  "Coût de remplacement batterie élevé hors garantie"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Karoq",
+        "generations": [
+          {
+            "code_chassis": "NU",
+            "annees": "2017-aujourd'hui",
+            "phases": [
+              "Phase 1 (2017-2021)",
+              "Phase 2 restylée (2021-)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.0 TSI/1.5 TSI/2.0 TSI - 115 à 190ch",
+                "code_moteur": "CZDA / CZPB",
+                "cylindree": "1.0L à 2.0L turbo",
+                "puissance_ch": 190,
+                "boite": [
+                  "BVM6",
+                  "DSG6/7"
+                ],
+                "points_faibles": [
+                  "Chaîne de distribution EA888 Gen3 (2.0 TSI) plus fiable mais tendeur à surveiller",
+                  "1.5 TSI ACT : électrovanne de désactivation de cylindres parfois défaillante",
+                  "Filtre à particules essence sensible sur petits trajets",
+                  "Traction 4x4 (versions équipées) coûteuse en entretien"
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.6 TDI/2.0 TDI - 115 à 190ch",
+                "code_moteur": "DDAB / DFHA",
+                "cylindree": "1.6L / 2.0L",
+                "puissance_ch": 190,
+                "boite": [
+                  "BVM6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  "Système AdBlue/SCR sensible sur usage urbain",
+                  "FAP encrassé sur petits trajets répétés",
+                  "Injecteurs sensibles à l'encrassement",
+                  "Vanne EGR à nettoyer préventivement"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Kamiq",
+        "generations": [
+          {
+            "code_chassis": "NW",
+            "annees": "2019-aujourd'hui",
+            "phases": [
+              "Phase 1 (2019-2023)",
+              "Phase 2 restylée (2023-)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.0 TSI/1.5 TSI - 95 à 150ch",
+                "code_moteur": "DKR / DPCA",
+                "cylindree": "1.0L / 1.5L turbo",
+                "puissance_ch": 150,
+                "boite": [
+                  "BVM6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  "1.0 TSI 3 cylindres : bruit/vibrations caractéristiques, chaîne à surveiller",
+                  "1.5 TSI ACT : électrovanne de désactivation de cylindres parfois défaillante",
+                  "Filtre à particules essence sensible sur petits trajets",
+                  "Modèle récent : peu de recul sur fiabilité long terme"
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.6 TDI - 116ch",
+                "code_moteur": "DDAB",
+                "cylindree": "1.6L",
+                "puissance_ch": 116,
+                "boite": [
+                  "BVM6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  "Système AdBlue/SCR sensible sur usage urbain",
+                  "FAP encrassé sur petits trajets répétés",
+                  "Vanne EGR à nettoyer préventivement",
+                  "Modèle récent : peu de recul sur fiabilité long terme"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Yeti",
+        "generations": [
+          {
+            "code_chassis": "5L",
+            "annees": "2009-2017",
+            "phases": [
+              "Phase 1 (2009-2013)",
+              "Phase 2 restylée (2013-2017)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.2 TSI/1.4 TSI/1.8 TSI - 105 à 160ch",
+                "code_moteur": "CBZB / CAVD",
+                "cylindree": "1.2L à 1.8L turbo",
+                "puissance_ch": 160,
+                "boite": [
+                  "BVM5/6",
+                  "DSG6/7"
+                ],
+                "points_faibles": [
+                  "Chaîne de distribution à surveiller sur gros kilométrage",
+                  "Mécatronique DSG fragile sur premières générations",
+                  "Traction 4x4 (versions équipées) coûteuse en entretien",
+                  "Pompe à haute pression FSI sensible"
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.6 TDI/2.0 TDI - 105 à 170ch",
+                "code_moteur": "CAYC / CFHC",
+                "cylindree": "1.6L / 2.0L",
+                "puissance_ch": 170,
+                "boite": [
+                  "BVM5/6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  "Injecteurs Common Rail sensibles à l'encrassement",
+                  "Vanne EGR et FAP encrassés sur usage urbain",
+                  "Volant moteur bi-masse à surveiller",
+                  "Certaines versions concernées par le Dieselgate"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Rapid",
+        "generations": [
+          {
+            "code_chassis": "NH",
+            "annees": "2012-2019",
+            "phases": [
+              "Phase 1 (2012-2017)",
+              "Phase 2 restylée (2017-2019)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.2 TSI/1.4 TSI - 86 à 125ch",
+                "code_moteur": "CJZC / CZCA",
+                "cylindree": "1.2L / 1.4L turbo",
+                "puissance_ch": 125,
+                "boite": [
+                  "BVM5"
+                ],
+                "points_faibles": [
+                  "Chaîne de distribution 1.2 TSI pouvant s'étirer avec l'âge",
+                  "Pompe à haute pression sensible sur versions TSI",
+                  "Modèle orienté simplicité et robustesse, peu d'options sophistiquées",
+                  "Radiateur plastique fragile"
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.6 TDI - 90 à 105ch",
+                "code_moteur": "CAYC",
+                "cylindree": "1.6L",
+                "puissance_ch": 105,
+                "boite": [
+                  "BVM5"
+                ],
+                "points_faibles": [
+                  "Injecteurs Common Rail sensibles à l'encrassement",
+                  "Vanne EGR et FAP encrassés sur usage urbain",
+                  "Volant moteur bi-masse à surveiller",
+                  "Certaines versions concernées par le Dieselgate"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Scala",
+        "generations": [
+          {
+            "code_chassis": "NW",
+            "annees": "2019-aujourd'hui",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.0 TSI/1.5 TSI - 95 à 150ch",
+                "code_moteur": "DKR / DPCA",
+                "cylindree": "1.0L / 1.5L turbo",
+                "puissance_ch": 150,
+                "boite": [
+                  "BVM6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  "1.0 TSI 3 cylindres : bruit/vibrations caractéristiques, chaîne à surveiller",
+                  "1.5 TSI ACT : électrovanne de désactivation de cylindres parfois défaillante",
+                  "Filtre à particules essence sensible sur petits trajets",
+                  "Modèle récent : peu de recul sur fiabilité long terme"
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.6 TDI - 116ch",
+                "code_moteur": "DDAB",
+                "cylindree": "1.6L",
+                "puissance_ch": 116,
+                "boite": [
+                  "BVM6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  "Système AdBlue/SCR sensible sur usage urbain",
+                  "FAP encrassé sur petits trajets répétés",
+                  "Vanne EGR à nettoyer préventivement",
+                  "Modèle récent : peu de recul sur fiabilité long terme"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Enyaq",
+        "generations": [
+          {
+            "code_chassis": "Enyaq iV",
+            "annees": "2020-aujourd'hui",
+            "phases": [
+              "Phase 1 (2020-2024)",
+              "Phase 2 restylée (2024-)"
+            ],
+            "motorisations": [
+              {
+                "type": "Électrique",
+                "nom": "60/80/RS iV - 179 à 340ch",
+                "code_moteur": "Moteur(s) électrique(s) synchrone(s), plateforme MEB",
+                "cylindree": "N/A",
+                "puissance_ch": 340,
+                "boite": [
+                  "Réducteur monovitesse"
+                ],
+                "points_faibles": [
+                  "Modèle récent : peu de recul sur fiabilité long terme de la batterie",
+                  "Logiciel embarqué (plateforme MEB partagée VW) sujet à bugs et mises à jour fréquentes",
+                  "Coût de remplacement de la batterie très élevé hors garantie",
+                  "Pompe à chaleur (versions équipées) parfois source de dysfonctionnements en grand froid",
+                  "Consommation électrique élevée en hiver réduisant l'autonomie réelle"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Elroq",
+        "generations": [
+          {
+            "code_chassis": "Elroq (plateforme MEB)",
+            "annees": "2024-aujourd'hui",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Électrique",
+                "nom": "50/60/85 - 170 à 286ch",
+                "code_moteur": "Moteur(s) électrique(s) synchrone(s), plateforme MEB",
+                "cylindree": "N/A",
+                "puissance_ch": 286,
+                "boite": [
+                  "Réducteur monovitesse"
+                ],
+                "points_faibles": [
+                  "Modèle très récent : aucun recul sur la fiabilité long terme",
+                  "Logiciel embarqué (base plateforme MEB partagée VW) potentiellement sujet aux mêmes bugs que ID.4/Enyaq",
+                  "Coût de remplacement de la batterie très élevé hors garantie",
+                  "Consommation électrique élevée en hiver réduisant l'autonomie réelle"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Kylaq",
+        "generations": [
+          {
+            "code_chassis": "Kylaq",
+            "annees": "2024-aujourd'hui",
+            "phases": [
+              "Phase unique"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.0 TSI - 115ch",
+                "code_moteur": "DKR",
+                "cylindree": "1.0L turbo",
+                "puissance_ch": 115,
+                "boite": [
+                  "BVM6",
+                  "DSG7"
+                ],
+                "points_faibles": [
+                  "Modèle très récent, destiné principalement aux marchés émergents (Inde) : peu de recul sur fiabilité",
+                  "1.0 TSI 3 cylindres : bruit/vibrations caractéristiques, chaîne à surveiller",
+                  "Niveau d'équipement et de finition simplifié par rapport aux modèles européens",
+                  "Réseau après-vente à vérifier selon le marché de commercialisation"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Citigo",
+        "generations": [
+          {
+            "code_chassis": "121",
+            "annees": "2011-2020",
+            "phases": [
+              "Phase 1 (2011-2017)",
+              "Phase 2 restylée (2017-2020)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.0 MPI - 60 à 75ch",
+                "code_moteur": "CHYA",
+                "cylindree": "1.0L",
+                "puissance_ch": 75,
+                "boite": [
+                  "BVM5",
+                  "ASG5 (robotisée)"
+                ],
+                "points_faibles": [
+                  "Bloc 1.0 MPI atmo réputé très fiable et simple mécaniquement",
+                  "Boîte robotisée ASG5 à-coups à basse vitesse et embrayage à surveiller",
+                  "Corrosion réduite mais points de contrôle habituels VAG",
+                  "Faible motorisation peu adaptée aux longs trajets autoroutiers réguliers"
+                ]
+              },
+              {
+                "type": "Électrique",
+                "nom": "Citigo-e iV - 83ch",
+                "code_moteur": "Moteur électrique synchrone",
+                "cylindree": "N/A",
+                "puissance_ch": 83,
+                "boite": [
+                  "Réducteur monovitesse"
+                ],
+                "points_faibles": [
+                  "Autonomie limitée, surtout adaptée à un usage urbain",
+                  "Vieillissement de la batterie à surveiller",
+                  "Chargeur embarqué parfois sujet à pannes logicielles",
+                  "Coût de remplacement de la batterie élevé hors garantie"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Roomster",
+        "generations": [
+          {
+            "code_chassis": "5J",
+            "annees": "2006-2015",
+            "phases": [
+              "Phase 1 (2006-2010)",
+              "Phase 2 restylée (2010-2015)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.2 HTP/1.4/1.6 - 64 à 105ch",
+                "code_moteur": "BME / BUD",
+                "cylindree": "1.2L à 1.6L",
+                "puissance_ch": 105,
+                "boite": [
+                  "BVM5"
+                ],
+                "points_faibles": [
+                  "Bloc mécanique simple et robuste (base Fabia II)",
+                  "Habitacle modulable très apprécié mais mécanique de sièges à surveiller avec l'usage",
+                  "Corrosion réduite par rapport aux générations précédentes",
+                  "Radiateur plastique fragile"
+                ]
+              },
+              {
+                "type": "Diesel",
+                "nom": "1.4 TDI/1.9 TDI - 70 à 105ch",
+                "code_moteur": "BNM / BLS",
+                "cylindree": "1.4L / 1.9L",
+                "puissance_ch": 105,
+                "boite": [
+                  "BVM5"
+                ],
+                "points_faibles": [
+                  "Volant moteur bi-masse à surveiller",
+                  "Injecteurs pompe-injecteurs (1.4 TDI 3 cyl.) fragiles",
+                  "Vanne EGR encrassée sur usage urbain",
+                  "Turbo sensible à l'entretien"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,4767 @@
+{
+  "nom": "Mini",
+  "modeles": [
+    {
+      "nom": "Mini Cabriolet (R52)",
+      "generations": [
+        {
+          "code_chassis": "R52",
+          "annees": "2004-2008",
+          "phases": [
+            "One/Cooper/Cooper S Cabriolet (2004-2008)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Tritec 1.6 — 90 ch",
+              "code_moteur": "Chrysler/BMW Tritec 1.6L (atmosphérique et compressé)",
+              "cylindree": "1.6L",
+              "puissance_ch": 90,
+              "boite": [
+                "BVM5/BVM6",
+                "BVA CVT (versions non S)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Pannes de mécanisme de la capote électrique",
+                  "symptomes": [
+                    "Infiltrations d'eau"
+                  ],
+                  "kilometrage_apparition": "Joints à changer préventivement après plusieurs années",
+                  "diagnostic": "Test de fonctionnement et test au jet d'eau",
+                  "piece_concernee": "Capote électrique",
+                  "gravite": "Modérée",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Sollicitation accrue de la structure renforcée par l'absence de toit fixe",
+                  "symptomes": [
+                    "Distance de freinage accrue",
+                    "Vibration ou bruit au freinage",
+                    "Voyant ABS ou freinage"
+                  ],
+                  "kilometrage_apparition": "Sur mauvaises routes",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Structure",
+                  "gravite": "Faible (comportement)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Entretien spécifique du compresseur Eaton (Cooper S)",
+                  "symptomes": [
+                    "Bruit ou fonctionnement anormal",
+                    "Voyant ou message d’alerte",
+                    "Dégradation progressive des performances"
+                  ],
+                  "kilometrage_apparition": "Préventif",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Compresseur Eaton",
+                  "gravite": "Faible (préventif)",
+                  "frequence": "Systématique",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Panne interne de la boîte CVT (versions non S)",
+                  "symptomes": [
+                    "À-coups ou patinage",
+                    "Bruit lors des changements de rapport",
+                    "Vibrations en accélération"
+                  ],
+                  "kilometrage_apparition": "Aléatoire",
+                  "diagnostic": "Remplacement plutôt que réparation",
+                  "piece_concernee": "Boîte CVT",
+                  "gravite": "Critique",
+                  "frequence": "Fréquent sur cette boîte",
+                  "cout_reparation_estime": "Très élevé"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Tritec Compresseur 1.6 — 170 ch",
+              "code_moteur": "Chrysler/BMW Tritec 1.6L (atmosphérique et compressé)",
+              "cylindree": "1.6L",
+              "puissance_ch": 170,
+              "boite": [
+                "BVM5/BVM6",
+                "BVA CVT (versions non S)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Pannes de mécanisme de la capote électrique",
+                  "symptomes": [
+                    "Infiltrations d'eau"
+                  ],
+                  "kilometrage_apparition": "Joints à changer préventivement après plusieurs années",
+                  "diagnostic": "Test de fonctionnement et test au jet d'eau",
+                  "piece_concernee": "Capote électrique",
+                  "gravite": "Modérée",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Sollicitation accrue de la structure renforcée par l'absence de toit fixe",
+                  "symptomes": [
+                    "Distance de freinage accrue",
+                    "Vibration ou bruit au freinage",
+                    "Voyant ABS ou freinage"
+                  ],
+                  "kilometrage_apparition": "Sur mauvaises routes",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Structure",
+                  "gravite": "Faible (comportement)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Entretien spécifique du compresseur Eaton (Cooper S)",
+                  "symptomes": [
+                    "Bruit ou fonctionnement anormal",
+                    "Voyant ou message d’alerte",
+                    "Dégradation progressive des performances"
+                  ],
+                  "kilometrage_apparition": "Préventif",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Compresseur Eaton",
+                  "gravite": "Faible (préventif)",
+                  "frequence": "Systématique",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Panne interne de la boîte CVT (versions non S)",
+                  "symptomes": [
+                    "À-coups ou patinage",
+                    "Bruit lors des changements de rapport",
+                    "Vibrations en accélération"
+                  ],
+                  "kilometrage_apparition": "Aléatoire",
+                  "diagnostic": "Remplacement plutôt que réparation",
+                  "piece_concernee": "Boîte CVT",
+                  "gravite": "Critique",
+                  "frequence": "Fréquent sur cette boîte",
+                  "cout_reparation_estime": "Très élevé"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Mini classique (Austin/Morris/Rover Mini)",
+      "generations": [
+        {
+          "code_chassis": "Mini (ADO15)",
+          "annees": "1959-2000",
+          "phases": [
+            "Mark I (1959-1967)",
+            "Mark II (1967-1969)",
+            "Mark III (1969-1976)",
+            "Mark IV (1976-1984)",
+            "Mark V-VII (1984-2000)",
+            "Mini Cooper (1961-1971)",
+            "Mini Cooper S (1963-1971)",
+            "Mini Cooper relancée (1990-2000)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "A-Series 848 — 34 ch",
+              "code_moteur": "BMC/Austin A-Series 848cc/998cc",
+              "cylindree": "1.0L",
+              "puissance_ch": 34,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Boîte de vitesses logée dans le carter moteur, partageant l'huile moteur",
+                  "symptomes": [
+                    "Usure prématurée des synchros et pignons"
+                  ],
+                  "kilometrage_apparition": "Si vidanges négligées, défaut caractéristique de toute la lignée A-Series",
+                  "diagnostic": "Essai de passage de vitesses, contrôle du plan de vidange",
+                  "piece_concernee": "Boîte de vitesses",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Corrosion très sévère de la caisse monocoque",
+                  "symptomes": [
+                    "Rouille perforante sur planchers, bas de caisse, longerons et passages de roues"
+                  ],
+                  "kilometrage_apparition": "Réputée parmi les pires de sa génération",
+                  "diagnostic": "Sondage systématique au marteau",
+                  "piece_concernee": "Carrosserie",
+                  "gravite": "Critique",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Encrassement du carburateur SU simple",
+                  "symptomes": [
+                    "Ralenti irrégulier"
+                  ],
+                  "kilometrage_apparition": "Fréquent",
+                  "diagnostic": "Démontage et nettoyage",
+                  "piece_concernee": "Alimentation carburant",
+                  "gravite": "Modérée",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Faible"
+                },
+                {
+                  "probleme": "Endurance limitée des freins tambour",
+                  "symptomes": [
+                    "Efficacité réduite en usage soutenu"
+                  ],
+                  "kilometrage_apparition": "Progressive",
+                  "diagnostic": "Test de freinage",
+                  "piece_concernee": "Freins",
+                  "gravite": "Majeure (sécurité)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Étanchéité très limitée",
+                  "symptomes": [
+                    "Moquettes toujours humides"
+                  ],
+                  "kilometrage_apparition": "Systématique sur exemplaires non restaurés",
+                  "diagnostic": "Test au jet d'eau",
+                  "piece_concernee": "Carrosserie / joints",
+                  "gravite": "Faible",
+                  "frequence": "Systématique",
+                  "cout_reparation_estime": "Faible"
+                },
+                {
+                  "probleme": "Encrassement et corrosion du radiateur latéral atypique",
+                  "symptomes": [
+                    "Surchauffe"
+                  ],
+                  "kilometrage_apparition": "Progressive",
+                  "diagnostic": "Test de pression du circuit",
+                  "piece_concernee": "Circuit de refroidissement",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "A-Series 998 — 38 ch",
+              "code_moteur": "BMC/Austin A-Series 848cc/998cc",
+              "cylindree": "1.0L",
+              "puissance_ch": 38,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Boîte de vitesses logée dans le carter moteur, partageant l'huile moteur",
+                  "symptomes": [
+                    "Usure prématurée des synchros et pignons"
+                  ],
+                  "kilometrage_apparition": "Si vidanges négligées, défaut caractéristique de toute la lignée A-Series",
+                  "diagnostic": "Essai de passage de vitesses, contrôle du plan de vidange",
+                  "piece_concernee": "Boîte de vitesses",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Corrosion très sévère de la caisse monocoque",
+                  "symptomes": [
+                    "Rouille perforante sur planchers, bas de caisse, longerons et passages de roues"
+                  ],
+                  "kilometrage_apparition": "Réputée parmi les pires de sa génération",
+                  "diagnostic": "Sondage systématique au marteau",
+                  "piece_concernee": "Carrosserie",
+                  "gravite": "Critique",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Encrassement du carburateur SU simple",
+                  "symptomes": [
+                    "Ralenti irrégulier"
+                  ],
+                  "kilometrage_apparition": "Fréquent",
+                  "diagnostic": "Démontage et nettoyage",
+                  "piece_concernee": "Alimentation carburant",
+                  "gravite": "Modérée",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Faible"
+                },
+                {
+                  "probleme": "Endurance limitée des freins tambour",
+                  "symptomes": [
+                    "Efficacité réduite en usage soutenu"
+                  ],
+                  "kilometrage_apparition": "Progressive",
+                  "diagnostic": "Test de freinage",
+                  "piece_concernee": "Freins",
+                  "gravite": "Majeure (sécurité)",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Étanchéité très limitée",
+                  "symptomes": [
+                    "Moquettes toujours humides"
+                  ],
+                  "kilometrage_apparition": "Systématique sur exemplaires non restaurés",
+                  "diagnostic": "Test au jet d'eau",
+                  "piece_concernee": "Carrosserie / joints",
+                  "gravite": "Faible",
+                  "frequence": "Systématique",
+                  "cout_reparation_estime": "Faible"
+                },
+                {
+                  "probleme": "Encrassement et corrosion du radiateur latéral atypique",
+                  "symptomes": [
+                    "Surchauffe"
+                  ],
+                  "kilometrage_apparition": "Progressive",
+                  "diagnostic": "Test de pression du circuit",
+                  "piece_concernee": "Circuit de refroidissement",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Cooper S 1275 — 76 ch",
+              "code_moteur": "BMC/Austin A-Series 1275cc (Cooper S)",
+              "cylindree": "1.275L",
+              "puissance_ch": 76,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Usure accélérée de la boîte partageant l'huile moteur en usage sportif",
+                  "symptomes": [
+                    "Usure prématurée des synchros"
+                  ],
+                  "kilometrage_apparition": "Sans entretien rigoureux (vidange fréquente)",
+                  "diagnostic": "Essai de passage de vitesses",
+                  "piece_concernee": "Boîte de vitesses",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquent en usage sportif",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Corrosion de caisse toujours aussi sévère",
+                  "symptomes": [
+                    "Rouille"
+                  ],
+                  "kilometrage_apparition": "Quasi systématique",
+                  "diagnostic": "Sondage systématique",
+                  "piece_concernee": "Carrosserie",
+                  "gravite": "Critique",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Déréglage des carburateurs SU doubles",
+                  "symptomes": [
+                    "Ralenti irrégulier"
+                  ],
+                  "kilometrage_apparition": "Réglage pointu et synchronisation délicate",
+                  "diagnostic": "Réglage au manomètre",
+                  "piece_concernee": "Alimentation carburant",
+                  "gravite": "Modérée",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Corrosion interne du circuit hydraulique des freins à disque avant",
+                  "symptomes": [
+                    "Distance de freinage accrue",
+                    "Vibration ou bruit au freinage",
+                    "Voyant ABS ou freinage"
+                  ],
+                  "kilometrage_apparition": "Ancien",
+                  "diagnostic": "Purge rigoureuse",
+                  "piece_concernee": "Freins",
+                  "gravite": "Majeure (sécurité)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Sensibilité du joint de culasse en usage sportif",
+                  "symptomes": [
+                    "Perte de compression"
+                  ],
+                  "kilometrage_apparition": "Aléatoire",
+                  "diagnostic": "Test de compression",
+                  "piece_concernee": "Culasse",
+                  "gravite": "Majeure",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Perte de pression de la suspension Hydrolastic (certaines années)",
+                  "symptomes": [
+                    "Affaissement caractéristique"
+                  ],
+                  "kilometrage_apparition": "Avec l'âge",
+                  "diagnostic": "Contrôle de la hauteur de caisse",
+                  "piece_concernee": "Suspension Hydrolastic",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Cooper S 1275 — 78 ch",
+              "code_moteur": "BMC/Austin A-Series 1275cc (Cooper S)",
+              "cylindree": "1.275L",
+              "puissance_ch": 78,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Usure accélérée de la boîte partageant l'huile moteur en usage sportif",
+                  "symptomes": [
+                    "Usure prématurée des synchros"
+                  ],
+                  "kilometrage_apparition": "Sans entretien rigoureux (vidange fréquente)",
+                  "diagnostic": "Essai de passage de vitesses",
+                  "piece_concernee": "Boîte de vitesses",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquent en usage sportif",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Corrosion de caisse toujours aussi sévère",
+                  "symptomes": [
+                    "Rouille"
+                  ],
+                  "kilometrage_apparition": "Quasi systématique",
+                  "diagnostic": "Sondage systématique",
+                  "piece_concernee": "Carrosserie",
+                  "gravite": "Critique",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Déréglage des carburateurs SU doubles",
+                  "symptomes": [
+                    "Ralenti irrégulier"
+                  ],
+                  "kilometrage_apparition": "Réglage pointu et synchronisation délicate",
+                  "diagnostic": "Réglage au manomètre",
+                  "piece_concernee": "Alimentation carburant",
+                  "gravite": "Modérée",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Corrosion interne du circuit hydraulique des freins à disque avant",
+                  "symptomes": [
+                    "Distance de freinage accrue",
+                    "Vibration ou bruit au freinage",
+                    "Voyant ABS ou freinage"
+                  ],
+                  "kilometrage_apparition": "Ancien",
+                  "diagnostic": "Purge rigoureuse",
+                  "piece_concernee": "Freins",
+                  "gravite": "Majeure (sécurité)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Sensibilité du joint de culasse en usage sportif",
+                  "symptomes": [
+                    "Perte de compression"
+                  ],
+                  "kilometrage_apparition": "Aléatoire",
+                  "diagnostic": "Test de compression",
+                  "piece_concernee": "Culasse",
+                  "gravite": "Majeure",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Perte de pression de la suspension Hydrolastic (certaines années)",
+                  "symptomes": [
+                    "Affaissement caractéristique"
+                  ],
+                  "kilometrage_apparition": "Avec l'âge",
+                  "diagnostic": "Contrôle de la hauteur de caisse",
+                  "piece_concernee": "Suspension Hydrolastic",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1275cc Mini Cooper (relance 1990-2000) - 63ch (injection)",
+              "code_moteur": "Rover A-Series 1275cc (injection électronique MPi à partir de 1991)",
+              "cylindree": "1.275L",
+              "puissance_ch": 63,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Corrosion de caisse toujours un point de vigilance",
+                  "symptomes": [
+                    "Rouille"
+                  ],
+                  "kilometrage_apparition": "Sur cette génération tardive",
+                  "diagnostic": "Sondage",
+                  "piece_concernee": "Carrosserie",
+                  "gravite": "Critique",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Dérive des capteurs de l'injection MPi",
+                  "symptomes": [
+                    "Comportement moteur dégradé"
+                  ],
+                  "kilometrage_apparition": "Progressive avec l'âge",
+                  "diagnostic": "Test de résistance des capteurs",
+                  "piece_concernee": "Capteurs moteur",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Boîte partageant toujours l'huile moteur",
+                  "symptomes": [
+                    "Usure à surveiller"
+                  ],
+                  "kilometrage_apparition": "Progressive",
+                  "diagnostic": "Essai de passage",
+                  "piece_concernee": "Boîte de vitesses",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Faisceau électrique daté",
+                  "symptomes": [
+                    "Pannes de confort fréquentes"
+                  ],
+                  "kilometrage_apparition": "Sur les derniers exemplaires",
+                  "diagnostic": "Test de continuité",
+                  "piece_concernee": "Faisceau électrique",
+                  "gravite": "Faible",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Modéré"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Mini Clubman (F54)",
+      "generations": [
+        {
+          "code_chassis": "F54",
+          "annees": "2015-2023",
+          "phases": [
+            "F54 (2015-2019)",
+            "Facelift (2019-2023)",
+            "JCW (2016-2023)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "B38 1.5 — 136 ch",
+              "code_moteur": "BMW B38 1.5L 3 cylindres / B48 2.0L 4 cylindres turbo",
+              "cylindree": "2.0L",
+              "puissance_ch": 136,
+              "boite": [
+                "BVM6",
+                "BVA8 (Aisin)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Base moteur BMW globalement fiable",
+                  "symptomes": [
+                    "Bruit ou fonctionnement anormal",
+                    "Voyant ou message d’alerte",
+                    "Dégradation progressive des performances"
+                  ],
+                  "kilometrage_apparition": "N/A",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "N/A (positif)",
+                  "gravite": "N/A",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Négligence de la vidange de l'embrayage Haldex (ALL4)",
+                  "symptomes": [
+                    "Usure prématurée"
+                  ],
+                  "kilometrage_apparition": "Vidange régulière obligatoire",
+                  "diagnostic": "Contrôle du plan d'entretien",
+                  "piece_concernee": "Embrayage Haldex",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquent si négligé",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Consommation d'huile sur certains exemplaires",
+                  "symptomes": [
+                    "Baisse de niveau"
+                  ],
+                  "kilometrage_apparition": "Variable",
+                  "diagnostic": "Contrôle régulier",
+                  "piece_concernee": "Moteur",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Faible (surveillance)"
+                },
+                {
+                  "probleme": "Sollicitation mécanique accrue par le poids supérieur au Hatch",
+                  "symptomes": [
+                    "Bruit ou fonctionnement anormal",
+                    "Voyant ou message d’alerte",
+                    "Dégradation progressive des performances"
+                  ],
+                  "kilometrage_apparition": "Cumulatif",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Mécanique générale",
+                  "gravite": "Faible",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Bugs logiciels du système multimédia",
+                  "symptomes": [
+                    "Dysfonctionnements écran"
+                  ],
+                  "kilometrage_apparition": "Sur les premières années",
+                  "diagnostic": "Mise à jour logicielle",
+                  "piece_concernee": "Système multimédia",
+                  "gravite": "Faible",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Faible"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "B48 2.0 — 192 ch",
+              "code_moteur": "BMW B38 1.5L 3 cylindres / B48 2.0L 4 cylindres turbo",
+              "cylindree": "2.0L",
+              "puissance_ch": 192,
+              "boite": [
+                "BVM6",
+                "BVA8 (Aisin)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Base moteur BMW globalement fiable",
+                  "symptomes": [
+                    "Bruit ou fonctionnement anormal",
+                    "Voyant ou message d’alerte",
+                    "Dégradation progressive des performances"
+                  ],
+                  "kilometrage_apparition": "N/A",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "N/A (positif)",
+                  "gravite": "N/A",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Négligence de la vidange de l'embrayage Haldex (ALL4)",
+                  "symptomes": [
+                    "Usure prématurée"
+                  ],
+                  "kilometrage_apparition": "Vidange régulière obligatoire",
+                  "diagnostic": "Contrôle du plan d'entretien",
+                  "piece_concernee": "Embrayage Haldex",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquent si négligé",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Consommation d'huile sur certains exemplaires",
+                  "symptomes": [
+                    "Baisse de niveau"
+                  ],
+                  "kilometrage_apparition": "Variable",
+                  "diagnostic": "Contrôle régulier",
+                  "piece_concernee": "Moteur",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Faible (surveillance)"
+                },
+                {
+                  "probleme": "Sollicitation mécanique accrue par le poids supérieur au Hatch",
+                  "symptomes": [
+                    "Bruit ou fonctionnement anormal",
+                    "Voyant ou message d’alerte",
+                    "Dégradation progressive des performances"
+                  ],
+                  "kilometrage_apparition": "Cumulatif",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Mécanique générale",
+                  "gravite": "Faible",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Bugs logiciels du système multimédia",
+                  "symptomes": [
+                    "Dysfonctionnements écran"
+                  ],
+                  "kilometrage_apparition": "Sur les premières années",
+                  "diagnostic": "Mise à jour logicielle",
+                  "piece_concernee": "Système multimédia",
+                  "gravite": "Faible",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Faible"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "B48 2.0 JCW — 306 ch",
+              "code_moteur": "BMW B38 1.5L 3 cylindres / B48 2.0L 4 cylindres turbo",
+              "cylindree": "2.0L",
+              "puissance_ch": 306,
+              "boite": [
+                "BVM6",
+                "BVA8 (Aisin)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Base moteur BMW globalement fiable",
+                  "symptomes": [
+                    "Bruit ou fonctionnement anormal",
+                    "Voyant ou message d’alerte",
+                    "Dégradation progressive des performances"
+                  ],
+                  "kilometrage_apparition": "N/A",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "N/A (positif)",
+                  "gravite": "N/A",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Négligence de la vidange de l'embrayage Haldex (ALL4)",
+                  "symptomes": [
+                    "Usure prématurée"
+                  ],
+                  "kilometrage_apparition": "Vidange régulière obligatoire",
+                  "diagnostic": "Contrôle du plan d'entretien",
+                  "piece_concernee": "Embrayage Haldex",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquent si négligé",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Consommation d'huile sur certains exemplaires",
+                  "symptomes": [
+                    "Baisse de niveau"
+                  ],
+                  "kilometrage_apparition": "Variable",
+                  "diagnostic": "Contrôle régulier",
+                  "piece_concernee": "Moteur",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Faible (surveillance)"
+                },
+                {
+                  "probleme": "Sollicitation mécanique accrue par le poids supérieur au Hatch",
+                  "symptomes": [
+                    "Bruit ou fonctionnement anormal",
+                    "Voyant ou message d’alerte",
+                    "Dégradation progressive des performances"
+                  ],
+                  "kilometrage_apparition": "Cumulatif",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Mécanique générale",
+                  "gravite": "Faible",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Bugs logiciels du système multimédia",
+                  "symptomes": [
+                    "Dysfonctionnements écran"
+                  ],
+                  "kilometrage_apparition": "Sur les premières années",
+                  "diagnostic": "Mise à jour logicielle",
+                  "piece_concernee": "Système multimédia",
+                  "gravite": "Faible",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Faible"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "Diesel BMW 1.5 — 116 ch",
+              "code_moteur": "BMW B37/B47 1.5L/2.0L Diesel",
+              "cylindree": "2.0L",
+              "puissance_ch": 116,
+              "boite": [
+                "BVM6",
+                "BVA8 (Aisin)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Encrassement de la vanne EGR et du filtre à particules",
+                  "symptomes": [
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "En usage urbain",
+                  "diagnostic": "Contrôle après démontage",
+                  "piece_concernee": "Vanne EGR / FAP",
+                  "gravite": "Modérée",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Sensibilité des injecteurs à la qualité du carburant",
+                  "symptomes": [
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Accéléré",
+                  "diagnostic": "Test de débit",
+                  "piece_concernee": "Injecteurs",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Usure du volant moteur bi-masse",
+                  "symptomes": [
+                    "Vibrations"
+                  ],
+                  "kilometrage_apparition": "Avec le kilométrage",
+                  "diagnostic": "Écoute",
+                  "piece_concernee": "Volant moteur bi-masse",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Coût d'entretien élevé de la transmission ALL4 sur versions concernées",
+                  "symptomes": [
+                    "À-coups ou patinage",
+                    "Bruit lors des changements de rapport",
+                    "Vibrations en accélération"
+                  ],
+                  "kilometrage_apparition": "Préventif",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Transmission intégrale",
+                  "gravite": "Faible (préventif)",
+                  "frequence": "Systématique",
+                  "cout_reparation_estime": "Modéré"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "Diesel BMW 2.0 — 150 ch",
+              "code_moteur": "BMW B37/B47 1.5L/2.0L Diesel",
+              "cylindree": "2.0L",
+              "puissance_ch": 150,
+              "boite": [
+                "BVM6",
+                "BVA8 (Aisin)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Encrassement de la vanne EGR et du filtre à particules",
+                  "symptomes": [
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "En usage urbain",
+                  "diagnostic": "Contrôle après démontage",
+                  "piece_concernee": "Vanne EGR / FAP",
+                  "gravite": "Modérée",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Sensibilité des injecteurs à la qualité du carburant",
+                  "symptomes": [
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Accéléré",
+                  "diagnostic": "Test de débit",
+                  "piece_concernee": "Injecteurs",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Usure du volant moteur bi-masse",
+                  "symptomes": [
+                    "Vibrations"
+                  ],
+                  "kilometrage_apparition": "Avec le kilométrage",
+                  "diagnostic": "Écoute",
+                  "piece_concernee": "Volant moteur bi-masse",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Coût d'entretien élevé de la transmission ALL4 sur versions concernées",
+                  "symptomes": [
+                    "À-coups ou patinage",
+                    "Bruit lors des changements de rapport",
+                    "Vibrations en accélération"
+                  ],
+                  "kilometrage_apparition": "Préventif",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Transmission intégrale",
+                  "gravite": "Faible (préventif)",
+                  "frequence": "Systématique",
+                  "cout_reparation_estime": "Modéré"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "Diesel BMW 2.0 — 190 ch",
+              "code_moteur": "BMW B37/B47 1.5L/2.0L Diesel",
+              "cylindree": "2.0L",
+              "puissance_ch": 190,
+              "boite": [
+                "BVM6",
+                "BVA8 (Aisin)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Encrassement de la vanne EGR et du filtre à particules",
+                  "symptomes": [
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "En usage urbain",
+                  "diagnostic": "Contrôle après démontage",
+                  "piece_concernee": "Vanne EGR / FAP",
+                  "gravite": "Modérée",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Sensibilité des injecteurs à la qualité du carburant",
+                  "symptomes": [
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Accéléré",
+                  "diagnostic": "Test de débit",
+                  "piece_concernee": "Injecteurs",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Usure du volant moteur bi-masse",
+                  "symptomes": [
+                    "Vibrations"
+                  ],
+                  "kilometrage_apparition": "Avec le kilométrage",
+                  "diagnostic": "Écoute",
+                  "piece_concernee": "Volant moteur bi-masse",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Coût d'entretien élevé de la transmission ALL4 sur versions concernées",
+                  "symptomes": [
+                    "À-coups ou patinage",
+                    "Bruit lors des changements de rapport",
+                    "Vibrations en accélération"
+                  ],
+                  "kilometrage_apparition": "Préventif",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Transmission intégrale",
+                  "gravite": "Faible (préventif)",
+                  "frequence": "Systématique",
+                  "cout_reparation_estime": "Modéré"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Mini Countryman (F60)",
+      "generations": [
+        {
+          "code_chassis": "F60",
+          "annees": "2017-2023",
+          "phases": [
+            "F60 (2017-2020)",
+            "Facelift (2020-2023)",
+            "JCW (2017-2023)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "B38 1.5 — 136 ch",
+              "code_moteur": "BMW B38 1.5L 3 cylindres / B48 2.0L 4 cylindres turbo",
+              "cylindree": "2.0L",
+              "puissance_ch": 136,
+              "boite": [
+                "BVM6",
+                "BVA8 (Aisin)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Base moteur BMW globalement fiable",
+                  "symptomes": [
+                    "Bruit ou fonctionnement anormal",
+                    "Voyant ou message d’alerte",
+                    "Dégradation progressive des performances"
+                  ],
+                  "kilometrage_apparition": "N/A",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "N/A (positif)",
+                  "gravite": "N/A",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Entretien spécifique de la transmission ALL4",
+                  "symptomes": [
+                    "À-coups ou patinage",
+                    "Bruit lors des changements de rapport",
+                    "Vibrations en accélération"
+                  ],
+                  "kilometrage_apparition": "Vidange préventive",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Transmission intégrale",
+                  "gravite": "Faible (préventif)",
+                  "frequence": "Systématique",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Sollicitation mécanique accrue par le poids pour un Mini",
+                  "symptomes": [
+                    "Bruit ou fonctionnement anormal",
+                    "Voyant ou message d’alerte",
+                    "Dégradation progressive des performances"
+                  ],
+                  "kilometrage_apparition": "Cumulatif",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Mécanique générale",
+                  "gravite": "Faible",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Consommation d'huile sur certains exemplaires",
+                  "symptomes": [
+                    "Baisse de niveau"
+                  ],
+                  "kilometrage_apparition": "Variable",
+                  "diagnostic": "Contrôle régulier",
+                  "piece_concernee": "Moteur",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Faible (surveillance)"
+                },
+                {
+                  "probleme": "Bugs logiciels du système multimédia",
+                  "symptomes": [
+                    "Dysfonctionnements écran"
+                  ],
+                  "kilometrage_apparition": "Sur les premières années",
+                  "diagnostic": "Mise à jour logicielle",
+                  "piece_concernee": "Système multimédia",
+                  "gravite": "Faible",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Faible"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "B48 2.0 — 192 ch",
+              "code_moteur": "BMW B38 1.5L 3 cylindres / B48 2.0L 4 cylindres turbo",
+              "cylindree": "2.0L",
+              "puissance_ch": 192,
+              "boite": [
+                "BVM6",
+                "BVA8 (Aisin)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Base moteur BMW globalement fiable",
+                  "symptomes": [
+                    "Bruit ou fonctionnement anormal",
+                    "Voyant ou message d’alerte",
+                    "Dégradation progressive des performances"
+                  ],
+                  "kilometrage_apparition": "N/A",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "N/A (positif)",
+                  "gravite": "N/A",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Entretien spécifique de la transmission ALL4",
+                  "symptomes": [
+                    "À-coups ou patinage",
+                    "Bruit lors des changements de rapport",
+                    "Vibrations en accélération"
+                  ],
+                  "kilometrage_apparition": "Vidange préventive",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Transmission intégrale",
+                  "gravite": "Faible (préventif)",
+                  "frequence": "Systématique",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Sollicitation mécanique accrue par le poids pour un Mini",
+                  "symptomes": [
+                    "Bruit ou fonctionnement anormal",
+                    "Voyant ou message d’alerte",
+                    "Dégradation progressive des performances"
+                  ],
+                  "kilometrage_apparition": "Cumulatif",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Mécanique générale",
+                  "gravite": "Faible",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Consommation d'huile sur certains exemplaires",
+                  "symptomes": [
+                    "Baisse de niveau"
+                  ],
+                  "kilometrage_apparition": "Variable",
+                  "diagnostic": "Contrôle régulier",
+                  "piece_concernee": "Moteur",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Faible (surveillance)"
+                },
+                {
+                  "probleme": "Bugs logiciels du système multimédia",
+                  "symptomes": [
+                    "Dysfonctionnements écran"
+                  ],
+                  "kilometrage_apparition": "Sur les premières années",
+                  "diagnostic": "Mise à jour logicielle",
+                  "piece_concernee": "Système multimédia",
+                  "gravite": "Faible",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Faible"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "B48 2.0 JCW — 306 ch",
+              "code_moteur": "BMW B38 1.5L 3 cylindres / B48 2.0L 4 cylindres turbo",
+              "cylindree": "2.0L",
+              "puissance_ch": 306,
+              "boite": [
+                "BVM6",
+                "BVA8 (Aisin)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Base moteur BMW globalement fiable",
+                  "symptomes": [
+                    "Bruit ou fonctionnement anormal",
+                    "Voyant ou message d’alerte",
+                    "Dégradation progressive des performances"
+                  ],
+                  "kilometrage_apparition": "N/A",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "N/A (positif)",
+                  "gravite": "N/A",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Entretien spécifique de la transmission ALL4",
+                  "symptomes": [
+                    "À-coups ou patinage",
+                    "Bruit lors des changements de rapport",
+                    "Vibrations en accélération"
+                  ],
+                  "kilometrage_apparition": "Vidange préventive",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Transmission intégrale",
+                  "gravite": "Faible (préventif)",
+                  "frequence": "Systématique",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Sollicitation mécanique accrue par le poids pour un Mini",
+                  "symptomes": [
+                    "Bruit ou fonctionnement anormal",
+                    "Voyant ou message d’alerte",
+                    "Dégradation progressive des performances"
+                  ],
+                  "kilometrage_apparition": "Cumulatif",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Mécanique générale",
+                  "gravite": "Faible",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Consommation d'huile sur certains exemplaires",
+                  "symptomes": [
+                    "Baisse de niveau"
+                  ],
+                  "kilometrage_apparition": "Variable",
+                  "diagnostic": "Contrôle régulier",
+                  "piece_concernee": "Moteur",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Faible (surveillance)"
+                },
+                {
+                  "probleme": "Bugs logiciels du système multimédia",
+                  "symptomes": [
+                    "Dysfonctionnements écran"
+                  ],
+                  "kilometrage_apparition": "Sur les premières années",
+                  "diagnostic": "Mise à jour logicielle",
+                  "piece_concernee": "Système multimédia",
+                  "gravite": "Faible",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Faible"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "Diesel BMW 1.5 — 116 ch",
+              "code_moteur": "BMW B37/B47 1.5L/2.0L Diesel",
+              "cylindree": "2.0L",
+              "puissance_ch": 116,
+              "boite": [
+                "BVM6",
+                "BVA8 (Aisin)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Encrassement de la vanne EGR et du filtre à particules",
+                  "symptomes": [
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "En usage urbain",
+                  "diagnostic": "Contrôle après démontage",
+                  "piece_concernee": "Vanne EGR / FAP",
+                  "gravite": "Modérée",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Sensibilité des injecteurs à la qualité du carburant",
+                  "symptomes": [
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Accéléré",
+                  "diagnostic": "Test de débit",
+                  "piece_concernee": "Injecteurs",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Usure du volant moteur bi-masse",
+                  "symptomes": [
+                    "Vibrations"
+                  ],
+                  "kilometrage_apparition": "Avec le kilométrage",
+                  "diagnostic": "Écoute",
+                  "piece_concernee": "Volant moteur bi-masse",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Coût d'entretien élevé de la transmission ALL4",
+                  "symptomes": [
+                    "À-coups ou patinage",
+                    "Bruit lors des changements de rapport",
+                    "Vibrations en accélération"
+                  ],
+                  "kilometrage_apparition": "Sur versions concernées",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Transmission intégrale",
+                  "gravite": "Faible (préventif)",
+                  "frequence": "Systématique",
+                  "cout_reparation_estime": "Modéré"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "Diesel BMW 2.0 — 150 ch",
+              "code_moteur": "BMW B37/B47 1.5L/2.0L Diesel",
+              "cylindree": "2.0L",
+              "puissance_ch": 150,
+              "boite": [
+                "BVM6",
+                "BVA8 (Aisin)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Encrassement de la vanne EGR et du filtre à particules",
+                  "symptomes": [
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "En usage urbain",
+                  "diagnostic": "Contrôle après démontage",
+                  "piece_concernee": "Vanne EGR / FAP",
+                  "gravite": "Modérée",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Sensibilité des injecteurs à la qualité du carburant",
+                  "symptomes": [
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Accéléré",
+                  "diagnostic": "Test de débit",
+                  "piece_concernee": "Injecteurs",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Usure du volant moteur bi-masse",
+                  "symptomes": [
+                    "Vibrations"
+                  ],
+                  "kilometrage_apparition": "Avec le kilométrage",
+                  "diagnostic": "Écoute",
+                  "piece_concernee": "Volant moteur bi-masse",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Coût d'entretien élevé de la transmission ALL4",
+                  "symptomes": [
+                    "À-coups ou patinage",
+                    "Bruit lors des changements de rapport",
+                    "Vibrations en accélération"
+                  ],
+                  "kilometrage_apparition": "Sur versions concernées",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Transmission intégrale",
+                  "gravite": "Faible (préventif)",
+                  "frequence": "Systématique",
+                  "cout_reparation_estime": "Modéré"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "Diesel BMW 2.0 — 190 ch",
+              "code_moteur": "BMW B37/B47 1.5L/2.0L Diesel",
+              "cylindree": "2.0L",
+              "puissance_ch": 190,
+              "boite": [
+                "BVM6",
+                "BVA8 (Aisin)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Encrassement de la vanne EGR et du filtre à particules",
+                  "symptomes": [
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "En usage urbain",
+                  "diagnostic": "Contrôle après démontage",
+                  "piece_concernee": "Vanne EGR / FAP",
+                  "gravite": "Modérée",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Sensibilité des injecteurs à la qualité du carburant",
+                  "symptomes": [
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Accéléré",
+                  "diagnostic": "Test de débit",
+                  "piece_concernee": "Injecteurs",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Usure du volant moteur bi-masse",
+                  "symptomes": [
+                    "Vibrations"
+                  ],
+                  "kilometrage_apparition": "Avec le kilométrage",
+                  "diagnostic": "Écoute",
+                  "piece_concernee": "Volant moteur bi-masse",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Coût d'entretien élevé de la transmission ALL4",
+                  "symptomes": [
+                    "À-coups ou patinage",
+                    "Bruit lors des changements de rapport",
+                    "Vibrations en accélération"
+                  ],
+                  "kilometrage_apparition": "Sur versions concernées",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Transmission intégrale",
+                  "gravite": "Faible (préventif)",
+                  "frequence": "Systématique",
+                  "cout_reparation_estime": "Modéré"
+                }
+              ]
+            },
+            {
+              "type": "Hybride",
+              "nom": "Countryman Cooper S E ALL4 Hybride rechargeable - 224ch cumulés",
+              "code_moteur": "BMW B38 1.5L 3 cylindres turbo + moteur électrique (PHEV)",
+              "cylindree": "1.5L",
+              "puissance_ch": 224,
+              "boite": [
+                "BVA6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Complexité de la batterie haute tension et de son refroidissement",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Défaut ou interruption de charge",
+                    "Voyant système électrique"
+                  ],
+                  "kilometrage_apparition": "En cas de panne",
+                  "diagnostic": "Expertise spécialisée nécessaire",
+                  "piece_concernee": "Batterie haute tension",
+                  "gravite": "Critique",
+                  "frequence": "Indéterminée",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Autonomie électrique réelle limitée en usage hivernal",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Défaut ou interruption de charge",
+                    "Voyant système électrique"
+                  ],
+                  "kilometrage_apparition": "En hiver",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "N/A",
+                  "gravite": "Faible",
+                  "frequence": "Systématique en hiver",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Défaillance du chargeur embarqué et du calculateur hybride",
+                  "symptomes": [
+                    "Impossibilité de recharger"
+                  ],
+                  "kilometrage_apparition": "Cas remontés",
+                  "diagnostic": "Diagnostic électrique",
+                  "piece_concernee": "Chargeur embarqué",
+                  "gravite": "Majeure",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Sollicitation forte du train roulant par le poids supplémentaire de la batterie",
+                  "symptomes": [
+                    "Usure accélérée"
+                  ],
+                  "kilometrage_apparition": "Cumulatif",
+                  "diagnostic": "Contrôle régulier",
+                  "piece_concernee": "Suspension / freins",
+                  "gravite": "Modérée",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Élevé"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Mini Countryman (R60) / Paceman (R61)",
+      "generations": [
+        {
+          "code_chassis": "R60 / R61",
+          "annees": "2010-2016",
+          "phases": [
+            "R60 Countryman (2010-2016)",
+            "R61 Paceman (2012-2016)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Prince 1.6 Cooper — 122 ch",
+              "code_moteur": "PSA/BMW Prince 1.6L (atmosphérique et turbo)",
+              "cylindree": "1.6L",
+              "puissance_ch": 122,
+              "boite": [
+                "BVM6",
+                "BVA6 (Aisin)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Allongement de la chaîne de distribution",
+                  "symptomes": [
+                    "Cliquetis à froid"
+                  ],
+                  "kilometrage_apparition": "Mêmes points de vigilance que sur le Hatch",
+                  "diagnostic": "Écoute au démarrage à froid",
+                  "piece_concernee": "Chaîne de distribution",
+                  "gravite": "Critique",
+                  "frequence": "Très fréquent",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Négligence de la vidange de l'embrayage Haldex (ALL4)",
+                  "symptomes": [
+                    "Usure prématurée de la transmission intégrale"
+                  ],
+                  "kilometrage_apparition": "Vidange obligatoire tous les 30 000-40 000 km",
+                  "diagnostic": "Contrôle du plan d'entretien",
+                  "piece_concernee": "Embrayage Haldex",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquent si négligé",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Sollicitation forte du turbo (Cooper S)",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Sifflement ou bruit anormal",
+                    "Mode dégradé ou voyant moteur"
+                  ],
+                  "kilometrage_apparition": "N/A",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Turbocompresseur",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Consommation d'huile",
+                  "symptomes": [
+                    "Baisse de niveau"
+                  ],
+                  "kilometrage_apparition": "Avec le kilométrage",
+                  "diagnostic": "Contrôle régulier",
+                  "piece_concernee": "Moteur",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Faible (surveillance)"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Prince 1.6 Cooper S — 184 ch",
+              "code_moteur": "PSA/BMW Prince 1.6L (atmosphérique et turbo)",
+              "cylindree": "1.6L",
+              "puissance_ch": 184,
+              "boite": [
+                "BVM6",
+                "BVA6 (Aisin)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Allongement de la chaîne de distribution",
+                  "symptomes": [
+                    "Cliquetis à froid"
+                  ],
+                  "kilometrage_apparition": "Mêmes points de vigilance que sur le Hatch",
+                  "diagnostic": "Écoute au démarrage à froid",
+                  "piece_concernee": "Chaîne de distribution",
+                  "gravite": "Critique",
+                  "frequence": "Très fréquent",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Négligence de la vidange de l'embrayage Haldex (ALL4)",
+                  "symptomes": [
+                    "Usure prématurée de la transmission intégrale"
+                  ],
+                  "kilometrage_apparition": "Vidange obligatoire tous les 30 000-40 000 km",
+                  "diagnostic": "Contrôle du plan d'entretien",
+                  "piece_concernee": "Embrayage Haldex",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquent si négligé",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Sollicitation forte du turbo (Cooper S)",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Sifflement ou bruit anormal",
+                    "Mode dégradé ou voyant moteur"
+                  ],
+                  "kilometrage_apparition": "N/A",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Turbocompresseur",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Consommation d'huile",
+                  "symptomes": [
+                    "Baisse de niveau"
+                  ],
+                  "kilometrage_apparition": "Avec le kilométrage",
+                  "diagnostic": "Contrôle régulier",
+                  "piece_concernee": "Moteur",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Faible (surveillance)"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Prince 1.6 JCW — 211 ch",
+              "code_moteur": "PSA/BMW Prince 1.6L (atmosphérique et turbo)",
+              "cylindree": "1.6L",
+              "puissance_ch": 211,
+              "boite": [
+                "BVM6",
+                "BVA6 (Aisin)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Allongement de la chaîne de distribution",
+                  "symptomes": [
+                    "Cliquetis à froid"
+                  ],
+                  "kilometrage_apparition": "Mêmes points de vigilance que sur le Hatch",
+                  "diagnostic": "Écoute au démarrage à froid",
+                  "piece_concernee": "Chaîne de distribution",
+                  "gravite": "Critique",
+                  "frequence": "Très fréquent",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Négligence de la vidange de l'embrayage Haldex (ALL4)",
+                  "symptomes": [
+                    "Usure prématurée de la transmission intégrale"
+                  ],
+                  "kilometrage_apparition": "Vidange obligatoire tous les 30 000-40 000 km",
+                  "diagnostic": "Contrôle du plan d'entretien",
+                  "piece_concernee": "Embrayage Haldex",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquent si négligé",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Sollicitation forte du turbo (Cooper S)",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Sifflement ou bruit anormal",
+                    "Mode dégradé ou voyant moteur"
+                  ],
+                  "kilometrage_apparition": "N/A",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Turbocompresseur",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Consommation d'huile",
+                  "symptomes": [
+                    "Baisse de niveau"
+                  ],
+                  "kilometrage_apparition": "Avec le kilométrage",
+                  "diagnostic": "Contrôle régulier",
+                  "piece_concernee": "Moteur",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Faible (surveillance)"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "Diesel 1.6 — 90 ch",
+              "code_moteur": "PSA/BMW Diesel 1.6L/2.0L",
+              "cylindree": "2.0L",
+              "puissance_ch": 90,
+              "boite": [
+                "BVM6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Encrassement de la vanne EGR",
+                  "symptomes": [
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Progressive",
+                  "diagnostic": "Contrôle après démontage",
+                  "piece_concernee": "Vanne EGR",
+                  "gravite": "Modérée",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Colmatage du filtre à particules",
+                  "symptomes": [
+                    "Régénérations incomplètes"
+                  ],
+                  "kilometrage_apparition": "En usage urbain",
+                  "diagnostic": "Lecture de la pression différentielle",
+                  "piece_concernee": "Filtre à particules",
+                  "gravite": "Modérée",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Usure du volant moteur bi-masse",
+                  "symptomes": [
+                    "Vibrations"
+                  ],
+                  "kilometrage_apparition": "Avec le kilométrage",
+                  "diagnostic": "Écoute",
+                  "piece_concernee": "Volant moteur bi-masse",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Entretien coûteux de la transmission intégrale ALL4",
+                  "symptomes": [
+                    "À-coups ou patinage",
+                    "Bruit lors des changements de rapport",
+                    "Vibrations en accélération"
+                  ],
+                  "kilometrage_apparition": "Préventif",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Transmission intégrale",
+                  "gravite": "Faible (préventif)",
+                  "frequence": "Systématique",
+                  "cout_reparation_estime": "Modéré"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "Diesel 2.0 — 143 ch",
+              "code_moteur": "PSA/BMW Diesel 1.6L/2.0L",
+              "cylindree": "2.0L",
+              "puissance_ch": 143,
+              "boite": [
+                "BVM6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Encrassement de la vanne EGR",
+                  "symptomes": [
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Progressive",
+                  "diagnostic": "Contrôle après démontage",
+                  "piece_concernee": "Vanne EGR",
+                  "gravite": "Modérée",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Colmatage du filtre à particules",
+                  "symptomes": [
+                    "Régénérations incomplètes"
+                  ],
+                  "kilometrage_apparition": "En usage urbain",
+                  "diagnostic": "Lecture de la pression différentielle",
+                  "piece_concernee": "Filtre à particules",
+                  "gravite": "Modérée",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Usure du volant moteur bi-masse",
+                  "symptomes": [
+                    "Vibrations"
+                  ],
+                  "kilometrage_apparition": "Avec le kilométrage",
+                  "diagnostic": "Écoute",
+                  "piece_concernee": "Volant moteur bi-masse",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Entretien coûteux de la transmission intégrale ALL4",
+                  "symptomes": [
+                    "À-coups ou patinage",
+                    "Bruit lors des changements de rapport",
+                    "Vibrations en accélération"
+                  ],
+                  "kilometrage_apparition": "Préventif",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Transmission intégrale",
+                  "gravite": "Faible (préventif)",
+                  "frequence": "Systématique",
+                  "cout_reparation_estime": "Modéré"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Mini Hatch (R50/R53)",
+      "generations": [
+        {
+          "code_chassis": "R50 / R53",
+          "annees": "2001-2006",
+          "phases": [
+            "One/Cooper R50 (2001-2006)",
+            "Cooper S R53 (2002-2006)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Tritec 1.6 One — 90 ch",
+              "code_moteur": "Chrysler/BMW Tritec 1.6L",
+              "cylindree": "1.6L",
+              "puissance_ch": 90,
+              "boite": [
+                "BVM5",
+                "BVA CVT (Cooper uniquement)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Panne interne de la boîte automatique CVT (Cooper, en option)",
+                  "symptomes": [
+                    "À-coups ou blocage"
+                  ],
+                  "kilometrage_apparition": "Aléatoire",
+                  "diagnostic": "Remplacement plutôt que réparation dans la majorité des cas",
+                  "piece_concernee": "Boîte CVT",
+                  "gravite": "Critique",
+                  "frequence": "Fréquent sur cette boîte",
+                  "cout_reparation_estime": "Très élevé"
+                },
+                {
+                  "probleme": "Consommation d'huile sur certains blocs Tritec",
+                  "symptomes": [
+                    "Baisse de niveau"
+                  ],
+                  "kilometrage_apparition": "Avec le kilométrage",
+                  "diagnostic": "Contrôle régulier",
+                  "piece_concernee": "Moteur",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Faible (surveillance)"
+                },
+                {
+                  "probleme": "Suspension ferme sollicitant fortement les liaisons au sol sur routes dégradées",
+                  "symptomes": [
+                    "Usure accélérée"
+                  ],
+                  "kilometrage_apparition": "Cumulatif",
+                  "diagnostic": "Contrôle des liaisons au sol",
+                  "piece_concernee": "Suspension",
+                  "gravite": "Modérée",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Pannes de capteurs de la première Mini BMW",
+                  "symptomes": [
+                    "Dysfonctionnements divers"
+                  ],
+                  "kilometrage_apparition": "Progressive",
+                  "diagnostic": "Diagnostic complet",
+                  "piece_concernee": "Capteurs / calculateurs",
+                  "gravite": "Modérée",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Modéré"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Tritec 1.6 Cooper — 116 ch",
+              "code_moteur": "Chrysler/BMW Tritec 1.6L",
+              "cylindree": "1.6L",
+              "puissance_ch": 116,
+              "boite": [
+                "BVM5",
+                "BVA CVT (Cooper uniquement)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Panne interne de la boîte automatique CVT (Cooper, en option)",
+                  "symptomes": [
+                    "À-coups ou blocage"
+                  ],
+                  "kilometrage_apparition": "Aléatoire",
+                  "diagnostic": "Remplacement plutôt que réparation dans la majorité des cas",
+                  "piece_concernee": "Boîte CVT",
+                  "gravite": "Critique",
+                  "frequence": "Fréquent sur cette boîte",
+                  "cout_reparation_estime": "Très élevé"
+                },
+                {
+                  "probleme": "Consommation d'huile sur certains blocs Tritec",
+                  "symptomes": [
+                    "Baisse de niveau"
+                  ],
+                  "kilometrage_apparition": "Avec le kilométrage",
+                  "diagnostic": "Contrôle régulier",
+                  "piece_concernee": "Moteur",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Faible (surveillance)"
+                },
+                {
+                  "probleme": "Suspension ferme sollicitant fortement les liaisons au sol sur routes dégradées",
+                  "symptomes": [
+                    "Usure accélérée"
+                  ],
+                  "kilometrage_apparition": "Cumulatif",
+                  "diagnostic": "Contrôle des liaisons au sol",
+                  "piece_concernee": "Suspension",
+                  "gravite": "Modérée",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Pannes de capteurs de la première Mini BMW",
+                  "symptomes": [
+                    "Dysfonctionnements divers"
+                  ],
+                  "kilometrage_apparition": "Progressive",
+                  "diagnostic": "Diagnostic complet",
+                  "piece_concernee": "Capteurs / calculateurs",
+                  "gravite": "Modérée",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Modéré"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Tritec Compresseur Cooper S — 163 ch",
+              "code_moteur": "Chrysler/BMW Tritec 1.6L compressé (Eaton)",
+              "cylindree": "1.6L",
+              "puissance_ch": 163,
+              "boite": [
+                "BVM6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Usure de la poulie et de la courroie du compresseur Eaton",
+                  "symptomes": [
+                    "Cliquetis ou bruit au démarrage",
+                    "Démarrage difficile",
+                    "Voyant moteur ou calage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Entretien spécifique",
+                  "diagnostic": "Contrôle visuel",
+                  "piece_concernee": "Compresseur Eaton",
+                  "gravite": "Faible (préventif)",
+                  "frequence": "Systématique",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Chaleur importante dans le compartiment moteur exigu",
+                  "symptomes": [
+                    "Gestion thermique à surveiller"
+                  ],
+                  "kilometrage_apparition": "En usage sportif",
+                  "diagnostic": "Contrôle des durites",
+                  "piece_concernee": "Circuit de refroidissement",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Usure accélérée de l'embrayage en conduite sportive",
+                  "symptomes": [
+                    "Patinage"
+                  ],
+                  "kilometrage_apparition": "Variable",
+                  "diagnostic": "Test de patinage",
+                  "piece_concernee": "Embrayage",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Corrosion résiduelle sur les points sensibles de caisse",
+                  "symptomes": [
+                    "Rouille"
+                  ],
+                  "kilometrage_apparition": "Malgré une meilleure protection que la Mini classique",
+                  "diagnostic": "Sondage",
+                  "piece_concernee": "Carrosserie",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Tritec Compresseur JCW — 170 ch",
+              "code_moteur": "Chrysler/BMW Tritec 1.6L compressé (Eaton)",
+              "cylindree": "1.6L",
+              "puissance_ch": 170,
+              "boite": [
+                "BVM6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Usure de la poulie et de la courroie du compresseur Eaton",
+                  "symptomes": [
+                    "Cliquetis ou bruit au démarrage",
+                    "Démarrage difficile",
+                    "Voyant moteur ou calage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Entretien spécifique",
+                  "diagnostic": "Contrôle visuel",
+                  "piece_concernee": "Compresseur Eaton",
+                  "gravite": "Faible (préventif)",
+                  "frequence": "Systématique",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Chaleur importante dans le compartiment moteur exigu",
+                  "symptomes": [
+                    "Gestion thermique à surveiller"
+                  ],
+                  "kilometrage_apparition": "En usage sportif",
+                  "diagnostic": "Contrôle des durites",
+                  "piece_concernee": "Circuit de refroidissement",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Usure accélérée de l'embrayage en conduite sportive",
+                  "symptomes": [
+                    "Patinage"
+                  ],
+                  "kilometrage_apparition": "Variable",
+                  "diagnostic": "Test de patinage",
+                  "piece_concernee": "Embrayage",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Corrosion résiduelle sur les points sensibles de caisse",
+                  "symptomes": [
+                    "Rouille"
+                  ],
+                  "kilometrage_apparition": "Malgré une meilleure protection que la Mini classique",
+                  "diagnostic": "Sondage",
+                  "piece_concernee": "Carrosserie",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Mini Hatch (R56) / Clubman (R55) / Coupé-Roadster (R58/R59)",
+      "generations": [
+        {
+          "code_chassis": "R56 / R55 / R57 / R58 / R59",
+          "annees": "2006-2013",
+          "phases": [
+            "R56 Hatch (2006-2013)",
+            "R55 Clubman (2007-2014)",
+            "R57 Cabriolet (2009-2015)",
+            "R58 Coupé (2011-2015)",
+            "R59 Roadster (2012-2015)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.6L Prince (Cooper) - 122ch",
+              "code_moteur": "PSA/BMW Prince 1.6L (co-développé avec PSA Peugeot Citroën)",
+              "cylindree": "1.6L",
+              "puissance_ch": 122,
+              "boite": [
+                "BVM6",
+                "BVA6 (Aisin)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Allongement puis casse de la chaîne de distribution Prince",
+                  "symptomes": [
+                    "Bruit de cliquetis au ralenti froid",
+                    "Risque de casse complète"
+                  ],
+                  "kilometrage_apparition": "Défaut largement documenté, au-delà de 100 000-120 000 km",
+                  "diagnostic": "Écoute au ralenti froid, remplacement préventif du tendeur conseillé",
+                  "piece_concernee": "Chaîne de distribution",
+                  "gravite": "Critique",
+                  "frequence": "Très fréquent",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Fragilité du tendeur de chaîne",
+                  "symptomes": [
+                    "Bruit anormal"
+                  ],
+                  "kilometrage_apparition": "Sur hauts kilométrages",
+                  "diagnostic": "Remplacement préventif avant l'apparition de symptômes",
+                  "piece_concernee": "Tendeur de chaîne",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Consommation d'huile sur certains exemplaires",
+                  "symptomes": [
+                    "Baisse de niveau"
+                  ],
+                  "kilometrage_apparition": "Variable",
+                  "diagnostic": "Contrôle régulier",
+                  "piece_concernee": "Moteur",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Faible (surveillance)"
+                },
+                {
+                  "probleme": "Sollicitation forte du turbo (Cooper S)",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Sifflement ou bruit anormal",
+                    "Mode dégradé ou voyant moteur"
+                  ],
+                  "kilometrage_apparition": "N/A",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Turbocompresseur",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Système Stop&Start capricieux sur premiers exemplaires",
+                  "symptomes": [
+                    "Non-activation intempestive"
+                  ],
+                  "kilometrage_apparition": "Sur premiers exemplaires",
+                  "diagnostic": "Contrôle de la batterie",
+                  "piece_concernee": "Système Stop&Start",
+                  "gravite": "Faible",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Faible"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Prince Turbo Cooper S — 175 ch",
+              "code_moteur": "PSA/BMW Prince 1.6L turbo",
+              "cylindree": "1.6L",
+              "puissance_ch": 175,
+              "boite": [
+                "BVM6",
+                "BVA6 (Aisin)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Chaîne de distribution toujours aussi sensible à l'allongement prématuré",
+                  "symptomes": [
+                    "Cliquetis à froid"
+                  ],
+                  "kilometrage_apparition": "Défaut connu et documenté de cette génération de moteur",
+                  "diagnostic": "Écoute au démarrage à froid dès les premiers signes",
+                  "piece_concernee": "Chaîne de distribution",
+                  "gravite": "Critique",
+                  "frequence": "Très fréquent",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Sollicitation forte du turbo",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Sifflement ou bruit anormal",
+                    "Mode dégradé ou voyant moteur"
+                  ],
+                  "kilometrage_apparition": "En cas de panne",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Turbocompresseur",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Consommation d'huile",
+                  "symptomes": [
+                    "Baisse de niveau"
+                  ],
+                  "kilometrage_apparition": "Avec le kilométrage",
+                  "diagnostic": "Contrôle régulier",
+                  "piece_concernee": "Moteur",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Faible (surveillance)"
+                },
+                {
+                  "probleme": "Usure accélérée de l'embrayage en conduite sportive",
+                  "symptomes": [
+                    "Patinage"
+                  ],
+                  "kilometrage_apparition": "Variable",
+                  "diagnostic": "Test de patinage",
+                  "piece_concernee": "Embrayage",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Prince Turbo JCW — 211 ch",
+              "code_moteur": "PSA/BMW Prince 1.6L turbo",
+              "cylindree": "1.6L",
+              "puissance_ch": 211,
+              "boite": [
+                "BVM6",
+                "BVA6 (Aisin)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Chaîne de distribution toujours aussi sensible à l'allongement prématuré",
+                  "symptomes": [
+                    "Cliquetis à froid"
+                  ],
+                  "kilometrage_apparition": "Défaut connu et documenté de cette génération de moteur",
+                  "diagnostic": "Écoute au démarrage à froid dès les premiers signes",
+                  "piece_concernee": "Chaîne de distribution",
+                  "gravite": "Critique",
+                  "frequence": "Très fréquent",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Sollicitation forte du turbo",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Sifflement ou bruit anormal",
+                    "Mode dégradé ou voyant moteur"
+                  ],
+                  "kilometrage_apparition": "En cas de panne",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Turbocompresseur",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Consommation d'huile",
+                  "symptomes": [
+                    "Baisse de niveau"
+                  ],
+                  "kilometrage_apparition": "Avec le kilométrage",
+                  "diagnostic": "Contrôle régulier",
+                  "piece_concernee": "Moteur",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Faible (surveillance)"
+                },
+                {
+                  "probleme": "Usure accélérée de l'embrayage en conduite sportive",
+                  "symptomes": [
+                    "Patinage"
+                  ],
+                  "kilometrage_apparition": "Variable",
+                  "diagnostic": "Test de patinage",
+                  "piece_concernee": "Embrayage",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "Diesel 1.6 — 90 ch",
+              "code_moteur": "PSA/BMW Diesel 1.6L/2.0L (co-développé avec PSA)",
+              "cylindree": "2.0L",
+              "puissance_ch": 90,
+              "boite": [
+                "BVM6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Encrassement de la vanne EGR",
+                  "symptomes": [
+                    "Perte de puissance, fumée à l'accélération"
+                  ],
+                  "kilometrage_apparition": "Progressive sans nettoyage régulier",
+                  "diagnostic": "Contrôle après démontage",
+                  "piece_concernee": "Vanne EGR",
+                  "gravite": "Modérée",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Colmatage du filtre à particules",
+                  "symptomes": [
+                    "Régénérations incomplètes"
+                  ],
+                  "kilometrage_apparition": "En usage urbain",
+                  "diagnostic": "Lecture de la pression différentielle",
+                  "piece_concernee": "Filtre à particules",
+                  "gravite": "Modérée",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Usure du volant moteur bi-masse",
+                  "symptomes": [
+                    "Vibrations"
+                  ],
+                  "kilometrage_apparition": "Avec le kilométrage",
+                  "diagnostic": "Écoute",
+                  "piece_concernee": "Volant moteur bi-masse",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Sensibilité des injecteurs à la qualité du carburant",
+                  "symptomes": [
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Accéléré avec mauvais carburant",
+                  "diagnostic": "Test de débit",
+                  "piece_concernee": "Injecteurs",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "Diesel 2.0 — 143 ch",
+              "code_moteur": "PSA/BMW Diesel 1.6L/2.0L (co-développé avec PSA)",
+              "cylindree": "2.0L",
+              "puissance_ch": 143,
+              "boite": [
+                "BVM6"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Encrassement de la vanne EGR",
+                  "symptomes": [
+                    "Perte de puissance, fumée à l'accélération"
+                  ],
+                  "kilometrage_apparition": "Progressive sans nettoyage régulier",
+                  "diagnostic": "Contrôle après démontage",
+                  "piece_concernee": "Vanne EGR",
+                  "gravite": "Modérée",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Colmatage du filtre à particules",
+                  "symptomes": [
+                    "Régénérations incomplètes"
+                  ],
+                  "kilometrage_apparition": "En usage urbain",
+                  "diagnostic": "Lecture de la pression différentielle",
+                  "piece_concernee": "Filtre à particules",
+                  "gravite": "Modérée",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Usure du volant moteur bi-masse",
+                  "symptomes": [
+                    "Vibrations"
+                  ],
+                  "kilometrage_apparition": "Avec le kilométrage",
+                  "diagnostic": "Écoute",
+                  "piece_concernee": "Volant moteur bi-masse",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Sensibilité des injecteurs à la qualité du carburant",
+                  "symptomes": [
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Accéléré avec mauvais carburant",
+                  "diagnostic": "Test de débit",
+                  "piece_concernee": "Injecteurs",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Mini Hatch / Convertible (F55/F56/F57) - 3ème génération",
+      "generations": [
+        {
+          "code_chassis": "F55 / F56 / F57",
+          "annees": "2014-2024",
+          "phases": [
+            "F56 3 portes (2014-2024)",
+            "F55 5 portes (2014-2024)",
+            "F57 Cabriolet (2016-2024)",
+            "JCW (2015-2024)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "B38 1.5 Cooper — 102 ch",
+              "code_moteur": "BMW B38 1.5L 3 cylindres turbo",
+              "cylindree": "1.5L",
+              "puissance_ch": 102,
+              "boite": [
+                "BVM6",
+                "BVA6/BVA7 (double embrayage sur versions récentes)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Base moteur globalement fiable, amélioration nette par rapport au Prince",
+                  "symptomes": [
+                    "Bruit ou fonctionnement anormal",
+                    "Voyant ou message d’alerte",
+                    "Dégradation progressive des performances"
+                  ],
+                  "kilometrage_apparition": "N/A",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "N/A (positif)",
+                  "gravite": "N/A",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Consommation d'huile pouvant apparaître sur certains exemplaires",
+                  "symptomes": [
+                    "Baisse de niveau"
+                  ],
+                  "kilometrage_apparition": "Variable",
+                  "diagnostic": "Contrôle régulier",
+                  "piece_concernee": "Moteur",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Faible (surveillance)"
+                },
+                {
+                  "probleme": "Échauffement du turbo sur trajets sportifs répétés",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Sifflement ou bruit anormal",
+                    "Mode dégradé ou voyant moteur"
+                  ],
+                  "kilometrage_apparition": "En usage sportif",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Turbocompresseur",
+                  "gravite": "Faible",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Système Stop&Start parfois capricieux",
+                  "symptomes": [
+                    "Non-activation"
+                  ],
+                  "kilometrage_apparition": "Variable",
+                  "diagnostic": "Contrôle de la batterie",
+                  "piece_concernee": "Système Stop&Start",
+                  "gravite": "Faible",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Faible"
+                },
+                {
+                  "probleme": "Bugs logiciels du système multimédia connecté",
+                  "symptomes": [
+                    "Dysfonctionnements écran"
+                  ],
+                  "kilometrage_apparition": "Sur les premières années",
+                  "diagnostic": "Mise à jour logicielle",
+                  "piece_concernee": "Système multimédia",
+                  "gravite": "Faible",
+                  "frequence": "Fréquent sur premières années",
+                  "cout_reparation_estime": "Faible"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "B38 1.5 Cooper — 136 ch",
+              "code_moteur": "BMW B38 1.5L 3 cylindres turbo",
+              "cylindree": "1.5L",
+              "puissance_ch": 136,
+              "boite": [
+                "BVM6",
+                "BVA6/BVA7 (double embrayage sur versions récentes)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Base moteur globalement fiable, amélioration nette par rapport au Prince",
+                  "symptomes": [
+                    "Bruit ou fonctionnement anormal",
+                    "Voyant ou message d’alerte",
+                    "Dégradation progressive des performances"
+                  ],
+                  "kilometrage_apparition": "N/A",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "N/A (positif)",
+                  "gravite": "N/A",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Consommation d'huile pouvant apparaître sur certains exemplaires",
+                  "symptomes": [
+                    "Baisse de niveau"
+                  ],
+                  "kilometrage_apparition": "Variable",
+                  "diagnostic": "Contrôle régulier",
+                  "piece_concernee": "Moteur",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Faible (surveillance)"
+                },
+                {
+                  "probleme": "Échauffement du turbo sur trajets sportifs répétés",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Sifflement ou bruit anormal",
+                    "Mode dégradé ou voyant moteur"
+                  ],
+                  "kilometrage_apparition": "En usage sportif",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Turbocompresseur",
+                  "gravite": "Faible",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Système Stop&Start parfois capricieux",
+                  "symptomes": [
+                    "Non-activation"
+                  ],
+                  "kilometrage_apparition": "Variable",
+                  "diagnostic": "Contrôle de la batterie",
+                  "piece_concernee": "Système Stop&Start",
+                  "gravite": "Faible",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Faible"
+                },
+                {
+                  "probleme": "Bugs logiciels du système multimédia connecté",
+                  "symptomes": [
+                    "Dysfonctionnements écran"
+                  ],
+                  "kilometrage_apparition": "Sur les premières années",
+                  "diagnostic": "Mise à jour logicielle",
+                  "piece_concernee": "Système multimédia",
+                  "gravite": "Faible",
+                  "frequence": "Fréquent sur premières années",
+                  "cout_reparation_estime": "Faible"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "B48 2.0 Cooper S — 192 ch",
+              "code_moteur": "BMW B48 2.0L 4 cylindres turbo",
+              "cylindree": "2.0L",
+              "puissance_ch": 192,
+              "boite": [
+                "BVM6",
+                "BVA8 (Aisin)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Consommation d'huile à surveiller",
+                  "symptomes": [
+                    "Baisse de niveau"
+                  ],
+                  "kilometrage_apparition": "Variable",
+                  "diagnostic": "Contrôle régulier",
+                  "piece_concernee": "Moteur",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Faible (surveillance)"
+                },
+                {
+                  "probleme": "Sollicitation forte du turbo sur JCW en usage sportif",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Sifflement ou bruit anormal",
+                    "Mode dégradé ou voyant moteur"
+                  ],
+                  "kilometrage_apparition": "N/A",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Turbocompresseur",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Usure accélérée de l'embrayage en conduite dynamique",
+                  "symptomes": [
+                    "Patinage"
+                  ],
+                  "kilometrage_apparition": "Variable",
+                  "diagnostic": "Test de patinage",
+                  "piece_concernee": "Embrayage",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Bugs logiciels du système multimédia",
+                  "symptomes": [
+                    "Dysfonctionnements écran"
+                  ],
+                  "kilometrage_apparition": "Sur les premières années",
+                  "diagnostic": "Mise à jour logicielle",
+                  "piece_concernee": "Système multimédia",
+                  "gravite": "Faible",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Faible"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "B48 2.0 JCW — 231 ch",
+              "code_moteur": "BMW B48 2.0L 4 cylindres turbo",
+              "cylindree": "2.0L",
+              "puissance_ch": 231,
+              "boite": [
+                "BVM6",
+                "BVA8 (Aisin)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Consommation d'huile à surveiller",
+                  "symptomes": [
+                    "Baisse de niveau"
+                  ],
+                  "kilometrage_apparition": "Variable",
+                  "diagnostic": "Contrôle régulier",
+                  "piece_concernee": "Moteur",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Faible (surveillance)"
+                },
+                {
+                  "probleme": "Sollicitation forte du turbo sur JCW en usage sportif",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Sifflement ou bruit anormal",
+                    "Mode dégradé ou voyant moteur"
+                  ],
+                  "kilometrage_apparition": "N/A",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Turbocompresseur",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Usure accélérée de l'embrayage en conduite dynamique",
+                  "symptomes": [
+                    "Patinage"
+                  ],
+                  "kilometrage_apparition": "Variable",
+                  "diagnostic": "Test de patinage",
+                  "piece_concernee": "Embrayage",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Bugs logiciels du système multimédia",
+                  "symptomes": [
+                    "Dysfonctionnements écran"
+                  ],
+                  "kilometrage_apparition": "Sur les premières années",
+                  "diagnostic": "Mise à jour logicielle",
+                  "piece_concernee": "Système multimédia",
+                  "gravite": "Faible",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Faible"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "Diesel BMW 1.5 — 95 ch",
+              "code_moteur": "BMW B37/B47 1.5L/2.0L Diesel",
+              "cylindree": "2.0L",
+              "puissance_ch": 95,
+              "boite": [
+                "BVM6",
+                "BVA8 (Aisin)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Encrassement de la vanne EGR et du filtre à particules en usage urbain",
+                  "symptomes": [
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Fréquent",
+                  "diagnostic": "Contrôle après démontage",
+                  "piece_concernee": "Vanne EGR / FAP",
+                  "gravite": "Modérée",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Sensibilité des injecteurs à la qualité du carburant",
+                  "symptomes": [
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Accéléré",
+                  "diagnostic": "Test de débit",
+                  "piece_concernee": "Injecteurs",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Usure du volant moteur bi-masse",
+                  "symptomes": [
+                    "Vibrations"
+                  ],
+                  "kilometrage_apparition": "Avec le kilométrage",
+                  "diagnostic": "Écoute",
+                  "piece_concernee": "Volant moteur bi-masse",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Encrassement du turbo à géométrie variable",
+                  "symptomes": [
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Progressive",
+                  "diagnostic": "Test de pression",
+                  "piece_concernee": "Turbocompresseur",
+                  "gravite": "Modérée",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Modéré"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "Diesel BMW 2.0 — 150 ch",
+              "code_moteur": "BMW B37/B47 1.5L/2.0L Diesel",
+              "cylindree": "2.0L",
+              "puissance_ch": 150,
+              "boite": [
+                "BVM6",
+                "BVA8 (Aisin)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Encrassement de la vanne EGR et du filtre à particules en usage urbain",
+                  "symptomes": [
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Fréquent",
+                  "diagnostic": "Contrôle après démontage",
+                  "piece_concernee": "Vanne EGR / FAP",
+                  "gravite": "Modérée",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Sensibilité des injecteurs à la qualité du carburant",
+                  "symptomes": [
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Accéléré",
+                  "diagnostic": "Test de débit",
+                  "piece_concernee": "Injecteurs",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Usure du volant moteur bi-masse",
+                  "symptomes": [
+                    "Vibrations"
+                  ],
+                  "kilometrage_apparition": "Avec le kilométrage",
+                  "diagnostic": "Écoute",
+                  "piece_concernee": "Volant moteur bi-masse",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Encrassement du turbo à géométrie variable",
+                  "symptomes": [
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Progressive",
+                  "diagnostic": "Test de pression",
+                  "piece_concernee": "Turbocompresseur",
+                  "gravite": "Modérée",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Modéré"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "Diesel BMW 2.0 — 190 ch",
+              "code_moteur": "BMW B37/B47 1.5L/2.0L Diesel",
+              "cylindree": "2.0L",
+              "puissance_ch": 190,
+              "boite": [
+                "BVM6",
+                "BVA8 (Aisin)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Encrassement de la vanne EGR et du filtre à particules en usage urbain",
+                  "symptomes": [
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Fréquent",
+                  "diagnostic": "Contrôle après démontage",
+                  "piece_concernee": "Vanne EGR / FAP",
+                  "gravite": "Modérée",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Sensibilité des injecteurs à la qualité du carburant",
+                  "symptomes": [
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Accéléré",
+                  "diagnostic": "Test de débit",
+                  "piece_concernee": "Injecteurs",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Usure du volant moteur bi-masse",
+                  "symptomes": [
+                    "Vibrations"
+                  ],
+                  "kilometrage_apparition": "Avec le kilométrage",
+                  "diagnostic": "Écoute",
+                  "piece_concernee": "Volant moteur bi-masse",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Élevé"
+                },
+                {
+                  "probleme": "Encrassement du turbo à géométrie variable",
+                  "symptomes": [
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Progressive",
+                  "diagnostic": "Test de pression",
+                  "piece_concernee": "Turbocompresseur",
+                  "gravite": "Modérée",
+                  "frequence": "Fréquent",
+                  "cout_reparation_estime": "Modéré"
+                }
+              ]
+            },
+            {
+              "type": "Électrique",
+              "nom": "Mini Electric (Cooper SE) - 184ch",
+              "code_moteur": "Moteur électrique synchrone à aimants permanents",
+              "cylindree": "N/A",
+              "puissance_ch": 184,
+              "boite": [
+                "Rapport fixe (pas de boîte de vitesses)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Autonomie limitée (environ 200 km réels)",
+                  "symptomes": [
+                    "Bruit ou fonctionnement anormal",
+                    "Voyant ou message d’alerte",
+                    "Dégradation progressive des performances"
+                  ],
+                  "kilometrage_apparition": "Inférieure aux standards du marché à son lancement",
+                  "diagnostic": "N/A (caractéristique de conception)",
+                  "piece_concernee": "N/A",
+                  "gravite": "Faible",
+                  "frequence": "Systématique",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Batterie sous le plancher empiétant sur l'habitabilité du coffre",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Défaut ou interruption de charge",
+                    "Voyant système électrique"
+                  ],
+                  "kilometrage_apparition": "N/A",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "N/A",
+                  "gravite": "Faible",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Bugs logiciels du système de gestion de batterie et du chargeur",
+                  "symptomes": [
+                    "Dysfonctionnements de charge"
+                  ],
+                  "kilometrage_apparition": "Sur les premières années",
+                  "diagnostic": "Mise à jour logicielle",
+                  "piece_concernee": "Système de gestion batterie",
+                  "gravite": "Faible",
+                  "frequence": "Fréquent sur premières années",
+                  "cout_reparation_estime": "Faible"
+                },
+                {
+                  "probleme": "Coût de remplacement de la batterie potentiellement élevé hors garantie",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Défaut ou interruption de charge",
+                    "Voyant système électrique"
+                  ],
+                  "kilometrage_apparition": "N/A",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Batterie haute tension",
+                  "gravite": "Critique (coût)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Très élevé"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Mini Hatch / Convertible / Aceman / Countryman (génération actuelle)",
+      "generations": [
+        {
+          "code_chassis": "F65/F66 (Hatch/Cabrio) / F70 (Aceman) / U25 (Countryman)",
+          "annees": "2023-présent",
+          "phases": [
+            "Cooper 3 portes (2024-présent)",
+            "Cabrio (2024-présent)",
+            "Aceman (2024-présent)",
+            "Countryman (2023-présent)",
+            "JCW"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Turbo BMW 1.5 — 156 ch",
+              "code_moteur": "BMW B38/B48 (mild-hybride sur certaines versions)",
+              "cylindree": "2.0L",
+              "puissance_ch": 156,
+              "boite": [
+                "BVA7 double embrayage"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Absence de retour de fiabilité communautaire consolidé",
+                  "symptomes": [
+                    "Distance de freinage accrue",
+                    "Vibration ou bruit au freinage",
+                    "Voyant ABS ou freinage"
+                  ],
+                  "kilometrage_apparition": "Modèle trop récent",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "N/A",
+                  "gravite": "Indéterminée",
+                  "frequence": "Indéterminée",
+                  "cout_reparation_estime": "Indéterminé"
+                },
+                {
+                  "probleme": "Pannes électroniques capricieuses du système mild-hybride (selon version)",
+                  "symptomes": [
+                    "Comportement dégradé"
+                  ],
+                  "kilometrage_apparition": "Sur les premières années",
+                  "diagnostic": "Lecture des codes défauts",
+                  "piece_concernee": "Système mild-hybride",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Bugs logiciels de jeunesse de l'écran circulaire OLED",
+                  "symptomes": [
+                    "Dysfonctionnements écran"
+                  ],
+                  "kilometrage_apparition": "Sur les premières années",
+                  "diagnostic": "Mise à jour logicielle",
+                  "piece_concernee": "Système multimédia",
+                  "gravite": "Faible",
+                  "frequence": "Fréquent sur premières années",
+                  "cout_reparation_estime": "Faible"
+                },
+                {
+                  "probleme": "Entretien spécifique de la transmission ALL4 (Countryman)",
+                  "symptomes": [
+                    "À-coups ou patinage",
+                    "Bruit lors des changements de rapport",
+                    "Vibrations en accélération"
+                  ],
+                  "kilometrage_apparition": "Préventif",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Transmission intégrale",
+                  "gravite": "Faible (préventif)",
+                  "frequence": "Systématique",
+                  "cout_reparation_estime": "Modéré"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Turbo BMW 2.0 — 204 ch",
+              "code_moteur": "BMW B38/B48 (mild-hybride sur certaines versions)",
+              "cylindree": "2.0L",
+              "puissance_ch": 204,
+              "boite": [
+                "BVA7 double embrayage"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Absence de retour de fiabilité communautaire consolidé",
+                  "symptomes": [
+                    "Distance de freinage accrue",
+                    "Vibration ou bruit au freinage",
+                    "Voyant ABS ou freinage"
+                  ],
+                  "kilometrage_apparition": "Modèle trop récent",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "N/A",
+                  "gravite": "Indéterminée",
+                  "frequence": "Indéterminée",
+                  "cout_reparation_estime": "Indéterminé"
+                },
+                {
+                  "probleme": "Pannes électroniques capricieuses du système mild-hybride (selon version)",
+                  "symptomes": [
+                    "Comportement dégradé"
+                  ],
+                  "kilometrage_apparition": "Sur les premières années",
+                  "diagnostic": "Lecture des codes défauts",
+                  "piece_concernee": "Système mild-hybride",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Bugs logiciels de jeunesse de l'écran circulaire OLED",
+                  "symptomes": [
+                    "Dysfonctionnements écran"
+                  ],
+                  "kilometrage_apparition": "Sur les premières années",
+                  "diagnostic": "Mise à jour logicielle",
+                  "piece_concernee": "Système multimédia",
+                  "gravite": "Faible",
+                  "frequence": "Fréquent sur premières années",
+                  "cout_reparation_estime": "Faible"
+                },
+                {
+                  "probleme": "Entretien spécifique de la transmission ALL4 (Countryman)",
+                  "symptomes": [
+                    "À-coups ou patinage",
+                    "Bruit lors des changements de rapport",
+                    "Vibrations en accélération"
+                  ],
+                  "kilometrage_apparition": "Préventif",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Transmission intégrale",
+                  "gravite": "Faible (préventif)",
+                  "frequence": "Systématique",
+                  "cout_reparation_estime": "Modéré"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Turbo BMW 2.0 JCW — 300 ch",
+              "code_moteur": "BMW B38/B48 (mild-hybride sur certaines versions)",
+              "cylindree": "2.0L",
+              "puissance_ch": 300,
+              "boite": [
+                "BVA7 double embrayage"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Absence de retour de fiabilité communautaire consolidé",
+                  "symptomes": [
+                    "Distance de freinage accrue",
+                    "Vibration ou bruit au freinage",
+                    "Voyant ABS ou freinage"
+                  ],
+                  "kilometrage_apparition": "Modèle trop récent",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "N/A",
+                  "gravite": "Indéterminée",
+                  "frequence": "Indéterminée",
+                  "cout_reparation_estime": "Indéterminé"
+                },
+                {
+                  "probleme": "Pannes électroniques capricieuses du système mild-hybride (selon version)",
+                  "symptomes": [
+                    "Comportement dégradé"
+                  ],
+                  "kilometrage_apparition": "Sur les premières années",
+                  "diagnostic": "Lecture des codes défauts",
+                  "piece_concernee": "Système mild-hybride",
+                  "gravite": "Modérée",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Modéré"
+                },
+                {
+                  "probleme": "Bugs logiciels de jeunesse de l'écran circulaire OLED",
+                  "symptomes": [
+                    "Dysfonctionnements écran"
+                  ],
+                  "kilometrage_apparition": "Sur les premières années",
+                  "diagnostic": "Mise à jour logicielle",
+                  "piece_concernee": "Système multimédia",
+                  "gravite": "Faible",
+                  "frequence": "Fréquent sur premières années",
+                  "cout_reparation_estime": "Faible"
+                },
+                {
+                  "probleme": "Entretien spécifique de la transmission ALL4 (Countryman)",
+                  "symptomes": [
+                    "À-coups ou patinage",
+                    "Bruit lors des changements de rapport",
+                    "Vibrations en accélération"
+                  ],
+                  "kilometrage_apparition": "Préventif",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Transmission intégrale",
+                  "gravite": "Faible (préventif)",
+                  "frequence": "Systématique",
+                  "cout_reparation_estime": "Modéré"
+                }
+              ]
+            },
+            {
+              "type": "Électrique",
+              "nom": "Cooper E — 184 ch",
+              "code_moteur": "Moteur(s) électrique(s) synchrone(s) à aimants permanents",
+              "cylindree": "N/A",
+              "puissance_ch": 184,
+              "boite": [
+                "Rapport fixe (pas de boîte de vitesses)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Absence de retour de fiabilité long terme",
+                  "symptomes": [
+                    "Distance de freinage accrue",
+                    "Vibration ou bruit au freinage",
+                    "Voyant ABS ou freinage"
+                  ],
+                  "kilometrage_apparition": "Modèle très récent",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "N/A",
+                  "gravite": "Indéterminée",
+                  "frequence": "Indéterminée",
+                  "cout_reparation_estime": "Indéterminé"
+                },
+                {
+                  "probleme": "Écosystème de service après-vente encore en déploiement",
+                  "symptomes": [
+                    "Bruit ou fonctionnement anormal",
+                    "Voyant ou message d’alerte",
+                    "Dégradation progressive des performances"
+                  ],
+                  "kilometrage_apparition": "Nouvelle plateforme électrique co-développée avec un partenaire chinois",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "N/A",
+                  "gravite": "Faible",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Bugs logiciels de jeunesse de l'écran circulaire OLED",
+                  "symptomes": [
+                    "Dysfonctionnements écran"
+                  ],
+                  "kilometrage_apparition": "Sur les premières années",
+                  "diagnostic": "Mise à jour logicielle",
+                  "piece_concernee": "Système multimédia",
+                  "gravite": "Faible",
+                  "frequence": "Fréquent sur premières années",
+                  "cout_reparation_estime": "Faible"
+                },
+                {
+                  "probleme": "Autonomie réelle probablement inférieure à l'annoncée par temps froid",
+                  "symptomes": [
+                    "Bruit ou fonctionnement anormal",
+                    "Voyant ou message d’alerte",
+                    "Dégradation progressive des performances"
+                  ],
+                  "kilometrage_apparition": "En hiver",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "N/A",
+                  "gravite": "Faible",
+                  "frequence": "Systématique en hiver",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Coût de remplacement de la batterie potentiellement élevé hors garantie",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Défaut ou interruption de charge",
+                    "Voyant système électrique"
+                  ],
+                  "kilometrage_apparition": "N/A",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Batterie haute tension",
+                  "gravite": "Critique (coût)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Très élevé"
+                }
+              ]
+            },
+            {
+              "type": "Électrique",
+              "nom": "Cooper SE — 218 ch",
+              "code_moteur": "Moteur(s) électrique(s) synchrone(s) à aimants permanents",
+              "cylindree": "N/A",
+              "puissance_ch": 218,
+              "boite": [
+                "Rapport fixe (pas de boîte de vitesses)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Absence de retour de fiabilité long terme",
+                  "symptomes": [
+                    "Distance de freinage accrue",
+                    "Vibration ou bruit au freinage",
+                    "Voyant ABS ou freinage"
+                  ],
+                  "kilometrage_apparition": "Modèle très récent",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "N/A",
+                  "gravite": "Indéterminée",
+                  "frequence": "Indéterminée",
+                  "cout_reparation_estime": "Indéterminé"
+                },
+                {
+                  "probleme": "Écosystème de service après-vente encore en déploiement",
+                  "symptomes": [
+                    "Bruit ou fonctionnement anormal",
+                    "Voyant ou message d’alerte",
+                    "Dégradation progressive des performances"
+                  ],
+                  "kilometrage_apparition": "Nouvelle plateforme électrique co-développée avec un partenaire chinois",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "N/A",
+                  "gravite": "Faible",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Bugs logiciels de jeunesse de l'écran circulaire OLED",
+                  "symptomes": [
+                    "Dysfonctionnements écran"
+                  ],
+                  "kilometrage_apparition": "Sur les premières années",
+                  "diagnostic": "Mise à jour logicielle",
+                  "piece_concernee": "Système multimédia",
+                  "gravite": "Faible",
+                  "frequence": "Fréquent sur premières années",
+                  "cout_reparation_estime": "Faible"
+                },
+                {
+                  "probleme": "Autonomie réelle probablement inférieure à l'annoncée par temps froid",
+                  "symptomes": [
+                    "Bruit ou fonctionnement anormal",
+                    "Voyant ou message d’alerte",
+                    "Dégradation progressive des performances"
+                  ],
+                  "kilometrage_apparition": "En hiver",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "N/A",
+                  "gravite": "Faible",
+                  "frequence": "Systématique en hiver",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Coût de remplacement de la batterie potentiellement élevé hors garantie",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Défaut ou interruption de charge",
+                    "Voyant système électrique"
+                  ],
+                  "kilometrage_apparition": "N/A",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Batterie haute tension",
+                  "gravite": "Critique (coût)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Très élevé"
+                }
+              ]
+            },
+            {
+              "type": "Électrique",
+              "nom": "Aceman E — 184 ch",
+              "code_moteur": "Moteur(s) électrique(s) synchrone(s) à aimants permanents",
+              "cylindree": "N/A",
+              "puissance_ch": 184,
+              "boite": [
+                "Rapport fixe (pas de boîte de vitesses)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Absence de retour de fiabilité long terme",
+                  "symptomes": [
+                    "Distance de freinage accrue",
+                    "Vibration ou bruit au freinage",
+                    "Voyant ABS ou freinage"
+                  ],
+                  "kilometrage_apparition": "Modèle très récent",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "N/A",
+                  "gravite": "Indéterminée",
+                  "frequence": "Indéterminée",
+                  "cout_reparation_estime": "Indéterminé"
+                },
+                {
+                  "probleme": "Écosystème de service après-vente encore en déploiement",
+                  "symptomes": [
+                    "Bruit ou fonctionnement anormal",
+                    "Voyant ou message d’alerte",
+                    "Dégradation progressive des performances"
+                  ],
+                  "kilometrage_apparition": "Nouvelle plateforme électrique co-développée avec un partenaire chinois",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "N/A",
+                  "gravite": "Faible",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Bugs logiciels de jeunesse de l'écran circulaire OLED",
+                  "symptomes": [
+                    "Dysfonctionnements écran"
+                  ],
+                  "kilometrage_apparition": "Sur les premières années",
+                  "diagnostic": "Mise à jour logicielle",
+                  "piece_concernee": "Système multimédia",
+                  "gravite": "Faible",
+                  "frequence": "Fréquent sur premières années",
+                  "cout_reparation_estime": "Faible"
+                },
+                {
+                  "probleme": "Autonomie réelle probablement inférieure à l'annoncée par temps froid",
+                  "symptomes": [
+                    "Bruit ou fonctionnement anormal",
+                    "Voyant ou message d’alerte",
+                    "Dégradation progressive des performances"
+                  ],
+                  "kilometrage_apparition": "En hiver",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "N/A",
+                  "gravite": "Faible",
+                  "frequence": "Systématique en hiver",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Coût de remplacement de la batterie potentiellement élevé hors garantie",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Défaut ou interruption de charge",
+                    "Voyant système électrique"
+                  ],
+                  "kilometrage_apparition": "N/A",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Batterie haute tension",
+                  "gravite": "Critique (coût)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Très élevé"
+                }
+              ]
+            },
+            {
+              "type": "Électrique",
+              "nom": "Aceman SE — 218 ch",
+              "code_moteur": "Moteur(s) électrique(s) synchrone(s) à aimants permanents",
+              "cylindree": "N/A",
+              "puissance_ch": 218,
+              "boite": [
+                "Rapport fixe (pas de boîte de vitesses)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Absence de retour de fiabilité long terme",
+                  "symptomes": [
+                    "Distance de freinage accrue",
+                    "Vibration ou bruit au freinage",
+                    "Voyant ABS ou freinage"
+                  ],
+                  "kilometrage_apparition": "Modèle très récent",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "N/A",
+                  "gravite": "Indéterminée",
+                  "frequence": "Indéterminée",
+                  "cout_reparation_estime": "Indéterminé"
+                },
+                {
+                  "probleme": "Écosystème de service après-vente encore en déploiement",
+                  "symptomes": [
+                    "Bruit ou fonctionnement anormal",
+                    "Voyant ou message d’alerte",
+                    "Dégradation progressive des performances"
+                  ],
+                  "kilometrage_apparition": "Nouvelle plateforme électrique co-développée avec un partenaire chinois",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "N/A",
+                  "gravite": "Faible",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Bugs logiciels de jeunesse de l'écran circulaire OLED",
+                  "symptomes": [
+                    "Dysfonctionnements écran"
+                  ],
+                  "kilometrage_apparition": "Sur les premières années",
+                  "diagnostic": "Mise à jour logicielle",
+                  "piece_concernee": "Système multimédia",
+                  "gravite": "Faible",
+                  "frequence": "Fréquent sur premières années",
+                  "cout_reparation_estime": "Faible"
+                },
+                {
+                  "probleme": "Autonomie réelle probablement inférieure à l'annoncée par temps froid",
+                  "symptomes": [
+                    "Bruit ou fonctionnement anormal",
+                    "Voyant ou message d’alerte",
+                    "Dégradation progressive des performances"
+                  ],
+                  "kilometrage_apparition": "En hiver",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "N/A",
+                  "gravite": "Faible",
+                  "frequence": "Systématique en hiver",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Coût de remplacement de la batterie potentiellement élevé hors garantie",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Défaut ou interruption de charge",
+                    "Voyant système électrique"
+                  ],
+                  "kilometrage_apparition": "N/A",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Batterie haute tension",
+                  "gravite": "Critique (coût)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Très élevé"
+                }
+              ]
+            },
+            {
+              "type": "Électrique",
+              "nom": "Countryman E — 204 ch",
+              "code_moteur": "Moteur(s) électrique(s) synchrone(s) à aimants permanents",
+              "cylindree": "N/A",
+              "puissance_ch": 204,
+              "boite": [
+                "Rapport fixe (pas de boîte de vitesses)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Absence de retour de fiabilité long terme",
+                  "symptomes": [
+                    "Distance de freinage accrue",
+                    "Vibration ou bruit au freinage",
+                    "Voyant ABS ou freinage"
+                  ],
+                  "kilometrage_apparition": "Modèle très récent",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "N/A",
+                  "gravite": "Indéterminée",
+                  "frequence": "Indéterminée",
+                  "cout_reparation_estime": "Indéterminé"
+                },
+                {
+                  "probleme": "Écosystème de service après-vente encore en déploiement",
+                  "symptomes": [
+                    "Bruit ou fonctionnement anormal",
+                    "Voyant ou message d’alerte",
+                    "Dégradation progressive des performances"
+                  ],
+                  "kilometrage_apparition": "Nouvelle plateforme électrique co-développée avec un partenaire chinois",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "N/A",
+                  "gravite": "Faible",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Bugs logiciels de jeunesse de l'écran circulaire OLED",
+                  "symptomes": [
+                    "Dysfonctionnements écran"
+                  ],
+                  "kilometrage_apparition": "Sur les premières années",
+                  "diagnostic": "Mise à jour logicielle",
+                  "piece_concernee": "Système multimédia",
+                  "gravite": "Faible",
+                  "frequence": "Fréquent sur premières années",
+                  "cout_reparation_estime": "Faible"
+                },
+                {
+                  "probleme": "Autonomie réelle probablement inférieure à l'annoncée par temps froid",
+                  "symptomes": [
+                    "Bruit ou fonctionnement anormal",
+                    "Voyant ou message d’alerte",
+                    "Dégradation progressive des performances"
+                  ],
+                  "kilometrage_apparition": "En hiver",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "N/A",
+                  "gravite": "Faible",
+                  "frequence": "Systématique en hiver",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Coût de remplacement de la batterie potentiellement élevé hors garantie",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Défaut ou interruption de charge",
+                    "Voyant système électrique"
+                  ],
+                  "kilometrage_apparition": "N/A",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Batterie haute tension",
+                  "gravite": "Critique (coût)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Très élevé"
+                }
+              ]
+            },
+            {
+              "type": "Électrique",
+              "nom": "Countryman SE — 313 ch",
+              "code_moteur": "Moteur(s) électrique(s) synchrone(s) à aimants permanents",
+              "cylindree": "N/A",
+              "puissance_ch": 313,
+              "boite": [
+                "Rapport fixe (pas de boîte de vitesses)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Absence de retour de fiabilité long terme",
+                  "symptomes": [
+                    "Distance de freinage accrue",
+                    "Vibration ou bruit au freinage",
+                    "Voyant ABS ou freinage"
+                  ],
+                  "kilometrage_apparition": "Modèle très récent",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "N/A",
+                  "gravite": "Indéterminée",
+                  "frequence": "Indéterminée",
+                  "cout_reparation_estime": "Indéterminé"
+                },
+                {
+                  "probleme": "Écosystème de service après-vente encore en déploiement",
+                  "symptomes": [
+                    "Bruit ou fonctionnement anormal",
+                    "Voyant ou message d’alerte",
+                    "Dégradation progressive des performances"
+                  ],
+                  "kilometrage_apparition": "Nouvelle plateforme électrique co-développée avec un partenaire chinois",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "N/A",
+                  "gravite": "Faible",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Bugs logiciels de jeunesse de l'écran circulaire OLED",
+                  "symptomes": [
+                    "Dysfonctionnements écran"
+                  ],
+                  "kilometrage_apparition": "Sur les premières années",
+                  "diagnostic": "Mise à jour logicielle",
+                  "piece_concernee": "Système multimédia",
+                  "gravite": "Faible",
+                  "frequence": "Fréquent sur premières années",
+                  "cout_reparation_estime": "Faible"
+                },
+                {
+                  "probleme": "Autonomie réelle probablement inférieure à l'annoncée par temps froid",
+                  "symptomes": [
+                    "Bruit ou fonctionnement anormal",
+                    "Voyant ou message d’alerte",
+                    "Dégradation progressive des performances"
+                  ],
+                  "kilometrage_apparition": "En hiver",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "N/A",
+                  "gravite": "Faible",
+                  "frequence": "Systématique en hiver",
+                  "cout_reparation_estime": "N/A"
+                },
+                {
+                  "probleme": "Coût de remplacement de la batterie potentiellement élevé hors garantie",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Défaut ou interruption de charge",
+                    "Voyant système électrique"
+                  ],
+                  "kilometrage_apparition": "N/A",
+                  "diagnostic": "N/A",
+                  "piece_concernee": "Batterie haute tension",
+                  "gravite": "Critique (coût)",
+                  "frequence": "N/A",
+                  "cout_reparation_estime": "Très élevé"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "1000",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "convertible",
+        "countries": [
+          "es",
+          "fi",
+          "lu",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "1000 Special Deluxe",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "fi",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 10
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "1100",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "convertible",
+        "countries": [
+          "es",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 9
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "1300 U9",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "sedan",
+        "countries": [
+          "lu",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Aceman",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "suv",
+        "countries": [
+          "ar",
+          "es",
+          "fi",
+          "gb",
+          "lu",
+          "my",
+          "nl",
+          "nz",
+          "th",
+          "ua"
+        ],
+        "regions": [
+          "as",
+          "eu",
+          "oc",
+          "sa"
+        ],
+        "global_decile": 4
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Clubman",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "wagon",
+        "countries": [
+          "ca",
+          "es",
+          "fi",
+          "gb",
+          "lu",
+          "my",
+          "nl",
+          "nz",
+          "th",
+          "ua",
+          "us"
+        ],
+        "regions": [
+          "as",
+          "eu",
+          "na",
+          "oc"
+        ],
+        "global_decile": 3
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Convertible",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "convertible",
+        "countries": [
+          "ca",
+          "es",
+          "fi",
+          "lu",
+          "my",
+          "nl",
+          "nz",
+          "th",
+          "ua",
+          "us"
+        ],
+        "regions": [
+          "as",
+          "eu",
+          "na",
+          "oc"
+        ],
+        "global_decile": 4
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Cooper",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "ar",
+          "ca",
+          "de",
+          "es",
+          "fi",
+          "gb",
+          "lu",
+          "my",
+          "nl",
+          "nz",
+          "th",
+          "ua",
+          "us"
+        ],
+        "regions": [
+          "as",
+          "eu",
+          "na",
+          "oc",
+          "sa"
+        ],
+        "global_decile": 1
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Countryman",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "suv",
+        "countries": [
+          "ar",
+          "ca",
+          "es",
+          "fi",
+          "gb",
+          "lu",
+          "my",
+          "nl",
+          "nz",
+          "th",
+          "ua",
+          "us"
+        ],
+        "regions": [
+          "as",
+          "eu",
+          "na",
+          "oc",
+          "sa"
+        ],
+        "global_decile": 2
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "First",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "gb"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 3
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Jcw",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "es",
+          "fi",
+          "lu",
+          "nl",
+          "ua"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 4
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Jcw E",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "es",
+          "fi",
+          "lu",
+          "nl",
+          "th"
+        ],
+        "regions": [
+          "as",
+          "eu"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Mayfair",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "sedan",
+        "countries": [
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 9
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Paceman",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "suv",
+        "countries": [
+          "ca",
+          "fi",
+          "gb",
+          "nl",
+          "nz",
+          "ua",
+          "us"
+        ],
+        "regions": [
+          "eu",
+          "na",
+          "oc"
+        ],
+        "global_decile": 6
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Roadster",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "es",
+          "gb"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Special",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "sedan",
+        "countries": [
+          "es",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 9
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Xn",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "sedan",
+        "countries": [
+          "fi",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 9
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "1000 Van",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "van",
+        "body_type": null,
+        "countries": [
+          "es",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Clubvan",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "van",
+        "body_type": null,
+        "countries": [
+          "gb",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

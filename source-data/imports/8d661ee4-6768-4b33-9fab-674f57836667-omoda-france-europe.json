@@ -1,0 +1,358 @@
+{
+  "nom": "Omoda",
+  "modeles": [
+    {
+      "nom": "5",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.6 TGDI — 197 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 197,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Entretien moteur et périphériques",
+                  "symptomes": [
+                    "Voyant ou message au combiné",
+                    "Autonomie ou performances dégradées"
+                  ],
+                  "kilometrage_apparition": "Variable selon âge, kilométrage, cycles et conditions d’utilisation.",
+                  "diagnostic": "Lecture des défauts, contrôle des fluides et essai routier.",
+                  "piece_concernee": "Groupe motopropulseur",
+                  "gravite": "À évaluer selon les défauts relevés",
+                  "frequence": "À surveiller selon l’historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Trains roulants, freinage et pneumatiques",
+                  "symptomes": [
+                    "Vibration",
+                    "Usure irrégulière",
+                    "Tirage"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque entretien.",
+                  "diagnostic": "Contrôle des jeux, de la géométrie, des disques et plaquettes.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                },
+                {
+                  "probleme": "Fonctionnement des équipements connectés et électriques",
+                  "symptomes": [
+                    "Fonction intermittente",
+                    "Alerte système"
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Lecture des défauts, vérification batterie 12 V et mises à jour disponibles.",
+                  "piece_concernee": "Réseau électrique et calculateurs",
+                  "gravite": "Faible à modérée",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "E5",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "61 kWh — 204 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 204,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "État de la batterie de traction et de l’électronique de puissance",
+                  "symptomes": [
+                    "Voyant ou message au combiné",
+                    "Autonomie ou performances dégradées"
+                  ],
+                  "kilometrage_apparition": "Variable selon âge, kilométrage, cycles et conditions d’utilisation.",
+                  "diagnostic": "Diagnostic haute tension par un atelier habilité et contrôle de l’état de santé de la batterie.",
+                  "piece_concernee": "Batterie haute tension et électronique de puissance",
+                  "gravite": "À évaluer selon les défauts relevés",
+                  "frequence": "À surveiller selon l’historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Trains roulants, freinage et pneumatiques",
+                  "symptomes": [
+                    "Vibration",
+                    "Usure irrégulière",
+                    "Tirage"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque entretien.",
+                  "diagnostic": "Contrôle des jeux, de la géométrie, des disques et plaquettes.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                },
+                {
+                  "probleme": "Fonctionnement des équipements connectés et électriques",
+                  "symptomes": [
+                    "Fonction intermittente",
+                    "Alerte système"
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Lecture des défauts, vérification batterie 12 V et mises à jour disponibles.",
+                  "piece_concernee": "Réseau électrique et calculateurs",
+                  "gravite": "Faible à modérée",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Omoda 5",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "de",
+          "es",
+          "gb",
+          "lu",
+          "nl",
+          "nz",
+          "th"
+        ],
+        "regions": [
+          "as",
+          "eu",
+          "oc"
+        ],
+        "global_decile": 3
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Omoda 7",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "es",
+          "gb"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 4
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Omoda 9",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "de",
+          "es",
+          "gb",
+          "lu",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 4
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Omoda E5",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "gb"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 3
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

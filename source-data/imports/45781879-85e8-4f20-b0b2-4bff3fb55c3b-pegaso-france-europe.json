@@ -1,0 +1,366 @@
+{
+  "nom": "Pegaso",
+  "modeles": [
+    {
+      "nom": "Z-102",
+      "generations": [
+        {
+          "code_chassis": "Z-102 série I",
+          "annees": "1951–1952",
+          "phases": [
+            "Premières carrosseries ENASA et prototypes ; carburateurs et taux de compression varient."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 2.5 atmosphérique — 160 ch",
+              "code_moteur": "Pegaso Z-102 2.5",
+              "cylindree": "2 472 cm³",
+              "puissance_ch": 160,
+              "boite": [
+                "Transaxle manuelle non synchronisée 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carter sec, quatre arbres à cames, soupapes et carburation/compresseur",
+                  "symptomes": [
+                    "Pression d’huile faible",
+                    "Cliquetis",
+                    "Surchauffe, ratés ou fuite d’essence"
+                  ],
+                  "kilometrage_apparition": "Aucun seuil kilométrique ; contrôle spécialisé avant chaque usage",
+                  "diagnostic": "Authentifier cylindrée 2.5/2.8/3.2 et montage Weber/compresseur, mesurer pression, compressions et leak-down, contrôler réservoir/pompes de carter sec, calage des quatre arbres, soupapes refroidies au sodium selon moteur, carburateurs, magnétos/allumage, compresseur(s), richesse et refroidissement ; ne pas démarrer après stockage sans prélubrification",
+                  "piece_concernee": "V8 Pegaso Z-102 tout alliage",
+                  "gravite": "Critique",
+                  "frequence": "Risque majeur faute de spécialistes et de pièces",
+                  "cout_reparation_estime": "Extrêmement élevé : environ 10 000 à plus de 150 000 €"
+                },
+                {
+                  "probleme": "Transaxle non synchronisée 5 rapports, embrayage et différentiel",
+                  "symptomes": [
+                    "Craquement",
+                    "Rapport qui saute",
+                    "Patinage, fuite ou grondement arrière"
+                  ],
+                  "kilometrage_apparition": "Variable ; technique de conduite et réglage priment",
+                  "diagnostic": "Contrôler double débrayage, sélection, pignons/crabots, roulements, huile, embrayage, arbre entre moteur avant et transaxle arrière, différentiel et demi-arbres ; vérifier géométrie, supports et absence de limaille avant essai",
+                  "piece_concernee": "Transaxle Pegaso cinq rapports",
+                  "gravite": "Critique",
+                  "frequence": "Usure possible avec mauvaise conduite ou stockage",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 60 000 €"
+                },
+                {
+                  "probleme": "Châssis, carrosserie ENASA/Touring/Saoutchik et provenance",
+                  "symptomes": [
+                    "Corrosion galvanique",
+                    "Fissure",
+                    "Mauvais alignement ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Expertise de concours obligatoire avant transaction",
+                  "diagnostic": "Comparer numéro de châssis, moteur, carrosserie et configuration aux registres, inspecter châssis acier, tubes Superleggera, aluminium, bois/acier selon carrossier, ancrages, suspension à barres de torsion, direction, freins et réparations anciennes ; documenter chaque pièce non d’origine",
+                  "piece_concernee": "Structure, carrosserie et identité Z-102",
+                  "gravite": "Critique pour sécurité et valeur patrimoniale",
+                  "frequence": "Risque élevé vu 84–86 exemplaires et transformations historiques",
+                  "cout_reparation_estime": "Extrêmement élevé : environ 10 000 à plus de 250 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Z-102 B 2.8",
+          "annees": "1952–1954",
+          "phases": [
+            "Carrosseries ENASA, Touring et Saoutchik ; la puissance dépend des carburateurs, du taux et du compresseur."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 2.8 atmosphérique — 170 ch",
+              "code_moteur": "Pegaso Z-102 2.8",
+              "cylindree": "2 816 cm³",
+              "puissance_ch": 170,
+              "boite": [
+                "Transaxle manuelle non synchronisée 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carter sec, quatre arbres à cames, soupapes et carburation/compresseur",
+                  "symptomes": [
+                    "Pression d’huile faible",
+                    "Cliquetis",
+                    "Surchauffe, ratés ou fuite d’essence"
+                  ],
+                  "kilometrage_apparition": "Aucun seuil kilométrique ; contrôle spécialisé avant chaque usage",
+                  "diagnostic": "Authentifier cylindrée 2.5/2.8/3.2 et montage Weber/compresseur, mesurer pression, compressions et leak-down, contrôler réservoir/pompes de carter sec, calage des quatre arbres, soupapes refroidies au sodium selon moteur, carburateurs, magnétos/allumage, compresseur(s), richesse et refroidissement ; ne pas démarrer après stockage sans prélubrification",
+                  "piece_concernee": "V8 Pegaso Z-102 tout alliage",
+                  "gravite": "Critique",
+                  "frequence": "Risque majeur faute de spécialistes et de pièces",
+                  "cout_reparation_estime": "Extrêmement élevé : environ 10 000 à plus de 150 000 €"
+                },
+                {
+                  "probleme": "Transaxle non synchronisée 5 rapports, embrayage et différentiel",
+                  "symptomes": [
+                    "Craquement",
+                    "Rapport qui saute",
+                    "Patinage, fuite ou grondement arrière"
+                  ],
+                  "kilometrage_apparition": "Variable ; technique de conduite et réglage priment",
+                  "diagnostic": "Contrôler double débrayage, sélection, pignons/crabots, roulements, huile, embrayage, arbre entre moteur avant et transaxle arrière, différentiel et demi-arbres ; vérifier géométrie, supports et absence de limaille avant essai",
+                  "piece_concernee": "Transaxle Pegaso cinq rapports",
+                  "gravite": "Critique",
+                  "frequence": "Usure possible avec mauvaise conduite ou stockage",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 60 000 €"
+                },
+                {
+                  "probleme": "Châssis, carrosserie ENASA/Touring/Saoutchik et provenance",
+                  "symptomes": [
+                    "Corrosion galvanique",
+                    "Fissure",
+                    "Mauvais alignement ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Expertise de concours obligatoire avant transaction",
+                  "diagnostic": "Comparer numéro de châssis, moteur, carrosserie et configuration aux registres, inspecter châssis acier, tubes Superleggera, aluminium, bois/acier selon carrossier, ancrages, suspension à barres de torsion, direction, freins et réparations anciennes ; documenter chaque pièce non d’origine",
+                  "piece_concernee": "Structure, carrosserie et identité Z-102",
+                  "gravite": "Critique pour sécurité et valeur patrimoniale",
+                  "frequence": "Risque élevé vu 84–86 exemplaires et transformations historiques",
+                  "cout_reparation_estime": "Extrêmement élevé : environ 10 000 à plus de 250 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "V8 2.8 à compresseur — 250 ch",
+              "code_moteur": "Pegaso Z-102 2.8 supercharged",
+              "cylindree": "2 816 cm³",
+              "puissance_ch": 250,
+              "boite": [
+                "Transaxle manuelle non synchronisée 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carter sec, quatre arbres à cames, soupapes et carburation/compresseur",
+                  "symptomes": [
+                    "Pression d’huile faible",
+                    "Cliquetis",
+                    "Surchauffe, ratés ou fuite d’essence"
+                  ],
+                  "kilometrage_apparition": "Aucun seuil kilométrique ; contrôle spécialisé avant chaque usage",
+                  "diagnostic": "Authentifier cylindrée 2.5/2.8/3.2 et montage Weber/compresseur, mesurer pression, compressions et leak-down, contrôler réservoir/pompes de carter sec, calage des quatre arbres, soupapes refroidies au sodium selon moteur, carburateurs, magnétos/allumage, compresseur(s), richesse et refroidissement ; ne pas démarrer après stockage sans prélubrification",
+                  "piece_concernee": "V8 Pegaso Z-102 tout alliage",
+                  "gravite": "Critique",
+                  "frequence": "Risque majeur faute de spécialistes et de pièces",
+                  "cout_reparation_estime": "Extrêmement élevé : environ 10 000 à plus de 150 000 €"
+                },
+                {
+                  "probleme": "Transaxle non synchronisée 5 rapports, embrayage et différentiel",
+                  "symptomes": [
+                    "Craquement",
+                    "Rapport qui saute",
+                    "Patinage, fuite ou grondement arrière"
+                  ],
+                  "kilometrage_apparition": "Variable ; technique de conduite et réglage priment",
+                  "diagnostic": "Contrôler double débrayage, sélection, pignons/crabots, roulements, huile, embrayage, arbre entre moteur avant et transaxle arrière, différentiel et demi-arbres ; vérifier géométrie, supports et absence de limaille avant essai",
+                  "piece_concernee": "Transaxle Pegaso cinq rapports",
+                  "gravite": "Critique",
+                  "frequence": "Usure possible avec mauvaise conduite ou stockage",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 60 000 €"
+                },
+                {
+                  "probleme": "Châssis, carrosserie ENASA/Touring/Saoutchik et provenance",
+                  "symptomes": [
+                    "Corrosion galvanique",
+                    "Fissure",
+                    "Mauvais alignement ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Expertise de concours obligatoire avant transaction",
+                  "diagnostic": "Comparer numéro de châssis, moteur, carrosserie et configuration aux registres, inspecter châssis acier, tubes Superleggera, aluminium, bois/acier selon carrossier, ancrages, suspension à barres de torsion, direction, freins et réparations anciennes ; documenter chaque pièce non d’origine",
+                  "piece_concernee": "Structure, carrosserie et identité Z-102",
+                  "gravite": "Critique pour sécurité et valeur patrimoniale",
+                  "frequence": "Risque élevé vu 84–86 exemplaires et transformations historiques",
+                  "cout_reparation_estime": "Extrêmement élevé : environ 10 000 à plus de 250 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Z-102 B 3.2",
+          "annees": "1953–1958",
+          "phases": [
+            "Configurations extrêmes construites à très peu d’exemplaires ; fiche de châssis et essais d’époque priment sur toute valeur générique."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 3.2 atmosphérique — 210 ch",
+              "code_moteur": "Pegaso Z-102 3.2",
+              "cylindree": "3 178 cm³",
+              "puissance_ch": 210,
+              "boite": [
+                "Transaxle manuelle non synchronisée 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carter sec, quatre arbres à cames, soupapes et carburation/compresseur",
+                  "symptomes": [
+                    "Pression d’huile faible",
+                    "Cliquetis",
+                    "Surchauffe, ratés ou fuite d’essence"
+                  ],
+                  "kilometrage_apparition": "Aucun seuil kilométrique ; contrôle spécialisé avant chaque usage",
+                  "diagnostic": "Authentifier cylindrée 2.5/2.8/3.2 et montage Weber/compresseur, mesurer pression, compressions et leak-down, contrôler réservoir/pompes de carter sec, calage des quatre arbres, soupapes refroidies au sodium selon moteur, carburateurs, magnétos/allumage, compresseur(s), richesse et refroidissement ; ne pas démarrer après stockage sans prélubrification",
+                  "piece_concernee": "V8 Pegaso Z-102 tout alliage",
+                  "gravite": "Critique",
+                  "frequence": "Risque majeur faute de spécialistes et de pièces",
+                  "cout_reparation_estime": "Extrêmement élevé : environ 10 000 à plus de 150 000 €"
+                },
+                {
+                  "probleme": "Transaxle non synchronisée 5 rapports, embrayage et différentiel",
+                  "symptomes": [
+                    "Craquement",
+                    "Rapport qui saute",
+                    "Patinage, fuite ou grondement arrière"
+                  ],
+                  "kilometrage_apparition": "Variable ; technique de conduite et réglage priment",
+                  "diagnostic": "Contrôler double débrayage, sélection, pignons/crabots, roulements, huile, embrayage, arbre entre moteur avant et transaxle arrière, différentiel et demi-arbres ; vérifier géométrie, supports et absence de limaille avant essai",
+                  "piece_concernee": "Transaxle Pegaso cinq rapports",
+                  "gravite": "Critique",
+                  "frequence": "Usure possible avec mauvaise conduite ou stockage",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 60 000 €"
+                },
+                {
+                  "probleme": "Châssis, carrosserie ENASA/Touring/Saoutchik et provenance",
+                  "symptomes": [
+                    "Corrosion galvanique",
+                    "Fissure",
+                    "Mauvais alignement ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Expertise de concours obligatoire avant transaction",
+                  "diagnostic": "Comparer numéro de châssis, moteur, carrosserie et configuration aux registres, inspecter châssis acier, tubes Superleggera, aluminium, bois/acier selon carrossier, ancrages, suspension à barres de torsion, direction, freins et réparations anciennes ; documenter chaque pièce non d’origine",
+                  "piece_concernee": "Structure, carrosserie et identité Z-102",
+                  "gravite": "Critique pour sécurité et valeur patrimoniale",
+                  "frequence": "Risque élevé vu 84–86 exemplaires et transformations historiques",
+                  "cout_reparation_estime": "Extrêmement élevé : environ 10 000 à plus de 250 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "V8 3.2 simple compresseur — 285 ch",
+              "code_moteur": "Pegaso Z-102 3.2 supercharged",
+              "cylindree": "3 178 cm³",
+              "puissance_ch": 285,
+              "boite": [
+                "Transaxle manuelle non synchronisée 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carter sec, quatre arbres à cames, soupapes et carburation/compresseur",
+                  "symptomes": [
+                    "Pression d’huile faible",
+                    "Cliquetis",
+                    "Surchauffe, ratés ou fuite d’essence"
+                  ],
+                  "kilometrage_apparition": "Aucun seuil kilométrique ; contrôle spécialisé avant chaque usage",
+                  "diagnostic": "Authentifier cylindrée 2.5/2.8/3.2 et montage Weber/compresseur, mesurer pression, compressions et leak-down, contrôler réservoir/pompes de carter sec, calage des quatre arbres, soupapes refroidies au sodium selon moteur, carburateurs, magnétos/allumage, compresseur(s), richesse et refroidissement ; ne pas démarrer après stockage sans prélubrification",
+                  "piece_concernee": "V8 Pegaso Z-102 tout alliage",
+                  "gravite": "Critique",
+                  "frequence": "Risque majeur faute de spécialistes et de pièces",
+                  "cout_reparation_estime": "Extrêmement élevé : environ 10 000 à plus de 150 000 €"
+                },
+                {
+                  "probleme": "Transaxle non synchronisée 5 rapports, embrayage et différentiel",
+                  "symptomes": [
+                    "Craquement",
+                    "Rapport qui saute",
+                    "Patinage, fuite ou grondement arrière"
+                  ],
+                  "kilometrage_apparition": "Variable ; technique de conduite et réglage priment",
+                  "diagnostic": "Contrôler double débrayage, sélection, pignons/crabots, roulements, huile, embrayage, arbre entre moteur avant et transaxle arrière, différentiel et demi-arbres ; vérifier géométrie, supports et absence de limaille avant essai",
+                  "piece_concernee": "Transaxle Pegaso cinq rapports",
+                  "gravite": "Critique",
+                  "frequence": "Usure possible avec mauvaise conduite ou stockage",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 60 000 €"
+                },
+                {
+                  "probleme": "Châssis, carrosserie ENASA/Touring/Saoutchik et provenance",
+                  "symptomes": [
+                    "Corrosion galvanique",
+                    "Fissure",
+                    "Mauvais alignement ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Expertise de concours obligatoire avant transaction",
+                  "diagnostic": "Comparer numéro de châssis, moteur, carrosserie et configuration aux registres, inspecter châssis acier, tubes Superleggera, aluminium, bois/acier selon carrossier, ancrages, suspension à barres de torsion, direction, freins et réparations anciennes ; documenter chaque pièce non d’origine",
+                  "piece_concernee": "Structure, carrosserie et identité Z-102",
+                  "gravite": "Critique pour sécurité et valeur patrimoniale",
+                  "frequence": "Risque élevé vu 84–86 exemplaires et transformations historiques",
+                  "cout_reparation_estime": "Extrêmement élevé : environ 10 000 à plus de 250 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "V8 3.2 double compresseur — 350 ch",
+              "code_moteur": "Pegaso Z-102 3.2 twin-supercharged",
+              "cylindree": "3 178 cm³",
+              "puissance_ch": 350,
+              "boite": [
+                "Transaxle manuelle non synchronisée 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carter sec, quatre arbres à cames, soupapes et carburation/compresseur",
+                  "symptomes": [
+                    "Pression d’huile faible",
+                    "Cliquetis",
+                    "Surchauffe, ratés ou fuite d’essence"
+                  ],
+                  "kilometrage_apparition": "Aucun seuil kilométrique ; contrôle spécialisé avant chaque usage",
+                  "diagnostic": "Authentifier cylindrée 2.5/2.8/3.2 et montage Weber/compresseur, mesurer pression, compressions et leak-down, contrôler réservoir/pompes de carter sec, calage des quatre arbres, soupapes refroidies au sodium selon moteur, carburateurs, magnétos/allumage, compresseur(s), richesse et refroidissement ; ne pas démarrer après stockage sans prélubrification",
+                  "piece_concernee": "V8 Pegaso Z-102 tout alliage",
+                  "gravite": "Critique",
+                  "frequence": "Risque majeur faute de spécialistes et de pièces",
+                  "cout_reparation_estime": "Extrêmement élevé : environ 10 000 à plus de 150 000 €"
+                },
+                {
+                  "probleme": "Transaxle non synchronisée 5 rapports, embrayage et différentiel",
+                  "symptomes": [
+                    "Craquement",
+                    "Rapport qui saute",
+                    "Patinage, fuite ou grondement arrière"
+                  ],
+                  "kilometrage_apparition": "Variable ; technique de conduite et réglage priment",
+                  "diagnostic": "Contrôler double débrayage, sélection, pignons/crabots, roulements, huile, embrayage, arbre entre moteur avant et transaxle arrière, différentiel et demi-arbres ; vérifier géométrie, supports et absence de limaille avant essai",
+                  "piece_concernee": "Transaxle Pegaso cinq rapports",
+                  "gravite": "Critique",
+                  "frequence": "Usure possible avec mauvaise conduite ou stockage",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 60 000 €"
+                },
+                {
+                  "probleme": "Châssis, carrosserie ENASA/Touring/Saoutchik et provenance",
+                  "symptomes": [
+                    "Corrosion galvanique",
+                    "Fissure",
+                    "Mauvais alignement ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Expertise de concours obligatoire avant transaction",
+                  "diagnostic": "Comparer numéro de châssis, moteur, carrosserie et configuration aux registres, inspecter châssis acier, tubes Superleggera, aluminium, bois/acier selon carrossier, ancrages, suspension à barres de torsion, direction, freins et réparations anciennes ; documenter chaque pièce non d’origine",
+                  "piece_concernee": "Structure, carrosserie et identité Z-102",
+                  "gravite": "Critique pour sécurité et valeur patrimoniale",
+                  "frequence": "Risque élevé vu 84–86 exemplaires et transformations historiques",
+                  "cout_reparation_estime": "Extrêmement élevé : environ 10 000 à plus de 250 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://museudocaramulo.pt/en/colecoes/pegaso-z102-b-touring-berlinetta-2/",
+        "https://www.audrainautomuseum.org/1952-pegaso-z102-series-ii-touring-coupe",
+        "https://www.aeha.cat/wp-content/uploads/2017/01/Pegaso-Z102.pdf"
+      ]
+    }
+  ]
+}

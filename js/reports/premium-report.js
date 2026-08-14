@@ -1,0 +1,176 @@
+const SECTION_ORDER = ['info','moteur','chassis','carrosserie','habitacle','essai','diagnostic'];
+const STATUS = {
+  ok:{ label:'OK', color:[22,163,74] },
+  moyen:{ label:'MOYEN', color:[217,119,6] },
+  defaut:{ label:'DÉFAUT', color:[185,28,28] },
+  '':{ label:'NON VÉRIFIÉ', color:[100,116,139] },
+};
+const THEMES = {
+  carbon:{ page:[15,18,21], surface:[25,29,33], text:[245,245,240], muted:[165,171,174], accent:[255,159,28], line:[55,61,66] },
+  workshop:{ page:[246,249,250], surface:[255,255,255], text:[22,32,39], muted:[88,108,118], accent:[0,107,182], line:[211,224,229] },
+  premium:{ page:[244,241,234], surface:[255,253,247], text:[23,23,20], muted:[108,102,91], accent:[183,139,73], line:[214,207,193] },
+};
+
+function imageFormat(dataUrl='') { return dataUrl.includes('image/png') ? 'PNG' : dataUrl.includes('image/webp') ? 'WEBP' : 'JPEG'; }
+function numberLabel(value) { return Number(value).toLocaleString('fr-FR').replace(/\u202f/g,' '); }
+function euro(value) { const amount=Number(String(value||'').replace(/[^0-9.-]/g,'')); return Number.isFinite(amount) ? `${numberLabel(amount)} €` : '—'; }
+function dateLabel(value) { const date=value?new Date(value):new Date(); return Number.isNaN(date.getTime()) ? String(value||'—') : date.toLocaleDateString('fr-FR',{day:'2-digit',month:'long',year:'numeric'}); }
+function decisionColor(verdict) { return verdict==='achat'?[22,163,74]:verdict==='negociation'?[217,119,6]:verdict==='fuir'?[185,28,28]:[100,116,139]; }
+function firstLines(value,max=5) { return String(value||'').split(/\n+/).map(line=>line.trim()).filter(Boolean).slice(0,max).join(' '); }
+function qrDataUrl(value) { try { const qr=window.qrcode(0,'M');qr.addData(value);qr.make();return qr.createDataURL(5,0); } catch { return ''; } }
+function scoreBand(score) { return score == null ? { label:'Non évalué', color:[100,116,139] } : score > 80 ? { label:'Sain', color:[22,163,74] } : score >= 50 ? { label:'Vigilance', color:[217,119,6] } : { label:'À risque', color:[185,28,28] }; }
+function generationLabel(date=new Date()) { return date.toLocaleString('fr-FR',{day:'2-digit',month:'long',year:'numeric',hour:'2-digit',minute:'2-digit'}).replace(' à ', ' à '); }
+function effectiveDecision(model) { return model.done < model.total ? { label:'EN COURS', verdict:'' } : model.verdict ? { label:model.verdictLabel, verdict:model.verdict } : { label:'DÉCISION REQUISE', verdict:'' }; }
+
+export function executiveSummary(model) {
+  if(model.done < model.total) return `Inspection non finalisée — ${model.done} points sur ${model.total} renseignés. Les résultats ci-dessous ne permettent pas encore de conclure sur l’ensemble du véhicule.`;
+  const defects=model.points.filter(point=>point.status==='defaut').sort((a,b)=>b.weight-a.weight);
+  const warnings=model.points.filter(point=>point.status==='moyen');
+  const strengths=model.points.filter(point=>point.status==='ok').slice(0,3).map(point=>point.label);
+  const parts=[];
+  if(model.data.p1000==='defaut') parts.push('Alerte prioritaire : le code P1000 indique un effacement récent de la mémoire défauts et peut masquer une panne non résolue.');
+  parts.push(`${model.done} contrôle${model.done>1?'s':''} sur ${model.total} ont été documentés, pour un score pondéré de ${model.score ?? '—'}%.`);
+  if(strengths.length) parts.push(`Points favorables : ${strengths.join(', ')}.`);
+  if(defects.length) parts.push(`Alertes majeures : ${defects.slice(0,5).map(point=>point.label).join(', ')}.`);
+  else if(warnings.length) parts.push(`Points à chiffrer : ${warnings.slice(0,3).map(point=>point.label).join(', ')}.`);
+  const price=Number(model.data.valeur)||0, repairs=Number(model.data.frais_estimation)||0, budget=Number(model.data.budget_max)||0;
+  const budgetText=budget ? ((price+repairs)<=budget ? `le coût projeté de ${numberLabel(price+repairs)} € reste dans le budget` : `le coût projeté dépasse le budget de ${numberLabel(price+repairs-budget)} €`) : 'le budget maximal n’est pas renseigné';
+  parts.push(model.verdict ? `Conclusion : décision ${model.verdictLabel} ; ${budgetText}.` : `Conclusion : décision finale à consigner ; ${budgetText}.`);
+  return parts.join(' ');
+}
+
+function addImageSafe(pdf, photo, x, y, w, h) {
+  const data=photo?.dataUrl || photo;
+  if(!data) return false;
+  try { pdf.addImage(data,imageFormat(data),x,y,w,h,undefined,'FAST'); return true; } catch { return false; }
+}
+
+function drawDonut(pdf,x,y,r,score,color,palette) {
+  const segments=64,filled=Math.round((Math.max(0,Math.min(100,score||0))/100)*segments);
+  for(let index=0;index<segments;index+=1){const angle=(-Math.PI/2)+(index/segments)*Math.PI*2;pdf.setFillColor(...(index<filled?color:palette.line));pdf.circle(x+Math.cos(angle)*r,y+Math.sin(angle)*r,1.25,'F');}
+  pdf.setTextColor(...palette.text); pdf.setFont('helvetica','bold'); pdf.setFontSize(16); pdf.text(score==null?'—':`${score}%`,x,y+2,{align:'center'});
+}
+
+function setupPage(pdf,palette,title,kicker='RAPPORT D’EXPERTISE AUTOMOBILE') {
+  const w=pdf.internal.pageSize.getWidth(),h=pdf.internal.pageSize.getHeight();
+  pdf.setFillColor(...palette.page);pdf.rect(0,0,w,h,'F');
+  pdf.setTextColor(...palette.accent);pdf.setFont('helvetica','bold');pdf.setFontSize(8);pdf.text(kicker,16,17);
+  pdf.setTextColor(...palette.text);pdf.setFontSize(22);pdf.text(title,16,29);
+  pdf.setDrawColor(...palette.line);pdf.line(16,35,w-16,35);
+  return 44;
+}
+
+function addFooter(pdf,palette,reference,page,total,generatedAt,decision) {
+  const h=pdf.internal.pageSize.getHeight(),w=pdf.internal.pageSize.getWidth();
+  pdf.setDrawColor(...palette.line);pdf.line(16,h-13,w-16,h-13);
+  pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','normal');pdf.setFontSize(7);
+  const trace=`CarDiag · Réf. ${reference} · Généré le ${generationLabel(generatedAt)}`;
+  pdf.text(pdf.splitTextToSize(trace,128)[0],16,h-8);
+  pdf.setFillColor(...decisionColor(decision.verdict));pdf.roundedRect(w-49,h-11,23,6,1.5,1.5,'F');pdf.setTextColor(255,255,255);pdf.setFont('helvetica','bold');pdf.setFontSize(5.8);pdf.text(decision.label,w-37.5,h-7,{align:'center'});
+  pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','normal');pdf.setFontSize(7);pdf.text(`${page} / ${total}`,w-16,h-8,{align:'right'});
+}
+
+export async function createPdf(model,branding) {
+  if(!window.jspdf?.jsPDF) throw new Error('jsPDF indisponible');
+  const { jsPDF }=window.jspdf;const pdf=new jsPDF({orientation:'portrait',unit:'mm',format:'a4',compress:true});
+  const palette=THEMES[branding?.theme] || THEMES.carbon;const w=210,h=297;const ref=String(model.id||Date.now()).replace(/^t/,'CD-').toUpperCase();const generatedAt=new Date();const decision=effectiveDecision(model);
+
+  // Couverture
+  pdf.setFillColor(...palette.page);pdf.rect(0,0,w,h,'F');
+  pdf.setFillColor(...palette.accent);pdf.rect(0,0,7,h,'F');
+  if(!addImageSafe(pdf,branding?.logo,17,16,21,21)){pdf.setFillColor(...palette.accent);pdf.roundedRect(17,16,21,21,4,4,'F');pdf.setTextColor(12,12,12);pdf.setFontSize(10);pdf.text('CD',27.5,29,{align:'center'});}
+  pdf.setTextColor(...palette.text);pdf.setFont('helvetica','bold');pdf.setFontSize(12);pdf.text(branding?.workshopName||'CarDiag',43,25);pdf.setFont('helvetica','normal');pdf.setTextColor(...palette.muted);pdf.setFontSize(8);pdf.text('EXPERTISE AUTOMOBILE INDÉPENDANTE',43,31);
+  pdf.setTextColor(...palette.text);pdf.setFont('helvetica','bold');pdf.setFontSize(28);pdf.text('Rapport d’Expertise',17,58);pdf.text('Automobile',17,70);
+  pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','normal');pdf.setFontSize(9);pdf.text(`${dateLabel(model.data.date_expertise||model.createdAt)}  ·  Référence ${ref}`,17,80);
+  if(model.mainPhoto){addImageSafe(pdf,model.mainPhoto,17,91,176,88);}else{pdf.setFillColor(...palette.surface);pdf.roundedRect(17,91,176,88,4,4,'F');pdf.setTextColor(...palette.muted);pdf.setFontSize(12);pdf.text('PHOTO PRINCIPALE DU VÉHICULE',105,137,{align:'center'});}
+  const badge=decisionColor(decision.verdict);pdf.setFillColor(...badge);pdf.roundedRect(17,190,70,18,3,3,'F');pdf.setTextColor(255,255,255);pdf.setFont('helvetica','bold');pdf.setFontSize(decision.label.length>15?10:13);pdf.text(decision.label,52,202,{align:'center'});
+  pdf.setTextColor(...palette.text);pdf.setFontSize(17);pdf.text(model.title||'Véhicule non identifié',17,224);
+  pdf.setFont('helvetica','normal');pdf.setFontSize(9);pdf.setTextColor(...palette.muted);
+  pdf.text(`Année  ${model.data.annee||'—'}     Kilométrage  ${model.data.kilometrage||'—'} km`,17,235);
+  pdf.text(`VIN / Immatriculation  ${model.data.vin||'—'}`,17,243);
+  pdf.text('Contrôle documenté à un instant T · Voir les limites en dernière page',17,273);
+
+  // Synthèse visuelle
+  pdf.addPage();let y=setupPage(pdf,palette,'Synthèse visuelle');
+  drawDonut(pdf,43,73,21,model.score,decisionColor(model.verdict|| (model.score>=80?'achat':model.score>=55?'negociation':'fuir')),palette);
+  const coverage=Math.round((model.done/model.total)*100);pdf.setTextColor(...palette.text);pdf.setFont('helvetica','bold');pdf.setFontSize(13);pdf.text(`${model.done} / ${model.total}`,76,59);pdf.setFontSize(9);pdf.setTextColor(...palette.muted);pdf.text('points vérifiés',76,66);pdf.setFillColor(...palette.line);pdf.roundedRect(76,71,100,5,2.5,2.5,'F');pdf.setFillColor(...palette.accent);if(coverage)pdf.roundedRect(76,71,coverage,5,2.5,2.5,'F');pdf.setFontSize(7);pdf.text(`${coverage}% de couverture`,76,82);pdf.setFontSize(10);pdf.setTextColor(...palette.text);pdf.text(decision.label,76,90);
+  y=106;pdf.setFont('helvetica','bold');pdf.setFontSize(12);pdf.text('Score par catégorie',16,y);y+=10;
+  model.categories.forEach(category=>{const value=category.score??0,band=scoreBand(category.score);pdf.setFillColor(...palette.surface);pdf.roundedRect(16,y,178,21,3,3,'F');pdf.setTextColor(...palette.text);pdf.setFontSize(8);pdf.text(category.label.split(' (')[0],21,y+7);pdf.setTextColor(...palette.muted);pdf.text(`×${category.weight} · ${category.done}/${category.total} contrôlés`,21,y+14);pdf.setFillColor(...palette.line);pdf.roundedRect(104,y+7,66,5,2.5,2.5,'F');pdf.setFillColor(...band.color);if(value)pdf.roundedRect(104,y+7,Math.max(1,66*value/100),5,2.5,2.5,'F');pdf.setTextColor(...band.color);pdf.setFont('helvetica','bold');pdf.text(category.score==null?'—':`${category.score}%`,188,y+8,{align:'right'});pdf.setFont('helvetica','normal');pdf.setFontSize(6.5);pdf.text(band.label,188,y+14,{align:'right'});y+=26;});
+  pdf.setFontSize(7);[['Sain > 80 %',[22,163,74]],['Vigilance 50–80 %',[217,119,6]],['À risque < 50 %',[185,28,28]]].forEach(([label,color],index)=>{const x=21+index*55;pdf.setFillColor(...color);pdf.circle(x,y+2,2,'F');pdf.setTextColor(...palette.muted);pdf.text(label,x+5,y+3);});y+=12;
+  y+=3;pdf.setFont('helvetica','bold');pdf.setFontSize(12);pdf.setTextColor(...palette.text);pdf.text('Résumé exécutif',16,y);y+=8;pdf.setFont('helvetica','normal');pdf.setFontSize(9);pdf.setTextColor(...palette.muted);const summary=executiveSummary(model);const summaryLines=pdf.splitTextToSize(summary,178);pdf.text(summaryLines,16,y,{lineHeightFactor:1.45});
+
+  // Page 3 : les défauts majeurs avant le détail exhaustif.
+  pdf.addPage();y=setupPage(pdf,palette,'Points d’attention prioritaires','LECTURE PRIORITAIRE');
+  const priorities=model.points.filter(point=>point.status==='defaut').sort((a,b)=>(b.name==='p1000')-(a.name==='p1000') || b.weight-a.weight || SECTION_ORDER.indexOf(a.section)-SECTION_ORDER.indexOf(b.section));
+  if(!priorities.length){pdf.setFillColor(22,163,74);pdf.roundedRect(16,y,178,22,3,3,'F');pdf.setTextColor(255,255,255);pdf.setFont('helvetica','bold');pdf.setFontSize(11);pdf.text('Aucun défaut majeur identifié sur les points contrôlés',105,y+13,{align:'center'});}
+  priorities.forEach(point=>{const photo=point.photos?.[0],height=photo?40:31;if(y+height>273){pdf.addPage();y=setupPage(pdf,palette,'Points d’attention prioritaires','LECTURE PRIORITAIRE · SUITE');}pdf.setFillColor(...STATUS.defaut.color);pdf.roundedRect(16,y,178,height-3,3,3,'F');pdf.setTextColor(255,255,255);pdf.setFont('helvetica','bold');pdf.setFontSize(9);pdf.text(pdf.splitTextToSize(point.label,photo?118:160),22,y+9);pdf.setFontSize(6.5);pdf.text(`${point.sectionLabel} · coefficient ×${point.weight}`,22,y+17);if(point.note){pdf.setFont('helvetica','normal');pdf.text(pdf.splitTextToSize(firstLines(point.note,1),photo?112:160).slice(0,2),22,y+24);}if(photo)addImageSafe(pdf,photo,151,y+6,35,26);y+=height;});
+
+  // Contexte et historique de vente, issu exclusivement des champs saisis.
+  pdf.addPage();y=setupPage(pdf,palette,'Contexte & historique de vente');
+  pdf.setTextColor(...palette.text);pdf.setFont('helvetica','bold');pdf.setFontSize(12);pdf.text('Documents vérifiés',16,y);y+=9;
+  [['Carte grise',model.data.doc_carte_grise],['Contrôle technique valide',model.data.doc_ct],['Certificat de non-gage',model.data.doc_non_gage],['Factures d’entretien',model.data.doc_factures]].forEach(([label,checked],index)=>{const x=16+(index%2)*90,cy=y+Math.floor(index/2)*16;pdf.setFillColor(...(checked?[22,163,74]:palette.surface));pdf.roundedRect(x,cy,84,12,2,2,'F');pdf.setTextColor(...(checked?[255,255,255]:palette.muted));pdf.setFont('helvetica','bold');pdf.setFontSize(7);pdf.text(checked?'OK':'NON',x+6,cy+8);pdf.setFont('helvetica','normal');pdf.setFontSize(8);pdf.text(label,x+20,cy+8);});
+  y+=40;const history=model.data.q_historique==='ok'?'Complet':model.data.q_historique==='moyen'?'Partiel':model.data.q_historique==='defaut'?'Absent':'Non renseigné';
+  const contextRows=[['Historique d’entretien déclaré',history],['Propriétaires précédents',model.data.proprietaires||'Non renseigné'],['Raison de la vente',model.data.raison_vente||'Non renseignée'],['Type d’utilisation déclaré',model.data.usage_type||'Non renseigné'],['Date et heure de l’inspection',model.data.date_expertise?new Date(model.data.date_expertise).toLocaleString('fr-FR'):'Non renseignées'],['Localisation',model.data.geoloc||'Non renseignée']];
+  contextRows.forEach(([label,value])=>{const lines=pdf.splitTextToSize(String(value),108).slice(0,3),height=Math.max(17,7+lines.length*4);pdf.setFillColor(...palette.surface);pdf.roundedRect(16,y,178,height-2,2,2,'F');pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','bold');pdf.setFontSize(7);pdf.text(label.toUpperCase(),21,y+6);pdf.setTextColor(...palette.text);pdf.setFont('helvetica','normal');pdf.setFontSize(8);pdf.text(lines,80,y+6,{lineHeightFactor:1.3});y+=height;});
+
+  // Détails par section
+  SECTION_ORDER.forEach(section=>{
+    const points=model.points.filter(point=>point.section===section);if(!points.length)return;
+    pdf.addPage();let py=setupPage(pdf,palette,points[0].sectionLabel||section,'DÉTAIL DES CONTRÔLES');
+    const controlled=points.filter(point=>point.status),unchecked=points.filter(point=>!point.status);
+    controlled.forEach(point=>{
+      const photo=point.photos?.[0];const blockHeight=photo?35:22;
+      if(py+blockHeight>274){pdf.addPage();py=setupPage(pdf,palette,points[0].sectionLabel||section,'DÉTAIL DES CONTRÔLES · SUITE');}
+      const status=STATUS[point.status]||STATUS[''];pdf.setFillColor(...palette.surface);pdf.roundedRect(16,py,178,blockHeight-3,3,3,'F');pdf.setFillColor(...status.color);pdf.circle(22,py+7,2.2,'F');pdf.setTextColor(...palette.text);pdf.setFont('helvetica','bold');pdf.setFontSize(9);pdf.text(pdf.splitTextToSize(point.label,photo?118:138),28,py+7);pdf.setFillColor(...status.color);pdf.roundedRect(154,py+3,34,8,2,2,'F');pdf.setTextColor(255,255,255);pdf.setFontSize(7);pdf.text(status.label,171,py+8.2,{align:'center'});
+      pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','normal');pdf.setFontSize(7);const note=point.note?firstLines(point.note,2):'Aucune observation complémentaire saisie.';pdf.text(pdf.splitTextToSize(note,photo?110:118).slice(0,2),28,py+15);
+      if(photo)addImageSafe(pdf,photo,151,py+13,35,19);
+      if(point.name==='p1000'&&point.status==='defaut'){pdf.setDrawColor(185,28,28);pdf.setLineWidth(1);pdf.roundedRect(16,py,178,blockHeight-3,3,3,'S');}
+      py+=blockHeight;
+    });
+    if(!controlled.length){pdf.setFillColor(...palette.surface);pdf.roundedRect(16,py,178,18,3,3,'F');pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','normal');pdf.setFontSize(9);pdf.text('Aucun point renseigné dans cette section.',21,py+11);py+=24;}
+    if(section==='diagnostic'){
+      const obdRows=[['Codes ECM (moteur)',model.data.codes_ecm],['Codes ABS',model.data.codes_abs],['Codes boîte de vitesses',model.data.codes_boite||model.data.codes_boitier],['Observations diagnostic',model.data.notes_diagnostic]].filter(([,value])=>String(value||'').trim());
+      if(obdRows.length){py+=6;if(py>220){pdf.addPage();py=setupPage(pdf,palette,'Diagnostic électronique (OBD2)');}pdf.setTextColor(...palette.text);pdf.setFont('helvetica','bold');pdf.setFontSize(11);pdf.text('Relevé électronique saisi',16,py);py+=7;obdRows.forEach(([label,value])=>{const lines=pdf.splitTextToSize(String(value),112).slice(0,3),height=Math.max(16,7+lines.length*4);pdf.setFillColor(...palette.surface);pdf.roundedRect(16,py,178,height-2,2,2,'F');pdf.setTextColor(...palette.muted);pdf.setFontSize(7);pdf.text(label.toUpperCase(),21,py+6);pdf.setTextColor(...palette.text);pdf.setFont('helvetica','normal');pdf.setFontSize(8);pdf.text(lines,75,py+6,{lineHeightFactor:1.25});py+=height;});}
+    }
+    if(section==='diagnostic' && model.data.p1000==='defaut'){
+      if(py>248){pdf.addPage();py=setupPage(pdf,palette,'Alerte électronique');}
+      pdf.setFillColor(185,28,28);pdf.roundedRect(16,py,178,24,3,3,'F');pdf.setTextColor(255,255,255);pdf.setFont('helvetica','bold');pdf.setFontSize(9);pdf.text('ALERTE P1000 — MÉMOIRE DÉFAUTS RÉCEMMENT EFFACÉE',21,py+8);pdf.setFont('helvetica','normal');pdf.setFontSize(7);pdf.text(pdf.splitTextToSize('Ce signal peut masquer une panne non résolue. Recroiser impérativement avec les cycles de conduite, l’historique et un nouveau scan OBD.',168),21,py+14);
+      py+=30;
+    }
+    if(unchecked.length){if(py+18+unchecked.length*5>274){pdf.addPage();py=setupPage(pdf,palette,points[0].sectionLabel||section,'DÉTAIL DES CONTRÔLES · SUITE');}pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','bold');pdf.setFontSize(8);pdf.text('NON CONTRÔLÉS LORS DE CETTE INSPECTION',16,py);py+=7;pdf.setFont('helvetica','normal');pdf.setFontSize(7);unchecked.forEach(point=>{pdf.setFillColor(...palette.line);pdf.circle(19,py-1.3,1,'F');pdf.text(point.label,24,py);py+=5;});}
+  });
+
+  // Budget et négociation
+  pdf.addPage();y=setupPage(pdf,palette,'Budget & négociation');
+  const price=Number(model.data.valeur)||0,repairs=Number(model.data.frais_estimation)||0,budget=Number(model.data.budget_max)||0;const suggested=String(model.data.marge_negociation||'').trim()|| (repairs?`-${repairs.toLocaleString('fr-FR')} €`:'—');
+  [['Valeur affichée',euro(price)],['Frais de remise en état estimés',euro(repairs)],['Marge de négociation suggérée',suggested],['Budget maximum',euro(budget)]].forEach(([label,value],index)=>{pdf.setFillColor(...(index%2?palette.page:palette.surface));pdf.rect(16,y,178,18,'F');pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','normal');pdf.setFontSize(8);pdf.text(label,21,y+11);pdf.setTextColor(...palette.text);pdf.setFont('helvetica','bold');pdf.setFontSize(11);pdf.text(value,188,y+11,{align:'right'});y+=18;});
+  y+=14;pdf.setTextColor(...palette.text);pdf.setFontSize(12);pdf.text('Lecture financière',16,y);y+=9;pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','normal');pdf.setFontSize(9);const financial=price?`Coût d’acquisition projeté après remise en état : ${numberLabel(price+repairs)} €. ${budget?((price+repairs)<=budget?'Le projet reste dans le budget annoncé.':`Le budget est dépassé de ${numberLabel(price+repairs-budget)} €.`):'Le budget maximal reste à renseigner.'}`:'La valeur affichée doit être renseignée pour calculer le coût global.';pdf.text(pdf.splitTextToSize(financial,178),16,y,{lineHeightFactor:1.5});
+
+  // Signatures et validation
+  pdf.addPage();y=setupPage(pdf,palette,'Signatures & validation');
+  ['acheteur','vendeur'].forEach((name,index)=>{const x=index?110:16;pdf.setFillColor(...palette.surface);pdf.roundedRect(x,y,84,48,3,3,'F');addImageSafe(pdf,model.signatures?.[name],x+7,y+7,70,25);pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','bold');pdf.setFontSize(8);pdf.text(`SIGNATURE ${name.toUpperCase()}`,x+7,y+40);});
+  y+=68;pdf.setTextColor(...palette.text);pdf.setFontSize(12);pdf.text('Limites du rapport',16,y);y+=9;pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','normal');pdf.setFontSize(8);const disclaimer='Ce rapport reflète un contrôle principalement visuel et fonctionnel réalisé à un instant T, dans les conditions décrites. Il ne constitue ni un contrôle technique officiel, ni une garantie contre les défauts non visibles, intermittents ou postérieurs à l’inspection. Les valeurs et réparations estimées doivent être confirmées par un professionnel qualifié et la documentation constructeur.';pdf.text(pdf.splitTextToSize(disclaimer,178),16,y,{lineHeightFactor:1.5});
+  if(model.shareUrl){y+=34;const qr=qrDataUrl(model.shareUrl);if(qr)addImageSafe(pdf,qr,154,y-7,32,32);pdf.setTextColor(...palette.accent);pdf.setFont('helvetica','bold');pdf.setFontSize(9);pdf.text('VERSION EN LIGNE EN LECTURE SEULE',16,y);pdf.setFont('helvetica','normal');pdf.setTextColor(...palette.muted);pdf.setFontSize(8);pdf.text(pdf.splitTextToSize(model.shareUrl,128),16,y+7);pdf.setFontSize(7);pdf.text('Scannez le QR code pour ouvrir le rapport partagé.',16,y+20);}
+
+  const total=pdf.getNumberOfPages();for(let page=1;page<=total;page++){pdf.setPage(page);addFooter(pdf,palette,ref,page,total,generatedAt,decision);}
+  return { pdf, reference:ref };
+}
+
+export function initializePremiumReport() {
+  const button=document.getElementById('generateBtn');const shortButton=document.getElementById('shortPrintBtn');
+  shortButton?.addEventListener('click',()=>window.cardiagDataBridge?.printShort?.());
+  window.cardiagPremiumReport={
+    async generate(){
+      const model=window.cardiagDataBridge?.getReportModel?.();if(!model)return;
+      const original=button.textContent;button.disabled=true;button.textContent='⏳ Composition du rapport…';
+      try{
+        const branding=window.cardiagBranding?.current||{theme:'carbon',workshopName:'CarDiag'};const {pdf}=await createPdf(model,branding);const filename=`CarDiag_${model.title||model.id}`.replace(/[^a-z0-9_-]+/gi,'_')+'.pdf';const blob=pdf.output('blob');let shared=false;
+        try{const file=new File([blob],filename,{type:'application/pdf'});if(navigator.canShare?.({files:[file]})){await navigator.share({files:[file],title:'Rapport CarDiag'});shared=true;}}catch{/* Téléchargement classique ci-dessous. */}
+        if(!shared)pdf.save(filename);
+        window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback',{detail:{type:'success',message:'Rapport PDF premium généré'}}));
+      }catch(error){console.error('PDF premium:',error);window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback',{detail:{type:'error',message:'Rapport premium indisponible, ouverture de la version courte'}}));window.cardiagDataBridge?.printShort?.();}
+      finally{button.disabled=false;button.textContent=original;}
+    },
+    createPdf,
+  };
+}

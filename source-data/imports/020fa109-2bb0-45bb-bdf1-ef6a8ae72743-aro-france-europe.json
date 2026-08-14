@@ -1,0 +1,235 @@
+{
+  "nom": "ARO",
+  "modeles": [
+    {
+      "nom": "10",
+      "generations": [
+        {
+          "code_chassis": "ARO 10 / Dacia Duster / ACM",
+          "annees": "1980–2006",
+          "phases": [
+            "Désignations et moteurs varient fortement selon Roumanie, Italie, Royaume-Uni et assemblages locaux ; confirmer plaque et code moteur"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.2 essence Dacia/Renault — 54 ch",
+              "code_moteur": "Dacia 810/Renault Cléon",
+              "cylindree": "1 239 cm³",
+              "puissance_ch": 54,
+              "boite": [
+                "Boîte manuelle 4/5 rapports + transfert"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carburation/injection, refroidissement et disponibilité des pièces moteur",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés",
+                    "Surchauffe ou fumée"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km ou immobilisation",
+                  "diagnostic": "Identifier Dacia/Renault/diesel exact, mesurer compressions et pression, contrôler carburateur/injection, allumage, pompe, radiateur, thermostat, joints, distribution et compatibilité des pièces",
+                  "piece_concernee": "Moteur et périphériques ARO 10",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sans restauration suivie",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 000 €"
+                },
+                {
+                  "probleme": "Boîte, transfert, ponts et transmission 4x4",
+                  "symptomes": [
+                    "Bruit",
+                    "Vibration",
+                    "Gamme ou 4x4 difficile à engager"
+                  ],
+                  "kilometrage_apparition": "Variable selon terrain et entretien",
+                  "diagnostic": "Tester toutes gammes, contrôler huile, pignons, embrayage, arbres, croisillons, ponts, demi-arbres, moyeux, pneus identiques et fuites ; rechercher adaptations non conformes",
+                  "piece_concernee": "Transmission intégrale ARO",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente après usage tout-terrain",
+                  "cout_reparation_estime": "Élevé : environ 600 à 5 000 €"
+                },
+                {
+                  "probleme": "Corrosion du châssis/caisse, direction et freinage",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu de direction",
+                    "Freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Après 10 à 20 ans selon climat",
+                  "diagnostic": "Inspecter longerons, traverses, supports de caisse, planchers, ancrages, soudures, boîtier/rotules, conduites, maître-cylindre, tambours/disques, roulements et pneus",
+                  "piece_concernee": "Structure et organes de sécurité",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente sur exemplaires anciens",
+                  "cout_reparation_estime": "Élevé : environ 700 à plus de 8 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.4 essence Dacia — 62 ch",
+              "code_moteur": "Dacia 810-99",
+              "cylindree": "1 397 cm³",
+              "puissance_ch": 62,
+              "boite": [
+                "Boîte manuelle 4/5 rapports + transfert"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carburation/injection, refroidissement et disponibilité des pièces moteur",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés",
+                    "Surchauffe ou fumée"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km ou immobilisation",
+                  "diagnostic": "Identifier Dacia/Renault/diesel exact, mesurer compressions et pression, contrôler carburateur/injection, allumage, pompe, radiateur, thermostat, joints, distribution et compatibilité des pièces",
+                  "piece_concernee": "Moteur et périphériques ARO 10",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sans restauration suivie",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 000 €"
+                },
+                {
+                  "probleme": "Boîte, transfert, ponts et transmission 4x4",
+                  "symptomes": [
+                    "Bruit",
+                    "Vibration",
+                    "Gamme ou 4x4 difficile à engager"
+                  ],
+                  "kilometrage_apparition": "Variable selon terrain et entretien",
+                  "diagnostic": "Tester toutes gammes, contrôler huile, pignons, embrayage, arbres, croisillons, ponts, demi-arbres, moyeux, pneus identiques et fuites ; rechercher adaptations non conformes",
+                  "piece_concernee": "Transmission intégrale ARO",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente après usage tout-terrain",
+                  "cout_reparation_estime": "Élevé : environ 600 à 5 000 €"
+                },
+                {
+                  "probleme": "Corrosion du châssis/caisse, direction et freinage",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu de direction",
+                    "Freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Après 10 à 20 ans selon climat",
+                  "diagnostic": "Inspecter longerons, traverses, supports de caisse, planchers, ancrages, soudures, boîtier/rotules, conduites, maître-cylindre, tambours/disques, roulements et pneus",
+                  "piece_concernee": "Structure et organes de sécurité",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente sur exemplaires anciens",
+                  "cout_reparation_estime": "Élevé : environ 700 à plus de 8 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.6 essence Dacia — 72 ch",
+              "code_moteur": "Dacia 102",
+              "cylindree": "1 557 cm³",
+              "puissance_ch": 72,
+              "boite": [
+                "Boîte manuelle 5 rapports + transfert"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carburation/injection, refroidissement et disponibilité des pièces moteur",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés",
+                    "Surchauffe ou fumée"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km ou immobilisation",
+                  "diagnostic": "Identifier Dacia/Renault/diesel exact, mesurer compressions et pression, contrôler carburateur/injection, allumage, pompe, radiateur, thermostat, joints, distribution et compatibilité des pièces",
+                  "piece_concernee": "Moteur et périphériques ARO 10",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sans restauration suivie",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 000 €"
+                },
+                {
+                  "probleme": "Boîte, transfert, ponts et transmission 4x4",
+                  "symptomes": [
+                    "Bruit",
+                    "Vibration",
+                    "Gamme ou 4x4 difficile à engager"
+                  ],
+                  "kilometrage_apparition": "Variable selon terrain et entretien",
+                  "diagnostic": "Tester toutes gammes, contrôler huile, pignons, embrayage, arbres, croisillons, ponts, demi-arbres, moyeux, pneus identiques et fuites ; rechercher adaptations non conformes",
+                  "piece_concernee": "Transmission intégrale ARO",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente après usage tout-terrain",
+                  "cout_reparation_estime": "Élevé : environ 600 à 5 000 €"
+                },
+                {
+                  "probleme": "Corrosion du châssis/caisse, direction et freinage",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu de direction",
+                    "Freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Après 10 à 20 ans selon climat",
+                  "diagnostic": "Inspecter longerons, traverses, supports de caisse, planchers, ancrages, soudures, boîtier/rotules, conduites, maître-cylindre, tambours/disques, roulements et pneus",
+                  "piece_concernee": "Structure et organes de sécurité",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente sur exemplaires anciens",
+                  "cout_reparation_estime": "Élevé : environ 700 à plus de 8 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "1.9 diesel Renault — 64 ch",
+              "code_moteur": "Renault F8Q",
+              "cylindree": "1 870 cm³",
+              "puissance_ch": 64,
+              "boite": [
+                "Boîte manuelle 5 rapports + transfert"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Carburation/injection, refroidissement et disponibilité des pièces moteur",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés",
+                    "Surchauffe ou fumée"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km ou immobilisation",
+                  "diagnostic": "Identifier Dacia/Renault/diesel exact, mesurer compressions et pression, contrôler carburateur/injection, allumage, pompe, radiateur, thermostat, joints, distribution et compatibilité des pièces",
+                  "piece_concernee": "Moteur et périphériques ARO 10",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sans restauration suivie",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 000 €"
+                },
+                {
+                  "probleme": "Boîte, transfert, ponts et transmission 4x4",
+                  "symptomes": [
+                    "Bruit",
+                    "Vibration",
+                    "Gamme ou 4x4 difficile à engager"
+                  ],
+                  "kilometrage_apparition": "Variable selon terrain et entretien",
+                  "diagnostic": "Tester toutes gammes, contrôler huile, pignons, embrayage, arbres, croisillons, ponts, demi-arbres, moyeux, pneus identiques et fuites ; rechercher adaptations non conformes",
+                  "piece_concernee": "Transmission intégrale ARO",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente après usage tout-terrain",
+                  "cout_reparation_estime": "Élevé : environ 600 à 5 000 €"
+                },
+                {
+                  "probleme": "Corrosion du châssis/caisse, direction et freinage",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu de direction",
+                    "Freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Après 10 à 20 ans selon climat",
+                  "diagnostic": "Inspecter longerons, traverses, supports de caisse, planchers, ancrages, soudures, boîtier/rotules, conduites, maître-cylindre, tambours/disques, roulements et pneus",
+                  "piece_concernee": "Structure et organes de sécurité",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente sur exemplaires anciens",
+                  "cout_reparation_estime": "Élevé : environ 700 à plus de 8 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

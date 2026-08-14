@@ -1,0 +1,202 @@
+{
+  "nom": "ZIL",
+  "modeles": [
+    {
+      "nom": "4104",
+      "generations": [
+        {
+          "code_chassis": "ZIL-4104 / 115",
+          "annees": "1978–1983",
+          "phases": [
+            "Première limousine 4104, environ 106 exemplaires de la série initiale selon les sources disponibles."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 7.7 — 315 ch",
+              "code_moteur": "ZIL-4104",
+              "cylindree": "7 680 cm³",
+              "puissance_ch": 315,
+              "boite": [
+                "Automatique 2 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement, carburation et allumage du V8 7.7",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Ratés, fumée ou forte odeur d’essence"
+                  ],
+                  "kilometrage_apparition": "Aucun seuil fiable ; contrôle après toute immobilisation prolongée",
+                  "diagnostic": "Mesurer compressions et pression, contrôler double circuit de refroidissement, pompe, radiateur, ventilateurs, carburateurs quadruple corps, pompes/conduites, doubles allumages selon version, chaîne, soupapes et contamination ; vérifier carburant à indice requis et effectuer essai progressif",
+                  "piece_concernee": "V8 ZIL-4104 7 695 cm³",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente sans maintenance spécialisée",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Automatique 2/3 rapports, arbre, pont et freinage de limousine lourde",
+                  "symptomes": [
+                    "À-coups",
+                    "Patinage",
+                    "Vibration, fuite ou freinage insuffisant"
+                  ],
+                  "kilometrage_apparition": "Variable ; âge et stockage priment sur kilométrage officiel",
+                  "diagnostic": "Identifier transmission 2 rapports initiale ou 3 rapports, contrôler huile/pression, convertisseur, refroidissement, supports, arbre, croisillons, pont et roulements ; inspecter double circuit de freinage, servo, disques/tambours selon série, flexibles et pneus adaptés à la masse",
+                  "piece_concernee": "Transmission et organes de sécurité ZIL 4104",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sur véhicule muséal remis en route",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 20 000 €"
+                },
+                {
+                  "probleme": "Châssis, carrosserie blindée éventuelle, suspension et authenticité",
+                  "symptomes": [
+                    "Corrosion cachée",
+                    "Caisse affaissée",
+                    "Suspension basse, jeu ou numéros incohérents"
+                  ],
+                  "kilometrage_apparition": "Expertise systématique avant achat",
+                  "diagnostic": "Distinguer 4104, 41045, 41047 et dérivés 4105x, comparer plaques/numéros et historique d’État ; inspecter châssis, planchers, soudures, blindage éventuel, vitres, lames/ressorts, amortisseurs, direction, pneumatiques, système centralisé et équipements spécifiques ; peser si provenance inconnue",
+                  "piece_concernee": "Structure, châssis et identité ZIL",
+                  "gravite": "Critique pour sécurité, légalité et valeur",
+                  "frequence": "Risque élevé de reconstruction ou pièces non conformes",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 80 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "ZIL-41045",
+          "annees": "1983–1985",
+          "phases": [
+            "Premier restylage avec boîte trois rapports ; distinguer les dérivés de parade et de protection."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 7.7 — 315 ch",
+              "code_moteur": "ZIL-4104",
+              "cylindree": "7 680 cm³",
+              "puissance_ch": 315,
+              "boite": [
+                "Automatique 3 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement, carburation et allumage du V8 7.7",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Ratés, fumée ou forte odeur d’essence"
+                  ],
+                  "kilometrage_apparition": "Aucun seuil fiable ; contrôle après toute immobilisation prolongée",
+                  "diagnostic": "Mesurer compressions et pression, contrôler double circuit de refroidissement, pompe, radiateur, ventilateurs, carburateurs quadruple corps, pompes/conduites, doubles allumages selon version, chaîne, soupapes et contamination ; vérifier carburant à indice requis et effectuer essai progressif",
+                  "piece_concernee": "V8 ZIL-4104 7 695 cm³",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente sans maintenance spécialisée",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Automatique 2/3 rapports, arbre, pont et freinage de limousine lourde",
+                  "symptomes": [
+                    "À-coups",
+                    "Patinage",
+                    "Vibration, fuite ou freinage insuffisant"
+                  ],
+                  "kilometrage_apparition": "Variable ; âge et stockage priment sur kilométrage officiel",
+                  "diagnostic": "Identifier transmission 2 rapports initiale ou 3 rapports, contrôler huile/pression, convertisseur, refroidissement, supports, arbre, croisillons, pont et roulements ; inspecter double circuit de freinage, servo, disques/tambours selon série, flexibles et pneus adaptés à la masse",
+                  "piece_concernee": "Transmission et organes de sécurité ZIL 4104",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sur véhicule muséal remis en route",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 20 000 €"
+                },
+                {
+                  "probleme": "Châssis, carrosserie blindée éventuelle, suspension et authenticité",
+                  "symptomes": [
+                    "Corrosion cachée",
+                    "Caisse affaissée",
+                    "Suspension basse, jeu ou numéros incohérents"
+                  ],
+                  "kilometrage_apparition": "Expertise systématique avant achat",
+                  "diagnostic": "Distinguer 4104, 41045, 41047 et dérivés 4105x, comparer plaques/numéros et historique d’État ; inspecter châssis, planchers, soudures, blindage éventuel, vitres, lames/ressorts, amortisseurs, direction, pneumatiques, système centralisé et équipements spécifiques ; peser si provenance inconnue",
+                  "piece_concernee": "Structure, châssis et identité ZIL",
+                  "gravite": "Critique pour sécurité, légalité et valeur",
+                  "frequence": "Risque élevé de reconstruction ou pièces non conformes",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 80 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "ZIL-41047",
+          "annees": "1986–2002",
+          "phases": [
+            "Second restylage ; les 41041, 41042, 41044, 41051/41052 sont des carrosseries ou protections distinctes à identifier par numéro."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "V8 7.7 — 315 ch",
+              "code_moteur": "ZIL-4104",
+              "cylindree": "7 695 cm³",
+              "puissance_ch": 315,
+              "boite": [
+                "Automatique 3 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement, carburation et allumage du V8 7.7",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Ratés, fumée ou forte odeur d’essence"
+                  ],
+                  "kilometrage_apparition": "Aucun seuil fiable ; contrôle après toute immobilisation prolongée",
+                  "diagnostic": "Mesurer compressions et pression, contrôler double circuit de refroidissement, pompe, radiateur, ventilateurs, carburateurs quadruple corps, pompes/conduites, doubles allumages selon version, chaîne, soupapes et contamination ; vérifier carburant à indice requis et effectuer essai progressif",
+                  "piece_concernee": "V8 ZIL-4104 7 695 cm³",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente sans maintenance spécialisée",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 30 000 €"
+                },
+                {
+                  "probleme": "Automatique 2/3 rapports, arbre, pont et freinage de limousine lourde",
+                  "symptomes": [
+                    "À-coups",
+                    "Patinage",
+                    "Vibration, fuite ou freinage insuffisant"
+                  ],
+                  "kilometrage_apparition": "Variable ; âge et stockage priment sur kilométrage officiel",
+                  "diagnostic": "Identifier transmission 2 rapports initiale ou 3 rapports, contrôler huile/pression, convertisseur, refroidissement, supports, arbre, croisillons, pont et roulements ; inspecter double circuit de freinage, servo, disques/tambours selon série, flexibles et pneus adaptés à la masse",
+                  "piece_concernee": "Transmission et organes de sécurité ZIL 4104",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sur véhicule muséal remis en route",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à 20 000 €"
+                },
+                {
+                  "probleme": "Châssis, carrosserie blindée éventuelle, suspension et authenticité",
+                  "symptomes": [
+                    "Corrosion cachée",
+                    "Caisse affaissée",
+                    "Suspension basse, jeu ou numéros incohérents"
+                  ],
+                  "kilometrage_apparition": "Expertise systématique avant achat",
+                  "diagnostic": "Distinguer 4104, 41045, 41047 et dérivés 4105x, comparer plaques/numéros et historique d’État ; inspecter châssis, planchers, soudures, blindage éventuel, vitres, lames/ressorts, amortisseurs, direction, pneumatiques, système centralisé et équipements spécifiques ; peser si provenance inconnue",
+                  "piece_concernee": "Structure, châssis et identité ZIL",
+                  "gravite": "Critique pour sécurité, légalité et valeur",
+                  "frequence": "Risque élevé de reconstruction ou pièces non conformes",
+                  "cout_reparation_estime": "Très élevé : environ 5 000 à plus de 80 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://rosap.ntl.bts.gov/view/dot/15203/dot_15203_DS1.pdf"
+      ]
+    }
+  ]
+}

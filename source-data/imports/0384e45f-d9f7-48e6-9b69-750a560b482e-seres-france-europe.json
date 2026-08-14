@@ -1,0 +1,130 @@
+{
+  "nom": "Seres",
+  "modeles": [
+    {
+      "nom": "5",
+      "generations": [
+        {
+          "code_chassis": "SERES 5 Europe",
+          "annees": "2021–aujourd’hui",
+          "phases": [
+            "Versions 2WD 220 kW et 4WD Performance séparées ; capacités utiles, charge et équipement varient selon millésime/marché."
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "Propulsion 80 kWh — 299 ch",
+              "code_moteur": "SERES e-drive arrière",
+              "cylindree": "Batterie 80 kWh",
+              "puissance_ch": 299,
+              "boite": [
+                "Réducteur mono-rapport, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "État de santé, équilibre et isolement de la batterie 80 kWh",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Charge limitée",
+                    "Écart de cellules, alerte batterie ou surchauffe"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 220 000 km ou usage répété en charge rapide/chaleur",
+                  "diagnostic": "Lire SOH, énergie utile, tensions, températures et historique, effectuer test de capacité, contrôler BMS, contacteurs, isolement, circuit liquide, pompe/chiller et blindage ; inspecter sous caisse après choc et vérifier campagnes/mises à jour",
+                  "piece_concernee": "Batterie haute tension, BMS et refroidissement SERES 5",
+                  "gravite": "Critique",
+                  "frequence": "Variable selon climat et recharge",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "Onduleur, moteur(s), réducteur(s) et recharge AC/DC",
+                  "symptomes": [
+                    "Absence de READY",
+                    "Puissance limitée",
+                    "Charge interrompue, sifflement ou vibration"
+                  ],
+                  "kilometrage_apparition": "Variable ; diagnostic immédiat à la première alerte",
+                  "diagnostic": "Lire calculateurs, tester prise/câble, chargeur embarqué, DC rapide, convertisseur DC-DC, onduleur et refroidissement ; contrôler moteur arrière et avant sur 4WD, réducteurs, roulements, joints et huile ; consigner la haute tension avant intervention",
+                  "piece_concernee": "Chaîne de traction 2WD ou 4WD et électronique de puissance",
+                  "gravite": "Critique",
+                  "frequence": "Rare à modérée mais coûteuse",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 18 000 €"
+                },
+                {
+                  "probleme": "Batterie 12 V, logiciels, trains roulants, freins et ADAS",
+                  "symptomes": [
+                    "Alertes multiples",
+                    "Décharge 12 V",
+                    "Usure pneus, vibration ou aides indisponibles"
+                  ],
+                  "kilometrage_apparition": "Souvent après 3 à 6 ans ou 60 000 à 120 000 km",
+                  "diagnostic": "Tester batterie 12 V/charge et repos réseau, vérifier versions logicielles, télématique et clés ; contrôler bras, silentblocs, amortisseurs pilotés, géométrie, pneus, disques/étriers peu sollicités, direction ; calibrer caméras/radars après pare-brise, choc ou géométrie",
+                  "piece_concernee": "Réseau basse tension, châssis et aides à la conduite",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente pour batterie 12 V et pneus sur SUV lourd",
+                  "cout_reparation_estime": "Élevé : environ 300 à 8 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Électrique",
+              "nom": "Performance AWD 80 kWh — 585 ch",
+              "code_moteur": "SERES dual e-drive",
+              "cylindree": "Batterie 80 kWh",
+              "puissance_ch": 585,
+              "boite": [
+                "Deux réducteurs mono-rapport, transmission intégrale"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "État de santé, équilibre et isolement de la batterie 80 kWh",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Charge limitée",
+                    "Écart de cellules, alerte batterie ou surchauffe"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 à 220 000 km ou usage répété en charge rapide/chaleur",
+                  "diagnostic": "Lire SOH, énergie utile, tensions, températures et historique, effectuer test de capacité, contrôler BMS, contacteurs, isolement, circuit liquide, pompe/chiller et blindage ; inspecter sous caisse après choc et vérifier campagnes/mises à jour",
+                  "piece_concernee": "Batterie haute tension, BMS et refroidissement SERES 5",
+                  "gravite": "Critique",
+                  "frequence": "Variable selon climat et recharge",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "Onduleur, moteur(s), réducteur(s) et recharge AC/DC",
+                  "symptomes": [
+                    "Absence de READY",
+                    "Puissance limitée",
+                    "Charge interrompue, sifflement ou vibration"
+                  ],
+                  "kilometrage_apparition": "Variable ; diagnostic immédiat à la première alerte",
+                  "diagnostic": "Lire calculateurs, tester prise/câble, chargeur embarqué, DC rapide, convertisseur DC-DC, onduleur et refroidissement ; contrôler moteur arrière et avant sur 4WD, réducteurs, roulements, joints et huile ; consigner la haute tension avant intervention",
+                  "piece_concernee": "Chaîne de traction 2WD ou 4WD et électronique de puissance",
+                  "gravite": "Critique",
+                  "frequence": "Rare à modérée mais coûteuse",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 18 000 €"
+                },
+                {
+                  "probleme": "Batterie 12 V, logiciels, trains roulants, freins et ADAS",
+                  "symptomes": [
+                    "Alertes multiples",
+                    "Décharge 12 V",
+                    "Usure pneus, vibration ou aides indisponibles"
+                  ],
+                  "kilometrage_apparition": "Souvent après 3 à 6 ans ou 60 000 à 120 000 km",
+                  "diagnostic": "Tester batterie 12 V/charge et repos réseau, vérifier versions logicielles, télématique et clés ; contrôler bras, silentblocs, amortisseurs pilotés, géométrie, pneus, disques/étriers peu sollicités, direction ; calibrer caméras/radars après pare-brise, choc ou géométrie",
+                  "piece_concernee": "Réseau basse tension, châssis et aides à la conduite",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente pour batterie 12 V et pneus sur SUV lourd",
+                  "cout_reparation_estime": "Élevé : environ 300 à 8 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.serescolombia.com/seres/site/docs/20240712/20240712211632/ficha_tecnica_seres_5___2024.pdf"
+      ]
+    }
+  ]
+}

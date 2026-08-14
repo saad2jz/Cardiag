@@ -1,0 +1,4118 @@
+{
+  "nom": "Daihatsu",
+  "modeles": [
+    {
+      "nom": "Charade",
+      "generations": [
+        {
+          "code_chassis": "G10/G11/G100/G200",
+          "annees": "1977-2000",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.0 trois cylindres — 55 ch",
+              "code_moteur": "CB20/CB23",
+              "cylindree": "993 cm³",
+              "puissance_ch": 55,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, joint de culasse et distribution",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou chaîne"
+                  ],
+                  "kilometrage_apparition": "À surveiller après 80 000 km et selon échéance de distribution.",
+                  "diagnostic": "Historique, mise sous pression, test CO₂, compression et inspection pompe à eau/thermostat.",
+                  "piece_concernee": "Distribution, culasse et circuit de refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru sans historique",
+                  "cout_reparation_estime": "Environ 400 à 2 500 €."
+                },
+                {
+                  "probleme": "Injection, allumage et commande DVVT",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km.",
+                  "diagnostic": "Lecture défauts, contrôle bougies/bobines, capteurs, pression carburant et électrovanne VVT.",
+                  "piece_concernee": "Allumage, injection, capteurs et distribution variable",
+                  "gravite": "Modérée",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, suspension et pièces spécifiques",
+                  "symptomes": [
+                    "Claquement",
+                    "Usure irrégulière",
+                    "Rouille structurelle"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge et au climat.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, rotules, silentblocs et conduites de frein.",
+                  "piece_concernee": "Caisse, trains roulants et freinage",
+                  "gravite": "Modérée à critique selon corrosion",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.3 16V — 90 ch",
+              "code_moteur": "HC-E",
+              "cylindree": "1 295 cm³",
+              "puissance_ch": 90,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, joint de culasse et distribution",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou chaîne"
+                  ],
+                  "kilometrage_apparition": "À surveiller après 80 000 km et selon échéance de distribution.",
+                  "diagnostic": "Historique, mise sous pression, test CO₂, compression et inspection pompe à eau/thermostat.",
+                  "piece_concernee": "Distribution, culasse et circuit de refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru sans historique",
+                  "cout_reparation_estime": "Environ 400 à 2 500 €."
+                },
+                {
+                  "probleme": "Injection, allumage et commande DVVT",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km.",
+                  "diagnostic": "Lecture défauts, contrôle bougies/bobines, capteurs, pression carburant et électrovanne VVT.",
+                  "piece_concernee": "Allumage, injection, capteurs et distribution variable",
+                  "gravite": "Modérée",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, suspension et pièces spécifiques",
+                  "symptomes": [
+                    "Claquement",
+                    "Usure irrégulière",
+                    "Rouille structurelle"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge et au climat.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, rotules, silentblocs et conduites de frein.",
+                  "piece_concernee": "Caisse, trains roulants et freinage",
+                  "gravite": "Modérée à critique selon corrosion",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.5 16V — 100 ch",
+              "code_moteur": "HE-EG",
+              "cylindree": "1 498 cm³",
+              "puissance_ch": 100,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, joint de culasse et distribution",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou chaîne"
+                  ],
+                  "kilometrage_apparition": "À surveiller après 80 000 km et selon échéance de distribution.",
+                  "diagnostic": "Historique, mise sous pression, test CO₂, compression et inspection pompe à eau/thermostat.",
+                  "piece_concernee": "Distribution, culasse et circuit de refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru sans historique",
+                  "cout_reparation_estime": "Environ 400 à 2 500 €."
+                },
+                {
+                  "probleme": "Injection, allumage et commande DVVT",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km.",
+                  "diagnostic": "Lecture défauts, contrôle bougies/bobines, capteurs, pression carburant et électrovanne VVT.",
+                  "piece_concernee": "Allumage, injection, capteurs et distribution variable",
+                  "gravite": "Modérée",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, suspension et pièces spécifiques",
+                  "symptomes": [
+                    "Claquement",
+                    "Usure irrégulière",
+                    "Rouille structurelle"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge et au climat.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, rotules, silentblocs et conduites de frein.",
+                  "piece_concernee": "Caisse, trains roulants et freinage",
+                  "gravite": "Modérée à critique selon corrosion",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Cuore",
+      "generations": [
+        {
+          "code_chassis": "L7/L251/L276",
+          "annees": "1998-2013",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "0.66 DVVT — 58 ch",
+              "code_moteur": "EF-VE",
+              "cylindree": "659 cm³",
+              "puissance_ch": 58,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification et refroidissement du petit moteur",
+                  "symptomes": [
+                    "Consommation d’huile",
+                    "Cliquetis",
+                    "Température élevée"
+                  ],
+                  "kilometrage_apparition": "À surveiller dès 60 000 km, surtout avec intervalles d’huile longs.",
+                  "diagnostic": "Pression d’huile, compression, circuit de refroidissement et état des boues.",
+                  "piece_concernee": "Moteur EF/KF/JB, pompe à huile et refroidissement",
+                  "gravite": "Majeure",
+                  "frequence": "Dépend fortement de l’entretien",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Turbo et admission sur versions 64 ch",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Fumée bleue",
+                    "Sifflement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km ou usage urbain sévère.",
+                  "diagnostic": "Jeu du turbo, pression, durites, reniflard et consommation d’huile.",
+                  "piece_concernee": "Turbo, admission et ventilation du carter",
+                  "gravite": "Majeure",
+                  "frequence": "À surveiller sur versions turbo",
+                  "cout_reparation_estime": "Environ 500 à 2 000 €."
+                },
+                {
+                  "probleme": "CVT, roulements et corrosion",
+                  "symptomes": [
+                    "Patinage",
+                    "Bourdonnement",
+                    "À-coups"
+                  ],
+                  "kilometrage_apparition": "À contrôler après 60 000 km ou sans preuve de vidange.",
+                  "diagnostic": "Essai à chaud, état de l’huile CVT, roulements, freins et soubassements.",
+                  "piece_concernee": "CVT/BVA, moyeux, freinage et caisse",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 300 à 4 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.0 DVVT — 69 ch",
+              "code_moteur": "EJ-VE/1KR-FE",
+              "cylindree": "998 cm³",
+              "puissance_ch": 69,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification et refroidissement du petit moteur",
+                  "symptomes": [
+                    "Consommation d’huile",
+                    "Cliquetis",
+                    "Température élevée"
+                  ],
+                  "kilometrage_apparition": "À surveiller dès 60 000 km, surtout avec intervalles d’huile longs.",
+                  "diagnostic": "Pression d’huile, compression, circuit de refroidissement et état des boues.",
+                  "piece_concernee": "Moteur EF/KF/JB, pompe à huile et refroidissement",
+                  "gravite": "Majeure",
+                  "frequence": "Dépend fortement de l’entretien",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Turbo et admission sur versions 64 ch",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Fumée bleue",
+                    "Sifflement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km ou usage urbain sévère.",
+                  "diagnostic": "Jeu du turbo, pression, durites, reniflard et consommation d’huile.",
+                  "piece_concernee": "Turbo, admission et ventilation du carter",
+                  "gravite": "Majeure",
+                  "frequence": "À surveiller sur versions turbo",
+                  "cout_reparation_estime": "Environ 500 à 2 000 €."
+                },
+                {
+                  "probleme": "CVT, roulements et corrosion",
+                  "symptomes": [
+                    "Patinage",
+                    "Bourdonnement",
+                    "À-coups"
+                  ],
+                  "kilometrage_apparition": "À contrôler après 60 000 km ou sans preuve de vidange.",
+                  "diagnostic": "Essai à chaud, état de l’huile CVT, roulements, freins et soubassements.",
+                  "piece_concernee": "CVT/BVA, moyeux, freinage et caisse",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 300 à 4 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Terios",
+      "generations": [
+        {
+          "code_chassis": "J100/J200",
+          "annees": "1997-2017",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.3 16V 4WD — 86 ch",
+              "code_moteur": "K3-VE",
+              "cylindree": "1 298 cm³",
+              "puissance_ch": 86,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Transmission 4x4, transfert et ponts",
+                  "symptomes": [
+                    "Claquement",
+                    "Vibration",
+                    "Enclenchement 4x4 difficile"
+                  ],
+                  "kilometrage_apparition": "Variable selon usage hors route et entretien.",
+                  "diagnostic": "Contrôle huiles, croisillons, moyeux, transfert, ponts et pneus de dimensions identiques.",
+                  "piece_concernee": "Boîte, transfert, arbres et différentiels",
+                  "gravite": "Majeure",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 500 à 4 000 €."
+                },
+                {
+                  "probleme": "Refroidissement, culasse et turbo",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 km, plus tôt en usage sévère.",
+                  "diagnostic": "Mise sous pression, test CO₂, compression, injection et contrôle turbo.",
+                  "piece_concernee": "Moteur, culasse, radiateur et turbo",
+                  "gravite": "Majeure",
+                  "frequence": "Risque accru après surchauffe",
+                  "cout_reparation_estime": "Environ 600 à 4 000 €."
+                },
+                {
+                  "probleme": "Corrosion du châssis et trains roulants",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu de direction",
+                    "Freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge et des conditions climatiques.",
+                  "diagnostic": "Inspection du châssis, ancrages, conduites, rotules, roulements et freins.",
+                  "piece_concernee": "Châssis, suspension, direction et freinage",
+                  "gravite": "Critique si structure atteinte",
+                  "frequence": "À inspecter systématiquement",
+                  "cout_reparation_estime": "Environ 300 à plus de 6 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.3 Turbo 4WD — 140 ch",
+              "code_moteur": "K3-VET",
+              "cylindree": "1 298 cm³",
+              "puissance_ch": 140,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Transmission 4x4, transfert et ponts",
+                  "symptomes": [
+                    "Claquement",
+                    "Vibration",
+                    "Enclenchement 4x4 difficile"
+                  ],
+                  "kilometrage_apparition": "Variable selon usage hors route et entretien.",
+                  "diagnostic": "Contrôle huiles, croisillons, moyeux, transfert, ponts et pneus de dimensions identiques.",
+                  "piece_concernee": "Boîte, transfert, arbres et différentiels",
+                  "gravite": "Majeure",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 500 à 4 000 €."
+                },
+                {
+                  "probleme": "Refroidissement, culasse et turbo",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 km, plus tôt en usage sévère.",
+                  "diagnostic": "Mise sous pression, test CO₂, compression, injection et contrôle turbo.",
+                  "piece_concernee": "Moteur, culasse, radiateur et turbo",
+                  "gravite": "Majeure",
+                  "frequence": "Risque accru après surchauffe",
+                  "cout_reparation_estime": "Environ 600 à 4 000 €."
+                },
+                {
+                  "probleme": "Corrosion du châssis et trains roulants",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu de direction",
+                    "Freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge et des conditions climatiques.",
+                  "diagnostic": "Inspection du châssis, ancrages, conduites, rotules, roulements et freins.",
+                  "piece_concernee": "Châssis, suspension, direction et freinage",
+                  "gravite": "Critique si structure atteinte",
+                  "frequence": "À inspecter systématiquement",
+                  "cout_reparation_estime": "Environ 300 à plus de 6 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.5 16V 4WD — 105 ch",
+              "code_moteur": "3SZ-VE",
+              "cylindree": "1 495 cm³",
+              "puissance_ch": 105,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Transmission 4x4, transfert et ponts",
+                  "symptomes": [
+                    "Claquement",
+                    "Vibration",
+                    "Enclenchement 4x4 difficile"
+                  ],
+                  "kilometrage_apparition": "Variable selon usage hors route et entretien.",
+                  "diagnostic": "Contrôle huiles, croisillons, moyeux, transfert, ponts et pneus de dimensions identiques.",
+                  "piece_concernee": "Boîte, transfert, arbres et différentiels",
+                  "gravite": "Majeure",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 500 à 4 000 €."
+                },
+                {
+                  "probleme": "Refroidissement, culasse et turbo",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 km, plus tôt en usage sévère.",
+                  "diagnostic": "Mise sous pression, test CO₂, compression, injection et contrôle turbo.",
+                  "piece_concernee": "Moteur, culasse, radiateur et turbo",
+                  "gravite": "Majeure",
+                  "frequence": "Risque accru après surchauffe",
+                  "cout_reparation_estime": "Environ 600 à 4 000 €."
+                },
+                {
+                  "probleme": "Corrosion du châssis et trains roulants",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu de direction",
+                    "Freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge et des conditions climatiques.",
+                  "diagnostic": "Inspection du châssis, ancrages, conduites, rotules, roulements et freins.",
+                  "piece_concernee": "Châssis, suspension, direction et freinage",
+                  "gravite": "Critique si structure atteinte",
+                  "frequence": "À inspecter systématiquement",
+                  "cout_reparation_estime": "Environ 300 à plus de 6 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Copen",
+      "generations": [
+        {
+          "code_chassis": "L880K/LA400K",
+          "annees": "2002-aujourd’hui",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "0.66 Turbo — 64 ch",
+              "code_moteur": "JB-DET/KF-VET",
+              "cylindree": "659 cm³",
+              "puissance_ch": 64,
+              "boite": [
+                "BVM5",
+                "BVA4",
+                "CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification et refroidissement du petit moteur",
+                  "symptomes": [
+                    "Consommation d’huile",
+                    "Cliquetis",
+                    "Température élevée"
+                  ],
+                  "kilometrage_apparition": "À surveiller dès 60 000 km, surtout avec intervalles d’huile longs.",
+                  "diagnostic": "Pression d’huile, compression, circuit de refroidissement et état des boues.",
+                  "piece_concernee": "Moteur EF/KF/JB, pompe à huile et refroidissement",
+                  "gravite": "Majeure",
+                  "frequence": "Dépend fortement de l’entretien",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Turbo et admission sur versions 64 ch",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Fumée bleue",
+                    "Sifflement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km ou usage urbain sévère.",
+                  "diagnostic": "Jeu du turbo, pression, durites, reniflard et consommation d’huile.",
+                  "piece_concernee": "Turbo, admission et ventilation du carter",
+                  "gravite": "Majeure",
+                  "frequence": "À surveiller sur versions turbo",
+                  "cout_reparation_estime": "Environ 500 à 2 000 €."
+                },
+                {
+                  "probleme": "CVT, roulements et corrosion",
+                  "symptomes": [
+                    "Patinage",
+                    "Bourdonnement",
+                    "À-coups"
+                  ],
+                  "kilometrage_apparition": "À contrôler après 60 000 km ou sans preuve de vidange.",
+                  "diagnostic": "Essai à chaud, état de l’huile CVT, roulements, freins et soubassements.",
+                  "piece_concernee": "CVT/BVA, moyeux, freinage et caisse",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 300 à 4 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.3 16V Europe — 87 ch",
+              "code_moteur": "K3-VE",
+              "cylindree": "1 298 cm³",
+              "puissance_ch": 87,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification et refroidissement du petit moteur",
+                  "symptomes": [
+                    "Consommation d’huile",
+                    "Cliquetis",
+                    "Température élevée"
+                  ],
+                  "kilometrage_apparition": "À surveiller dès 60 000 km, surtout avec intervalles d’huile longs.",
+                  "diagnostic": "Pression d’huile, compression, circuit de refroidissement et état des boues.",
+                  "piece_concernee": "Moteur EF/KF/JB, pompe à huile et refroidissement",
+                  "gravite": "Majeure",
+                  "frequence": "Dépend fortement de l’entretien",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Turbo et admission sur versions 64 ch",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Fumée bleue",
+                    "Sifflement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km ou usage urbain sévère.",
+                  "diagnostic": "Jeu du turbo, pression, durites, reniflard et consommation d’huile.",
+                  "piece_concernee": "Turbo, admission et ventilation du carter",
+                  "gravite": "Majeure",
+                  "frequence": "À surveiller sur versions turbo",
+                  "cout_reparation_estime": "Environ 500 à 2 000 €."
+                },
+                {
+                  "probleme": "CVT, roulements et corrosion",
+                  "symptomes": [
+                    "Patinage",
+                    "Bourdonnement",
+                    "À-coups"
+                  ],
+                  "kilometrage_apparition": "À contrôler après 60 000 km ou sans preuve de vidange.",
+                  "diagnostic": "Essai à chaud, état de l’huile CVT, roulements, freins et soubassements.",
+                  "piece_concernee": "CVT/BVA, moyeux, freinage et caisse",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 300 à 4 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Rocky",
+      "generations": [
+        {
+          "code_chassis": "F300/A200/A250",
+          "annees": "1989-2002 puis 2019-aujourd’hui",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.6 16V 4WD première génération — 95 ch",
+              "code_moteur": "HD-E",
+              "cylindree": "1 589 cm³",
+              "puissance_ch": 95,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Transmission 4x4, transfert et ponts",
+                  "symptomes": [
+                    "Claquement",
+                    "Vibration",
+                    "Enclenchement 4x4 difficile"
+                  ],
+                  "kilometrage_apparition": "Variable selon usage hors route et entretien.",
+                  "diagnostic": "Contrôle huiles, croisillons, moyeux, transfert, ponts et pneus de dimensions identiques.",
+                  "piece_concernee": "Boîte, transfert, arbres et différentiels",
+                  "gravite": "Majeure",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 500 à 4 000 €."
+                },
+                {
+                  "probleme": "Refroidissement, culasse et turbo",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 km, plus tôt en usage sévère.",
+                  "diagnostic": "Mise sous pression, test CO₂, compression, injection et contrôle turbo.",
+                  "piece_concernee": "Moteur, culasse, radiateur et turbo",
+                  "gravite": "Majeure",
+                  "frequence": "Risque accru après surchauffe",
+                  "cout_reparation_estime": "Environ 600 à 4 000 €."
+                },
+                {
+                  "probleme": "Corrosion du châssis et trains roulants",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu de direction",
+                    "Freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge et des conditions climatiques.",
+                  "diagnostic": "Inspection du châssis, ancrages, conduites, rotules, roulements et freins.",
+                  "piece_concernee": "Châssis, suspension, direction et freinage",
+                  "gravite": "Critique si structure atteinte",
+                  "frequence": "À inspecter systématiquement",
+                  "cout_reparation_estime": "Environ 300 à plus de 6 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.0 Turbo DNGA — 98 ch",
+              "code_moteur": "1KR-VET",
+              "cylindree": "996 cm³",
+              "puissance_ch": 98,
+              "boite": [
+                "CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Transmission 4x4, transfert et ponts",
+                  "symptomes": [
+                    "Claquement",
+                    "Vibration",
+                    "Enclenchement 4x4 difficile"
+                  ],
+                  "kilometrage_apparition": "Variable selon usage hors route et entretien.",
+                  "diagnostic": "Contrôle huiles, croisillons, moyeux, transfert, ponts et pneus de dimensions identiques.",
+                  "piece_concernee": "Boîte, transfert, arbres et différentiels",
+                  "gravite": "Majeure",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 500 à 4 000 €."
+                },
+                {
+                  "probleme": "Refroidissement, culasse et turbo",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 km, plus tôt en usage sévère.",
+                  "diagnostic": "Mise sous pression, test CO₂, compression, injection et contrôle turbo.",
+                  "piece_concernee": "Moteur, culasse, radiateur et turbo",
+                  "gravite": "Majeure",
+                  "frequence": "Risque accru après surchauffe",
+                  "cout_reparation_estime": "Environ 600 à 4 000 €."
+                },
+                {
+                  "probleme": "Corrosion du châssis et trains roulants",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu de direction",
+                    "Freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge et des conditions climatiques.",
+                  "diagnostic": "Inspection du châssis, ancrages, conduites, rotules, roulements et freins.",
+                  "piece_concernee": "Châssis, suspension, direction et freinage",
+                  "gravite": "Critique si structure atteinte",
+                  "frequence": "À inspecter systématiquement",
+                  "cout_reparation_estime": "Environ 300 à plus de 6 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.2 DNGA — 88 ch",
+              "code_moteur": "WA-VE",
+              "cylindree": "1 198 cm³",
+              "puissance_ch": 88,
+              "boite": [
+                "CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Transmission 4x4, transfert et ponts",
+                  "symptomes": [
+                    "Claquement",
+                    "Vibration",
+                    "Enclenchement 4x4 difficile"
+                  ],
+                  "kilometrage_apparition": "Variable selon usage hors route et entretien.",
+                  "diagnostic": "Contrôle huiles, croisillons, moyeux, transfert, ponts et pneus de dimensions identiques.",
+                  "piece_concernee": "Boîte, transfert, arbres et différentiels",
+                  "gravite": "Majeure",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 500 à 4 000 €."
+                },
+                {
+                  "probleme": "Refroidissement, culasse et turbo",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 km, plus tôt en usage sévère.",
+                  "diagnostic": "Mise sous pression, test CO₂, compression, injection et contrôle turbo.",
+                  "piece_concernee": "Moteur, culasse, radiateur et turbo",
+                  "gravite": "Majeure",
+                  "frequence": "Risque accru après surchauffe",
+                  "cout_reparation_estime": "Environ 600 à 4 000 €."
+                },
+                {
+                  "probleme": "Corrosion du châssis et trains roulants",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu de direction",
+                    "Freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge et des conditions climatiques.",
+                  "diagnostic": "Inspection du châssis, ancrages, conduites, rotules, roulements et freins.",
+                  "piece_concernee": "Châssis, suspension, direction et freinage",
+                  "gravite": "Critique si structure atteinte",
+                  "frequence": "À inspecter systématiquement",
+                  "cout_reparation_estime": "Environ 300 à plus de 6 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Hybride série",
+              "nom": "1.2 e-SMART Hybrid — moteur E1A — 106 ch",
+              "code_moteur": "WA-VEX + E1A",
+              "cylindree": "1 198 cm³",
+              "puissance_ch": 106,
+              "boite": [
+                "Réducteur électrique"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Transmission 4x4, transfert et ponts",
+                  "symptomes": [
+                    "Claquement",
+                    "Vibration",
+                    "Enclenchement 4x4 difficile"
+                  ],
+                  "kilometrage_apparition": "Variable selon usage hors route et entretien.",
+                  "diagnostic": "Contrôle huiles, croisillons, moyeux, transfert, ponts et pneus de dimensions identiques.",
+                  "piece_concernee": "Boîte, transfert, arbres et différentiels",
+                  "gravite": "Majeure",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 500 à 4 000 €."
+                },
+                {
+                  "probleme": "Refroidissement, culasse et turbo",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 km, plus tôt en usage sévère.",
+                  "diagnostic": "Mise sous pression, test CO₂, compression, injection et contrôle turbo.",
+                  "piece_concernee": "Moteur, culasse, radiateur et turbo",
+                  "gravite": "Majeure",
+                  "frequence": "Risque accru après surchauffe",
+                  "cout_reparation_estime": "Environ 600 à 4 000 €."
+                },
+                {
+                  "probleme": "Corrosion du châssis et trains roulants",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu de direction",
+                    "Freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge et des conditions climatiques.",
+                  "diagnostic": "Inspection du châssis, ancrages, conduites, rotules, roulements et freins.",
+                  "piece_concernee": "Châssis, suspension, direction et freinage",
+                  "gravite": "Critique si structure atteinte",
+                  "frequence": "À inspecter systématiquement",
+                  "cout_reparation_estime": "Environ 300 à plus de 6 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Applause",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "fi",
+          "gb",
+          "nl",
+          "nz",
+          "ua"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 6
+      },
+      "generations": [
+        {
+          "code_chassis": "A101/A111",
+          "annees": "1989-2000",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.6 16V — 105 ch",
+              "code_moteur": "HD-E",
+              "cylindree": "1 589 cm³",
+              "puissance_ch": 105,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, joint de culasse et distribution",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou chaîne"
+                  ],
+                  "kilometrage_apparition": "À surveiller après 80 000 km et selon échéance de distribution.",
+                  "diagnostic": "Historique, mise sous pression, test CO₂, compression et inspection pompe à eau/thermostat.",
+                  "piece_concernee": "Distribution, culasse et circuit de refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru sans historique",
+                  "cout_reparation_estime": "Environ 400 à 2 500 €."
+                },
+                {
+                  "probleme": "Injection, allumage et commande DVVT",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km.",
+                  "diagnostic": "Lecture défauts, contrôle bougies/bobines, capteurs, pression carburant et électrovanne VVT.",
+                  "piece_concernee": "Allumage, injection, capteurs et distribution variable",
+                  "gravite": "Modérée",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, suspension et pièces spécifiques",
+                  "symptomes": [
+                    "Claquement",
+                    "Usure irrégulière",
+                    "Rouille structurelle"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge et au climat.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, rotules, silentblocs et conduites de frein.",
+                  "piece_concernee": "Caisse, trains roulants et freinage",
+                  "gravite": "Modérée à critique selon corrosion",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.6 16V 4WD — 105 ch",
+              "code_moteur": "HD-E",
+              "cylindree": "1 589 cm³",
+              "puissance_ch": 105,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, joint de culasse et distribution",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou chaîne"
+                  ],
+                  "kilometrage_apparition": "À surveiller après 80 000 km et selon échéance de distribution.",
+                  "diagnostic": "Historique, mise sous pression, test CO₂, compression et inspection pompe à eau/thermostat.",
+                  "piece_concernee": "Distribution, culasse et circuit de refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru sans historique",
+                  "cout_reparation_estime": "Environ 400 à 2 500 €."
+                },
+                {
+                  "probleme": "Injection, allumage et commande DVVT",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km.",
+                  "diagnostic": "Lecture défauts, contrôle bougies/bobines, capteurs, pression carburant et électrovanne VVT.",
+                  "piece_concernee": "Allumage, injection, capteurs et distribution variable",
+                  "gravite": "Modérée",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, suspension et pièces spécifiques",
+                  "symptomes": [
+                    "Claquement",
+                    "Usure irrégulière",
+                    "Rouille structurelle"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge et au climat.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, rotules, silentblocs et conduites de frein.",
+                  "piece_concernee": "Caisse, trains roulants et freinage",
+                  "gravite": "Modérée à critique selon corrosion",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Atrai",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "nl",
+          "nz",
+          "th"
+        ],
+        "regions": [
+          "as",
+          "eu",
+          "oc"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "S220/S320/S700",
+          "annees": "1999-aujourd’hui",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "0.66 DVVT — 53 ch",
+              "code_moteur": "EF-VE/KF-VE",
+              "cylindree": "658 cm³",
+              "puissance_ch": 53,
+              "boite": [
+                "BVM5",
+                "BVA4",
+                "CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification et refroidissement du petit moteur",
+                  "symptomes": [
+                    "Consommation d’huile",
+                    "Cliquetis",
+                    "Température élevée"
+                  ],
+                  "kilometrage_apparition": "À surveiller dès 60 000 km, surtout avec intervalles d’huile longs.",
+                  "diagnostic": "Pression d’huile, compression, circuit de refroidissement et état des boues.",
+                  "piece_concernee": "Moteur EF/KF/JB, pompe à huile et refroidissement",
+                  "gravite": "Majeure",
+                  "frequence": "Dépend fortement de l’entretien",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Turbo et admission sur versions 64 ch",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Fumée bleue",
+                    "Sifflement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km ou usage urbain sévère.",
+                  "diagnostic": "Jeu du turbo, pression, durites, reniflard et consommation d’huile.",
+                  "piece_concernee": "Turbo, admission et ventilation du carter",
+                  "gravite": "Majeure",
+                  "frequence": "À surveiller sur versions turbo",
+                  "cout_reparation_estime": "Environ 500 à 2 000 €."
+                },
+                {
+                  "probleme": "CVT, roulements et corrosion",
+                  "symptomes": [
+                    "Patinage",
+                    "Bourdonnement",
+                    "À-coups"
+                  ],
+                  "kilometrage_apparition": "À contrôler après 60 000 km ou sans preuve de vidange.",
+                  "diagnostic": "Essai à chaud, état de l’huile CVT, roulements, freins et soubassements.",
+                  "piece_concernee": "CVT/BVA, moyeux, freinage et caisse",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 300 à 4 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "0.66 Turbo — 64 ch",
+              "code_moteur": "EF-DET/KF-VET",
+              "cylindree": "658 cm³",
+              "puissance_ch": 64,
+              "boite": [
+                "BVA4",
+                "CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification et refroidissement du petit moteur",
+                  "symptomes": [
+                    "Consommation d’huile",
+                    "Cliquetis",
+                    "Température élevée"
+                  ],
+                  "kilometrage_apparition": "À surveiller dès 60 000 km, surtout avec intervalles d’huile longs.",
+                  "diagnostic": "Pression d’huile, compression, circuit de refroidissement et état des boues.",
+                  "piece_concernee": "Moteur EF/KF/JB, pompe à huile et refroidissement",
+                  "gravite": "Majeure",
+                  "frequence": "Dépend fortement de l’entretien",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Turbo et admission sur versions 64 ch",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Fumée bleue",
+                    "Sifflement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km ou usage urbain sévère.",
+                  "diagnostic": "Jeu du turbo, pression, durites, reniflard et consommation d’huile.",
+                  "piece_concernee": "Turbo, admission et ventilation du carter",
+                  "gravite": "Majeure",
+                  "frequence": "À surveiller sur versions turbo",
+                  "cout_reparation_estime": "Environ 500 à 2 000 €."
+                },
+                {
+                  "probleme": "CVT, roulements et corrosion",
+                  "symptomes": [
+                    "Patinage",
+                    "Bourdonnement",
+                    "À-coups"
+                  ],
+                  "kilometrage_apparition": "À contrôler après 60 000 km ou sans preuve de vidange.",
+                  "diagnostic": "Essai à chaud, état de l’huile CVT, roulements, freins et soubassements.",
+                  "piece_concernee": "CVT/BVA, moyeux, freinage et caisse",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 300 à 4 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Charade Cg",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 9
+      },
+      "generations": [
+        {
+          "code_chassis": "G10",
+          "annees": "1977-1983",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.0 trois cylindres CG — 50 ch",
+              "code_moteur": "CB20",
+              "cylindree": "993 cm³",
+              "puissance_ch": 50,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, joint de culasse et distribution",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou chaîne"
+                  ],
+                  "kilometrage_apparition": "À surveiller après 80 000 km et selon échéance de distribution.",
+                  "diagnostic": "Historique, mise sous pression, test CO₂, compression et inspection pompe à eau/thermostat.",
+                  "piece_concernee": "Distribution, culasse et circuit de refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru sans historique",
+                  "cout_reparation_estime": "Environ 400 à 2 500 €."
+                },
+                {
+                  "probleme": "Injection, allumage et commande DVVT",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km.",
+                  "diagnostic": "Lecture défauts, contrôle bougies/bobines, capteurs, pression carburant et électrovanne VVT.",
+                  "piece_concernee": "Allumage, injection, capteurs et distribution variable",
+                  "gravite": "Modérée",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, suspension et pièces spécifiques",
+                  "symptomes": [
+                    "Claquement",
+                    "Usure irrégulière",
+                    "Rouille structurelle"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge et au climat.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, rotules, silentblocs et conduites de frein.",
+                  "piece_concernee": "Caisse, trains roulants et freinage",
+                  "gravite": "Modérée à critique selon corrosion",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Charade Cs",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 6
+      },
+      "generations": [
+        {
+          "code_chassis": "G10",
+          "annees": "1977-1983",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.0 trois cylindres CS — 50 ch",
+              "code_moteur": "CB20",
+              "cylindree": "993 cm³",
+              "puissance_ch": 50,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, joint de culasse et distribution",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou chaîne"
+                  ],
+                  "kilometrage_apparition": "À surveiller après 80 000 km et selon échéance de distribution.",
+                  "diagnostic": "Historique, mise sous pression, test CO₂, compression et inspection pompe à eau/thermostat.",
+                  "piece_concernee": "Distribution, culasse et circuit de refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru sans historique",
+                  "cout_reparation_estime": "Environ 400 à 2 500 €."
+                },
+                {
+                  "probleme": "Injection, allumage et commande DVVT",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km.",
+                  "diagnostic": "Lecture défauts, contrôle bougies/bobines, capteurs, pression carburant et électrovanne VVT.",
+                  "piece_concernee": "Allumage, injection, capteurs et distribution variable",
+                  "gravite": "Modérée",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, suspension et pièces spécifiques",
+                  "symptomes": [
+                    "Claquement",
+                    "Usure irrégulière",
+                    "Rouille structurelle"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge et au climat.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, rotules, silentblocs et conduites de frein.",
+                  "piece_concernee": "Caisse, trains roulants et freinage",
+                  "gravite": "Modérée à critique selon corrosion",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Charade GT Ti",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "G100",
+          "annees": "1987-1993",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.0 Turbo 12V GTti — 101 ch",
+              "code_moteur": "CB80",
+              "cylindree": "993 cm³",
+              "puissance_ch": 101,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, joint de culasse et distribution",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou chaîne"
+                  ],
+                  "kilometrage_apparition": "À surveiller après 80 000 km et selon échéance de distribution.",
+                  "diagnostic": "Historique, mise sous pression, test CO₂, compression et inspection pompe à eau/thermostat.",
+                  "piece_concernee": "Distribution, culasse et circuit de refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru sans historique",
+                  "cout_reparation_estime": "Environ 400 à 2 500 €."
+                },
+                {
+                  "probleme": "Injection, allumage et commande DVVT",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km.",
+                  "diagnostic": "Lecture défauts, contrôle bougies/bobines, capteurs, pression carburant et électrovanne VVT.",
+                  "piece_concernee": "Allumage, injection, capteurs et distribution variable",
+                  "gravite": "Modérée",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, suspension et pièces spécifiques",
+                  "symptomes": [
+                    "Claquement",
+                    "Usure irrégulière",
+                    "Rouille structurelle"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge et au climat.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, rotules, silentblocs et conduites de frein.",
+                  "piece_concernee": "Caisse, trains roulants et freinage",
+                  "gravite": "Modérée à critique selon corrosion",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Charade Xte",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 8
+      },
+      "generations": [
+        {
+          "code_chassis": "G11",
+          "annees": "1983-1987",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.0 trois cylindres XTE — 52 ch",
+              "code_moteur": "CB23",
+              "cylindree": "993 cm³",
+              "puissance_ch": 52,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, joint de culasse et distribution",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou chaîne"
+                  ],
+                  "kilometrage_apparition": "À surveiller après 80 000 km et selon échéance de distribution.",
+                  "diagnostic": "Historique, mise sous pression, test CO₂, compression et inspection pompe à eau/thermostat.",
+                  "piece_concernee": "Distribution, culasse et circuit de refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru sans historique",
+                  "cout_reparation_estime": "Environ 400 à 2 500 €."
+                },
+                {
+                  "probleme": "Injection, allumage et commande DVVT",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km.",
+                  "diagnostic": "Lecture défauts, contrôle bougies/bobines, capteurs, pression carburant et électrovanne VVT.",
+                  "piece_concernee": "Allumage, injection, capteurs et distribution variable",
+                  "gravite": "Modérée",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, suspension et pièces spécifiques",
+                  "symptomes": [
+                    "Claquement",
+                    "Usure irrégulière",
+                    "Rouille structurelle"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge et au climat.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, rotules, silentblocs et conduites de frein.",
+                  "piece_concernee": "Caisse, trains roulants et freinage",
+                  "gravite": "Modérée à critique selon corrosion",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Charmant",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "fi",
+          "gb"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "A35/A55",
+          "annees": "1974-1987",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.3 OHV — 65 ch",
+              "code_moteur": "4K",
+              "cylindree": "1 290 cm³",
+              "puissance_ch": 65,
+              "boite": [
+                "BVM4",
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, joint de culasse et distribution",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou chaîne"
+                  ],
+                  "kilometrage_apparition": "À surveiller après 80 000 km et selon échéance de distribution.",
+                  "diagnostic": "Historique, mise sous pression, test CO₂, compression et inspection pompe à eau/thermostat.",
+                  "piece_concernee": "Distribution, culasse et circuit de refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru sans historique",
+                  "cout_reparation_estime": "Environ 400 à 2 500 €."
+                },
+                {
+                  "probleme": "Injection, allumage et commande DVVT",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km.",
+                  "diagnostic": "Lecture défauts, contrôle bougies/bobines, capteurs, pression carburant et électrovanne VVT.",
+                  "piece_concernee": "Allumage, injection, capteurs et distribution variable",
+                  "gravite": "Modérée",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, suspension et pièces spécifiques",
+                  "symptomes": [
+                    "Claquement",
+                    "Usure irrégulière",
+                    "Rouille structurelle"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge et au climat.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, rotules, silentblocs et conduites de frein.",
+                  "piece_concernee": "Caisse, trains roulants et freinage",
+                  "gravite": "Modérée à critique selon corrosion",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.6 OHV — 83 ch",
+              "code_moteur": "4A-C",
+              "cylindree": "1 587 cm³",
+              "puissance_ch": 83,
+              "boite": [
+                "BVM5",
+                "BVA3"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, joint de culasse et distribution",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou chaîne"
+                  ],
+                  "kilometrage_apparition": "À surveiller après 80 000 km et selon échéance de distribution.",
+                  "diagnostic": "Historique, mise sous pression, test CO₂, compression et inspection pompe à eau/thermostat.",
+                  "piece_concernee": "Distribution, culasse et circuit de refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru sans historique",
+                  "cout_reparation_estime": "Environ 400 à 2 500 €."
+                },
+                {
+                  "probleme": "Injection, allumage et commande DVVT",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km.",
+                  "diagnostic": "Lecture défauts, contrôle bougies/bobines, capteurs, pression carburant et électrovanne VVT.",
+                  "piece_concernee": "Allumage, injection, capteurs et distribution variable",
+                  "gravite": "Modérée",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, suspension et pièces spécifiques",
+                  "symptomes": [
+                    "Claquement",
+                    "Usure irrégulière",
+                    "Rouille structurelle"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge et au climat.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, rotules, silentblocs et conduites de frein.",
+                  "piece_concernee": "Caisse, trains roulants et freinage",
+                  "gravite": "Modérée à critique selon corrosion",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "F20",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "gb",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 10
+      },
+      "generations": [
+        {
+          "code_chassis": "F20",
+          "annees": "1977-1984",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.6 4x4 — 68 ch",
+              "code_moteur": "12R",
+              "cylindree": "1 587 cm³",
+              "puissance_ch": 68,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Transmission 4x4, transfert et ponts",
+                  "symptomes": [
+                    "Claquement",
+                    "Vibration",
+                    "Enclenchement 4x4 difficile"
+                  ],
+                  "kilometrage_apparition": "Variable selon usage hors route et entretien.",
+                  "diagnostic": "Contrôle huiles, croisillons, moyeux, transfert, ponts et pneus de dimensions identiques.",
+                  "piece_concernee": "Boîte, transfert, arbres et différentiels",
+                  "gravite": "Majeure",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 500 à 4 000 €."
+                },
+                {
+                  "probleme": "Refroidissement, culasse et turbo",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 km, plus tôt en usage sévère.",
+                  "diagnostic": "Mise sous pression, test CO₂, compression, injection et contrôle turbo.",
+                  "piece_concernee": "Moteur, culasse, radiateur et turbo",
+                  "gravite": "Majeure",
+                  "frequence": "Risque accru après surchauffe",
+                  "cout_reparation_estime": "Environ 600 à 4 000 €."
+                },
+                {
+                  "probleme": "Corrosion du châssis et trains roulants",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu de direction",
+                    "Freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge et des conditions climatiques.",
+                  "diagnostic": "Inspection du châssis, ancrages, conduites, rotules, roulements et freins.",
+                  "piece_concernee": "Châssis, suspension, direction et freinage",
+                  "gravite": "Critique si structure atteinte",
+                  "frequence": "À inspecter systématiquement",
+                  "cout_reparation_estime": "Environ 300 à plus de 6 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Feroza",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "convertible",
+        "countries": [
+          "fi",
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 4
+      },
+      "generations": [
+        {
+          "code_chassis": "F300",
+          "annees": "1989-1999",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.6 16V 4WD — 95 ch",
+              "code_moteur": "HD-E",
+              "cylindree": "1 589 cm³",
+              "puissance_ch": 95,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Transmission 4x4, transfert et ponts",
+                  "symptomes": [
+                    "Claquement",
+                    "Vibration",
+                    "Enclenchement 4x4 difficile"
+                  ],
+                  "kilometrage_apparition": "Variable selon usage hors route et entretien.",
+                  "diagnostic": "Contrôle huiles, croisillons, moyeux, transfert, ponts et pneus de dimensions identiques.",
+                  "piece_concernee": "Boîte, transfert, arbres et différentiels",
+                  "gravite": "Majeure",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 500 à 4 000 €."
+                },
+                {
+                  "probleme": "Refroidissement, culasse et turbo",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 km, plus tôt en usage sévère.",
+                  "diagnostic": "Mise sous pression, test CO₂, compression, injection et contrôle turbo.",
+                  "piece_concernee": "Moteur, culasse, radiateur et turbo",
+                  "gravite": "Majeure",
+                  "frequence": "Risque accru après surchauffe",
+                  "cout_reparation_estime": "Environ 600 à 4 000 €."
+                },
+                {
+                  "probleme": "Corrosion du châssis et trains roulants",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu de direction",
+                    "Freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge et des conditions climatiques.",
+                  "diagnostic": "Inspection du châssis, ancrages, conduites, rotules, roulements et freins.",
+                  "piece_concernee": "Châssis, suspension, direction et freinage",
+                  "gravite": "Critique si structure atteinte",
+                  "frequence": "À inspecter systématiquement",
+                  "cout_reparation_estime": "Environ 300 à plus de 6 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Feroza Dx",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 9
+      },
+      "generations": [
+        {
+          "code_chassis": "F300",
+          "annees": "1989-1999",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.6 16V 4WD DX — 95 ch",
+              "code_moteur": "HD-E",
+              "cylindree": "1 589 cm³",
+              "puissance_ch": 95,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Transmission 4x4, transfert et ponts",
+                  "symptomes": [
+                    "Claquement",
+                    "Vibration",
+                    "Enclenchement 4x4 difficile"
+                  ],
+                  "kilometrage_apparition": "Variable selon usage hors route et entretien.",
+                  "diagnostic": "Contrôle huiles, croisillons, moyeux, transfert, ponts et pneus de dimensions identiques.",
+                  "piece_concernee": "Boîte, transfert, arbres et différentiels",
+                  "gravite": "Majeure",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 500 à 4 000 €."
+                },
+                {
+                  "probleme": "Refroidissement, culasse et turbo",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 km, plus tôt en usage sévère.",
+                  "diagnostic": "Mise sous pression, test CO₂, compression, injection et contrôle turbo.",
+                  "piece_concernee": "Moteur, culasse, radiateur et turbo",
+                  "gravite": "Majeure",
+                  "frequence": "Risque accru après surchauffe",
+                  "cout_reparation_estime": "Environ 600 à 4 000 €."
+                },
+                {
+                  "probleme": "Corrosion du châssis et trains roulants",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu de direction",
+                    "Freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge et des conditions climatiques.",
+                  "diagnostic": "Inspection du châssis, ancrages, conduites, rotules, roulements et freins.",
+                  "piece_concernee": "Châssis, suspension, direction et freinage",
+                  "gravite": "Critique si structure atteinte",
+                  "frequence": "À inspecter systématiquement",
+                  "cout_reparation_estime": "Environ 300 à plus de 6 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Fourtrak",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "gb"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 3
+      },
+      "generations": [
+        {
+          "code_chassis": "F70/F75/F78",
+          "annees": "1984-2002",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "2.8 Diesel — 73 ch",
+              "code_moteur": "DL-41",
+              "cylindree": "2 765 cm³",
+              "puissance_ch": 73,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Transmission 4x4, transfert et ponts",
+                  "symptomes": [
+                    "Claquement",
+                    "Vibration",
+                    "Enclenchement 4x4 difficile"
+                  ],
+                  "kilometrage_apparition": "Variable selon usage hors route et entretien.",
+                  "diagnostic": "Contrôle huiles, croisillons, moyeux, transfert, ponts et pneus de dimensions identiques.",
+                  "piece_concernee": "Boîte, transfert, arbres et différentiels",
+                  "gravite": "Majeure",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 500 à 4 000 €."
+                },
+                {
+                  "probleme": "Refroidissement, culasse et turbo",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 km, plus tôt en usage sévère.",
+                  "diagnostic": "Mise sous pression, test CO₂, compression, injection et contrôle turbo.",
+                  "piece_concernee": "Moteur, culasse, radiateur et turbo",
+                  "gravite": "Majeure",
+                  "frequence": "Risque accru après surchauffe",
+                  "cout_reparation_estime": "Environ 600 à 4 000 €."
+                },
+                {
+                  "probleme": "Corrosion du châssis et trains roulants",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu de direction",
+                    "Freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge et des conditions climatiques.",
+                  "diagnostic": "Inspection du châssis, ancrages, conduites, rotules, roulements et freins.",
+                  "piece_concernee": "Châssis, suspension, direction et freinage",
+                  "gravite": "Critique si structure atteinte",
+                  "frequence": "À inspecter systématiquement",
+                  "cout_reparation_estime": "Environ 300 à plus de 6 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "2.8 Turbo Diesel — 101 ch",
+              "code_moteur": "DL-52/DL-62",
+              "cylindree": "2 765 cm³",
+              "puissance_ch": 101,
+              "boite": [
+                "BVM5"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Transmission 4x4, transfert et ponts",
+                  "symptomes": [
+                    "Claquement",
+                    "Vibration",
+                    "Enclenchement 4x4 difficile"
+                  ],
+                  "kilometrage_apparition": "Variable selon usage hors route et entretien.",
+                  "diagnostic": "Contrôle huiles, croisillons, moyeux, transfert, ponts et pneus de dimensions identiques.",
+                  "piece_concernee": "Boîte, transfert, arbres et différentiels",
+                  "gravite": "Majeure",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 500 à 4 000 €."
+                },
+                {
+                  "probleme": "Refroidissement, culasse et turbo",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 km, plus tôt en usage sévère.",
+                  "diagnostic": "Mise sous pression, test CO₂, compression, injection et contrôle turbo.",
+                  "piece_concernee": "Moteur, culasse, radiateur et turbo",
+                  "gravite": "Majeure",
+                  "frequence": "Risque accru après surchauffe",
+                  "cout_reparation_estime": "Environ 600 à 4 000 €."
+                },
+                {
+                  "probleme": "Corrosion du châssis et trains roulants",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu de direction",
+                    "Freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge et des conditions climatiques.",
+                  "diagnostic": "Inspection du châssis, ancrages, conduites, rotules, roulements et freins.",
+                  "piece_concernee": "Châssis, suspension, direction et freinage",
+                  "gravite": "Critique si structure atteinte",
+                  "frequence": "À inspecter systématiquement",
+                  "cout_reparation_estime": "Environ 300 à plus de 6 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Gran Move",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "fi",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 4
+      },
+      "generations": [
+        {
+          "code_chassis": "G301/G303",
+          "annees": "1996-2002",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.5 16V — 90 ch",
+              "code_moteur": "HE-EG",
+              "cylindree": "1 498 cm³",
+              "puissance_ch": 90,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, joint de culasse et distribution",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou chaîne"
+                  ],
+                  "kilometrage_apparition": "À surveiller après 80 000 km et selon échéance de distribution.",
+                  "diagnostic": "Historique, mise sous pression, test CO₂, compression et inspection pompe à eau/thermostat.",
+                  "piece_concernee": "Distribution, culasse et circuit de refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru sans historique",
+                  "cout_reparation_estime": "Environ 400 à 2 500 €."
+                },
+                {
+                  "probleme": "Injection, allumage et commande DVVT",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km.",
+                  "diagnostic": "Lecture défauts, contrôle bougies/bobines, capteurs, pression carburant et électrovanne VVT.",
+                  "piece_concernee": "Allumage, injection, capteurs et distribution variable",
+                  "gravite": "Modérée",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, suspension et pièces spécifiques",
+                  "symptomes": [
+                    "Claquement",
+                    "Usure irrégulière",
+                    "Rouille structurelle"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge et au climat.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, rotules, silentblocs et conduites de frein.",
+                  "piece_concernee": "Caisse, trains roulants et freinage",
+                  "gravite": "Modérée à critique selon corrosion",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.6 16V — 91 ch",
+              "code_moteur": "HD-EP",
+              "cylindree": "1 589 cm³",
+              "puissance_ch": 91,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, joint de culasse et distribution",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou chaîne"
+                  ],
+                  "kilometrage_apparition": "À surveiller après 80 000 km et selon échéance de distribution.",
+                  "diagnostic": "Historique, mise sous pression, test CO₂, compression et inspection pompe à eau/thermostat.",
+                  "piece_concernee": "Distribution, culasse et circuit de refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru sans historique",
+                  "cout_reparation_estime": "Environ 400 à 2 500 €."
+                },
+                {
+                  "probleme": "Injection, allumage et commande DVVT",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km.",
+                  "diagnostic": "Lecture défauts, contrôle bougies/bobines, capteurs, pression carburant et électrovanne VVT.",
+                  "piece_concernee": "Allumage, injection, capteurs et distribution variable",
+                  "gravite": "Modérée",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, suspension et pièces spécifiques",
+                  "symptomes": [
+                    "Claquement",
+                    "Usure irrégulière",
+                    "Rouille structurelle"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge et au climat.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, rotules, silentblocs et conduites de frein.",
+                  "piece_concernee": "Caisse, trains roulants et freinage",
+                  "gravite": "Modérée à critique selon corrosion",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Materia",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "mpv",
+        "countries": [
+          "fi",
+          "gb",
+          "lu",
+          "nl",
+          "nz",
+          "ua"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "M4",
+          "annees": "2006-2016",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.3 DVVT — 91 ch",
+              "code_moteur": "K3-VE",
+              "cylindree": "1 298 cm³",
+              "puissance_ch": 91,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, joint de culasse et distribution",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou chaîne"
+                  ],
+                  "kilometrage_apparition": "À surveiller après 80 000 km et selon échéance de distribution.",
+                  "diagnostic": "Historique, mise sous pression, test CO₂, compression et inspection pompe à eau/thermostat.",
+                  "piece_concernee": "Distribution, culasse et circuit de refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru sans historique",
+                  "cout_reparation_estime": "Environ 400 à 2 500 €."
+                },
+                {
+                  "probleme": "Injection, allumage et commande DVVT",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km.",
+                  "diagnostic": "Lecture défauts, contrôle bougies/bobines, capteurs, pression carburant et électrovanne VVT.",
+                  "piece_concernee": "Allumage, injection, capteurs et distribution variable",
+                  "gravite": "Modérée",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, suspension et pièces spécifiques",
+                  "symptomes": [
+                    "Claquement",
+                    "Usure irrégulière",
+                    "Rouille structurelle"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge et au climat.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, rotules, silentblocs et conduites de frein.",
+                  "piece_concernee": "Caisse, trains roulants et freinage",
+                  "gravite": "Modérée à critique selon corrosion",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.5 DVVT — 103 ch",
+              "code_moteur": "3SZ-VE",
+              "cylindree": "1 495 cm³",
+              "puissance_ch": 103,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, joint de culasse et distribution",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou chaîne"
+                  ],
+                  "kilometrage_apparition": "À surveiller après 80 000 km et selon échéance de distribution.",
+                  "diagnostic": "Historique, mise sous pression, test CO₂, compression et inspection pompe à eau/thermostat.",
+                  "piece_concernee": "Distribution, culasse et circuit de refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru sans historique",
+                  "cout_reparation_estime": "Environ 400 à 2 500 €."
+                },
+                {
+                  "probleme": "Injection, allumage et commande DVVT",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km.",
+                  "diagnostic": "Lecture défauts, contrôle bougies/bobines, capteurs, pression carburant et électrovanne VVT.",
+                  "piece_concernee": "Allumage, injection, capteurs et distribution variable",
+                  "gravite": "Modérée",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, suspension et pièces spécifiques",
+                  "symptomes": [
+                    "Claquement",
+                    "Usure irrégulière",
+                    "Rouille structurelle"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge et au climat.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, rotules, silentblocs et conduites de frein.",
+                  "piece_concernee": "Caisse, trains roulants et freinage",
+                  "gravite": "Modérée à critique selon corrosion",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Mira",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "gb",
+          "my",
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "as",
+          "eu",
+          "oc"
+        ],
+        "global_decile": 7
+      },
+      "generations": [
+        {
+          "code_chassis": "L500/L700/L250/L275",
+          "annees": "1994-2018",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "0.66 DVVT — 58 ch",
+              "code_moteur": "EF-VE/KF-VE",
+              "cylindree": "658 cm³",
+              "puissance_ch": 58,
+              "boite": [
+                "BVM5",
+                "BVA4",
+                "CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification et refroidissement du petit moteur",
+                  "symptomes": [
+                    "Consommation d’huile",
+                    "Cliquetis",
+                    "Température élevée"
+                  ],
+                  "kilometrage_apparition": "À surveiller dès 60 000 km, surtout avec intervalles d’huile longs.",
+                  "diagnostic": "Pression d’huile, compression, circuit de refroidissement et état des boues.",
+                  "piece_concernee": "Moteur EF/KF/JB, pompe à huile et refroidissement",
+                  "gravite": "Majeure",
+                  "frequence": "Dépend fortement de l’entretien",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Turbo et admission sur versions 64 ch",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Fumée bleue",
+                    "Sifflement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km ou usage urbain sévère.",
+                  "diagnostic": "Jeu du turbo, pression, durites, reniflard et consommation d’huile.",
+                  "piece_concernee": "Turbo, admission et ventilation du carter",
+                  "gravite": "Majeure",
+                  "frequence": "À surveiller sur versions turbo",
+                  "cout_reparation_estime": "Environ 500 à 2 000 €."
+                },
+                {
+                  "probleme": "CVT, roulements et corrosion",
+                  "symptomes": [
+                    "Patinage",
+                    "Bourdonnement",
+                    "À-coups"
+                  ],
+                  "kilometrage_apparition": "À contrôler après 60 000 km ou sans preuve de vidange.",
+                  "diagnostic": "Essai à chaud, état de l’huile CVT, roulements, freins et soubassements.",
+                  "piece_concernee": "CVT/BVA, moyeux, freinage et caisse",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 300 à 4 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "0.66 Turbo — 64 ch",
+              "code_moteur": "EF-DET/KF-VET",
+              "cylindree": "658 cm³",
+              "puissance_ch": 64,
+              "boite": [
+                "BVM5",
+                "CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification et refroidissement du petit moteur",
+                  "symptomes": [
+                    "Consommation d’huile",
+                    "Cliquetis",
+                    "Température élevée"
+                  ],
+                  "kilometrage_apparition": "À surveiller dès 60 000 km, surtout avec intervalles d’huile longs.",
+                  "diagnostic": "Pression d’huile, compression, circuit de refroidissement et état des boues.",
+                  "piece_concernee": "Moteur EF/KF/JB, pompe à huile et refroidissement",
+                  "gravite": "Majeure",
+                  "frequence": "Dépend fortement de l’entretien",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Turbo et admission sur versions 64 ch",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Fumée bleue",
+                    "Sifflement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km ou usage urbain sévère.",
+                  "diagnostic": "Jeu du turbo, pression, durites, reniflard et consommation d’huile.",
+                  "piece_concernee": "Turbo, admission et ventilation du carter",
+                  "gravite": "Majeure",
+                  "frequence": "À surveiller sur versions turbo",
+                  "cout_reparation_estime": "Environ 500 à 2 000 €."
+                },
+                {
+                  "probleme": "CVT, roulements et corrosion",
+                  "symptomes": [
+                    "Patinage",
+                    "Bourdonnement",
+                    "À-coups"
+                  ],
+                  "kilometrage_apparition": "À contrôler après 60 000 km ou sans preuve de vidange.",
+                  "diagnostic": "Essai à chaud, état de l’huile CVT, roulements, freins et soubassements.",
+                  "piece_concernee": "CVT/BVA, moyeux, freinage et caisse",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 300 à 4 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Move",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "fi",
+          "gb",
+          "my",
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "as",
+          "eu",
+          "oc"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "L600/L900/L150/L175/LA100/LA150",
+          "annees": "1995-2023",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "0.66 DVVT — 58 ch",
+              "code_moteur": "EF-VE/KF-VE",
+              "cylindree": "658 cm³",
+              "puissance_ch": 58,
+              "boite": [
+                "BVM5",
+                "BVA4",
+                "CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification et refroidissement du petit moteur",
+                  "symptomes": [
+                    "Consommation d’huile",
+                    "Cliquetis",
+                    "Température élevée"
+                  ],
+                  "kilometrage_apparition": "À surveiller dès 60 000 km, surtout avec intervalles d’huile longs.",
+                  "diagnostic": "Pression d’huile, compression, circuit de refroidissement et état des boues.",
+                  "piece_concernee": "Moteur EF/KF/JB, pompe à huile et refroidissement",
+                  "gravite": "Majeure",
+                  "frequence": "Dépend fortement de l’entretien",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Turbo et admission sur versions 64 ch",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Fumée bleue",
+                    "Sifflement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km ou usage urbain sévère.",
+                  "diagnostic": "Jeu du turbo, pression, durites, reniflard et consommation d’huile.",
+                  "piece_concernee": "Turbo, admission et ventilation du carter",
+                  "gravite": "Majeure",
+                  "frequence": "À surveiller sur versions turbo",
+                  "cout_reparation_estime": "Environ 500 à 2 000 €."
+                },
+                {
+                  "probleme": "CVT, roulements et corrosion",
+                  "symptomes": [
+                    "Patinage",
+                    "Bourdonnement",
+                    "À-coups"
+                  ],
+                  "kilometrage_apparition": "À contrôler après 60 000 km ou sans preuve de vidange.",
+                  "diagnostic": "Essai à chaud, état de l’huile CVT, roulements, freins et soubassements.",
+                  "piece_concernee": "CVT/BVA, moyeux, freinage et caisse",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 300 à 4 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "0.66 Turbo — 64 ch",
+              "code_moteur": "EF-DET/KF-VET",
+              "cylindree": "658 cm³",
+              "puissance_ch": 64,
+              "boite": [
+                "BVA4",
+                "CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification et refroidissement du petit moteur",
+                  "symptomes": [
+                    "Consommation d’huile",
+                    "Cliquetis",
+                    "Température élevée"
+                  ],
+                  "kilometrage_apparition": "À surveiller dès 60 000 km, surtout avec intervalles d’huile longs.",
+                  "diagnostic": "Pression d’huile, compression, circuit de refroidissement et état des boues.",
+                  "piece_concernee": "Moteur EF/KF/JB, pompe à huile et refroidissement",
+                  "gravite": "Majeure",
+                  "frequence": "Dépend fortement de l’entretien",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Turbo et admission sur versions 64 ch",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Fumée bleue",
+                    "Sifflement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km ou usage urbain sévère.",
+                  "diagnostic": "Jeu du turbo, pression, durites, reniflard et consommation d’huile.",
+                  "piece_concernee": "Turbo, admission et ventilation du carter",
+                  "gravite": "Majeure",
+                  "frequence": "À surveiller sur versions turbo",
+                  "cout_reparation_estime": "Environ 500 à 2 000 €."
+                },
+                {
+                  "probleme": "CVT, roulements et corrosion",
+                  "symptomes": [
+                    "Patinage",
+                    "Bourdonnement",
+                    "À-coups"
+                  ],
+                  "kilometrage_apparition": "À contrôler après 60 000 km ou sans preuve de vidange.",
+                  "diagnostic": "Essai à chaud, état de l’huile CVT, roulements, freins et soubassements.",
+                  "piece_concernee": "CVT/BVA, moyeux, freinage et caisse",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 300 à 4 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Sirion",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "es",
+          "fi",
+          "gb",
+          "lu",
+          "nl",
+          "nz",
+          "ua"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 4
+      },
+      "generations": [
+        {
+          "code_chassis": "M100/M300",
+          "annees": "1998-2015",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.0 DVVT — 69 ch",
+              "code_moteur": "EJ-VE/1KR-FE",
+              "cylindree": "998 cm³",
+              "puissance_ch": 69,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, joint de culasse et distribution",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou chaîne"
+                  ],
+                  "kilometrage_apparition": "À surveiller après 80 000 km et selon échéance de distribution.",
+                  "diagnostic": "Historique, mise sous pression, test CO₂, compression et inspection pompe à eau/thermostat.",
+                  "piece_concernee": "Distribution, culasse et circuit de refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru sans historique",
+                  "cout_reparation_estime": "Environ 400 à 2 500 €."
+                },
+                {
+                  "probleme": "Injection, allumage et commande DVVT",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km.",
+                  "diagnostic": "Lecture défauts, contrôle bougies/bobines, capteurs, pression carburant et électrovanne VVT.",
+                  "piece_concernee": "Allumage, injection, capteurs et distribution variable",
+                  "gravite": "Modérée",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, suspension et pièces spécifiques",
+                  "symptomes": [
+                    "Claquement",
+                    "Usure irrégulière",
+                    "Rouille structurelle"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge et au climat.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, rotules, silentblocs et conduites de frein.",
+                  "piece_concernee": "Caisse, trains roulants et freinage",
+                  "gravite": "Modérée à critique selon corrosion",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.3 DVVT — 87 ch",
+              "code_moteur": "K3-VE",
+              "cylindree": "1 298 cm³",
+              "puissance_ch": 87,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, joint de culasse et distribution",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou chaîne"
+                  ],
+                  "kilometrage_apparition": "À surveiller après 80 000 km et selon échéance de distribution.",
+                  "diagnostic": "Historique, mise sous pression, test CO₂, compression et inspection pompe à eau/thermostat.",
+                  "piece_concernee": "Distribution, culasse et circuit de refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru sans historique",
+                  "cout_reparation_estime": "Environ 400 à 2 500 €."
+                },
+                {
+                  "probleme": "Injection, allumage et commande DVVT",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km.",
+                  "diagnostic": "Lecture défauts, contrôle bougies/bobines, capteurs, pression carburant et électrovanne VVT.",
+                  "piece_concernee": "Allumage, injection, capteurs et distribution variable",
+                  "gravite": "Modérée",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, suspension et pièces spécifiques",
+                  "symptomes": [
+                    "Claquement",
+                    "Usure irrégulière",
+                    "Rouille structurelle"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge et au climat.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, rotules, silentblocs et conduites de frein.",
+                  "piece_concernee": "Caisse, trains roulants et freinage",
+                  "gravite": "Modérée à critique selon corrosion",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.5 DVVT — 103 ch",
+              "code_moteur": "3SZ-VE",
+              "cylindree": "1 495 cm³",
+              "puissance_ch": 103,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, joint de culasse et distribution",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou chaîne"
+                  ],
+                  "kilometrage_apparition": "À surveiller après 80 000 km et selon échéance de distribution.",
+                  "diagnostic": "Historique, mise sous pression, test CO₂, compression et inspection pompe à eau/thermostat.",
+                  "piece_concernee": "Distribution, culasse et circuit de refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru sans historique",
+                  "cout_reparation_estime": "Environ 400 à 2 500 €."
+                },
+                {
+                  "probleme": "Injection, allumage et commande DVVT",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km.",
+                  "diagnostic": "Lecture défauts, contrôle bougies/bobines, capteurs, pression carburant et électrovanne VVT.",
+                  "piece_concernee": "Allumage, injection, capteurs et distribution variable",
+                  "gravite": "Modérée",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, suspension et pièces spécifiques",
+                  "symptomes": [
+                    "Claquement",
+                    "Usure irrégulière",
+                    "Rouille structurelle"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge et au climat.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, rotules, silentblocs et conduites de frein.",
+                  "piece_concernee": "Caisse, trains roulants et freinage",
+                  "gravite": "Modérée à critique selon corrosion",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Taft",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "convertible",
+        "countries": [
+          "my",
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "as",
+          "eu",
+          "oc"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "F10/F20/F50 puis LA900",
+          "annees": "1974-1984 puis 2020-aujourd’hui",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.6 4x4 historique — 68 ch",
+              "code_moteur": "12R",
+              "cylindree": "1 587 cm³",
+              "puissance_ch": 68,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Transmission 4x4, transfert et ponts",
+                  "symptomes": [
+                    "Claquement",
+                    "Vibration",
+                    "Enclenchement 4x4 difficile"
+                  ],
+                  "kilometrage_apparition": "Variable selon usage hors route et entretien.",
+                  "diagnostic": "Contrôle huiles, croisillons, moyeux, transfert, ponts et pneus de dimensions identiques.",
+                  "piece_concernee": "Boîte, transfert, arbres et différentiels",
+                  "gravite": "Majeure",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 500 à 4 000 €."
+                },
+                {
+                  "probleme": "Refroidissement, culasse et turbo",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 km, plus tôt en usage sévère.",
+                  "diagnostic": "Mise sous pression, test CO₂, compression, injection et contrôle turbo.",
+                  "piece_concernee": "Moteur, culasse, radiateur et turbo",
+                  "gravite": "Majeure",
+                  "frequence": "Risque accru après surchauffe",
+                  "cout_reparation_estime": "Environ 600 à 4 000 €."
+                },
+                {
+                  "probleme": "Corrosion du châssis et trains roulants",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu de direction",
+                    "Freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge et des conditions climatiques.",
+                  "diagnostic": "Inspection du châssis, ancrages, conduites, rotules, roulements et freins.",
+                  "piece_concernee": "Châssis, suspension, direction et freinage",
+                  "gravite": "Critique si structure atteinte",
+                  "frequence": "À inspecter systématiquement",
+                  "cout_reparation_estime": "Environ 300 à plus de 6 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "2.5 Diesel 4x4 — 61 ch",
+              "code_moteur": "DG",
+              "cylindree": "2 530 cm³",
+              "puissance_ch": 61,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Transmission 4x4, transfert et ponts",
+                  "symptomes": [
+                    "Claquement",
+                    "Vibration",
+                    "Enclenchement 4x4 difficile"
+                  ],
+                  "kilometrage_apparition": "Variable selon usage hors route et entretien.",
+                  "diagnostic": "Contrôle huiles, croisillons, moyeux, transfert, ponts et pneus de dimensions identiques.",
+                  "piece_concernee": "Boîte, transfert, arbres et différentiels",
+                  "gravite": "Majeure",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 500 à 4 000 €."
+                },
+                {
+                  "probleme": "Refroidissement, culasse et turbo",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 km, plus tôt en usage sévère.",
+                  "diagnostic": "Mise sous pression, test CO₂, compression, injection et contrôle turbo.",
+                  "piece_concernee": "Moteur, culasse, radiateur et turbo",
+                  "gravite": "Majeure",
+                  "frequence": "Risque accru après surchauffe",
+                  "cout_reparation_estime": "Environ 600 à 4 000 €."
+                },
+                {
+                  "probleme": "Corrosion du châssis et trains roulants",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu de direction",
+                    "Freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge et des conditions climatiques.",
+                  "diagnostic": "Inspection du châssis, ancrages, conduites, rotules, roulements et freins.",
+                  "piece_concernee": "Châssis, suspension, direction et freinage",
+                  "gravite": "Critique si structure atteinte",
+                  "frequence": "À inspecter systématiquement",
+                  "cout_reparation_estime": "Environ 300 à plus de 6 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "0.66 DNGA — 52 ch",
+              "code_moteur": "KF-VE",
+              "cylindree": "658 cm³",
+              "puissance_ch": 52,
+              "boite": [
+                "CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Transmission 4x4, transfert et ponts",
+                  "symptomes": [
+                    "Claquement",
+                    "Vibration",
+                    "Enclenchement 4x4 difficile"
+                  ],
+                  "kilometrage_apparition": "Variable selon usage hors route et entretien.",
+                  "diagnostic": "Contrôle huiles, croisillons, moyeux, transfert, ponts et pneus de dimensions identiques.",
+                  "piece_concernee": "Boîte, transfert, arbres et différentiels",
+                  "gravite": "Majeure",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 500 à 4 000 €."
+                },
+                {
+                  "probleme": "Refroidissement, culasse et turbo",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 km, plus tôt en usage sévère.",
+                  "diagnostic": "Mise sous pression, test CO₂, compression, injection et contrôle turbo.",
+                  "piece_concernee": "Moteur, culasse, radiateur et turbo",
+                  "gravite": "Majeure",
+                  "frequence": "Risque accru après surchauffe",
+                  "cout_reparation_estime": "Environ 600 à 4 000 €."
+                },
+                {
+                  "probleme": "Corrosion du châssis et trains roulants",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu de direction",
+                    "Freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge et des conditions climatiques.",
+                  "diagnostic": "Inspection du châssis, ancrages, conduites, rotules, roulements et freins.",
+                  "piece_concernee": "Châssis, suspension, direction et freinage",
+                  "gravite": "Critique si structure atteinte",
+                  "frequence": "À inspecter systématiquement",
+                  "cout_reparation_estime": "Environ 300 à plus de 6 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "0.66 Turbo DNGA — 64 ch",
+              "code_moteur": "KF-VET",
+              "cylindree": "658 cm³",
+              "puissance_ch": 64,
+              "boite": [
+                "CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Transmission 4x4, transfert et ponts",
+                  "symptomes": [
+                    "Claquement",
+                    "Vibration",
+                    "Enclenchement 4x4 difficile"
+                  ],
+                  "kilometrage_apparition": "Variable selon usage hors route et entretien.",
+                  "diagnostic": "Contrôle huiles, croisillons, moyeux, transfert, ponts et pneus de dimensions identiques.",
+                  "piece_concernee": "Boîte, transfert, arbres et différentiels",
+                  "gravite": "Majeure",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 500 à 4 000 €."
+                },
+                {
+                  "probleme": "Refroidissement, culasse et turbo",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée",
+                    "Perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 km, plus tôt en usage sévère.",
+                  "diagnostic": "Mise sous pression, test CO₂, compression, injection et contrôle turbo.",
+                  "piece_concernee": "Moteur, culasse, radiateur et turbo",
+                  "gravite": "Majeure",
+                  "frequence": "Risque accru après surchauffe",
+                  "cout_reparation_estime": "Environ 600 à 4 000 €."
+                },
+                {
+                  "probleme": "Corrosion du châssis et trains roulants",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Jeu de direction",
+                    "Freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Dépend de l’âge et des conditions climatiques.",
+                  "diagnostic": "Inspection du châssis, ancrages, conduites, rotules, roulements et freins.",
+                  "piece_concernee": "Châssis, suspension, direction et freinage",
+                  "gravite": "Critique si structure atteinte",
+                  "frequence": "À inspecter systématiquement",
+                  "cout_reparation_estime": "Environ 300 à plus de 6 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Tanto",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "my",
+          "nz"
+        ],
+        "regions": [
+          "as",
+          "oc"
+        ],
+        "global_decile": 6
+      },
+      "generations": [
+        {
+          "code_chassis": "L350/L375/LA600/LA650",
+          "annees": "2003-aujourd’hui",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "0.66 DVVT — 52 ch",
+              "code_moteur": "EF-VE/KF-VE",
+              "cylindree": "658 cm³",
+              "puissance_ch": 52,
+              "boite": [
+                "BVA4",
+                "CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification et refroidissement du petit moteur",
+                  "symptomes": [
+                    "Consommation d’huile",
+                    "Cliquetis",
+                    "Température élevée"
+                  ],
+                  "kilometrage_apparition": "À surveiller dès 60 000 km, surtout avec intervalles d’huile longs.",
+                  "diagnostic": "Pression d’huile, compression, circuit de refroidissement et état des boues.",
+                  "piece_concernee": "Moteur EF/KF/JB, pompe à huile et refroidissement",
+                  "gravite": "Majeure",
+                  "frequence": "Dépend fortement de l’entretien",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Turbo et admission sur versions 64 ch",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Fumée bleue",
+                    "Sifflement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km ou usage urbain sévère.",
+                  "diagnostic": "Jeu du turbo, pression, durites, reniflard et consommation d’huile.",
+                  "piece_concernee": "Turbo, admission et ventilation du carter",
+                  "gravite": "Majeure",
+                  "frequence": "À surveiller sur versions turbo",
+                  "cout_reparation_estime": "Environ 500 à 2 000 €."
+                },
+                {
+                  "probleme": "CVT, roulements et corrosion",
+                  "symptomes": [
+                    "Patinage",
+                    "Bourdonnement",
+                    "À-coups"
+                  ],
+                  "kilometrage_apparition": "À contrôler après 60 000 km ou sans preuve de vidange.",
+                  "diagnostic": "Essai à chaud, état de l’huile CVT, roulements, freins et soubassements.",
+                  "piece_concernee": "CVT/BVA, moyeux, freinage et caisse",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 300 à 4 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "0.66 Turbo — 64 ch",
+              "code_moteur": "EF-DET/KF-VET",
+              "cylindree": "658 cm³",
+              "puissance_ch": 64,
+              "boite": [
+                "BVA4",
+                "CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification et refroidissement du petit moteur",
+                  "symptomes": [
+                    "Consommation d’huile",
+                    "Cliquetis",
+                    "Température élevée"
+                  ],
+                  "kilometrage_apparition": "À surveiller dès 60 000 km, surtout avec intervalles d’huile longs.",
+                  "diagnostic": "Pression d’huile, compression, circuit de refroidissement et état des boues.",
+                  "piece_concernee": "Moteur EF/KF/JB, pompe à huile et refroidissement",
+                  "gravite": "Majeure",
+                  "frequence": "Dépend fortement de l’entretien",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Turbo et admission sur versions 64 ch",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Fumée bleue",
+                    "Sifflement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km ou usage urbain sévère.",
+                  "diagnostic": "Jeu du turbo, pression, durites, reniflard et consommation d’huile.",
+                  "piece_concernee": "Turbo, admission et ventilation du carter",
+                  "gravite": "Majeure",
+                  "frequence": "À surveiller sur versions turbo",
+                  "cout_reparation_estime": "Environ 500 à 2 000 €."
+                },
+                {
+                  "probleme": "CVT, roulements et corrosion",
+                  "symptomes": [
+                    "Patinage",
+                    "Bourdonnement",
+                    "À-coups"
+                  ],
+                  "kilometrage_apparition": "À contrôler après 60 000 km ou sans preuve de vidange.",
+                  "diagnostic": "Essai à chaud, état de l’huile CVT, roulements, freins et soubassements.",
+                  "piece_concernee": "CVT/BVA, moyeux, freinage et caisse",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 300 à 4 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Thor",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "my",
+          "nz"
+        ],
+        "regions": [
+          "as",
+          "oc"
+        ],
+        "global_decile": 8
+      },
+      "generations": [
+        {
+          "code_chassis": "M900/M910",
+          "annees": "2016-aujourd’hui",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.0 DVVT — 69 ch",
+              "code_moteur": "1KR-FE",
+              "cylindree": "996 cm³",
+              "puissance_ch": 69,
+              "boite": [
+                "CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, joint de culasse et distribution",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou chaîne"
+                  ],
+                  "kilometrage_apparition": "À surveiller après 80 000 km et selon échéance de distribution.",
+                  "diagnostic": "Historique, mise sous pression, test CO₂, compression et inspection pompe à eau/thermostat.",
+                  "piece_concernee": "Distribution, culasse et circuit de refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru sans historique",
+                  "cout_reparation_estime": "Environ 400 à 2 500 €."
+                },
+                {
+                  "probleme": "Injection, allumage et commande DVVT",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km.",
+                  "diagnostic": "Lecture défauts, contrôle bougies/bobines, capteurs, pression carburant et électrovanne VVT.",
+                  "piece_concernee": "Allumage, injection, capteurs et distribution variable",
+                  "gravite": "Modérée",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, suspension et pièces spécifiques",
+                  "symptomes": [
+                    "Claquement",
+                    "Usure irrégulière",
+                    "Rouille structurelle"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge et au climat.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, rotules, silentblocs et conduites de frein.",
+                  "piece_concernee": "Caisse, trains roulants et freinage",
+                  "gravite": "Modérée à critique selon corrosion",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.0 Turbo — 98 ch",
+              "code_moteur": "1KR-VET",
+              "cylindree": "996 cm³",
+              "puissance_ch": 98,
+              "boite": [
+                "CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, joint de culasse et distribution",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou chaîne"
+                  ],
+                  "kilometrage_apparition": "À surveiller après 80 000 km et selon échéance de distribution.",
+                  "diagnostic": "Historique, mise sous pression, test CO₂, compression et inspection pompe à eau/thermostat.",
+                  "piece_concernee": "Distribution, culasse et circuit de refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru sans historique",
+                  "cout_reparation_estime": "Environ 400 à 2 500 €."
+                },
+                {
+                  "probleme": "Injection, allumage et commande DVVT",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km.",
+                  "diagnostic": "Lecture défauts, contrôle bougies/bobines, capteurs, pression carburant et électrovanne VVT.",
+                  "piece_concernee": "Allumage, injection, capteurs et distribution variable",
+                  "gravite": "Modérée",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, suspension et pièces spécifiques",
+                  "symptomes": [
+                    "Claquement",
+                    "Usure irrégulière",
+                    "Rouille structurelle"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge et au climat.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, rotules, silentblocs et conduites de frein.",
+                  "piece_concernee": "Caisse, trains roulants et freinage",
+                  "gravite": "Modérée à critique selon corrosion",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Trevis",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "es",
+          "nl",
+          "ua"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "L650",
+          "annees": "2004-2011",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.0 DVVT — 58 ch",
+              "code_moteur": "EJ-VE",
+              "cylindree": "989 cm³",
+              "puissance_ch": 58,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification et refroidissement du petit moteur",
+                  "symptomes": [
+                    "Consommation d’huile",
+                    "Cliquetis",
+                    "Température élevée"
+                  ],
+                  "kilometrage_apparition": "À surveiller dès 60 000 km, surtout avec intervalles d’huile longs.",
+                  "diagnostic": "Pression d’huile, compression, circuit de refroidissement et état des boues.",
+                  "piece_concernee": "Moteur EF/KF/JB, pompe à huile et refroidissement",
+                  "gravite": "Majeure",
+                  "frequence": "Dépend fortement de l’entretien",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Turbo et admission sur versions 64 ch",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Fumée bleue",
+                    "Sifflement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km ou usage urbain sévère.",
+                  "diagnostic": "Jeu du turbo, pression, durites, reniflard et consommation d’huile.",
+                  "piece_concernee": "Turbo, admission et ventilation du carter",
+                  "gravite": "Majeure",
+                  "frequence": "À surveiller sur versions turbo",
+                  "cout_reparation_estime": "Environ 500 à 2 000 €."
+                },
+                {
+                  "probleme": "CVT, roulements et corrosion",
+                  "symptomes": [
+                    "Patinage",
+                    "Bourdonnement",
+                    "À-coups"
+                  ],
+                  "kilometrage_apparition": "À contrôler après 60 000 km ou sans preuve de vidange.",
+                  "diagnostic": "Essai à chaud, état de l’huile CVT, roulements, freins et soubassements.",
+                  "piece_concernee": "CVT/BVA, moyeux, freinage et caisse",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 300 à 4 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Wake",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "my",
+          "nz"
+        ],
+        "regions": [
+          "as",
+          "oc"
+        ],
+        "global_decile": 9
+      },
+      "generations": [
+        {
+          "code_chassis": "LA700/LA710",
+          "annees": "2014-2022",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "0.66 DVVT — 52 ch",
+              "code_moteur": "KF-VE",
+              "cylindree": "658 cm³",
+              "puissance_ch": 52,
+              "boite": [
+                "CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification et refroidissement du petit moteur",
+                  "symptomes": [
+                    "Consommation d’huile",
+                    "Cliquetis",
+                    "Température élevée"
+                  ],
+                  "kilometrage_apparition": "À surveiller dès 60 000 km, surtout avec intervalles d’huile longs.",
+                  "diagnostic": "Pression d’huile, compression, circuit de refroidissement et état des boues.",
+                  "piece_concernee": "Moteur EF/KF/JB, pompe à huile et refroidissement",
+                  "gravite": "Majeure",
+                  "frequence": "Dépend fortement de l’entretien",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Turbo et admission sur versions 64 ch",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Fumée bleue",
+                    "Sifflement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km ou usage urbain sévère.",
+                  "diagnostic": "Jeu du turbo, pression, durites, reniflard et consommation d’huile.",
+                  "piece_concernee": "Turbo, admission et ventilation du carter",
+                  "gravite": "Majeure",
+                  "frequence": "À surveiller sur versions turbo",
+                  "cout_reparation_estime": "Environ 500 à 2 000 €."
+                },
+                {
+                  "probleme": "CVT, roulements et corrosion",
+                  "symptomes": [
+                    "Patinage",
+                    "Bourdonnement",
+                    "À-coups"
+                  ],
+                  "kilometrage_apparition": "À contrôler après 60 000 km ou sans preuve de vidange.",
+                  "diagnostic": "Essai à chaud, état de l’huile CVT, roulements, freins et soubassements.",
+                  "piece_concernee": "CVT/BVA, moyeux, freinage et caisse",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 300 à 4 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "0.66 Turbo — 64 ch",
+              "code_moteur": "KF-VET",
+              "cylindree": "658 cm³",
+              "puissance_ch": 64,
+              "boite": [
+                "CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification et refroidissement du petit moteur",
+                  "symptomes": [
+                    "Consommation d’huile",
+                    "Cliquetis",
+                    "Température élevée"
+                  ],
+                  "kilometrage_apparition": "À surveiller dès 60 000 km, surtout avec intervalles d’huile longs.",
+                  "diagnostic": "Pression d’huile, compression, circuit de refroidissement et état des boues.",
+                  "piece_concernee": "Moteur EF/KF/JB, pompe à huile et refroidissement",
+                  "gravite": "Majeure",
+                  "frequence": "Dépend fortement de l’entretien",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Turbo et admission sur versions 64 ch",
+                  "symptomes": [
+                    "Perte de puissance",
+                    "Fumée bleue",
+                    "Sifflement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km ou usage urbain sévère.",
+                  "diagnostic": "Jeu du turbo, pression, durites, reniflard et consommation d’huile.",
+                  "piece_concernee": "Turbo, admission et ventilation du carter",
+                  "gravite": "Majeure",
+                  "frequence": "À surveiller sur versions turbo",
+                  "cout_reparation_estime": "Environ 500 à 2 000 €."
+                },
+                {
+                  "probleme": "CVT, roulements et corrosion",
+                  "symptomes": [
+                    "Patinage",
+                    "Bourdonnement",
+                    "À-coups"
+                  ],
+                  "kilometrage_apparition": "À contrôler après 60 000 km ou sans preuve de vidange.",
+                  "diagnostic": "Essai à chaud, état de l’huile CVT, roulements, freins et soubassements.",
+                  "piece_concernee": "CVT/BVA, moyeux, freinage et caisse",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 300 à 4 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Yrv",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "fi",
+          "gb",
+          "nl",
+          "nz",
+          "ua"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "M200/M201/M211",
+          "annees": "2000-2005",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.0 DVVT — 64 ch",
+              "code_moteur": "EJ-VE",
+              "cylindree": "989 cm³",
+              "puissance_ch": 64,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, joint de culasse et distribution",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou chaîne"
+                  ],
+                  "kilometrage_apparition": "À surveiller après 80 000 km et selon échéance de distribution.",
+                  "diagnostic": "Historique, mise sous pression, test CO₂, compression et inspection pompe à eau/thermostat.",
+                  "piece_concernee": "Distribution, culasse et circuit de refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru sans historique",
+                  "cout_reparation_estime": "Environ 400 à 2 500 €."
+                },
+                {
+                  "probleme": "Injection, allumage et commande DVVT",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km.",
+                  "diagnostic": "Lecture défauts, contrôle bougies/bobines, capteurs, pression carburant et électrovanne VVT.",
+                  "piece_concernee": "Allumage, injection, capteurs et distribution variable",
+                  "gravite": "Modérée",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, suspension et pièces spécifiques",
+                  "symptomes": [
+                    "Claquement",
+                    "Usure irrégulière",
+                    "Rouille structurelle"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge et au climat.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, rotules, silentblocs et conduites de frein.",
+                  "piece_concernee": "Caisse, trains roulants et freinage",
+                  "gravite": "Modérée à critique selon corrosion",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.3 DVVT — 87 ch",
+              "code_moteur": "K3-VE",
+              "cylindree": "1 298 cm³",
+              "puissance_ch": 87,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, joint de culasse et distribution",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou chaîne"
+                  ],
+                  "kilometrage_apparition": "À surveiller après 80 000 km et selon échéance de distribution.",
+                  "diagnostic": "Historique, mise sous pression, test CO₂, compression et inspection pompe à eau/thermostat.",
+                  "piece_concernee": "Distribution, culasse et circuit de refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru sans historique",
+                  "cout_reparation_estime": "Environ 400 à 2 500 €."
+                },
+                {
+                  "probleme": "Injection, allumage et commande DVVT",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km.",
+                  "diagnostic": "Lecture défauts, contrôle bougies/bobines, capteurs, pression carburant et électrovanne VVT.",
+                  "piece_concernee": "Allumage, injection, capteurs et distribution variable",
+                  "gravite": "Modérée",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, suspension et pièces spécifiques",
+                  "symptomes": [
+                    "Claquement",
+                    "Usure irrégulière",
+                    "Rouille structurelle"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge et au climat.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, rotules, silentblocs et conduites de frein.",
+                  "piece_concernee": "Caisse, trains roulants et freinage",
+                  "gravite": "Modérée à critique selon corrosion",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.3 Turbo — 129 ch",
+              "code_moteur": "K3-VET",
+              "cylindree": "1 298 cm³",
+              "puissance_ch": 129,
+              "boite": [
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, joint de culasse et distribution",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Bruit de courroie ou chaîne"
+                  ],
+                  "kilometrage_apparition": "À surveiller après 80 000 km et selon échéance de distribution.",
+                  "diagnostic": "Historique, mise sous pression, test CO₂, compression et inspection pompe à eau/thermostat.",
+                  "piece_concernee": "Distribution, culasse et circuit de refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque accru sans historique",
+                  "cout_reparation_estime": "Environ 400 à 2 500 €."
+                },
+                {
+                  "probleme": "Injection, allumage et commande DVVT",
+                  "symptomes": [
+                    "Ralenti instable",
+                    "Ratés",
+                    "Voyant moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km.",
+                  "diagnostic": "Lecture défauts, contrôle bougies/bobines, capteurs, pression carburant et électrovanne VVT.",
+                  "piece_concernee": "Allumage, injection, capteurs et distribution variable",
+                  "gravite": "Modérée",
+                  "frequence": "Variable selon entretien",
+                  "cout_reparation_estime": "Environ 100 à 1 200 €."
+                },
+                {
+                  "probleme": "Corrosion, suspension et pièces spécifiques",
+                  "symptomes": [
+                    "Claquement",
+                    "Usure irrégulière",
+                    "Rouille structurelle"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge et au climat.",
+                  "diagnostic": "Inspection sur pont des bas de caisse, berceaux, rotules, silentblocs et conduites de frein.",
+                  "piece_concernee": "Caisse, trains roulants et freinage",
+                  "gravite": "Modérée à critique selon corrosion",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 200 à 4 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Extol",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "van",
+        "body_type": null,
+        "countries": [
+          "gb"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 4
+      },
+      "generations": [
+        {
+          "code_chassis": "S221/S231",
+          "annees": "2000-2017",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.3 DVVT — 90 ch",
+              "code_moteur": "K3-VE",
+              "cylindree": "1 298 cm³",
+              "puissance_ch": 90,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification et refroidissement du petit moteur",
+                  "symptomes": [
+                    "Consommation d’huile",
+                    "Cliquetis",
+                    "Température élevée"
+                  ],
+                  "kilometrage_apparition": "À surveiller dès 60 000 km, surtout avec intervalles d’huile longs.",
+                  "diagnostic": "Pression d’huile, compression, circuit de refroidissement et état des boues.",
+                  "piece_concernee": "Moteur EF/KF/JB, pompe à huile et refroidissement",
+                  "gravite": "Majeure",
+                  "frequence": "Dépend fortement de l’entretien",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Charge, embrayage et transmission",
+                  "symptomes": [
+                    "Patinage",
+                    "Bruit de pont",
+                    "Vibration en charge"
+                  ],
+                  "kilometrage_apparition": "Variable selon charge et usage professionnel.",
+                  "diagnostic": "Essai chargé, contrôle embrayage, boîte, arbre, pont et roulements.",
+                  "piece_concernee": "Embrayage, boîte et pont arrière",
+                  "gravite": "Majeure",
+                  "frequence": "Usure liée à l’exploitation",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Corrosion de cabine/châssis et freinage",
+                  "symptomes": [
+                    "Rouille",
+                    "Tirage au freinage",
+                    "Jeu"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge et au stockage.",
+                  "diagnostic": "Inspection sur pont, ancrages, conduites, freins et suspension.",
+                  "piece_concernee": "Châssis, caisse, suspension et freins",
+                  "gravite": "Majeure à critique",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 300 à 5 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Hi-Jet",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "van",
+        "body_type": null,
+        "countries": [
+          "fi",
+          "gb",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 4
+      },
+      "generations": [
+        {
+          "code_chassis": "S100/S200/S300/S500",
+          "annees": "1994-aujourd’hui",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "0.66 utilitaire — 53 ch",
+              "code_moteur": "EF-SE/KF-VE",
+              "cylindree": "658 cm³",
+              "puissance_ch": 53,
+              "boite": [
+                "BVM5",
+                "BVA4",
+                "CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification et refroidissement du petit moteur",
+                  "symptomes": [
+                    "Consommation d’huile",
+                    "Cliquetis",
+                    "Température élevée"
+                  ],
+                  "kilometrage_apparition": "À surveiller dès 60 000 km, surtout avec intervalles d’huile longs.",
+                  "diagnostic": "Pression d’huile, compression, circuit de refroidissement et état des boues.",
+                  "piece_concernee": "Moteur EF/KF/JB, pompe à huile et refroidissement",
+                  "gravite": "Majeure",
+                  "frequence": "Dépend fortement de l’entretien",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Charge, embrayage et transmission",
+                  "symptomes": [
+                    "Patinage",
+                    "Bruit de pont",
+                    "Vibration en charge"
+                  ],
+                  "kilometrage_apparition": "Variable selon charge et usage professionnel.",
+                  "diagnostic": "Essai chargé, contrôle embrayage, boîte, arbre, pont et roulements.",
+                  "piece_concernee": "Embrayage, boîte et pont arrière",
+                  "gravite": "Majeure",
+                  "frequence": "Usure liée à l’exploitation",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Corrosion de cabine/châssis et freinage",
+                  "symptomes": [
+                    "Rouille",
+                    "Tirage au freinage",
+                    "Jeu"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge et au stockage.",
+                  "diagnostic": "Inspection sur pont, ancrages, conduites, freins et suspension.",
+                  "piece_concernee": "Châssis, caisse, suspension et freins",
+                  "gravite": "Majeure à critique",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 300 à 5 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "0.66 Turbo utilitaire — 64 ch",
+              "code_moteur": "EF-DET/KF-VET",
+              "cylindree": "658 cm³",
+              "puissance_ch": 64,
+              "boite": [
+                "BVM5",
+                "BVA4",
+                "CVT"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification et refroidissement du petit moteur",
+                  "symptomes": [
+                    "Consommation d’huile",
+                    "Cliquetis",
+                    "Température élevée"
+                  ],
+                  "kilometrage_apparition": "À surveiller dès 60 000 km, surtout avec intervalles d’huile longs.",
+                  "diagnostic": "Pression d’huile, compression, circuit de refroidissement et état des boues.",
+                  "piece_concernee": "Moteur EF/KF/JB, pompe à huile et refroidissement",
+                  "gravite": "Majeure",
+                  "frequence": "Dépend fortement de l’entretien",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Charge, embrayage et transmission",
+                  "symptomes": [
+                    "Patinage",
+                    "Bruit de pont",
+                    "Vibration en charge"
+                  ],
+                  "kilometrage_apparition": "Variable selon charge et usage professionnel.",
+                  "diagnostic": "Essai chargé, contrôle embrayage, boîte, arbre, pont et roulements.",
+                  "piece_concernee": "Embrayage, boîte et pont arrière",
+                  "gravite": "Majeure",
+                  "frequence": "Usure liée à l’exploitation",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Corrosion de cabine/châssis et freinage",
+                  "symptomes": [
+                    "Rouille",
+                    "Tirage au freinage",
+                    "Jeu"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge et au stockage.",
+                  "diagnostic": "Inspection sur pont, ancrages, conduites, freins et suspension.",
+                  "piece_concernee": "Châssis, caisse, suspension et freins",
+                  "gravite": "Majeure à critique",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 300 à 5 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "1.3 export — 90 ch",
+              "code_moteur": "K3-VE",
+              "cylindree": "1 298 cm³",
+              "puissance_ch": 90,
+              "boite": [
+                "BVM5",
+                "BVA4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification et refroidissement du petit moteur",
+                  "symptomes": [
+                    "Consommation d’huile",
+                    "Cliquetis",
+                    "Température élevée"
+                  ],
+                  "kilometrage_apparition": "À surveiller dès 60 000 km, surtout avec intervalles d’huile longs.",
+                  "diagnostic": "Pression d’huile, compression, circuit de refroidissement et état des boues.",
+                  "piece_concernee": "Moteur EF/KF/JB, pompe à huile et refroidissement",
+                  "gravite": "Majeure",
+                  "frequence": "Dépend fortement de l’entretien",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Charge, embrayage et transmission",
+                  "symptomes": [
+                    "Patinage",
+                    "Bruit de pont",
+                    "Vibration en charge"
+                  ],
+                  "kilometrage_apparition": "Variable selon charge et usage professionnel.",
+                  "diagnostic": "Essai chargé, contrôle embrayage, boîte, arbre, pont et roulements.",
+                  "piece_concernee": "Embrayage, boîte et pont arrière",
+                  "gravite": "Majeure",
+                  "frequence": "Usure liée à l’exploitation",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Corrosion de cabine/châssis et freinage",
+                  "symptomes": [
+                    "Rouille",
+                    "Tirage au freinage",
+                    "Jeu"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge et au stockage.",
+                  "diagnostic": "Inspection sur pont, ancrages, conduites, freins et suspension.",
+                  "piece_concernee": "Châssis, caisse, suspension et freins",
+                  "gravite": "Majeure à critique",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 300 à 5 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Midget",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "van",
+        "body_type": null,
+        "countries": [
+          "gb",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 8
+      },
+      "generations": [
+        {
+          "code_chassis": "DK/MP puis K100P",
+          "annees": "1957-1972 puis 1996-2001",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "0.25 deux-temps Midget I — 12 ch",
+              "code_moteur": "ZA",
+              "cylindree": "249 cm³",
+              "puissance_ch": 12,
+              "boite": [
+                "BVM3"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification et refroidissement du petit moteur",
+                  "symptomes": [
+                    "Consommation d’huile",
+                    "Cliquetis",
+                    "Température élevée"
+                  ],
+                  "kilometrage_apparition": "À surveiller dès 60 000 km, surtout avec intervalles d’huile longs.",
+                  "diagnostic": "Pression d’huile, compression, circuit de refroidissement et état des boues.",
+                  "piece_concernee": "Moteur EF/KF/JB, pompe à huile et refroidissement",
+                  "gravite": "Majeure",
+                  "frequence": "Dépend fortement de l’entretien",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Charge, embrayage et transmission",
+                  "symptomes": [
+                    "Patinage",
+                    "Bruit de pont",
+                    "Vibration en charge"
+                  ],
+                  "kilometrage_apparition": "Variable selon charge et usage professionnel.",
+                  "diagnostic": "Essai chargé, contrôle embrayage, boîte, arbre, pont et roulements.",
+                  "piece_concernee": "Embrayage, boîte et pont arrière",
+                  "gravite": "Majeure",
+                  "frequence": "Usure liée à l’exploitation",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Corrosion de cabine/châssis et freinage",
+                  "symptomes": [
+                    "Rouille",
+                    "Tirage au freinage",
+                    "Jeu"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge et au stockage.",
+                  "diagnostic": "Inspection sur pont, ancrages, conduites, freins et suspension.",
+                  "piece_concernee": "Châssis, caisse, suspension et freins",
+                  "gravite": "Majeure à critique",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 300 à 5 000 €."
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "0.66 Midget II — 31 ch",
+              "code_moteur": "EF-CK",
+              "cylindree": "659 cm³",
+              "puissance_ch": 31,
+              "boite": [
+                "BVM4",
+                "BVA3"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification et refroidissement du petit moteur",
+                  "symptomes": [
+                    "Consommation d’huile",
+                    "Cliquetis",
+                    "Température élevée"
+                  ],
+                  "kilometrage_apparition": "À surveiller dès 60 000 km, surtout avec intervalles d’huile longs.",
+                  "diagnostic": "Pression d’huile, compression, circuit de refroidissement et état des boues.",
+                  "piece_concernee": "Moteur EF/KF/JB, pompe à huile et refroidissement",
+                  "gravite": "Majeure",
+                  "frequence": "Dépend fortement de l’entretien",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Charge, embrayage et transmission",
+                  "symptomes": [
+                    "Patinage",
+                    "Bruit de pont",
+                    "Vibration en charge"
+                  ],
+                  "kilometrage_apparition": "Variable selon charge et usage professionnel.",
+                  "diagnostic": "Essai chargé, contrôle embrayage, boîte, arbre, pont et roulements.",
+                  "piece_concernee": "Embrayage, boîte et pont arrière",
+                  "gravite": "Majeure",
+                  "frequence": "Usure liée à l’exploitation",
+                  "cout_reparation_estime": "Environ 300 à 3 000 €."
+                },
+                {
+                  "probleme": "Corrosion de cabine/châssis et freinage",
+                  "symptomes": [
+                    "Rouille",
+                    "Tirage au freinage",
+                    "Jeu"
+                  ],
+                  "kilometrage_apparition": "Lié à l’âge et au stockage.",
+                  "diagnostic": "Inspection sur pont, ancrages, conduites, freins et suspension.",
+                  "piece_concernee": "Châssis, caisse, suspension et freins",
+                  "gravite": "Majeure à critique",
+                  "frequence": "À contrôler avant achat",
+                  "cout_reparation_estime": "Environ 300 à 5 000 €."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

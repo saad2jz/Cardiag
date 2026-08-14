@@ -1,0 +1,2972 @@
+[
+  {
+    "marque": "Aston Martin",
+    "modeles": [
+      {
+        "nom": "DB4",
+        "generations": [
+          {
+            "code_chassis": "DB4",
+            "annees": "1958-1963",
+            "phases": [
+              "Series 1 (1958-1960)",
+              "Series 2 (1960-1961)",
+              "Series 3 (1961-1962)",
+              "Series 4 (1962)",
+              "Series 5 (1962-1963)",
+              "DB4 GT (1959-1963)",
+              "DB4 GT Zagato (1960-1963)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "DB4 3.7L - 240ch",
+                "code_moteur": "Tadek Marek 6 cylindres alu",
+                "cylindree": "3.7L",
+                "puissance_ch": 240,
+                "boite": [
+                  "BVM4"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Corrosion électrolytique du bloc et de la culasse en aluminium",
+                    "symptomes": [
+                      "Perte de puissance progressive",
+                      "Chauffage habitacle défaillant",
+                      "Fuite interne de liquide de refroidissement dans les chemises sans fuite externe visible",
+                      "Surchauffe localisée récurrente"
+                    ],
+                    "kilometrage_apparition": "Aucun seuil kilométrique fiable ; dépend presque exclusivement de la fréquence de renouvellement du liquide de refroidissement",
+                    "diagnostic": "Analyse chimique du liquide de refroidissement, test de compression cylindre par cylindre, endoscopie des chemises en cas de doute",
+                    "piece_concernee": "Bloc-cylindres et culasse aluminium",
+                    "gravite": "Majeure (dépose complète du bloc nécessaire)",
+                    "frequence": "Fréquent sur exemplaires non restaurés en profondeur",
+                    "cout_reparation_estime": "Très élevé (plusieurs milliers d'euros)"
+                  },
+                  {
+                    "probleme": "Dérèglage des carburateurs SU triples",
+                    "symptomes": [
+                      "Ralenti instable",
+                      "À-coups en reprise",
+                      "Surconsommation",
+                      "Noyage ou manque d'essence par pointeau de cuve usé"
+                    ],
+                    "kilometrage_apparition": "Resynchronisation nécessaire tous les 5 000 à 10 000 km",
+                    "diagnostic": "Contrôle au manomètre de dépression sur chaque corps de carburateur",
+                    "piece_concernee": "Alimentation carburant (carburateurs SU)",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Faible à modéré"
+                  },
+                  {
+                    "probleme": "Étirement de la chaîne de distribution double détendeur",
+                    "symptomes": [
+                      "Bruit de cliquetis métallique au ralenti moteur froid"
+                    ],
+                    "kilometrage_apparition": "Progressif, sans seuil précis documenté",
+                    "diagnostic": "Écoute au stéthoscope mécanique côté distribution",
+                    "piece_concernee": "Chaîne et tendeurs de distribution",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Corrosion du châssis en treillis tubulaire sous carrosserie Superleggera",
+                    "symptomes": [
+                      "Invisible sous les panneaux d'aluminium",
+                      "Flexion anormale de la caisse",
+                      "Jeu de portière qui s'accentue"
+                    ],
+                    "kilometrage_apparition": "Dépend entièrement de l'historique du véhicule",
+                    "diagnostic": "Inspection par endoscopie, dépose de panneaux, sondage par un spécialiste",
+                    "piece_concernee": "Châssis tubulaire structurel",
+                    "gravite": "Critique",
+                    "frequence": "Fréquent sur exemplaires non restaurés",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Corrosion électrolytique aux jonctions acier/aluminium",
+                    "symptomes": [
+                      "Cloquage de peinture localisé",
+                      "Délaminage progressif"
+                    ],
+                    "kilometrage_apparition": "S'accélère avec l'âge et l'humidité",
+                    "diagnostic": "Examen visuel rapproché, test au marteau à sonder",
+                    "piece_concernee": "Carrosserie aluminium / fixations",
+                    "gravite": "Modérée à majeure",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré à élevé"
+                  },
+                  {
+                    "probleme": "Synchro de 2e fragile sur la boîte David Brown",
+                    "symptomes": [
+                      "Craquement métallique au rétrogradage en 2e"
+                    ],
+                    "kilometrage_apparition": "Accéléré par un grade d'huile inadapté",
+                    "diagnostic": "Test routier, contrôle du grade d'huile",
+                    "piece_concernee": "Boîte de vitesses manuelle",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Corrosion interne des étriers de frein Dunlop",
+                    "symptomes": [
+                      "Grippage partiel",
+                      "Freinage qui tire d'un côté"
+                    ],
+                    "kilometrage_apparition": "Fréquente sur véhicules peu roulés",
+                    "diagnostic": "Test de roulage à vide, contrôle de la purge",
+                    "piece_concernee": "Système de freinage",
+                    "gravite": "Majeure (sécurité)",
+                    "frequence": "Fréquent sur véhicules peu utilisés",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Oxydation du faisceau électrique Lucas d'époque",
+                    "symptomes": [
+                      "Pannes intermittentes d'éclairage",
+                      "Jauge de carburant erratique",
+                      "Dynamo qui ne charge plus"
+                    ],
+                    "kilometrage_apparition": "Progressif avec l'âge des connexions",
+                    "diagnostic": "Contrôle de la charge à l'ampèremètre, test de continuité",
+                    "piece_concernee": "Faisceau électrique",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré à élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "DB5",
+        "generations": [
+          {
+            "code_chassis": "DB5",
+            "annees": "1963-1965",
+            "phases": [
+              "Saloon (1963-1965)",
+              "Convertible (1963-1965)",
+              "DB5 Vantage (1964-1965)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "DB5 4.0L - 282ch (Vantage)",
+                "code_moteur": "Tadek Marek 6 cylindres alu 4.0L",
+                "cylindree": "4.0L",
+                "puissance_ch": 282,
+                "boite": [
+                  "BVM4",
+                  "BVM5 (ZF, en option tardive)",
+                  "BVA3 (Borg-Warner)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Corrosion structurelle du châssis Superleggera",
+                    "symptomes": [
+                      "Flexion de caisse",
+                      "Jeux de portière anormaux"
+                    ],
+                    "kilometrage_apparition": "Selon historique du véhicule",
+                    "diagnostic": "Inspection par endoscopie ou dépose de panneaux",
+                    "piece_concernee": "Châssis tubulaire",
+                    "gravite": "Critique",
+                    "frequence": "Fréquent sur exemplaires non restaurés",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Surchauffe due à un radiateur entartré ou pompe à eau usée",
+                    "symptomes": [
+                      "Montée en température progressive",
+                      "Voilage de culasse en phase avancée"
+                    ],
+                    "kilometrage_apparition": "Risque accru après 30-40 ans sans remplacement",
+                    "diagnostic": "Test de pression du circuit, test de compression",
+                    "piece_concernee": "Circuit de refroidissement / culasse",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel à fréquent",
+                    "cout_reparation_estime": "Élevé si culasse voilée"
+                  },
+                  {
+                    "probleme": "Déréglage des triples carburateurs SU (Vantage)",
+                    "symptomes": [
+                      "Manque de reprise",
+                      "Encrassement des bougies"
+                    ],
+                    "kilometrage_apparition": "Resynchronisation saisonnière nécessaire",
+                    "diagnostic": "Réglage au manomètre",
+                    "piece_concernee": "Alimentation carburant",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Faible à modéré"
+                  },
+                  {
+                    "probleme": "Rareté des pièces de la boîte ZF 5 rapports",
+                    "symptomes": [
+                      "Immobilisation prolongée en cas de casse de synchro"
+                    ],
+                    "kilometrage_apparition": "Aléatoire",
+                    "diagnostic": "Contrôle du passage de chaque rapport",
+                    "piece_concernee": "Boîte manuelle ZF",
+                    "gravite": "Majeure (disponibilité)",
+                    "frequence": "Rare mais pénalisant",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Fissuration de l'isolant du faisceau Lucas",
+                    "symptomes": [
+                      "Risque de court-circuit",
+                      "Départ de feu localisé"
+                    ],
+                    "kilometrage_apparition": "Quasi systématique sur faisceau d'origine",
+                    "diagnostic": "Inspection visuelle impérative à l'achat",
+                    "piece_concernee": "Faisceau électrique",
+                    "gravite": "Critique (risque incendie)",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Gonflement des joints du circuit hydraulique de freinage",
+                    "symptomes": [
+                      "Perte de pédale progressive"
+                    ],
+                    "kilometrage_apparition": "Si liquide non adapté utilisé lors d'une purge",
+                    "diagnostic": "Contrôle de la fermeté de la pédale",
+                    "piece_concernee": "Circuit hydraulique de freinage",
+                    "gravite": "Majeure (sécurité)",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "DB6",
+        "generations": [
+          {
+            "code_chassis": "DB6",
+            "annees": "1965-1971",
+            "phases": [
+              "Mark 1 (1965-1969)",
+              "Mark 2 (1969-1971)",
+              "DB6 Volante (1966-1971)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "DB6 4.0L Vantage - 325ch",
+                "code_moteur": "Tadek Marek 6 cylindres alu 4.0L",
+                "cylindree": "4.0L",
+                "puissance_ch": 325,
+                "boite": [
+                  "BVM5 (ZF)",
+                  "BVA3 (Borg-Warner)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Usure des silent-blocs liée à l'empattement rallongé",
+                    "symptomes": [
+                      "Flou de direction",
+                      "Imprécision en virage"
+                    ],
+                    "kilometrage_apparition": "Progressive avec l'âge du caoutchouc",
+                    "diagnostic": "Contrôle du jeu de suspension sur pont",
+                    "piece_concernee": "Suspension (silent-blocs)",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Culasse alu sensible à la surchauffe",
+                    "symptomes": [
+                      "Perte de compression progressive si négligée"
+                    ],
+                    "kilometrage_apparition": "En usage prolongé ou climat chaud",
+                    "diagnostic": "Test de compression, contrôle de température",
+                    "piece_concernee": "Culasse",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Encrassement des carburateurs Weber triple corps",
+                    "symptomes": [
+                      "Ralenti irrégulier",
+                      "Perte de reprise"
+                    ],
+                    "kilometrage_apparition": "Fréquent après immobilisation prolongée",
+                    "diagnostic": "Démontage et nettoyage des gicleurs",
+                    "piece_concernee": "Alimentation carburant",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Faible à modéré"
+                  },
+                  {
+                    "probleme": "Usure de la suspension arrière De Dion",
+                    "symptomes": [
+                      "Bruit de cliquetis en accélération/décélération"
+                    ],
+                    "kilometrage_apparition": "Progressive",
+                    "diagnostic": "Contrôle du jeu sur pont élévateur",
+                    "piece_concernee": "Suspension arrière De Dion",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Corrosion des bas de caisse, ailes et planchers",
+                    "symptomes": [
+                      "Rouille perforante"
+                    ],
+                    "kilometrage_apparition": "Fréquente sans traitement préventif",
+                    "diagnostic": "Sondage au marteau",
+                    "piece_concernee": "Carrosserie",
+                    "gravite": "Majeure",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Faiblesse du faisceau électrique Lucas vieillissant",
+                    "symptomes": [
+                      "Pannes d'éclairage et de charge"
+                    ],
+                    "kilometrage_apparition": "Progressive",
+                    "diagnostic": "Test de l'alternateur sous charge",
+                    "piece_concernee": "Faisceau électrique",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré à élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "DBS / DBS V8",
+        "generations": [
+          {
+            "code_chassis": "DBS",
+            "annees": "1967-1972",
+            "phases": [
+              "DBS 6 cylindres (1967-1972)",
+              "DBS V8 (1969-1972)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "DBS Vantage 4.0L - 325ch",
+                "code_moteur": "Tadek Marek 6 cylindres alu 4.0L",
+                "cylindree": "4.0L",
+                "puissance_ch": 325,
+                "boite": [
+                  "BVM5 (ZF)",
+                  "BVA3"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Sollicitation accrue de la suspension et des freins par le poids de caisse",
+                    "symptomes": [
+                      "Corrosion de caisse plus fréquente",
+                      "Usure de freins accélérée"
+                    ],
+                    "kilometrage_apparition": "Cumulatif avec l'usage",
+                    "diagnostic": "Contrôle de l'épaisseur des disques et des bas de caisse",
+                    "piece_concernee": "Freins et carrosserie",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Usure des joints de transmission coulissants De Dion",
+                    "symptomes": [
+                      "Bruit de cliquetis en accélération/décélération"
+                    ],
+                    "kilometrage_apparition": "Progressif",
+                    "diagnostic": "Contrôle sur pont élévateur",
+                    "piece_concernee": "Suspension arrière De Dion",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Encrassement des carburateurs sur véhicules peu utilisés",
+                    "symptomes": [
+                      "Dépôts de vernis",
+                      "Ralenti instable"
+                    ],
+                    "kilometrage_apparition": "Après plusieurs mois d'immobilisation",
+                    "diagnostic": "Démontage et nettoyage",
+                    "piece_concernee": "Alimentation carburant",
+                    "gravite": "Faible à modérée",
+                    "frequence": "Fréquent sur véhicules peu roulés",
+                    "cout_reparation_estime": "Faible"
+                  },
+                  {
+                    "probleme": "Voile des disques après stockage prolongé",
+                    "symptomes": [
+                      "Vibration au freinage"
+                    ],
+                    "kilometrage_apparition": "Après stockage prolongé",
+                    "diagnostic": "Mesure du voile au comparateur",
+                    "piece_concernee": "Freins",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent sur véhicules peu roulés",
+                    "cout_reparation_estime": "Faible à modéré"
+                  }
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "DBS V8 5.3L - 315ch",
+                "code_moteur": "Tadek Marek V8 5.3L",
+                "cylindree": "5.3L",
+                "puissance_ch": 315,
+                "boite": [
+                  "BVM5 (ZF)",
+                  "BVA3 (Chrysler Torqueflite)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Fissures de culasse et joints de culasse capricieux",
+                    "symptomes": [
+                      "Perte de compression",
+                      "Fuite de liquide dans les cylindres"
+                    ],
+                    "kilometrage_apparition": "Documenté sur premiers exemplaires",
+                    "diagnostic": "Test de compression avant achat",
+                    "piece_concernee": "Culasse V8",
+                    "gravite": "Critique",
+                    "frequence": "Fréquent sur premiers exemplaires",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Injection Bosch mécanique (D-Jetronic) peu documentée",
+                    "symptomes": [
+                      "Panne d'injecteur ou distributeur difficile à diagnostiquer"
+                    ],
+                    "kilometrage_apparition": "Aléatoire",
+                    "diagnostic": "Banc d'essai dédié nécessaire",
+                    "piece_concernee": "Système d'injection",
+                    "gravite": "Majeure",
+                    "frequence": "Rare mais pénalisant",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Surchauffe fréquente",
+                    "symptomes": [
+                      "Montée en température rapide"
+                    ],
+                    "kilometrage_apparition": "Aggravée si composants non renouvelés",
+                    "diagnostic": "Test de pression du circuit",
+                    "piece_concernee": "Circuit de refroidissement",
+                    "gravite": "Majeure",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré à élevé"
+                  },
+                  {
+                    "probleme": "Consommation très élevée et fiabilité inégale",
+                    "symptomes": [
+                      "Plus de 20L/100km"
+                    ],
+                    "kilometrage_apparition": "Caractéristique de conception",
+                    "diagnostic": "Mesure directe",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible (coût d'usage)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Rareté des pièces mécaniques spécifiques au V8 Marek",
+                    "symptomes": [
+                      "Immobilisation prolongée en cas de casse"
+                    ],
+                    "kilometrage_apparition": "Aléatoire",
+                    "diagnostic": "Approvisionnement via spécialistes britanniques uniquement",
+                    "piece_concernee": "Pièces moteur diverses",
+                    "gravite": "Majeure (disponibilité)",
+                    "frequence": "Rare",
+                    "cout_reparation_estime": "Élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "V8 (AM V8 / Series 2-5, Vantage, Volante, Zagato)",
+        "generations": [
+          {
+            "code_chassis": "AM V8",
+            "annees": "1972-1989",
+            "phases": [
+              "Series 2 (1972-1973)",
+              "Series 3 (1973-1978)",
+              "Series 4 'Oscar India' (1978-1985)",
+              "Series 5 (1986-1989)",
+              "V8 Vantage (1977-1989)",
+              "V8 Volante (1978-1989)",
+              "V8 Zagato (1986-1990)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "AM V8 5.3L - 305 à 432ch selon version",
+                "code_moteur": "Tadek Marek V8 5.3L (carburateurs puis injection Weber-Marelli sur Vantage tardive)",
+                "cylindree": "5.3L",
+                "puissance_ch": 432,
+                "boite": [
+                  "BVM5 (ZF)",
+                  "BVA3 (Chrysler Torqueflite puis GM400)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Consommation d'essence extrême",
+                    "symptomes": [
+                      "25 à 30L/100km en usage sportif",
+                      "Réservoir vidé en un peu plus de 300 km en conduite dynamique"
+                    ],
+                    "kilometrage_apparition": "Caractéristique de conception, systématique",
+                    "diagnostic": "Mesure directe de consommation",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible (coût d'usage)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Déréglage de la synchronisation des quatre carburateurs Weber",
+                    "symptomes": [
+                      "Ralenti irrégulier",
+                      "Perte de couple à mi-régime"
+                    ],
+                    "kilometrage_apparition": "Resynchronisation régulière nécessaire",
+                    "diagnostic": "Réglage au manomètre sur chaque corps",
+                    "piece_concernee": "Alimentation carburant",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Injection Weber-Marelli peu documentée (Vantage tardives)",
+                    "symptomes": [
+                      "Pannes de démarrage à froid"
+                    ],
+                    "kilometrage_apparition": "Capteurs difficiles à retrouver aujourd'hui",
+                    "diagnostic": "Diagnostic spécialisé requis",
+                    "piece_concernee": "Système d'injection",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Surchauffe récurrente en conduite urbaine ou climat chaud",
+                    "symptomes": [
+                      "Montée en température",
+                      "Radiateur sous-dimensionné"
+                    ],
+                    "kilometrage_apparition": "Fréquente sans modification",
+                    "diagnostic": "Test de pression du circuit",
+                    "piece_concernee": "Circuit de refroidissement",
+                    "gravite": "Majeure",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Corrosion structurelle Superleggera aux jonctions acier/alu",
+                    "symptomes": [
+                      "Particulièrement passages de roues avant et berceau moteur"
+                    ],
+                    "kilometrage_apparition": "Dépend de l'historique du véhicule",
+                    "diagnostic": "Inspection ciblée de ces zones",
+                    "piece_concernee": "Châssis / carrosserie",
+                    "gravite": "Majeure",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Usure irrégulière des pneus arrière liée à un mauvais réglage De Dion",
+                    "symptomes": [
+                      "Comportement instable en accélération"
+                    ],
+                    "kilometrage_apparition": "Progressive si réglage jamais repris",
+                    "diagnostic": "Contrôle de la géométrie arrière",
+                    "piece_concernee": "Suspension arrière / pneumatiques",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Usure accélérée de l'embrayage renforcé (versions biturbo 550/600)",
+                    "symptomes": [
+                      "Patinage en usage sportif répété"
+                    ],
+                    "kilometrage_apparition": "Accéléré par le couple important (plus de 700 Nm)",
+                    "diagnostic": "Test de patinage sous charge",
+                    "piece_concernee": "Embrayage",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Virage",
+        "generations": [
+          {
+            "code_chassis": "Virage",
+            "annees": "1988-2000",
+            "phases": [
+              "Virage (1988-1996)",
+              "Virage Volante (1990-1996)",
+              "V8 Vantage 550/600 (1993-2000)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "Virage 5.3L - 330ch",
+                "code_moteur": "Tadek Marek V8 5.3L révisé, culasses Callaway 32 soupapes en option",
+                "cylindree": "5.3L",
+                "puissance_ch": 330,
+                "boite": [
+                  "BVM5 (ZF)",
+                  "BVA4 (GM 4L80E)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Complexité des culasses Callaway 32 soupapes (option rare)",
+                    "symptomes": [
+                      "Joints de culasse défaillants",
+                      "Réglage des soupapes délicat"
+                    ],
+                    "kilometrage_apparition": "Aléatoire",
+                    "diagnostic": "À confier exclusivement à un spécialiste",
+                    "piece_concernee": "Culasses Callaway",
+                    "gravite": "Critique (rareté des pièces)",
+                    "frequence": "Rare (option peu diffusée)",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Consommation élevée malgré l'injection Weber-Marelli",
+                    "symptomes": [
+                      "Généralement supérieure à 18-20L/100km"
+                    ],
+                    "kilometrage_apparition": "Caractéristique de conception",
+                    "diagnostic": "Mesure directe",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible (coût d'usage)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Dérive des capteurs du calculateur Weber-Marelli",
+                    "symptomes": [
+                      "Ralenti instable",
+                      "Voyant moteur intermittent"
+                    ],
+                    "kilometrage_apparition": "Progressive avec le vieillissement des capteurs",
+                    "diagnostic": "Lecture des codes défauts, test de résistance des capteurs",
+                    "piece_concernee": "Capteurs de gestion moteur",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Corrosion des bas de caisse et bas d'ailes",
+                    "symptomes": [
+                      "Rouille visible ou détectable au sondage"
+                    ],
+                    "kilometrage_apparition": "Moins fréquente que sur les anciennes Superleggera",
+                    "diagnostic": "Sondage au marteau",
+                    "piece_concernee": "Carrosserie",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Nécessité d'un entretien spécialisé de la boîte GM 4L80E",
+                    "symptomes": [
+                      "Risque de casse interne si vidange négligée"
+                    ],
+                    "kilometrage_apparition": "Selon respect du plan d'entretien",
+                    "diagnostic": "Contrôle de la couleur et odeur de l'huile ATF",
+                    "piece_concernee": "Boîte automatique",
+                    "gravite": "Majeure si négligée",
+                    "frequence": "Rare si entretenue",
+                    "cout_reparation_estime": "Élevé en cas de casse"
+                  }
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "V8 Vantage 550/600 - 550 à 608ch (biturbo)",
+                "code_moteur": "Tadek Marek V8 5.3L biturbo",
+                "cylindree": "5.3L",
+                "puissance_ch": 608,
+                "boite": [
+                  "BVM6 (ZF/Getrag)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Fissuration des durites de suralimentation",
+                    "symptomes": [
+                      "Perte de puissance",
+                      "Sifflement anormal"
+                    ],
+                    "kilometrage_apparition": "Avec l'âge des durites d'origine",
+                    "diagnostic": "Contrôle visuel sous pression, test au fumigène",
+                    "piece_concernee": "Circuit de suralimentation",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Grippage des wastegates si véhicule longtemps sans rouler",
+                    "symptomes": [
+                      "Surpression turbo ou perte de puissance"
+                    ],
+                    "kilometrage_apparition": "Après inactivité prolongée",
+                    "diagnostic": "Contrôle de la pression de suralimentation à l'essai routier",
+                    "piece_concernee": "Turbocompresseurs",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Fragilisation des durites et faisceaux par la chaleur",
+                    "symptomes": [
+                      "Fuites ou faux contacts localisés"
+                    ],
+                    "kilometrage_apparition": "Documentée sur cette génération biturbo",
+                    "diagnostic": "Inspection visuelle rapprochée",
+                    "piece_concernee": "Durites et faisceaux",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Consommation extrême même à faible allure en charge",
+                    "symptomes": [
+                      "Souvent supérieure à 25L/100km en conduite sportive"
+                    ],
+                    "kilometrage_apparition": "Caractéristique de conception",
+                    "diagnostic": "Mesure directe",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible (coût d'usage)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Rareté des pièces spécifiques à la version biturbo",
+                    "symptomes": [
+                      "Immobilisation prolongée en cas de panne"
+                    ],
+                    "kilometrage_apparition": "Aléatoire",
+                    "diagnostic": "Disponible uniquement via un très petit nombre de spécialistes",
+                    "piece_concernee": "Turbos, intercoolers, calculateurs",
+                    "gravite": "Majeure",
+                    "frequence": "Rare",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Usure accélérée de l'embrayage sous le couple important",
+                    "symptomes": [
+                      "Patinage en usage sportif répété"
+                    ],
+                    "kilometrage_apparition": "Accélérée par l'usage circuit",
+                    "diagnostic": "Test de patinage sous charge",
+                    "piece_concernee": "Embrayage",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "DB7",
+        "generations": [
+          {
+            "code_chassis": "DB7 (i6)",
+            "annees": "1994-1999",
+            "phases": [
+              "Coupé (1994-1999)",
+              "Volante (1996-1999)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "DB7 3.2L Supercharged - 335ch",
+                "code_moteur": "Jaguar AJ6 3.2L suralimenté par compresseur Eaton",
+                "cylindree": "3.2L",
+                "puissance_ch": 335,
+                "boite": [
+                  "BVM5 (Getrag)",
+                  "BVA4 (GM 4L80E)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Usure des rotors internes du compresseur Eaton par manque d'entretien",
+                    "symptomes": [
+                      "Perte de suralimentation",
+                      "Bruit anormal du compresseur"
+                    ],
+                    "kilometrage_apparition": "Vidange spécifique préconisée tous les 60 000 km",
+                    "diagnostic": "Contrôle du jeu de la courroie, écoute du compresseur au ralenti",
+                    "piece_concernee": "Compresseur Eaton",
+                    "gravite": "Majeure",
+                    "frequence": "Fréquent si entretien négligé",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Surchauffe si radiateur et durites non renouvelés",
+                    "symptomes": [
+                      "Montée en température anormale"
+                    ],
+                    "kilometrage_apparition": "Après 25-30 ans sans remplacement",
+                    "diagnostic": "Contrôle systématique à l'achat",
+                    "piece_concernee": "Circuit de refroidissement",
+                    "gravite": "Majeure",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Pannes intermittentes du faisceau électronique Jaguar/Aston hybride",
+                    "symptomes": [
+                      "Ralenti irrégulier",
+                      "Voyants qui s'allument sans raison apparente"
+                    ],
+                    "kilometrage_apparition": "Progressive avec l'âge des calculateurs",
+                    "diagnostic": "Lecture des codes défauts, contrôle des connecteurs",
+                    "piece_concernee": "Faisceau électronique",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Corrosion des bas de caisse et passages de roues",
+                    "symptomes": [
+                      "Rouille visible sur exemplaires stockés humide"
+                    ],
+                    "kilometrage_apparition": "Dépend de l'historique",
+                    "diagnostic": "Sondage au marteau",
+                    "piece_concernee": "Carrosserie",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Grippage des moteurs de lève-vitres",
+                    "symptomes": [
+                      "Vitre qui monte/descend lentement ou plus du tout"
+                    ],
+                    "kilometrage_apparition": "Progressif avec l'âge",
+                    "diagnostic": "Test de fonctionnement",
+                    "piece_concernee": "Lève-vitres électriques",
+                    "gravite": "Faible",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Faible à modéré"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "DB7 Vantage (V12)",
+            "annees": "1999-2003",
+            "phases": [
+              "Vantage Coupé (1999-2003)",
+              "Vantage Volante (1999-2003)",
+              "GT/GTA (2002-2003)",
+              "Zagato (2002-2003)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "DB7 Vantage 6.0L V12 - 420ch",
+                "code_moteur": "Ford/Aston Martin V12 6.0L (base Jaguar V12 réingénierie)",
+                "cylindree": "6.0L",
+                "puissance_ch": 420,
+                "boite": [
+                  "BVM6 (Tremec)",
+                  "BVA5 (ZF 5HP30)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Consommation d'huile progressive",
+                    "symptomes": [
+                      "Appoint d'huile nécessaire entre vidanges"
+                    ],
+                    "kilometrage_apparition": "Au-delà de 100 000 km",
+                    "diagnostic": "Contrôle du niveau tous les 1 000 à 2 000 km",
+                    "piece_concernee": "Moteur V12",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent sur hauts kilométrages",
+                    "cout_reparation_estime": "Faible (surveillance) à élevé si réfection"
+                  },
+                  {
+                    "probleme": "Détente de la chaîne de distribution et des tendeurs",
+                    "symptomes": [
+                      "Léger cliquetis persistant au démarrage à froid"
+                    ],
+                    "kilometrage_apparition": "Après 100 000 km",
+                    "diagnostic": "Écoute au démarrage à froid",
+                    "piece_concernee": "Distribution",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Dérive des sondes lambda et capteurs de gestion moteur",
+                    "symptomes": [
+                      "Consommation excessive",
+                      "Voyant moteur intermittent"
+                    ],
+                    "kilometrage_apparition": "Progressive avec l'âge des capteurs",
+                    "diagnostic": "Lecture des codes défauts",
+                    "piece_concernee": "Capteurs de gestion moteur",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Défaillance du compresseur et condenseur de climatisation",
+                    "symptomes": [
+                      "Perte de froid progressive puis totale"
+                    ],
+                    "kilometrage_apparition": "Courante après 15-20 ans",
+                    "diagnostic": "Contrôle de la pression du circuit",
+                    "piece_concernee": "Climatisation",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Corrosion des bas de caisse",
+                    "symptomes": [
+                      "Rouille sur modèles mal entretenus"
+                    ],
+                    "kilometrage_apparition": "Dépend de l'historique",
+                    "diagnostic": "Sondage au marteau",
+                    "piece_concernee": "Carrosserie",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Usure des coussinets moteur sur forts kilométrages",
+                    "symptomes": [
+                      "Bruit de cliquetis sourd à l'accélération"
+                    ],
+                    "kilometrage_apparition": "Sur les très hauts kilométrages",
+                    "diagnostic": "Écoute à l'accélération, contrôle pression d'huile",
+                    "piece_concernee": "Bloc-moteur",
+                    "gravite": "Critique",
+                    "frequence": "Rare",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Casse interne de la boîte ZF 5HP30 en cas de vidange négligée",
+                    "symptomes": [
+                      "À-coups aux changements de rapport"
+                    ],
+                    "kilometrage_apparition": "Risque accru au-delà de 60 000 km sans vidange",
+                    "diagnostic": "Contrôle de l'état de l'huile ATF",
+                    "piece_concernee": "Boîte automatique",
+                    "gravite": "Critique si négligée",
+                    "frequence": "Rare si entretenue",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Oxydation des connecteurs de lève-vitres et verrouillage centralisé",
+                    "symptomes": [
+                      "Fonctionnement capricieux ou panne totale"
+                    ],
+                    "kilometrage_apparition": "Après 10-15 ans",
+                    "diagnostic": "Test de fonctionnement",
+                    "piece_concernee": "Équipements électriques",
+                    "gravite": "Faible",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Faible à modéré"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "V8 Vantage (2005-2017)",
+        "generations": [
+          {
+            "code_chassis": "VH V8 Vantage",
+            "annees": "2005-2017",
+            "phases": [
+              "V8 Vantage (2005-2008)",
+              "V8 Vantage N400/N420 (2008-2010)",
+              "V8 Vantage S (2011-2017)",
+              "V12 Vantage (2009-2017)",
+              "V12 Vantage S (2013-2017)",
+              "GT8/GT12 (2016-2017)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "V8 Vantage 4.3L - 380ch",
+                "code_moteur": "Jaguar AJ V8 4.3L (bloc partagé Jaguar/Ford, culasses spécifiques Aston)",
+                "cylindree": "4.3L",
+                "puissance_ch": 380,
+                "boite": [
+                  "BVM6 (Graziano)",
+                  "Sportshift BVA6 (séquentielle robotisée)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Usure prématurée des chemises de cylindres (bore liner wear)",
+                    "symptomes": [
+                      "Consommation d'huile excessive pouvant atteindre 1 litre aux 1 000 km",
+                      "Fumée bleutée à l'échappement"
+                    ],
+                    "kilometrage_apparition": "Défaut documenté sur les premiers moteurs 4.3L",
+                    "diagnostic": "Mesure de consommation d'huile, test de compression, analyse d'huile",
+                    "piece_concernee": "Chemises de cylindres / bloc-moteur",
+                    "gravite": "Critique",
+                    "frequence": "Fréquent sur premiers 4.3L",
+                    "cout_reparation_estime": "Très élevé (réfection moteur)"
+                  },
+                  {
+                    "probleme": "Réactivité datée de la boîte Sportshift à embrayage simple",
+                    "symptomes": [
+                      "À-coups aux changements de rapport à basse vitesse"
+                    ],
+                    "kilometrage_apparition": "Dès l'origine",
+                    "diagnostic": "Essai routier en usage urbain",
+                    "piece_concernee": "Boîte Sportshift",
+                    "gravite": "Faible (confort)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Usure accélérée de l'embrayage Sportshift",
+                    "symptomes": [
+                      "Patinage",
+                      "Perte de reprise"
+                    ],
+                    "kilometrage_apparition": "Parfois avant 40 000 km en usage urbain intensif",
+                    "diagnostic": "Test de patinage sous charge",
+                    "piece_concernee": "Embrayage Sportshift",
+                    "gravite": "Majeure",
+                    "frequence": "Fréquent en usage urbain",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Vibrations de l'embrayage bi-masse en conduite sportive répétée",
+                    "symptomes": [
+                      "Vibrations à bas régime"
+                    ],
+                    "kilometrage_apparition": "Signe avant-coureur d'usure progressive",
+                    "diagnostic": "Écoute et ressenti à bas régime",
+                    "piece_concernee": "Volant moteur bi-masse",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Corrosion rapide des disques de frein par temps humide",
+                    "symptomes": [
+                      "Léger voile ou grippage après quelques semaines"
+                    ],
+                    "kilometrage_apparition": "Fréquente sur véhicules peu roulés",
+                    "diagnostic": "Contrôle visuel, essai de freinage à froid",
+                    "piece_concernee": "Freins",
+                    "gravite": "Faible à modérée",
+                    "frequence": "Très fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Pannes capricieuses des calculateurs et capteurs ABS/ESP",
+                    "symptomes": [
+                      "Voyants intermittents"
+                    ],
+                    "kilometrage_apparition": "Avec l'âge du véhicule",
+                    "diagnostic": "Diagnostic spécialisé Aston Martin",
+                    "piece_concernee": "Calculateurs ABS/ESP",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Pannes de lève-vitres, poignées et climatisation",
+                    "symptomes": [
+                      "Fonctionnement capricieux ou panne totale"
+                    ],
+                    "kilometrage_apparition": "Fréquente après 10 ans",
+                    "diagnostic": "Test de fonctionnement direct",
+                    "piece_concernee": "Équipements électriques",
+                    "gravite": "Faible",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Faible à modéré"
+                  }
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "V8 Vantage 4.7L - 420 à 436ch",
+                "code_moteur": "Jaguar AJ V8 4.7L",
+                "cylindree": "4.7L",
+                "puissance_ch": 436,
+                "boite": [
+                  "BVM6 (Graziano)",
+                  "Sportshift II BVA7"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Consommation d'huile en cas d'entretien irrégulier",
+                    "symptomes": [
+                      "Baisse du niveau d'huile entre vidanges"
+                    ],
+                    "kilometrage_apparition": "Moins fréquent que sur le 4.3L d'origine",
+                    "diagnostic": "Contrôle du niveau tous les 1 000 km",
+                    "piece_concernee": "Moteur V8",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Faible (surveillance)"
+                  },
+                  {
+                    "probleme": "Usure rapide de l'embrayage Sportshift II en conduite sportive",
+                    "symptomes": [
+                      "Patinage",
+                      "Perte de reprise"
+                    ],
+                    "kilometrage_apparition": "Variable selon usage",
+                    "diagnostic": "Contrôle du point de patinage",
+                    "piece_concernee": "Embrayage",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé (3 000 à 4 000 €)"
+                  },
+                  {
+                    "probleme": "Corrosion rapide des disques de frein par inactivité",
+                    "symptomes": [
+                      "Voile ou grippage léger"
+                    ],
+                    "kilometrage_apparition": "Typique des véhicules de collection",
+                    "diagnostic": "Contrôle visuel",
+                    "piece_concernee": "Freins",
+                    "gravite": "Faible à modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Grippage de l'échappement à clapets",
+                    "symptomes": [
+                      "Bruit d'échappement anormalement fort ou étouffé"
+                    ],
+                    "kilometrage_apparition": "Avec l'âge des actionneurs",
+                    "diagnostic": "Contrôle électrique des clapets",
+                    "piece_concernee": "Échappement à clapets",
+                    "gravite": "Faible",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  }
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "V12 Vantage / V12 Vantage S - 510 à 573ch",
+                "code_moteur": "Aston Martin V12 6.0L (dérivé du V12 DB9)",
+                "cylindree": "6.0L",
+                "puissance_ch": 573,
+                "boite": [
+                  "BVM6 (Graziano)",
+                  "Sportshift III BVA7 (V12 Vantage S)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Usure accrue des rotules et silent-blocs avant liée au poids du V12",
+                    "symptomes": [
+                      "Dégradation de l'équilibre châssis"
+                    ],
+                    "kilometrage_apparition": "Progressive",
+                    "diagnostic": "Contrôle du jeu de suspension avant",
+                    "piece_concernee": "Suspension avant",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Consommation de carburant élevée en usage sportif",
+                    "symptomes": [
+                      "Supérieure à 20L/100km"
+                    ],
+                    "kilometrage_apparition": "Caractéristique de conception",
+                    "diagnostic": "Mesure directe",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible (coût d'usage)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Usure des coussinets et de la chaîne de distribution",
+                    "symptomes": [
+                      "Bruit de cliquetis à froid"
+                    ],
+                    "kilometrage_apparition": "Sur forts kilométrages",
+                    "diagnostic": "Écoute à froid",
+                    "piece_concernee": "Distribution / bloc-moteur",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Pannes ponctuelles des capteurs de gestion moteur",
+                    "symptomes": [
+                      "Voyant moteur",
+                      "Comportement dégradé"
+                    ],
+                    "kilometrage_apparition": "Aléatoire",
+                    "diagnostic": "Diagnostic spécialisé requis",
+                    "piece_concernee": "Capteurs moteur",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Coût élevé des freins carbone-céramique (en option)",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Au remplacement",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Freins carbone-céramique",
+                    "gravite": "Faible (coût)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Dessèchement et craquelures des durites et faisceaux",
+                    "symptomes": [
+                      "Fuites ou faux contacts"
+                    ],
+                    "kilometrage_apparition": "Avec l'âge, aggravé par la chauffe",
+                    "diagnostic": "Inspection visuelle rapprochée",
+                    "piece_concernee": "Durites et faisceaux",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "DB9",
+        "generations": [
+          {
+            "code_chassis": "VH DB9",
+            "annees": "2004-2016",
+            "phases": [
+              "DB9 (2004-2008)",
+              "DB9 facelift (2008-2012)",
+              "DB9 (2013-2016)",
+              "DB9 GT (2015-2016)",
+              "Volante (cabriolet, toute la carrière)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "DB9 6.0L V12 - 456 à 470ch",
+                "code_moteur": "Aston Martin V12 6.0L",
+                "cylindree": "6.0L",
+                "puissance_ch": 470,
+                "boite": [
+                  "BVM6 (Graziano)",
+                  "Touchtronic BVA6 (ZF 6HP26)",
+                  "Touchtronic II BVA6"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Fragilisation des bobines d'allumage et du faisceau haute tension",
+                    "symptomes": [
+                      "Ratés d'allumage",
+                      "Voyant moteur clignotant",
+                      "À-coups au ralenti"
+                    ],
+                    "kilometrage_apparition": "Après 80 000-100 000 km",
+                    "diagnostic": "Lecture des codes défauts (misfire par cylindre)",
+                    "piece_concernee": "Bobines d'allumage",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent sur hauts kilométrages",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Détente de la chaîne de distribution et des tendeurs",
+                    "symptomes": [
+                      "Cliquetis persistant au démarrage à froid"
+                    ],
+                    "kilometrage_apparition": "Après 100 000 km",
+                    "diagnostic": "Écoute au démarrage à froid",
+                    "piece_concernee": "Distribution",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Consommation d'huile sur moteurs mal entretenus",
+                    "symptomes": [
+                      "Baisse de niveau entre vidanges"
+                    ],
+                    "kilometrage_apparition": "Contrôle recommandé toutes les 1 000-2 000 km sur exemplaires âgés",
+                    "diagnostic": "Contrôle de niveau régulier",
+                    "piece_concernee": "Moteur V12",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Faible (surveillance)"
+                  },
+                  {
+                    "probleme": "Corrosion rapide des disques de frein par inactivité prolongée",
+                    "symptomes": [
+                      "Voile ou grippage léger"
+                    ],
+                    "kilometrage_apparition": "Courante sur véhicules de collection",
+                    "diagnostic": "Contrôle visuel, essai de freinage à froid",
+                    "piece_concernee": "Freins",
+                    "gravite": "Faible à modérée",
+                    "frequence": "Très fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Faux contacts dans l'architecture électronique VH répartie",
+                    "symptomes": [
+                      "Pannes capricieuses de calculateurs"
+                    ],
+                    "kilometrage_apparition": "Avec l'âge du véhicule",
+                    "diagnostic": "Valise Aston Martin recommandée",
+                    "piece_concernee": "Calculateurs multiples",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Pannes de climatisation, lève-vitres et poignées de porte électriques",
+                    "symptomes": [
+                      "Fonctionnement capricieux ou panne totale"
+                    ],
+                    "kilometrage_apparition": "Récurrente après 10-15 ans",
+                    "diagnostic": "Test de fonctionnement direct",
+                    "piece_concernee": "Équipements électriques",
+                    "gravite": "Faible",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Casse interne de la boîte Touchtronic en cas de négligence",
+                    "symptomes": [
+                      "À-coups aux changements de rapport"
+                    ],
+                    "kilometrage_apparition": "Risque accru au-delà de 60 000 km sans vidange",
+                    "diagnostic": "Contrôle de l'état de l'huile de boîte",
+                    "piece_concernee": "Boîte automatique",
+                    "gravite": "Critique si négligée",
+                    "frequence": "Rare si entretenue",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Vieillissement des radiateurs et durites du V12",
+                    "symptomes": [
+                      "Risque de surchauffe"
+                    ],
+                    "kilometrage_apparition": "Après 10 ans, remplacement préventif recommandé",
+                    "diagnostic": "Test de pression du circuit",
+                    "piece_concernee": "Circuit de refroidissement",
+                    "gravite": "Majeure si non traitée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré (préventif) à élevé (curatif)"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Vanquish (2001-2007)",
+        "generations": [
+          {
+            "code_chassis": "Vanquish",
+            "annees": "2001-2007",
+            "phases": [
+              "Vanquish (2001-2004)",
+              "Vanquish S (2004-2007)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "Vanquish 6.0L V12 - 460 à 528ch",
+                "code_moteur": "Aston Martin V12 6.0L",
+                "cylindree": "6.0L",
+                "puissance_ch": 528,
+                "boite": [
+                  "Automated Manual (BVM6 robotisée Magneti Marelli)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Usure rapide de l'embrayage de la boîte robotisée à embrayage simple",
+                    "symptomes": [
+                      "À-coups aux passages",
+                      "Patinage"
+                    ],
+                    "kilometrage_apparition": "Dès l'origine",
+                    "diagnostic": "Dépose partielle de la transmission souvent nécessaire",
+                    "piece_concernee": "Embrayage / boîte robotisée",
+                    "gravite": "Majeure",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Défaillance de la pompe hydraulique des actionneurs de boîte",
+                    "symptomes": [
+                      "Impossibilité de passer les rapports ou à-coups violents"
+                    ],
+                    "kilometrage_apparition": "Avec l'âge du système hydraulique",
+                    "diagnostic": "Contrôle de la pression hydraulique",
+                    "piece_concernee": "Pompe hydraulique de boîte",
+                    "gravite": "Critique",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Détente de la chaîne de distribution du V12",
+                    "symptomes": [
+                      "Bruit métallique au démarrage à froid"
+                    ],
+                    "kilometrage_apparition": "Signe avant-coureur à surveiller",
+                    "diagnostic": "Écoute au démarrage à froid",
+                    "piece_concernee": "Distribution",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Corrosion rapide des disques de frein sur véhicules peu utilisés",
+                    "symptomes": [
+                      "Voile ou grippage léger"
+                    ],
+                    "kilometrage_apparition": "Courante",
+                    "diagnostic": "Contrôle visuel",
+                    "piece_concernee": "Freins",
+                    "gravite": "Faible à modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Pannes intermittentes de capteurs (génération VH précoce)",
+                    "symptomes": [
+                      "Voyants divers",
+                      "Comportement dégradé"
+                    ],
+                    "kilometrage_apparition": "Avec l'âge du véhicule",
+                    "diagnostic": "Diagnostic spécialisé requis",
+                    "piece_concernee": "Capteurs et calculateurs",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Vanquish (2012-2018) / Vanquish S",
+        "generations": [
+          {
+            "code_chassis": "VH Vanquish",
+            "annees": "2012-2018",
+            "phases": [
+              "Vanquish (2012-2016)",
+              "Vanquish S (2016-2018)",
+              "Volante (cabriolet)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "Vanquish 6.0L V12 - 565 à 603ch",
+                "code_moteur": "Aston Martin V12 6.0L (AM11)",
+                "cylindree": "6.0L",
+                "puissance_ch": 603,
+                "boite": [
+                  "Touchtronic III BVA8 (ZF 8HP)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Consommation d'huile sur gros kilométrages",
+                    "symptomes": [
+                      "Baisse de niveau"
+                    ],
+                    "kilometrage_apparition": "Sur les gros kilométrages",
+                    "diagnostic": "Contrôle régulier avant les longs trajets",
+                    "piece_concernee": "Moteur V12",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Faible (surveillance)"
+                  },
+                  {
+                    "probleme": "Pannes capricieuses des multiples calculateurs répartis",
+                    "symptomes": [
+                      "Voyants et dysfonctionnements divers"
+                    ],
+                    "kilometrage_apparition": "Avec l'âge du véhicule",
+                    "diagnostic": "Valise constructeur nécessaire",
+                    "piece_concernee": "Calculateurs",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Corrosion rapide des disques de frein par inactivité",
+                    "symptomes": [
+                      "Voile ou grippage"
+                    ],
+                    "kilometrage_apparition": "Fréquente sur véhicules à faible kilométrage annuel",
+                    "diagnostic": "Contrôle visuel",
+                    "piece_concernee": "Freins",
+                    "gravite": "Faible à modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Coût des réparations de carrosserie carbone après choc",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Au moment d'une réparation",
+                    "diagnostic": "Délais d'approvisionnement souvent longs",
+                    "piece_concernee": "Carrosserie carbone",
+                    "gravite": "Faible (coût)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Chauffage important du compartiment moteur en usage sportif",
+                    "symptomes": [
+                      "Dessèchement prématuré des durites"
+                    ],
+                    "kilometrage_apparition": "Progressif avec l'usage sportif",
+                    "diagnostic": "Inspection visuelle des durites",
+                    "piece_concernee": "Durites moteur",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Rapide / Rapide S",
+        "generations": [
+          {
+            "code_chassis": "VH Rapide",
+            "annees": "2010-2020",
+            "phases": [
+              "Rapide (2010-2013)",
+              "Rapide S (2013-2020)",
+              "Rapide AMR (2018-2020)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "Rapide / Rapide S 6.0L V12 - 470 à 595ch",
+                "code_moteur": "Aston Martin V12 6.0L",
+                "cylindree": "6.0L",
+                "puissance_ch": 595,
+                "boite": [
+                  "Touchtronic II BVA6",
+                  "Touchtronic III BVA8 (Rapide S)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Usure accélérée des plaquettes et disques liée au poids (plus de 1 900 kg)",
+                    "symptomes": [
+                      "Usure plus rapide que sur les autres modèles VH"
+                    ],
+                    "kilometrage_apparition": "Cumulatif avec l'usage",
+                    "diagnostic": "Contrôle de l'épaisseur des plaquettes et disques",
+                    "piece_concernee": "Freins",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Fragilisation des bobines et faisceau haute tension",
+                    "symptomes": [
+                      "Ratés d'allumage"
+                    ],
+                    "kilometrage_apparition": "Après un fort kilométrage",
+                    "diagnostic": "Lecture des codes défauts",
+                    "piece_concernee": "Bobines d'allumage",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent sur hauts kilométrages",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Corrosion rapide des disques de frein",
+                    "symptomes": [
+                      "Voile ou grippage sur véhicules peu utilisés"
+                    ],
+                    "kilometrage_apparition": "Courante",
+                    "diagnostic": "Contrôle visuel",
+                    "piece_concernee": "Freins",
+                    "gravite": "Faible à modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Consommation d'huile sur hauts kilométrages",
+                    "symptomes": [
+                      "Baisse de niveau"
+                    ],
+                    "kilometrage_apparition": "Sur hauts kilométrages",
+                    "diagnostic": "Contrôle régulier",
+                    "piece_concernee": "Moteur V12",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Faible (surveillance)"
+                  },
+                  {
+                    "probleme": "Multiplication des points de panne liée aux nombreux équipements électriques (4 portes)",
+                    "symptomes": [
+                      "Panne d'un équipement isolé"
+                    ],
+                    "kilometrage_apparition": "Aléatoire",
+                    "diagnostic": "Test de fonctionnement de chaque équipement",
+                    "piece_concernee": "Équipements électriques divers",
+                    "gravite": "Faible",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Panne de suspension pneumatique/adaptative (selon version)",
+                    "symptomes": [
+                      "Véhicule qui s'affaisse",
+                      "Voyant de suspension allumé"
+                    ],
+                    "kilometrage_apparition": "Aléatoire",
+                    "diagnostic": "Lecture des codes défauts de suspension",
+                    "piece_concernee": "Suspension adaptative",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "DBS Superleggera (2007-2012)",
+        "generations": [
+          {
+            "code_chassis": "VH DBS",
+            "annees": "2007-2012",
+            "phases": [
+              "DBS Coupé (2007-2012)",
+              "DBS Volante (2009-2012)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "DBS 6.0L V12 - 517ch",
+                "code_moteur": "Aston Martin V12 6.0L",
+                "cylindree": "6.0L",
+                "puissance_ch": 517,
+                "boite": [
+                  "BVM6 (Graziano)",
+                  "Touchtronic II BVA6"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Grippage des étriers de frein carbone-céramique si véhicule peu utilisé",
+                    "symptomes": [
+                      "Freinage irrégulier ou bruit de frottement"
+                    ],
+                    "kilometrage_apparition": "Sur véhicules peu utilisés",
+                    "diagnostic": "Contrôle visuel des étriers, essai de freinage",
+                    "piece_concernee": "Freins carbone-céramique",
+                    "gravite": "Majeure (sécurité)",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Coût élevé des freins carbone-céramique",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Au remplacement",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Freins carbone-céramique",
+                    "gravite": "Faible (coût)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Consommation d'huile sur moteurs sollicités en circuit",
+                    "symptomes": [
+                      "Baisse de niveau"
+                    ],
+                    "kilometrage_apparition": "Contrôle avant chaque sortie sportive recommandé",
+                    "diagnostic": "Contrôle direct du niveau",
+                    "piece_concernee": "Moteur V12",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Faible (surveillance)"
+                  },
+                  {
+                    "probleme": "Détente de la chaîne de distribution sur fort kilométrage",
+                    "symptomes": [
+                      "Bruit métallique à froid"
+                    ],
+                    "kilometrage_apparition": "Signe avant-coureur à surveiller",
+                    "diagnostic": "Écoute au démarrage à froid",
+                    "piece_concernee": "Distribution",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Corrosion rapide des disques de frein sur versions non céramique",
+                    "symptomes": [
+                      "Voile ou grippage"
+                    ],
+                    "kilometrage_apparition": "Courante",
+                    "diagnostic": "Contrôle visuel",
+                    "piece_concernee": "Freins",
+                    "gravite": "Faible à modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Coût des réparations de carrosserie carbone après choc",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Au moment d'une réparation",
+                    "diagnostic": "Panneaux à remplacer plutôt qu'à réparer",
+                    "piece_concernee": "Carrosserie carbone",
+                    "gravite": "Faible (coût)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Pannes intermittentes des capteurs et calculateurs multiples VH",
+                    "symptomes": [
+                      "Voyants divers"
+                    ],
+                    "kilometrage_apparition": "Avec l'âge",
+                    "diagnostic": "Diagnostic spécialisé",
+                    "piece_concernee": "Calculateurs",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "DBS Superleggera (2018-2020)",
+        "generations": [
+          {
+            "code_chassis": "DBS Superleggera",
+            "annees": "2018-2020",
+            "phases": [
+              "Coupé (2018-2020)",
+              "Volante (2019-2020)",
+              "DBS 770 Ultimate (2023, édition finale)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "DBS Superleggera 5.2L V12 biturbo - 715 à 770ch",
+                "code_moteur": "Aston Martin/Mercedes-AMG V12 5.2L biturbo (M177/AM base)",
+                "cylindree": "5.2L",
+                "puissance_ch": 770,
+                "boite": [
+                  "Touchtronic III BVA8 (ZF 8HP)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Montée en température élevée du compartiment moteur en usage intensif",
+                    "symptomes": [
+                      "Ventilation impeccable nécessaire",
+                      "Risque de dessèchement des durites"
+                    ],
+                    "kilometrage_apparition": "En usage sportif prolongé",
+                    "diagnostic": "Contrôle régulier des durites",
+                    "piece_concernee": "Turbos / circuit de refroidissement",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Coût élevé des freins carbone-céramique",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Au remplacement",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Freins carbone-céramique",
+                    "gravite": "Faible (coût)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Très élevé (plusieurs milliers d'euros par train)"
+                  },
+                  {
+                    "probleme": "Consommation de carburant élevée en usage sportif",
+                    "symptomes": [
+                      "Régulièrement supérieure à 20L/100km"
+                    ],
+                    "kilometrage_apparition": "Caractéristique de conception",
+                    "diagnostic": "Mesure directe",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible (coût d'usage)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Usure rapide des pneus larges",
+                    "symptomes": [
+                      "Usure visible sur bande de roulement"
+                    ],
+                    "kilometrage_apparition": "Souvent moins de 10 000 km en usage dynamique",
+                    "diagnostic": "Contrôle de la profondeur des sculptures",
+                    "piece_concernee": "Pneumatiques",
+                    "gravite": "Faible",
+                    "frequence": "Fréquent en usage sportif",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Casse interne de la boîte ZF 8HP en cas de négligence",
+                    "symptomes": [
+                      "À-coups aux changements de rapport"
+                    ],
+                    "kilometrage_apparition": "Vidange tous les 60 000 km recommandée",
+                    "diagnostic": "Contrôle de l'état de l'huile",
+                    "piece_concernee": "Boîte automatique",
+                    "gravite": "Critique si négligée",
+                    "frequence": "Rare si entretenue",
+                    "cout_reparation_estime": "Très élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Vantage (2018-)",
+        "generations": [
+          {
+            "code_chassis": "Vantage (2nde génération)",
+            "annees": "2018-présent",
+            "phases": [
+              "Vantage (2018-2024)",
+              "Vantage Roadster (2020-2024)",
+              "Vantage F1 Edition (2021)",
+              "Vantage nouvelle génération (2024-présent, 665ch)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "Vantage 4.0L V8 biturbo - 510ch",
+                "code_moteur": "Mercedes-AMG M177 4.0L V8 biturbo",
+                "cylindree": "4.0L",
+                "puissance_ch": 510,
+                "boite": [
+                  "BVM7 (Graziano, en option limitée)",
+                  "Touchtronic III BVA8 (ZF 8HP)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Consommation d'huile signalée sur les premiers exemplaires",
+                    "symptomes": [
+                      "Baisse de niveau"
+                    ],
+                    "kilometrage_apparition": "Contrôle recommandé toutes les 1 000 km en usage sportif",
+                    "diagnostic": "Contrôle direct du niveau",
+                    "piece_concernee": "Moteur AMG M177",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Faible (surveillance)"
+                  },
+                  {
+                    "probleme": "Chaleur intense des turbos logés dans le V du moteur",
+                    "symptomes": [
+                      "Dessèchement prématuré des durites"
+                    ],
+                    "kilometrage_apparition": "En usage sportif prolongé",
+                    "diagnostic": "Inspection régulière du circuit de refroidissement",
+                    "piece_concernee": "Turbos / durites",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Rareté des pièces de la boîte manuelle BVM7 (option peu diffusée)",
+                    "symptomes": [
+                      "Immobilisation prolongée en cas de panne d'embrayage"
+                    ],
+                    "kilometrage_apparition": "Aléatoire",
+                    "diagnostic": "Délais d'approvisionnement longs",
+                    "piece_concernee": "Boîte manuelle BVM7",
+                    "gravite": "Majeure (disponibilité)",
+                    "frequence": "Rare",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Vieillissement rapide de l'interface infodivertissement Mercedes",
+                    "symptomes": [
+                      "Écran et logiciel perçus comme datés dès quelques années"
+                    ],
+                    "kilometrage_apparition": "Progressif",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Système multimédia",
+                    "gravite": "Faible",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Coût élevé des freins carbone-céramique en option",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Au remplacement",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Freins carbone-céramique",
+                    "gravite": "Faible (coût)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Corrosion rapide des disques de frein classiques par inactivité",
+                    "symptomes": [
+                      "Voile ou grippage"
+                    ],
+                    "kilometrage_apparition": "Courante",
+                    "diagnostic": "Contrôle visuel",
+                    "piece_concernee": "Freins",
+                    "gravite": "Faible à modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Panne des capteurs de hauteur de la suspension adaptative",
+                    "symptomes": [
+                      "Voyant de suspension intermittent"
+                    ],
+                    "kilometrage_apparition": "Aléatoire",
+                    "diagnostic": "Lecture des codes défauts",
+                    "piece_concernee": "Suspension adaptative",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  }
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "Vantage 2024 4.0L V8 biturbo - 665ch",
+                "code_moteur": "Mercedes-AMG M177 4.0L V8 biturbo (révisé)",
+                "cylindree": "4.0L",
+                "puissance_ch": 665,
+                "boite": [
+                  "Touchtronic III BVA8 (ZF 8HP)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Absence de retour d'expérience fiabiliste complet",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Modèle trop récent",
+                    "diagnostic": "Points de vigilance identiques à la génération précédente par précaution",
+                    "piece_concernee": "N/A",
+                    "gravite": "Indéterminée",
+                    "frequence": "Indéterminée",
+                    "cout_reparation_estime": "Indéterminé"
+                  },
+                  {
+                    "probleme": "Consommation élevée en usage sportif",
+                    "symptomes": [
+                      "Cohérente avec la puissance revue fortement à la hausse"
+                    ],
+                    "kilometrage_apparition": "Caractéristique de conception",
+                    "diagnostic": "Mesure directe",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible (coût d'usage)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Réseau de spécialistes indépendants encore limité",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Pour ce modèle récent",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A (disponibilité de service)",
+                    "gravite": "Faible",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "DB11",
+        "generations": [
+          {
+            "code_chassis": "DB11",
+            "annees": "2016-2023",
+            "phases": [
+              "DB11 V12 (2016-2023)",
+              "DB11 V8 (2017-2023)",
+              "DB11 AMR (2018-2023)",
+              "Volante (cabriolet)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "DB11 5.2L V12 biturbo - 608 à 639ch (AMR)",
+                "code_moteur": "Aston Martin V12 5.2L biturbo",
+                "cylindree": "5.2L",
+                "puissance_ch": 639,
+                "boite": [
+                  "Touchtronic III BVA8 (ZF 8HP)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Chaleur intense générée par les turbos biturbo",
+                    "symptomes": [
+                      "Fragilisation des durites"
+                    ],
+                    "kilometrage_apparition": "Plusieurs cas documentés sur premiers exemplaires",
+                    "diagnostic": "Inspection régulière du compartiment moteur",
+                    "piece_concernee": "Turbos / durites",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Fuites d'huile au niveau des joints de carter et de turbo",
+                    "symptomes": [
+                      "Tache d'huile sous le véhicule"
+                    ],
+                    "kilometrage_apparition": "Documentées sur les tout premiers exemplaires, campagnes de service constructeur",
+                    "diagnostic": "Contrôle visuel sous le véhicule, contact du réseau agréé",
+                    "piece_concernee": "Joints moteur / turbo",
+                    "gravite": "Majeure",
+                    "frequence": "Documenté sur premiers exemplaires",
+                    "cout_reparation_estime": "Élevé (souvent pris en charge par campagne constructeur)"
+                  },
+                  {
+                    "probleme": "Consommation de carburant élevée en usage sportif",
+                    "symptomes": [
+                      "Au-delà de 18-20L/100km"
+                    ],
+                    "kilometrage_apparition": "Caractéristique de conception",
+                    "diagnostic": "Mesure directe",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible (coût d'usage)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Coût élevé des freins carbone-céramique en option",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Au remplacement",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Freins carbone-céramique",
+                    "gravite": "Faible (coût)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Vieillissement rapide du système multimédia Mercedes",
+                    "symptomes": [
+                      "Interface perçue comme datée"
+                    ],
+                    "kilometrage_apparition": "Progressif",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Système multimédia",
+                    "gravite": "Faible",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Corrosion rapide des disques de frein classiques par inactivité",
+                    "symptomes": [
+                      "Voile ou grippage"
+                    ],
+                    "kilometrage_apparition": "Courante",
+                    "diagnostic": "Contrôle visuel",
+                    "piece_concernee": "Freins",
+                    "gravite": "Faible à modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Coût élevé des pièces de carrosserie composite",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de choc",
+                    "diagnostic": "Délais d'approvisionnement fréquemment longs",
+                    "piece_concernee": "Carrosserie composite",
+                    "gravite": "Faible (coût)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Élevé"
+                  }
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "DB11 4.0L V8 biturbo - 510ch",
+                "code_moteur": "Mercedes-AMG M177 4.0L V8 biturbo",
+                "cylindree": "4.0L",
+                "puissance_ch": 510,
+                "boite": [
+                  "Touchtronic III BVA8 (ZF 8HP)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Meilleure fiabilité que la version V12 grâce à la base Mercedes-AMG",
+                    "symptomes": [],
+                    "kilometrage_apparition": "N/A",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A (point positif)",
+                    "gravite": "N/A",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Chaleur des turbos logés dans le V du moteur",
+                    "symptomes": [
+                      "Dessèchement des durites en usage intensif"
+                    ],
+                    "kilometrage_apparition": "Progressif",
+                    "diagnostic": "Inspection régulière",
+                    "piece_concernee": "Turbos / durites",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Consommation d'huile sur premiers kilométrages",
+                    "symptomes": [
+                      "Baisse de niveau"
+                    ],
+                    "kilometrage_apparition": "Contrôle régulier recommandé les premières années",
+                    "diagnostic": "Contrôle direct du niveau",
+                    "piece_concernee": "Moteur AMG M177",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Faible (surveillance)"
+                  },
+                  {
+                    "probleme": "Vieillissement rapide de l'interface multimédia Mercedes",
+                    "symptomes": [
+                      "Perçue comme datée"
+                    ],
+                    "kilometrage_apparition": "Progressif",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Système multimédia",
+                    "gravite": "Faible",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Coût élevé des freins carbone-céramique en option",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Au remplacement",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Freins carbone-céramique",
+                    "gravite": "Faible (coût)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Corrosion rapide des disques de frein classiques par inactivité",
+                    "symptomes": [
+                      "Voile ou grippage"
+                    ],
+                    "kilometrage_apparition": "Courante",
+                    "diagnostic": "Contrôle visuel",
+                    "piece_concernee": "Freins",
+                    "gravite": "Faible à modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "DB12",
+        "generations": [
+          {
+            "code_chassis": "DB12",
+            "annees": "2023-présent",
+            "phases": [
+              "DB12 Coupé (2023-présent)",
+              "DB12 Volante (2023-présent)",
+              "DB12 S (2024-présent)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "DB12 4.0L V8 biturbo - 680 à 690ch",
+                "code_moteur": "Mercedes-AMG M177 4.0L V8 biturbo (révisé, culasse et pistons spécifiques Aston Martin)",
+                "cylindree": "4.0L",
+                "puissance_ch": 690,
+                "boite": [
+                  "Touchtronic III BVA8 (ZF 8HP)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Absence de retour de fiabilité communautaire consolidé",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Modèle trop récent (2023+)",
+                    "diagnostic": "Aucun historique de panne significatif recensé à ce jour",
+                    "piece_concernee": "N/A",
+                    "gravite": "Indéterminée",
+                    "frequence": "Indéterminée",
+                    "cout_reparation_estime": "Indéterminé"
+                  },
+                  {
+                    "probleme": "Points de vigilance hérités de la base M177 (chaleur des turbos)",
+                    "symptomes": [
+                      "Dessèchement potentiel des durites"
+                    ],
+                    "kilometrage_apparition": "Contrôle régulier du niveau d'huile recommandé par précaution",
+                    "diagnostic": "Inspection régulière",
+                    "piece_concernee": "Turbos / durites",
+                    "gravite": "Modérée (préventif)",
+                    "frequence": "Indéterminée",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Coût élevé des freins carbone-céramique en option",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Au remplacement",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Freins carbone-céramique",
+                    "gravite": "Faible (coût)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Complexité de la nouvelle suspension active à valves adaptatives",
+                    "symptomes": [
+                      "Coût de réparation potentiellement élevé en cas de panne de capteur"
+                    ],
+                    "kilometrage_apparition": "Sans recul suffisant à ce jour",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Suspension active",
+                    "gravite": "Indéterminée",
+                    "frequence": "Indéterminée",
+                    "cout_reparation_estime": "Indéterminé (probablement élevé)"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "DBX",
+        "generations": [
+          {
+            "code_chassis": "DBX",
+            "annees": "2020-présent",
+            "phases": [
+              "DBX (2020-2023)",
+              "DBX707 (2022-présent)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "DBX 4.0L V8 biturbo - 550ch",
+                "code_moteur": "Mercedes-AMG M177 4.0L V8 biturbo",
+                "cylindree": "4.0L",
+                "puissance_ch": 550,
+                "boite": [
+                  "Touchtronic III BVA9 (ZF 9HP)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Panne du compresseur ou du capteur de hauteur de la suspension pneumatique",
+                    "symptomes": [
+                      "Véhicule qui s'affaisse d'un côté après une nuit de stationnement"
+                    ],
+                    "kilometrage_apparition": "Aléatoire",
+                    "diagnostic": "Lecture des codes défauts de suspension",
+                    "piece_concernee": "Suspension pneumatique",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Consommation élevée en usage tout-terrain ou sportif",
+                    "symptomes": [
+                      "Au-delà de 15-18L/100km"
+                    ],
+                    "kilometrage_apparition": "Caractéristique de conception",
+                    "diagnostic": "Mesure directe",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible (coût d'usage)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Usure accélérée des freins et pneumatiques liée au poids (plus de 2 200 kg)",
+                    "symptomes": [
+                      "Usure plus rapide que sur un SUV classique"
+                    ],
+                    "kilometrage_apparition": "Cumulatif avec l'usage",
+                    "diagnostic": "Contrôle régulier",
+                    "piece_concernee": "Freins / pneumatiques",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Vieillissement rapide de l'interface multimédia Mercedes",
+                    "symptomes": [
+                      "Perçue comme datée face aux standards SUV premium récents"
+                    ],
+                    "kilometrage_apparition": "Progressif",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Système multimédia",
+                    "gravite": "Faible",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Chaleur des turbos en usage intensif ou remorquage",
+                    "symptomes": [
+                      "Dessèchement des durites"
+                    ],
+                    "kilometrage_apparition": "En usage intensif",
+                    "diagnostic": "Inspection régulière",
+                    "piece_concernee": "Turbos / durites",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Casse interne de la boîte ZF 9HP en cas de négligence",
+                    "symptomes": [
+                      "À-coups aux changements de rapport"
+                    ],
+                    "kilometrage_apparition": "Malgré la mention 'à vie' du constructeur",
+                    "diagnostic": "Contrôle de l'état de l'huile",
+                    "piece_concernee": "Boîte automatique",
+                    "gravite": "Critique si négligée",
+                    "frequence": "Rare si entretenue",
+                    "cout_reparation_estime": "Très élevé"
+                  }
+                ]
+              },
+              {
+                "type": "Essence",
+                "nom": "DBX707 4.0L V8 biturbo - 707ch",
+                "code_moteur": "Mercedes-AMG M177 4.0L V8 biturbo (culasse et turbos renforcés)",
+                "cylindree": "4.0L",
+                "puissance_ch": 707,
+                "boite": [
+                  "Touchtronic III BVA9 (ZF 9HP renforcée) puis embrayage humide 9 rapports dédié"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Sollicitation thermique de la boîte à embrayage humide en conduite sportive",
+                    "symptomes": [
+                      "Gestion électronique de la température à surveiller sur circuit"
+                    ],
+                    "kilometrage_apparition": "En usage circuit",
+                    "diagnostic": "Surveillance de l'affichage de température de boîte",
+                    "piece_concernee": "Boîte à embrayage humide",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Coût élevé des freins carbone-céramique de série",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Au remplacement",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Freins carbone-céramique",
+                    "gravite": "Faible (coût)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Très élevé (plusieurs milliers d'euros par train)"
+                  },
+                  {
+                    "probleme": "Panne de la suspension pneumatique adaptative",
+                    "symptomes": [
+                      "Identique à la DBX standard"
+                    ],
+                    "kilometrage_apparition": "Aléatoire",
+                    "diagnostic": "Lecture des codes défauts",
+                    "piece_concernee": "Suspension pneumatique",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Consommation très élevée en usage dynamique",
+                    "symptomes": [
+                      "Pouvant dépasser 20L/100km"
+                    ],
+                    "kilometrage_apparition": "Caractéristique de conception",
+                    "diagnostic": "Mesure directe",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible (coût d'usage)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Usure rapide des pneumatiques larges",
+                    "symptomes": [
+                      "Usure visible"
+                    ],
+                    "kilometrage_apparition": "Parfois avant 15 000 km en usage sportif",
+                    "diagnostic": "Contrôle de la profondeur des sculptures",
+                    "piece_concernee": "Pneumatiques",
+                    "gravite": "Faible",
+                    "frequence": "Fréquent en usage sportif",
+                    "cout_reparation_estime": "Élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Valkyrie / Valhalla",
+        "generations": [
+          {
+            "code_chassis": "Valkyrie",
+            "annees": "2021-présent",
+            "phases": [
+              "Valkyrie Coupé (2021-présent)",
+              "Valkyrie Spider (2023-présent)",
+              "Valkyrie AMR Pro (édition piste)"
+            ],
+            "motorisations": [
+              {
+                "type": "Hybride",
+                "nom": "Valkyrie 6.5L V12 atmosphérique + hybride - 1000 à 1155ch cumulés",
+                "code_moteur": "Aston Martin/Cosworth V12 6.5L atmosphérique + moteur électrique hybride",
+                "cylindree": "6.5L",
+                "puissance_ch": 1155,
+                "boite": [
+                  "Séquentielle 7 rapports (Ricardo)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Entretien exclusivement réservé au constructeur et à un réseau très restreint",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Dès la livraison, production ultra-limitée (moins de 150 exemplaires)",
+                    "diagnostic": "Uniquement via Aston Martin et Red Bull Advanced Technologies",
+                    "piece_concernee": "N/A (disponibilité de service)",
+                    "gravite": "Majeure (disponibilité)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Usure accélérée liée au régime moteur extrême (jusqu'à 11 100 tr/min)",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Révision complète très fréquente exigée",
+                    "diagnostic": "Suivi strict du plan d'entretien constructeur",
+                    "piece_concernee": "Moteur V12 haut régime",
+                    "gravite": "Majeure (coût d'entretien)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Complexité du système hybride partagé avec la compétition",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de panne",
+                    "diagnostic": "Diagnostics réservés à un nombre très restreint de techniciens",
+                    "piece_concernee": "Système hybride",
+                    "gravite": "Critique",
+                    "frequence": "Rare",
+                    "cout_reparation_estime": "Extrêmement élevé"
+                  },
+                  {
+                    "probleme": "Garde au sol extrêmement faible",
+                    "symptomes": [
+                      "Contact avec le sol sur routes dégradées"
+                    ],
+                    "kilometrage_apparition": "Systématique sans système de levage dédié",
+                    "diagnostic": "N/A (usage)",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible (usage)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code_chassis": "Valhalla",
+            "annees": "2024-présent",
+            "phases": [
+              "Valhalla (2024-présent)"
+            ],
+            "motorisations": [
+              {
+                "type": "Hybride",
+                "nom": "Valhalla 4.0L V8 biturbo hybride rechargeable - 937ch cumulés",
+                "code_moteur": "Mercedes-AMG M177 4.0L V8 biturbo + 2 moteurs électriques (hybride rechargeable)",
+                "cylindree": "4.0L",
+                "puissance_ch": 937,
+                "boite": [
+                  "BVA8 double embrayage (dérivée compétition)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Absence de retour de fiabilité",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Modèle trop récent",
+                    "diagnostic": "Complexité du système hybride rechargeable inédit chez Aston Martin",
+                    "piece_concernee": "N/A",
+                    "gravite": "Indéterminée",
+                    "frequence": "Indéterminée",
+                    "cout_reparation_estime": "Indéterminé"
+                  },
+                  {
+                    "probleme": "Réseau de techniciens qualifiés encore restreint",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Au lancement",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A (disponibilité de service)",
+                    "gravite": "Faible",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Complexité de la batterie haute tension et de son refroidissement",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de panne",
+                    "diagnostic": "Expertise très spécialisée nécessaire",
+                    "piece_concernee": "Batterie haute tension",
+                    "gravite": "Critique",
+                    "frequence": "Indéterminée",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Gestion thermique critique des turbos logés dans le V du bloc AMG",
+                    "symptomes": [
+                      "Risque en usage circuit compte tenu de la puissance cumulée très élevée"
+                    ],
+                    "kilometrage_apparition": "En usage intensif",
+                    "diagnostic": "Surveillance des paramètres moteur",
+                    "piece_concernee": "Turbos",
+                    "gravite": "Modérée",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Cygnet",
+        "generations": [
+          {
+            "code_chassis": "Cygnet",
+            "annees": "2011-2013",
+            "phases": [
+              "Cygnet (2011-2013)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "1.33L 4 cylindres - 98ch",
+                "code_moteur": "Toyota 1NR-FE 1.33L (base Toyota iQ rebadgée)",
+                "cylindree": "1.33L",
+                "puissance_ch": 98,
+                "boite": [
+                  "BVM5 (Toyota)",
+                  "BVA CVT (Toyota Multidrive)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Base technique intégralement Toyota iQ sous une carrosserie retravaillée",
+                    "symptomes": [],
+                    "kilometrage_apparition": "N/A (fiabilité mécanique héritée de Toyota, globalement bonne)",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A (positif)",
+                    "gravite": "N/A",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Coût des pièces de carrosserie et de sellerie spécifiques Aston Martin",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de choc ou d'usure de la sellerie en cuir",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Carrosserie / sellerie",
+                    "gravite": "Faible (coût plutôt que panne)",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "Élevé (pièces facturées au tarif Aston Martin)"
+                  },
+                  {
+                    "probleme": "Très faible diffusion commerciale (échec commercial du modèle)",
+                    "symptomes": [],
+                    "kilometrage_apparition": "N/A",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A (disponibilité de service)",
+                    "gravite": "Faible",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Entretien courant à confier à un réseau Toyota pour la mécanique, Aston Martin pour la carrosserie",
+                    "symptomes": [],
+                    "kilometrage_apparition": "N/A",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A",
+                    "gravite": "Faible",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "One-77",
+        "generations": [
+          {
+            "code_chassis": "One-77",
+            "annees": "2009-2012",
+            "phases": [
+              "One-77 (2009-2012, série limitée à 77 exemplaires)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "7.3L V12 atmosphérique - 750ch",
+                "code_moteur": "Aston Martin/Cosworth V12 7.3L atmosphérique",
+                "cylindree": "7.3L",
+                "puissance_ch": 750,
+                "boite": [
+                  "BVA6 séquentielle robotisée (Graziano)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Entretien exclusivement réservé au constructeur, production ultra-limitée (77 exemplaires)",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Dès la livraison",
+                    "diagnostic": "Uniquement via le réseau Aston Martin spécialisé",
+                    "piece_concernee": "N/A (disponibilité de service)",
+                    "gravite": "Majeure (disponibilité)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Réactivité et douceur de la boîte séquentielle robotisée jugées datées",
+                    "symptomes": [
+                      "À-coups aux changements de rapport"
+                    ],
+                    "kilometrage_apparition": "Dès l'origine",
+                    "diagnostic": "N/A (caractéristique de conception)",
+                    "piece_concernee": "Boîte robotisée",
+                    "gravite": "Faible (confort)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Rareté extrême des pièces mécaniques et de carrosserie spécifiques",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Aléatoire",
+                    "diagnostic": "Approvisionnement long, pièces parfois refabriquées sur mesure",
+                    "piece_concernee": "Pièces diverses",
+                    "gravite": "Critique (disponibilité)",
+                    "frequence": "Rare",
+                    "cout_reparation_estime": "Extrêmement élevé"
+                  },
+                  {
+                    "probleme": "Coût de réparation du châssis en fibre de carbone après choc",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de choc",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Châssis carbone",
+                    "gravite": "Critique (coût)",
+                    "frequence": "Rare",
+                    "cout_reparation_estime": "Extrêmement élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "Vulcan",
+        "generations": [
+          {
+            "code_chassis": "Vulcan",
+            "annees": "2015-2016",
+            "phases": [
+              "Vulcan (2015-2016, série limitée à 24 exemplaires, exclusivement piste)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "7.0L V12 atmosphérique - 831ch",
+                "code_moteur": "Aston Martin V12 7.0L atmosphérique (dérivé compétition)",
+                "cylindree": "7.0L",
+                "puissance_ch": 831,
+                "boite": [
+                  "Séquentielle 6 rapports (Xtrac)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Véhicule exclusivement destiné à la piste, non homologué route",
+                    "symptomes": [],
+                    "kilometrage_apparition": "N/A",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "N/A",
+                    "gravite": "N/A",
+                    "frequence": "N/A",
+                    "cout_reparation_estime": "N/A"
+                  },
+                  {
+                    "probleme": "Entretien exclusivement réservé au constructeur, production ultra-limitée (24 exemplaires)",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Dès la livraison",
+                    "diagnostic": "Programme d'accompagnement piste dédié par Aston Martin",
+                    "piece_concernee": "N/A (disponibilité de service)",
+                    "gravite": "Majeure (disponibilité)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "Extrêmement élevé"
+                  },
+                  {
+                    "probleme": "Usure très rapide des consommables (pneus slicks, freins carbone-céramique) en usage circuit intensif",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Dès les premières sorties piste",
+                    "diagnostic": "N/A",
+                    "piece_concernee": "Pneumatiques / freins",
+                    "gravite": "Faible (coût d'usage)",
+                    "frequence": "Systématique",
+                    "cout_reparation_estime": "Extrêmement élevé"
+                  },
+                  {
+                    "probleme": "Complexité du système aérodynamique actif et du diagnostic électronique de compétition",
+                    "symptomes": [],
+                    "kilometrage_apparition": "En cas de panne",
+                    "diagnostic": "Réservé aux ingénieurs de piste dédiés au programme",
+                    "piece_concernee": "Aérodynamique active / électronique course",
+                    "gravite": "Critique",
+                    "frequence": "Rare",
+                    "cout_reparation_estime": "Extrêmement élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "DB2 / DB2/4",
+        "generations": [
+          {
+            "code_chassis": "DB2 / DB2/4",
+            "annees": "1950-1957",
+            "phases": [
+              "DB2 (1950-1953)",
+              "DB2/4 (1953-1955)",
+              "DB2/4 Mark II (1955-1957)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "2.6L / 2.9L 6 cylindres - 105 à 165ch",
+                "code_moteur": "Lagonda/Aston Martin W.O. Bentley-Bertelli 6 cylindres 2.6L puis 2.9L",
+                "cylindree": "2.9L",
+                "puissance_ch": 165,
+                "boite": [
+                  "BVM4"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Corrosion du châssis en treillis tubulaire précurseur de la structure Superleggera",
+                    "symptomes": [
+                      "Rouille interne difficile à détecter"
+                    ],
+                    "kilometrage_apparition": "Fréquente sur exemplaires non restaurés",
+                    "diagnostic": "Inspection par un spécialiste Aston Martin vintage",
+                    "piece_concernee": "Châssis tubulaire",
+                    "gravite": "Critique",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Encrassement des carburateurs SU d'époque",
+                    "symptomes": [
+                      "Ralenti irrégulier"
+                    ],
+                    "kilometrage_apparition": "Réglage pointu nécessaire",
+                    "diagnostic": "Démontage et nettoyage",
+                    "piece_concernee": "Alimentation carburant",
+                    "gravite": "Modérée",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Faible à modéré"
+                  },
+                  {
+                    "probleme": "Corrosion de la carrosserie en aluminium sur ossature métallique (construction artisanale d'époque)",
+                    "symptomes": [
+                      "Corrosion électrolytique aux jonctions"
+                    ],
+                    "kilometrage_apparition": "Progressive avec l'âge",
+                    "diagnostic": "Examen visuel rapproché des zones de fixation",
+                    "piece_concernee": "Carrosserie aluminium",
+                    "gravite": "Majeure",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Rareté des pièces mécaniques spécifiques à ce moteur d'origine Lagonda",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Aléatoire",
+                    "diagnostic": "Approvisionnement via spécialistes britanniques vintage",
+                    "piece_concernee": "Pièces moteur diverses",
+                    "gravite": "Majeure (disponibilité)",
+                    "frequence": "Rare",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Freins tambour peu endurants en usage soutenu",
+                    "symptomes": [
+                      "Distance de freinage allongée"
+                    ],
+                    "kilometrage_apparition": "Systématique en usage dynamique",
+                    "diagnostic": "Test de freinage",
+                    "piece_concernee": "Freins",
+                    "gravite": "Majeure (sécurité)",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Modéré"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nom": "DB Mark III",
+        "generations": [
+          {
+            "code_chassis": "DB Mark III",
+            "annees": "1957-1959",
+            "phases": [
+              "DB Mark III (1957-1959, chaînon entre la DB2/4 et la DB4)"
+            ],
+            "motorisations": [
+              {
+                "type": "Essence",
+                "nom": "2.9L 6 cylindres - 162 à 178ch",
+                "code_moteur": "Lagonda/Aston Martin 6 cylindres 2.9L (version révisée, culasse Weslake en option)",
+                "cylindree": "2.9L",
+                "puissance_ch": 178,
+                "boite": [
+                  "BVM4 (overdrive en option)"
+                ],
+                "points_faibles": [
+                  {
+                    "probleme": "Corrosion du châssis en treillis tubulaire",
+                    "symptomes": [
+                      "Rouille interne difficile à détecter"
+                    ],
+                    "kilometrage_apparition": "Fréquente sur exemplaires non restaurés",
+                    "diagnostic": "Inspection par un spécialiste Aston Martin vintage",
+                    "piece_concernee": "Châssis tubulaire",
+                    "gravite": "Critique",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Très élevé"
+                  },
+                  {
+                    "probleme": "Fragilité de la culasse Weslake haute performance (en option) si mal entretenue",
+                    "symptomes": [
+                      "Perte de compression"
+                    ],
+                    "kilometrage_apparition": "Sur les exemplaires équipés de cette option",
+                    "diagnostic": "Test de compression",
+                    "piece_concernee": "Culasse Weslake",
+                    "gravite": "Majeure",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Premiers freins à disque avant de la marque (en option tardive), réglage et purge délicats",
+                    "symptomes": [
+                      "Freinage irrégulier si mal purgé"
+                    ],
+                    "kilometrage_apparition": "Sur les exemplaires équipés",
+                    "diagnostic": "Purge rigoureuse par un spécialiste",
+                    "piece_concernee": "Freins à disque avant",
+                    "gravite": "Majeure (sécurité)",
+                    "frequence": "Occasionnel",
+                    "cout_reparation_estime": "Modéré"
+                  },
+                  {
+                    "probleme": "Corrosion de la carrosserie aluminium sur ossature métallique",
+                    "symptomes": [
+                      "Corrosion électrolytique"
+                    ],
+                    "kilometrage_apparition": "Progressive",
+                    "diagnostic": "Examen visuel rapproché",
+                    "piece_concernee": "Carrosserie aluminium",
+                    "gravite": "Majeure",
+                    "frequence": "Fréquent",
+                    "cout_reparation_estime": "Élevé"
+                  },
+                  {
+                    "probleme": "Rareté des pièces mécaniques et de carrosserie spécifiques à ce modèle de transition produit en petite série",
+                    "symptomes": [],
+                    "kilometrage_apparition": "Aléatoire",
+                    "diagnostic": "Approvisionnement via spécialistes britanniques vintage",
+                    "piece_concernee": "Pièces diverses",
+                    "gravite": "Majeure (disponibilité)",
+                    "frequence": "Rare",
+                    "cout_reparation_estime": "Élevé"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

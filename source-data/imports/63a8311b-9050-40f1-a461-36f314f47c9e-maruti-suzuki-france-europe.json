@@ -1,0 +1,313 @@
+{
+  "nom": "Maruti Suzuki",
+  "modeles": [
+    {
+      "nom": "800",
+      "generations": [
+        {
+          "code_chassis": "SS80 première série",
+          "annees": "1983–1986",
+          "phases": [
+            "Première Maruti 800 dérivée de l’Alto SS80 ; conserver séparément cette boîte quatre rapports."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "F8B carburateur, boîte 4 — 39 ch",
+              "code_moteur": "Suzuki F8B",
+              "cylindree": "796 cm³",
+              "puissance_ch": 39,
+              "boite": [
+                "Manuelle 4 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, joint de culasse et lubrification du F8B à carburateur",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Mayonnaise ou baisse de liquide",
+                    "Fumée bleue, pression d’huile faible ou claquement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km, plus tôt avec eau non traitée ou entretien irrégulier",
+                  "diagnostic": "Moteur froid puis chaud, mesurer compressions et pression d’huile, tester le circuit et le bouchon, contrôler radiateur, pompe, thermostat, ventilateur, planéité de culasse, fuites aux joints et contamination huile/liquide ; confirmer le bloc F8B 796 cm³ sur le numéro moteur",
+                  "piece_concernee": "Bloc, culasse et circuit de refroidissement Suzuki F8B",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sur les exemplaires anciens ou ayant surchauffé",
+                  "cout_reparation_estime": "Moyen à élevé : environ 250 à 1 800 €"
+                },
+                {
+                  "probleme": "Carburateur, allumage et alimentation essence",
+                  "symptomes": [
+                    "Démarrage à froid difficile",
+                    "Ralenti instable",
+                    "À-coups, surconsommation ou manque de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 50 000 à 120 000 km ou après immobilisation",
+                  "diagnostic": "Contrôler réservoir, durites, pompe mécanique, filtre, prise d’air, starter et niveau de cuve ; nettoyer/régler le carburateur, mesurer CO et avance, inspecter bougies, faisceau, tête, doigt, bobine et capsule de dépression sans compenser une faible compression par un réglage riche",
+                  "piece_concernee": "Carburateur, alimentation et allumage du F8B",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Fréquente avec carburant dégradé et membranes vieillies",
+                  "cout_reparation_estime": "Faible à moyen : environ 80 à 700 €"
+                },
+                {
+                  "probleme": "Distribution, jeu aux soupapes et étanchéité moteur",
+                  "symptomes": [
+                    "Cliquetis de culbuteurs",
+                    "Compression inégale",
+                    "Fuite d’huile ou perte de rendement"
+                  ],
+                  "kilometrage_apparition": "Contrôle périodique tous les 20 000 à 40 000 km ; distribution selon historique",
+                  "diagnostic": "Identifier la configuration exacte, vérifier âge/tension de courroie et galet, repères, jeu aux soupapes à froid, état des arbres/joints et ventilation de carter ; effectuer leak-down si un cylindre reste faible après réglage",
+                  "piece_concernee": "Distribution et culasse SOHC F8B",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente si le réglage et la courroie ne sont pas documentés",
+                  "cout_reparation_estime": "Moyen : environ 150 à 900 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte, cardans, freinage et corrosion de caisse",
+                  "symptomes": [
+                    "Patinage ou sélection difficile",
+                    "Claquement en braquage",
+                    "Tirage au freinage, jeu ou rouille perforante"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km ; corrosion à contrôler sans seuil",
+                  "diagnostic": "Essayer les quatre/cinq rapports à froid et chaud, vérifier commande, supports, huile et synchros, soufflets/cardans et roulements ; inspecter planchers, bas de caisse, ancrages, passages de roue et baie, puis flexibles, cylindres, tambours/disques, direction, rotules, amortisseurs et pneus",
+                  "piece_concernee": "Transmission, coque et organes de sécurité Maruti 800",
+                  "gravite": "Critique si structure ou freinage atteint",
+                  "frequence": "Fréquente sur véhicule ancien, urbain ou réparé",
+                  "cout_reparation_estime": "Variable : environ 150 à plus de 3 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "SB308 / deuxième génération",
+          "annees": "1986–1997",
+          "phases": [
+            "Restylages successifs et apparition de la boîte cinq ; vérifier norme, carburation et transmission sur le véhicule."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "F8B carburateur, boîte 4 — 39 ch",
+              "code_moteur": "Suzuki F8B",
+              "cylindree": "796 cm³",
+              "puissance_ch": 39,
+              "boite": [
+                "Manuelle 4 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, joint de culasse et lubrification du F8B à carburateur",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Mayonnaise ou baisse de liquide",
+                    "Fumée bleue, pression d’huile faible ou claquement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km, plus tôt avec eau non traitée ou entretien irrégulier",
+                  "diagnostic": "Moteur froid puis chaud, mesurer compressions et pression d’huile, tester le circuit et le bouchon, contrôler radiateur, pompe, thermostat, ventilateur, planéité de culasse, fuites aux joints et contamination huile/liquide ; confirmer le bloc F8B 796 cm³ sur le numéro moteur",
+                  "piece_concernee": "Bloc, culasse et circuit de refroidissement Suzuki F8B",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sur les exemplaires anciens ou ayant surchauffé",
+                  "cout_reparation_estime": "Moyen à élevé : environ 250 à 1 800 €"
+                },
+                {
+                  "probleme": "Carburateur, allumage et alimentation essence",
+                  "symptomes": [
+                    "Démarrage à froid difficile",
+                    "Ralenti instable",
+                    "À-coups, surconsommation ou manque de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 50 000 à 120 000 km ou après immobilisation",
+                  "diagnostic": "Contrôler réservoir, durites, pompe mécanique, filtre, prise d’air, starter et niveau de cuve ; nettoyer/régler le carburateur, mesurer CO et avance, inspecter bougies, faisceau, tête, doigt, bobine et capsule de dépression sans compenser une faible compression par un réglage riche",
+                  "piece_concernee": "Carburateur, alimentation et allumage du F8B",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Fréquente avec carburant dégradé et membranes vieillies",
+                  "cout_reparation_estime": "Faible à moyen : environ 80 à 700 €"
+                },
+                {
+                  "probleme": "Distribution, jeu aux soupapes et étanchéité moteur",
+                  "symptomes": [
+                    "Cliquetis de culbuteurs",
+                    "Compression inégale",
+                    "Fuite d’huile ou perte de rendement"
+                  ],
+                  "kilometrage_apparition": "Contrôle périodique tous les 20 000 à 40 000 km ; distribution selon historique",
+                  "diagnostic": "Identifier la configuration exacte, vérifier âge/tension de courroie et galet, repères, jeu aux soupapes à froid, état des arbres/joints et ventilation de carter ; effectuer leak-down si un cylindre reste faible après réglage",
+                  "piece_concernee": "Distribution et culasse SOHC F8B",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente si le réglage et la courroie ne sont pas documentés",
+                  "cout_reparation_estime": "Moyen : environ 150 à 900 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte, cardans, freinage et corrosion de caisse",
+                  "symptomes": [
+                    "Patinage ou sélection difficile",
+                    "Claquement en braquage",
+                    "Tirage au freinage, jeu ou rouille perforante"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km ; corrosion à contrôler sans seuil",
+                  "diagnostic": "Essayer les quatre/cinq rapports à froid et chaud, vérifier commande, supports, huile et synchros, soufflets/cardans et roulements ; inspecter planchers, bas de caisse, ancrages, passages de roue et baie, puis flexibles, cylindres, tambours/disques, direction, rotules, amortisseurs et pneus",
+                  "piece_concernee": "Transmission, coque et organes de sécurité Maruti 800",
+                  "gravite": "Critique si structure ou freinage atteint",
+                  "frequence": "Fréquente sur véhicule ancien, urbain ou réparé",
+                  "cout_reparation_estime": "Variable : environ 150 à plus de 3 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "F8B carburateur, boîte 5 — 39 ch",
+              "code_moteur": "Suzuki F8B",
+              "cylindree": "796 cm³",
+              "puissance_ch": 39,
+              "boite": [
+                "Manuelle 5 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, joint de culasse et lubrification du F8B à carburateur",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Mayonnaise ou baisse de liquide",
+                    "Fumée bleue, pression d’huile faible ou claquement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km, plus tôt avec eau non traitée ou entretien irrégulier",
+                  "diagnostic": "Moteur froid puis chaud, mesurer compressions et pression d’huile, tester le circuit et le bouchon, contrôler radiateur, pompe, thermostat, ventilateur, planéité de culasse, fuites aux joints et contamination huile/liquide ; confirmer le bloc F8B 796 cm³ sur le numéro moteur",
+                  "piece_concernee": "Bloc, culasse et circuit de refroidissement Suzuki F8B",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sur les exemplaires anciens ou ayant surchauffé",
+                  "cout_reparation_estime": "Moyen à élevé : environ 250 à 1 800 €"
+                },
+                {
+                  "probleme": "Carburateur, allumage et alimentation essence",
+                  "symptomes": [
+                    "Démarrage à froid difficile",
+                    "Ralenti instable",
+                    "À-coups, surconsommation ou manque de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 50 000 à 120 000 km ou après immobilisation",
+                  "diagnostic": "Contrôler réservoir, durites, pompe mécanique, filtre, prise d’air, starter et niveau de cuve ; nettoyer/régler le carburateur, mesurer CO et avance, inspecter bougies, faisceau, tête, doigt, bobine et capsule de dépression sans compenser une faible compression par un réglage riche",
+                  "piece_concernee": "Carburateur, alimentation et allumage du F8B",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Fréquente avec carburant dégradé et membranes vieillies",
+                  "cout_reparation_estime": "Faible à moyen : environ 80 à 700 €"
+                },
+                {
+                  "probleme": "Distribution, jeu aux soupapes et étanchéité moteur",
+                  "symptomes": [
+                    "Cliquetis de culbuteurs",
+                    "Compression inégale",
+                    "Fuite d’huile ou perte de rendement"
+                  ],
+                  "kilometrage_apparition": "Contrôle périodique tous les 20 000 à 40 000 km ; distribution selon historique",
+                  "diagnostic": "Identifier la configuration exacte, vérifier âge/tension de courroie et galet, repères, jeu aux soupapes à froid, état des arbres/joints et ventilation de carter ; effectuer leak-down si un cylindre reste faible après réglage",
+                  "piece_concernee": "Distribution et culasse SOHC F8B",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente si le réglage et la courroie ne sont pas documentés",
+                  "cout_reparation_estime": "Moyen : environ 150 à 900 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte, cardans, freinage et corrosion de caisse",
+                  "symptomes": [
+                    "Patinage ou sélection difficile",
+                    "Claquement en braquage",
+                    "Tirage au freinage, jeu ou rouille perforante"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km ; corrosion à contrôler sans seuil",
+                  "diagnostic": "Essayer les quatre/cinq rapports à froid et chaud, vérifier commande, supports, huile et synchros, soufflets/cardans et roulements ; inspecter planchers, bas de caisse, ancrages, passages de roue et baie, puis flexibles, cylindres, tambours/disques, direction, rotules, amortisseurs et pneus",
+                  "piece_concernee": "Transmission, coque et organes de sécurité Maruti 800",
+                  "gravite": "Critique si structure ou freinage atteint",
+                  "frequence": "Fréquente sur véhicule ancien, urbain ou réparé",
+                  "cout_reparation_estime": "Variable : environ 150 à plus de 3 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "SB308 MPFI / Bharat Stage",
+          "annees": "1997–2014",
+          "phases": [
+            "Injection multipoint et moteur F8D 12 soupapes ; fin de production nationale en 2014."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "F8D MPFI 12 soupapes — 37 ch",
+              "code_moteur": "Suzuki F8D",
+              "cylindree": "796 cm³",
+              "puissance_ch": 37,
+              "boite": [
+                "Manuelle 5 rapports, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, joint de culasse et lubrification du F8D MPFI",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Perte de liquide",
+                    "Fumée, fuite d’huile ou compression faible"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km, plus tôt après surchauffe",
+                  "diagnostic": "Tester pression et gaz de combustion dans le vase, contrôler radiateur, thermostat, pompe, ventilateur et sonde ; mesurer compressions/leak-down et pression d’huile, inspecter culasse, reniflard, joints et contamination croisée, puis confirmer le F8D SOHC 12 soupapes 796 cm³",
+                  "piece_concernee": "Moteur F8D 12 soupapes et refroidissement",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente à fort kilométrage ou avec liquide négligé",
+                  "cout_reparation_estime": "Moyen à élevé : environ 300 à 2 000 €"
+                },
+                {
+                  "probleme": "Injection MPFI, capteurs et allumage électronique",
+                  "symptomes": [
+                    "Voyant moteur",
+                    "Ralenti irrégulier",
+                    "Ratés, consommation ou démarrage difficile"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km",
+                  "diagnostic": "Lire les défauts sans remplacer au code, contrôler tension batterie et masses, pression/débit carburant, injecteurs, boîtier papillon, prises d’air, MAP/TPS, température, lambda, faisceau, bobine et bougies ; comparer données réelles à froid et chaud et confirmer la norme BS",
+                  "piece_concernee": "Injection multipoint et gestion F8D",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Occasionnelle à assez fréquente selon connectique et entretien",
+                  "cout_reparation_estime": "Moyen : environ 80 à 900 €"
+                },
+                {
+                  "probleme": "Courroie de distribution, soupapes et étanchéité",
+                  "symptomes": [
+                    "Bruit côté distribution",
+                    "Perte de puissance",
+                    "Fuite aux joints ou absence d’historique"
+                  ],
+                  "kilometrage_apparition": "Remplacement préventif selon manuel et âge ; contrôle immédiat sans preuve",
+                  "diagnostic": "Contrôler date/kilométrage, courroie, galet, pompe si entraînée, repères et joints ; mesurer/régler le jeu aux soupapes selon version, contrôler compressions et ventilation de carter, sans démarrer si la courroie est détériorée",
+                  "piece_concernee": "Distribution SOHC 12V F8D",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque élevé quand l’historique est absent",
+                  "cout_reparation_estime": "Moyen : environ 180 à 1 000 €"
+                },
+                {
+                  "probleme": "Transmission cinq rapports, trains roulants, freins et structure",
+                  "symptomes": [
+                    "Embrayage haut",
+                    "Craquement de synchro ou vibration",
+                    "Jeu, freinage inégal ou corrosion"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km ; contrôle structurel systématique",
+                  "diagnostic": "Contrôler commande et embrayage, boîte et fuites, supports, cardans, soufflets, moyeux ; lever le véhicule pour examiner planchers/ancrages, direction, rotules, amortisseurs, géométrie, conduites, maître-cylindre, étriers/tambours, pneus et réparations de choc",
+                  "piece_concernee": "Boîte, châssis et sécurité Maruti 800 MPFI",
+                  "gravite": "Critique si corrosion porteuse ou freinage défaillant",
+                  "frequence": "Assez fréquente en usage urbain intensif",
+                  "cout_reparation_estime": "Variable : environ 200 à plus de 3 500 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.suzuki.co.jp/suzuki_digital_library/7_engine/4-f.html",
+        "https://www.team-bhp.com/forum/attachments/technical-stuff/570001d1309453184-maruti-800-technical-specifications-feature-list-ommaruti800mpi.pdf"
+      ]
+    }
+  ]
+}

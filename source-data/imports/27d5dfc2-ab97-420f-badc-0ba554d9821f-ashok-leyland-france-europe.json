@@ -1,0 +1,136 @@
+{
+  "nom": "Ashok Leyland",
+  "modeles": [
+    {
+      "nom": "Dost",
+      "generations": [
+        {
+          "code_chassis": "Dost / Dost Strong",
+          "annees": "2011–2021",
+          "phases": [
+            "Petit utilitaire marché indien ; confirmer charge utile et norme antipollution"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "1.5 turbodiesel — 58 ch",
+              "code_moteur": "TDCR 3-cylindres",
+              "cylindree": "1 478 cm³",
+              "puissance_ch": 58,
+              "boite": [
+                "Boîte manuelle 5 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo et refroidissement du petit diesel utilitaire",
+                  "symptomes": [
+                    "Démarrage long",
+                    "Fumée",
+                    "Manque de puissance ou surchauffe"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 km, plus tôt en surcharge",
+                  "diagnostic": "Mesurer pression/retours, contrôler filtre, pompe, injecteurs, turbo selon version, admission, huile, radiateur, ventilateur, pompe à eau et contamination du carburant",
+                  "piece_concernee": "Moteur 1.5 diesel Dost",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente en usage intensif",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 500 € selon marché"
+                },
+                {
+                  "probleme": "Embrayage, boîte, arbre et pont sous forte charge",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapports difficiles",
+                    "Bruit de pont ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km en usage professionnel",
+                  "diagnostic": "Contrôler embrayage/commande, boîte, huile, arbre, croisillons, pont, demi-arbres, roulements, ressorts/lames, charge utile et pneus",
+                  "piece_concernee": "Chaîne cinématique utilitaire",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en surcharge",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 000 €"
+                },
+                {
+                  "probleme": "Corrosion du châssis, freinage et carrosserie de travail",
+                  "symptomes": [
+                    "Fissure/rouille",
+                    "Freinage dissymétrique",
+                    "Jeu de direction"
+                  ],
+                  "kilometrage_apparition": "Après 8 à 15 ans selon climat et charge",
+                  "diagnostic": "Inspecter longerons, traverses, supports de cabine/benne, soudures, conduites, maître-cylindre, étriers/tambours, direction, suspension, roues et modifications de carrosserie",
+                  "piece_concernee": "Châssis et sécurité",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente sur véhicules exploités intensivement",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Bada Dost i2/i3/i4",
+          "annees": "2020–aujourd’hui",
+          "phases": [
+            "Distinguer empattement i2/i3/i4, charge et carrosserie"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "1.5 turbodiesel — 80 ch",
+              "code_moteur": "Ashok Leyland 1.5 TDCR",
+              "cylindree": "1 478 cm³",
+              "puissance_ch": 80,
+              "boite": [
+                "Boîte manuelle 5 rapports"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo et refroidissement du petit diesel utilitaire",
+                  "symptomes": [
+                    "Démarrage long",
+                    "Fumée",
+                    "Manque de puissance ou surchauffe"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 km, plus tôt en surcharge",
+                  "diagnostic": "Mesurer pression/retours, contrôler filtre, pompe, injecteurs, turbo selon version, admission, huile, radiateur, ventilateur, pompe à eau et contamination du carburant",
+                  "piece_concernee": "Moteur 1.5 diesel Dost",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente en usage intensif",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 500 € selon marché"
+                },
+                {
+                  "probleme": "Embrayage, boîte, arbre et pont sous forte charge",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapports difficiles",
+                    "Bruit de pont ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 km en usage professionnel",
+                  "diagnostic": "Contrôler embrayage/commande, boîte, huile, arbre, croisillons, pont, demi-arbres, roulements, ressorts/lames, charge utile et pneus",
+                  "piece_concernee": "Chaîne cinématique utilitaire",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en surcharge",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 000 €"
+                },
+                {
+                  "probleme": "Corrosion du châssis, freinage et carrosserie de travail",
+                  "symptomes": [
+                    "Fissure/rouille",
+                    "Freinage dissymétrique",
+                    "Jeu de direction"
+                  ],
+                  "kilometrage_apparition": "Après 8 à 15 ans selon climat et charge",
+                  "diagnostic": "Inspecter longerons, traverses, supports de cabine/benne, soudures, conduites, maître-cylindre, étriers/tambours, direction, suspension, roues et modifications de carrosserie",
+                  "piece_concernee": "Châssis et sécurité",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente sur véhicules exploités intensivement",
+                  "cout_reparation_estime": "Élevé : environ 400 à 5 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

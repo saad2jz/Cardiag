@@ -1,0 +1,77 @@
+{
+  "nom": "Bolloré",
+  "modeles": [
+    {
+      "nom": "Bluecar",
+      "generations": [
+        {
+          "code_chassis": "Bluecar Pininfarina",
+          "annees": "2011–2019",
+          "phases": [
+            "Batterie LMP à température élevée de fonctionnement : vérifier les contraintes de maintien branché et le contrat/propriétaire de la batterie."
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "Électrique LMP 30 kWh — 68 ch",
+              "code_moteur": "Bolloré LMP / Leroy-Somer",
+              "cylindree": "Batterie 30 kWh",
+              "puissance_ch": 68,
+              "boite": [
+                "Réducteur mono-rapport, traction avant"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Santé, chauffage permanent et isolement de la batterie LMP",
+                  "symptomes": [
+                    "Autonomie faible",
+                    "Consommation importante à l’arrêt",
+                    "Refus de charge, alerte batterie ou immobilisation après débranchement"
+                  ],
+                  "kilometrage_apparition": "Dès 5 à 8 ans selon stockage, cycles et maintien à température",
+                  "diagnostic": "Utiliser le diagnostic Bolloré pour relever SOH, énergie utile, températures, cellules/modules et défauts BMS ; contrôler maintien à la température élevée de fonctionnement prescrite, isolation thermique, chauffages, contacteurs, refroidissement périphérique et isolement haute tension ; vérifier historique de branchement prolongé et disponibilité du support",
+                  "piece_concernee": "Batterie lithium-métal-polymère 30 kWh, BMS et chauffage",
+                  "gravite": "Critique ; haute tension et risque d’immobilisation",
+                  "frequence": "Fréquente sur véhicule stocké débranché ou ancien",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 20 000 € selon disponibilité"
+                },
+                {
+                  "probleme": "Chargeur embarqué, convertisseur, onduleur et moteur de traction",
+                  "symptomes": [
+                    "Charge interrompue",
+                    "Absence de READY",
+                    "À-coups, bruit de réducteur ou puissance limitée"
+                  ],
+                  "kilometrage_apparition": "Variable ; souvent lié à l’âge, l’humidité ou aux cycles intensifs",
+                  "diagnostic": "Lire les défauts charge/traction, tester alimentation secteur, prise/câble, chargeur, convertisseur DC-DC, tension 12 V, contacteurs et isolement ; contrôler refroidissement, onduleur, moteur 50 kW, réducteur, roulements et huile ; consigner la haute tension avant mesure physique",
+                  "piece_concernee": "Chaîne de traction électrique 50 kW et électronique de puissance",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sur ex-autopartage à usage intensif",
+                  "cout_reparation_estime": "Très élevé : environ 800 à 15 000 €"
+                },
+                {
+                  "probleme": "Batterie 12 V, réseau, freins et usure d’un ancien véhicule d’autopartage",
+                  "symptomes": [
+                    "Pannes électroniques aléatoires",
+                    "Corrosion",
+                    "Freins grippés ou usure intérieure importante"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel et systématique avant achat",
+                  "diagnostic": "Tester batterie 12 V et consommation au repos, vérifier calculateurs/télématique retirée, étanchéité, faisceaux et traces de choc ; inspecter disques/étriers peu sollicités par régénération, pneus, roulements, direction, suspension, soubassements et connecteurs ; confirmer propriété de batterie, clés, câble et possibilité de pièces/diagnostic",
+                  "piece_concernee": "Réseau basse tension, châssis et historique Autolib",
+                  "gravite": "Majeure à critique selon freinage ou disponibilité des pièces",
+                  "frequence": "Fréquente sur exemplaire réformé d’autopartage",
+                  "cout_reparation_estime": "Élevé : environ 300 à 8 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.bollore.com/en/activites-et-participations-2/stockage-delectricite-et-systemes/blue/",
+        "https://autocatalogarchive.com/wp-content/uploads/2022/12/Bollore-Bluecar-2014-FR.pdf"
+      ]
+    }
+  ]
+}

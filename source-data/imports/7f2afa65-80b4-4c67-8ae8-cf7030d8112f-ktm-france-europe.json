@@ -1,0 +1,477 @@
+{
+  "nom": "KTM",
+  "modeles": [
+    {
+      "nom": "X-Bow",
+      "generations": [
+        {
+          "code_chassis": "X-Bow / Street",
+          "annees": "2008–2011",
+          "phases": [
+            "Version originelle sans pare-brise, calibrage 240 ch."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.0 TFSI — 240 ch",
+              "code_moteur": "Audi EA113 2.0 TFSI",
+              "cylindree": "1 984 cm³",
+              "puissance_ch": 240,
+              "boite": [
+                "Manuelle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement, turbo et lubrification Audi TFSI",
+                  "symptomes": [
+                    "Consommation d’huile",
+                    "Surchauffe",
+                    "Boost faible, cliquetis ou bruit de chaîne/courroie selon moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km sur route, bien plus tôt selon heures de piste",
+                  "diagnostic": "Identifier EA113 2.0 ou DAZA/DNWA 2.5, lire historique régime/pression, analyser huile, tester refroidissement, pompe, thermostat, turbo, wastegate, intercoolers, ventilation et distribution ; contrôler calamine/injection avant pleine charge",
+                  "piece_concernee": "Moteur Audi TFSI du KTM X-Bow",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Variable, accrue par piste et préparation",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 20 000 €"
+                },
+                {
+                  "probleme": "Injection directe, allumage, gestion et échappement",
+                  "symptomes": [
+                    "Ratés",
+                    "Coupure ou mode dégradé",
+                    "Lambda, pression carburant ou température anormale"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 km ou à chaque alerte piste",
+                  "diagnostic": "Lire défauts et données, contrôler basse/haute pression, injecteurs, bobines/bougies, capteurs, papillon, faisceau, catalyseur/OPF selon version et cartographie KTM/Reiter ; vérifier carburant et modifications",
+                  "piece_concernee": "Gestion moteur X-Bow",
+                  "gravite": "Critique à forte charge",
+                  "frequence": "Occasionnelle",
+                  "cout_reparation_estime": "Élevé : environ 200 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/DSG/séquentielle, embrayage et différentiel",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport refusé",
+                    "À-coup, température ou limaille"
+                  ],
+                  "kilometrage_apparition": "Selon kilométrage ou heures ; contrôle après chaque compétition",
+                  "diagnostic": "Identifier manuelle six, DSG sept ou Holinger séquentielle six, contrôler embrayage, mécatronique/actuateurs, huile/refroidissement, pignons, différentiel, arbres et joints ; analyser journal de boîte et adaptations",
+                  "piece_concernee": "Transmission et propulsion KTM X-Bow",
+                  "gravite": "Critique",
+                  "frequence": "Usure dépend fortement de la version et de la piste",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 25 000 €"
+                },
+                {
+                  "probleme": "Monocoque carbone, verrière, aérodynamique, suspension et freins",
+                  "symptomes": [
+                    "Délaminage ou choc",
+                    "Verrière ou verrouillage défaillant",
+                    "Appui, géométrie ou freinage instable"
+                  ],
+                  "kilometrage_apparition": "Inspection avant achat, après piste, choc ou levage",
+                  "diagnostic": "Faire contrôler cellule carbone et inserts, fond/aéro, canopy GTX/GT-XR, cage et points de levage ; inspecter push-rods/doubles triangles, amortisseurs, pneus, roues, disques/étriers, conduites, réservoir et équipements FIA ou routiers",
+                  "piece_concernee": "Structure et sécurité KTM X-Bow",
+                  "gravite": "Critique",
+                  "frequence": "Risque surtout après contact ou réparation incorrecte",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 80 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "X-Bow R",
+          "annees": "2011–aujourd’hui",
+          "phases": [
+            "Spécification officielle R : 300 ch, 420 Nm et environ 790 kg."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.0 TFSI R — 300 ch",
+              "code_moteur": "Audi EA113 2.0 TFSI KTM",
+              "cylindree": "1 984 cm³",
+              "puissance_ch": 300,
+              "boite": [
+                "Manuelle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement, turbo et lubrification Audi TFSI",
+                  "symptomes": [
+                    "Consommation d’huile",
+                    "Surchauffe",
+                    "Boost faible, cliquetis ou bruit de chaîne/courroie selon moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km sur route, bien plus tôt selon heures de piste",
+                  "diagnostic": "Identifier EA113 2.0 ou DAZA/DNWA 2.5, lire historique régime/pression, analyser huile, tester refroidissement, pompe, thermostat, turbo, wastegate, intercoolers, ventilation et distribution ; contrôler calamine/injection avant pleine charge",
+                  "piece_concernee": "Moteur Audi TFSI du KTM X-Bow",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Variable, accrue par piste et préparation",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 20 000 €"
+                },
+                {
+                  "probleme": "Injection directe, allumage, gestion et échappement",
+                  "symptomes": [
+                    "Ratés",
+                    "Coupure ou mode dégradé",
+                    "Lambda, pression carburant ou température anormale"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 km ou à chaque alerte piste",
+                  "diagnostic": "Lire défauts et données, contrôler basse/haute pression, injecteurs, bobines/bougies, capteurs, papillon, faisceau, catalyseur/OPF selon version et cartographie KTM/Reiter ; vérifier carburant et modifications",
+                  "piece_concernee": "Gestion moteur X-Bow",
+                  "gravite": "Critique à forte charge",
+                  "frequence": "Occasionnelle",
+                  "cout_reparation_estime": "Élevé : environ 200 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/DSG/séquentielle, embrayage et différentiel",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport refusé",
+                    "À-coup, température ou limaille"
+                  ],
+                  "kilometrage_apparition": "Selon kilométrage ou heures ; contrôle après chaque compétition",
+                  "diagnostic": "Identifier manuelle six, DSG sept ou Holinger séquentielle six, contrôler embrayage, mécatronique/actuateurs, huile/refroidissement, pignons, différentiel, arbres et joints ; analyser journal de boîte et adaptations",
+                  "piece_concernee": "Transmission et propulsion KTM X-Bow",
+                  "gravite": "Critique",
+                  "frequence": "Usure dépend fortement de la version et de la piste",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 25 000 €"
+                },
+                {
+                  "probleme": "Monocoque carbone, verrière, aérodynamique, suspension et freins",
+                  "symptomes": [
+                    "Délaminage ou choc",
+                    "Verrière ou verrouillage défaillant",
+                    "Appui, géométrie ou freinage instable"
+                  ],
+                  "kilometrage_apparition": "Inspection avant achat, après piste, choc ou levage",
+                  "diagnostic": "Faire contrôler cellule carbone et inserts, fond/aéro, canopy GTX/GT-XR, cage et points de levage ; inspecter push-rods/doubles triangles, amortisseurs, pneus, roues, disques/étriers, conduites, réservoir et équipements FIA ou routiers",
+                  "piece_concernee": "Structure et sécurité KTM X-Bow",
+                  "gravite": "Critique",
+                  "frequence": "Risque surtout après contact ou réparation incorrecte",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 80 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "X-Bow GT",
+          "annees": "2013–2020",
+          "phases": [
+            "Pare-brise et éléments routiers propres au GT."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.0 TFSI GT — 285 ch",
+              "code_moteur": "Audi EA113 2.0 TFSI GT",
+              "cylindree": "1 984 cm³",
+              "puissance_ch": 285,
+              "boite": [
+                "Manuelle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement, turbo et lubrification Audi TFSI",
+                  "symptomes": [
+                    "Consommation d’huile",
+                    "Surchauffe",
+                    "Boost faible, cliquetis ou bruit de chaîne/courroie selon moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km sur route, bien plus tôt selon heures de piste",
+                  "diagnostic": "Identifier EA113 2.0 ou DAZA/DNWA 2.5, lire historique régime/pression, analyser huile, tester refroidissement, pompe, thermostat, turbo, wastegate, intercoolers, ventilation et distribution ; contrôler calamine/injection avant pleine charge",
+                  "piece_concernee": "Moteur Audi TFSI du KTM X-Bow",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Variable, accrue par piste et préparation",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 20 000 €"
+                },
+                {
+                  "probleme": "Injection directe, allumage, gestion et échappement",
+                  "symptomes": [
+                    "Ratés",
+                    "Coupure ou mode dégradé",
+                    "Lambda, pression carburant ou température anormale"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 km ou à chaque alerte piste",
+                  "diagnostic": "Lire défauts et données, contrôler basse/haute pression, injecteurs, bobines/bougies, capteurs, papillon, faisceau, catalyseur/OPF selon version et cartographie KTM/Reiter ; vérifier carburant et modifications",
+                  "piece_concernee": "Gestion moteur X-Bow",
+                  "gravite": "Critique à forte charge",
+                  "frequence": "Occasionnelle",
+                  "cout_reparation_estime": "Élevé : environ 200 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/DSG/séquentielle, embrayage et différentiel",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport refusé",
+                    "À-coup, température ou limaille"
+                  ],
+                  "kilometrage_apparition": "Selon kilométrage ou heures ; contrôle après chaque compétition",
+                  "diagnostic": "Identifier manuelle six, DSG sept ou Holinger séquentielle six, contrôler embrayage, mécatronique/actuateurs, huile/refroidissement, pignons, différentiel, arbres et joints ; analyser journal de boîte et adaptations",
+                  "piece_concernee": "Transmission et propulsion KTM X-Bow",
+                  "gravite": "Critique",
+                  "frequence": "Usure dépend fortement de la version et de la piste",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 25 000 €"
+                },
+                {
+                  "probleme": "Monocoque carbone, verrière, aérodynamique, suspension et freins",
+                  "symptomes": [
+                    "Délaminage ou choc",
+                    "Verrière ou verrouillage défaillant",
+                    "Appui, géométrie ou freinage instable"
+                  ],
+                  "kilometrage_apparition": "Inspection avant achat, après piste, choc ou levage",
+                  "diagnostic": "Faire contrôler cellule carbone et inserts, fond/aéro, canopy GTX/GT-XR, cage et points de levage ; inspecter push-rods/doubles triangles, amortisseurs, pneus, roues, disques/étriers, conduites, réservoir et équipements FIA ou routiers",
+                  "piece_concernee": "Structure et sécurité KTM X-Bow",
+                  "gravite": "Critique",
+                  "frequence": "Risque surtout après contact ou réparation incorrecte",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 80 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "X-Bow GT4",
+          "annees": "2015–2020",
+          "phases": [
+            "Voiture de course fermée ; puissance ajustée par BoP selon championnat."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence compétition",
+              "nom": "2.0 TFSI GT4 — 360 ch",
+              "code_moteur": "Audi EA113 2.0 TFSI Reiter GT4",
+              "cylindree": "1 984 cm³",
+              "puissance_ch": 360,
+              "boite": [
+                "Séquentielle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement, turbo et lubrification Audi TFSI",
+                  "symptomes": [
+                    "Consommation d’huile",
+                    "Surchauffe",
+                    "Boost faible, cliquetis ou bruit de chaîne/courroie selon moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km sur route, bien plus tôt selon heures de piste",
+                  "diagnostic": "Identifier EA113 2.0 ou DAZA/DNWA 2.5, lire historique régime/pression, analyser huile, tester refroidissement, pompe, thermostat, turbo, wastegate, intercoolers, ventilation et distribution ; contrôler calamine/injection avant pleine charge",
+                  "piece_concernee": "Moteur Audi TFSI du KTM X-Bow",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Variable, accrue par piste et préparation",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 20 000 €"
+                },
+                {
+                  "probleme": "Injection directe, allumage, gestion et échappement",
+                  "symptomes": [
+                    "Ratés",
+                    "Coupure ou mode dégradé",
+                    "Lambda, pression carburant ou température anormale"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 km ou à chaque alerte piste",
+                  "diagnostic": "Lire défauts et données, contrôler basse/haute pression, injecteurs, bobines/bougies, capteurs, papillon, faisceau, catalyseur/OPF selon version et cartographie KTM/Reiter ; vérifier carburant et modifications",
+                  "piece_concernee": "Gestion moteur X-Bow",
+                  "gravite": "Critique à forte charge",
+                  "frequence": "Occasionnelle",
+                  "cout_reparation_estime": "Élevé : environ 200 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/DSG/séquentielle, embrayage et différentiel",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport refusé",
+                    "À-coup, température ou limaille"
+                  ],
+                  "kilometrage_apparition": "Selon kilométrage ou heures ; contrôle après chaque compétition",
+                  "diagnostic": "Identifier manuelle six, DSG sept ou Holinger séquentielle six, contrôler embrayage, mécatronique/actuateurs, huile/refroidissement, pignons, différentiel, arbres et joints ; analyser journal de boîte et adaptations",
+                  "piece_concernee": "Transmission et propulsion KTM X-Bow",
+                  "gravite": "Critique",
+                  "frequence": "Usure dépend fortement de la version et de la piste",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 25 000 €"
+                },
+                {
+                  "probleme": "Monocoque carbone, verrière, aérodynamique, suspension et freins",
+                  "symptomes": [
+                    "Délaminage ou choc",
+                    "Verrière ou verrouillage défaillant",
+                    "Appui, géométrie ou freinage instable"
+                  ],
+                  "kilometrage_apparition": "Inspection avant achat, après piste, choc ou levage",
+                  "diagnostic": "Faire contrôler cellule carbone et inserts, fond/aéro, canopy GTX/GT-XR, cage et points de levage ; inspecter push-rods/doubles triangles, amortisseurs, pneus, roues, disques/étriers, conduites, réservoir et équipements FIA ou routiers",
+                  "piece_concernee": "Structure et sécurité KTM X-Bow",
+                  "gravite": "Critique",
+                  "frequence": "Risque surtout après contact ou réparation incorrecte",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 80 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "X-Bow GTX",
+          "annees": "2020–aujourd’hui",
+          "phases": [
+            "KTM annonce 530 ch, 650 Nm et 1 048 kg pour la présentation GTX."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence compétition",
+              "nom": "2.5 TFSI GTX — 530 ch",
+              "code_moteur": "Audi DAZA/DNWA 2.5 TFSI KTM",
+              "cylindree": "2 480 cm³",
+              "puissance_ch": 530,
+              "boite": [
+                "Holinger séquentielle 6 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement, turbo et lubrification Audi TFSI",
+                  "symptomes": [
+                    "Consommation d’huile",
+                    "Surchauffe",
+                    "Boost faible, cliquetis ou bruit de chaîne/courroie selon moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km sur route, bien plus tôt selon heures de piste",
+                  "diagnostic": "Identifier EA113 2.0 ou DAZA/DNWA 2.5, lire historique régime/pression, analyser huile, tester refroidissement, pompe, thermostat, turbo, wastegate, intercoolers, ventilation et distribution ; contrôler calamine/injection avant pleine charge",
+                  "piece_concernee": "Moteur Audi TFSI du KTM X-Bow",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Variable, accrue par piste et préparation",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 20 000 €"
+                },
+                {
+                  "probleme": "Injection directe, allumage, gestion et échappement",
+                  "symptomes": [
+                    "Ratés",
+                    "Coupure ou mode dégradé",
+                    "Lambda, pression carburant ou température anormale"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 km ou à chaque alerte piste",
+                  "diagnostic": "Lire défauts et données, contrôler basse/haute pression, injecteurs, bobines/bougies, capteurs, papillon, faisceau, catalyseur/OPF selon version et cartographie KTM/Reiter ; vérifier carburant et modifications",
+                  "piece_concernee": "Gestion moteur X-Bow",
+                  "gravite": "Critique à forte charge",
+                  "frequence": "Occasionnelle",
+                  "cout_reparation_estime": "Élevé : environ 200 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/DSG/séquentielle, embrayage et différentiel",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport refusé",
+                    "À-coup, température ou limaille"
+                  ],
+                  "kilometrage_apparition": "Selon kilométrage ou heures ; contrôle après chaque compétition",
+                  "diagnostic": "Identifier manuelle six, DSG sept ou Holinger séquentielle six, contrôler embrayage, mécatronique/actuateurs, huile/refroidissement, pignons, différentiel, arbres et joints ; analyser journal de boîte et adaptations",
+                  "piece_concernee": "Transmission et propulsion KTM X-Bow",
+                  "gravite": "Critique",
+                  "frequence": "Usure dépend fortement de la version et de la piste",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 25 000 €"
+                },
+                {
+                  "probleme": "Monocoque carbone, verrière, aérodynamique, suspension et freins",
+                  "symptomes": [
+                    "Délaminage ou choc",
+                    "Verrière ou verrouillage défaillant",
+                    "Appui, géométrie ou freinage instable"
+                  ],
+                  "kilometrage_apparition": "Inspection avant achat, après piste, choc ou levage",
+                  "diagnostic": "Faire contrôler cellule carbone et inserts, fond/aéro, canopy GTX/GT-XR, cage et points de levage ; inspecter push-rods/doubles triangles, amortisseurs, pneus, roues, disques/étriers, conduites, réservoir et équipements FIA ou routiers",
+                  "piece_concernee": "Structure et sécurité KTM X-Bow",
+                  "gravite": "Critique",
+                  "frequence": "Risque surtout après contact ou réparation incorrecte",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 80 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "X-Bow GT-XR",
+          "annees": "2022–aujourd’hui",
+          "phases": [
+            "Version routière européenne : 500 ch, 581 Nm, homologation petite série Euro 6d."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.5 TFSI GT-XR — 500 ch",
+              "code_moteur": "Audi DAZA/DNWA 2.5 TFSI KTM",
+              "cylindree": "2 480 cm³",
+              "puissance_ch": 500,
+              "boite": [
+                "DSG 7 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Distribution, refroidissement, turbo et lubrification Audi TFSI",
+                  "symptomes": [
+                    "Consommation d’huile",
+                    "Surchauffe",
+                    "Boost faible, cliquetis ou bruit de chaîne/courroie selon moteur"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km sur route, bien plus tôt selon heures de piste",
+                  "diagnostic": "Identifier EA113 2.0 ou DAZA/DNWA 2.5, lire historique régime/pression, analyser huile, tester refroidissement, pompe, thermostat, turbo, wastegate, intercoolers, ventilation et distribution ; contrôler calamine/injection avant pleine charge",
+                  "piece_concernee": "Moteur Audi TFSI du KTM X-Bow",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Variable, accrue par piste et préparation",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 20 000 €"
+                },
+                {
+                  "probleme": "Injection directe, allumage, gestion et échappement",
+                  "symptomes": [
+                    "Ratés",
+                    "Coupure ou mode dégradé",
+                    "Lambda, pression carburant ou température anormale"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 km ou à chaque alerte piste",
+                  "diagnostic": "Lire défauts et données, contrôler basse/haute pression, injecteurs, bobines/bougies, capteurs, papillon, faisceau, catalyseur/OPF selon version et cartographie KTM/Reiter ; vérifier carburant et modifications",
+                  "piece_concernee": "Gestion moteur X-Bow",
+                  "gravite": "Critique à forte charge",
+                  "frequence": "Occasionnelle",
+                  "cout_reparation_estime": "Élevé : environ 200 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte manuelle/DSG/séquentielle, embrayage et différentiel",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport refusé",
+                    "À-coup, température ou limaille"
+                  ],
+                  "kilometrage_apparition": "Selon kilométrage ou heures ; contrôle après chaque compétition",
+                  "diagnostic": "Identifier manuelle six, DSG sept ou Holinger séquentielle six, contrôler embrayage, mécatronique/actuateurs, huile/refroidissement, pignons, différentiel, arbres et joints ; analyser journal de boîte et adaptations",
+                  "piece_concernee": "Transmission et propulsion KTM X-Bow",
+                  "gravite": "Critique",
+                  "frequence": "Usure dépend fortement de la version et de la piste",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 25 000 €"
+                },
+                {
+                  "probleme": "Monocoque carbone, verrière, aérodynamique, suspension et freins",
+                  "symptomes": [
+                    "Délaminage ou choc",
+                    "Verrière ou verrouillage défaillant",
+                    "Appui, géométrie ou freinage instable"
+                  ],
+                  "kilometrage_apparition": "Inspection avant achat, après piste, choc ou levage",
+                  "diagnostic": "Faire contrôler cellule carbone et inserts, fond/aéro, canopy GTX/GT-XR, cage et points de levage ; inspecter push-rods/doubles triangles, amortisseurs, pneus, roues, disques/étriers, conduites, réservoir et équipements FIA ou routiers",
+                  "piece_concernee": "Structure et sécurité KTM X-Bow",
+                  "gravite": "Critique",
+                  "frequence": "Risque surtout après contact ou réparation incorrecte",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 80 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.ktm.com/en-cz/models/x-bow/ktm-x-bow-r.html",
+        "https://www.ktm.com/en-us/X-BOW/x-bow-news/official-world-premiere-of-the-ktm-x-bow-gtx.html",
+        "https://www.ktm.com/de-de/X-BOW/x-bow-news/pure-power--the-ktm-x-bow-gt-xr-with-its-legendary-five-cylinder.html"
+      ]
+    }
+  ]
+}

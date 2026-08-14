@@ -1,0 +1,76 @@
+{
+  "nom": "Baojun",
+  "modeles": [
+    {
+      "nom": "Yep",
+      "generations": [
+        {
+          "code_chassis": "Yep trois portes / 宝骏悦也",
+          "annees": "2023–aujourd’hui",
+          "phases": [
+            "SUV urbain trois portes et quatre places, 303 km CLTC ; ne pas confondre avec le Yep Plus cinq portes, modèle distinct"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "Moteur synchrone arrière 50 kW — 68 ch",
+              "code_moteur": "SGMW permanent-magnet 50 kW",
+              "cylindree": "Sans cylindrée — batterie LFP 28,1 kWh",
+              "puissance_ch": 68,
+              "boite": [
+                "Réducteur mono-rapport, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Batterie LFP 28,1 kWh, équilibre et gestion thermique",
+                  "symptomes": [
+                    "Autonomie réduite",
+                    "Charge rapide bridée",
+                    "Alerte batterie ou écart de SOC"
+                  ],
+                  "kilometrage_apparition": "Dès 80 000 à 160 000 km selon cycles et température ; inspection immédiate après choc sous caisse",
+                  "diagnostic": "Lire SOH, capacité, tensions et températures, tester isolement et charge AC/DC, inspecter caisson, contacteurs, chauffage batterie, connecteur et historique de stockage ; utiliser un atelier habilité HV",
+                  "piece_concernee": "Batterie LFP 28,1 kWh et BMS",
+                  "gravite": "Majeure à critique en cas d’isolement",
+                  "frequence": "Parc récent, fréquence à long terme non établie",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 800 à plus de 12 000 €"
+                },
+                {
+                  "probleme": "Moteur arrière 50 kW, réducteur et essieu rigide",
+                  "symptomes": [
+                    "Bruit arrière",
+                    "À-coups",
+                    "Vibration ou puissance limitée"
+                  ],
+                  "kilometrage_apparition": "Variable ; plus tôt après immersion, choc ou usage tout-chemin inadapté",
+                  "diagnostic": "Lire onduleur et moteur, contrôler isolement, température, roulements, joints et huile du réducteur, supports, arbre/essieu arrière à trois bras, géométrie et pneus ; le style 4x4 ne signifie pas transmission intégrale",
+                  "piece_concernee": "Moteur synchrone arrière, onduleur et réducteur",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Non consolidée sur modèle récent",
+                  "cout_reparation_estime": "Élevé : environ 700 à 8 000 €"
+                },
+                {
+                  "probleme": "Charge, réseau 12 V, écrans et ADAS selon finition",
+                  "symptomes": [
+                    "Charge impossible",
+                    "Écran noir",
+                    "Décharge 12 V ou alertes capteurs"
+                  ],
+                  "kilometrage_apparition": "Variable, souvent après batterie auxiliaire faible ou mise à jour",
+                  "diagnostic": "Tester batterie 12 V et DC/DC, verrouillage et communication de charge, masses, calculateurs, caméras/radars, EPB, climatisation et mises à jour ; confirmer disponibilité du diagnostic SGMW hors Chine",
+                  "piece_concernee": "Chargeur, DC/DC, réseau électronique et capteurs",
+                  "gravite": "Modérée à majeure",
+                  "frequence": "Occasionnelle, support hors marché d’origine limité",
+                  "cout_reparation_estime": "Modéré à élevé : environ 200 à 5 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.sgmw.com.cn/carDetail?id=2"
+      ]
+    }
+  ]
+}

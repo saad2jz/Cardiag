@@ -1,0 +1,562 @@
+{
+  "nom": "Moskvitch",
+  "modeles": [
+    {
+      "nom": "408",
+      "generations": [
+        {
+          "code_chassis": "MZMA/AZLK 408",
+          "annees": "1964–1975",
+          "phases": [
+            "Berline de base, break 426 et fourgon 433 ; production MZMA puis AZLK."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "MZMA-408 1.36 OHV — 50 ch",
+              "code_moteur": "MZMA-408",
+              "cylindree": "1 357 cm³",
+              "puissance_ch": 50,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et culasse du MZMA-408/UZAM-412",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou mayonnaise"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km ; âge et entretien priment",
+                  "diagnostic": "Distinguer MZMA-408 1,36 l OHV et UZAM-412 1,48 l OHC, puis version standard/export/basse compression. Mesurer compressions et pression, contrôler chaîne, soupapes, pompe, radiateur, thermostat, culasse/joint et corrosion interne.",
+                  "piece_concernee": "Moteur Moskvitch 408/2140",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente si refroidissement négligé",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 500 €"
+                },
+                {
+                  "probleme": "Carburateur, pompe mécanique, allumage et démarrage par froid",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ralenti instable",
+                    "Ratés, fuite ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et avant hiver",
+                  "diagnostic": "Contrôler réservoir, pompe, filtre, carburateur, starter, prises d’air, distributeur, avance, bobine, bougies, batterie, démarreur et masses. Régler selon indice d’octane de la version 50/54/68/75 ch.",
+                  "piece_concernee": "Alimentation et allumage Moskvitch",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquente après immobilisation ou par froid",
+                  "cout_reparation_estime": "Moyen : environ 150 à 1 500 €"
+                },
+                {
+                  "probleme": "Boîte quatre rapports, embrayage, arbre et pont",
+                  "symptomes": [
+                    "Craquement",
+                    "Rapport qui saute",
+                    "Patinage, vibration ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km",
+                  "diagnostic": "Contrôler huile, synchros, levier colonne/plancher selon phase, embrayage, supports, arbre, croisillons, pont, joints et roulements. Vérifier rapport de pont entre berline, break et version rurale.",
+                  "piece_concernee": "Transmission Moskvitch propulsion",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente sur véhicules utilitaires ou mal graissés",
+                  "cout_reparation_estime": "Moyen à élevé : environ 300 à 3 000 €"
+                },
+                {
+                  "probleme": "Corrosion, ressorts à lames, direction et freinage",
+                  "symptomes": [
+                    "Plancher ou longeron perforé",
+                    "Jeu, tirage ou affaissement",
+                    "Pédale longue ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Inspection avant achat et contrôle annuel",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons, ancrages, ailes, baie et coffre ; contrôler rotules, boîtier de direction, ressorts, amortisseurs, roulements, disques avant du 2140 standard ou tambours du 21406, flexibles et pneus.",
+                  "piece_concernee": "Structure et liaisons au sol Moskvitch",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion et freins grippés fréquents après stockage",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 7 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "408E / Elite export",
+          "annees": "1964–1975",
+          "phases": [
+            "Version export haute compression, quatre phares sur les premières séries ; 54/55 ch selon norme."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "MZMA-408E haute compression — 54 ch",
+              "code_moteur": "MZMA-408E",
+              "cylindree": "1 357 cm³",
+              "puissance_ch": 54,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et culasse du MZMA-408/UZAM-412",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou mayonnaise"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km ; âge et entretien priment",
+                  "diagnostic": "Distinguer MZMA-408 1,36 l OHV et UZAM-412 1,48 l OHC, puis version standard/export/basse compression. Mesurer compressions et pression, contrôler chaîne, soupapes, pompe, radiateur, thermostat, culasse/joint et corrosion interne.",
+                  "piece_concernee": "Moteur Moskvitch 408/2140",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente si refroidissement négligé",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 500 €"
+                },
+                {
+                  "probleme": "Carburateur, pompe mécanique, allumage et démarrage par froid",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ralenti instable",
+                    "Ratés, fuite ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et avant hiver",
+                  "diagnostic": "Contrôler réservoir, pompe, filtre, carburateur, starter, prises d’air, distributeur, avance, bobine, bougies, batterie, démarreur et masses. Régler selon indice d’octane de la version 50/54/68/75 ch.",
+                  "piece_concernee": "Alimentation et allumage Moskvitch",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquente après immobilisation ou par froid",
+                  "cout_reparation_estime": "Moyen : environ 150 à 1 500 €"
+                },
+                {
+                  "probleme": "Boîte quatre rapports, embrayage, arbre et pont",
+                  "symptomes": [
+                    "Craquement",
+                    "Rapport qui saute",
+                    "Patinage, vibration ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km",
+                  "diagnostic": "Contrôler huile, synchros, levier colonne/plancher selon phase, embrayage, supports, arbre, croisillons, pont, joints et roulements. Vérifier rapport de pont entre berline, break et version rurale.",
+                  "piece_concernee": "Transmission Moskvitch propulsion",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente sur véhicules utilitaires ou mal graissés",
+                  "cout_reparation_estime": "Moyen à élevé : environ 300 à 3 000 €"
+                },
+                {
+                  "probleme": "Corrosion, ressorts à lames, direction et freinage",
+                  "symptomes": [
+                    "Plancher ou longeron perforé",
+                    "Jeu, tirage ou affaissement",
+                    "Pédale longue ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Inspection avant achat et contrôle annuel",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons, ancrages, ailes, baie et coffre ; contrôler rotules, boîtier de direction, ressorts, amortisseurs, roulements, disques avant du 2140 standard ou tambours du 21406, flexibles et pneus.",
+                  "piece_concernee": "Structure et liaisons au sol Moskvitch",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion et freins grippés fréquents après stockage",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 7 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "408 Tourist prototype",
+          "annees": "1964",
+          "phases": [
+            "Deux cabriolets 2+2 expérimentaux à carrosserie aluminium et injection ; pas une série commercialisée."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "MZMA-408 injection prototype — 63 ch",
+              "code_moteur": "MZMA-408 Tourist EFI",
+              "cylindree": "1 357 cm³",
+              "puissance_ch": 63,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et culasse du MZMA-408/UZAM-412",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou mayonnaise"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km ; âge et entretien priment",
+                  "diagnostic": "Distinguer MZMA-408 1,36 l OHV et UZAM-412 1,48 l OHC, puis version standard/export/basse compression. Mesurer compressions et pression, contrôler chaîne, soupapes, pompe, radiateur, thermostat, culasse/joint et corrosion interne.",
+                  "piece_concernee": "Moteur Moskvitch 408/2140",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente si refroidissement négligé",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 500 €"
+                },
+                {
+                  "probleme": "Carburateur, pompe mécanique, allumage et démarrage par froid",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ralenti instable",
+                    "Ratés, fuite ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et avant hiver",
+                  "diagnostic": "Contrôler réservoir, pompe, filtre, carburateur, starter, prises d’air, distributeur, avance, bobine, bougies, batterie, démarreur et masses. Régler selon indice d’octane de la version 50/54/68/75 ch.",
+                  "piece_concernee": "Alimentation et allumage Moskvitch",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquente après immobilisation ou par froid",
+                  "cout_reparation_estime": "Moyen : environ 150 à 1 500 €"
+                },
+                {
+                  "probleme": "Boîte quatre rapports, embrayage, arbre et pont",
+                  "symptomes": [
+                    "Craquement",
+                    "Rapport qui saute",
+                    "Patinage, vibration ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km",
+                  "diagnostic": "Contrôler huile, synchros, levier colonne/plancher selon phase, embrayage, supports, arbre, croisillons, pont, joints et roulements. Vérifier rapport de pont entre berline, break et version rurale.",
+                  "piece_concernee": "Transmission Moskvitch propulsion",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente sur véhicules utilitaires ou mal graissés",
+                  "cout_reparation_estime": "Moyen à élevé : environ 300 à 3 000 €"
+                },
+                {
+                  "probleme": "Corrosion, ressorts à lames, direction et freinage",
+                  "symptomes": [
+                    "Plancher ou longeron perforé",
+                    "Jeu, tirage ou affaissement",
+                    "Pédale longue ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Inspection avant achat et contrôle annuel",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons, ancrages, ailes, baie et coffre ; contrôler rotules, boîtier de direction, ressorts, amortisseurs, roulements, disques avant du 2140 standard ou tambours du 21406, flexibles et pneus.",
+                  "piece_concernee": "Structure et liaisons au sol Moskvitch",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion et freins grippés fréquents après stockage",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 7 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://en.mtmuseum.ru/moskvich",
+        "https://transport.mos.ru/mostrans/all_news/105431"
+      ]
+    },
+    {
+      "nom": "2140",
+      "generations": [
+        {
+          "code_chassis": "M-2140 / Moskvitch 1500",
+          "annees": "1976–1988",
+          "phases": [
+            "Berline standard et export, freins avant à disque."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "UZAM-412 1.5 — 75 ch",
+              "code_moteur": "UZAM-412",
+              "cylindree": "1 478 cm³",
+              "puissance_ch": 75,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et culasse du MZMA-408/UZAM-412",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou mayonnaise"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km ; âge et entretien priment",
+                  "diagnostic": "Distinguer MZMA-408 1,36 l OHV et UZAM-412 1,48 l OHC, puis version standard/export/basse compression. Mesurer compressions et pression, contrôler chaîne, soupapes, pompe, radiateur, thermostat, culasse/joint et corrosion interne.",
+                  "piece_concernee": "Moteur Moskvitch 408/2140",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente si refroidissement négligé",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 500 €"
+                },
+                {
+                  "probleme": "Carburateur, pompe mécanique, allumage et démarrage par froid",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ralenti instable",
+                    "Ratés, fuite ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et avant hiver",
+                  "diagnostic": "Contrôler réservoir, pompe, filtre, carburateur, starter, prises d’air, distributeur, avance, bobine, bougies, batterie, démarreur et masses. Régler selon indice d’octane de la version 50/54/68/75 ch.",
+                  "piece_concernee": "Alimentation et allumage Moskvitch",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquente après immobilisation ou par froid",
+                  "cout_reparation_estime": "Moyen : environ 150 à 1 500 €"
+                },
+                {
+                  "probleme": "Boîte quatre rapports, embrayage, arbre et pont",
+                  "symptomes": [
+                    "Craquement",
+                    "Rapport qui saute",
+                    "Patinage, vibration ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km",
+                  "diagnostic": "Contrôler huile, synchros, levier colonne/plancher selon phase, embrayage, supports, arbre, croisillons, pont, joints et roulements. Vérifier rapport de pont entre berline, break et version rurale.",
+                  "piece_concernee": "Transmission Moskvitch propulsion",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente sur véhicules utilitaires ou mal graissés",
+                  "cout_reparation_estime": "Moyen à élevé : environ 300 à 3 000 €"
+                },
+                {
+                  "probleme": "Corrosion, ressorts à lames, direction et freinage",
+                  "symptomes": [
+                    "Plancher ou longeron perforé",
+                    "Jeu, tirage ou affaissement",
+                    "Pédale longue ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Inspection avant achat et contrôle annuel",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons, ancrages, ailes, baie et coffre ; contrôler rotules, boîtier de direction, ressorts, amortisseurs, roulements, disques avant du 2140 standard ou tambours du 21406, flexibles et pneus.",
+                  "piece_concernee": "Structure et liaisons au sol Moskvitch",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion et freins grippés fréquents après stockage",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 7 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "M-2138 / Moskvitch 1360",
+          "annees": "1976–1982",
+          "phases": [
+            "Carrosserie 2140 avec ancien moteur 408 faute de disponibilité UZAM."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "MZMA-408 1.36 — 50 ch",
+              "code_moteur": "MZMA-408",
+              "cylindree": "1 357 cm³",
+              "puissance_ch": 50,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et culasse du MZMA-408/UZAM-412",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou mayonnaise"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km ; âge et entretien priment",
+                  "diagnostic": "Distinguer MZMA-408 1,36 l OHV et UZAM-412 1,48 l OHC, puis version standard/export/basse compression. Mesurer compressions et pression, contrôler chaîne, soupapes, pompe, radiateur, thermostat, culasse/joint et corrosion interne.",
+                  "piece_concernee": "Moteur Moskvitch 408/2140",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente si refroidissement négligé",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 500 €"
+                },
+                {
+                  "probleme": "Carburateur, pompe mécanique, allumage et démarrage par froid",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ralenti instable",
+                    "Ratés, fuite ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et avant hiver",
+                  "diagnostic": "Contrôler réservoir, pompe, filtre, carburateur, starter, prises d’air, distributeur, avance, bobine, bougies, batterie, démarreur et masses. Régler selon indice d’octane de la version 50/54/68/75 ch.",
+                  "piece_concernee": "Alimentation et allumage Moskvitch",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquente après immobilisation ou par froid",
+                  "cout_reparation_estime": "Moyen : environ 150 à 1 500 €"
+                },
+                {
+                  "probleme": "Boîte quatre rapports, embrayage, arbre et pont",
+                  "symptomes": [
+                    "Craquement",
+                    "Rapport qui saute",
+                    "Patinage, vibration ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km",
+                  "diagnostic": "Contrôler huile, synchros, levier colonne/plancher selon phase, embrayage, supports, arbre, croisillons, pont, joints et roulements. Vérifier rapport de pont entre berline, break et version rurale.",
+                  "piece_concernee": "Transmission Moskvitch propulsion",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente sur véhicules utilitaires ou mal graissés",
+                  "cout_reparation_estime": "Moyen à élevé : environ 300 à 3 000 €"
+                },
+                {
+                  "probleme": "Corrosion, ressorts à lames, direction et freinage",
+                  "symptomes": [
+                    "Plancher ou longeron perforé",
+                    "Jeu, tirage ou affaissement",
+                    "Pédale longue ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Inspection avant achat et contrôle annuel",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons, ancrages, ailes, baie et coffre ; contrôler rotules, boîtier de direction, ressorts, amortisseurs, roulements, disques avant du 2140 standard ou tambours du 21406, flexibles et pneus.",
+                  "piece_concernee": "Structure et liaisons au sol Moskvitch",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion et freins grippés fréquents après stockage",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 7 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "M-21406 rural",
+          "annees": "1978–1987",
+          "phases": [
+            "Essence faible indice d’octane, suspension renforcée, garde au sol accrue et quatre tambours."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "UZAM-412D basse compression — 68 ch",
+              "code_moteur": "UZAM-412D",
+              "cylindree": "1 478 cm³",
+              "puissance_ch": 68,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et culasse du MZMA-408/UZAM-412",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou mayonnaise"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km ; âge et entretien priment",
+                  "diagnostic": "Distinguer MZMA-408 1,36 l OHV et UZAM-412 1,48 l OHC, puis version standard/export/basse compression. Mesurer compressions et pression, contrôler chaîne, soupapes, pompe, radiateur, thermostat, culasse/joint et corrosion interne.",
+                  "piece_concernee": "Moteur Moskvitch 408/2140",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente si refroidissement négligé",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 500 €"
+                },
+                {
+                  "probleme": "Carburateur, pompe mécanique, allumage et démarrage par froid",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ralenti instable",
+                    "Ratés, fuite ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et avant hiver",
+                  "diagnostic": "Contrôler réservoir, pompe, filtre, carburateur, starter, prises d’air, distributeur, avance, bobine, bougies, batterie, démarreur et masses. Régler selon indice d’octane de la version 50/54/68/75 ch.",
+                  "piece_concernee": "Alimentation et allumage Moskvitch",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquente après immobilisation ou par froid",
+                  "cout_reparation_estime": "Moyen : environ 150 à 1 500 €"
+                },
+                {
+                  "probleme": "Boîte quatre rapports, embrayage, arbre et pont",
+                  "symptomes": [
+                    "Craquement",
+                    "Rapport qui saute",
+                    "Patinage, vibration ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km",
+                  "diagnostic": "Contrôler huile, synchros, levier colonne/plancher selon phase, embrayage, supports, arbre, croisillons, pont, joints et roulements. Vérifier rapport de pont entre berline, break et version rurale.",
+                  "piece_concernee": "Transmission Moskvitch propulsion",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente sur véhicules utilitaires ou mal graissés",
+                  "cout_reparation_estime": "Moyen à élevé : environ 300 à 3 000 €"
+                },
+                {
+                  "probleme": "Corrosion, ressorts à lames, direction et freinage",
+                  "symptomes": [
+                    "Plancher ou longeron perforé",
+                    "Jeu, tirage ou affaissement",
+                    "Pédale longue ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Inspection avant achat et contrôle annuel",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons, ancrages, ailes, baie et coffre ; contrôler rotules, boîtier de direction, ressorts, amortisseurs, roulements, disques avant du 2140 standard ou tambours du 21406, flexibles et pneus.",
+                  "piece_concernee": "Structure et liaisons au sol Moskvitch",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion et freins grippés fréquents après stockage",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 7 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "M-2140SL / 1500SL",
+          "annees": "1981–1988",
+          "phases": [
+            "Version luxe 2140-117, finition et tableau de bord spécifiques mais moteur 75 ch."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "UZAM-412 1.5 — 75 ch",
+              "code_moteur": "UZAM-412 SL",
+              "cylindree": "1 478 cm³",
+              "puissance_ch": 75,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et culasse du MZMA-408/UZAM-412",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Fumée, claquement ou mayonnaise"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km ; âge et entretien priment",
+                  "diagnostic": "Distinguer MZMA-408 1,36 l OHV et UZAM-412 1,48 l OHC, puis version standard/export/basse compression. Mesurer compressions et pression, contrôler chaîne, soupapes, pompe, radiateur, thermostat, culasse/joint et corrosion interne.",
+                  "piece_concernee": "Moteur Moskvitch 408/2140",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente si refroidissement négligé",
+                  "cout_reparation_estime": "Élevé : environ 400 à 4 500 €"
+                },
+                {
+                  "probleme": "Carburateur, pompe mécanique, allumage et démarrage par froid",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ralenti instable",
+                    "Ratés, fuite ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et avant hiver",
+                  "diagnostic": "Contrôler réservoir, pompe, filtre, carburateur, starter, prises d’air, distributeur, avance, bobine, bougies, batterie, démarreur et masses. Régler selon indice d’octane de la version 50/54/68/75 ch.",
+                  "piece_concernee": "Alimentation et allumage Moskvitch",
+                  "gravite": "Majeure",
+                  "frequence": "Fréquente après immobilisation ou par froid",
+                  "cout_reparation_estime": "Moyen : environ 150 à 1 500 €"
+                },
+                {
+                  "probleme": "Boîte quatre rapports, embrayage, arbre et pont",
+                  "symptomes": [
+                    "Craquement",
+                    "Rapport qui saute",
+                    "Patinage, vibration ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km",
+                  "diagnostic": "Contrôler huile, synchros, levier colonne/plancher selon phase, embrayage, supports, arbre, croisillons, pont, joints et roulements. Vérifier rapport de pont entre berline, break et version rurale.",
+                  "piece_concernee": "Transmission Moskvitch propulsion",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente sur véhicules utilitaires ou mal graissés",
+                  "cout_reparation_estime": "Moyen à élevé : environ 300 à 3 000 €"
+                },
+                {
+                  "probleme": "Corrosion, ressorts à lames, direction et freinage",
+                  "symptomes": [
+                    "Plancher ou longeron perforé",
+                    "Jeu, tirage ou affaissement",
+                    "Pédale longue ou freinage déséquilibré"
+                  ],
+                  "kilometrage_apparition": "Inspection avant achat et contrôle annuel",
+                  "diagnostic": "Inspecter bas de caisse, planchers, longerons, ancrages, ailes, baie et coffre ; contrôler rotules, boîtier de direction, ressorts, amortisseurs, roulements, disques avant du 2140 standard ou tambours du 21406, flexibles et pneus.",
+                  "piece_concernee": "Structure et liaisons au sol Moskvitch",
+                  "gravite": "Critique",
+                  "frequence": "Corrosion et freins grippés fréquents après stockage",
+                  "cout_reparation_estime": "Élevé : environ 300 à plus de 7 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://en.mtmuseum.ru/moskvich",
+        "https://transport.mos.ru/mostrans/all_news/105431"
+      ]
+    }
+  ]
+}

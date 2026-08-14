@@ -1,0 +1,77 @@
+{
+  "nom": "Gurgel",
+  "modeles": [
+    {
+      "nom": "BR-800",
+      "generations": [
+        {
+          "code_chassis": "BR-800",
+          "annees": "1988–1991",
+          "phases": [
+            "Le manuel de service donne 22 kW/30 cv ABNT à 4 500 tr/min ; les brochures et publications indiquent souvent 32 cv selon méthode de mesure."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Enertron bicylindre 0.8 — 30 ch",
+              "code_moteur": "Gurgel Enertron H2",
+              "cylindree": "792 cm³",
+              "puissance_ch": 30,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification, culasses et carburation de l’Enertron",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fuite de liquide ou huile",
+                    "Compressions inégales, ratés ou fumée"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km, mais âge et immobilisation priment",
+                  "diagnostic": "Mesurer compressions des deux cylindres (écart maximal 1,4 bar selon manuel), pression et jeu aux soupapes, contrôler chemises amovibles, culasses/joints, pompe/radiateur, carburateur simple corps, pompe à essence, allumage par capteur/magnets et reniflard ; vérifier 2,5 l d’huile avec filtre",
+                  "piece_concernee": "Bicylindre opposé Gurgel Enertron 792 cm³",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente avec chauffe ou mauvais réglage",
+                  "cout_reparation_estime": "Élevé : environ 800 à 6 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte quatre rapports, transmission arrière et supports",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Claquement, fuite ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent après 70 000 à 140 000 km",
+                  "diagnostic": "Contrôler câble/garde et disque, tringlerie, synchros, niveau d’huile, supports du groupe avant, arbres/joints, différentiel et roulements ; rechercher adaptations de pièces Volkswagen ou artisanales et mesurer jeux avant essai",
+                  "piece_concernee": "Transmission manuelle BR-800 et propulsion",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente avec usure et disponibilité limitée",
+                  "cout_reparation_estime": "Élevé : environ 500 à 4 000 €"
+                },
+                {
+                  "probleme": "Structure Plasteel, châssis tubulaire, suspension et freinage",
+                  "symptomes": [
+                    "Fissures du polyester",
+                    "Corrosion interne",
+                    "Jeu, tirage ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique sur véhicule de 1988–1991",
+                  "diagnostic": "Inspecter panneaux polyester, mousse/acier du Plasteel, tubes, collages, ancrages, planchers et réparations ; contrôler ressort transversal avant, lames arrière, pivots/rotules, direction, tambours/disques selon montage, flexibles, pneus étroits et numérotation 9BU-BR800 ; vérifier pièces spécifiques avant achat",
+                  "piece_concernee": "Carrosserie Plasteel, châssis et organes de sécurité",
+                  "gravite": "Critique si structure ou freins atteints",
+                  "frequence": "Fréquente avec âge, humidité et réparations anciennes",
+                  "cout_reparation_estime": "Élevé : environ 800 à plus de 10 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.gurgel800.com.br/manutencao/manualdeservicos/br800/1-01.php",
+        "https://gurgelclube.org.br/site/modelos/modelos-gurgel-br-800-1988-1991/"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "nom": "Marcos",
+  "modeles": [
+    {
+      "nom": "Mantis",
+      "generations": [
+        {
+          "code_chassis": "M70 quatre places",
+          "annees": "1970–1971",
+          "phases": [
+            "Mantis originelle quatre places, à ne pas confondre avec le prototype Mantis XP ni le modèle deux places de 1997."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Triumph 2.5 PI six-cylindres — 150 ch",
+              "code_moteur": "Triumph 2.5 PI",
+              "cylindree": "2 498 cm³",
+              "puissance_ch": 150,
+              "boite": [
+                "Manuelle 4 rapports avec overdrive, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement, alimentation et suralimentation selon moteur",
+                  "symptomes": [
+                    "Fumée",
+                    "Surchauffe",
+                    "Ratés, cliquetis ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Aucun seuil fiable sur M70 ; souvent 80 000 à 160 000 km sur Modular V8",
+                  "diagnostic": "Identifier Triumph 2.5 PI ou Ford Modular 4.6 et mesurer compressions/pression ; sur M70 contrôler injection Lucas, allumage et refroidissement ; sur V8 contrôler chaînes, guides, bobines, refroidissement et fuites ; sur GT inspecter Vortech, courroie, échangeur, richesse et cliquetis en charge",
+                  "piece_concernee": "Moteur Triumph ou Ford V8 selon génération",
+                  "gravite": "Critique en cas de manque d’huile, fuite carburant ou surchauffe",
+                  "frequence": "Assez fréquente avec âge, immobilisation ou préparation",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 20 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte manuelle, arbre et essieu/différentiel arrière",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection dure",
+                    "Claquement ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km, plus tôt sur Mantis GT",
+                  "diagnostic": "Contrôler commande et embrayage, boîte Triumph ou Tremec/Borg-Warner selon voiture, supports, arbre, croisillons, différentiel, demi-arbres et géométrie de l’essieu ; vérifier huiles, limaille et capacité des composants face aux 506 bhp",
+                  "piece_concernee": "Transmission manuelle et propulsion Mantis",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure dépendante du couple et des transformations",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Châssis, carrosserie composite, corrosion et trains roulants",
+                  "symptomes": [
+                    "Fissures",
+                    "Rouille du châssis",
+                    "Portes mal alignées, jeu ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique vu faible série",
+                  "diagnostic": "Vérifier numéro Marcos et dossier Heritage, inspecter châssis bois/acier selon M70 ou tubulaire moderne, tubes, ancrages, collages et polyester ; contrôler suspension, rotules, direction, freins, roues et réparations de choc, ainsi que capote/étanchéité des cabriolets",
+                  "piece_concernee": "Structure et châssis Marcos Mantis",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque important sur restauration ancienne ou véhicule de piste",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 35 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Mantis 4.6",
+          "annees": "1997–2002",
+          "phases": [
+            "Coupé ou cabriolet moderne ; puissance annoncée au-dessus de 300 bhp selon millésime."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Ford Modular 4.6 V8 — 327 ch",
+              "code_moteur": "Ford Modular DOHC V8",
+              "cylindree": "4 601 cm³",
+              "puissance_ch": 327,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement, alimentation et suralimentation selon moteur",
+                  "symptomes": [
+                    "Fumée",
+                    "Surchauffe",
+                    "Ratés, cliquetis ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Aucun seuil fiable sur M70 ; souvent 80 000 à 160 000 km sur Modular V8",
+                  "diagnostic": "Identifier Triumph 2.5 PI ou Ford Modular 4.6 et mesurer compressions/pression ; sur M70 contrôler injection Lucas, allumage et refroidissement ; sur V8 contrôler chaînes, guides, bobines, refroidissement et fuites ; sur GT inspecter Vortech, courroie, échangeur, richesse et cliquetis en charge",
+                  "piece_concernee": "Moteur Triumph ou Ford V8 selon génération",
+                  "gravite": "Critique en cas de manque d’huile, fuite carburant ou surchauffe",
+                  "frequence": "Assez fréquente avec âge, immobilisation ou préparation",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 20 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte manuelle, arbre et essieu/différentiel arrière",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection dure",
+                    "Claquement ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km, plus tôt sur Mantis GT",
+                  "diagnostic": "Contrôler commande et embrayage, boîte Triumph ou Tremec/Borg-Warner selon voiture, supports, arbre, croisillons, différentiel, demi-arbres et géométrie de l’essieu ; vérifier huiles, limaille et capacité des composants face aux 506 bhp",
+                  "piece_concernee": "Transmission manuelle et propulsion Mantis",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure dépendante du couple et des transformations",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Châssis, carrosserie composite, corrosion et trains roulants",
+                  "symptomes": [
+                    "Fissures",
+                    "Rouille du châssis",
+                    "Portes mal alignées, jeu ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique vu faible série",
+                  "diagnostic": "Vérifier numéro Marcos et dossier Heritage, inspecter châssis bois/acier selon M70 ou tubulaire moderne, tubes, ancrages, collages et polyester ; contrôler suspension, rotules, direction, freins, roues et réparations de choc, ainsi que capote/étanchéité des cabriolets",
+                  "piece_concernee": "Structure et châssis Marcos Mantis",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque important sur restauration ancienne ou véhicule de piste",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 35 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Mantis GT",
+          "annees": "1998–2002",
+          "phases": [
+            "Seize des 51 Mantis de route furent suralimentées selon Marcos Heritage."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Ford Modular 4.6 V8 Vortech — 506 ch",
+              "code_moteur": "Ford Modular DOHC V8 + Vortech",
+              "cylindree": "4 601 cm³",
+              "puissance_ch": 506,
+              "boite": [
+                "Manuelle renforcée 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement, alimentation et suralimentation selon moteur",
+                  "symptomes": [
+                    "Fumée",
+                    "Surchauffe",
+                    "Ratés, cliquetis ou perte de puissance"
+                  ],
+                  "kilometrage_apparition": "Aucun seuil fiable sur M70 ; souvent 80 000 à 160 000 km sur Modular V8",
+                  "diagnostic": "Identifier Triumph 2.5 PI ou Ford Modular 4.6 et mesurer compressions/pression ; sur M70 contrôler injection Lucas, allumage et refroidissement ; sur V8 contrôler chaînes, guides, bobines, refroidissement et fuites ; sur GT inspecter Vortech, courroie, échangeur, richesse et cliquetis en charge",
+                  "piece_concernee": "Moteur Triumph ou Ford V8 selon génération",
+                  "gravite": "Critique en cas de manque d’huile, fuite carburant ou surchauffe",
+                  "frequence": "Assez fréquente avec âge, immobilisation ou préparation",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 20 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte manuelle, arbre et essieu/différentiel arrière",
+                  "symptomes": [
+                    "Patinage",
+                    "Sélection dure",
+                    "Claquement ou vibration"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km, plus tôt sur Mantis GT",
+                  "diagnostic": "Contrôler commande et embrayage, boîte Triumph ou Tremec/Borg-Warner selon voiture, supports, arbre, croisillons, différentiel, demi-arbres et géométrie de l’essieu ; vérifier huiles, limaille et capacité des composants face aux 506 bhp",
+                  "piece_concernee": "Transmission manuelle et propulsion Mantis",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure dépendante du couple et des transformations",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Châssis, carrosserie composite, corrosion et trains roulants",
+                  "symptomes": [
+                    "Fissures",
+                    "Rouille du châssis",
+                    "Portes mal alignées, jeu ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique vu faible série",
+                  "diagnostic": "Vérifier numéro Marcos et dossier Heritage, inspecter châssis bois/acier selon M70 ou tubulaire moderne, tubes, ancrages, collages et polyester ; contrôler suspension, rotules, direction, freins, roues et réparations de choc, ainsi que capote/étanchéité des cabriolets",
+                  "piece_concernee": "Structure et châssis Marcos Mantis",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque important sur restauration ancienne ou véhicule de piste",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 35 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.marcosheritage.com/marcos-mantis"
+      ]
+    }
+  ]
+}

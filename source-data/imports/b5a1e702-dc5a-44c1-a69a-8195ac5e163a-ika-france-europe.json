@@ -1,0 +1,644 @@
+{
+  "nom": "IKA",
+  "modeles": [
+    {
+      "nom": "Torino",
+      "generations": [
+        {
+          "code_chassis": "IKA Torino 300/380",
+          "annees": "1966–1970",
+          "phases": [
+            "300/300S, 380/380S et 380W sont séparés par cylindrée, carburation et puissance."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "300 Tornado 181 — 120 ch",
+              "code_moteur": "Tornado Special OHC 181",
+              "cylindree": "2 968 cm³",
+              "puissance_ch": 120,
+              "boite": [
+                "ZF manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement, culasse OHC et carburation du six-cylindres",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Claquement, fumée ou ratés"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km, mais restauration et usage priment",
+                  "diagnostic": "Identifier Tornado 181/230 quatre paliers ou Torino 233 sept paliers, mesurer compressions/leak-down et pression, contrôler arbre en tête, culbuteurs, pompe, radiateur, joint/culasse et fuites ; régler Holley simple/double ou trois Weber 45, allumage et richesse cylindre par cylindre",
+                  "piece_concernee": "Six-cylindres Tornado/Torino OHC",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sans réfection documentée ou avec préparation",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 20 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte quatre rapports, arbre et pont arrière",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapports difficiles",
+                    "Vibration ou bruit de pont"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km, plus tôt sur GS/380W",
+                  "diagnostic": "Contrôler embrayage/commande, boîte ZF quatre rapports selon version, tringlerie, synchros, supports, arbre/croisillons, différentiel autobloquant éventuel, roulements et demi-arbres ; vérifier rapports conformes à la finition",
+                  "piece_concernee": "Transmission manuelle et propulsion Torino",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure liée au couple, à la compétition et aux adaptations",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 12 000 €"
+                },
+                {
+                  "probleme": "Corrosion, coque Rambler/Pininfarina, suspension, freins et authenticité",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Portes désalignées",
+                    "Jeu ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique avant acquisition",
+                  "diagnostic": "Comparer VIN, moteur, carrosserie berline/coupé et finition aux registres, inspecter longerons, planchers, bas de caisse, ancrages, soudures et traces de course ; contrôler ressorts, rotules, direction, freins, roues et géométrie, puis authentifier 380W/GS/TSX/ZX",
+                  "piece_concernee": "Structure, trains roulants et identité Torino",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de corrosion, transformation ou réplique",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 30 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "380 Tornado 230 — 155 ch",
+              "code_moteur": "Tornado Interceptor OHC 230",
+              "cylindree": "3 770 cm³",
+              "puissance_ch": 155,
+              "boite": [
+                "ZF manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement, culasse OHC et carburation du six-cylindres",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Claquement, fumée ou ratés"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km, mais restauration et usage priment",
+                  "diagnostic": "Identifier Tornado 181/230 quatre paliers ou Torino 233 sept paliers, mesurer compressions/leak-down et pression, contrôler arbre en tête, culbuteurs, pompe, radiateur, joint/culasse et fuites ; régler Holley simple/double ou trois Weber 45, allumage et richesse cylindre par cylindre",
+                  "piece_concernee": "Six-cylindres Tornado/Torino OHC",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sans réfection documentée ou avec préparation",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 20 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte quatre rapports, arbre et pont arrière",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapports difficiles",
+                    "Vibration ou bruit de pont"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km, plus tôt sur GS/380W",
+                  "diagnostic": "Contrôler embrayage/commande, boîte ZF quatre rapports selon version, tringlerie, synchros, supports, arbre/croisillons, différentiel autobloquant éventuel, roulements et demi-arbres ; vérifier rapports conformes à la finition",
+                  "piece_concernee": "Transmission manuelle et propulsion Torino",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure liée au couple, à la compétition et aux adaptations",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 12 000 €"
+                },
+                {
+                  "probleme": "Corrosion, coque Rambler/Pininfarina, suspension, freins et authenticité",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Portes désalignées",
+                    "Jeu ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique avant acquisition",
+                  "diagnostic": "Comparer VIN, moteur, carrosserie berline/coupé et finition aux registres, inspecter longerons, planchers, bas de caisse, ancrages, soudures et traces de course ; contrôler ressorts, rotules, direction, freins, roues et géométrie, puis authentifier 380W/GS/TSX/ZX",
+                  "piece_concernee": "Structure, trains roulants et identité Torino",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de corrosion, transformation ou réplique",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 30 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "380W trois Weber — 177 ch",
+              "code_moteur": "Tornado Interceptor OHC 230 Berta",
+              "cylindree": "3 770 cm³",
+              "puissance_ch": 177,
+              "boite": [
+                "ZF manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement, culasse OHC et carburation du six-cylindres",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Claquement, fumée ou ratés"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km, mais restauration et usage priment",
+                  "diagnostic": "Identifier Tornado 181/230 quatre paliers ou Torino 233 sept paliers, mesurer compressions/leak-down et pression, contrôler arbre en tête, culbuteurs, pompe, radiateur, joint/culasse et fuites ; régler Holley simple/double ou trois Weber 45, allumage et richesse cylindre par cylindre",
+                  "piece_concernee": "Six-cylindres Tornado/Torino OHC",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sans réfection documentée ou avec préparation",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 20 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte quatre rapports, arbre et pont arrière",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapports difficiles",
+                    "Vibration ou bruit de pont"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km, plus tôt sur GS/380W",
+                  "diagnostic": "Contrôler embrayage/commande, boîte ZF quatre rapports selon version, tringlerie, synchros, supports, arbre/croisillons, différentiel autobloquant éventuel, roulements et demi-arbres ; vérifier rapports conformes à la finition",
+                  "piece_concernee": "Transmission manuelle et propulsion Torino",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure liée au couple, à la compétition et aux adaptations",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 12 000 €"
+                },
+                {
+                  "probleme": "Corrosion, coque Rambler/Pininfarina, suspension, freins et authenticité",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Portes désalignées",
+                    "Jeu ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique avant acquisition",
+                  "diagnostic": "Comparer VIN, moteur, carrosserie berline/coupé et finition aux registres, inspecter longerons, planchers, bas de caisse, ancrages, soudures et traces de course ; contrôler ressorts, rotules, direction, freins, roues et géométrie, puis authentifier 380W/GS/TSX/ZX",
+                  "piece_concernee": "Structure, trains roulants et identité Torino",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de corrosion, transformation ou réplique",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 30 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "IKA-Renault TS/GS",
+          "annees": "1970–1973",
+          "phases": [
+            "La carrosserie TS influence le calibrage ; GS200 succède à la 380W."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "TS berline — 152 ch",
+              "code_moteur": "Tornado Interceptor OHC 230",
+              "cylindree": "3 770 cm³",
+              "puissance_ch": 152,
+              "boite": [
+                "ZF manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement, culasse OHC et carburation du six-cylindres",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Claquement, fumée ou ratés"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km, mais restauration et usage priment",
+                  "diagnostic": "Identifier Tornado 181/230 quatre paliers ou Torino 233 sept paliers, mesurer compressions/leak-down et pression, contrôler arbre en tête, culbuteurs, pompe, radiateur, joint/culasse et fuites ; régler Holley simple/double ou trois Weber 45, allumage et richesse cylindre par cylindre",
+                  "piece_concernee": "Six-cylindres Tornado/Torino OHC",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sans réfection documentée ou avec préparation",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 20 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte quatre rapports, arbre et pont arrière",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapports difficiles",
+                    "Vibration ou bruit de pont"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km, plus tôt sur GS/380W",
+                  "diagnostic": "Contrôler embrayage/commande, boîte ZF quatre rapports selon version, tringlerie, synchros, supports, arbre/croisillons, différentiel autobloquant éventuel, roulements et demi-arbres ; vérifier rapports conformes à la finition",
+                  "piece_concernee": "Transmission manuelle et propulsion Torino",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure liée au couple, à la compétition et aux adaptations",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 12 000 €"
+                },
+                {
+                  "probleme": "Corrosion, coque Rambler/Pininfarina, suspension, freins et authenticité",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Portes désalignées",
+                    "Jeu ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique avant acquisition",
+                  "diagnostic": "Comparer VIN, moteur, carrosserie berline/coupé et finition aux registres, inspecter longerons, planchers, bas de caisse, ancrages, soudures et traces de course ; contrôler ressorts, rotules, direction, freins, roues et géométrie, puis authentifier 380W/GS/TSX/ZX",
+                  "piece_concernee": "Structure, trains roulants et identité Torino",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de corrosion, transformation ou réplique",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 30 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "TS coupé — 160 ch",
+              "code_moteur": "Tornado Interceptor OHC 230",
+              "cylindree": "3 770 cm³",
+              "puissance_ch": 160,
+              "boite": [
+                "ZF manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement, culasse OHC et carburation du six-cylindres",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Claquement, fumée ou ratés"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km, mais restauration et usage priment",
+                  "diagnostic": "Identifier Tornado 181/230 quatre paliers ou Torino 233 sept paliers, mesurer compressions/leak-down et pression, contrôler arbre en tête, culbuteurs, pompe, radiateur, joint/culasse et fuites ; régler Holley simple/double ou trois Weber 45, allumage et richesse cylindre par cylindre",
+                  "piece_concernee": "Six-cylindres Tornado/Torino OHC",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sans réfection documentée ou avec préparation",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 20 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte quatre rapports, arbre et pont arrière",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapports difficiles",
+                    "Vibration ou bruit de pont"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km, plus tôt sur GS/380W",
+                  "diagnostic": "Contrôler embrayage/commande, boîte ZF quatre rapports selon version, tringlerie, synchros, supports, arbre/croisillons, différentiel autobloquant éventuel, roulements et demi-arbres ; vérifier rapports conformes à la finition",
+                  "piece_concernee": "Transmission manuelle et propulsion Torino",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure liée au couple, à la compétition et aux adaptations",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 12 000 €"
+                },
+                {
+                  "probleme": "Corrosion, coque Rambler/Pininfarina, suspension, freins et authenticité",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Portes désalignées",
+                    "Jeu ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique avant acquisition",
+                  "diagnostic": "Comparer VIN, moteur, carrosserie berline/coupé et finition aux registres, inspecter longerons, planchers, bas de caisse, ancrages, soudures et traces de course ; contrôler ressorts, rotules, direction, freins, roues et géométrie, puis authentifier 380W/GS/TSX/ZX",
+                  "piece_concernee": "Structure, trains roulants et identité Torino",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de corrosion, transformation ou réplique",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 30 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "GS200 trois Weber — 185 ch",
+              "code_moteur": "Tornado Interceptor OHC 230 GS",
+              "cylindree": "3 770 cm³",
+              "puissance_ch": 185,
+              "boite": [
+                "ZF manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement, culasse OHC et carburation du six-cylindres",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Claquement, fumée ou ratés"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km, mais restauration et usage priment",
+                  "diagnostic": "Identifier Tornado 181/230 quatre paliers ou Torino 233 sept paliers, mesurer compressions/leak-down et pression, contrôler arbre en tête, culbuteurs, pompe, radiateur, joint/culasse et fuites ; régler Holley simple/double ou trois Weber 45, allumage et richesse cylindre par cylindre",
+                  "piece_concernee": "Six-cylindres Tornado/Torino OHC",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sans réfection documentée ou avec préparation",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 20 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte quatre rapports, arbre et pont arrière",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapports difficiles",
+                    "Vibration ou bruit de pont"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km, plus tôt sur GS/380W",
+                  "diagnostic": "Contrôler embrayage/commande, boîte ZF quatre rapports selon version, tringlerie, synchros, supports, arbre/croisillons, différentiel autobloquant éventuel, roulements et demi-arbres ; vérifier rapports conformes à la finition",
+                  "piece_concernee": "Transmission manuelle et propulsion Torino",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure liée au couple, à la compétition et aux adaptations",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 12 000 €"
+                },
+                {
+                  "probleme": "Corrosion, coque Rambler/Pininfarina, suspension, freins et authenticité",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Portes désalignées",
+                    "Jeu ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique avant acquisition",
+                  "diagnostic": "Comparer VIN, moteur, carrosserie berline/coupé et finition aux registres, inspecter longerons, planchers, bas de caisse, ancrages, soudures et traces de course ; contrôler ressorts, rotules, direction, freins, roues et géométrie, puis authentifier 380W/GS/TSX/ZX",
+                  "piece_concernee": "Structure, trains roulants et identité Torino",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de corrosion, transformation ou réplique",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 30 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Torino 233 sept paliers",
+          "annees": "1973–1979",
+          "phases": [
+            "Nouveau bloc/culasse sept paliers ; chaque calibrage reste distinct."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "SE — 170 ch",
+              "code_moteur": "Torino OHC 233",
+              "cylindree": "3 770 cm³",
+              "puissance_ch": 170,
+              "boite": [
+                "ZF manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement, culasse OHC et carburation du six-cylindres",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Claquement, fumée ou ratés"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km, mais restauration et usage priment",
+                  "diagnostic": "Identifier Tornado 181/230 quatre paliers ou Torino 233 sept paliers, mesurer compressions/leak-down et pression, contrôler arbre en tête, culbuteurs, pompe, radiateur, joint/culasse et fuites ; régler Holley simple/double ou trois Weber 45, allumage et richesse cylindre par cylindre",
+                  "piece_concernee": "Six-cylindres Tornado/Torino OHC",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sans réfection documentée ou avec préparation",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 20 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte quatre rapports, arbre et pont arrière",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapports difficiles",
+                    "Vibration ou bruit de pont"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km, plus tôt sur GS/380W",
+                  "diagnostic": "Contrôler embrayage/commande, boîte ZF quatre rapports selon version, tringlerie, synchros, supports, arbre/croisillons, différentiel autobloquant éventuel, roulements et demi-arbres ; vérifier rapports conformes à la finition",
+                  "piece_concernee": "Transmission manuelle et propulsion Torino",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure liée au couple, à la compétition et aux adaptations",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 12 000 €"
+                },
+                {
+                  "probleme": "Corrosion, coque Rambler/Pininfarina, suspension, freins et authenticité",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Portes désalignées",
+                    "Jeu ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique avant acquisition",
+                  "diagnostic": "Comparer VIN, moteur, carrosserie berline/coupé et finition aux registres, inspecter longerons, planchers, bas de caisse, ancrages, soudures et traces de course ; contrôler ressorts, rotules, direction, freins, roues et géométrie, puis authentifier 380W/GS/TSX/ZX",
+                  "piece_concernee": "Structure, trains roulants et identité Torino",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de corrosion, transformation ou réplique",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 30 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "GR / TS — 180 ch",
+              "code_moteur": "Torino OHC 233",
+              "cylindree": "3 770 cm³",
+              "puissance_ch": 180,
+              "boite": [
+                "ZF manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement, culasse OHC et carburation du six-cylindres",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Claquement, fumée ou ratés"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km, mais restauration et usage priment",
+                  "diagnostic": "Identifier Tornado 181/230 quatre paliers ou Torino 233 sept paliers, mesurer compressions/leak-down et pression, contrôler arbre en tête, culbuteurs, pompe, radiateur, joint/culasse et fuites ; régler Holley simple/double ou trois Weber 45, allumage et richesse cylindre par cylindre",
+                  "piece_concernee": "Six-cylindres Tornado/Torino OHC",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sans réfection documentée ou avec préparation",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 20 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte quatre rapports, arbre et pont arrière",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapports difficiles",
+                    "Vibration ou bruit de pont"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km, plus tôt sur GS/380W",
+                  "diagnostic": "Contrôler embrayage/commande, boîte ZF quatre rapports selon version, tringlerie, synchros, supports, arbre/croisillons, différentiel autobloquant éventuel, roulements et demi-arbres ; vérifier rapports conformes à la finition",
+                  "piece_concernee": "Transmission manuelle et propulsion Torino",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure liée au couple, à la compétition et aux adaptations",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 12 000 €"
+                },
+                {
+                  "probleme": "Corrosion, coque Rambler/Pininfarina, suspension, freins et authenticité",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Portes désalignées",
+                    "Jeu ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique avant acquisition",
+                  "diagnostic": "Comparer VIN, moteur, carrosserie berline/coupé et finition aux registres, inspecter longerons, planchers, bas de caisse, ancrages, soudures et traces de course ; contrôler ressorts, rotules, direction, freins, roues et géométrie, puis authentifier 380W/GS/TSX/ZX",
+                  "piece_concernee": "Structure, trains roulants et identité Torino",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de corrosion, transformation ou réplique",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 30 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "TSX — 200 ch",
+              "code_moteur": "Torino OHC 233 TSX",
+              "cylindree": "3 770 cm³",
+              "puissance_ch": 200,
+              "boite": [
+                "ZF manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement, culasse OHC et carburation du six-cylindres",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Claquement, fumée ou ratés"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km, mais restauration et usage priment",
+                  "diagnostic": "Identifier Tornado 181/230 quatre paliers ou Torino 233 sept paliers, mesurer compressions/leak-down et pression, contrôler arbre en tête, culbuteurs, pompe, radiateur, joint/culasse et fuites ; régler Holley simple/double ou trois Weber 45, allumage et richesse cylindre par cylindre",
+                  "piece_concernee": "Six-cylindres Tornado/Torino OHC",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sans réfection documentée ou avec préparation",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 20 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte quatre rapports, arbre et pont arrière",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapports difficiles",
+                    "Vibration ou bruit de pont"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km, plus tôt sur GS/380W",
+                  "diagnostic": "Contrôler embrayage/commande, boîte ZF quatre rapports selon version, tringlerie, synchros, supports, arbre/croisillons, différentiel autobloquant éventuel, roulements et demi-arbres ; vérifier rapports conformes à la finition",
+                  "piece_concernee": "Transmission manuelle et propulsion Torino",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure liée au couple, à la compétition et aux adaptations",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 12 000 €"
+                },
+                {
+                  "probleme": "Corrosion, coque Rambler/Pininfarina, suspension, freins et authenticité",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Portes désalignées",
+                    "Jeu ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique avant acquisition",
+                  "diagnostic": "Comparer VIN, moteur, carrosserie berline/coupé et finition aux registres, inspecter longerons, planchers, bas de caisse, ancrages, soudures et traces de course ; contrôler ressorts, rotules, direction, freins, roues et géométrie, puis authentifier 380W/GS/TSX/ZX",
+                  "piece_concernee": "Structure, trains roulants et identité Torino",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de corrosion, transformation ou réplique",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 30 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "GS — 215 ch",
+              "code_moteur": "Torino OHC 233 GS",
+              "cylindree": "3 770 cm³",
+              "puissance_ch": 215,
+              "boite": [
+                "ZF manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement, culasse OHC et carburation du six-cylindres",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Claquement, fumée ou ratés"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km, mais restauration et usage priment",
+                  "diagnostic": "Identifier Tornado 181/230 quatre paliers ou Torino 233 sept paliers, mesurer compressions/leak-down et pression, contrôler arbre en tête, culbuteurs, pompe, radiateur, joint/culasse et fuites ; régler Holley simple/double ou trois Weber 45, allumage et richesse cylindre par cylindre",
+                  "piece_concernee": "Six-cylindres Tornado/Torino OHC",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sans réfection documentée ou avec préparation",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 20 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte quatre rapports, arbre et pont arrière",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapports difficiles",
+                    "Vibration ou bruit de pont"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km, plus tôt sur GS/380W",
+                  "diagnostic": "Contrôler embrayage/commande, boîte ZF quatre rapports selon version, tringlerie, synchros, supports, arbre/croisillons, différentiel autobloquant éventuel, roulements et demi-arbres ; vérifier rapports conformes à la finition",
+                  "piece_concernee": "Transmission manuelle et propulsion Torino",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure liée au couple, à la compétition et aux adaptations",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 12 000 €"
+                },
+                {
+                  "probleme": "Corrosion, coque Rambler/Pininfarina, suspension, freins et authenticité",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Portes désalignées",
+                    "Jeu ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique avant acquisition",
+                  "diagnostic": "Comparer VIN, moteur, carrosserie berline/coupé et finition aux registres, inspecter longerons, planchers, bas de caisse, ancrages, soudures et traces de course ; contrôler ressorts, rotules, direction, freins, roues et géométrie, puis authentifier 380W/GS/TSX/ZX",
+                  "piece_concernee": "Structure, trains roulants et identité Torino",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de corrosion, transformation ou réplique",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 30 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Renault Torino ZX",
+          "annees": "1979–1982",
+          "phases": [
+            "Dernière évolution commercialisée par Renault Argentina, à distinguer des TSX antérieures."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "ZX — 200 ch",
+              "code_moteur": "Torino OHC 233 ZX",
+              "cylindree": "3 770 cm³",
+              "puissance_ch": 200,
+              "boite": [
+                "ZF manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement, culasse OHC et carburation du six-cylindres",
+                  "symptomes": [
+                    "Pression faible",
+                    "Surchauffe",
+                    "Claquement, fumée ou ratés"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km, mais restauration et usage priment",
+                  "diagnostic": "Identifier Tornado 181/230 quatre paliers ou Torino 233 sept paliers, mesurer compressions/leak-down et pression, contrôler arbre en tête, culbuteurs, pompe, radiateur, joint/culasse et fuites ; régler Holley simple/double ou trois Weber 45, allumage et richesse cylindre par cylindre",
+                  "piece_concernee": "Six-cylindres Tornado/Torino OHC",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente sans réfection documentée ou avec préparation",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 20 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte quatre rapports, arbre et pont arrière",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapports difficiles",
+                    "Vibration ou bruit de pont"
+                  ],
+                  "kilometrage_apparition": "Souvent après 100 000 à 180 000 km, plus tôt sur GS/380W",
+                  "diagnostic": "Contrôler embrayage/commande, boîte ZF quatre rapports selon version, tringlerie, synchros, supports, arbre/croisillons, différentiel autobloquant éventuel, roulements et demi-arbres ; vérifier rapports conformes à la finition",
+                  "piece_concernee": "Transmission manuelle et propulsion Torino",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure liée au couple, à la compétition et aux adaptations",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 12 000 €"
+                },
+                {
+                  "probleme": "Corrosion, coque Rambler/Pininfarina, suspension, freins et authenticité",
+                  "symptomes": [
+                    "Rouille perforante",
+                    "Portes désalignées",
+                    "Jeu ou freinage dissymétrique"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique avant acquisition",
+                  "diagnostic": "Comparer VIN, moteur, carrosserie berline/coupé et finition aux registres, inspecter longerons, planchers, bas de caisse, ancrages, soudures et traces de course ; contrôler ressorts, rotules, direction, freins, roues et géométrie, puis authentifier 380W/GS/TSX/ZX",
+                  "piece_concernee": "Structure, trains roulants et identité Torino",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de corrosion, transformation ou réplique",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 30 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://fcefyn.unc.edu.ar/facultad/general/museos-fcefyn/museo-cientifico-tecnologico/colecciones/motores-automotrices/motor-tornado-jet-230/",
+        "https://theoriginals.renault.com/pt/torino-ts"
+      ]
+    }
+  ]
+}

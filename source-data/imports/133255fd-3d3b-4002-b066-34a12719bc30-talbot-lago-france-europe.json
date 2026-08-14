@@ -1,0 +1,638 @@
+{
+  "nom": "Talbot-Lago",
+  "modeles": [
+    {
+      "nom": "T26",
+      "generations": [
+        {
+          "code_chassis": "T26 Record",
+          "annees": "1946–1953",
+          "phases": [
+            "Berline, coach et cabriolet sur empattement 3,125 m ; moins de 590 Record."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "4.5 six-cylindres Record — 170 ch",
+              "code_moteur": "Talbot-Lago T26 fonte",
+              "cylindree": "4 482 cm³",
+              "puissance_ch": 170,
+              "boite": [
+                "Wilson présélective 4 rapports ou manuelle, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Culasse, double arbre latéral, lubrification et refroidissement du T26",
+                  "symptomes": [
+                    "Pression d’huile faible",
+                    "Surchauffe",
+                    "Bruit de distribution, fuite ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "L’âge, la compétition et la restauration priment",
+                  "diagnostic": "Identifier Record fonte 170 ch, culasse Alpax GS/Record Sport, GSL ou T26C/DA. Mesurer compressions/leak-down et pression, analyser huile/filtre, contrôler arbres à cames creux, culbuteurs, paliers, pompe, radiateur, culasse/joints et fissures avant charge.",
+                  "piece_concernee": "Six-cylindres Talbot-Lago 4 482 cm³",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé sur moteur de course ou reconstruit",
+                  "cout_reparation_estime": "Extrême : environ 3 000 à plus de 50 000 €"
+                },
+                {
+                  "probleme": "Deux ou trois carburateurs Zenith-Stromberg, allumage simple/double et alimentation",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés à haut régime",
+                    "Mélange inégal, cliquetis ou fuite"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et avant compétition",
+                  "diagnostic": "Identifier EX-32/HN, simple ou double allumage, contrôler réservoir, pompes, pression, flotteurs, gicleurs, synchronisation, prises d’air, magnétos/distributeurs et bougies. Régler chaque banc avec analyse des six cylindres.",
+                  "piece_concernee": "Admission et allumage Talbot T26",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente après stockage ou réglage approximatif",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 9 000 €"
+                },
+                {
+                  "probleme": "Boîte Wilson présélective, embrayage de sélection, arbre et pont",
+                  "symptomes": [
+                    "Rapport non engagé",
+                    "Présélection erratique",
+                    "Vibration, fuite ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant achat et entretien spécialisé",
+                  "diagnostic": "Vérifier huile, bandes/embrayages, pompe/commande, pédale de sélection, réglages, supports, arbre, joints, pont et roulements. Distinguer Wilson de la rare manuelle GSL et ne pas effectuer d’essai brutal à froid.",
+                  "piece_concernee": "Transmission Talbot-Lago T26",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Réparation rare et hautement spécialisée",
+                  "cout_reparation_estime": "Extrême : environ 1 500 à plus de 20 000 €"
+                },
+                {
+                  "probleme": "Cadre, carrosserie sur mesure, suspension, freins et provenance",
+                  "symptomes": [
+                    "Fissure ou corrosion",
+                    "Géométrie instable",
+                    "Freinage faible ou identité incohérente"
+                  ],
+                  "kilometrage_apparition": "Expertise historique/structurelle obligatoire",
+                  "diagnostic": "Rapprocher châssis, empattement 3 125/2 650/2 500 mm, moteur et carrosserie des archives. Inspecter cadre caissonné, aluminium/acier/bois, suspension, essieu arrière, amortisseurs à friction, freins hydrauliques, roues et traces de compétition.",
+                  "piece_concernee": "Structure et authenticité Talbot-Lago",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de transformation entre route et course",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 150 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "T26 Record Sport",
+          "annees": "1947–1953",
+          "phases": [
+            "Rare Record équipée en usine du moteur Grand Sport ; ne pas la confondre avec le châssis court GS."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "4.5 six-cylindres GS — 190 ch",
+              "code_moteur": "Talbot-Lago T26 Alpax",
+              "cylindree": "4 482 cm³",
+              "puissance_ch": 190,
+              "boite": [
+                "Wilson présélective 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Culasse, double arbre latéral, lubrification et refroidissement du T26",
+                  "symptomes": [
+                    "Pression d’huile faible",
+                    "Surchauffe",
+                    "Bruit de distribution, fuite ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "L’âge, la compétition et la restauration priment",
+                  "diagnostic": "Identifier Record fonte 170 ch, culasse Alpax GS/Record Sport, GSL ou T26C/DA. Mesurer compressions/leak-down et pression, analyser huile/filtre, contrôler arbres à cames creux, culbuteurs, paliers, pompe, radiateur, culasse/joints et fissures avant charge.",
+                  "piece_concernee": "Six-cylindres Talbot-Lago 4 482 cm³",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé sur moteur de course ou reconstruit",
+                  "cout_reparation_estime": "Extrême : environ 3 000 à plus de 50 000 €"
+                },
+                {
+                  "probleme": "Deux ou trois carburateurs Zenith-Stromberg, allumage simple/double et alimentation",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés à haut régime",
+                    "Mélange inégal, cliquetis ou fuite"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et avant compétition",
+                  "diagnostic": "Identifier EX-32/HN, simple ou double allumage, contrôler réservoir, pompes, pression, flotteurs, gicleurs, synchronisation, prises d’air, magnétos/distributeurs et bougies. Régler chaque banc avec analyse des six cylindres.",
+                  "piece_concernee": "Admission et allumage Talbot T26",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente après stockage ou réglage approximatif",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 9 000 €"
+                },
+                {
+                  "probleme": "Boîte Wilson présélective, embrayage de sélection, arbre et pont",
+                  "symptomes": [
+                    "Rapport non engagé",
+                    "Présélection erratique",
+                    "Vibration, fuite ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant achat et entretien spécialisé",
+                  "diagnostic": "Vérifier huile, bandes/embrayages, pompe/commande, pédale de sélection, réglages, supports, arbre, joints, pont et roulements. Distinguer Wilson de la rare manuelle GSL et ne pas effectuer d’essai brutal à froid.",
+                  "piece_concernee": "Transmission Talbot-Lago T26",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Réparation rare et hautement spécialisée",
+                  "cout_reparation_estime": "Extrême : environ 1 500 à plus de 20 000 €"
+                },
+                {
+                  "probleme": "Cadre, carrosserie sur mesure, suspension, freins et provenance",
+                  "symptomes": [
+                    "Fissure ou corrosion",
+                    "Géométrie instable",
+                    "Freinage faible ou identité incohérente"
+                  ],
+                  "kilometrage_apparition": "Expertise historique/structurelle obligatoire",
+                  "diagnostic": "Rapprocher châssis, empattement 3 125/2 650/2 500 mm, moteur et carrosserie des archives. Inspecter cadre caissonné, aluminium/acier/bois, suspension, essieu arrière, amortisseurs à friction, freins hydrauliques, roues et traces de compétition.",
+                  "piece_concernee": "Structure et authenticité Talbot-Lago",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de transformation entre route et course",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 150 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "T26 Grand Sport",
+          "annees": "1947–1952",
+          "phases": [
+            "Châssis court 2,65 m livré nu aux carrossiers ; puissance 190 puis 195 ch."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "4.5 six-cylindres Grand Sport — 195 ch",
+              "code_moteur": "Talbot-Lago T26 GS Alpax",
+              "cylindree": "4 482 cm³",
+              "puissance_ch": 195,
+              "boite": [
+                "Wilson présélective 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Culasse, double arbre latéral, lubrification et refroidissement du T26",
+                  "symptomes": [
+                    "Pression d’huile faible",
+                    "Surchauffe",
+                    "Bruit de distribution, fuite ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "L’âge, la compétition et la restauration priment",
+                  "diagnostic": "Identifier Record fonte 170 ch, culasse Alpax GS/Record Sport, GSL ou T26C/DA. Mesurer compressions/leak-down et pression, analyser huile/filtre, contrôler arbres à cames creux, culbuteurs, paliers, pompe, radiateur, culasse/joints et fissures avant charge.",
+                  "piece_concernee": "Six-cylindres Talbot-Lago 4 482 cm³",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé sur moteur de course ou reconstruit",
+                  "cout_reparation_estime": "Extrême : environ 3 000 à plus de 50 000 €"
+                },
+                {
+                  "probleme": "Deux ou trois carburateurs Zenith-Stromberg, allumage simple/double et alimentation",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés à haut régime",
+                    "Mélange inégal, cliquetis ou fuite"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et avant compétition",
+                  "diagnostic": "Identifier EX-32/HN, simple ou double allumage, contrôler réservoir, pompes, pression, flotteurs, gicleurs, synchronisation, prises d’air, magnétos/distributeurs et bougies. Régler chaque banc avec analyse des six cylindres.",
+                  "piece_concernee": "Admission et allumage Talbot T26",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente après stockage ou réglage approximatif",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 9 000 €"
+                },
+                {
+                  "probleme": "Boîte Wilson présélective, embrayage de sélection, arbre et pont",
+                  "symptomes": [
+                    "Rapport non engagé",
+                    "Présélection erratique",
+                    "Vibration, fuite ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant achat et entretien spécialisé",
+                  "diagnostic": "Vérifier huile, bandes/embrayages, pompe/commande, pédale de sélection, réglages, supports, arbre, joints, pont et roulements. Distinguer Wilson de la rare manuelle GSL et ne pas effectuer d’essai brutal à froid.",
+                  "piece_concernee": "Transmission Talbot-Lago T26",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Réparation rare et hautement spécialisée",
+                  "cout_reparation_estime": "Extrême : environ 1 500 à plus de 20 000 €"
+                },
+                {
+                  "probleme": "Cadre, carrosserie sur mesure, suspension, freins et provenance",
+                  "symptomes": [
+                    "Fissure ou corrosion",
+                    "Géométrie instable",
+                    "Freinage faible ou identité incohérente"
+                  ],
+                  "kilometrage_apparition": "Expertise historique/structurelle obligatoire",
+                  "diagnostic": "Rapprocher châssis, empattement 3 125/2 650/2 500 mm, moteur et carrosserie des archives. Inspecter cadre caissonné, aluminium/acier/bois, suspension, essieu arrière, amortisseurs à friction, freins hydrauliques, roues et traces de compétition.",
+                  "piece_concernee": "Structure et authenticité Talbot-Lago",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de transformation entre route et course",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 150 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "T26 GSL",
+          "annees": "1953–1955",
+          "phases": [
+            "Dernière évolution routière, carrosserie ponton et puissance portée à 210 ch."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "4.5 six-cylindres GSL — 210 ch",
+              "code_moteur": "Talbot-Lago T26 GSL",
+              "cylindree": "4 482 cm³",
+              "puissance_ch": 210,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Culasse, double arbre latéral, lubrification et refroidissement du T26",
+                  "symptomes": [
+                    "Pression d’huile faible",
+                    "Surchauffe",
+                    "Bruit de distribution, fuite ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "L’âge, la compétition et la restauration priment",
+                  "diagnostic": "Identifier Record fonte 170 ch, culasse Alpax GS/Record Sport, GSL ou T26C/DA. Mesurer compressions/leak-down et pression, analyser huile/filtre, contrôler arbres à cames creux, culbuteurs, paliers, pompe, radiateur, culasse/joints et fissures avant charge.",
+                  "piece_concernee": "Six-cylindres Talbot-Lago 4 482 cm³",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé sur moteur de course ou reconstruit",
+                  "cout_reparation_estime": "Extrême : environ 3 000 à plus de 50 000 €"
+                },
+                {
+                  "probleme": "Deux ou trois carburateurs Zenith-Stromberg, allumage simple/double et alimentation",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés à haut régime",
+                    "Mélange inégal, cliquetis ou fuite"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et avant compétition",
+                  "diagnostic": "Identifier EX-32/HN, simple ou double allumage, contrôler réservoir, pompes, pression, flotteurs, gicleurs, synchronisation, prises d’air, magnétos/distributeurs et bougies. Régler chaque banc avec analyse des six cylindres.",
+                  "piece_concernee": "Admission et allumage Talbot T26",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente après stockage ou réglage approximatif",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 9 000 €"
+                },
+                {
+                  "probleme": "Boîte Wilson présélective, embrayage de sélection, arbre et pont",
+                  "symptomes": [
+                    "Rapport non engagé",
+                    "Présélection erratique",
+                    "Vibration, fuite ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant achat et entretien spécialisé",
+                  "diagnostic": "Vérifier huile, bandes/embrayages, pompe/commande, pédale de sélection, réglages, supports, arbre, joints, pont et roulements. Distinguer Wilson de la rare manuelle GSL et ne pas effectuer d’essai brutal à froid.",
+                  "piece_concernee": "Transmission Talbot-Lago T26",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Réparation rare et hautement spécialisée",
+                  "cout_reparation_estime": "Extrême : environ 1 500 à plus de 20 000 €"
+                },
+                {
+                  "probleme": "Cadre, carrosserie sur mesure, suspension, freins et provenance",
+                  "symptomes": [
+                    "Fissure ou corrosion",
+                    "Géométrie instable",
+                    "Freinage faible ou identité incohérente"
+                  ],
+                  "kilometrage_apparition": "Expertise historique/structurelle obligatoire",
+                  "diagnostic": "Rapprocher châssis, empattement 3 125/2 650/2 500 mm, moteur et carrosserie des archives. Inspecter cadre caissonné, aluminium/acier/bois, suspension, essieu arrière, amortisseurs à friction, freins hydrauliques, roues et traces de compétition.",
+                  "piece_concernee": "Structure et authenticité Talbot-Lago",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de transformation entre route et course",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 150 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "T26C Grand Prix",
+          "annees": "1948–1950",
+          "phases": [
+            "Monoplace Grand Prix de 950 kg ; ne pas la présenter comme une version routière."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "4.5 six-cylindres course — 260 ch",
+              "code_moteur": "Talbot-Lago T26C",
+              "cylindree": "4 482 cm³",
+              "puissance_ch": 260,
+              "boite": [
+                "Wilson présélective 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Culasse, double arbre latéral, lubrification et refroidissement du T26",
+                  "symptomes": [
+                    "Pression d’huile faible",
+                    "Surchauffe",
+                    "Bruit de distribution, fuite ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "L’âge, la compétition et la restauration priment",
+                  "diagnostic": "Identifier Record fonte 170 ch, culasse Alpax GS/Record Sport, GSL ou T26C/DA. Mesurer compressions/leak-down et pression, analyser huile/filtre, contrôler arbres à cames creux, culbuteurs, paliers, pompe, radiateur, culasse/joints et fissures avant charge.",
+                  "piece_concernee": "Six-cylindres Talbot-Lago 4 482 cm³",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé sur moteur de course ou reconstruit",
+                  "cout_reparation_estime": "Extrême : environ 3 000 à plus de 50 000 €"
+                },
+                {
+                  "probleme": "Deux ou trois carburateurs Zenith-Stromberg, allumage simple/double et alimentation",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés à haut régime",
+                    "Mélange inégal, cliquetis ou fuite"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et avant compétition",
+                  "diagnostic": "Identifier EX-32/HN, simple ou double allumage, contrôler réservoir, pompes, pression, flotteurs, gicleurs, synchronisation, prises d’air, magnétos/distributeurs et bougies. Régler chaque banc avec analyse des six cylindres.",
+                  "piece_concernee": "Admission et allumage Talbot T26",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente après stockage ou réglage approximatif",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 9 000 €"
+                },
+                {
+                  "probleme": "Boîte Wilson présélective, embrayage de sélection, arbre et pont",
+                  "symptomes": [
+                    "Rapport non engagé",
+                    "Présélection erratique",
+                    "Vibration, fuite ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant achat et entretien spécialisé",
+                  "diagnostic": "Vérifier huile, bandes/embrayages, pompe/commande, pédale de sélection, réglages, supports, arbre, joints, pont et roulements. Distinguer Wilson de la rare manuelle GSL et ne pas effectuer d’essai brutal à froid.",
+                  "piece_concernee": "Transmission Talbot-Lago T26",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Réparation rare et hautement spécialisée",
+                  "cout_reparation_estime": "Extrême : environ 1 500 à plus de 20 000 €"
+                },
+                {
+                  "probleme": "Cadre, carrosserie sur mesure, suspension, freins et provenance",
+                  "symptomes": [
+                    "Fissure ou corrosion",
+                    "Géométrie instable",
+                    "Freinage faible ou identité incohérente"
+                  ],
+                  "kilometrage_apparition": "Expertise historique/structurelle obligatoire",
+                  "diagnostic": "Rapprocher châssis, empattement 3 125/2 650/2 500 mm, moteur et carrosserie des archives. Inspecter cadre caissonné, aluminium/acier/bois, suspension, essieu arrière, amortisseurs à friction, freins hydrauliques, roues et traces de compétition.",
+                  "piece_concernee": "Structure et authenticité Talbot-Lago",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de transformation entre route et course",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 150 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "T26C-DA double allumage",
+          "annees": "1950–1952",
+          "phases": [
+            "Évolution compétition à double allumage et trois Zenith 50 HN ; puissance selon préparation."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "4.5 six-cylindres double allumage — 270 ch",
+              "code_moteur": "Talbot-Lago T26C-DA",
+              "cylindree": "4 482 cm³",
+              "puissance_ch": 270,
+              "boite": [
+                "Wilson présélective 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Culasse, double arbre latéral, lubrification et refroidissement du T26",
+                  "symptomes": [
+                    "Pression d’huile faible",
+                    "Surchauffe",
+                    "Bruit de distribution, fuite ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "L’âge, la compétition et la restauration priment",
+                  "diagnostic": "Identifier Record fonte 170 ch, culasse Alpax GS/Record Sport, GSL ou T26C/DA. Mesurer compressions/leak-down et pression, analyser huile/filtre, contrôler arbres à cames creux, culbuteurs, paliers, pompe, radiateur, culasse/joints et fissures avant charge.",
+                  "piece_concernee": "Six-cylindres Talbot-Lago 4 482 cm³",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé sur moteur de course ou reconstruit",
+                  "cout_reparation_estime": "Extrême : environ 3 000 à plus de 50 000 €"
+                },
+                {
+                  "probleme": "Deux ou trois carburateurs Zenith-Stromberg, allumage simple/double et alimentation",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés à haut régime",
+                    "Mélange inégal, cliquetis ou fuite"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et avant compétition",
+                  "diagnostic": "Identifier EX-32/HN, simple ou double allumage, contrôler réservoir, pompes, pression, flotteurs, gicleurs, synchronisation, prises d’air, magnétos/distributeurs et bougies. Régler chaque banc avec analyse des six cylindres.",
+                  "piece_concernee": "Admission et allumage Talbot T26",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente après stockage ou réglage approximatif",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 9 000 €"
+                },
+                {
+                  "probleme": "Boîte Wilson présélective, embrayage de sélection, arbre et pont",
+                  "symptomes": [
+                    "Rapport non engagé",
+                    "Présélection erratique",
+                    "Vibration, fuite ou hurlement"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant achat et entretien spécialisé",
+                  "diagnostic": "Vérifier huile, bandes/embrayages, pompe/commande, pédale de sélection, réglages, supports, arbre, joints, pont et roulements. Distinguer Wilson de la rare manuelle GSL et ne pas effectuer d’essai brutal à froid.",
+                  "piece_concernee": "Transmission Talbot-Lago T26",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Réparation rare et hautement spécialisée",
+                  "cout_reparation_estime": "Extrême : environ 1 500 à plus de 20 000 €"
+                },
+                {
+                  "probleme": "Cadre, carrosserie sur mesure, suspension, freins et provenance",
+                  "symptomes": [
+                    "Fissure ou corrosion",
+                    "Géométrie instable",
+                    "Freinage faible ou identité incohérente"
+                  ],
+                  "kilometrage_apparition": "Expertise historique/structurelle obligatoire",
+                  "diagnostic": "Rapprocher châssis, empattement 3 125/2 650/2 500 mm, moteur et carrosserie des archives. Inspecter cadre caissonné, aluminium/acier/bois, suspension, essieu arrière, amortisseurs à friction, freins hydrauliques, roues et traces de compétition.",
+                  "piece_concernee": "Structure et authenticité Talbot-Lago",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de transformation entre route et course",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 150 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.museofangio.com/en/virtual-visit/museo-fangio/12-etapa-sport-de-juan-manuel-fangio/43/",
+        "https://simeonemuseum.org/collection/1948-talbot-lago-t26-grand-sport-coupe/"
+      ]
+    },
+    {
+      "nom": "America",
+      "generations": [
+        {
+          "code_chassis": "T14 America BMW",
+          "annees": "1957–1958",
+          "phases": [
+            "Environ douze exemplaires à moteur BMW réalésé pour rester dans la classe fiscale 14 CV, conduite à gauche."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "BMW 2.5 V8 OHV — 125 ch",
+              "code_moteur": "BMW 501/502 V8 Talbot",
+              "cylindree": "2 476 cm³",
+              "puissance_ch": 125,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification et identification du V8 BMW ou Simca",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression faible",
+                    "Fumée, fuite ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "Âge et historique priment",
+                  "diagnostic": "Distinguer BMW OHV aluminium 2 476 cm³ et Simca Aquilon à soupapes latérales. Mesurer compressions/leak-down et pression, contrôler pompe, distribution, culasses/joints, radiateur et carburateur. Vérifier montage d’origine parmi la très petite série.",
+                  "piece_concernee": "V8 Talbot-Lago America",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque élevé de moteur remplacé",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 15 000 €"
+                },
+                {
+                  "probleme": "Carburation, allumage et alimentation",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés",
+                    "Vapor-lock, fuite ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel",
+                  "diagnostic": "Identifier carburateur et allumeur propres au BMW ou Simca, vérifier réservoir, pompe, conduites, starter, avance, bobine et bougies. Régler la richesse avec contrôle des huit cylindres et protéger les conduites de la chaleur.",
+                  "piece_concernee": "Admission et allumage America",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente avec carburant moderne",
+                  "cout_reparation_estime": "Élevé : environ 300 à 4 000 €"
+                },
+                {
+                  "probleme": "Boîte quatre rapports, embrayage, arbre et pont",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Vibration, fuite ou grondement"
+                  ],
+                  "kilometrage_apparition": "Souvent selon âge plus que kilométrage",
+                  "diagnostic": "Contrôler identification et huile de boîte, synchros, commande, embrayage, supports, arbre/croisillons, pont et roulements. Vérifier adaptation moteur-boîte et géométrie de transmission.",
+                  "piece_concernee": "Transmission T14 America",
+                  "gravite": "Majeure",
+                  "frequence": "Usure variable sur petite série",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 8 000 €"
+                },
+                {
+                  "probleme": "Châssis T14, carrosserie aluminium, freins et authenticité",
+                  "symptomes": [
+                    "Corrosion galvanique",
+                    "Fissure ou déformation",
+                    "Freinage irrégulier ou provenance confuse"
+                  ],
+                  "kilometrage_apparition": "Expertise complète avant acquisition",
+                  "diagnostic": "Identifier T14 LS antérieure et véritable America à conduite à gauche. Inspecter cadre, panneaux, collages/assemblages, ouvrants, suspension, direction, freins, roues et transformations après rachat par Simca.",
+                  "piece_concernee": "Structure et provenance Talbot-Lago America",
+                  "gravite": "Critique",
+                  "frequence": "Risque très élevé vu environ une douzaine de BMW et quelques Simca",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 60 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "T14 America Simca",
+          "annees": "1958–1959",
+          "phases": [
+            "Derniers exemplaires après reprise par Simca ; très faible production à authentifier individuellement."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Simca Aquilon 2.35 V8 — 95 ch",
+              "code_moteur": "Simca-Ford Aquilon",
+              "cylindree": "2 351 cm³",
+              "puissance_ch": 95,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification et identification du V8 BMW ou Simca",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Pression faible",
+                    "Fumée, fuite ou compressions inégales"
+                  ],
+                  "kilometrage_apparition": "Âge et historique priment",
+                  "diagnostic": "Distinguer BMW OHV aluminium 2 476 cm³ et Simca Aquilon à soupapes latérales. Mesurer compressions/leak-down et pression, contrôler pompe, distribution, culasses/joints, radiateur et carburateur. Vérifier montage d’origine parmi la très petite série.",
+                  "piece_concernee": "V8 Talbot-Lago America",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Risque élevé de moteur remplacé",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à 15 000 €"
+                },
+                {
+                  "probleme": "Carburation, allumage et alimentation",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés",
+                    "Vapor-lock, fuite ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Contrôle annuel",
+                  "diagnostic": "Identifier carburateur et allumeur propres au BMW ou Simca, vérifier réservoir, pompe, conduites, starter, avance, bobine et bougies. Régler la richesse avec contrôle des huit cylindres et protéger les conduites de la chaleur.",
+                  "piece_concernee": "Admission et allumage America",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente avec carburant moderne",
+                  "cout_reparation_estime": "Élevé : environ 300 à 4 000 €"
+                },
+                {
+                  "probleme": "Boîte quatre rapports, embrayage, arbre et pont",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Patinage",
+                    "Vibration, fuite ou grondement"
+                  ],
+                  "kilometrage_apparition": "Souvent selon âge plus que kilométrage",
+                  "diagnostic": "Contrôler identification et huile de boîte, synchros, commande, embrayage, supports, arbre/croisillons, pont et roulements. Vérifier adaptation moteur-boîte et géométrie de transmission.",
+                  "piece_concernee": "Transmission T14 America",
+                  "gravite": "Majeure",
+                  "frequence": "Usure variable sur petite série",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 8 000 €"
+                },
+                {
+                  "probleme": "Châssis T14, carrosserie aluminium, freins et authenticité",
+                  "symptomes": [
+                    "Corrosion galvanique",
+                    "Fissure ou déformation",
+                    "Freinage irrégulier ou provenance confuse"
+                  ],
+                  "kilometrage_apparition": "Expertise complète avant acquisition",
+                  "diagnostic": "Identifier T14 LS antérieure et véritable America à conduite à gauche. Inspecter cadre, panneaux, collages/assemblages, ouvrants, suspension, direction, freins, roues et transformations après rachat par Simca.",
+                  "piece_concernee": "Structure et provenance Talbot-Lago America",
+                  "gravite": "Critique",
+                  "frequence": "Risque très élevé vu environ une douzaine de BMW et quelques Simca",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 60 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.morrissette.fr/wp-content/uploads/2017/01/Les-Grandes-Marques-du-Monde-au-Grand-Palais-2017.pdf"
+      ]
+    }
+  ]
+}

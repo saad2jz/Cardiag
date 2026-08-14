@@ -1,0 +1,137 @@
+{
+  "nom": "Aiways",
+  "modeles": [
+    {
+      "nom": "U5",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "63 kWh — 204 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 204,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "État de la batterie de traction et de l’électronique de puissance",
+                  "symptomes": [
+                    "Voyant ou message au combiné",
+                    "Autonomie ou performances dégradées"
+                  ],
+                  "kilometrage_apparition": "Variable selon âge, kilométrage, cycles et conditions d’utilisation.",
+                  "diagnostic": "Diagnostic haute tension par un atelier habilité et contrôle de l’état de santé de la batterie.",
+                  "piece_concernee": "Batterie haute tension et électronique de puissance",
+                  "gravite": "À évaluer selon les défauts relevés",
+                  "frequence": "À surveiller selon l’historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Trains roulants, freinage et pneumatiques",
+                  "symptomes": [
+                    "Vibration",
+                    "Usure irrégulière",
+                    "Tirage"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque entretien.",
+                  "diagnostic": "Contrôle des jeux, de la géométrie, des disques et plaquettes.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                },
+                {
+                  "probleme": "Fonctionnement des équipements connectés et électriques",
+                  "symptomes": [
+                    "Fonction intermittente",
+                    "Alerte système"
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Lecture des défauts, vérification batterie 12 V et mises à jour disponibles.",
+                  "piece_concernee": "Réseau électrique et calculateurs",
+                  "gravite": "Faible à modérée",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "U6",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "63 kWh — 218 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 218,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "État de la batterie de traction et de l’électronique de puissance",
+                  "symptomes": [
+                    "Voyant ou message au combiné",
+                    "Autonomie ou performances dégradées"
+                  ],
+                  "kilometrage_apparition": "Variable selon âge, kilométrage, cycles et conditions d’utilisation.",
+                  "diagnostic": "Diagnostic haute tension par un atelier habilité et contrôle de l’état de santé de la batterie.",
+                  "piece_concernee": "Batterie haute tension et électronique de puissance",
+                  "gravite": "À évaluer selon les défauts relevés",
+                  "frequence": "À surveiller selon l’historique",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Trains roulants, freinage et pneumatiques",
+                  "symptomes": [
+                    "Vibration",
+                    "Usure irrégulière",
+                    "Tirage"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque entretien.",
+                  "diagnostic": "Contrôle des jeux, de la géométrie, des disques et plaquettes.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "Usure à surveiller",
+                  "cout_reparation_estime": "Modéré — variable selon pièces."
+                },
+                {
+                  "probleme": "Fonctionnement des équipements connectés et électriques",
+                  "symptomes": [
+                    "Fonction intermittente",
+                    "Alerte système"
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Lecture des défauts, vérification batterie 12 V et mises à jour disponibles.",
+                  "piece_concernee": "Réseau électrique et calculateurs",
+                  "gravite": "Faible à modérée",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

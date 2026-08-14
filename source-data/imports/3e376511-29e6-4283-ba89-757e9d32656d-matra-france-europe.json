@@ -1,0 +1,265 @@
+{
+  "nom": "Matra",
+  "modeles": [
+    {
+      "nom": "530",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.7 V4 — 70 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 70,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Traçabilité de l’entretien et disponibilité des pièces",
+                  "symptomes": [
+                    "Historique incomplet",
+                    "Démarrage ou fonctionnement irrégulier"
+                  ],
+                  "kilometrage_apparition": "Variable selon âge, stockage et qualité des interventions antérieures.",
+                  "diagnostic": "Contrôle visuel approfondi, essai routier et vérification des numéros/équipements spécifiques.",
+                  "piece_concernee": "Groupe motopropulseur et périphériques",
+                  "gravite": "À évaluer selon l’état réel",
+                  "frequence": "À surveiller particulièrement sur véhicule ancien",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "probleme": "Usure des freins, trains roulants et direction",
+                  "symptomes": [
+                    "Vibration",
+                    "Bruit ou message au combiné"
+                  ],
+                  "kilometrage_apparition": "À contrôler lors de chaque expertise.",
+                  "diagnostic": "Contrôle des jeux, de la géométrie et des organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Fonctionnement électrique et corrosion des connectiques",
+                  "symptomes": [
+                    "Fonction intermittente",
+                    "Batterie faible"
+                  ],
+                  "kilometrage_apparition": "Variable, davantage après immobilisation.",
+                  "diagnostic": "Test de batterie, masses, connecteurs et lecture des défauts lorsque disponible.",
+                  "piece_concernee": "Circuit électrique et calculateurs",
+                  "gravite": "Faible à modérée",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Murena",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.2 — 118 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 118,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Traçabilité de l’entretien et disponibilité des pièces",
+                  "symptomes": [
+                    "Historique incomplet",
+                    "Démarrage ou fonctionnement irrégulier"
+                  ],
+                  "kilometrage_apparition": "Variable selon âge, stockage et qualité des interventions antérieures.",
+                  "diagnostic": "Contrôle visuel approfondi, essai routier et vérification des numéros/équipements spécifiques.",
+                  "piece_concernee": "Groupe motopropulseur et périphériques",
+                  "gravite": "À évaluer selon l’état réel",
+                  "frequence": "À surveiller particulièrement sur véhicule ancien",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "probleme": "Usure des freins, trains roulants et direction",
+                  "symptomes": [
+                    "Vibration",
+                    "Bruit ou message au combiné"
+                  ],
+                  "kilometrage_apparition": "À contrôler lors de chaque expertise.",
+                  "diagnostic": "Contrôle des jeux, de la géométrie et des organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Fonctionnement électrique et corrosion des connectiques",
+                  "symptomes": [
+                    "Fonction intermittente",
+                    "Batterie faible"
+                  ],
+                  "kilometrage_apparition": "Variable, davantage après immobilisation.",
+                  "diagnostic": "Test de batterie, masses, connecteurs et lecture des défauts lorsque disponible.",
+                  "piece_concernee": "Circuit électrique et calculateurs",
+                  "gravite": "Faible à modérée",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Rancho",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.4 — 80 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 80,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Traçabilité de l’entretien et disponibilité des pièces",
+                  "symptomes": [
+                    "Historique incomplet",
+                    "Démarrage ou fonctionnement irrégulier"
+                  ],
+                  "kilometrage_apparition": "Variable selon âge, stockage et qualité des interventions antérieures.",
+                  "diagnostic": "Contrôle visuel approfondi, essai routier et vérification des numéros/équipements spécifiques.",
+                  "piece_concernee": "Groupe motopropulseur et périphériques",
+                  "gravite": "À évaluer selon l’état réel",
+                  "frequence": "À surveiller particulièrement sur véhicule ancien",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "probleme": "Usure des freins, trains roulants et direction",
+                  "symptomes": [
+                    "Vibration",
+                    "Bruit ou message au combiné"
+                  ],
+                  "kilometrage_apparition": "À contrôler lors de chaque expertise.",
+                  "diagnostic": "Contrôle des jeux, de la géométrie et des organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Fonctionnement électrique et corrosion des connectiques",
+                  "symptomes": [
+                    "Fonction intermittente",
+                    "Batterie faible"
+                  ],
+                  "kilometrage_apparition": "Variable, davantage après immobilisation.",
+                  "diagnostic": "Test de batterie, masses, connecteurs et lecture des défauts lorsque disponible.",
+                  "piece_concernee": "Circuit électrique et calculateurs",
+                  "gravite": "Faible à modérée",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Espace",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.0 — 110 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 110,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Traçabilité de l’entretien et disponibilité des pièces",
+                  "symptomes": [
+                    "Historique incomplet",
+                    "Démarrage ou fonctionnement irrégulier"
+                  ],
+                  "kilometrage_apparition": "Variable selon âge, stockage et qualité des interventions antérieures.",
+                  "diagnostic": "Contrôle visuel approfondi, essai routier et vérification des numéros/équipements spécifiques.",
+                  "piece_concernee": "Groupe motopropulseur et périphériques",
+                  "gravite": "À évaluer selon l’état réel",
+                  "frequence": "À surveiller particulièrement sur véhicule ancien",
+                  "cout_reparation_estime": "Variable — devis spécialisé recommandé."
+                },
+                {
+                  "probleme": "Usure des freins, trains roulants et direction",
+                  "symptomes": [
+                    "Vibration",
+                    "Bruit ou message au combiné"
+                  ],
+                  "kilometrage_apparition": "À contrôler lors de chaque expertise.",
+                  "diagnostic": "Contrôle des jeux, de la géométrie et des organes de freinage.",
+                  "piece_concernee": "Suspension, direction et freinage",
+                  "gravite": "Modérée à majeure selon le défaut",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Fonctionnement électrique et corrosion des connectiques",
+                  "symptomes": [
+                    "Fonction intermittente",
+                    "Batterie faible"
+                  ],
+                  "kilometrage_apparition": "Variable, davantage après immobilisation.",
+                  "diagnostic": "Test de batterie, masses, connecteurs et lecture des défauts lorsque disponible.",
+                  "piece_concernee": "Circuit électrique et calculateurs",
+                  "gravite": "Faible à modérée",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Faible à modéré — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

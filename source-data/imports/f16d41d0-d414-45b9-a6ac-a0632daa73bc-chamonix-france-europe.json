@@ -1,0 +1,399 @@
+{
+  "nom": "Chamonix",
+  "modeles": [
+    {
+      "nom": "Spyder",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "convertible",
+        "countries": [
+          "lu",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 8
+      },
+      "generations": [
+        {
+          "code_chassis": "Spyder 550 boxer première série",
+          "annees": "1987–1994",
+          "phases": [
+            "Réplique brésilienne à châssis tubulaire et mécanique VW refroidie par air."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "VW boxer 1600 — 54 ch",
+              "code_moteur": "Volkswagen air-cooled 1600 Chamonix",
+              "cylindree": "1 584 cm³",
+              "puissance_ch": 54,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification et alimentation selon boxer VW ou AP en ligne",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée, fuite ou pression faible",
+                    "Ratés, odeur ou manque de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, mais montage artisanal, âge et immobilisation priment",
+                  "diagnostic": "Identifier boxer 1.6/1.9 refroidi par air ou AP 1.8 à eau, mesurer compressions/pression, contrôler turbine et tôles ou radiateur/pompe, puis carburateurs/injection, allumage, durites et échappement ; confirmer carburant et puissance sur le dossier Chamonix",
+                  "piece_concernee": "Moteur Volkswagen adapté au Chamonix Spyder",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sans entretien spécialisé",
+                  "cout_reparation_estime": "Élevé : environ 300 à 5 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte VW quatre/cinq rapports et transmission arrière",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile",
+                    "Vibration, fuite ou bruit de différentiel"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km, plus tôt avec préparation",
+                  "diagnostic": "Identifier boîte quatre du boxer ou cinq de l’AP, contrôler commande, embrayage, huile, synchros, supports, cardans, soufflets, moyeux et roulements ; vérifier adaptation, rapports et sens de montage",
+                  "piece_concernee": "Transmission Volkswagen du Spyder 550",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente avec soufflets ou tringlerie âgés",
+                  "cout_reparation_estime": "Élevé : environ 300 à 3 500 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, carrosserie polyester, freins et conformité de réplique",
+                  "symptomes": [
+                    "Fissure ou délaminage",
+                    "Jeu, tirage ou freinage inégal",
+                    "Numéros, année ou carte grise incohérents"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique avant achat",
+                  "diagnostic": "Inspecter tubes, soudures, ancrages, points de levage, polyester, portes/capot et réparations ; contrôler suspension/direction VW, géométrie, pneus, disques avant/tambours arrière selon phase, éclairage et ceintures, puis authentifier AME/Chamonix/NG/Athos et homologation sans l’assimiler à une Porsche 550 originale",
+                  "piece_concernee": "Structure, sécurité et identité Chamonix Spyder",
+                  "gravite": "Critique pour sécurité et légalité",
+                  "frequence": "Risque élevé de transformation ou immatriculation incohérente",
+                  "cout_reparation_estime": "Élevé : environ 500 à plus de 10 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Spyder 550 / 550i",
+          "annees": "1995–2000",
+          "phases": [
+            "Évolution injection/préparation selon commande ; puissance exacte à confirmer sur dossier individuel."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "VW boxer 1600 — 65 ch",
+              "code_moteur": "Volkswagen air-cooled 1600 préparé",
+              "cylindree": "1 584 cm³",
+              "puissance_ch": 65,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification et alimentation selon boxer VW ou AP en ligne",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée, fuite ou pression faible",
+                    "Ratés, odeur ou manque de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, mais montage artisanal, âge et immobilisation priment",
+                  "diagnostic": "Identifier boxer 1.6/1.9 refroidi par air ou AP 1.8 à eau, mesurer compressions/pression, contrôler turbine et tôles ou radiateur/pompe, puis carburateurs/injection, allumage, durites et échappement ; confirmer carburant et puissance sur le dossier Chamonix",
+                  "piece_concernee": "Moteur Volkswagen adapté au Chamonix Spyder",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sans entretien spécialisé",
+                  "cout_reparation_estime": "Élevé : environ 300 à 5 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte VW quatre/cinq rapports et transmission arrière",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile",
+                    "Vibration, fuite ou bruit de différentiel"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km, plus tôt avec préparation",
+                  "diagnostic": "Identifier boîte quatre du boxer ou cinq de l’AP, contrôler commande, embrayage, huile, synchros, supports, cardans, soufflets, moyeux et roulements ; vérifier adaptation, rapports et sens de montage",
+                  "piece_concernee": "Transmission Volkswagen du Spyder 550",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente avec soufflets ou tringlerie âgés",
+                  "cout_reparation_estime": "Élevé : environ 300 à 3 500 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, carrosserie polyester, freins et conformité de réplique",
+                  "symptomes": [
+                    "Fissure ou délaminage",
+                    "Jeu, tirage ou freinage inégal",
+                    "Numéros, année ou carte grise incohérents"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique avant achat",
+                  "diagnostic": "Inspecter tubes, soudures, ancrages, points de levage, polyester, portes/capot et réparations ; contrôler suspension/direction VW, géométrie, pneus, disques avant/tambours arrière selon phase, éclairage et ceintures, puis authentifier AME/Chamonix/NG/Athos et homologation sans l’assimiler à une Porsche 550 originale",
+                  "piece_concernee": "Structure, sécurité et identité Chamonix Spyder",
+                  "gravite": "Critique pour sécurité et légalité",
+                  "frequence": "Risque élevé de transformation ou immatriculation incohérente",
+                  "cout_reparation_estime": "Élevé : environ 500 à plus de 10 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Spyder boxer haute cylindrée",
+          "annees": "2001–2006",
+          "phases": [
+            "Option 1,9 litre à double Weber et injection multipoint annoncée à 115 ch."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "VW boxer 1900 — 115 ch",
+              "code_moteur": "Volkswagen boxer 1900 Chamonix",
+              "cylindree": "1 900 cm³",
+              "puissance_ch": 115,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification et alimentation selon boxer VW ou AP en ligne",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée, fuite ou pression faible",
+                    "Ratés, odeur ou manque de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, mais montage artisanal, âge et immobilisation priment",
+                  "diagnostic": "Identifier boxer 1.6/1.9 refroidi par air ou AP 1.8 à eau, mesurer compressions/pression, contrôler turbine et tôles ou radiateur/pompe, puis carburateurs/injection, allumage, durites et échappement ; confirmer carburant et puissance sur le dossier Chamonix",
+                  "piece_concernee": "Moteur Volkswagen adapté au Chamonix Spyder",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sans entretien spécialisé",
+                  "cout_reparation_estime": "Élevé : environ 300 à 5 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte VW quatre/cinq rapports et transmission arrière",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile",
+                    "Vibration, fuite ou bruit de différentiel"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km, plus tôt avec préparation",
+                  "diagnostic": "Identifier boîte quatre du boxer ou cinq de l’AP, contrôler commande, embrayage, huile, synchros, supports, cardans, soufflets, moyeux et roulements ; vérifier adaptation, rapports et sens de montage",
+                  "piece_concernee": "Transmission Volkswagen du Spyder 550",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente avec soufflets ou tringlerie âgés",
+                  "cout_reparation_estime": "Élevé : environ 300 à 3 500 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, carrosserie polyester, freins et conformité de réplique",
+                  "symptomes": [
+                    "Fissure ou délaminage",
+                    "Jeu, tirage ou freinage inégal",
+                    "Numéros, année ou carte grise incohérents"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique avant achat",
+                  "diagnostic": "Inspecter tubes, soudures, ancrages, points de levage, polyester, portes/capot et réparations ; contrôler suspension/direction VW, géométrie, pneus, disques avant/tambours arrière selon phase, éclairage et ceintures, puis authentifier AME/Chamonix/NG/Athos et homologation sans l’assimiler à une Porsche 550 originale",
+                  "piece_concernee": "Structure, sécurité et identité Chamonix Spyder",
+                  "gravite": "Critique pour sécurité et légalité",
+                  "frequence": "Risque élevé de transformation ou immatriculation incohérente",
+                  "cout_reparation_estime": "Élevé : environ 500 à plus de 10 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Spyder 550 S AP Flex",
+          "annees": "2007–2010",
+          "phases": [
+            "Moteur en ligne refroidi par eau : puissances séparées selon carburant."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "VW AP 1.8 essence — 103 ch",
+              "code_moteur": "Volkswagen AP 1.8 Flex",
+              "cylindree": "1 781 cm³",
+              "puissance_ch": 103,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification et alimentation selon boxer VW ou AP en ligne",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée, fuite ou pression faible",
+                    "Ratés, odeur ou manque de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, mais montage artisanal, âge et immobilisation priment",
+                  "diagnostic": "Identifier boxer 1.6/1.9 refroidi par air ou AP 1.8 à eau, mesurer compressions/pression, contrôler turbine et tôles ou radiateur/pompe, puis carburateurs/injection, allumage, durites et échappement ; confirmer carburant et puissance sur le dossier Chamonix",
+                  "piece_concernee": "Moteur Volkswagen adapté au Chamonix Spyder",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sans entretien spécialisé",
+                  "cout_reparation_estime": "Élevé : environ 300 à 5 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte VW quatre/cinq rapports et transmission arrière",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile",
+                    "Vibration, fuite ou bruit de différentiel"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km, plus tôt avec préparation",
+                  "diagnostic": "Identifier boîte quatre du boxer ou cinq de l’AP, contrôler commande, embrayage, huile, synchros, supports, cardans, soufflets, moyeux et roulements ; vérifier adaptation, rapports et sens de montage",
+                  "piece_concernee": "Transmission Volkswagen du Spyder 550",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente avec soufflets ou tringlerie âgés",
+                  "cout_reparation_estime": "Élevé : environ 300 à 3 500 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, carrosserie polyester, freins et conformité de réplique",
+                  "symptomes": [
+                    "Fissure ou délaminage",
+                    "Jeu, tirage ou freinage inégal",
+                    "Numéros, année ou carte grise incohérents"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique avant achat",
+                  "diagnostic": "Inspecter tubes, soudures, ancrages, points de levage, polyester, portes/capot et réparations ; contrôler suspension/direction VW, géométrie, pneus, disques avant/tambours arrière selon phase, éclairage et ceintures, puis authentifier AME/Chamonix/NG/Athos et homologation sans l’assimiler à une Porsche 550 originale",
+                  "piece_concernee": "Structure, sécurité et identité Chamonix Spyder",
+                  "gravite": "Critique pour sécurité et légalité",
+                  "frequence": "Risque élevé de transformation ou immatriculation incohérente",
+                  "cout_reparation_estime": "Élevé : environ 500 à plus de 10 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Éthanol/essence",
+              "nom": "VW AP 1.8 éthanol — 106 ch",
+              "code_moteur": "Volkswagen AP 1.8 Flex",
+              "cylindree": "1 781 cm³",
+              "puissance_ch": 106,
+              "boite": [
+                "Manuelle 5 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification et alimentation selon boxer VW ou AP en ligne",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée, fuite ou pression faible",
+                    "Ratés, odeur ou manque de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, mais montage artisanal, âge et immobilisation priment",
+                  "diagnostic": "Identifier boxer 1.6/1.9 refroidi par air ou AP 1.8 à eau, mesurer compressions/pression, contrôler turbine et tôles ou radiateur/pompe, puis carburateurs/injection, allumage, durites et échappement ; confirmer carburant et puissance sur le dossier Chamonix",
+                  "piece_concernee": "Moteur Volkswagen adapté au Chamonix Spyder",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sans entretien spécialisé",
+                  "cout_reparation_estime": "Élevé : environ 300 à 5 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte VW quatre/cinq rapports et transmission arrière",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile",
+                    "Vibration, fuite ou bruit de différentiel"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km, plus tôt avec préparation",
+                  "diagnostic": "Identifier boîte quatre du boxer ou cinq de l’AP, contrôler commande, embrayage, huile, synchros, supports, cardans, soufflets, moyeux et roulements ; vérifier adaptation, rapports et sens de montage",
+                  "piece_concernee": "Transmission Volkswagen du Spyder 550",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente avec soufflets ou tringlerie âgés",
+                  "cout_reparation_estime": "Élevé : environ 300 à 3 500 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, carrosserie polyester, freins et conformité de réplique",
+                  "symptomes": [
+                    "Fissure ou délaminage",
+                    "Jeu, tirage ou freinage inégal",
+                    "Numéros, année ou carte grise incohérents"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique avant achat",
+                  "diagnostic": "Inspecter tubes, soudures, ancrages, points de levage, polyester, portes/capot et réparations ; contrôler suspension/direction VW, géométrie, pneus, disques avant/tambours arrière selon phase, éclairage et ceintures, puis authentifier AME/Chamonix/NG/Athos et homologation sans l’assimiler à une Porsche 550 originale",
+                  "piece_concernee": "Structure, sécurité et identité Chamonix Spyder",
+                  "gravite": "Critique pour sécurité et légalité",
+                  "frequence": "Risque élevé de transformation ou immatriculation incohérente",
+                  "cout_reparation_estime": "Élevé : environ 500 à plus de 10 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Chamonix New Generation Spyder S",
+          "annees": "2011–2014",
+          "phases": [
+            "Petite reprise de production sur commande après transfert de la marque."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "VW boxer 1600 — 65 ch",
+              "code_moteur": "Volkswagen air-cooled 1600 NG",
+              "cylindree": "1 584 cm³",
+              "puissance_ch": 65,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, lubrification et alimentation selon boxer VW ou AP en ligne",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fumée, fuite ou pression faible",
+                    "Ratés, odeur ou manque de puissance"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 160 000 km, mais montage artisanal, âge et immobilisation priment",
+                  "diagnostic": "Identifier boxer 1.6/1.9 refroidi par air ou AP 1.8 à eau, mesurer compressions/pression, contrôler turbine et tôles ou radiateur/pompe, puis carburateurs/injection, allumage, durites et échappement ; confirmer carburant et puissance sur le dossier Chamonix",
+                  "piece_concernee": "Moteur Volkswagen adapté au Chamonix Spyder",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sans entretien spécialisé",
+                  "cout_reparation_estime": "Élevé : environ 300 à 5 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte VW quatre/cinq rapports et transmission arrière",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile",
+                    "Vibration, fuite ou bruit de différentiel"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km, plus tôt avec préparation",
+                  "diagnostic": "Identifier boîte quatre du boxer ou cinq de l’AP, contrôler commande, embrayage, huile, synchros, supports, cardans, soufflets, moyeux et roulements ; vérifier adaptation, rapports et sens de montage",
+                  "piece_concernee": "Transmission Volkswagen du Spyder 550",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente avec soufflets ou tringlerie âgés",
+                  "cout_reparation_estime": "Élevé : environ 300 à 3 500 €"
+                },
+                {
+                  "probleme": "Châssis tubulaire, carrosserie polyester, freins et conformité de réplique",
+                  "symptomes": [
+                    "Fissure ou délaminage",
+                    "Jeu, tirage ou freinage inégal",
+                    "Numéros, année ou carte grise incohérents"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique avant achat",
+                  "diagnostic": "Inspecter tubes, soudures, ancrages, points de levage, polyester, portes/capot et réparations ; contrôler suspension/direction VW, géométrie, pneus, disques avant/tambours arrière selon phase, éclairage et ceintures, puis authentifier AME/Chamonix/NG/Athos et homologation sans l’assimiler à une Porsche 550 originale",
+                  "piece_concernee": "Structure, sécurité et identité Chamonix Spyder",
+                  "gravite": "Critique pour sécurité et légalité",
+                  "frequence": "Risque élevé de transformation ou immatriculation incohérente",
+                  "cout_reparation_estime": "Élevé : environ 500 à plus de 10 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.lexicarbrasil.com.br/chamonix/",
+        "https://athos-cars.com/spyder-550/"
+      ]
+    }
+  ],
+  "source_catalogue": "VehiclesDB 2026.08.2 (CC-BY 4.0)"
+}

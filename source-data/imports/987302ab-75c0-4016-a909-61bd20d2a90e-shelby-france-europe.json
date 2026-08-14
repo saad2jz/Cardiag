@@ -1,0 +1,543 @@
+{
+  "nom": "Shelby",
+  "modeles": [
+    {
+      "nom": "Cobra",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "convertible",
+        "countries": [
+          "nl",
+          "nz"
+        ],
+        "regions": [
+          "eu",
+          "oc"
+        ],
+        "global_decile": 9
+      },
+      "generations": [
+        {
+          "code_chassis": "Cobra Mk I CSX2000",
+          "annees": "1962–1963",
+          "phases": [
+            "Châssis à lames transversales ; plusieurs premières 260 furent converties, donc registre et numéros sont essentiels."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Ford 260 HiPo — 260 ch",
+              "code_moteur": "Ford Windsor 260 HiPo",
+              "cylindree": "4 261 cm³",
+              "puissance_ch": 260,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Authenticité et état interne du V8 Ford 260/289/427/428",
+                  "symptomes": [
+                    "Numéros incohérents",
+                    "Pression faible",
+                    "Fumée, chauffe ou bruit mécanique"
+                  ],
+                  "kilometrage_apparition": "Expertise avant achat ; âge et restauration priment sur le kilométrage",
+                  "diagnostic": "Décoder CSX, bloc, date et fonderies, distinguer 260/289 Windsor, 427 FE side-oiler et 428 FE ; mesurer compressions/leak-down et pression, analyser huile, inspecter distribution, culasses, refroidissement et fuites, puis documenter toute préparation et passage au banc",
+                  "piece_concernee": "V8 Ford et identité Shelby Cobra",
+                  "gravite": "Critique pour fiabilité et valeur",
+                  "frequence": "Risque élevé de moteur remplacé ou modifié",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 100 000 €"
+                },
+                {
+                  "probleme": "Carburateur(s), alimentation, allumage et échappement latéral",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés, cliquetis ou odeur de carburant",
+                    "Retour de flamme ou fuite échappement"
+                  ],
+                  "kilometrage_apparition": "Réglage régulier et contrôle après immobilisation",
+                  "diagnostic": "Contrôler réservoir, pompe, durites, filtre, Holley/Weber et starter, régler cuves/richesse/avance, bougies et distributeur ; inspecter collecteurs/side-pipes, protection thermique et fuites, avec carburant compatible et extincteur disponible",
+                  "piece_concernee": "Alimentation et échappement Cobra",
+                  "gravite": "Critique en cas de fuite",
+                  "frequence": "Fréquente sur véhicule ancien ou peu utilisé",
+                  "cout_reparation_estime": "Élevé : environ 200 à 5 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte, arbre, pont et demi-arbres",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile",
+                    "Vibration, claquement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique ; souvent après usage course ou départs violents",
+                  "diagnostic": "Identifier Borg-Warner/Ford/toploader et rapport de pont, contrôler embrayage, commande, huile, synchros, supports, arbre/croisillons, différentiel Salisbury/Dana, cardans ou demi-arbres et roulements ; rechercher fissures autour des ancrages",
+                  "piece_concernee": "Transmission et propulsion Cobra",
+                  "gravite": "Critique",
+                  "frequence": "Usure et transformations fréquentes",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Châssis AC/Shelby, aluminium, suspension, freins et provenance",
+                  "symptomes": [
+                    "Fissure ou corrosion",
+                    "Jeu ou géométrie instable",
+                    "Freinage dissymétrique ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Expertise de provenance et structure obligatoire avant acquisition",
+                  "diagnostic": "Vérifier registre Shelby, CSX, factures et chaîne de propriété pour distinguer original, continuation et réplique ; inspecter tubes 3/4 pouces selon série, soudures, aluminium, réparations, ancrages, lames/doubles triangles, direction, roues centrales, pneus, disques et conduites",
+                  "piece_concernee": "Structure, sécurité et provenance Shelby Cobra",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de réplique ou restauration non conforme",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 200 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "Ford 289 HiPo — 271 ch",
+              "code_moteur": "Ford Windsor 289 HiPo",
+              "cylindree": "4 727 cm³",
+              "puissance_ch": 271,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Authenticité et état interne du V8 Ford 260/289/427/428",
+                  "symptomes": [
+                    "Numéros incohérents",
+                    "Pression faible",
+                    "Fumée, chauffe ou bruit mécanique"
+                  ],
+                  "kilometrage_apparition": "Expertise avant achat ; âge et restauration priment sur le kilométrage",
+                  "diagnostic": "Décoder CSX, bloc, date et fonderies, distinguer 260/289 Windsor, 427 FE side-oiler et 428 FE ; mesurer compressions/leak-down et pression, analyser huile, inspecter distribution, culasses, refroidissement et fuites, puis documenter toute préparation et passage au banc",
+                  "piece_concernee": "V8 Ford et identité Shelby Cobra",
+                  "gravite": "Critique pour fiabilité et valeur",
+                  "frequence": "Risque élevé de moteur remplacé ou modifié",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 100 000 €"
+                },
+                {
+                  "probleme": "Carburateur(s), alimentation, allumage et échappement latéral",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés, cliquetis ou odeur de carburant",
+                    "Retour de flamme ou fuite échappement"
+                  ],
+                  "kilometrage_apparition": "Réglage régulier et contrôle après immobilisation",
+                  "diagnostic": "Contrôler réservoir, pompe, durites, filtre, Holley/Weber et starter, régler cuves/richesse/avance, bougies et distributeur ; inspecter collecteurs/side-pipes, protection thermique et fuites, avec carburant compatible et extincteur disponible",
+                  "piece_concernee": "Alimentation et échappement Cobra",
+                  "gravite": "Critique en cas de fuite",
+                  "frequence": "Fréquente sur véhicule ancien ou peu utilisé",
+                  "cout_reparation_estime": "Élevé : environ 200 à 5 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte, arbre, pont et demi-arbres",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile",
+                    "Vibration, claquement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique ; souvent après usage course ou départs violents",
+                  "diagnostic": "Identifier Borg-Warner/Ford/toploader et rapport de pont, contrôler embrayage, commande, huile, synchros, supports, arbre/croisillons, différentiel Salisbury/Dana, cardans ou demi-arbres et roulements ; rechercher fissures autour des ancrages",
+                  "piece_concernee": "Transmission et propulsion Cobra",
+                  "gravite": "Critique",
+                  "frequence": "Usure et transformations fréquentes",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Châssis AC/Shelby, aluminium, suspension, freins et provenance",
+                  "symptomes": [
+                    "Fissure ou corrosion",
+                    "Jeu ou géométrie instable",
+                    "Freinage dissymétrique ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Expertise de provenance et structure obligatoire avant acquisition",
+                  "diagnostic": "Vérifier registre Shelby, CSX, factures et chaîne de propriété pour distinguer original, continuation et réplique ; inspecter tubes 3/4 pouces selon série, soudures, aluminium, réparations, ancrages, lames/doubles triangles, direction, roues centrales, pneus, disques et conduites",
+                  "piece_concernee": "Structure, sécurité et provenance Shelby Cobra",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de réplique ou restauration non conforme",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 200 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Cobra Mk II / 289 FIA CSX2100–2600",
+          "annees": "1963–1965",
+          "phases": [
+            "Street et FIA diffèrent par préparation, carrosserie, freins et provenance."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "289 Street — 271 ch",
+              "code_moteur": "Ford Windsor 289 HiPo",
+              "cylindree": "4 727 cm³",
+              "puissance_ch": 271,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Authenticité et état interne du V8 Ford 260/289/427/428",
+                  "symptomes": [
+                    "Numéros incohérents",
+                    "Pression faible",
+                    "Fumée, chauffe ou bruit mécanique"
+                  ],
+                  "kilometrage_apparition": "Expertise avant achat ; âge et restauration priment sur le kilométrage",
+                  "diagnostic": "Décoder CSX, bloc, date et fonderies, distinguer 260/289 Windsor, 427 FE side-oiler et 428 FE ; mesurer compressions/leak-down et pression, analyser huile, inspecter distribution, culasses, refroidissement et fuites, puis documenter toute préparation et passage au banc",
+                  "piece_concernee": "V8 Ford et identité Shelby Cobra",
+                  "gravite": "Critique pour fiabilité et valeur",
+                  "frequence": "Risque élevé de moteur remplacé ou modifié",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 100 000 €"
+                },
+                {
+                  "probleme": "Carburateur(s), alimentation, allumage et échappement latéral",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés, cliquetis ou odeur de carburant",
+                    "Retour de flamme ou fuite échappement"
+                  ],
+                  "kilometrage_apparition": "Réglage régulier et contrôle après immobilisation",
+                  "diagnostic": "Contrôler réservoir, pompe, durites, filtre, Holley/Weber et starter, régler cuves/richesse/avance, bougies et distributeur ; inspecter collecteurs/side-pipes, protection thermique et fuites, avec carburant compatible et extincteur disponible",
+                  "piece_concernee": "Alimentation et échappement Cobra",
+                  "gravite": "Critique en cas de fuite",
+                  "frequence": "Fréquente sur véhicule ancien ou peu utilisé",
+                  "cout_reparation_estime": "Élevé : environ 200 à 5 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte, arbre, pont et demi-arbres",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile",
+                    "Vibration, claquement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique ; souvent après usage course ou départs violents",
+                  "diagnostic": "Identifier Borg-Warner/Ford/toploader et rapport de pont, contrôler embrayage, commande, huile, synchros, supports, arbre/croisillons, différentiel Salisbury/Dana, cardans ou demi-arbres et roulements ; rechercher fissures autour des ancrages",
+                  "piece_concernee": "Transmission et propulsion Cobra",
+                  "gravite": "Critique",
+                  "frequence": "Usure et transformations fréquentes",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Châssis AC/Shelby, aluminium, suspension, freins et provenance",
+                  "symptomes": [
+                    "Fissure ou corrosion",
+                    "Jeu ou géométrie instable",
+                    "Freinage dissymétrique ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Expertise de provenance et structure obligatoire avant acquisition",
+                  "diagnostic": "Vérifier registre Shelby, CSX, factures et chaîne de propriété pour distinguer original, continuation et réplique ; inspecter tubes 3/4 pouces selon série, soudures, aluminium, réparations, ancrages, lames/doubles triangles, direction, roues centrales, pneus, disques et conduites",
+                  "piece_concernee": "Structure, sécurité et provenance Shelby Cobra",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de réplique ou restauration non conforme",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 200 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence compétition",
+              "nom": "289 FIA Competition — 380 ch",
+              "code_moteur": "Ford Windsor 289 FIA",
+              "cylindree": "4 727 cm³",
+              "puissance_ch": 380,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Authenticité et état interne du V8 Ford 260/289/427/428",
+                  "symptomes": [
+                    "Numéros incohérents",
+                    "Pression faible",
+                    "Fumée, chauffe ou bruit mécanique"
+                  ],
+                  "kilometrage_apparition": "Expertise avant achat ; âge et restauration priment sur le kilométrage",
+                  "diagnostic": "Décoder CSX, bloc, date et fonderies, distinguer 260/289 Windsor, 427 FE side-oiler et 428 FE ; mesurer compressions/leak-down et pression, analyser huile, inspecter distribution, culasses, refroidissement et fuites, puis documenter toute préparation et passage au banc",
+                  "piece_concernee": "V8 Ford et identité Shelby Cobra",
+                  "gravite": "Critique pour fiabilité et valeur",
+                  "frequence": "Risque élevé de moteur remplacé ou modifié",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 100 000 €"
+                },
+                {
+                  "probleme": "Carburateur(s), alimentation, allumage et échappement latéral",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés, cliquetis ou odeur de carburant",
+                    "Retour de flamme ou fuite échappement"
+                  ],
+                  "kilometrage_apparition": "Réglage régulier et contrôle après immobilisation",
+                  "diagnostic": "Contrôler réservoir, pompe, durites, filtre, Holley/Weber et starter, régler cuves/richesse/avance, bougies et distributeur ; inspecter collecteurs/side-pipes, protection thermique et fuites, avec carburant compatible et extincteur disponible",
+                  "piece_concernee": "Alimentation et échappement Cobra",
+                  "gravite": "Critique en cas de fuite",
+                  "frequence": "Fréquente sur véhicule ancien ou peu utilisé",
+                  "cout_reparation_estime": "Élevé : environ 200 à 5 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte, arbre, pont et demi-arbres",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile",
+                    "Vibration, claquement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique ; souvent après usage course ou départs violents",
+                  "diagnostic": "Identifier Borg-Warner/Ford/toploader et rapport de pont, contrôler embrayage, commande, huile, synchros, supports, arbre/croisillons, différentiel Salisbury/Dana, cardans ou demi-arbres et roulements ; rechercher fissures autour des ancrages",
+                  "piece_concernee": "Transmission et propulsion Cobra",
+                  "gravite": "Critique",
+                  "frequence": "Usure et transformations fréquentes",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Châssis AC/Shelby, aluminium, suspension, freins et provenance",
+                  "symptomes": [
+                    "Fissure ou corrosion",
+                    "Jeu ou géométrie instable",
+                    "Freinage dissymétrique ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Expertise de provenance et structure obligatoire avant acquisition",
+                  "diagnostic": "Vérifier registre Shelby, CSX, factures et chaîne de propriété pour distinguer original, continuation et réplique ; inspecter tubes 3/4 pouces selon série, soudures, aluminium, réparations, ancrages, lames/doubles triangles, direction, roues centrales, pneus, disques et conduites",
+                  "piece_concernee": "Structure, sécurité et provenance Shelby Cobra",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de réplique ou restauration non conforme",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 200 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Cobra Mk III 427/428 CSX3000",
+          "annees": "1965–1967",
+          "phases": [
+            "Nouveau châssis quatre pouces et ressorts hélicoïdaux ; 427 et 428 ne doivent jamais être fusionnés."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "427 Street — 425 ch",
+              "code_moteur": "Ford FE 427 side-oiler",
+              "cylindree": "6 997 cm³",
+              "puissance_ch": 425,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Authenticité et état interne du V8 Ford 260/289/427/428",
+                  "symptomes": [
+                    "Numéros incohérents",
+                    "Pression faible",
+                    "Fumée, chauffe ou bruit mécanique"
+                  ],
+                  "kilometrage_apparition": "Expertise avant achat ; âge et restauration priment sur le kilométrage",
+                  "diagnostic": "Décoder CSX, bloc, date et fonderies, distinguer 260/289 Windsor, 427 FE side-oiler et 428 FE ; mesurer compressions/leak-down et pression, analyser huile, inspecter distribution, culasses, refroidissement et fuites, puis documenter toute préparation et passage au banc",
+                  "piece_concernee": "V8 Ford et identité Shelby Cobra",
+                  "gravite": "Critique pour fiabilité et valeur",
+                  "frequence": "Risque élevé de moteur remplacé ou modifié",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 100 000 €"
+                },
+                {
+                  "probleme": "Carburateur(s), alimentation, allumage et échappement latéral",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés, cliquetis ou odeur de carburant",
+                    "Retour de flamme ou fuite échappement"
+                  ],
+                  "kilometrage_apparition": "Réglage régulier et contrôle après immobilisation",
+                  "diagnostic": "Contrôler réservoir, pompe, durites, filtre, Holley/Weber et starter, régler cuves/richesse/avance, bougies et distributeur ; inspecter collecteurs/side-pipes, protection thermique et fuites, avec carburant compatible et extincteur disponible",
+                  "piece_concernee": "Alimentation et échappement Cobra",
+                  "gravite": "Critique en cas de fuite",
+                  "frequence": "Fréquente sur véhicule ancien ou peu utilisé",
+                  "cout_reparation_estime": "Élevé : environ 200 à 5 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte, arbre, pont et demi-arbres",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile",
+                    "Vibration, claquement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique ; souvent après usage course ou départs violents",
+                  "diagnostic": "Identifier Borg-Warner/Ford/toploader et rapport de pont, contrôler embrayage, commande, huile, synchros, supports, arbre/croisillons, différentiel Salisbury/Dana, cardans ou demi-arbres et roulements ; rechercher fissures autour des ancrages",
+                  "piece_concernee": "Transmission et propulsion Cobra",
+                  "gravite": "Critique",
+                  "frequence": "Usure et transformations fréquentes",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Châssis AC/Shelby, aluminium, suspension, freins et provenance",
+                  "symptomes": [
+                    "Fissure ou corrosion",
+                    "Jeu ou géométrie instable",
+                    "Freinage dissymétrique ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Expertise de provenance et structure obligatoire avant acquisition",
+                  "diagnostic": "Vérifier registre Shelby, CSX, factures et chaîne de propriété pour distinguer original, continuation et réplique ; inspecter tubes 3/4 pouces selon série, soudures, aluminium, réparations, ancrages, lames/doubles triangles, direction, roues centrales, pneus, disques et conduites",
+                  "piece_concernee": "Structure, sécurité et provenance Shelby Cobra",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de réplique ou restauration non conforme",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 200 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence compétition",
+              "nom": "427 Competition/S-C — 485 ch",
+              "code_moteur": "Ford FE 427 side-oiler Competition",
+              "cylindree": "6 997 cm³",
+              "puissance_ch": 485,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Authenticité et état interne du V8 Ford 260/289/427/428",
+                  "symptomes": [
+                    "Numéros incohérents",
+                    "Pression faible",
+                    "Fumée, chauffe ou bruit mécanique"
+                  ],
+                  "kilometrage_apparition": "Expertise avant achat ; âge et restauration priment sur le kilométrage",
+                  "diagnostic": "Décoder CSX, bloc, date et fonderies, distinguer 260/289 Windsor, 427 FE side-oiler et 428 FE ; mesurer compressions/leak-down et pression, analyser huile, inspecter distribution, culasses, refroidissement et fuites, puis documenter toute préparation et passage au banc",
+                  "piece_concernee": "V8 Ford et identité Shelby Cobra",
+                  "gravite": "Critique pour fiabilité et valeur",
+                  "frequence": "Risque élevé de moteur remplacé ou modifié",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 100 000 €"
+                },
+                {
+                  "probleme": "Carburateur(s), alimentation, allumage et échappement latéral",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés, cliquetis ou odeur de carburant",
+                    "Retour de flamme ou fuite échappement"
+                  ],
+                  "kilometrage_apparition": "Réglage régulier et contrôle après immobilisation",
+                  "diagnostic": "Contrôler réservoir, pompe, durites, filtre, Holley/Weber et starter, régler cuves/richesse/avance, bougies et distributeur ; inspecter collecteurs/side-pipes, protection thermique et fuites, avec carburant compatible et extincteur disponible",
+                  "piece_concernee": "Alimentation et échappement Cobra",
+                  "gravite": "Critique en cas de fuite",
+                  "frequence": "Fréquente sur véhicule ancien ou peu utilisé",
+                  "cout_reparation_estime": "Élevé : environ 200 à 5 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte, arbre, pont et demi-arbres",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile",
+                    "Vibration, claquement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique ; souvent après usage course ou départs violents",
+                  "diagnostic": "Identifier Borg-Warner/Ford/toploader et rapport de pont, contrôler embrayage, commande, huile, synchros, supports, arbre/croisillons, différentiel Salisbury/Dana, cardans ou demi-arbres et roulements ; rechercher fissures autour des ancrages",
+                  "piece_concernee": "Transmission et propulsion Cobra",
+                  "gravite": "Critique",
+                  "frequence": "Usure et transformations fréquentes",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Châssis AC/Shelby, aluminium, suspension, freins et provenance",
+                  "symptomes": [
+                    "Fissure ou corrosion",
+                    "Jeu ou géométrie instable",
+                    "Freinage dissymétrique ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Expertise de provenance et structure obligatoire avant acquisition",
+                  "diagnostic": "Vérifier registre Shelby, CSX, factures et chaîne de propriété pour distinguer original, continuation et réplique ; inspecter tubes 3/4 pouces selon série, soudures, aluminium, réparations, ancrages, lames/doubles triangles, direction, roues centrales, pneus, disques et conduites",
+                  "piece_concernee": "Structure, sécurité et provenance Shelby Cobra",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de réplique ou restauration non conforme",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 200 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "428 Police Interceptor Street — 355 ch",
+              "code_moteur": "Ford FE 428 PI",
+              "cylindree": "7 014 cm³",
+              "puissance_ch": 355,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Authenticité et état interne du V8 Ford 260/289/427/428",
+                  "symptomes": [
+                    "Numéros incohérents",
+                    "Pression faible",
+                    "Fumée, chauffe ou bruit mécanique"
+                  ],
+                  "kilometrage_apparition": "Expertise avant achat ; âge et restauration priment sur le kilométrage",
+                  "diagnostic": "Décoder CSX, bloc, date et fonderies, distinguer 260/289 Windsor, 427 FE side-oiler et 428 FE ; mesurer compressions/leak-down et pression, analyser huile, inspecter distribution, culasses, refroidissement et fuites, puis documenter toute préparation et passage au banc",
+                  "piece_concernee": "V8 Ford et identité Shelby Cobra",
+                  "gravite": "Critique pour fiabilité et valeur",
+                  "frequence": "Risque élevé de moteur remplacé ou modifié",
+                  "cout_reparation_estime": "Extrême : environ 2 000 à plus de 100 000 €"
+                },
+                {
+                  "probleme": "Carburateur(s), alimentation, allumage et échappement latéral",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés, cliquetis ou odeur de carburant",
+                    "Retour de flamme ou fuite échappement"
+                  ],
+                  "kilometrage_apparition": "Réglage régulier et contrôle après immobilisation",
+                  "diagnostic": "Contrôler réservoir, pompe, durites, filtre, Holley/Weber et starter, régler cuves/richesse/avance, bougies et distributeur ; inspecter collecteurs/side-pipes, protection thermique et fuites, avec carburant compatible et extincteur disponible",
+                  "piece_concernee": "Alimentation et échappement Cobra",
+                  "gravite": "Critique en cas de fuite",
+                  "frequence": "Fréquente sur véhicule ancien ou peu utilisé",
+                  "cout_reparation_estime": "Élevé : environ 200 à 5 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte, arbre, pont et demi-arbres",
+                  "symptomes": [
+                    "Patinage",
+                    "Rapport difficile",
+                    "Vibration, claquement ou fuite"
+                  ],
+                  "kilometrage_apparition": "Inspection systématique ; souvent après usage course ou départs violents",
+                  "diagnostic": "Identifier Borg-Warner/Ford/toploader et rapport de pont, contrôler embrayage, commande, huile, synchros, supports, arbre/croisillons, différentiel Salisbury/Dana, cardans ou demi-arbres et roulements ; rechercher fissures autour des ancrages",
+                  "piece_concernee": "Transmission et propulsion Cobra",
+                  "gravite": "Critique",
+                  "frequence": "Usure et transformations fréquentes",
+                  "cout_reparation_estime": "Très élevé : environ 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Châssis AC/Shelby, aluminium, suspension, freins et provenance",
+                  "symptomes": [
+                    "Fissure ou corrosion",
+                    "Jeu ou géométrie instable",
+                    "Freinage dissymétrique ou dossier incomplet"
+                  ],
+                  "kilometrage_apparition": "Expertise de provenance et structure obligatoire avant acquisition",
+                  "diagnostic": "Vérifier registre Shelby, CSX, factures et chaîne de propriété pour distinguer original, continuation et réplique ; inspecter tubes 3/4 pouces selon série, soudures, aluminium, réparations, ancrages, lames/doubles triangles, direction, roues centrales, pneus, disques et conduites",
+                  "piece_concernee": "Structure, sécurité et provenance Shelby Cobra",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque très élevé de réplique ou restauration non conforme",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 200 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Continuation CSX4000/6000/7000/8000",
+          "annees": "1997–aujourd’hui",
+          "phases": [
+            "Shelby vend ces continuations comme rollers sans moteur ni transmission : ne pas inventer de puissance. Une fois motorisé, documenter séparément bloc, préparation, homologation et facture."
+          ],
+          "motorisations": []
+        }
+      ],
+      "sources_techniques": [
+        "https://www.shelby.com/Resources/Shared/Media_Brochures/Shelby_Cobra_Brochure.pdf",
+        "https://www.shelby.com/en-us/Vehicles/Shelby-CSX6000-427-Cobra",
+        "https://www.shelby.com/Resources/Shared/brochures/vehicles_sheets/Shelby_CSX7000.pdf"
+      ]
+    }
+  ],
+  "source_catalogue": "VehiclesDB 2026.08.2 (CC-BY 4.0)"
+}

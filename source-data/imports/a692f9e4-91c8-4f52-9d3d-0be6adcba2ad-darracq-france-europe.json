@@ -1,0 +1,76 @@
+{
+  "nom": "Darracq",
+  "modeles": [
+    {
+      "nom": "Type V",
+      "generations": [
+        {
+          "code_chassis": "Type V-14 16 HP",
+          "annees": "1914–1921",
+          "phases": [
+            "Modèle d’avant-guerre repris après 1918 ; 16 HP désigne la classe fiscale, la puissance effective doit être confirmée par châssis et documentation."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "4 cylindres monobloc 16 HP — 40 ch",
+              "code_moteur": "Darracq V-14",
+              "cylindree": "2 950 cm³",
+              "puissance_ch": 40,
+              "boite": [
+                "Manuelle 4 rapports et marche arrière, propulsion par arbre et pont à vis"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement, carburation et allumage du moteur ancien",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Surchauffe",
+                    "Claquement, fumée ou fuite de carburant"
+                  ],
+                  "kilometrage_apparition": "Aucun seuil kilométrique ; contrôle avant chaque sortie et après stockage",
+                  "diagnostic": "Identifier type, alésage/course et montage exacts, prélubrifier, mesurer compressions et pression si applicable, contrôler paliers, soupapes latérales/culbuterie, pompe, radiateur, thermosiphon, carburateur, magnéto/double allumage, réservoir et conduites ; ne pas démarrer avec carburant ancien",
+                  "piece_concernee": "Moteur Chenard-Walcker ou Darracq correspondant au type",
+                  "gravite": "Critique",
+                  "frequence": "Fréquente sans restauration et maintenance spécialisées",
+                  "cout_reparation_estime": "Très élevé : environ 2 000 à plus de 25 000 €"
+                },
+                {
+                  "probleme": "Embrayage, boîte, arbre/pont ou vis sans fin et freins",
+                  "symptomes": [
+                    "Rapports difficiles",
+                    "Patinage",
+                    "Bruit de transmission ou freinage faible"
+                  ],
+                  "kilometrage_apparition": "Inspection avant chaque circulation",
+                  "diagnostic": "Contrôler cône d’embrayage, tringlerie, pignons non synchronisés, huile/graisseurs, arbre, cardans, couple conique ou pont à vis ; inspecter frein de transmission, tambours arrière, câbles/tringles et pneus à talons, puis essai à très basse vitesse",
+                  "piece_concernee": "Transmission et freinage de véhicule d’avant-guerre",
+                  "gravite": "Critique",
+                  "frequence": "Usure et mauvais réglage courants",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à 15 000 €"
+                },
+                {
+                  "probleme": "Châssis, bois de carrosserie, essieux, direction et authenticité",
+                  "symptomes": [
+                    "Bois fissuré",
+                    "Rouille",
+                    "Jeu, caisse affaissée ou numéros incohérents"
+                  ],
+                  "kilometrage_apparition": "Expertise systématique avant achat",
+                  "diagnostic": "Comparer numéros et configuration aux archives/club, inspecter longerons, rivets, traverses, ossature bois, tôles, ancrages, ressorts semi-elliptiques, essieux, pivots, boîtier/biellettes, roues et réparations ; documenter toute pièce refabriquée ou carrosserie recréée",
+                  "piece_concernee": "Châssis, carrosserie et identité historique",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé vu âge et reconstructions",
+                  "cout_reparation_estime": "Très élevé : environ 3 000 à plus de 60 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.christies.com/en/lot/lot-4532344"
+      ]
+    }
+  ]
+}

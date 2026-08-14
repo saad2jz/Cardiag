@@ -1,0 +1,465 @@
+{
+  "nom": "Bugatti",
+  "modeles": [
+    {
+      "nom": "Chiron",
+      "generations": [
+        {
+          "code_chassis": "Chiron",
+          "annees": "2016-2024",
+          "phases": [
+            "Chiron (2016-2019)",
+            "Chiron Sport / Pur Sport / Super Sport 300+ (2019-2024)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "W16 quad-turbo — 1500 ch",
+              "code_moteur": "W16 (évolution du bloc Veyron)",
+              "cylindree": "7993cm3",
+              "puissance_ch": 1500,
+              "boite": [
+                "BVA7 (double embrayage)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Coût d'entretien annuel très élevé, propre aux hypercars de ce niveau",
+                  "symptomes": [
+                    "Vidange complète et pneus spécifiques représentant un budget considérable"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information générale (coût d'usage élevé, non un défaut)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Fiabilité mécanique jugée étonnamment bonne pour ce type de véhicule selon les retours disponibles",
+                  "symptomes": [
+                    "Peu de pannes mécaniques majeures rapportées"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information positive (non concernée par la présente échelle de gravité)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "W16 quad-turbo — 1600 ch",
+              "code_moteur": "W16 (évolution du bloc Veyron)",
+              "cylindree": "7993cm3",
+              "puissance_ch": 1600,
+              "boite": [
+                "BVA7 (double embrayage)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Coût d'entretien annuel très élevé, propre aux hypercars de ce niveau",
+                  "symptomes": [
+                    "Vidange complète et pneus spécifiques représentant un budget considérable"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information générale (coût d'usage élevé, non un défaut)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Fiabilité mécanique jugée étonnamment bonne pour ce type de véhicule selon les retours disponibles",
+                  "symptomes": [
+                    "Peu de pannes mécaniques majeures rapportées"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information positive (non concernée par la présente échelle de gravité)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Type 35",
+      "generations": [
+        {
+          "code_chassis": "Type 35 / 35A / 35C / 35T / 35B",
+          "annees": "1924-1930",
+          "phases": [
+            "Type 35 (1924) - 2.0L atmosphérique",
+            "Type 35T (1926) - 2.3L Targa",
+            "Type 35C (compresseur)",
+            "Type 35B (1926-1930) - 2.3L compresseur"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "2.0L atmosphérique — 90 ch",
+              "code_moteur": "8 cylindres en ligne, deux blocs 4 cylindres aluminium boulonnés, arbre à cames en tête, 3 soupapes/cylindre",
+              "cylindree": "1991cm3",
+              "puissance_ch": 90,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Mécanique de collection rarissime nécessitant un savoir-faire de restauration exceptionnel",
+                  "symptomes": [
+                    "Pièces de rechange quasi inexistantes"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel, dépend de l'exemplaire",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Freinage par câbles demandant un entretien méticuleux",
+                  "symptomes": [
+                    "Efficacité de freinage limitée selon les standards modernes"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Freinage",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Systématique (caractéristique d'époque)",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "2.0L atmosphérique — 95 ch",
+              "code_moteur": "8 cylindres en ligne, deux blocs 4 cylindres aluminium boulonnés, arbre à cames en tête, 3 soupapes/cylindre",
+              "cylindree": "1991cm3",
+              "puissance_ch": 95,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Mécanique de collection rarissime nécessitant un savoir-faire de restauration exceptionnel",
+                  "symptomes": [
+                    "Pièces de rechange quasi inexistantes"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel, dépend de l'exemplaire",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Freinage par câbles demandant un entretien méticuleux",
+                  "symptomes": [
+                    "Efficacité de freinage limitée selon les standards modernes"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Freinage",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Systématique (caractéristique d'époque)",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "2.3L Targa (35T) — 120 ch",
+              "code_moteur": "8 cylindres en ligne atmosphérique",
+              "cylindree": "2262cm3",
+              "puissance_ch": 120,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Mécanique de collection rarissime nécessitant un savoir-faire de restauration exceptionnel",
+                  "symptomes": [
+                    "Pièces de rechange quasi inexistantes"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel, dépend de l'exemplaire",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Freinage par câbles demandant un entretien méticuleux",
+                  "symptomes": [
+                    "Efficacité de freinage limitée selon les standards modernes"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Freinage",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Systématique (caractéristique d'époque)",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "2.3L Compresseur (35B) — 140 ch",
+              "code_moteur": "8 cylindres en ligne, compresseur Roots à 3 rotors",
+              "cylindree": "2262cm3",
+              "puissance_ch": 140,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Mécanique de collection rarissime nécessitant un savoir-faire de restauration exceptionnel",
+                  "symptomes": [
+                    "Pièces de rechange quasi inexistantes"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel, dépend de l'exemplaire",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Freinage par câbles demandant un entretien méticuleux",
+                  "symptomes": [
+                    "Efficacité de freinage limitée selon les standards modernes"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Freinage",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Systématique (caractéristique d'époque)",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Type 57",
+      "generations": [
+        {
+          "code_chassis": "Type 57 / 57S / 57C / 57SC",
+          "annees": "1934-1940",
+          "phases": [
+            "Type 57 (1934-1940) - carrosseries Galibier, Ventoux, Stelvio, Aravis, Atalante",
+            "Type 57S (Surbaissée) - 43 exemplaires",
+            "Type 57C - compresseur",
+            "Type 57SC - Surbaissée + Compresseur, incluant les 4 Atlantic"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "3.3L atmosphérique — 140 ch",
+              "code_moteur": "8 cylindres en ligne, double arbre à cames en tête",
+              "cylindree": "3257cm3",
+              "puissance_ch": 140,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Mécanique de très haute précision nécessitant un savoir-faire de restauration exceptionnel",
+                  "symptomes": [
+                    "Très peu d'ateliers dans le monde capables d'intervenir"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Authentification extrêmement complexe compte tenu de la valeur et de la rareté du modèle",
+                  "symptomes": [
+                    "Historiques de restauration parfois disparates selon les exemplaires"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "3.3L Compresseur (57C) — 160 ch",
+              "code_moteur": "8 cylindres en ligne + compresseur",
+              "cylindree": "3257cm3",
+              "puissance_ch": 160,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Mécanique de très haute précision nécessitant un savoir-faire de restauration exceptionnel",
+                  "symptomes": [
+                    "Très peu d'ateliers dans le monde capables d'intervenir"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Authentification extrêmement complexe compte tenu de la valeur et de la rareté du modèle",
+                  "symptomes": [
+                    "Historiques de restauration parfois disparates selon les exemplaires"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "3.3L Surbaissée Compresseur (57SC) — 180 ch",
+              "code_moteur": "8 cylindres en ligne + compresseur, châssis surbaissé",
+              "cylindree": "3257cm3",
+              "puissance_ch": 180,
+              "boite": [
+                "BVM4"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Mécanique de très haute précision nécessitant un savoir-faire de restauration exceptionnel",
+                  "symptomes": [
+                    "Très peu d'ateliers dans le monde capables d'intervenir"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Authentification extrêmement complexe compte tenu de la valeur et de la rareté du modèle",
+                  "symptomes": [
+                    "Historiques de restauration parfois disparates selon les exemplaires"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Majeure (réparation coûteuse, à surveiller activement)",
+                  "frequence": "Occasionnel",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Veyron 16.4",
+      "generations": [
+        {
+          "code_chassis": "Veyron EB16.4",
+          "annees": "2005-2015",
+          "phases": [
+            "Veyron 16.4 (2005-2011)",
+            "Super Sport / Grand Sport (2010-2015)"
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "W16 quad-turbo — 1001 ch",
+              "code_moteur": "W16 (deux blocs VR8 assemblés, dérivé technologie groupe Volkswagen)",
+              "cylindree": "7993cm3",
+              "puissance_ch": 1001,
+              "boite": [
+                "BVA7 (DSG double embrayage séquentielle)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Coût d'entretien annuel très élevé, propre aux hypercars de ce niveau",
+                  "symptomes": [
+                    "Vidange complète et pneus spécifiques représentant un budget considérable"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information générale (coût d'usage élevé, non un défaut)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Fiabilité mécanique jugée étonnamment bonne pour ce type de véhicule selon les retours disponibles",
+                  "symptomes": [
+                    "Peu de pannes mécaniques majeures rapportées"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information positive (non concernée par la présente échelle de gravité)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ]
+            },
+            {
+              "type": "Essence",
+              "nom": "W16 quad-turbo — 1200 ch",
+              "code_moteur": "W16 (deux blocs VR8 assemblés, dérivé technologie groupe Volkswagen)",
+              "cylindree": "7993cm3",
+              "puissance_ch": 1200,
+              "boite": [
+                "BVA7 (DSG double embrayage séquentielle)"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Coût d'entretien annuel très élevé, propre aux hypercars de ce niveau",
+                  "symptomes": [
+                    "Vidange complète et pneus spécifiques représentant un budget considérable"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information générale (coût d'usage élevé, non un défaut)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                },
+                {
+                  "probleme": "Fiabilité mécanique jugée étonnamment bonne pour ce type de véhicule selon les retours disponibles",
+                  "symptomes": [
+                    "Peu de pannes mécaniques majeures rapportées"
+                  ],
+                  "kilometrage_apparition": "Non applicable ou non documenté : véhicule de collection extrêmement rare, aucun suivi statistique de parc disponible",
+                  "diagnostic": "Expertise réservée à des spécialistes reconnus de la marque ou du modèle, restauration/entretien hors normes courantes",
+                  "piece_concernee": "Moteur / mécanique générale",
+                  "gravite": "Information positive (non concernée par la présente échelle de gravité)",
+                  "frequence": "Non applicable",
+                  "cout_reparation_estime": "Non chiffrable selon les standards de l'industrie automobile courante ; coût généralement très élevé compte tenu de la rareté des pièces et de l'expertise requise"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

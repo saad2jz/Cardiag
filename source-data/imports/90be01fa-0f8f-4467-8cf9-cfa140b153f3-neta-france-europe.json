@@ -1,0 +1,177 @@
+{
+  "nom": "Neta",
+  "modeles": [
+    {
+      "nom": "V",
+      "generations": [
+        {
+          "code_chassis": "À préciser",
+          "annees": "À préciser",
+          "phases": [
+            "Version à documenter"
+          ],
+          "motorisations": [
+            {
+              "type": "Électrique",
+              "nom": "40,7 kWh — 95 ch",
+              "code_moteur": "À préciser",
+              "cylindree": "À préciser",
+              "puissance_ch": 95,
+              "boite": [
+                "À préciser"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Contrôle de l’état mécanique, de l’entretien et de la disponibilité des pièces",
+                  "symptomes": [
+                    "Bruit",
+                    "Voyant",
+                    "Fonctionnement irrégulier"
+                  ],
+                  "kilometrage_apparition": "Variable selon âge, usage et entretien.",
+                  "diagnostic": "Inspection atelier, essai routier et lecture des défauts lorsqu’elle est disponible.",
+                  "piece_concernee": "Groupe motopropulseur et périphériques",
+                  "gravite": "À évaluer selon le défaut relevé",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "Sécurité active : freinage, direction et trains roulants",
+                  "symptomes": [
+                    "Vibration",
+                    "Tirage",
+                    "Jeu"
+                  ],
+                  "kilometrage_apparition": "À contrôler à chaque expertise.",
+                  "diagnostic": "Contrôle des jeux, pneus, freins et géométrie.",
+                  "piece_concernee": "Trains roulants et freinage",
+                  "gravite": "Majeure si sécurité affectée",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                },
+                {
+                  "probleme": "État du système de traction électrique",
+                  "symptomes": [
+                    "Message au combiné",
+                    "Démarrage difficile"
+                  ],
+                  "kilometrage_apparition": "Variable.",
+                  "diagnostic": "Diagnostic haute tension par atelier habilité.",
+                  "piece_concernee": "Batterie haute tension et électronique de puissance",
+                  "gravite": "À évaluer",
+                  "frequence": "À surveiller",
+                  "cout_reparation_estime": "Variable — devis recommandé."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "V-II",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "th"
+        ],
+        "regions": [
+          "as"
+        ],
+        "global_decile": 2
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "X",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "car",
+        "body_type": "hatchback",
+        "countries": [
+          "my",
+          "th"
+        ],
+        "regions": [
+          "as"
+        ],
+        "global_decile": 4
+      },
+      "generations": [
+        {
+          "code_chassis": "À documenter",
+          "annees": "À documenter",
+          "phases": [
+            "Modèle répertorié par VehiclesDB"
+          ],
+          "motorisations": [
+            {
+              "type": "À documenter",
+              "nom": "Configuration moteur à documenter",
+              "code_moteur": "À documenter",
+              "cylindree": "À documenter",
+              "puissance_ch": null,
+              "boite": [
+                "À documenter"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Spécifications moteur et points de vigilance à documenter",
+                  "symptomes": [
+                    "À confirmer lors de l’identification précise du véhicule"
+                  ],
+                  "kilometrage_apparition": "Non documenté dans la source de couverture.",
+                  "diagnostic": "Identifier la génération, la motorisation et le marché avant tout diagnostic.",
+                  "piece_concernee": "À documenter selon la version exacte",
+                  "gravite": "À évaluer après identification",
+                  "frequence": "Non documentée",
+                  "cout_reparation_estime": "À documenter — devis atelier requis."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

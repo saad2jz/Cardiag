@@ -1,0 +1,268 @@
+{
+  "nom": "René Bonnet",
+  "modeles": [
+    {
+      "nom": "Djet",
+      "generations": [
+        {
+          "code_chassis": "Djet I",
+          "annees": "1962–1964",
+          "phases": [
+            "179 des 198 René Bonnet furent des Djet I de base."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Renault 1108 standard — 65 ch",
+              "code_moteur": "Renault Cléon-Fonte 1108 Djet I",
+              "cylindree": "1 108 cm³",
+              "puissance_ch": 65,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, distribution et étanchéité du Renault Cléon/Gordini central",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fuite, fumée ou pression faible",
+                    "Bruit de distribution ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km, mais compétition et restauration priment",
+                  "diagnostic": "Identifier 1108 OHV ou 996 double arbre, mesurer compressions/leak-down et pression, contrôler radiateur avant, longues conduites, pompe, thermostat, joint/culasse, chaîne/distribution, carter et supports ; purger soigneusement le circuit à moteur central",
+                  "piece_concernee": "Moteur Renault/Gordini du René Bonnet Djet",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente avec mauvaise purge ou historique incomplet",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 10 000 €"
+                },
+                {
+                  "probleme": "Carburation, allumage et préparation Gordini",
+                  "symptomes": [
+                    "Ratés",
+                    "Ralenti instable",
+                    "Trou, cliquetis ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et avant compétition",
+                  "diagnostic": "Identifier Djet I standard, II Gordini ou III/IV course, contrôler pompe, carburateur(s), prises d’air, gicleurs, avance, distributeur, bougies et jeu aux soupapes ; synchroniser et passer au banc sans substituer une configuration Matra ultérieure",
+                  "piece_concernee": "Admission et allumage Djet",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après immobilisation ou modification",
+                  "cout_reparation_estime": "Élevé : environ 200 à 3 500 €"
+                },
+                {
+                  "probleme": "Châssis poutre, polyester, boîte Estafette et freins à disques",
+                  "symptomes": [
+                    "Fissure ou délaminage",
+                    "Rapport difficile, cardan ou roulement bruyant",
+                    "Jeu, tirage ou provenance incohérente"
+                  ],
+                  "kilometrage_apparition": "Expertise avant achat et après compétition",
+                  "diagnostic": "Inspecter poutre acier, berceaux, polyester/panneaux, collages et réparations ; contrôler embrayage, boîte quatre retournée, commande, cardans, doubles triangles, doubles combinés arrière, direction, quatre disques, puis vérifier numéro et Djet I/II/III/IV face aux 198 René Bonnet produits",
+                  "piece_concernee": "Structure, transmission et identité René Bonnet Djet",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de mélange avec Matra-Bonnet ou voiture reconstruite",
+                  "cout_reparation_estime": "Très élevé : environ 800 à plus de 25 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Djet II",
+          "annees": "1963–1964",
+          "phases": [
+            "Homologation FIA GT n°154, cylindrée 1108 cm³."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Renault 1108 Gordini — 80 ch",
+              "code_moteur": "Renault Gordini 1108 type 804-00",
+              "cylindree": "1 108 cm³",
+              "puissance_ch": 80,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, distribution et étanchéité du Renault Cléon/Gordini central",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fuite, fumée ou pression faible",
+                    "Bruit de distribution ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km, mais compétition et restauration priment",
+                  "diagnostic": "Identifier 1108 OHV ou 996 double arbre, mesurer compressions/leak-down et pression, contrôler radiateur avant, longues conduites, pompe, thermostat, joint/culasse, chaîne/distribution, carter et supports ; purger soigneusement le circuit à moteur central",
+                  "piece_concernee": "Moteur Renault/Gordini du René Bonnet Djet",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente avec mauvaise purge ou historique incomplet",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 10 000 €"
+                },
+                {
+                  "probleme": "Carburation, allumage et préparation Gordini",
+                  "symptomes": [
+                    "Ratés",
+                    "Ralenti instable",
+                    "Trou, cliquetis ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et avant compétition",
+                  "diagnostic": "Identifier Djet I standard, II Gordini ou III/IV course, contrôler pompe, carburateur(s), prises d’air, gicleurs, avance, distributeur, bougies et jeu aux soupapes ; synchroniser et passer au banc sans substituer une configuration Matra ultérieure",
+                  "piece_concernee": "Admission et allumage Djet",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après immobilisation ou modification",
+                  "cout_reparation_estime": "Élevé : environ 200 à 3 500 €"
+                },
+                {
+                  "probleme": "Châssis poutre, polyester, boîte Estafette et freins à disques",
+                  "symptomes": [
+                    "Fissure ou délaminage",
+                    "Rapport difficile, cardan ou roulement bruyant",
+                    "Jeu, tirage ou provenance incohérente"
+                  ],
+                  "kilometrage_apparition": "Expertise avant achat et après compétition",
+                  "diagnostic": "Inspecter poutre acier, berceaux, polyester/panneaux, collages et réparations ; contrôler embrayage, boîte quatre retournée, commande, cardans, doubles triangles, doubles combinés arrière, direction, quatre disques, puis vérifier numéro et Djet I/II/III/IV face aux 198 René Bonnet produits",
+                  "piece_concernee": "Structure, transmission et identité René Bonnet Djet",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de mélange avec Matra-Bonnet ou voiture reconstruite",
+                  "cout_reparation_estime": "Très élevé : environ 800 à plus de 25 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Djet III compétition",
+          "annees": "1963–1964",
+          "phases": [
+            "Version compétition à châssis/berceaux spécifiques."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence compétition",
+              "nom": "Gordini 996 double arbre — 80 ch",
+              "code_moteur": "Renault-Gordini 996 DOHC",
+              "cylindree": "996 cm³",
+              "puissance_ch": 80,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, distribution et étanchéité du Renault Cléon/Gordini central",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fuite, fumée ou pression faible",
+                    "Bruit de distribution ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km, mais compétition et restauration priment",
+                  "diagnostic": "Identifier 1108 OHV ou 996 double arbre, mesurer compressions/leak-down et pression, contrôler radiateur avant, longues conduites, pompe, thermostat, joint/culasse, chaîne/distribution, carter et supports ; purger soigneusement le circuit à moteur central",
+                  "piece_concernee": "Moteur Renault/Gordini du René Bonnet Djet",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente avec mauvaise purge ou historique incomplet",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 10 000 €"
+                },
+                {
+                  "probleme": "Carburation, allumage et préparation Gordini",
+                  "symptomes": [
+                    "Ratés",
+                    "Ralenti instable",
+                    "Trou, cliquetis ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et avant compétition",
+                  "diagnostic": "Identifier Djet I standard, II Gordini ou III/IV course, contrôler pompe, carburateur(s), prises d’air, gicleurs, avance, distributeur, bougies et jeu aux soupapes ; synchroniser et passer au banc sans substituer une configuration Matra ultérieure",
+                  "piece_concernee": "Admission et allumage Djet",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après immobilisation ou modification",
+                  "cout_reparation_estime": "Élevé : environ 200 à 3 500 €"
+                },
+                {
+                  "probleme": "Châssis poutre, polyester, boîte Estafette et freins à disques",
+                  "symptomes": [
+                    "Fissure ou délaminage",
+                    "Rapport difficile, cardan ou roulement bruyant",
+                    "Jeu, tirage ou provenance incohérente"
+                  ],
+                  "kilometrage_apparition": "Expertise avant achat et après compétition",
+                  "diagnostic": "Inspecter poutre acier, berceaux, polyester/panneaux, collages et réparations ; contrôler embrayage, boîte quatre retournée, commande, cardans, doubles triangles, doubles combinés arrière, direction, quatre disques, puis vérifier numéro et Djet I/II/III/IV face aux 198 René Bonnet produits",
+                  "piece_concernee": "Structure, transmission et identité René Bonnet Djet",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de mélange avec Matra-Bonnet ou voiture reconstruite",
+                  "cout_reparation_estime": "Très élevé : environ 800 à plus de 25 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Djet IV compétition",
+          "annees": "1963–1964",
+          "phases": [
+            "Évolution la plus poussée ; ne pas fusionner avec les Djet Matra 5/6 ultérieures."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence compétition",
+              "nom": "Gordini 996 double arbre — 100 ch",
+              "code_moteur": "Renault-Gordini 996 DOHC évolution",
+              "cylindree": "996 cm³",
+              "puissance_ch": 100,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Refroidissement, distribution et étanchéité du Renault Cléon/Gordini central",
+                  "symptomes": [
+                    "Surchauffe",
+                    "Fuite, fumée ou pression faible",
+                    "Bruit de distribution ou compression inégale"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km, mais compétition et restauration priment",
+                  "diagnostic": "Identifier 1108 OHV ou 996 double arbre, mesurer compressions/leak-down et pression, contrôler radiateur avant, longues conduites, pompe, thermostat, joint/culasse, chaîne/distribution, carter et supports ; purger soigneusement le circuit à moteur central",
+                  "piece_concernee": "Moteur Renault/Gordini du René Bonnet Djet",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente avec mauvaise purge ou historique incomplet",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 10 000 €"
+                },
+                {
+                  "probleme": "Carburation, allumage et préparation Gordini",
+                  "symptomes": [
+                    "Ratés",
+                    "Ralenti instable",
+                    "Trou, cliquetis ou surconsommation"
+                  ],
+                  "kilometrage_apparition": "Réglage annuel et avant compétition",
+                  "diagnostic": "Identifier Djet I standard, II Gordini ou III/IV course, contrôler pompe, carburateur(s), prises d’air, gicleurs, avance, distributeur, bougies et jeu aux soupapes ; synchroniser et passer au banc sans substituer une configuration Matra ultérieure",
+                  "piece_concernee": "Admission et allumage Djet",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après immobilisation ou modification",
+                  "cout_reparation_estime": "Élevé : environ 200 à 3 500 €"
+                },
+                {
+                  "probleme": "Châssis poutre, polyester, boîte Estafette et freins à disques",
+                  "symptomes": [
+                    "Fissure ou délaminage",
+                    "Rapport difficile, cardan ou roulement bruyant",
+                    "Jeu, tirage ou provenance incohérente"
+                  ],
+                  "kilometrage_apparition": "Expertise avant achat et après compétition",
+                  "diagnostic": "Inspecter poutre acier, berceaux, polyester/panneaux, collages et réparations ; contrôler embrayage, boîte quatre retournée, commande, cardans, doubles triangles, doubles combinés arrière, direction, quatre disques, puis vérifier numéro et Djet I/II/III/IV face aux 198 René Bonnet produits",
+                  "piece_concernee": "Structure, transmission et identité René Bonnet Djet",
+                  "gravite": "Critique pour sécurité et valeur",
+                  "frequence": "Risque élevé de mélange avec Matra-Bonnet ou voiture reconstruite",
+                  "cout_reparation_estime": "Très élevé : environ 800 à plus de 25 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://historicdb.fia.com/make/rene-bonnet",
+        "https://historicdb.fia.com/car/rene-bonnet-djet-ii",
+        "https://cdn.group.renault.com/ren/master/renault-classic/tools-and-services/LeMans.pdf.asset.pdf/2553cb3b86.pdf",
+        "https://djet-rbms.fr/tout-sur-le-djet/"
+      ]
+    }
+  ]
+}

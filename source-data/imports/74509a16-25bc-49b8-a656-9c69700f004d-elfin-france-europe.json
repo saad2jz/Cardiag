@@ -1,0 +1,246 @@
+{
+  "nom": "Elfin",
+  "modeles": [
+    {
+      "nom": "MS8",
+      "generations": [
+        {
+          "code_chassis": "MS8 Clubman Sportster / Roadster",
+          "annees": "2006–2012",
+          "phases": [
+            "Clubman homologuée : Sportster à petit pare-brise ou Roadster à pare-brise et portes amovibles."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "GM Gen III LS1 5.7 V8 — 329 ch",
+              "code_moteur": "GM LS1 Gen III",
+              "cylindree": "5 665 cm³",
+              "puissance_ch": 329,
+              "boite": [
+                "Tremec T56 manuelle 6 rapports, propulsion avec LSD"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et étanchéité du GM LS1 5,7 l",
+                  "symptomes": [
+                    "Pression d’huile basse en virage",
+                    "Surchauffe",
+                    "Fuite, consommation d’huile ou claquement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km ; plus tôt sur circuit",
+                  "diagnostic": "Confirmer le Gen III LS1 5 665 cm³ et sa préparation. Mesurer pression à chaud, compressions/leak-down et analyser huile ; contrôler carter/crépine, pompe, poussoirs, chaîne, joints, radiateur, ventilateurs et durites. Sur piste, rechercher tout déjaugeage.",
+                  "piece_concernee": "V8 GM LS1 de l’Elfin MS8",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente en usage sportif ou entretien espacé",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 800 à 12 000 €"
+                },
+                {
+                  "probleme": "Injection, allumage et alimentation du V8",
+                  "symptomes": [
+                    "Ratés",
+                    "Démarrage difficile",
+                    "Mélange pauvre ou puissance réduite"
+                  ],
+                  "kilometrage_apparition": "Dès 60 000 km ou après immobilisation",
+                  "diagnostic": "Lire défauts et corrections, contrôler pression carburant, réservoir, pompe, injecteurs, débitmètre, papillon, prises d’air, sondes lambda, capteurs vilebrequin/arbre à cames, bobines, câbles et bougies. Vérifier la calibration Elfin avant reprogrammation.",
+                  "piece_concernee": "Alimentation et gestion LS1 MS8",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec carburant ancien, chaleur ou faisceau exposé",
+                  "cout_reparation_estime": "Moyen à élevé : environ 250 à 3 500 €"
+                },
+                {
+                  "probleme": "Tremec T56, embrayage et différentiel à glissement limité",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Craquement de synchro",
+                    "Patinage ou grondement arrière"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km, plus tôt en départs sportifs",
+                  "diagnostic": "Contrôler huile adaptée, commande, synchros, butée, embrayage, volant moteur, supports, arbre, croisillons, couple conique et fonctionnement du LSD. Distinguer jeu normal et choc de transmission sur le châssis léger.",
+                  "piece_concernee": "Boîte Tremec T56 et pont MS8",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage intensif",
+                  "cout_reparation_estime": "Élevé : environ 700 à 6 000 €"
+                },
+                {
+                  "probleme": "Châssis multitubulaire, triangles, Koni et freinage Elfin",
+                  "symptomes": [
+                    "Jeu ou fissure",
+                    "Usure irrégulière des pneus",
+                    "Freinage déséquilibré ou direction imprécise"
+                  ],
+                  "kilometrage_apparition": "Inspection annuelle, après piste et après tout choc",
+                  "diagnostic": "Inspecter tubes/soudures et panneaux GRP, rotules et articulations réglables, triangles, porte-moyeux, amortisseurs Koni, géométrie complète, crémaillère et pédalier. Contrôler disques 343/315 mm, étriers 6/4 pistons, flexibles, liquide et réglage de balance.",
+                  "piece_concernee": "Structure, suspension et freins MS8",
+                  "gravite": "Critique",
+                  "frequence": "Usure sensible aux réglages piste et aux chocs",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 15 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "MS8 Clubman Racer",
+          "annees": "2006–2012",
+          "phases": [
+            "Configuration monoplace dédiée au circuit ; des préparations supérieures existaient sur commande et doivent être documentées individuellement."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "GM Gen III LS1 5.7 V8 piste — 329 ch",
+              "code_moteur": "GM LS1 Gen III track",
+              "cylindree": "5 665 cm³",
+              "puissance_ch": 329,
+              "boite": [
+                "Tremec T56 manuelle 6 rapports, propulsion avec LSD"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et étanchéité du GM LS1 5,7 l",
+                  "symptomes": [
+                    "Pression d’huile basse en virage",
+                    "Surchauffe",
+                    "Fuite, consommation d’huile ou claquement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km ; plus tôt sur circuit",
+                  "diagnostic": "Confirmer le Gen III LS1 5 665 cm³ et sa préparation. Mesurer pression à chaud, compressions/leak-down et analyser huile ; contrôler carter/crépine, pompe, poussoirs, chaîne, joints, radiateur, ventilateurs et durites. Sur piste, rechercher tout déjaugeage.",
+                  "piece_concernee": "V8 GM LS1 de l’Elfin MS8",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente en usage sportif ou entretien espacé",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 800 à 12 000 €"
+                },
+                {
+                  "probleme": "Injection, allumage et alimentation du V8",
+                  "symptomes": [
+                    "Ratés",
+                    "Démarrage difficile",
+                    "Mélange pauvre ou puissance réduite"
+                  ],
+                  "kilometrage_apparition": "Dès 60 000 km ou après immobilisation",
+                  "diagnostic": "Lire défauts et corrections, contrôler pression carburant, réservoir, pompe, injecteurs, débitmètre, papillon, prises d’air, sondes lambda, capteurs vilebrequin/arbre à cames, bobines, câbles et bougies. Vérifier la calibration Elfin avant reprogrammation.",
+                  "piece_concernee": "Alimentation et gestion LS1 MS8",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec carburant ancien, chaleur ou faisceau exposé",
+                  "cout_reparation_estime": "Moyen à élevé : environ 250 à 3 500 €"
+                },
+                {
+                  "probleme": "Tremec T56, embrayage et différentiel à glissement limité",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Craquement de synchro",
+                    "Patinage ou grondement arrière"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km, plus tôt en départs sportifs",
+                  "diagnostic": "Contrôler huile adaptée, commande, synchros, butée, embrayage, volant moteur, supports, arbre, croisillons, couple conique et fonctionnement du LSD. Distinguer jeu normal et choc de transmission sur le châssis léger.",
+                  "piece_concernee": "Boîte Tremec T56 et pont MS8",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage intensif",
+                  "cout_reparation_estime": "Élevé : environ 700 à 6 000 €"
+                },
+                {
+                  "probleme": "Châssis multitubulaire, triangles, Koni et freinage Elfin",
+                  "symptomes": [
+                    "Jeu ou fissure",
+                    "Usure irrégulière des pneus",
+                    "Freinage déséquilibré ou direction imprécise"
+                  ],
+                  "kilometrage_apparition": "Inspection annuelle, après piste et après tout choc",
+                  "diagnostic": "Inspecter tubes/soudures et panneaux GRP, rotules et articulations réglables, triangles, porte-moyeux, amortisseurs Koni, géométrie complète, crémaillère et pédalier. Contrôler disques 343/315 mm, étriers 6/4 pistons, flexibles, liquide et réglage de balance.",
+                  "piece_concernee": "Structure, suspension et freins MS8",
+                  "gravite": "Critique",
+                  "frequence": "Usure sensible aux réglages piste et aux chocs",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 15 000 €"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "MS8 Streamliner",
+          "annees": "2006–2012",
+          "phases": [
+            "Carrosserie Streamliner plus large, environ 1 100 kg ; 245 kW et 465 Nm dans les spécifications publiées."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "GM Gen III LS1 5.7 V8 — 329 ch",
+              "code_moteur": "GM LS1 Gen III",
+              "cylindree": "5 665 cm³",
+              "puissance_ch": 329,
+              "boite": [
+                "Tremec T56 manuelle 6 rapports, propulsion avec LSD"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Lubrification, refroidissement et étanchéité du GM LS1 5,7 l",
+                  "symptomes": [
+                    "Pression d’huile basse en virage",
+                    "Surchauffe",
+                    "Fuite, consommation d’huile ou claquement"
+                  ],
+                  "kilometrage_apparition": "Souvent après 80 000 à 150 000 km ; plus tôt sur circuit",
+                  "diagnostic": "Confirmer le Gen III LS1 5 665 cm³ et sa préparation. Mesurer pression à chaud, compressions/leak-down et analyser huile ; contrôler carter/crépine, pompe, poussoirs, chaîne, joints, radiateur, ventilateurs et durites. Sur piste, rechercher tout déjaugeage.",
+                  "piece_concernee": "V8 GM LS1 de l’Elfin MS8",
+                  "gravite": "Critique",
+                  "frequence": "Assez fréquente en usage sportif ou entretien espacé",
+                  "cout_reparation_estime": "Élevé à très élevé : environ 800 à 12 000 €"
+                },
+                {
+                  "probleme": "Injection, allumage et alimentation du V8",
+                  "symptomes": [
+                    "Ratés",
+                    "Démarrage difficile",
+                    "Mélange pauvre ou puissance réduite"
+                  ],
+                  "kilometrage_apparition": "Dès 60 000 km ou après immobilisation",
+                  "diagnostic": "Lire défauts et corrections, contrôler pression carburant, réservoir, pompe, injecteurs, débitmètre, papillon, prises d’air, sondes lambda, capteurs vilebrequin/arbre à cames, bobines, câbles et bougies. Vérifier la calibration Elfin avant reprogrammation.",
+                  "piece_concernee": "Alimentation et gestion LS1 MS8",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente avec carburant ancien, chaleur ou faisceau exposé",
+                  "cout_reparation_estime": "Moyen à élevé : environ 250 à 3 500 €"
+                },
+                {
+                  "probleme": "Tremec T56, embrayage et différentiel à glissement limité",
+                  "symptomes": [
+                    "Sélection dure",
+                    "Craquement de synchro",
+                    "Patinage ou grondement arrière"
+                  ],
+                  "kilometrage_apparition": "Souvent après 60 000 à 120 000 km, plus tôt en départs sportifs",
+                  "diagnostic": "Contrôler huile adaptée, commande, synchros, butée, embrayage, volant moteur, supports, arbre, croisillons, couple conique et fonctionnement du LSD. Distinguer jeu normal et choc de transmission sur le châssis léger.",
+                  "piece_concernee": "Boîte Tremec T56 et pont MS8",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en usage intensif",
+                  "cout_reparation_estime": "Élevé : environ 700 à 6 000 €"
+                },
+                {
+                  "probleme": "Châssis multitubulaire, triangles, Koni et freinage Elfin",
+                  "symptomes": [
+                    "Jeu ou fissure",
+                    "Usure irrégulière des pneus",
+                    "Freinage déséquilibré ou direction imprécise"
+                  ],
+                  "kilometrage_apparition": "Inspection annuelle, après piste et après tout choc",
+                  "diagnostic": "Inspecter tubes/soudures et panneaux GRP, rotules et articulations réglables, triangles, porte-moyeux, amortisseurs Koni, géométrie complète, crémaillère et pédalier. Contrôler disques 343/315 mm, étriers 6/4 pistons, flexibles, liquide et réglage de balance.",
+                  "piece_concernee": "Structure, suspension et freins MS8",
+                  "gravite": "Critique",
+                  "frequence": "Usure sensible aux réglages piste et aux chocs",
+                  "cout_reparation_estime": "Très élevé : environ 500 à plus de 15 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://utilities.walkinshawgroup.com/elfin/2008/multimedia/content/brochures/ElfinMagic.pdf",
+        "https://www.carsales.com.au/research/elfin/ms8-streamliner/2007/streamliner/",
+        "https://autotrader.co.nz/car-reviews/from-the-archives-2006-elfin-ms8-streamliner"
+      ]
+    }
+  ]
+}

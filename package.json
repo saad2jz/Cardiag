@@ -1,0 +1,52 @@
+{
+  "name": "cardiag-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API de diagnostic et d'explication technique pour Cardiag",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test",
+    "generate:data": "node scripts/unify-vehicle-data.js",
+    "generate:pwa-icons": "node scripts/generate-pwa-icons.mjs",
+    "generate:report-fixture": "node scripts/generate-complete-report-fixture.mjs",
+    "native:prepare": "node scripts/prepare-native-web.mjs",
+    "cap:sync": "npm run native:prepare && npx cap sync",
+    "cap:add:android": "npm run native:prepare && npx cap add android",
+    "cap:add:ios": "npx cap add ios",
+    "cap:open:android": "npx cap open android",
+    "cap:open:ios": "npx cap open ios"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@capacitor-firebase/authentication": "^8.4.0",
+    "@capacitor/app": "^8.1.1",
+    "@capacitor/browser": "^8.0.4",
+    "@capacitor/camera": "^8.2.2",
+    "@capacitor/core": "^8.5.0",
+    "@capacitor/haptics": "^8.0.2",
+    "@capacitor/network": "^8.0.1",
+    "@capacitor/preferences": "^8.0.1",
+    "@capacitor/push-notifications": "^8.1.2",
+    "@capacitor/splash-screen": "^8.0.2",
+    "@google/genai": "^1.30.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "firebase": "^12.17.1",
+    "firebase-admin": "^14.2.0",
+    "jspdf": "^4.2.1",
+    "openai": "^6.9.1",
+    "qrcode-generator": "^2.0.4",
+    "sanitize-html": "^2.17.0"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^8.5.0",
+    "@capacitor/cli": "^8.5.0",
+    "@capacitor/ios": "^8.5.0",
+    "typescript": "^5.9.3"
+  }
+}

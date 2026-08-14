@@ -1,0 +1,143 @@
+{
+  "nom": "Acbus",
+  "modeles": [
+    {
+      "nom": "Sprinter",
+      "source_catalogue": {
+        "source": "VehiclesDB",
+        "version": "2026.08.2",
+        "license": "CC-BY-4.0",
+        "kind": "bus",
+        "body_type": null,
+        "countries": [
+          "fi",
+          "nl"
+        ],
+        "regions": [
+          "eu"
+        ],
+        "global_decile": 5
+      },
+      "generations": [
+        {
+          "code_chassis": "Mercedes-Benz Sprinter minibus carrossé ACBUS",
+          "annees": "2006–aujourd’hui",
+          "phases": [
+            "ACBUS est le carrossier ; confirmer génération Sprinter, nombre de places, PTAC et équipements par plaque de transformation"
+          ],
+          "motorisations": [
+            {
+              "type": "Diesel",
+              "nom": "2.1 CDI — 163 ch",
+              "code_moteur": "Mercedes OM651",
+              "cylindree": "2 143 cm³",
+              "puissance_ch": 163,
+              "boite": [
+                "Boîte manuelle 6 rapports / automatique"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo et dépollution du diesel Sprinter",
+                  "symptomes": [
+                    "Démarrage long",
+                    "Mode dégradé",
+                    "Fumée ou codes AdBlue/NOx"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 200 000 km, plus tôt en service urbain",
+                  "diagnostic": "Lire CDI/SCR, mesurer pression rail et retours, contrôler filtre/pompe/injecteurs, turbo, durites, EGR, FAP, NOx, dosage AdBlue et historique de régénération",
+                  "piece_concernee": "Moteur OM651/OM654 et dépollution",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sur minibus à cycles courts",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte, arbre, pont et suspension sous forte charge",
+                  "symptomes": [
+                    "À-coups",
+                    "Vibration",
+                    "Caisse penchée ou usure des pneus"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 km selon charge",
+                  "diagnostic": "Contrôler fluide/adaptations de boîte, convertisseur/embrayage, arbre, croisillons, pont, ressorts, amortisseurs, direction, moyeux, pneus et conformité PTAC",
+                  "piece_concernee": "Chaîne cinématique et châssis Sprinter",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en service intensif",
+                  "cout_reparation_estime": "Élevé : environ 800 à 7 000 €"
+                },
+                {
+                  "probleme": "Intégration carrossier : portes, électricité, chauffage et freinage",
+                  "symptomes": [
+                    "Portes inopérantes",
+                    "Décharge batterie",
+                    "Chauffage/climatisation ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Variable, fortement lié au service passagers",
+                  "diagnostic": "Contrôler CAN et faisceaux ajoutés, alternateur/batteries, masses, portes/marches, chauffage auxiliaire, climatisation arrière, sièges/ceintures, issues de secours, conduites et freins",
+                  "piece_concernee": "Carrosserie minibus et équipements passagers",
+                  "gravite": "Critique si sécurité passagers atteinte",
+                  "frequence": "Assez fréquente avec l’âge",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                }
+              ]
+            },
+            {
+              "type": "Diesel",
+              "nom": "2.0 CDI — 190 ch",
+              "code_moteur": "Mercedes OM654",
+              "cylindree": "1 950 cm³",
+              "puissance_ch": 190,
+              "boite": [
+                "Boîte automatique 9G-Tronic"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Injection, turbo et dépollution du diesel Sprinter",
+                  "symptomes": [
+                    "Démarrage long",
+                    "Mode dégradé",
+                    "Fumée ou codes AdBlue/NOx"
+                  ],
+                  "kilometrage_apparition": "Souvent entre 100 000 et 200 000 km, plus tôt en service urbain",
+                  "diagnostic": "Lire CDI/SCR, mesurer pression rail et retours, contrôler filtre/pompe/injecteurs, turbo, durites, EGR, FAP, NOx, dosage AdBlue et historique de régénération",
+                  "piece_concernee": "Moteur OM651/OM654 et dépollution",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Assez fréquente sur minibus à cycles courts",
+                  "cout_reparation_estime": "Très élevé : environ 700 à 8 000 €"
+                },
+                {
+                  "probleme": "Boîte, arbre, pont et suspension sous forte charge",
+                  "symptomes": [
+                    "À-coups",
+                    "Vibration",
+                    "Caisse penchée ou usure des pneus"
+                  ],
+                  "kilometrage_apparition": "Souvent après 120 000 km selon charge",
+                  "diagnostic": "Contrôler fluide/adaptations de boîte, convertisseur/embrayage, arbre, croisillons, pont, ressorts, amortisseurs, direction, moyeux, pneus et conformité PTAC",
+                  "piece_concernee": "Chaîne cinématique et châssis Sprinter",
+                  "gravite": "Majeure",
+                  "frequence": "Assez fréquente en service intensif",
+                  "cout_reparation_estime": "Élevé : environ 800 à 7 000 €"
+                },
+                {
+                  "probleme": "Intégration carrossier : portes, électricité, chauffage et freinage",
+                  "symptomes": [
+                    "Portes inopérantes",
+                    "Décharge batterie",
+                    "Chauffage/climatisation ou freinage irrégulier"
+                  ],
+                  "kilometrage_apparition": "Variable, fortement lié au service passagers",
+                  "diagnostic": "Contrôler CAN et faisceaux ajoutés, alternateur/batteries, masses, portes/marches, chauffage auxiliaire, climatisation arrière, sièges/ceintures, issues de secours, conduites et freins",
+                  "piece_concernee": "Carrosserie minibus et équipements passagers",
+                  "gravite": "Critique si sécurité passagers atteinte",
+                  "frequence": "Assez fréquente avec l’âge",
+                  "cout_reparation_estime": "Élevé : environ 500 à 8 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "source_catalogue": "VehiclesDB 2026.08.2 (CC-BY 4.0)"
+}

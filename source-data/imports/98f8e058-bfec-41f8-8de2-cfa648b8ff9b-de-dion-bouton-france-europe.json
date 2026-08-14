@@ -1,0 +1,252 @@
+{
+  "nom": "De Dion-Bouton",
+  "modeles": [
+    {
+      "nom": "Type K",
+      "generations": [
+        {
+          "code_chassis": "Type K1",
+          "annees": "1902",
+          "phases": [
+            "Homologué le 1er février 1902, empattement 1,65 m et essieu arrière De Dion."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Monocylindre 8 HP — 8 ch",
+              "code_moteur": "De Dion-Bouton K1",
+              "cylindree": "864 cm³",
+              "puissance_ch": 8,
+              "boite": [
+                "Manuelle 2 rapports, propulsion par cardan"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Monocylindre, soupape automatique et lubrification perdue",
+                  "symptomes": [
+                    "Démarrage impossible",
+                    "Compression faible",
+                    "Claquement, fumée ou graissage insuffisant"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant chaque sortie ; kilométrage peu significatif",
+                  "diagnostic": "Identifier K1 864 cm³ ou K2 942 cm³, contrôler compression, segments, cylindre, paliers, soupape d’admission automatique, échappement, allumage par trembleur/magnéto selon montage et dosage d’huile. Faire tourner à la main avant démarrage.",
+                  "piece_concernee": "Monocylindre De Dion-Bouton Type K",
+                  "gravite": "Critique",
+                  "frequence": "Entretien fréquent requis sur technologie 1902",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 15 000 €"
+                },
+                {
+                  "probleme": "Carburateur, réservoir, circulation d’eau et allumage",
+                  "symptomes": [
+                    "Mélange irrégulier",
+                    "Surchauffe",
+                    "Fuite de carburant ou étincelle absente"
+                  ],
+                  "kilometrage_apparition": "Avant chaque sortie",
+                  "diagnostic": "Nettoyer gicleur et cuve, contrôler réservoir, robinet, conduites, avance, bobine/trembleur, isolants et bougie. Vérifier pompe à eau, thermosiphon, tubes de radiateur et courroie éventuelle ; utiliser carburant et huile adaptés.",
+                  "piece_concernee": "Alimentation, allumage et refroidissement Type K",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après stockage",
+                  "cout_reparation_estime": "Élevé : environ 300 à 5 000 €"
+                },
+                {
+                  "probleme": "Boîte deux rapports, embrayage, cardan et pont De Dion",
+                  "symptomes": [
+                    "Rapport qui saute",
+                    "Patinage",
+                    "Jeu, bruit ou vibration"
+                  ],
+                  "kilometrage_apparition": "Inspection avant chaque saison",
+                  "diagnostic": "Contrôler commande, cône/embrayage, engrenages, paliers, arbre à cardan, joints, couple conique et articulation de l’essieu De Dion. Régler avec jeux compatibles aux matériaux anciens sans graisse moderne incompatible.",
+                  "piece_concernee": "Transmission Type K",
+                  "gravite": "Critique",
+                  "frequence": "Usure élevée si graissage insuffisant",
+                  "cout_reparation_estime": "Très élevé : environ 800 à plus de 10 000 €"
+                },
+                {
+                  "probleme": "Cadre tubulaire, roues bois, direction et freinage primitif",
+                  "symptomes": [
+                    "Tube fissuré",
+                    "Roue voilée ou rayon desserré",
+                    "Jeu de direction ou freinage très faible"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant toute circulation",
+                  "diagnostic": "Contrôler corrosion/fissures du cadre tubulaire, assemblages de carrosserie, essieux, pivots, timonerie, roues et bandages/pneus. Vérifier le système de freinage et retenir des distances très supérieures à une automobile moderne.",
+                  "piece_concernee": "Châssis et sécurité Type K",
+                  "gravite": "Critique",
+                  "frequence": "Risque inhérent à l’âge et à la conception",
+                  "cout_reparation_estime": "Extrême : restauration spécialisée sur devis"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code_chassis": "Type K2",
+          "annees": "1902",
+          "phases": [
+            "Course portée à 120 mm et empattement 1,77 m ; environ 899 Type K toutes versions selon sources spécialisées."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "Monocylindre longue course 8 HP — 8 ch",
+              "code_moteur": "De Dion-Bouton K2",
+              "cylindree": "942 cm³",
+              "puissance_ch": 8,
+              "boite": [
+                "Manuelle 2 rapports, propulsion par cardan"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Monocylindre, soupape automatique et lubrification perdue",
+                  "symptomes": [
+                    "Démarrage impossible",
+                    "Compression faible",
+                    "Claquement, fumée ou graissage insuffisant"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant chaque sortie ; kilométrage peu significatif",
+                  "diagnostic": "Identifier K1 864 cm³ ou K2 942 cm³, contrôler compression, segments, cylindre, paliers, soupape d’admission automatique, échappement, allumage par trembleur/magnéto selon montage et dosage d’huile. Faire tourner à la main avant démarrage.",
+                  "piece_concernee": "Monocylindre De Dion-Bouton Type K",
+                  "gravite": "Critique",
+                  "frequence": "Entretien fréquent requis sur technologie 1902",
+                  "cout_reparation_estime": "Très élevé : environ 1 000 à plus de 15 000 €"
+                },
+                {
+                  "probleme": "Carburateur, réservoir, circulation d’eau et allumage",
+                  "symptomes": [
+                    "Mélange irrégulier",
+                    "Surchauffe",
+                    "Fuite de carburant ou étincelle absente"
+                  ],
+                  "kilometrage_apparition": "Avant chaque sortie",
+                  "diagnostic": "Nettoyer gicleur et cuve, contrôler réservoir, robinet, conduites, avance, bobine/trembleur, isolants et bougie. Vérifier pompe à eau, thermosiphon, tubes de radiateur et courroie éventuelle ; utiliser carburant et huile adaptés.",
+                  "piece_concernee": "Alimentation, allumage et refroidissement Type K",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après stockage",
+                  "cout_reparation_estime": "Élevé : environ 300 à 5 000 €"
+                },
+                {
+                  "probleme": "Boîte deux rapports, embrayage, cardan et pont De Dion",
+                  "symptomes": [
+                    "Rapport qui saute",
+                    "Patinage",
+                    "Jeu, bruit ou vibration"
+                  ],
+                  "kilometrage_apparition": "Inspection avant chaque saison",
+                  "diagnostic": "Contrôler commande, cône/embrayage, engrenages, paliers, arbre à cardan, joints, couple conique et articulation de l’essieu De Dion. Régler avec jeux compatibles aux matériaux anciens sans graisse moderne incompatible.",
+                  "piece_concernee": "Transmission Type K",
+                  "gravite": "Critique",
+                  "frequence": "Usure élevée si graissage insuffisant",
+                  "cout_reparation_estime": "Très élevé : environ 800 à plus de 10 000 €"
+                },
+                {
+                  "probleme": "Cadre tubulaire, roues bois, direction et freinage primitif",
+                  "symptomes": [
+                    "Tube fissuré",
+                    "Roue voilée ou rayon desserré",
+                    "Jeu de direction ou freinage très faible"
+                  ],
+                  "kilometrage_apparition": "Inspection complète avant toute circulation",
+                  "diagnostic": "Contrôler corrosion/fissures du cadre tubulaire, assemblages de carrosserie, essieux, pivots, timonerie, roues et bandages/pneus. Vérifier le système de freinage et retenir des distances très supérieures à une automobile moderne.",
+                  "piece_concernee": "Châssis et sécurité Type K",
+                  "gravite": "Critique",
+                  "frequence": "Risque inhérent à l’âge et à la conception",
+                  "cout_reparation_estime": "Extrême : restauration spécialisée sur devis"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.artcurial.com/ventes/1957/lots/206-a"
+      ]
+    },
+    {
+      "nom": "Type ID",
+      "generations": [
+        {
+          "code_chassis": "Type ID 10 CV",
+          "annees": "1919–1922",
+          "phases": [
+            "Homologation française en février 1920 ; 14 bhp, empattement 2,87 m, tourer ou limousine."
+          ],
+          "motorisations": [
+            {
+              "type": "Essence",
+              "nom": "1.85 quatre-cylindres latéral — 14 ch",
+              "code_moteur": "De Dion-Bouton ID",
+              "cylindree": "1 847 cm³",
+              "puissance_ch": 14,
+              "boite": [
+                "Manuelle 4 rapports, propulsion"
+              ],
+              "points_faibles": [
+                {
+                  "probleme": "Vilebrequin, soupapes latérales, lubrification et refroidissement du quatre-cylindres",
+                  "symptomes": [
+                    "Pression ou débit de graissage insuffisant",
+                    "Surchauffe",
+                    "Compression faible, fumée ou cognement"
+                  ],
+                  "kilometrage_apparition": "Âge et qualité de restauration priment ; contrôle avant chaque saison",
+                  "diagnostic": "Confirmer alésage/course 70 x 120 mm et 1 847 cm³. Mesurer compressions, jeux de soupapes et pression/débit, inspecter paliers, pompe, carter, radiateur, pompe à eau, culasse et corrosion. Analyser l’huile sans détergent selon reconstruction.",
+                  "piece_concernee": "Quatre-cylindres 1,8 l Type ID",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé sur moteur centenaire",
+                  "cout_reparation_estime": "Très élevé : environ 1 500 à plus de 20 000 €"
+                },
+                {
+                  "probleme": "Carburateur, magnéto/allumage, démarreur et alimentation",
+                  "symptomes": [
+                    "Démarrage difficile",
+                    "Ratés",
+                    "Fuite, odeur ou charge insuffisante"
+                  ],
+                  "kilometrage_apparition": "Contrôle avant chaque sortie et après stockage",
+                  "diagnostic": "Contrôler réservoir, robinet, conduites, pompe éventuelle, carburateur, starter, magnéto/distributeur, avance manuelle, bougies, dynamo, batterie et masses. Régler selon documentation d’époque avec protection incendie.",
+                  "piece_concernee": "Alimentation et allumage Type ID",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Fréquente après immobilisation",
+                  "cout_reparation_estime": "Élevé : environ 300 à 6 000 €"
+                },
+                {
+                  "probleme": "Boîte quatre rapports, embrayage, arbre et pont",
+                  "symptomes": [
+                    "Craquement",
+                    "Rapport qui saute",
+                    "Patinage, vibration ou fuite"
+                  ],
+                  "kilometrage_apparition": "Inspection annuelle",
+                  "diagnostic": "Contrôler huile compatible bronze, pignons, fourchettes, embrayage, butée, supports, arbre à cardan, joints, pont et roulements. Adapter la technique de double débrayage et ne pas forcer les engrenages non synchronisés.",
+                  "piece_concernee": "Transmission Type ID",
+                  "gravite": "Majeure à critique",
+                  "frequence": "Usure variable selon graissage et conduite",
+                  "cout_reparation_estime": "Très élevé : environ 800 à plus de 10 000 €"
+                },
+                {
+                  "probleme": "Cadre, bois de carrosserie, essieux, direction et freins",
+                  "symptomes": [
+                    "Corrosion ou bois affaibli",
+                    "Jeu ou shimmy",
+                    "Freinage dissymétrique ou insuffisant"
+                  ],
+                  "kilometrage_apparition": "Expertise avant achat et avant reprise de circulation",
+                  "diagnostic": "Inspecter cadre acier, rivets, traverses, structure bois, essieux, ressorts, amortisseurs à friction, pivots, direction, roues et pneus 760x90. Contrôler les freins montés selon millésime et toute modernisation sans la confondre avec l’origine.",
+                  "piece_concernee": "Structure et sécurité De Dion-Bouton Type ID",
+                  "gravite": "Critique",
+                  "frequence": "Risque élevé après un siècle de réparations",
+                  "cout_reparation_estime": "Extrême : environ 1 000 à plus de 40 000 €"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sources_techniques": [
+        "https://www.blockleytyre.com/make/de-dion-bouton"
+      ]
+    }
+  ]
+}
