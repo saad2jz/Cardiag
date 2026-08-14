@@ -200,6 +200,7 @@ test('local reports adapt their guidance to the selected business scenario', asy
   const expectations = {
     buyer: /avant achat/i,
     mechanic: /état initial/i,
+    rental: /flotte/i,
     seller: /rapport vendeur/i,
     owner: /suivi/i,
   };

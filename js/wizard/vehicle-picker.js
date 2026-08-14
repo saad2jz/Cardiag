@@ -15,7 +15,8 @@ function selectedProfile() {
 function vehicleSubtitle(model) {
   const data = model.data || {};
   const locale = window.cardiagI18n?.language === 'en' ? 'en-GB' : 'fr-FR';
-  return [data.motorisation, data.kilometrage ? `${Number(data.kilometrage).toLocaleString(locale)} km` : '']
+  const mileage = data.rental_mileage_in || data.rental_mileage_out || data.release_mileage || data.kilometrage;
+  return [data.fleet_vehicle_id, data.motorisation, mileage ? `${Number(mileage).toLocaleString(locale)} km` : '']
     .filter(Boolean)
     .join(' · ');
 }
@@ -56,7 +57,7 @@ export function initializeVehiclePicker() {
 
   function render() {
     const profile = selectedProfile();
-    const visible = ['buyer', 'seller', 'mechanic'].includes(profile);
+    const visible = ['buyer', 'seller', 'mechanic', 'rental'].includes(profile);
     panel.hidden = !visible;
     if (!visible) return;
 

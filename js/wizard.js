@@ -1,6 +1,6 @@
 const PROFILE_STORAGE_KEY = 'cardiag_active_profile';
 const STEP_STORAGE_KEY = 'cardiag_wizard_step';
-const VALID_PROFILES = new Set(['buyer', 'mechanic', 'seller', 'owner']);
+const VALID_PROFILES = new Set(['buyer', 'mechanic', 'rental', 'seller', 'owner']);
 const STEP_COUNT = 4;
 
 const STEP_TITLES = [
@@ -13,6 +13,7 @@ const STEP_TITLES = [
 const PROFILE_CONTEXT = {
   buyer: 'Ajoutez les informations de l’annonce et les déclarations du vendeur pour cadrer l’audit avant achat.',
   mechanic: 'Consignez la plainte client et les données d’entrée avant tout effacement, démontage ou intervention.',
+  rental: 'Documentez le véhicule de flotte, le kilométrage et les différences entre l’état de départ et l’état de retour.',
   seller: 'Documentez les entretiens, réparations et défauts connus avec un maximum de transparence.',
   owner: 'Décrivez l’évolution du véhicule pour construire un carnet de santé technique utile dans le temps.',
 };
@@ -285,7 +286,8 @@ export function initializeWizard() {
   });
   window.addEventListener('cardiag:record-open', () => {
     assistantOpened = false;
-    renderExpertiseLayout();
+    safeStorageSet(PROFILE_STORAGE_KEY, activeProfile());
+    updateProfileContext();
   });
   window.addEventListener('cardiag:language-change', () => {
     updateProfileContext();

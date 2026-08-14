@@ -24,6 +24,15 @@ function scoreBand(score) { return score == null ? { label:'Non évalué', color
 function generationLabel(date=new Date()) { return date.toLocaleString('fr-FR',{day:'2-digit',month:'long',year:'numeric',hour:'2-digit',minute:'2-digit'}).replace(' à ', ' à '); }
 function effectiveDecision(model) { return model.done < model.total ? { label:'EN COURS', verdict:'' } : model.verdict ? { label:model.verdictLabel, verdict:model.verdict } : { label:'DÉCISION REQUISE', verdict:'' }; }
 
+function drawVehicleBrandBadge(pdf, brand, x, y, palette) {
+  const name=String(brand||'Véhicule').trim().slice(0,24);
+  const initials=name.split(/[\s-]+/).filter(Boolean).slice(0,2).map(part=>part[0]).join('').toUpperCase() || 'V';
+  pdf.setFillColor(...palette.surface);pdf.setDrawColor(...palette.line);pdf.roundedRect(x,y,42,21,4,4,'FD');
+  pdf.setFillColor(...palette.accent);pdf.circle(x+10.5,y+10.5,6.5,'F');
+  pdf.setTextColor(...palette.page);pdf.setFont('helvetica','bold');pdf.setFontSize(initials.length>1?7:9);pdf.text(initials,x+10.5,y+12.5,{align:'center'});
+  pdf.setTextColor(...palette.text);pdf.setFont('helvetica','bold');pdf.setFontSize(name.length>14?5.5:6.8);pdf.text(pdf.splitTextToSize(name.toUpperCase(),24).slice(0,2),x+18,y+8,{lineHeightFactor:1.1});
+}
+
 export function executiveSummary(model) {
   if(model.done < model.total) return `Inspection non finalisée — ${model.done} points sur ${model.total} renseignés. Les résultats ci-dessous ne permettent pas encore de conclure sur l’ensemble du véhicule.`;
   const defects=model.points.filter(point=>point.status==='defaut').sort((a,b)=>b.weight-a.weight);
@@ -47,6 +56,54 @@ function addImageSafe(pdf, photo, x, y, w, h) {
   const data=photo?.dataUrl || photo;
   if(!data) return false;
   try { pdf.addImage(data,imageFormat(data),x,y,w,h,undefined,'FAST'); return true; } catch { return false; }
+}
+
+function addImageContained(pdf, photo, x, y, w, h, palette) {
+  const data=photo?.dataUrl || photo;
+  if(!data) return false;
+  pdf.setFillColor(...palette.page);pdf.roundedRect(x,y,w,h,2,2,'F');
+  try {
+    const properties=pdf.getImageProperties(data);
+    const ratio=Math.min(w/properties.width,h/properties.height);
+    const imageWidth=properties.width*ratio,imageHeight=properties.height*ratio;
+    pdf.addImage(data,imageFormat(data),x+(w-imageWidth)/2,y+(h-imageHeight)/2,imageWidth,imageHeight,undefined,'FAST');
+    return true;
+  } catch { return false; }
+}
+
+export function photoGroupsForSection(model, section) {
+  const points=(model.points||[]).filter(point=>point.section===section).map(point=>({
+    name:point.name,
+    label:point.label,
+    photos:Array.isArray(point.photos)?point.photos:[],
+  }));
+  const general=(model.photos||[]).filter(photo=>photo.key===section);
+  return { general, points };
+}
+
+function drawPhotoGallery(pdf, photos, startY, palette, options={}) {
+  let y=startY;
+  const values=(photos||[]).filter(photo=>photo?.dataUrl || typeof photo==='string');
+  if(!values.length) return y;
+  const pageTitle=options.pageTitle||'Photographies de l’inspection';
+  const kicker=options.kicker||'PREUVES PHOTOGRAPHIQUES';
+  const nextPage=()=>{pdf.addPage();y=setupPage(pdf,palette,pageTitle,`${kicker} · SUITE`);};
+  if(y+14>273)nextPage();
+  pdf.setTextColor(...palette.text);pdf.setFont('helvetica','bold');pdf.setFontSize(8.5);
+  pdf.text(pdf.splitTextToSize(options.title||`Photographies (${values.length})`,178).slice(0,2),16,y);
+  y+=8;
+  values.forEach((photo,index)=>{
+    const column=index%2,x=16+column*90;
+    if(column===0 && y+55>273)nextPage();
+    pdf.setFillColor(...palette.surface);pdf.roundedRect(x,y,84,50,3,3,'F');
+    const rendered=addImageContained(pdf,photo,x+2,y+2,80,39,palette);
+    pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','normal');pdf.setFontSize(6.2);
+    const filename=firstLines(photo?.name||`Photo ${index+1}`,1);
+    pdf.text(pdf.splitTextToSize(`${index+1}. ${filename}`,78).slice(0,1),x+3,y+46);
+    if(!rendered){pdf.setTextColor(...STATUS.defaut.color);pdf.setFont('helvetica','bold');pdf.text('IMAGE ILLISIBLE',x+42,y+23,{align:'center'});}
+    if(column===1 || index===values.length-1)y+=55;
+  });
+  return y+2;
 }
 
 function drawDonut(pdf,x,y,r,score,color,palette) {
@@ -84,6 +141,7 @@ export async function createPdf(model,branding) {
   pdf.setFillColor(...palette.accent);pdf.rect(0,0,7,h,'F');
   if(!addImageSafe(pdf,branding?.logo,17,16,21,21)){pdf.setFillColor(...palette.accent);pdf.roundedRect(17,16,21,21,4,4,'F');pdf.setTextColor(12,12,12);pdf.setFontSize(10);pdf.text('CD',27.5,29,{align:'center'});}
   pdf.setTextColor(...palette.text);pdf.setFont('helvetica','bold');pdf.setFontSize(12);pdf.text(branding?.workshopName||'CarDiag',43,25);pdf.setFont('helvetica','normal');pdf.setTextColor(...palette.muted);pdf.setFontSize(8);pdf.text('EXPERTISE AUTOMOBILE INDÉPENDANTE',43,31);
+  if(!addImageSafe(pdf,model.data.brand_logo,151,16,42,21))drawVehicleBrandBadge(pdf,model.data.marque,151,16,palette);
   pdf.setTextColor(...palette.text);pdf.setFont('helvetica','bold');pdf.setFontSize(28);pdf.text('Rapport d’Expertise',17,58);pdf.text('Automobile',17,70);
   pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','normal');pdf.setFontSize(9);pdf.text(`${dateLabel(model.data.date_expertise||model.createdAt)}  ·  Référence ${ref}`,17,80);
   if(model.mainPhoto){addImageSafe(pdf,model.mainPhoto,17,91,176,88);}else{pdf.setFillColor(...palette.surface);pdf.roundedRect(17,91,176,88,4,4,'F');pdf.setTextColor(...palette.muted);pdf.setFontSize(12);pdf.text('PHOTO PRINCIPALE DU VÉHICULE',105,137,{align:'center'});}
@@ -115,23 +173,38 @@ export async function createPdf(model,branding) {
   [['Carte grise',model.data.doc_carte_grise],['Contrôle technique valide',model.data.doc_ct],['Certificat de non-gage',model.data.doc_non_gage],['Factures d’entretien',model.data.doc_factures]].forEach(([label,checked],index)=>{const x=16+(index%2)*90,cy=y+Math.floor(index/2)*16;pdf.setFillColor(...(checked?[22,163,74]:palette.surface));pdf.roundedRect(x,cy,84,12,2,2,'F');pdf.setTextColor(...(checked?[255,255,255]:palette.muted));pdf.setFont('helvetica','bold');pdf.setFontSize(7);pdf.text(checked?'OK':'NON',x+6,cy+8);pdf.setFont('helvetica','normal');pdf.setFontSize(8);pdf.text(label,x+20,cy+8);});
   y+=40;const history=model.data.q_historique==='ok'?'Complet':model.data.q_historique==='moyen'?'Partiel':model.data.q_historique==='defaut'?'Absent':'Non renseigné';
   const contextRows=[['Historique d’entretien déclaré',history],['Propriétaires précédents',model.data.proprietaires||'Non renseigné'],['Raison de la vente',model.data.raison_vente||'Non renseignée'],['Type d’utilisation déclaré',model.data.usage_type||'Non renseigné'],['Date et heure de l’inspection',model.data.date_expertise?new Date(model.data.date_expertise).toLocaleString('fr-FR'):'Non renseignées'],['Localisation',model.data.geoloc||'Non renseignée']];
-  contextRows.forEach(([label,value])=>{const lines=pdf.splitTextToSize(String(value),108).slice(0,3),height=Math.max(17,7+lines.length*4);pdf.setFillColor(...palette.surface);pdf.roundedRect(16,y,178,height-2,2,2,'F');pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','bold');pdf.setFontSize(7);pdf.text(label.toUpperCase(),21,y+6);pdf.setTextColor(...palette.text);pdf.setFont('helvetica','normal');pdf.setFontSize(8);pdf.text(lines,80,y+6,{lineHeightFactor:1.3});y+=height;});
+  if(model.data.usage_scenario==='mechanic')contextRows.push(
+    ['Ordre de réparation',model.data.work_order_reference||'Non renseigné'],['Kilométrage réception / restitution',[model.data.intake_mileage,model.data.release_mileage].filter(Boolean).map(value=>`${value} km`).join(' → ')||'Non renseigné'],['État à la réception',model.data.mechanic_intake_condition||'Non renseigné'],['Travaux réalisés',model.data.repair_work_completed||'Non renseigné'],['Contrôles après réparation',model.data.post_repair_checks||'Non renseigné'],['État à la restitution',model.data.mechanic_release_condition||'Non renseigné']
+  );
+  if(model.data.usage_scenario==='rental'){
+    const out=Number(model.data.rental_mileage_out)||0,incoming=Number(model.data.rental_mileage_in)||0;
+    contextRows.push(['Identifiant flotte',model.data.fleet_vehicle_id||'Non renseigné'],['Contrat / locataire',[model.data.rental_contract_reference,model.data.renter_reference].filter(Boolean).join(' · ')||'Non renseigné'],['Départ / retour',[model.data.rental_start,model.data.rental_end].filter(Boolean).join(' → ')||'Non renseigné'],['Kilométrage départ / retour',[out,incoming].filter(Boolean).map(value=>`${value} km`).join(' → ')||'Non renseigné'],['Distance parcourue',out&&incoming>=out?`${incoming-out} km`:'À vérifier'],['Énergie départ / retour',[model.data.rental_energy_out,model.data.rental_energy_in].filter(Boolean).join(' → ')||'Non renseigné'],['État avant location',model.data.rental_condition_out||'Non renseigné'],['État après location',model.data.rental_condition_in||'Non renseigné'],['Nouveaux dommages / écarts',model.data.rental_damage_delta||'Aucun écart déclaré']);
+  }
+  contextRows.forEach(([label,value])=>{const lines=pdf.splitTextToSize(String(value),108).slice(0,3),height=Math.max(17,7+lines.length*4);if(y+height>273){pdf.addPage();y=setupPage(pdf,palette,'Contexte & historique — suite');}pdf.setFillColor(...palette.surface);pdf.roundedRect(16,y,178,height-2,2,2,'F');pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','bold');pdf.setFontSize(7);pdf.text(label.toUpperCase(),21,y+6);pdf.setTextColor(...palette.text);pdf.setFont('helvetica','normal');pdf.setFontSize(8);pdf.text(lines,80,y+6,{lineHeightFactor:1.3});y+=height;});
+  const contextPhotoLabels={mechanic_intake_condition:'État du véhicule à la réception',mechanic_release_condition:'État du véhicule à la restitution',rental_condition_out:'État des lieux avant location',rental_condition_in:'État des lieux après location',rental_damage_delta:'Nouveaux dommages / écarts constatés'};
+  Object.entries(contextPhotoLabels).forEach(([key,label])=>{const photos=(model.photos||[]).filter(photo=>photo.key===`context:${key}`);if(photos.length)y=drawPhotoGallery(pdf,photos,y+3,palette,{title:`${label} — photos liées (${photos.length})`,pageTitle:'Contexte & état contradictoire'});});
 
   // Détails par section
   SECTION_ORDER.forEach(section=>{
     const points=model.points.filter(point=>point.section===section);if(!points.length)return;
     pdf.addPage();let py=setupPage(pdf,palette,points[0].sectionLabel||section,'DÉTAIL DES CONTRÔLES');
-    const controlled=points.filter(point=>point.status),unchecked=points.filter(point=>!point.status);
-    controlled.forEach(point=>{
-      const photo=point.photos?.[0];const blockHeight=photo?35:22;
+    const photoGroups=photoGroupsForSection(model,section);
+    const documented=points.filter(point=>point.status || point.photos?.length),unchecked=points.filter(point=>!point.status && !point.photos?.length);
+    documented.forEach(point=>{
+      const pointPhotos=Array.isArray(point.photos)?point.photos:[];const blockHeight=22;
       if(py+blockHeight>274){pdf.addPage();py=setupPage(pdf,palette,points[0].sectionLabel||section,'DÉTAIL DES CONTRÔLES · SUITE');}
-      const status=STATUS[point.status]||STATUS[''];pdf.setFillColor(...palette.surface);pdf.roundedRect(16,py,178,blockHeight-3,3,3,'F');pdf.setFillColor(...status.color);pdf.circle(22,py+7,2.2,'F');pdf.setTextColor(...palette.text);pdf.setFont('helvetica','bold');pdf.setFontSize(9);pdf.text(pdf.splitTextToSize(point.label,photo?118:138),28,py+7);pdf.setFillColor(...status.color);pdf.roundedRect(154,py+3,34,8,2,2,'F');pdf.setTextColor(255,255,255);pdf.setFontSize(7);pdf.text(status.label,171,py+8.2,{align:'center'});
-      pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','normal');pdf.setFontSize(7);const note=point.note?firstLines(point.note,2):'Aucune observation complémentaire saisie.';pdf.text(pdf.splitTextToSize(note,photo?110:118).slice(0,2),28,py+15);
-      if(photo)addImageSafe(pdf,photo,151,py+13,35,19);
+      const status=STATUS[point.status]||STATUS[''];pdf.setFillColor(...palette.surface);pdf.roundedRect(16,py,178,blockHeight-3,3,3,'F');pdf.setFillColor(...status.color);pdf.circle(22,py+7,2.2,'F');pdf.setTextColor(...palette.text);pdf.setFont('helvetica','bold');pdf.setFontSize(9);pdf.text(pdf.splitTextToSize(point.label,118),28,py+7);pdf.setFillColor(...status.color);pdf.roundedRect(154,py+3,34,8,2,2,'F');pdf.setTextColor(255,255,255);pdf.setFontSize(7);pdf.text(status.label,171,py+8.2,{align:'center'});
+      pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','normal');pdf.setFontSize(7);const note=point.note?firstLines(point.note,2):'Aucune observation complémentaire saisie.';pdf.text(pdf.splitTextToSize(note,118).slice(0,2),28,py+15);
       if(point.name==='p1000'&&point.status==='defaut'){pdf.setDrawColor(185,28,28);pdf.setLineWidth(1);pdf.roundedRect(16,py,178,blockHeight-3,3,3,'S');}
       py+=blockHeight;
+      if(pointPhotos.length){
+        py=drawPhotoGallery(pdf,pointPhotos,py,palette,{title:`Photos liées au contrôle « ${point.label} » (${pointPhotos.length})`,pageTitle:points[0].sectionLabel||section});
+      }
     });
-    if(!controlled.length){pdf.setFillColor(...palette.surface);pdf.roundedRect(16,py,178,18,3,3,'F');pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','normal');pdf.setFontSize(9);pdf.text('Aucun point renseigné dans cette section.',21,py+11);py+=24;}
+    if(!documented.length){pdf.setFillColor(...palette.surface);pdf.roundedRect(16,py,178,18,3,3,'F');pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','normal');pdf.setFontSize(9);pdf.text('Aucun point renseigné dans cette section.',21,py+11);py+=24;}
+    if(photoGroups.general.length){
+      py=drawPhotoGallery(pdf,photoGroups.general,py+3,palette,{title:`Photos générales de la section (${photoGroups.general.length})`,pageTitle:points[0].sectionLabel||section});
+    }
     if(section==='diagnostic'){
       const obdRows=[['Codes ECM (moteur)',model.data.codes_ecm],['Codes ABS',model.data.codes_abs],['Codes boîte de vitesses',model.data.codes_boite||model.data.codes_boitier],['Observations diagnostic',model.data.notes_diagnostic]].filter(([,value])=>String(value||'').trim());
       if(obdRows.length){py+=6;if(py>220){pdf.addPage();py=setupPage(pdf,palette,'Diagnostic électronique (OBD2)');}pdf.setTextColor(...palette.text);pdf.setFont('helvetica','bold');pdf.setFontSize(11);pdf.text('Relevé électronique saisi',16,py);py+=7;obdRows.forEach(([label,value])=>{const lines=pdf.splitTextToSize(String(value),112).slice(0,3),height=Math.max(16,7+lines.length*4);pdf.setFillColor(...palette.surface);pdf.roundedRect(16,py,178,height-2,2,2,'F');pdf.setTextColor(...palette.muted);pdf.setFontSize(7);pdf.text(label.toUpperCase(),21,py+6);pdf.setTextColor(...palette.text);pdf.setFont('helvetica','normal');pdf.setFontSize(8);pdf.text(lines,75,py+6,{lineHeightFactor:1.25});py+=height;});}

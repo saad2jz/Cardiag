@@ -81,6 +81,10 @@ const LOCAL_SCENARIO_GUIDANCE = {
     content: 'État initial enregistré. Complétez avec la plainte exacte du client, les conditions de reproduction et les premières mesures atelier.',
     suggestions: ['Défaut permanent', 'Défaut intermittent', 'Codes relevés sans effacement', 'Intervention antérieure connue'],
   },
+  rental: {
+    content: 'État de flotte enregistré. Comparez le kilométrage, le niveau d’énergie et les photos avant/après afin d’isoler tout écart nouveau avant la prochaine location.',
+    suggestions: ['État de départ documenté', 'Dommage nouveau au retour', 'Écart de kilométrage', 'Voyant ou anomalie au retour'],
+  },
   seller: {
     content: 'Élément ajouté au rapport vendeur. Complétez avec la date, le kilométrage, les justificatifs et les éventuelles limites du contrôle.',
     suggestions: ['Facture disponible', 'Réparation récente', 'Défaut connu non réparé', 'Photo ajoutée au dossier'],
@@ -198,7 +202,7 @@ function cloneLocalScenario(scenario, carContext) {
   void motsClesSnakeCase;
   void motsCles;
 
-  const usageScenario = ['buyer', 'mechanic', 'seller', 'owner'].includes(carContext?.usageScenario)
+  const usageScenario = ['buyer', 'mechanic', 'rental', 'seller', 'owner'].includes(carContext?.usageScenario)
     ? carContext.usageScenario
     : 'buyer';
   const guidance = LOCAL_SCENARIO_GUIDANCE[usageScenario];

@@ -8,6 +8,7 @@ export function initializeSettings(){
   <button data-test-notifications><span>Tester les notifications</span><small>Envoie une notification à cet appareil</small></button>
   <label><span>Langue<small>Langue de l’interface</small></span><select data-setting-language><option value="fr">Français</option><option value="en">English</option><option value="auto">Système / System</option></select></label>
   <button data-open-account><span>Compte et données</span><small>Profil, export et suppression</small></button>
+  <button data-open-local-profile><span>Profil d’utilisation</span><small>Modifier le profil Professionnel ou Personnel</small></button>
   <a href="privacy.html" target="_blank"><span>Politique de confidentialité</span><small>Données et droits RGPD</small></a>
   <a href="terms.html" target="_blank"><span>Mentions légales et CGU</span><small>Conditions d’utilisation</small></a>
   <a href="account-deletion.html" target="_blank"><span>Suppression de compte</span><small>Demande accessible hors application</small></a>
@@ -18,4 +19,5 @@ export function initializeSettings(){
   const language=sheet.querySelector('[data-setting-language]');language.value=state.language;language.onchange=()=>{state.language=language.value;const resolved=state.language==='auto'?(String(navigator.language||'fr').toLowerCase().startsWith('en')?'en':'fr'):state.language;window.cardiagI18n?.setLanguage?.(resolved);save(state)};
   sheet.querySelector('[data-test-notifications]').onclick=async()=>{try{if(!window.cardiagAuth?.user)throw new Error('Connectez-vous d’abord.');await window.cardiagAuth.api('/api/account/notifications/test',{method:'POST'});window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback',{detail:{type:'success',message:'Notification de test envoyée'}}))}catch(error){window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback',{detail:{type:'error',message:error.message}}))}};
   sheet.querySelector('[data-open-design]').onclick=()=>{close();document.querySelector('.design-trigger')?.click()};sheet.querySelector('[data-open-account]').onclick=()=>{close();document.querySelector('.account-trigger')?.click()};
+  sheet.querySelector('[data-open-local-profile]').onclick=()=>{close();window.cardiagLocalProfile?.open?.({edit:true})};
 }
