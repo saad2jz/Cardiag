@@ -1,5 +1,7 @@
 # Cardiag
 
+Les changements fonctionnels par persona et les règles de compatibilité sont documentés dans [CHANGELOG.md](CHANGELOG.md).
+
 ## Runtime architecture
 
 `js/app.js` loads the unified `data/vehicles.json` data through
