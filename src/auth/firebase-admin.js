@@ -4,12 +4,43 @@ import { getFirestore } from 'firebase-admin/firestore';
 import { getMessaging } from 'firebase-admin/messaging';
 import { createHash, randomBytes } from 'node:crypto';
 
+export function normalizeFirebasePrivateKey(value) {
+  let privateKey = String(value || '').trim();
+
+  // Render peut conserver les guillemets d'une valeur copiée depuis le JSON.
+  if (privateKey.startsWith('"') && privateKey.endsWith('"')) {
+    try {
+      privateKey = JSON.parse(privateKey);
+    } catch {
+      privateKey = privateKey.slice(1, -1);
+    }
+  } else if (privateKey.startsWith("'") && privateKey.endsWith("'")) {
+    privateKey = privateKey.slice(1, -1);
+  }
+
+  privateKey = privateKey
+    .replace(/\\r\\n/g, '\n')
+    .replace(/\\n/g, '\n')
+    .replace(/\\r/g, '\n')
+    .replace(/\r\n/g, '\n')
+    .trim();
+
+  const hasPemEnvelope = /^-----BEGIN (?:RSA )?PRIVATE KEY-----\n[\s\S]+\n-----END (?:RSA )?PRIVATE KEY-----$/.test(privateKey);
+  if (!hasPemEnvelope) {
+    throw Object.assign(
+      new Error('FIREBASE_PRIVATE_KEY doit contenir une clé PEM complète, sans nom de variable ni virgule JSON.'),
+      { code: 'FIREBASE_PRIVATE_KEY_FORMAT' },
+    );
+  }
+  return `${privateKey}\n`;
+}
+
 function adminCredential(env) {
   if (env.FIREBASE_CLIENT_EMAIL && env.FIREBASE_PRIVATE_KEY) {
     return cert({
       projectId: env.FIREBASE_PROJECT_ID,
       clientEmail: env.FIREBASE_CLIENT_EMAIL,
-      privateKey: env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+      privateKey: normalizeFirebasePrivateKey(env.FIREBASE_PRIVATE_KEY),
     });
   }
   return applicationDefault();
