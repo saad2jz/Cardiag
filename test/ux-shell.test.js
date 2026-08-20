@@ -20,7 +20,7 @@ test('the app shell keeps SEO, accessibility and cache safeguards', () => {
   assert.match(index, /"@type":"Organization"/);
   assert.match(index, /id="installAppBtn"[^>]*hidden/);
   assert.match(index, /sigCanvasAcheteur[^>]*aria-label=/);
-  assert.match(worker, /cardiag-v49/);
+  assert.match(worker, /cardiag-v51/);
 });
 
 test('vehicle identification exposes loading, offline fallback and fuzzy result feedback', () => {

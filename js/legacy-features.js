@@ -781,17 +781,38 @@ export function initializeLegacyFeatures(vehicleData) {
       saveCurrent();
       const list = document.getElementById('fichePickList');
       list.innerHTML = '';
-      Object.values(db).forEach(f=>{
+      const candidates = Object.values(db).filter(f=>{
+        const data=f?.data||{};
+        return Boolean(data.marque||data.modele||data.annee||data.kilometrage||data.vin||data.valeur||CHECK_NAMES.some(name=>data[name]));
+      }).sort((a,b)=>String(b.createdAt||'').localeCompare(String(a.createdAt||'')));
+      const availableIds=new Set(candidates.map(f=>f.id));
+      const selectedIds=[...new Set(preselectedIds)].filter(id=>availableIds.has(id)).slice(0,3);
+      candidates.forEach(f=>{
         const row = document.createElement('div');
         row.className = 'fiche-pick';
-        const selected = preselectedIds.includes(f.id) ? ' checked' : '';
-        row.innerHTML = '<input type="checkbox" value="'+f.id+'" id="pick_'+f.id+'"'+selected+'><label for="pick_'+f.id+'">'+ficheLabel(f)+'</label>';
+        const selected = selectedIds.includes(f.id) ? ' checked' : '';
+        const score=scoreFor(f);const done=CHECK_NAMES.filter(name=>f.data?.[name]).length;
+        const date=f.createdAt?new Date(f.createdAt).toLocaleDateString(window.cardiagI18n?.language==='en'?'en-GB':'fr-FR'):'—';
+        const mileage=f.data?.kilometrage?Number(f.data.kilometrage).toLocaleString(window.cardiagI18n?.language==='en'?'en-GB':'fr-FR')+' km':'';
+        row.innerHTML = '<input type="checkbox" value="'+reportEscape(f.id)+'" id="pick_'+reportEscape(f.id)+'"'+selected+'><label for="pick_'+reportEscape(f.id)+'"><span class="fiche-pick-main"><strong>'+reportEscape(ficheLabel(f))+'</strong><small>'+reportEscape([date,mileage,done+' / '+CHECK_NAMES.length+' vérifiés'].filter(Boolean).join(' · '))+'</small></span><span class="fiche-pick-score">'+(score===null?'—':score+'%')+'</span></label>';
         list.appendChild(row);
       });
+      if(!candidates.length)list.innerHTML='<p class="compare-empty">Aucune fiche suffisamment renseignée. Identifiez au moins un véhicule avant de le comparer.</p>';
       document.getElementById('compareResult').innerHTML = '';
-      document.getElementById('exportCompareBtn').style.display = 'none';
+      document.getElementById('exportCompareBtn').hidden = true;
+      document.getElementById('compareModal').classList.remove('comparison-ready');
       document.getElementById('compareModal').classList.add('show');
-      if(preselectedIds.length >= 2) renderComparison(preselectedIds);
+      updateComparisonSelection();
+      if(selectedIds.length >= 2) renderComparison(selectedIds);
+  }
+
+  function updateComparisonSelection(){
+    const checked=Array.from(document.querySelectorAll('#fichePickList input:checked'));
+    const english=window.cardiagI18n?.language==='en';
+    document.getElementById('compareSelectionCount').textContent=`${checked.length} / 3 ${english?'selected':'sélectionnées'}`;
+    document.getElementById('runCompareBtn').disabled=checked.length<2;
+    document.querySelectorAll('#fichePickList input:not(:checked)').forEach(input=>{input.disabled=checked.length>=3});
+    document.getElementById('compareSelectionStatus').textContent=checked.length<2?(english?'Choose at least 2 reports.':'Choisissez au moins 2 fiches.'):(english?'Ready to compare.':'Prêt à comparer.');
   }
 
   function initComparator(){
@@ -801,10 +822,16 @@ export function initializeLegacyFeatures(vehicleData) {
     document.getElementById('closeModal').addEventListener('click', ()=>{
       document.getElementById('compareModal').classList.remove('show');
     });
+    document.getElementById('fichePickList').addEventListener('change', event=>{
+      if(!event.target.matches('input[type="checkbox"]'))return;
+      const selected=document.querySelectorAll('#fichePickList input:checked');
+      if(selected.length>3){event.target.checked=false;document.getElementById('compareSelectionStatus').textContent='Maximum 3 fiches.';}
+      updateComparisonSelection();
+    });
     document.getElementById('runCompareBtn').addEventListener('click', ()=>{
       const ids = Array.from(document.querySelectorAll('#fichePickList input:checked')).map(el=>el.value);
       if(ids.length < 2){ alert('Sélectionnez au moins 2 fiches.'); return; }
-      renderComparison(ids);
+      renderComparison(ids.slice(0,3));
     });
   }
 
@@ -878,33 +905,45 @@ export function initializeLegacyFeatures(vehicleData) {
     return weightSum ? Math.round((weightedScore/weightSum)*100) : null;
   }
   function renderComparison(ids){
-    const fiches = ids.map(id=>db[id]);
+    const fiches = [...new Set(ids)].slice(0,3).map(id=>db[id]).filter(Boolean);
+    if(fiches.length<2)return;
+    const models=fiches.map(reportModelFor);
+    const english=window.cardiagI18n?.language==='en';
+    const formatMoney=value=>{const number=Number(value);return Number.isFinite(number)&&number?number.toLocaleString(english?'en-GB':'fr-FR')+' €':'—'};
+    const bestScore=Math.max(...models.map(model=>model.score??-1));
+    const cards=models.map(model=>'<article class="compare-summary-card'+(model.score===bestScore&&bestScore>=0?' is-best':'')+'"><div><span class="compare-card-kicker">'+(model.score===bestScore&&bestScore>=0?(english?'BEST SCORE':'MEILLEUR SCORE'):(english?'VEHICLE':'VÉHICULE'))+'</span><h3>'+reportEscape(model.title)+'</h3></div><strong class="compare-card-score">'+(model.score===null?'—':model.score+'%')+'</strong><span class="verdict-pill '+reportEscape(model.verdict||'pending')+'">'+reportEscape(model.verdictLabel)+'</span><small>'+model.done+' / '+model.total+' '+(english?'checked':'vérifiés')+' · '+formatMoney(model.data?.valeur)+'</small></article>').join('');
     let html = '<table class="compare-table"><thead><tr><th>Champ</th>';
-    fiches.forEach(f=> html += '<th>'+ficheLabel(f)+'</th>');
+    fiches.forEach(f=> html += '<th>'+reportEscape(ficheLabel(f))+'</th>');
     html += '</tr></thead><tbody>';
     const rows = [
+      ['Année', f=>f.data.annee || '—'],
+      ['Motorisation', f=>f.data.motorisation || '—'],
       ['Kilométrage', f=>f.data.kilometrage || '—'],
-      ['Valeur (€)', f=>f.data.valeur || '—'],
+      ['Points vérifiés', f=>CHECK_NAMES.filter(name=>f.data?.[name]).length+' / '+CHECK_NAMES.length],
+      ['Valeur affichée', f=>formatMoney(f.data.valeur)],
       ['Score pondéré', f=>{const s=scoreFor(f); return s===null?'—':s+'%';}],
       ['Verdict', f=>{
         const v = f.data.verdict;
         if(!v) return '—';
         const label = v==='achat'?'Achat':v==='negociation'?'Négociation':'À fuir';
         return '<span class="verdict-pill '+v+'">'+label+'</span>';
-      }],
-      ['Frais estimés (€)', f=>f.data.frais_estimation || '—'],
-      ['Budget max (€)', f=>f.data.budget_max || '—'],
+      },true],
+      ['Frais estimés', f=>formatMoney(f.data.frais_estimation)],
+      ['Marge de négociation', f=>formatMoney(reportModelFor(f).negotiation?.suggestedMargin||f.data.marge_negociation)],
+      ['Budget maximum', f=>formatMoney(reportModelFor(f).negotiation?.maximumBudget||f.data.budget_max)],
     ];
     rows.forEach(r=>{
       html += '<tr><td>'+r[0]+'</td>';
-      fiches.forEach(f=> html += '<td>'+r[1](f)+'</td>');
+      fiches.forEach(f=>{const value=r[1](f);html += '<td>'+(r[2]?value:reportEscape(value))+'</td>'});
       html += '</tr>';
     });
     html += '</tbody></table>';
-    document.getElementById('compareResult').innerHTML = '<div class="compare-table-wrap">'+html+'</div>';
+    document.getElementById('compareResult').innerHTML = '<div class="compare-summary-grid">'+cards+'</div><div class="compare-table-wrap">'+html+'</div>';
+    document.getElementById('compareModal').classList.add('comparison-ready');
     const exportBtn = document.getElementById('exportCompareBtn');
-    exportBtn.style.display = '';
-    exportBtn.onclick = ()=> exportComparisonCSV(ids, rows);
+    exportBtn.hidden = false;
+    exportBtn.onclick = ()=> exportComparisonCSV(fiches.map(f=>f.id), rows);
+    document.getElementById('compareResult').scrollIntoView({behavior:'smooth',block:'start'});
   }
 
   function csvEscape(val){

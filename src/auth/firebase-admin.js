@@ -67,6 +67,30 @@ function safeVersion(value) {
   return Number.isSafeInteger(value) && value >= 0 ? value : 0;
 }
 
+export function sanitizeAccountProfile(profile, now = new Date().toISOString()) {
+  const source = profile && typeof profile === 'object' ? profile : {};
+  const role = ['buyer','mechanic','rental','seller','owner'].includes(source.role) ? source.role : 'buyer';
+  const accountType = source.accountType === 'professional' || ['mechanic','rental'].includes(role) ? 'professional' : 'personal';
+  return {
+    displayName: String(source.displayName || source.contactName || '').trim().slice(0, 80),
+    avatar: String(source.avatar || '').slice(0, 400_000),
+    role,
+    accountType,
+    phone: String(source.phone || '').trim().slice(0, 30),
+    garageName: String(source.garageName || '').trim().slice(0, 120),
+    contactName: String(source.contactName || '').trim().slice(0, 80),
+    siret: String(source.siret || '').replace(/\D/g, '').slice(0, 14),
+    address: String(source.address || '').trim().slice(0, 240),
+    website: String(source.website || '').trim().slice(0, 240),
+    professionalKind: source.professionalKind === 'rental' ? 'rental' : 'mechanic',
+    fleetSize: String(source.fleetSize || '').replace(/\D/g, '').slice(0, 7),
+    fleetReference: String(source.fleetReference || '').trim().slice(0, 60),
+    consent: Boolean(source.consent),
+    consentAt: source.consent ? String(source.consentAt || now).slice(0, 40) : null,
+    updatedAt: now,
+  };
+}
+
 export function planHistoryRecord({ record, id }, serverData, exists, now) {
   const serverVersion = safeVersion(serverData?.syncVersion);
   const clientVersion = safeVersion(record.syncVersion);
@@ -102,14 +126,7 @@ export function createFirebaseAccountService(env = process.env) {
       return snapshot.exists ? snapshot.data() : null;
     },
     async saveProfile(uid, profile) {
-      const sanitized = {
-        displayName: String(profile.displayName || '').slice(0, 80),
-        avatar: String(profile.avatar || '').slice(0, 400_000),
-        role: ['buyer','mechanic','rental','seller','owner'].includes(profile.role) ? profile.role : 'buyer',
-        consent: Boolean(profile.consent),
-        consentAt: profile.consent ? new Date().toISOString() : null,
-        updatedAt: new Date().toISOString(),
-      };
+      const sanitized = sanitizeAccountProfile(profile);
       await firestore.collection('users').doc(uid).set(sanitized, { merge: true });
       return sanitized;
     },

@@ -1,0 +1,32 @@
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+import { test } from 'node:test';
+import { sanitizeAccountProfile } from '../src/auth/firebase-admin.js';
+
+const client = await readFile(new URL('../js/auth/firebase-client.js', import.meta.url), 'utf8');
+const authUi = await readFile(new URL('../js/auth/auth-ui.js', import.meta.url), 'utf8');
+const comparison = await readFile(new URL('../js/legacy-features.js', import.meta.url), 'utf8');
+
+test('web authentication uses official IndexedDB persistence instead of raw localStorage tokens', () => {
+  assert.match(client, /indexedDBLocalPersistence/);
+  assert.doesNotMatch(client, /localStorage\.setItem/);
+  assert.match(client, /onAuthStateChanged/);
+});
+
+test('account profile keeps the useful personal and professional details', () => {
+  const profile = sanitizeAccountProfile({ role:'rental', displayName:'  Nadia  ', phone:' 0612345678 ', garageName:' CarDiag Fleet ', siret:'123 456 789 012 34', fleetSize:'42 vehicles', consent:true }, '2026-08-20T12:00:00.000Z');
+  assert.equal(profile.accountType, 'professional');
+  assert.equal(profile.displayName, 'Nadia');
+  assert.equal(profile.garageName, 'CarDiag Fleet');
+  assert.equal(profile.siret, '12345678901234');
+  assert.equal(profile.fleetSize, '42');
+});
+
+test('connected account view exposes identity details and comparison filters blank reports', () => {
+  assert.match(authUi, /data-account-summary-email/);
+  assert.match(authUi, /accountEmail/);
+  assert.match(authUi, /profilePayload/);
+  assert.match(comparison, /CHECK_NAMES\.some\(name=>data\[name\]\)/);
+  assert.match(comparison, /slice\(0,3\)/);
+  assert.match(comparison, /compare-summary-grid/);
+});

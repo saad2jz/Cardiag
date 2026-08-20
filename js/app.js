@@ -1,14 +1,14 @@
-import { initializeLegacyFeatures } from './legacy-features.js?v=20260820-4';
+import { initializeLegacyFeatures } from './legacy-features.js?v=20260820-5';
 import { initializeChatExperience } from './chat-experience.js?v=20260820-1';
 import { initializePwa } from './pwa.js?v=20260820-2';
 import { initializeWizard } from './wizard.js?v=20260814-5';
-import { initializeI18n } from './i18n/i18n.js?v=20260820-1';
+import { initializeI18n } from './i18n/i18n.js?v=20260820-2';
 import { initializeWizardInteractions } from './wizard/interactions.js?v=20260813-1';
 import { initializeVehiclePicker } from './wizard/vehicle-picker.js?v=20260814-2';
 import { initializeThemeManager } from './theming/theme-manager.js?v=20260814-1';
 import { initializeProfileOnboarding } from './onboarding/profile-onboarding.js?v=20260820-1';
 import { initializeMediaManager } from './media/media-manager.js?v=20260813-2';
-import { initializeAuthUi } from './auth/auth-ui.js?v=20260820-1';
+import { initializeAuthUi } from './auth/auth-ui.js?v=20260820-3';
 import { initializePermissions } from './native/permissions.js?v=20260813-1';
 import { initializeConnectivity } from './native/connectivity.js?v=20260813-1';
 import { initializeSyncQueue } from './native/sync-queue.js?v=20260814-1';
