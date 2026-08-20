@@ -22,6 +22,7 @@ import { initializePremiumReport } from './reports/premium-report.js?v=20260814-
 import { initializeReportSharing } from './reports/report-sharing.js?v=20260814-2';
 import { initializeLanding } from './landing/landing.js?v=20260820-3';
 import { initializeInspectionEnhancements } from './ux/inspection-enhancements.js?v=20260820-5';
+import { initializeHomeButton } from './navigation/home-button.js?v=20260820-1';
 
 /**
  * Application entry point. Data loading stays separate from the UI controller
@@ -71,6 +72,7 @@ async function initializeApp() {
     initializeMediaManager();
     initializeScoreVisuals();
     initializeRecordsGallery();
+    initializeHomeButton();
     initializePremiumReport();
     initializePermissions();
     initializeConnectivity();
