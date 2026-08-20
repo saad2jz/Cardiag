@@ -11,6 +11,10 @@ const EN = {
   'wizard.generate': 'Generate report',
   'wizard.back': 'Back',
   'wizard.step': 'Step {step} of {total} · {title}',
+  'validation.vin.mechanic': 'The VIN is required to document the workshop intake.',
+  'validation.vin.rental': 'The VIN is required to ensure fleet-vehicle traceability.',
+  'validation.identification': 'Complete {fields} before continuing.',
+  'import.confirm': 'Import this JSON file as a new report? No existing report will be overwritten.',
   'vehiclePicker.title': 'Choose a saved vehicle',
   'vehiclePicker.intro': 'Reuse an existing vehicle or create a new report.',
   'vehiclePicker.add': '＋ Add a new vehicle',
@@ -116,6 +120,13 @@ Object.assign(EN_TEXT, {
   'Sauvegardé automatiquement sur cet appareil': 'Automatically saved on this device',
   'INSPECTION À COMPLÉTER': 'INSPECTION TO COMPLETE',
   'DÉCISION À CONFIRMER': 'DECISION TO CONFIRM',
+  'Ouvrir la section véhicule': 'Open vehicle section',
+  'Ouvrir la section moteur': 'Open engine section',
+  'Ouvrir la section châssis': 'Open chassis section',
+  'Ouvrir la section carrosserie': 'Open bodywork section',
+  'Ouvrir la section habitacle': 'Open interior section',
+  'Ouvrir la section essai routier': 'Open road-test section',
+  'Ouvrir la section bilan': 'Open summary section',
 });
 
 Object.assign(EN_TEXT, {

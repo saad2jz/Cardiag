@@ -138,7 +138,7 @@ main{max-width:1200px; margin:26px auto; padding:0 16px; display:flex; flex-dire
   color:var(--muted); font-family:'Inter',sans-serif; font-weight:600; font-size:10.5px; letter-spacing:0.02em;
   padding:10px 14px 9px; cursor:pointer; position:relative; white-space:nowrap; transition:color .15s;
 }
-.app-tab .app-tab-icon{font-size:17px; line-height:1;}
+.app-tab .app-tab-icon{width:20px;height:20px;display:block;line-height:1;}
 .app-tab::after{
   content:""; position:absolute; left:10%; right:10%; bottom:0; height:3px; border-radius:3px 3px 0 0;
   background:transparent; transition:background .15s;
@@ -485,7 +485,7 @@ table.compare-table th{background:var(--bg); font-family:'JetBrains Mono',monosp
 .ps-integrity-text{font-size:11px; color:var(--muted); line-height:1.6; word-break:break-all;}
 .ps-integrity-text code{font-family:'JetBrains Mono',monospace; font-size:10.5px; background:var(--bg); padding:2px 4px; border-radius:4px;}
 
-body.quick-mode .check-item:not(.essential){display:none;}
+body.quick-mode .check-item:not(.persona-quick){display:none;}
 .quick-mode-banner{display:none; background:var(--surface); border:1.5px solid var(--border); color:var(--ink-soft); border-radius:var(--radius-sm); padding:10px 14px; font-size:12.5px; font-weight:600; margin-bottom:14px;}
 body.quick-mode .quick-mode-banner{display:block;}
 body.dark.quick-mode .quick-mode-banner{color:var(--ink-soft);}
