@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cardiag-v56';
+const CACHE_NAME = 'cardiag-v57';
 const APP_SHELL = [
   './',
   './index.html',
@@ -17,7 +17,7 @@ const APP_SHELL = [
   './assets/demo/rapport-expertise-demo-cardiag.pdf',
   './css/styles.css?v=20260820-9',
   './css/wizard/premium.css?v=20260813-1',
-  './css/theming/themes.css?v=20260820-2',
+  './css/theming/themes.css?v=20260820-3',
   './css/landing/landing.css?v=20260820-3',
   './css/media/media.css?v=20260813-1',
   './css/auth/auth.css?v=20260820-4',
@@ -30,7 +30,7 @@ const APP_SHELL = [
   './css/shared-report.css?v=20260813-1',
   './build-data.js?v=20260810-3',
   './js/db-loader.js?v=20260811-1',
-  './js/app.js?v=20260820-11',
+  './js/app.js?v=20260820-12',
   './js/navigation/home-button.js?v=20260820-1',
   './js/landing/landing.js?v=20260820-3',
   './js/wizard.js?v=20260814-5',
@@ -39,7 +39,7 @@ const APP_SHELL = [
   './js/personas.js?v=20260814-1',
   './js/wizard/vehicle-picker.js?v=20260814-2',
   './js/wizard/interactions.js?v=20260813-1',
-  './js/theming/theme-manager.js?v=20260820-2',
+  './js/theming/theme-manager.js?v=20260820-3',
   './js/onboarding/profile-onboarding.js?v=20260820-1',
   './js/media/media-manager.js?v=20260813-2',
   './js/auth/firebase-client.js?v=20260820-4',
@@ -50,7 +50,7 @@ const APP_SHELL = [
   './js/native/sync-queue.js?v=20260814-1',
   './js/native/app-links.js?v=20260813-1',
   './js/native/push.js?v=20260813-1',
-  './js/settings/settings.js?v=20260820-3',
+  './js/settings/settings.js?v=20260820-4',
   './js/score/score-visuals.js?v=20260813-1',
   './js/records/records-gallery.js?v=20260814-4',
   './js/reports/negotiation.js?v=20260814-1',

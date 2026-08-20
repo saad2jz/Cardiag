@@ -63,7 +63,8 @@ function buildPanel() {
       <label>Bannière<input type="file" accept="image/*" data-brand-file="banner"><span data-brand-preview="banner">Importer</span></label>
       <label>Avatar<input type="file" accept="image/*" data-brand-file="avatar"><span data-brand-preview="avatar">Importer</span></label>
     </div>
-    <button type="button" class="design-clear" data-brand-clear>Effacer les visuels</button>`;
+    <button type="button" class="design-clear" data-brand-clear>Effacer les visuels</button>
+    <button type="button" class="design-all-settings" data-open-all-settings>Voir tous les paramètres</button>`;
   document.body.append(panel);
   return panel;
 }
@@ -98,6 +99,10 @@ export async function initializeThemeManager() {
     panel.hidden = false;
     requestAnimationFrame(() => panel.classList.add('is-open'));
   };
+  const closePanel = () => {
+    panel.classList.remove('is-open');
+    window.setTimeout(() => { panel.hidden = true; }, 220);
+  };
 
   const render = () => {
     applyBranding(state);
@@ -115,9 +120,10 @@ export async function initializeThemeManager() {
   const persist = async () => { render(); await savePreferences(state); };
 
   button.addEventListener('click', openPanel);
-  panel.querySelector('[data-design-close]').addEventListener('click', () => {
-    panel.classList.remove('is-open');
-    window.setTimeout(() => { panel.hidden = true; }, 220);
+  panel.querySelector('[data-design-close]').addEventListener('click', closePanel);
+  panel.querySelector('[data-open-all-settings]').addEventListener('click', () => {
+    closePanel();
+    window.setTimeout(() => window.cardiagSettings?.open?.(), 220);
   });
   panel.querySelectorAll('[name="design_theme"]').forEach((input) => input.addEventListener('change', () => {
     state.theme = input.value;

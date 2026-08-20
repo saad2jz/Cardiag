@@ -24,7 +24,7 @@ test('the app shell keeps SEO, accessibility and cache safeguards', () => {
   assert.match(index, /"@type":"Organization"/);
   assert.match(index, /id="installAppBtn"[^>]*hidden/);
   assert.match(index, /sigCanvasAcheteur[^>]*aria-label=/);
-  assert.match(worker, /cardiag-v56/);
+  assert.match(worker, /cardiag-v57/);
 });
 
 test('the wizard toolbar exposes a non-destructive CarDiag home action', () => {
@@ -35,7 +35,10 @@ test('the wizard toolbar exposes a non-destructive CarDiag home action', () => {
   assert.match(worker, /navigation\/home-button\.js/);
   assert.match(styles, /\.home-trigger\{order:-2/);
   assert.match(settings, /settings-trigger-label[^>]*>Paramètres/);
+  assert.match(settings, /trigger\.onclick=openAppearance/);
+  assert.match(settings, /window\.cardiagSettings=\{open,openAppearance\}/);
   assert.match(themes, /button\.hidden = true/);
+  assert.match(themes, /data-open-all-settings/);
 });
 
 test('vehicle identification exposes loading, offline fallback and fuzzy result feedback', () => {
