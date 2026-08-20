@@ -89,9 +89,15 @@ export async function initializeThemeManager() {
   const button = document.createElement('button');
   button.className = 'design-trigger';
   button.type = 'button';
+  button.hidden = true;
   button.setAttribute('aria-label', 'Thèmes et identité visuelle');
   button.innerHTML = '<span class="design-trigger-logo"></span><span class="design-trigger-name"></span>';
   header?.append(button);
+
+  const openPanel = () => {
+    panel.hidden = false;
+    requestAnimationFrame(() => panel.classList.add('is-open'));
+  };
 
   const render = () => {
     applyBranding(state);
@@ -108,7 +114,7 @@ export async function initializeThemeManager() {
   };
   const persist = async () => { render(); await savePreferences(state); };
 
-  button.addEventListener('click', () => { panel.hidden = false; requestAnimationFrame(() => panel.classList.add('is-open')); });
+  button.addEventListener('click', openPanel);
   panel.querySelector('[data-design-close]').addEventListener('click', () => {
     panel.classList.remove('is-open');
     window.setTimeout(() => { panel.hidden = true; }, 220);
@@ -135,6 +141,7 @@ export async function initializeThemeManager() {
 
   window.cardiagBranding = {
     get current() { return { ...state }; },
+    open: openPanel,
     async update(values={}) {
       state = { ...state, ...values };
       await persist();

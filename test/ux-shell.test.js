@@ -7,6 +7,9 @@ const worker = await readFile(new URL('../sw.js', import.meta.url), 'utf8');
 const enhancements = await readFile(new URL('../js/ux/inspection-enhancements.js', import.meta.url), 'utf8');
 const legacy = await readFile(new URL('../js/legacy-features.js', import.meta.url), 'utf8');
 const homeButton = await readFile(new URL('../js/navigation/home-button.js', import.meta.url), 'utf8');
+const settings = await readFile(new URL('../js/settings/settings.js', import.meta.url), 'utf8');
+const themes = await readFile(new URL('../js/theming/theme-manager.js', import.meta.url), 'utf8');
+const styles = await readFile(new URL('../css/styles.css', import.meta.url), 'utf8');
 
 test('the public landing and wizard expose the same five workflows', () => {
   const landingRoles = [...index.matchAll(/data-landing-role="([^"]+)"/g)].map((match) => match[1]);
@@ -21,7 +24,7 @@ test('the app shell keeps SEO, accessibility and cache safeguards', () => {
   assert.match(index, /"@type":"Organization"/);
   assert.match(index, /id="installAppBtn"[^>]*hidden/);
   assert.match(index, /sigCanvasAcheteur[^>]*aria-label=/);
-  assert.match(worker, /cardiag-v55/);
+  assert.match(worker, /cardiag-v56/);
 });
 
 test('the wizard toolbar exposes a non-destructive CarDiag home action', () => {
@@ -30,6 +33,9 @@ test('the wizard toolbar exposes a non-destructive CarDiag home action', () => {
   assert.match(homeButton, /cardiagWizard\?\.goToStep\?\.\(1, 'back'\)/);
   assert.doesNotMatch(homeButton, /localStorage\.clear|location\.reload|resetFiche/);
   assert.match(worker, /navigation\/home-button\.js/);
+  assert.match(styles, /\.home-trigger\{order:-2/);
+  assert.match(settings, /settings-trigger-label[^>]*>Paramètres/);
+  assert.match(themes, /button\.hidden = true/);
 });
 
 test('vehicle identification exposes loading, offline fallback and fuzzy result feedback', () => {

@@ -6,6 +6,7 @@ body{background:var(--bg);color:var(--ink);transition:background-color .22s ease
 .wizard-view[data-wizard-step='1'] .usage-scenario-panel{position:relative;overflow:hidden;background-image:linear-gradient(135deg,color-mix(in srgb,var(--surface) 95%,transparent),color-mix(in srgb,var(--surface) 74%,transparent)),var(--brand-banner-image);background-size:cover;background-position:center;}
 .has-brand-banner .wizard-view[data-wizard-step='1'] .usage-scenario-panel{min-height:min(720px,calc(100dvh - 210px));align-content:end;display:grid;}
 .design-trigger{order:3;display:flex;align-items:center;gap:8px;max-width:190px;min-height:46px;padding:6px 10px;border:1px solid color-mix(in srgb,var(--ink) 20%,transparent);border-radius:999px;background:color-mix(in srgb,var(--surface) 78%,transparent);color:var(--ink);}
+.design-trigger[hidden]{display:none!important;}
 .design-trigger-logo{width:30px;height:30px;flex:0 0 30px;border-radius:50%;background:var(--trigger-logo) center/cover no-repeat;}
 .design-trigger-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:800;font-size:11px;}
 .design-panel{position:fixed;z-index:180;top:0;right:0;width:min(430px,100vw);height:100dvh;padding:calc(20px + env(safe-area-inset-top)) 20px calc(24px + env(safe-area-inset-bottom));overflow:auto;background:var(--surface);color:var(--ink);box-shadow:var(--ombre-lg);transform:translateX(102%);transition:transform .24s cubic-bezier(.2,.78,.24,1);}
