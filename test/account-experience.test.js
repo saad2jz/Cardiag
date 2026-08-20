@@ -5,6 +5,7 @@ import { sanitizeAccountProfile } from '../src/auth/firebase-admin.js';
 
 const client = await readFile(new URL('../js/auth/firebase-client.js', import.meta.url), 'utf8');
 const authUi = await readFile(new URL('../js/auth/auth-ui.js', import.meta.url), 'utf8');
+const authStyles = await readFile(new URL('../css/auth/auth.css', import.meta.url), 'utf8');
 const comparison = await readFile(new URL('../js/legacy-features.js', import.meta.url), 'utf8');
 
 test('web authentication uses official IndexedDB persistence instead of raw localStorage tokens', () => {
@@ -29,4 +30,26 @@ test('connected account view exposes identity details and comparison filters bla
   assert.match(comparison, /CHECK_NAMES\.some\(name=>data\[name\]\)/);
   assert.match(comparison, /slice\(0,3\)/);
   assert.match(comparison, /compare-summary-grid/);
+});
+
+test('account creation validates confirmation and keeps authentication separate from profile sync', () => {
+  assert.match(authUi, /name="passwordConfirmation"/);
+  assert.match(authUi, /form\.password\.value !== form\.passwordConfirmation\.value/);
+  assert.match(client, /validateEmail\(normalizedEmail\)/);
+  assert.match(client, /validatePassword\(password, \{ creating: true \}\)/);
+  assert.match(authUi, /const loadProfile = async/);
+});
+
+test('an authenticated session exposes only profile settings and sign out', () => {
+  assert.match(authUi, /const name = authClient\.user \? 'profile'/);
+  assert.match(authUi, /signupTrigger\.hidden = Boolean\(user\)/);
+  assert.match(authUi, /actions\.dataset\.authenticated/);
+  assert.match(authUi, /data-sign-out/);
+  assert.match(authStyles, /data-authenticated=true.*auth-view:not\(\[data-auth-view=profile\]\)/);
+});
+
+test('email verification can be refreshed without reconnecting', () => {
+  assert.match(authUi, /data-check-verification/);
+  assert.match(authUi, /authClient\.reloadUser\(\)/);
+  assert.match(client, /async reloadUser\(\)/);
 });

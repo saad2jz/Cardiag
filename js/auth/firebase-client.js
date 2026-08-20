@@ -15,6 +15,20 @@ export function normalizeAuthEmail(value) {
   return String(value || '').trim().toLowerCase();
 }
 
+function validateEmail(email) {
+  if (!email) throw Object.assign(new Error(friendlyAuthError({ code: 'MISSING_EMAIL' })), { code: 'MISSING_EMAIL' });
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    throw Object.assign(new Error(friendlyAuthError({ code: 'INVALID_EMAIL' })), { code: 'INVALID_EMAIL' });
+  }
+}
+
+function validatePassword(password, { creating = false } = {}) {
+  if (!String(password || '')) throw Object.assign(new Error(friendlyAuthError({ code: 'MISSING_PASSWORD' })), { code: 'MISSING_PASSWORD' });
+  if (creating && String(password).length < 8) {
+    throw Object.assign(new Error(friendlyAuthError({ code: 'WEAK_PASSWORD' })), { code: 'WEAK_PASSWORD' });
+  }
+}
+
 export function friendlyAuthError(error) {
   const rawCode = String(error?.code || error?.message || 'AUTH_ERROR');
   const code = rawCode.replace(/^auth\//i, '').replaceAll('-', '_').toUpperCase();
@@ -149,6 +163,8 @@ export const authClient = {
   get configured() { return Boolean(config?.apiKey && config?.projectId); },
   async signUp(email,password) {
     const normalizedEmail = normalizeAuthEmail(email);
+    validateEmail(normalizedEmail);
+    validatePassword(password, { creating: true });
     const native = nativeAuth();
     try {
       if (native) {
@@ -173,6 +189,8 @@ export const authClient = {
   },
   async signIn(email,password) {
     const normalizedEmail = normalizeAuthEmail(email);
+    validateEmail(normalizedEmail);
+    validatePassword(password);
     const native = nativeAuth();
     try {
       if (native) {
@@ -208,9 +226,7 @@ export const authClient = {
   },
   async resetPassword(email) {
     const normalizedEmail = normalizeAuthEmail(email);
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(normalizedEmail)) {
-      throw Object.assign(new Error(friendlyAuthError({ code: 'INVALID_EMAIL' })), { code: 'INVALID_EMAIL' });
-    }
+    validateEmail(normalizedEmail);
     const native = nativeAuth();
     try {
       if (native?.sendPasswordResetEmail) return await native.sendPasswordResetEmail({ email: normalizedEmail });
@@ -237,8 +253,30 @@ export const authClient = {
     if (sdk?.auth?.currentUser) return sdk.getIdToken(sdk.auth.currentUser, forceRefresh);
     return refreshWebToken();
   },
+  async reloadUser() {
+    const native = nativeAuth();
+    if (native) {
+      await native.reload?.();
+      const result = await native.getCurrentUser();
+      notify(result?.user);
+      return currentUser;
+    }
+    const sdk = await optionalWebFirebase();
+    if (sdk?.auth?.currentUser) {
+      await sdk.reload(sdk.auth.currentUser);
+      notify(sdk.auth.currentUser);
+      return currentUser;
+    }
+    if (webSession?.idToken) {
+      const lookup = await identityRequest('accounts:lookup', { idToken: await refreshWebToken() });
+      const user = lookup.users?.[0];
+      notify(user ? { uid:user.localId, email:user.email, emailVerified:user.emailVerified, displayName:user.displayName } : null);
+    }
+    return currentUser;
+  },
   async api(path, options={}) {
     const token = await this.getIdToken();
+    if (!token) throw Object.assign(new Error('Session expirée. Reconnectez-vous.'), { code: 'AUTH_REQUIRED' });
     const response = await fetch(`${API_BASE}${path.replace(/^\//,'')}`, {
       ...options,
       headers:{'Content-Type':'application/json',Authorization:`Bearer ${token}`,...options.headers},

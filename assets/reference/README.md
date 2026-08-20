@@ -7,4 +7,4 @@ Ces dossiers accueillent les visuels pédagogiques optionnels affichés à la de
 - Chargement : différé uniquement ; l’absence d’un fichier ne doit jamais bloquer le parcours.
 - Style : photographie réaliste d’atelier, lumière naturelle, sans personne, texte, logo ni marque visible.
 
-Les prompts de production sont documentés dans `prompts-higgsfield.md`. Les images définitives ne sont pas incluses tant qu’elles n’ont pas été validées.
+Les prompts de production sont documentés dans `prompts-higgsfield.md`. Le dossier `section-guides/` contient les sept illustrations vectorielles utilisées hors ligne dans le mode guidé. Elles servent de fallback jusqu’à la validation de rendus photographiques Higgsfield.

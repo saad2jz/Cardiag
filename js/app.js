@@ -8,7 +8,7 @@ import { initializeVehiclePicker } from './wizard/vehicle-picker.js?v=20260814-2
 import { initializeThemeManager } from './theming/theme-manager.js?v=20260814-1';
 import { initializeProfileOnboarding } from './onboarding/profile-onboarding.js?v=20260820-1';
 import { initializeMediaManager } from './media/media-manager.js?v=20260813-2';
-import { initializeAuthUi } from './auth/auth-ui.js?v=20260820-3';
+import { initializeAuthUi } from './auth/auth-ui.js?v=20260820-4';
 import { initializePermissions } from './native/permissions.js?v=20260813-1';
 import { initializeConnectivity } from './native/connectivity.js?v=20260813-1';
 import { initializeSyncQueue } from './native/sync-queue.js?v=20260814-1';
@@ -21,7 +21,7 @@ import { initializeRecordsGallery } from './records/records-gallery.js?v=2026081
 import { initializePremiumReport } from './reports/premium-report.js?v=20260814-7';
 import { initializeReportSharing } from './reports/report-sharing.js?v=20260814-2';
 import { initializeLanding } from './landing/landing.js?v=20260820-3';
-import { initializeInspectionEnhancements } from './ux/inspection-enhancements.js?v=20260820-4';
+import { initializeInspectionEnhancements } from './ux/inspection-enhancements.js?v=20260820-5';
 
 /**
  * Application entry point. Data loading stays separate from the UI controller

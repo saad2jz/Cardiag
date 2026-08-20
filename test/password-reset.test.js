@@ -13,8 +13,8 @@ test('password reset normalizes and validates account email addresses', () => {
 });
 
 test('password reset UI prevents duplicate requests and keeps a neutral confirmation', () => {
-  assert.match(authUi, /submit\.disabled=true/);
+  assert.match(authUi, /setBusy\(submit, true\)/);
   assert.match(authUi, /Si un compte correspond/);
   assert.match(authUi, /courriers ind/);
-  assert.match(worker, /cardiag-v52/);
+  assert.match(worker, /cardiag-v54/);
 });

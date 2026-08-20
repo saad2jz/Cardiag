@@ -1,13 +1,13 @@
 const GUIDED_MODE_KEY = 'cardiag_guided_inspection_v1';
 
 const SECTIONS = [
-  { key: 'info', fr: 'Véhicule', en: 'Vehicle' },
-  { key: 'moteur', fr: 'Moteur', en: 'Engine' },
-  { key: 'chassis', fr: 'Châssis', en: 'Chassis' },
-  { key: 'carrosserie', fr: 'Carrosserie', en: 'Body' },
-  { key: 'habitacle', fr: 'Habitacle', en: 'Cabin' },
-  { key: 'essai', fr: 'Essai', en: 'Road test' },
-  { key: 'diagnostic', fr: 'OBD2 & bilan', en: 'OBD2 & review' },
+  { key: 'info', fr: 'Véhicule', en: 'Vehicle', image: 'vehicule.svg', captionFr: 'Identifiez le véhicule et vérifiez ses documents.', captionEn: 'Identify the vehicle and verify its documents.' },
+  { key: 'moteur', fr: 'Moteur', en: 'Engine', image: 'moteur.svg', captionFr: 'Contrôlez les niveaux, les fuites et le fonctionnement moteur.', captionEn: 'Check levels, leaks and engine operation.' },
+  { key: 'chassis', fr: 'Châssis', en: 'Chassis', image: 'chassis.svg', captionFr: 'Inspectez la structure, les trains roulants et les pneus.', captionEn: 'Inspect the structure, running gear and tyres.' },
+  { key: 'carrosserie', fr: 'Carrosserie', en: 'Body', image: 'carrosserie.svg', captionFr: 'Repérez les réparations, défauts de peinture et mauvais alignements.', captionEn: 'Spot repairs, paint defects and panel misalignment.' },
+  { key: 'habitacle', fr: 'Habitacle', en: 'Cabin', image: 'habitacle.svg', captionFr: 'Testez les équipements et recherchez usure ou humidité.', captionEn: 'Test equipment and look for wear or moisture.' },
+  { key: 'essai', fr: 'Essai', en: 'Road test', image: 'essai-routier.svg', captionFr: 'Évaluez freinage, direction, boîte et stabilité en sécurité.', captionEn: 'Safely assess braking, steering, gearbox and stability.' },
+  { key: 'diagnostic', fr: 'OBD2 & bilan', en: 'OBD2 & review', image: 'diagnostic.svg', captionFr: 'Relevez les codes OBD2 avant de conclure le bilan.', captionEn: 'Read OBD2 codes before completing the assessment.' },
 ];
 
 function english() {
@@ -161,6 +161,9 @@ function initializeGuide(guide) {
   if (!guide) return { refresh() {}, setVisible() {} };
   let guided = safeGet(GUIDED_MODE_KEY) !== 'full';
   let currentName = '';
+  const actionBar = guide.querySelector('.inspection-guide-actions');
+  const previousButton = actionBar.querySelector('[data-guide-prev]');
+  const nextButton = actionBar.querySelector('[data-guide-next]');
 
   const available = () => [...document.querySelectorAll('.wizard-checklist details.section[data-section]')]
     .flatMap((section) => guidedItems(section));
@@ -194,7 +197,7 @@ function initializeGuide(guide) {
 
     guide.querySelector('.panel-kicker').textContent = english() ? 'GUIDED INSPECTION' : 'INSPECTION GUIDÉE';
     guide.querySelector('.inspection-mini-stepper').setAttribute('aria-label', english() ? 'Inspection sections' : 'Sections de l’inspection');
-    guide.querySelector('[data-guide-prev]').textContent = english() ? '← Previous' : '← Précédent';
+    previousButton.textContent = english() ? '← Previous' : '← Précédent';
     SECTIONS.forEach((meta) => {
       const label = guide.querySelector(`[data-guide-section="${meta.key}"] b`);
       if (label) label.textContent = english() ? meta.en : meta.fr;
@@ -208,9 +211,28 @@ function initializeGuide(guide) {
       currentSection?.classList.add('inspection-guided-section');
       currentSection.open = true;
       current.classList.add('inspection-guided-current');
+      const meta = SECTIONS.find((section) => section.key === currentSection?.dataset.section) || SECTIONS[0];
+      let visual = current.querySelector('.inspection-guide-visual');
+      if (!visual) {
+        visual = document.createElement('figure');
+        visual.className = 'inspection-guide-visual';
+        visual.innerHTML = '<svg viewBox="0 0 720 420" role="img" focusable="false"><use></use></svg><figcaption></figcaption>';
+        current.prepend(visual);
+      }
+      const testTitle = current.querySelector('.label-block .t')?.textContent?.trim();
+      const caption = testTitle || (english() ? meta.captionEn : meta.captionFr);
+      const illustration = visual.querySelector('svg');
+      illustration.setAttribute('aria-label', caption);
+      visual.querySelector('use').setAttribute('href', `assets/reference/test-guides.svg#${currentName || meta.key}`);
+      visual.querySelector('figcaption').textContent = caption;
+      current.after(actionBar);
+      actionBar.classList.add('is-below-question');
       let sibling = current.previousElementSibling;
       while (sibling && !sibling.classList.contains('subhead')) sibling = sibling.previousElementSibling;
       sibling?.classList.add('inspection-guided-context');
+    } else {
+      guide.append(actionBar);
+      actionBar.classList.remove('is-below-question');
     }
 
     guide.querySelector('[data-guide-count]').textContent = `${stats.done} / ${stats.total} ${english() ? 'checked' : 'vérifiés'}`;
@@ -221,8 +243,8 @@ function initializeGuide(guide) {
     const view = guide.querySelector('[data-guide-view]');
     view.setAttribute('aria-pressed', String(guided));
     view.textContent = guided ? (english() ? 'Show full report' : 'Voir la fiche complète') : (english() ? 'Resume guided mode' : 'Reprendre le mode guidé');
-    guide.querySelector('[data-guide-prev]').disabled = index === 0;
-    guide.querySelector('[data-guide-next]').textContent = index === items.length - 1 ? (english() ? 'Review report →' : 'Voir le bilan →') : (english() ? 'Next →' : 'Suivant →');
+    previousButton.disabled = index === 0;
+    nextButton.textContent = index === items.length - 1 ? (english() ? 'Review report →' : 'Voir le bilan →') : (english() ? 'Next →' : 'Suivant →');
 
     SECTIONS.forEach((meta) => {
       const section = document.querySelector(`details.section[data-section="${meta.key}"]`);
@@ -245,12 +267,12 @@ function initializeGuide(guide) {
   }
 
   guide.querySelector('[data-guide-view]').addEventListener('click', () => setGuided(!guided));
-  guide.querySelector('[data-guide-prev]').addEventListener('click', () => {
+  previousButton.addEventListener('click', () => {
     const items = available();
     const index = items.findIndex((item) => itemName(item) === currentName);
     choose(items[Math.max(0, index - 1)]);
   });
-  guide.querySelector('[data-guide-next]').addEventListener('click', () => {
+  nextButton.addEventListener('click', () => {
     const items = available();
     const index = items.findIndex((item) => itemName(item) === currentName);
     if (index >= items.length - 1) {
@@ -274,7 +296,7 @@ function initializeGuide(guide) {
 
   return {
     refresh: render,
-    setVisible(visible) { guide.hidden = !visible; if (visible) render(); },
+    setVisible(visible) { guide.hidden = !visible; actionBar.hidden = !visible; if (visible) render(); },
   };
 }
 
