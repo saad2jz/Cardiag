@@ -35,6 +35,23 @@ export function normalizeLocalProfile(value = {}) {
   };
 }
 
+export function validateProfileContact(emailValue, phoneValue) {
+  const email = String(emailValue || '').trim();
+  const phone = String(phoneValue || '').trim();
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+  const phoneDigits = phone.replace(/\D/g, '');
+  const phoneValid = /^\+?[0-9][0-9\s().-]*$/.test(phone)
+    && phoneDigits.length >= 7
+    && phoneDigits.length <= 15;
+
+  if (!emailPattern.test(email) && emailPattern.test(phone)) {
+    return { valid: false, code: 'swapped', field: 'email' };
+  }
+  if (!emailPattern.test(email)) return { valid: false, code: 'email', field: 'email' };
+  if (!phoneValid) return { valid: false, code: 'phone', field: 'phone' };
+  return { valid: true, code: '', field: '' };
+}
+
 function readSettings() {
   try { return JSON.parse(localStorage.getItem(SETTINGS_KEY) || '{}'); } catch { return {}; }
 }
@@ -61,9 +78,9 @@ function buildSurface() {
     </div>
     <div class="profile-onboarding-card" data-profile-card role="dialog" aria-modal="true" aria-labelledby="localProfileTitle">
       <header><div><p class="panel-kicker" data-profile-kicker></p><h1 id="localProfileTitle" data-profile-title></h1><p data-profile-intro></p></div><button type="button" data-profile-close aria-label="Fermer">×</button></header>
-      <form data-local-profile-form>
+      <form data-local-profile-form novalidate>
         <fieldset class="profile-type-grid"><legend data-profile-type-legend></legend>
-          <label><input type="radio" name="profile_type" value="professional"><span><b data-profile-pro-title></b><small data-profile-pro-description></small></span></label>
+          <label><input type="radio" name="profile_type" value="professional" required><span><b data-profile-pro-title></b><small data-profile-pro-description></small></span></label>
           <label><input type="radio" name="profile_type" value="personal"><span><b data-profile-personal-title></b><small data-profile-personal-description></small></span></label>
         </fieldset>
         <section data-profile-fields="professional" hidden>
@@ -76,8 +93,8 @@ function buildSurface() {
             <label><span data-label="contactName"></span><input name="contactName" maxlength="80" autocomplete="name"></label>
             <label><span data-label="siret"></span><input name="siret" inputmode="numeric" maxlength="14" pattern="[0-9]{14}"></label>
             <label><span data-label="vatNumber"></span><input name="vatNumber" maxlength="30"></label>
-            <label><span data-label="email"></span><input name="professionalEmail" type="email" autocomplete="email"></label>
-            <label><span data-label="phone"></span><input name="professionalPhone" type="tel" autocomplete="tel"></label>
+            <label><span data-label="email"></span><input name="professionalEmail" type="email" inputmode="email" autocomplete="email" placeholder="nom@exemple.com"></label>
+            <label><span data-label="phone"></span><input name="professionalPhone" type="tel" inputmode="tel" autocomplete="tel" placeholder="06 12 34 56 78"></label>
             <label class="profile-field-wide"><span data-label="address"></span><textarea name="address" rows="2" autocomplete="street-address"></textarea></label>
             <label><span data-label="website"></span><input name="website" type="url" placeholder="https://"></label>
             <label><span data-label="specialties"></span><input name="specialties" maxlength="300"></label>
@@ -88,8 +105,8 @@ function buildSurface() {
         <section data-profile-fields="personal" hidden>
           <div class="profile-form-grid">
             <label><span data-label="displayName"></span><input name="displayName" maxlength="80" autocomplete="name"></label>
-            <label><span data-label="email"></span><input name="personalEmail" type="email" autocomplete="email"></label>
-            <label><span data-label="phone"></span><input name="personalPhone" type="tel" autocomplete="tel"></label>
+            <label><span data-label="email"></span><input name="personalEmail" type="email" inputmode="email" autocomplete="email" placeholder="nom@exemple.com"></label>
+            <label><span data-label="phone"></span><input name="personalPhone" type="tel" inputmode="tel" autocomplete="tel" placeholder="06 12 34 56 78"></label>
             <label><span data-label="role"></span><select name="personalRole"><option value="buyer"></option><option value="seller"></option><option value="owner"></option></select></label>
           </div>
         </section>
@@ -146,7 +163,22 @@ export async function initializeProfileOnboarding(options = {}) {
 
   function renderType() {
     const type = form.profile_type.value;
-    layer.querySelectorAll('[data-profile-fields]').forEach(section => { section.hidden = section.dataset.profileFields !== type; });
+    layer.querySelectorAll('[data-profile-fields]').forEach(section => {
+      const active = section.dataset.profileFields === type;
+      section.hidden = !active;
+      section.querySelectorAll('input, select, textarea').forEach(control => { control.disabled = !active; });
+    });
+    const requiredByType = {
+      professional: ['professionalKind', 'garageName', 'contactName', 'siret', 'professionalEmail', 'professionalPhone', 'address'],
+      personal: ['displayName', 'personalEmail', 'personalPhone', 'personalRole'],
+    };
+    form.querySelectorAll('[required]').forEach(control => {
+      if (control.name !== 'profile_type') control.required = false;
+    });
+    (requiredByType[type] || []).forEach(name => {
+      const control = form.elements.namedItem(name);
+      if (control) control.required = true;
+    });
     const professionalKind = form.professionalKind.value || 'mechanic';
     layer.querySelectorAll('[data-professional-kind-fields]').forEach(field => { field.hidden = field.dataset.professionalKindFields !== professionalKind; });
   }
@@ -209,6 +241,10 @@ export async function initializeProfileOnboarding(options = {}) {
   }
 
   form.addEventListener('change', event => { if (event.target.name === 'profile_type' || event.target.name === 'professionalKind') renderType(); });
+  form.addEventListener('input', event => {
+    event.target.removeAttribute?.('aria-invalid');
+    layer.querySelector('[data-profile-error]').textContent = '';
+  });
   layer.querySelectorAll('[data-first-language]').forEach(button => button.addEventListener('click', () => {
     const language = button.dataset.firstLanguage;
     persistInitialLanguage(language);
@@ -221,6 +257,9 @@ export async function initializeProfileOnboarding(options = {}) {
   closeButton.addEventListener('click', close);
   form.addEventListener('submit', async event => {
     event.preventDefault();
+    form.querySelectorAll('[aria-invalid="true"]').forEach(control => control.removeAttribute('aria-invalid'));
+    const errorNode = layer.querySelector('[data-profile-error]');
+    errorNode.textContent = '';
     const type = form.profile_type.value;
     const raw = type === 'professional' ? {
       type, professionalKind: form.professionalKind.value, garageName: form.garageName.value, contactName: form.contactName.value, siret: form.siret.value,
@@ -236,7 +275,37 @@ export async function initializeProfileOnboarding(options = {}) {
       ? !profile.garageName || !profile.contactName || profile.siret.length !== 14 || !profile.email || !profile.phone || !profile.address
       : !profile.displayName || !profile.email || !profile.phone;
     if (missing) {
-      layer.querySelector('[data-profile-error]').textContent = translate('onboarding.required', 'Complétez tous les champs obligatoires avant de continuer.');
+      errorNode.textContent = translate('onboarding.required', 'Complétez tous les champs obligatoires avant de continuer.');
+      const invalidControl = form.querySelector(':invalid');
+      invalidControl?.setAttribute('aria-invalid', 'true');
+      invalidControl?.focus({ preventScroll: true });
+      invalidControl?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      return;
+    }
+    const contact = validateProfileContact(profile.email, profile.phone);
+    if (!contact.valid) {
+      const messages = {
+        swapped: ['onboarding.contactSwapped', 'Les champs Email et Téléphone semblent inversés. Saisissez l’adresse dans Email et le numéro dans Téléphone.'],
+        email: ['onboarding.invalidEmail', 'Saisissez une adresse e-mail valide, par exemple nom@exemple.com.'],
+        phone: ['onboarding.invalidPhone', 'Saisissez un numéro de téléphone valide comportant entre 7 et 15 chiffres.'],
+      };
+      const [key, fallback] = messages[contact.code];
+      errorNode.textContent = translate(key, fallback);
+      const targetName = type === 'professional'
+        ? (contact.field === 'email' ? 'professionalEmail' : 'professionalPhone')
+        : (contact.field === 'email' ? 'personalEmail' : 'personalPhone');
+      const target = form.elements.namedItem(targetName);
+      target?.setAttribute('aria-invalid', 'true');
+      target?.focus({ preventScroll: true });
+      target?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      return;
+    }
+    if (!form.checkValidity()) {
+      errorNode.textContent = translate('onboarding.invalid', 'Corrigez le champ signalé avant de continuer.');
+      const invalidControl = form.querySelector(':invalid');
+      invalidControl?.setAttribute('aria-invalid', 'true');
+      invalidControl?.focus({ preventScroll: true });
+      invalidControl?.scrollIntoView({ behavior: 'smooth', block: 'center' });
       return;
     }
     current = profile;

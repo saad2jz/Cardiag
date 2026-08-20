@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
-import { normalizeLocalProfile } from '../js/onboarding/profile-onboarding.js';
+import { normalizeLocalProfile, validateProfileContact } from '../js/onboarding/profile-onboarding.js';
 import { translateUiText } from '../js/i18n/i18n.js';
 
 test('professional profile is normalized as a mechanic workshop', () => {
@@ -39,4 +39,20 @@ test('interface dictionary translates vehicle workflow labels both ways', () => 
   assert.equal(translateUiText('Châssis requis', 'en'), 'Chassis required');
   assert.equal(translateUiText('Personnaliser CarDiag', 'en'), 'Customize CarDiag');
   assert.equal(translateUiText('Vehicle identification', 'fr'), 'Identification du véhicule');
+});
+
+test('profile contact validation detects reversed email and phone fields', () => {
+  assert.deepEqual(validateProfileContact('dgxhj', 'client@gmail.com'), {
+    valid: false, code: 'swapped', field: 'email',
+  });
+});
+
+test('profile contact validation accepts common French and international formats', () => {
+  assert.equal(validateProfileContact('client@example.com', '06 12 34 56 78').valid, true);
+  assert.equal(validateProfileContact('garage@example.fr', '+33 (0)1 44 55 66 77').valid, true);
+});
+
+test('profile contact validation rejects malformed contact details', () => {
+  assert.equal(validateProfileContact('client', '06 12 34 56 78').code, 'email');
+  assert.equal(validateProfileContact('client@example.com', 'telephone').code, 'phone');
 });

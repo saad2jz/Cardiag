@@ -7,6 +7,9 @@
 <meta name="description" content="Inspectez une voiture d'occasion point par point, documentez les défauts et générez un rapport PDF automobile complet avec CarDiag.">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <link rel="canonical" href="https://cardiag.online/">
+<link rel="alternate" hreflang="fr" href="https://cardiag.online/?lang=fr">
+<link rel="alternate" hreflang="en" href="https://cardiag.online/?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://cardiag.online/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="CarDiag">
@@ -28,22 +31,22 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="icon" href="icons/app-icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icons/app-icon-192.png">
-<meta name="chat-api" content="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=20260814-5">
+<link rel="stylesheet" href="css/styles.css?v=20260820-5">
 <link rel="stylesheet" href="css/wizard/premium.css?v=20260813-1">
 <link rel="stylesheet" href="css/theming/themes.css?v=20260813-1">
-<link rel="stylesheet" href="css/landing/landing.css?v=20260814-1">
+<link rel="stylesheet" href="css/landing/landing.css?v=20260820-2">
 <link rel="stylesheet" href="css/media/media.css?v=20260813-1">
-<link rel="stylesheet" href="css/auth/auth.css?v=20260813-1">
-<link rel="stylesheet" href="css/onboarding/profile-onboarding.css?v=20260814-3">
+<link rel="stylesheet" href="css/auth/auth.css?v=20260820-1">
+<link rel="stylesheet" href="css/onboarding/profile-onboarding.css?v=20260820-1">
+<link rel="stylesheet" href="css/ux/inspection-enhancements.css?v=20260820-2">
 <link rel="stylesheet" href="css/native/native.css?v=20260813-1">
 <link rel="stylesheet" href="css/settings/settings.css?v=20260814-2">
 <link rel="stylesheet" href="css/score/score.css?v=20260814-2">
 <link rel="stylesheet" href="css/reports/premium-report.css?v=20260814-2">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebApplication","name":"CarDiag","url":"https://cardiag.online/","applicationCategory":"AutomotiveApplication","operatingSystem":"Web, Android, iOS","inLanguage":["fr","en"],"description":"Application d'inspection automobile guidée avec rapport PDF détaillé.","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}
+{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cardiag.online/#organization","name":"CarDiag","url":"https://cardiag.online/","logo":"https://cardiag.online/icons/app-icon-512.png"},{"@type":"WebApplication","name":"CarDiag","url":"https://cardiag.online/","publisher":{"@id":"https://cardiag.online/#organization"},"applicationCategory":"AutomotiveApplication","operatingSystem":"Web, Android, iOS","inLanguage":["fr","en"],"description":"Application d'inspection automobile guidée avec rapport PDF détaillé.","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}]}
 </script>
 </head>
 <body class="landing-active">
@@ -100,9 +103,11 @@
     <div class="landing-path-grid">
       <button class="landing-path-card" type="button" data-landing-enter data-landing-role="buyer"><span class="landing-path-icon" aria-hidden="true">⌕</span><h3 data-landing-i18n="buyer">Acheteur</h3><p data-landing-i18n="buyerText">Identifier les risques majeurs, estimer les frais et préparer une négociation factuelle.</p><strong data-landing-i18n="openPath">Choisir ce parcours</strong></button>
       <button class="landing-path-card" type="button" data-landing-enter data-landing-role="mechanic"><span class="landing-path-icon" aria-hidden="true">⌁</span><h3 data-landing-i18n="mechanic">Garagiste</h3><p data-landing-i18n="mechanicText">Documenter la réception client, les mesures, les réparations et le contrôle final.</p><strong data-landing-i18n="openPath">Choisir ce parcours</strong></button>
+      <button class="landing-path-card" type="button" data-landing-enter data-landing-role="rental"><span class="landing-path-icon" aria-hidden="true">▣</span><h3 data-landing-i18n="rental">Agence de location</h3><p data-landing-i18n="rentalText">Suivre la flotte, le kilométrage et l’état avant et après chaque location.</p><strong data-landing-i18n="openPath">Choisir ce parcours</strong></button>
       <button class="landing-path-card" type="button" data-landing-enter data-landing-role="seller"><span class="landing-path-icon" aria-hidden="true">◇</span><h3 data-landing-i18n="seller">Vendeur</h3><p data-landing-i18n="sellerText">Constituer un dossier transparent à transmettre à un futur acheteur.</p><strong data-landing-i18n="openPath">Choisir ce parcours</strong></button>
       <button class="landing-path-card" type="button" data-landing-enter data-landing-role="owner"><span class="landing-path-icon" aria-hidden="true">◎</span><h3 data-landing-i18n="owner">Propriétaire</h3><p data-landing-i18n="ownerText">Garder un carnet de santé clair et comprendre les problèmes sans jargon.</p><strong data-landing-i18n="openPath">Choisir ce parcours</strong></button>
     </div>
+    <p class="landing-path-impact" data-landing-i18n="pathImpact">Ce choix adapte les champs affichés et la pondération du score. Vous pourrez le modifier sans perdre les informations communes.</p>
   </section>
 
   <section class="landing-process" id="howItWorks" aria-labelledby="processTitle">
@@ -155,17 +160,17 @@
       <span class="score-gauge" id="scoreGauge" tabindex="0">Score : —</span>
     </div>
     <div class="toolbar-row" id="toolbarActions">
-      <button class="icon-btn" id="newFicheBtn" type="button">➕ Nouvelle fiche</button>
-      <button class="icon-btn" id="dupFicheBtn" type="button">⧉ Dupliquer</button>
-      <button class="icon-btn" id="delFicheBtn" type="button">🗑 Supprimer</button>
-      <button class="icon-btn" id="compareBtn" type="button">⇄ Comparer</button>
-      <button class="icon-btn" id="exportBtn" type="button">⬇ Export JSON</button>
-      <button class="icon-btn" id="importBtn" type="button">⬆ Import JSON</button>
+      <button class="icon-btn" id="newFicheBtn" type="button" aria-label="Créer une nouvelle fiche" title="Créer une nouvelle fiche">➕ Nouvelle fiche</button>
+      <button class="icon-btn" id="dupFicheBtn" type="button" aria-label="Dupliquer la fiche actuelle" title="Dupliquer la fiche actuelle">⧉ Dupliquer</button>
+      <button class="icon-btn" id="delFicheBtn" type="button" aria-label="Supprimer la fiche actuelle" title="Supprimer la fiche actuelle">🗑 Supprimer</button>
+      <button class="icon-btn" id="compareBtn" type="button" aria-label="Comparer des fiches" title="Comparer des fiches">⇄ Comparer</button>
+      <button class="icon-btn" id="exportBtn" type="button" aria-label="Exporter la fiche au format JSON" title="Exporter la fiche au format JSON">⬇ Export JSON</button>
+      <button class="icon-btn" id="importBtn" type="button" aria-label="Importer une fiche JSON" title="Importer une fiche JSON">⬆ Import JSON</button>
       <input type="file" id="importFile" accept="application/json" style="display:none">
-      <button class="icon-btn" id="weightSettingsBtn" type="button">⚖ Pondération</button>
-      <button class="icon-btn" id="quickModeToggle" type="button">⚡ Inspection rapide</button>
-      <button class="icon-btn" id="darkToggle" type="button">🌙 Mode sombre</button>
-      <button class="icon-btn" id="installAppBtn" type="button">⬇ Installer l’application</button>
+      <button class="icon-btn" id="weightSettingsBtn" type="button" aria-label="Régler la pondération du score" title="Régler la pondération du score">⚖ Pondération</button>
+      <button class="icon-btn" id="quickModeToggle" type="button" aria-label="Activer l’inspection rapide" title="Activer l’inspection rapide">⚡ Inspection rapide</button>
+      <button class="icon-btn" id="darkToggle" type="button" aria-label="Changer le thème clair ou sombre" title="Changer le thème clair ou sombre">🌙 Mode sombre</button>
+      <button class="icon-btn" id="installAppBtn" type="button" aria-label="Installer l’application CarDiag" title="Installer l’application CarDiag" hidden>⬇ Installer l’application</button>
     </div>
     <p class="install-app-status" id="installAppStatus" role="status"></p>
   </div>
@@ -305,6 +310,7 @@
     <div class="section-body">
       <div class="subhead">Identité du véhicule</div>
       <p class="hint" style="margin:0 0 10px;">Sélectionnez votre véhicule étape par étape (base de <span id="vehicleBrandCount">nombreuses</span> marques et <span id="vehicleModelCount">nombreux</span> modèles, chargée à la demande depuis <code>data/</code>). Les générations et motorisations documentées sont proposées quand elles sont disponibles ; vérifiez toujours le code exact sur la carte grise (champ P3) ou sur le moteur lui-même avant de commander une pièce. Si une marque ou un modèle n'apparaît pas (ou hors-ligne sans cache), complétez le VIN et les champs libres ci-dessous. <span style="color:var(--rouge); font-weight:600;">Les champs marqués d'un * sont obligatoires.</span></p>
+      <p class="vehicle-db-status is-loading" id="vehicleDatabaseStatus" role="status"><span aria-hidden="true"></span>Chargement de la base véhicule…</p>
 
       <div class="vsearch-panel">
         <div class="vsearch-title">🔍 Recherche rapide (facultatif)</div>
@@ -548,6 +554,7 @@
         <input type="radio" name="verdict" id="v_neg" value="negociation"><label for="v_neg" class="verdict-card"><span class="dot"></span><span class="title">NÉGOCIATION</span><span class="sub">Défauts à chiffrer avant achat</span></label>
         <input type="radio" name="verdict" id="v_fuir" value="fuir"><label for="v_fuir" class="verdict-card"><span class="dot"></span><span class="title">À FUIR</span><span class="sub">Risques majeurs identifiés</span></label>
       </div>
+      <p class="decision-disclaimer">Cette aide à la décision ne remplace ni un contrôle technique officiel ni l’avis d’un professionnel qualifié.</p>
 
       <div class="subhead">Budget</div>
       <div class="grid cols-3">
@@ -565,7 +572,7 @@
         <div class="signature-block">
           <span class="lbl">Signature acheteur</span>
           <div class="signature-pad-wrap" id="sigWrapAcheteur">
-            <canvas id="sigCanvasAcheteur"></canvas>
+            <canvas id="sigCanvasAcheteur" role="application" tabindex="0" aria-label="Zone facultative de signature de l’acheteur. Utilisez le toucher ou la souris pour signer."></canvas>
             <span class="sig-placeholder" id="sigPlaceholderAcheteur">Signez ici</span>
           </div>
           <button class="btn-mini signature-clear-btn" type="button" data-sig-clear="acheteur">Effacer</button>
@@ -573,7 +580,7 @@
         <div class="signature-block">
           <span class="lbl">Signature vendeur</span>
           <div class="signature-pad-wrap" id="sigWrapVendeur">
-            <canvas id="sigCanvasVendeur"></canvas>
+            <canvas id="sigCanvasVendeur" role="application" tabindex="0" aria-label="Zone facultative de signature du vendeur. Utilisez le toucher ou la souris pour signer."></canvas>
             <span class="sig-placeholder" id="sigPlaceholderVendeur">Signez ici</span>
           </div>
           <button class="btn-mini signature-clear-btn" type="button" data-sig-clear="vendeur">Effacer</button>
@@ -633,7 +640,11 @@
 
 </div>
 
-<button type="button" class="chat-fab" data-chat-toggle><span class="chat-fab-icon" aria-hidden="true">💬</span>Assistant atelier</button>
+<button type="button" class="chat-fab" data-chat-toggle aria-label="Ouvrir l'assistant expert" title="Assistant expert">
+  <span class="chat-fab-status" aria-hidden="true"></span>
+  <span class="chat-fab-icon" aria-hidden="true">💬</span>
+  <span class="chat-fab-label">Assistant expert</span>
+</button>
 
 <div class="modal-overlay" id="compareModal">
   <div class="modal">
@@ -689,6 +700,6 @@
 <script src="vendor/qrcode.js"></script>
 <script src="build-data.js?v=20260810-3"></script>
 <script src="js/db-loader.js?v=20260811-1"></script>
-<script type="module" src="js/app.js?v=20260814-19"></script>
+<script type="module" src="js/app.js?v=20260820-4"></script>
 </body>
 </html>

@@ -1,14 +1,14 @@
-import { initializeLegacyFeatures } from './legacy-features.js?v=20260814-13';
-import { initializeChatExperience } from './chat-experience.js?v=20260814-6';
-import { initializePwa } from './pwa.js?v=20260810-3';
+import { initializeLegacyFeatures } from './legacy-features.js?v=20260820-4';
+import { initializeChatExperience } from './chat-experience.js?v=20260820-1';
+import { initializePwa } from './pwa.js?v=20260820-2';
 import { initializeWizard } from './wizard.js?v=20260814-5';
-import { initializeI18n } from './i18n/i18n.js?v=20260814-8';
+import { initializeI18n } from './i18n/i18n.js?v=20260820-1';
 import { initializeWizardInteractions } from './wizard/interactions.js?v=20260813-1';
 import { initializeVehiclePicker } from './wizard/vehicle-picker.js?v=20260814-2';
 import { initializeThemeManager } from './theming/theme-manager.js?v=20260814-1';
-import { initializeProfileOnboarding } from './onboarding/profile-onboarding.js?v=20260814-3';
+import { initializeProfileOnboarding } from './onboarding/profile-onboarding.js?v=20260820-1';
 import { initializeMediaManager } from './media/media-manager.js?v=20260813-2';
-import { initializeAuthUi } from './auth/auth-ui.js?v=20260814-2';
+import { initializeAuthUi } from './auth/auth-ui.js?v=20260820-1';
 import { initializePermissions } from './native/permissions.js?v=20260813-1';
 import { initializeConnectivity } from './native/connectivity.js?v=20260813-1';
 import { initializeSyncQueue } from './native/sync-queue.js?v=20260814-1';
@@ -20,7 +20,8 @@ import { initializeScoreVisuals } from './score/score-visuals.js?v=20260813-1';
 import { initializeRecordsGallery } from './records/records-gallery.js?v=20260814-4';
 import { initializePremiumReport } from './reports/premium-report.js?v=20260814-7';
 import { initializeReportSharing } from './reports/report-sharing.js?v=20260814-2';
-import { initializeLanding } from './landing/landing.js?v=20260814-3';
+import { initializeLanding } from './landing/landing.js?v=20260820-2';
+import { initializeInspectionEnhancements } from './ux/inspection-enhancements.js?v=20260820-3';
 
 /**
  * Application entry point. Data loading stays separate from the UI controller
@@ -34,7 +35,25 @@ async function initializeApp() {
     if (!window.dbLoader?.loadAppData || !window.buildData) {
       throw new Error('Le chargeur de donnees n’est pas disponible.');
     }
-    const payload = await window.dbLoader.loadAppData();
+    const vehicleDatabaseStatus = document.getElementById('vehicleDatabaseStatus');
+    let payload;
+    try {
+      payload = await window.dbLoader.loadAppData();
+      if (vehicleDatabaseStatus) {
+        vehicleDatabaseStatus.hidden = true;
+        vehicleDatabaseStatus.classList.remove('is-loading');
+      }
+    } catch (databaseError) {
+      console.warn('Base véhicule indisponible, saisie manuelle activée :', databaseError);
+      payload = { marques: [], modelesByMarque: {} };
+      if (vehicleDatabaseStatus) {
+        vehicleDatabaseStatus.hidden = false;
+        vehicleDatabaseStatus.className = 'vehicle-db-status is-error';
+        vehicleDatabaseStatus.textContent = navigator.onLine
+          ? 'Base véhicule temporairement indisponible. Complétez les champs libres ci-dessous ou réessayez plus tard.'
+          : 'Base véhicule indisponible hors-ligne. Connectez-vous une fois pour la mettre en cache, ou complétez les champs libres ci-dessous.';
+      }
+    }
     const vehicles = window.buildData(payload);
     const modelCount = vehicles.reduce((count, brand) => count + brand.modeles.length, 0);
     const brandCount = document.getElementById('vehicleBrandCount');
@@ -46,6 +65,7 @@ async function initializeApp() {
     initializeWizard();
     initializeVehiclePicker();
     initializeWizardInteractions();
+    initializeInspectionEnhancements();
     await initializeThemeManager();
     await initializeProfileOnboarding({ deferProfile: landing.active });
     initializeMediaManager();

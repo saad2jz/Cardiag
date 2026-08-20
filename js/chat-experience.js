@@ -456,6 +456,12 @@ export function initializeChatExperience() {
   function applyUsageScenario() {
     const scenario = usageScenarioConfig();
     document.body.dataset.usageScenario = selectedUsageScenario();
+    document.querySelectorAll('.chat-fab-label').forEach(node => { node.textContent = isEnglish() ? 'Expert assistant' : 'Assistant expert'; });
+    document.querySelectorAll('.chat-fab').forEach(node => {
+      const label = isEnglish() ? 'Open the expert assistant' : "Ouvrir l'assistant expert";
+      node.setAttribute('aria-label', label);
+      node.title = isEnglish() ? 'Expert assistant' : 'Assistant expert';
+    });
     if (scenarioContext) scenarioContext.textContent = scenario.context;
     if (reportKicker) reportKicker.textContent = scenario.label.toUpperCase();
     if (reportTitle) reportTitle.textContent = scenario.reportTitle;

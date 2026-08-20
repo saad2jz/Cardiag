@@ -18,12 +18,20 @@ function createAuthSurface() {
 function avatarData(file){return new Promise((resolve,reject)=>{const reader=new FileReader();reader.onerror=reject;reader.onload=()=>resolve(reader.result);reader.readAsDataURL(file);});}
 export async function initializeAuthUi(){
   const panel=createAuthSurface();
-  const trigger=document.createElement('button'); trigger.className='account-trigger'; trigger.type='button'; trigger.textContent='Compte';
-  document.getElementById('wizardHeader')?.append(trigger);
+  const actions=document.createElement('div'); actions.className='auth-quick-actions';
+  const trigger=document.createElement('button'); trigger.className='account-trigger'; trigger.type='button'; trigger.textContent='Déjà inscrit';
+  const signupTrigger=document.createElement('button'); signupTrigger.className='account-signup-trigger'; signupTrigger.type='button'; signupTrigger.textContent='Créer un compte';
+  actions.append(trigger,signupTrigger);
+  document.getElementById('wizardHeader')?.append(actions);
   let signupRole='buyer'; let profile=null;
   const show=(name)=>{panel.querySelectorAll('[data-auth-view]').forEach(v=>v.hidden=v.dataset.authView!==name);panel.querySelector('[data-account-title]').textContent=name==='profile'?'Mon profil':name==='signup'?'Créer un compte':name==='reset'?'Mot de passe oublié':name==='verify'?'Vérification email':'Connexion';};
-  const open=()=>{panel.hidden=false;requestAnimationFrame(()=>panel.classList.add('is-open'));show(authClient.user?'profile':'login');};
-  trigger.addEventListener('click',open); panel.querySelector('[data-account-close]').onclick=()=>{panel.classList.remove('is-open');setTimeout(()=>panel.hidden=true,220)};
+  const updateQuickLabels=()=>{const english=window.cardiagI18n?.language==='en';trigger.textContent=authClient.user?(english?'My account':'Mon compte'):(english?'Already registered':'Déjà inscrit');signupTrigger.textContent=english?'Create account':'Créer un compte';};
+  const open=(requestedView='')=>{panel.hidden=false;requestAnimationFrame(()=>panel.classList.add('is-open'));show(authClient.user?'profile':(requestedView==='signup'?'signup':'login'));};
+  trigger.addEventListener('click',()=>open('login'));
+  signupTrigger.addEventListener('click',()=>open('signup'));
+  window.addEventListener('cardiag:open-auth',event=>open(event.detail?.view));
+  window.addEventListener('cardiag:language-change',updateQuickLabels);
+  panel.querySelector('[data-account-close]').onclick=()=>{panel.classList.remove('is-open');setTimeout(()=>panel.hidden=true,220)};
   panel.querySelectorAll('[data-auth-show]').forEach(b=>b.onclick=()=>show(b.dataset.authShow));
   panel.querySelector('[data-auth-form="login"]').onsubmit=async e=>{e.preventDefault();message(panel,'Connexion…');try{await authClient.signIn(e.target.email.value,e.target.password.value);show('profile')}catch(err){message(panel,err.message,'error')}};
   panel.querySelector('[data-auth-form="signup"]').onsubmit=async e=>{e.preventDefault();signupRole=e.target.role.value;message(panel,'Création du compte…');try{await authClient.signUp(e.target.email.value,e.target.password.value);await authClient.api('/api/account/profile',{method:'PUT',body:JSON.stringify({role:signupRole,consent:true})});show('verify')}catch(err){message(panel,err.message,'error')}};
@@ -34,7 +42,8 @@ export async function initializeAuthUi(){
   panel.querySelector('[data-sign-out]').onclick=async()=>{await authClient.signOut();show('login')};
   panel.querySelector('[data-export-account]').onclick=async()=>{try{const data=await authClient.api('/api/account/export');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'}));a.download='cardiag-export-rgpd.json';a.click();URL.revokeObjectURL(a.href)}catch(err){message(panel,err.message,'error')}};
   panel.querySelector('[data-delete-account]').onclick=async()=>{if(!confirm('Supprimer définitivement le compte et toutes ses données ?'))return;try{await authClient.api('/api/account',{method:'DELETE',body:JSON.stringify({confirmation:'SUPPRIMER'})});await authClient.signOut();show('login');message(panel,'Compte supprimé.','success')}catch(err){message(panel,err.message,'error')}};
-  authClient.onChange(async user=>{trigger.textContent=user?'Mon compte':'Compte';if(!user)return;try{profile=(await authClient.api('/api/account/profile')).profile||{};const form=panel.querySelector('[data-profile-form]');form.displayName.value=profile.displayName||user.displayName||'';form.role.value=profile.role||signupRole||'buyer'}catch(err){message(panel,err.message,'error')}});
+  authClient.onChange(async user=>{signupTrigger.hidden=Boolean(user);updateQuickLabels();if(!user)return;try{profile=(await authClient.api('/api/account/profile')).profile||{};const form=panel.querySelector('[data-profile-form]');form.displayName.value=profile.displayName||user.displayName||'';form.role.value=profile.role||signupRole||'buyer'}catch(err){message(panel,err.message,'error')}});
   await authClient.initialize();
+  updateQuickLabels();
   window.cardiagAuth=authClient;
 }

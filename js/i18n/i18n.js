@@ -98,6 +98,10 @@ const EN = {
   'onboarding.displayName': 'Full name *',
   'onboarding.goal': 'Main goal *',
   'onboarding.required': 'Complete every required field before continuing.',
+  'onboarding.invalid': 'Correct the highlighted field before continuing.',
+  'onboarding.invalidEmail': 'Enter a valid email address, for example name@example.com.',
+  'onboarding.invalidPhone': 'Enter a valid phone number containing between 7 and 15 digits.',
+  'onboarding.contactSwapped': 'The Email and Phone fields appear to be reversed. Enter the address in Email and the number in Phone.',
 };
 
 const EN_TEXT = {

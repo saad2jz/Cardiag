@@ -1670,10 +1670,43 @@ export function initializeLegacyFeatures(vehicleData) {
     return pairs;
   }
 
+  function normalizeVehicleSearch(value){
+    return String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('fr-FR').replace(/[^a-z0-9]+/g, ' ').trim();
+  }
+
+  function vehicleEditDistance(a, b){
+    if(a === b) return 0;
+    if(!a.length) return b.length;
+    if(!b.length) return a.length;
+    const row = Array.from({length:b.length+1}, (_, index)=>index);
+    for(let i=1;i<=a.length;i++){
+      let previous = row[0]; row[0] = i;
+      for(let j=1;j<=b.length;j++){
+        const saved = row[j];
+        row[j] = Math.min(row[j]+1, row[j-1]+1, previous+(a[i-1] === b[j-1] ? 0 : 1));
+        previous = saved;
+      }
+    }
+    return row[b.length];
+  }
+
+  function fuzzyVehicleMatch(pair, query){
+    const normalizedQuery = normalizeVehicleSearch(query);
+    const haystack = normalizeVehicleSearch(pair.marque+' '+pair.modele);
+    if(!normalizedQuery) return true;
+    if(haystack.includes(normalizedQuery)) return true;
+    const targetTokens = haystack.split(' ');
+    return normalizedQuery.split(' ').every(token=> targetTokens.some(target=>{
+      if(target.includes(token) || token.includes(target)) return true;
+      const tolerance = token.length >= 7 ? 2 : token.length >= 4 ? 1 : 0;
+      return tolerance > 0 && vehicleEditDistance(token, target) <= tolerance;
+    }));
+  }
+
   function renderModeleSearchResults(query){
     const box = document.getElementById('modeleSearchResults');
     if(!box) return;
-    const q = query.trim().toLocaleLowerCase('fr-FR');
+    const q = normalizeVehicleSearch(query);
     modeleSearchActiveIndex = -1;
     if(!q){
       box.classList.remove('show');
@@ -1681,18 +1714,21 @@ export function initializeLegacyFeatures(vehicleData) {
       modeleSearchResults = [];
       return;
     }
-    const matches = ALL_MODEL_PAIRS.filter(p=>
-      p.modele.toLocaleLowerCase('fr-FR').includes(q) || p.marque.toLocaleLowerCase('fr-FR').includes(q)
-    ).slice(0, 25);
+    const allMatches = ALL_MODEL_PAIRS.filter(p=>fuzzyVehicleMatch(p, q));
+    const matches = allMatches.slice(0, 25);
     modeleSearchResults = matches;
     if(!matches.length){
-      box.innerHTML = '<div class="vsearch-no-results">Aucun modèle trouvé pour « '+query+' »</div>';
+      const noResultLabel = window.cardiagI18n?.language === 'en' ? '0 results' : '0 résultat';
+      box.innerHTML = '<div class="vsearch-result-count">'+noResultLabel+'</div><div class="vsearch-no-results">Aucun modèle trouvé pour « '+reportEscape(query)+' ». Essayez le nom sans finition, ou utilisez la saisie libre.</div>';
       box.classList.add('show');
       return;
     }
-    box.innerHTML = matches.map((p,i)=>
+    const countLabel = window.cardiagI18n?.language === 'en'
+      ? allMatches.length+' result'+(allMatches.length === 1 ? '' : 's')+(allMatches.length > 25 ? ' · first 25 shown' : '')
+      : allMatches.length+' résultat'+(allMatches.length > 1 ? 's' : '')+(allMatches.length > 25 ? ' · 25 premiers affichés' : '');
+    box.innerHTML = '<div class="vsearch-result-count">'+countLabel+'</div>'+matches.map((p,i)=>
       '<div class="vsearch-result-item" data-idx="'+i+'" role="option">'+
-        '<span class="vr-modele">'+p.modele+'</span><span class="vr-marque">'+p.marque+'</span>'+
+        '<span class="vr-modele">'+reportEscape(p.modele)+'</span><span class="vr-marque">'+reportEscape(p.marque)+'</span>'+
       '</div>'
     ).join('');
     box.classList.add('show');

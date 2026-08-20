@@ -8,6 +8,12 @@ export function initializePwa() {
   };
 
   const isStandalone = () => window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+  const isAppleDevice = /iPad|iPhone|iPod/.test(navigator.userAgent);
+
+  installButton?.setAttribute('hidden', '');
+  if (!isStandalone() && isAppleDevice) {
+    setStatus('Sur iPhone/iPad : dans Safari, touchez Partager puis « Sur l’écran d’accueil ».');
+  }
 
   if (isStandalone()) {
     installButton?.setAttribute('hidden', '');
@@ -35,7 +41,6 @@ export function initializePwa() {
 
   installButton?.addEventListener('click', async () => {
     if (!installPrompt) {
-      const isAppleDevice = /iPad|iPhone|iPod/.test(navigator.userAgent);
       setStatus(isAppleDevice
         ? 'Dans Safari : Partager > Sur l’écran d’accueil.'
         : 'Dans le navigateur : ouvrez le menu puis choisissez Installer l’application.');
