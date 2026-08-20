@@ -1,3 +1,5 @@
+import { personaRequiresVin } from './personas.js?v=20260814-1';
+
 const PROFILE_STORAGE_KEY = 'cardiag_active_profile';
 const STEP_STORAGE_KEY = 'cardiag_wizard_step';
 const VALID_PROFILES = new Set(['buyer', 'mechanic', 'rental', 'seller', 'owner']);
@@ -120,8 +122,22 @@ export function initializeWizard() {
     document.body.dataset.usageScenario = profile;
     if (contextIntro) contextIntro.textContent = PROFILE_CONTEXT[profile];
     document.querySelectorAll('[data-context-profile]').forEach((panel) => {
-      panel.hidden = panel.dataset.contextProfile !== profile;
+      const active = panel.dataset.contextProfile === profile;
+      panel.hidden = !active;
+      panel.setAttribute('aria-hidden', String(!active));
+      panel.querySelectorAll('input, textarea, select, button').forEach((control) => {
+        control.disabled = !active;
+      });
     });
+    const vin = document.querySelector('[name="vin"]');
+    const vinRequired = personaRequiresVin(profile);
+    if (vin) {
+      vin.required = vinRequired;
+      vin.setAttribute('aria-required', String(vinRequired));
+      const label = vin.closest('.field')?.querySelector('label');
+      label?.querySelector('[data-persona-required]')?.remove();
+      if (vinRequired && label) label.insertAdjacentHTML('beforeend', ' <span class="req-star" data-persona-required>*</span>');
+    }
     renderExpertiseLayout();
   }
 
@@ -164,6 +180,17 @@ export function initializeWizard() {
     ];
     const missing = required.filter(([value]) => !value).map(([, label]) => label);
     const status = document.getElementById('result');
+    const vin = document.querySelector('[name="vin"]');
+    if (personaRequiresVin(activeProfile()) && !vin?.value.trim()) {
+      const vinMessage = activeProfile() === 'rental'
+        ? translate('validation.vin.rental', 'Le VIN est requis pour assurer la traçabilité du véhicule de flotte.')
+        : translate('validation.vin.mechanic', 'Le VIN est requis pour documenter la prise en charge atelier.');
+      if (status) status.textContent = vinMessage;
+      window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback', { detail: { type: 'error', message: vinMessage } }));
+      vin?.focus();
+      vin?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      return false;
+    }
     if (missing.length) {
       if (status) status.textContent = `Complétez ${missing.join(', ')} avant de continuer.`;
       window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback', { detail: { type: 'error', message: `Champs requis : ${missing.join(', ')}` } }));
@@ -284,6 +311,7 @@ export function initializeWizard() {
     renderExpertiseLayout();
     if (activeProfile() !== 'owner') assistantGate.scrollIntoView({ behavior: 'smooth', block: 'center' });
   });
+  window.addEventListener('cardiag:scenario-change', updateProfileContext);
   window.addEventListener('cardiag:record-open', () => {
     assistantOpened = false;
     safeStorageSet(PROFILE_STORAGE_KEY, activeProfile());

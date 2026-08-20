@@ -1,4 +1,5 @@
 import { calculateNegotiation } from './reports/negotiation.js?v=20260814-1';
+import { normalizePersona, personaQuickChecks, personaWeights, sanitizePersonaData } from './personas.js?v=20260814-1';
 
 // Restored feature controller. It is initialized once by js/app.js after dbLoader loads data/vehicles.json.
 
@@ -45,28 +46,36 @@ export function initializeLegacyFeatures(vehicleData) {
     panneaux:'esthetique', mastic:'esthetique', peinture:'esthetique', feux_av:'esthetique', feux_ar:'esthetique', feux_recul:'esthetique',
     sieges:'esthetique', ciel:'esthetique', clim:'esthetique', vitres:'esthetique', humidite:'esthetique'
   };
-  const DEFAULT_CATEGORY_WEIGHTS = { vital:5, chassis:3, esthetique:1 };
-  const WEIGHTS_KEY = 'fev_category_weights_v1';
-  let categoryWeights = Object.assign({}, DEFAULT_CATEGORY_WEIGHTS);
-  function loadCategoryWeights(){
+  const WEIGHTS_KEY = 'fev_category_weights_by_persona_v2';
+  const activePersona = ()=>normalizePersona(document.querySelector('[name="usage_scenario"]:checked')?.value);
+  let categoryWeights = personaWeights('buyer');
+  function storedWeights(){
     try{
       const raw = safeStorage.getItem(WEIGHTS_KEY);
-      if(raw){
-        const parsed = JSON.parse(raw);
-        categoryWeights = {
-          vital: Number.isFinite(parsed.vital) ? parsed.vital : DEFAULT_CATEGORY_WEIGHTS.vital,
-          chassis: Number.isFinite(parsed.chassis) ? parsed.chassis : DEFAULT_CATEGORY_WEIGHTS.chassis,
-          esthetique: Number.isFinite(parsed.esthetique) ? parsed.esthetique : DEFAULT_CATEGORY_WEIGHTS.esthetique
-        };
-      }
-    }catch(e){ categoryWeights = Object.assign({}, DEFAULT_CATEGORY_WEIGHTS); }
+      return raw ? JSON.parse(raw) : {};
+    }catch(e){ return {}; }
+  }
+  function weightsForPersona(persona){
+    const key = normalizePersona(persona);
+    const defaults = personaWeights(key);
+    const saved = storedWeights()[key];
+    return {
+      vital: Number.isFinite(saved?.vital) ? saved.vital : defaults.vital,
+      chassis: Number.isFinite(saved?.chassis) ? saved.chassis : defaults.chassis,
+      esthetique: Number.isFinite(saved?.esthetique) ? saved.esthetique : defaults.esthetique,
+    };
+  }
+  function loadCategoryWeights(persona=activePersona()){
+    categoryWeights = weightsForPersona(persona);
   }
   function saveCategoryWeights(){
-    safeStorage.setItem(WEIGHTS_KEY, JSON.stringify(categoryWeights));
+    const saved = storedWeights();
+    saved[activePersona()] = { ...categoryWeights };
+    safeStorage.setItem(WEIGHTS_KEY, JSON.stringify(saved));
   }
-  function getWeight(name){
+  function getWeight(name, weights=categoryWeights){
     const cat = CATEGORY_OF[name];
-    return (cat && Number.isFinite(categoryWeights[cat])) ? categoryWeights[cat] : 1;
+    return (cat && Number.isFinite(weights[cat])) ? weights[cat] : 1;
   }
   const WEIGHT_CATEGORY_LABELS = { vital:'Organes vitaux (moteur / électronique)', chassis:'Châssis / trains roulants / dynamique', esthetique:'Esthétique / confort' };
   const CHECK_LABELS = {
@@ -197,11 +206,12 @@ export function initializeLegacyFeatures(vehicleData) {
   function collectCurrent(){
     const data = {};
     fieldEls().forEach(el=>{
+      if(el.disabled) return;
       if(el.type === 'radio'){ if(el.checked) data[el.name] = el.value; }
       else if(el.type === 'checkbox'){ data[el.name] = el.checked; }
       else { data[el.name] = el.value; }
     });
-    return data;
+    return sanitizePersonaData(data);
   }
 
   function applyToForm(data){
@@ -225,7 +235,7 @@ export function initializeLegacyFeatures(vehicleData) {
   }
 
   function saveCurrent(){
-    db[currentId].data = collectCurrent();
+    db[currentId].data = sanitizePersonaData(collectCurrent());
     db[currentId].titre = ficheLabel(db[currentId]);
     persist();
     refreshSelector();
@@ -642,7 +652,15 @@ export function initializeLegacyFeatures(vehicleData) {
   function initQuickMode(){
     const btn = document.getElementById('quickModeToggle');
     if(!btn) return;
+    const refreshPersonaChecks = ()=>{
+      const selected = new Set(personaQuickChecks(activePersona()));
+      document.querySelectorAll('.check-item').forEach(item=>{
+        const name = item.querySelector('input[name]')?.name;
+        item.classList.toggle('persona-quick', selected.has(name));
+      });
+    };
     const apply = (on)=>{
+      refreshPersonaChecks();
       document.body.classList.toggle('quick-mode', on);
       btn.textContent = on ? '📋 Inspection complète' : '⚡ Inspection rapide';
       btn.setAttribute('aria-pressed', on ? 'true' : 'false');
@@ -653,6 +671,7 @@ export function initializeLegacyFeatures(vehicleData) {
       apply(nowOn);
       safeStorage.setItem(QUICK_MODE_KEY, nowOn ? '1' : '0');
     });
+    window.addEventListener('cardiag:scenario-change', refreshPersonaChecks);
   }
 
   function initDarkMode(){
@@ -742,6 +761,10 @@ export function initializeLegacyFeatures(vehicleData) {
       reader.onload = ()=>{
         try{
           const imported = JSON.parse(reader.result);
+          const english = window.cardiagI18n?.language === 'en';
+          if(!confirm(english
+            ? 'Import this JSON file as a new report? No existing report will be overwritten.'
+            : 'Importer ce fichier JSON comme une nouvelle fiche ? Aucune fiche existante ne sera écrasée.')) return;
           const id = createFiche({data: imported.data || {}, photos: imported.photos || {}, signatures: imported.signatures || {}});
           db[id].titre = (imported.titre || 'Fiche importée');
           persist();
@@ -792,11 +815,20 @@ export function initializeLegacyFeatures(vehicleData) {
     const inputVital = document.getElementById('weightVital');
     const inputChassis = document.getElementById('weightChassis');
     const inputEsthetique = document.getElementById('weightEsthetique');
+    const resetButton = document.getElementById('resetWeightsBtn');
 
     const syncInputs = ()=>{
       inputVital.value = categoryWeights.vital;
       inputChassis.value = categoryWeights.chassis;
       inputEsthetique.value = categoryWeights.esthetique;
+      const defaults = personaWeights(activePersona());
+      const english = window.cardiagI18n?.language === 'en';
+      modal.querySelector('.sub').textContent = english
+        ? `Weights are tailored to the active workflow. Default: ${defaults.vital} / ${defaults.chassis} / ${defaults.esthetique}.`
+        : `Pondération adaptée au parcours actif. Valeurs par défaut : ${defaults.vital} / ${defaults.chassis} / ${defaults.esthetique}.`;
+      resetButton.textContent = english
+        ? `↺ Reset (${defaults.vital} / ${defaults.chassis} / ${defaults.esthetique})`
+        : `↺ Réinitialiser (${defaults.vital} / ${defaults.chassis} / ${defaults.esthetique})`;
     };
 
     btnOpen.addEventListener('click', ()=>{
@@ -809,7 +841,7 @@ export function initializeLegacyFeatures(vehicleData) {
 
     const applyChange = (key, el)=>{
       const val = parseFloat(el.value);
-      categoryWeights[key] = Number.isFinite(val) && val >= 0 ? val : DEFAULT_CATEGORY_WEIGHTS[key];
+      categoryWeights[key] = Number.isFinite(val) && val >= 0 ? val : personaWeights(activePersona())[key];
       saveCategoryWeights();
       updateProgress();
       checkCriticalRisk();
@@ -818,21 +850,27 @@ export function initializeLegacyFeatures(vehicleData) {
     inputChassis.addEventListener('change', ()=> applyChange('chassis', inputChassis));
     inputEsthetique.addEventListener('change', ()=> applyChange('esthetique', inputEsthetique));
 
-    document.getElementById('resetWeightsBtn').addEventListener('click', ()=>{
-      categoryWeights = Object.assign({}, DEFAULT_CATEGORY_WEIGHTS);
+    resetButton.addEventListener('click', ()=>{
+      categoryWeights = personaWeights(activePersona());
       saveCategoryWeights();
       syncInputs();
       updateProgress();
       checkCriticalRisk();
     });
+    window.addEventListener('cardiag:scenario-change', ()=>{
+      loadCategoryWeights();
+      syncInputs();
+      updateProgress();
+    });
   }
 
   function scoreFor(f){
+    const recordWeights = weightsForPersona(f?.data?.usage_scenario);
     let weightSum = 0, weightedScore = 0;
     CHECK_NAMES.forEach(name=>{
       const v = f.data[name];
       if(v){
-        const w = getWeight(name);
+        const w = getWeight(name, recordWeights);
         const val = v === 'ok' ? 1 : (v === 'moyen' ? 0.55 : 0);
         weightSum += w; weightedScore += w*val;
       }
@@ -918,9 +956,10 @@ export function initializeLegacyFeatures(vehicleData) {
   function categoryScoresFor(fiche){
     const buckets = { vital:{sum:0,w:0,done:0,total:0}, chassis:{sum:0,w:0,done:0,total:0}, esthetique:{sum:0,w:0,done:0,total:0} };
     const data = fiche?.data || {};
+    const recordWeights = weightsForPersona(data.usage_scenario);
     CHECK_NAMES.forEach(name=>{
       const cat = CATEGORY_OF[name] || 'esthetique';
-      const weight = getWeight(name);
+      const weight = getWeight(name, recordWeights);
       const value = data[name];
       buckets[cat].total++;
       if(value){
@@ -932,7 +971,7 @@ export function initializeLegacyFeatures(vehicleData) {
     return ['vital','chassis','esthetique'].map(category=>({
       category,
       label: WEIGHT_CATEGORY_LABELS[category],
-      weight: categoryWeights[category],
+      weight: recordWeights[category],
       score: buckets[category].w ? Math.round((buckets[category].sum / buckets[category].w) * 100) : null,
       done: buckets[category].done,
       total: buckets[category].total,
@@ -941,18 +980,19 @@ export function initializeLegacyFeatures(vehicleData) {
 
   function reportModelFor(fiche){
     if(!fiche) return null;
-    const data = fiche.data || {};
+    const data = sanitizePersonaData(fiche.data || {});
+    const recordWeights = weightsForPersona(data.usage_scenario);
     const photos = fiche.photos || {};
     const points = CHECK_NAMES.map(name=>{
       const input = document.querySelector('input[name="'+cssEscape(name)+'"]');
       const section = input?.closest('details.section')?.dataset.section || 'info';
       return {
         name,
-        label: CHECK_LABELS[name] || name,
+        label: input?.closest('.check-item')?.querySelector('.label-block .t')?.textContent?.trim() || CHECK_LABELS[name] || name,
         section,
         sectionLabel: SECTION_TITLES[section] || section,
         category: CATEGORY_OF[name] || 'esthetique',
-        weight: getWeight(name),
+        weight: getWeight(name, recordWeights),
         status: data[name] || '',
         note: data[name+'_note'] || data['notes_'+section] || (section === 'diagnostic' ? data.notes_diagnostic : ''),
         photos: JSON.parse(JSON.stringify(photos['point:'+name] || [])),
@@ -2241,6 +2281,7 @@ export function initializeLegacyFeatures(vehicleData) {
     openRecord: async (id)=>{
       if(!db[id]) return false;
       saveCurrent(); currentId=id; safeStorage.setItem(CUR_KEY,currentId); refreshSelector(); applyToForm(db[currentId].data); await restoreVehicleSelects(db[currentId].data); renderAllPhotoGrids(); updateAll();
+      window.dispatchEvent(new CustomEvent('cardiag:scenario-change'));
       window.dispatchEvent(new CustomEvent('cardiag:record-open', { detail:{ id } }));
       return true;
     },
@@ -2252,6 +2293,7 @@ export function initializeLegacyFeatures(vehicleData) {
   buildNavButtons();
   initAppTabbar();
   applyToForm(db[currentId].data);
+  loadCategoryWeights();
   initCarDropdowns();
   renderAllPhotoGrids();
   initSignaturePads();
