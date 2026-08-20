@@ -14,5 +14,6 @@ android/.gradle/
 android/local.properties
 android/keystore.properties
 android/app/google-services.json
+*-firebase-adminsdk-*.json
 *.jks
 *.keystore
