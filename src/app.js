@@ -32,10 +32,33 @@ function sendPublicFile(res, fileName) {
   return res.type(path.extname(fileName)).send(fs.readFileSync(filePath));
 }
 
+export function createRateLimiter({ windowMs = 60_000, max = 12, accountService = null } = {}) {
+  const buckets = new Map();
+  return async (req, res, next) => {
+    let identity = `ip:${req.ip || req.socket?.remoteAddress || 'unknown'}`;
+    const token = String(req.headers.authorization || '').match(/^Bearer\s+(.+)$/i)?.[1];
+    if (token && accountService?.verifyToken) {
+      try { identity = `uid:${(await accountService.verifyToken(token)).uid}`; } catch { /* Limitation par IP si le jeton est invalide. */ }
+    }
+    const now = Date.now();
+    const recent = (buckets.get(identity) || []).filter((timestamp) => now - timestamp < windowMs);
+    if (recent.length >= max) {
+      const retryAfter = Math.max(1, Math.ceil((windowMs - (now - recent[0])) / 1000));
+      res.setHeader('Retry-After', String(retryAfter));
+      return res.status(429).json({ error: 'Trop de demandes adressées à l’assistant. Réessayez dans quelques instants.', code: 'ASSISTANT_RATE_LIMITED', retryAfter });
+    }
+    recent.push(now);
+    buckets.set(identity, recent);
+    if (buckets.size > 2_000) for (const [key, values] of buckets) if (!values.some((timestamp) => now - timestamp < windowMs)) buckets.delete(key);
+    return next();
+  };
+}
+
 export function createApp({ llmService, accountService = null }) {
   if (!llmService) throw new Error('llmService est requis.');
   const app = express();
   app.disable('x-powered-by');
+  app.set('trust proxy', 1);
   app.use((req, res, next) => { req.requestId = crypto.randomUUID(); res.setHeader('X-Request-Id', req.requestId); next(); });
   app.use(cors({
     origin: (origin, callback) => callback(null, isAllowedOrigin(origin)),
@@ -112,8 +135,10 @@ export function createApp({ llmService, accountService = null }) {
     };
   }
 
-  app.post('/api/chat', route(validateChatBody, async ({ messages, carContext }) => llmService.chat(messages, carContext)));
-  app.post('/api/inline', route(validateInlineBody, async ({ selectedText, carContext }) => ({ explanation: await llmService.inline(selectedText, carContext) })));
+  const chatLimiter = createRateLimiter({ windowMs: 60_000, max: 12, accountService });
+  const inlineLimiter = createRateLimiter({ windowMs: 60_000, max: 60, accountService });
+  app.post('/api/chat', chatLimiter, route(validateChatBody, async ({ messages, carContext }) => llmService.chat(messages, carContext)));
+  app.post('/api/inline', inlineLimiter, route(validateInlineBody, async ({ selectedText, carContext }) => ({ explanation: await llmService.inline(selectedText, carContext) })));
   app.get('/api/shared-reports/:id', async (req, res) => {
     if (!accountService) return res.status(503).json({ error: 'Partage indisponible.' });
     const id = String(req.params.id || '');
