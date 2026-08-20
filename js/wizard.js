@@ -3,6 +3,7 @@ import { personaRequiresVin } from './personas.js?v=20260814-1';
 const PROFILE_STORAGE_KEY = 'cardiag_active_profile';
 const STEP_STORAGE_KEY = 'cardiag_wizard_step';
 const VALID_PROFILES = new Set(['buyer', 'mechanic', 'rental', 'seller', 'owner']);
+const PROFESSIONAL_PROFILES = new Set(['mechanic', 'rental']);
 const STEP_COUNT = 4;
 
 const STEP_TITLES = [
@@ -112,6 +113,20 @@ export function initializeWizard() {
   let currentStep = 1;
   let assistantOpened = false;
   let transitionTimer;
+
+  function profileFamily(profile = activeProfile()) {
+    return PROFESSIONAL_PROFILES.has(profile) ? 'professional' : 'personal';
+  }
+
+  function renderProfileFamily(family = profileFamily()) {
+    const activeFamily = family === 'professional' ? 'professional' : 'personal';
+    document.querySelectorAll('[data-profile-family-choice]').forEach((button) => {
+      button.setAttribute('aria-pressed', String(button.dataset.profileFamilyChoice === activeFamily));
+    });
+    document.querySelectorAll('[data-profile-options] [data-profile-family]').forEach((card) => {
+      card.hidden = card.dataset.profileFamily !== activeFamily;
+    });
+  }
 
   document.body.classList.add('wizard-active');
   header.hidden = false;
@@ -232,6 +247,10 @@ export function initializeWizard() {
         : translate('wizard.next', 'Suivant');
     generate.textContent = translate('wizard.generate', 'Générer le rapport');
     bottomBack.textContent = translate('wizard.back', 'Retour');
+    if (currentStep === 2) {
+      const infoSection = document.querySelector('details.section[data-section="info"]');
+      if (infoSection) infoSection.open = true;
+    }
     renderExpertiseLayout();
     safeStorageSet(STEP_STORAGE_KEY, String(currentStep));
     window.dispatchEvent(new CustomEvent('cardiag:wizard-step', { detail: { step: currentStep, direction } }));
@@ -269,9 +288,23 @@ export function initializeWizard() {
       if (!input.checked) return;
       safeStorageSet(PROFILE_STORAGE_KEY, input.value);
       assistantOpened = false;
+      renderProfileFamily(profileFamily(input.value));
       updateProfileContext();
       window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback', { detail: { type: 'selection', message: 'Parcours personnalisé' } }));
-      window.setTimeout(() => goToStep(2, 'forward'), 120);
+    });
+  });
+
+  document.querySelectorAll('[data-profile-family-choice]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const family = button.dataset.profileFamilyChoice === 'professional' ? 'professional' : 'personal';
+      renderProfileFamily(family);
+      const selected = document.querySelector('[name="usage_scenario"]:checked');
+      if (selected && profileFamily(selected.value) === family) return;
+      const fallback = document.querySelector(`[data-profile-options] [data-profile-family="${family}"] [name="usage_scenario"]`);
+      if (fallback) {
+        fallback.checked = true;
+        fallback.dispatchEvent(new Event('change', { bubbles: true }));
+      }
     });
   });
 
@@ -352,6 +385,7 @@ export function initializeWizard() {
     const profileInput = document.querySelector(`[name="usage_scenario"][value="${storedProfile}"]`);
     if (profileInput) profileInput.checked = true;
   }
+  renderProfileFamily();
   updateProfileContext();
 
   const savedStep = Number.parseInt(safeStorageGet(STEP_STORAGE_KEY) || '', 10);

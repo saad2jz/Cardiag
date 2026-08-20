@@ -428,7 +428,7 @@ export function initializeLegacyFeatures(vehicleData) {
       if(!item || item.querySelector('.point-photo-control')) return;
       const control = document.createElement('div');
       control.className = 'point-photo-control';
-      control.innerHTML = '<button type="button" class="point-photo-button" aria-label="Ajouter une photo pour '+reportEscape(label)+'">📷 <span>Photo</span></button>'+
+      control.innerHTML = '<button type="button" class="point-photo-button" aria-label="Ajouter une photo pour '+reportEscape(label)+'">📷 <span>Ajouter une photo</span></button>'+
         '<input type="file" accept="image/*" capture="environment" hidden>'+
         '<div class="photo-grid point-photo-grid" data-photo-grid="'+key+'"></div>';
       const fileInput = control.querySelector('input');
@@ -462,6 +462,8 @@ export function initializeLegacyFeatures(vehicleData) {
       const source = button.dataset.photoLabel;
       const label = window.cardiagI18n?.translateUiText?.(source, english ? 'en' : 'fr') || source;
       button.setAttribute('aria-label', english ? `Add a photo for ${label}` : `Ajouter une photo pour ${label}`);
+      const text = button.querySelector('span');
+      if(text) text.textContent = english ? 'Add a photo' : 'Ajouter une photo';
     });
   }
   function compressImage(file, maxDim, quality){
@@ -652,25 +654,36 @@ export function initializeLegacyFeatures(vehicleData) {
   function initQuickMode(){
     const btn = document.getElementById('quickModeToggle');
     if(!btn) return;
+    const modeInputs = Array.from(document.querySelectorAll('[name="inspection_mode"]'));
     const refreshPersonaChecks = ()=>{
       const selected = new Set(personaQuickChecks(activePersona()));
       document.querySelectorAll('.check-item').forEach(item=>{
         const name = item.querySelector('input[name]')?.name;
         item.classList.toggle('persona-quick', selected.has(name));
       });
+      document.querySelectorAll('.badge-group').forEach(group=>{
+        if(group.closest('.check-item')) return;
+        const wrapper = group.closest('.field');
+        const name = group.querySelector('input[name]')?.name;
+        wrapper?.classList.toggle('persona-quick', selected.has(name));
+      });
     };
-    const apply = (on)=>{
+    const apply = (on, persistMode=true)=>{
       refreshPersonaChecks();
       document.body.classList.toggle('quick-mode', on);
       btn.textContent = on ? '📋 Inspection complète' : '⚡ Inspection rapide';
       btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      modeInputs.forEach(input=>{ input.checked = input.value === (on ? 'quick' : 'complete'); });
+      if(persistMode) safeStorage.setItem(QUICK_MODE_KEY, on ? '1' : '0');
+      window.dispatchEvent(new CustomEvent('cardiag:inspection-mode-change',{detail:{mode:on?'quick':'complete'}}));
     };
-    apply(safeStorage.getItem(QUICK_MODE_KEY) === '1');
+    const selectedMode = modeInputs.find(input=>input.checked)?.value;
+    apply(selectedMode ? selectedMode === 'quick' : safeStorage.getItem(QUICK_MODE_KEY) === '1', false);
     btn.addEventListener('click', ()=>{
       const nowOn = !document.body.classList.contains('quick-mode');
       apply(nowOn);
-      safeStorage.setItem(QUICK_MODE_KEY, nowOn ? '1' : '0');
     });
+    modeInputs.forEach(input=>input.addEventListener('change',()=>{if(input.checked)apply(input.value==='quick')}));
     window.addEventListener('cardiag:scenario-change', refreshPersonaChecks);
   }
 

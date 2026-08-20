@@ -1,4 +1,4 @@
-import { initializeLegacyFeatures } from './legacy-features.js?v=20260820-5';
+import { initializeLegacyFeatures } from './legacy-features.js?v=20260820-6';
 import { initializeChatExperience } from './chat-experience.js?v=20260820-1';
 import { initializePwa } from './pwa.js?v=20260820-2';
 import { initializeWizard } from './wizard.js?v=20260814-5';
@@ -20,8 +20,8 @@ import { initializeScoreVisuals } from './score/score-visuals.js?v=20260813-1';
 import { initializeRecordsGallery } from './records/records-gallery.js?v=20260814-4';
 import { initializePremiumReport } from './reports/premium-report.js?v=20260814-7';
 import { initializeReportSharing } from './reports/report-sharing.js?v=20260814-2';
-import { initializeLanding } from './landing/landing.js?v=20260820-2';
-import { initializeInspectionEnhancements } from './ux/inspection-enhancements.js?v=20260820-3';
+import { initializeLanding } from './landing/landing.js?v=20260820-3';
+import { initializeInspectionEnhancements } from './ux/inspection-enhancements.js?v=20260820-4';
 
 /**
  * Application entry point. Data loading stays separate from the UI controller

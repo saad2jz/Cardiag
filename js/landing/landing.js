@@ -11,6 +11,7 @@ const EN = {
   start: 'Start an inspection', demo: 'View a sample report', local: 'Works offline', private: 'Data stays on your device', noCard: 'No payment card required',
   factsPoints: 'structured inspection points', factsSections: 'technical sections', factsReport: 'professional PDF report',
   pathsTitle: 'One method, adapted to your objective.', pathsIntro: 'Choose your situation. CarDiag opens the existing inspection workflow with the appropriate controls and final report.',
+  personalFamily: 'Personal', personalFamilyText: 'Buy, sell or monitor your vehicle', professionalFamily: 'Professional', professionalFamilyText: 'Workshop, repairs and fleet management', popular: 'Most selected',
   buyer: 'Buyer', buyerText: 'Identify major risks, estimate repairs and prepare evidence-based negotiation.',
   mechanic: 'Workshop', mechanicText: 'Document customer intake, measurements, repairs and final checks.',
   rental: 'Rental agency', rentalText: 'Track the fleet, mileage and vehicle condition before and after each rental.',
@@ -97,6 +98,16 @@ export function initializeLanding() {
     window.cardiagWizard?.goToStep?.(role ? 2 : 1, 'forward');
   };
 
+  const showFamily = (family = 'personal') => {
+    const activeFamily = family === 'professional' ? 'professional' : 'personal';
+    root.querySelectorAll('[data-landing-family]').forEach((button) => {
+      button.setAttribute('aria-pressed', String(button.dataset.landingFamily === activeFamily));
+    });
+    root.querySelectorAll('[data-profile-family]').forEach((card) => {
+      card.hidden = card.dataset.profileFamily !== activeFamily;
+    });
+  };
+
   if (!active) hide();
   else {
     root.hidden = false;
@@ -104,6 +115,7 @@ export function initializeLanding() {
   }
 
   root.querySelectorAll('[data-landing-enter]').forEach((button) => button.addEventListener('click', () => enter(button.dataset.landingRole || '')));
+  root.querySelectorAll('[data-landing-family]').forEach((button) => button.addEventListener('click', () => showFamily(button.dataset.landingFamily)));
   root.querySelectorAll('[data-landing-language]').forEach((button) => button.addEventListener('click', () => {
     const language = button.dataset.landingLanguage === 'en' ? 'en' : 'fr';
     const settings = readJson(SETTINGS_KEY, {});
@@ -114,6 +126,7 @@ export function initializeLanding() {
   root.querySelectorAll('a[href^="#"]').forEach((link) => link.addEventListener('click', () => document.querySelector(link.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' })));
   window.addEventListener('cardiag:language-change', (event) => applyLanguage(root, event.detail?.language || 'fr'));
   applyLanguage(root, window.cardiagI18n?.language || 'fr');
+  showFamily('personal');
   window.cardiagLanding = { get active() { return active; }, enter, show() { active = true; root.hidden = false; document.body.classList.add('landing-active'); } };
   return { get active() { return active; } };
 }

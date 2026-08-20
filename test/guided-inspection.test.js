@@ -1,0 +1,33 @@
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+import { test } from 'node:test';
+
+const index = await readFile(new URL('../index.html', import.meta.url), 'utf8');
+const wizard = await readFile(new URL('../js/wizard.js', import.meta.url), 'utf8');
+const inspection = await readFile(new URL('../js/ux/inspection-enhancements.js', import.meta.url), 'utf8');
+const styles = await readFile(new URL('../css/ux/inspection-enhancements.css', import.meta.url), 'utf8');
+const prompts = await readFile(new URL('../assets/reference/prompts-higgsfield.md', import.meta.url), 'utf8');
+
+test('profile selection is grouped by family and exposes inspection depth before starting', () => {
+  assert.match(index, /data-profile-family-choice="personal"/);
+  assert.match(index, /data-profile-family-choice="professional"/);
+  assert.match(index, /name="inspection_mode" value="quick"/);
+  assert.match(index, /name="inspection_mode" value="complete"/);
+  assert.match(index, /Le plus choisi/);
+  assert.match(wizard, /renderProfileFamily/);
+});
+
+test('guided inspection keeps a reversible full-report view and seven-section stepper', () => {
+  assert.match(inspection, /cardiag_guided_inspection_v1/);
+  assert.equal((inspection.match(/key: '/g) || []).length, 7);
+  assert.match(inspection, /data-guide-view/);
+  assert.match(inspection, /documentés avec photo/);
+  assert.match(inspection, /min restantes/);
+  assert.match(styles, /inspection-guided-current/);
+  assert.match(styles, /inspection-mini-stepper/);
+});
+
+test('reference asset catalog covers all profile families and technical sections', () => {
+  ['profil-acheteur.webp','profil-garagiste.webp','moteur-huile.webp','chassis-rotules.webp','carrosserie-defaut-peinture.webp','habitacle-humidite.webp','essai-freinage.webp','diagnostic-p1000.webp']
+    .forEach((asset) => assert.match(prompts, new RegExp(asset)));
+});
