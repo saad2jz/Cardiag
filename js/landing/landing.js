@@ -3,7 +3,7 @@ const PROFILE_KEY = 'cardiag_user_profile_v1';
 
 const EN = {
   ariaHome: 'CarDiag home', ariaNav: 'Main navigation', ariaBrand: 'CarDiag, home', ariaLanguage: 'Language',
-  ariaExperience: 'CarDiag experience preview', ariaScore: 'Report score preview', ariaFeatures: 'Included features', ariaReportMockup: 'CarDiag PDF report preview', ariaLegal: 'Legal information',
+  ariaExperience: 'CarDiag experience preview', ariaScore: 'Report score preview', ariaFeatures: 'Included features', ariaReportMockup: 'CarDiag PDF report preview', ariaLegal: 'Legal information', ariaUserType: 'User type',
   navHow: 'How it works', navReport: 'The report', navStart: 'Open the app',
   kicker: 'USED VEHICLE INSPECTION · PROFESSIONAL REPORT',
   title: 'Inspect a used vehicle like an expert, in 15 minutes.',

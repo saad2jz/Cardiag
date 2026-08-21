@@ -25,6 +25,15 @@ const EN = {
   'vehiclePicker.compare': 'Compare with another vehicle',
   'vehiclePicker.compareIntro': 'Add a second vehicle to your pre-purchase analysis.',
   'vehiclePicker.compareRun': 'View comparison',
+  'brandPicker.kicker': 'MANUFACTURER',
+  'brandPicker.title': 'Choose the make',
+  'brandPicker.search': 'Search for a make…',
+  'brandPicker.searchLabel': 'Search for a vehicle make',
+  'brandPicker.listLabel': 'Vehicle makes',
+  'brandPicker.brand': 'make',
+  'brandPicker.brands': 'makes',
+  'brandPicker.more': 'Show all makes',
+  'brandPicker.less': 'Show main makes',
   'profile.heading': 'What would you like to do today?',
   'profile.intro': 'The checklist, assistant and final report adapt automatically to your situation.',
   'profile.buyer': 'Buyer',
@@ -215,6 +224,87 @@ Object.assign(EN_TEXT, {
   'Nouveaux dommages / écarts constatés': 'New damage / recorded differences',
 });
 
+Object.assign(EN_TEXT, {
+  'Étape 1 sur 4': 'Step 1 of 4',
+  'Votre objectif': 'Your goal',
+  'Contexte du dossier': 'Case context',
+  'Expertise et synthèse': 'Inspection and summary',
+  'Suivant': 'Next',
+  'Précédent': 'Back',
+  'Précisez votre situation': 'Describe your situation',
+  'Informations annoncées par le vendeur': 'Information provided by the seller',
+  'Valeurs déjà mesurées': 'Measurements already taken',
+  'Périmètre autorisé': 'Authorized work scope',
+  'Travaux urgents autorisés': 'Urgent repairs authorized',
+  'À confirmer avec le client': 'Confirm with the customer',
+  'Réparations récentes': 'Recent repairs',
+  'Défauts connus à déclarer': 'Known defects to disclose',
+  'Pièces disponibles pour le rapport': 'Documents available for the report',
+  'Symptômes constatés': 'Observed symptoms',
+  'Évolution du problème': 'Symptom history',
+  'Derniers entretiens ou réparations': 'Latest maintenance or repairs',
+  'Contrôles simples avec multimètre/valise': 'Simple checks with a multimeter/scan tool',
+  'Je préfère consulter un professionnel': 'I prefer to consult a professional',
+  'Chargement de la base véhicule…': 'Loading vehicle database…',
+  '🔍 Recherche rapide (facultatif)': '🔍 Quick search (optional)',
+  'Effacer la recherche marque': 'Clear make search',
+  'Effacer la recherche modèle': 'Clear model search',
+  'GARAGE PERSONNEL': 'PERSONAL GARAGE',
+  'CarDiag, accueil': 'CarDiag, home',
+  'Le champ « marques » filtre la liste déroulante juste au-dessous. Le champ « modèle » recherche directement dans toute la base, toutes marques confondues : tapez un nom de modèle (ex. « Golf », « 308 », « Clio »...) puis cliquez sur un résultat pour renseigner automatiquement la marque et le modèle dans les listes ci-dessous. Vous n’êtes pas obligé de vous en servir : vous pouvez aussi cliquer directement dans les listes déroulantes pour parcourir toutes les options.': 'The make field filters the list below. The model field searches the entire database across all makes: enter a model name (for example Golf, 308 or Clio), then choose a result to fill in the make and model automatically. You can also browse the drop-down lists directly.',
+  "Le champ « marques » filtre la liste déroulante juste au-dessous. Le champ « modèle » recherche directement dans toute la base, toutes marques confondues : tapez un nom de modèle (ex. « Golf », « 308 », « Clio »...) puis cliquez sur un résultat pour renseigner automatiquement la marque et le modèle dans les listes ci-dessous. Vous n'êtes pas obligé de vous en servir : vous pouvez aussi cliquer directement dans les listes déroulantes pour parcourir toutes les options.": 'The make field filters the list below. The model field searches the entire database across all makes: enter a model name (for example Golf, 308 or Clio), then choose a result to fill in the make and model automatically. You can also browse the drop-down lists directly.',
+  'Marque *': 'Make *',
+  'Année *': 'Year *',
+  'Kilométrage': 'Mileage',
+  'Valeur affichée / négociée (€)': 'Advertised / negotiated price (€)',
+  'Les champs marqués d’un * sont obligatoires.': 'Fields marked with * are required.',
+  "Les champs marqués d'un * sont obligatoires.": 'Fields marked with * are required.',
+  '❄ Avant démarrage (moteur froid)': '❄ Before starting (cold engine)',
+  '🔥 Après démarrage (moteur chaud / en marche)': '🔥 After starting (warm/running engine)',
+  'Jauge : niveau correct, huile non noircie ni laiteuse': 'Dipstick: correct level, oil neither blackened nor milky',
+  'Léger suintement': 'Light seepage',
+  "Régime stable, pas d'à-coups ni de calage": 'Stable idle, no hesitation or stalling',
+  "Émulsion blanchâtre sur bouchon d'huile, bulles dans le LDR": 'Whitish emulsion on oil cap, bubbles in coolant',
+  'À-coups anormaux au passage des rapports, vibrations excessives': 'Abnormal jolts during gear changes, excessive vibration',
+  'Déformation, traces de choc, réparation grossière': 'Deformation, impact marks or poor repair',
+  'Contrôle visuel autour des cardans et du carter': 'Visual check around driveshafts and casing',
+  'Véhicule soulevé, faire levier sur la roue': 'With the vehicle raised, lever the wheel',
+  "Test de rebond (appui/relâche), traces d'huile sur la tige": 'Bounce test and check for oil on the shock rod',
+  'Profondeur, usure irrégulière (signe de parallélisme)': 'Tread depth and uneven wear (alignment indicator)',
+  'Jeux réguliers portières/capot/coffre — un décalage trahit un choc': 'Even panel gaps at doors/bonnet/boot — misalignment may reveal impact',
+  "Test de l'aimant sur les ailes, portières, bas de caisse": 'Magnet test on wings, doors and sills',
+  'Différence de teinte, effet "peau d’orange", raccords visibles': 'Colour differences, orange-peel effect and visible paint joins',
+  'Différence de teinte, effet "peau d\'orange", raccords visibles': 'Colour differences, orange-peel effect and visible paint joins',
+  'Fonctionnement, buée interne, fissures': 'Operation, internal condensation and cracks',
+  'Fonctionnement, étanchéité': 'Operation and sealing',
+  'Fonctionnement des deux côtés': 'Operation on both sides',
+  'Usure du tissu/cuir, affaissement, mécanismes de réglage': 'Fabric/leather wear, sagging and adjustment mechanisms',
+  'Décollement, taches, affaissement': 'Detachment, stains and sagging',
+  'Efficacité du froid et du chaud, bruit du compresseur': 'Cooling/heating performance and compressor noise',
+  'Montée/descente fluide sur chaque portière': 'Smooth operation at every door',
+  "Moisi, tapis mouillés, moquette de coffre gorgée d'eau": 'Mould, wet mats or waterlogged boot carpet',
+  "Réponse moteur, absence d'à-coups ou de trous": 'Engine response without hesitation or flat spots',
+  'Boîte manuelle : embrayage/synchros — boîte auto : à-coups, patinage': 'Manual: clutch/synchros — automatic: jolts and slipping',
+  "Braquage complet des deux côtés à l'arrêt : bruits en butée (cardans)": 'Full lock both ways while stationary: listen for driveshaft noise',
+  "Efficacité, pédale ferme, déclenchement ABS, absence de déviation": 'Efficiency, firm pedal, ABS operation and no pulling',
+  'Mémoire récemment effacée': 'Memory recently cleared',
+  'Cette aide à la décision ne remplace ni un contrôle technique officiel ni l’avis d’un professionnel qualifié.': 'This decision aid does not replace an official roadworthiness test or advice from a qualified professional.',
+  'Facultatif : signez du doigt ou à la souris pour ajouter une validation des deux parties au rapport final.': 'Optional: sign with a finger or mouse to add both parties’ approval to the final report.',
+  'SYSTÈME PRÊT': 'SYSTEM READY',
+  'Questions guidées par le véhicule sélectionné. Les contrôles doivent être confirmés sur le véhicule.': 'Questions are guided by the selected vehicle. Checks must be confirmed on the vehicle.',
+  'Véhicule : à sélectionner dans la fiche': 'Vehicle: select it in the report',
+  "RAPPORT D'INTERVENTION": 'INTERVENTION REPORT',
+  'Synthèse technique': 'Technical summary',
+  "La synthèse d'intervention apparaîtra ici après confirmation de la cause probable.": 'The intervention summary will appear here after the probable cause is confirmed.',
+  '0 / 33 vérifiés': '0 / 33 checked',
+  '0 / 3 sélectionnées': '0 / 3 selected',
+  'Châssis / dynamique': 'Chassis / dynamics',
+  'Esthétique / confort': 'Appearance / comfort',
+  'Peinture, sièges, éclairage, vitres...': 'Paint, seats, lighting, windows…',
+  '↺ Réinitialiser selon le parcours': '↺ Reset for this workflow',
+  '📄 Générer le rapport': '📄 Generate report',
+});
+
 const EN_PLACEHOLDERS = {
   'Filtrer les marques...':'Filter makes…','Rechercher un modèle (toutes marques)...':'Search a model (all makes)…','Tapez la marque exacte (non listée / hors-ligne sans cache)...':'Enter the exact make (not listed / unavailable offline)…','Tapez le modèle exact (non listé)...':'Enter the exact model (not listed)…','Non renseignée':'Not provided','Observations complémentaires...':'Additional observations…','Détails du scan OBD2...':'OBD2 scan details…',"Résumé de l'expertise et recommandation...":'Inspection summary and recommendation…','Reprendre les mots du client sans interprétation…':'Use the customer’s exact words without interpretation…','Ce que vous voyez, entendez ou ressentez…':'What you see, hear or feel…',
 };
@@ -235,6 +325,7 @@ Object.assign(EN_PLACEHOLDERS, {
 const originalText = new WeakMap();
 const originalAttributes = new WeakMap();
 const FRENCH_BY_EN = new Map(Object.entries(EN_TEXT).map(([fr,en])=>[en,fr]));
+const FRENCH_PLACEHOLDER_BY_EN = new Map(Object.entries(EN_PLACEHOLDERS).map(([fr,en])=>[en,fr]));
 
 export function translateUiText(value, targetLanguage=language) {
   const source=FRENCH_BY_EN.get(String(value)) || String(value);
@@ -266,10 +357,15 @@ function translateDom(root=document.body) {
     if(!originals){originals={};originalAttributes.set(element,originals)}
     ['placeholder','aria-label','title'].forEach(attribute=>{
       if(!element.hasAttribute(attribute))return;
-      if(!(attribute in originals))originals[attribute]=element.getAttribute(attribute);
+      if(attribute==='aria-label' && element.hasAttribute('data-landing-aria-label'))return;
+      if(!(attribute in originals)){
+        const raw=element.getAttribute(attribute)||'';
+        originals[attribute]=attribute==='placeholder'?(FRENCH_PLACEHOLDER_BY_EN.get(raw)||raw):(FRENCH_BY_EN.get(raw)||raw);
+      }
       const source=originals[attribute]||'';
       const dictionary=attribute==='placeholder'?EN_PLACEHOLDERS:EN_TEXT;
-      element.setAttribute(attribute,language==='en'?(dictionary[source]||source):source);
+      const next=language==='en'?(dictionary[source]||source):source;
+      if(element.getAttribute(attribute)!==next)element.setAttribute(attribute,next);
     });
   });
 }
@@ -364,8 +460,15 @@ export function initializeI18n() {
   const saved = readSettings().language;
   const system = String(navigator.language || 'fr').toLowerCase().startsWith('en') ? 'en' : 'fr';
   language = saved === 'auto' ? system : saved === 'en' ? 'en' : 'fr';
-  window.cardiagI18n = { t, setLanguage, translateUiText, get language() { return language; } };
+  window.cardiagI18n = { t, setLanguage, translateUiText, refresh: (root = document.body) => translateDom(root), get language() { return language; } };
   applyTranslations();
-  const observer=new MutationObserver(mutations=>mutations.forEach(mutation=>mutation.addedNodes.forEach(node=>translateDom(node))));
-  observer.observe(document.body,{childList:true,subtree:true});
+  const observer = new MutationObserver((mutations) => mutations.forEach((mutation) => {
+    mutation.addedNodes.forEach((node) => translateDom(node));
+    if (mutation.type === 'characterData') translateDom(mutation.target);
+  }));
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true,
+    characterData: true,
+  });
 }

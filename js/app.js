@@ -1,8 +1,8 @@
-import { initializeLegacyFeatures } from './legacy-features.js?v=20260820-6';
+import { initializeLegacyFeatures } from './legacy-features.js?v=20260821-1';
 import { initializeChatExperience } from './chat-experience.js?v=20260820-1';
 import { initializePwa } from './pwa.js?v=20260820-2';
 import { initializeWizard } from './wizard.js?v=20260814-5';
-import { initializeI18n } from './i18n/i18n.js?v=20260820-2';
+import { initializeI18n } from './i18n/i18n.js?v=20260821-3';
 import { initializeWizardInteractions } from './wizard/interactions.js?v=20260813-1';
 import { initializeVehiclePicker } from './wizard/vehicle-picker.js?v=20260814-2';
 import { initializeThemeManager } from './theming/theme-manager.js?v=20260820-3';
@@ -20,9 +20,10 @@ import { initializeScoreVisuals } from './score/score-visuals.js?v=20260813-1';
 import { initializeRecordsGallery } from './records/records-gallery.js?v=20260814-4';
 import { initializePremiumReport } from './reports/premium-report.js?v=20260814-7';
 import { initializeReportSharing } from './reports/report-sharing.js?v=20260814-2';
-import { initializeLanding } from './landing/landing.js?v=20260820-3';
+import { initializeLanding } from './landing/landing.js?v=20260821-1';
 import { initializeInspectionEnhancements } from './ux/inspection-enhancements.js?v=20260820-5';
 import { initializeHomeButton } from './navigation/home-button.js?v=20260820-1';
+import { initializeBrandPicker } from './wizard/brand-picker.js?v=20260821-2';
 
 /**
  * Application entry point. Data loading stays separate from the UI controller
@@ -62,6 +63,7 @@ async function initializeApp() {
     if (brandCount) brandCount.textContent = String(vehicles.length);
     if (modelsCount) modelsCount.textContent = String(modelCount);
     initializeLegacyFeatures(vehicles);
+    initializeBrandPicker(vehicles);
     initializeChatExperience();
     initializeWizard();
     initializeVehiclePicker();

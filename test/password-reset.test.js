@@ -16,5 +16,5 @@ test('password reset UI prevents duplicate requests and keeps a neutral confirma
   assert.match(authUi, /setBusy\(submit, true\)/);
   assert.match(authUi, /Si un compte correspond/);
   assert.match(authUi, /courriers ind/);
-  assert.match(worker, /cardiag-v57/);
+  assert.match(worker, /cardiag-v58/);
 });

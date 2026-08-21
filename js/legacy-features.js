@@ -1770,8 +1770,12 @@ export function initializeLegacyFeatures(vehicleData) {
     const matches = allMatches.slice(0, 25);
     modeleSearchResults = matches;
     if(!matches.length){
-      const noResultLabel = window.cardiagI18n?.language === 'en' ? '0 results' : '0 résultat';
-      box.innerHTML = '<div class="vsearch-result-count">'+noResultLabel+'</div><div class="vsearch-no-results">Aucun modèle trouvé pour « '+reportEscape(query)+' ». Essayez le nom sans finition, ou utilisez la saisie libre.</div>';
+      const english = window.cardiagI18n?.language === 'en';
+      const noResultLabel = english ? '0 results' : '0 résultat';
+      const noResultMessage = english
+        ? 'No model found for “'+reportEscape(query)+'”. Try the model name without its trim level, or use manual entry.'
+        : 'Aucun modèle trouvé pour « '+reportEscape(query)+' ». Essayez le nom sans finition, ou utilisez la saisie libre.';
+      box.innerHTML = '<div class="vsearch-result-count">'+noResultLabel+'</div><div class="vsearch-no-results">'+noResultMessage+'</div>';
       box.classList.add('show');
       return;
     }
