@@ -1,5 +1,9 @@
 const SETTINGS_KEY = 'cardiag_app_settings_v1';
 const PROFILE_KEY = 'cardiag_user_profile_v1';
+const PROFILE_SLUGS = Object.freeze({
+  buyer: 'acheteur', seller: 'vendeur', owner: 'proprietaire',
+  mechanic: 'garagiste', rental: 'location',
+});
 
 const EN = {
   ariaHome: 'CarDiag home', ariaNav: 'Main navigation', ariaBrand: 'CarDiag, home', ariaLanguage: 'Language',
@@ -9,7 +13,11 @@ const EN = {
   title: 'Inspect a used vehicle like an expert, in 15 minutes.',
   lead: 'A guided checklist, documented evidence and a clear PDF report to buy, sell, repair or monitor a vehicle with confidence.',
   start: 'Start an inspection', demo: 'View a sample report', local: 'Works offline', private: 'Data stays on your device', noCard: 'No payment card required',
+  shortDisclaimer: 'CarDiag supports your decision and does not replace an official roadworthiness inspection.',
   factsPoints: 'structured inspection points', factsSections: 'technical sections', factsReport: 'professional PDF report',
+  existingFeaturesKicker: 'TWO MODES, ONE CLEARER DECISION', existingFeaturesTitle: 'Adapt the inspection to the time available.',
+  quickFeatureTitle: '⚡ Quick inspection', quickFeatureText: 'Need an initial opinion in 5 minutes? Quick mode covers the 12 most critical points.',
+  compareFeatureTitle: '⇄ Vehicle comparison', compareFeatureText: 'Compare 2 or 3 reports side by side to review scores, faults and budgets.',
   pathsTitle: 'One method, adapted to your objective.', pathsIntro: 'Choose your situation. CarDiag opens the existing inspection workflow with the appropriate controls and final report.',
   personalFamily: 'Personal', personalFamilyText: 'Buy, sell or monitor your vehicle', professionalFamily: 'Professional', professionalFamilyText: 'Workshop, repairs and fleet management', popular: 'Most selected',
   buyer: 'Buyer', buyerText: 'Identify major risks, estimate repairs and prepare evidence-based negotiation.',
@@ -26,7 +34,7 @@ const EN = {
   value1: 'Visual summary, weighted score and inspection coverage', value2: 'Photos placed in their exact technical section', value3: 'Risk alerts, estimated repairs and negotiation guidance', value4: 'Signatures, legal limitations and optional read-only sharing',
   reportHeader: 'INSPECTION REPORT', reportHeaderFull: 'VEHICLE INSPECTION REPORT', reportTitle: 'Vehicle inspection report', decision: 'NEGOTIATION', verified: 'points checked',
   organs: 'Vital systems', chassis: 'Chassis', appearance: 'Appearance', downloadDemo: 'Download the fictitious sample PDF →',
-  finalTitle: 'Make your next automotive decision with evidence.', finalText: 'Start for free. You can complete and export a report without using the AI assistant.', finalButton: 'Create my first inspection',
+  finalTitle: 'Make your next automotive decision with evidence.', finalText: 'Inspection and PDF export are currently available without payment. No subscription is active.', finalButton: 'Create my first inspection',
   footerText: 'CarDiag · Guided vehicle inspection and traceability', privacy: 'Privacy', terms: 'Terms', account: 'Account deletion', imageAlt: 'Vehicle in a workshop beside a tablet showing a CarDiag inspection report',
 };
 
@@ -34,7 +42,8 @@ function readJson(key, fallback = {}) { try { return JSON.parse(localStorage.get
 function isNative() { return Boolean(globalThis.Capacitor?.isNativePlatform?.()); }
 function shouldSkipLanding() {
   const params = new URLSearchParams(location.search);
-  return isNative() || params.get('app') === '1' || params.has('action') || /^\/fiche\//.test(location.pathname);
+  const hasProfileEntry = Object.values(PROFILE_SLUGS).includes((params.get('profil') || '').toLowerCase());
+  return isNative() || params.get('app') === '1' || params.has('action') || hasProfileEntry || /^\/fiche\//.test(location.pathname);
 }
 
 function applyLanguage(root, language) {
@@ -67,6 +76,16 @@ function selectScenario(role) {
   input.dispatchEvent(new Event('change', { bubbles: true }));
 }
 
+function persistEntryChoice(role, level = '') {
+  const url = new URL(location.href);
+  if (role && PROFILE_SLUGS[role]) url.searchParams.set('profil', PROFILE_SLUGS[role]);
+  else url.searchParams.delete('profil');
+  if (level === 'quick' || level === 'complete') {
+    url.searchParams.set('niveau', level === 'quick' ? 'rapide' : 'complet');
+  }
+  history.replaceState(history.state, '', `${url.pathname}${url.search}${url.hash}`);
+}
+
 export function initializeLanding() {
   const root = document.getElementById('marketingLanding');
   if (!root) return { active: false };
@@ -88,6 +107,8 @@ export function initializeLanding() {
       }, { once: true });
       return;
     }
+    const selectedLevel = document.querySelector('[name="inspection_mode"]:checked')?.value || '';
+    persistEntryChoice(role, selectedLevel);
     hide();
     if (role) selectScenario(role);
     const profile = readJson(PROFILE_KEY, null);

@@ -48,6 +48,7 @@ const EN = {
   'profile.seller.description': 'Create a transparent, complete report to share with a future buyer.',
   'profile.owner': 'Owner',
   'profile.owner.description': 'Track the vehicle, understand faults and perform simple checks safely.',
+  'profile.active': 'Profile: {profile}',
   'context.heading': 'Describe your situation',
   'context.buyer': 'Add the listing details and seller statements to frame the pre-purchase audit.',
   'context.mechanic': 'Record the customer complaint and initial data before clearing faults, dismantling or repairs.',
@@ -120,7 +121,7 @@ const EN = {
 };
 
 const EN_TEXT = {
-  'Diagnostic & Expertise Auto':'Vehicle Inspection & Diagnostics','Nouvelle fiche':'New report','Dupliquer':'Duplicate','Supprimer':'Delete','Comparer':'Compare','Pondération':'Weighting','Inspection rapide':'Quick inspection','Mode sombre':'Dark mode','Installer l’application':'Install app',
+  'Diagnostic & Expertise Auto':'Vehicle Inspection & Diagnostics','Nouvelle fiche':'New report','Dupliquer':'Duplicate','Supprimer':'Delete','Comparer':'Compare','Pondération':'Weighting','Inspection rapide':'Quick inspection','Mode sombre':'Dark mode','Plus d’actions':'More actions','Modifier':'Change','Installer l’application':'Install app',
   'Véhicule':'Vehicle','Moteur':'Engine','Châssis':'Chassis','Carrosserie':'Bodywork','Habitacle':'Interior','Essai':'Road test','Bilan':'Summary','PARCOURS PERSONNALISÉ':'PERSONALIZED WORKFLOW','CONTEXTE DU DOSSIER':'REPORT CONTEXT',
   'Informations du Véhicule & Vendeur':'Vehicle & seller information','Identité & contexte de vente':'Identity & sales context','Compartiment Moteur & Mécanique':'Engine compartment & mechanical','Vérifications à froid puis à chaud':'Cold and warm checks','Châssis, Suspension & Roues':'Chassis, suspension & wheels','Structure et train roulant':'Structure and running gear','Carrosserie & Éclairage':'Bodywork & lighting','Détection de chocs et finitions':'Collision and finish checks','Habitacle & Équipements':'Interior & equipment','Confort, étanchéité, électronique':'Comfort, sealing and electronics','Essai Routier Dynamique':'Dynamic road test','Comportement en conditions réelles':'Real-world driving behaviour','Diagnostic Électronique (OBD2) & Bilan':'Electronic diagnostics (OBD2) & summary','Codes défauts et décision finale':'Fault codes and final decision',
   'Identité du véhicule':'Vehicle identification','Contexte de l’expertise':'Inspection context','Documents à vérifier':'Documents to check','Questions à poser au vendeur':'Questions for the seller','Date et heure':'Date and time','Localisation':'Location','Utiliser ma position':'Use my location','Carte grise présentée':'Registration document provided','Contrôle technique valide fourni':'Valid roadworthiness test provided','Certificat de non-gage fourni':'No-lien certificate provided',"Factures d'entretien présentées":'Maintenance invoices provided',"Historique d'entretien disponible ?":'Maintenance history available?','Nombre de propriétaires précédents':'Previous owners','Raison de la vente (réponse du vendeur)':'Reason for sale (seller response)',"Type d'utilisation déclarée":'Declared usage',
@@ -167,6 +168,12 @@ Object.assign(EN_TEXT, {
   'Marque requise': 'Make required',
   'Modèle requis': 'Model required',
   'Châssis requis': 'Chassis required',
+  'Marque obligatoire.': 'Make is required.',
+  'Modèle obligatoire.': 'Model is required.',
+  'Année obligatoire.': 'Year is required.',
+  'Motorisation obligatoire.': 'Powertrain is required.',
+  'Indiquez un kilométrage valide.': 'Enter a valid mileage.',
+  'Indiquez une valeur valide.': 'Enter a valid value.',
   'Choisir': 'Choose',
   'Valider': 'Confirm',
   'Veuillez sélectionner une marque et un modèle.': 'Please select a make and model.',

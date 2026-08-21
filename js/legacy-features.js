@@ -709,6 +709,19 @@ export function initializeLegacyFeatures(vehicleData) {
       if(typeof refreshAllSignaturePads === 'function') refreshAllSignaturePads();
     });
   }
+  function initAdvancedActions(){
+    const menu = document.querySelector('.advanced-actions-menu');
+    if(!menu) return;
+    menu.querySelector('.advanced-actions-popover')?.addEventListener('click', event=>{
+      if(event.target.closest('button')) menu.removeAttribute('open');
+    });
+    document.addEventListener('click', event=>{
+      if(menu.open && !menu.contains(event.target)) menu.removeAttribute('open');
+    });
+    document.addEventListener('keydown', event=>{
+      if(event.key==='Escape' && menu.open){menu.removeAttribute('open');menu.querySelector('summary')?.focus();}
+    });
+  }
   function initFicheManagement(){
     document.getElementById('ficheSelect').addEventListener('change', (e)=>{ switchFiche(e.target.value); });
     document.getElementById('newFicheBtn').addEventListener('click', ()=>{
@@ -1292,45 +1305,97 @@ export function initializeLegacyFeatures(vehicleData) {
   }
 
   /* ---------- VALIDATION CHAMPS OBLIGATOIRES ---------- */
+  const touchedRequiredFields = new Set();
+  let revealAllRequiredFields = false;
   const REQUIRED_FIELDS = [
-    { key:'marque', label:'Marque', type:'vehicle-select', el:()=>marqueSel, wrapId:'step-marque' },
+    { key:'marque', label:'Marque', type:'vehicle-brand', el:()=>marqueSel, wrapId:'step-marque' },
     { key:'modele', label:'Modèle', type:'vehicle-model', wrapId:'step-modele' },
-    { key:'annee', label:'Année', type:'vehicle-select', el:()=>anneeSel, wrapId:'step-annee' }
+    { key:'annee', label:'Année', type:'vehicle-select', el:()=>anneeSel, wrapId:'step-annee' },
+    { key:'motorisation', label:'Motorisation', type:'vehicle-engine', el:()=>motorisationSel, wrapId:'step-motorisation' },
+    { key:'kilometrage', label:'Kilométrage', type:'non-negative-number', el:()=>document.querySelector('[name="kilometrage"]'), wrapId:'fieldWrap-kilometrage' },
+    { key:'valeur', label:'Valeur', type:'non-negative-number', el:()=>document.querySelector('[name="valeur"]'), wrapId:'fieldWrap-valeur' }
   ];
 
   function isFieldFilled(spec){
+    if(spec.type === 'vehicle-brand'){
+      const selected = String(marqueSel?.value || '').trim();
+      return Boolean(selected && selected !== '__autre__') || Boolean(document.getElementById('marqueManualInput')?.value.trim());
+    }
     if(spec.type === 'vehicle-model'){
       const val = (modeleSel && modeleSel.value) ? modeleSel.value : '';
       if(!val || val === '__autre__') {
-        const manual = document.getElementById('modeleManualInput').value.trim();
+        const manual = document.getElementById('modeleManualInput')?.value.trim();
         return !!manual;
       }
       return true;
     }
+    if(spec.type === 'vehicle-engine'){
+      const selected = String(motorisationSel?.value || '').trim();
+      return Boolean(selected && selected !== '__autre__') || Boolean(document.getElementById('motorisationManualInput')?.value.trim());
+    }
     const el = spec.el();
     if(!el) return false;
+    if(spec.type === 'non-negative-number'){
+      const value = String(el.value || '').trim();
+      return value !== '' && Number.isFinite(Number(value)) && Number(value) >= 0;
+    }
     return String(el.value || '').trim() !== '';
   }
 
-  function validateRequiredFields(){
+  function validationControls(spec){
+    const selectors = {
+      marque: ['#marqueSelect', '#marqueManualInput'],
+      modele: ['#modeleSelect', '#modeleManualInput'],
+      annee: ['#anneeSelect'],
+      motorisation: ['#motorisationSelect', '#motorisationManualInput'],
+      kilometrage: ['[name="kilometrage"]'],
+      valeur: ['[name="valeur"]'],
+    };
+    return (selectors[spec.key] || []).flatMap(selector=>[...document.querySelectorAll(selector)]);
+  }
+
+  function ensureRequiredMessages(){
+    REQUIRED_FIELDS.forEach(spec=>{
+      const wrap = document.getElementById(spec.wrapId);
+      if(!wrap) return;
+      let message = wrap.querySelector('.req-error,.vstep-error');
+      if(!message){
+        message = document.createElement('span');
+        message.className = 'vstep-error';
+        message.textContent = `${spec.label} obligatoire.`;
+        wrap.append(message);
+      }
+      if(!message.id) message.id = `requiredError-${spec.key}`;
+      validationControls(spec).forEach(control=>{
+        control.setAttribute('aria-required','true');
+        control.setAttribute('aria-describedby',message.id);
+      });
+    });
+  }
+
+  function validateRequiredFields(revealAll=false){
+    if(revealAll) revealAllRequiredFields = true;
     const missing = [];
     REQUIRED_FIELDS.forEach(spec=>{
       const filled = isFieldFilled(spec);
       const wrap = document.getElementById(spec.wrapId);
+      const showError = !filled && (revealAllRequiredFields || touchedRequiredFields.has(spec.key));
       if(wrap){
-        wrap.classList.toggle('field-invalid', !filled);
-        wrap.classList.toggle('step-invalid', !filled && wrap.classList.contains('vstep'));
+        wrap.classList.toggle('field-invalid', showError && !wrap.classList.contains('vstep'));
+        wrap.classList.toggle('step-invalid', showError && wrap.classList.contains('vstep'));
       }
+      validationControls(spec).forEach(control=>control.setAttribute('aria-invalid',String(showError)));
       if(!filled) missing.push(spec.label);
     });
 
     const banner = document.getElementById('missingFieldsBanner');
     const genBtn = document.getElementById('generateBtn');
     if(missing.length){
-      banner.classList.add('show');
-      banner.textContent = '⚠ Champs obligatoires manquants : ' + missing.join(', ') + '.';
+      banner.classList.toggle('show', revealAllRequiredFields);
+      banner.textContent = revealAllRequiredFields ? '⚠ Champs obligatoires manquants : ' + missing.join(', ') + '.' : '';
       genBtn.disabled = true;
     }else{
+      revealAllRequiredFields = false;
       banner.classList.remove('show');
       banner.textContent = '';
       genBtn.disabled = false;
@@ -1418,7 +1483,7 @@ export function initializeLegacyFeatures(vehicleData) {
     });
     document.getElementById('generateBtn').addEventListener('click', async ()=>{
       saveCurrent();
-      const missing = validateRequiredFields();
+      const missing = validateRequiredFields(true);
       if(missing.length){
         scrollToFirstMissing();
         return;
@@ -2230,6 +2295,13 @@ export function initializeLegacyFeatures(vehicleData) {
     restoreVehicleSelects(db[currentId].data);
   }
 
+  document.addEventListener('focusout', (e)=>{
+    if(!e.target.closest('main')) return;
+    const spec = REQUIRED_FIELDS.find(item=>validationControls(item).includes(e.target));
+    if(!spec) return;
+    touchedRequiredFields.add(spec.key);
+    validateRequiredFields();
+  });
   document.addEventListener('change', (e)=>{
     if(e.target.closest('main')){
       saveCurrent(); updateProgress(); updateBudget(); checkCriticalRisk(); validateRequiredFields();
@@ -2414,6 +2486,7 @@ export function initializeLegacyFeatures(vehicleData) {
   buildNavButtons();
   initAppTabbar();
   applyToForm(db[currentId].data);
+  ensureRequiredMessages();
   loadCategoryWeights();
   initCarDropdowns();
   renderAllPhotoGrids();
@@ -2422,6 +2495,7 @@ export function initializeLegacyFeatures(vehicleData) {
   initContext();
   initQuickMode();
   initDarkMode();
+  initAdvancedActions();
   initFicheManagement();
   initExportImport();
   initComparator();

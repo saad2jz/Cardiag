@@ -5,6 +5,15 @@ const STEP_STORAGE_KEY = 'cardiag_wizard_step';
 const VALID_PROFILES = new Set(['buyer', 'mechanic', 'rental', 'seller', 'owner']);
 const PROFESSIONAL_PROFILES = new Set(['mechanic', 'rental']);
 const STEP_COUNT = 4;
+const PROFILE_FROM_SLUG = Object.freeze({
+  acheteur: 'buyer', buyer: 'buyer', vendeur: 'seller', seller: 'seller',
+  proprietaire: 'owner', propriétaire: 'owner', owner: 'owner',
+  garagiste: 'mechanic', mecanicien: 'mechanic', mechanic: 'mechanic',
+  location: 'rental', rental: 'rental',
+});
+const PROFILE_TO_SLUG = Object.freeze({ buyer: 'acheteur', seller: 'vendeur', owner: 'proprietaire', mechanic: 'garagiste', rental: 'location' });
+const PROFILE_LABEL_KEYS = Object.freeze({ buyer: 'profile.buyer', mechanic: 'profile.mechanic', rental: 'profile.rental', seller: 'profile.seller', owner: 'profile.owner' });
+const PROFILE_LABELS = Object.freeze({ buyer: 'Acheteur', mechanic: 'Garagiste', rental: 'Agence de location', seller: 'Vendeur', owner: 'Propriétaire' });
 
 const STEP_TITLES = [
   'Votre objectif',
@@ -36,6 +45,22 @@ function safeStorageSet(key, value) {
 function activeProfile() {
   const selected = document.querySelector('[name="usage_scenario"]:checked')?.value;
   return VALID_PROFILES.has(selected) ? selected : 'buyer';
+}
+
+function entrySelection() {
+  const params = new URLSearchParams(location.search);
+  const rawProfile = (params.get('profil') || '').trim().toLowerCase();
+  const profile = PROFILE_FROM_SLUG[rawProfile] || '';
+  const rawLevel = (params.get('niveau') || '').trim().toLowerCase();
+  const level = ['rapide', 'quick'].includes(rawLevel) ? 'quick' : ['complet', 'complete'].includes(rawLevel) ? 'complete' : '';
+  return { profile, level };
+}
+
+function updateEntryUrl(profile, level = '') {
+  const url = new URL(location.href);
+  if (VALID_PROFILES.has(profile)) url.searchParams.set('profil', PROFILE_TO_SLUG[profile]);
+  if (level === 'quick' || level === 'complete') url.searchParams.set('niveau', level === 'quick' ? 'rapide' : 'complet');
+  history.replaceState(history.state, '', `${url.pathname}${url.search}${url.hash}`);
 }
 
 function createView(step, title) {
@@ -110,10 +135,13 @@ export function initializeWizard() {
   const contextPanel = document.getElementById('profileContextPanel');
   const dots = [...document.querySelectorAll('.wizard-dots span')];
   const contextIntro = document.getElementById('profileContextIntro');
+  const profileChipText = document.getElementById('activeProfileChipText');
+  const changeProfileButton = document.getElementById('changeProfileBtn');
   const chatPanel = document.getElementById('chatPanel');
   let currentStep = 1;
   let assistantOpened = false;
   let profileConfirmed = false;
+  let profileReturnStep = 0;
   let transitionTimer;
 
   function profileFamily(profile = activeProfile()) {
@@ -140,7 +168,11 @@ export function initializeWizard() {
     document.body.dataset.scenarioConfirmed = String(profileConfirmed);
     contextPanel.hidden = !profileConfirmed;
     contextPanel.setAttribute('aria-hidden', String(!profileConfirmed));
-    if (contextIntro) contextIntro.textContent = PROFILE_CONTEXT[profile];
+    if (contextIntro) contextIntro.textContent = translate(`context.${profile}`, PROFILE_CONTEXT[profile]);
+    if (profileChipText) {
+      const label = translate(PROFILE_LABEL_KEYS[profile], PROFILE_LABELS[profile]);
+      profileChipText.textContent = translate('profile.active', `Profil : ${label}`, { profile: label });
+    }
     document.querySelectorAll('[data-context-profile]').forEach((panel) => {
       const active = profileConfirmed && panel.dataset.contextProfile === profile;
       panel.hidden = !active;
@@ -192,11 +224,17 @@ export function initializeWizard() {
       || document.getElementById(selectId)?.value
       || ''
     );
+    const nonNegativeValue = (name) => {
+      const value = document.querySelector(`[name="${name}"]`)?.value ?? '';
+      return value !== '' && Number.isFinite(Number(value)) && Number(value) >= 0 ? value : '';
+    };
     const required = [
       [selectOrManual('marqueSelect', 'marqueManualInput'), 'la marque'],
       [selectOrManual('modeleSelect', 'modeleManualInput'), 'le modèle'],
       [document.getElementById('anneeSelect')?.value || '', 'l’année'],
       [selectOrManual('motorisationSelect', 'motorisationManualInput'), 'la motorisation'],
+      [nonNegativeValue('kilometrage'), 'le kilométrage'],
+      [nonNegativeValue('valeur'), 'la valeur'],
     ];
     const missing = required.filter(([value]) => !value).map(([, label]) => label);
     const status = document.getElementById('result');
@@ -276,7 +314,14 @@ export function initializeWizard() {
     if (currentStep === 1) {
       profileConfirmed = true;
       safeStorageSet(PROFILE_STORAGE_KEY, activeProfile());
+      updateEntryUrl(activeProfile(), document.querySelector('[name="inspection_mode"]:checked')?.value || '');
       updateProfileContext();
+      if (profileReturnStep) {
+        const target = profileReturnStep;
+        profileReturnStep = 0;
+        goToStep(target, 'forward');
+        return;
+      }
     }
     if (currentStep === 2 && !validateIdentification()) return;
     goToStep(currentStep + 1, 'forward');
@@ -296,11 +341,23 @@ export function initializeWizard() {
       if (!input.checked) return;
       profileConfirmed = true;
       safeStorageSet(PROFILE_STORAGE_KEY, input.value);
+      updateEntryUrl(input.value, document.querySelector('[name="inspection_mode"]:checked')?.value || '');
       assistantOpened = false;
       renderProfileFamily(profileFamily(input.value));
       updateProfileContext();
       window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback', { detail: { type: 'selection', message: 'Parcours personnalisé' } }));
     });
+  });
+
+  document.querySelectorAll('[name="inspection_mode"]').forEach((input) => {
+    input.addEventListener('change', () => {
+      if (input.checked && profileConfirmed) updateEntryUrl(activeProfile(), input.value);
+    });
+  });
+
+  changeProfileButton?.addEventListener('click', () => {
+    profileReturnStep = 3;
+    goToStep(1, 'back');
   });
 
   document.querySelectorAll('[data-profile-family-choice]').forEach((button) => {
@@ -390,17 +447,26 @@ export function initializeWizard() {
   });
 
   const storedProfile = safeStorageGet(PROFILE_STORAGE_KEY);
-  if (VALID_PROFILES.has(storedProfile)) {
-    profileConfirmed = true;
-    const profileInput = document.querySelector(`[name="usage_scenario"][value="${storedProfile}"]`);
+  const entry = entrySelection();
+  const initialProfile = VALID_PROFILES.has(entry.profile) ? entry.profile : storedProfile;
+  if (VALID_PROFILES.has(initialProfile)) {
+    profileConfirmed = Boolean(entry.profile);
+    const profileInput = document.querySelector(`[name="usage_scenario"][value="${initialProfile}"]`);
     if (profileInput) profileInput.checked = true;
+  }
+  if (entry.level) {
+    const modeInput = document.querySelector(`[name="inspection_mode"][value="${entry.level}"]`);
+    if (modeInput) {
+      modeInput.checked = true;
+      modeInput.dispatchEvent(new Event('change', { bubbles: true }));
+    }
   }
   renderProfileFamily();
   updateProfileContext();
 
   const savedStep = Number.parseInt(safeStorageGet(STEP_STORAGE_KEY) || '', 10);
-  currentStep = VALID_PROFILES.has(storedProfile)
-    ? (savedStep >= 1 && savedStep <= STEP_COUNT ? savedStep : 4)
+  currentStep = VALID_PROFILES.has(entry.profile)
+    ? (savedStep >= 2 && savedStep <= STEP_COUNT ? savedStep : 2)
     : 1;
   renderStep('forward');
 

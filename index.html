@@ -33,10 +33,10 @@
 <link rel="apple-touch-icon" href="icons/app-icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=20260821-3">
+<link rel="stylesheet" href="css/styles.css?v=20260821-6">
 <link rel="stylesheet" href="css/wizard/premium.css?v=20260813-1">
 <link rel="stylesheet" href="css/theming/themes.css?v=20260820-3">
-<link rel="stylesheet" href="css/landing/landing.css?v=20260820-3">
+<link rel="stylesheet" href="css/landing/landing.css?v=20260821-4">
 <link rel="stylesheet" href="css/media/media.css?v=20260813-1">
 <link rel="stylesheet" href="css/auth/auth.css?v=20260821-1">
 <link rel="stylesheet" href="css/onboarding/profile-onboarding.css?v=20260820-1">
@@ -74,6 +74,7 @@
           <button class="landing-button" type="button" data-landing-enter data-landing-i18n="start">Commencer une inspection</button>
           <a class="landing-button landing-button-secondary" href="assets/demo/rapport-expertise-demo-cardiag.pdf" target="_blank" rel="noopener" data-landing-i18n="demo">Voir un exemple de rapport</a>
         </div>
+        <p class="landing-cta-disclaimer" data-landing-i18n="shortDisclaimer">CarDiag aide à la décision et ne remplace pas un contrôle technique officiel.</p>
         <ul class="landing-reassurance">
           <li data-landing-i18n="local">Fonctionne hors ligne</li>
           <li data-landing-i18n="private">Données conservées sur votre appareil</li>
@@ -97,6 +98,12 @@
     <div class="landing-fact"><strong>7</strong><span data-landing-i18n="factsSections">sections techniques</span></div>
     <div class="landing-fact"><strong>PDF</strong><span data-landing-i18n="factsReport">rapport professionnel exportable</span></div>
   </div>
+
+  <section class="landing-existing-features landing-shell" aria-labelledby="existingFeaturesTitle">
+    <div><p class="landing-kicker" data-landing-i18n="existingFeaturesKicker">DEUX MODES, UNE DÉCISION PLUS CLAIRE</p><h2 id="existingFeaturesTitle" data-landing-i18n="existingFeaturesTitle">Adaptez le contrôle au temps disponible.</h2></div>
+    <article><strong data-landing-i18n="quickFeatureTitle">⚡ Inspection rapide</strong><p data-landing-i18n="quickFeatureText">Besoin d’un premier avis en 5 minutes ? Le mode rapide couvre les 12 points les plus critiques.</p></article>
+    <article><strong data-landing-i18n="compareFeatureTitle">⇄ Comparaison de véhicules</strong><p data-landing-i18n="compareFeatureText">Comparez 2 ou 3 fiches côte à côte pour confronter scores, défauts et budgets.</p></article>
+  </section>
 
   <section class="landing-section landing-shell" id="paths" aria-labelledby="pathsTitle">
     <div class="landing-section-head"><h2 id="pathsTitle" data-landing-i18n="pathsTitle">Une méthode, adaptée à votre objectif.</h2><p data-landing-i18n="pathsIntro">Choisissez votre situation. CarDiag ouvre le tunnel existant avec les contrôles et le rapport appropriés.</p></div>
@@ -143,7 +150,7 @@
   </section>
 
   <section class="landing-testimonials landing-shell" id="landingTestimonials" hidden data-enabled="false" aria-label="Témoignages utilisateurs"></section>
-  <section class="landing-final landing-shell"><h2 data-landing-i18n="finalTitle">Prenez votre prochaine décision automobile avec des preuves.</h2><p data-landing-i18n="finalText">Commencez gratuitement. Le rapport peut être rempli et exporté sans utiliser l'assistant IA.</p><button class="landing-button" type="button" data-landing-enter data-landing-i18n="finalButton">Créer ma première inspection</button></section>
+  <section class="landing-final landing-shell"><h2 data-landing-i18n="finalTitle">Prenez votre prochaine décision automobile avec des preuves.</h2><p data-landing-i18n="finalText">L’inspection et l’export PDF sont actuellement disponibles sans paiement. Aucun abonnement n’est activé.</p><button class="landing-button" type="button" data-landing-enter data-landing-i18n="finalButton">Créer ma première inspection</button><p class="landing-cta-disclaimer" data-landing-i18n="shortDisclaimer">CarDiag aide à la décision et ne remplace pas un contrôle technique officiel.</p></section>
   <footer class="landing-footer"><div class="landing-shell"><span data-landing-i18n="footerText">CarDiag · Inspection guidée et traçabilité automobile</span><nav aria-label="Informations légales" data-landing-aria-label="ariaLegal"><a href="privacy.html" data-landing-i18n="privacy">Confidentialité</a><a href="terms.html" data-landing-i18n="terms">Conditions</a><a href="account-deletion.html" data-landing-i18n="account">Suppression du compte</a></nav></div></footer>
 </section>
 <header class="app-header">
@@ -165,15 +172,20 @@
     </div>
     <div class="toolbar-row" id="toolbarActions">
       <button class="icon-btn" id="newFicheBtn" type="button" aria-label="Créer une nouvelle fiche" title="Créer une nouvelle fiche">➕ Nouvelle fiche</button>
-      <button class="icon-btn" id="dupFicheBtn" type="button" aria-label="Dupliquer la fiche actuelle" title="Dupliquer la fiche actuelle">⧉ Dupliquer</button>
-      <button class="icon-btn" id="delFicheBtn" type="button" aria-label="Supprimer la fiche actuelle" title="Supprimer la fiche actuelle">🗑 Supprimer</button>
-      <button class="icon-btn" id="compareBtn" type="button" aria-label="Comparer des fiches" title="Comparer des fiches">⇄ Comparer</button>
-      <button class="icon-btn" id="exportBtn" type="button" aria-label="Exporter la fiche au format JSON" title="Exporter la fiche au format JSON">⬇ Export JSON</button>
-      <button class="icon-btn" id="importBtn" type="button" aria-label="Importer une fiche JSON" title="Importer une fiche JSON">⬆ Import JSON</button>
-      <input type="file" id="importFile" accept="application/json" style="display:none">
-      <button class="icon-btn" id="weightSettingsBtn" type="button" aria-label="Régler la pondération du score" title="Régler la pondération du score">⚖ Pondération</button>
       <button class="icon-btn" id="quickModeToggle" type="button" aria-label="Activer l’inspection rapide" title="Activer l’inspection rapide">⚡ Inspection rapide</button>
       <button class="icon-btn" id="darkToggle" type="button" aria-label="Changer le thème clair ou sombre" title="Changer le thème clair ou sombre">🌙 Mode sombre</button>
+      <details class="advanced-actions-menu">
+        <summary class="icon-btn" aria-label="Afficher les actions avancées">••• Plus d’actions</summary>
+        <div class="advanced-actions-popover">
+          <button class="icon-btn" id="dupFicheBtn" type="button" aria-label="Dupliquer la fiche actuelle" title="Dupliquer la fiche actuelle">⧉ Dupliquer</button>
+          <button class="icon-btn" id="delFicheBtn" type="button" aria-label="Supprimer la fiche actuelle" title="Supprimer la fiche actuelle">🗑 Supprimer</button>
+          <button class="icon-btn" id="compareBtn" type="button" aria-label="Comparer des fiches" title="Comparer des fiches">⇄ Comparer</button>
+          <button class="icon-btn" id="exportBtn" type="button" aria-label="Exporter la fiche au format JSON" title="Exporter la fiche au format JSON">⬇ Export JSON</button>
+          <button class="icon-btn" id="importBtn" type="button" aria-label="Importer une fiche JSON" title="Importer une fiche JSON">⬆ Import JSON</button>
+          <button class="icon-btn" id="weightSettingsBtn" type="button" aria-label="Régler la pondération du score" title="Régler la pondération du score">⚖ Pondération</button>
+        </div>
+      </details>
+      <input type="file" id="importFile" accept="application/json" style="display:none">
       <button class="icon-btn" id="installAppBtn" type="button" aria-label="Installer l’application CarDiag" title="Installer l’application CarDiag" hidden>⬇ Installer l’application</button>
     </div>
     <p class="install-app-status" id="installAppStatus" role="status"></p>
@@ -265,6 +277,10 @@
   </section>
 
   <section class="profile-context-panel" id="profileContextPanel" aria-labelledby="profileContextTitle">
+    <div class="active-profile-chip" id="activeProfileChip">
+      <span id="activeProfileChipText">Profil : Acheteur</span>
+      <button type="button" id="changeProfileBtn">Modifier</button>
+    </div>
     <p class="panel-kicker">CONTEXTE DU DOSSIER</p>
     <h2 id="profileContextTitle">Précisez votre situation</h2>
     <p class="profile-context-intro" id="profileContextIntro"></p>
@@ -394,10 +410,10 @@
         <ul id="vehicleIssuesList"></ul>
       </section>
       <input type="hidden" name="motorisation_points_faibles">
-      <div class="grid cols-3" style="margin-top:16px;">
-        <div class="field" id="fieldWrap-kilometrage"><label>Kilométrage <span class="req-star">*</span></label><input type="number" name="kilometrage" placeholder="98000"><span class="req-error">Ce champ est obligatoire.</span></div>
+      <div class="grid cols-3" id="vehicleCoreFields" style="margin-top:16px;">
+        <div class="field" id="fieldWrap-kilometrage"><label>Kilométrage <span class="req-star">*</span></label><input type="number" name="kilometrage" min="0" inputmode="numeric" required placeholder="98000"><span class="req-error">Indiquez un kilométrage valide.</span></div>
         <div class="field"><label>N° VIN / Immatriculation</label><input type="text" name="vin" placeholder="VF1XXXXXXXXXXXXXX"></div>
-        <div class="field" id="fieldWrap-valeur"><label>Valeur affichée / négociée (€) <span class="req-star">*</span></label><input type="number" name="valeur" placeholder="12500"><span class="req-error">Ce champ est obligatoire.</span></div>
+        <div class="field" id="fieldWrap-valeur"><label>Valeur affichée / négociée (€) <span class="req-star">*</span></label><input type="number" name="valeur" min="0" inputmode="decimal" required placeholder="12500"><span class="req-error">Indiquez une valeur valide.</span></div>
       </div>
 
       <div class="subhead">Contexte de l'expertise</div>
@@ -626,7 +642,7 @@
   <section class="diagnostic-report" aria-live="polite">
     <header class="report-head"><div><p class="panel-kicker" id="diagnosticReportKicker">RAPPORT D'INTERVENTION</p><h2 id="diagnosticReportTitle">Synthèse technique</h2></div><button id="chatReset" class="report-reset" type="button">↻ Nouvelle analyse</button></header>
     <div id="reportContent" class="report-content">
-      <div class="waiting-state"><div class="radar" aria-hidden="true"><span></span></div><p class="waiting-kicker">AUCUN RAPPORT ACTIF</p><h3>En attente des mesures terrain</h3><p>La synthèse d'intervention apparaîtra ici après confirmation de la cause probable.</p></div>
+      <div class="waiting-state"><div class="radar" aria-hidden="true"><span></span></div><p class="waiting-kicker">ASSISTANT D’ANALYSE</p><h3>Votre assistant d’analyse</h3><p>Il interprète vos réponses et vos mesures pour signaler les points à surveiller. La synthèse se précise au fil des contrôles renseignés.</p></div>
     </div>
   </section>
 </section>
@@ -713,6 +729,6 @@
 <script src="vendor/qrcode.js"></script>
 <script src="build-data.js?v=20260810-3"></script>
 <script src="js/db-loader.js?v=20260811-1"></script>
-<script type="module" src="js/app.js?v=20260821-7"></script>
+<script type="module" src="js/app.js?v=20260821-11"></script>
 </body>
 </html>

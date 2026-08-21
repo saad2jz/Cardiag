@@ -1,5 +1,6 @@
 import { calculateNegotiation } from './negotiation.js?v=20260814-1';
 import { normalizePersona, personaReport } from '../personas.js?v=20260814-1';
+import { getVehicleBrandLogoDataUrl } from '../branding/vehicle-brand-logos.js?v=20260821-1';
 
 const SECTION_ORDER = ['info','moteur','chassis','carrosserie','habitacle','essai','diagnostic'];
 const STATUS = {
@@ -136,13 +137,14 @@ export async function createPdf(model,branding) {
   if(!window.jspdf?.jsPDF) throw new Error('jsPDF indisponible');
   const { jsPDF }=window.jspdf;const pdf=new jsPDF({orientation:'portrait',unit:'mm',format:'a4',compress:true});
   const palette=THEMES[branding?.theme] || THEMES.carbon;const w=210,h=297;const ref=String(model.id||Date.now()).replace(/^t/,'CD-').toUpperCase();const generatedAt=new Date();const decision=effectiveDecision(model);const persona=normalizePersona(model.data?.usage_scenario);const reportMeta=personaReport(persona);const negotiation=model.negotiation || calculateNegotiation(model);const english=window.cardiagI18n?.language==='en';
+  const vehicleBrandLogo=model.data.brand_logo || await getVehicleBrandLogoDataUrl(model.data.marque);
 
   // Couverture
   pdf.setFillColor(...palette.page);pdf.rect(0,0,w,h,'F');
   pdf.setFillColor(...palette.accent);pdf.rect(0,0,7,h,'F');
   if(!addImageSafe(pdf,branding?.logo,17,16,21,21)){pdf.setFillColor(...palette.accent);pdf.roundedRect(17,16,21,21,4,4,'F');pdf.setTextColor(12,12,12);pdf.setFontSize(10);pdf.text('CD',27.5,29,{align:'center'});}
   pdf.setTextColor(...palette.text);pdf.setFont('helvetica','bold');pdf.setFontSize(12);pdf.text(branding?.workshopName||'CarDiag',43,25);pdf.setFont('helvetica','normal');pdf.setTextColor(...palette.muted);pdf.setFontSize(8);pdf.text('EXPERTISE AUTOMOBILE INDÉPENDANTE',43,31);
-  if(!addImageSafe(pdf,model.data.brand_logo,151,16,42,21))drawVehicleBrandBadge(pdf,model.data.marque,151,16,palette);
+  if(!addImageContained(pdf,vehicleBrandLogo,151,16,42,21,palette))drawVehicleBrandBadge(pdf,model.data.marque,151,16,palette);
   pdf.setTextColor(...palette.text);pdf.setFont('helvetica','bold');pdf.setFontSize(21);const coverTitle=pdf.splitTextToSize(english?reportMeta.titleEn:reportMeta.title,122).slice(0,2);pdf.text(coverTitle,17,58,{lineHeightFactor:1.15});
   pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','normal');pdf.setFontSize(9);pdf.text(`${dateLabel(model.data.date_expertise||model.createdAt)}  ·  Référence ${ref}`,17,80);
   if(model.mainPhoto){addImageSafe(pdf,model.mainPhoto,17,91,176,88);}else{pdf.setFillColor(...palette.surface);pdf.roundedRect(17,91,176,88,4,4,'F');pdf.setTextColor(...palette.muted);pdf.setFontSize(12);pdf.text('PHOTO PRINCIPALE DU VÉHICULE',105,137,{align:'center'});}

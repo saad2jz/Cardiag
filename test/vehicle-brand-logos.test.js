@@ -1,0 +1,32 @@
+import assert from 'node:assert/strict';
+import { access, readFile } from 'node:fs/promises';
+import { test } from 'node:test';
+import {
+  OFFICIAL_LOGOS,
+  getVehicleBrandLogoPath,
+  normalizeVehicleBrand,
+} from '../js/branding/vehicle-brand-logos.js';
+
+const picker = await readFile(new URL('../js/wizard/brand-picker.js', import.meta.url), 'utf8');
+const report = await readFile(new URL('../js/reports/premium-report.js', import.meta.url), 'utf8');
+const styles = await readFile(new URL('../css/styles.css', import.meta.url), 'utf8');
+
+test('the identification picker and PDF share one local vehicle logo manifest', async () => {
+  assert.equal(getVehicleBrandLogoPath('Citroën'), 'assets/vehicle-brands/citroen.svg');
+  assert.equal(getVehicleBrandLogoPath('Mercedes-Benz'), 'assets/vehicle-brands/mercedes_benz.svg');
+  assert.equal(normalizeVehicleBrand('VW'), 'volkswagen');
+  assert.match(picker, /getVehicleBrandLogoPath\(name\)/);
+  assert.match(picker, /<strong>\$\{brand/);
+  assert.match(report, /await getVehicleBrandLogoDataUrl\(model\.data\.marque\)/);
+  assert.match(report, /addImageContained\(pdf,vehicleBrandLogo/);
+  assert.match(styles, /\.brand-emblem\.has-official-logo\{background:var\(--brand-logo\) center\/contain no-repeat;\}/);
+
+  for (const path of OFFICIAL_LOGOS.values()) {
+    await access(new URL(`../${path}`, import.meta.url));
+  }
+});
+
+test('runtime logo modules do not depend on an external logo service', () => {
+  assert.doesNotMatch(picker, /upload\.wikimedia\.org|commons\.wikimedia\.org/);
+  assert.doesNotMatch(report, /upload\.wikimedia\.org|commons\.wikimedia\.org/);
+});

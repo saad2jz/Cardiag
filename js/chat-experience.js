@@ -354,10 +354,11 @@ function reportHistoryContent(data) {
 }
 
 function waitingReport() {
-  const scenario = usageScenarioConfig();
   const state = document.createElement('div');
   state.className = 'waiting-state';
-  state.innerHTML = `<div class="radar" aria-hidden="true"><span></span></div><p class="waiting-kicker">${scenario.reportTitle.toUpperCase()}</p><h3>${isEnglish() ? 'Start your report' : 'Commencez votre dossier'}</h3><p>${scenario.context}</p>`;
+  state.innerHTML = isEnglish()
+    ? '<div class="radar" aria-hidden="true"><span></span></div><p class="waiting-kicker">ANALYSIS ASSISTANT</p><h3>Your analysis assistant</h3><p>It interprets your answers and measurements to flag points that need attention. The summary becomes more precise as you complete the checks.</p>'
+    : '<div class="radar" aria-hidden="true"><span></span></div><p class="waiting-kicker">ASSISTANT D’ANALYSE</p><h3>Votre assistant d’analyse</h3><p>Il interprète vos réponses et vos mesures pour signaler les points à surveiller. La synthèse se précise au fil des contrôles renseignés.</p>';
   return state;
 }
 

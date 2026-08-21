@@ -1,3 +1,5 @@
+import { OFFICIAL_LOGOS, getVehicleBrandLogoPath } from '../branding/vehicle-brand-logos.js?v=20260821-1';
+
 const INITIAL_BRAND_LIMIT = 15;
 const FEATURED_BRANDS = [
   'Renault', 'Peugeot', 'Citroën', 'Dacia', 'Volkswagen', 'Toyota', 'BMW',
@@ -18,13 +20,6 @@ const EMBLEM_BRANDS = new Set([
   'land rover', 'lexus', 'mazda', 'mercedes', 'mini', 'mitsubishi', 'nissan',
   'opel', 'peugeot', 'porsche', 'renault', 'seat', 'skoda', 'smart', 'subaru',
   'suzuki', 'tesla', 'toyota', 'volkswagen', 'volvo',
-]);
-
-const OFFICIAL_LOGOS = new Map([
-  ['renault', 'renault'], ['peugeot', 'peugeot'], ['citroen', 'citroen'],
-  ['dacia', 'dacia'], ['volkswagen', 'volkswagen'], ['toyota', 'toyota'],
-  ['bmw', 'bmw'], ['audi', 'audi'], ['ford', 'ford'], ['opel', 'opel'],
-  ['fiat', 'fiat'], ['nissan', 'nissan'], ['hyundai', 'hyundai'], ['kia', 'kia'],
 ]);
 
 function normalize(value) {
@@ -92,9 +87,9 @@ function emblemSvg(name) {
 }
 
 function emblemMarkup(name) {
-  const slug = OFFICIAL_LOGOS.get(brandKey(name));
-  if (slug) {
-    return `<span class="brand-emblem has-official-logo" style="--brand-logo:url('assets/vehicle-brands/${slug}.svg')" aria-hidden="true"></span>`;
+  const logoPath = getVehicleBrandLogoPath(name);
+  if (logoPath) {
+    return `<span class="brand-emblem has-official-logo" style="--brand-logo:url('${logoPath}')" aria-hidden="true"></span>`;
   }
   return `<span class="brand-emblem" data-brand-key="${brandKey(name)}">${emblemSvg(name)}</span>`;
 }
@@ -159,6 +154,8 @@ export function initializeBrandPicker(vehicles = []) {
       : label('brandPicker.more', `Voir les ${filtered.length} marques`);
   }
 
+  // Capture le clic avant les gestionnaires historiques du formulaire :
+  // certains parcours interceptent les événements remontants pour naviguer.
   grid.addEventListener('click', (event) => {
     const card = event.target.closest('.brand-card');
     if (!card) return;
@@ -166,7 +163,7 @@ export function initializeBrandPicker(vehicles = []) {
     select.dispatchEvent(new Event('change', { bubbles: true }));
     render();
     document.getElementById('step-modele')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-  });
+  }, true);
   search.addEventListener('input', render);
   more.addEventListener('click', () => {
     expanded = !expanded;
