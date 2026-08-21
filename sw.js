@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cardiag-v60';
+const CACHE_NAME = 'cardiag-v61';
 const APP_SHELL = [
   './',
   './index.html',
@@ -44,7 +44,7 @@ const APP_SHELL = [
   './css/shared-report.css?v=20260813-1',
   './build-data.js?v=20260810-3',
   './js/db-loader.js?v=20260811-1',
-  './js/app.js?v=20260821-6',
+  './js/app.js?v=20260821-7',
   './js/navigation/home-button.js?v=20260820-1',
   './js/landing/landing.js?v=20260821-1',
   './js/wizard.js?v=20260821-2',
@@ -73,7 +73,7 @@ const APP_SHELL = [
   './js/reports/report-sharing.js?v=20260814-2',
   './js/reports/shared-report.js?v=20260813-1',
   './js/chat-experience.js?v=20260820-1',
-  './js/ux/inspection-enhancements.js?v=20260821-2',
+  './js/ux/inspection-enhancements.js?v=20260821-3',
   './assets/reference/section-guides/vehicule.svg',
   './assets/reference/section-guides/moteur.svg',
   './assets/reference/section-guides/chassis.svg',

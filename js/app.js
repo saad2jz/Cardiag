@@ -21,7 +21,7 @@ import { initializeRecordsGallery } from './records/records-gallery.js?v=2026082
 import { initializePremiumReport } from './reports/premium-report.js?v=20260814-7';
 import { initializeReportSharing } from './reports/report-sharing.js?v=20260814-2';
 import { initializeLanding } from './landing/landing.js?v=20260821-1';
-import { initializeInspectionEnhancements } from './ux/inspection-enhancements.js?v=20260821-2';
+import { initializeInspectionEnhancements } from './ux/inspection-enhancements.js?v=20260821-3';
 import { initializeHomeButton } from './navigation/home-button.js?v=20260820-1';
 import { initializeBrandPicker } from './wizard/brand-picker.js?v=20260821-3';
 

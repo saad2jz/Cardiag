@@ -15,7 +15,7 @@ test('profile selection is grouped by family and exposes inspection depth before
   assert.match(index, /data-profile-family-choice="professional"/);
   assert.match(index, /name="inspection_mode" value="quick"/);
   assert.match(index, /name="inspection_mode" value="complete"/);
-  assert.match(index, /Le plus choisi/);
+  assert.doesNotMatch(index, /Le plus choisi/);
   assert.match(wizard, /renderProfileFamily/);
 });
 
@@ -35,6 +35,7 @@ test('mobile inspection is a strict accessible wizard with persistent progress a
   assert.match(inspection, /MOBILE_WIZARD_QUERY = '\(max-width: 767px\)'/);
   assert.match(inspection, /data-guide-section-current/);
   assert.match(inspection, /cardiag:inspection-section-request/);
+  assert.match(inspection, /if \(!visible\) return/);
   assert.match(inspection, /ArrowLeft/);
   assert.match(styles, /position:fixed;z-index:125/);
   assert.match(styles, /inspection-mobile-wizard/);

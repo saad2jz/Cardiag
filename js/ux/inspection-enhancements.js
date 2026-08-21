@@ -166,9 +166,12 @@ function initializeGuide(guide) {
   // reversible full-report preference.
   let guided = mobileQuery.matches || safeGet(GUIDED_MODE_KEY) !== 'full';
   let currentName = safeGet(GUIDED_POSITION_KEY) || '';
+  let visible = window.cardiagWizard?.currentStep === 4;
   const actionBar = guide.querySelector('.inspection-guide-actions');
   const previousButton = actionBar.querySelector('[data-guide-prev]');
   const nextButton = actionBar.querySelector('[data-guide-next]');
+  guide.hidden = !visible;
+  actionBar.hidden = !visible;
 
   const available = () => [...document.querySelectorAll('.wizard-checklist details.section[data-section]')]
     .flatMap((section) => guidedItems(section));
@@ -210,6 +213,10 @@ function initializeGuide(guide) {
   }
 
   function render() {
+    // Refresh events (auto-save, score, language) also fire on identification.
+    // The inspection controller must never reopen another <details> section
+    // while its own view is not active.
+    if (!visible) return;
     const items = available();
     if (!items.length) return;
     let index = items.findIndex((item) => itemName(item) === currentName);
@@ -349,7 +356,12 @@ function initializeGuide(guide) {
   return {
     refresh: render,
     goToSection,
-    setVisible(visible) { guide.hidden = !visible; actionBar.hidden = !visible; if (visible) render(); },
+    setVisible(value) {
+      visible = Boolean(value);
+      guide.hidden = !visible;
+      actionBar.hidden = !visible;
+      if (visible) render();
+    },
   };
 }
 
