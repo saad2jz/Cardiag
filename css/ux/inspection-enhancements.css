@@ -23,3 +23,15 @@ body.inspection-guided-mode .inspection-guided-current.field{display:flex;flex-d
 
 @media(max-width:760px){.inspection-guide{position:sticky;top:calc(62px + env(safe-area-inset-top));margin-inline:-8px;padding:11px;border-radius:14px}.inspection-guide-head{align-items:flex-start}.inspection-guide-head>button{max-width:145px;min-height:38px;padding:7px 9px;font-size:10px}.inspection-mini-stepper{margin-inline:-2px}.inspection-mini-stepper button{min-width:94px}.inspection-guide-actions{display:grid;grid-template-columns:1fr 1fr}.inspection-guide-actions button{width:100%}.inspection-guide-actions.is-below-question{position:sticky;z-index:12;bottom:calc(72px + env(safe-area-inset-bottom));margin:12px -4px 4px;padding:10px 4px;background:color-mix(in srgb,var(--surface) 96%,transparent);backdrop-filter:blur(14px)}.inspection-guide-actions.is-below-question button,.inspection-guide-actions.is-below-question button:last-child{min-width:0}.inspection-progress-dock{left:8px;bottom:calc(82px + env(safe-area-inset-bottom));padding-right:9px}.inspection-progress-dock>span:last-child{display:none}.inspection-section-summary{align-items:stretch;flex-direction:column}.inspection-section-summary span{text-align:left}body.inspection-guided-mode .inspection-guided-current{min-height:320px;flex-direction:column;align-items:stretch}body.inspection-guided-mode .inspection-guided-current .badge-group{margin-top:auto}.inspection-guided-current>.inspection-guide-visual{width:100%;flex-basis:auto}.inspection-guide-visual svg{aspect-ratio:16/8}}
 @media(prefers-reduced-motion:reduce){.check-item.is-saved-feedback{animation:none}.inspection-guide-progress span{transition:none}}
+
+.inspection-guide-head [data-guide-section-current]{color:var(--ink);font-weight:800}
+.inspection-mini-stepper button[aria-current="step"]{box-shadow:0 0 0 2px color-mix(in srgb,var(--primary) 18%,transparent)}
+.inspection-mini-stepper button>span img{display:block;width:15px;height:15px}
+.inspection-mini-stepper button:focus-visible,.inspection-guide-actions button:focus-visible{outline:3px solid color-mix(in srgb,var(--primary) 55%,transparent);outline-offset:2px}
+
+@media(max-width:767px){
+  .inspection-guide{top:var(--inspection-sticky-top,126px)}
+  .inspection-guide-actions.is-below-question{position:fixed;z-index:125;left:max(8px,env(safe-area-inset-left));right:max(8px,env(safe-area-inset-right));bottom:calc(72px + env(safe-area-inset-bottom));max-width:760px;margin:0 auto;padding:9px;border:1px solid var(--border);border-radius:13px;background:color-mix(in srgb,var(--surface) 96%,transparent);box-shadow:var(--ombre-lg);backdrop-filter:blur(14px)}
+  .inspection-progress-dock{display:none!important}
+  body.inspection-mobile-wizard .inspection-guided-current{margin-bottom:82px}
+}

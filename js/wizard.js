@@ -107,11 +107,13 @@ export function initializeWizard() {
   const generate = document.getElementById('wizardGenerate');
   const stepLabel = document.getElementById('wizardStepLabel');
   const progress = document.getElementById('wizardProgressBar');
+  const contextPanel = document.getElementById('profileContextPanel');
   const dots = [...document.querySelectorAll('.wizard-dots span')];
   const contextIntro = document.getElementById('profileContextIntro');
   const chatPanel = document.getElementById('chatPanel');
   let currentStep = 1;
   let assistantOpened = false;
+  let profileConfirmed = false;
   let transitionTimer;
 
   function profileFamily(profile = activeProfile()) {
@@ -135,9 +137,12 @@ export function initializeWizard() {
   function updateProfileContext() {
     const profile = activeProfile();
     document.body.dataset.usageScenario = profile;
+    document.body.dataset.scenarioConfirmed = String(profileConfirmed);
+    contextPanel.hidden = !profileConfirmed;
+    contextPanel.setAttribute('aria-hidden', String(!profileConfirmed));
     if (contextIntro) contextIntro.textContent = PROFILE_CONTEXT[profile];
     document.querySelectorAll('[data-context-profile]').forEach((panel) => {
-      const active = panel.dataset.contextProfile === profile;
+      const active = profileConfirmed && panel.dataset.contextProfile === profile;
       panel.hidden = !active;
       panel.setAttribute('aria-hidden', String(!active));
       panel.querySelectorAll('input, textarea, select, button').forEach((control) => {
@@ -240,6 +245,7 @@ export function initializeWizard() {
     bottomBack.hidden = currentStep === 1;
     next.hidden = currentStep === STEP_COUNT;
     generate.hidden = currentStep !== STEP_COUNT;
+    document.body.classList.toggle('inspection-step-active', currentStep === STEP_COUNT);
     next.textContent = currentStep === 1
       ? translate('wizard.start', 'Commencer')
       : currentStep === 3
@@ -268,7 +274,9 @@ export function initializeWizard() {
 
   function advance() {
     if (currentStep === 1) {
+      profileConfirmed = true;
       safeStorageSet(PROFILE_STORAGE_KEY, activeProfile());
+      updateProfileContext();
     }
     if (currentStep === 2 && !validateIdentification()) return;
     goToStep(currentStep + 1, 'forward');
@@ -286,6 +294,7 @@ export function initializeWizard() {
   document.querySelectorAll('[name="usage_scenario"]').forEach((input) => {
     input.addEventListener('change', () => {
       if (!input.checked) return;
+      profileConfirmed = true;
       safeStorageSet(PROFILE_STORAGE_KEY, input.value);
       assistantOpened = false;
       renderProfileFamily(profileFamily(input.value));
@@ -382,6 +391,7 @@ export function initializeWizard() {
 
   const storedProfile = safeStorageGet(PROFILE_STORAGE_KEY);
   if (VALID_PROFILES.has(storedProfile)) {
+    profileConfirmed = true;
     const profileInput = document.querySelector(`[name="usage_scenario"][value="${storedProfile}"]`);
     if (profileInput) profileInput.checked = true;
   }

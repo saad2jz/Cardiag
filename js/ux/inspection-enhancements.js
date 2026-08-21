@@ -1,13 +1,15 @@
 const GUIDED_MODE_KEY = 'cardiag_guided_inspection_v1';
+const GUIDED_POSITION_KEY = 'cardiag_guided_inspection_position_v1';
+const MOBILE_WIZARD_QUERY = '(max-width: 767px)';
 
 const SECTIONS = [
-  { key: 'info', fr: 'Véhicule', en: 'Vehicle', image: 'vehicule.svg', captionFr: 'Identifiez le véhicule et vérifiez ses documents.', captionEn: 'Identify the vehicle and verify its documents.' },
-  { key: 'moteur', fr: 'Moteur', en: 'Engine', image: 'moteur.svg', captionFr: 'Contrôlez les niveaux, les fuites et le fonctionnement moteur.', captionEn: 'Check levels, leaks and engine operation.' },
-  { key: 'chassis', fr: 'Châssis', en: 'Chassis', image: 'chassis.svg', captionFr: 'Inspectez la structure, les trains roulants et les pneus.', captionEn: 'Inspect the structure, running gear and tyres.' },
-  { key: 'carrosserie', fr: 'Carrosserie', en: 'Body', image: 'carrosserie.svg', captionFr: 'Repérez les réparations, défauts de peinture et mauvais alignements.', captionEn: 'Spot repairs, paint defects and panel misalignment.' },
-  { key: 'habitacle', fr: 'Habitacle', en: 'Cabin', image: 'habitacle.svg', captionFr: 'Testez les équipements et recherchez usure ou humidité.', captionEn: 'Test equipment and look for wear or moisture.' },
-  { key: 'essai', fr: 'Essai', en: 'Road test', image: 'essai-routier.svg', captionFr: 'Évaluez freinage, direction, boîte et stabilité en sécurité.', captionEn: 'Safely assess braking, steering, gearbox and stability.' },
-  { key: 'diagnostic', fr: 'OBD2 & bilan', en: 'OBD2 & review', image: 'diagnostic.svg', captionFr: 'Relevez les codes OBD2 avant de conclure le bilan.', captionEn: 'Read OBD2 codes before completing the assessment.' },
+  { key: 'info', fr: 'Véhicule', en: 'Vehicle', icon: 'icons/nav-vehicle.svg', captionFr: 'Identifiez le véhicule et vérifiez ses documents.', captionEn: 'Identify the vehicle and verify its documents.' },
+  { key: 'moteur', fr: 'Moteur', en: 'Engine', icon: 'icons/nav-engine.svg', captionFr: 'Contrôlez les niveaux, les fuites et le fonctionnement moteur.', captionEn: 'Check levels, leaks and engine operation.' },
+  { key: 'chassis', fr: 'Châssis', en: 'Chassis', icon: 'icons/nav-chassis.svg', captionFr: 'Inspectez la structure, les trains roulants et les pneus.', captionEn: 'Inspect the structure, running gear and tyres.' },
+  { key: 'carrosserie', fr: 'Carrosserie', en: 'Body', icon: 'icons/nav-body.svg', captionFr: 'Repérez les réparations, défauts de peinture et mauvais alignements.', captionEn: 'Spot repairs, paint defects and panel misalignment.' },
+  { key: 'habitacle', fr: 'Habitacle', en: 'Cabin', icon: 'icons/nav-cabin.svg', captionFr: 'Testez les équipements et recherchez usure ou humidité.', captionEn: 'Test equipment and look for wear or moisture.' },
+  { key: 'essai', fr: 'Essai', en: 'Road test', icon: 'icons/nav-road.svg', captionFr: 'Évaluez freinage, direction, boîte et stabilité en sécurité.', captionEn: 'Safely assess braking, steering, gearbox and stability.' },
+  { key: 'diagnostic', fr: 'OBD2 & bilan', en: 'OBD2 & review', icon: 'icons/nav-report.svg', captionFr: 'Relevez les codes OBD2 avant de conclure le bilan.', captionEn: 'Read OBD2 codes before completing the assessment.' },
 ];
 
 function english() {
@@ -144,12 +146,12 @@ function createGuide() {
   guide.dataset.inspectionGuide = '';
   guide.innerHTML = `
     <div class="inspection-guide-head">
-      <div><p class="panel-kicker">${english() ? 'GUIDED INSPECTION' : 'INSPECTION GUIDÉE'}</p><strong data-guide-count>0 / 33</strong><small data-guide-time></small></div>
+      <div><p class="panel-kicker">${english() ? 'GUIDED INSPECTION' : 'INSPECTION GUIDÉE'}</p><strong data-guide-count>0 / 33</strong><small data-guide-section-current></small><small data-guide-time></small></div>
       <button type="button" data-guide-view aria-pressed="true"></button>
     </div>
     <div class="inspection-guide-progress" aria-hidden="true"><span data-guide-progress></span></div>
     <nav class="inspection-mini-stepper" aria-label="${english() ? 'Inspection sections' : 'Sections de l’inspection'}">
-      ${SECTIONS.map((section, index) => `<button type="button" data-guide-section="${section.key}"><span>${index + 1}</span><b>${english() ? section.en : section.fr}</b><small data-step-photo="${section.key}">0 photo</small></button>`).join('')}
+      ${SECTIONS.map((section) => `<button type="button" data-guide-section="${section.key}"><span><img src="${section.icon}" alt=""></span><b>${english() ? section.en : section.fr}</b><small data-step-photo="${section.key}">0 photo</small></button>`).join('')}
     </nav>
     <div class="inspection-question-meta"><span data-guide-question></span><span data-guide-photo></span></div>
     <div class="inspection-guide-actions"><button type="button" data-guide-prev>← ${english() ? 'Previous' : 'Précédent'}</button><button type="button" data-guide-next>${english() ? 'Next' : 'Suivant'} →</button></div>`;
@@ -158,9 +160,12 @@ function createGuide() {
 }
 
 function initializeGuide(guide) {
-  if (!guide) return { refresh() {}, setVisible() {} };
-  let guided = safeGet(GUIDED_MODE_KEY) !== 'full';
-  let currentName = '';
+  if (!guide) return { refresh() {}, setVisible() {}, goToSection() {} };
+  const mobileQuery = window.matchMedia(MOBILE_WIZARD_QUERY);
+  // Mobile is deliberately strict by default. Desktop keeps the user's
+  // reversible full-report preference.
+  let guided = mobileQuery.matches || safeGet(GUIDED_MODE_KEY) !== 'full';
+  let currentName = safeGet(GUIDED_POSITION_KEY) || '';
   const actionBar = guide.querySelector('.inspection-guide-actions');
   const previousButton = actionBar.querySelector('[data-guide-prev]');
   const nextButton = actionBar.querySelector('[data-guide-next]');
@@ -173,14 +178,35 @@ function initializeGuide(guide) {
   function setGuided(value) {
     guided = Boolean(value);
     safeSet(GUIDED_MODE_KEY, guided ? 'guided' : 'full');
+    document.body.classList.toggle('inspection-full-report', !guided);
     render();
   }
 
   function choose(item, scroll = true) {
     if (!item) return;
     currentName = itemName(item);
+    safeSet(GUIDED_POSITION_KEY, currentName);
     render();
-    if (scroll) guide.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (scroll) {
+      const heading = item.closest('details.section')?.querySelector('summary');
+      (heading || item).scrollIntoView({ behavior: 'smooth', block: 'start' });
+      window.setTimeout(() => item.querySelector('input, button, textarea, select')?.focus({ preventScroll: true }), 280);
+    }
+  }
+
+  function goToSection(key, scroll = true) {
+    if (key === 'info') {
+      window.cardiagWizard?.goToStep?.(2, 'back');
+      window.dispatchEvent(new CustomEvent('cardiag:inspection-section-change', { detail: { key } }));
+      return;
+    }
+    window.cardiagWizard?.goToStep?.(4, 'forward');
+    const section = document.querySelector(`.wizard-checklist details.section[data-section="${key}"]`);
+    const candidates = guidedItems(section);
+    const target = candidates.find((item) => !item.querySelector('input[type="radio"]:checked')) || candidates[0];
+    if (!target) return;
+    if (!guided) setGuided(true);
+    choose(target, scroll);
   }
 
   function render() {
@@ -191,9 +217,13 @@ function initializeGuide(guide) {
     const current = items[index] || items[0];
     currentName = itemName(current);
     const currentSection = current.closest('details.section');
+    const currentSectionKey = currentSection?.dataset.section || 'moteur';
+    const currentSectionIndex = Math.max(1, SECTIONS.findIndex((section) => section.key === currentSectionKey));
+    const currentSectionMeta = SECTIONS[currentSectionIndex] || SECTIONS[1];
     const stats = allStats();
     const keys = photoKeys();
     const percent = stats.total ? Math.round((stats.done / stats.total) * 100) : 0;
+    window.dispatchEvent(new CustomEvent('cardiag:inspection-section-change', { detail: { key: currentSectionKey } }));
 
     guide.querySelector('.panel-kicker').textContent = english() ? 'GUIDED INSPECTION' : 'INSPECTION GUIDÉE';
     guide.querySelector('.inspection-mini-stepper').setAttribute('aria-label', english() ? 'Inspection sections' : 'Sections de l’inspection');
@@ -204,6 +234,7 @@ function initializeGuide(guide) {
     });
 
     document.body.classList.toggle('inspection-guided-mode', guided);
+    document.body.classList.toggle('inspection-mobile-wizard', mobileQuery.matches && guided);
     document.querySelectorAll('.wizard-checklist details.section').forEach((section) => section.classList.remove('inspection-guided-section'));
     document.querySelectorAll('.wizard-checklist .check-item, .wizard-checklist .field').forEach((item) => item.classList.remove('inspection-guided-current'));
     document.querySelectorAll('.wizard-checklist .subhead').forEach((subhead) => subhead.classList.remove('inspection-guided-context'));
@@ -236,6 +267,9 @@ function initializeGuide(guide) {
     }
 
     guide.querySelector('[data-guide-count]').textContent = `${stats.done} / ${stats.total} ${english() ? 'checked' : 'vérifiés'}`;
+    guide.querySelector('[data-guide-section-current]').textContent = english()
+      ? `Section ${currentSectionIndex + 1}/7 — ${currentSectionMeta.en}`
+      : `Section ${currentSectionIndex + 1}/7 — ${currentSectionMeta.fr}`;
     guide.querySelector('[data-guide-time]').textContent = remainingLabel(stats);
     guide.querySelector('[data-guide-progress]').style.width = `${percent}%`;
     guide.querySelector('[data-guide-question]').textContent = english() ? `Question ${index + 1} of ${items.length}` : `Question ${index + 1} sur ${items.length}`;
@@ -243,13 +277,14 @@ function initializeGuide(guide) {
     const view = guide.querySelector('[data-guide-view]');
     view.setAttribute('aria-pressed', String(guided));
     view.textContent = guided ? (english() ? 'Show full report' : 'Voir la fiche complète') : (english() ? 'Resume guided mode' : 'Reprendre le mode guidé');
-    previousButton.disabled = index === 0;
+    previousButton.disabled = false;
     nextButton.textContent = index === items.length - 1 ? (english() ? 'Review report →' : 'Voir le bilan →') : (english() ? 'Next →' : 'Suivant →');
 
     SECTIONS.forEach((meta) => {
       const section = document.querySelector(`details.section[data-section="${meta.key}"]`);
       const button = guide.querySelector(`[data-guide-section="${meta.key}"]`);
       if (!button) return;
+      button.setAttribute('aria-current', meta.key === currentSectionKey ? 'step' : 'false');
       if (meta.key === 'info') {
         const sectionStatus = sectionStats(section);
         const photos = sectionPhotoStats(section, keys);
@@ -270,6 +305,10 @@ function initializeGuide(guide) {
   previousButton.addEventListener('click', () => {
     const items = available();
     const index = items.findIndex((item) => itemName(item) === currentName);
+    if (index <= 0) {
+      goToSection('info');
+      return;
+    }
     choose(items[Math.max(0, index - 1)]);
   });
   nextButton.addEventListener('click', () => {
@@ -283,19 +322,33 @@ function initializeGuide(guide) {
     choose(items[index + 1]);
   });
   guide.querySelectorAll('[data-guide-section]').forEach((button) => button.addEventListener('click', () => {
-    const key = button.dataset.guideSection;
-    if (key === 'info') {
-      window.cardiagWizard?.goToStep?.(2, 'back');
-      return;
-    }
-    window.cardiagWizard?.goToStep?.(4, 'forward');
-    const section = document.querySelector(`.wizard-checklist details.section[data-section="${key}"]`);
-    const candidates = checkItems(section);
-    choose(candidates.find((item) => !item.querySelector('input[type="radio"]:checked')) || candidates[0]);
+    goToSection(button.dataset.guideSection);
   }));
+
+  guide.querySelector('.inspection-mini-stepper').addEventListener('keydown', (event) => {
+    if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+    const buttons = [...guide.querySelectorAll('[data-guide-section]')];
+    const index = buttons.indexOf(document.activeElement);
+    if (index < 0) return;
+    event.preventDefault();
+    const nextIndex = event.key === 'Home' ? 0
+      : event.key === 'End' ? buttons.length - 1
+        : (index + (event.key === 'ArrowRight' ? 1 : -1) + buttons.length) % buttons.length;
+    buttons[nextIndex].focus();
+  });
+
+  window.addEventListener('cardiag:inspection-section-request', (event) => {
+    if (event.detail?.key) goToSection(event.detail.key);
+  });
+  const syncViewportMode = () => {
+    if (mobileQuery.matches && !guided) guided = true;
+    render();
+  };
+  mobileQuery.addEventListener?.('change', syncViewportMode);
 
   return {
     refresh: render,
+    goToSection,
     setVisible(visible) { guide.hidden = !visible; actionBar.hidden = !visible; if (visible) render(); },
   };
 }
@@ -304,7 +357,14 @@ export function initializeInspectionEnhancements() {
   ensureSectionSummaries();
   const dock = createProgressDock();
   const guide = initializeGuide(createGuide());
+  const updateStickyOffset = () => {
+    const headerHeight = document.getElementById('wizardHeader')?.getBoundingClientRect().height || 0;
+    const tabsHeight = document.getElementById('appTabbar')?.getBoundingClientRect().height || 0;
+    document.documentElement.style.setProperty('--wizard-header-height', `${Math.ceil(headerHeight)}px`);
+    document.documentElement.style.setProperty('--inspection-sticky-top', `${Math.ceil(headerHeight + tabsHeight)}px`);
+  };
   const refresh = () => {
+    updateStickyOffset();
     updateSectionSummaries();
     updateProgressDock(dock);
     guide.refresh();
@@ -327,5 +387,6 @@ export function initializeInspectionEnhancements() {
     guide.setVisible(visible);
     refresh();
   });
+  window.addEventListener('resize', () => requestAnimationFrame(updateStickyOffset), { passive: true });
   refresh();
 }

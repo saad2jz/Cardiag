@@ -607,6 +607,13 @@ export function initializeLegacyFeatures(vehicleData) {
     };
 
     const goTo = (key)=>{
+      if(window.cardiagWizard){
+        if(key === 'info') window.cardiagWizard.goToStep?.(2, 'back');
+        else window.cardiagWizard.goToStep?.(4, 'forward');
+        window.dispatchEvent(new CustomEvent('cardiag:inspection-section-request', { detail: { key } }));
+        setActive(key);
+        return;
+      }
       const target = sections.find(sec=> sec.dataset.section === key);
       if(!target) return;
       sections.forEach(sec=>{ sec.open = sec === target; });
@@ -616,6 +623,10 @@ export function initializeLegacyFeatures(vehicleData) {
 
     tabs.forEach(tab=>{
       tab.addEventListener('click', ()=> goTo(tab.dataset.gotoSection));
+    });
+
+    window.addEventListener('cardiag:inspection-section-change', event=>{
+      if(event.detail?.key) setActive(event.detail.key);
     });
 
     // Comportement "application" : une seule section ouverte à la fois, et
@@ -715,21 +726,37 @@ export function initializeLegacyFeatures(vehicleData) {
     document.getElementById('delFicheBtn').addEventListener('click', ()=>{
       if(Object.keys(db).length <= 1){ alert('Impossible de supprimer la dernière fiche restante.'); return; }
       if(!confirm('Supprimer la fiche « '+ficheLabel(db[currentId])+' » ? Cette action est irréversible après quelques secondes (annulation possible juste après).')) return;
-      const deletedId = currentId;
-      const deletedFiche = db[deletedId];
-      const deletedLabel = ficheLabel(deletedFiche);
-      delete db[currentId];
-      persist();
-      const nextId = Object.keys(db)[0];
-      switchFiche(nextId);
-      refreshSelector();
-      showUndoSnackbar('Fiche « '+deletedLabel+' » supprimée.', ()=>{
-        db[deletedId] = deletedFiche;
-        persist();
-        switchFiche(deletedId);
-        refreshSelector();
-      });
+      deleteRecordById(currentId);
     });
+  }
+
+  function deleteRecordById(id){
+    if(!db[id]) return {ok:false, code:'NOT_FOUND'};
+    if(Object.keys(db).length <= 1) return {ok:false, code:'LAST_RECORD'};
+    saveCurrent();
+    const deletedId = id;
+    const deletedFiche = JSON.parse(JSON.stringify(db[id]));
+    const deletedLabel = ficheLabel(deletedFiche);
+    const wasCurrent = deletedId === currentId;
+    delete db[deletedId];
+    if(wasCurrent){
+      currentId = Object.keys(db)[0];
+      safeStorage.setItem(CUR_KEY,currentId);
+      applyToForm(db[currentId].data);
+      restoreVehicleSelects(db[currentId].data);
+      renderAllPhotoGrids();
+      updateAll();
+    }
+    persist();
+    refreshSelector();
+    showUndoSnackbar('Fiche « '+deletedLabel+' » supprimée.', ()=>{
+      db[deletedId] = deletedFiche;
+      persist();
+      if(wasCurrent) switchFiche(deletedId);
+      refreshSelector();
+    });
+    window.dispatchEvent(new CustomEvent('cardiag:record-delete',{detail:{id:deletedId}}));
+    return {ok:true, id:deletedId};
   }
 
   let undoSnackbarTimer = null;
@@ -2288,16 +2315,17 @@ export function initializeLegacyFeatures(vehicleData) {
     getCurrentRecord: ()=>JSON.parse(JSON.stringify(db[currentId])),
     getReportModel: (id=currentId)=>reportModelFor(db[id]),
     listReportModels: ()=>Object.values(db).map(reportModelFor).filter(Boolean),
-    createRecord: (initialData={})=>{
+    createRecord: async (initialData={})=>{
       saveCurrent();
       const id = createFiche({data:initialData});
       currentId = id;
       safeStorage.setItem(CUR_KEY,currentId);
       refreshSelector();
       applyToForm(initialData);
-      restoreVehicleSelects(initialData);
+      await restoreVehicleSelects(initialData);
       renderAllPhotoGrids();
       updateAll();
+      window.dispatchEvent(new CustomEvent('cardiag:record-open', { detail:{ id, created:true } }));
       return id;
     },
     useVehicleFromRecord: async (sourceId)=>{
@@ -2317,6 +2345,7 @@ export function initializeLegacyFeatures(vehicleData) {
       return true;
     },
     openComparison: (ids=[])=>openComparison(ids),
+    deleteRecord: (id)=>deleteRecordById(id),
     setShareUrl: (id, shareUrl)=>{
       if(!db[id]) return false;
       db[id].shareUrl = String(shareUrl || '');

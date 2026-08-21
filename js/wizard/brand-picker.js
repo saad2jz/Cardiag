@@ -1,4 +1,4 @@
-const INITIAL_BRAND_LIMIT = 30;
+const INITIAL_BRAND_LIMIT = 15;
 const FEATURED_BRANDS = [
   'Renault', 'Peugeot', 'Citroën', 'Dacia', 'Volkswagen', 'Toyota', 'BMW',
   'Mercedes-Benz', 'Audi', 'Ford', 'Opel', 'Fiat', 'Nissan', 'Hyundai', 'Kia',
@@ -18,6 +18,13 @@ const EMBLEM_BRANDS = new Set([
   'land rover', 'lexus', 'mazda', 'mercedes', 'mini', 'mitsubishi', 'nissan',
   'opel', 'peugeot', 'porsche', 'renault', 'seat', 'skoda', 'smart', 'subaru',
   'suzuki', 'tesla', 'toyota', 'volkswagen', 'volvo',
+]);
+
+const OFFICIAL_LOGOS = new Map([
+  ['renault', 'renault'], ['peugeot', 'peugeot'], ['citroen', 'citroen'],
+  ['dacia', 'dacia'], ['volkswagen', 'volkswagen'], ['toyota', 'toyota'],
+  ['bmw', 'bmw'], ['audi', 'audi'], ['ford', 'ford'], ['opel', 'opel'],
+  ['fiat', 'fiat'], ['nissan', 'nissan'], ['hyundai', 'hyundai'], ['kia', 'kia'],
 ]);
 
 function normalize(value) {
@@ -84,6 +91,14 @@ function emblemSvg(name) {
   return `<svg viewBox="0 0 100 100" role="img" aria-hidden="true" focusable="false">${content}</svg>`;
 }
 
+function emblemMarkup(name) {
+  const slug = OFFICIAL_LOGOS.get(brandKey(name));
+  if (slug) {
+    return `<span class="brand-emblem has-official-logo" style="--brand-logo:url('assets/vehicle-brands/${slug}.svg')" aria-hidden="true"></span>`;
+  }
+  return `<span class="brand-emblem" data-brand-key="${brandKey(name)}">${emblemSvg(name)}</span>`;
+}
+
 function label(key, fallback) {
   return window.cardiagI18n?.t?.(key, fallback) || fallback;
 }
@@ -133,7 +148,7 @@ export function initializeBrandPicker(vehicles = []) {
     const selected = select.value;
     grid.innerHTML = visible.map((brand) => `
       <button class="brand-card${selected === brand ? ' is-selected' : ''}" type="button" role="option" aria-selected="${selected === brand}" data-brand="${brand.replaceAll('&', '&amp;').replaceAll('"', '&quot;')}">
-        <span class="brand-emblem" data-brand-key="${brandKey(brand)}">${emblemSvg(brand)}</span>
+        ${emblemMarkup(brand)}
         <strong>${brand.replaceAll('&', '&amp;').replaceAll('<', '&lt;')}</strong>
       </button>
     `).join('');
@@ -159,6 +174,14 @@ export function initializeBrandPicker(vehicles = []) {
     if (!expanded) picker.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
   select.addEventListener('change', render);
+  const resetForRecord = () => {
+    search.value = '';
+    expanded = false;
+    render();
+  };
+  window.addEventListener('cardiag:new-vehicle', resetForRecord);
+  window.addEventListener('cardiag:record-open', resetForRecord);
+  window.addEventListener('cardiag:vehicle-selected', render);
   window.addEventListener('cardiag:language-change', () => {
     picker.querySelector('#brandPickerTitle').textContent = label('brandPicker.title', 'Choisissez la marque');
     picker.querySelector('.brand-picker-head p').textContent = label('brandPicker.kicker', 'CONSTRUCTEUR');

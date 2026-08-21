@@ -4,6 +4,7 @@ import { test } from 'node:test';
 
 const index = await readFile(new URL('../index.html', import.meta.url), 'utf8');
 const wizard = await readFile(new URL('../js/wizard.js', import.meta.url), 'utf8');
+const legacy = await readFile(new URL('../js/legacy-features.js', import.meta.url), 'utf8');
 const inspection = await readFile(new URL('../js/ux/inspection-enhancements.js', import.meta.url), 'utf8');
 const styles = await readFile(new URL('../css/ux/inspection-enhancements.css', import.meta.url), 'utf8');
 const prompts = await readFile(new URL('../assets/reference/prompts-higgsfield.md', import.meta.url), 'utf8');
@@ -28,6 +29,18 @@ test('guided inspection keeps a reversible full-report view and seven-section st
   assert.match(styles, /inspection-mini-stepper/);
   assert.match(inspection, /current\.after\(actionBar\)/);
   assert.match(styles, /is-below-question/);
+});
+
+test('mobile inspection is a strict accessible wizard with persistent progress and contextual isolation', () => {
+  assert.match(inspection, /MOBILE_WIZARD_QUERY = '\(max-width: 767px\)'/);
+  assert.match(inspection, /data-guide-section-current/);
+  assert.match(inspection, /cardiag:inspection-section-request/);
+  assert.match(inspection, /ArrowLeft/);
+  assert.match(styles, /position:fixed;z-index:125/);
+  assert.match(styles, /inspection-mobile-wizard/);
+  assert.match(wizard, /scenarioConfirmed/);
+  assert.match(wizard, /control\.disabled = !active/);
+  assert.match(legacy, /cardiag:inspection-section-request/);
 });
 
 test('reference asset catalog covers all profile families and technical sections', () => {

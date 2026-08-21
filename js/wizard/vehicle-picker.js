@@ -27,17 +27,19 @@ function createPanel() {
   panel.innerHTML = `
     <div class="saved-vehicles-head">
       <div><p class="panel-kicker" data-vehicle-picker-kicker>GARAGE PERSONNEL</p><h2 data-vehicle-picker-title>Choisir un véhicule enregistré</h2><p data-vehicle-picker-intro>Reprenez un véhicule existant ou créez une nouvelle fiche.</p></div>
-      <button type="button" data-add-vehicle>＋ Ajouter un nouveau véhicule</button>
+      <div class="saved-vehicles-head-actions"><button type="button" data-toggle-saved aria-expanded="false">Voir mes véhicules</button><button type="button" data-add-vehicle>＋ Nouveau véhicule</button></div>
     </div>
-    <div class="saved-vehicles-list" data-saved-vehicles-list></div>
-    <section class="buyer-comparison" data-buyer-comparison hidden>
-      <label class="buyer-comparison-toggle"><input type="checkbox" data-enable-comparison><span><strong>Comparer avec un autre véhicule</strong><small>Ajoutez un second véhicule à votre analyse avant achat.</small></span></label>
-      <div class="buyer-comparison-fields" data-comparison-fields hidden>
-        <label for="comparisonVehicleId">Véhicule à comparer</label>
-        <select id="comparisonVehicleId" name="comparison_vehicle_id"><option value="">Choisir un autre véhicule</option></select>
-        <button type="button" data-run-vehicle-comparison disabled>Voir la comparaison</button>
-      </div>
-    </section>`;
+    <div class="saved-vehicles-body" data-saved-vehicles-body hidden>
+      <div class="saved-vehicles-list" data-saved-vehicles-list></div>
+      <section class="buyer-comparison" data-buyer-comparison hidden>
+        <label class="buyer-comparison-toggle"><input type="checkbox" data-enable-comparison><span><strong>Comparer avec un autre véhicule</strong><small>Ajoutez un second véhicule à votre analyse avant achat.</small></span></label>
+        <div class="buyer-comparison-fields" data-comparison-fields hidden>
+          <label for="comparisonVehicleId">Véhicule à comparer</label>
+          <select id="comparisonVehicleId" name="comparison_vehicle_id"><option value="">Choisir un autre véhicule</option></select>
+          <button type="button" data-run-vehicle-comparison disabled>Voir la comparaison</button>
+        </div>
+      </section>
+    </div>`;
   return panel;
 }
 
@@ -47,8 +49,12 @@ export function initializeVehiclePicker() {
   if (!identificationView || !infoSection || !window.cardiagDataBridge) return;
 
   const panel = createPanel();
-  identificationView.insertBefore(panel, infoSection);
+  const brandPicker = infoSection.querySelector('.brand-picker');
+  if (brandPicker) brandPicker.after(panel);
+  else identificationView.insertBefore(panel, infoSection);
   const list = panel.querySelector('[data-saved-vehicles-list]');
+  const savedBody = panel.querySelector('[data-saved-vehicles-body]');
+  const savedToggle = panel.querySelector('[data-toggle-saved]');
   const comparison = panel.querySelector('[data-buyer-comparison]');
   const comparisonToggle = panel.querySelector('[data-enable-comparison]');
   const comparisonFields = panel.querySelector('[data-comparison-fields]');
@@ -66,9 +72,13 @@ export function initializeVehiclePicker() {
       .filter((record) => record.data?.marque || record.data?.modele)
       .sort((a, b) => String(b.createdAt).localeCompare(String(a.createdAt)));
 
-    panel.querySelector('[data-vehicle-picker-title]').textContent = translate('vehiclePicker.title', 'Choisir un véhicule enregistré');
+    panel.querySelector('[data-vehicle-picker-title]').textContent = `${translate('vehiclePicker.title', 'Véhicules enregistrés')} (${records.length})`;
     panel.querySelector('[data-vehicle-picker-intro]').textContent = translate('vehiclePicker.intro', 'Reprenez un véhicule existant ou créez une nouvelle fiche.');
-    panel.querySelector('[data-add-vehicle]').textContent = translate('vehiclePicker.add', '＋ Ajouter un nouveau véhicule');
+    panel.querySelector('[data-add-vehicle]').textContent = translate('vehiclePicker.add', '＋ Nouveau véhicule');
+    savedToggle.textContent = savedBody.hidden
+      ? translate('vehiclePicker.showSaved', 'Voir mes véhicules')
+      : translate('vehiclePicker.hideSaved', 'Masquer mes véhicules');
+    savedToggle.hidden = records.length === 0;
 
     if (!records.length) {
       list.innerHTML = `<p class="saved-vehicles-empty">${translate('vehiclePicker.empty', 'Aucun véhicule enregistré. Ajoutez votre premier véhicule ci-dessous.')}</p>`;
@@ -97,18 +107,34 @@ export function initializeVehiclePicker() {
   }
 
   panel.addEventListener('click', async (event) => {
+    if (event.target.closest('[data-toggle-saved]')) {
+      savedBody.hidden = !savedBody.hidden;
+      savedToggle.setAttribute('aria-expanded', String(!savedBody.hidden));
+      render();
+      return;
+    }
     const vehicleButton = event.target.closest('[data-use-vehicle]');
     if (vehicleButton && vehicleButton.getAttribute('aria-pressed') !== 'true') {
       vehicleButton.disabled = true;
       await window.cardiagDataBridge.useVehicleFromRecord?.(vehicleButton.dataset.useVehicle);
+      savedBody.hidden = true;
+      savedToggle.setAttribute('aria-expanded', 'false');
       render();
       document.getElementById('result')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
       return;
     }
     if (event.target.closest('[data-add-vehicle]')) {
-      window.cardiagDataBridge.createRecord?.({ usage_scenario: selectedProfile() });
+      const addButton = event.target.closest('[data-add-vehicle]');
+      addButton.disabled = true;
+      await window.cardiagDataBridge.createRecord?.({ usage_scenario: selectedProfile() });
+      addButton.disabled = false;
+      savedBody.hidden = true;
+      savedToggle.setAttribute('aria-expanded', 'false');
       render();
-      document.getElementById('marqueSelect')?.focus();
+      window.dispatchEvent(new CustomEvent('cardiag:new-vehicle'));
+      const picker = document.querySelector('.brand-picker');
+      picker?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      picker?.querySelector('input')?.focus({ preventScroll: true });
       return;
     }
     if (event.target.closest('[data-run-vehicle-comparison]') && comparisonSelect.value) {

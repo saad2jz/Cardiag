@@ -8,6 +8,8 @@ const enhancements = await readFile(new URL('../js/ux/inspection-enhancements.js
 const legacy = await readFile(new URL('../js/legacy-features.js', import.meta.url), 'utf8');
 const homeButton = await readFile(new URL('../js/navigation/home-button.js', import.meta.url), 'utf8');
 const brandPicker = await readFile(new URL('../js/wizard/brand-picker.js', import.meta.url), 'utf8');
+const vehiclePicker = await readFile(new URL('../js/wizard/vehicle-picker.js', import.meta.url), 'utf8');
+const recordsGallery = await readFile(new URL('../js/records/records-gallery.js', import.meta.url), 'utf8');
 const settings = await readFile(new URL('../js/settings/settings.js', import.meta.url), 'utf8');
 const themes = await readFile(new URL('../js/theming/theme-manager.js', import.meta.url), 'utf8');
 const styles = await readFile(new URL('../css/styles.css', import.meta.url), 'utf8');
@@ -25,7 +27,7 @@ test('the app shell keeps SEO, accessibility and cache safeguards', () => {
   assert.match(index, /"@type":"Organization"/);
   assert.match(index, /id="installAppBtn"[^>]*hidden/);
   assert.match(index, /sigCanvasAcheteur[^>]*aria-label=/);
-  assert.match(worker, /cardiag-v58/);
+  assert.match(worker, /cardiag-v60/);
 });
 
 test('the wizard toolbar exposes a non-destructive CarDiag home action', () => {
@@ -51,7 +53,8 @@ test('vehicle identification exposes loading, offline fallback and fuzzy result 
 
 test('mobile vehicle identification provides an offline brand gallery and iOS safeguards', () => {
   assert.match(brandPicker, /initializeBrandPicker/);
-  assert.match(brandPicker, /INITIAL_BRAND_LIMIT = 30/);
+  assert.match(brandPicker, /INITIAL_BRAND_LIMIT = 15/);
+  assert.match(brandPicker, /OFFICIAL_LOGOS/);
   assert.match(brandPicker, /role="option"/);
   assert.match(brandPicker, /select\.dispatchEvent\(new Event\('change'/);
   assert.match(styles, /\.brand-grid\{display:grid/);
@@ -59,6 +62,16 @@ test('mobile vehicle identification provides an offline brand gallery and iOS sa
   assert.match(styles, /@supports \(-webkit-touch-callout:none\)/);
   assert.match(styles, /font-size:16px!important/);
   assert.match(worker, /wizard\/brand-picker\.js/);
+  assert.match(worker, /assets\/vehicle-brands\/renault\.svg/);
+});
+
+test('saved reports expose working create, compare and recoverable delete actions', () => {
+  assert.match(vehiclePicker, /cardiag:new-vehicle/);
+  assert.match(vehiclePicker, /data-toggle-saved/);
+  assert.match(recordsGallery, /data-records-compare/);
+  assert.match(recordsGallery, /data-record-delete/);
+  assert.match(legacy, /deleteRecord: \(id\)=>deleteRecordById\(id\)/);
+  assert.match(legacy, /showUndoSnackbar/);
 });
 
 test('inspection progress counts every status group including maintenance history', () => {
