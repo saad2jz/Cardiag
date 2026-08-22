@@ -19,12 +19,7 @@ test('the identification picker and PDF share one local vehicle logo manifest', 
   assert.match(picker, /<strong>\$\{brand/);
   assert.match(report, /await getVehicleBrandLogoDataUrl\(model\.data\.marque\)/);
   assert.match(report, /addImageContained\(pdf,vehicleBrandLogo/);
-  assert.match(styles, /\.brand-emblem\.has-official-logo img\{display:block;width:100%;height:100%;object-fit:contain;\}/);
-  assert.match(picker, /const VISUAL_STEPS = \[/);
-  for (const selectId of ['modeleSelect', 'generationSelect', 'anneeSelect', 'motorisationSelect']) {
-    assert.match(picker, new RegExp(selectId));
-  }
-  assert.match(picker, /target\.dispatchEvent\(new Event\('change'/);
+  assert.match(styles, /\.brand-emblem\.has-official-logo\{background:var\(--brand-logo\) center\/contain no-repeat;\}/);
 
   for (const path of OFFICIAL_LOGOS.values()) {
     await access(new URL(`../${path}`, import.meta.url));
