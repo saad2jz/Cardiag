@@ -27,7 +27,7 @@ test('the app shell keeps SEO, accessibility and cache safeguards', () => {
   assert.match(index, /"@type":"Organization"/);
   assert.match(index, /id="installAppBtn"[^>]*hidden/);
   assert.match(index, /sigCanvasAcheteur[^>]*aria-label=/);
-  assert.match(worker, /cardiag-v74/);
+  assert.match(worker, /cardiag-v75/);
 });
 
 test('the wizard toolbar exposes a non-destructive CarDiag home action', () => {

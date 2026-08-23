@@ -340,10 +340,6 @@ export function initializePremiumReport() {
 
   async function perform(action,id){
     const model=window.cardiagDataBridge?.getReportModel?.(id);if(!model)return false;
-    if(!String(model.data?.vin||'').trim()){
-      window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback',{detail:{type:'error',message:'Ajoutez le VIN ou l’immatriculation avant de générer un rapport PDF traçable.'}}));
-      return false;
-    }
     if(action==='link'){
       markGenerated(model);
       document.getElementById('shareReportBtn')?.click();

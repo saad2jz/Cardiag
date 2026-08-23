@@ -1503,15 +1503,6 @@ export function initializeLegacyFeatures(vehicleData) {
         scrollToFirstMissing();
         return;
       }
-      const vin = document.querySelector('[name="vin"]');
-      if(!vin?.value.trim()){
-        const message = 'Ajoutez le VIN ou l’immatriculation avant de générer un rapport PDF traçable.';
-        document.getElementById('result').textContent = message;
-        window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback',{detail:{type:'error',message}}));
-        vin?.focus(); vin?.scrollIntoView({behavior:'smooth',block:'center'});
-        return;
-      }
-
       const btn = document.getElementById('generateBtn');
       const originalText = btn.textContent;
 
