@@ -14,6 +14,8 @@ const styles = await readFile(new URL('../css/styles.css', import.meta.url), 'ut
 test('the identification picker and PDF share one local vehicle logo manifest', async () => {
   assert.equal(getVehicleBrandLogoPath('Citroën'), 'assets/vehicle-brands/citroen.svg');
   assert.equal(getVehicleBrandLogoPath('Mercedes-Benz'), 'assets/vehicle-brands/mercedes_benz.svg');
+  assert.equal(getVehicleBrandLogoPath('DS'), 'assets/vehicle-brands/ds_automobiles.svg');
+  assert.equal(getVehicleBrandLogoPath('Porsche'), 'assets/vehicle-brands/porsche.svg');
   assert.equal(normalizeVehicleBrand('VW'), 'volkswagen');
   assert.match(picker, /getVehicleBrandLogoPath\(name\)/);
   assert.match(picker, /<strong>\$\{brand/);
@@ -21,6 +23,8 @@ test('the identification picker and PDF share one local vehicle logo manifest', 
   assert.match(report, /addImageContained\(pdf,vehicleBrandLogo/);
   assert.match(picker, /class="official-brand-logo"/);
   assert.doesNotMatch(picker, /brand-logo-fallback/);
+  assert.doesNotMatch(picker, /function emblemSvg/);
+  assert.doesNotMatch(picker, /EMBLEM_BRANDS/);
   assert.match(styles, /img\.official-brand-logo\{[^}]*object-fit:contain!important;[^}]*filter:none!important;/);
   assert.match(picker, /const VISUAL_STEPS = \[/);
   for (const selectId of ['modeleSelect', 'generationSelect', 'anneeSelect', 'motorisationSelect']) {

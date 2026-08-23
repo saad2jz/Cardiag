@@ -18,7 +18,7 @@ import { initializeSettings } from './settings/settings.js?v=20260820-4';
 import { initializeConsent } from './auth/consent.js?v=20260813-1';
 import { initializeScoreVisuals } from './score/score-visuals.js?v=20260813-1';
 import { initializeRecordsGallery } from './records/records-gallery.js?v=20260821-1';
-import { initializePremiumReport } from './reports/premium-report.js?v=20260821-8';
+import { initializePremiumReport } from './reports/premium-report.js?v=20260823-9';
 import { initializeReportSharing } from './reports/report-sharing.js?v=20260814-2';
 import { initializeLanding } from './landing/landing.js?v=20260821-4';
 import { initializeInspectionEnhancements } from './ux/inspection-enhancements.js?v=20260821-3';
@@ -26,7 +26,7 @@ import { initializeOwnerTechnicalHelp } from './ux/owner-technical-help.js?v=202
 import { initializePostReportActions } from './ux/post-report-actions.js?v=20260821-1';
 import { initializeLocalBackupReminder } from './ux/local-backup-reminder.js?v=20260821-1';
 import { initializeHomeButton } from './navigation/home-button.js?v=20260820-1';
-import { initializeBrandPicker } from './wizard/brand-picker.js?v=20260823-2';
+import { initializeBrandPicker } from './wizard/brand-picker.js?v=20260823-3';
 
 /**
  * Application entry point. Data loading stays separate from the UI controller

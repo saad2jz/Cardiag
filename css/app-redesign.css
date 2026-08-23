@@ -1,0 +1,38 @@
+/* CarDiag visual refresh: semantic tokens keep all three existing themes intact. */
+:root{--app-radius:16px;--app-radius-sm:11px;--app-shadow:0 16px 36px color-mix(in srgb,var(--ink) 10%,transparent);}
+body{overflow-x:hidden;background:var(--bg);}
+button,a,input,select,textarea{touch-action:manipulation;}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid color-mix(in srgb,var(--primary) 52%,transparent);outline-offset:3px;}
+.wizard-header,.app-header{border-bottom:1px solid var(--border);background:color-mix(in srgb,var(--bg) 94%,var(--surface));}
+.wizard-view{animation:cardiag-view-in .22s ease both;}
+.brand-picker,.vehicle-choice-picker{border-radius:var(--app-radius);box-shadow:var(--app-shadow);}
+.brand-picker-head{align-items:end;gap:16px;}
+.brand-picker-head h3{letter-spacing:-.035em;}
+.brand-picker-search{min-height:52px;border-radius:var(--app-radius-sm);background:color-mix(in srgb,var(--surface) 92%,var(--bg));}
+.brand-grid{gap:10px;}
+.brand-card{min-height:116px;border-radius:var(--app-radius-sm);background:var(--surface);box-shadow:none;}
+.brand-card:hover,.brand-card:focus-visible{transform:translateY(-1px);box-shadow:0 10px 22px color-mix(in srgb,var(--ink) 8%,transparent);}
+.brand-card.is-selected{box-shadow:inset 0 0 0 1px var(--primary),0 8px 18px color-mix(in srgb,var(--primary) 14%,transparent);}
+.brand-card strong{font-size:11px;font-weight:800;}
+.brand-emblem.has-official-logo{width:60px;height:60px;padding:7px;background:#f7f7f5;}
+.brand-emblem.has-official-logo img.official-brand-logo{filter:none!important;}
+.vehicle-choice-card{min-height:94px;grid-template-columns:54px minmax(0,1fr);justify-items:start;text-align:left;padding:14px;}
+.vehicle-choice-card .brand-emblem{width:50px;height:50px;}
+.vehicle-choice-card strong{font-size:12px;white-space:normal;text-overflow:clip;}
+.action-bar,.wizard-bottom-actions{border-top:1px solid var(--border);background:color-mix(in srgb,var(--bg) 94%,var(--surface));box-shadow:0 -12px 32px color-mix(in srgb,var(--ink) 8%,transparent);}
+.section,.inspection-section{border-radius:var(--app-radius);box-shadow:var(--app-shadow);}
+.section button,.inspection-section button{min-height:44px;}
+.records-gallery-card,.record-card{border-radius:var(--app-radius);box-shadow:var(--app-shadow);}
+.report-action-sheet>div,.share-result>div{border-radius:var(--app-radius);}
+@keyframes cardiag-view-in{from{opacity:.01;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+@media (max-width:767px){
+  .brand-picker,.vehicle-choice-picker{margin-inline:0;border-radius:14px;padding:14px 12px;}
+  .brand-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;}
+  .brand-card{min-height:102px;padding:8px 4px;}
+  .brand-card strong{font-size:10px;}
+  .brand-emblem.has-official-logo{width:52px;height:52px;padding:6px;}
+  .vehicle-choice-card{min-height:78px;grid-template-columns:44px minmax(0,1fr);padding:10px;}
+  .vehicle-choice-card .brand-emblem{width:42px;height:42px;}
+  .wizard-bottom-actions,.action-bar{padding-bottom:max(12px,env(safe-area-inset-bottom));}
+}
+@media (prefers-reduced-motion:reduce){.wizard-view{animation:none}.brand-card{transition:none!important;}}

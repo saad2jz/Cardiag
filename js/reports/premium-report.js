@@ -1,6 +1,6 @@
 import { calculateNegotiation } from './negotiation.js?v=20260814-1';
 import { normalizePersona, personaReport } from '../personas.js?v=20260814-1';
-import { getVehicleBrandLogoDataUrl } from '../branding/vehicle-brand-logos.js?v=20260821-1';
+import { getVehicleBrandLogoDataUrl } from '../branding/vehicle-brand-logos.js?v=20260823-2';
 
 const SECTION_ORDER = ['info','moteur','chassis','carrosserie','habitacle','essai','diagnostic'];
 const STATUS = {
@@ -10,9 +10,9 @@ const STATUS = {
   '':{ label:'NON VÉRIFIÉ', color:[100,116,139] },
 };
 const THEMES = {
-  carbon:{ page:[15,18,21], surface:[25,29,33], text:[245,245,240], muted:[165,171,174], accent:[255,159,28], line:[55,61,66] },
-  workshop:{ page:[246,249,250], surface:[255,255,255], text:[22,32,39], muted:[88,108,118], accent:[0,107,182], line:[211,224,229] },
-  premium:{ page:[244,241,234], surface:[255,253,247], text:[23,23,20], muted:[108,102,91], accent:[183,139,73], line:[214,207,193] },
+  carbon:{ page:[13,16,19], surface:[25,30,35], text:[241,244,246], muted:[160,170,178], accent:[242,151,31], line:[60,69,77] },
+  workshop:{ page:[242,246,248], surface:[255,255,255], text:[21,33,42], muted:[83,102,114], accent:[0,101,177], line:[207,220,226] },
+  premium:{ page:[243,245,246], surface:[255,255,255], text:[25,34,41], muted:[90,103,112], accent:[11,104,177], line:[214,224,230] },
 };
 
 function imageFormat(dataUrl='') { return dataUrl.includes('image/png') ? 'PNG' : dataUrl.includes('image/webp') ? 'WEBP' : 'JPEG'; }
@@ -117,10 +117,11 @@ function drawDonut(pdf,x,y,r,score,color,palette) {
 function setupPage(pdf,palette,title,kicker='RAPPORT D’EXPERTISE AUTOMOBILE') {
   const w=pdf.internal.pageSize.getWidth(),h=pdf.internal.pageSize.getHeight();
   pdf.setFillColor(...palette.page);pdf.rect(0,0,w,h,'F');
-  pdf.setTextColor(...palette.accent);pdf.setFont('helvetica','bold');pdf.setFontSize(8);pdf.text(kicker,16,17);
-  pdf.setTextColor(...palette.text);pdf.setFontSize(22);pdf.text(title,16,29);
-  pdf.setDrawColor(...palette.line);pdf.line(16,35,w-16,35);
-  return 44;
+  pdf.setFillColor(...palette.accent);pdf.rect(16,13,31,2,'F');
+  pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','bold');pdf.setFontSize(7);pdf.text(kicker,16,21);
+  pdf.setTextColor(...palette.text);pdf.setFontSize(20);pdf.text(title,16,32);
+  pdf.setDrawColor(...palette.line);pdf.line(16,39,w-16,39);
+  return 48;
 }
 
 function addFooter(pdf,palette,reference,page,total,generatedAt,decision) {
@@ -141,7 +142,8 @@ export async function createPdf(model,branding) {
 
   // Couverture
   pdf.setFillColor(...palette.page);pdf.rect(0,0,w,h,'F');
-  pdf.setFillColor(...palette.accent);pdf.rect(0,0,7,h,'F');
+  pdf.setFillColor(...palette.accent);pdf.rect(0,0,w,6,'F');
+  pdf.setDrawColor(...palette.line);pdf.roundedRect(12,11,186,268,5,5,'S');
   if(!addImageSafe(pdf,branding?.logo,17,16,21,21)){pdf.setFillColor(...palette.accent);pdf.roundedRect(17,16,21,21,4,4,'F');pdf.setTextColor(12,12,12);pdf.setFontSize(10);pdf.text('CD',27.5,29,{align:'center'});}
   pdf.setTextColor(...palette.text);pdf.setFont('helvetica','bold');pdf.setFontSize(12);pdf.text(branding?.workshopName||'CarDiag',43,25);pdf.setFont('helvetica','normal');pdf.setTextColor(...palette.muted);pdf.setFontSize(8);pdf.text('EXPERTISE AUTOMOBILE INDÉPENDANTE',43,31);
   if(!addImageContained(pdf,vehicleBrandLogo,151,16,42,21,palette))drawVehicleBrandBadge(pdf,model.data.marque,151,16,palette);

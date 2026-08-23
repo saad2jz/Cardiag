@@ -882,10 +882,9 @@ body.wizard-active{min-height:100dvh;overflow-x:hidden;padding-bottom:calc(92px 
 .brand-emblem{display:grid;place-items:center;width:55px;height:55px;color:var(--ink);}
 .brand-emblem.has-official-logo{position:relative;box-sizing:border-box;padding:6px;border:0;border-radius:10px;background:#f7f7f5;overflow:hidden;contain:layout paint;}
 .brand-emblem.has-official-logo img.official-brand-logo{display:block!important;width:100%!important;height:100%!important;min-width:0!important;min-height:0!important;max-width:100%!important;max-height:100%!important;margin:0!important;object-fit:contain!important;object-position:center!important;filter:none!important;mix-blend-mode:normal!important;transform:none!important;}
-.brand-emblem.has-official-logo.logo-load-failed{background:transparent;}
+.brand-emblem.has-official-logo.logo-load-failed{background:var(--bg);}
 .brand-emblem.has-official-logo.logo-load-failed img{display:none!important;}
-.brand-emblem svg{display:block;width:100%;height:100%;overflow:visible;fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;}
-.brand-emblem .brand-fill{fill:currentColor;stroke:none;}.brand-emblem text{fill:currentColor;stroke:none;font:800 27px 'Sora',sans-serif;}.brand-emblem .brand-word{font-size:19px;}.brand-emblem .brand-cut{fill:var(--surface);font:800 10px 'Sora',sans-serif;}
+.brand-logo-placeholder{border:1px solid var(--border);border-radius:10px;background:var(--bg);font:800 13px/1 'JetBrains Mono',monospace;letter-spacing:.04em;}
 .brand-picker-more{width:100%;min-height:48px;margin-top:12px;padding:10px 14px;border:1px solid var(--border);border-radius:10px;background:var(--bg);color:var(--ink);font-weight:850;cursor:pointer;}
 .brand-picker-more:hover,.brand-picker-more:focus-visible{border-color:var(--primary);outline:none;}
 .vehicle-choice-picker{max-width:780px;margin:0 auto 18px;padding:18px;border:1px solid var(--border);border-radius:16px;background:var(--surface);box-shadow:var(--ombre-sm);scroll-margin-top:100px;}

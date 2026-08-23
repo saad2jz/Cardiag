@@ -3,20 +3,33 @@
 export const OFFICIAL_LOGOS = new Map([
   ['audi', 'assets/vehicle-brands/audi.svg'],
   ['bmw', 'assets/vehicle-brands/bmw.svg'],
+  ['chevrolet', 'assets/vehicle-brands/chevrolet.svg'],
   ['citroen', 'assets/vehicle-brands/citroen.svg'],
   ['dacia', 'assets/vehicle-brands/dacia.svg'],
+  ['ds automobiles', 'assets/vehicle-brands/ds_automobiles.svg'],
   ['fiat', 'assets/vehicle-brands/fiat.svg'],
   ['ford', 'assets/vehicle-brands/ford.svg'],
   ['hyundai', 'assets/vehicle-brands/hyundai.svg'],
+  ['honda', 'assets/vehicle-brands/honda.svg'],
+  ['jeep', 'assets/vehicle-brands/jeep.svg'],
   ['kia', 'assets/vehicle-brands/kia.svg'],
+  ['mazda', 'assets/vehicle-brands/mazda.svg'],
   ['mercedes benz', 'assets/vehicle-brands/mercedes_benz.svg'],
   ['mini', 'assets/vehicle-brands/mini.svg'],
+  ['mitsubishi', 'assets/vehicle-brands/mitsubishi.png'],
   ['nissan', 'assets/vehicle-brands/nissan.svg'],
   ['opel', 'assets/vehicle-brands/opel.svg'],
   ['peugeot', 'assets/vehicle-brands/peugeot.svg'],
+  ['porsche', 'assets/vehicle-brands/porsche.svg'],
   ['renault', 'assets/vehicle-brands/renault.svg'],
+  ['seat', 'assets/vehicle-brands/seat.svg'],
+  ['skoda', 'assets/vehicle-brands/skoda.svg'],
+  ['subaru', 'assets/vehicle-brands/subaru.svg'],
+  ['suzuki', 'assets/vehicle-brands/suzuki.png'],
+  ['tesla', 'assets/vehicle-brands/tesla.png'],
   ['toyota', 'assets/vehicle-brands/toyota.svg'],
   ['volkswagen', 'assets/vehicle-brands/volkswagen.svg'],
+  ['volvo', 'assets/vehicle-brands/volvo.svg'],
 ]);
 
 const BRAND_ALIASES = new Map([
@@ -25,6 +38,7 @@ const BRAND_ALIASES = new Map([
   ['mercedes', 'mercedes benz'],
   ['mercedesbenz', 'mercedes benz'],
   ['mini cooper', 'mini'],
+  ['ds', 'ds automobiles'],
   ['vw', 'volkswagen'],
 ]);
 
