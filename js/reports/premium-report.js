@@ -1,6 +1,6 @@
 import { calculateNegotiation } from './negotiation.js?v=20260814-1';
 import { normalizePersona, personaReport } from '../personas.js?v=20260814-1';
-import { getVehicleBrandLogoDataUrl } from '../branding/vehicle-brand-logos.js?v=20260823-3';
+import { getVehicleBrandLogoDataUrl } from '../branding/vehicle-brand-logos.js?v=20260823-5';
 
 const SECTION_ORDER = ['info','moteur','chassis','carrosserie','habitacle','essai','diagnostic'];
 const STATUS = {

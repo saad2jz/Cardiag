@@ -246,55 +246,7 @@ textarea{resize:vertical; min-height:70px; font-family:'Inter',sans-serif;}
 .alert-box .txt strong{color:var(--ink);}
 body.dark .alert-box .txt, body.dark .alert-box .txt strong{color:var(--ink-soft);}
 
-.vsearch-panel{
-  background:var(--bg); border:1.5px dashed var(--border); border-radius:var(--radius-sm);
-  padding:14px 16px; margin-bottom:14px; display:flex; flex-direction:column; gap:10px;
-}
-.wizard-active .vsearch-panel{display:flex!important}
-.vsearch-title{
-  font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.1em; text-transform:uppercase;
-  color:var(--muted); font-weight:700; display:flex; align-items:center; gap:6px;
-}
-.vsearch-fields{display:grid; grid-template-columns:1fr 1fr; gap:10px;}
-.vsearch-field-wrap{position:relative;}
-.vsearch-row{
-  display:flex; align-items:center; gap:8px; background:var(--surface); border:1.5px solid var(--border);
-  border-radius:var(--radius-sm); padding:0 12px; transition:border-color .15s, opacity .15s;
-}
-.vsearch-row:focus-within{border-color:var(--accent);}
-.vsearch-row.is-disabled{opacity:.55;}
-.vsearch-icon{font-size:13px; color:var(--muted); flex-shrink:0;}
-.vsearch-input{
-  border:none; background:transparent; padding:11px 0; font-size:14px; font-weight:500;
-  color:var(--ink); outline:none; width:100%; box-shadow:none !important;
-}
-.vsearch-input::placeholder{color:var(--muted);}
-.vsearch-input:disabled{cursor:not-allowed; color:var(--muted);}
-.vsearch-clear{
-  border:none; background:transparent; color:var(--muted); font-size:16px; cursor:pointer; padding:2px 4px; flex-shrink:0; line-height:1;
-}
-.vsearch-clear:hover{color:var(--rouge);}
-.vsearch-hint{font-size:11px; color:var(--muted); line-height:1.5; margin:0;}
-.vsearch-results{
-  position:absolute; top:calc(100% + 4px); left:0; right:0; z-index:70;
-  background:var(--surface); border:1.5px solid var(--border); border-radius:var(--radius-sm);
-  box-shadow:var(--ombre-lg); max-height:280px; overflow-y:auto; display:none;
-}
-.vsearch-results.show{display:block;}
-.vsearch-result-item{
-  display:flex; align-items:center; justify-content:space-between; gap:10px; padding:10px 12px;
-  cursor:pointer; font-size:13.5px; border-bottom:1px solid var(--border);
-}
-.vsearch-result-item:last-child{border-bottom:none;}
-.vsearch-result-item:hover, .vsearch-result-item.active{background:var(--bg);}
-.vsearch-result-item .vr-modele{font-weight:600; color:var(--ink);}
-.vsearch-result-item .vr-marque{font-size:11.5px; color:var(--muted); font-family:'JetBrains Mono',monospace; flex-shrink:0;}
-.vsearch-no-results{padding:12px; font-size:12.5px; color:var(--muted); text-align:center;}
-.vsearch-result-count{position:sticky;top:0;z-index:1;padding:7px 12px;border-bottom:1px solid var(--border);background:color-mix(in srgb,var(--surface) 95%,transparent);color:var(--muted);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;backdrop-filter:blur(8px)}
 .vehicle-db-status{display:flex;align-items:center;gap:9px;margin:10px 0 14px;padding:10px 12px;border:1px solid var(--border);border-radius:10px;background:var(--surface);color:var(--muted);font-size:12px}.vehicle-db-status[hidden]{display:none}.vehicle-db-status.is-loading span{width:15px;height:15px;border:2px solid var(--border);border-top-color:var(--primary);border-radius:50%;animation:vehicle-db-spin .8s linear infinite}.vehicle-db-status.is-error{border-color:color-mix(in srgb,var(--rouge) 55%,var(--border));color:var(--rouge)}@keyframes vehicle-db-spin{to{transform:rotate(360deg)}}@media(prefers-reduced-motion:reduce){.vehicle-db-status.is-loading span{animation:none}}
-@media (max-width:640px){
-  .vsearch-fields{grid-template-columns:1fr;}
-}
 
 .vehicle-selector-bar{
   display:flex; align-items:stretch; flex-wrap:wrap;
@@ -578,7 +530,7 @@ body.dark.quick-mode .quick-mode-banner{color:var(--ink-soft);}
 }
 
 @media print{
-  .action-bar, .toolbar, .progress-wrap, .progress-label, header.app-header, .nav-btn-wrap, .vsearch-panel,.wizard-active .vsearch-panel{display:none !important;}
+  .action-bar, .toolbar, .progress-wrap, .progress-label, header.app-header, .nav-btn-wrap{display:none !important;}
   body{padding-bottom:0; background:#fff; color:#000;}
   details.section{break-inside:avoid; box-shadow:none; border:1px solid #ccc;}
   details.section summary::after{display:none;}

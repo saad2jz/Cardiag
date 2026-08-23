@@ -1,13 +1,22 @@
-import { OFFICIAL_LOGOS, getVehicleBrandLogoPath } from '../branding/vehicle-brand-logos.js?v=20260823-3';
+import { OFFICIAL_LOGOS, getVehicleBrandLogoPath } from '../branding/vehicle-brand-logos.js?v=20260823-5';
 
-const INITIAL_BRAND_LIMIT = 15;
+const INITIAL_BRAND_LIMIT = 20;
 const FEATURED_BRANDS = [
-  // Les quinze premières cartes sont visibles sans action : les marques
-  // demandées sont donc réellement parmi les marques populaires du départ.
-  'Renault', 'Peugeot', 'Citroën', 'Dacia', 'Volkswagen', 'Toyota', 'BMW',
-  'Mercedes-Benz', 'Audi', 'Ford', 'Lexus', 'Abarth', 'Land Rover', 'Bugatti', 'Lamborghini',
-  'Opel', 'Fiat', 'Nissan', 'Hyundai', 'Kia', 'Seat', 'Skoda', 'Volvo', 'Honda',
-  'Mazda', 'Suzuki', 'Mini', 'Tesla', 'Porsche', 'Alfa Romeo', 'Cupra', 'DS Automobiles', 'Mitsubishi',
+  // Ordre métier demandé : les marques les plus courantes apparaissent sans
+  // action, puis les segments premium, sport, électrique et utilitaire.
+  'Toyota', 'Volkswagen', 'Ford', 'Honda', 'Hyundai', 'Kia', 'Nissan', 'Chevrolet',
+  'Renault', 'Peugeot', 'Citroën', 'Fiat', 'Opel', 'Vauxhall', 'Skoda', 'Seat',
+  'Dacia', 'Suzuki', 'Mazda', 'Mitsubishi', 'Subaru',
+  'BMW', 'Mercedes-Benz', 'Audi', 'Volvo', 'Lexus', 'Porsche', 'Land Rover', 'Jaguar',
+  'Alfa Romeo', 'Mini', 'Cupra', 'DS Automobiles', 'Genesis', 'Infiniti', 'Acura',
+  'Cadillac', 'Lincoln', 'Buick', 'Chrysler', 'Maserati',
+  'Ferrari', 'Lamborghini', 'McLaren', 'Aston Martin', 'Bentley', 'Rolls-Royce',
+  'Bugatti', 'Pagani', 'Koenigsegg', 'Lotus', 'Alpine', 'Maybach', 'Morgan', 'TVR',
+  'Rimac', 'Wiesmann', 'De Tomaso', 'Saleen', 'Hennessey', 'Donkervoort',
+  'Tesla', 'BYD', 'Polestar', 'Rivian', 'Lucid', 'NIO', 'XPeng', 'Zeekr', 'Fisker',
+  'Faraday Future', 'VinFast', 'Leapmotor', 'Aiways',
+  'Jeep', 'Ram', 'GMC', 'Dodge', 'Isuzu', 'Iveco', 'Mahindra', 'SsangYong', 'KGM',
+  'Ineos', 'Daihatsu', 'Geely', 'Chery', 'Abarth',
 ];
 
 const BRAND_ALIASES = new Map([
@@ -123,10 +132,10 @@ export function initializeBrandPicker(vehicles = []) {
   const search = picker.querySelector('input');
   const more = picker.querySelector('.brand-picker-more');
   const count = picker.querySelector('.brand-picker-count');
-  const featuredOrder = new Map(FEATURED_BRANDS.map((brand, index) => [brand, index]));
+  const featuredOrder = new Map(FEATURED_BRANDS.map((brand, index) => [brandKey(brand), index]));
   const allBrands = vehicles.map((vehicle) => vehicle.nom).filter(Boolean).sort((a, b) => {
-    const aRank = featuredOrder.has(a) ? featuredOrder.get(a) : Number.MAX_SAFE_INTEGER;
-    const bRank = featuredOrder.has(b) ? featuredOrder.get(b) : Number.MAX_SAFE_INTEGER;
+    const aRank = featuredOrder.has(brandKey(a)) ? featuredOrder.get(brandKey(a)) : Number.MAX_SAFE_INTEGER;
+    const bRank = featuredOrder.has(brandKey(b)) ? featuredOrder.get(brandKey(b)) : Number.MAX_SAFE_INTEGER;
     return aRank - bRank || a.localeCompare(b, 'fr');
   });
   let expanded = false;

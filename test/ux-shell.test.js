@@ -27,7 +27,7 @@ test('the app shell keeps SEO, accessibility and cache safeguards', () => {
   assert.match(index, /"@type":"Organization"/);
   assert.match(index, /id="installAppBtn"[^>]*hidden/);
   assert.match(index, /sigCanvasAcheteur[^>]*aria-label=/);
-  assert.match(worker, /cardiag-v75/);
+  assert.match(worker, /cardiag-v80/);
 });
 
 test('the wizard toolbar exposes a non-destructive CarDiag home action', () => {
@@ -44,16 +44,15 @@ test('the wizard toolbar exposes a non-destructive CarDiag home action', () => {
   assert.match(themes, /data-open-all-settings/);
 });
 
-test('vehicle identification exposes loading, offline fallback and fuzzy result feedback', () => {
+test('vehicle identification exposes loading and offline fallback without duplicate quick search', () => {
   assert.match(index, /id="vehicleDatabaseStatus"/);
-  assert.match(legacy, /function fuzzyVehicleMatch/);
-  assert.match(legacy, /vsearch-result-count/);
-  assert.match(legacy, /vehicleEditDistance/);
+  assert.doesNotMatch(index, /vsearch-panel/);
+  assert.doesNotMatch(index, /Recherche rapide/);
 });
 
 test('mobile vehicle identification provides an offline brand gallery and iOS safeguards', () => {
   assert.match(brandPicker, /initializeBrandPicker/);
-  assert.match(brandPicker, /INITIAL_BRAND_LIMIT = 15/);
+  assert.match(brandPicker, /INITIAL_BRAND_LIMIT = 20/);
   assert.match(brandPicker, /OFFICIAL_LOGOS/);
   assert.match(brandPicker, /role="option"/);
   assert.match(brandPicker, /select\.dispatchEvent\(new Event\('change'/);
@@ -62,7 +61,7 @@ test('mobile vehicle identification provides an offline brand gallery and iOS sa
   assert.match(styles, /@supports \(-webkit-touch-callout:none\)/);
   assert.match(styles, /font-size:16px!important/);
   assert.match(worker, /wizard\/brand-picker\.js/);
-  assert.match(worker, /assets\/vehicle-brands\/renault\.svg/);
+  assert.match(worker, /assets\/vehicle-brands\/renault\.png/);
 });
 
 test('saved reports expose working create, compare and recoverable delete actions', () => {

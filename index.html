@@ -359,28 +359,6 @@
       <p class="hint" style="margin:0 0 10px;">Sélectionnez votre véhicule étape par étape (base de <span id="vehicleBrandCount">nombreuses</span> marques et <span id="vehicleModelCount">nombreux</span> modèles, chargée à la demande depuis <code>data/</code>). Les générations et motorisations documentées sont proposées quand elles sont disponibles ; vérifiez toujours le code exact sur la carte grise (champ P3) ou sur le moteur lui-même avant de commander une pièce. Si une marque ou un modèle n'apparaît pas (ou hors-ligne sans cache), complétez le VIN et les champs libres ci-dessous. <span style="color:var(--rouge); font-weight:600;">Les champs marqués d'un * sont obligatoires.</span></p>
       <p class="vehicle-db-status is-loading" id="vehicleDatabaseStatus" role="status"><span aria-hidden="true"></span>Chargement de la base véhicule…</p>
 
-      <div class="vsearch-panel">
-        <div class="vsearch-title">🔍 Recherche rapide (facultatif)</div>
-        <div class="vsearch-fields">
-          <div class="vsearch-field-wrap" id="vsearchFieldWrapMarque">
-            <div class="vsearch-row" id="vsearchRowMarque">
-              <span class="vsearch-icon">🔎</span>
-              <input type="text" id="marqueSearch" class="vsearch-input" placeholder="Filtrer les marques..." autocomplete="off">
-              <button type="button" class="vsearch-clear" id="marqueSearchClear" title="Effacer" aria-label="Effacer la recherche marque">×</button>
-            </div>
-          </div>
-          <div class="vsearch-field-wrap" id="vsearchFieldWrapModele">
-            <div class="vsearch-row" id="vsearchRowModele">
-              <span class="vsearch-icon">🔎</span>
-              <input type="text" id="modeleSearch" class="vsearch-input" placeholder="Rechercher un modèle (toutes marques)..." autocomplete="off">
-              <button type="button" class="vsearch-clear" id="modeleSearchClear" title="Effacer" aria-label="Effacer la recherche modèle">×</button>
-            </div>
-            <div class="vsearch-results" id="modeleSearchResults" role="listbox" aria-label="Résultats de la recherche de modèle"></div>
-          </div>
-        </div>
-        <p class="vsearch-hint">Le champ « marques » filtre la liste déroulante juste au-dessous. Le champ « modèle » recherche directement dans toute la base, toutes marques confondues : tapez un nom de modèle (ex. « Golf », « 308 », « Clio »...) puis cliquez sur un résultat pour renseigner automatiquement la marque et le modèle dans les listes ci-dessous. Vous n'êtes pas obligé de vous en servir : vous pouvez aussi cliquer directement dans les listes déroulantes pour parcourir toutes les options.</p>
-      </div>
-
       <div class="vehicle-selector-bar">
         <div class="vstep" id="step-marque">
           <span class="vstep-num" id="num-marque" title="Marque">🚗</span>
@@ -754,8 +732,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="vendor/jspdf.umd.min.js"></script>
 <script src="vendor/qrcode.js"></script>
-<script src="build-data.js?v=20260810-3"></script>
+<script src="build-data.js?v=20260823-5"></script>
 <script src="js/db-loader.js?v=20260811-1"></script>
-<script type="module" src="js/app.js?v=20260823-7"></script>
+<script type="module" src="js/app.js?v=20260823-9"></script>
 </body>
 </html>

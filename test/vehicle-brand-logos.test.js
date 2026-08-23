@@ -12,12 +12,17 @@ const report = await readFile(new URL('../js/reports/premium-report.js', import.
 const styles = await readFile(new URL('../css/styles.css', import.meta.url), 'utf8');
 
 test('the identification picker and PDF share one local vehicle logo manifest', async () => {
-  assert.equal(getVehicleBrandLogoPath('Citroën'), 'assets/vehicle-brands/citroen.svg');
-  assert.equal(getVehicleBrandLogoPath('Mercedes-Benz'), 'assets/vehicle-brands/mercedes_benz.svg');
-  assert.equal(getVehicleBrandLogoPath('DS'), 'assets/vehicle-brands/ds_automobiles.svg');
-  assert.equal(getVehicleBrandLogoPath('Porsche'), 'assets/vehicle-brands/porsche.svg');
-  assert.equal(getVehicleBrandLogoPath('Bugatti'), 'assets/vehicle-brands/bugatti.svg');
-  assert.equal(getVehicleBrandLogoPath('Lamborghini'), 'assets/vehicle-brands/lamborghini.svg');
+  assert.equal(getVehicleBrandLogoPath('Citroën'), 'assets/vehicle-brands/citroen.png');
+  assert.equal(getVehicleBrandLogoPath('Mercedes-Benz'), 'assets/vehicle-brands/mercedes-benz.png');
+  assert.equal(getVehicleBrandLogoPath('DS'), 'assets/vehicle-brands/ds.png');
+  assert.equal(getVehicleBrandLogoPath('Porsche'), 'assets/vehicle-brands/porsche.png');
+  assert.equal(getVehicleBrandLogoPath('Bugatti'), 'assets/vehicle-brands/bugatti.png');
+  assert.equal(getVehicleBrandLogoPath('Lamborghini'), 'assets/vehicle-brands/lamborghini.png');
+  assert.equal(getVehicleBrandLogoPath('Alpina'), 'assets/vehicle-brands/alpina.png');
+  assert.equal(getVehicleBrandLogoPath('Lexus'), 'assets/vehicle-brands/lexus.png');
+  assert.equal(getVehicleBrandLogoPath('Rolls-Royce'), 'assets/vehicle-brands/rolls-royce.png');
+  assert.equal(getVehicleBrandLogoPath('Ram Trucks'), 'assets/vehicle-brands/ram.png');
+  assert.equal(getVehicleBrandLogoPath('Lucid Motors'), 'assets/vehicle-brands/lucid.png');
   assert.equal(normalizeVehicleBrand('VW'), 'volkswagen');
   assert.match(picker, /getVehicleBrandLogoPath\(name\)/);
   assert.match(picker, /<strong>\$\{brand/);
@@ -28,6 +33,7 @@ test('the identification picker and PDF share one local vehicle logo manifest', 
   assert.doesNotMatch(picker, /function emblemSvg/);
   assert.doesNotMatch(picker, /EMBLEM_BRANDS/);
   assert.match(styles, /img\.official-brand-logo\{[^}]*object-fit:contain!important;[^}]*filter:none!important;/);
+  assert.match(styles, /mix-blend-mode:normal!important;transform:none!important;/);
   assert.match(picker, /const VISUAL_STEPS = \[/);
   for (const selectId of ['modeleSelect', 'generationSelect', 'anneeSelect', 'motorisationSelect']) {
     assert.match(picker, new RegExp(selectId));
