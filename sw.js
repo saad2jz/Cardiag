@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cardiag-v70';
+const CACHE_NAME = 'cardiag-v71';
 const APP_SHELL = [
   './',
   './index.html',
@@ -31,7 +31,7 @@ const APP_SHELL = [
   './assets/vehicle-brands/kia.svg',
   './assets/vehicle-brands/mercedes_benz.svg',
   './assets/vehicle-brands/mini.svg',
-  './css/styles.css?v=20260823-2',
+  './css/styles.css?v=20260823-3',
   './css/wizard/premium.css?v=20260813-1',
   './css/theming/themes.css?v=20260820-3',
   './css/landing/landing.css?v=20260821-4',
@@ -46,11 +46,11 @@ const APP_SHELL = [
   './css/shared-report.css?v=20260813-1',
   './build-data.js?v=20260810-3',
   './js/db-loader.js?v=20260811-1',
-  './js/app.js?v=20260823-2',
+  './js/app.js?v=20260823-3',
   './js/navigation/home-button.js?v=20260820-1',
   './js/landing/landing.js?v=20260821-4',
-  './js/wizard.js?v=20260821-4',
-  './js/i18n/i18n.js?v=20260821-6',
+  './js/wizard.js?v=20260823-3',
+  './js/i18n/i18n.js?v=20260823-3',
   './js/legacy-features.js?v=20260821-5',
   './js/personas.js?v=20260814-1',
   './js/wizard/vehicle-picker.js?v=20260821-1',

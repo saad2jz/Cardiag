@@ -125,6 +125,8 @@ export function initializeWizard() {
 
   const { views, workspaceIntro, checklist, assistantGate } = structure;
   const header = document.getElementById('wizardHeader');
+  const professionalJourneyButton = document.getElementById('professionalJourneyBtn');
+  const personalJourneyButton = document.getElementById('personalJourneyBtn');
   const bottomBar = document.getElementById('wizardBottomBar');
   const back = document.getElementById('wizardBack');
   const bottomBack = document.getElementById('wizardBottomBack');
@@ -150,12 +152,10 @@ export function initializeWizard() {
 
   function renderProfileFamily(family = profileFamily()) {
     const activeFamily = family === 'professional' ? 'professional' : 'personal';
-    document.querySelectorAll('[data-profile-family-choice]').forEach((button) => {
-      button.setAttribute('aria-pressed', String(button.dataset.profileFamilyChoice === activeFamily));
+    document.querySelectorAll('[data-profile-family-panel]').forEach((panel) => {
+      panel.hidden = panel.dataset.profileFamilyPanel !== activeFamily;
     });
-    document.querySelectorAll('[data-profile-options] [data-profile-family]').forEach((card) => {
-      card.hidden = card.dataset.profileFamily !== activeFamily;
-    });
+    professionalJourneyButton?.setAttribute('aria-pressed', String(activeFamily === 'professional'));
   }
 
   document.body.classList.add('wizard-active');
@@ -360,18 +360,25 @@ export function initializeWizard() {
     goToStep(1, 'back');
   });
 
-  document.querySelectorAll('[data-profile-family-choice]').forEach((button) => {
-    button.addEventListener('click', () => {
-      const family = button.dataset.profileFamilyChoice === 'professional' ? 'professional' : 'personal';
-      renderProfileFamily(family);
-      const selected = document.querySelector('[name="usage_scenario"]:checked');
-      if (selected && profileFamily(selected.value) === family) return;
-      const fallback = document.querySelector(`[data-profile-options] [data-profile-family="${family}"] [name="usage_scenario"]`);
-      if (fallback) {
-        fallback.checked = true;
-        fallback.dispatchEvent(new Event('change', { bubbles: true }));
-      }
-    });
+  professionalJourneyButton?.addEventListener('click', () => {
+    const mechanic = document.querySelector('[name="usage_scenario"][value="mechanic"]');
+    if (mechanic && !mechanic.checked) {
+      mechanic.checked = true;
+      mechanic.dispatchEvent(new Event('change', { bubbles: true }));
+    } else {
+      renderProfileFamily('professional');
+    }
+    goToStep(1, 'back');
+  });
+
+  personalJourneyButton?.addEventListener('click', () => {
+    const buyer = document.querySelector('[name="usage_scenario"][value="buyer"]');
+    if (buyer && !buyer.checked) {
+      buyer.checked = true;
+      buyer.dispatchEvent(new Event('change', { bubbles: true }));
+    } else {
+      renderProfileFamily('personal');
+    }
   });
 
   document.querySelectorAll('[data-chat-toggle]').forEach((button) => {
@@ -446,9 +453,10 @@ export function initializeWizard() {
     }
   });
 
-  const storedProfile = safeStorageGet(PROFILE_STORAGE_KEY);
   const entry = entrySelection();
-  const initialProfile = VALID_PROFILES.has(entry.profile) ? entry.profile : storedProfile;
+  // L’accueil ouvre toujours les deux parcours personnels. Les liens partagés
+  // restent compatibles et ouvrent directement le profil demandé.
+  const initialProfile = VALID_PROFILES.has(entry.profile) ? entry.profile : 'buyer';
   if (VALID_PROFILES.has(initialProfile)) {
     profileConfirmed = Boolean(entry.profile);
     const profileInput = document.querySelector(`[name="usage_scenario"][value="${initialProfile}"]`);
@@ -461,7 +469,7 @@ export function initializeWizard() {
       modeInput.dispatchEvent(new Event('change', { bubbles: true }));
     }
   }
-  renderProfileFamily();
+  renderProfileFamily(entry.profile ? profileFamily(initialProfile) : 'personal');
   updateProfileContext();
 
   const savedStep = Number.parseInt(safeStorageGet(STEP_STORAGE_KEY) || '', 10);

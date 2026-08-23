@@ -1,8 +1,8 @@
 import { initializeLegacyFeatures } from './legacy-features.js?v=20260821-5';
 import { initializeChatExperience } from './chat-experience.js?v=20260821-1';
 import { initializePwa } from './pwa.js?v=20260820-2';
-import { initializeWizard } from './wizard.js?v=20260821-4';
-import { initializeI18n } from './i18n/i18n.js?v=20260821-6';
+import { initializeWizard } from './wizard.js?v=20260823-3';
+import { initializeI18n } from './i18n/i18n.js?v=20260823-3';
 import { initializeWizardInteractions } from './wizard/interactions.js?v=20260813-1';
 import { initializeVehiclePicker } from './wizard/vehicle-picker.js?v=20260821-1';
 import { initializeThemeManager } from './theming/theme-manager.js?v=20260820-3';

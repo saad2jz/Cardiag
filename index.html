@@ -33,7 +33,7 @@
 <link rel="apple-touch-icon" href="icons/app-icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=20260823-2">
+<link rel="stylesheet" href="css/styles.css?v=20260823-3">
 <link rel="stylesheet" href="css/wizard/premium.css?v=20260813-1">
 <link rel="stylesheet" href="css/theming/themes.css?v=20260820-3">
 <link rel="stylesheet" href="css/landing/landing.css?v=20260821-4">
@@ -216,6 +216,7 @@
 
 <header class="wizard-header" id="wizardHeader" hidden>
   <button class="wizard-back" id="wizardBack" type="button" aria-label="Revenir à l’étape précédente">←</button>
+  <button class="professional-path-trigger" id="professionalJourneyBtn" type="button" aria-pressed="false">Vous êtes un professionnel ?</button>
   <div class="wizard-progress" aria-label="Progression du parcours">
     <p id="wizardStepLabel">Étape 1 sur 4</p>
     <div class="wizard-progress-track"><span id="wizardProgressBar"></span></div>
@@ -233,41 +234,57 @@
       <h2 id="usageScenarioTitle">Quel est votre objectif ?</h2>
       <p>Le questionnaire, l’assistant et la synthèse s’adaptent automatiquement à votre situation.</p>
     </div>
-    <div class="profile-family-switch" role="group" aria-label="Choisissez votre famille de profil">
-      <button type="button" data-profile-family-choice="personal" aria-pressed="true"><span aria-hidden="true">●</span><strong>Particulier</strong><small>Acheteur, vendeur ou propriétaire</small></button>
-      <button type="button" data-profile-family-choice="professional" aria-pressed="false"><span aria-hidden="true">◆</span><strong>Professionnel</strong><small>Garagiste, mécanicien ou agence</small></button>
-    </div>
-    <div class="usage-scenario-grid" data-profile-options>
-      <label class="usage-scenario-card is-featured" data-profile-family="personal">
-        <input type="radio" name="usage_scenario" value="buyer" checked>
-        <span class="usage-scenario-icon" aria-hidden="true"><img src="icons/nav-vehicle.svg" alt=""></span>
-        <strong>Acheteur</strong>
-        <span>Contrôler le véhicule avant achat, détecter les risques et préparer la négociation.</span>
-      </label>
-      <label class="usage-scenario-card" data-profile-family="professional" hidden>
-        <input type="radio" name="usage_scenario" value="mechanic">
-        <span class="usage-scenario-icon" aria-hidden="true"><img src="icons/nav-engine.svg" alt=""></span>
-        <strong>Garagiste</strong>
-        <span>Documenter l’état initial et la plainte client avant la prise en charge en atelier.</span>
-      </label>
-      <label class="usage-scenario-card" data-profile-family="professional" hidden>
-        <input type="radio" name="usage_scenario" value="rental">
-        <span class="usage-scenario-icon" aria-hidden="true"><img src="icons/nav-road.svg" alt=""></span>
-        <strong>Agence de location</strong>
-        <span>Gérer la flotte, le kilométrage et les états des lieux avant et après location.</span>
-      </label>
-      <label class="usage-scenario-card" data-profile-family="personal">
-        <input type="radio" name="usage_scenario" value="seller">
-        <span class="usage-scenario-icon" aria-hidden="true"><img src="icons/nav-report.svg" alt=""></span>
-        <strong>Vendeur</strong>
-        <span>Créer un rapport transparent et complet à transmettre à un futur acheteur.</span>
-      </label>
-      <label class="usage-scenario-card" data-profile-family="personal">
-        <input type="radio" name="usage_scenario" value="owner">
-        <span class="usage-scenario-icon" aria-hidden="true"><img src="icons/nav-cabin.svg" alt=""></span>
-        <strong>Propriétaire</strong>
-        <span>Suivre le véhicule, comprendre ses problèmes et effectuer les contrôles simples en sécurité.</span>
-      </label>
+    <div class="profile-entry-panel" data-profile-options>
+      <section class="personal-entry" data-profile-family-panel="personal">
+        <h3 data-profile-entry-title>Que souhaitez-vous faire ?</h3>
+        <div class="personal-entry-grid">
+          <article class="personal-entry-card personal-report-entry">
+            <span class="entry-icon" aria-hidden="true"><img src="icons/nav-report.svg" alt=""></span>
+            <h4 data-profile-report-title>Générer un rapport PDF</h4>
+            <p data-profile-report-copy>Créez une fiche claire pour acheter ou vendre un véhicule.</p>
+            <div class="personal-report-choices" role="group" aria-label="Choisissez le type de rapport">
+              <label class="usage-scenario-card personal-role-choice">
+                <input type="radio" name="usage_scenario" value="buyer" checked>
+                <span class="usage-scenario-icon" aria-hidden="true"><img src="icons/nav-vehicle.svg" alt=""></span>
+                <strong>Acheteur</strong>
+                <span>Contrôler les risques et préparer la négociation.</span>
+              </label>
+              <label class="usage-scenario-card personal-role-choice">
+                <input type="radio" name="usage_scenario" value="seller">
+                <span class="usage-scenario-icon" aria-hidden="true"><img src="icons/nav-report.svg" alt=""></span>
+                <strong>Vendeur</strong>
+                <span>Présenter un dossier transparent à un futur acheteur.</span>
+              </label>
+            </div>
+          </article>
+          <label class="personal-entry-card personal-diagnostic-entry usage-scenario-card">
+            <input type="radio" name="usage_scenario" value="owner">
+            <span class="entry-icon" aria-hidden="true"><img src="icons/nav-cabin.svg" alt=""></span>
+            <strong data-profile-diagnostic-title>Faire un diagnostic avec notre expert</strong>
+            <span data-profile-diagnostic-copy>Décrivez les symptômes : l’assistant vous guide avant, pendant et après les contrôles.</span>
+          </label>
+        </div>
+      </section>
+      <section class="professional-entry" data-profile-family-panel="professional" hidden>
+        <div class="professional-entry-head">
+          <div><p class="panel-kicker">PARCOURS PROFESSIONNEL</p><h3 data-profile-professional-title>Quel est votre métier ?</h3><p data-profile-professional-copy>Choisissez le flux adapté à votre atelier ou à votre flotte.</p></div>
+          <button type="button" class="return-personal-trigger" id="personalJourneyBtn" data-profile-return-personal>Retour aux parcours personnels</button>
+        </div>
+        <div class="usage-scenario-grid">
+          <label class="usage-scenario-card">
+            <input type="radio" name="usage_scenario" value="mechanic">
+            <span class="usage-scenario-icon" aria-hidden="true"><img src="icons/nav-engine.svg" alt=""></span>
+            <strong>Garagiste</strong>
+            <span>Documenter l’état initial et la plainte client avant la prise en charge en atelier.</span>
+          </label>
+          <label class="usage-scenario-card">
+            <input type="radio" name="usage_scenario" value="rental">
+            <span class="usage-scenario-icon" aria-hidden="true"><img src="icons/nav-road.svg" alt=""></span>
+            <strong>Agence de location</strong>
+            <span>Gérer la flotte, le kilométrage et les états des lieux avant et après location.</span>
+          </label>
+        </div>
+      </section>
     </div>
     <fieldset class="inspection-mode-selector">
       <legend>Quel niveau d’inspection souhaitez-vous ?</legend>
@@ -729,6 +746,6 @@
 <script src="vendor/qrcode.js"></script>
 <script src="build-data.js?v=20260810-3"></script>
 <script src="js/db-loader.js?v=20260811-1"></script>
-<script type="module" src="js/app.js?v=20260823-2"></script>
+<script type="module" src="js/app.js?v=20260823-3"></script>
 </body>
 </html>

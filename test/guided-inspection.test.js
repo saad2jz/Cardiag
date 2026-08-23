@@ -10,13 +10,20 @@ const styles = await readFile(new URL('../css/ux/inspection-enhancements.css', i
 const prompts = await readFile(new URL('../assets/reference/prompts-higgsfield.md', import.meta.url), 'utf8');
 const testGuides = await readFile(new URL('../assets/reference/test-guides.svg', import.meta.url), 'utf8');
 
-test('profile selection is grouped by family and exposes inspection depth before starting', () => {
-  assert.match(index, /data-profile-family-choice="personal"/);
-  assert.match(index, /data-profile-family-choice="professional"/);
+test('profile entry starts with personal report or expert diagnosis and keeps professional access in the header', () => {
+  assert.match(index, /id="professionalJourneyBtn"/);
+  assert.match(index, /data-profile-entry-title/);
+  assert.match(index, /data-profile-report-title/);
+  assert.match(index, /data-profile-diagnostic-title/);
+  ['buyer', 'seller', 'owner', 'mechanic', 'rental'].forEach((profile) => {
+    assert.match(index, new RegExp(`name="usage_scenario" value="${profile}"`));
+  });
   assert.match(index, /name="inspection_mode" value="quick"/);
   assert.match(index, /name="inspection_mode" value="complete"/);
   assert.doesNotMatch(index, /Le plus choisi/);
-  assert.match(wizard, /renderProfileFamily/);
+  assert.match(wizard, /data-profile-family-panel/);
+  assert.match(wizard, /professionalJourneyButton/);
+  assert.match(wizard, /initialProfile = VALID_PROFILES\.has\(entry\.profile\) \? entry\.profile : 'buyer'/);
 });
 
 test('guided inspection keeps a reversible full-report view and seven-section stepper', () => {

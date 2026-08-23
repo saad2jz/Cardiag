@@ -38,6 +38,15 @@ const EN = {
   'brandPicker.less': 'Show main makes',
   'profile.heading': 'What would you like to do today?',
   'profile.intro': 'The checklist, assistant and final report adapt automatically to your situation.',
+  'profile.entry.title': 'What would you like to do?',
+  'profile.report.title': 'Generate a PDF report',
+  'profile.report.copy': 'Create a clear report to buy or sell a vehicle.',
+  'profile.diagnostic.title': 'Diagnose with our expert',
+  'profile.diagnostic.copy': 'Describe the symptoms: the assistant guides you before, during and after the checks.',
+  'profile.professional.trigger': 'Are you a professional?',
+  'profile.professional.title': 'What is your profession?',
+  'profile.professional.copy': 'Choose the workflow that fits your workshop or fleet.',
+  'profile.personal.return': 'Back to personal options',
   'profile.buyer': 'Buyer',
   'profile.buyer.description': 'Inspect a vehicle before purchase, identify risks and prepare the negotiation.',
   'profile.mechanic': 'Mechanic',
@@ -405,6 +414,15 @@ export function applyTranslations() {
   document.documentElement.lang = language;
   setText('#usageScenarioTitle', 'profile.heading', 'Quel est votre objectif ?');
   setText('.usage-scenario-head > p:last-child', 'profile.intro', 'Le questionnaire, l’assistant et la synthèse s’adaptent automatiquement à votre situation.');
+  setText('[data-profile-entry-title]', 'profile.entry.title', 'Que souhaitez-vous faire ?');
+  setText('[data-profile-report-title]', 'profile.report.title', 'Générer un rapport PDF');
+  setText('[data-profile-report-copy]', 'profile.report.copy', 'Créez une fiche claire pour acheter ou vendre un véhicule.');
+  setText('[data-profile-diagnostic-title]', 'profile.diagnostic.title', 'Faire un diagnostic avec notre expert');
+  setText('[data-profile-diagnostic-copy]', 'profile.diagnostic.copy', 'Décrivez les symptômes : l’assistant vous guide avant, pendant et après les contrôles.');
+  setText('#professionalJourneyBtn', 'profile.professional.trigger', 'Vous êtes un professionnel ?');
+  setText('[data-profile-professional-title]', 'profile.professional.title', 'Quel est votre métier ?');
+  setText('[data-profile-professional-copy]', 'profile.professional.copy', 'Choisissez le flux adapté à votre atelier ou à votre flotte.');
+  setText('[data-profile-return-personal]', 'profile.personal.return', 'Retour aux parcours personnels');
   setText('#profileContextTitle', 'context.heading', 'Précisez votre situation');
   setText('#chatPanel .diagnostic-console-head h2', 'chat.title', "Console d'investigation");
   const chatInput = document.getElementById('chatInput');
