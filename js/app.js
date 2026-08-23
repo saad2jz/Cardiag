@@ -26,7 +26,7 @@ import { initializeOwnerTechnicalHelp } from './ux/owner-technical-help.js?v=202
 import { initializePostReportActions } from './ux/post-report-actions.js?v=20260821-1';
 import { initializeLocalBackupReminder } from './ux/local-backup-reminder.js?v=20260821-1';
 import { initializeHomeButton } from './navigation/home-button.js?v=20260820-1';
-import { initializeBrandPicker } from './wizard/brand-picker.js?v=20260821-5';
+import { initializeBrandPicker } from './wizard/brand-picker.js?v=20260823-2';
 
 /**
  * Application entry point. Data loading stays separate from the UI controller

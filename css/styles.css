@@ -846,11 +846,28 @@ body.wizard-active{min-height:100dvh;overflow-x:hidden;padding-bottom:calc(92px 
 .brand-card.is-selected{border-color:var(--primary);background:color-mix(in srgb,var(--primary) 12%,var(--surface));box-shadow:0 0 0 2px color-mix(in srgb,var(--primary) 18%,transparent);}
 .brand-card strong{display:block;width:100%;overflow:hidden;color:var(--ink);font-size:10px;line-height:1.2;text-overflow:ellipsis;white-space:nowrap;}
 .brand-emblem{display:grid;place-items:center;width:55px;height:55px;color:var(--ink);}
-.brand-emblem.has-official-logo{background:var(--brand-logo) center/contain no-repeat;}
+.brand-emblem.has-official-logo{position:relative;box-sizing:border-box;padding:6px;border:0;border-radius:10px;background:#f7f7f5;overflow:hidden;contain:layout paint;}
+.brand-emblem.has-official-logo img.official-brand-logo{display:block!important;width:100%!important;height:100%!important;min-width:0!important;min-height:0!important;max-width:100%!important;max-height:100%!important;margin:0!important;object-fit:contain!important;object-position:center!important;filter:none!important;mix-blend-mode:normal!important;transform:none!important;}
+.brand-emblem.has-official-logo.logo-load-failed{background:transparent;}
+.brand-emblem.has-official-logo.logo-load-failed img{display:none!important;}
 .brand-emblem svg{display:block;width:100%;height:100%;overflow:visible;fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;}
 .brand-emblem .brand-fill{fill:currentColor;stroke:none;}.brand-emblem text{fill:currentColor;stroke:none;font:800 27px 'Sora',sans-serif;}.brand-emblem .brand-word{font-size:19px;}.brand-emblem .brand-cut{fill:var(--surface);font:800 10px 'Sora',sans-serif;}
 .brand-picker-more{width:100%;min-height:48px;margin-top:12px;padding:10px 14px;border:1px solid var(--border);border-radius:10px;background:var(--bg);color:var(--ink);font-weight:850;cursor:pointer;}
 .brand-picker-more:hover,.brand-picker-more:focus-visible{border-color:var(--primary);outline:none;}
+.vehicle-choice-picker{max-width:780px;margin:0 auto 18px;padding:18px;border:1px solid var(--border);border-radius:16px;background:var(--surface);box-shadow:var(--ombre-sm);scroll-margin-top:100px;}
+.vehicle-choice-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px;}
+.vehicle-choice-card{position:relative;display:grid;place-items:center;align-content:center;gap:7px;min-width:0;min-height:104px;padding:10px 7px;border:1px solid var(--border);border-radius:12px;background:linear-gradient(180deg,color-mix(in srgb,var(--surface) 94%,#fff 6%),var(--bg));color:var(--ink);cursor:pointer;text-align:center;transition:border-color .16s ease,transform .16s ease,background .16s ease;}
+.vehicle-choice-input{position:absolute;z-index:2;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer;}
+.vehicle-choice-card:hover,.vehicle-choice-card:focus-visible{border-color:var(--primary);transform:translateY(-1px);outline:none;}
+.vehicle-choice-card.is-selected{border-color:var(--primary);background:color-mix(in srgb,var(--primary) 12%,var(--surface));box-shadow:0 0 0 2px color-mix(in srgb,var(--primary) 18%,transparent);}
+.vehicle-choice-card .brand-emblem{width:55px;height:55px;}
+.vehicle-choice-card strong{display:-webkit-box;width:100%;min-width:0;overflow:hidden;font-size:10px;line-height:1.25;text-overflow:ellipsis;-webkit-box-orient:vertical;-webkit-line-clamp:2;}
+.vehicle-choice-icon{display:grid;place-items:center;width:55px;height:55px;border-radius:11px;background:color-mix(in srgb,var(--primary) 14%,var(--bg));font-size:24px;}
+.vehicle-selector-bar.is-visual-fallback{display:none!important;}
+.vehicle-choice-confirm{display:block;width:min(780px,100%);min-height:52px;margin:4px auto 22px;padding:12px 18px;border:1px solid var(--primary);border-radius:12px;background:var(--primary);color:#111;font-weight:900;cursor:pointer;}
+.vehicle-choice-confirm[hidden],.vehicle-choice-picker[hidden]{display:none!important;}
+.wizard-view[data-wizard-step="2"] details.section>.section-body>.vehicle-choice-picker:not([hidden]),
+.wizard-view[data-wizard-step="2"] details.section>.section-body>.vehicle-choice-confirm:not([hidden]){display:block!important;}
 
 /* Identification : garage personnel et comparaison avant achat. */
 .saved-vehicles-panel{max-width:780px;margin:0 auto 22px;padding:16px 18px;border:1px solid var(--border);border-radius:16px;background:var(--surface);box-shadow:var(--ombre-sm);}
@@ -969,6 +986,11 @@ body.wizard-active{min-height:100dvh;overflow-x:hidden;padding-bottom:calc(92px 
   .wizard-header .records-trigger{margin-left:auto;}
   .brand-picker{padding:13px 10px;border-radius:13px;}
   .brand-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;}
+  .vehicle-choice-picker{padding:13px 10px;border-radius:13px;}
+  .vehicle-choice-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;}
+  .vehicle-choice-card{min-height:94px;padding:7px 4px;gap:7px;}
+  .vehicle-choice-card .brand-emblem{width:48px;height:48px;}
+  .vehicle-choice-icon{width:48px;height:48px;font-size:21px;}
   .brand-card{min-height:94px;padding:7px 4px;border-radius:10px;}
   .brand-emblem{width:48px;height:48px;}
   .brand-card strong{font-size:9px;}
