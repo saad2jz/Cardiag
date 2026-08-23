@@ -16,6 +16,8 @@ test('the identification picker and PDF share one local vehicle logo manifest', 
   assert.equal(getVehicleBrandLogoPath('Mercedes-Benz'), 'assets/vehicle-brands/mercedes_benz.svg');
   assert.equal(getVehicleBrandLogoPath('DS'), 'assets/vehicle-brands/ds_automobiles.svg');
   assert.equal(getVehicleBrandLogoPath('Porsche'), 'assets/vehicle-brands/porsche.svg');
+  assert.equal(getVehicleBrandLogoPath('Bugatti'), 'assets/vehicle-brands/bugatti.svg');
+  assert.equal(getVehicleBrandLogoPath('Lamborghini'), 'assets/vehicle-brands/lamborghini.svg');
   assert.equal(normalizeVehicleBrand('VW'), 'volkswagen');
   assert.match(picker, /getVehicleBrandLogoPath\(name\)/);
   assert.match(picker, /<strong>\$\{brand/);
@@ -33,6 +35,7 @@ test('the identification picker and PDF share one local vehicle logo manifest', 
   assert.match(picker, /brand-grid vehicle-choice-grid/);
   assert.match(picker, /brand-card vehicle-choice-card/);
   assert.match(picker, /motorisationSelect[^\n]+dependsOn: 'anneeSelect'/);
+  assert.match(picker, /config\.key === 'model' \|\| config\.key === 'generation'/);
   assert.match(picker, /target\.dispatchEvent\(new Event\('change'/);
 
   for (const path of OFFICIAL_LOGOS.values()) {

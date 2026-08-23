@@ -1,20 +1,34 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { jsPDF } from 'jspdf';
-import { createPdf, executiveSummary, photoGroupsForSection } from '../js/reports/premium-report.js';
+import { createPdf, effectiveDecision, executiveSummary, photoGroupsForSection } from '../js/reports/premium-report.js';
 import { buildCompleteReportModel } from './fixtures/complete-report-model.js';
 
-test('the incomplete report states its exact inspection coverage', () => {
+test('the partial report states its exact inspection coverage', () => {
   const model=buildCompleteReportModel();
   model.done=12;
   model.points.slice(12).forEach(point=>{ point.status=''; });
-  assert.match(executiveSummary(model),/^Inspection non finalisée — 12 points sur 33 renseignés\./);
+  assert.match(executiveSummary(model),/^Inspection partielle — 12 points sur 33 renseignés\./);
 });
 
 test('P1000 is the first alert in a complete executive summary', () => {
   const summary=executiveSummary(buildCompleteReportModel());
   assert.match(summary,/^Alerte prioritaire : le code P1000/);
   assert.match(summary,/Conclusion : décision NÉGOCIATION/);
+});
+
+test('near-complete and complete reports without a verdict ask for a decision', () => {
+  const nearComplete=buildCompleteReportModel();
+  nearComplete.done=32; nearComplete.verdict=''; nearComplete.data.verdict='';
+  const complete=buildCompleteReportModel();
+  complete.verdict=''; complete.data.verdict='';
+  assert.equal(effectiveDecision(nearComplete).label,'DÉCISION À FORMULER');
+  assert.equal(effectiveDecision(complete).label,'DÉCISION À FORMULER');
+});
+
+test('missing documents are a transaction warning, not an owner warning', async () => {
+  const report=await import('node:fs/promises').then(({readFile})=>readFile(new URL('../js/reports/premium-report.js', import.meta.url),'utf8'));
+  assert.match(report,/\['buyer','seller'\]\.includes\(persona\)/);
 });
 
 test('the complete 33-point model produces a multi-page premium PDF', async () => {

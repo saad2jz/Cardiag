@@ -496,7 +496,15 @@ export function initializeLegacyFeatures(vehicleData) {
     fiche.photos[sectionKey] = fiche.photos[sectionKey] || [];
     const before = fiche.photos[sectionKey].length;
     const results = await Promise.allSettled(Array.from(files).map(file=>
-      compressImage(file).then(dataUrl=>({name:file.name, dataUrl}))
+      compressImage(file).then(dataUrl=>({
+        name:file.name,
+        dataUrl,
+        // La date d'ajout est fiable même si le nom d'un fichier ancien est
+        // conservé. Le PDF peut alors distinguer une preuve ajoutée pendant
+        // l'inspection d'une photo dont la date de prise n'est pas vérifiable.
+        addedAt:new Date().toISOString(),
+        originalLastModified:file.lastModified || null,
+      }))
     ));
     results.forEach(r=>{ if(r.status === 'fulfilled') fiche.photos[sectionKey].push(r.value); });
     const failedCount = results.filter(r=>r.status === 'rejected').length;
@@ -1075,6 +1083,10 @@ export function initializeLegacyFeatures(vehicleData) {
     const data = sanitizePersonaData(fiche.data || {});
     const recordWeights = weightsForPersona(data.usage_scenario);
     const photos = fiche.photos || {};
+    const sectionNotes = Object.fromEntries(Object.keys(SECTION_TITLES).map((section) => {
+      const key = section === 'diagnostic' ? 'notes_diagnostic' : `notes_${section}`;
+      return [section, String(data[key] || '').trim()];
+    }).filter(([, note]) => note));
     const points = CHECK_NAMES.map(name=>{
       const input = document.querySelector('input[name="'+cssEscape(name)+'"]');
       const section = input?.closest('details.section')?.dataset.section || 'info';
@@ -1086,7 +1098,9 @@ export function initializeLegacyFeatures(vehicleData) {
         category: CATEGORY_OF[name] || 'esthetique',
         weight: getWeight(name, recordWeights),
         status: data[name] || '',
-        note: data[name+'_note'] || data['notes_'+section] || (section === 'diagnostic' ? data.notes_diagnostic : ''),
+        // Une note de section ne doit jamais être dupliquée sur chacun de ses
+        // contrôles. Les notes précises restent réservées au contrôle concerné.
+        note: data[name+'_note'] || '',
         photos: JSON.parse(JSON.stringify(photos['point:'+name] || [])),
       };
     });
@@ -1107,6 +1121,7 @@ export function initializeLegacyFeatures(vehicleData) {
       verdict,
       verdictLabel: verdict === 'achat' ? 'ACHAT' : verdict === 'negociation' ? 'NÉGOCIATION' : verdict === 'fuir' ? 'À FUIR' : 'INSPECTION À COMPLÉTER',
       points,
+      sectionNotes,
       photos: allPhotos,
       mainPhoto: (photos.info || [])[0] || allPhotos[0] || null,
       signatures: JSON.parse(JSON.stringify(fiche.signatures || {})),
@@ -1486,6 +1501,14 @@ export function initializeLegacyFeatures(vehicleData) {
       const missing = validateRequiredFields(true);
       if(missing.length){
         scrollToFirstMissing();
+        return;
+      }
+      const vin = document.querySelector('[name="vin"]');
+      if(!vin?.value.trim()){
+        const message = 'Ajoutez le VIN ou l’immatriculation avant de générer un rapport PDF traçable.';
+        document.getElementById('result').textContent = message;
+        window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback',{detail:{type:'error',message}}));
+        vin?.focus(); vin?.scrollIntoView({behavior:'smooth',block:'center'});
         return;
       }
 

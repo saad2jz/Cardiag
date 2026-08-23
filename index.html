@@ -45,7 +45,7 @@
 <link rel="stylesheet" href="css/settings/settings.css?v=20260820-3">
 <link rel="stylesheet" href="css/score/score.css?v=20260821-1">
 <link rel="stylesheet" href="css/reports/premium-report.css?v=20260814-2">
-<link rel="stylesheet" href="css/app-redesign.css?v=20260823-1">
+<link rel="stylesheet" href="css/app-redesign.css?v=20260823-2">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cardiag.online/#organization","name":"CarDiag","url":"https://cardiag.online/","logo":"https://cardiag.online/icons/app-icon-512.png"},{"@type":"WebApplication","name":"CarDiag","url":"https://cardiag.online/","publisher":{"@id":"https://cardiag.online/#organization"},"applicationCategory":"AutomotiveApplication","operatingSystem":"Web, Android, iOS","inLanguage":["fr","en"],"description":"Application d'inspection automobile guidée avec rapport PDF détaillé.","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}]}
 </script>
@@ -428,9 +428,18 @@
         <ul id="vehicleIssuesList"></ul>
       </section>
       <input type="hidden" name="motorisation_points_faibles">
+      <section class="model-specific-alerts" id="modelSpecificAlerts" hidden aria-live="polite">
+        <div class="model-specific-alerts-head">
+          <span aria-hidden="true">⚠️</span>
+          <div><p>POINTS DE VIGILANCE DOCUMENTÉS</p><h3>À contrôler sur ce véhicule</h3></div>
+        </div>
+        <p class="model-specific-alerts-intro" id="modelSpecificAlertsIntro"></p>
+        <div class="model-specific-alerts-list" id="modelSpecificAlertsList"></div>
+      </section>
+      <input type="hidden" name="model_specific_alerts">
       <div class="grid cols-3" id="vehicleCoreFields" style="margin-top:16px;">
         <div class="field" id="fieldWrap-kilometrage"><label>Kilométrage <span class="req-star">*</span></label><input type="number" name="kilometrage" min="0" inputmode="numeric" required placeholder="98000"><span class="req-error">Indiquez un kilométrage valide.</span></div>
-        <div class="field"><label>N° VIN / Immatriculation</label><input type="text" name="vin" placeholder="VF1XXXXXXXXXXXXXX"></div>
+        <div class="field"><label>N° VIN / Immatriculation <span class="req-star">*</span></label><input type="text" name="vin" placeholder="VF1XXXXXXXXXXXXXX" aria-describedby="vinReportHint"><small id="vinReportHint" class="hint">Requis avant la génération du rapport PDF.</small></div>
         <div class="field" id="fieldWrap-valeur"><label>Valeur affichée / négociée (€) <span class="req-star">*</span></label><input type="number" name="valeur" min="0" inputmode="decimal" required placeholder="12500"><span class="req-error">Indiquez une valeur valide.</span></div>
       </div>
 
@@ -747,6 +756,6 @@
 <script src="vendor/qrcode.js"></script>
 <script src="build-data.js?v=20260810-3"></script>
 <script src="js/db-loader.js?v=20260811-1"></script>
-<script type="module" src="js/app.js?v=20260823-4"></script>
+<script type="module" src="js/app.js?v=20260823-6"></script>
 </body>
 </html>

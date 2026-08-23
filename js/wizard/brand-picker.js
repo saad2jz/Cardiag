@@ -1,12 +1,13 @@
-import { OFFICIAL_LOGOS, getVehicleBrandLogoPath } from '../branding/vehicle-brand-logos.js?v=20260823-2';
+import { OFFICIAL_LOGOS, getVehicleBrandLogoPath } from '../branding/vehicle-brand-logos.js?v=20260823-3';
 
 const INITIAL_BRAND_LIMIT = 15;
 const FEATURED_BRANDS = [
+  // Les quinze premières cartes sont visibles sans action : les marques
+  // demandées sont donc réellement parmi les marques populaires du départ.
   'Renault', 'Peugeot', 'Citroën', 'Dacia', 'Volkswagen', 'Toyota', 'BMW',
-  'Mercedes-Benz', 'Audi', 'Ford', 'Opel', 'Fiat', 'Nissan', 'Hyundai', 'Kia',
-  'Seat', 'Skoda', 'Volvo', 'Honda', 'Mazda', 'Suzuki', 'Mini', 'Tesla',
-  'Porsche', 'Alfa Romeo', 'Land Rover', 'Lexus', 'Cupra', 'DS Automobiles',
-  'Mitsubishi',
+  'Mercedes-Benz', 'Audi', 'Ford', 'Lexus', 'Abarth', 'Land Rover', 'Bugatti', 'Lamborghini',
+  'Opel', 'Fiat', 'Nissan', 'Hyundai', 'Kia', 'Seat', 'Skoda', 'Volvo', 'Honda',
+  'Mazda', 'Suzuki', 'Mini', 'Tesla', 'Porsche', 'Alfa Romeo', 'Cupra', 'DS Automobiles', 'Mitsubishi',
 ];
 
 const BRAND_ALIASES = new Map([
@@ -153,7 +154,9 @@ export function initializeBrandPicker(vehicles = []) {
   }
 
   function visualIcon(config) {
-    if (config.key === 'model') return emblemMarkup(select.value);
+    // Le modèle et la génération/châssis font tous deux partie du même
+    // véhicule : l'emblème de la marque conserve le repère visuel choisi.
+    if (config.key === 'model' || config.key === 'generation') return emblemMarkup(select.value);
     return `<span class="vehicle-choice-icon" aria-hidden="true">${config.icon}</span>`;
   }
 

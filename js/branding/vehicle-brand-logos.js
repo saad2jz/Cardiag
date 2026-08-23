@@ -1,6 +1,7 @@
 // Source unique des logos constructeur affiches dans l'identification et le PDF.
 // Les fichiers sont servis localement pour préserver le mode hors ligne et la vie privée.
 export const OFFICIAL_LOGOS = new Map([
+  ['bugatti', 'assets/vehicle-brands/bugatti.svg'],
   ['audi', 'assets/vehicle-brands/audi.svg'],
   ['bmw', 'assets/vehicle-brands/bmw.svg'],
   ['chevrolet', 'assets/vehicle-brands/chevrolet.svg'],
@@ -13,6 +14,7 @@ export const OFFICIAL_LOGOS = new Map([
   ['honda', 'assets/vehicle-brands/honda.svg'],
   ['jeep', 'assets/vehicle-brands/jeep.svg'],
   ['kia', 'assets/vehicle-brands/kia.svg'],
+  ['lamborghini', 'assets/vehicle-brands/lamborghini.svg'],
   ['mazda', 'assets/vehicle-brands/mazda.svg'],
   ['mercedes benz', 'assets/vehicle-brands/mercedes_benz.svg'],
   ['mini', 'assets/vehicle-brands/mini.svg'],

@@ -1,6 +1,6 @@
 import { calculateNegotiation } from './negotiation.js?v=20260814-1';
 import { normalizePersona, personaReport } from '../personas.js?v=20260814-1';
-import { getVehicleBrandLogoDataUrl } from '../branding/vehicle-brand-logos.js?v=20260823-2';
+import { getVehicleBrandLogoDataUrl } from '../branding/vehicle-brand-logos.js?v=20260823-3';
 
 const SECTION_ORDER = ['info','moteur','chassis','carrosserie','habitacle','essai','diagnostic'];
 const STATUS = {
@@ -16,7 +16,10 @@ const THEMES = {
 };
 
 function imageFormat(dataUrl='') { return dataUrl.includes('image/png') ? 'PNG' : dataUrl.includes('image/webp') ? 'WEBP' : 'JPEG'; }
-function numberLabel(value) { return Number(value).toLocaleString('fr-FR').replace(/\u202f/g,' '); }
+function numberLabel(value) {
+  const number=Number(value);
+  return Number.isFinite(number) ? Math.round(number).toLocaleString('fr-FR',{useGrouping:true}).replace(/[\u202f\u00a0]/g,' ') : '—';
+}
 function euro(value) { const amount=Number(String(value||'').replace(/[^0-9.-]/g,'')); return Number.isFinite(amount) ? `${numberLabel(amount)} €` : '—'; }
 function dateLabel(value) { const date=value?new Date(value):new Date(); return Number.isNaN(date.getTime()) ? String(value||'—') : date.toLocaleDateString('fr-FR',{day:'2-digit',month:'long',year:'numeric'}); }
 function decisionColor(verdict) { return verdict==='achat'?[22,163,74]:verdict==='negociation'?[217,119,6]:verdict==='fuir'?[185,28,28]:[100,116,139]; }
@@ -24,7 +27,46 @@ function firstLines(value,max=5) { return String(value||'').split(/\n+/).map(lin
 function qrDataUrl(value) { try { const qr=window.qrcode(0,'M');qr.addData(value);qr.make();return qr.createDataURL(5,0); } catch { return ''; } }
 function scoreBand(score) { return score == null ? { label:'Non évalué', color:[100,116,139] } : score > 80 ? { label:'Sain', color:[22,163,74] } : score >= 50 ? { label:'Vigilance', color:[217,119,6] } : { label:'À risque', color:[185,28,28] }; }
 function generationLabel(date=new Date()) { return date.toLocaleString('fr-FR',{day:'2-digit',month:'long',year:'numeric',hour:'2-digit',minute:'2-digit'}).replace(' à ', ' à '); }
-function effectiveDecision(model) { return model.done < model.total ? { label:'INSPECTION À COMPLÉTER', verdict:'' } : model.verdict ? { label:model.verdictLabel, verdict:model.verdict } : { label:'DÉCISION À CONFIRMER', verdict:'' }; }
+export function effectiveDecision(model) {
+  if (model.verdict) return { label:model.verdictLabel, verdict:model.verdict };
+  const coverage=model.total ? model.done/model.total : 0;
+  return coverage >= .95
+    ? { label:'DÉCISION À FORMULER', verdict:'' }
+    : { label:'INSPECTION À COMPLÉTER', verdict:'' };
+}
+function modelSpecificAlerts(data) {
+  try {
+    const parsed=JSON.parse(String(data?.model_specific_alerts||''));
+    return Array.isArray(parsed) ? parsed.filter((alert)=>alert && typeof alert==='object' && Array.isArray(alert.symptomes)) : [];
+  } catch { return []; }
+}
+
+function drawModelSpecificAlertsAppendix(pdf, alerts, palette, english) {
+  if (!alerts.length) return;
+  let y;
+  const title=english?'Model-specific watch points':'Points de vigilance du modèle';
+  pdf.addPage();y=setupPage(pdf,palette,title,english?'KNOWLEDGE-BASE APPENDIX':'ANNEXE BASE DE CONNAISSANCES');
+  pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','normal');pdf.setFontSize(8.5);
+  const intro=english
+    ? 'These watch points are not a diagnosis. Confirm them through field checks, maintenance records and the manufacturer procedure.'
+    : 'Ces points de vigilance ne constituent pas un diagnostic. Confirmez-les avec les contrôles terrain, l’historique d’entretien et la procédure constructeur.';
+  pdf.text(pdf.splitTextToSize(intro,178),16,y,{lineHeightFactor:1.45});y+=18;
+  alerts.forEach((alert,index)=>{
+    const rows=[
+      [english?'Symptoms':'Symptômes', Array.isArray(alert.symptomes)?alert.symptomes.join(' · '):'—'],
+      [english?'Typical mileage':'Kilométrage d’apparition', alert.kilometrage_apparition],
+      [english?'Recommended check':'Méthode de contrôle recommandée', alert.diagnostic],
+      [english?'Affected component':'Pièce concernée', alert.piece_concernee],
+      [english?'Severity / frequency':'Gravité / fréquence', [alert.gravite,alert.frequence].filter(Boolean).join(' · ')],
+      [english?'Estimated repair cost':'Coût de réparation estimé', alert.cout_reparation_estime],
+    ];
+    const estimated=20+rows.reduce((sum,[,value])=>sum+Math.max(11,pdf.splitTextToSize(String(value||'—'),116).slice(0,3).length*4+5),0);
+    if(y+estimated>270){pdf.addPage();y=setupPage(pdf,palette,title,english?'KNOWLEDGE-BASE APPENDIX · CONTINUED':'ANNEXE BASE DE CONNAISSANCES · SUITE');}
+    pdf.setFillColor(...palette.surface);pdf.roundedRect(16,y,178,15,3,3,'F');pdf.setTextColor(...palette.text);pdf.setFont('helvetica','bold');pdf.setFontSize(10);pdf.text(String(alert.title||`${english?'Watch point':'Point de vigilance'} ${index+1}`),21,y+9);y+=20;
+    rows.forEach(([label,value])=>{const lines=pdf.splitTextToSize(String(value||'—'),116).slice(0,3),height=Math.max(12,lines.length*4+5);pdf.setFillColor(...palette.page);pdf.roundedRect(16,y,178,height-1,1.5,1.5,'F');pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','bold');pdf.setFontSize(7);pdf.text(label.toUpperCase(),21,y+6);pdf.setTextColor(...palette.text);pdf.setFont('helvetica','normal');pdf.setFontSize(7.5);pdf.text(lines,77,y+6,{lineHeightFactor:1.25});y+=height;});
+    y+=5;
+  });
+}
 
 function drawVehicleBrandBadge(pdf, brand, x, y, palette) {
   const name=String(brand||'Véhicule').trim().slice(0,24);
@@ -36,7 +78,8 @@ function drawVehicleBrandBadge(pdf, brand, x, y, palette) {
 }
 
 export function executiveSummary(model) {
-  if(model.done < model.total) return `Inspection non finalisée — ${model.done} points sur ${model.total} renseignés. Les résultats ci-dessous ne permettent pas encore de conclure sur l’ensemble du véhicule.`;
+  const coverage=model.total ? model.done/model.total : 0;
+  if(model.done < model.total && coverage < .95) return `Inspection partielle — ${model.done} points sur ${model.total} renseignés. Les résultats ci-dessous ne permettent pas encore de conclure sur l’ensemble du véhicule.`;
   const defects=model.points.filter(point=>point.status==='defaut').sort((a,b)=>b.weight-a.weight);
   const warnings=model.points.filter(point=>point.status==='moyen');
   const strengths=model.points.filter(point=>point.status==='ok').slice(0,3).map(point=>point.label);
@@ -50,7 +93,12 @@ export function executiveSummary(model) {
   const budgetText=budget ? ((price+repairs)<=budget ? `le coût projeté de ${numberLabel(price+repairs)} € reste dans le budget` : `le coût projeté dépasse le budget de ${numberLabel(price+repairs-budget)} €`) : 'le budget maximal n’est pas renseigné';
   const negotiation=model.negotiation || calculateNegotiation(model);
   const negotiationText=negotiation?.amount ? ` Marge de négociation calculée selon l’état : ${numberLabel(negotiation.amount)} €.` : '';
-  parts.push((model.verdict ? `Conclusion : décision ${model.verdictLabel} ; ${budgetText}.` : `Conclusion : décision finale à consigner ; ${budgetText}.`) + negotiationText);
+  const conclusion=model.verdict
+    ? `Conclusion : décision ${model.verdictLabel} ; ${budgetText}.`
+    : coverage >= .95
+      ? `Conclusion : contrôle presque complet (${model.done}/${model.total}), mais décision finale à formuler ; ${budgetText}.`
+      : `Conclusion : décision finale à consigner ; ${budgetText}.`;
+  parts.push(conclusion + negotiationText);
   return parts.join(' ');
 }
 
@@ -71,6 +119,13 @@ function addImageContained(pdf, photo, x, y, w, h, palette) {
     pdf.addImage(data,imageFormat(data),x+(w-imageWidth)/2,y+(h-imageHeight)/2,imageWidth,imageHeight,undefined,'FAST');
     return true;
   } catch { return false; }
+}
+
+function photoProvenance(photo, english=false) {
+  if (!photo?.addedAt) return english ? 'Imported image — capture date not verified' : 'Photo importée — date de prise non vérifiable';
+  const date=new Date(photo.addedAt);
+  const label=Number.isNaN(date.getTime()) ? '' : date.toLocaleDateString(english?'en-GB':'fr-FR');
+  return english ? `Added to this record${label?` on ${label}`:''}` : `Ajoutée à cette fiche${label?` le ${label}`:''}`;
 }
 
 export function photoGroupsForSection(model, section) {
@@ -101,7 +156,8 @@ function drawPhotoGallery(pdf, photos, startY, palette, options={}) {
     const rendered=addImageContained(pdf,photo,x+2,y+2,80,39,palette);
     pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','normal');pdf.setFontSize(6.2);
     const filename=firstLines(photo?.name||`Photo ${index+1}`,1);
-    pdf.text(pdf.splitTextToSize(`${index+1}. ${filename}`,78).slice(0,1),x+3,y+46);
+    pdf.text(pdf.splitTextToSize(`${index+1}. ${filename}`,78).slice(0,1),x+3,y+45);
+    pdf.setFontSize(5.2);pdf.text(pdf.splitTextToSize(photoProvenance(photo),78).slice(0,1),x+3,y+49);
     if(!rendered){pdf.setTextColor(...STATUS.defaut.color);pdf.setFont('helvetica','bold');pdf.text('IMAGE ILLISIBLE',x+42,y+23,{align:'center'});}
     if(column===1 || index===values.length-1)y+=55;
   });
@@ -169,7 +225,13 @@ export async function createPdf(model,branding) {
   // Page 3 : les défauts majeurs avant le détail exhaustif.
   pdf.addPage();y=setupPage(pdf,palette,english?'Priority findings':'Points d’attention prioritaires',english?'PRIORITY REVIEW':'LECTURE PRIORITAIRE');
   const priorities=model.points.filter(point=>point.status==='defaut').sort((a,b)=>(b.name==='p1000')-(a.name==='p1000') || b.weight-a.weight || SECTION_ORDER.indexOf(a.section)-SECTION_ORDER.indexOf(b.section));
-  if(!priorities.length){pdf.setFillColor(22,163,74);pdf.roundedRect(16,y,178,22,3,3,'F');pdf.setTextColor(255,255,255);pdf.setFont('helvetica','bold');pdf.setFontSize(11);pdf.text('Aucun défaut majeur identifié sur les points contrôlés',105,y+13,{align:'center'});}
+  const missingDocuments=[['Carte grise',model.data.doc_carte_grise],['Contrôle technique',model.data.doc_ct],['Certificat de non-gage',model.data.doc_non_gage],['Factures d’entretien',model.data.doc_factures]].filter(([,provided])=>!provided).map(([label])=>label);
+  // L'absence de pièces administratives est un risque de transaction : elle
+  // est donc prioritaire uniquement pour les parcours achat / vente, et non
+  // pour le carnet de santé d'un propriétaire.
+  const allDocumentsMissing=['buyer','seller'].includes(persona)&&missingDocuments.length===4;
+  if(allDocumentsMissing){pdf.setFillColor(...STATUS.defaut.color);pdf.roundedRect(16,y,178,27,3,3,'F');pdf.setTextColor(255,255,255);pdf.setFont('helvetica','bold');pdf.setFontSize(10);pdf.text('DOCUMENTS ESSENTIELS ABSENTS',21,y+9);pdf.setFont('helvetica','normal');pdf.setFontSize(7.5);pdf.text(pdf.splitTextToSize('Aucune carte grise, contrôle technique, certificat de non-gage ni facture n’a été déclaré. Vérification impérative avant toute décision.',164),21,y+16,{lineHeightFactor:1.25});y+=33;}
+  if(!priorities.length&&!allDocumentsMissing){pdf.setFillColor(22,163,74);pdf.roundedRect(16,y,178,22,3,3,'F');pdf.setTextColor(255,255,255);pdf.setFont('helvetica','bold');pdf.setFontSize(11);pdf.text('Aucun défaut majeur identifié sur les points contrôlés',105,y+13,{align:'center'});}
   priorities.forEach(point=>{const photo=point.photos?.[0],height=photo?40:31;if(y+height>273){pdf.addPage();y=setupPage(pdf,palette,'Points d’attention prioritaires','LECTURE PRIORITAIRE · SUITE');}pdf.setFillColor(...STATUS.defaut.color);pdf.roundedRect(16,y,178,height-3,3,3,'F');pdf.setTextColor(255,255,255);pdf.setFont('helvetica','bold');pdf.setFontSize(9);pdf.text(pdf.splitTextToSize(point.label,photo?118:160),22,y+9);pdf.setFontSize(6.5);pdf.text(`${point.sectionLabel} · coefficient ×${point.weight}`,22,y+17);if(point.note){pdf.setFont('helvetica','normal');pdf.text(pdf.splitTextToSize(firstLines(point.note,1),photo?112:160).slice(0,2),22,y+24);}if(photo)addImageSafe(pdf,photo,151,y+6,35,26);y+=height;});
 
   // Contexte et historique de vente, issu exclusivement des champs saisis.
@@ -196,13 +258,15 @@ export async function createPdf(model,branding) {
   SECTION_ORDER.forEach(section=>{
     const points=model.points.filter(point=>point.section===section);if(!points.length)return;
     pdf.addPage();let py=setupPage(pdf,palette,points[0].sectionLabel||section,'DÉTAIL DES CONTRÔLES');
+    const sectionNote=String(model.sectionNotes?.[section]||'').trim();
+    if(sectionNote){const lines=pdf.splitTextToSize(sectionNote,166).slice(0,4),height=Math.max(18,10+lines.length*4);pdf.setFillColor(...palette.surface);pdf.roundedRect(16,py,178,height,3,3,'F');pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','bold');pdf.setFontSize(7);pdf.text('OBSERVATION GÉNÉRALE DE LA SECTION',21,py+6);pdf.setTextColor(...palette.text);pdf.setFont('helvetica','normal');pdf.setFontSize(8);pdf.text(lines,21,py+12,{lineHeightFactor:1.25});py+=height+6;}
     const photoGroups=photoGroupsForSection(model,section);
     const documented=points.filter(point=>point.status || point.photos?.length),unchecked=points.filter(point=>!point.status && !point.photos?.length);
     documented.forEach(point=>{
       const pointPhotos=Array.isArray(point.photos)?point.photos:[];const blockHeight=22;
       if(py+blockHeight>274){pdf.addPage();py=setupPage(pdf,palette,points[0].sectionLabel||section,'DÉTAIL DES CONTRÔLES · SUITE');}
       const status=STATUS[point.status]||STATUS[''];pdf.setFillColor(...palette.surface);pdf.roundedRect(16,py,178,blockHeight-3,3,3,'F');pdf.setFillColor(...status.color);pdf.circle(22,py+7,2.2,'F');pdf.setTextColor(...palette.text);pdf.setFont('helvetica','bold');pdf.setFontSize(9);pdf.text(pdf.splitTextToSize(point.label,118),28,py+7);pdf.setFillColor(...status.color);pdf.roundedRect(154,py+3,34,8,2,2,'F');pdf.setTextColor(255,255,255);pdf.setFontSize(7);pdf.text(status.label,171,py+8.2,{align:'center'});
-      pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','normal');pdf.setFontSize(7);const note=point.note?firstLines(point.note,2):'Aucune observation complémentaire saisie.';pdf.text(pdf.splitTextToSize(note,118).slice(0,2),28,py+15);
+      if(point.note){pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','normal');pdf.setFontSize(7);pdf.text(pdf.splitTextToSize(firstLines(point.note,2),118).slice(0,2),28,py+15);}
       if(point.name==='p1000'&&point.status==='defaut'){pdf.setDrawColor(185,28,28);pdf.setLineWidth(1);pdf.roundedRect(16,py,178,blockHeight-3,3,3,'S');}
       py+=blockHeight;
       if(pointPhotos.length){
@@ -227,16 +291,20 @@ export async function createPdf(model,branding) {
 
   // La page financière emploie le vocabulaire propre au parcours actif.
   pdf.addPage();y=setupPage(pdf,palette,english?reportMeta.financeTitleEn:reportMeta.financeTitle);
-  const price=Number(model.data.valeur)||0,repairs=Number(model.data.frais_estimation)||0,budget=Number(model.data.budget_max)||0;const suggested=negotiation?.amount ? `-${numberLabel(negotiation.amount)} €` : String(model.data.marge_negociation||'').trim()|| (repairs?`-${repairs.toLocaleString('fr-FR')} €`:'—');
+  const price=Number(model.data.valeur)||0,repairs=Number(model.data.frais_estimation)||0,budget=Number(model.data.budget_max)||0;const hasRepairs=repairs>0,hasBudget=budget>0;const suggested=negotiation?.amount ? `-${numberLabel(negotiation.amount)} €` : String(model.data.marge_negociation||'').trim()|| (hasRepairs?`-${numberLabel(repairs)} €`:'—');
   const financialRows=[
     [persona==='mechanic'?'Valeur du véhicule déclarée':persona==='rental'?'Valeur de référence du véhicule':'Valeur affichée',euro(price)],
-    [persona==='mechanic'?'Pièces et main-d’œuvre estimées':persona==='owner'?'Travaux et entretien estimés':'Frais de remise en état estimés',euro(repairs)],
+    [persona==='mechanic'?'Pièces et main-d’œuvre estimées':persona==='owner'?'Travaux et entretien estimés':'Frais de remise en état estimés',hasRepairs?euro(repairs):(english?'Not specified':'Non renseignés')],
   ];
   if(['buyer','seller'].includes(persona))financialRows.push(['Marge de négociation basée sur l’état',suggested]);
   if(['buyer','seller'].includes(persona)&&negotiation?.targetPrice)financialRows.push(['Prix cible conseillé',euro(negotiation.targetPrice)]);
-  financialRows.push([persona==='mechanic'?'Plafond autorisé par le client':persona==='rental'?'Provision / franchise de référence':'Budget maximum',euro(budget)]);
+  financialRows.push([persona==='mechanic'?'Plafond autorisé par le client':persona==='rental'?'Provision / franchise de référence':'Budget maximum',hasBudget?euro(budget):(english?'Not specified':'Non renseigné')]);
   financialRows.forEach(([label,value],index)=>{pdf.setFillColor(...(index%2?palette.page:palette.surface));pdf.rect(16,y,178,18,'F');pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','normal');pdf.setFontSize(8);pdf.text(label,21,y+11);pdf.setTextColor(...palette.text);pdf.setFont('helvetica','bold');pdf.setFontSize(11);pdf.text(value,188,y+11,{align:'right'});y+=18;});
-  y+=14;pdf.setTextColor(...palette.text);pdf.setFontSize(12);pdf.text('Lecture financière',16,y);y+=9;pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','normal');pdf.setFontSize(9);const financial=price?`Coût d’acquisition projeté après remise en état : ${numberLabel(price+repairs)} €. ${budget?((price+repairs)<=budget?'Le projet reste dans le budget annoncé.':`Le budget est dépassé de ${numberLabel(price+repairs-budget)} €.`):'Le budget maximal reste à renseigner.'}${negotiation?.label?` ${negotiation.label}`:''}${negotiation?.arguments?.length?` Arguments factuels : ${negotiation.arguments.join(', ')}.`:''}`:'La valeur affichée doit être renseignée pour calculer le coût global.';pdf.text(pdf.splitTextToSize(financial,178),16,y,{lineHeightFactor:1.5});
+  y+=14;pdf.setTextColor(...palette.text);pdf.setFontSize(12);pdf.text(english?'Financial review':'Lecture financière',16,y);y+=9;pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','normal');pdf.setFontSize(9);const financial=(price&&hasRepairs&&hasBudget)?`Coût d’acquisition projeté après remise en état : ${numberLabel(price+repairs)} €. ${(price+repairs)<=budget?'Le projet reste dans le budget annoncé.':`Le budget est dépassé de ${numberLabel(price+repairs-budget)} €.`}${negotiation?.label?` ${negotiation.label}`:''}${negotiation?.arguments?.length?` Arguments factuels : ${negotiation.arguments.join(', ')}.`:''}`:(english?'Budget section incomplete — enter the advertised price, repair estimate and maximum budget before relying on a financial conclusion.':'Section budget incomplète — renseignez la valeur affichée, les frais estimés et le budget maximum avant de vous appuyer sur une conclusion financière.');pdf.text(pdf.splitTextToSize(financial,178),16,y,{lineHeightFactor:1.5});
+
+  // Distincte des défauts relevés : cette annexe reprend uniquement les
+  // points de vigilance documentés après l'identification du véhicule.
+  drawModelSpecificAlertsAppendix(pdf,modelSpecificAlerts(model.data),palette,english);
 
   // Signatures et validation
   pdf.addPage();y=setupPage(pdf,palette,english?'Signatures & approval':'Signatures & validation');
@@ -272,6 +340,10 @@ export function initializePremiumReport() {
 
   async function perform(action,id){
     const model=window.cardiagDataBridge?.getReportModel?.(id);if(!model)return false;
+    if(!String(model.data?.vin||'').trim()){
+      window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback',{detail:{type:'error',message:'Ajoutez le VIN ou l’immatriculation avant de générer un rapport PDF traçable.'}}));
+      return false;
+    }
     if(action==='link'){
       markGenerated(model);
       document.getElementById('shareReportBtn')?.click();
