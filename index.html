@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Inspection voiture d'occasion et rapport automobile | CarDiag</title>
+<title>Inspectez un véhicule d'occasion comme un expert | CarDiag</title>
 <meta name="description" content="Inspectez une voiture d'occasion point par point, documentez les défauts et générez un rapport PDF automobile complet avec CarDiag.">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <link rel="canonical" href="https://cardiag.online/">
@@ -33,7 +33,7 @@
 <link rel="apple-touch-icon" href="icons/app-icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=20260823-4">
+<link rel="stylesheet" href="css/styles.css?v=20260823-5">
 <link rel="stylesheet" href="css/wizard/premium.css?v=20260813-1">
 <link rel="stylesheet" href="css/theming/themes.css?v=20260820-3">
 <link rel="stylesheet" href="css/landing/landing.css?v=20260821-4">
@@ -78,7 +78,7 @@
         <p class="landing-cta-disclaimer" data-landing-i18n="shortDisclaimer">CarDiag aide à la décision et ne remplace pas un contrôle technique officiel.</p>
         <ul class="landing-reassurance">
           <li data-landing-i18n="local">Fonctionne hors ligne</li>
-          <li data-landing-i18n="private">Données conservées sur votre appareil</li>
+          <li data-landing-i18n="private">Fiches locales par défaut · IA et synchronisation sur demande</li>
           <li data-landing-i18n="noCard">Aucune carte bancaire requise</li>
         </ul>
       </div>
@@ -718,6 +718,12 @@
   <button type="button" id="undoDeleteBtn">Annuler</button>
 </div>
 
+<aside class="pwa-update-banner" id="pwaUpdateBanner" hidden role="status" aria-live="polite">
+  <div><strong id="pwaUpdateTitle">Nouvelle version disponible</strong><p id="pwaUpdateText">Rechargez CarDiag pour profiter des dernières améliorations.</p></div>
+  <button type="button" id="pwaUpdateReload">Mettre à jour</button>
+  <button type="button" id="pwaUpdateDismiss" aria-label="Fermer la notification de mise à jour">×</button>
+</aside>
+
 <div class="action-bar">
   <div class="missing-fields-banner" id="missingFieldsBanner"></div>
   <div class="action-bar-inner">
@@ -734,6 +740,6 @@
 <script src="vendor/qrcode.js"></script>
 <script src="build-data.js?v=20260823-5"></script>
 <script src="js/db-loader.js?v=20260811-1"></script>
-<script type="module" src="js/app.js?v=20260823-9"></script>
+<script type="module" src="js/app.js?v=20260823-10"></script>
 </body>
 </html>

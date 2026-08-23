@@ -12,7 +12,7 @@ const EN = {
   kicker: 'USED VEHICLE INSPECTION · PROFESSIONAL REPORT',
   title: 'Inspect a used vehicle like an expert, in 15 minutes.',
   lead: 'A guided checklist, documented evidence and a clear PDF report to buy, sell, repair or monitor a vehicle with confidence.',
-  start: 'Start an inspection', demo: 'View a sample report', local: 'Works offline', private: 'Data stays on your device', noCard: 'No payment card required',
+  start: 'Start an inspection', demo: 'View a sample report', local: 'Works offline', private: 'Reports are local by default · AI and sync on request', noCard: 'No payment card required',
   shortDisclaimer: 'CarDiag supports your decision and does not replace an official roadworthiness inspection.',
   factsPoints: 'structured inspection points', factsSections: 'technical sections', factsReport: 'professional PDF report',
   existingFeaturesKicker: 'TWO MODES, ONE CLEARER DECISION', existingFeaturesTitle: 'Adapt the inspection to the time available.',

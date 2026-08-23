@@ -13,6 +13,7 @@ const recordsGallery = await readFile(new URL('../js/records/records-gallery.js'
 const settings = await readFile(new URL('../js/settings/settings.js', import.meta.url), 'utf8');
 const themes = await readFile(new URL('../js/theming/theme-manager.js', import.meta.url), 'utf8');
 const styles = await readFile(new URL('../css/styles.css', import.meta.url), 'utf8');
+const pwa = await readFile(new URL('../js/pwa.js', import.meta.url), 'utf8');
 
 test('the public landing and wizard expose the same five workflows', () => {
   const landingRoles = [...index.matchAll(/data-landing-role="([^"]+)"/g)].map((match) => match[1]);
@@ -27,7 +28,11 @@ test('the app shell keeps SEO, accessibility and cache safeguards', () => {
   assert.match(index, /"@type":"Organization"/);
   assert.match(index, /id="installAppBtn"[^>]*hidden/);
   assert.match(index, /sigCanvasAcheteur[^>]*aria-label=/);
-  assert.match(worker, /cardiag-v80/);
+  assert.match(worker, /cardiag-v81/);
+  assert.match(index, /id="pwaUpdateBanner"/);
+  assert.match(index, /Fiches locales par défaut/);
+  assert.match(pwa, /registration\.addEventListener\('updatefound'/);
+  assert.match(pwa, /pwaUpdateReload/);
 });
 
 test('the wizard toolbar exposes a non-destructive CarDiag home action', () => {
