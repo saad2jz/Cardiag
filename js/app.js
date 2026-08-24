@@ -17,6 +17,11 @@ async function ensureRuntime(landing) {
 async function initializeApp() {
   initializeI18n();
   const landing = initializeLanding();
+  // The landing CTA needs the local-profile controller before the inspection
+  // runtime is loaded. Otherwise its first click waits forever for the
+  // `cardiag:profile-onboarding-ready` event.
+  const onboarding = await import('./onboarding/profile-onboarding.js?v=20260824-3');
+  await onboarding.initializeProfileOnboarding({ deferProfile: landing.active });
   initializePwa();
 
   const router = initializeRouter({

@@ -3,7 +3,6 @@ import { initializeWizard } from './wizard.js?v=20260823-3';
 import { initializeWizardInteractions } from './wizard/interactions.js?v=20260813-1';
 import { initializeVehiclePicker } from './wizard/vehicle-picker.js?v=20260821-1';
 import { initializeThemeManager } from './theming/theme-manager.js?v=20260820-3';
-import { initializeProfileOnboarding } from './onboarding/profile-onboarding.js?v=20260824-3';
 import { initializeMediaManager } from './media/media-manager.js?v=20260813-2';
 import { initializeAuthUi } from './auth/auth-ui.js?v=20260824-4';
 import { initializePermissions } from './native/permissions.js?v=20260813-1';
@@ -97,7 +96,6 @@ export function initializeAppRuntime({ landingActive = false } = {}) {
       initializeInspectionEnhancements();
       initializeOwnerTechnicalHelp();
       await initializeThemeManager();
-      await initializeProfileOnboarding({ deferProfile: landingActive });
       initializeMediaManager();
       initializeScoreVisuals();
       initializeHomeButton();
