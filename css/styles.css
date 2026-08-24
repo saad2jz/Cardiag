@@ -379,6 +379,7 @@ body.dark .missing-fields-banner{color:var(--rouge);}
 .pwa-update-banner>div{min-width:0;flex:1}.pwa-update-banner strong{display:block;font:700 13px 'Sora',sans-serif;color:var(--ink)}.pwa-update-banner p{margin:3px 0 0;color:var(--muted);font-size:12px;line-height:1.35}
 .pwa-update-banner button{min-height:44px;border-radius:10px;font:700 12px 'Sora',sans-serif;cursor:pointer}.pwa-update-banner #pwaUpdateReload{padding:0 13px;border:0;background:var(--accent);color:#15110a}.pwa-update-banner #pwaUpdateDismiss{width:36px;min-width:36px;padding:0;border:1px solid var(--border);background:transparent;color:var(--ink);font-size:20px}
 @media(max-width:600px){.pwa-update-banner{right:12px;bottom:calc(78px + env(safe-area-inset-bottom));width:calc(100vw - 24px);padding:12px;gap:8px}.pwa-update-banner p{font-size:11px}.pwa-update-banner #pwaUpdateReload{padding:0 10px}}
+.account-migration{display:flex;align-items:center;gap:12px;margin:14px 0;padding:13px;border:1px solid color-mix(in srgb,var(--accent) 55%,var(--border));border-radius:12px;background:color-mix(in srgb,var(--accent) 8%,var(--surface))}.account-migration[hidden]{display:none}.account-migration>div{flex:1}.account-migration strong{font:700 13px 'Sora',sans-serif;color:var(--ink)}.account-migration p{margin:4px 0 0;color:var(--muted);font-size:11px;line-height:1.4}.account-migration button{min-height:44px;padding:0 12px;border:0;border-radius:9px;background:var(--accent);color:#15110a;font:700 11px 'Sora',sans-serif;cursor:pointer}.account-migration button:disabled{opacity:.6;cursor:not-allowed}@media(max-width:520px){.account-migration{align-items:flex-start;flex-direction:column}.account-migration button{width:100%}}
 
 .modal-overlay{position:fixed; inset:0; background:rgba(0,0,0,0.7); backdrop-filter:blur(2px); display:none; align-items:center; justify-content:center; z-index:100; padding:20px;}
 .modal-overlay.show{display:flex;}
@@ -899,6 +900,7 @@ body.wizard-active{min-height:100dvh;overflow-x:hidden;padding-bottom:calc(92px 
 .profile-context-fields .field{min-width:0;}
 .profile-context-fields textarea{min-height:112px;}
 .profile-context-intro{color:var(--muted);line-height:1.55;}
+.profile-documents{margin:24px 0 0;padding:0;border:0;min-width:0;}.profile-documents legend{padding:0;font:800 15px 'Sora',sans-serif;color:var(--ink);}.profile-documents>p{margin:6px 0 12px;color:var(--muted);font-size:12px;line-height:1.45;}.profile-documents-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;}.profile-documents-grid .doc-check{margin:0;min-height:48px;}
 .active-profile-chip{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 20px;padding:10px 12px;border:1px solid color-mix(in srgb,var(--primary) 55%,var(--border));border-radius:999px;background:color-mix(in srgb,var(--primary) 10%,var(--surface));color:var(--ink);font-weight:800;}
 .active-profile-chip button{min-height:40px;padding:7px 13px;border:1px solid var(--border);border-radius:999px;background:var(--bg);color:var(--ink);font-weight:850;cursor:pointer;}
 .active-profile-chip button:hover,.active-profile-chip button:focus-visible{border-color:var(--primary);outline:none;}
@@ -953,7 +955,7 @@ body.wizard-active{min-height:100dvh;overflow-x:hidden;padding-bottom:calc(92px 
   .wizard-view{padding-top:18px;}
   .wizard-view[data-wizard-step="1"] .usage-scenario-grid,
   .wizard-view[data-wizard-step="2"] .vehicle-selector-bar,
-  .profile-context-fields{grid-template-columns:1fr;}
+  .profile-context-fields,.profile-documents-grid{grid-template-columns:1fr;}
   .wizard-view[data-wizard-step="1"]{min-height:auto;}
   .wizard-view[data-wizard-step="1"] .usage-scenario-card{min-height:118px;}
   .wizard-active .diagnostic-workspace{position:relative;inset:auto;display:grid;grid-template-columns:1fr;grid-template-rows:auto auto;min-height:0;overflow:visible;border-radius:10px;}

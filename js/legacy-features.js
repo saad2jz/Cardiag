@@ -199,6 +199,15 @@ export function initializeLegacyFeatures(vehicleData) {
     return id;
   }
 
+  function blankInspectionData(initialData={}){
+    // A new inspection must never inherit checks, documents, photos or any
+    // technical observation from the previously open vehicle.
+    return {
+      usage_scenario: initialData.usage_scenario || 'buyer',
+      inspection_mode: initialData.inspection_mode === 'quick' ? 'quick' : 'complete',
+    };
+  }
+
   function fieldEls(){
     return document.querySelectorAll('main input[name], main textarea[name], main select[name]');
   }
@@ -2403,12 +2412,13 @@ export function initializeLegacyFeatures(vehicleData) {
     listReportModels: ()=>Object.values(db).map(reportModelFor).filter(Boolean),
     createRecord: async (initialData={})=>{
       saveCurrent();
-      const id = createFiche({data:initialData});
+      const freshData = blankInspectionData(initialData);
+      const id = createFiche({data:freshData});
       currentId = id;
       safeStorage.setItem(CUR_KEY,currentId);
       refreshSelector();
-      applyToForm(initialData);
-      await restoreVehicleSelects(initialData);
+      applyToForm(freshData);
+      await restoreVehicleSelects(freshData);
       renderAllPhotoGrids();
       updateAll();
       window.dispatchEvent(new CustomEvent('cardiag:record-open', { detail:{ id, created:true } }));

@@ -33,7 +33,7 @@
 <link rel="apple-touch-icon" href="icons/app-icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=20260823-5">
+<link rel="stylesheet" href="css/styles.css?v=20260824-2">
 <link rel="stylesheet" href="css/wizard/premium.css?v=20260813-1">
 <link rel="stylesheet" href="css/theming/themes.css?v=20260820-3">
 <link rel="stylesheet" href="css/landing/landing.css?v=20260821-4">
@@ -350,6 +350,17 @@
       <div class="field"><label>Derniers entretiens ou réparations</label><textarea name="maintenance_log" placeholder="Vidange, batterie, freins, pneus, distribution…"></textarea></div>
       <div class="field"><label>Niveau d’autonomie</label><select name="diy_level"><option value="">Choisir</option><option>Observations uniquement</option><option>Contrôles simples avec multimètre/valise</option><option>Entretien courant</option><option>Je préfère consulter un professionnel</option></select></div>
     </div>
+
+    <fieldset class="profile-documents" aria-describedby="documentsHelp">
+      <legend>Documents à vérifier</legend>
+      <p id="documentsHelp">Cochez uniquement les documents réellement consultés pour cette nouvelle inspection.</p>
+      <div class="profile-documents-grid">
+        <div class="doc-check"><input type="checkbox" id="doc1" name="doc_carte_grise"><label for="doc1">Carte grise présentée</label></div>
+        <div class="doc-check"><input type="checkbox" id="doc2" name="doc_ct"><label for="doc2">Contrôle technique valide fourni</label></div>
+        <div class="doc-check"><input type="checkbox" id="doc3" name="doc_non_gage"><label for="doc3">Certificat de non-gage fourni</label></div>
+        <div class="doc-check"><input type="checkbox" id="doc4" name="doc_factures"><label for="doc4">Factures d'entretien présentées</label></div>
+      </div>
+    </fieldset>
   </section>
 
   <details class="section" data-section="info" open>
@@ -427,12 +438,6 @@
         <div class="field"><label>Localisation</label><input type="text" name="geoloc" placeholder="Non renseignée" readonly></div>
         <button class="btn-mini" id="geoBtn" type="button">📍 Utiliser ma position</button>
       </div>
-
-      <div class="subhead">Documents à vérifier</div>
-      <div class="doc-check"><input type="checkbox" id="doc1" name="doc_carte_grise"><label for="doc1">Carte grise présentée</label></div>
-      <div class="doc-check"><input type="checkbox" id="doc2" name="doc_ct"><label for="doc2">Contrôle technique valide fourni</label></div>
-      <div class="doc-check"><input type="checkbox" id="doc3" name="doc_non_gage"><label for="doc3">Certificat de non-gage fourni</label></div>
-      <div class="doc-check"><input type="checkbox" id="doc4" name="doc_factures"><label for="doc4">Factures d'entretien présentées</label></div>
 
       <div class="subhead">Questions à poser au vendeur</div>
       <div class="grid cols-2">
@@ -740,6 +745,6 @@
 <script src="vendor/qrcode.js"></script>
 <script src="build-data.js?v=20260823-5"></script>
 <script src="js/db-loader.js?v=20260811-1"></script>
-<script type="module" src="js/app.js?v=20260823-10"></script>
+<script type="module" src="js/app.js?v=20260824-3"></script>
 </body>
 </html>

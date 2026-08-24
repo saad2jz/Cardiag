@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { planHistoryRecord, validateHistoryRecords } from '../src/auth/firebase-admin.js';
-import { applySyncResult, buildSyncRecords } from '../js/native/sync-queue.js';
+import { applySyncResult, buildSyncRecords, pendingLocalRecordCount } from '../js/native/sync-queue.js';
 
 test('history validation rejects invalid and duplicate document identifiers', () => {
   assert.throws(() => validateHistoryRecords([{ id: 'bad/id' }]), { code: 'INVALID_RECORD_ID' });
@@ -56,4 +56,14 @@ test('client sync exports versions, excludes unresolved conflicts and applies pa
   }, bridge);
   assert.deepEqual(calls, [['synced', 'ready', 3], ['conflict', 'blocked', 4]]);
   assert.deepEqual(counts, { synced: 1, conflicts: 1 });
+});
+
+test('local migration only offers records not already confirmed by the cloud', () => {
+  const count = pendingLocalRecordCount([
+    { id: 'new', syncVersion: 0 },
+    { id: 'legacy' },
+    { id: 'synced', syncVersion: 4 },
+    { id: 'conflict', syncVersion: 0, syncConflict: { serverVersion: 3 } },
+  ]);
+  assert.equal(count, 2);
 });

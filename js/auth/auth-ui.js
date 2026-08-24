@@ -1,4 +1,4 @@
-import { authClient } from './firebase-client.js?v=20260820-4';
+import { authClient } from './firebase-client.js?v=20260824-1';
 
 const ROLES = { buyer:'Acheteur', mechanic:'Garagiste / Mécanicien', rental:'Agence de location', seller:'Vendeur', owner:'Propriétaire' };
 
@@ -45,6 +45,7 @@ function createAuthSurface() {
     <div class="auth-view" data-auth-view="profile" hidden>
       <div class="account-summary"><div class="account-summary-avatar" data-account-avatar aria-hidden="true">C</div><div><strong data-account-summary-name>Compte CarDiag</strong><span data-account-summary-email></span><span class="account-verified" data-account-verification></span></div></div>
       <section class="account-verification-tools" data-verification-tools hidden><p>Vérifiez votre adresse email pour activer la synchronisation et le partage sécurisé.</p><div><button type="button" data-resend-verification>Renvoyer l’email</button><button type="button" data-check-verification>J’ai vérifié mon email</button></div></section>
+      <section class="account-migration" data-local-migration hidden aria-live="polite"><div><strong>Fiches locales à sauvegarder</strong><p data-local-migration-text></p></div><button type="button" data-migrate-local>Synchroniser maintenant</button></section>
       <form data-profile-form>
         <label>Email du compte<input name="accountEmail" type="email" readonly></label>
         <label>Nom affiché<input name="displayName" maxlength="80" autocomplete="name"></label>
@@ -104,6 +105,22 @@ export async function initializeAuthUi() {
   let profileUid = '';
   let profileRequest = 0;
 
+  const pendingLocalRecords = () => (window.cardiagDataBridge?.exportRecords?.() || [])
+    .filter((record) => !record?.syncConflict && (!Number.isSafeInteger(record.syncVersion) || record.syncVersion < 1)).length;
+  const refreshMigration = (user = authClient.user) => {
+    const section = panel.querySelector('[data-local-migration]');
+    const button = panel.querySelector('[data-migrate-local]');
+    const count = pendingLocalRecords();
+    section.hidden = !user || count === 0;
+    if (section.hidden) return;
+    const verified = Boolean(user.emailVerified);
+    const migrationWording = count > 1 ? 'seront copiées' : 'sera copiée';
+    section.querySelector('[data-local-migration-text]').textContent = verified
+      ? `${count} fiche${count > 1 ? 's' : ''} locale${count > 1 ? 's' : ''} ${migrationWording} vers votre compte. Elles restent aussi sur cet appareil.`
+      : 'Vérifiez d’abord votre adresse email pour sauvegarder vos fiches dans le cloud.';
+    button.disabled = !verified;
+  };
+
   const accountName = () => profile?.displayName || authClient.user?.displayName || authClient.user?.email?.split('@')[0] || '';
   const show = (requested) => {
     const name = authClient.user ? 'profile' : (['signup','reset'].includes(requested) ? requested : 'login');
@@ -141,6 +158,7 @@ export async function initializeAuthUi() {
     avatar.textContent = source ? '' : name.charAt(0).toUpperCase();
     avatar.style.backgroundImage = source ? `url("${String(source).replaceAll('"','%22')}")` : '';
     updateQuickLabels();
+    refreshMigration(user);
   };
   const open = (requestedView = '') => {
     panel.hidden = false;
@@ -172,6 +190,8 @@ export async function initializeAuthUi() {
   signupTrigger.addEventListener('click', () => open('signup'));
   window.addEventListener('cardiag:open-auth', (event) => open(event.detail?.view));
   window.addEventListener('cardiag:language-change', updateQuickLabels);
+  window.addEventListener('cardiag:data-change', () => refreshMigration());
+  window.addEventListener('cardiag:sync-status', () => refreshMigration());
   panel.querySelector('[data-account-close]').onclick = () => { panel.classList.remove('is-open'); setTimeout(() => { panel.hidden = true; }, 220); };
   panel.querySelectorAll('[data-auth-show]').forEach((button) => { button.onclick = () => {
     if (authClient.user) { show('profile'); return; }
@@ -258,6 +278,21 @@ export async function initializeAuthUi() {
       message(panel, 'Connexion Google réussie.', 'success');
     } catch (error) { message(panel, error.message, 'error'); }
     finally { setBusy(googleButton, false); }
+  };
+
+  panel.querySelector('[data-migrate-local]').onclick = async (event) => {
+    const button = event.currentTarget;
+    if (button.disabled) return;
+    setBusy(button, true);
+    message(panel, 'Sauvegarde des fiches locales en cours…');
+    try {
+      const result = await window.cardiagSync?.migrateLocalRecords?.();
+      if (!result) throw new Error('La synchronisation est indisponible.');
+      message(panel, result.state === 'synced'
+        ? 'Vos fiches locales sont sauvegardées dans votre compte. Elles restent disponibles sur cet appareil.'
+        : 'Vos fiches restent locales et seront synchronisées automatiquement dès le retour du réseau.', result.state === 'synced' ? 'success' : '');
+    } catch (error) { message(panel, error.message, 'error'); }
+    finally { setBusy(button, false); refreshMigration(); }
   };
 
   panel.querySelector('[data-resend-verification]').onclick = async (event) => {

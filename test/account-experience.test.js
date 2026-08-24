@@ -38,6 +38,8 @@ test('account creation validates confirmation and keeps authentication separate 
   assert.match(client, /validateEmail\(normalizedEmail\)/);
   assert.match(client, /validatePassword\(password, \{ creating: true \}\)/);
   assert.match(authUi, /const loadProfile = async/);
+  assert.match(authUi, /data-migrate-local/);
+  assert.match(authUi, /migrateLocalRecords/);
 });
 
 test('an authenticated session exposes only profile settings and sign out', () => {

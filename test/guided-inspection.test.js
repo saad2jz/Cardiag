@@ -51,6 +51,16 @@ test('mobile inspection is a strict accessible wizard with persistent progress a
   assert.match(legacy, /cardiag:inspection-section-request/);
 });
 
+test('document checks are visible in the context step and a new inspection starts blank', () => {
+  ['doc_carte_grise', 'doc_ct', 'doc_non_gage', 'doc_factures'].forEach((name) => {
+    assert.match(index, new RegExp(`name="${name}"`));
+  });
+  assert.match(index, /class="profile-documents"/);
+  assert.match(legacy, /function blankInspectionData\(initialData=\{\}\)/);
+  assert.match(legacy, /const freshData = blankInspectionData\(initialData\)/);
+  assert.match(legacy, /createFiche\(\{data:freshData\}\)/);
+});
+
 test('reference asset catalog covers all profile families and technical sections', () => {
   ['profil-acheteur.webp','profil-garagiste.webp','moteur-huile.webp','chassis-rotules.webp','carrosserie-defaut-peinture.webp','habitacle-humidite.webp','essai-freinage.webp','diagnostic-p1000.webp']
     .forEach((asset) => assert.match(prompts, new RegExp(asset)));
