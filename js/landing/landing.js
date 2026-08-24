@@ -116,7 +116,11 @@ export function initializeLanding() {
       window.cardiagLocalProfile?.open?.({ suggestedRole: role || 'buyer' });
       return;
     }
-    window.cardiagWizard?.goToStep?.(role ? 2 : 1, 'forward');
+    const query = new URLSearchParams();
+    if (role && PROFILE_SLUGS[role]) query.set('profil', PROFILE_SLUGS[role]);
+    if (selectedLevel) query.set('niveau', selectedLevel === 'quick' ? 'rapide' : 'complet');
+    window.cardiagRouter?.navigate?.(`/app/nouvelle${query.size ? `?${query}` : ''}`)
+      || window.cardiagWizard?.goToStep?.(role ? 2 : 1, 'forward');
   };
 
   const showFamily = (family = 'personal') => {
@@ -148,6 +152,11 @@ export function initializeLanding() {
   window.addEventListener('cardiag:language-change', (event) => applyLanguage(root, event.detail?.language || 'fr'));
   applyLanguage(root, window.cardiagI18n?.language || 'fr');
   showFamily('personal');
-  window.cardiagLanding = { get active() { return active; }, enter, show() { active = true; root.hidden = false; document.body.classList.add('landing-active'); } };
+  window.cardiagLanding = {
+    get active() { return active; },
+    enter,
+    hide,
+    show() { active = true; root.hidden = false; document.body.classList.add('landing-active'); },
+  };
   return { get active() { return active; } };
 }
