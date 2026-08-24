@@ -52,6 +52,10 @@ export function friendlyAuthError(error) {
     POPUP_CLOSED_BY_USER: 'La fenêtre Google a été fermée avant la connexion.',
     POPUP_BLOCKED: 'Le navigateur a bloqué la fenêtre Google. Autorisez les pop-ups puis réessayez.',
     UNAUTHORIZED_DOMAIN: 'Ce domaine doit être autorisé dans Firebase Authentication.',
+    INVALID_API_KEY: 'La configuration Firebase de cette application est invalide.',
+    API_KEY_NOT_VALID: 'La configuration Firebase de cette application est invalide.',
+    APP_NOT_AUTHORIZED: 'Cette application n’est pas autorisée à utiliser Firebase Authentication.',
+    INTERNAL_ERROR: 'Firebase a refusé la connexion Google. Vérifiez que Google est activé et que ce domaine est autorisé.',
   };
   return messages[code] || 'L’opération du compte a échoué. Réessayez dans quelques instants.';
 }
@@ -221,7 +225,14 @@ export const authClient = {
       }
       return currentUser;
     } catch (error) {
-      throw Object.assign(new Error(friendlyAuthError(error)), { code: error?.code || 'AUTH_ERROR', cause: error });
+      const message = friendlyAuthError(error);
+      const code = String(error?.code || '').replace(/^auth\//i, '').replaceAll('-', '_').toUpperCase();
+      const guidance = code === 'OPERATION_NOT_ALLOWED'
+        ? 'La connexion Google doit être activée dans Firebase Authentication.'
+        : message.startsWith('L’opération du compte a échoué')
+        ? 'Connexion Google impossible. Vérifiez que Google est activé dans Firebase Authentication et que ce domaine est autorisé.'
+        : message;
+      throw Object.assign(new Error(guidance), { code: error?.code || 'AUTH_ERROR', cause: error });
     }
   },
   async resetPassword(email) {
