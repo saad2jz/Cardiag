@@ -32,11 +32,13 @@ test('connected account view exposes identity details and comparison filters bla
   assert.match(comparison, /compare-summary-grid/);
 });
 
-test('account creation validates confirmation and keeps authentication separate from profile sync', () => {
-  assert.match(authUi, /name="passwordConfirmation"/);
-  assert.match(authUi, /form\.password\.value !== form\.passwordConfirmation\.value/);
+test('passwordless email authentication keeps account creation separate from profile sync', () => {
+  assert.match(authUi, /data-auth-form="email-link"/);
+  assert.match(authUi, /authClient\.sendMagicLink\(form\.email\.value\)/);
+  assert.doesNotMatch(authUi, /name="passwordConfirmation"/);
   assert.match(client, /validateEmail\(normalizedEmail\)/);
-  assert.match(client, /validatePassword\(password, \{ creating: true \}\)/);
+  assert.match(client, /sendSignInLinkToEmail/);
+  assert.match(client, /signInWithEmailLink/);
   assert.match(authUi, /const loadProfile = async/);
   assert.match(authUi, /data-migrate-local/);
   assert.match(authUi, /migrateLocalRecords/);
@@ -50,9 +52,9 @@ test('an authenticated session exposes only profile settings and sign out', () =
   assert.match(authStyles, /data-authenticated=true.*auth-view:not\(\[data-auth-view=profile\]\)/);
 });
 
-test('Google authentication is offered from both login and account creation', () => {
+test('Google authentication remains available alongside passwordless email', () => {
   assert.match(authUi, /data-google-login/);
-  assert.match(authUi, /data-google-signup/);
+  assert.doesNotMatch(authUi, /data-google-signup/);
   assert.match(authUi, /signInWithGoogle/);
 });
 

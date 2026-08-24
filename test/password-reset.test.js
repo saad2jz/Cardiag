@@ -6,16 +6,17 @@ import { friendlyAuthError, normalizeAuthEmail } from '../js/auth/firebase-clien
 const authUi = await readFile(new URL('../js/auth/auth-ui.js', import.meta.url), 'utf8');
 const worker = await readFile(new URL('../sw.js', import.meta.url), 'utf8');
 
-test('password reset normalizes and validates account email addresses', () => {
+test('passwordless email authentication normalizes and validates account email addresses', () => {
   assert.equal(normalizeAuthEmail('  Client@Example.COM '), 'client@example.com');
   assert.equal(friendlyAuthError({ code: 'auth/invalid-email' }), 'Adresse email invalide.');
-  assert.match(friendlyAuthError({ code: 'auth/operation-not-allowed' }), /réinitialisation du mot de passe/i);
+  assert.match(friendlyAuthError({ code: 'auth/invalid-action-code' }), /lien de connexion/i);
   assert.match(friendlyAuthError({ code: 'auth/network-request-failed' }), /Connexion impossible/);
 });
 
-test('password reset UI prevents duplicate requests and keeps a neutral confirmation', () => {
+test('email-link UI prevents duplicate requests and keeps a neutral confirmation', () => {
   assert.match(authUi, /setBusy\(submit, true\)/);
-  assert.match(authUi, /Si un compte correspond/);
+  assert.match(authUi, /Si cette adresse est valide/);
   assert.match(authUi, /courriers ind/);
-  assert.match(worker, /cardiag-v91/);
+  assert.match(authUi, /data-auth-form="email-link"/);
+  assert.match(worker, /cardiag-v92/);
 });

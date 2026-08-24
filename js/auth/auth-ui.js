@@ -1,4 +1,4 @@
-import { authClient } from './firebase-client.js?v=20260824-2';
+import { authClient } from './firebase-client.js?v=20260824-3';
 
 const ROLES = { buyer:'Acheteur', mechanic:'Garagiste / Mécanicien', rental:'Agence de location', seller:'Vendeur', owner:'Propriétaire' };
 
@@ -16,33 +16,13 @@ function createAuthSurface() {
   panel.innerHTML = `
     <header><div><p class="panel-kicker">COMPTE CARDIAG</p><h2 data-account-title>Connexion</h2></div><button type="button" data-account-close aria-label="Fermer">×</button></header>
     <div class="auth-view" data-auth-view="login">
-      <form data-auth-form="login">
+      <p class="auth-help">Recevez un lien sécurisé par email : aucun mot de passe à créer ni à retenir.</p>
+      <form data-auth-form="email-link">
         <label>Email<input type="email" name="email" autocomplete="email" inputmode="email" required></label>
-        <label>Mot de passe<input type="password" name="password" autocomplete="current-password" required></label>
-        <button type="submit">Se connecter</button>
+        <button type="submit">Recevoir mon lien de connexion</button>
       </form>
       <button type="button" class="google-auth-button" data-google-login><span aria-hidden="true">G</span> Continuer avec Google</button>
-      <button type="button" data-auth-show="reset">Mot de passe oublié</button>
-      <button type="button" data-auth-show="signup">Créer un compte</button>
-    </div>
-    <div class="auth-view" data-auth-view="signup" hidden>
-      <form data-auth-form="signup">
-        <label>Email<input type="email" name="email" autocomplete="email" inputmode="email" required></label>
-        <label>Mot de passe<input type="password" name="password" autocomplete="new-password" minlength="8" aria-describedby="signupPasswordHint" required></label>
-        <small class="auth-field-hint" id="signupPasswordHint">8 caractères minimum.</small>
-        <label>Confirmer le mot de passe<input type="password" name="passwordConfirmation" autocomplete="new-password" minlength="8" required></label>
-        <label>Rôle<select name="role">${Object.entries(ROLES).map(([value,label]) => `<option value="${value}">${label}</option>`).join('')}</select></label>
-        <label class="consent-check"><input type="checkbox" name="consent" required> J’accepte la politique de confidentialité et la synchronisation de mes fiches.</label>
-        <button type="submit">Créer mon compte</button>
-      </form>
-      <div class="auth-provider-divider" aria-hidden="true"><span>ou</span></div>
-      <button type="button" class="google-auth-button" data-google-signup><span aria-hidden="true">G</span> Créer un compte avec Google</button>
-      <button type="button" data-auth-show="login">Déjà inscrit</button>
-    </div>
-    <div class="auth-view" data-auth-view="reset" hidden>
-      <p class="auth-help">Saisissez l’adresse utilisée pour votre compte. Le lien est envoyé par Firebase et peut arriver dans les courriers indésirables.</p>
-      <form data-auth-form="reset"><label>Email<input type="email" name="email" autocomplete="email" inputmode="email" required></label><button type="submit">Envoyer le lien</button></form>
-      <button type="button" data-auth-show="login">Retour à la connexion</button>
+      <p class="auth-help">Premier accès ? Le lien crée votre compte automatiquement.</p>
     </div>
     <div class="auth-view" data-auth-view="profile" hidden>
       <div class="account-summary"><div class="account-summary-avatar" data-account-avatar aria-hidden="true">C</div><div><strong data-account-summary-name>Compte CarDiag</strong><span data-account-summary-email></span><span class="account-verified" data-account-verification></span></div></div>
@@ -125,9 +105,9 @@ export async function initializeAuthUi() {
 
   const accountName = () => profile?.displayName || authClient.user?.displayName || authClient.user?.email?.split('@')[0] || '';
   const show = (requested) => {
-    const name = authClient.user ? 'profile' : (['signup','reset'].includes(requested) ? requested : 'login');
+    const name = authClient.user ? 'profile' : 'login';
     panel.querySelectorAll('[data-auth-view]').forEach((view) => { view.hidden = view.dataset.authView !== name; });
-    panel.querySelector('[data-account-title]').textContent = name === 'profile' ? 'Mon profil' : name === 'signup' ? 'Créer un compte' : name === 'reset' ? 'Mot de passe oublié' : 'Connexion';
+    panel.querySelector('[data-account-title]').textContent = name === 'profile' ? 'Mon profil' : 'Connexion ou créer un compte';
   };
   const updateQuickLabels = () => {
     const english = window.cardiagI18n?.language === 'en';
@@ -189,81 +169,28 @@ export async function initializeAuthUi() {
   };
 
   trigger.addEventListener('click', () => open('login'));
-  signupTrigger.addEventListener('click', () => open('signup'));
+  signupTrigger.addEventListener('click', () => open('login'));
   window.addEventListener('cardiag:open-auth', (event) => open(event.detail?.view));
   window.addEventListener('cardiag:language-change', updateQuickLabels);
   window.addEventListener('cardiag:data-change', () => refreshMigration());
   window.addEventListener('cardiag:sync-status', () => refreshMigration());
   panel.querySelector('[data-account-close]').onclick = () => { panel.classList.remove('is-open'); setTimeout(() => { panel.hidden = true; }, 220); };
-  panel.querySelectorAll('[data-auth-show]').forEach((button) => { button.onclick = () => {
-    if (authClient.user) { show('profile'); return; }
-    const target = button.dataset.authShow;
-    message(panel, '');
-    if (target === 'reset') {
-      const loginEmail = panel.querySelector('[data-auth-form="login"] [name="email"]').value;
-      const resetEmail = panel.querySelector('[data-auth-form="reset"] [name="email"]');
-      if (!resetEmail.value) resetEmail.value = loginEmail;
-      show(target);
-      requestAnimationFrame(() => resetEmail.focus());
-      return;
-    }
-    show(target);
-  }; });
+  window.addEventListener('cardiag:magic-link-email-required', () => {
+    open('login');
+    message(panel, 'Confirmez l’adresse email sur laquelle vous avez reçu le lien.');
+    requestAnimationFrame(() => panel.querySelector('[data-auth-form="email-link"] [name="email"]')?.focus());
+  });
 
-  panel.querySelector('[data-auth-form="login"]').onsubmit = async (event) => {
+  panel.querySelector('[data-auth-form="email-link"]').onsubmit = async (event) => {
     event.preventDefault();
     const form = event.currentTarget;
     const submit = form.querySelector('[type="submit"]');
     if (!form.reportValidity() || submit.disabled) return;
     setBusy(submit, true);
-    message(panel, 'Connexion…');
+    message(panel, 'Envoi du lien sécurisé…');
     try {
-      const user = await authClient.signIn(form.email.value, form.password.value);
-      form.password.value = '';
-      show('profile');
-      renderAccount(user);
-      message(panel, 'Connexion réussie.', 'success');
-    } catch (error) { message(panel, error.message, 'error'); }
-    finally { setBusy(submit, false); }
-  };
-
-  panel.querySelector('[data-auth-form="signup"]').onsubmit = async (event) => {
-    event.preventDefault();
-    const form = event.currentTarget;
-    const submit = form.querySelector('[type="submit"]');
-    if (!form.reportValidity() || submit.disabled) return;
-    if (form.password.value !== form.passwordConfirmation.value) {
-      form.passwordConfirmation.setCustomValidity('Les mots de passe ne correspondent pas.');
-      form.passwordConfirmation.reportValidity();
-      form.passwordConfirmation.setCustomValidity('');
-      return;
-    }
-    signupRole = form.role.value;
-    setBusy(submit, true);
-    message(panel, 'Création du compte…');
-    try {
-      const user = await authClient.signUp(form.email.value, form.password.value);
-      profile = profilePayload({ role:signupRole });
-      profileUid = user.uid;
-      form.password.value = '';
-      form.passwordConfirmation.value = '';
-      show('profile');
-      renderAccount(user);
-      message(panel, 'Compte créé. Vérifiez votre adresse email.', 'success');
-    } catch (error) { message(panel, error.message, 'error'); }
-    finally { setBusy(submit, false); }
-  };
-
-  panel.querySelector('[data-auth-form="reset"]').onsubmit = async (event) => {
-    event.preventDefault();
-    const form = event.currentTarget;
-    const submit = form.querySelector('[type="submit"]');
-    if (!form.reportValidity() || submit.disabled) return;
-    setBusy(submit, true);
-    message(panel, 'Envoi du lien…');
-    try {
-      await authClient.resetPassword(form.email.value);
-      message(panel, 'Si un compte correspond à cette adresse, le lien a été envoyé. Vérifiez aussi vos courriers indésirables.', 'success');
+      await authClient.sendMagicLink(form.email.value);
+      message(panel, 'Si cette adresse est valide, un lien de connexion vient d’être envoyé. Vérifiez aussi vos courriers indésirables.', 'success');
     } catch (error) { message(panel, error.message, 'error'); }
     finally { setBusy(submit, false); }
   };
@@ -280,7 +207,7 @@ export async function initializeAuthUi() {
     } catch (error) { message(panel, error.message, 'error'); }
     finally { setBusy(button, false); }
   };
-  panel.querySelectorAll('[data-google-login], [data-google-signup]').forEach((button) => {
+  panel.querySelectorAll('[data-google-login]').forEach((button) => {
     button.onclick = () => signInWithGoogle(button);
   });
 

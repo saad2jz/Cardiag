@@ -5,6 +5,7 @@ const browserWindow = typeof window === 'undefined' ? {} : window;
 const browserLocation = typeof location === 'undefined' ? { hostname: '', origin: '' } : location;
 const isNative = browserWindow.Capacitor?.isNativePlatform?.() === true;
 const API_BASE = !isNative && ['localhost','127.0.0.1'].includes(browserLocation.hostname) ? `${browserLocation.origin}/` : RENDER_API;
+const MAGIC_LINK_EMAIL_KEY = 'cardiag_magic_link_email_v1';
 let config;
 let webSession = null;
 let webFirebasePromise = null;
@@ -56,6 +57,11 @@ export function friendlyAuthError(error) {
     API_KEY_NOT_VALID: 'La configuration Firebase de cette application est invalide.',
     APP_NOT_AUTHORIZED: 'Cette application n’est pas autorisée à utiliser Firebase Authentication.',
     INTERNAL_ERROR: 'Firebase a refusé la connexion Google. Vérifiez que Google est activé et que ce domaine est autorisé.',
+    INVALID_ACTION_CODE: 'Ce lien de connexion est invalide ou a expiré. Demandez un nouveau lien.',
+    EXPIRED_ACTION_CODE: 'Ce lien de connexion a expiré. Demandez un nouveau lien.',
+    INVALID_OOB_CODE: 'Ce lien de connexion est invalide ou a expiré. Demandez un nouveau lien.',
+    MISSING_MAGIC_LINK_EMAIL: 'Saisissez l’adresse email sur laquelle vous avez reçu le lien.',
+    MAGIC_LINK_UNSUPPORTED: 'La connexion par lien email est disponible sur le site web. Utilisez Google dans l’application mobile pour le moment.',
   };
   return messages[code] || 'L’opération du compte a échoué. Réessayez dans quelques instants.';
 }
@@ -66,6 +72,26 @@ async function loadConfig() {
 }
 
 function nativeAuth() { return browserWindow.Capacitor?.Plugins?.FirebaseAuthentication; }
+function storedMagicLinkEmail() {
+  try { return browserWindow.localStorage?.getItem(MAGIC_LINK_EMAIL_KEY) || ''; } catch { return ''; }
+}
+function rememberMagicLinkEmail(email) {
+  try { browserWindow.localStorage?.setItem(MAGIC_LINK_EMAIL_KEY, email); } catch { /* The user can confirm their email manually. */ }
+}
+function forgetMagicLinkEmail() {
+  try { browserWindow.localStorage?.removeItem(MAGIC_LINK_EMAIL_KEY); } catch { /* Nothing to clean up. */ }
+}
+function magicLinkSettings() {
+  const origin = browserLocation.origin || 'https://cardiag.online';
+  return { url: `${origin.replace(/\/$/, '')}/`, handleCodeInApp: true };
+}
+function cleanMagicLinkUrl() {
+  try {
+    const url = new URL(browserLocation.href);
+    ['apiKey', 'mode', 'oobCode', 'continueUrl', 'langCode', 'tenantId'].forEach((key) => url.searchParams.delete(key));
+    browserWindow.history?.replaceState?.({}, document.title, `${url.pathname}${url.search}${url.hash}`);
+  } catch { /* The URL is harmless after the one-time code is consumed. */ }
+}
 function publicUser(user) {
   if (!user) return null;
   return {
@@ -159,12 +185,49 @@ export const authClient = {
           if (!initialized) { initialized = true; resolve(); }
         }, () => { if (!initialized) { initialized = true; resolve(); } });
       });
+      if (sdk?.isSignInWithEmailLink?.(sdk.auth, browserLocation.href)) {
+        const email = storedMagicLinkEmail();
+        if (email) await this.completeMagicLink(email);
+        else browserWindow.dispatchEvent?.(new CustomEvent('cardiag:magic-link-email-required'));
+      }
     }
     return currentUser;
   },
   onChange(listener) { listeners.add(listener); listener(currentUser); return () => listeners.delete(listener); },
   get user() { return currentUser; },
   get configured() { return Boolean(config?.apiKey && config?.projectId); },
+  async sendMagicLink(email) {
+    const normalizedEmail = normalizeAuthEmail(email);
+    validateEmail(normalizedEmail);
+    if (nativeAuth()) {
+      throw Object.assign(new Error(friendlyAuthError({ code: 'MAGIC_LINK_UNSUPPORTED' })), { code: 'MAGIC_LINK_UNSUPPORTED' });
+    }
+    try {
+      const sdk = await loadWebFirebase();
+      await sdk.sendSignInLinkToEmail(sdk.auth, normalizedEmail, magicLinkSettings());
+      rememberMagicLinkEmail(normalizedEmail);
+    } catch (error) {
+      throw Object.assign(new Error(friendlyAuthError(error)), { code: error?.code || 'AUTH_ERROR', cause: error });
+    }
+  },
+  async completeMagicLink(email) {
+    const normalizedEmail = normalizeAuthEmail(email || storedMagicLinkEmail());
+    if (!normalizedEmail) {
+      throw Object.assign(new Error(friendlyAuthError({ code: 'MISSING_MAGIC_LINK_EMAIL' })), { code: 'MISSING_MAGIC_LINK_EMAIL' });
+    }
+    validateEmail(normalizedEmail);
+    try {
+      const sdk = await loadWebFirebase();
+      if (!sdk.isSignInWithEmailLink(sdk.auth, browserLocation.href)) return null;
+      const result = await sdk.signInWithEmailLink(sdk.auth, normalizedEmail, browserLocation.href);
+      forgetMagicLinkEmail();
+      cleanMagicLinkUrl();
+      notify(result.user);
+      return currentUser;
+    } catch (error) {
+      throw Object.assign(new Error(friendlyAuthError(error)), { code: error?.code || 'AUTH_ERROR', cause: error });
+    }
+  },
   async signUp(email,password) {
     const normalizedEmail = normalizeAuthEmail(email);
     validateEmail(normalizedEmail);
