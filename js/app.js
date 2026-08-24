@@ -1,7 +1,7 @@
 import { initializeLegacyFeatures } from './legacy-features.js?v=20260824-1';
 import { initializeChatExperience } from './chat-experience.js?v=20260821-1';
 import { initializePwa } from './pwa.js?v=20260823-3';
-import { initializeWizard } from './wizard.js?v=20260823-3';
+import { initializeWizard } from './wizard.js?v=20260824-4';
 import { initializeI18n } from './i18n/i18n.js?v=20260823-3';
 import { initializeWizardInteractions } from './wizard/interactions.js?v=20260813-1';
 import { initializeVehiclePicker } from './wizard/vehicle-picker.js?v=20260821-1';
@@ -20,7 +20,7 @@ import { initializeScoreVisuals } from './score/score-visuals.js?v=20260813-1';
 import { initializeRecordsGallery } from './records/records-gallery.js?v=20260821-1';
 import { initializePremiumReport } from './reports/premium-report.js?v=20260823-14';
 import { initializeReportSharing } from './reports/report-sharing.js?v=20260814-2';
-import { initializeLanding } from './landing/landing.js?v=20260821-4';
+import { initializeLanding } from './landing/landing.js?v=20260824-5';
 import { initializeInspectionEnhancements } from './ux/inspection-enhancements.js?v=20260821-3';
 import { initializeOwnerTechnicalHelp } from './ux/owner-technical-help.js?v=20260821-1';
 import { initializePostReportActions } from './ux/post-report-actions.js?v=20260821-1';

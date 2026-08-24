@@ -145,6 +145,7 @@ export function initializeWizard() {
   let profileConfirmed = false;
   let profileReturnStep = 0;
   let transitionTimer;
+  let identificationCompletionAnnounced = false;
 
   function profileFamily(profile = activeProfile()) {
     return PROFESSIONAL_PROFILES.has(profile) ? 'professional' : 'personal';
@@ -216,6 +217,49 @@ export function initializeWizard() {
     views[3].append(workspaceIntro, checklist, assistantGate, chatPanel);
     assistantGate.hidden = !generated || assistantOpened;
     chatPanel.hidden = currentStep !== STEP_COUNT || !generated || !assistantOpened;
+  }
+
+  function identificationIsComplete() {
+    const value = (selectId, manualId) => document.getElementById(manualId)?.value.trim()
+      || document.getElementById(selectId)?.value || '';
+    const nonNegative = (name) => {
+      const raw = document.querySelector(`[name="${name}"]`)?.value ?? '';
+      return raw !== '' && Number.isFinite(Number(raw)) && Number(raw) >= 0;
+    };
+    return Boolean(
+      value('marqueSelect', 'marqueManualInput')
+      && value('modeleSelect', 'modeleManualInput')
+      && document.getElementById('anneeSelect')?.value
+      && value('motorisationSelect', 'motorisationManualInput')
+      && nonNegative('kilometrage')
+      && nonNegative('valeur')
+    );
+  }
+
+  function guideIdentificationCompletion(event) {
+    if (currentStep !== 2) return;
+    const engineChanged = event?.target?.id === 'motorisationSelect'
+      || event?.target?.id === 'motorisationManualInput';
+    const vehicleReady = Boolean(
+      (document.getElementById('marqueManualInput')?.value.trim() || document.getElementById('marqueSelect')?.value)
+      && (document.getElementById('modeleManualInput')?.value.trim() || document.getElementById('modeleSelect')?.value)
+      && document.getElementById('anneeSelect')?.value
+      && (document.getElementById('motorisationManualInput')?.value.trim() || document.getElementById('motorisationSelect')?.value)
+    );
+    if (vehicleReady && engineChanged && !identificationIsComplete()) {
+      document.getElementById('fieldWrap-kilometrage')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+    if (!identificationIsComplete()) {
+      identificationCompletionAnnounced = false;
+      return;
+    }
+    if (identificationCompletionAnnounced) return;
+    identificationCompletionAnnounced = true;
+    window.setTimeout(() => {
+      // The CTA is sticky; scrolling the page to its end reveals the final
+      // identity fields and leaves the user directly at the next action.
+      window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
+    }, 120);
   }
 
   function validateIdentification() {
@@ -335,6 +379,8 @@ export function initializeWizard() {
   back.addEventListener('click', retreat);
   bottomBack.addEventListener('click', retreat);
   generate.addEventListener('click', () => document.getElementById('generateBtn')?.click());
+  document.addEventListener('input', guideIdentificationCompletion);
+  document.addEventListener('change', guideIdentificationCompletion);
 
   document.querySelectorAll('[name="usage_scenario"]').forEach((input) => {
     input.addEventListener('change', () => {
@@ -420,6 +466,7 @@ export function initializeWizard() {
   window.addEventListener('cardiag:scenario-change', updateProfileContext);
   window.addEventListener('cardiag:record-open', () => {
     assistantOpened = false;
+    identificationCompletionAnnounced = false;
     safeStorageSet(PROFILE_STORAGE_KEY, activeProfile());
     updateProfileContext();
   });

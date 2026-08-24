@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cardiag-v87';
+const CACHE_NAME = 'cardiag-v91';
 const APP_SHELL = [
   './',
   './index.html',
@@ -106,7 +106,7 @@ const APP_SHELL = [
   './css/app-redesign.css?v=20260823-2',
   './css/wizard/premium.css?v=20260813-1',
   './css/theming/themes.css?v=20260820-3',
-  './css/landing/landing.css?v=20260821-4',
+  './css/landing/landing.css?v=20260824-5',
   './css/media/media.css?v=20260813-1',
   './css/auth/auth.css?v=20260821-1',
   './css/onboarding/profile-onboarding.css?v=20260824-2',
@@ -120,8 +120,8 @@ const APP_SHELL = [
   './js/db-loader.js?v=20260811-1',
   './js/app.js?v=20260824-6',
   './js/navigation/home-button.js?v=20260820-1',
-  './js/landing/landing.js?v=20260821-4',
-  './js/wizard.js?v=20260823-3',
+  './js/landing/landing.js?v=20260824-5',
+  './js/wizard.js?v=20260824-4',
   './js/i18n/i18n.js?v=20260823-3',
   './js/legacy-features.js?v=20260824-1',
   './js/personas.js?v=20260814-1',
