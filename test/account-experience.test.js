@@ -56,6 +56,12 @@ test('Google authentication is offered from both login and account creation', ()
   assert.match(authUi, /signInWithGoogle/);
 });
 
+test('profile onboarding exposes direct Google account connection', async () => {
+  const onboarding = await readFile(new URL('../js/onboarding/profile-onboarding.js', import.meta.url), 'utf8');
+  assert.match(onboarding, /data-profile-google-auth/);
+  assert.match(onboarding, /authClient\.signInGoogle\(\)/);
+});
+
 test('email verification can be refreshed without reconnecting', () => {
   assert.match(authUi, /data-check-verification/);
   assert.match(authUi, /authClient\.reloadUser\(\)/);

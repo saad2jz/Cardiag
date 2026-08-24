@@ -1,3 +1,5 @@
+import { authClient } from '../auth/firebase-client.js?v=20260824-1';
+
 const STORAGE_KEY = 'cardiag_user_profile_v1';
 const SETTINGS_KEY = 'cardiag_app_settings_v1';
 const VALID_PERSONAL_ROLES = new Set(['buyer', 'seller', 'owner']);
@@ -111,6 +113,8 @@ function buildSurface() {
           </div>
         </section>
         <p class="profile-onboarding-error" data-profile-error role="alert"></p>
+        <div class="profile-onboarding-divider" aria-hidden="true"><span>ou</span></div>
+        <button type="button" class="profile-onboarding-google" data-profile-google-auth><span aria-hidden="true">G</span><b data-profile-google-label>Continuer avec Google</b></button>
         <button type="submit" class="profile-onboarding-submit" data-profile-submit></button>
       </form>
     </div>`;
@@ -138,6 +142,7 @@ export async function initializeProfileOnboarding(options = {}) {
       '[data-profile-personal-title]': ['onboarding.personal', 'Personnel'],
       '[data-profile-personal-description]': ['onboarding.personal.description', 'Acheteur, vendeur ou propriétaire avec vos propres véhicules.'],
       '[data-profile-submit]': ['onboarding.submit', 'Enregistrer et ajouter mon véhicule'],
+      '[data-profile-google-label]': ['auth.continueGoogle', 'Continuer avec Google'],
       '[data-professional-kind-legend]': ['onboarding.professionalKind', 'Votre activité professionnelle'],
       '[data-professional-mechanic-title]': ['onboarding.mechanic', 'Garagiste / Mécanicien'],
       '[data-professional-mechanic-description]': ['onboarding.mechanic.description', 'État d’entrée client, travaux réalisés et contrôle après réparation.'],
@@ -243,7 +248,33 @@ export async function initializeProfileOnboarding(options = {}) {
   form.addEventListener('change', event => { if (event.target.name === 'profile_type' || event.target.name === 'professionalKind') renderType(); });
   form.addEventListener('input', event => {
     event.target.removeAttribute?.('aria-invalid');
-    layer.querySelector('[data-profile-error]').textContent = '';
+    const feedback = layer.querySelector('[data-profile-error]');
+    feedback.textContent = '';
+    delete feedback.dataset.type;
+  });
+  layer.querySelector('[data-profile-google-auth]').addEventListener('click', async (event) => {
+    const button = event.currentTarget;
+    const feedback = layer.querySelector('[data-profile-error]');
+    if (button.disabled) return;
+    button.disabled = true;
+    feedback.textContent = translate('auth.google.loading', 'Connexion Google…');
+    delete feedback.dataset.type;
+    try {
+      const user = await authClient.signInGoogle();
+      const type = form.profile_type.value || 'personal';
+      if (type === 'professional') {
+        form.professionalEmail.value = user.email || form.professionalEmail.value;
+        form.contactName.value = user.displayName || form.contactName.value;
+      } else {
+        form.personalEmail.value = user.email || form.personalEmail.value;
+        form.displayName.value = user.displayName || form.displayName.value;
+      }
+      feedback.textContent = translate('auth.google.connected', 'Compte Google connecté. Complétez les informations restantes puis enregistrez votre profil.');
+      feedback.dataset.type = 'success';
+    } catch (error) {
+      feedback.textContent = error.message || translate('auth.google.error', 'La connexion Google est momentanément indisponible.');
+      feedback.dataset.type = 'error';
+    } finally { button.disabled = false; }
   });
   layer.querySelectorAll('[data-first-language]').forEach(button => button.addEventListener('click', () => {
     const language = button.dataset.firstLanguage;
@@ -260,6 +291,7 @@ export async function initializeProfileOnboarding(options = {}) {
     form.querySelectorAll('[aria-invalid="true"]').forEach(control => control.removeAttribute('aria-invalid'));
     const errorNode = layer.querySelector('[data-profile-error]');
     errorNode.textContent = '';
+    delete errorNode.dataset.type;
     const type = form.profile_type.value;
     const raw = type === 'professional' ? {
       type, professionalKind: form.professionalKind.value, garageName: form.garageName.value, contactName: form.contactName.value, siret: form.siret.value,
