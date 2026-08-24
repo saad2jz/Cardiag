@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cardiag-v84';
+const CACHE_NAME = 'cardiag-v85';
 const APP_SHELL = [
   './',
   './index.html',
@@ -102,7 +102,7 @@ const APP_SHELL = [
   './assets/vehicle-brands/wiesmann.png',
   './assets/vehicle-brands/xpeng.png',
   './assets/vehicle-brands/zeekr.png',
-  './css/styles.css?v=20260824-2',
+  './css/styles.css?v=20260824-3',
   './css/app-redesign.css?v=20260823-2',
   './css/wizard/premium.css?v=20260813-1',
   './css/theming/themes.css?v=20260820-3',
@@ -118,7 +118,7 @@ const APP_SHELL = [
   './css/shared-report.css?v=20260813-1',
   './build-data.js?v=20260823-5',
   './js/db-loader.js?v=20260811-1',
-  './js/app.js?v=20260824-3',
+  './js/app.js?v=20260824-4',
   './js/navigation/home-button.js?v=20260820-1',
   './js/landing/landing.js?v=20260821-4',
   './js/wizard.js?v=20260823-3',
@@ -134,7 +134,7 @@ const APP_SHELL = [
   './js/onboarding/profile-onboarding.js?v=20260820-1',
   './js/media/media-manager.js?v=20260813-2',
   './js/auth/firebase-client.js?v=20260820-4',
-  './js/auth/auth-ui.js?v=20260824-2',
+  './js/auth/auth-ui.js?v=20260824-3',
   './js/auth/consent.js?v=20260813-1',
   './js/native/permissions.js?v=20260813-1',
   './js/native/connectivity.js?v=20260813-1',

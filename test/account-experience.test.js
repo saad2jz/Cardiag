@@ -50,6 +50,12 @@ test('an authenticated session exposes only profile settings and sign out', () =
   assert.match(authStyles, /data-authenticated=true.*auth-view:not\(\[data-auth-view=profile\]\)/);
 });
 
+test('Google authentication is offered from both login and account creation', () => {
+  assert.match(authUi, /data-google-login/);
+  assert.match(authUi, /data-google-signup/);
+  assert.match(authUi, /signInWithGoogle/);
+});
+
 test('email verification can be refreshed without reconnecting', () => {
   assert.match(authUi, /data-check-verification/);
   assert.match(authUi, /authClient\.reloadUser\(\)/);

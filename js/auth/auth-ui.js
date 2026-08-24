@@ -21,7 +21,7 @@ function createAuthSurface() {
         <label>Mot de passe<input type="password" name="password" autocomplete="current-password" required></label>
         <button type="submit">Se connecter</button>
       </form>
-      <button type="button" data-google-login>Continuer avec Google</button>
+      <button type="button" class="google-auth-button" data-google-login><span aria-hidden="true">G</span> Continuer avec Google</button>
       <button type="button" data-auth-show="reset">Mot de passe oublié</button>
       <button type="button" data-auth-show="signup">Créer un compte</button>
     </div>
@@ -35,6 +35,8 @@ function createAuthSurface() {
         <label class="consent-check"><input type="checkbox" name="consent" required> J’accepte la politique de confidentialité et la synchronisation de mes fiches.</label>
         <button type="submit">Créer mon compte</button>
       </form>
+      <div class="auth-provider-divider" aria-hidden="true"><span>ou</span></div>
+      <button type="button" class="google-auth-button" data-google-signup><span aria-hidden="true">G</span> Créer un compte avec Google</button>
       <button type="button" data-auth-show="login">Déjà inscrit</button>
     </div>
     <div class="auth-view" data-auth-view="reset" hidden>
@@ -266,10 +268,9 @@ export async function initializeAuthUi() {
     finally { setBusy(submit, false); }
   };
 
-  const googleButton = panel.querySelector('[data-google-login]');
-  googleButton.onclick = async () => {
-    if (googleButton.disabled) return;
-    setBusy(googleButton, true);
+  const signInWithGoogle = async (button) => {
+    if (button.disabled) return;
+    setBusy(button, true);
     message(panel, 'Connexion Google…');
     try {
       const user = await authClient.signInGoogle();
@@ -277,8 +278,11 @@ export async function initializeAuthUi() {
       renderAccount(user);
       message(panel, 'Connexion Google réussie.', 'success');
     } catch (error) { message(panel, error.message, 'error'); }
-    finally { setBusy(googleButton, false); }
+    finally { setBusy(button, false); }
   };
+  panel.querySelectorAll('[data-google-login], [data-google-signup]').forEach((button) => {
+    button.onclick = () => signInWithGoogle(button);
+  });
 
   panel.querySelector('[data-migrate-local]').onclick = async (event) => {
     const button = event.currentTarget;
