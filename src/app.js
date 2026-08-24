@@ -86,16 +86,8 @@ export function createApp({ llmService, accountService = null }) {
   app.get('/privacy.html', (_req, res) => sendPublicFile(res, 'privacy.html'));
   app.get('/terms.html', (_req, res) => sendPublicFile(res, 'terms.html'));
   app.get('/account-deletion.html', (_req, res) => sendPublicFile(res, 'account-deletion.html'));
-  // Canonical legal URLs while retaining the historical .html URLs above.
-  app.get('/privacy', (_req, res) => sendPublicFile(res, 'privacy.html'));
-  app.get('/terms', (_req, res) => sendPublicFile(res, 'terms.html'));
-  app.get('/account-deletion', (_req, res) => sendPublicFile(res, 'account-deletion.html'));
-  app.get('/exemple-rapport', (_req, res) => sendPublicFile(res, 'example-report.html'));
   app.get('/shared-report.html', (_req, res) => sendPublicFile(res, 'shared-report.html'));
-  app.get('/fiche/:id', (req, res) => res.redirect(302, `/app/inspection/${encodeURIComponent(req.params.id)}`));
-  // History API fallback for the application zone. Kept after API/static routes
-  // so unknown API endpoints continue to return JSON 404 responses.
-  app.get(/^\/app(?:\/.*)?$/, (_req, res) => sendPublicFile(res, 'index.html'));
+  app.get('/fiche/:id', (_req, res) => sendPublicFile(res, 'index.html'));
   app.get('/r/:id', (_req, res) => sendPublicFile(res, 'shared-report.html'));
   app.get('/.well-known/assetlinks.json', (_req, res) => {
     const fingerprints = String(process.env.ANDROID_APP_LINK_SHA256 || '')

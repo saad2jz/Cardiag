@@ -3,7 +3,7 @@ import { readFile } from 'node:fs/promises';
 import { test } from 'node:test';
 
 const index = await readFile(new URL('../index.html', import.meta.url), 'utf8');
-const app = `${await readFile(new URL('../js/app.js', import.meta.url), 'utf8')}\n${await readFile(new URL('../js/app-runtime.js', import.meta.url), 'utf8')}`;
+const app = await readFile(new URL('../js/app.js', import.meta.url), 'utf8');
 const legacy = await readFile(new URL('../js/legacy-features.js', import.meta.url), 'utf8');
 const wizard = await readFile(new URL('../js/wizard.js', import.meta.url), 'utf8');
 const postReport = await readFile(new URL('../js/ux/post-report-actions.js', import.meta.url), 'utf8');

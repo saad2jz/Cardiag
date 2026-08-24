@@ -40,11 +40,6 @@ export function initializeRecordsGallery() {
       const fleetMeta=[record.data?.fleet_vehicle_id,trackedMileage?`${Number(trackedMileage).toLocaleString(locale)} km`:''].filter(Boolean).join(' · ');
       card.innerHTML = `<button type="button" class="record-card-open" aria-label="${translate('records.open','Ouvrir')} ${escapeHtml(record.title)}"><div class="record-card-media">${photo}<span class="record-verdict ${verdictClass(record.verdict)}">${escapeHtml(record.verdictLabel)}</span></div><div class="record-card-body"><div class="record-card-donut" style="--score:${record.score || 0};--score-color:${scoreColor(record.score)}"><strong>${record.score == null ? '—' : `${record.score}%`}</strong></div><div><h3>${escapeHtml(record.title)}</h3><p>${new Date(record.createdAt || Date.now()).toLocaleDateString(locale)} · ${record.done}/${record.total} ${window.cardiagI18n?.language==='en'?'checked':'vérifiés'}</p>${fleetMeta?`<p>${escapeHtml(fleetMeta)}</p>`:''}</div></div></button><div class="record-card-actions"><button type="button" data-record-open>${translate('records.open','Ouvrir')}</button><button type="button" data-record-download>⬇ ${translate('records.download','Télécharger le PDF')}</button><button type="button" data-record-delete>🗑 ${translate('records.delete','Supprimer')}</button></div>`;
       const open=async()=>{
-        if (window.cardiagRouter?.navigate) {
-          close();
-          await window.cardiagRouter.navigate(`/app/inspection/${encodeURIComponent(record.id)}`);
-          return;
-        }
         const opened=await window.cardiagDataBridge?.openRecord?.(record.id);
         if(!opened)return;
         window.cardiagWizard?.goToStep?.(2);
@@ -69,9 +64,8 @@ export function initializeRecordsGallery() {
   };
   trigger.addEventListener('click', () => { render(); sheet.hidden = false; requestAnimationFrame(() => sheet.classList.add('is-open')); });
   sheet.querySelector('[data-records-close]').addEventListener('click', close);
-  sheet.querySelector('[data-records-compare]').addEventListener('click',()=>{close();window.cardiagRouter?.navigate?.('/app/comparer') || window.cardiagDataBridge?.openComparison?.([])});
+  sheet.querySelector('[data-records-compare]').addEventListener('click',()=>{close();window.cardiagDataBridge?.openComparison?.([])});
   sheet.querySelector('[data-records-new]').addEventListener('click', () => {
-    if (window.cardiagRouter?.navigate) { close(); window.cardiagRouter.navigate('/app/nouvelle'); return; }
     const profile=window.cardiagLocalProfile?.current;
     const role=profile?.role || 'buyer';
     window.cardiagDataBridge?.createRecord?.({usage_scenario:role});

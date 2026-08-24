@@ -19,10 +19,6 @@ export function initializeHomeButton() {
   button.innerHTML = '<img src="icons/app-icon.svg" alt="" aria-hidden="true"><span>CarDiag</span>';
 
   button.addEventListener('click', () => {
-    if (!isNativePlatform() && window.cardiagRouter?.navigate) {
-      window.cardiagRouter.navigate('/');
-      return;
-    }
     if (!isNativePlatform() && window.cardiagLanding?.show) {
       window.cardiagLanding.show();
       document.documentElement.scrollTop = 0;

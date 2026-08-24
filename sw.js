@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cardiag-v88';
+const CACHE_NAME = 'cardiag-v87';
 const APP_SHELL = [
   './',
   './index.html',
@@ -15,7 +15,6 @@ const APP_SHELL = [
   './icons/nav-report.svg',
   './assets/landing/cardiag-inspection.webp',
   './assets/demo/rapport-expertise-demo-cardiag.pdf',
-  './example-report.html',
   './assets/vehicle-brands/abarth.png',
   './assets/vehicle-brands/acura.png',
   './assets/vehicle-brands/aiways.png',
@@ -119,9 +118,7 @@ const APP_SHELL = [
   './css/shared-report.css?v=20260813-1',
   './build-data.js?v=20260823-5',
   './js/db-loader.js?v=20260811-1',
-  './js/app.js?v=20260824-7',
-  './js/router/router.js?v=20260824-1',
-  './js/app-runtime.js?v=20260824-2',
+  './js/app.js?v=20260824-6',
   './js/navigation/home-button.js?v=20260820-1',
   './js/landing/landing.js?v=20260821-4',
   './js/wizard.js?v=20260823-3',
@@ -200,11 +197,9 @@ self.addEventListener('fetch', (event) => {
 
   // Navigation : réseau d'abord pour récupérer les mises à jour, puis cache hors ligne.
   if (event.request.mode === 'navigate') {
-    const legalFallbacks = { '/privacy': './privacy.html', '/terms': './terms.html', '/account-deletion': './account-deletion.html' };
-    const staticPages = new Set(['/privacy.html','/terms.html','/account-deletion.html','/shared-report.html','/exemple-rapport']);
+    const staticPages = new Set(['/privacy.html','/terms.html','/account-deletion.html','/shared-report.html']);
     const fallbackKey = url.pathname.startsWith('/r/') ? './shared-report.html'
-      : url.pathname === '/exemple-rapport' ? './example-report.html'
-        : legalFallbacks[url.pathname] || (staticPages.has(url.pathname) ? `.${url.pathname}` : './index.html');
+      : staticPages.has(url.pathname) ? `.${url.pathname}` : './index.html';
     event.respondWith(
       fetch(event.request)
         .then((response) => {
