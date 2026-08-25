@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { test } from 'node:test';
-import { findModelSpecificAlerts } from '../js/knowledge/model-specific-alerts.js';
+import { findModelSpecificAlerts, normalizeCatalogueAlerts } from '../js/knowledge/model-specific-alerts.js';
 
 test('model-specific alerts require a precise brand, model and engine match', () => {
   const alerts = findModelSpecificAlerts({
@@ -23,6 +23,29 @@ test('alerts are available in English without changing their data contract', () 
   assert.equal(alert.gravite, 'Major');
   assert.ok(Array.isArray(alert.symptomes));
   assert.ok(alert.diagnostic.includes('Ford'));
+});
+
+test('documented engine weaknesses expose every field required by the UI and PDF', async () => {
+  const catalog = JSON.parse(await readFile(new URL('../data/vehicles.json', import.meta.url), 'utf8'));
+  let documentedMotor;
+  outer: for (const brand of catalog) {
+    for (const model of brand.modeles || []) {
+      for (const generation of model.generations || []) {
+        for (const motor of generation.motorisations || model.motorisations || []) {
+          if (Array.isArray(motor.points_faibles) && motor.points_faibles.length) {
+            documentedMotor = motor;
+            break outer;
+          }
+        }
+      }
+    }
+  }
+  assert.ok(documentedMotor, 'Le catalogue doit contenir au moins une motorisation documentee');
+  const [alert] = normalizeCatalogueAlerts(documentedMotor.points_faibles);
+  assert.ok(alert);
+  for (const field of ['symptomes', 'kilometrage_apparition', 'diagnostic', 'piece_concernee', 'gravite', 'frequence', 'cout_reparation_estime']) {
+    assert.ok(alert[field], `Le champ ${field} doit etre disponible`);
+  }
 });
 
 test('the UI and premium PDF persist the model-specific alert annex', async () => {

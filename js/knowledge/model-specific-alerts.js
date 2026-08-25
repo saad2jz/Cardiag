@@ -153,7 +153,29 @@ function escapeHtml(value) {
 }
 
 function isEligibleScenario() {
-  return ['buyer', 'owner'].includes(document.querySelector('[name="usage_scenario"]')?.value || '');
+  return ['buyer', 'owner'].includes(document.querySelector('[name="usage_scenario"]:checked')?.value || '');
+}
+
+export function normalizeCatalogueAlerts(values) {
+  if (!Array.isArray(values)) return [];
+  return values.filter((value) => value && typeof value === 'object').map((value, index) => ({
+      id: `catalogue-${index}-${normalize(value.probleme || value.panne || value.description)}`,
+      title: String(value.probleme || value.panne || value.description || 'Point de vigilance documenté'),
+      symptomes: Array.isArray(value.symptomes) ? value.symptomes : (value.symptomes ? [value.symptomes] : []),
+      kilometrage_apparition: String(value.kilometrage_apparition || value.kilometrage_critique || 'À confirmer selon l’historique'),
+      diagnostic: String(value.diagnostic || value.methode_controle || 'Contrôle à confirmer selon la procédure constructeur.'),
+      piece_concernee: String(value.piece_concernee || value.pieces_concernees || 'Composant à identifier'),
+      gravite: String(value.gravite || 'À évaluer'),
+      frequence: String(value.frequence || 'Non précisée'),
+      cout_reparation_estime: String(value.cout_reparation_estime || value.cout_estime_eur || 'À chiffrer après diagnostic'),
+    }));
+}
+
+function catalogueAlerts() {
+  try {
+    const values = JSON.parse(String(document.querySelector('input[name="motorisation_points_faibles"]')?.value || '[]'));
+    return normalizeCatalogueAlerts(values);
+  } catch { return []; }
 }
 
 export function initializeModelSpecificAlerts() {
@@ -170,9 +192,12 @@ export function initializeModelSpecificAlerts() {
   const update = () => {
     const [brand, model, chassis, year, engine] = selects.map((select) => select.value.trim());
     const complete = brand && model && chassis && year && engine;
-    const alerts = complete && isEligibleScenario()
+    const genericAlerts = complete && isEligibleScenario()
       ? findModelSpecificAlerts({ brand, model, engine, year, language: window.cardiagI18n?.language })
       : [];
+    // The detailed weaknesses embedded in the selected engine record use the
+    // same visible card and PDF annex as the curated cross-model rules.
+    const alerts = isEligibleScenario() ? [...catalogueAlerts(), ...genericAlerts] : [];
     field.value = alerts.length ? JSON.stringify(alerts) : '';
     field.dispatchEvent(new Event('change', { bubbles: true }));
     list.replaceChildren();
