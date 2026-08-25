@@ -201,6 +201,10 @@ export async function initializeAuthUi() {
     message(panel, 'Connexion Google…');
     try {
       const user = await authClient.signInGoogle();
+      if (!user) {
+        message(panel, 'Redirection sécurisée vers Google…', '');
+        return;
+      }
       show('profile');
       renderAccount(user);
       message(panel, 'Connexion Google réussie.', 'success');
@@ -209,6 +213,9 @@ export async function initializeAuthUi() {
   };
   panel.querySelectorAll('[data-google-login]').forEach((button) => {
     button.onclick = () => signInWithGoogle(button);
+  });
+  window.addEventListener('cardiag:google-auth-error', (event) => {
+    message(panel, event.detail?.message || 'La connexion Google a échoué.', 'error');
   });
 
   panel.querySelector('[data-migrate-local]').onclick = async (event) => {

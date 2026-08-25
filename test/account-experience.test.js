@@ -56,6 +56,8 @@ test('Google authentication remains available alongside passwordless email', () 
   assert.match(authUi, /data-google-login/);
   assert.doesNotMatch(authUi, /data-google-signup/);
   assert.match(authUi, /signInWithGoogle/);
+  assert.match(client, /signInWithRedirect/);
+  assert.match(client, /ACCOUNT_EXISTS_WITH_DIFFERENT_CREDENTIAL/);
 });
 
 test('profile onboarding exposes direct Google account connection', async () => {

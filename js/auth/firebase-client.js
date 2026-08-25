@@ -6,6 +6,12 @@ const browserLocation = typeof location === 'undefined' ? { hostname: '', origin
 const isNative = browserWindow.Capacitor?.isNativePlatform?.() === true;
 const API_BASE = !isNative && ['localhost','127.0.0.1'].includes(browserLocation.hostname) ? `${browserLocation.origin}/` : RENDER_API;
 const MAGIC_LINK_EMAIL_KEY = 'cardiag_magic_link_email_v1';
+const GOOGLE_REDIRECT_FALLBACK_CODES = new Set([
+  'POPUP_BLOCKED',
+  'WEB_STORAGE_UNSUPPORTED',
+  'OPERATION_NOT_SUPPORTED_IN_THIS_ENVIRONMENT',
+  'INTERNAL_ERROR',
+]);
 let config;
 let webSession = null;
 let webFirebasePromise = null;
@@ -52,7 +58,13 @@ export function friendlyAuthError(error) {
     CONFIGURATION_NOT_FOUND: 'Firebase Auth n’est pas correctement configuré.',
     POPUP_CLOSED_BY_USER: 'La fenêtre Google a été fermée avant la connexion.',
     POPUP_BLOCKED: 'Le navigateur a bloqué la fenêtre Google. Autorisez les pop-ups puis réessayez.',
+    WEB_STORAGE_UNSUPPORTED: 'Votre navigateur bloque le stockage nécessaire à Google. Autorisez les cookies pour ce site puis réessayez.',
+    OPERATION_NOT_SUPPORTED_IN_THIS_ENVIRONMENT: 'La fenêtre Google n’est pas prise en charge dans cet environnement. La connexion va utiliser une redirection sécurisée.',
     UNAUTHORIZED_DOMAIN: 'Ce domaine doit être autorisé dans Firebase Authentication.',
+    AUTH_DOMAIN_CONFIG_REQUIRED: 'Le domaine Firebase Authentication doit être configuré pour la connexion Google.',
+    INVALID_OAUTH_CLIENT_ID: 'Le client OAuth Google configuré pour CarDiag est invalide.',
+    ACCOUNT_EXISTS_WITH_DIFFERENT_CREDENTIAL: 'Un compte existe déjà avec cette adresse. Connectez-vous d’abord par lien email pour conserver le même compte.',
+    CREDENTIAL_ALREADY_IN_USE: 'Ce compte Google est déjà associé à un autre compte CarDiag.',
     INVALID_API_KEY: 'La configuration Firebase de cette application est invalide.',
     API_KEY_NOT_VALID: 'La configuration Firebase de cette application est invalide.',
     APP_NOT_AUTHORIZED: 'Cette application n’est pas autorisée à utiliser Firebase Authentication.',
@@ -185,6 +197,16 @@ export const authClient = {
           if (!initialized) { initialized = true; resolve(); }
         }, () => { if (!initialized) { initialized = true; resolve(); } });
       });
+      // OAuth redirects return here after Google has authenticated the user. Calling this
+      // explicitly also surfaces a useful Firebase error instead of silently losing it.
+      try {
+        const redirectResult = await sdk.getRedirectResult?.(sdk.auth);
+        if (redirectResult?.user) notify(redirectResult.user);
+      } catch (error) {
+        browserWindow.dispatchEvent?.(new CustomEvent('cardiag:google-auth-error', {
+          detail: { message: friendlyAuthError(error), code: error?.code || 'AUTH_ERROR' },
+        }));
+      }
       if (sdk?.isSignInWithEmailLink?.(sdk.auth, browserLocation.href)) {
         const email = storedMagicLinkEmail();
         if (email) await this.completeMagicLink(email);
@@ -283,8 +305,20 @@ export const authClient = {
         notify(result.user);
       } else {
         const sdk = await loadWebFirebase();
-        const result = await sdk.signInWithPopup(sdk.auth, new sdk.GoogleAuthProvider());
-        notify(result.user);
+        const provider = new sdk.GoogleAuthProvider();
+        try {
+          const result = await sdk.signInWithPopup(sdk.auth, provider);
+          notify(result.user);
+        } catch (popupError) {
+          const popupCode = String(popupError?.code || '').replace(/^auth\//i, '').replaceAll('-', '_').toUpperCase();
+          // Some mobile browsers and hardened privacy settings reject a popup after the
+          // Firebase SDK is loaded asynchronously. Redirect is the official compatible path.
+          if (GOOGLE_REDIRECT_FALLBACK_CODES.has(popupCode) && typeof sdk.signInWithRedirect === 'function') {
+            await sdk.signInWithRedirect(sdk.auth, provider);
+            return null;
+          }
+          throw popupError;
+        }
       }
       return currentUser;
     } catch (error) {

@@ -1,4 +1,4 @@
-import { authClient } from '../auth/firebase-client.js?v=20260824-2';
+import { authClient } from '../auth/firebase-client.js?v=20260824-3';
 
 const STORAGE_KEY = 'cardiag_user_profile_v1';
 const SETTINGS_KEY = 'cardiag_app_settings_v1';
@@ -261,6 +261,10 @@ export async function initializeProfileOnboarding(options = {}) {
     delete feedback.dataset.type;
     try {
       const user = await authClient.signInGoogle();
+      if (!user) {
+        feedback.textContent = translate('auth.google.redirecting', 'Redirection sécurisée vers Google…');
+        return;
+      }
       const type = form.profile_type.value || 'personal';
       if (type === 'professional') {
         form.professionalEmail.value = user.email || form.professionalEmail.value;
@@ -350,6 +354,11 @@ export async function initializeProfileOnboarding(options = {}) {
     if (!editing) window.cardiagWizard?.goToStep?.(2, 'forward');
   });
   window.addEventListener('cardiag:language-change', applyTranslations);
+  window.addEventListener('cardiag:google-auth-error', (event) => {
+    const feedback = layer.querySelector('[data-profile-error]');
+    feedback.textContent = event.detail?.message || translate('auth.google.error', 'La connexion Google est momentanément indisponible.');
+    feedback.dataset.type = 'error';
+  });
 
   window.cardiagLocalProfile = { get current() { return current ? { ...current } : null; }, open };
   window.dispatchEvent(new CustomEvent('cardiag:profile-onboarding-ready'));
