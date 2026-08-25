@@ -102,6 +102,15 @@ async function loadConfig() {
 }
 
 function nativeAuth() { return browserWindow.Capacitor?.Plugins?.FirebaseAuthentication; }
+
+function useGoogleRedirect() {
+  // Firebase's popup flow is the reliable default on desktop. Redirect remains
+  // preferable in installed/mobile contexts and is the fallback when a popup
+  // is blocked by the browser.
+  try {
+    return browserWindow.matchMedia?.('(max-width: 767px), (display-mode: standalone)')?.matches === true;
+  } catch { return false; }
+}
 function storedMagicLinkEmail() {
   try { return browserWindow.localStorage?.getItem(MAGIC_LINK_EMAIL_KEY) || ''; } catch { return ''; }
 }
@@ -331,24 +340,28 @@ export const authClient = {
       } else {
         const sdk = await loadWebFirebase();
         const provider = new sdk.GoogleAuthProvider();
-        // Redirect is deliberately the primary web flow: browser extensions,
-        // mobile webviews and strict privacy modes can reject an OAuth popup.
+        provider.setCustomParameters?.({ prompt: 'select_account' });
+        if (!useGoogleRedirect()) {
+          try {
+            const result = await sdk.signInWithPopup(sdk.auth, provider);
+            notify(result.user);
+            return currentUser;
+          } catch (popupError) {
+            const popupCode = String(popupError?.code || '').replace(/^auth\//i, '').replaceAll('-', '_').toUpperCase();
+            // A blocked desktop popup safely falls back to the mobile-friendly
+            // redirect flow instead of leaving the user without an option.
+            if (!GOOGLE_REDIRECT_FALLBACK_CODES.has(popupCode) || typeof sdk.signInWithRedirect !== 'function') throw popupError;
+          }
+        }
         if (typeof sdk.signInWithRedirect === 'function') {
           await sdk.signInWithRedirect(sdk.auth, provider);
           return null;
         }
-        try {
+        // This branch is only reached on an obsolete SDK without redirects.
+        {
           const result = await sdk.signInWithPopup(sdk.auth, provider);
           notify(result.user);
-        } catch (popupError) {
-          const popupCode = String(popupError?.code || '').replace(/^auth\//i, '').replaceAll('-', '_').toUpperCase();
-          // Some mobile browsers and hardened privacy settings reject a popup after the
-          // Firebase SDK is loaded asynchronously. Redirect is the official compatible path.
-          if (GOOGLE_REDIRECT_FALLBACK_CODES.has(popupCode) && typeof sdk.signInWithRedirect === 'function') {
-            await sdk.signInWithRedirect(sdk.auth, provider);
-            return null;
-          }
-          throw popupError;
+          return currentUser;
         }
       }
       return currentUser;

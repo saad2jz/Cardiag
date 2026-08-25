@@ -58,7 +58,8 @@ test('Google authentication remains available alongside passwordless email', () 
   assert.match(authUi, /signInWithGoogle/);
   assert.match(client, /signInWithRedirect/);
   assert.match(client, /popupRedirectResolver: authSdk\.browserPopupRedirectResolver/);
-  assert.match(client, /primary web flow/);
+  assert.match(client, /signInWithPopup/);
+  assert.match(client, /useGoogleRedirect/);
   assert.match(client, /ACCOUNT_EXISTS_WITH_DIFFERENT_CREDENTIAL/);
   assert.match(client, /googleAuthError/);
   assert.match(client, /Firebase: \$\{error\?\.code/);

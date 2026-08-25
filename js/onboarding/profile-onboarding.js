@@ -1,4 +1,4 @@
-import { authClient } from '../auth/firebase-client.js?v=20260825-2';
+import { authClient } from '../auth/firebase-client.js?v=20260825-3';
 
 const STORAGE_KEY = 'cardiag_user_profile_v1';
 const SETTINGS_KEY = 'cardiag_app_settings_v1';
