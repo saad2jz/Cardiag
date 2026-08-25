@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cardiag-v92';
+const CACHE_NAME = 'cardiag-v95';
 const APP_SHELL = [
   './',
   './index.html',
@@ -118,12 +118,12 @@ const APP_SHELL = [
   './css/shared-report.css?v=20260813-1',
   './build-data.js?v=20260823-5',
   './js/db-loader.js?v=20260811-1',
-  './js/app.js?v=20260824-6',
+  './js/app.js?v=20260824-7',
   './js/navigation/home-button.js?v=20260820-1',
   './js/landing/landing.js?v=20260824-5',
   './js/wizard.js?v=20260824-4',
   './js/i18n/i18n.js?v=20260823-3',
-  './js/legacy-features.js?v=20260824-1',
+  './js/legacy-features.js?v=20260824-2',
   './js/personas.js?v=20260814-1',
   './js/wizard/vehicle-picker.js?v=20260821-1',
   './js/wizard/brand-picker.js?v=20260823-6',
@@ -133,12 +133,9 @@ const APP_SHELL = [
   './js/theming/theme-manager.js?v=20260820-3',
   './js/onboarding/profile-onboarding.js?v=20260824-3',
   './js/media/media-manager.js?v=20260813-2',
-  './js/auth/firebase-client.js?v=20260824-3',
-  './js/auth/auth-ui.js?v=20260824-5',
   './js/auth/consent.js?v=20260813-1',
   './js/native/permissions.js?v=20260813-1',
   './js/native/connectivity.js?v=20260813-1',
-  './js/native/sync-queue.js?v=20260824-1',
   './js/native/app-links.js?v=20260813-1',
   './js/native/push.js?v=20260813-1',
   './js/settings/settings.js?v=20260820-4',
@@ -162,13 +159,10 @@ const APP_SHELL = [
   './assets/reference/section-guides/diagnostic.svg',
   './assets/reference/test-guides.svg',
   './js/pwa.js?v=20260823-3',
-  './data/vehicles.json',
   './privacy.html',
   './terms.html',
   './account-deletion.html',
   './shared-report.html',
-  './vendor/jspdf.umd.min.js',
-  './vendor/qrcode.js',
 ];
 
 self.addEventListener('install', (event) => {

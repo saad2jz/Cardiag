@@ -203,7 +203,9 @@ export function createFirebaseAccountService(env = process.env) {
       const snapshot = await ref.get();
       if (!snapshot.exists) return null;
       const data = snapshot.data();
-      if (Date.parse(data.expiresAt) <= Date.now()) {
+      const expiresAt = Date.parse(data.expiresAt);
+      // A corrupted or missing expiry must never make a report public forever.
+      if (!Number.isFinite(expiresAt) || expiresAt <= Date.now()) {
         await ref.delete();
         return null;
       }

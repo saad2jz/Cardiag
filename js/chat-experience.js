@@ -183,6 +183,13 @@ function vehicleContextMessage() {
 }
 
 async function request(path, body) {
+  if (navigator.onLine === false || window.cardiagConnectivity?.online === false) {
+    const error = new Error(isEnglish()
+      ? 'The expert assistant needs an internet connection. Your inspection remains saved locally.'
+      : 'L’assistant expert nécessite une connexion Internet. Votre fiche reste enregistrée localement.');
+    error.code = 'OFFLINE';
+    throw error;
+  }
   const controller = new AbortController();
   const timeout = window.setTimeout(() => controller.abort(), API_TIMEOUT_MS);
 
@@ -451,7 +458,17 @@ export function initializeChatExperience() {
   }
 
   function showInitialSuggestions() {
-    renderSuggestions(usageScenarioConfig().options, true);
+    const scenario = usageScenarioConfig();
+    const ownerSymptoms = selectedUsageScenario() === 'owner'
+      ? document.querySelector('[name="owner_symptoms"]')?.value.trim().slice(0, 120)
+      : '';
+    // A symptom already entered in the owner context is reused as the first
+    // assistant bubble. It stays editable and is not duplicated in another
+    // storage field or silently sent to the API.
+    const options = ownerSymptoms
+      ? [ownerSymptoms, ...scenario.options.filter(option => option.toLocaleLowerCase() !== ownerSymptoms.toLocaleLowerCase())]
+      : scenario.options;
+    renderSuggestions(options, true);
   }
 
   function applyUsageScenario() {
@@ -490,6 +507,9 @@ export function initializeChatExperience() {
     if (!messages.length && !suggestionsElement.childElementCount) showInitialSuggestions();
     input.focus();
   }
+
+  window.cardiagChat = { open: openPanel };
+  window.addEventListener('cardiag:open-chat', openPanel);
 
   toggles.forEach((toggle) => toggle.addEventListener('click', openPanel));
   window.addEventListener('cardiag:scenario-change', applyUsageScenario);
@@ -578,7 +598,9 @@ export function initializeChatExperience() {
       pendingMessage.textContent = `Réponse non disponible : ${error.message}`;
       pendingMessage.classList.remove('chat-message-pending');
       pendingMessage.classList.add('chat-message-error');
-      status.textContent = error.code === 'LLM_RATE_LIMITED'
+      status.textContent = error.code === 'OFFLINE'
+        ? (isEnglish() ? 'Offline: the assistant was not contacted.' : 'Hors ligne : l’assistant n’a pas été contacté.')
+        : error.code === 'LLM_RATE_LIMITED'
         ? 'Quota Gemini atteint. Patientez avant de relancer la même analyse.'
         : 'Vous pouvez réessayer dans quelques instants.';
       renderSuggestions([], false);

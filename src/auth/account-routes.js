@@ -65,6 +65,10 @@ export function createAccountRouter(service) {
   router.get('/export', async (req, res) => res.json(await service.exportUser(req.user.uid)));
   router.delete('/', async (req, res) => {
     if (req.body?.confirmation !== 'SUPPRIMER') return res.status(400).json({ error: 'Confirmation requise.' });
+    const authenticatedAt = Number(req.user.auth_time || 0) * 1000;
+    if (!authenticatedAt || Date.now() - authenticatedAt > 10 * 60 * 1000) {
+      return res.status(401).json({ error: 'Reconnectez-vous pour confirmer la suppression du compte.', code: 'RECENT_LOGIN_REQUIRED' });
+    }
     await service.deleteUser(req.user.uid);
     return res.status(204).end();
   });

@@ -18,12 +18,14 @@ before(async () => {
 
 after(() => new Promise((resolve) => server.close(resolve)));
 
-test('health reports LLM runtime status', async () => {
+test('health does not expose LLM runtime configuration', async () => {
   const response = await fetch(`${baseUrl}/health`);
   const body = await response.json();
   assert.equal(response.status, 200);
   assert.equal(body.status, 'ok');
-  assert.equal(typeof body.llmConfigured, 'boolean');
+  assert.equal(Object.hasOwn(body, 'llmConfigured'), false);
+  assert.equal(Object.hasOwn(body, 'provider'), false);
+  assert.equal(Object.hasOwn(body, 'model'), false);
 });
 
 test('the combined server serves the frontend without exposing environment files', async () => {

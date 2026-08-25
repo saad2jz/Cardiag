@@ -18,5 +18,5 @@ test('email-link UI prevents duplicate requests and keeps a neutral confirmation
   assert.match(authUi, /Si cette adresse est valide/);
   assert.match(authUi, /courriers ind/);
   assert.match(authUi, /data-auth-form="email-link"/);
-  assert.match(worker, /cardiag-v92/);
+  assert.match(worker, /cardiag-v95/);
 });

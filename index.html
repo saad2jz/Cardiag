@@ -314,7 +314,7 @@
       <div class="field"><label>Plainte exacte du client</label><textarea name="client_complaint" placeholder="Reprendre les mots du client sans interprétation…"></textarea></div>
       <div class="field" data-context-photo-key="mechanic_intake_condition"><label>État du véhicule à la réception</label><textarea name="mechanic_intake_condition" placeholder="Carrosserie, habitacle, voyants, niveaux, accessoires confiés…"></textarea></div>
       <div class="field"><label>Conditions d’apparition</label><textarea name="symptom_conditions" placeholder="À froid/chaud, vitesse, charge, fréquence, météo…"></textarea></div>
-      <div class="field"><label>Valeurs déjà mesurées</label><textarea name="measured_values" placeholder="Tensions, pressions, températures, corrections, codes OBD…"></textarea></div>
+      <div class="field"><label>Valeurs déjà mesurées</label><textarea name="measured_values" placeholder="Tensions, pressions, températures et corrections relevées…"></textarea></div>
       <div class="field"><label>Périmètre autorisé</label><select name="work_authorization"><option value="">Choisir</option><option>Diagnostic uniquement</option><option>Diagnostic et devis</option><option>Travaux urgents autorisés</option><option>À confirmer avec le client</option></select></div>
       <div class="field"><label>Travaux réalisés</label><textarea name="repair_work_completed" placeholder="Pièces, opérations, couples, fluides et références utilisés…"></textarea></div>
       <div class="field"><label>Contrôles après réparation</label><textarea name="post_repair_checks" placeholder="Essai, mesures finales, codes, absence de fuite et validation…"></textarea></div>
@@ -351,7 +351,7 @@
       <div class="field"><label>Niveau d’autonomie</label><select name="diy_level"><option value="">Choisir</option><option>Observations uniquement</option><option>Contrôles simples avec multimètre/valise</option><option>Entretien courant</option><option>Je préfère consulter un professionnel</option></select></div>
     </div>
 
-    <fieldset class="profile-documents" aria-describedby="documentsHelp">
+    <fieldset class="profile-documents" data-profile-documents="transaction" aria-describedby="documentsHelp">
       <legend>Documents à vérifier</legend>
       <p id="documentsHelp">Cochez uniquement les documents réellement consultés pour cette nouvelle inspection.</p>
       <div class="profile-documents-grid">
@@ -359,6 +359,31 @@
         <div class="doc-check"><input type="checkbox" id="doc2" name="doc_ct"><label for="doc2">Contrôle technique valide fourni</label></div>
         <div class="doc-check"><input type="checkbox" id="doc3" name="doc_non_gage"><label for="doc3">Certificat de non-gage fourni</label></div>
         <div class="doc-check"><input type="checkbox" id="doc4" name="doc_factures"><label for="doc4">Factures d'entretien présentées</label></div>
+      </div>
+    </fieldset>
+    <fieldset class="profile-documents" data-profile-documents="owner" hidden>
+      <legend>Documents disponibles</legend>
+      <p>Facultatif : indiquez les documents que vous avez sous la main pour faciliter le suivi.</p>
+      <div class="profile-documents-grid">
+        <div class="doc-check"><input type="checkbox" id="owner-doc1" name="owner_doc_carte_grise"><label for="owner-doc1">Carte grise disponible</label></div>
+        <div class="doc-check"><input type="checkbox" id="owner-doc2" name="owner_doc_ct"><label for="owner-doc2">Contrôle technique disponible</label></div>
+        <div class="doc-check"><input type="checkbox" id="owner-doc3" name="owner_doc_factures"><label for="owner-doc3">Factures d’entretien disponibles</label></div>
+      </div>
+    </fieldset>
+    <fieldset class="profile-documents" data-profile-documents="mechanic" hidden>
+      <legend>Documents de prise en charge</legend>
+      <div class="profile-documents-grid">
+        <div class="doc-check"><input type="checkbox" id="mechanic-doc1" name="mechanic_doc_carte_grise"><label for="mechanic-doc1">Carte grise consultée</label></div>
+        <div class="doc-check"><input type="checkbox" id="mechanic-doc2" name="mechanic_doc_order"><label for="mechanic-doc2">Ordre de réparation signé</label></div>
+        <div class="doc-check"><input type="checkbox" id="mechanic-doc3" name="mechanic_doc_authorization"><label for="mechanic-doc3">Autorisation de travaux reçue</label></div>
+      </div>
+    </fieldset>
+    <fieldset class="profile-documents" data-profile-documents="rental" hidden>
+      <legend>Documents de location</legend>
+      <div class="profile-documents-grid">
+        <div class="doc-check"><input type="checkbox" id="rental-doc1" name="rental_doc_contract"><label for="rental-doc1">Contrat de location contrôlé</label></div>
+        <div class="doc-check"><input type="checkbox" id="rental-doc2" name="rental_doc_driver"><label for="rental-doc2">Identité / permis contrôlé</label></div>
+        <div class="doc-check"><input type="checkbox" id="rental-doc3" name="rental_doc_condition"><label for="rental-doc3">État des lieux de départ signé</label></div>
       </div>
     </fieldset>
   </section>
@@ -428,7 +453,8 @@
       <input type="hidden" name="model_specific_alerts">
       <div class="grid cols-3" id="vehicleCoreFields" style="margin-top:16px;">
         <div class="field" id="fieldWrap-kilometrage"><label>Kilométrage <span class="req-star">*</span></label><input type="number" name="kilometrage" min="0" inputmode="numeric" required placeholder="98000"><span class="req-error">Indiquez un kilométrage valide.</span></div>
-        <div class="field"><label>N° VIN / Immatriculation</label><input type="text" name="vin" placeholder="VF1XXXXXXXXXXXXXX"></div>
+        <div class="field"><label>N° VIN</label><input type="text" name="vin" maxlength="17" autocapitalize="characters" placeholder="VF1XXXXXXXXXXXXXX"></div>
+        <div class="field"><label>Immatriculation</label><input type="text" name="immatriculation" autocapitalize="characters" placeholder="AB-123-CD"></div>
         <div class="field" id="fieldWrap-valeur"><label>Valeur affichée / négociée (€) <span class="req-star">*</span></label><input type="number" name="valeur" min="0" inputmode="decimal" required placeholder="12500"><span class="req-error">Indiquez une valeur valide.</span></div>
       </div>
 
@@ -439,6 +465,7 @@
         <button class="btn-mini" id="geoBtn" type="button">📍 Utiliser ma position</button>
       </div>
 
+      <section data-profile-sale-context>
       <div class="subhead">Questions à poser au vendeur</div>
       <div class="grid cols-2">
         <div class="field">
@@ -449,10 +476,11 @@
             <input type="radio" name="q_historique" id="hist_def" value="defaut"><label for="hist_def">Absent</label>
           </div>
         </div>
-        <div class="field"><label>Nombre de propriétaires précédents</label><input type="number" name="proprietaires" placeholder="Ex : 2"></div>
+        <div class="field"><label>Nombre de propriétaires précédents</label><input type="number" name="proprietaires" min="0" step="1" placeholder="Ex : 2"></div>
         <div class="field"><label>Raison de la vente (réponse du vendeur)</label><textarea name="raison_vente" placeholder="Notez la réponse exacte du vendeur..."></textarea></div>
         <div class="field"><label>Type d'utilisation déclarée</label><textarea name="usage_type" placeholder="Ville, autoroute, trajets courts, usage professionnel..."></textarea></div>
       </div>
+      </section>
     </div>
   </details>
 
@@ -597,9 +625,9 @@
 
       <div class="subhead">Budget</div>
       <div class="grid cols-3">
-        <div class="field"><label>Frais de remise en état estimés (€)</label><input type="number" name="frais_estimation" id="fraisEstimation" placeholder="Ex : 800"></div>
-        <div class="field"><label>Marge de négociation suggérée (€)</label><input type="text" name="marge_negociation" placeholder="Ex : -1200"></div>
-        <div class="field"><label>Budget maximum disponible (€)</label><input type="number" name="budget_max" id="budgetMax" placeholder="Ex : 13000"></div>
+        <div class="field"><label>Frais de remise en état estimés (€)</label><input type="number" name="frais_estimation" id="fraisEstimation" min="0" inputmode="decimal" placeholder="Ex : 800"></div>
+        <div class="field"><label>Marge de négociation suggérée (€)</label><input type="number" name="marge_negociation" min="0" inputmode="decimal" placeholder="Ex : 1200"></div>
+        <div class="field"><label>Budget maximum disponible (€)</label><input type="number" name="budget_max" id="budgetMax" min="0" inputmode="decimal" placeholder="Ex : 13000"></div>
       </div>
       <div class="budget-result" id="budgetResult">Renseignez la valeur du véhicule (section 1), les frais estimés et votre budget max pour voir le calcul.</div>
 
@@ -615,6 +643,8 @@
             <span class="sig-placeholder" id="sigPlaceholderAcheteur">Signez ici</span>
           </div>
           <button class="btn-mini signature-clear-btn" type="button" data-sig-clear="acheteur">Effacer</button>
+          <label class="signature-alternative"><input type="checkbox" name="signature_confirmed_acheteur"> Signature non recueillie : validation déclarée</label>
+          <label class="signature-alternative">Nom du signataire<input type="text" name="signature_name_acheteur" maxlength="80" autocomplete="name"></label>
         </div>
         <div class="signature-block">
           <span class="lbl">Signature vendeur</span>
@@ -623,6 +653,8 @@
             <span class="sig-placeholder" id="sigPlaceholderVendeur">Signez ici</span>
           </div>
           <button class="btn-mini signature-clear-btn" type="button" data-sig-clear="vendeur">Effacer</button>
+          <label class="signature-alternative"><input type="checkbox" name="signature_confirmed_vendeur"> Signature non recueillie : validation déclarée</label>
+          <label class="signature-alternative">Nom du signataire<input type="text" name="signature_name_vendeur" maxlength="80" autocomplete="name"></label>
         </div>
       </div>
     </div>
@@ -740,11 +772,8 @@
   </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-<script src="vendor/jspdf.umd.min.js"></script>
-<script src="vendor/qrcode.js"></script>
 <script src="build-data.js?v=20260823-5"></script>
 <script src="js/db-loader.js?v=20260811-1"></script>
-<script type="module" src="js/app.js?v=20260824-6"></script>
+<script type="module" src="js/app.js?v=20260824-7"></script>
 </body>
 </html>

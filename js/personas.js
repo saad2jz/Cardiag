@@ -30,10 +30,10 @@ export const PERSONA_CONFIG = Object.freeze({
 
 export const PERSONA_CONTEXT_FIELDS = Object.freeze({
   buyer: ['annonce_url','seller_claims'],
-  mechanic: ['work_order_reference','intake_mileage','client_complaint','mechanic_intake_condition','symptom_conditions','measured_values','work_authorization','repair_work_completed','post_repair_checks','mechanic_release_condition','release_mileage'],
-  rental: ['fleet_vehicle_id','rental_contract_reference','renter_reference','rental_start','rental_end','rental_mileage_out','rental_mileage_in','rental_energy_out','rental_energy_in','rental_condition_out','rental_condition_in','rental_damage_delta'],
+  mechanic: ['work_order_reference','intake_mileage','client_complaint','mechanic_intake_condition','symptom_conditions','measured_values','work_authorization','repair_work_completed','post_repair_checks','mechanic_release_condition','release_mileage','mechanic_doc_carte_grise','mechanic_doc_order','mechanic_doc_authorization'],
+  rental: ['fleet_vehicle_id','rental_contract_reference','renter_reference','rental_start','rental_end','rental_mileage_out','rental_mileage_in','rental_energy_out','rental_energy_in','rental_condition_out','rental_condition_in','rental_damage_delta','rental_doc_contract','rental_doc_driver','rental_doc_condition'],
   seller: ['maintenance_history','recent_repairs','known_defects','report_documents'],
-  owner: ['owner_symptoms','symptom_history','maintenance_log','diy_level'],
+  owner: ['owner_symptoms','symptom_history','maintenance_log','diy_level','owner_doc_carte_grise','owner_doc_ct','owner_doc_factures'],
 });
 
 const ALL_CONTEXT_FIELDS = new Set(Object.values(PERSONA_CONTEXT_FIELDS).flat());

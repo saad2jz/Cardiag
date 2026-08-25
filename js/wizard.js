@@ -1,4 +1,4 @@
-import { personaRequiresVin } from './personas.js?v=20260814-1';
+import { personaRequiresVin, personaReport } from './personas.js?v=20260814-1';
 
 const PROFILE_STORAGE_KEY = 'cardiag_active_profile';
 const STEP_STORAGE_KEY = 'cardiag_wizard_step';
@@ -182,6 +182,20 @@ export function initializeWizard() {
         control.disabled = !active;
       });
     });
+    const isTransaction = ['buyer', 'seller'].includes(profile);
+    document.querySelectorAll('[data-profile-sale-context]').forEach((panel) => {
+      panel.hidden = !isTransaction;
+      panel.setAttribute('aria-hidden', String(!isTransaction));
+      panel.querySelectorAll('input, textarea, select').forEach((control) => { control.disabled = !isTransaction; });
+    });
+    document.querySelectorAll('[data-profile-documents]').forEach((panel) => {
+      const active = profileConfirmed && (panel.dataset.profileDocuments === 'transaction'
+        ? isTransaction
+        : panel.dataset.profileDocuments === profile);
+      panel.hidden = !active;
+      panel.setAttribute('aria-hidden', String(!active));
+      panel.querySelectorAll('input, textarea, select').forEach((control) => { control.disabled = !active; });
+    });
     const vin = document.querySelector('[name="vin"]');
     const vinRequired = personaRequiresVin(profile);
     if (vin) {
@@ -191,6 +205,36 @@ export function initializeWizard() {
       label?.querySelector('[data-persona-required]')?.remove();
       if (vinRequired && label) label.insertAdjacentHTML('beforeend', ' <span class="req-star" data-persona-required>*</span>');
     }
+    const valueInput = document.querySelector('[name="valeur"]');
+    const valueRequired = isTransaction;
+    if (valueInput) {
+      valueInput.required = valueRequired;
+      valueInput.setAttribute('aria-required', String(valueRequired));
+      const label = valueInput.closest('.field')?.querySelector('label');
+      label?.querySelector('[data-value-required]')?.remove();
+      if (valueRequired && label) label.insertAdjacentHTML('beforeend', ' <span class="req-star" data-value-required>*</span>');
+    }
+    const coreMileage = document.querySelector('[name="kilometrage"]')?.value || '';
+    const mileageTarget = profile === 'mechanic' ? document.querySelector('[name="intake_mileage"]')
+      : profile === 'rental' ? document.querySelector('[name="rental_mileage_out"]') : null;
+    if (mileageTarget && !mileageTarget.value && coreMileage) mileageTarget.value = coreMileage;
+
+    const report = personaReport(profile);
+    document.querySelectorAll('.signature-block .lbl').forEach((node, index) => {
+      node.textContent = `Signature ${report.signatureLabels[index]}`;
+    });
+    const verdictCopy = {
+      buyer: [['ACHAT', 'Véhicule sain, prêt à négocier'], ['NÉGOCIATION', 'Défauts à chiffrer avant achat'], ['À FUIR', 'Risques majeurs identifiés']],
+      seller: [['PRÊT À VENDRE', 'Dossier transparent et défauts documentés'], ['À AJUSTER', 'Défauts ou prix à justifier'], ['À CORRIGER', 'Risques majeurs à traiter avant vente']],
+      mechanic: [['RESTITUABLE', 'Contrôles validés'], ['À DEVISER', 'Travaux ou diagnostic complémentaires'], ['IMMOBILISER', 'Risque de sécurité ou panne majeure']],
+      rental: [['CONFORME', 'État des lieux sans réserve majeure'], ['RÉSERVES', 'Écarts à documenter ou chiffrer'], ['HORS SERVICE', 'Véhicule non disponible en location']],
+      owner: [['À SURVEILLER', 'Entretien courant et suivi préventif'], ['À PLANIFIER', 'Intervention à prévoir'], ['URGENT', 'Risque à faire contrôler rapidement']],
+    }[profile];
+    document.querySelectorAll('.verdict-card').forEach((card, index) => {
+      if (!verdictCopy?.[index]) return;
+      card.querySelector('.title').textContent = verdictCopy[index][0];
+      card.querySelector('.sub').textContent = verdictCopy[index][1];
+    });
     renderExpertiseLayout();
   }
 
@@ -232,7 +276,9 @@ export function initializeWizard() {
       && document.getElementById('anneeSelect')?.value
       && value('motorisationSelect', 'motorisationManualInput')
       && nonNegative('kilometrage')
-      && nonNegative('valeur')
+      // The estimated vehicle value is meaningful only for a transaction.
+      // Owners, workshops and rental fleets must not be blocked by this field.
+      && (!['buyer', 'seller'].includes(activeProfile()) || nonNegative('valeur'))
     );
   }
 
@@ -278,8 +324,10 @@ export function initializeWizard() {
       [document.getElementById('anneeSelect')?.value || '', 'l’année'],
       [selectOrManual('motorisationSelect', 'motorisationManualInput'), 'la motorisation'],
       [nonNegativeValue('kilometrage'), 'le kilométrage'],
-      [nonNegativeValue('valeur'), 'la valeur'],
     ];
+    if (['buyer', 'seller'].includes(activeProfile())) {
+      required.push([nonNegativeValue('valeur'), 'la valeur']);
+    }
     const missing = required.filter(([value]) => !value).map(([, label]) => label);
     const status = document.getElementById('result');
     const vin = document.querySelector('[name="vin"]');
@@ -300,6 +348,48 @@ export function initializeWizard() {
       return false;
     }
     window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback', { detail: { type: 'success', message: 'Véhicule identifié' } }));
+    return true;
+  }
+
+  // Context details are optional, but two values that describe the same event
+  // must remain coherent. This prevents impossible rental or workshop reports
+  // without turning the contextual page into a blocking form.
+  function validateContext() {
+    const profile = activeProfile();
+    const field = (name) => document.querySelector(`[name="${name}"]`);
+    const dateValue = (name) => field(name)?.value || '';
+    const numberValue = (name) => {
+      const raw = field(name)?.value;
+      return raw === '' || raw == null ? null : Number(raw);
+    };
+    const fail = (message, input) => {
+      const status = document.getElementById('result');
+      if (status) status.textContent = message;
+      window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback', { detail: { type: 'error', message } }));
+      input?.focus();
+      input?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      return false;
+    };
+
+    if (profile === 'rental') {
+      const start = dateValue('rental_start');
+      const end = dateValue('rental_end');
+      if (start && end && end < start) {
+        return fail('La date de retour doit être postérieure à la date de départ.', field('rental_end'));
+      }
+      const out = numberValue('rental_mileage_out');
+      const incoming = numberValue('rental_mileage_in');
+      if (out != null && incoming != null && incoming < out) {
+        return fail('Le kilométrage de retour ne peut pas être inférieur au kilométrage de départ.', field('rental_mileage_in'));
+      }
+    }
+    if (profile === 'mechanic') {
+      const intake = numberValue('intake_mileage');
+      const release = numberValue('release_mileage');
+      if (intake != null && release != null && release < intake) {
+        return fail('Le kilométrage de restitution ne peut pas être inférieur au kilométrage d’entrée.', field('release_mileage'));
+      }
+    }
     return true;
   }
 
@@ -368,6 +458,7 @@ export function initializeWizard() {
       }
     }
     if (currentStep === 2 && !validateIdentification()) return;
+    if (currentStep === 3 && !validateContext()) return;
     goToStep(currentStep + 1, 'forward');
   }
 

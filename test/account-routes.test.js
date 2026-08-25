@@ -9,7 +9,8 @@ let shareDeleted = false;
 let historySaveOverride = null;
 const accountService = {
   async verifyToken(token) {
-    if (token === 'verified') return { uid: 'user-1', email_verified: true };
+    if (token === 'verified') return { uid: 'user-1', email_verified: true, auth_time: Math.floor(Date.now() / 1000) };
+    if (token === 'stale') return { uid: 'user-1', email_verified: true, auth_time: Math.floor(Date.now() / 1000) - (11 * 60) };
     if (token === 'unverified') return { uid: 'user-1', email_verified: false };
     throw new Error('invalid token');
   },
@@ -93,6 +94,16 @@ test('account deletion requires explicit confirmation', async () => {
   assert.equal((await fetch(`${baseUrl}/api/account`, { method: 'DELETE', headers, body: '{}' })).status, 400);
   assert.equal((await fetch(`${baseUrl}/api/account`, { method: 'DELETE', headers, body: JSON.stringify({ confirmation: 'SUPPRIMER' }) })).status, 204);
   assert.equal(deleted, true);
+});
+
+test('account deletion requires a recent Firebase authentication', async () => {
+  const response = await fetch(`${baseUrl}/api/account`, {
+    method: 'DELETE',
+    headers: { Authorization: 'Bearer stale', 'Content-Type': 'application/json' },
+    body: JSON.stringify({ confirmation: 'SUPPRIMER' }),
+  });
+  assert.equal(response.status, 401);
+  assert.equal((await response.json()).code, 'RECENT_LOGIN_REQUIRED');
 });
 
 test('reports can be shared through an unguessable read-only URL and revoked', async () => {

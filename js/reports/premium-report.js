@@ -15,6 +15,38 @@ const THEMES = {
   premium:{ page:[243,245,246], surface:[255,255,255], text:[25,34,41], muted:[90,103,112], accent:[11,104,177], line:[214,224,230] },
 };
 
+let pdfRuntimePromise;
+function loadRuntimeScript(src){
+  return new Promise((resolve,reject)=>{
+    const existing=[...document.scripts].find(script=>script.src.endsWith(src));
+    if(existing){
+      if(existing.dataset.cardiagLoaded === 'true') return resolve();
+      existing.addEventListener('load',resolve,{once:true});
+      existing.addEventListener('error',()=>reject(new Error(`Impossible de charger ${src}`)),{once:true});
+      return;
+    }
+    const script=document.createElement('script');
+    script.src=src;script.async=true;script.onload=()=>{script.dataset.cardiagLoaded='true';resolve();};script.onerror=()=>reject(new Error(`Impossible de charger ${src}`));
+    document.head.append(script);
+  });
+}
+
+// PDF libraries are intentionally loaded only when a report is requested.
+// This keeps the landing and inspection wizard interactive on slower phones.
+export function ensurePdfRuntime(includeQr=false){
+  if(window.jspdf?.jsPDF && (!includeQr || window.qrcode)) return Promise.resolve();
+  if(!pdfRuntimePromise){
+    pdfRuntimePromise=Promise.all([
+      window.jspdf?.jsPDF ? Promise.resolve() : loadRuntimeScript('vendor/jspdf.umd.min.js'),
+    ]).then(()=>{
+      if(!window.jspdf?.jsPDF) throw new Error('jsPDF indisponible');
+    }).catch(error=>{pdfRuntimePromise=null;throw error;});
+  }
+  return pdfRuntimePromise.then(async()=>{
+    if(includeQr && !window.qrcode) await loadRuntimeScript('vendor/qrcode.js');
+  });
+}
+
 function imageFormat(dataUrl='') { return dataUrl.includes('image/png') ? 'PNG' : dataUrl.includes('image/webp') ? 'WEBP' : 'JPEG'; }
 function numberLabel(value) {
   const number=Number(value);
@@ -191,6 +223,7 @@ function addFooter(pdf,palette,reference,page,total,generatedAt,decision) {
 }
 
 export async function createPdf(model,branding) {
+  await ensurePdfRuntime(Boolean(model?.shareUrl));
   if(!window.jspdf?.jsPDF) throw new Error('jsPDF indisponible');
   const { jsPDF }=window.jspdf;const pdf=new jsPDF({orientation:'portrait',unit:'mm',format:'a4',compress:true});
   const palette=THEMES[branding?.theme] || THEMES.carbon;const w=210,h=297;const ref=String(model.id||Date.now()).replace(/^t/,'CD-').toUpperCase();const generatedAt=new Date();const decision=effectiveDecision(model);const persona=normalizePersona(model.data?.usage_scenario);const reportMeta=personaReport(persona);const negotiation=model.negotiation || calculateNegotiation(model);const english=window.cardiagI18n?.language==='en';
@@ -308,7 +341,7 @@ export async function createPdf(model,branding) {
 
   // Signatures et validation
   pdf.addPage();y=setupPage(pdf,palette,english?'Signatures & approval':'Signatures & validation');
-  ['acheteur','vendeur'].forEach((name,index)=>{const x=index?110:16,label=(english?reportMeta.signatureLabelsEn:reportMeta.signatureLabels)[index];pdf.setFillColor(...palette.surface);pdf.roundedRect(x,y,84,48,3,3,'F');addImageSafe(pdf,model.signatures?.[name],x+7,y+7,70,25);pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','bold');pdf.setFontSize(8);pdf.text(`SIGNATURE ${label.toUpperCase()}`,x+7,y+40);});
+  ['acheteur','vendeur'].forEach((name,index)=>{const x=index?110:16,label=(english?reportMeta.signatureLabelsEn:reportMeta.signatureLabels)[index];const signature=model.signatures?.[name];const declared=model.data?.[`signature_confirmed_${name}`];const signer=String(model.data?.[`signature_name_${name}`]||label).slice(0,60);pdf.setFillColor(...palette.surface);pdf.roundedRect(x,y,84,48,3,3,'F');if(!addImageSafe(pdf,signature,x+7,y+7,70,25)&&declared){pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','italic');pdf.setFontSize(8);pdf.text(pdf.splitTextToSize(english?`Declared validation: ${signer}`:`Validation déclarée : ${signer}`,68).slice(0,2),x+7,y+18,{align:'center'});}pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','bold');pdf.setFontSize(8);pdf.text(`SIGNATURE ${label.toUpperCase()}`,x+7,y+40);});
   y+=68;pdf.setTextColor(...palette.text);pdf.setFontSize(12);pdf.text('Limites du rapport',16,y);y+=9;pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','normal');pdf.setFontSize(8);const disclaimer='Ce rapport reflète un contrôle principalement visuel et fonctionnel réalisé à un instant T, dans les conditions décrites. Il ne constitue ni un contrôle technique officiel, ni une garantie contre les défauts non visibles, intermittents ou postérieurs à l’inspection. Les valeurs et réparations estimées doivent être confirmées par un professionnel qualifié et la documentation constructeur.';pdf.text(pdf.splitTextToSize(disclaimer,178),16,y,{lineHeightFactor:1.5});
   if(model.shareUrl){y+=34;const qr=qrDataUrl(model.shareUrl);if(qr)addImageSafe(pdf,qr,154,y-7,32,32);pdf.setTextColor(...palette.accent);pdf.setFont('helvetica','bold');pdf.setFontSize(9);pdf.text('VERSION EN LIGNE EN LECTURE SEULE',16,y);pdf.setFont('helvetica','normal');pdf.setTextColor(...palette.muted);pdf.setFontSize(8);pdf.text(pdf.splitTextToSize(model.shareUrl,128),16,y+7);pdf.setFontSize(7);pdf.text('Scannez le QR code pour ouvrir le rapport partagé.',16,y+20);}
 

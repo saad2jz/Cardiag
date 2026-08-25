@@ -58,7 +58,9 @@ test('document checks are visible in the context step and a new inspection start
   assert.match(index, /class="profile-documents"/);
   assert.match(legacy, /function blankInspectionData\(initialData=\{\}\)/);
   assert.match(legacy, /const freshData = blankInspectionData\(initialData\)/);
-  assert.match(legacy, /createFiche\(\{data:freshData\}\)/);
+  assert.match(legacy, /createFiche\(\{data:freshData, photos:\{\}, signatures:\{\}\}\)/);
+  assert.match(legacy, /createBlankInspection\(\{ usage_scenario:activePersona\(\) \}\)/);
+  assert.match(legacy, /new CustomEvent\('cardiag:new-vehicle'/);
 });
 
 test('reference asset catalog covers all profile families and technical sections', () => {

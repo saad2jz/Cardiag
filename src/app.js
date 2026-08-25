@@ -4,13 +4,13 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import cors from 'cors';
 import express from 'express';
-import { getLlmRuntimeConfig } from './llm-service.js';
 import { validateChatBody, validateInlineBody } from './validation.js';
 import { createAccountRouter } from './auth/account-routes.js';
 
 const DEFAULT_FRONTEND_ORIGINS = new Set([
   'https://cardiag.online',
   'https://www.cardiag.online',
+  'https://fiche-expert-auto.onrender.com',
   'https://localhost',
   'capacitor://localhost',
 ]);
@@ -21,7 +21,6 @@ function isAllowedOrigin(origin) {
   const normalizedOrigin = origin.replace(/\/$/, '');
   return DEFAULT_FRONTEND_ORIGINS.has(normalizedOrigin)
     || configured.includes(normalizedOrigin)
-    || /^https:\/\/[a-z0-9-]+\.github\.io$/i.test(normalizedOrigin)
     || /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/i.test(normalizedOrigin);
 }
 
@@ -59,7 +58,28 @@ export function createApp({ llmService, accountService = null }) {
   const app = express();
   app.disable('x-powered-by');
   app.set('trust proxy', 1);
-  app.use((req, res, next) => { req.requestId = crypto.randomUUID(); res.setHeader('X-Request-Id', req.requestId); next(); });
+  app.use((req, res, next) => {
+    req.requestId = crypto.randomUUID();
+    res.setHeader('X-Request-Id', req.requestId);
+    res.setHeader('X-Content-Type-Options', 'nosniff');
+    res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
+    res.setHeader('X-Frame-Options', 'DENY');
+    res.setHeader('Permissions-Policy', 'camera=(self), geolocation=(self), microphone=()');
+    // The client intentionally uses Firebase and a CDN-hosted legacy fallback.
+    // Keep the policy explicit instead of allowing arbitrary script origins.
+    res.setHeader('Content-Security-Policy', [
+      "default-src 'self'",
+      "base-uri 'self'",
+      "frame-ancestors 'none'",
+      "object-src 'none'",
+      "img-src 'self' data: blob: https:",
+      "connect-src 'self' https://fiche-expert-auto.onrender.com https://*.googleapis.com https://*.firebaseio.com https://*.firebasestorage.app https://*.googleusercontent.com",
+      "script-src 'self' 'unsafe-inline' https://www.gstatic.com https://cdnjs.cloudflare.com",
+      "style-src 'self' 'unsafe-inline'",
+      "worker-src 'self' blob:",
+    ].join('; '));
+    next();
+  });
   app.use(cors({
     origin: (origin, callback) => callback(null, isAllowedOrigin(origin)),
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
@@ -103,10 +123,7 @@ export function createApp({ llmService, accountService = null }) {
     }]);
   });
   app.get('/sw.js', (_req, res) => sendPublicFile(res, 'sw.js'));
-  app.get('/health', (_req, res) => {
-    const llm = getLlmRuntimeConfig();
-    res.json({ status: 'ok', llmConfigured: llm.configured, provider: llm.provider, model: llm.model });
-  });
+  app.get('/health', (_req, res) => res.json({ status: 'ok' }));
 
   function route(validator, method) {
     return async (req, res) => {
@@ -137,9 +154,10 @@ export function createApp({ llmService, accountService = null }) {
 
   const chatLimiter = createRateLimiter({ windowMs: 60_000, max: 12, accountService });
   const inlineLimiter = createRateLimiter({ windowMs: 60_000, max: 60, accountService });
+  const sharedReportLimiter = createRateLimiter({ windowMs: 60_000, max: 30 });
   app.post('/api/chat', chatLimiter, route(validateChatBody, async ({ messages, carContext }) => llmService.chat(messages, carContext)));
   app.post('/api/inline', inlineLimiter, route(validateInlineBody, async ({ selectedText, carContext }) => ({ explanation: await llmService.inline(selectedText, carContext) })));
-  app.get('/api/shared-reports/:id', async (req, res) => {
+  app.get('/api/shared-reports/:id', sharedReportLimiter, async (req, res) => {
     if (!accountService) return res.status(503).json({ error: 'Partage indisponible.' });
     const id = String(req.params.id || '');
     if (!/^[a-zA-Z0-9_-]{20,80}$/.test(id)) return res.status(404).json({ error: 'Rapport introuvable.' });
@@ -151,5 +169,10 @@ export function createApp({ llmService, accountService = null }) {
   if (accountService) app.use('/api/account', createAccountRouter(accountService));
   else app.use('/api/account', (_req, res) => res.status(503).json({ error: 'Firebase Admin non configuré.', code: 'AUTH_NOT_CONFIGURED' }));
   app.use((_req, res) => res.status(404).json({ error: 'Route introuvable.' }));
+  app.use((error, req, res, _next) => {
+    console.error(`[${req.requestId || 'unknown'}] Erreur non gérée:`, error);
+    if (res.headersSent) return;
+    res.status(500).json({ error: 'Erreur serveur temporaire.', requestId: req.requestId });
+  });
   return app;
 }

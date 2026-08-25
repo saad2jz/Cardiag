@@ -1,4 +1,6 @@
-const ACCEPTED_TYPES = new Set(['image/jpeg', 'image/png', 'image/webp', 'image/heic', 'image/heif']);
+// HEIC/HEIF cannot be decoded consistently by the browser canvas used by the
+// offline compressor. Refuse it explicitly instead of failing after selection.
+const ACCEPTED_TYPES = new Set(['image/jpeg', 'image/png', 'image/webp']);
 const MAX_FILE_BYTES = 18 * 1024 * 1024;
 
 function dataUrlToFile(dataUrl, name = `photo-${Date.now()}.jpg`) {
@@ -15,7 +17,8 @@ function validFiles(files) {
 async function addFiles(files, targetKey = 'diagnostic') {
   const accepted = validFiles(files);
   if (!accepted.length) {
-    window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback', { detail: { type: 'error', message: 'Format photo non pris en charge' } }));
+    const hasHeic = [...files].some((file) => ['image/heic', 'image/heif'].includes(file.type));
+    window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback', { detail: { type: 'error', message: hasHeic ? 'Le format HEIC doit être converti en JPEG avant ajout.' : 'Photo refusée : JPEG, PNG ou WebP, 18 Mo maximum.' } }));
     return;
   }
   await window.cardiagMediaBridge?.addFiles?.(targetKey, accepted);

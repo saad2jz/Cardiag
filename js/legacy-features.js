@@ -1,9 +1,10 @@
 import { calculateNegotiation } from './reports/negotiation.js?v=20260814-1';
 import { normalizePersona, personaQuickChecks, personaWeights, sanitizePersonaData } from './personas.js?v=20260814-1';
+import { deleteLocalMedia, migrateAndHydrateRecordMedia, putLocalMedia, serializableRecordsWithoutMedia } from './media/local-media-store.js?v=20260825-1';
 
 // Restored feature controller. It is initialized once by js/app.js after dbLoader loads data/vehicles.json.
 
-export function initializeLegacyFeatures(vehicleData) {
+export async function initializeLegacyFeatures(vehicleData) {
   vehicleData = Array.isArray(vehicleData) ? vehicleData : [];
   // Compatibility view generated at startup from data/vehicles.json. The
   // original inline vehicle catalog is deliberately not shipped with this module.
@@ -135,7 +136,9 @@ export function initializeLegacyFeatures(vehicleData) {
 
   function persist(notify=true){
     try{
-      const serialized = JSON.stringify(db);
+      // Keep the record payload small and synchronous. Photo bits stay in
+      // IndexedDB and are rehydrated by loadDb before the form is rendered.
+      const serialized = JSON.stringify(serializableRecordsWithoutMedia(db));
       safeStorage.setItem(DB_KEY, serialized);
       safeStorage.setItem(CUR_KEY, currentId);
       updateSaveIndicator(true);
@@ -184,8 +187,15 @@ export function initializeLegacyFeatures(vehicleData) {
     }
   }
 
-  function loadDb(){
+  async function loadDb(){
     try{ db = JSON.parse(safeStorage.getItem(DB_KEY)) || {}; }catch(e){ db = {}; }
+    try {
+      await migrateAndHydrateRecordMedia(db);
+      // Commit the compact representation immediately after a legacy-media
+      // migration rather than waiting for the next user keystroke.
+      persist(false);
+    }
+    catch (error) { console.warn('Médias locaux indisponibles : les fiches restent utilisables sans leurs aperçus.', error); }
     currentId = safeStorage.getItem(CUR_KEY);
     if(!currentId || !db[currentId]){
       const id = createFiche();
@@ -250,6 +260,24 @@ export function initializeLegacyFeatures(vehicleData) {
     refreshSelector();
   }
 
+  // Text inputs can fire dozens of events while typing. Keep validation live,
+  // but batch synchronous localStorage writes to avoid jank on mobile.
+  let autoSaveTimer = 0;
+  function scheduleAutoSave(){
+    window.clearTimeout(autoSaveTimer);
+    autoSaveTimer = window.setTimeout(()=>{
+      autoSaveTimer = 0;
+      saveCurrent();
+    }, 320);
+  }
+  window.addEventListener('pagehide', ()=>{
+    if(autoSaveTimer){
+      window.clearTimeout(autoSaveTimer);
+      autoSaveTimer = 0;
+      saveCurrent();
+    }
+  });
+
   function switchFiche(id){
     currentId = id;
     persist();
@@ -262,6 +290,28 @@ export function initializeLegacyFeatures(vehicleData) {
     checkCriticalRisk();
     validateRequiredFields();
     window.dispatchEvent(new CustomEvent('cardiag:scenario-change'));
+  }
+
+  /**
+   * Opens a genuinely blank inspection. Both entry points (toolbar and
+   * vehicle picker) use this function so visual pickers, photo grids and
+   * signature canvases cannot retain state from the previously open report.
+   */
+  async function createBlankInspection(initialData={}){
+    saveCurrent();
+    const freshData = blankInspectionData(initialData);
+    const id = createFiche({data:freshData, photos:{}, signatures:{}});
+    currentId = id;
+    safeStorage.setItem(CUR_KEY,currentId);
+    refreshSelector();
+    applyToForm(freshData);
+    await restoreVehicleSelects(freshData);
+    renderAllPhotoGrids();
+    refreshAllSignaturePads();
+    updateAll();
+    window.dispatchEvent(new CustomEvent('cardiag:record-open', { detail:{ id, created:true } }));
+    window.dispatchEvent(new CustomEvent('cardiag:new-vehicle', { detail:{ id } }));
+    return id;
   }
 
   function refreshSelector(){
@@ -499,15 +549,41 @@ export function initializeLegacyFeatures(vehicleData) {
       reader.readAsDataURL(file);
     });
   }
+
+  // Keep direct point-photo uploads aligned with the media dock rules. The
+  // canvas compressor cannot reliably decode every `image/*` MIME type (HEIC
+  // in particular), so reject unsupported files before allocating a canvas.
+  const PHOTO_MAX_FILE_BYTES = 18 * 1024 * 1024;
+  const PHOTO_ACCEPTED_TYPES = new Set(['image/jpeg', 'image/png', 'image/webp']);
+  function validatePhotoFiles(files){
+    const valid = [];
+    const rejected = [];
+    Array.from(files || []).forEach(file=>{
+      if(!PHOTO_ACCEPTED_TYPES.has(String(file.type || '').toLowerCase())){
+        rejected.push(`${file.name || 'Fichier'} : format non pris en charge`);
+      }else if(file.size > PHOTO_MAX_FILE_BYTES){
+        rejected.push(`${file.name || 'Fichier'} : dépasse 18 Mo`);
+      }else{
+        valid.push(file);
+      }
+    });
+    if(rejected.length){
+      alert(`${rejected.join('\n')}\nFormats acceptés : JPEG, PNG ou WebP.`);
+    }
+    return valid;
+  }
   async function handlePhotoUpload(sectionKey, files, inputEl){
+    const validFiles = validatePhotoFiles(files);
+    if(!validFiles.length){ if(inputEl) inputEl.value = ''; return; }
     const fiche = db[currentId];
     fiche.photos = fiche.photos || {};
     fiche.photos[sectionKey] = fiche.photos[sectionKey] || [];
     const before = fiche.photos[sectionKey].length;
-    const results = await Promise.allSettled(Array.from(files).map(file=>
-      compressImage(file).then(dataUrl=>({
+    const results = await Promise.allSettled(validFiles.map(file=>
+      compressImage(file).then(async dataUrl=>({
         name:file.name,
         dataUrl,
+        assetId: await putLocalMedia(dataUrl, { name:file.name, type:'image/jpeg' }),
         // La date d'ajout est fiable même si le nom d'un fichier ancien est
         // conservé. Le PDF peut alors distinguer une preuve ajoutée pendant
         // l'inspection d'une photo dont la date de prise n'est pas vérifiable.
@@ -543,7 +619,8 @@ export function initializeLegacyFeatures(vehicleData) {
       thumb.className = 'photo-thumb';
       thumb.innerHTML = '<img src="'+p.dataUrl+'" alt="'+p.name+'"><button class="rm" type="button">×</button>';
       thumb.querySelector('.rm').addEventListener('click', ()=>{
-        db[currentId].photos[sectionKey].splice(idx,1);
+        const [removed] = db[currentId].photos[sectionKey].splice(idx,1);
+        deleteLocalMedia(removed?.assetId).catch(()=>{});
         persist();
         renderPhotoGrid(sectionKey);
         window.dispatchEvent(new CustomEvent('cardiag:media-change', { detail: { sectionKey, photos: getCurrentPhotos() } }));
@@ -741,10 +818,8 @@ export function initializeLegacyFeatures(vehicleData) {
   }
   function initFicheManagement(){
     document.getElementById('ficheSelect').addEventListener('change', (e)=>{ switchFiche(e.target.value); });
-    document.getElementById('newFicheBtn').addEventListener('click', ()=>{
-      const id = createFiche();
-      switchFiche(id);
-      refreshSelector();
+    document.getElementById('newFicheBtn').addEventListener('click', async ()=>{
+      await createBlankInspection({ usage_scenario:activePersona() });
     });
     document.getElementById('dupFicheBtn').addEventListener('click', ()=>{
       const id = createFiche(db[currentId]);
@@ -827,10 +902,26 @@ export function initializeLegacyFeatures(vehicleData) {
     document.getElementById('importFile').addEventListener('change', (e)=>{
       const file = e.target.files[0];
       if(!file) return;
+      if(file.size > 25 * 1024 * 1024){
+        alert('Fichier trop volumineux : la limite d’import est de 25 Mo.');
+        e.target.value = '';
+        return;
+      }
+      if(file.type && !['application/json', 'text/json'].includes(file.type)){
+        alert('Sélectionnez un fichier JSON exporté par CarDiag.');
+        e.target.value = '';
+        return;
+      }
       const reader = new FileReader();
       reader.onload = ()=>{
         try{
           const imported = JSON.parse(reader.result);
+          if(!imported || typeof imported !== 'object' || Array.isArray(imported)
+            || (imported.data != null && (typeof imported.data !== 'object' || Array.isArray(imported.data)))
+            || (imported.photos != null && (typeof imported.photos !== 'object' || Array.isArray(imported.photos)))
+            || (imported.signatures != null && (typeof imported.signatures !== 'object' || Array.isArray(imported.signatures)))){
+            throw new Error('Schéma invalide');
+          }
           const english = window.cardiagI18n?.language === 'en';
           if(!confirm(english
             ? 'Import this JSON file as a new report? No existing report will be overwritten.'
@@ -842,6 +933,7 @@ export function initializeLegacyFeatures(vehicleData) {
           refreshSelector();
         }catch(err){ alert('Fichier JSON invalide.'); }
       };
+      reader.onerror = ()=>alert('Impossible de lire ce fichier JSON.');
       reader.readAsText(file);
       e.target.value = '';
     });
@@ -1339,6 +1431,7 @@ export function initializeLegacyFeatures(vehicleData) {
     { key:'kilometrage', label:'Kilométrage', type:'non-negative-number', el:()=>document.querySelector('[name="kilometrage"]'), wrapId:'fieldWrap-kilometrage' },
     { key:'valeur', label:'Valeur', type:'non-negative-number', el:()=>document.querySelector('[name="valeur"]'), wrapId:'fieldWrap-valeur' }
   ];
+  const fieldIsRequiredForProfile = (spec)=> spec.key !== 'valeur' || ['buyer', 'seller'].includes(activePersona());
 
   function isFieldFilled(spec){
     if(spec.type === 'vehicle-brand'){
@@ -1391,7 +1484,7 @@ export function initializeLegacyFeatures(vehicleData) {
       }
       if(!message.id) message.id = `requiredError-${spec.key}`;
       validationControls(spec).forEach(control=>{
-        control.setAttribute('aria-required','true');
+        control.setAttribute('aria-required', String(fieldIsRequiredForProfile(spec)));
         control.setAttribute('aria-describedby',message.id);
       });
     });
@@ -1401,6 +1494,12 @@ export function initializeLegacyFeatures(vehicleData) {
     if(revealAll) revealAllRequiredFields = true;
     const missing = [];
     REQUIRED_FIELDS.forEach(spec=>{
+      if(!fieldIsRequiredForProfile(spec)){
+        const wrap = document.getElementById(spec.wrapId);
+        wrap?.classList.remove('field-invalid', 'step-invalid');
+        validationControls(spec).forEach(control=>control.setAttribute('aria-invalid', 'false'));
+        return;
+      }
       const filled = isFieldFilled(spec);
       const wrap = document.getElementById(spec.wrapId);
       const showError = !filled && (revealAllRequiredFields || touchedRequiredFields.has(spec.key));
@@ -2333,8 +2432,12 @@ export function initializeLegacyFeatures(vehicleData) {
   });
   document.addEventListener('input', (e)=>{
     if(e.target.closest('main') && (e.target.type==='text' || e.target.type==='number' || e.target.tagName==='TEXTAREA')){
-      saveCurrent(); updateBudget(); validateRequiredFields();
+      scheduleAutoSave(); updateBudget(); validateRequiredFields();
     }
+  });
+  window.addEventListener('cardiag:scenario-change', ()=>{
+    ensureRequiredMessages();
+    validateRequiredFields();
   });
 
   // Site-wide: keeps a live --ab-h CSS var equal to the action bar's real
@@ -2397,7 +2500,7 @@ export function initializeLegacyFeatures(vehicleData) {
   }
 
   loadCategoryWeights();
-  loadDb();
+  await loadDb();
   buildPhotoBlocks();
   buildPointPhotoControls();
   window.addEventListener('cardiag:language-change', updatePointPhotoTranslations);
@@ -2410,20 +2513,7 @@ export function initializeLegacyFeatures(vehicleData) {
     getCurrentRecord: ()=>JSON.parse(JSON.stringify(db[currentId])),
     getReportModel: (id=currentId)=>reportModelFor(db[id]),
     listReportModels: ()=>Object.values(db).map(reportModelFor).filter(Boolean),
-    createRecord: async (initialData={})=>{
-      saveCurrent();
-      const freshData = blankInspectionData(initialData);
-      const id = createFiche({data:freshData});
-      currentId = id;
-      safeStorage.setItem(CUR_KEY,currentId);
-      refreshSelector();
-      applyToForm(freshData);
-      await restoreVehicleSelects(freshData);
-      renderAllPhotoGrids();
-      updateAll();
-      window.dispatchEvent(new CustomEvent('cardiag:record-open', { detail:{ id, created:true } }));
-      return id;
-    },
+    createRecord: async (initialData={})=>createBlankInspection(initialData),
     useVehicleFromRecord: async (sourceId)=>{
       const source = db[sourceId];
       if(!source || !db[currentId]) return false;
