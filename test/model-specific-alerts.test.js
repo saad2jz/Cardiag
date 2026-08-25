@@ -48,6 +48,20 @@ test('documented engine weaknesses expose every field required by the UI and PDF
   }
 });
 
+test('incomplete source entries are not turned into invented technical data', () => {
+  const alerts = normalizeCatalogueAlerts([{
+    probleme: 'Défaut source incomplet',
+    symptomes: ['Bruit anormal'],
+    kilometrage_apparition: 'N/A',
+    diagnostic: 'N/A',
+    piece_concernee: 'N/A',
+    gravite: 'N/A',
+    frequence: 'N/A',
+    cout_reparation_estime: 'N/A',
+  }]);
+  assert.deepEqual(alerts, []);
+});
+
 test('the UI and premium PDF persist the model-specific alert annex', async () => {
   const [ui, report] = await Promise.all([
     readFile(new URL('../js/knowledge/model-specific-alerts.js', import.meta.url), 'utf8'),

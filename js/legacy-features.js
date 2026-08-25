@@ -1856,7 +1856,18 @@ export async function initializeLegacyFeatures(vehicleData) {
     const hiddenField = document.querySelector('input[name="motorisation_points_faibles"]');
     if(!container || !summary || !list) return;
     const key = [marqueSel?.value, modeleSel?.value, generationSel?.value, motorisationSel?.value].join('|');
-    const issues = ISSUE_DB[key] || [];
+    const documented = (value) => {
+      const text = String(value ?? '').trim();
+      return Boolean(text) && !/^n\/?a(?:\b|\s*\()/i.test(text) && !/^(non renseigne|non documente|a confirmer)$/i.test(text.toLocaleLowerCase('fr-FR'));
+    };
+    const issues = (ISSUE_DB[key] || []).filter((issue) => issue && typeof issue === 'object'
+      && documented(issue.probleme || issue.panne || issue.description)
+      && Array.isArray(issue.symptomes) && issue.symptomes.length && issue.symptomes.every(documented)
+      && documented(issue.kilometrage_apparition || issue.kilometrage_critique)
+      && documented(issue.diagnostic || issue.methode_controle)
+      && documented(issue.piece_concernee || issue.pieces_concernees)
+      && documented(issue.gravite) && documented(issue.frequence)
+      && documented(issue.cout_reparation_estime || issue.cout_estime_eur));
     list.replaceChildren();
     if(hiddenField) hiddenField.value = issues.length ? JSON.stringify(issues) : '';
     if(!issues.length){ container.hidden = true; return; }

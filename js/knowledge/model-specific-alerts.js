@@ -158,7 +158,19 @@ function isEligibleScenario() {
 
 export function normalizeCatalogueAlerts(values) {
   if (!Array.isArray(values)) return [];
-  return values.filter((value) => value && typeof value === 'object').map((value, index) => ({
+  const documented = (value) => {
+    const text = String(value ?? '').trim();
+    return Boolean(text) && !/^n\/?a(?:\b|\s*\()/i.test(text) && !/^(non renseigne|non documente|a confirmer)$/i.test(normalize(text));
+  };
+  const complete = (value) => value && typeof value === 'object'
+    && documented(value.probleme || value.panne || value.description)
+    && Array.isArray(value.symptomes) && value.symptomes.length && value.symptomes.every(documented)
+    && documented(value.kilometrage_apparition || value.kilometrage_critique)
+    && documented(value.diagnostic || value.methode_controle)
+    && documented(value.piece_concernee || value.pieces_concernees)
+    && documented(value.gravite) && documented(value.frequence)
+    && documented(value.cout_reparation_estime || value.cout_estime_eur);
+  return values.filter(complete).map((value, index) => ({
       id: `catalogue-${index}-${normalize(value.probleme || value.panne || value.description)}`,
       title: String(value.probleme || value.panne || value.description || 'Point de vigilance documenté'),
       symptomes: Array.isArray(value.symptomes) ? value.symptomes : (value.symptomes ? [value.symptomes] : []),
