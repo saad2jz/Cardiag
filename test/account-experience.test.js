@@ -59,6 +59,8 @@ test('Google authentication remains available alongside passwordless email', () 
   assert.match(client, /signInWithRedirect/);
   assert.match(client, /primary web flow/);
   assert.match(client, /ACCOUNT_EXISTS_WITH_DIFFERENT_CREDENTIAL/);
+  assert.match(client, /googleAuthError/);
+  assert.match(client, /Firebase: \$\{error\?\.code/);
 });
 
 test('profile onboarding exposes direct Google account connection', async () => {

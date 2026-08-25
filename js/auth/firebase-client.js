@@ -79,6 +79,23 @@ export function friendlyAuthError(error) {
   return messages[code] || 'L’opération du compte a échoué. Réessayez dans quelques instants.';
 }
 
+function googleAuthError(error) {
+  const code = String(error?.code || '').replace(/^auth\//i, '').replaceAll('-', '_').toUpperCase();
+  const known = friendlyAuthError(error);
+  if (code === 'UNAUTHORIZED_DOMAIN') {
+    return 'Le domaine actuel n’est pas autorisé par Firebase. Ouvrez cardiag.online et ajoutez ce domaine dans Firebase Authentication.';
+  }
+  if (code === 'OPERATION_NOT_ALLOWED') {
+    return 'Le fournisseur Google n’est pas activé dans Firebase Authentication.';
+  }
+  if (code === 'AUTH_DOMAIN_CONFIG_REQUIRED' || code === 'INVALID_OAUTH_CLIENT_ID') {
+    return `La configuration OAuth Google est incomplète (${error?.code || code}). Vérifiez le client Web et l’URL /__/auth/handler.`;
+  }
+  // The Firebase error code is safe to disclose and makes an otherwise generic
+  // OAuth failure actionable without exposing any credential.
+  return `${known} [Firebase: ${error?.code || 'auth/unknown'}]`;
+}
+
 async function loadConfig() {
   if (!config) config = await fetch('firebase-config.json', { cache: 'no-store' }).then((response) => response.json());
   return config;
@@ -330,14 +347,7 @@ export const authClient = {
       }
       return currentUser;
     } catch (error) {
-      const message = friendlyAuthError(error);
-      const code = String(error?.code || '').replace(/^auth\//i, '').replaceAll('-', '_').toUpperCase();
-      const guidance = code === 'OPERATION_NOT_ALLOWED'
-        ? 'La connexion Google doit être activée dans Firebase Authentication.'
-        : message.startsWith('L’opération du compte a échoué')
-        ? 'Connexion Google impossible. Vérifiez que Google est activé dans Firebase Authentication et que ce domaine est autorisé.'
-        : message;
-      throw Object.assign(new Error(guidance), { code: error?.code || 'AUTH_ERROR', cause: error });
+      throw Object.assign(new Error(googleAuthError(error)), { code: error?.code || 'AUTH_ERROR', cause: error });
     }
   },
   async resetPassword(email) {

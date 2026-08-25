@@ -76,6 +76,8 @@ export function createApp({ llmService, accountService = null }) {
       "connect-src 'self' https://fiche-expert-auto.onrender.com https://*.googleapis.com https://*.firebaseio.com https://*.firebasestorage.app https://*.googleusercontent.com",
       "script-src 'self' 'unsafe-inline' https://www.gstatic.com https://cdnjs.cloudflare.com",
       "style-src 'self' 'unsafe-inline'",
+      "frame-src https://cardiag-f1ea7.firebaseapp.com https://accounts.google.com",
+      "form-action 'self' https://accounts.google.com",
       "worker-src 'self' blob:",
     ].join('; '));
     next();
