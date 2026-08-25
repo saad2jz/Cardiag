@@ -210,6 +210,7 @@ function initializeGuide(guide) {
     if (!target) return;
     if (!guided) setGuided(true);
     choose(target, scroll);
+    window.dispatchEvent(new CustomEvent('cardiag:inspection-section-change', { detail: { key } }));
   }
 
   function render() {

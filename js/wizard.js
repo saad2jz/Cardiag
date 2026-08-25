@@ -42,6 +42,15 @@ function safeStorageSet(key, value) {
   try { window.localStorage.setItem(key, value); } catch { /* Mode privé : état conservé en mémoire. */ }
 }
 
+function stepStorageKey() {
+  const recordId = String(window.cardiagDataBridge?.getCurrentRecord?.()?.id || '');
+  // A step belongs to one inspection. The fallback keeps the initial flow
+  // compatible until a new fiche has been created.
+  return /^[A-Za-z0-9_-]{1,100}$/.test(recordId)
+    ? `${STEP_STORAGE_KEY}:${recordId}`
+    : STEP_STORAGE_KEY;
+}
+
 function activeProfile() {
   const selected = document.querySelector('[name="usage_scenario"]:checked')?.value;
   return VALID_PROFILES.has(selected) ? selected : 'buyer';
@@ -57,6 +66,14 @@ function entrySelection() {
 }
 
 function updateEntryUrl(profile, level = '') {
+  if (window.cardiagRouter?.newInspection) {
+    const route = window.cardiagRouter.current;
+    const stage = route?.kind === 'new-inspection' ? route.stage : (profile === 'owner' ? 'diagnostic' : 'identification');
+    window.cardiagRouter.newInspection(PROFILE_TO_SLUG[profile], level, stage, { replace: true, source: 'profile-choice' });
+    return;
+  }
+  // The old query format is used only during bootstrap and is normalized by
+  // the router immediately afterwards, preserving existing shared links.
   const url = new URL(location.href);
   if (VALID_PROFILES.has(profile)) url.searchParams.set('profil', PROFILE_TO_SLUG[profile]);
   if (level === 'quick' || level === 'complete') url.searchParams.set('niveau', level === 'quick' ? 'rapide' : 'complet');
@@ -430,7 +447,7 @@ export function initializeWizard() {
       if (infoSection) infoSection.open = true;
     }
     renderExpertiseLayout();
-    safeStorageSet(STEP_STORAGE_KEY, String(currentStep));
+    safeStorageSet(stepStorageKey(), String(currentStep));
     window.dispatchEvent(new CustomEvent('cardiag:wizard-step', { detail: { step: currentStep, direction } }));
     document.documentElement.scrollTop = 0;
     document.body.scrollTop = 0;
@@ -610,7 +627,7 @@ export function initializeWizard() {
   renderProfileFamily(entry.profile ? profileFamily(initialProfile) : 'personal');
   updateProfileContext();
 
-  const savedStep = Number.parseInt(safeStorageGet(STEP_STORAGE_KEY) || '', 10);
+  const savedStep = Number.parseInt(safeStorageGet(stepStorageKey()) || '', 10);
   currentStep = VALID_PROFILES.has(entry.profile)
     ? (savedStep >= 2 && savedStep <= STEP_COUNT ? savedStep : 2)
     : 1;

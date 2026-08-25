@@ -126,11 +126,12 @@ export function initializeVehiclePicker() {
     if (event.target.closest('[data-add-vehicle]')) {
       const addButton = event.target.closest('[data-add-vehicle]');
       addButton.disabled = true;
-      await window.cardiagDataBridge.createRecord?.({ usage_scenario: selectedProfile() });
+      const id = await window.cardiagDataBridge.createRecord?.({ usage_scenario: selectedProfile() });
       addButton.disabled = false;
       savedBody.hidden = true;
       savedToggle.setAttribute('aria-expanded', 'false');
       render();
+      if (id && window.cardiagRouter?.inspection) window.cardiagRouter.inspection(id, 'identification');
       window.dispatchEvent(new CustomEvent('cardiag:new-vehicle'));
       const picker = document.querySelector('.brand-picker');
       picker?.scrollIntoView({ behavior: 'smooth', block: 'start' });

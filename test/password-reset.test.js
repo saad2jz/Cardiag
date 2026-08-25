@@ -4,6 +4,7 @@ import { test } from 'node:test';
 import { friendlyAuthError, normalizeAuthEmail } from '../js/auth/firebase-client.js';
 
 const authUi = await readFile(new URL('../js/auth/auth-ui.js', import.meta.url), 'utf8');
+const client = await readFile(new URL('../js/auth/firebase-client.js', import.meta.url), 'utf8');
 const worker = await readFile(new URL('../sw.js', import.meta.url), 'utf8');
 
 test('passwordless email authentication normalizes and validates account email addresses', () => {
@@ -18,5 +19,6 @@ test('email-link UI prevents duplicate requests and keeps a neutral confirmation
   assert.match(authUi, /Si cette adresse est valide/);
   assert.match(authUi, /courriers ind/);
   assert.match(authUi, /data-auth-form="email-link"/);
-  assert.match(worker, /cardiag-v95/);
+  assert.match(worker, /cardiag-v97/);
+  assert.match(client, /CANONICAL_WEB_ORIGIN/);
 });

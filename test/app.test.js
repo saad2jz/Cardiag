@@ -53,6 +53,34 @@ test('the combined server serves the frontend without exposing environment files
   assert.equal(envFile.status, 404);
 });
 
+test('alternate browser hosts redirect to the canonical CarDiag domain without redirecting API calls', async () => {
+  const alternateHost = 'fiche-expert-auto.onrender.com';
+  const page = await fetch(`${baseUrl}/?niveau=complet&profil=acheteur`, {
+    redirect: 'manual',
+    // Render forwards the original public host through this header.
+    headers: { Accept: 'text/html', 'X-Forwarded-Host': alternateHost },
+  });
+  assert.equal(page.status, 308);
+  assert.equal(page.headers.get('location'), 'https://cardiag.online/?niveau=complet&profil=acheteur');
+
+  const api = await fetch(`${baseUrl}/health`, {
+    redirect: 'manual',
+    headers: { Accept: 'application/json', 'X-Forwarded-Host': alternateHost },
+  });
+  assert.equal(api.status, 200);
+  assert.equal((await api.json()).status, 'ok');
+});
+
+test('app routes survive refreshes and legacy local fiche links redirect safely', async () => {
+  const appPage = await fetch(`${baseUrl}/app/inspection/t123/controle/moteur`);
+  assert.equal(appPage.status, 200);
+  assert.match(await appPage.text(), /id="appRoot"|id="wizardHeader"/);
+
+  const legacy = await fetch(`${baseUrl}/fiche/t123`, { redirect: 'manual' });
+  assert.equal(legacy.status, 308);
+  assert.equal(legacy.headers.get('location'), '/app/inspection/t123/rapport');
+});
+
 test('CORS allows the web and native production frontends', async () => {
   for (const origin of ['https://cardiag.online', 'https://localhost']) {
     const response = await fetch(`${baseUrl}/api/chat`, {

@@ -1,4 +1,4 @@
-import { authClient } from './firebase-client.js?v=20260824-3';
+import { authClient } from './firebase-client.js?v=20260825-1';
 
 const ROLES = { buyer:'Acheteur', mechanic:'Garagiste / Mécanicien', rental:'Agence de location', seller:'Vendeur', owner:'Propriétaire' };
 

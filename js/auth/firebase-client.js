@@ -1,4 +1,5 @@
 const RENDER_API = 'https://fiche-expert-auto.onrender.com/';
+const CANONICAL_WEB_ORIGIN = 'https://cardiag.online';
 const FIREBASE_APP_SDK = 'https://www.gstatic.com/firebasejs/12.17.1/firebase-app.js';
 const FIREBASE_AUTH_SDK = 'https://www.gstatic.com/firebasejs/12.17.1/firebase-auth.js';
 const browserWindow = typeof window === 'undefined' ? {} : window;
@@ -94,8 +95,9 @@ function forgetMagicLinkEmail() {
   try { browserWindow.localStorage?.removeItem(MAGIC_LINK_EMAIL_KEY); } catch { /* Nothing to clean up. */ }
 }
 function magicLinkSettings() {
-  const origin = browserLocation.origin || 'https://cardiag.online';
-  return { url: `${origin.replace(/\/$/, '')}/`, handleCodeInApp: true };
+  // A single return URL prevents the Render preview hostname from splitting
+  // email-link sessions and OAuth state from the public CarDiag domain.
+  return { url: `${CANONICAL_WEB_ORIGIN}/`, handleCodeInApp: true };
 }
 function cleanMagicLinkUrl() {
   try {
@@ -306,6 +308,12 @@ export const authClient = {
       } else {
         const sdk = await loadWebFirebase();
         const provider = new sdk.GoogleAuthProvider();
+        // Redirect is deliberately the primary web flow: browser extensions,
+        // mobile webviews and strict privacy modes can reject an OAuth popup.
+        if (typeof sdk.signInWithRedirect === 'function') {
+          await sdk.signInWithRedirect(sdk.auth, provider);
+          return null;
+        }
         try {
           const result = await sdk.signInWithPopup(sdk.auth, provider);
           notify(result.user);

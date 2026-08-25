@@ -57,6 +57,7 @@ test('Google authentication remains available alongside passwordless email', () 
   assert.doesNotMatch(authUi, /data-google-signup/);
   assert.match(authUi, /signInWithGoogle/);
   assert.match(client, /signInWithRedirect/);
+  assert.match(client, /primary web flow/);
   assert.match(client, /ACCOUNT_EXISTS_WITH_DIFFERENT_CREDENTIAL/);
 });
 

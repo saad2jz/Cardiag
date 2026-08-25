@@ -42,7 +42,8 @@ export function initializeRecordsGallery() {
       const open=async()=>{
         const opened=await window.cardiagDataBridge?.openRecord?.(record.id);
         if(!opened)return;
-        window.cardiagWizard?.goToStep?.(2);
+        if(window.cardiagRouter?.inspection) window.cardiagRouter.inspection(record.id,'identification');
+        else window.cardiagWizard?.goToStep?.(2);
         close();
         window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback',{detail:{type:'success',message:translate('records.loaded','Fiche chargée : vous pouvez la consulter ou la modifier.')}}));
       };
@@ -62,17 +63,26 @@ export function initializeRecordsGallery() {
       return card;
     }));
   };
-  trigger.addEventListener('click', () => { render(); sheet.hidden = false; requestAnimationFrame(() => sheet.classList.add('is-open')); });
+  const open = () => { render(); sheet.hidden = false; requestAnimationFrame(() => sheet.classList.add('is-open')); };
+  trigger.addEventListener('click', () => {
+    if(window.cardiagRouter?.dashboard) { window.cardiagRouter.dashboard(); return; }
+    open();
+  });
   sheet.querySelector('[data-records-close]').addEventListener('click', close);
-  sheet.querySelector('[data-records-compare]').addEventListener('click',()=>{close();window.cardiagDataBridge?.openComparison?.([])});
-  sheet.querySelector('[data-records-new]').addEventListener('click', () => {
+  sheet.querySelector('[data-records-compare]').addEventListener('click',()=>{
+    close();
+    if(window.cardiagRouter?.navigate) window.cardiagRouter.navigate({kind:'compare'});
+    else window.cardiagDataBridge?.openComparison?.([]);
+  });
+  sheet.querySelector('[data-records-new]').addEventListener('click', async () => {
     const profile=window.cardiagLocalProfile?.current;
     const role=profile?.role || 'buyer';
-    window.cardiagDataBridge?.createRecord?.({usage_scenario:role});
-    window.cardiagWizard?.goToStep?.(profile?.type==='professional'?2:1);
+    const id=await window.cardiagDataBridge?.createRecord?.({usage_scenario:role});
+    if(id && window.cardiagRouter?.inspection) window.cardiagRouter.inspection(id,'identification');
+    else window.cardiagWizard?.goToStep?.(profile?.type==='professional'?2:1);
     close();
   });
   window.addEventListener('cardiag:data-change', () => { if (!sheet.hidden) render(); });
   window.addEventListener('cardiag:language-change',()=>{refreshTrigger();if(!sheet.hidden)render()});
-  window.cardiagRecords = { open: () => trigger.click(), close };
+  window.cardiagRecords = { open, close };
 }

@@ -44,7 +44,8 @@ function isNative() { return Boolean(globalThis.Capacitor?.isNativePlatform?.())
 function shouldSkipLanding() {
   const params = new URLSearchParams(location.search);
   const hasProfileEntry = Object.values(PROFILE_SLUGS).includes((params.get('profil') || '').toLowerCase());
-  return isNative() || params.get('app') === '1' || params.has('action') || hasProfileEntry || /^\/fiche\//.test(location.pathname);
+  return isNative() || params.get('app') === '1' || params.has('action') || hasProfileEntry
+    || /^\/(app|fiche)\//.test(location.pathname) || location.pathname === '/app';
 }
 
 function applyLanguage(root, language) {
@@ -78,8 +79,15 @@ function selectScenario(role) {
 }
 
 function persistEntryChoice(role, level = '') {
+  const profile = PROFILE_SLUGS[role] || '';
+  if (window.cardiagRouter?.newInspection) {
+    window.cardiagRouter.newInspection(profile, level, profile === 'proprietaire' ? 'diagnostic' : 'identification');
+    return;
+  }
+  // Compatibility while the application shell is still starting. The router
+  // converts this old share format to a canonical path on first render.
   const url = new URL(location.href);
-  if (role && PROFILE_SLUGS[role]) url.searchParams.set('profil', PROFILE_SLUGS[role]);
+  if (role && profile) url.searchParams.set('profil', profile);
   else url.searchParams.delete('profil');
   if (level === 'quick' || level === 'complete') {
     url.searchParams.set('niveau', level === 'quick' ? 'rapide' : 'complet');
@@ -149,6 +157,11 @@ export function initializeLanding() {
   window.addEventListener('cardiag:language-change', (event) => applyLanguage(root, event.detail?.language || 'fr'));
   applyLanguage(root, window.cardiagI18n?.language || 'fr');
   showFamily('personal');
-  window.cardiagLanding = { get active() { return active; }, enter, show() { active = true; root.hidden = false; document.body.classList.add('landing-active'); } };
+  window.cardiagLanding = {
+    get active() { return active; },
+    enter,
+    hide,
+    show() { active = true; root.hidden = false; document.body.classList.add('landing-active'); },
+  };
   return { get active() { return active; } };
 }

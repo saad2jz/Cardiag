@@ -80,6 +80,16 @@ export function createApp({ llmService, accountService = null }) {
     ].join('; '));
     next();
   });
+  const canonicalOrigin = String(process.env.PUBLIC_ORIGIN || 'https://cardiag.online').replace(/\/$/, '');
+  const canonicalHost = new URL(canonicalOrigin).hostname;
+  const alternatePageHosts = new Set(['fiche-expert-auto.onrender.com', 'www.cardiag.online']);
+  app.use((req, res, next) => {
+    const acceptsHtml = req.method === 'GET' && String(req.headers.accept || '').includes('text/html');
+    if (acceptsHtml && alternatePageHosts.has(req.hostname) && req.hostname !== canonicalHost) {
+      return res.redirect(308, `${canonicalOrigin}${req.originalUrl}`);
+    }
+    return next();
+  });
   app.use(cors({
     origin: (origin, callback) => callback(null, isAllowedOrigin(origin)),
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
@@ -107,7 +117,12 @@ export function createApp({ llmService, accountService = null }) {
   app.get('/terms.html', (_req, res) => sendPublicFile(res, 'terms.html'));
   app.get('/account-deletion.html', (_req, res) => sendPublicFile(res, 'account-deletion.html'));
   app.get('/shared-report.html', (_req, res) => sendPublicFile(res, 'shared-report.html'));
-  app.get('/fiche/:id', (_req, res) => sendPublicFile(res, 'index.html'));
+  // Every authenticated or local-first application page is handled by the
+  // lightweight History API router. This also makes refreshes on a deep link
+  // work on Render without exposing a second static-site configuration.
+  app.get(/^\/app(?:\/.*)?$/, (_req, res) => sendPublicFile(res, 'index.html'));
+  app.get('/exemple-rapport', (_req, res) => sendPublicFile(res, 'index.html'));
+  app.get('/fiche/:id', (req, res) => res.redirect(308, `/app/inspection/${encodeURIComponent(req.params.id)}/rapport`));
   app.get('/r/:id', (_req, res) => sendPublicFile(res, 'shared-report.html'));
   app.get('/.well-known/assetlinks.json', (_req, res) => {
     const fingerprints = String(process.env.ANDROID_APP_LINK_SHA256 || '')

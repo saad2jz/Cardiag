@@ -14,6 +14,8 @@ const settings = await readFile(new URL('../js/settings/settings.js', import.met
 const themes = await readFile(new URL('../js/theming/theme-manager.js', import.meta.url), 'utf8');
 const styles = await readFile(new URL('../css/styles.css', import.meta.url), 'utf8');
 const pwa = await readFile(new URL('../js/pwa.js', import.meta.url), 'utf8');
+const router = await readFile(new URL('../js/navigation/router.js', import.meta.url), 'utf8');
+const routeController = await readFile(new URL('../js/navigation/route-controller.js', import.meta.url), 'utf8');
 
 test('the public landing and wizard expose the same five workflows', () => {
   const landingRoles = [...index.matchAll(/data-landing-role="([^"]+)"/g)].map((match) => match[1]);
@@ -28,7 +30,7 @@ test('the app shell keeps SEO, accessibility and cache safeguards', () => {
   assert.match(index, /"@type":"Organization"/);
   assert.match(index, /id="installAppBtn"[^>]*hidden/);
   assert.match(index, /sigCanvasAcheteur[^>]*aria-label=/);
-  assert.match(worker, /cardiag-v95/);
+  assert.match(worker, /cardiag-v97/);
   assert.match(index, /id="pwaUpdateBanner"/);
   assert.match(index, /Fiches locales par défaut/);
   assert.match(pwa, /registration\.addEventListener\('updatefound'/);
@@ -43,10 +45,19 @@ test('the wizard toolbar exposes a non-destructive CarDiag home action', () => {
   assert.match(worker, /navigation\/home-button\.js/);
   assert.match(styles, /\.home-trigger\{order:-2/);
   assert.match(settings, /settings-trigger-label[^>]*>Paramètres/);
-  assert.match(settings, /trigger\.onclick=openAppearance/);
+  assert.match(settings, /navigate\(\{kind:'settings'\}\)/);
   assert.match(settings, /window\.cardiagSettings=\{open,openAppearance\}/);
   assert.match(themes, /button\.hidden = true/);
   assert.match(themes, /data-open-all-settings/);
+});
+
+test('the app shell owns stable routes for each workflow and inspection state', () => {
+  assert.match(router, /\/app\/nouvelle/);
+  assert.match(router, /\/app\/inspection/);
+  assert.match(router, /history\?\.\[replace \? 'replaceState' : 'pushState'\]/);
+  assert.match(routeController, /cardiag:wizard-step/);
+  assert.match(routeController, /cardiag:inspection-section-change/);
+  assert.match(worker, /navigation\/route-controller\.js/);
 });
 
 test('vehicle identification exposes loading and offline fallback without duplicate quick search', () => {
