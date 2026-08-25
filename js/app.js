@@ -5,7 +5,7 @@ import { initializeI18n } from './i18n/i18n.js?v=20260823-3';
 import { initializeWizardInteractions } from './wizard/interactions.js?v=20260813-1';
 import { initializeVehiclePicker } from './wizard/vehicle-picker.js?v=20260825-2';
 import { initializeThemeManager } from './theming/theme-manager.js?v=20260820-3';
-import { initializeProfileOnboarding } from './onboarding/profile-onboarding.js?v=20260825-1';
+import { initializeProfileOnboarding } from './onboarding/profile-onboarding.js?v=20260825-2';
 import { initializeMediaManager } from './media/media-manager.js?v=20260813-2';
 import { initializePermissions } from './native/permissions.js?v=20260813-1';
 import { initializeConnectivity } from './native/connectivity.js?v=20260813-1';
@@ -29,7 +29,7 @@ let accountFeaturePromise;
 async function loadAccountFeature(){
   if(!accountFeaturePromise){
     accountFeaturePromise=Promise.all([
-      import('./auth/auth-ui.js?v=20260825-1'),
+      import('./auth/auth-ui.js?v=20260825-2'),
       import('./native/sync-queue.js?v=20260825-1'),
     ]).then(async ([auth,sync])=>{
       await auth.initializeAuthUi();
