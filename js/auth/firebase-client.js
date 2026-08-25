@@ -142,7 +142,13 @@ async function loadWebFirebase() {
       const app = appSdk.getApps().length ? appSdk.getApp() : appSdk.initializeApp(firebaseConfig);
       let auth;
       try {
-        auth = authSdk.initializeAuth(app, { persistence: [authSdk.indexedDBLocalPersistence] });
+        // initializeAuth does not install a popup/redirect resolver unless it
+        // is explicitly provided. Google OAuth therefore fails before the
+        // redirect on browsers even though the provider is enabled in Firebase.
+        auth = authSdk.initializeAuth(app, {
+          persistence: [authSdk.indexedDBLocalPersistence],
+          popupRedirectResolver: authSdk.browserPopupRedirectResolver,
+        });
       } catch {
         auth = authSdk.getAuth(app);
         await authSdk.setPersistence(auth, authSdk.indexedDBLocalPersistence);
