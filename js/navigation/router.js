@@ -8,6 +8,7 @@
 export const PROFILES = Object.freeze(['acheteur', 'vendeur', 'proprietaire', 'garagiste', 'location']);
 export const LEVELS = Object.freeze(['rapide', 'complet']);
 export const SECTIONS = Object.freeze(['vehicule', 'moteur', 'chassis', 'carrosserie', 'habitacle', 'essai', 'diagnostic']);
+const APPLICATION_ROUTE_KINDS = new Set(['dashboard', 'compare', 'settings', 'new-inspection', 'inspection']);
 
 const PROFILE_ALIASES = Object.freeze({
   buyer: 'acheteur', acheteur: 'acheteur',
@@ -143,6 +144,22 @@ export function routePath(route) {
   }
 }
 
+function usesStaticQueryTransport() {
+  // GitHub Pages cannot rewrite a direct /app/* request to index.html. Keep
+  // the public browser URL at the root on the production static host so an
+  // OAuth reload, browser refresh or shared entry never becomes a 404.
+  const hostname = String(globalThis.location?.hostname || '').toLowerCase();
+  return hostname === 'cardiag.online' || hostname === 'www.cardiag.online' || hostname.endsWith('.github.io');
+}
+
+function browserPath(route) {
+  const path = routePath(route);
+  const isApplicationRoute = Boolean(route?.app) || APPLICATION_ROUTE_KINDS.has(route?.kind);
+  return isApplicationRoute && usesStaticQueryTransport()
+    ? `/?_r=${encodeURIComponent(path)}`
+    : path;
+}
+
 function notify(route, source) {
   activeRoute = route;
   globalThis.dispatchEvent?.(new CustomEvent('cardiag:route-change', { detail: { route, source } }));
@@ -152,10 +169,11 @@ function notify(route, source) {
 export function navigate(route, { replace = false, source = 'navigate' } = {}) {
   const target = typeof route === 'string' ? parseRoute(route) : route;
   const path = routePath(target);
+  const publicPath = browserPath(target);
   const currentPath = `${globalThis.location?.pathname || '/'}${globalThis.location?.search || ''}`;
-  if (currentPath === path && activeRoute && routePath(activeRoute) === path) return target;
-  if (currentPath !== path) {
-    globalThis.history?.[replace ? 'replaceState' : 'pushState']?.({ cardiagRoute: path }, '', path);
+  if (currentPath === publicPath && activeRoute && routePath(activeRoute) === path) return target;
+  if (currentPath !== publicPath) {
+    globalThis.history?.[replace ? 'replaceState' : 'pushState']?.({ cardiagRoute: path }, '', publicPath);
   }
   notify(target, source);
   return target;
@@ -172,7 +190,7 @@ export function initializeRouter({ onRouteChange } = {}) {
     globalThis.addEventListener?.('popstate', () => notify(parseRoute(), 'popstate'));
   }
   const route = parseRoute();
-  const canonicalPath = routePath(route);
+  const canonicalPath = browserPath(route);
   const currentPath = `${globalThis.location?.pathname || '/'}${globalThis.location?.search || ''}`;
   if (route.legacy && currentPath !== canonicalPath) globalThis.history?.replaceState?.({ cardiagRoute: canonicalPath }, '', canonicalPath);
   notify(route, 'initial');
