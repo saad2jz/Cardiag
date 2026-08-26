@@ -97,6 +97,57 @@ function persistEntryChoice(role, level = '') {
   history.replaceState(history.state, '', `${url.pathname}${url.search}${url.hash}`);
 }
 
+/**
+ * Animates the landing's illustrative scores once they become visible. The
+ * values are presentation-only and do not alter any inspection calculation.
+ */
+function animateScoreCounters(root) {
+  if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return;
+
+  const targets = [...root.querySelectorAll(
+    '.landing-report-score .landing-report-donut span, .landing-document-ring span, .landing-document-line strong',
+  )];
+  if (!targets.length) return;
+
+  const animateOne = (element) => {
+    if (element.dataset.scoreAnimated === 'true') return;
+    const finalText = element.textContent.trim();
+    const finalValue = Number.parseInt(finalText, 10);
+    if (!Number.isFinite(finalValue)) return;
+
+    element.dataset.scoreAnimated = 'true';
+    const ring = element.closest('.landing-report-donut, .landing-document-ring');
+    const line = element.closest('.landing-document-line');
+    if (ring) ring.classList.add('is-score-animated');
+    if (line) line.classList.add('is-score-animated');
+
+    const duration = 1200;
+    const startedAt = performance.now();
+    const step = (now) => {
+      const progress = Math.min((now - startedAt) / duration, 1);
+      const eased = 1 - ((1 - progress) ** 3);
+      element.textContent = `${Math.round(finalValue * eased)}%`;
+      if (progress < 1) requestAnimationFrame(step);
+      else element.textContent = finalText;
+    };
+    requestAnimationFrame(step);
+  };
+
+  if (!('IntersectionObserver' in window)) {
+    targets.forEach(animateOne);
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      animateOne(entry.target);
+      observer.unobserve(entry.target);
+    });
+  }, { threshold: 0.4 });
+  targets.forEach((element) => observer.observe(element));
+}
+
 export function initializeLanding() {
   const root = document.getElementById('marketingLanding');
   if (!root) return { active: false };
@@ -232,6 +283,7 @@ export function initializeLanding() {
   window.addEventListener('cardiag:language-change', (event) => applyLanguage(root, event.detail?.language || 'fr'));
   applyLanguage(root, window.cardiagI18n?.language || 'fr');
   showFamily('personal');
+  animateScoreCounters(root);
   window.cardiagLanding = {
     get active() { return active; },
     enter,
