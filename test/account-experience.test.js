@@ -18,6 +18,7 @@ test('web authentication uses official IndexedDB persistence instead of raw loca
   assert.match(client, /indexedDBLocalPersistence/);
   assert.doesNotMatch(client, /localStorage\.setItem/);
   assert.match(client, /onAuthStateChanged/);
+  assert.match(client, /fetch\('\/firebase-config\.json'/);
 });
 
 test('account profile keeps the useful personal and professional details', () => {

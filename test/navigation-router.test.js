@@ -37,6 +37,9 @@ test('GitHub Pages recovery restores deep application routes from its 404 docume
   assert.deepEqual(recovered, {
     kind: 'new-inspection', app: true, profile: 'proprietaire', level: 'complet', stage: 'diagnostic', legacy: true,
   });
+  assert.deepEqual(parseRoute('https://cardiag.online/?_r=%2Fexemple-rapport'), {
+    kind: 'demo-report', app: false, legacy: true,
+  });
 });
 
 test('the production static host keeps protected browser URLs canonical', async () => {

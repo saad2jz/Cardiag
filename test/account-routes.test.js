@@ -117,3 +117,11 @@ test('reports can be shared through an unguessable read-only URL and revoked', a
   assert.equal((await fetch(`${baseUrl}/api/account/shares/${share.id}`, { method: 'DELETE', headers })).status, 204);
   assert.equal(shareDeleted, true);
 });
+
+test('clean public legal aliases redirect to their static documents', async () => {
+  for (const [path, target] of [['privacy', '/privacy.html'], ['terms', '/terms.html'], ['account-deletion', '/account-deletion.html']]) {
+    const response = await fetch(`${baseUrl}/${path}`, { redirect: 'manual' });
+    assert.equal(response.status, 308, path);
+    assert.equal(response.headers.get('location'), target, path);
+  }
+});

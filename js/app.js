@@ -5,21 +5,21 @@ import { initializeI18n } from './i18n/i18n.js?v=20260826-1';
 import { initializeWizardInteractions } from './wizard/interactions.js?v=20260813-1';
 import { initializeVehiclePicker } from './wizard/vehicle-picker.js?v=20260825-2';
 import { initializeThemeManager } from './theming/theme-manager.js?v=20260820-3';
-import { initializeProfileOnboarding } from './onboarding/profile-onboarding.js?v=20260826-4';
+import { initializeProfileOnboarding } from './onboarding/profile-onboarding.js?v=20260826-5';
 import { initializeMediaManager } from './media/media-manager.js?v=20260813-2';
 import { initializePermissions } from './native/permissions.js?v=20260813-1';
 import { initializeConnectivity } from './native/connectivity.js?v=20260813-1';
 import { initializeAppLinks } from './native/app-links.js?v=20260826-1';
 import { initializePush } from './native/push.js?v=20260813-1';
-import { initializeSettings } from './settings/settings.js?v=20260825-2';
-import { initializeConsent } from './auth/consent.js?v=20260813-1';
+import { initializeSettings } from './settings/settings.js?v=20260826-3';
+import { initializeConsent } from './auth/consent.js?v=20260826-2';
 import { initializeScoreVisuals } from './score/score-visuals.js?v=20260813-1';
 import { initializeRecordsGallery } from './records/records-gallery.js?v=20260826-1';
 import { initializeLanding } from './landing/landing.js?v=20260826-3';
 import { initializeInspectionEnhancements } from './ux/inspection-enhancements.js?v=20260825-2';
 import { initializeOwnerTechnicalHelp } from './ux/owner-technical-help.js?v=20260821-1';
 import { initializeHomeButton } from './navigation/home-button.js?v=20260825-2';
-import { initializeRouteController } from './navigation/route-controller.js?v=20260826-7';
+import { initializeRouteController } from './navigation/route-controller.js?v=20260826-8';
 import { initializeBrandPicker } from './wizard/brand-picker.js?v=20260823-6';
 import { initializeModelSpecificAlerts } from './knowledge/model-specific-alerts.js?v=20260823-1';
 
@@ -43,7 +43,7 @@ function hasPendingAuthenticationReturn() {
 async function loadAccountFeature(){
   if(!accountFeaturePromise){
     accountFeaturePromise=Promise.all([
-      import('./auth/auth-ui.js?v=20260826-7'),
+      import('./auth/auth-ui.js?v=20260826-8'),
       import('./native/sync-queue.js?v=20260825-1'),
     ]).then(async ([auth,sync])=>{
       await auth.initializeAuthUi();

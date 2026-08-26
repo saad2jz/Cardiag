@@ -17,8 +17,12 @@
     // routes through the root document, which owns the History API router.
     (function () {
       var route = location.pathname + location.search + location.hash;
-      if (/^\/(?:app|fiche)(?:\/|$)/.test(location.pathname)) {
+      if (/^\/(?:app|fiche)(?:\/|$)/.test(location.pathname) || location.pathname === '/exemple-rapport') {
         location.replace('/?_r=' + encodeURIComponent(route));
+      } else if (/^\/r\/[A-Za-z0-9_-]{20,80}$/.test(location.pathname)) {
+        location.replace('/shared-report.html?token=' + encodeURIComponent(location.pathname.split('/').pop()));
+      } else if (/^\/(?:privacy|terms|account-deletion)$/.test(location.pathname)) {
+        location.replace(location.pathname + '.html' + location.search + location.hash);
       }
     }());
   </script>

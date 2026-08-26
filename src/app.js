@@ -118,6 +118,9 @@ export function createApp({ llmService, accountService = null }) {
   app.get('/privacy.html', (_req, res) => sendPublicFile(res, 'privacy.html'));
   app.get('/terms.html', (_req, res) => sendPublicFile(res, 'terms.html'));
   app.get('/account-deletion.html', (_req, res) => sendPublicFile(res, 'account-deletion.html'));
+  app.get('/privacy', (_req, res) => res.redirect(308, '/privacy.html'));
+  app.get('/terms', (_req, res) => res.redirect(308, '/terms.html'));
+  app.get('/account-deletion', (_req, res) => res.redirect(308, '/account-deletion.html'));
   app.get('/shared-report.html', (_req, res) => sendPublicFile(res, 'shared-report.html'));
   // Every authenticated or local-first application page is handled by the
   // lightweight History API router. This also makes refreshes on a deep link

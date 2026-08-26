@@ -9,9 +9,9 @@ export function initializeSettings(){
   <label><span>Langue<small>Langue de l’interface</small></span><select data-setting-language><option value="fr">Français</option><option value="en">English</option><option value="auto">Système / System</option></select></label>
   <button data-open-account><span>Compte et données</span><small>Profil, export et suppression</small></button>
   <button data-open-local-profile><span>Profil d’utilisation</span><small>Modifier le profil Professionnel ou Personnel</small></button>
-  <a href="privacy.html" target="_blank"><span>Politique de confidentialité</span><small>Données et droits RGPD</small></a>
-  <a href="terms.html" target="_blank"><span>Mentions légales et CGU</span><small>Conditions d’utilisation</small></a>
-  <a href="account-deletion.html" target="_blank"><span>Suppression de compte</span><small>Demande accessible hors application</small></a>
+  <a href="/privacy.html" target="_blank"><span>Politique de confidentialité</span><small>Données et droits RGPD</small></a>
+  <a href="/terms.html" target="_blank"><span>Mentions légales et CGU</span><small>Conditions d’utilisation</small></a>
+  <a href="/account-deletion.html" target="_blank"><span>Suppression de compte</span><small>Demande accessible hors application</small></a>
   <div class="settings-version"><span>Version</span><code>1.0.0 · API Android 36</code></div></div>`;document.body.append(sheet);
   const trigger=document.createElement('button');trigger.className='settings-trigger';trigger.type='button';trigger.setAttribute('aria-label','Ouvrir les paramètres');trigger.innerHTML='<span class="settings-trigger-icon" aria-hidden="true">⚙</span><span class="settings-trigger-label">Paramètres</span>';document.getElementById('wizardHeader')?.append(trigger);
   const open=()=>{sheet.hidden=false;requestAnimationFrame(()=>sheet.classList.add('is-open'))};const close=()=>{sheet.classList.remove('is-open');setTimeout(()=>sheet.hidden=true,220)};const openAppearance=()=>{if(window.cardiagBranding?.open)window.cardiagBranding.open();else document.querySelector('.design-trigger')?.click()};trigger.onclick=()=>{if(window.cardiagRouter?.navigate)window.cardiagRouter.navigate({kind:'settings'});else open()};sheet.querySelector('[data-settings-close]').onclick=close;

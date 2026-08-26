@@ -77,7 +77,7 @@ export function parseRoute(input) {
     // application URLs here in a safe query parameter, then this router
     // restores the canonical route without a full-page 404.
     const recoveredPath = String(url.searchParams.get('_r') || '');
-    if (/^\/(?:app|fiche)(?:\/|$)/.test(recoveredPath)) {
+    if (/^\/(?:app|fiche)(?:\/|$)/.test(recoveredPath) || /^\/exemple-rapport(?:[/?#]|$)/.test(recoveredPath)) {
       return Object.freeze({ ...parseRoute(new URL(recoveredPath, url.origin)), legacy: true });
     }
     const profile = profileSlug(url.searchParams.get('profil'));
