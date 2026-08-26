@@ -170,6 +170,10 @@ async function initializeApp() {
     // may still be loading. Register its account gateway now so an early tap
     // cannot dispatch an authentication event before a listener exists.
     initializeLazyAccountFeature();
+    // The profile shell must exist before the large vehicle catalogue is
+    // loaded. Otherwise a successful sign-in can wait silently for several
+    // seconds before the selected journey is allowed to continue.
+    await initializeProfileOnboarding({ deferProfile: landing.active });
     if (!window.dbLoader?.loadAppData || !window.buildData) {
       throw new Error('Le chargeur de donnees n’est pas disponible.');
     }
@@ -216,7 +220,6 @@ async function initializeApp() {
     initializeInspectionEnhancements();
     initializeOwnerTechnicalHelp();
     await initializeThemeManager();
-    await initializeProfileOnboarding({ deferProfile: landing.active });
     initializeMediaManager();
     initializeScoreVisuals();
     initializeRecordsGallery();

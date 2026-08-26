@@ -122,7 +122,10 @@ export function initializeLanding() {
   const requestAuthentication = (role = '', level = '') => {
     rememberAuthReturn(role, level);
     if (window.cardiagOpenAuthentication) {
-      window.cardiagOpenAuthentication({ view: 'login' }).catch(() => {});
+      window.cardiagOpenAuthentication({ view: 'login' }).catch((error) => {
+        console.error('Ouverture de la connexion impossible', error);
+        window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback', { detail: { type: 'error', message: 'La connexion ne peut pas s’ouvrir. Rechargez la page puis réessayez.' } }));
+      });
       return;
     }
     window.dispatchEvent(new CustomEvent('cardiag:open-auth', { detail: { view: 'login' } }));
@@ -191,7 +194,10 @@ export function initializeLanding() {
     rememberAuthReturn();
     const detail = { view: 'login', provider: button.dataset.landingAuth || 'email' };
     if (window.cardiagOpenAuthentication) {
-      window.cardiagOpenAuthentication(detail).catch(() => {});
+      window.cardiagOpenAuthentication(detail).catch((error) => {
+        console.error('Ouverture de la connexion impossible', error);
+        window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback', { detail: { type: 'error', message: 'La connexion ne peut pas s’ouvrir. Rechargez la page puis réessayez.' } }));
+      });
       return;
     }
     window.dispatchEvent(new CustomEvent('cardiag:open-auth', {
