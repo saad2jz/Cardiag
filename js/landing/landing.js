@@ -160,8 +160,20 @@ export function initializeLanding() {
     document.documentElement.scrollTop = 0;
   };
 
-  const rememberAuthReturn = (role = '', level = '') => {
-    try { sessionStorage.setItem(AUTH_RETURN_KEY, JSON.stringify({ role, level, requestedAt: Date.now() })); } catch { /* Non-essential navigation hint. */ }
+  const rememberAuthReturn = (role = '', level = '', options = {}) => {
+    // The account menu on the public landing has no inspection selected yet.
+    // Store an explicit destination so an OAuth page reload cannot strand a
+    // successfully authenticated user on the marketing page.
+    const path = options.path === '/app/nouvelle' ? options.path : '';
+    try {
+      sessionStorage.setItem(AUTH_RETURN_KEY, JSON.stringify({
+        role,
+        level,
+        path,
+        openProfile: Boolean(options.openProfile),
+        requestedAt: Date.now(),
+      }));
+    } catch { /* Non-essential navigation hint. */ }
   };
   const consumeAuthReturn = () => {
     try {
@@ -242,7 +254,9 @@ export function initializeLanding() {
   });
   root.querySelectorAll('[data-landing-auth]').forEach((button) => button.addEventListener('click', () => {
     closeAuthOptions();
-    rememberAuthReturn();
+    // A sign-in initiated from the public account menu always lands on the
+    // first application screen and immediately exposes the connected profile.
+    rememberAuthReturn('', '', { path: '/app/nouvelle', openProfile: true });
     const detail = { view: 'login', provider: button.dataset.landingAuth || 'email' };
     if (window.cardiagOpenAuthentication) {
       window.cardiagOpenAuthentication(detail).catch((error) => {
@@ -264,6 +278,9 @@ export function initializeLanding() {
     if (!pending) return;
     if (pending.path && /^\/app(?:\/|$)/.test(pending.path) && window.cardiagRouter?.navigate) {
       window.cardiagRouter.navigate(pending.path, { replace: true, source: 'authentication-return' });
+      if (pending.openProfile) {
+        window.setTimeout(() => window.cardiagAuthUi?.open?.('profile'), 0);
+      }
       return;
     }
     enter(pending.role || '', pending.level || '');

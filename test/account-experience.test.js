@@ -91,7 +91,7 @@ test('public landing opens account choices without entering the inspection appli
   assert.match(app, /The landing is immediately interactive/);
   assert.match(app, /The profile shell must exist before the large vehicle catalogue/);
   assert.match(app, /const landing = initializeLanding\(\);[\s\S]{0,300}initializeLazyAccountFeature\(\);/);
-  assert.match(app, /landing\.js\?v=20260826-3/);
+  assert.match(app, /landing\.js\?v=20260826-4/);
   assert.match(app, /hasPendingAuthenticationReturn/);
   assert.match(router, /rememberProtectedRoute/);
   assert.match(router, /consumeProtectedRoute/);
@@ -107,6 +107,10 @@ test('authentication resumes the requested app entry and reports a failed migrat
   assert.match(client, /cardiag_google_redirect_intent_v1/);
   assert.match(client, /rememberGoogleRedirectIntent\(\)/);
   assert.match(landing, /A successful sign-in must visibly enter the app/);
+  assert.match(landing, /path: '\/app\/nouvelle'/);
+  assert.match(landing, /openProfile: Boolean\(options\.openProfile\)/);
+  assert.match(landing, /cardiagAuthUi\?\.open\?\.\('profile'\)/);
+  assert.match(router, /pending\.openProfile/);
   assert.match(router, /cardiagRequireAuthentication/);
   assert.match(syncQueue, /Vos fiches restent sur cet appareil/);
 });

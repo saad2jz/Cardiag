@@ -144,6 +144,10 @@ export function initializeRouteController({ landing } = {}) {
     const pending = consumeProtectedRoute();
     if (pending) {
       navigate(pending, { replace: true, source: 'authentication-return' });
+      // The landing consumes this intent during a normal in-page sign-in.
+      // Keep this fallback for OAuth redirect reloads, where initialization
+      // order can make the route controller consume it first.
+      if (pending.openProfile) window.setTimeout(() => window.cardiagAuthUi?.open?.('profile'), 0);
       return;
     }
     if (router.current?.app) applyRoute(router.current);
