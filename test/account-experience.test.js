@@ -40,6 +40,8 @@ test('connected account view exposes identity details and comparison filters bla
 
 test('passwordless email authentication keeps account creation separate from profile sync', () => {
   assert.match(authUi, /data-auth-form="email-link"/);
+  assert.match(authUi, /data-existing-login/);
+  assert.match(authUi, /Se connecter par e-mail/);
   assert.match(authUi, /authClient\.sendMagicLink\(form\.email\.value\)/);
   assert.doesNotMatch(authUi, /name="passwordConfirmation"/);
   assert.match(client, /validateEmail\(normalizedEmail\)/);
@@ -52,7 +54,8 @@ test('passwordless email authentication keeps account creation separate from pro
 
 test('an authenticated session exposes only profile settings and sign out', () => {
   assert.match(authUi, /const name = authClient\.user \? 'profile'/);
-  assert.match(authUi, /signupTrigger\.hidden = Boolean\(user\)/);
+  assert.doesNotMatch(authUi, /const signupTrigger/);
+  assert.match(authUi, /Passwordless email creates an account on first use/);
   assert.match(authUi, /actions\.dataset\.authenticated/);
   assert.match(authUi, /data-sign-out/);
   assert.match(authStyles, /data-authenticated=true.*auth-view:not\(\[data-auth-view=profile\]\)/);
@@ -81,8 +84,11 @@ test('public landing opens account choices without entering the inspection appli
   assert.match(index, /data-landing-auth="email"/);
   assert.match(index, /data-landing-auth="existing"/);
   assert.match(landing, /cardiag:open-auth/);
+  assert.match(landing, /cardiagOpenAuthentication/);
   assert.match(landing, /provider: button\.dataset\.landingAuth/);
   assert.match(authUi, /provider === 'google'/);
+  assert.match(app, /The landing is immediately interactive/);
+  assert.match(app, /const landing = initializeLanding\(\);[\s\S]{0,300}initializeLazyAccountFeature\(\);/);
 });
 
 test('authentication resumes the requested app entry and reports a failed migration truthfully', () => {
@@ -110,6 +116,7 @@ test('every public scenario keeps its intended destination after authentication'
 
 test('all inspection, diagnosis and report entry actions use the account gate', () => {
   assert.match(app, /initializeAuthenticatedActionGate/);
+  assert.match(app, /window\.cardiagOpenAuthentication = openAuthentication/);
   assert.match(app, /data-chat-toggle/);
   assert.match(app, /data-assistant-new-vehicle/);
   assert.match(app, /#newFicheBtn/);

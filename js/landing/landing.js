@@ -121,6 +121,10 @@ export function initializeLanding() {
   };
   const requestAuthentication = (role = '', level = '') => {
     rememberAuthReturn(role, level);
+    if (window.cardiagOpenAuthentication) {
+      window.cardiagOpenAuthentication({ view: 'login' }).catch(() => {});
+      return;
+    }
     window.dispatchEvent(new CustomEvent('cardiag:open-auth', { detail: { view: 'login' } }));
   };
   const enter = (role = '', level = '') => {
@@ -185,8 +189,13 @@ export function initializeLanding() {
   root.querySelectorAll('[data-landing-auth]').forEach((button) => button.addEventListener('click', () => {
     closeAuthOptions();
     rememberAuthReturn();
+    const detail = { view: 'login', provider: button.dataset.landingAuth || 'email' };
+    if (window.cardiagOpenAuthentication) {
+      window.cardiagOpenAuthentication(detail).catch(() => {});
+      return;
+    }
     window.dispatchEvent(new CustomEvent('cardiag:open-auth', {
-      detail: { view: 'login', provider: button.dataset.landingAuth || 'email' },
+      detail,
     }));
   }));
   window.addEventListener('cardiag:authentication-complete', () => {

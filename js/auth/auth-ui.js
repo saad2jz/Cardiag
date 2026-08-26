@@ -21,9 +21,10 @@ function createAuthSurface() {
       <p class="auth-help">Recevez un lien sécurisé par email : aucun mot de passe à créer ni à retenir.</p>
       <form data-auth-form="email-link">
         <label>Email<input type="email" name="email" autocomplete="email" inputmode="email" required></label>
-        <button type="submit">Recevoir mon lien de connexion</button>
+        <button type="submit">Se connecter par e-mail</button>
       </form>
       <button type="button" class="google-auth-button" data-google-login><span aria-hidden="true">G</span> Continuer avec Google</button>
+      <button type="button" class="auth-existing-button" data-existing-login>Déjà inscrit ? Recevoir mon lien sécurisé</button>
       <p class="auth-help">Premier accès ? Le lien crée votre compte automatiquement.</p>
     </div>
     <div class="auth-view" data-auth-view="profile" hidden>
@@ -77,11 +78,10 @@ export async function initializeAuthUi() {
   trigger.className = 'account-trigger';
   trigger.type = 'button';
   trigger.textContent = 'Déjà inscrit';
-  const signupTrigger = document.createElement('button');
-  signupTrigger.className = 'account-signup-trigger';
-  signupTrigger.type = 'button';
-  signupTrigger.textContent = 'Créer un compte';
-  actions.append(trigger, signupTrigger);
+  // Passwordless email creates an account on first use. A second header CTA
+  // therefore adds no action and used to look like an empty duplicate account
+  // button once a session was restored.
+  actions.append(trigger);
   document.getElementById('wizardHeader')?.append(actions);
 
   let signupRole = 'buyer';
@@ -121,10 +121,8 @@ export async function initializeAuthUi() {
     const name = accountName();
     actions.dataset.authenticated = String(Boolean(user));
     panel.dataset.authenticated = String(Boolean(user));
-    signupTrigger.hidden = Boolean(user);
     trigger.textContent = user ? `${english ? 'Account' : 'Compte'}${name ? ` · ${name}` : ''}` : (english ? 'Already registered' : 'Déjà inscrit');
     trigger.title = user ? (english ? 'Open profile settings' : 'Ouvrir les réglages du profil') : trigger.textContent;
-    signupTrigger.textContent = english ? 'Create account' : 'Créer un compte';
   };
   const renderAccount = (user) => {
     if (!user) return;
@@ -185,7 +183,6 @@ export async function initializeAuthUi() {
   };
 
   trigger.addEventListener('click', () => open('login'));
-  signupTrigger.addEventListener('click', () => open('login'));
   window.addEventListener('cardiag:open-auth', (event) => open(event.detail?.view, event.detail?.provider));
   window.addEventListener('cardiag:language-change', updateQuickLabels);
   window.addEventListener('cardiag:data-change', () => refreshMigration());
@@ -209,6 +206,10 @@ export async function initializeAuthUi() {
       message(panel, 'Si cette adresse est valide, un lien de connexion vient d’être envoyé. Vérifiez aussi vos courriers indésirables.', 'success');
     } catch (error) { message(panel, error.message, 'error'); }
     finally { setBusy(submit, false); }
+  };
+  panel.querySelector('[data-existing-login]').onclick = () => {
+    message(panel, 'Saisissez votre adresse e-mail puis choisissez « Se connecter par e-mail ».');
+    panel.querySelector('[data-auth-form="email-link"] [name="email"]')?.focus();
   };
 
   const signInWithGoogle = async (button) => {

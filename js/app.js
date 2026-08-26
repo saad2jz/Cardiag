@@ -29,7 +29,7 @@ let accountFeaturePromise;
 async function loadAccountFeature(){
   if(!accountFeaturePromise){
     accountFeaturePromise=Promise.all([
-      import('./auth/auth-ui.js?v=20260826-4'),
+      import('./auth/auth-ui.js?v=20260826-5'),
       import('./native/sync-queue.js?v=20260825-1'),
     ]).then(async ([auth,sync])=>{
       await auth.initializeAuthUi();
@@ -46,6 +46,14 @@ async function requireAuthentication() {
   return false;
 }
 function initializeLazyAccountFeature(){
+  // One public entry point avoids relying on a custom-event timing race when
+  // a landing CTA is the first code path that loads the account module.
+  const openAuthentication = async ({ view = 'login', provider = '' } = {}) => {
+    const authUi = await loadAccountFeature();
+    authUi?.open?.(view, provider);
+    return authUi;
+  };
+  window.cardiagOpenAuthentication = openAuthentication;
   // The route controller uses this guard for every /app route, including a
   // deep link opened directly in a new browser tab.
   window.cardiagRequireAuthentication = requireAuthentication;
@@ -55,15 +63,14 @@ function initializeLazyAccountFeature(){
     const trigger=event.target.closest('[data-account-open], .account-trigger, .account-signup-trigger, [data-google-login], [data-profile-google-auth]');
     if(!trigger || window.cardiagAuthUi) return;
     event.preventDefault(); event.stopImmediatePropagation();
-    try { (await loadAccountFeature())?.open?.('login'); }
+    try { await openAuthentication({ view: 'login' }); }
     catch(error){ console.error('Compte indisponible', error); window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback',{detail:{type:'error',message:'Le compte est temporairement indisponible.'}})); }
   }, true);
   window.addEventListener('cardiag:open-auth',(event)=>{
     // Once the feature is loaded, auth-ui owns this event. Keeping this
     // bootstrap listener passive prevents two Google popups for one tap.
     if (window.cardiagAuthUi) return;
-    loadAccountFeature()
-      .then(api=>api?.open?.(event.detail?.view || 'login', event.detail?.provider || ''))
+    openAuthentication({ view: event.detail?.view || 'login', provider: event.detail?.provider || '' })
       .catch(console.error);
   });
 }
@@ -145,6 +152,10 @@ async function initializeApp() {
   try {
     initializeI18n();
     const landing = initializeLanding();
+    // The landing is immediately interactive, while the offline vehicle data
+    // may still be loading. Register its account gateway now so an early tap
+    // cannot dispatch an authentication event before a listener exists.
+    initializeLazyAccountFeature();
     if (!window.dbLoader?.loadAppData || !window.buildData) {
       throw new Error('Le chargeur de donnees n’est pas disponible.');
     }
@@ -198,7 +209,6 @@ async function initializeApp() {
     initializeHomeButton();
     initializeLazyReportFeature();
     initializeLazyChatFeature();
-    initializeLazyAccountFeature();
     initializeAuthenticatedActionGate();
     initializePermissions();
     initializeConnectivity();
