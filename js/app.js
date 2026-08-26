@@ -15,7 +15,7 @@ import { initializeSettings } from './settings/settings.js?v=20260825-2';
 import { initializeConsent } from './auth/consent.js?v=20260813-1';
 import { initializeScoreVisuals } from './score/score-visuals.js?v=20260813-1';
 import { initializeRecordsGallery } from './records/records-gallery.js?v=20260826-1';
-import { initializeLanding } from './landing/landing.js?v=20260826-1';
+import { initializeLanding } from './landing/landing.js?v=20260826-2';
 import { initializeInspectionEnhancements } from './ux/inspection-enhancements.js?v=20260825-2';
 import { initializeOwnerTechnicalHelp } from './ux/owner-technical-help.js?v=20260821-1';
 import { initializeHomeButton } from './navigation/home-button.js?v=20260825-2';
@@ -26,10 +26,24 @@ import { initializeModelSpecificAlerts } from './knowledge/model-specific-alerts
 let reportFeaturePromise;
 let chatFeaturePromise;
 let accountFeaturePromise;
+function hasPendingAuthenticationReturn() {
+  // OAuth may restore the document on a legacy entry URL (for example
+  // `/?niveau=complet`). In that case the landing is intentionally hidden,
+  // but Firebase must still start immediately to consume the redirect result.
+  try {
+    return [
+      'cardiag_auth_return_v1',
+      'cardiag_auth_completion_v1',
+      'cardiag_google_redirect_intent_v1',
+    ].some((key) => Boolean(sessionStorage.getItem(key)));
+  } catch {
+    return false;
+  }
+}
 async function loadAccountFeature(){
   if(!accountFeaturePromise){
     accountFeaturePromise=Promise.all([
-      import('./auth/auth-ui.js?v=20260826-5'),
+      import('./auth/auth-ui.js?v=20260826-6'),
       import('./native/sync-queue.js?v=20260825-1'),
     ]).then(async ([auth,sync])=>{
       await auth.initializeAuthUi();
@@ -220,7 +234,9 @@ async function initializeApp() {
     // Firebase stores the result of a Google redirect internally. Loading the
     // account feature on the public page lets Firebase consume it and resume
     // the requested application entry without a second click.
-    if (landing.active) loadAccountFeature().catch((error) => console.warn('Authentification en attente', error));
+    if (landing.active || hasPendingAuthenticationReturn()) {
+      loadAccountFeature().catch((error) => console.warn('Authentification en attente', error));
+    }
     initializePwa();
   } catch (error) {
     console.error('Erreur app.js:', error);

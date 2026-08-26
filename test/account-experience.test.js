@@ -89,6 +89,8 @@ test('public landing opens account choices without entering the inspection appli
   assert.match(authUi, /provider === 'google'/);
   assert.match(app, /The landing is immediately interactive/);
   assert.match(app, /const landing = initializeLanding\(\);[\s\S]{0,300}initializeLazyAccountFeature\(\);/);
+  assert.match(app, /landing\.js\?v=20260826-2/);
+  assert.match(app, /hasPendingAuthenticationReturn/);
 });
 
 test('authentication resumes the requested app entry and reports a failed migration truthfully', () => {
