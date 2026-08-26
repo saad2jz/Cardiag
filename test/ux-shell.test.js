@@ -30,7 +30,7 @@ test('the app shell keeps SEO, accessibility and cache safeguards', () => {
   assert.match(index, /"@type":"Organization"/);
   assert.match(index, /id="installAppBtn"[^>]*hidden/);
   assert.match(index, /sigCanvasAcheteur[^>]*aria-label=/);
-  assert.match(worker, /cardiag-v122/);
+  assert.match(worker, /cardiag-v123/);
   assert.match(index, /cardiag_design_preferences/);
   assert.match(index, /Apply the saved visual preference before the first paint/);
   assert.match(worker, /landing\/landing\.js\?v=20260826-4/);
@@ -88,6 +88,9 @@ test('saved reports expose working create, compare and recoverable delete action
   assert.match(vehiclePicker, /data-toggle-saved/);
   assert.match(recordsGallery, /data-records-compare/);
   assert.match(recordsGallery, /data-record-delete/);
+  assert.match(recordsGallery, /trigger\.dataset\.appRoute = 'dashboard'/);
+  assert.match(recordsGallery, /window\.cardiagRouter\?\.dashboard/);
+  assert.match(recordsGallery, /window\.cardiagRequireAuthentication/);
   assert.match(legacy, /deleteRecord: \(id\)=>deleteRecordById\(id\)/);
   assert.match(legacy, /showUndoSnackbar/);
 });

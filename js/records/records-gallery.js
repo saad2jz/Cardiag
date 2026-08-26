@@ -12,6 +12,11 @@ function createGallery() {
   const trigger = document.createElement('button');
   trigger.type = 'button';
   trigger.className = 'records-trigger';
+  // This is a first-class application destination, not merely a visual
+  // drawer toggle. Keeping the canonical route on the control makes the
+  // action inspectable and gives the handler below a reliable fallback.
+  trigger.dataset.appRoute = 'dashboard';
+  trigger.setAttribute('aria-label', 'Ouvrir mes fiches');
   trigger.textContent = 'Mes fiches';
   document.getElementById('wizardHeader')?.append(trigger);
   return { sheet, trigger };
@@ -70,9 +75,23 @@ export function initializeRecordsGallery() {
     }));
   };
   const open = ({ assistant = false } = {}) => { selectingForAssistant = assistant; render(); sheet.hidden = false; requestAnimationFrame(() => sheet.classList.add('is-open')); };
-  trigger.addEventListener('click', () => {
-    if(window.cardiagRouter?.dashboard) { window.cardiagRouter.dashboard(); return; }
-    open();
+  trigger.addEventListener('click', async () => {
+    try {
+      if (window.cardiagRouter?.dashboard) {
+        window.cardiagRouter.dashboard();
+        return;
+      }
+      // The application shell loads asynchronously. If a visitor taps this
+      // control during that small window, preserve the same account gate
+      // instead of silently doing nothing or exposing an unauthenticated view.
+      if (window.cardiagRequireAuthentication && !await window.cardiagRequireAuthentication()) return;
+      open();
+    } catch (error) {
+      console.error('Ouverture de Mes fiches impossible', error);
+      window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback', {
+        detail: { type: 'error', message: 'Mes fiches sont temporairement indisponibles. R\u00e9essayez dans quelques instants.' },
+      }));
+    }
   });
   sheet.querySelector('[data-records-close]').addEventListener('click', close);
   sheet.querySelector('[data-records-compare]').addEventListener('click',()=>{
