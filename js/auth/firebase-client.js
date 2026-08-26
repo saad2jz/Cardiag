@@ -8,6 +8,7 @@ const isNative = browserWindow.Capacitor?.isNativePlatform?.() === true;
 const API_BASE = !isNative && ['localhost','127.0.0.1'].includes(browserLocation.hostname) ? `${browserLocation.origin}/` : RENDER_API;
 const MAGIC_LINK_EMAIL_KEY = 'cardiag_magic_link_email_v1';
 const AUTH_COMPLETION_KEY = 'cardiag_auth_completion_v1';
+const GOOGLE_REDIRECT_INTENT_KEY = 'cardiag_google_redirect_intent_v1';
 const GOOGLE_REDIRECT_FALLBACK_CODES = new Set([
   'POPUP_BLOCKED',
   'WEB_STORAGE_UNSUPPORTED',
@@ -124,6 +125,16 @@ function forgetMagicLinkEmail() {
 function rememberAuthenticationCompletion(provider) {
   try { browserWindow.sessionStorage?.setItem(AUTH_COMPLETION_KEY, String(provider || 'email')); } catch { /* Non-essential navigation hint. */ }
 }
+function rememberGoogleRedirectIntent() {
+  try { browserWindow.sessionStorage?.setItem(GOOGLE_REDIRECT_INTENT_KEY, String(Date.now())); } catch { /* Firebase still returns the OAuth result when storage is unavailable. */ }
+}
+function consumeGoogleRedirectIntent() {
+  try {
+    const startedAt = Number(browserWindow.sessionStorage?.getItem(GOOGLE_REDIRECT_INTENT_KEY) || 0);
+    browserWindow.sessionStorage?.removeItem(GOOGLE_REDIRECT_INTENT_KEY);
+    return startedAt > 0 && Date.now() - startedAt < 30 * 60 * 1000;
+  } catch { return false; }
+}
 function magicLinkSettings() {
   // A single return URL prevents the Render preview hostname from splitting
   // email-link sessions and OAuth state from the public CarDiag domain.
@@ -239,8 +250,12 @@ export const authClient = {
       // explicitly also surfaces a useful Firebase error instead of silently losing it.
       try {
         const redirectResult = await sdk.getRedirectResult?.(sdk.auth);
-        if (redirectResult?.user) {
-          notify(redirectResult.user);
+        // Some mobile browsers restore the Firebase session before
+        // getRedirectResult resolves. Keep an explicit intent so that a
+        // successful Google return always resumes the requested application.
+        const returningFromGoogle = Boolean(redirectResult?.user) || (Boolean(currentUser) && consumeGoogleRedirectIntent());
+        if (returningFromGoogle) {
+          if (redirectResult?.user) notify(redirectResult.user);
           rememberAuthenticationCompletion('google');
         }
       } catch (error) {
@@ -362,6 +377,7 @@ export const authClient = {
           }
         }
         if (typeof sdk.signInWithRedirect === 'function') {
+          rememberGoogleRedirectIntent();
           await sdk.signInWithRedirect(sdk.auth, provider);
           return null;
         }

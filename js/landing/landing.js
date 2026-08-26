@@ -137,14 +137,19 @@ export function initializeLanding() {
       }, { once: true });
       return;
     }
-    persistEntryChoice(role, selectedLevel);
-    hide();
-    if (role) selectScenario(role);
     const profile = readJson(PROFILE_KEY, null);
     if (!profile) {
+      // A successful sign-in must visibly enter the app. Profile completion
+      // remains an overlay and does not leave the user stranded on the landing.
+      persistEntryChoice(role, selectedLevel);
+      hide();
+      if (role) selectScenario(role);
       window.cardiagLocalProfile?.open?.({ suggestedRole: role || 'buyer' });
       return;
     }
+    persistEntryChoice(role, selectedLevel);
+    hide();
+    if (role) selectScenario(role);
     window.cardiagWizard?.goToStep?.(role ? 2 : 1, 'forward');
   };
 

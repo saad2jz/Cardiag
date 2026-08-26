@@ -1,4 +1,4 @@
-import { authClient } from '../auth/firebase-client.js?v=20260825-3';
+import { authClient } from '../auth/firebase-client.js?v=20260826-4';
 
 const STORAGE_KEY = 'cardiag_user_profile_v1';
 const SETTINGS_KEY = 'cardiag_app_settings_v1';
@@ -275,6 +275,7 @@ export async function initializeProfileOnboarding(options = {}) {
       }
       feedback.textContent = translate('auth.google.connected', 'Compte Google connecté. Complétez les informations restantes puis enregistrez votre profil.');
       feedback.dataset.type = 'success';
+      window.dispatchEvent(new CustomEvent('cardiag:authentication-complete', { detail: { provider: 'google' } }));
     } catch (error) {
       feedback.textContent = error.message || translate('auth.google.error', 'La connexion Google est momentanément indisponible.');
       feedback.dataset.type = 'error';

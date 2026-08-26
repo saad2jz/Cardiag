@@ -90,8 +90,21 @@ test('authentication resumes the requested app entry and reports a failed migrat
   assert.match(landing, /cardiag:authentication-complete/);
   assert.match(authUi, /cardiag:authentication-complete/);
   assert.match(client, /cardiag_auth_completion_v1/);
+  assert.match(client, /cardiag_google_redirect_intent_v1/);
+  assert.match(client, /rememberGoogleRedirectIntent\(\)/);
+  assert.match(landing, /A successful sign-in must visibly enter the app/);
   assert.match(router, /cardiagRequireAuthentication/);
   assert.match(syncQueue, /Vos fiches restent sur cet appareil/);
+});
+
+test('every public scenario keeps its intended destination after authentication', () => {
+  for (const role of ['buyer', 'seller', 'owner', 'mechanic', 'rental']) {
+    assert.match(index, new RegExp(`data-landing-role="${role}"`));
+  }
+  assert.match(landing, /rememberAuthReturn\(role, level\)/);
+  assert.match(landing, /enter\(pending\.role \|\| '', pending\.level \|\| ''\)/);
+  assert.match(landing, /persistEntryChoice\(role, selectedLevel\)/);
+  assert.match(landing, /suggestedRole: role \|\| 'buyer'/);
 });
 
 test('all inspection, diagnosis and report entry actions use the account gate', () => {
@@ -106,6 +119,7 @@ test('profile onboarding exposes direct Google account connection', async () => 
   const onboarding = await readFile(new URL('../js/onboarding/profile-onboarding.js', import.meta.url), 'utf8');
   assert.match(onboarding, /data-profile-google-auth/);
   assert.match(onboarding, /authClient\.signInGoogle\(\)/);
+  assert.match(onboarding, /cardiag:authentication-complete/);
 });
 
 test('email verification can be refreshed without reconnecting', () => {
