@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cardiag-v115';
+const CACHE_NAME = 'cardiag-v117';
 const APP_SHELL = [
   './',
   './index.html',
@@ -118,10 +118,10 @@ const APP_SHELL = [
   './css/shared-report.css?v=20260813-1',
   './build-data.js?v=20260823-5',
   './js/db-loader.js?v=20260811-1',
-  './js/app.js?v=20260826-15',
+  './js/app.js?v=20260826-16',
   './js/navigation/home-button.js?v=20260825-2',
-  './js/navigation/router.js?v=20260826-4',
-  './js/navigation/route-controller.js?v=20260826-6',
+  './js/navigation/router.js?v=20260826-5',
+  './js/navigation/route-controller.js?v=20260826-7',
   './js/landing/landing.js?v=20260826-3',
   './js/wizard.js?v=20260826-1',
   './js/i18n/i18n.js?v=20260826-1',
@@ -200,8 +200,14 @@ self.addEventListener('fetch', (event) => {
     event.respondWith(
       fetch(event.request)
         .then((response) => {
-          const copy = response.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put(fallbackKey, copy));
+          // A direct /app/* request on GitHub Pages is served through
+          // 404.html before that document restores the route. Never cache
+          // this 404 response as index.html or the offline shell would later
+          // reopen the error page instead of the application.
+          if (response.ok) {
+            const copy = response.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(fallbackKey, copy));
+          }
           return response;
         })
         .catch(() => caches.match(fallbackKey))

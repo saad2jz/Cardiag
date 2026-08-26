@@ -19,7 +19,7 @@ import { initializeLanding } from './landing/landing.js?v=20260826-3';
 import { initializeInspectionEnhancements } from './ux/inspection-enhancements.js?v=20260825-2';
 import { initializeOwnerTechnicalHelp } from './ux/owner-technical-help.js?v=20260821-1';
 import { initializeHomeButton } from './navigation/home-button.js?v=20260825-2';
-import { initializeRouteController } from './navigation/route-controller.js?v=20260826-6';
+import { initializeRouteController } from './navigation/route-controller.js?v=20260826-7';
 import { initializeBrandPicker } from './wizard/brand-picker.js?v=20260823-6';
 import { initializeModelSpecificAlerts } from './knowledge/model-specific-alerts.js?v=20260823-1';
 

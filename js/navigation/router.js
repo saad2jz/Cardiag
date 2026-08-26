@@ -8,7 +8,6 @@
 export const PROFILES = Object.freeze(['acheteur', 'vendeur', 'proprietaire', 'garagiste', 'location']);
 export const LEVELS = Object.freeze(['rapide', 'complet']);
 export const SECTIONS = Object.freeze(['vehicule', 'moteur', 'chassis', 'carrosserie', 'habitacle', 'essai', 'diagnostic']);
-const APPLICATION_ROUTE_KINDS = new Set(['dashboard', 'compare', 'settings', 'new-inspection', 'inspection']);
 
 const PROFILE_ALIASES = Object.freeze({
   buyer: 'acheteur', acheteur: 'acheteur',
@@ -144,20 +143,12 @@ export function routePath(route) {
   }
 }
 
-function usesStaticQueryTransport() {
-  // GitHub Pages cannot rewrite a direct /app/* request to index.html. Keep
-  // the public browser URL at the root on the production static host so an
-  // OAuth reload, browser refresh or shared entry never becomes a 404.
-  const hostname = String(globalThis.location?.hostname || '').toLowerCase();
-  return hostname === 'cardiag.online' || hostname === 'www.cardiag.online' || hostname.endsWith('.github.io');
-}
-
 function browserPath(route) {
-  const path = routePath(route);
-  const isApplicationRoute = Boolean(route?.app) || APPLICATION_ROUTE_KINDS.has(route?.kind);
-  return isApplicationRoute && usesStaticQueryTransport()
-    ? `/?_r=${encodeURIComponent(path)}`
-    : path;
+  // Keep the address bar canonical for every route. On GitHub Pages, the
+  // 404 document briefly redirects a direct refresh back to the root and
+  // parseRoute() restores that same canonical path once the app shell loads.
+  // The `_r` value is therefore a recovery transport only, never a user URL.
+  return routePath(route);
 }
 
 function notify(route, source) {

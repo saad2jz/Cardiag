@@ -39,7 +39,7 @@ test('GitHub Pages recovery restores deep application routes from its 404 docume
   });
 });
 
-test('the production static host keeps protected browser URLs at the root', async () => {
+test('the production static host keeps protected browser URLs canonical', async () => {
   const originalLocation = globalThis.location;
   const originalHistory = globalThis.history;
   const pushes = [];
@@ -47,7 +47,7 @@ test('the production static host keeps protected browser URLs at the root', asyn
   Object.defineProperty(globalThis, 'history', { configurable: true, value: { pushState: (_state, _title, path) => pushes.push(path) } });
   const { navigate } = await import(`../js/navigation/router.js?transport=${Date.now()}`);
   navigate({ kind: 'new-inspection', profile: 'acheteur', level: 'complet', stage: 'identification' });
-  assert.equal(pushes[0], '/?_r=%2Fapp%2Fnouvelle%2Facheteur%2Fcomplet%2Fidentification');
+  assert.equal(pushes[0], '/app/nouvelle/acheteur/complet/identification');
   Object.defineProperty(globalThis, 'location', { configurable: true, value: originalLocation });
   Object.defineProperty(globalThis, 'history', { configurable: true, value: originalHistory });
 });
