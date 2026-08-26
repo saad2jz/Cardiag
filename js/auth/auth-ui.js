@@ -1,4 +1,4 @@
-import { authClient } from './firebase-client.js?v=20260826-5';
+import { authClient } from './firebase-client.js?v=20260826-6';
 
 const AUTH_COMPLETION_KEY = 'cardiag_auth_completion_v1';
 
@@ -209,6 +209,18 @@ export async function initializeAuthUi() {
     setBusy(submit, true);
     message(panel, 'Envoi du lien sécurisé…');
     try {
+      if (authClient.pendingMagicLink) {
+        const user = await authClient.completeMagicLink(form.email.value);
+        if (!user) throw new Error('Ce lien de connexion est invalide ou a expiré. Demandez un nouveau lien.');
+        if (hasPendingJourney()) closeForJourney();
+        else {
+          show('profile');
+          renderAccount(user);
+        }
+        message(panel, 'Connexion réussie.', 'success');
+        announceAuthentication('email');
+        return;
+      }
       await authClient.sendMagicLink(form.email.value);
       message(panel, 'Si cette adresse est valide, un lien de connexion vient d’être envoyé. Vérifiez aussi vos courriers indésirables.', 'success');
     } catch (error) { message(panel, error.message, 'error'); }

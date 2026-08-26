@@ -8,6 +8,7 @@ const isNative = browserWindow.Capacitor?.isNativePlatform?.() === true;
 const API_BASE = !isNative && ['localhost','127.0.0.1'].includes(browserLocation.hostname) ? `${browserLocation.origin}/` : RENDER_API;
 const MAGIC_LINK_EMAIL_KEY = 'cardiag_magic_link_email_v1';
 const AUTH_COMPLETION_KEY = 'cardiag_auth_completion_v1';
+const AUTH_RETURN_KEY = 'cardiag_auth_return_v1';
 const GOOGLE_REDIRECT_INTENT_KEY = 'cardiag_google_redirect_intent_v1';
 const GOOGLE_REDIRECT_FALLBACK_CODES = new Set([
   'POPUP_BLOCKED',
@@ -19,6 +20,7 @@ let config;
 let webSession = null;
 let webFirebasePromise = null;
 let currentUser = null;
+let pendingMagicLink = false;
 const listeners = new Set();
 
 export function normalizeAuthEmail(value) {
@@ -137,15 +139,41 @@ function consumeGoogleRedirectIntent() {
     return startedAt > 0 && Date.now() - startedAt < 30 * 60 * 1000;
   } catch { return false; }
 }
+function validReturnPath(value) {
+  const path = String(value || '').trim();
+  return /^\/app(?:\/|$)/.test(path) ? path : '';
+}
+function readAuthReturnPath() {
+  try {
+    const fromUrl = validReturnPath(new URL(browserLocation.href).searchParams.get('returnTo'));
+    if (fromUrl) return fromUrl;
+    const pending = JSON.parse(browserWindow.sessionStorage?.getItem(AUTH_RETURN_KEY) || 'null');
+    const fromSession = validReturnPath(pending?.path);
+    if (fromSession) return fromSession;
+  } catch { /* Use the safe default below. */ }
+  return '/app/nouvelle';
+}
+function restoreMagicLinkReturn() {
+  const path = readAuthReturnPath();
+  try {
+    const existing = JSON.parse(browserWindow.sessionStorage?.getItem(AUTH_RETURN_KEY) || '{}');
+    browserWindow.sessionStorage?.setItem(AUTH_RETURN_KEY, JSON.stringify({
+      ...existing, path, openProfile: Boolean(existing?.openProfile), requestedAt: Date.now(),
+    }));
+  } catch { /* Navigation is still possible from the default destination. */ }
+  return path;
+}
 function magicLinkSettings() {
-  // A single return URL prevents the Render preview hostname from splitting
-  // email-link sessions and OAuth state from the public CarDiag domain.
-  return { url: `${CANONICAL_WEB_ORIGIN}/`, handleCodeInApp: true };
+  // Preserve the requested application route across email clients while
+  // retaining Firebase's action parameters at the canonical root URL.
+  const url = new URL('/', CANONICAL_WEB_ORIGIN);
+  url.searchParams.set('returnTo', readAuthReturnPath());
+  return { url: url.toString(), handleCodeInApp: true };
 }
 function cleanMagicLinkUrl() {
   try {
     const url = new URL(browserLocation.href);
-    ['apiKey', 'mode', 'oobCode', 'continueUrl', 'langCode', 'tenantId'].forEach((key) => url.searchParams.delete(key));
+    ['apiKey', 'mode', 'oobCode', 'continueUrl', 'langCode', 'tenantId', 'returnTo'].forEach((key) => url.searchParams.delete(key));
     browserWindow.history?.replaceState?.({}, document.title, `${url.pathname}${url.search}${url.hash}`);
   } catch { /* The URL is harmless after the one-time code is consumed. */ }
 }
@@ -266,9 +294,13 @@ export const authClient = {
         }));
       }
       if (sdk?.isSignInWithEmailLink?.(sdk.auth, browserLocation.href)) {
+        restoreMagicLinkReturn();
         const email = storedMagicLinkEmail();
         if (email) await this.completeMagicLink(email);
-        else browserWindow.dispatchEvent?.(new CustomEvent('cardiag:magic-link-email-required'));
+        else {
+          pendingMagicLink = true;
+          browserWindow.dispatchEvent?.(new CustomEvent('cardiag:magic-link-email-required'));
+        }
       }
     }
     return currentUser;
@@ -276,6 +308,7 @@ export const authClient = {
   onChange(listener) { listeners.add(listener); listener(currentUser); return () => listeners.delete(listener); },
   get user() { return currentUser; },
   get configured() { return Boolean(config?.apiKey && config?.projectId); },
+  get pendingMagicLink() { return pendingMagicLink; },
   async sendMagicLink(email) {
     const normalizedEmail = normalizeAuthEmail(email);
     validateEmail(normalizedEmail);
@@ -299,8 +332,10 @@ export const authClient = {
     try {
       const sdk = await loadWebFirebase();
       if (!sdk.isSignInWithEmailLink(sdk.auth, browserLocation.href)) return null;
+      restoreMagicLinkReturn();
       const result = await sdk.signInWithEmailLink(sdk.auth, normalizedEmail, browserLocation.href);
       forgetMagicLinkEmail();
+      pendingMagicLink = false;
       cleanMagicLinkUrl();
       notify(result.user);
       rememberAuthenticationCompletion('email');

@@ -48,6 +48,11 @@ test('passwordless email authentication keeps account creation separate from pro
   assert.match(client, /validateEmail\(normalizedEmail\)/);
   assert.match(client, /sendSignInLinkToEmail/);
   assert.match(client, /signInWithEmailLink/);
+  assert.match(client, /url\.searchParams\.set\('returnTo', readAuthReturnPath\(\)\)/);
+  assert.match(client, /restoreMagicLinkReturn\(\)/);
+  assert.match(client, /get pendingMagicLink\(\)/);
+  assert.match(authUi, /authClient\.pendingMagicLink/);
+  assert.match(authUi, /authClient\.completeMagicLink\(form\.email\.value\)/);
   assert.match(authUi, /const loadProfile = async/);
   assert.match(authUi, /data-migrate-local/);
   assert.match(authUi, /migrateLocalRecords/);
