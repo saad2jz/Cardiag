@@ -55,7 +55,7 @@
 <link rel="stylesheet" href="css/styles.css?v=20260826-1">
 <link rel="stylesheet" href="css/wizard/premium.css?v=20260813-1">
 <link rel="stylesheet" href="css/theming/themes.css?v=20260820-3">
-<link rel="stylesheet" href="css/landing/landing.css?v=20260826-1">
+<link rel="stylesheet" href="css/landing/landing.css?v=20260826-2">
 <link rel="stylesheet" href="css/media/media.css?v=20260813-1">
 <link rel="stylesheet" href="css/auth/auth.css?v=20260821-1">
 <link rel="stylesheet" href="css/onboarding/profile-onboarding.css?v=20260824-2">
@@ -110,7 +110,9 @@
       </div>
       <div class="landing-visual" aria-label="Aperçu de l'expérience CarDiag" data-landing-aria-label="ariaExperience">
         <div class="landing-visual-frame">
-          <img src="assets/landing/cardiag-inspection.webp" width="1376" height="768" fetchpriority="high" decoding="async" alt="Véhicule dans un atelier à côté d'une tablette affichant un rapport d'inspection CarDiag" data-alt-fr="Véhicule dans un atelier à côté d'une tablette affichant un rapport d'inspection CarDiag">
+          <video autoplay muted loop playsinline preload="metadata" poster="assets/landing/hero-video-poster.webp" width="1362" height="745" aria-hidden="true">
+            <source src="assets/landing/hero-video.mp4" type="video/mp4">
+          </video>
         </div>
         <div class="landing-report-chip" aria-label="Aperçu du score du rapport" data-landing-aria-label="ariaScore">
           <div class="landing-report-head"><span data-landing-i18n="reportHeader">RAPPORT D'EXPERTISE</span><strong data-landing-i18n="decision">NÉGOCIATION</strong></div>
@@ -139,9 +141,9 @@
       <button type="button" data-landing-family="professional" aria-pressed="false"><span aria-hidden="true">◆</span><strong data-landing-i18n="professionalFamily">Professionnel</strong><small data-landing-i18n="professionalFamilyText">Atelier, mécanique et gestion de flotte</small></button>
     </div>
     <div class="landing-path-grid">
-      <button class="landing-path-card is-featured" type="button" data-landing-enter data-landing-role="buyer" data-profile-family="personal"><span class="landing-path-icon" aria-hidden="true"><img src="icons/nav-vehicle.svg" alt=""></span><h3 data-landing-i18n="buyer">Acheteur</h3><p data-landing-i18n="buyerText">Identifier les risques majeurs, estimer les frais et préparer une négociation factuelle.</p><strong data-landing-i18n="openPath">Choisir ce parcours</strong></button>
-      <button class="landing-path-card" type="button" data-landing-enter data-landing-role="seller" data-profile-family="personal"><span class="landing-path-icon" aria-hidden="true"><img src="icons/nav-report.svg" alt=""></span><h3 data-landing-i18n="seller">Vendeur</h3><p data-landing-i18n="sellerText">Constituer un dossier transparent à transmettre à un futur acheteur.</p><strong data-landing-i18n="openPath">Choisir ce parcours</strong></button>
-      <button class="landing-path-card landing-path-card-diagnostic" type="button" data-landing-enter data-landing-role="owner" data-profile-family="personal"><span class="landing-path-icon" aria-hidden="true"><img src="icons/nav-engine.svg" alt=""></span><h3 data-landing-i18n="ownerLandingTitle">J’ai un problème dans ma voiture</h3><p data-landing-i18n="ownerLandingText">J’ai besoin d’un diagnostic d’expert pour comprendre les symptômes et savoir quels contrôles effectuer.</p><strong data-landing-i18n="ownerLandingCta">Lancer un diagnostic expert</strong></button>
+      <button class="landing-path-card landing-path-card--illustrated is-featured" type="button" data-landing-enter data-landing-role="buyer" data-profile-family="personal"><img class="landing-path-media" src="assets/landing/path-buyer.webp" width="960" height="524" loading="lazy" decoding="async" alt="Acheteur inspectant la roue d’un véhicule avant achat"><span class="landing-path-icon" aria-hidden="true"><img src="icons/nav-vehicle.svg" alt=""></span><h3 data-landing-i18n="buyer">Acheteur</h3><p data-landing-i18n="buyerText">Identifier les risques majeurs, estimer les frais et préparer une négociation factuelle.</p><strong data-landing-i18n="openPath">Choisir ce parcours</strong></button>
+      <button class="landing-path-card landing-path-card--illustrated" type="button" data-landing-enter data-landing-role="seller" data-profile-family="personal"><img class="landing-path-media" src="assets/landing/path-seller.webp" width="960" height="524" loading="lazy" decoding="async" alt="Vendeur remettant les clés d’un véhicule à un acheteur"><span class="landing-path-icon" aria-hidden="true"><img src="icons/nav-report.svg" alt=""></span><h3 data-landing-i18n="seller">Vendeur</h3><p data-landing-i18n="sellerText">Constituer un dossier transparent à transmettre à un futur acheteur.</p><strong data-landing-i18n="openPath">Choisir ce parcours</strong></button>
+      <button class="landing-path-card landing-path-card--illustrated landing-path-card-diagnostic" type="button" data-landing-enter data-landing-role="owner" data-profile-family="personal"><img class="landing-path-media" src="assets/landing/path-diagnostic.webp" width="960" height="524" loading="lazy" decoding="async" alt="Diagnostic automobile réalisé dans un atelier avec un outil de contrôle"><span class="landing-path-icon" aria-hidden="true"><img src="icons/nav-engine.svg" alt=""></span><h3 data-landing-i18n="ownerLandingTitle">J’ai un problème dans ma voiture</h3><p data-landing-i18n="ownerLandingText">J’ai besoin d’un diagnostic d’expert pour comprendre les symptômes et savoir quels contrôles effectuer.</p><strong data-landing-i18n="ownerLandingCta">Lancer un diagnostic expert</strong></button>
       <button class="landing-path-card" type="button" data-landing-enter data-landing-role="mechanic" data-profile-family="professional" hidden><span class="landing-path-icon" aria-hidden="true"><img src="icons/nav-engine.svg" alt=""></span><h3 data-landing-i18n="mechanic">Garagiste</h3><p data-landing-i18n="mechanicText">Documenter la réception client, les mesures, les réparations et le contrôle final.</p><strong data-landing-i18n="openPath">Choisir ce parcours</strong></button>
       <button class="landing-path-card" type="button" data-landing-enter data-landing-role="rental" data-profile-family="professional" hidden><span class="landing-path-icon" aria-hidden="true"><img src="icons/nav-road.svg" alt=""></span><h3 data-landing-i18n="rental">Agence de location</h3><p data-landing-i18n="rentalText">Suivre la flotte, le kilométrage et l’état avant et après chaque location.</p><strong data-landing-i18n="openPath">Choisir ce parcours</strong></button>
     </div>
@@ -151,6 +153,7 @@
   <section class="landing-process" id="howItWorks" aria-labelledby="processTitle">
     <div class="landing-section landing-shell">
       <div class="landing-section-head"><h2 id="processTitle" data-landing-i18n="processTitle">Du véhicule à une décision défendable.</h2><p data-landing-i18n="processIntro">L'expérience vous guide sans remplacer un contrôle technique officiel ni l'avis d'un professionnel qualifié.</p></div>
+      <figure class="landing-process-illustration"><img src="assets/landing/process-illustration.webp" width="1280" height="698" loading="lazy" decoding="async" alt="Les trois étapes CarDiag : sélectionner le véhicule, documenter les contrôles et générer le rapport PDF"></figure>
       <div class="landing-steps">
         <article class="landing-step"><span class="landing-step-number">01</span><h3 data-landing-i18n="step1Title">Identifier</h3><p data-landing-i18n="step1Text">Sélectionnez le véhicule et ajoutez kilométrage, VIN et contexte utile.</p></article>
         <article class="landing-step"><span class="landing-step-number">02</span><h3 data-landing-i18n="step2Title">Inspecter</h3><p data-landing-i18n="step2Text">Complétez les sept sections et rattachez chaque photo au point exact.</p></article>
