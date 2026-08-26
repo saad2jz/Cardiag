@@ -72,6 +72,7 @@ test('Google authentication remains available alongside passwordless email', () 
   assert.match(authUi, /data-link-google/);
   assert.match(client, /googleAuthError/);
   assert.match(client, /Firebase: \$\{error\?\.code/);
+  assert.match(authUi, /open\('profile'\);/);
 });
 
 test('public landing opens account choices without entering the inspection application', () => {
@@ -113,6 +114,7 @@ test('all inspection, diagnosis and report entry actions use the account gate', 
   assert.match(app, /data-assistant-new-vehicle/);
   assert.match(app, /#newFicheBtn/);
   assert.match(deepLinks, /await window\.cardiagRequireAuthentication/);
+  assert.doesNotMatch(app, /trigger\.dataset\.accountOpen/);
 });
 
 test('profile onboarding exposes direct Google account connection', async () => {

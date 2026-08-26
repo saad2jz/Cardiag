@@ -357,6 +357,11 @@ export async function initializeAuthUi() {
   window.cardiagAuthUi = { open, refresh:() => authClient.user && loadProfile(authClient.user) };
   try {
     const provider = sessionStorage.getItem(AUTH_COMPLETION_KEY);
-    if (provider && authClient.user) announceAuthentication(provider);
+    if (provider && authClient.user) {
+      // Redirect OAuth returns reload the document. Reopen the authenticated
+      // account panel so the user lands directly on their account and goal.
+      open('profile');
+      announceAuthentication(provider);
+    }
   } catch { /* Browser storage is optional for authentication. */ }
 }

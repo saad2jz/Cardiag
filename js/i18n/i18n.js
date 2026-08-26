@@ -55,8 +55,8 @@ const EN = {
   'profile.rental.description': 'Manage fleet mileage and vehicle condition before and after each rental.',
   'profile.seller': 'Seller',
   'profile.seller.description': 'Create a transparent, complete report to share with a future buyer.',
-  'profile.owner': 'Owner',
-  'profile.owner.description': 'Track the vehicle, understand faults and perform simple checks safely.',
+  'profile.owner': 'I have a problem with my car',
+  'profile.owner.description': 'I need an expert diagnosis to understand the symptoms and know which checks to carry out.',
   'profile.active': 'Profile: {profile}',
   'context.heading': 'Describe your situation',
   'context.buyer': 'Add the listing details and seller statements to frame the pre-purchase audit.',
@@ -436,7 +436,7 @@ export function applyTranslations() {
     mechanic: ['profile.mechanic', 'Garagiste', 'profile.mechanic.description', 'Documenter l’état initial et la plainte client avant la prise en charge en atelier.'],
     rental: ['profile.rental', 'Agence de location', 'profile.rental.description', 'Gérer la flotte, le kilométrage et les états des lieux avant et après location.'],
     seller: ['profile.seller', 'Vendeur', 'profile.seller.description', 'Créer un rapport transparent et complet à transmettre à un futur acheteur.'],
-    owner: ['profile.owner', 'Propriétaire', 'profile.owner.description', 'Suivre le véhicule, comprendre ses problèmes et effectuer les contrôles simples en sécurité.'],
+    owner: ['profile.owner', 'J’ai un problème dans ma voiture', 'profile.owner.description', 'J’ai besoin d’un diagnostic d’expert pour comprendre les symptômes et savoir quels contrôles effectuer.'],
   };
   Object.entries(profiles).forEach(([profile, values]) => {
     const card = document.querySelector(`[name="usage_scenario"][value="${profile}"]`)?.closest('.usage-scenario-card');

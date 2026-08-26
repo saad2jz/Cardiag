@@ -73,6 +73,13 @@ export function parseRoute(input) {
   const segments = path.split('/').filter(Boolean).map((segment) => decodeURIComponent(segment));
 
   if (path === '/') {
+    // GitHub Pages has no server-side SPA rewrite. Its 404 fallback sends
+    // application URLs here in a safe query parameter, then this router
+    // restores the canonical route without a full-page 404.
+    const recoveredPath = String(url.searchParams.get('_r') || '');
+    if (/^\/(?:app|fiche)(?:\/|$)/.test(recoveredPath)) {
+      return Object.freeze({ ...parseRoute(new URL(recoveredPath, url.origin)), legacy: true });
+    }
     const profile = profileSlug(url.searchParams.get('profil'));
     const level = levelSlug(url.searchParams.get('niveau'));
     const fiche = String(url.searchParams.get('fiche') || '');

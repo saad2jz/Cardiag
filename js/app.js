@@ -19,7 +19,7 @@ import { initializeLanding } from './landing/landing.js?v=20260826-1';
 import { initializeInspectionEnhancements } from './ux/inspection-enhancements.js?v=20260825-2';
 import { initializeOwnerTechnicalHelp } from './ux/owner-technical-help.js?v=20260821-1';
 import { initializeHomeButton } from './navigation/home-button.js?v=20260825-2';
-import { initializeRouteController } from './navigation/route-controller.js?v=20260825-2';
+import { initializeRouteController } from './navigation/route-controller.js?v=20260826-3';
 import { initializeBrandPicker } from './wizard/brand-picker.js?v=20260823-6';
 import { initializeModelSpecificAlerts } from './knowledge/model-specific-alerts.js?v=20260823-1';
 
@@ -51,13 +51,6 @@ function initializeLazyAccountFeature(){
   window.cardiagRequireAuthentication = requireAuthentication;
   // A lightweight trigger keeps the account discoverable without downloading
   // Firebase/Auth for every anonymous, offline inspection.
-  const header=document.getElementById('wizardHeader');
-  if(header && !header.querySelector('[data-account-open]')){
-    const trigger=document.createElement('button');
-    trigger.type='button'; trigger.className='account-trigger'; trigger.dataset.accountOpen='';
-    trigger.textContent=window.cardiagI18n?.language==='en'?'Account':'Compte';
-    header.append(trigger);
-  }
   document.addEventListener('click', async (event)=>{
     const trigger=event.target.closest('[data-account-open], .account-trigger, .account-signup-trigger, [data-google-login], [data-profile-google-auth]');
     if(!trigger || window.cardiagAuthUi) return;

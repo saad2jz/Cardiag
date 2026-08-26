@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <title>Redirection CarDiag…</title>
+</head>
+<body>
+  <script>
+    // GitHub Pages serves this file for unknown paths. Restore internal SPA
+    // routes through the root document, which owns the History API router.
+    (function () {
+      var route = location.pathname + location.search + location.hash;
+      if (/^\/(?:app|fiche)(?:\/|$)/.test(location.pathname)) {
+        location.replace('/?_r=' + encodeURIComponent(route));
+      }
+    }());
+  </script>
+  <p>Chargement de CarDiag…</p>
+</body>
+</html>

@@ -1,4 +1,4 @@
-import { initializeRouter, navigate } from './router.js?v=20260825-2';
+import { initializeRouter, navigate } from './router.js?v=20260826-3';
 
 const INTERNAL_PROFILE = Object.freeze({
   acheteur: 'buyer', vendeur: 'seller', proprietaire: 'owner', garagiste: 'mechanic', location: 'rental',

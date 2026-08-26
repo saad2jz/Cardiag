@@ -31,3 +31,10 @@ test('legacy fiche links and app utilities preserve their intended boundaries', 
   assert.equal(parseRoute('/r/a-very-private-share-token').kind, 'shared-report');
   assert.equal(parseRoute('/app/inspection/%3Cbad%3E/rapport').kind, 'not-found');
 });
+
+test('GitHub Pages recovery restores deep application routes from its 404 document', () => {
+  const recovered = parseRoute('https://cardiag.online/?_r=%2Fapp%2Fnouvelle%2Fproprietaire%2Fcomplet%2Fdiagnostic');
+  assert.deepEqual(recovered, {
+    kind: 'new-inspection', app: true, profile: 'proprietaire', level: 'complet', stage: 'diagnostic', legacy: true,
+  });
+});
