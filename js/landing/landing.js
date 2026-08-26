@@ -4,6 +4,7 @@ const PROFILE_SLUGS = Object.freeze({
   buyer: 'acheteur', seller: 'vendeur', owner: 'proprietaire',
   mechanic: 'garagiste', rental: 'location',
 });
+const AUTH_RETURN_KEY = 'cardiag_auth_return_v1';
 
 const EN = {
   ariaHome: 'CarDiag home', ariaNav: 'Main navigation', ariaBrand: 'CarDiag, home', ariaLanguage: 'Language',
@@ -108,16 +109,34 @@ export function initializeLanding() {
     document.documentElement.scrollTop = 0;
   };
 
-  const enter = (role = '') => {
+  const rememberAuthReturn = (role = '', level = '') => {
+    try { sessionStorage.setItem(AUTH_RETURN_KEY, JSON.stringify({ role, level, requestedAt: Date.now() })); } catch { /* Non-essential navigation hint. */ }
+  };
+  const consumeAuthReturn = () => {
+    try {
+      const pending = JSON.parse(sessionStorage.getItem(AUTH_RETURN_KEY) || 'null');
+      sessionStorage.removeItem(AUTH_RETURN_KEY);
+      return pending && Date.now() - Number(pending.requestedAt || 0) < 30 * 60 * 1000 ? pending : null;
+    } catch { return null; }
+  };
+  const requestAuthentication = (role = '', level = '') => {
+    rememberAuthReturn(role, level);
+    window.dispatchEvent(new CustomEvent('cardiag:open-auth', { detail: { view: 'login' } }));
+  };
+  const enter = (role = '', level = '') => {
+    const selectedLevel = level || document.querySelector('[name="inspection_mode"]:checked')?.value || '';
+    if (!window.cardiagAuth?.user) {
+      requestAuthentication(role, selectedLevel);
+      return;
+    }
     if (!window.cardiagLocalProfile) {
       root.setAttribute('aria-busy', 'true');
       window.addEventListener('cardiag:profile-onboarding-ready', () => {
         root.removeAttribute('aria-busy');
-        enter(role);
+        enter(role, selectedLevel);
       }, { once: true });
       return;
     }
-    const selectedLevel = document.querySelector('[name="inspection_mode"]:checked')?.value || '';
     persistEntryChoice(role, selectedLevel);
     hide();
     if (role) selectScenario(role);
@@ -160,12 +179,16 @@ export function initializeLanding() {
   });
   root.querySelectorAll('[data-landing-auth]').forEach((button) => button.addEventListener('click', () => {
     closeAuthOptions();
-    // The account sheet is lazy-loaded by app.js. This never enters the
-    // inspection tunnel, so an anonymous visitor remains on the landing page.
+    rememberAuthReturn();
     window.dispatchEvent(new CustomEvent('cardiag:open-auth', {
       detail: { view: 'login', provider: button.dataset.landingAuth || 'email' },
     }));
   }));
+  window.addEventListener('cardiag:authentication-complete', () => {
+    const pending = consumeAuthReturn();
+    if (!pending || !active) return;
+    enter(pending.role || '', pending.level || '');
+  });
   document.addEventListener('click', (event) => {
     if (!event.target.closest('.landing-account-menu')) closeAuthOptions();
   });
@@ -184,6 +207,7 @@ export function initializeLanding() {
   window.cardiagLanding = {
     get active() { return active; },
     enter,
+    requestAuthentication,
     hide,
     show() { active = true; root.hidden = false; document.body.classList.add('landing-active'); },
   };

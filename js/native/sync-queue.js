@@ -23,7 +23,7 @@ export function applySyncResult(result={},bridge=window.cardiagDataBridge){
   return {synced:(result.synced||[]).length,conflicts:(result.conflicts||[]).length};
 }
 export async function initializeSyncQueue(){
-  let timer,draining=false,lastState='idle';
+  let timer,draining=false,lastState='idle',lastFailure='';
   const syncNotice=document.createElement('div');
   syncNotice.className='sync-indicator';syncNotice.hidden=true;syncNotice.setAttribute('role','status');syncNotice.setAttribute('aria-live','polite');
   document.body.append(syncNotice);
@@ -46,7 +46,7 @@ export async function initializeSyncQueue(){
       retry.onclick=()=>drain();syncNotice.append(' ',retry);
     }
   };
-  const publish=(state,detail={})=>{lastState=state;renderNotice(state,detail);window.dispatchEvent(new CustomEvent('cardiag:sync-status',{detail:{state,...detail}}));};
+  const publish=(state,detail={})=>{lastState=state;lastFailure=['error','reauth'].includes(state)?String(detail.reason||''):'';renderNotice(state,detail);window.dispatchEvent(new CustomEvent('cardiag:sync-status',{detail:{state,...detail}}));};
   async function enqueue({autoDrain=true}={}){if(!window.cardiagAuth?.user)return 0;const records=syncRecords();if(!records.length){await remove('history');return 0;}await put({id:'history',type:'history',records,createdAt:Date.now()});if(autoDrain&&window.cardiagConnectivity?.online)drain();return records.length;}
   async function drain(){
     if(draining)return;
@@ -68,6 +68,8 @@ export async function initializeSyncQueue(){
     if(!window.cardiagConnectivity?.online){publish('pending');return {count,state:'pending'};}
     publish('migrating',{count});
     await drain();
+    if(lastState==='reauth') throw new Error('Votre session a expiré. Reconnectez-vous avant de synchroniser vos fiches.');
+    if(lastState==='error') throw new Error(lastFailure || 'Le service de synchronisation est temporairement indisponible. Vos fiches restent sur cet appareil.');
     return {count,state:lastState};
   }
   window.addEventListener('cardiag:data-change',()=>{clearTimeout(timer);timer=setTimeout(enqueue,1600)});

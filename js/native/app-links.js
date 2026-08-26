@@ -1,5 +1,11 @@
-function openUrl(raw){
-  try{const url=new URL(raw);const webMatch=url.pathname.match(/^\/(?:fiche|app\/inspection)\/([a-zA-Z0-9_-]+)/);const nativeId=url.protocol==='cardiag:'&&url.hostname==='fiche'?url.pathname.slice(1):'';const id=webMatch?.[1]||nativeId;if(id&&window.cardiagRouter?.inspection){window.cardiagRouter.inspection(id,'rapport');return true}if(id)window.cardiagDataBridge?.openRecord?.(id);if(id||url.protocol==='cardiag:'){window.cardiagWizard?.goToStep?.(4);return true}}catch{/* URL non reconnue. */}return false;
+async function openUrl(raw){
+  try{
+    // A native deep link can arrive before the History router is ready. Do not
+    // let that fallback bypass the account requirement.
+    if(window.cardiagRequireAuthentication && !await window.cardiagRequireAuthentication()) return false;
+    const url=new URL(raw);const webMatch=url.pathname.match(/^\/(?:fiche|app\/inspection)\/([a-zA-Z0-9_-]+)/);const nativeId=url.protocol==='cardiag:'&&url.hostname==='fiche'?url.pathname.slice(1):'';const id=webMatch?.[1]||nativeId;if(id&&window.cardiagRouter?.inspection){window.cardiagRouter.inspection(id,'rapport');return true}if(id)window.cardiagDataBridge?.openRecord?.(id);if(id||url.protocol==='cardiag:'){window.cardiagWizard?.goToStep?.(4);return true}
+  }catch{/* URL non reconnue. */}
+  return false;
 }
 export function initializeAppLinks(){
   window.Capacitor?.Plugins?.App?.addListener?.('appUrlOpen',({url})=>openUrl(url));

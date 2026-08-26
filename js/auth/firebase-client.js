@@ -7,6 +7,7 @@ const browserLocation = typeof location === 'undefined' ? { hostname: '', origin
 const isNative = browserWindow.Capacitor?.isNativePlatform?.() === true;
 const API_BASE = !isNative && ['localhost','127.0.0.1'].includes(browserLocation.hostname) ? `${browserLocation.origin}/` : RENDER_API;
 const MAGIC_LINK_EMAIL_KEY = 'cardiag_magic_link_email_v1';
+const AUTH_COMPLETION_KEY = 'cardiag_auth_completion_v1';
 const GOOGLE_REDIRECT_FALLBACK_CODES = new Set([
   'POPUP_BLOCKED',
   'WEB_STORAGE_UNSUPPORTED',
@@ -64,7 +65,7 @@ export function friendlyAuthError(error) {
     UNAUTHORIZED_DOMAIN: 'Ce domaine doit être autorisé dans Firebase Authentication.',
     AUTH_DOMAIN_CONFIG_REQUIRED: 'Le domaine Firebase Authentication doit être configuré pour la connexion Google.',
     INVALID_OAUTH_CLIENT_ID: 'Le client OAuth Google configuré pour CarDiag est invalide.',
-    ACCOUNT_EXISTS_WITH_DIFFERENT_CREDENTIAL: 'Un compte existe déjà avec cette adresse. Connectez-vous d’abord par lien email pour conserver le même compte.',
+    ACCOUNT_EXISTS_WITH_DIFFERENT_CREDENTIAL: 'Un compte existe déjà avec cette adresse. Connectez-vous d’abord par lien email, puis associez Google depuis votre profil pour conserver vos fiches.',
     CREDENTIAL_ALREADY_IN_USE: 'Ce compte Google est déjà associé à un autre compte CarDiag.',
     INVALID_API_KEY: 'La configuration Firebase de cette application est invalide.',
     API_KEY_NOT_VALID: 'La configuration Firebase de cette application est invalide.',
@@ -119,6 +120,9 @@ function rememberMagicLinkEmail(email) {
 }
 function forgetMagicLinkEmail() {
   try { browserWindow.localStorage?.removeItem(MAGIC_LINK_EMAIL_KEY); } catch { /* Nothing to clean up. */ }
+}
+function rememberAuthenticationCompletion(provider) {
+  try { browserWindow.sessionStorage?.setItem(AUTH_COMPLETION_KEY, String(provider || 'email')); } catch { /* Non-essential navigation hint. */ }
 }
 function magicLinkSettings() {
   // A single return URL prevents the Render preview hostname from splitting
@@ -235,7 +239,10 @@ export const authClient = {
       // explicitly also surfaces a useful Firebase error instead of silently losing it.
       try {
         const redirectResult = await sdk.getRedirectResult?.(sdk.auth);
-        if (redirectResult?.user) notify(redirectResult.user);
+        if (redirectResult?.user) {
+          notify(redirectResult.user);
+          rememberAuthenticationCompletion('google');
+        }
       } catch (error) {
         browserWindow.dispatchEvent?.(new CustomEvent('cardiag:google-auth-error', {
           detail: { message: friendlyAuthError(error), code: error?.code || 'AUTH_ERROR' },
@@ -279,6 +286,7 @@ export const authClient = {
       forgetMagicLinkEmail();
       cleanMagicLinkUrl();
       notify(result.user);
+      rememberAuthenticationCompletion('email');
       return currentUser;
     } catch (error) {
       throw Object.assign(new Error(friendlyAuthError(error)), { code: error?.code || 'AUTH_ERROR', cause: error });
@@ -364,6 +372,37 @@ export const authClient = {
           return currentUser;
         }
       }
+      return currentUser;
+    } catch (error) {
+      throw Object.assign(new Error(googleAuthError(error)), { code: error?.code || 'AUTH_ERROR', cause: error });
+    }
+  },
+  async linkGoogle() {
+    if (nativeAuth()) {
+      throw Object.assign(new Error('L’association de Google sera disponible dans l’application mobile après sa configuration native.'), { code: 'LINK_GOOGLE_UNSUPPORTED' });
+    }
+    try {
+      const sdk = await loadWebFirebase();
+      const user = sdk.auth.currentUser;
+      if (!user) throw Object.assign(new Error('Connectez-vous d’abord par lien email avant d’associer Google.'), { code: 'AUTH_REQUIRED' });
+      const provider = new sdk.GoogleAuthProvider();
+      provider.setCustomParameters?.({ prompt: 'select_account' });
+      if (!useGoogleRedirect()) {
+        try {
+          const result = await sdk.linkWithPopup(user, provider);
+          notify(result.user);
+          return currentUser;
+        } catch (popupError) {
+          const popupCode = String(popupError?.code || '').replace(/^auth\//i, '').replaceAll('-', '_').toUpperCase();
+          if (!GOOGLE_REDIRECT_FALLBACK_CODES.has(popupCode) || typeof sdk.linkWithRedirect !== 'function') throw popupError;
+        }
+      }
+      if (typeof sdk.linkWithRedirect === 'function') {
+        await sdk.linkWithRedirect(user, provider);
+        return null;
+      }
+      const result = await sdk.linkWithPopup(user, provider);
+      notify(result.user);
       return currentUser;
     } catch (error) {
       throw Object.assign(new Error(googleAuthError(error)), { code: error?.code || 'AUTH_ERROR', cause: error });

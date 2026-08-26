@@ -9,6 +9,10 @@ const authStyles = await readFile(new URL('../css/auth/auth.css', import.meta.ur
 const comparison = await readFile(new URL('../js/legacy-features.js', import.meta.url), 'utf8');
 const index = await readFile(new URL('../index.html', import.meta.url), 'utf8');
 const landing = await readFile(new URL('../js/landing/landing.js', import.meta.url), 'utf8');
+const router = await readFile(new URL('../js/navigation/route-controller.js', import.meta.url), 'utf8');
+const syncQueue = await readFile(new URL('../js/native/sync-queue.js', import.meta.url), 'utf8');
+const app = await readFile(new URL('../js/app.js', import.meta.url), 'utf8');
+const deepLinks = await readFile(new URL('../js/native/app-links.js', import.meta.url), 'utf8');
 
 test('web authentication uses official IndexedDB persistence instead of raw localStorage tokens', () => {
   assert.match(client, /indexedDBLocalPersistence/);
@@ -63,6 +67,9 @@ test('Google authentication remains available alongside passwordless email', () 
   assert.match(client, /signInWithPopup/);
   assert.match(client, /useGoogleRedirect/);
   assert.match(client, /ACCOUNT_EXISTS_WITH_DIFFERENT_CREDENTIAL/);
+  assert.match(client, /async linkGoogle\(\)/);
+  assert.match(client, /linkWithPopup/);
+  assert.match(authUi, /data-link-google/);
   assert.match(client, /googleAuthError/);
   assert.match(client, /Firebase: \$\{error\?\.code/);
 });
@@ -75,6 +82,24 @@ test('public landing opens account choices without entering the inspection appli
   assert.match(landing, /cardiag:open-auth/);
   assert.match(landing, /provider: button\.dataset\.landingAuth/);
   assert.match(authUi, /provider === 'google'/);
+});
+
+test('authentication resumes the requested app entry and reports a failed migration truthfully', () => {
+  assert.doesNotMatch(index, /landing-nav-cta/);
+  assert.match(landing, /cardiag_auth_return_v1/);
+  assert.match(landing, /cardiag:authentication-complete/);
+  assert.match(authUi, /cardiag:authentication-complete/);
+  assert.match(client, /cardiag_auth_completion_v1/);
+  assert.match(router, /cardiagRequireAuthentication/);
+  assert.match(syncQueue, /Vos fiches restent sur cet appareil/);
+});
+
+test('all inspection, diagnosis and report entry actions use the account gate', () => {
+  assert.match(app, /initializeAuthenticatedActionGate/);
+  assert.match(app, /data-chat-toggle/);
+  assert.match(app, /data-assistant-new-vehicle/);
+  assert.match(app, /#newFicheBtn/);
+  assert.match(deepLinks, /await window\.cardiagRequireAuthentication/);
 });
 
 test('profile onboarding exposes direct Google account connection', async () => {

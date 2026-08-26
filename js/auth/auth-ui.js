@@ -1,5 +1,7 @@
 import { authClient } from './firebase-client.js?v=20260825-3';
 
+const AUTH_COMPLETION_KEY = 'cardiag_auth_completion_v1';
+
 const ROLES = { buyer:'Acheteur', mechanic:'Garagiste / Mécanicien', rental:'Agence de location', seller:'Vendeur', owner:'Propriétaire' };
 
 function message(panel, text, type = '') {
@@ -37,7 +39,7 @@ function createAuthSurface() {
         <label>Avatar<input type="file" name="avatarFile" accept="image/*"></label>
         <button type="submit">Enregistrer les réglages du profil</button>
       </form>
-      <div class="account-actions"><button type="button" data-export-account>Exporter mes données</button><button type="button" data-sign-out>Se déconnecter</button><button type="button" class="danger" data-delete-account>Supprimer définitivement le compte</button></div>
+      <div class="account-actions"><button type="button" data-link-google>Associer Google à ce compte</button><button type="button" data-export-account>Exporter mes données</button><button type="button" data-sign-out>Se déconnecter</button><button type="button" class="danger" data-delete-account>Supprimer définitivement le compte</button></div>
     </div>
     <p class="auth-status" data-auth-status role="status" aria-live="polite"></p>`;
   document.body.append(panel);
@@ -86,6 +88,10 @@ export async function initializeAuthUi() {
   let profile = null;
   let profileUid = '';
   let profileRequest = 0;
+  const announceAuthentication = (provider = '') => {
+    try { sessionStorage.removeItem(AUTH_COMPLETION_KEY); } catch { /* Nothing to clear. */ }
+    window.dispatchEvent(new CustomEvent('cardiag:authentication-complete', { detail: { provider } }));
+  };
 
   const pendingLocalRecords = () => (window.cardiagDataBridge?.exportRecords?.() || [])
     .filter((record) => !record?.syncConflict && (!Number.isSafeInteger(record.syncVersion) || record.syncVersion < 1)).length;
@@ -218,6 +224,7 @@ export async function initializeAuthUi() {
       show('profile');
       renderAccount(user);
       message(panel, 'Connexion Google réussie.', 'success');
+      announceAuthentication('google');
     } catch (error) { message(panel, error.message, 'error'); }
     finally { setBusy(button, false); }
   };
@@ -241,6 +248,21 @@ export async function initializeAuthUi() {
         : 'Vos fiches restent locales et seront synchronisées automatiquement dès le retour du réseau.', result.state === 'synced' ? 'success' : '');
     } catch (error) { message(panel, error.message, 'error'); }
     finally { setBusy(button, false); refreshMigration(); }
+  };
+  panel.querySelector('[data-link-google]').onclick = async (event) => {
+    const button = event.currentTarget;
+    setBusy(button, true);
+    message(panel, 'Association de Google…');
+    try {
+      const user = await authClient.linkGoogle();
+      if (!user) {
+        message(panel, 'Redirection sécurisée vers Google…', '');
+        return;
+      }
+      renderAccount(user);
+      message(panel, 'Google est associé à ce compte. Vous retrouverez les mêmes fiches avec ces deux connexions.', 'success');
+    } catch (error) { message(panel, error.message, 'error'); }
+    finally { setBusy(button, false); }
   };
 
   panel.querySelector('[data-resend-verification]').onclick = async (event) => {
@@ -333,4 +355,8 @@ export async function initializeAuthUi() {
   updateQuickLabels();
   window.cardiagAuth = authClient;
   window.cardiagAuthUi = { open, refresh:() => authClient.user && loadProfile(authClient.user) };
+  try {
+    const provider = sessionStorage.getItem(AUTH_COMPLETION_KEY);
+    if (provider && authClient.user) announceAuthentication(provider);
+  } catch { /* Browser storage is optional for authentication. */ }
 }

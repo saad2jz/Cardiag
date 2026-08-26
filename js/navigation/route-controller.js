@@ -57,6 +57,10 @@ export function initializeRouteController({ landing } = {}) {
         return;
       }
       if (!route.app) return;
+      if (window.cardiagRequireAuthentication && !await window.cardiagRequireAuthentication()) {
+        showLanding();
+        return;
+      }
       hideLanding();
 
       if (route.kind === 'dashboard') {
@@ -105,6 +109,10 @@ export function initializeRouteController({ landing } = {}) {
   }
 
   const router = initializeRouter({ onRouteChange: applyRoute });
+
+  window.addEventListener('cardiag:authentication-complete', () => {
+    if (router.current?.app) applyRoute(router.current);
+  });
 
   window.addEventListener('cardiag:wizard-step', (event) => {
     if (applying) return;

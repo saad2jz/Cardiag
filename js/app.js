@@ -9,7 +9,7 @@ import { initializeProfileOnboarding } from './onboarding/profile-onboarding.js?
 import { initializeMediaManager } from './media/media-manager.js?v=20260813-2';
 import { initializePermissions } from './native/permissions.js?v=20260813-1';
 import { initializeConnectivity } from './native/connectivity.js?v=20260813-1';
-import { initializeAppLinks } from './native/app-links.js?v=20260825-2';
+import { initializeAppLinks } from './native/app-links.js?v=20260826-1';
 import { initializePush } from './native/push.js?v=20260813-1';
 import { initializeSettings } from './settings/settings.js?v=20260825-2';
 import { initializeConsent } from './auth/consent.js?v=20260813-1';
@@ -29,7 +29,7 @@ let accountFeaturePromise;
 async function loadAccountFeature(){
   if(!accountFeaturePromise){
     accountFeaturePromise=Promise.all([
-      import('./auth/auth-ui.js?v=20260826-1'),
+      import('./auth/auth-ui.js?v=20260826-3'),
       import('./native/sync-queue.js?v=20260825-1'),
     ]).then(async ([auth,sync])=>{
       await auth.initializeAuthUi();
@@ -39,7 +39,16 @@ async function loadAccountFeature(){
   }
   return accountFeaturePromise;
 }
+async function requireAuthentication() {
+  const authUi = await loadAccountFeature();
+  if (window.cardiagAuth?.user) return true;
+  authUi?.open?.('login');
+  return false;
+}
 function initializeLazyAccountFeature(){
+  // The route controller uses this guard for every /app route, including a
+  // deep link opened directly in a new browser tab.
+  window.cardiagRequireAuthentication = requireAuthentication;
   // A lightweight trigger keeps the account discoverable without downloading
   // Firebase/Auth for every anonymous, offline inspection.
   const header=document.getElementById('wizardHeader');
@@ -91,12 +100,42 @@ function initializeLazyReportFeature(){
     catch(error){console.error('Rapport premium indisponible',error);window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback',{detail:{type:'error',message:'Le rapport est temporairement indisponible.'}}));}
   },{capture:true,once:true});
 }
+function initializeAuthenticatedActionGate(){
+  // Some historic controls mutate the local report directly instead of using
+  // the router. Keep them behind the exact same gate as /app/* routes.
+  const protectedActions = '#newFicheBtn, #compareBtn, #generateBtn, #shortPrintBtn, #shareReportBtn, [data-records-new], [data-add-vehicle], [data-assistant-new-vehicle], [data-run-vehicle-comparison]';
+  document.addEventListener('click', async (event) => {
+    const action = event.target.closest(protectedActions);
+    if (!action) return;
+    if (action.dataset.authGatePassed === 'true') {
+      delete action.dataset.authGatePassed;
+      return;
+    }
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    try {
+      if (!await requireAuthentication()) return;
+      action.dataset.authGatePassed = 'true';
+      action.click();
+    } catch (error) {
+      console.error('Authentification requise', error);
+    }
+  }, true);
+}
 function initializeLazyChatFeature(){
   document.addEventListener('click',async(event)=>{
     const toggle=event.target.closest('[data-chat-toggle]');
-    if(!toggle||window.cardiagChat) return;
+    if(!toggle) return;
+    if(toggle.dataset.authGatePassed==='true'){
+      delete toggle.dataset.authGatePassed;
+      return;
+    }
     event.preventDefault();event.stopImmediatePropagation();
-    try{(await loadChatFeature())?.open?.();}catch(error){console.error('Assistant indisponible',error);}
+    try{
+      if(!await requireAuthentication()) return;
+      toggle.dataset.authGatePassed='true';
+      toggle.click();
+    }catch(error){console.error('Assistant indisponible',error);}
   },true);
   window.addEventListener('cardiag:scenario-change',()=>{
     if(document.querySelector('[name="usage_scenario"]:checked')?.value==='owner') loadChatFeature().catch(console.error);
@@ -167,6 +206,7 @@ async function initializeApp() {
     initializeLazyReportFeature();
     initializeLazyChatFeature();
     initializeLazyAccountFeature();
+    initializeAuthenticatedActionGate();
     initializePermissions();
     initializeConnectivity();
     initializeAppLinks();
@@ -174,6 +214,10 @@ async function initializeApp() {
     initializeSettings();
     await initializeConsent();
     initializeRouteController({ landing });
+    // Firebase stores the result of a Google redirect internally. Loading the
+    // account feature on the public page lets Firebase consume it and resume
+    // the requested application entry without a second click.
+    if (landing.active) loadAccountFeature().catch((error) => console.warn('Authentification en attente', error));
     initializePwa();
   } catch (error) {
     console.error('Erreur app.js:', error);
