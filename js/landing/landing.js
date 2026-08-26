@@ -199,8 +199,16 @@ export function initializeLanding() {
     }));
   }));
   window.addEventListener('cardiag:authentication-complete', () => {
+    // An application route owns its own resume target. Do not consume it from
+    // the landing listener when the landing is only temporarily visible behind
+    // the sign-in panel.
+    if (!active) return;
     const pending = consumeAuthReturn();
-    if (!pending || !active) return;
+    if (!pending) return;
+    if (pending.path && /^\/app(?:\/|$)/.test(pending.path) && window.cardiagRouter?.navigate) {
+      window.cardiagRouter.navigate(pending.path, { replace: true, source: 'authentication-return' });
+      return;
+    }
     enter(pending.role || '', pending.level || '');
   });
   document.addEventListener('click', (event) => {

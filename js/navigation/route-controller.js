@@ -1,10 +1,30 @@
-import { initializeRouter, navigate } from './router.js?v=20260826-3';
+import { initializeRouter, navigate, parseRoute, routePath } from './router.js?v=20260826-3';
 
 const INTERNAL_PROFILE = Object.freeze({
   acheteur: 'buyer', vendeur: 'seller', proprietaire: 'owner', garagiste: 'mechanic', location: 'rental',
 });
 const URL_PROFILE = Object.freeze(Object.fromEntries(Object.entries(INTERNAL_PROFILE).map(([url, internal]) => [internal, url])));
 const SECTION_TO_STEP = Object.freeze({ vehicule: 'info', moteur: 'moteur', chassis: 'chassis', carrosserie: 'carrosserie', habitacle: 'habitacle', essai: 'essai', diagnostic: 'diagnostic' });
+const AUTH_RETURN_KEY = 'cardiag_auth_return_v1';
+
+function rememberProtectedRoute(route) {
+  const path = routePath(route);
+  if (!/^\/app(?:\/|$)/.test(path)) return;
+  try {
+    const previous = JSON.parse(sessionStorage.getItem(AUTH_RETURN_KEY) || '{}');
+    sessionStorage.setItem(AUTH_RETURN_KEY, JSON.stringify({ ...previous, path, requestedAt: Date.now() }));
+  } catch { /* The current in-memory route remains a safe fallback. */ }
+}
+
+function consumeProtectedRoute() {
+  try {
+    const pending = JSON.parse(sessionStorage.getItem(AUTH_RETURN_KEY) || 'null');
+    sessionStorage.removeItem(AUTH_RETURN_KEY);
+    if (!pending?.path || Date.now() - Number(pending.requestedAt || 0) > 30 * 60 * 1000) return null;
+    const route = parseRoute(pending.path);
+    return route.app ? route : null;
+  } catch { return null; }
+}
 
 function selectedProfile() {
   return document.querySelector('[name="usage_scenario"]:checked')?.value || 'buyer';
@@ -57,9 +77,19 @@ export function initializeRouteController({ landing } = {}) {
         return;
       }
       if (!route.app) return;
-      if (window.cardiagRequireAuthentication && !await window.cardiagRequireAuthentication()) {
-        showLanding();
-        return;
+      if (window.cardiagRequireAuthentication) {
+        // Persist the canonical route *before* opening the login panel. A
+        // Google popup or redirect can complete before the async guard returns.
+        // Keeping the route first makes every auth method resume the exact
+        // action the user originally chose.
+        rememberProtectedRoute(route);
+        if (!await window.cardiagRequireAuthentication()) {
+          showLanding();
+          return;
+        }
+        // An existing Firebase session did not need a resume token; discard
+        // it so it cannot interfere with a future sign-in.
+        consumeProtectedRoute();
       }
       hideLanding();
 
@@ -111,6 +141,11 @@ export function initializeRouteController({ landing } = {}) {
   const router = initializeRouter({ onRouteChange: applyRoute });
 
   window.addEventListener('cardiag:authentication-complete', () => {
+    const pending = consumeProtectedRoute();
+    if (pending) {
+      navigate(pending, { replace: true, source: 'authentication-return' });
+      return;
+    }
     if (router.current?.app) applyRoute(router.current);
   });
 

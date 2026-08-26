@@ -26,6 +26,25 @@
 <meta name="twitter:image" content="https://cardiag.online/assets/landing/cardiag-inspection.webp">
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#0B0A09">
+<script>
+// Apply the saved visual preference before the first paint. Google OAuth can
+// reload this document, so waiting for the asynchronous app bootstrap caused
+// a visible flash from the default carbon theme to the user's chosen theme.
+(function () {
+  try {
+    var saved = JSON.parse(localStorage.getItem('cardiag_design_preferences') || '{}');
+    var theme = ['carbon', 'workshop', 'premium'].indexOf(saved.theme) >= 0 ? saved.theme : 'carbon';
+    var chrome = { carbon: '#08090a', workshop: '#edf2f4', premium: '#121211' }[theme];
+    document.documentElement.dataset.theme = theme;
+    document.documentElement.style.colorScheme = theme === 'carbon' ? 'dark' : 'light';
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute('content', chrome);
+  } catch (_) {
+    // Storage can be unavailable in strict/private browsing; the CSS default
+    // remains the carbon theme without interrupting authentication.
+  }
+}());
+</script>
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -781,6 +800,6 @@
 
 <script src="build-data.js?v=20260823-5"></script>
 <script src="js/db-loader.js?v=20260811-1"></script>
-<script type="module" src="js/app.js?v=20260826-10"></script>
+  <script type="module" src="js/app.js?v=20260826-13"></script>
 </body>
 </html>

@@ -15,11 +15,11 @@ import { initializeSettings } from './settings/settings.js?v=20260825-2';
 import { initializeConsent } from './auth/consent.js?v=20260813-1';
 import { initializeScoreVisuals } from './score/score-visuals.js?v=20260813-1';
 import { initializeRecordsGallery } from './records/records-gallery.js?v=20260826-1';
-import { initializeLanding } from './landing/landing.js?v=20260826-2';
+import { initializeLanding } from './landing/landing.js?v=20260826-3';
 import { initializeInspectionEnhancements } from './ux/inspection-enhancements.js?v=20260825-2';
 import { initializeOwnerTechnicalHelp } from './ux/owner-technical-help.js?v=20260821-1';
 import { initializeHomeButton } from './navigation/home-button.js?v=20260825-2';
-import { initializeRouteController } from './navigation/route-controller.js?v=20260826-3';
+import { initializeRouteController } from './navigation/route-controller.js?v=20260826-5';
 import { initializeBrandPicker } from './wizard/brand-picker.js?v=20260823-6';
 import { initializeModelSpecificAlerts } from './knowledge/model-specific-alerts.js?v=20260823-1';
 
@@ -43,7 +43,7 @@ function hasPendingAuthenticationReturn() {
 async function loadAccountFeature(){
   if(!accountFeaturePromise){
     accountFeaturePromise=Promise.all([
-      import('./auth/auth-ui.js?v=20260826-6'),
+      import('./auth/auth-ui.js?v=20260826-7'),
       import('./native/sync-queue.js?v=20260825-1'),
     ]).then(async ([auth,sync])=>{
       await auth.initializeAuthUi();

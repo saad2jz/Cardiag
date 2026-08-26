@@ -88,6 +88,13 @@ export async function initializeAuthUi() {
   let profile = null;
   let profileUid = '';
   let profileRequest = 0;
+  const hasPendingJourney = () => {
+    try { return Boolean(sessionStorage.getItem('cardiag_auth_return_v1')); } catch { return false; }
+  };
+  const closeForJourney = () => {
+    panel.classList.remove('is-open');
+    window.setTimeout(() => { panel.hidden = true; }, 220);
+  };
   const announceAuthentication = (provider = '') => {
     try { sessionStorage.removeItem(AUTH_COMPLETION_KEY); } catch { /* Nothing to clear. */ }
     window.dispatchEvent(new CustomEvent('cardiag:authentication-complete', { detail: { provider } }));
@@ -222,8 +229,11 @@ export async function initializeAuthUi() {
         message(panel, 'Redirection sécurisée vers Google…', '');
         return;
       }
-      show('profile');
-      renderAccount(user);
+      if (hasPendingJourney()) closeForJourney();
+      else {
+        show('profile');
+        renderAccount(user);
+      }
       message(panel, 'Connexion Google réussie.', 'success');
       announceAuthentication('google');
     } catch (error) { message(panel, error.message, 'error'); }
@@ -361,7 +371,8 @@ export async function initializeAuthUi() {
     if (provider && authClient.user) {
       // Redirect OAuth returns reload the document. Reopen the authenticated
       // account panel so the user lands directly on their account and goal.
-      open('profile');
+      if (hasPendingJourney()) closeForJourney();
+      else open('profile');
       announceAuthentication(provider);
     }
   } catch { /* Browser storage is optional for authentication. */ }
