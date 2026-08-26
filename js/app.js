@@ -1,7 +1,7 @@
 import { initializeLegacyFeatures } from './legacy-features.js?v=20260824-2';
 import { initializePwa } from './pwa.js?v=20260823-3';
-import { initializeWizard } from './wizard.js?v=20260825-2';
-import { initializeI18n } from './i18n/i18n.js?v=20260823-3';
+import { initializeWizard } from './wizard.js?v=20260826-1';
+import { initializeI18n } from './i18n/i18n.js?v=20260826-1';
 import { initializeWizardInteractions } from './wizard/interactions.js?v=20260813-1';
 import { initializeVehiclePicker } from './wizard/vehicle-picker.js?v=20260825-2';
 import { initializeThemeManager } from './theming/theme-manager.js?v=20260820-3';
@@ -14,8 +14,8 @@ import { initializePush } from './native/push.js?v=20260813-1';
 import { initializeSettings } from './settings/settings.js?v=20260825-2';
 import { initializeConsent } from './auth/consent.js?v=20260813-1';
 import { initializeScoreVisuals } from './score/score-visuals.js?v=20260813-1';
-import { initializeRecordsGallery } from './records/records-gallery.js?v=20260825-2';
-import { initializeLanding } from './landing/landing.js?v=20260825-2';
+import { initializeRecordsGallery } from './records/records-gallery.js?v=20260826-1';
+import { initializeLanding } from './landing/landing.js?v=20260826-1';
 import { initializeInspectionEnhancements } from './ux/inspection-enhancements.js?v=20260825-2';
 import { initializeOwnerTechnicalHelp } from './ux/owner-technical-help.js?v=20260821-1';
 import { initializeHomeButton } from './navigation/home-button.js?v=20260825-2';
@@ -29,7 +29,7 @@ let accountFeaturePromise;
 async function loadAccountFeature(){
   if(!accountFeaturePromise){
     accountFeaturePromise=Promise.all([
-      import('./auth/auth-ui.js?v=20260825-3'),
+      import('./auth/auth-ui.js?v=20260826-1'),
       import('./native/sync-queue.js?v=20260825-1'),
     ]).then(async ([auth,sync])=>{
       await auth.initializeAuthUi();
@@ -56,7 +56,14 @@ function initializeLazyAccountFeature(){
     try { (await loadAccountFeature())?.open?.('login'); }
     catch(error){ console.error('Compte indisponible', error); window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback',{detail:{type:'error',message:'Le compte est temporairement indisponible.'}})); }
   }, true);
-  window.addEventListener('cardiag:open-auth',()=>loadAccountFeature().then(api=>api?.open?.('login')).catch(console.error));
+  window.addEventListener('cardiag:open-auth',(event)=>{
+    // Once the feature is loaded, auth-ui owns this event. Keeping this
+    // bootstrap listener passive prevents two Google popups for one tap.
+    if (window.cardiagAuthUi) return;
+    loadAccountFeature()
+      .then(api=>api?.open?.(event.detail?.view || 'login', event.detail?.provider || ''))
+      .catch(console.error);
+  });
 }
 async function loadChatFeature(){
   if(!chatFeaturePromise){chatFeaturePromise=import('./chat-experience.js?v=20260825-1').then(({initializeChatExperience})=>{initializeChatExperience();return window.cardiagChat;});}

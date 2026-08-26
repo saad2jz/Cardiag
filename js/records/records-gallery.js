@@ -19,9 +19,10 @@ function createGallery() {
 
 export function initializeRecordsGallery() {
   const { sheet, trigger } = createGallery();
+  let selectingForAssistant = false;
   const refreshTrigger=()=>{trigger.textContent=translate('records.title','Mes fiches')};refreshTrigger();
   const grid = sheet.querySelector('[data-records-grid]');
-  const close = () => { sheet.classList.remove('is-open'); setTimeout(() => { sheet.hidden = true; }, 220); };
+  const close = () => { selectingForAssistant = false; sheet.classList.remove('is-open'); setTimeout(() => { sheet.hidden = true; }, 220); };
   const render = () => {
     const records = window.cardiagDataBridge?.listReportModels?.() || [];
     sheet.querySelector('h2').textContent=translate('records.title','Mes fiches');
@@ -42,6 +43,11 @@ export function initializeRecordsGallery() {
       const open=async()=>{
         const opened=await window.cardiagDataBridge?.openRecord?.(record.id);
         if(!opened)return;
+        if(selectingForAssistant){
+          close();
+          window.dispatchEvent(new CustomEvent('cardiag:assistant-vehicle-selected',{detail:{id:record.id}}));
+          return;
+        }
         if(window.cardiagRouter?.inspection) window.cardiagRouter.inspection(record.id,'identification');
         else window.cardiagWizard?.goToStep?.(2);
         close();
@@ -63,7 +69,7 @@ export function initializeRecordsGallery() {
       return card;
     }));
   };
-  const open = () => { render(); sheet.hidden = false; requestAnimationFrame(() => sheet.classList.add('is-open')); };
+  const open = ({ assistant = false } = {}) => { selectingForAssistant = assistant; render(); sheet.hidden = false; requestAnimationFrame(() => sheet.classList.add('is-open')); };
   trigger.addEventListener('click', () => {
     if(window.cardiagRouter?.dashboard) { window.cardiagRouter.dashboard(); return; }
     open();

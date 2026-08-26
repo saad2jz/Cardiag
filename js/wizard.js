@@ -128,19 +128,24 @@ function buildWizardViews() {
   assistantGate.hidden = true;
   assistantGate.innerHTML = '<div><p class="panel-kicker">ASSISTANT FACULTATIF</p><h2>Vous avez des questions ?</h2><p>Votre fiche est prête. Ouvrez l’assistant uniquement si vous souhaitez comprendre ou approfondir un résultat.</p></div><button type="button" data-open-post-report-chat>Ouvrir l’assistant</button>';
 
-  views[3].append(checklist, assistantGate, chatPanel);
+  const assistantVehicleGate = document.createElement('section');
+  assistantVehicleGate.className = 'assistant-vehicle-gate';
+  assistantVehicleGate.hidden = true;
+  assistantVehicleGate.innerHTML = '<p class="panel-kicker">VÉHICULE NÉCESSAIRE</p><h2>Quel véhicule souhaitez-vous diagnostiquer ?</h2><p>L’assistant utilise la marque, le modèle, l’année et la motorisation pour cadrer son investigation. Aucun contrôle terrain n’est demandé maintenant.</p><div><button type="button" data-assistant-existing-vehicle>Choisir un véhicule existant</button><button type="button" data-assistant-new-vehicle>Identifier un nouveau véhicule</button></div>';
+
+  views[3].append(checklist, assistantGate, assistantVehicleGate, chatPanel);
   chatPanel.hidden = true;
 
   root.append(...views);
   main.replaceChildren(root);
-  return { root, views, workspaceIntro, checklist, assistantGate };
+  return { root, views, workspaceIntro, checklist, assistantGate, assistantVehicleGate };
 }
 
 export function initializeWizard() {
   const structure = buildWizardViews();
   if (!structure) return;
 
-  const { views, workspaceIntro, checklist, assistantGate } = structure;
+  const { views, workspaceIntro, checklist, assistantGate, assistantVehicleGate } = structure;
   const header = document.getElementById('wizardHeader');
   const professionalJourneyButton = document.getElementById('professionalJourneyBtn');
   const personalJourneyButton = document.getElementById('personalJourneyBtn');
@@ -159,6 +164,8 @@ export function initializeWizard() {
   const chatPanel = document.getElementById('chatPanel');
   let currentStep = 1;
   let assistantOpened = false;
+  let assistantMode = false;
+  let assistantOriginStep = 1;
   let profileConfirmed = false;
   let profileReturnStep = 0;
   let transitionTimer;
@@ -259,9 +266,31 @@ export function initializeWizard() {
     return Boolean(window.cardiagDataBridge?.getCurrentRecord?.()?.data?._report_generated_at);
   }
 
+  function assistantVehicleIdentified() {
+    const value = (selectId, manualId) => document.getElementById(manualId)?.value.trim()
+      || document.getElementById(selectId)?.value || '';
+    return Boolean(
+      value('marqueSelect', 'marqueManualInput')
+      && value('modeleSelect', 'modeleManualInput')
+      && document.getElementById('anneeSelect')?.value
+      && value('motorisationSelect', 'motorisationManualInput')
+    );
+  }
+
   function renderExpertiseLayout() {
     const ownerFirst = activeProfile() === 'owner';
     const generated = hasGeneratedReport();
+    if (assistantMode) {
+      const ready = assistantVehicleIdentified();
+      workspaceIntro.innerHTML = `<p class="panel-kicker">${translate('assistant.kicker', 'ASSISTANT EXPERT')}</p><h2>${translate('chat.title', "Console d'investigation")}</h2><p>${ready
+        ? translate('assistant.ready', 'Votre véhicule est identifié. Décrivez le symptôme, le code ou la mesure à analyser.')
+        : translate('assistant.identify', 'Identifiez simplement le véhicule avant de commencer l’investigation.')}</p>`;
+      views[3].append(workspaceIntro, assistantVehicleGate, chatPanel);
+      assistantGate.hidden = true;
+      assistantVehicleGate.hidden = ready;
+      chatPanel.hidden = currentStep !== STEP_COUNT || !ready;
+      return;
+    }
     if (ownerFirst) {
       workspaceIntro.innerHTML = `<p class="panel-kicker">${translate('assistant.kicker', 'ASSISTANT PERSONNEL')}</p><h2>${translate('chat.title', "Console d'investigation")}</h2><p>${translate('context.owner', PROFILE_CONTEXT.owner)}</p>`;
       views[3].append(workspaceIntro, chatPanel, checklist, assistantGate);
@@ -537,7 +566,15 @@ export function initializeWizard() {
 
   document.querySelectorAll('[data-chat-toggle]').forEach((button) => {
     button.addEventListener('click', () => {
+      assistantOriginStep = currentStep;
+      assistantMode = true;
+      assistantOpened = true;
       goToStep(4, 'forward');
+      if (assistantMode) {
+        renderExpertiseLayout();
+        if (assistantVehicleIdentified()) chatPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        return;
+      }
       if (activeProfile() === 'owner') return;
       if (!hasGeneratedReport()) {
         window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback', { detail: { type: 'selection', message: 'Terminez et générez d’abord la fiche. L’assistant restera ensuite facultatif.' } }));
@@ -549,6 +586,12 @@ export function initializeWizard() {
   });
   document.getElementById('chatClose')?.addEventListener('click', (event) => {
     event.stopImmediatePropagation();
+    if (assistantMode) {
+      assistantMode = false;
+      assistantOpened = false;
+      goToStep(assistantOriginStep, 'back');
+      return;
+    }
     if (activeProfile() !== 'owner' && hasGeneratedReport()) {
       assistantOpened = false;
       renderExpertiseLayout();
@@ -560,6 +603,25 @@ export function initializeWizard() {
 
   assistantGate.querySelector('[data-open-post-report-chat]')?.addEventListener('click', () => {
     assistantOpened = true;
+    renderExpertiseLayout();
+    chatPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  assistantVehicleGate.querySelector('[data-assistant-existing-vehicle]')?.addEventListener('click', () => {
+    window.cardiagRecords?.open?.({ assistant: true });
+  });
+  assistantVehicleGate.querySelector('[data-assistant-new-vehicle]')?.addEventListener('click', async () => {
+    const id = await window.cardiagDataBridge?.createRecord?.({ usage_scenario: activeProfile() });
+    if (!id) return;
+    assistantMode = false;
+    assistantOpened = false;
+    goToStep(2, 'back');
+    window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback', { detail: { type: 'selection', message: 'Identifiez le véhicule, puis ouvrez l’assistant expert.' } }));
+  });
+
+  window.addEventListener('cardiag:assistant-vehicle-selected', () => {
+    if (!assistantMode) return;
+    goToStep(4, 'forward');
     renderExpertiseLayout();
     chatPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });

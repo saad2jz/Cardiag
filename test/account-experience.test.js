@@ -7,6 +7,8 @@ const client = await readFile(new URL('../js/auth/firebase-client.js', import.me
 const authUi = await readFile(new URL('../js/auth/auth-ui.js', import.meta.url), 'utf8');
 const authStyles = await readFile(new URL('../css/auth/auth.css', import.meta.url), 'utf8');
 const comparison = await readFile(new URL('../js/legacy-features.js', import.meta.url), 'utf8');
+const index = await readFile(new URL('../index.html', import.meta.url), 'utf8');
+const landing = await readFile(new URL('../js/landing/landing.js', import.meta.url), 'utf8');
 
 test('web authentication uses official IndexedDB persistence instead of raw localStorage tokens', () => {
   assert.match(client, /indexedDBLocalPersistence/);
@@ -63,6 +65,16 @@ test('Google authentication remains available alongside passwordless email', () 
   assert.match(client, /ACCOUNT_EXISTS_WITH_DIFFERENT_CREDENTIAL/);
   assert.match(client, /googleAuthError/);
   assert.match(client, /Firebase: \$\{error\?\.code/);
+});
+
+test('public landing opens account choices without entering the inspection application', () => {
+  assert.match(index, /data-landing-auth-toggle/);
+  assert.match(index, /data-landing-auth="google"/);
+  assert.match(index, /data-landing-auth="email"/);
+  assert.match(index, /data-landing-auth="existing"/);
+  assert.match(landing, /cardiag:open-auth/);
+  assert.match(landing, /provider: button\.dataset\.landingAuth/);
+  assert.match(authUi, /provider === 'google'/);
 });
 
 test('profile onboarding exposes direct Google account connection', async () => {

@@ -142,11 +142,21 @@ export async function initializeAuthUi() {
     updateQuickLabels();
     refreshMigration(user);
   };
-  const open = (requestedView = '') => {
+  const open = (requestedView = '', provider = '') => {
     panel.hidden = false;
     requestAnimationFrame(() => panel.classList.add('is-open'));
     message(panel, '');
     show(requestedView);
+    if (authClient.user) return;
+    requestAnimationFrame(() => {
+      if (provider === 'google') {
+        panel.querySelector('[data-google-login]')?.click();
+        return;
+      }
+      const email = panel.querySelector('[data-auth-form="email-link"] [name="email"]');
+      email?.focus();
+      if (provider === 'existing') message(panel, 'Saisissez votre adresse : un lien sécurisé vous reconnectera à votre compte.');
+    });
   };
   const loadProfile = async (user, seed = {}) => {
     if (!user?.uid) return;
@@ -170,7 +180,7 @@ export async function initializeAuthUi() {
 
   trigger.addEventListener('click', () => open('login'));
   signupTrigger.addEventListener('click', () => open('login'));
-  window.addEventListener('cardiag:open-auth', (event) => open(event.detail?.view));
+  window.addEventListener('cardiag:open-auth', (event) => open(event.detail?.view, event.detail?.provider));
   window.addEventListener('cardiag:language-change', updateQuickLabels);
   window.addEventListener('cardiag:data-change', () => refreshMigration());
   window.addEventListener('cardiag:sync-status', () => refreshMigration());

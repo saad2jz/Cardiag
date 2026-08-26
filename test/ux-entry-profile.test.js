@@ -31,6 +31,15 @@ test('plain-language technical help is restricted to confirmed owner journeys', 
   assert.match(ownerHelp, /data-owner-technical-help/);
 });
 
+test('expert assistant opens a diagnosis-only workspace and asks for a vehicle when needed', () => {
+  assert.match(wizard, /assistant-vehicle-gate/);
+  assert.match(wizard, /assistantVehicleIdentified/);
+  assert.match(wizard, /data-assistant-existing-vehicle/);
+  assert.match(wizard, /data-assistant-new-vehicle/);
+  assert.match(wizard, /cardiag:assistant-vehicle-selected/);
+  assert.match(wizard, /views\[3\]\.append\(workspaceIntro, assistantVehicleGate, chatPanel\)/);
+});
+
 test('advanced toolbar actions are grouped and current access has no invented subscription', () => {
   assert.match(index, /class="advanced-actions-menu"/);
   assert.match(index, /Plus d.actions/);

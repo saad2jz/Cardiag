@@ -8,7 +8,8 @@ const PROFILE_SLUGS = Object.freeze({
 const EN = {
   ariaHome: 'CarDiag home', ariaNav: 'Main navigation', ariaBrand: 'CarDiag, home', ariaLanguage: 'Language',
   ariaExperience: 'CarDiag experience preview', ariaScore: 'Report score preview', ariaFeatures: 'Included features', ariaReportMockup: 'CarDiag PDF report preview', ariaLegal: 'Legal information', ariaUserType: 'User type',
-  navHow: 'How it works', navReport: 'The report', navStart: 'Open the app',
+  navHow: 'How it works', navReport: 'The report', navLogin: 'Sign in', navStart: 'Open the app',
+  authGoogle: 'Continue with Google', authEmail: 'Sign in with email', authExisting: 'Already registered',
   kicker: 'USED VEHICLE INSPECTION · PROFESSIONAL REPORT',
   title: 'Inspect a used vehicle like an expert, in 15 minutes.',
   lead: 'A guided checklist, documented evidence and a clear PDF report to buy, sell, repair or monitor a vehicle with confidence.',
@@ -145,6 +146,29 @@ export function initializeLanding() {
   }
 
   root.querySelectorAll('[data-landing-enter]').forEach((button) => button.addEventListener('click', () => enter(button.dataset.landingRole || '')));
+  const authToggle = root.querySelector('[data-landing-auth-toggle]');
+  const authOptions = root.querySelector('#landingAuthOptions');
+  const closeAuthOptions = () => {
+    if (!authToggle || !authOptions) return;
+    authToggle.setAttribute('aria-expanded', 'false');
+    authOptions.hidden = true;
+  };
+  authToggle?.addEventListener('click', () => {
+    const open = authToggle.getAttribute('aria-expanded') !== 'true';
+    authToggle.setAttribute('aria-expanded', String(open));
+    if (authOptions) authOptions.hidden = !open;
+  });
+  root.querySelectorAll('[data-landing-auth]').forEach((button) => button.addEventListener('click', () => {
+    closeAuthOptions();
+    // The account sheet is lazy-loaded by app.js. This never enters the
+    // inspection tunnel, so an anonymous visitor remains on the landing page.
+    window.dispatchEvent(new CustomEvent('cardiag:open-auth', {
+      detail: { view: 'login', provider: button.dataset.landingAuth || 'email' },
+    }));
+  }));
+  document.addEventListener('click', (event) => {
+    if (!event.target.closest('.landing-account-menu')) closeAuthOptions();
+  });
   root.querySelectorAll('[data-landing-family]').forEach((button) => button.addEventListener('click', () => showFamily(button.dataset.landingFamily)));
   root.querySelectorAll('[data-landing-language]').forEach((button) => button.addEventListener('click', () => {
     const language = button.dataset.landingLanguage === 'en' ? 'en' : 'fr';

@@ -33,10 +33,10 @@
 <link rel="apple-touch-icon" href="icons/app-icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=20260824-3">
+<link rel="stylesheet" href="css/styles.css?v=20260826-1">
 <link rel="stylesheet" href="css/wizard/premium.css?v=20260813-1">
 <link rel="stylesheet" href="css/theming/themes.css?v=20260820-3">
-<link rel="stylesheet" href="css/landing/landing.css?v=20260824-5">
+<link rel="stylesheet" href="css/landing/landing.css?v=20260826-1">
 <link rel="stylesheet" href="css/media/media.css?v=20260813-1">
 <link rel="stylesheet" href="css/auth/auth.css?v=20260821-1">
 <link rel="stylesheet" href="css/onboarding/profile-onboarding.css?v=20260824-2">
@@ -62,6 +62,14 @@
       <div class="landing-language" aria-label="Langue" data-landing-aria-label="ariaLanguage">
         <button type="button" data-landing-language="fr" aria-pressed="true">FR</button>
         <button type="button" data-landing-language="en" aria-pressed="false">EN</button>
+      </div>
+      <div class="landing-account-menu">
+        <button class="landing-auth-trigger" type="button" data-landing-auth-toggle aria-expanded="false" aria-controls="landingAuthOptions" data-landing-i18n="navLogin">Se connecter</button>
+        <div class="landing-auth-options" id="landingAuthOptions" hidden>
+          <button type="button" data-landing-auth="google"><span aria-hidden="true">G</span><b data-landing-i18n="authGoogle">Continuer avec Google</b></button>
+          <button type="button" data-landing-auth="email" data-landing-i18n="authEmail">Se connecter par e-mail</button>
+          <button type="button" data-landing-auth="existing" data-landing-i18n="authExisting">Déjà inscrit</button>
+        </div>
       </div>
       <button class="landing-nav-cta" type="button" data-landing-enter data-landing-i18n="navStart">Ouvrir l'application</button>
     </nav>
@@ -774,6 +782,6 @@
 
 <script src="build-data.js?v=20260823-5"></script>
 <script src="js/db-loader.js?v=20260811-1"></script>
-<script type="module" src="js/app.js?v=20260825-4"></script>
+<script type="module" src="js/app.js?v=20260826-2"></script>
 </body>
 </html>

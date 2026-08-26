@@ -71,6 +71,8 @@ const EN = {
   'assistant.question': 'Do you have any questions?',
   'assistant.description': 'The report is ready. Ask a question only if you want help interpreting a result.',
   'assistant.open': 'Open assistant',
+  'assistant.ready': 'Your vehicle is identified. Describe the symptom, code or measurement to analyse.',
+  'assistant.identify': 'Identify the vehicle before starting the investigation.',
   'records.title': 'My reports',
   'records.new': '＋ New inspection',
   'records.open': 'Open',
