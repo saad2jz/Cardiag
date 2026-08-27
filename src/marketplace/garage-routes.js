@@ -1,6 +1,12 @@
 import express from 'express';
 
 function bearerToken(req) { return String(req.headers.authorization || '').match(/^Bearer\s+(.+)$/i)?.[1] || ''; }
+async function optionalUid(service, req) {
+  const token = bearerToken(req);
+  if (!token) return '';
+  try { return (await service.verifyToken(token)).uid || ''; }
+  catch { return ''; }
+}
 function pageSize(value) { return Math.max(1, Math.min(24, Number.parseInt(value, 10) || 12)); }
 function publicLimit({ windowMs = 3_600_000, max = 8 } = {}) {
   const buckets = new Map();
@@ -26,7 +32,11 @@ export function createGarageApiRouter(service) {
     return garage ? res.json(garage) : res.status(404).json({ error:'Garage introuvable.', code:'GARAGE_NOT_FOUND' });
   });
   router.post('/garages/applications', publicLimit({ max:5 }), async (req, res) => {
-    try { return res.status(201).json({ garage: await service.createGarageApplication(req.body || {}) }); }
+    try {
+      // Registration remains publicly accessible, while a signed-in applicant
+      // is recorded as the future garage manager for the premium area.
+      return res.status(201).json({ garage: await service.createGarageApplication(req.body || {}, await optionalUid(service, req)) });
+    }
     catch (error) { return res.status(400).json({ error:error.message || 'Candidature invalide.', code:error.code || 'GARAGE_APPLICATION_INVALID' }); }
   });
   router.post('/garages/:slug/reviews', publicLimit({ max:4 }), async (req, res) => {

@@ -5,6 +5,19 @@ function bearerToken(req) {
   return match?.[1] || '';
 }
 
+function garageId(value) {
+  const id = String(value || '').trim();
+  if (!/^[A-Za-z0-9-]{1,110}$/.test(id)) throw Object.assign(new Error('Identifiant garage requis ou invalide.'), { code: 'GARAGE_ID_INVALID' });
+  return id;
+}
+
+function garageErrorStatus(code) {
+  if (code === 'GARAGE_NOT_FOUND') return 404;
+  if (code === 'GARAGE_MANAGER_REQUIRED') return 403;
+  if (code === 'GARAGE_NOT_ACTIVE') return 409;
+  return 400;
+}
+
 export function createAccountRouter(service, { mailService = null, stripeService = null, publicOrigin = process.env.PUBLIC_ORIGIN || 'https://cardiag.online' } = {}) {
   const router = express.Router();
   router.use(async (req, res, next) => {
@@ -52,19 +65,32 @@ export function createAccountRouter(service, { mailService = null, stripeService
     return res.json(result);
   });
   router.get('/billing', verifiedOnly, async (req, res) => res.json({ billing: await service.getBilling(req.user.uid), configured: Boolean(stripeService?.configured) }));
+  router.get('/garages/:garageId/premium', verifiedOnly, async (req, res) => {
+    if (!service.getGaragePremiumAccess) return res.status(501).json({ error: 'Premium garage indisponible.', code: 'GARAGE_PREMIUM_UNAVAILABLE' });
+    try {
+      const garage = await service.getGaragePremiumAccess(req.user.uid, garageId(req.params.garageId));
+      return res.json({ garage, configured: Boolean(stripeService?.configured) });
+    } catch (error) {
+      return res.status(garageErrorStatus(error?.code)).json({ error:error.message || 'Accès garage impossible.', code:error?.code || 'GARAGE_PREMIUM_ACCESS_FAILED' });
+    }
+  });
   router.post('/billing/checkout', verifiedOnly, async (req, res) => {
     if (!stripeService?.configured) return res.status(503).json({ error: 'La facturation n’est pas encore configurée.', code: 'STRIPE_NOT_CONFIGURED' });
     try {
-      const billing = await service.getBilling(req.user.uid);
-      const result = await stripeService.createGarageCheckout({ uid: req.user.uid, email: req.user.email, garageId: String(req.body?.garageId || '').replace(/[^a-zA-Z0-9_-]/g, '').slice(0, 100), customerId: billing.customerId || null });
+      const garage = await service.getGaragePremiumAccess(req.user.uid, garageId(req.body?.garageId));
+      if (garage.status !== 'active') throw Object.assign(new Error('Votre garage doit être validé par un administrateur avant de passer premium.'), { code: 'GARAGE_NOT_ACTIVE' });
+      const result = await stripeService.createGarageCheckout({ uid: req.user.uid, email: req.user.email, garageId: garage.id, customerId: garage.premium.stripeCustomerId || null });
       return res.json(result);
     } catch (error) {
-      return res.status(error?.code === 'STRIPE_NOT_CONFIGURED' ? 503 : 400).json({ error: error.message || 'Création du paiement impossible.', code: error?.code || 'STRIPE_CHECKOUT_FAILED' });
+      return res.status(error?.code === 'STRIPE_NOT_CONFIGURED' ? 503 : garageErrorStatus(error?.code)).json({ error: error.message || 'Création du paiement impossible.', code: error?.code || 'STRIPE_CHECKOUT_FAILED' });
     }
   });
   router.post('/billing/portal', verifiedOnly, async (req, res) => {
     if (!stripeService?.configured) return res.status(503).json({ error: 'La facturation n’est pas encore configurée.', code: 'STRIPE_NOT_CONFIGURED' });
-    try { return res.json(await stripeService.createPortal(await service.getBilling(req.user.uid))); }
+    try {
+      const garage = await service.getGaragePremiumAccess(req.user.uid, garageId(req.body?.garageId));
+      return res.json(await stripeService.createPortal({ customerId:garage.premium.stripeCustomerId }));
+    }
     catch (error) { return res.status(['STRIPE_NOT_CONFIGURED', 'STRIPE_CUSTOMER_MISSING'].includes(error?.code) ? 503 : 400).json({ error: error.message || 'Portail de facturation indisponible.', code: error?.code || 'STRIPE_PORTAL_FAILED' }); }
   });
   router.get('/team', verifiedOnly, async (req, res) => {

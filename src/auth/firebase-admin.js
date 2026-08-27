@@ -3,7 +3,32 @@ import { getAuth } from 'firebase-admin/auth';
 import { getFirestore } from 'firebase-admin/firestore';
 import { getMessaging } from 'firebase-admin/messaging';
 import { createHash, randomBytes } from 'node:crypto';
-import { garageSlug, isGarageStatus, isReviewStatus, key, publicGarage, sanitizeGarage, sanitizeReview } from '../marketplace/garage-utils.js';
+import { emptyGaragePremium, garageSlug, isGarageStatus, isReviewStatus, key, publicGarage, sanitizeGarage, sanitizeReview } from '../marketplace/garage-utils.js';
+
+/** Pure mapping kept exportable so Stripe state transitions are testable without Firestore. */
+export function premiumFromStripeEvent(event, currentPremium = {}) {
+  const eventType = String(event?.type || '');
+  if (!['checkout.session.completed', 'customer.subscription.updated', 'customer.subscription.deleted', 'invoice.payment_failed'].includes(eventType)) return null;
+  const object = event?.data?.object || {};
+  const current = { ...emptyGaragePremium(), ...currentPremium };
+  const period = object.current_period_end ? new Date(Number(object.current_period_end) * 1000) : null;
+  const periodEnd = period && !Number.isNaN(period.getTime()) ? period.toISOString() : current.currentPeriodEnd;
+  const subscriptionStatus = String(object.status || '');
+  const active = eventType === 'checkout.session.completed'
+    ? true
+    : eventType === 'customer.subscription.updated'
+      ? ['active', 'trialing'].includes(subscriptionStatus)
+      : false;
+  return {
+    ...current,
+    active,
+    stripeCustomerId: String(object.customer || current.stripeCustomerId || ''),
+    stripeSubscriptionId: eventType === 'checkout.session.completed'
+      ? String(object.subscription || current.stripeSubscriptionId || '')
+      : String(object.subscription || object.id || current.stripeSubscriptionId || ''),
+    currentPeriodEnd: periodEnd,
+  };
+}
 
 export function normalizeFirebasePrivateKey(value) {
   let privateKey = String(value || '').trim();
@@ -150,8 +175,8 @@ export function createFirebaseAccountService(env = process.env) {
   const messaging = getMessaging(app);
   const adminUids = new Set(String(env.ADMIN_UIDS || '').split(',').map((value) => value.trim()).filter(Boolean));
 
-  async function createGarage(input, { status, createdBy = '' } = {}) {
-    const garage = sanitizeGarage(input, { status, createdBy });
+  async function createGarage(input, { status, createdBy = '', managerIds = [] } = {}) {
+    const garage = sanitizeGarage(input, { status, createdBy, managerIds });
     const baseSlug = garageSlug(garage.name, garage.city);
     const now = new Date().toISOString();
     // The slug is also the document id. A transaction guarantees a stable,
@@ -162,7 +187,7 @@ export function createFirebaseAccountService(env = process.env) {
         const ref = firestore.collection('garages').doc(slug);
         const existing = await transaction.get(ref);
         if (existing.exists) continue;
-        const value = { ...garage, id: slug, slug, ratingAverage: 0, reviewCount: 0, createdAt: now, updatedAt: now, moderatedAt: status === 'active' ? now : null, moderatedBy: status === 'active' ? createdBy : '' };
+        const value = { ...garage, id: slug, slug, ratingAverage: 0, reviewCount: 0, premium: emptyGaragePremium(), createdAt: now, updatedAt: now, moderatedAt: status === 'active' ? now : null, moderatedBy: status === 'active' ? createdBy : '' };
         transaction.set(ref, value);
         return value;
       }
@@ -176,6 +201,33 @@ export function createFirebaseAccountService(env = process.env) {
     const average = count ? reviews.docs.reduce((sum, doc) => sum + Number(doc.data().rating || 0), 0) / count : 0;
     await firestore.collection('garages').doc(garageId).set({ ratingAverage: Math.round(average * 10) / 10, reviewCount: count, updatedAt: new Date().toISOString() }, { merge: true });
     return { ratingAverage: Math.round(average * 10) / 10, reviewCount: count };
+  }
+
+  function safeGarageId(value) {
+    const id = String(value || '').trim();
+    if (!/^[a-z0-9-]{1,110}$/i.test(id)) throw Object.assign(new Error('Identifiant garage invalide.'), { code: 'GARAGE_ID_INVALID' });
+    return id;
+  }
+
+  function canManageGarage(garage, uid) {
+    const userId = String(uid || '');
+    return Boolean(userId && (garage.createdBy === userId || (garage.managerIds || []).includes(userId)));
+  }
+
+  async function findGarageForStripe({ garageId = '', customerId = '', subscriptionId = '' } = {}) {
+    if (garageId && /^[a-z0-9-]{1,110}$/i.test(garageId)) {
+      const snapshot = await firestore.collection('garages').doc(garageId).get();
+      if (snapshot.exists) return { ref: snapshot.ref, garage: snapshot.data() };
+    }
+    if (subscriptionId) {
+      const snapshot = await firestore.collection('garages').where('premium.stripeSubscriptionId', '==', subscriptionId).limit(1).get();
+      if (!snapshot.empty) return { ref: snapshot.docs[0].ref, garage: snapshot.docs[0].data() };
+    }
+    if (customerId) {
+      const snapshot = await firestore.collection('garages').where('premium.stripeCustomerId', '==', customerId).limit(1).get();
+      if (!snapshot.empty) return { ref: snapshot.docs[0].ref, garage: snapshot.docs[0].data() };
+    }
+    return null;
   }
 
   return {
@@ -200,12 +252,12 @@ export function createFirebaseAccountService(env = process.env) {
       await firestore.collection('users').doc(uid).set({ billing: value }, { merge: true });
       return value;
     },
-    async createGarageApplication(input) {
-      return createGarage(input, { status: 'pending' });
+    async createGarageApplication(input, createdBy = '') {
+      return createGarage(input, { status: 'pending', createdBy });
     },
     async createAdminGarage(uid, input) {
       const status = isGarageStatus(input?.status) ? input.status : 'active';
-      return createGarage(input, { status, createdBy: uid });
+      return createGarage(input, { status, createdBy: uid, managerIds: input?.managerIds });
     },
     async listPublicGarages({ city = '', specialty = '', minRating = '', search = '', cursor = '', limit = 12 } = {}) {
       const safeLimit = Math.max(1, Math.min(24, Number(limit) || 12));
@@ -218,6 +270,10 @@ export function createFirebaseAccountService(env = process.env) {
       if (Number.isFinite(Number(minRating)) && Number(minRating) > 0) query = query.where('ratingAverage', '>=', Math.min(5, Number(minRating)));
       if (searchKey) query = query.where('nameKey', '>=', searchKey).where('nameKey', '<=', `${searchKey}\uf8ff`).orderBy('nameKey');
       else if (Number.isFinite(Number(minRating)) && Number(minRating) > 0) query = query.orderBy('ratingAverage', 'desc').orderBy('nameKey');
+      // Do not order the Firestore query by premium.active: historic garage
+      // documents created before Premium do not have that field and Firestore
+      // would omit them from the directory. Premium ordering is applied after
+      // mapping the public page, while active visibility remains unchanged.
       else query = query.orderBy('nameKey');
       if (cursor && /^[a-z0-9-]{1,110}$/.test(String(cursor))) {
         const cursorSnapshot = await firestore.collection('garages').doc(String(cursor)).get();
@@ -226,7 +282,11 @@ export function createFirebaseAccountService(env = process.env) {
       const snapshot = await query.limit(safeLimit + 1).get();
       const hasMore = snapshot.docs.length > safeLimit;
       const docs = snapshot.docs.slice(0, safeLimit);
-      return { garages: docs.map((doc) => publicGarage(doc.data())), nextCursor: hasMore ? docs.at(-1)?.id || null : null };
+      const garages = docs.map((doc) => publicGarage(doc.data())).sort((left, right) => {
+        const premiumOrder = Number(right.premium.active) - Number(left.premium.active);
+        return premiumOrder || left.name.localeCompare(right.name, 'fr');
+      });
+      return { garages, nextCursor: hasMore ? docs.at(-1)?.id || null : null };
     },
     async getPublicGarage(slug) {
       const snapshot = await firestore.collection('garages').doc(String(slug || '')).get();
@@ -264,6 +324,35 @@ export function createFirebaseAccountService(env = process.env) {
       const now = new Date().toISOString();
       await ref.set({ status, moderatedAt:now, moderatedBy:uid, updatedAt:now }, { merge:true });
       return { ...snapshot.data(), status, moderatedAt:now, moderatedBy:uid, updatedAt:now };
+    },
+    async getGaragePremiumAccess(uid, garageId) {
+      const id = safeGarageId(garageId);
+      const snapshot = await firestore.collection('garages').doc(id).get();
+      if (!snapshot.exists) throw Object.assign(new Error('Garage introuvable.'), { code: 'GARAGE_NOT_FOUND' });
+      const garage = snapshot.data();
+      if (!canManageGarage(garage, uid)) throw Object.assign(new Error('Vous ne gérez pas ce garage.'), { code: 'GARAGE_MANAGER_REQUIRED' });
+      return {
+        id: garage.id,
+        name: garage.name,
+        status: garage.status,
+        premium: { ...emptyGaragePremium(), ...(garage.premium || {}) },
+      };
+    },
+    async updateGaragePremiumFromStripeEvent(event) {
+      const object = event?.data?.object || {};
+      const metadata = object.metadata || object.subscription_details?.metadata || {};
+      const garageId = String(metadata.garageId || '');
+      const customerId = String(object.customer || '');
+      const subscriptionId = String(object.subscription || object.id || '');
+      const found = await findGarageForStripe({ garageId, customerId, subscriptionId });
+      if (!found) return null;
+
+      const premium = premiumFromStripeEvent(event, found.garage.premium || {});
+      if (!premium) return null;
+      // Intentionally only the premium object is written here. Administrative
+      // publication status is never coupled to payment events.
+      await found.ref.set({ premium, updatedAt:new Date().toISOString() }, { merge:true });
+      return { id:found.garage.id, premium };
     },
     async listAdminReviews({ status = 'pending', limit = 12 } = {}) {
       let query = firestore.collection('garage_reviews');

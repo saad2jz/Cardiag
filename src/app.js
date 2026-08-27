@@ -120,7 +120,13 @@ export function createApp({ llmService, accountService = null, mailService = nul
       const event = stripeService.constructWebhookEvent(req.body, req.headers['stripe-signature']);
       const object = event.data?.object || {};
       const uid = String(object.metadata?.uid || object.client_reference_id || '');
-      if (uid && ['checkout.session.completed', 'customer.subscription.updated', 'customer.subscription.deleted', 'invoice.payment_failed'].includes(event.type)) {
+      const premiumEvent = ['checkout.session.completed', 'customer.subscription.updated', 'customer.subscription.deleted', 'invoice.payment_failed'].includes(event.type);
+      if (premiumEvent) {
+        // Garage publication is deliberately independent from billing. This
+        // service only updates garages.premium and never the status field.
+        await accountService.updateGaragePremiumFromStripeEvent?.(event);
+      }
+      if (uid && premiumEvent) {
         await accountService.saveBilling(uid, {
           customerId: String(object.customer || ''), subscriptionId: String(object.subscription || object.id || ''),
           status: event.type === 'checkout.session.completed' ? 'active' : (event.type === 'invoice.payment_failed' ? 'past_due' : String(object.status || 'inactive')),
@@ -172,7 +178,9 @@ export function createApp({ llmService, accountService = null, mailService = nul
     try {
       const entry = accountService?.getPublicGarage ? await accountService.getPublicGarage(String(req.params.slug || '')) : null;
       if (!entry) return res.status(404).type('html').send(renderGarageNotFound(canonicalOrigin));
-      return res.type('html').send(renderGarageDetail(entry.garage, entry.reviews, canonicalOrigin));
+      const premiumBadge = entry.garage.premium?.active ? '<p class="garage-premium-badge">Garage recommandé CarDiag</p>' : '';
+      const premiumManager = `${premiumBadge}<section id="garagePremiumManager" class="garage-premium-manager" data-garage-id="${encodeURIComponent(entry.garage.id)}" hidden aria-live="polite"></section><script type="module" src="/js/marketplace/garage-premium.js"></script>`;
+      return res.type('html').send(renderGarageDetail(entry.garage, entry.reviews, canonicalOrigin).replace('</main>', `${premiumManager}</main>`));
     } catch {
       return res.status(503).type('html').send(renderGarageNotFound(canonicalOrigin));
     }

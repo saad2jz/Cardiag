@@ -1,6 +1,15 @@
 const SAFE_STATUSES = new Set(['pending', 'active', 'rejected']);
 const SAFE_REVIEW_STATUSES = new Set(['pending', 'published', 'rejected']);
 
+export function emptyGaragePremium() {
+  return {
+    active: false,
+    stripeCustomerId: '',
+    stripeSubscriptionId: '',
+    currentPeriodEnd: null,
+  };
+}
+
 export function key(value) {
   return String(value || '').trim().toLocaleLowerCase('fr-FR').normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
@@ -26,7 +35,7 @@ function websiteUrl(value) {
   }
 }
 
-export function sanitizeGarage(input = {}, { status = 'pending', createdBy = '' } = {}) {
+export function sanitizeGarage(input = {}, { status = 'pending', createdBy = '', managerIds = [] } = {}) {
   const specialties = Array.isArray(input.specialties) ? input.specialties : String(input.specialties || '').split(',');
   const cleanSpecialties = [...new Set(specialties.map((item) => text(item, 60)).filter(Boolean))].slice(0, 15);
   const safeStatus = SAFE_STATUSES.has(status) ? status : 'pending';
@@ -35,13 +44,16 @@ export function sanitizeGarage(input = {}, { status = 'pending', createdBy = '' 
   const postalCode = text(input.postalCode, 12).replace(/[^0-9A-Za-z -]/g, '');
   if (name.length < 2) throw Object.assign(new Error('Le nom du garage est requis.'), { code: 'GARAGE_NAME_REQUIRED' });
   if (city.length < 2) throw Object.assign(new Error('La ville du garage est requise.'), { code: 'GARAGE_CITY_REQUIRED' });
+  const cleanManagerIds = [...new Set((Array.isArray(managerIds) ? managerIds : [])
+    .map((id) => text(id, 128)).filter((id) => /^[A-Za-z0-9_-]{6,128}$/.test(id)))].slice(0, 20);
   return {
     name, nameKey: key(name), city, cityKey: key(city), postalCode,
     address: text(input.address, 200), specialties: cleanSpecialties,
     specialtiesKey: cleanSpecialties.map(key), description: text(input.description, 2_000),
     hours: text(input.hours, 1_000), phone: text(input.phone, 30),
     email: text(input.email, 254).toLowerCase(), website: websiteUrl(input.website),
-    status: safeStatus, createdBy: text(createdBy, 128),
+    status: safeStatus, createdBy: text(createdBy, 128), managerIds: cleanManagerIds,
+    premium: emptyGaragePremium(),
   };
 }
 
@@ -60,6 +72,7 @@ export function publicGarage(data = {}) {
     address: data.address, specialties: data.specialties || [], description: data.description,
     hours: data.hours, phone: data.phone, email: data.email, website: data.website,
     ratingAverage: Number(data.ratingAverage || 0), reviewCount: Number(data.reviewCount || 0),
+    premium: { active: Boolean(data.premium?.active) },
   };
 }
 
