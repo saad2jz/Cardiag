@@ -12,6 +12,7 @@
     "generate:pwa-icons": "node scripts/generate-pwa-icons.mjs",
     "generate:report-fixture": "node scripts/generate-complete-report-fixture.mjs",
     "generate:demo-report": "node scripts/generate-demo-report.mjs",
+    "maintenance:drafts": "node scripts/run-draft-maintenance.mjs",
     "native:prepare": "node scripts/prepare-native-web.mjs",
     "cap:sync": "npm run native:prepare && npx cap sync",
     "cap:add:android": "npm run native:prepare && npx cap add android",
@@ -40,6 +41,7 @@
     "firebase": "^12.17.1",
     "firebase-admin": "^14.2.0",
     "jspdf": "^4.2.1",
+    "nodemailer": "^7.0.9",
     "openai": "^6.9.1",
     "qrcode-generator": "^2.0.4",
     "sanitize-html": "^2.17.0"

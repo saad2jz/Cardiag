@@ -5,7 +5,7 @@ function bearerToken(req) {
   return match?.[1] || '';
 }
 
-export function createAccountRouter(service) {
+export function createAccountRouter(service, { mailService = null, publicOrigin = process.env.PUBLIC_ORIGIN || 'https://cardiag.online' } = {}) {
   const router = express.Router();
   router.use(async (req, res, next) => {
     const token = bearerToken(req);
@@ -50,6 +50,71 @@ export function createAccountRouter(service) {
       url: 'cardiag://fiche',
     });
     return res.json(result);
+  });
+  router.get('/team', verifiedOnly, async (req, res) => {
+    if (!service.listTeamMembers) return res.status(501).json({ error: 'Partage d’équipe indisponible.', code: 'TEAM_NOT_AVAILABLE' });
+    const result = await service.listTeamMembers(req.user.uid);
+    return res.json(result);
+  });
+  router.post('/team', verifiedOnly, async (req, res) => {
+    try {
+      return res.status(201).json({ team: await service.createTeam(req.user.uid, req.body || {}) });
+    } catch (error) {
+      return res.status(error?.code === 'TEAM_PRO_REQUIRED' ? 403 : 400).json({ error: error.message, code: error?.code || 'TEAM_CREATE_FAILED' });
+    }
+  });
+  router.post('/team/invitations', verifiedOnly, async (req, res) => {
+    if (!mailService?.configured) return res.status(503).json({ error: 'L’envoi des invitations doit être configuré par votre administrateur.', code: 'TEAM_EMAIL_NOT_CONFIGURED' });
+    try {
+      const invitation = await service.createTeamInvitation(req.user.uid, req.body || {});
+      const invitationUrl = `${String(publicOrigin).replace(/\/$/, '')}/app/parametres?team-invite=${encodeURIComponent(invitation.token)}`;
+      const delivery = await mailService.sendTeamInvitation({
+        to: invitation.email,
+        teamName: invitation.team.name,
+        inviterName: req.user.name || req.user.email || 'Un membre de votre équipe',
+        acceptUrl: invitationUrl,
+        role: invitation.role,
+      });
+      if (!delivery.sent) {
+        await service.cancelTeamInvitation?.(req.user.uid, invitation.token);
+        return res.status(503).json({ error: 'Invitation non envoyée. Vérifiez la configuration e-mail.', code: delivery.reason || 'TEAM_EMAIL_FAILED' });
+      }
+      return res.status(201).json({ invited: true, email: invitation.email, role: invitation.role, expiresAt: invitation.expiresAt });
+    } catch (error) {
+      return res.status(['TEAM_OWNER_REQUIRED'].includes(error?.code) ? 403 : 400).json({ error: error.message, code: error?.code || 'TEAM_INVITE_FAILED' });
+    }
+  });
+  router.post('/team/invitations/:token/accept', verifiedOnly, async (req, res) => {
+    try {
+      return res.json({ membership: await service.acceptTeamInvitation(req.user.uid, req.user.email, req.params.token) });
+    } catch (error) {
+      const code = error?.code || 'TEAM_INVITE_ACCEPT_FAILED';
+      return res.status(['TEAM_INVITE_NOT_FOUND'].includes(code) ? 404 : 400).json({ error: error.message, code });
+    }
+  });
+  router.patch('/team/members/:uid', verifiedOnly, async (req, res) => {
+    try {
+      await service.updateTeamMember(req.user.uid, req.params.uid, req.body?.role);
+      return res.status(204).end();
+    } catch (error) {
+      return res.status(['TEAM_OWNER_REQUIRED'].includes(error?.code) ? 403 : 400).json({ error: error.message, code: error?.code || 'TEAM_MEMBER_UPDATE_FAILED' });
+    }
+  });
+  router.delete('/team/members/:uid', verifiedOnly, async (req, res) => {
+    try {
+      await service.removeTeamMember(req.user.uid, req.params.uid);
+      return res.status(204).end();
+    } catch (error) {
+      return res.status(['TEAM_OWNER_REQUIRED'].includes(error?.code) ? 403 : 400).json({ error: error.message, code: error?.code || 'TEAM_MEMBER_DELETE_FAILED' });
+    }
+  });
+  router.get('/team/history', verifiedOnly, async (req, res) => {
+    try { return res.json(await service.getTeamHistory(req.user.uid)); }
+    catch (error) { return res.status(403).json({ error: error.message, code: error?.code || 'TEAM_HISTORY_FORBIDDEN' }); }
+  });
+  router.post('/team/history/:id', verifiedOnly, async (req, res) => {
+    try { return res.status(201).json(await service.shareHistoryWithTeam(req.user.uid, String(req.params.id || ''))); }
+    catch (error) { return res.status(error?.code === 'TEAM_RECORD_NOT_FOUND' ? 404 : 403).json({ error: error.message, code: error?.code || 'TEAM_SHARE_FAILED' }); }
   });
   router.post('/shares', verifiedOnly, async (req, res) => {
     const serialized = JSON.stringify(req.body?.report || null);

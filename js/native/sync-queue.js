@@ -10,6 +10,12 @@ export function buildSyncRecords(records=[]) {
     data:record.data,
     createdAt:record.createdAt,
     hasLocalMedia:Boolean(Object.values(record.photos||{}).some(items=>items?.length)),
+    // A completed report is never eligible for the draft reminder job. Active
+    // local inspections become explicit server-side drafts once synced.
+    draft:{
+      status:record.statut==='terminee'?'complete':'draft',
+      reminderSentAt:record.draft?.reminderSentAt||null,
+    },
     syncVersion:Number.isSafeInteger(record.syncVersion)&&record.syncVersion>=0?record.syncVersion:0,
   }));
 }

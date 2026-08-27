@@ -30,7 +30,7 @@ test('the app shell keeps SEO, accessibility and cache safeguards', () => {
   assert.match(index, /"@type":"Organization"/);
   assert.match(index, /id="installAppBtn"[^>]*hidden/);
   assert.match(index, /sigCanvasAcheteur[^>]*aria-label=/);
-  assert.match(worker, /cardiag-v123/);
+  assert.match(worker, /cardiag-v125/);
   assert.match(index, /cardiag_design_preferences/);
   assert.match(index, /Apply the saved visual preference before the first paint/);
   assert.match(worker, /landing\/landing\.js\?v=20260826-4/);
@@ -50,6 +50,7 @@ test('the wizard toolbar exposes a non-destructive CarDiag home action', () => {
   assert.match(settings, /settings-trigger-label[^>]*>Paramètres/);
   assert.match(settings, /navigate\(\{kind:'settings'\}\)/);
   assert.match(settings, /window\.cardiagSettings=\{open,openAppearance\}/);
+  assert.match(settings, /data-setting-inspection-view/);
   assert.match(themes, /button\.hidden = true/);
   assert.match(themes, /data-open-all-settings/);
 });

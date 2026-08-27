@@ -1,4 +1,4 @@
-import { initializeRouter, navigate, parseRoute, routePath } from './router.js?v=20260826-6';
+import { initializeRouter, navigate, parseRoute, routePath } from './router.js?v=20260827-7';
 
 const INTERNAL_PROFILE = Object.freeze({
   acheteur: 'buyer', vendeur: 'seller', proprietaire: 'owner', garagiste: 'mechanic', location: 'rental',
@@ -98,7 +98,7 @@ export function initializeRouteController({ landing } = {}) {
         return;
       }
       if (route.kind === 'compare') {
-        window.cardiagDataBridge?.openComparison?.([]);
+        window.cardiagDataBridge?.openComparison?.(route.ids || []);
         return;
       }
       if (route.kind === 'settings') {
@@ -106,15 +106,10 @@ export function initializeRouteController({ landing } = {}) {
         return;
       }
       if (route.kind === 'new-inspection') {
-        if (!route.profile) {
-          window.cardiagWizard?.goToStep?.(1, 'back');
-          return;
-        }
-        chooseProfile(route.profile, route.level);
-        const step = route.stage === 'contexte' ? 3
-          : route.stage === 'diagnostic' && route.profile === 'proprietaire' ? 4
-            : 2;
-        window.cardiagWizard?.goToStep?.(step, 'forward');
+        // Old URLs can prefill the chooser, but never skip it or create a
+        // record before the explicit Start action.
+        if (route.profile) chooseProfile(route.profile, route.level);
+        window.cardiagWizard?.goToStep?.(1, 'back');
         return;
       }
       if (route.kind === 'inspection') {
@@ -126,6 +121,10 @@ export function initializeRouteController({ landing } = {}) {
         }
         const step = route.view === 'identification' ? 2 : route.view === 'contexte' ? 3 : 4;
         window.cardiagWizard?.goToStep?.(step, 'forward');
+        const currentStage = route.view === 'controle' ? `controle/${route.section}` : route.view;
+        const existingStatus = window.cardiagDataBridge?.getCurrentRecord?.()?.statut;
+        const status = route.view === 'identification' && existingStatus === 'brouillon' ? 'brouillon' : 'en_cours';
+        window.cardiagDataBridge?.setInspectionStep?.(currentStage, status);
         if (route.view === 'controle') {
           window.dispatchEvent(new CustomEvent('cardiag:inspection-section-request', { detail: { key: SECTION_TO_STEP[route.section] || 'diagnostic' } }));
         }
@@ -158,7 +157,7 @@ export function initializeRouteController({ landing } = {}) {
     const step = Number(event.detail?.step || 0);
     const record = window.cardiagDataBridge?.getCurrentRecord?.();
     if (step === 1) {
-      navigate({ kind: 'new-inspection', profile: '', level: '', stage: '' }, { source: 'wizard-step' });
+      navigate({ kind: 'new-inspection' }, { source: 'wizard-step' });
       return;
     }
     if (!record?.id) return;
@@ -177,7 +176,9 @@ export function initializeRouteController({ landing } = {}) {
   window.addEventListener('cardiag:record-open', (event) => {
     if (applying || !event.detail?.id) return;
     const route = router.current;
-    if (route.kind === 'dashboard' || route.kind === 'compare') return;
+    // Record creation is followed by an explicit replace to its first route.
+    // Do not guess a report route during this short handoff.
+    if (route.kind !== 'inspection') return;
     const view = window.cardiagWizard?.currentStep === 2 ? 'identification'
       : window.cardiagWizard?.currentStep === 3 ? 'contexte' : 'rapport';
     navigate({ kind: 'inspection', id: event.detail.id, view }, { source: 'record-open' });

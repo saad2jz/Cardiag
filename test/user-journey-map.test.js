@@ -16,18 +16,17 @@ const journeys = Object.freeze([
   { role: 'rental', profile: 'location', stage: 'identification' },
 ]);
 
-test('every public journey has a stable URL at each selectable inspection level', () => {
+test('every public journey enters through the same stateless creation URL', () => {
   for (const journey of journeys) {
     assert.match(index, new RegExp(`data-landing-role="${journey.role}"`));
     for (const level of ['rapide', 'complet']) {
       const path = newInspectionPath(journey.profile, level);
-      assert.equal(path, `/app/nouvelle/${journey.profile}/${level}/${journey.stage}`);
+      assert.equal(path, '/app/inspection/nouveau');
       const route = parseRoute(path);
       assert.equal(route.kind, 'new-inspection');
       assert.equal(route.app, true);
-      assert.equal(route.profile, journey.profile);
-      assert.equal(route.level, level);
-      assert.equal(route.stage, journey.stage);
+      assert.equal(route.profile, '');
+      assert.equal(route.level, '');
       assert.equal(routePath(route), path);
     }
   }
@@ -45,8 +44,7 @@ test('public calls to action always save the selected journey before opening aut
 test('protected routes resume after authentication instead of leaving an unauthenticated user on a blank page', () => {
   for (const path of [
     '/app', '/app/comparer', '/app/parametres',
-    '/app/nouvelle/acheteur/complet/identification',
-    '/app/nouvelle/proprietaire/complet/diagnostic',
+    '/app/inspection/nouveau',
     '/app/inspection/test_42/identification',
     '/app/inspection/test_42/contexte',
     '/app/inspection/test_42/controle/moteur',

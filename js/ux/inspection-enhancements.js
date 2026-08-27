@@ -1,5 +1,6 @@
 const GUIDED_MODE_KEY = 'cardiag_guided_inspection_v1';
 const GUIDED_POSITION_KEY = 'cardiag_guided_inspection_position_v1';
+const SETTINGS_KEY = 'cardiag_app_settings_v1';
 const MOBILE_WIZARD_QUERY = '(max-width: 767px)';
 
 const SECTIONS = [
@@ -22,6 +23,24 @@ function safeGet(key) {
 
 function safeSet(key, value) {
   try { localStorage.setItem(key, value); } catch { /* Le mode reste actif en mémoire. */ }
+}
+
+function savedInspectionView() {
+  try {
+    const settings = JSON.parse(localStorage.getItem(SETTINGS_KEY) || '{}');
+    if (settings.inspectionView === 'guided' || settings.inspectionView === 'full') return settings.inspectionView;
+  } catch { /* The legacy preference remains the safe fallback. */ }
+  return safeGet(GUIDED_MODE_KEY) === 'full' ? 'full' : 'guided';
+}
+
+function saveInspectionView(mode) {
+  const view = mode === 'full' ? 'full' : 'guided';
+  safeSet(GUIDED_MODE_KEY, view);
+  try {
+    const settings = JSON.parse(localStorage.getItem(SETTINGS_KEY) || '{}');
+    localStorage.setItem(SETTINGS_KEY, JSON.stringify({ ...settings, inspectionView: view }));
+  } catch { /* The legacy preference above still preserves the choice. */ }
+  window.dispatchEvent(new CustomEvent('cardiag:inspection-view-change', { detail: { mode: view } }));
 }
 
 function guidedItems(section) {
@@ -164,7 +183,8 @@ function initializeGuide(guide) {
   const mobileQuery = window.matchMedia(MOBILE_WIZARD_QUERY);
   // Mobile is deliberately strict by default. Desktop keeps the user's
   // reversible full-report preference.
-  let guided = mobileQuery.matches || safeGet(GUIDED_MODE_KEY) !== 'full';
+  let preference = savedInspectionView();
+  let guided = mobileQuery.matches || preference !== 'full';
   let currentName = safeGet(GUIDED_POSITION_KEY) || '';
   let visible = window.cardiagWizard?.currentStep === 4;
   const actionBar = guide.querySelector('.inspection-guide-actions');
@@ -178,11 +198,15 @@ function initializeGuide(guide) {
 
   const itemName = (item) => item?.querySelector('input[type="radio"][name]')?.name || '';
 
-  function setGuided(value) {
-    guided = Boolean(value);
-    safeSet(GUIDED_MODE_KEY, guided ? 'guided' : 'full');
+  function setGuided(value, { persist = true } = {}) {
+    preference = value ? 'guided' : 'full';
+    if (persist) saveInspectionView(preference);
+    // The compact viewport remains a strict wizard. The saved preference is
+    // still applied when the inspection is opened on a larger screen.
+    guided = mobileQuery.matches || preference !== 'full';
     document.body.classList.toggle('inspection-full-report', !guided);
     render();
+    return guided ? preference === 'guided' : true;
   }
 
   function choose(item, scroll = true) {
@@ -203,12 +227,23 @@ function initializeGuide(guide) {
       window.dispatchEvent(new CustomEvent('cardiag:inspection-section-change', { detail: { key } }));
       return;
     }
-    window.cardiagWizard?.goToStep?.(4, 'forward');
     const section = document.querySelector(`.wizard-checklist details.section[data-section="${key}"]`);
     const candidates = guidedItems(section);
     const target = candidates.find((item) => !item.querySelector('input[type="radio"]:checked')) || candidates[0];
     if (!target) return;
-    if (!guided) setGuided(true);
+    if (!guided) {
+      const revealFullSection = () => {
+        section.open = true;
+        (section.querySelector('summary') || section).scrollIntoView({ behavior: scroll ? 'smooth' : 'auto', block: 'start' });
+      };
+      if (window.cardiagWizard?.currentStep !== 4) {
+        window.cardiagWizard?.goToStep?.(4, 'forward');
+        requestAnimationFrame(revealFullSection);
+      } else revealFullSection();
+      window.dispatchEvent(new CustomEvent('cardiag:inspection-section-change', { detail: { key } }));
+      return;
+    }
+    window.cardiagWizard?.goToStep?.(4, 'forward');
     choose(target, scroll);
     window.dispatchEvent(new CustomEvent('cardiag:inspection-section-change', { detail: { key } }));
   }
@@ -348,8 +383,13 @@ function initializeGuide(guide) {
   window.addEventListener('cardiag:inspection-section-request', (event) => {
     if (event.detail?.key) goToSection(event.detail.key);
   });
+  window.addEventListener('cardiag:inspection-view-preference', (event) => {
+    if (event.detail?.mode === 'guided' || event.detail?.mode === 'full') {
+      setGuided(event.detail.mode === 'guided', { persist: false });
+    }
+  });
   const syncViewportMode = () => {
-    if (mobileQuery.matches && !guided) guided = true;
+    guided = mobileQuery.matches || preference !== 'full';
     render();
   };
   mobileQuery.addEventListener?.('change', syncViewportMode);
@@ -363,6 +403,12 @@ function initializeGuide(guide) {
       actionBar.hidden = !visible;
       if (visible) render();
     },
+    setMode(mode) {
+      return setGuided(mode !== 'full');
+    },
+    get mode() {
+      return preference;
+    },
   };
 }
 
@@ -370,6 +416,10 @@ export function initializeInspectionEnhancements() {
   ensureSectionSummaries();
   const dock = createProgressDock();
   const guide = initializeGuide(createGuide());
+  window.cardiagInspectionView = {
+    setMode: (mode) => guide.setMode(mode),
+    get mode() { return guide.mode; },
+  };
   const updateStickyOffset = () => {
     const headerHeight = document.getElementById('wizardHeader')?.getBoundingClientRect().height || 0;
     const tabsHeight = document.getElementById('appTabbar')?.getBoundingClientRect().height || 0;

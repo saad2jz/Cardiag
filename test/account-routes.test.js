@@ -7,6 +7,7 @@ let baseUrl;
 let deleted = false;
 let shareDeleted = false;
 let historySaveOverride = null;
+let teamCreated = false;
 const accountService = {
   async verifyToken(token) {
     if (token === 'verified') return { uid: 'user-1', email_verified: true, auth_time: Math.floor(Date.now() / 1000) };
@@ -28,6 +29,14 @@ const accountService = {
   async deleteReportShare() { shareDeleted = true; return true; },
   async exportUser() { return { profile: { role: 'buyer' }, history: [] }; },
   async deleteUser() { deleted = true; },
+  async listTeamMembers() { return { team: teamCreated ? { id: 'team-1', name: 'Garage Central' } : null, members: teamCreated ? [{ uid: 'user-1', role: 'owner' }] : [] }; },
+  async createTeam() { teamCreated = true; return { id: 'team-1', name: 'Garage Central' }; },
+  async createTeamInvitation() { return { token: 'a'.repeat(43), team: { id: 'team-1', name: 'Garage Central' }, email: 'member@example.com', role: 'editor', expiresAt: '2099-01-01T00:00:00.000Z' }; },
+  async acceptTeamInvitation() { return { teamId: 'team-1', role: 'editor' }; },
+  async updateTeamMember() {},
+  async removeTeamMember() {},
+  async getTeamHistory() { return { team: { id: 'team-1' }, records: [{ id: 'fiche-1' }] }; },
+  async shareHistoryWithTeam() { return { id: 'fiche-1', teamId: 'team-1' }; },
 };
 
 before(async () => {
@@ -124,4 +133,15 @@ test('clean public legal aliases redirect to their static documents', async () =
     assert.equal(response.status, 308, path);
     assert.equal(response.headers.get('location'), target, path);
   }
+});
+
+test('professional team API requires configured delivery for invitations and keeps team records protected', async () => {
+  const headers = { Authorization: 'Bearer verified', 'Content-Type': 'application/json' };
+  const created = await fetch(`${baseUrl}/api/account/team`, { method: 'POST', headers, body: JSON.stringify({ name: 'Garage Central' }) });
+  assert.equal(created.status, 201);
+  assert.equal((await fetch(`${baseUrl}/api/account/team`, { headers })).status, 200);
+  const invitation = await fetch(`${baseUrl}/api/account/team/invitations`, { method: 'POST', headers, body: JSON.stringify({ email: 'member@example.com', role: 'editor' }) });
+  assert.equal(invitation.status, 503);
+  const shared = await fetch(`${baseUrl}/api/account/team/history/fiche-1`, { method: 'POST', headers });
+  assert.deepEqual(await shared.json(), { id: 'fiche-1', teamId: 'team-1' });
 });

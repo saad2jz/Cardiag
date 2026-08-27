@@ -36,6 +36,17 @@ test('malformed server versions cannot trigger string concatenation', () => {
   assert.deepEqual(result.value.data, {});
 });
 
+test('legacy clients preserve a server-side draft marker during normal sync', () => {
+  const result = planHistoryRecord(
+    { id: 'draft', record: { id: 'draft', syncVersion: 1, data: {} } },
+    { id: 'draft', syncVersion: 1, draft: { status: 'draft', reminderSentAt: '2026-08-01T00:00:00.000Z' } },
+    true,
+    '2026-08-14T10:00:00.000Z',
+  );
+  assert.equal(result.value.draft.status, 'draft');
+  assert.equal(result.value.draft.reminderSentAt, '2026-08-01T00:00:00.000Z');
+});
+
 test('client sync exports versions, excludes unresolved conflicts and applies partial results', () => {
   const records = buildSyncRecords([
     { id: 'ready', syncVersion: 2, photos: { moteur: [{ dataUrl: 'x' }] }, data: {} },
@@ -44,6 +55,7 @@ test('client sync exports versions, excludes unresolved conflicts and applies pa
   ]);
   assert.deepEqual(records.map(({ id, syncVersion }) => [id, syncVersion]), [['ready', 2], ['legacy', 0]]);
   assert.equal(records[0].hasLocalMedia, true);
+  assert.equal(records[0].draft.status, 'draft');
 
   const calls = [];
   const bridge = {

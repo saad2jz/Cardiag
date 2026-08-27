@@ -17,9 +17,15 @@ function shareSnapshot(model) {
   };
 }
 
-function showResult(url,id) {
+function shareExpiry(expiresAt) {
+  const date = new Date(expiresAt);
+  return Number.isFinite(date.getTime()) ? date.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' }) : 'dans 30 jours';
+}
+
+function showResult(url,id,expiresAt) {
   const layer=document.createElement('section');layer.className='share-result';
   layer.innerHTML=`<div><p class="panel-kicker">LIEN SÉCURISÉ · 30 JOURS</p><h2>Rapport prêt à partager</h2><p>Ce lien donne accès à une copie en lecture seule, sans exposer votre compte.</p><input readonly value="${url}"><div class="share-result-actions"><button type="button" data-share-copy>Copier le lien</button><a href="${url}" target="_blank" rel="noopener">Ouvrir</a><button type="button" data-share-revoke>Désactiver</button><button type="button" data-share-close>Fermer</button></div></div>`;
+  const expiry=document.createElement('p');expiry.className='share-result-expiry';expiry.innerHTML=`<strong>Actif</strong> jusqu’au ${shareExpiry(expiresAt)}.`;layer.querySelector('input').before(expiry);
   document.body.append(layer);layer.querySelector('[data-share-copy]').onclick=async()=>{await navigator.clipboard.writeText(url);layer.querySelector('[data-share-copy]').textContent='Lien copié'};layer.querySelector('[data-share-close]').onclick=()=>layer.remove();layer.querySelector('[data-share-revoke]').onclick=async()=>{await window.cardiagAuth.api(`/api/account/shares/${id}`,{method:'DELETE'});window.cardiagDataBridge?.setShareUrl?.(window.cardiagDataBridge.getReportModel()?.id,'');layer.remove()};
 }
 
@@ -28,6 +34,6 @@ export function initializeReportSharing() {
   button.addEventListener('click',async()=>{
     if(!window.cardiagAuth?.user){document.querySelector('.account-trigger')?.click();window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback',{detail:{type:'selection',message:'Connectez-vous pour créer un lien privé'}}));return;}
     const original=button.textContent;button.disabled=true;button.textContent='Création du lien…';
-    try{const model=window.cardiagDataBridge.getReportModel();const result=await window.cardiagAuth.api('/api/account/shares',{method:'POST',body:JSON.stringify({report:shareSnapshot(model)})});window.cardiagDataBridge.setShareUrl(model.id,result.url);showResult(result.url,result.id);}catch(error){window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback',{detail:{type:'error',message:error.message}}));}finally{button.disabled=false;button.textContent=original;}
+    try{const model=window.cardiagDataBridge.getReportModel();const result=await window.cardiagAuth.api('/api/account/shares',{method:'POST',body:JSON.stringify({report:shareSnapshot(model)})});window.cardiagDataBridge.setShareUrl(model.id,result.url);showResult(result.url,result.id,result.expiresAt);}catch(error){window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback',{detail:{type:'error',message:error.message}}));}finally{button.disabled=false;button.textContent=original;}
   });
 }

@@ -7,12 +7,13 @@ const landing = await readFile(new URL('../js/landing/landing.js', import.meta.u
 const wizard = await readFile(new URL('../js/wizard.js', import.meta.url), 'utf8');
 const ownerHelp = await readFile(new URL('../js/ux/owner-technical-help.js', import.meta.url), 'utf8');
 
-test('a landing persona is transmitted to the wizard without a second blocking choice', () => {
+test('a landing persona can prefill the chooser without creating a draft or skipping confirmation', () => {
   assert.match(landing, /url\.searchParams\.set\('profil'/);
   assert.match(landing, /url\.searchParams\.set\('niveau'/);
   assert.match(landing, /hasProfileEntry/);
   assert.match(wizard, /PROFILE_FROM_SLUG/);
-  assert.match(wizard, /currentStep = VALID_PROFILES\.has\(entry\.profile\)[\s\S]{0,140}: 1;/);
+  assert.match(wizard, /currentStep = 1;/);
+  assert.match(wizard, /Profile and level stay in local UI state until Start creates a record/);
 });
 
 test('the active profile remains visible and can be changed without clearing common fields', () => {

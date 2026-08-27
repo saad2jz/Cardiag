@@ -36,6 +36,9 @@ test('guided inspection keeps a reversible full-report view and seven-section st
   assert.match(styles, /inspection-mini-stepper/);
   assert.match(inspection, /current\.after\(actionBar\)/);
   assert.match(styles, /is-below-question/);
+  assert.match(inspection, /cardiag_app_settings_v1/);
+  assert.match(inspection, /cardiagInspectionView/);
+  assert.match(inspection, /section\.open = true/);
 });
 
 test('mobile inspection is a strict accessible wizard with persistent progress and contextual isolation', () => {
@@ -58,7 +61,8 @@ test('document checks are visible in the context step and a new inspection start
   assert.match(index, /class="profile-documents"/);
   assert.match(legacy, /function blankInspectionData\(initialData=\{\}\)/);
   assert.match(legacy, /const freshData = blankInspectionData\(initialData\)/);
-  assert.match(legacy, /createFiche\(\{data:freshData, photos:\{\}, signatures:\{\}\}\)/);
+  assert.match(legacy, /data:freshData,[\s\S]{0,180}photos:\{\},[\s\S]{0,180}signatures:\{\}/);
+  assert.match(legacy, /statut: initialData\.statut \|\| 'brouillon'/);
   assert.match(legacy, /createBlankInspection\(\{ usage_scenario:activePersona\(\) \}\)/);
   assert.match(legacy, /new CustomEvent\('cardiag:new-vehicle'/);
 });

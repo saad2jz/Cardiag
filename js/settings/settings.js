@@ -1,12 +1,13 @@
 const SETTINGS_KEY='cardiag_app_settings_v1';
 function read(){try{return JSON.parse(localStorage.getItem(SETTINGS_KEY)||'{}')}catch{return{}}}function save(value){try{localStorage.setItem(SETTINGS_KEY,JSON.stringify(value))}catch{}}
 export function initializeSettings(){
-  const state={notifications:false,language:'fr',...read()};
+  const state={notifications:false,language:'fr',inspectionView:'guided',...read()};
   const sheet=document.createElement('aside');sheet.className='settings-sheet';sheet.hidden=true;sheet.innerHTML=`<header><div><p class="panel-kicker">CARDIAG</p><h2>Paramètres</h2></div><button data-settings-close aria-label="Fermer">×</button></header><div class="settings-list">
   <button data-open-design><span>Apparence</span><small>Thème et identité atelier</small></button>
   <label><span>Notifications<small>Statuts d’expertise et rappels</small></span><input type="checkbox" data-setting-notifications></label>
   <button data-test-notifications><span>Tester les notifications</span><small>Envoie une notification à cet appareil</small></button>
   <label><span>Langue<small>Langue de l’interface</small></span><select data-setting-language><option value="fr">Français</option><option value="en">English</option><option value="auto">Système / System</option></select></label>
+  <label><span>Affichage de l'inspection<small>Guidé sur mobile ; vue complète disponible sur grand écran</small></span><select data-setting-inspection-view><option value="guided">Une question à la fois</option><option value="full">Toutes les sections</option></select></label>
   <button data-open-account><span>Compte et données</span><small>Profil, export et suppression</small></button>
   <button data-open-local-profile><span>Profil d’utilisation</span><small>Modifier le profil Professionnel ou Personnel</small></button>
   <a href="/privacy.html" target="_blank"><span>Politique de confidentialité</span><small>Données et droits RGPD</small></a>
@@ -17,6 +18,7 @@ export function initializeSettings(){
   const open=()=>{sheet.hidden=false;requestAnimationFrame(()=>sheet.classList.add('is-open'))};const close=()=>{sheet.classList.remove('is-open');setTimeout(()=>sheet.hidden=true,220)};const openAppearance=()=>{if(window.cardiagBranding?.open)window.cardiagBranding.open();else document.querySelector('.design-trigger')?.click()};trigger.onclick=()=>{if(window.cardiagRouter?.navigate)window.cardiagRouter.navigate({kind:'settings'});else open()};sheet.querySelector('[data-settings-close]').onclick=close;
   const notifications=sheet.querySelector('[data-setting-notifications]');notifications.checked=state.notifications;notifications.onchange=async()=>{const enabled=notifications.checked?await window.cardiagPush?.enable?.():await window.cardiagPush?.disable?.();state.notifications=Boolean(enabled);notifications.checked=state.notifications;save(state)};
   const language=sheet.querySelector('[data-setting-language]');language.value=state.language;language.onchange=()=>{state.language=language.value;const resolved=state.language==='auto'?(String(navigator.language||'fr').toLowerCase().startsWith('en')?'en':'fr'):state.language;window.cardiagI18n?.setLanguage?.(resolved);save(state)};
+  const inspectionView=sheet.querySelector('[data-setting-inspection-view]');inspectionView.value=state.inspectionView==='full'?'full':'guided';inspectionView.onchange=()=>{state.inspectionView=inspectionView.value;save(state);if(window.cardiagInspectionView?.setMode)window.cardiagInspectionView.setMode(state.inspectionView);else window.dispatchEvent(new CustomEvent('cardiag:inspection-view-preference',{detail:{mode:state.inspectionView}}))};
   sheet.querySelector('[data-test-notifications]').onclick=async()=>{try{if(!window.cardiagAuth?.user)throw new Error('Connectez-vous d’abord.');await window.cardiagAuth.api('/api/account/notifications/test',{method:'POST'});window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback',{detail:{type:'success',message:'Notification de test envoyée'}}))}catch(error){window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback',{detail:{type:'error',message:error.message}}))}};
   sheet.querySelector('[data-open-design]').onclick=()=>{close();if(window.cardiagBranding?.open)window.cardiagBranding.open();else document.querySelector('.design-trigger')?.click()};sheet.querySelector('[data-open-account]').onclick=()=>{close();document.querySelector('.account-trigger')?.click()};
   sheet.querySelector('[data-open-local-profile]').onclick=()=>{close();window.cardiagLocalProfile?.open?.({edit:true})};

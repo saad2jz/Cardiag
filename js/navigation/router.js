@@ -51,13 +51,23 @@ function appRoute(kind, values = {}) {
   return Object.freeze({ kind, app: true, ...values });
 }
 
-export function newInspectionPath(profile = '', level = '', stage = '') {
-  const resolvedProfile = profileSlug(profile);
-  const resolvedLevel = levelSlug(level);
-  const resolvedStage = stage || (resolvedProfile === 'proprietaire' ? 'diagnostic' : 'identification');
-  if (!resolvedProfile) return '/app/nouvelle';
-  if (!resolvedLevel) return `/app/nouvelle/${resolvedProfile}/${resolvedStage}`;
-  return `/app/nouvelle/${resolvedProfile}/${resolvedLevel}/${resolvedStage}`;
+export function newInspectionPath() {
+  // A new inspection is stateless until the person explicitly starts it.
+  // Profile and level are stored on the record, never in an unfinished URL.
+  return '/app/inspection/nouveau';
+}
+
+export function comparisonPath(ids = []) {
+  const uniqueIds = [...new Set((Array.isArray(ids) ? ids : [])
+    .map((id) => String(id || ''))
+    .filter(validRecordId))].slice(0, 3);
+  return uniqueIds.length ? `/app/comparer?ids=${encodeURIComponent(uniqueIds.join(','))}` : '/app/comparer';
+}
+
+function comparisonIds(value) {
+  return [...new Set(String(value || '').split(',')
+    .map((id) => id.trim())
+    .filter(validRecordId))].slice(0, 3);
 }
 
 export function inspectionPath(id, view = 'rapport', section = '') {
@@ -88,13 +98,7 @@ export function parseRoute(input) {
     // opened a buyer inspection, so preserve that useful intent rather than
     // dropping the selected inspection level on the landing page.
     if (profile || level) {
-      const resolvedProfile = profile || 'acheteur';
-      return appRoute('new-inspection', {
-        profile: resolvedProfile,
-        level,
-        stage: resolvedProfile === 'proprietaire' ? 'diagnostic' : 'identification',
-        legacy: true,
-      });
+      return appRoute('new-inspection', { profile, level, legacy: true });
     }
     if (url.searchParams.get('action') === 'new' || url.searchParams.get('app') === '1') return appRoute('new-inspection', { profile: '', level: '', stage: '', legacy: true });
     return Object.freeze({ kind: 'landing', app: false });
@@ -102,9 +106,10 @@ export function parseRoute(input) {
 
   if (path === '/exemple-rapport') return Object.freeze({ kind: 'demo-report', app: false });
   if (path === '/app' || path === '/app/fiches') return appRoute('dashboard');
-  if (path === '/app/comparer') return appRoute('compare');
+  if (path === '/app/comparer') return appRoute('compare', { ids: comparisonIds(url.searchParams.get('ids')) });
   if (path === '/app/parametres') return appRoute('settings');
-  if (path === '/app/nouvelle') return appRoute('new-inspection', { profile: '', level: '', stage: '' });
+  if (path === '/app/inspection/nouveau') return appRoute('new-inspection', { profile: '', level: '' });
+  if (path === '/app/nouvelle') return appRoute('new-inspection', { profile: '', level: '', legacy: true });
 
   if (segments[0] === 'app' && segments[1] === 'nouvelle') {
     const profile = profileSlug(segments[2]);
@@ -112,7 +117,7 @@ export function parseRoute(input) {
     const level = possibleLevel || '';
     const stage = possibleLevel ? (segments[4] || '') : (segments[3] || '');
     if (profile && (!stage || ['identification', 'contexte', 'diagnostic'].includes(stage))) {
-      return appRoute('new-inspection', { profile, level, stage: stage || (profile === 'proprietaire' ? 'diagnostic' : 'identification') });
+      return appRoute('new-inspection', { profile, level, legacy: true });
     }
   }
 
@@ -135,9 +140,9 @@ export function routePath(route) {
     case 'landing': return '/';
     case 'demo-report': return '/exemple-rapport';
     case 'dashboard': return '/app';
-    case 'compare': return '/app/comparer';
+    case 'compare': return comparisonPath(route.ids);
     case 'settings': return '/app/parametres';
-    case 'new-inspection': return newInspectionPath(route.profile, route.level, route.stage);
+    case 'new-inspection': return newInspectionPath();
     case 'inspection': return inspectionPath(route.id, route.view, route.section);
     default: return String(route?.path || '/');
   }
@@ -188,9 +193,10 @@ export function initializeRouter({ onRouteChange } = {}) {
   const api = Object.freeze({
     get current() { return currentRoute(); },
     navigate,
-    newInspection: (profile, level, stage, options) => navigate({ kind: 'new-inspection', profile: profileSlug(profile), level: levelSlug(level), stage }, options),
+    newInspection: (_profile, _level, _stage, options) => navigate({ kind: 'new-inspection' }, options),
     inspection: (id, view, section, options) => navigate({ kind: 'inspection', id, view, section }, options),
     dashboard: (options) => navigate({ kind: 'dashboard' }, options),
+    compare: (ids, options) => navigate({ kind: 'compare', ids: comparisonIds(ids) }, options),
   });
   globalThis.cardiagRouter = api;
   return api;

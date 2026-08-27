@@ -1,6 +1,6 @@
-import { initializeLegacyFeatures } from './legacy-features.js?v=20260824-2';
+import { initializeLegacyFeatures } from './legacy-features.js?v=20260827-3';
 import { initializePwa } from './pwa.js?v=20260823-3';
-import { initializeWizard } from './wizard.js?v=20260826-1';
+import { initializeWizard } from './wizard.js?v=20260827-2';
 import { initializeI18n } from './i18n/i18n.js?v=20260826-1';
 import { initializeWizardInteractions } from './wizard/interactions.js?v=20260813-1';
 import { initializeVehiclePicker } from './wizard/vehicle-picker.js?v=20260825-2';
@@ -11,15 +11,15 @@ import { initializePermissions } from './native/permissions.js?v=20260813-1';
 import { initializeConnectivity } from './native/connectivity.js?v=20260813-1';
 import { initializeAppLinks } from './native/app-links.js?v=20260826-1';
 import { initializePush } from './native/push.js?v=20260813-1';
-import { initializeSettings } from './settings/settings.js?v=20260826-3';
+import { initializeSettings } from './settings/settings.js?v=20260827-1';
 import { initializeConsent } from './auth/consent.js?v=20260826-2';
 import { initializeScoreVisuals } from './score/score-visuals.js?v=20260813-1';
 import { initializeRecordsGallery } from './records/records-gallery.js?v=20260826-2';
 import { initializeLanding } from './landing/landing.js?v=20260826-4';
-import { initializeInspectionEnhancements } from './ux/inspection-enhancements.js?v=20260825-2';
+import { initializeInspectionEnhancements } from './ux/inspection-enhancements.js?v=20260827-1';
 import { initializeOwnerTechnicalHelp } from './ux/owner-technical-help.js?v=20260821-1';
 import { initializeHomeButton } from './navigation/home-button.js?v=20260825-2';
-import { initializeRouteController } from './navigation/route-controller.js?v=20260826-8';
+import { initializeRouteController } from './navigation/route-controller.js?v=20260827-9';
 import { initializeBrandPicker } from './wizard/brand-picker.js?v=20260823-6';
 import { initializeModelSpecificAlerts } from './knowledge/model-specific-alerts.js?v=20260823-1';
 
@@ -96,7 +96,7 @@ async function loadReportFeature(){
   if(!reportFeaturePromise){
     reportFeaturePromise=Promise.all([
       import('./reports/premium-report.js?v=20260825-1'),
-      import('./reports/report-sharing.js?v=20260814-2'),
+      import('./reports/report-sharing.js?v=20260827-1'),
       import('./ux/post-report-actions.js?v=20260821-1'),
       import('./ux/local-backup-reminder.js?v=20260821-1'),
     ]).then(([premium,sharing,actions,backup])=>{

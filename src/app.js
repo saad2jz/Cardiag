@@ -6,6 +6,7 @@ import cors from 'cors';
 import express from 'express';
 import { validateChatBody, validateInlineBody } from './validation.js';
 import { createAccountRouter } from './auth/account-routes.js';
+import { runDraftMaintenance } from './services/draft-scheduler.js';
 
 const DEFAULT_FRONTEND_ORIGINS = new Set([
   'https://cardiag.online',
@@ -53,7 +54,7 @@ export function createRateLimiter({ windowMs = 60_000, max = 12, accountService 
   };
 }
 
-export function createApp({ llmService, accountService = null }) {
+export function createApp({ llmService, accountService = null, mailService = null }) {
   if (!llmService) throw new Error('llmService est requis.');
   const app = express();
   app.disable('x-powered-by');
@@ -145,6 +146,27 @@ export function createApp({ llmService, accountService = null }) {
   app.get('/sw.js', (_req, res) => sendPublicFile(res, 'sw.js'));
   app.get('/health', (_req, res) => res.json({ status: 'ok' }));
 
+  // Render Cron (or another scheduler) triggers this endpoint once daily.
+  // It is never public: a high-entropy CRON_SECRET is required in production.
+  app.post('/api/internal/draft-maintenance', async (req, res) => {
+    const expected = String(process.env.CRON_SECRET || '');
+    const received = String(req.headers['x-cron-secret'] || '');
+    const valid = expected.length >= 32 && received.length === expected.length
+      && crypto.timingSafeEqual(Buffer.from(received), Buffer.from(expected));
+    if (!valid) return res.status(401).json({ error: 'Tâche planifiée non autorisée.' });
+    try {
+      const result = await runDraftMaintenance({
+        accountService,
+        mailService: mailService || { sendDraftReminder: async () => ({ sent: false, reason: 'SMTP_NOT_CONFIGURED' }) },
+        publicOrigin: canonicalOrigin,
+      });
+      return res.json(result);
+    } catch (error) {
+      console.error(`[${req.requestId}] Maintenance des brouillons échouée:`, error);
+      return res.status(500).json({ error: 'Maintenance des brouillons indisponible.' });
+    }
+  });
+
   function route(validator, method) {
     return async (req, res) => {
       const error = validator(req.body);
@@ -186,7 +208,7 @@ export function createApp({ llmService, accountService = null }) {
     res.setHeader('Cache-Control', 'private, no-store');
     return res.json(shared);
   });
-  if (accountService) app.use('/api/account', createAccountRouter(accountService));
+  if (accountService) app.use('/api/account', createAccountRouter(accountService, { mailService, publicOrigin: canonicalOrigin }));
   else app.use('/api/account', (_req, res) => res.status(503).json({ error: 'Firebase Admin non configuré.', code: 'AUTH_NOT_CONFIGURED' }));
   app.use((_req, res) => res.status(404).json({ error: 'Route introuvable.' }));
   app.use((error, req, res, _next) => {

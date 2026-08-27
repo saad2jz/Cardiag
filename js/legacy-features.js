@@ -204,7 +204,18 @@ export async function initializeLegacyFeatures(vehicleData) {
   }
   function createFiche(sourceData){
     const id = 't'+Date.now()+Math.floor(Math.random()*1000);
-    db[id] = { id, titre:'Nouvelle fiche', data: sourceData ? Object.assign({}, sourceData.data) : {}, photos: sourceData ? JSON.parse(JSON.stringify(sourceData.photos||{})) : {}, signatures: sourceData ? JSON.parse(JSON.stringify(sourceData.signatures||{})) : {}, createdAt: new Date().toISOString() };
+    const now = new Date().toISOString();
+    db[id] = {
+      id,
+      titre:'Nouvelle fiche',
+      data: sourceData ? Object.assign({}, sourceData.data) : {},
+      photos: sourceData ? JSON.parse(JSON.stringify(sourceData.photos||{})) : {},
+      signatures: sourceData ? JSON.parse(JSON.stringify(sourceData.signatures||{})) : {},
+      statut: sourceData?.statut || 'en_cours',
+      etape_courante: sourceData?.etape_courante || 'identification',
+      createdAt: now,
+      updatedAt: now,
+    };
     persist();
     return id;
   }
@@ -256,6 +267,7 @@ export async function initializeLegacyFeatures(vehicleData) {
   function saveCurrent(){
     db[currentId].data = sanitizePersonaData(collectCurrent());
     db[currentId].titre = ficheLabel(db[currentId]);
+    db[currentId].updatedAt = new Date().toISOString();
     persist();
     refreshSelector();
   }
@@ -300,7 +312,13 @@ export async function initializeLegacyFeatures(vehicleData) {
   async function createBlankInspection(initialData={}){
     saveCurrent();
     const freshData = blankInspectionData(initialData);
-    const id = createFiche({data:freshData, photos:{}, signatures:{}});
+    const id = createFiche({
+      data:freshData,
+      photos:{},
+      signatures:{},
+      statut: initialData.statut || 'brouillon',
+      etape_courante: initialData.etape_courante || 'identification',
+    });
     currentId = id;
     safeStorage.setItem(CUR_KEY,currentId);
     refreshSelector();
@@ -979,7 +997,8 @@ export async function initializeLegacyFeatures(vehicleData) {
 
   function initComparator(){
     document.getElementById('compareBtn').addEventListener('click', ()=>{
-      openComparison();
+      if(window.cardiagRouter?.compare) window.cardiagRouter.compare([]);
+      else openComparison();
     });
     document.getElementById('closeModal').addEventListener('click', ()=>{
       document.getElementById('compareModal').classList.remove('show');
@@ -993,7 +1012,8 @@ export async function initializeLegacyFeatures(vehicleData) {
     document.getElementById('runCompareBtn').addEventListener('click', ()=>{
       const ids = Array.from(document.querySelectorAll('#fichePickList input:checked')).map(el=>el.value);
       if(ids.length < 2){ alert('Sélectionnez au moins 2 fiches.'); return; }
-      renderComparison(ids.slice(0,3));
+      if(window.cardiagRouter?.compare) window.cardiagRouter.compare(ids.slice(0,3));
+      else renderComparison(ids.slice(0,3));
     });
   }
 
@@ -2525,6 +2545,14 @@ export async function initializeLegacyFeatures(vehicleData) {
     getReportModel: (id=currentId)=>reportModelFor(db[id]),
     listReportModels: ()=>Object.values(db).map(reportModelFor).filter(Boolean),
     createRecord: async (initialData={})=>createBlankInspection(initialData),
+    setInspectionStep: (step, status='en_cours')=>{
+      if(!db[currentId]) return false;
+      db[currentId].etape_courante = String(step || 'identification');
+      db[currentId].statut = status;
+      db[currentId].updatedAt = new Date().toISOString();
+      persist();
+      return true;
+    },
     useVehicleFromRecord: async (sourceId)=>{
       const source = db[sourceId];
       if(!source || !db[currentId]) return false;
@@ -2553,6 +2581,9 @@ export async function initializeLegacyFeatures(vehicleData) {
       if(!db[id]) return false;
       db[id].data = db[id].data || {};
       db[id].data._report_generated_at = new Date().toISOString();
+      db[id].statut = 'terminee';
+      db[id].etape_courante = 'rapport';
+      db[id].updatedAt = new Date().toISOString();
       persist();
       return true;
     },

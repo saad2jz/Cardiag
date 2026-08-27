@@ -65,20 +65,11 @@ function entrySelection() {
   return { profile, level };
 }
 
-function updateEntryUrl(profile, level = '') {
-  if (window.cardiagRouter?.newInspection) {
-    const route = window.cardiagRouter.current;
-    const stage = route?.kind === 'new-inspection' ? route.stage : (profile === 'owner' ? 'diagnostic' : 'identification');
-    window.cardiagRouter.newInspection(PROFILE_TO_SLUG[profile], level, stage, { replace: true, source: 'profile-choice' });
-    return;
+  function updateEntryUrl() {
+    // Profile and level stay in local UI state until Start creates a record.
+    // This avoids both ghost drafts and unfinished profile data in deep links.
+    window.cardiagRouter?.newInspection?.('', '', '', { replace: true, source: 'profile-choice' });
   }
-  // The old query format is used only during bootstrap and is normalized by
-  // the router immediately afterwards, preserving existing shared links.
-  const url = new URL(location.href);
-  if (VALID_PROFILES.has(profile)) url.searchParams.set('profil', PROFILE_TO_SLUG[profile]);
-  if (level === 'quick' || level === 'complete') url.searchParams.set('niveau', level === 'quick' ? 'rapide' : 'complet');
-  history.replaceState(history.state, '', `${url.pathname}${url.search}${url.hash}`);
-}
 
 function createView(step, title) {
   const view = document.createElement('section');
@@ -330,6 +321,11 @@ export function initializeWizard() {
 
   function guideIdentificationCompletion(event) {
     if (currentStep !== 2) return;
+    // A record remains a draft until its first identification field is
+    // actually edited. Merely opening /identification must not promote it.
+    if (event?.target?.closest?.('details[data-section="info"]')) {
+      window.cardiagDataBridge?.setInspectionStep?.('identification', 'en_cours');
+    }
     const engineChanged = event?.target?.id === 'motorisationSelect'
       || event?.target?.id === 'motorisationManualInput';
     const vehicleReady = Boolean(
@@ -490,11 +486,11 @@ export function initializeWizard() {
     renderStep(resolvedDirection);
   }
 
-  function advance() {
+  async function advance() {
     if (currentStep === 1) {
       profileConfirmed = true;
       safeStorageSet(PROFILE_STORAGE_KEY, activeProfile());
-      updateEntryUrl(activeProfile(), document.querySelector('[name="inspection_mode"]:checked')?.value || '');
+      updateEntryUrl();
       updateProfileContext();
       if (profileReturnStep) {
         const target = profileReturnStep;
@@ -502,6 +498,33 @@ export function initializeWizard() {
         goToStep(target, 'forward');
         return;
       }
+      const originalLabel = next.textContent;
+      next.disabled = true;
+      next.setAttribute('aria-busy', 'true');
+      next.textContent = translate('wizard.starting', 'Démarrage…');
+      try {
+        const id = await window.cardiagDataBridge?.createRecord?.({
+          usage_scenario: activeProfile(),
+          inspection_mode: document.querySelector('[name="inspection_mode"]:checked')?.value || 'complete',
+          statut: 'brouillon',
+          etape_courante: 'identification',
+        });
+        if (!id) throw new Error('record-create-failed');
+        if (window.cardiagRouter?.inspection) {
+          window.cardiagRouter.inspection(id, 'identification', '', { replace: true, source: 'inspection-start' });
+        } else {
+          goToStep(2, 'forward');
+        }
+      } catch {
+        window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback', {
+          detail: { type: 'error', message: translate('wizard.startError', 'Impossible de démarrer l’inspection. Réessayez.') },
+        }));
+      } finally {
+        next.disabled = false;
+        next.removeAttribute('aria-busy');
+        next.textContent = originalLabel;
+      }
+      return;
     }
     if (currentStep === 2 && !validateIdentification()) return;
     if (currentStep === 3 && !validateContext()) return;
@@ -534,7 +557,7 @@ export function initializeWizard() {
 
   document.querySelectorAll('[name="inspection_mode"]').forEach((input) => {
     input.addEventListener('change', () => {
-      if (input.checked && profileConfirmed) updateEntryUrl(activeProfile(), input.value);
+      if (input.checked && profileConfirmed) updateEntryUrl();
     });
   });
 
@@ -690,9 +713,10 @@ export function initializeWizard() {
   updateProfileContext();
 
   const savedStep = Number.parseInt(safeStorageGet(stepStorageKey()) || '', 10);
-  currentStep = VALID_PROFILES.has(entry.profile)
-    ? (savedStep >= 2 && savedStep <= STEP_COUNT ? savedStep : 2)
-    : 1;
+  // The creation URL intentionally contains no draft state. Even when an old
+  // shared URL preselects a profile, the person returns to the explicit
+  // chooser and starts the inspection only with the primary action.
+  currentStep = 1;
   renderStep('forward');
 
   window.cardiagWizard = {
