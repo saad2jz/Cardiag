@@ -3,6 +3,7 @@ import { getAuth } from 'firebase-admin/auth';
 import { getFirestore } from 'firebase-admin/firestore';
 import { getMessaging } from 'firebase-admin/messaging';
 import { createHash, randomBytes } from 'node:crypto';
+import { garageSlug, isGarageStatus, isReviewStatus, key, publicGarage, sanitizeGarage, sanitizeReview } from '../marketplace/garage-utils.js';
 
 export function normalizeFirebasePrivateKey(value) {
   let privateKey = String(value || '').trim();
@@ -147,9 +148,39 @@ export function createFirebaseAccountService(env = process.env) {
   const auth = getAuth(app);
   const firestore = getFirestore(app);
   const messaging = getMessaging(app);
+  const adminUids = new Set(String(env.ADMIN_UIDS || '').split(',').map((value) => value.trim()).filter(Boolean));
+
+  async function createGarage(input, { status, createdBy = '' } = {}) {
+    const garage = sanitizeGarage(input, { status, createdBy });
+    const baseSlug = garageSlug(garage.name, garage.city);
+    const now = new Date().toISOString();
+    // The slug is also the document id. A transaction guarantees a stable,
+    // unique public URL even when two candidates have the same name and city.
+    return firestore.runTransaction(async (transaction) => {
+      for (let suffix = 1; suffix <= 99; suffix += 1) {
+        const slug = suffix === 1 ? baseSlug : `${baseSlug}-${suffix}`;
+        const ref = firestore.collection('garages').doc(slug);
+        const existing = await transaction.get(ref);
+        if (existing.exists) continue;
+        const value = { ...garage, id: slug, slug, ratingAverage: 0, reviewCount: 0, createdAt: now, updatedAt: now, moderatedAt: status === 'active' ? now : null, moderatedBy: status === 'active' ? createdBy : '' };
+        transaction.set(ref, value);
+        return value;
+      }
+      throw Object.assign(new Error('Impossible de générer une URL unique pour ce garage.'), { code: 'GARAGE_SLUG_EXHAUSTED' });
+    });
+  }
+
+  async function refreshGarageRating(garageId) {
+    const reviews = await firestore.collection('garage_reviews').where('garageId', '==', garageId).where('status', '==', 'published').get();
+    const count = reviews.size;
+    const average = count ? reviews.docs.reduce((sum, doc) => sum + Number(doc.data().rating || 0), 0) / count : 0;
+    await firestore.collection('garages').doc(garageId).set({ ratingAverage: Math.round(average * 10) / 10, reviewCount: count, updatedAt: new Date().toISOString() }, { merge: true });
+    return { ratingAverage: Math.round(average * 10) / 10, reviewCount: count };
+  }
 
   return {
     async verifyToken(token) { return auth.verifyIdToken(token, true); },
+    async isAdmin(decoded) { return Boolean(decoded?.admin) || adminUids.has(String(decoded?.uid || '')); },
     async getProfile(uid) {
       const snapshot = await firestore.collection('users').doc(uid).get();
       return snapshot.exists ? snapshot.data() : null;
@@ -158,6 +189,98 @@ export function createFirebaseAccountService(env = process.env) {
       const sanitized = sanitizeAccountProfile(profile);
       await firestore.collection('users').doc(uid).set(sanitized, { merge: true });
       return sanitized;
+    },
+    async getBilling(uid) {
+      const snapshot = await firestore.collection('users').doc(uid).get();
+      const billing = snapshot.data()?.billing || {};
+      return { customerId: String(billing.customerId || ''), subscriptionId: String(billing.subscriptionId || ''), status: String(billing.status || 'inactive'), updatedAt: billing.updatedAt || null };
+    },
+    async saveBilling(uid, billing = {}) {
+      const value = { customerId: String(billing.customerId || '').slice(0, 255), subscriptionId: String(billing.subscriptionId || '').slice(0, 255), status: String(billing.status || 'inactive').slice(0, 64), updatedAt: new Date().toISOString() };
+      await firestore.collection('users').doc(uid).set({ billing: value }, { merge: true });
+      return value;
+    },
+    async createGarageApplication(input) {
+      return createGarage(input, { status: 'pending' });
+    },
+    async createAdminGarage(uid, input) {
+      const status = isGarageStatus(input?.status) ? input.status : 'active';
+      return createGarage(input, { status, createdBy: uid });
+    },
+    async listPublicGarages({ city = '', specialty = '', minRating = '', search = '', cursor = '', limit = 12 } = {}) {
+      const safeLimit = Math.max(1, Math.min(24, Number(limit) || 12));
+      const cityKey = key(city);
+      const specialtyKey = key(specialty);
+      const searchKey = key(search);
+      let query = firestore.collection('garages').where('status', '==', 'active');
+      if (cityKey) query = query.where('cityKey', '==', cityKey);
+      if (specialtyKey) query = query.where('specialtiesKey', 'array-contains', specialtyKey);
+      if (Number.isFinite(Number(minRating)) && Number(minRating) > 0) query = query.where('ratingAverage', '>=', Math.min(5, Number(minRating)));
+      if (searchKey) query = query.where('nameKey', '>=', searchKey).where('nameKey', '<=', `${searchKey}\uf8ff`).orderBy('nameKey');
+      else if (Number.isFinite(Number(minRating)) && Number(minRating) > 0) query = query.orderBy('ratingAverage', 'desc').orderBy('nameKey');
+      else query = query.orderBy('nameKey');
+      if (cursor && /^[a-z0-9-]{1,110}$/.test(String(cursor))) {
+        const cursorSnapshot = await firestore.collection('garages').doc(String(cursor)).get();
+        if (cursorSnapshot.exists) query = query.startAfter(cursorSnapshot);
+      }
+      const snapshot = await query.limit(safeLimit + 1).get();
+      const hasMore = snapshot.docs.length > safeLimit;
+      const docs = snapshot.docs.slice(0, safeLimit);
+      return { garages: docs.map((doc) => publicGarage(doc.data())), nextCursor: hasMore ? docs.at(-1)?.id || null : null };
+    },
+    async getPublicGarage(slug) {
+      const snapshot = await firestore.collection('garages').doc(String(slug || '')).get();
+      if (!snapshot.exists || snapshot.data().status !== 'active') return null;
+      const garage = publicGarage(snapshot.data());
+      const reviews = await firestore.collection('garage_reviews').where('garageId', '==', garage.id).where('status', '==', 'published').orderBy('createdAt', 'desc').limit(30).get();
+      return { garage, reviews: reviews.docs.map((doc) => ({ id:doc.id, rating:Number(doc.data().rating || 0), authorName:String(doc.data().authorName || 'Client CarDiag'), comment:String(doc.data().comment || ''), createdAt:doc.data().createdAt })) };
+    },
+    async listGarageSitemapEntries() {
+      const snapshot = await firestore.collection('garages').where('status', '==', 'active').orderBy('updatedAt', 'desc').limit(50_000).get();
+      return snapshot.docs.map((doc) => ({ slug:doc.id, updatedAt:String(doc.data().updatedAt || doc.data().createdAt || '') }));
+    },
+    async createGarageReview(slug, input) {
+      const garageRef = firestore.collection('garages').doc(String(slug || ''));
+      const garage = await garageRef.get();
+      if (!garage.exists || garage.data().status !== 'active') throw Object.assign(new Error('Ce garage est introuvable ou non publié.'), { code: 'GARAGE_NOT_FOUND' });
+      const review = sanitizeReview(input);
+      const id = randomBytes(18).toString('base64url');
+      const now = new Date().toISOString();
+      const value = { id, garageId:garage.id, ...review, status:'pending', createdAt:now, updatedAt:now };
+      await firestore.collection('garage_reviews').doc(id).set(value);
+      return { id, status:value.status, createdAt:now };
+    },
+    async listAdminGarages({ status = '', limit = 12 } = {}) {
+      let query = firestore.collection('garages');
+      if (isGarageStatus(status)) query = query.where('status', '==', status);
+      const snapshot = await query.orderBy('updatedAt', 'desc').limit(Math.max(1, Math.min(100, Number(limit) || 12))).get();
+      return { garages:snapshot.docs.map((doc) => doc.data()) };
+    },
+    async moderateGarage(uid, id, status) {
+      if (!isGarageStatus(status)) throw Object.assign(new Error('Statut garage invalide.'), { code: 'GARAGE_STATUS_INVALID' });
+      const ref = firestore.collection('garages').doc(String(id || ''));
+      const snapshot = await ref.get();
+      if (!snapshot.exists) throw Object.assign(new Error('Garage introuvable.'), { code: 'GARAGE_NOT_FOUND' });
+      const now = new Date().toISOString();
+      await ref.set({ status, moderatedAt:now, moderatedBy:uid, updatedAt:now }, { merge:true });
+      return { ...snapshot.data(), status, moderatedAt:now, moderatedBy:uid, updatedAt:now };
+    },
+    async listAdminReviews({ status = 'pending', limit = 12 } = {}) {
+      let query = firestore.collection('garage_reviews');
+      if (isReviewStatus(status)) query = query.where('status', '==', status);
+      const snapshot = await query.orderBy('createdAt', 'desc').limit(Math.max(1, Math.min(100, Number(limit) || 12))).get();
+      return { reviews:snapshot.docs.map((doc) => doc.data()) };
+    },
+    async moderateGarageReview(uid, id, status) {
+      if (!isReviewStatus(status) || status === 'pending') throw Object.assign(new Error('Statut avis invalide.'), { code: 'REVIEW_STATUS_INVALID' });
+      const ref = firestore.collection('garage_reviews').doc(String(id || ''));
+      const snapshot = await ref.get();
+      if (!snapshot.exists) throw Object.assign(new Error('Avis introuvable.'), { code: 'REVIEW_NOT_FOUND' });
+      const review = snapshot.data();
+      const now = new Date().toISOString();
+      await ref.set({ status, moderatedAt:now, moderatedBy:uid, updatedAt:now }, { merge:true });
+      if (review.status === 'published' || status === 'published') await refreshGarageRating(review.garageId);
+      return { ...review, status, moderatedAt:now, moderatedBy:uid, updatedAt:now };
     },
     async getHistory(uid) {
       const snapshot = await firestore.collection('users').doc(uid).collection('history').orderBy('updatedAt', 'desc').limit(100).get();

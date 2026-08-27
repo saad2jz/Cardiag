@@ -7,6 +7,8 @@ import express from 'express';
 import { validateChatBody, validateInlineBody } from './validation.js';
 import { createAccountRouter } from './auth/account-routes.js';
 import { runDraftMaintenance } from './services/draft-scheduler.js';
+import { createGarageAdminRouter, createGarageApiRouter } from './marketplace/garage-routes.js';
+import { renderGarageDetail, renderGarageNotFound } from './marketplace/garage-pages.js';
 
 const DEFAULT_FRONTEND_ORIGINS = new Set([
   'https://cardiag.online',
@@ -32,6 +34,19 @@ function sendPublicFile(res, fileName) {
   return res.type(path.extname(fileName)).send(fs.readFileSync(filePath));
 }
 
+function xmlEscape(value) {
+  return String(value || '').replace(/[&<>"']/g, (character) => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&apos;' }[character]));
+}
+
+function sitemapDocument(origin, garages = []) {
+  const pages = [
+    { loc: `${origin}/`, lastmod: '' },
+    { loc: `${origin}/garages`, lastmod: '' },
+    ...garages.map((garage) => ({ loc: `${origin}/garages/${encodeURIComponent(garage.slug)}`, lastmod: garage.updatedAt })),
+  ];
+  return `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${pages.map((page) => `<url><loc>${xmlEscape(page.loc)}</loc>${page.lastmod ? `<lastmod>${xmlEscape(page.lastmod.slice(0, 10))}</lastmod>` : ''}</url>`).join('')}</urlset>`;
+}
+
 export function createRateLimiter({ windowMs = 60_000, max = 12, accountService = null } = {}) {
   const buckets = new Map();
   return async (req, res, next) => {
@@ -54,7 +69,7 @@ export function createRateLimiter({ windowMs = 60_000, max = 12, accountService 
   };
 }
 
-export function createApp({ llmService, accountService = null, mailService = null }) {
+export function createApp({ llmService, accountService = null, mailService = null, stripeService = null }) {
   if (!llmService) throw new Error('llmService est requis.');
   const app = express();
   app.disable('x-powered-by');
@@ -98,6 +113,25 @@ export function createApp({ llmService, accountService = null, mailService = nul
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
   }));
+  // Stripe signe les octets bruts. Cette route doit précéder express.json().
+  app.post('/api/stripe/webhook', express.raw({ type: 'application/json' }), async (req, res) => {
+    if (!stripeService?.webhookConfigured || !accountService) return res.status(503).json({ error: 'Webhook Stripe non configuré.' });
+    try {
+      const event = stripeService.constructWebhookEvent(req.body, req.headers['stripe-signature']);
+      const object = event.data?.object || {};
+      const uid = String(object.metadata?.uid || object.client_reference_id || '');
+      if (uid && ['checkout.session.completed', 'customer.subscription.updated', 'customer.subscription.deleted', 'invoice.payment_failed'].includes(event.type)) {
+        await accountService.saveBilling(uid, {
+          customerId: String(object.customer || ''), subscriptionId: String(object.subscription || object.id || ''),
+          status: event.type === 'checkout.session.completed' ? 'active' : (event.type === 'invoice.payment_failed' ? 'past_due' : String(object.status || 'inactive')),
+        });
+      }
+      return res.json({ received: true });
+    } catch (error) {
+      console.error(`[${req.requestId}] Webhook Stripe invalide:`, error.message);
+      return res.status(400).json({ error: 'Signature Stripe invalide.' });
+    }
+  });
   // L'historique synchronisé est plafonné et nettoyé par le routeur de compte.
   // La limite globale reste suffisamment basse pour protéger les autres routes.
   app.use(express.json({ limit: '950kb' }));
@@ -115,7 +149,15 @@ export function createApp({ llmService, accountService = null, mailService = nul
   app.get('/manifest.json', (_req, res) => sendPublicFile(res, 'manifest.json'));
   app.get('/firebase-config.json', (_req, res) => sendPublicFile(res, 'firebase-config.json'));
   app.get('/robots.txt', (_req, res) => sendPublicFile(res, 'robots.txt'));
-  app.get('/sitemap.xml', (_req, res) => sendPublicFile(res, 'sitemap.xml'));
+  app.get('/sitemap.xml', async (_req, res) => {
+    try {
+      const garages = accountService?.listGarageSitemapEntries ? await accountService.listGarageSitemapEntries() : [];
+      return res.type('application/xml').send(sitemapDocument(canonicalOrigin, garages));
+    } catch {
+      // An unavailable directory must never make the core sitemap fail.
+      return res.type('application/xml').send(sitemapDocument(canonicalOrigin));
+    }
+  });
   app.get('/privacy.html', (_req, res) => sendPublicFile(res, 'privacy.html'));
   app.get('/terms.html', (_req, res) => sendPublicFile(res, 'terms.html'));
   app.get('/account-deletion.html', (_req, res) => sendPublicFile(res, 'account-deletion.html'));
@@ -123,6 +165,18 @@ export function createApp({ llmService, accountService = null, mailService = nul
   app.get('/terms', (_req, res) => res.redirect(308, '/terms.html'));
   app.get('/account-deletion', (_req, res) => res.redirect(308, '/account-deletion.html'));
   app.get('/shared-report.html', (_req, res) => sendPublicFile(res, 'shared-report.html'));
+  app.get('/garages', (_req, res) => sendPublicFile(res, 'garage-directory.html'));
+  app.get('/pro/inscription-garage', (_req, res) => sendPublicFile(res, 'garage-registration.html'));
+  app.get('/admin/garages', (_req, res) => sendPublicFile(res, 'garage-admin.html'));
+  app.get('/garages/:slug', async (req, res) => {
+    try {
+      const entry = accountService?.getPublicGarage ? await accountService.getPublicGarage(String(req.params.slug || '')) : null;
+      if (!entry) return res.status(404).type('html').send(renderGarageNotFound(canonicalOrigin));
+      return res.type('html').send(renderGarageDetail(entry.garage, entry.reviews, canonicalOrigin));
+    } catch {
+      return res.status(503).type('html').send(renderGarageNotFound(canonicalOrigin));
+    }
+  });
   // Every authenticated or local-first application page is handled by the
   // lightweight History API router. This also makes refreshes on a deep link
   // work on Render without exposing a second static-site configuration.
@@ -208,7 +262,13 @@ export function createApp({ llmService, accountService = null, mailService = nul
     res.setHeader('Cache-Control', 'private, no-store');
     return res.json(shared);
   });
-  if (accountService) app.use('/api/account', createAccountRouter(accountService, { mailService, publicOrigin: canonicalOrigin }));
+  if (accountService) {
+    app.use('/api', createGarageApiRouter(accountService));
+    app.use('/api/admin', createGarageAdminRouter(accountService));
+  } else {
+    app.use('/api/garages', (_req, res) => res.status(503).json({ error:'Annuaire temporairement indisponible.', code:'GARAGE_DIRECTORY_UNAVAILABLE' }));
+  }
+  if (accountService) app.use('/api/account', createAccountRouter(accountService, { mailService, stripeService, publicOrigin: canonicalOrigin }));
   else app.use('/api/account', (_req, res) => res.status(503).json({ error: 'Firebase Admin non configuré.', code: 'AUTH_NOT_CONFIGURED' }));
   app.use((_req, res) => res.status(404).json({ error: 'Route introuvable.' }));
   app.use((error, req, res, _next) => {

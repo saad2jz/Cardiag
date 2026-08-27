@@ -148,6 +148,29 @@ function animateScoreCounters(root) {
   targets.forEach((element) => observer.observe(element));
 }
 
+function renderLandingFaq(root, language) {
+  let faq = root.querySelector('[data-landing-faq]');
+  if (!faq) {
+    faq = document.createElement('section');
+    faq.className = 'landing-faq landing-shell';
+    faq.dataset.landingFaq = '';
+    root.querySelector('.landing-footer')?.before(faq);
+  }
+  const english = language === 'en';
+  const entries = english
+    ? [
+      ['Does CarDiag replace an official inspection?', 'No. CarDiag helps document observations and prepare a decision; it does not replace a statutory inspection or a qualified professional.'],
+      ['Can I use it offline?', 'Yes. The inspection stays usable locally. Online features such as AI assistance and cloud synchronisation require a connection.'],
+      ['Are photos included in the PDF?', 'Yes. Photos attached to a control point are placed in the corresponding technical section of the detailed report.'],
+    ]
+    : [
+      ['CarDiag remplace-t-il un contrôle technique ?', 'Non. CarDiag aide à documenter les observations et à préparer une décision ; il ne remplace ni le contrôle réglementaire ni l’avis d’un professionnel qualifié.'],
+      ['Puis-je l’utiliser hors ligne ?', 'Oui. La fiche reste utilisable localement. Les fonctions en ligne, comme l’assistant IA et la synchronisation cloud, nécessitent une connexion.'],
+      ['Les photos apparaissent-elles dans le PDF ?', 'Oui. Les photos rattachées à un point de contrôle sont replacées dans la section technique correspondante du rapport détaillé.'],
+    ];
+  faq.innerHTML = `<p class="landing-kicker">${english ? 'FAQ' : 'QUESTIONS FRÉQUENTES'}</p><h2>${english ? 'Answers before you start.' : 'Les réponses avant de commencer.'}</h2><div>${entries.map(([question, answer]) => `<details><summary>${question}</summary><p>${answer}</p></details>`).join('')}</div>`;
+}
+
 export function initializeLanding() {
   const root = document.getElementById('marketingLanding');
   if (!root) return { active: false };
@@ -239,6 +262,8 @@ export function initializeLanding() {
     document.body.classList.add('landing-active');
   }
 
+  renderLandingFaq(root, window.cardiagI18n?.language || 'fr');
+
   root.querySelectorAll('[data-landing-enter]').forEach((button) => button.addEventListener('click', () => enter(button.dataset.landingRole || '')));
   const authToggle = root.querySelector('[data-landing-auth-toggle]');
   const authOptions = root.querySelector('#landingAuthOptions');
@@ -297,7 +322,11 @@ export function initializeLanding() {
     applyLanguage(root, language);
   }));
   root.querySelectorAll('a[href^="#"]').forEach((link) => link.addEventListener('click', () => document.querySelector(link.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' })));
-  window.addEventListener('cardiag:language-change', (event) => applyLanguage(root, event.detail?.language || 'fr'));
+  window.addEventListener('cardiag:language-change', (event) => {
+    const language = event.detail?.language || 'fr';
+    applyLanguage(root, language);
+    renderLandingFaq(root, language);
+  });
   applyLanguage(root, window.cardiagI18n?.language || 'fr');
   showFamily('personal');
   animateScoreCounters(root);

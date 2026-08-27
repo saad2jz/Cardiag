@@ -156,6 +156,86 @@ function updateProgressDock(dock) {
   dock.querySelector('[data-dock-time]').textContent = remainingLabel(stats);
 }
 
+function createCompactSectionProgress() {
+  const bar = document.createElement('div');
+  bar.className = 'inspection-section-progress';
+  bar.hidden = true;
+  bar.setAttribute('role', 'status');
+  bar.setAttribute('aria-live', 'polite');
+  bar.innerHTML = '<strong data-compact-section>Étape 1/7 — Véhicule</strong><span data-compact-count>0 / 33</span>';
+  document.body.append(bar);
+  return bar;
+}
+
+function updateCompactSectionProgress(bar, key = 'info') {
+  const index = Math.max(0, SECTIONS.findIndex((section) => section.key === key));
+  const section = SECTIONS[index];
+  const stats = allStats();
+  if (!section) return;
+  bar.querySelector('[data-compact-section]').textContent = english()
+    ? `Step ${index + 1}/7 — ${section.en}`
+    : `Étape ${index + 1}/7 — ${section.fr}`;
+  bar.querySelector('[data-compact-count]').textContent = `${stats.done} / ${stats.total}`;
+}
+
+function updateBudgetChecklist() {
+  const box = document.getElementById('budgetResult');
+  if (!box) return;
+  const number = (selector) => Number(document.querySelector(selector)?.value) || 0;
+  const valeur = number('input[name="valeur"]');
+  const frais = number('#fraisEstimation');
+  const budget = number('#budgetMax');
+  const requirements = english()
+    ? [['Vehicle value', valeur > 0], ['Estimated repairs', frais > 0], ['Maximum budget', budget > 0]]
+    : [['Valeur du véhicule', valeur > 0], ['Frais estimés', frais > 0], ['Budget maximum', budget > 0]];
+  const complete = requirements.every(([, ready]) => ready);
+  box.className = `budget-result budget-checklist-result${complete ? ' is-ready' : ''}`;
+  const items = requirements.map(([label, ready]) => `<li class="${ready ? 'is-ready' : ''}"><span aria-hidden="true">${ready ? '✓' : '○'}</span>${label}</li>`).join('');
+  const intro = english() ? 'To calculate the purchase margin:' : 'Pour calculer votre marge, il faut :';
+  const result = complete
+    ? (() => {
+      const total = valeur + frais;
+      const delta = budget - total;
+      const message = delta >= 0
+        ? (english() ? `${delta.toLocaleString('en-US')} € remains below budget.` : `Marge de ${delta.toLocaleString('fr-FR')} € sous votre budget.`)
+        : (english() ? `${Math.abs(delta).toLocaleString('en-US')} € over budget.` : `Dépasse votre budget de ${Math.abs(delta).toLocaleString('fr-FR')} €.`);
+      return `<strong>${english() ? 'Estimated total' : 'Coût total estimé'} : ${total.toLocaleString(english() ? 'en-US' : 'fr-FR')} € — ${message}</strong>`;
+    })()
+    : `<small>${english() ? 'Complete the missing information to show the estimate.' : 'Complétez les informations manquantes pour afficher l’estimation.'}</small>`;
+  box.innerHTML = `<p>${intro}</p><ul>${items}</ul>${result}`;
+}
+
+function improveAssistantEmptyState() {
+  const report = document.getElementById('reportContent');
+  if (!report || !report.querySelector('.waiting-state')) return;
+  const stats = allStats();
+  let progress = report.querySelector('[data-assistant-empty-progress]');
+  if (!progress) {
+    progress = document.createElement('p');
+    progress.className = 'waiting-progress';
+    progress.dataset.assistantEmptyProgress = '';
+    report.querySelector('.waiting-state h3')?.after(progress);
+  }
+  const encouragement = english()
+    ? (stats.done ? 'Continue documenting the next point to refine the analysis.' : 'Start with one vehicle check to unlock a more useful analysis.')
+    : (stats.done ? 'Documentez le point suivant pour affiner l’analyse.' : 'Commencez par un contrôle du véhicule pour obtenir une analyse plus utile.');
+  progress.textContent = `${english() ? `${stats.done} / ${stats.total} checks completed` : `${stats.done} / ${stats.total} vérifiés`} — ${encouragement}`;
+}
+
+function organizeToolbarActions() {
+  const toolbar = document.getElementById('toolbarActions');
+  const menu = toolbar?.querySelector('.advanced-actions-menu');
+  if (!toolbar || !menu || toolbar.querySelector('.common-actions')) return;
+  const common = document.createElement('div');
+  common.className = 'common-actions';
+  common.setAttribute('aria-label', english() ? 'Common record actions' : 'Actions courantes sur la fiche');
+  ['#dupFicheBtn', '#delFicheBtn', '#compareBtn'].forEach((selector) => {
+    const button = menu.querySelector(selector);
+    if (button) common.append(button);
+  });
+  menu.before(common);
+}
+
 function createGuide() {
   const checklist = document.querySelector('.wizard-checklist');
   const heading = checklist?.querySelector('.wizard-checklist-heading');
@@ -415,7 +495,9 @@ function initializeGuide(guide) {
 export function initializeInspectionEnhancements() {
   ensureSectionSummaries();
   const dock = createProgressDock();
+  const compactProgress = createCompactSectionProgress();
   const guide = initializeGuide(createGuide());
+  organizeToolbarActions();
   window.cardiagInspectionView = {
     setMode: (mode) => guide.setMode(mode),
     get mode() { return guide.mode; },
@@ -430,6 +512,8 @@ export function initializeInspectionEnhancements() {
     updateStickyOffset();
     updateSectionSummaries();
     updateProgressDock(dock);
+    updateBudgetChecklist();
+    improveAssistantEmptyState();
     guide.refresh();
   };
 
@@ -442,11 +526,19 @@ export function initializeInspectionEnhancements() {
     }
     refresh();
   });
+  document.addEventListener('input', (event) => {
+    if (event.target.matches('input[name="valeur"], #fraisEstimation, #budgetMax')) updateBudgetChecklist();
+  });
+  window.addEventListener('cardiag:inspection-section-change', (event) => {
+    updateCompactSectionProgress(compactProgress, event.detail?.key);
+  });
   ['cardiag:data-change', 'cardiag:record-open', 'cardiag:language-change', 'cardiag:media-change', 'cardiag:inspection-mode-change', 'cardiag:scenario-change']
     .forEach((name) => window.addEventListener(name, () => requestAnimationFrame(refresh)));
   window.addEventListener('cardiag:wizard-step', (event) => {
     const visible = event.detail?.step === 4;
     dock.hidden = !visible;
+    compactProgress.hidden = !visible;
+    if (visible) updateCompactSectionProgress(compactProgress);
     guide.setVisible(visible);
     refresh();
   });

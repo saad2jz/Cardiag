@@ -35,3 +35,13 @@ body.inspection-guided-mode .inspection-guided-current.field{display:flex;flex-d
   .inspection-progress-dock{display:none!important}
   body.inspection-mobile-wizard .inspection-guided-current{margin-bottom:82px}
 }
+
+/* Compact, persistent section context for the field workflow. */
+.inspection-section-progress{display:none}
+@media(max-width:760px){
+  .inspection-section-progress{position:fixed;z-index:126;top:var(--inspection-sticky-top,0px);left:0;right:0;display:flex;align-items:center;justify-content:space-between;gap:10px;height:48px;padding:0 12px;border-block:1px solid color-mix(in srgb,var(--primary) 38%,var(--border));background:color-mix(in srgb,var(--surface) 97%,transparent);box-shadow:0 6px 18px color-mix(in srgb,#000 10%,transparent);backdrop-filter:blur(12px);font-size:12px}
+  body.inspection-mobile-wizard .wizard-checklist{padding-top:58px}
+  .inspection-section-progress strong{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font:850 12px 'Sora',sans-serif}
+  .inspection-section-progress span{flex:0 0 auto;color:var(--muted);font:800 11px 'JetBrains Mono',monospace}
+  .inspection-guide{position:relative;top:auto}
+}

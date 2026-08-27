@@ -1,0 +1,27 @@
+import { publicGarage } from './garage-utils.js';
+
+function escapeHtml(value) {
+  return String(value || '').replace(/[&<>"']/g, (character) => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[character]));
+}
+
+function jsonLd(value) { return JSON.stringify(value).replace(/</g, '\\u003c'); }
+
+export function renderGarageDetail(garageData, reviews, origin) {
+  const garage = publicGarage(garageData);
+  const canonical = `${origin}/garages/${encodeURIComponent(garage.slug)}`;
+  const description = garage.description || `${garage.name}, garage automobile à ${garage.city}.`;
+  const schema = {
+    '@context': 'https://schema.org', '@type': 'AutoRepair', name: garage.name,
+    url: canonical, telephone: garage.phone || undefined, email: garage.email || undefined,
+    address: { '@type':'PostalAddress', streetAddress:garage.address || undefined, addressLocality:garage.city, postalCode:garage.postalCode || undefined, addressCountry:'FR' },
+    aggregateRating: garage.reviewCount ? { '@type':'AggregateRating', ratingValue:garage.ratingAverage, reviewCount:garage.reviewCount } : undefined,
+    review: reviews.map((review) => ({ '@type':'Review', reviewRating:{ '@type':'Rating', ratingValue:review.rating, bestRating:5 }, author:{ '@type':'Person', name:review.authorName }, reviewBody:review.comment })),
+  };
+  const specialtyMarkup = garage.specialties.map((item) => `<li>${escapeHtml(item)}</li>`).join('') || '<li>Spécialités à venir</li>';
+  const reviewMarkup = reviews.length ? reviews.map((review) => `<article class="garage-review"><strong>${escapeHtml(review.authorName)}</strong><span aria-label="${review.rating} sur 5">${'★'.repeat(review.rating)}${'☆'.repeat(5 - review.rating)}</span><p>${escapeHtml(review.comment)}</p></article>`).join('') : '<p>Aucun avis publié pour le moment.</p>';
+  return `<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(garage.name)} à ${escapeHtml(garage.city)} | CarDiag</title><meta name="description" content="${escapeHtml(description).slice(0, 155)}"><link rel="canonical" href="${canonical}"><link rel="stylesheet" href="/css/marketplace.css"><script type="application/ld+json">${jsonLd(schema)}</script></head><body><header class="garage-header"><a href="/">CarDiag</a><a href="/garages">Annuaire garages</a></header><main class="garage-page"><a href="/garages" class="back-link">← Tous les garages</a><section class="garage-hero"><p class="garage-kicker">GARAGE PARTENAIRE</p><h1>${escapeHtml(garage.name)}</h1><p>${escapeHtml(garage.city)}${garage.postalCode ? ` · ${escapeHtml(garage.postalCode)}` : ''}</p><p class="garage-rating">${garage.reviewCount ? `${garage.ratingAverage.toFixed(1)}/5 · ${garage.reviewCount} avis` : 'Nouveau garage partenaire'}</p></section><section class="garage-grid"><article><h2>Présentation</h2><p>${escapeHtml(description)}</p><h2>Spécialités</h2><ul>${specialtyMarkup}</ul></article><aside><h2>Coordonnées</h2><p>${escapeHtml(garage.address || 'Adresse à venir')}<br>${escapeHtml(garage.city)} ${escapeHtml(garage.postalCode)}</p>${garage.phone ? `<p><a href="tel:${escapeHtml(garage.phone)}">${escapeHtml(garage.phone)}</a></p>` : ''}${garage.email ? `<p><a href="mailto:${escapeHtml(garage.email)}">${escapeHtml(garage.email)}</a></p>` : ''}${garage.website ? `<p><a href="${escapeHtml(garage.website)}" rel="noopener noreferrer">Site web</a></p>` : ''}<h2>Horaires</h2><p>${escapeHtml(garage.hours || 'Horaires à venir')}</p></aside></section><section class="garage-reviews-section"><h2>Avis clients</h2><div>${reviewMarkup}</div><form id="garageReviewForm"><h3>Déposer un avis</h3><label>Votre nom<input name="authorName" maxlength="80" required></label><label>Note<select name="rating" required><option value="5">5 — Excellent</option><option value="4">4 — Très bien</option><option value="3">3 — Correct</option><option value="2">2 — À améliorer</option><option value="1">1 — Insatisfait</option></select></label><label>Commentaire<textarea name="comment" minlength="10" maxlength="1500" required></textarea></label><button>Envoyer pour validation</button><p id="reviewStatus" role="status"></p></form></section></main><script>document.getElementById('garageReviewForm').addEventListener('submit',async(e)=>{e.preventDefault();const form=e.currentTarget,status=document.getElementById('reviewStatus');status.textContent='Envoi…';const body=Object.fromEntries(new FormData(form));try{const r=await fetch('/api/garages/${encodeURIComponent(garage.slug)}/reviews',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const p=await r.json();if(!r.ok)throw Error(p.error);form.reset();status.textContent='Merci, votre avis sera publié après validation.'}catch(error){status.textContent=error.message||'Envoi impossible.'}});</script></body></html>`;
+}
+
+export function renderGarageNotFound(origin) {
+  return `<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="robots" content="noindex"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Garage introuvable | CarDiag</title><link rel="stylesheet" href="/css/marketplace.css"></head><body><main class="garage-page garage-empty"><h1>Garage introuvable</h1><p>Cette fiche n’existe pas ou n’est pas encore publiée.</p><a class="garage-button" href="${origin}/garages">Voir l’annuaire</a></main></body></html>`;
+}

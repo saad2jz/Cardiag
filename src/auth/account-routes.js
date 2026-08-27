@@ -5,7 +5,7 @@ function bearerToken(req) {
   return match?.[1] || '';
 }
 
-export function createAccountRouter(service, { mailService = null, publicOrigin = process.env.PUBLIC_ORIGIN || 'https://cardiag.online' } = {}) {
+export function createAccountRouter(service, { mailService = null, stripeService = null, publicOrigin = process.env.PUBLIC_ORIGIN || 'https://cardiag.online' } = {}) {
   const router = express.Router();
   router.use(async (req, res, next) => {
     const token = bearerToken(req);
@@ -50,6 +50,22 @@ export function createAccountRouter(service, { mailService = null, publicOrigin 
       url: 'cardiag://fiche',
     });
     return res.json(result);
+  });
+  router.get('/billing', verifiedOnly, async (req, res) => res.json({ billing: await service.getBilling(req.user.uid), configured: Boolean(stripeService?.configured) }));
+  router.post('/billing/checkout', verifiedOnly, async (req, res) => {
+    if (!stripeService?.configured) return res.status(503).json({ error: 'La facturation n’est pas encore configurée.', code: 'STRIPE_NOT_CONFIGURED' });
+    try {
+      const billing = await service.getBilling(req.user.uid);
+      const result = await stripeService.createGarageCheckout({ uid: req.user.uid, email: req.user.email, garageId: String(req.body?.garageId || '').replace(/[^a-zA-Z0-9_-]/g, '').slice(0, 100), customerId: billing.customerId || null });
+      return res.json(result);
+    } catch (error) {
+      return res.status(error?.code === 'STRIPE_NOT_CONFIGURED' ? 503 : 400).json({ error: error.message || 'Création du paiement impossible.', code: error?.code || 'STRIPE_CHECKOUT_FAILED' });
+    }
+  });
+  router.post('/billing/portal', verifiedOnly, async (req, res) => {
+    if (!stripeService?.configured) return res.status(503).json({ error: 'La facturation n’est pas encore configurée.', code: 'STRIPE_NOT_CONFIGURED' });
+    try { return res.json(await stripeService.createPortal(await service.getBilling(req.user.uid))); }
+    catch (error) { return res.status(['STRIPE_NOT_CONFIGURED', 'STRIPE_CUSTOMER_MISSING'].includes(error?.code) ? 503 : 400).json({ error: error.message || 'Portail de facturation indisponible.', code: error?.code || 'STRIPE_PORTAL_FAILED' }); }
   });
   router.get('/team', verifiedOnly, async (req, res) => {
     if (!service.listTeamMembers) return res.status(501).json({ error: 'Partage d’équipe indisponible.', code: 'TEAM_NOT_AVAILABLE' });
