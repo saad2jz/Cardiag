@@ -171,3 +171,14 @@ test('email verification can be refreshed without reconnecting', () => {
   assert.match(authUi, /authClient\.reloadUser\(\)/);
   assert.match(client, /async reloadUser\(\)/);
 });
+
+test('browser drafts are isolated by Firebase UID and anonymous drafts require explicit import', () => {
+  assert.match(comparison, /const ANONYMOUS_SCOPE = 'anonymous'/);
+  assert.match(comparison, /scopedStorageKey\(DB_KEY/);
+  assert.match(comparison, /migrateLegacySharedWorkspace/);
+  assert.match(comparison, /async function switchLocalWorkspace/);
+  assert.match(comparison, /function importAnonymousRecords/);
+  assert.match(comparison, /getLocalMigrationSummary/);
+  assert.match(authUi, /importAnonymousRecords\?\.\(\)/);
+  assert.match(syncQueue, /await window\.cardiagDataBridge\?\.ready/);
+});

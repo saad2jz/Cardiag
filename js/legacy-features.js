@@ -33,6 +33,11 @@ export async function initializeLegacyFeatures(vehicleData) {
 
   const DB_KEY = 'fev_fiches_db_v2';
   const CUR_KEY = 'fev_fiche_courante_v2';
+  // Fiches used to share one browser-wide localStorage key.  Keep the old
+  // payload recoverable as an anonymous workspace, then keep each Firebase
+  // account in its own namespace on this device.
+  const ANONYMOUS_SCOPE = 'anonymous';
+  const LOCAL_SCOPE_MIGRATION_KEY = 'cardiag_local_record_scopes_v1';
   const QUICK_MODE_KEY = 'fev_quick_mode_v1';
   const CHECK_NAMES = ['huile','ldr','fuites','bruits','fumee','ralenti','culasse','supports',
     'rouille_plancher','longerons','pont','rotules','amortos','pneus','jantes',
@@ -124,6 +129,31 @@ export async function initializeLegacyFeatures(vehicleData) {
     }
   };
 
+  let activeLocalScope = ANONYMOUS_SCOPE;
+  let scopeTransition = Promise.resolve();
+  const scopedStorageKey = (key, scope = activeLocalScope) => `${key}:scope:${scope || ANONYMOUS_SCOPE}`;
+  const accountScope = (user = window.cardiagAuth?.user) => String(user?.uid || ANONYMOUS_SCOPE);
+  const dbStorageKey = () => scopedStorageKey(DB_KEY);
+  const currentStorageKey = () => scopedStorageKey(CUR_KEY);
+
+  function migrateLegacySharedWorkspace() {
+    if (safeStorage.getItem(LOCAL_SCOPE_MIGRATION_KEY)) return;
+    const legacyRecords = safeStorage.getItem(DB_KEY);
+    const legacyCurrent = safeStorage.getItem(CUR_KEY);
+    const anonymousDbKey = scopedStorageKey(DB_KEY, ANONYMOUS_SCOPE);
+    const anonymousCurrentKey = scopedStorageKey(CUR_KEY, ANONYMOUS_SCOPE);
+    // Copy first: an interrupted migration can never destroy existing drafts.
+    if (legacyRecords && legacyRecords !== '{}' && !safeStorage.getItem(anonymousDbKey)) {
+      safeStorage.setItem(anonymousDbKey, legacyRecords);
+      safeStorage.setItem(anonymousCurrentKey, legacyCurrent || '');
+    }
+    // Empty legacy global keys so a previously shared workspace is no longer
+    // picked up by any newly scoped version of the application.
+    safeStorage.setItem(DB_KEY, '{}');
+    safeStorage.setItem(CUR_KEY, '');
+    safeStorage.setItem(LOCAL_SCOPE_MIGRATION_KEY, '1');
+  }
+
   function cssEscape(s){
     if(window.CSS && typeof CSS.escape === 'function'){
       try{ return CSS.escape(s); }catch(e){ /* repli ci-dessous */ }
@@ -139,8 +169,8 @@ export async function initializeLegacyFeatures(vehicleData) {
       // Keep the record payload small and synchronous. Photo bits stay in
       // IndexedDB and are rehydrated by loadDb before the form is rendered.
       const serialized = JSON.stringify(serializableRecordsWithoutMedia(db));
-      safeStorage.setItem(DB_KEY, serialized);
-      safeStorage.setItem(CUR_KEY, currentId);
+      safeStorage.setItem(dbStorageKey(), serialized);
+      safeStorage.setItem(currentStorageKey(), currentId || '');
       updateSaveIndicator(true);
       updateStorageMeter(serialized);
       if(notify) window.dispatchEvent(new CustomEvent('cardiag:data-change', { detail: { currentId } }));
@@ -188,7 +218,7 @@ export async function initializeLegacyFeatures(vehicleData) {
   }
 
   async function loadDb(){
-    try{ db = JSON.parse(safeStorage.getItem(DB_KEY)) || {}; }catch(e){ db = {}; }
+    try{ db = JSON.parse(safeStorage.getItem(dbStorageKey())) || {}; }catch(e){ db = {}; }
     try {
       await migrateAndHydrateRecordMedia(db);
       // Commit the compact representation immediately after a legacy-media
@@ -196,10 +226,13 @@ export async function initializeLegacyFeatures(vehicleData) {
       persist(false);
     }
     catch (error) { console.warn('Médias locaux indisponibles : les fiches restent utilisables sans leurs aperçus.', error); }
-    currentId = safeStorage.getItem(CUR_KEY);
+    currentId = safeStorage.getItem(currentStorageKey());
     if(!currentId || !db[currentId]){
       const id = createFiche();
       currentId = id;
+      // createFiche persists before the new record becomes current. Commit
+      // once more so reopening this workspace does not create another blank.
+      persist(false);
     }
   }
   function createFiche(sourceData){
@@ -304,6 +337,59 @@ export async function initializeLegacyFeatures(vehicleData) {
     window.dispatchEvent(new CustomEvent('cardiag:scenario-change'));
   }
 
+  async function switchLocalWorkspace(user){
+    const nextScope = accountScope(user);
+    if(nextScope === activeLocalScope) return;
+    // Persist before changing the namespace: a sign-out or account switch can
+    // never leave the previously opened draft only in memory.
+    if(db[currentId]) saveCurrent();
+    activeLocalScope = nextScope;
+    await loadDb();
+    refreshSelector();
+    applyToForm(db[currentId].data);
+    await restoreVehicleSelects(db[currentId].data);
+    renderAllPhotoGrids();
+    if(typeof refreshAllSignaturePads === 'function') refreshAllSignaturePads();
+    updateAll();
+    window.dispatchEvent(new CustomEvent('cardiag:local-workspace-change', {
+      detail: { scope: activeLocalScope, authenticated: activeLocalScope !== ANONYMOUS_SCOPE, currentId }
+    }));
+  }
+
+  function anonymousRecords(){
+    try { return JSON.parse(safeStorage.getItem(scopedStorageKey(DB_KEY, ANONYMOUS_SCOPE))) || {}; }
+    catch { return {}; }
+  }
+
+  function localMigrationSummary(){
+    const accountRecords = Object.values(db).filter((record) => !record?.syncConflict && (!Number.isSafeInteger(record.syncVersion) || record.syncVersion < 1));
+    const anonymous = activeLocalScope === ANONYMOUS_SCOPE ? [] : Object.values(anonymousRecords())
+      .filter((record) => !record?.syncConflict && (!Number.isSafeInteger(record.syncVersion) || record.syncVersion < 1));
+    return { account: accountRecords.length, anonymous: anonymous.length, total: accountRecords.length + anonymous.length };
+  }
+
+  function importAnonymousRecords(){
+    if(activeLocalScope === ANONYMOUS_SCOPE) return 0;
+    const source = anonymousRecords();
+    let imported = 0;
+    Object.values(source).forEach((record) => {
+      if(!record?.id || db[record.id]) return;
+      // Copy rather than move. The anonymous original remains recoverable on
+      // this browser until the user explicitly clears local application data.
+      db[record.id] = JSON.parse(JSON.stringify(record));
+      delete db[record.id].syncVersion;
+      delete db[record.id].syncConflict;
+      db[record.id].updatedAt = new Date().toISOString();
+      imported += 1;
+    });
+    if(imported){
+      persist(false);
+      refreshSelector();
+      window.dispatchEvent(new CustomEvent('cardiag:data-change', { detail:{ currentId, imported } }));
+    }
+    return imported;
+  }
+
   /**
    * Opens a genuinely blank inspection. Both entry points (toolbar and
    * vehicle picker) use this function so visual pickers, photo grids and
@@ -320,7 +406,7 @@ export async function initializeLegacyFeatures(vehicleData) {
       etape_courante: initialData.etape_courante || 'identification',
     });
     currentId = id;
-    safeStorage.setItem(CUR_KEY,currentId);
+    safeStorage.setItem(currentStorageKey(),currentId);
     refreshSelector();
     applyToForm(freshData);
     await restoreVehicleSelects(freshData);
@@ -864,7 +950,7 @@ export async function initializeLegacyFeatures(vehicleData) {
     delete db[deletedId];
     if(wasCurrent){
       currentId = Object.keys(db)[0];
-      safeStorage.setItem(CUR_KEY,currentId);
+      safeStorage.setItem(currentStorageKey(),currentId);
       applyToForm(db[currentId].data);
       restoreVehicleSelects(db[currentId].data);
       renderAllPhotoGrids();
@@ -2531,6 +2617,8 @@ export async function initializeLegacyFeatures(vehicleData) {
   }
 
   loadCategoryWeights();
+  migrateLegacySharedWorkspace();
+  activeLocalScope = accountScope();
   await loadDb();
   buildPhotoBlocks();
   buildPointPhotoControls();
@@ -2540,8 +2628,14 @@ export async function initializeLegacyFeatures(vehicleData) {
     getPhotos: ()=>getCurrentPhotos(),
   };
   window.cardiagDataBridge = {
+    // Resolves after an account switch so sync code never reads another
+    // account's browser workspace while Firebase is restoring its session.
+    get ready(){ return scopeTransition; },
+    get activeScope(){ return activeLocalScope; },
     exportRecords: ()=>Object.values(db).map(fiche=>JSON.parse(JSON.stringify(fiche))),
-    getCurrentRecord: ()=>JSON.parse(JSON.stringify(db[currentId])),
+    getCurrentRecord: ()=>db[currentId] ? JSON.parse(JSON.stringify(db[currentId])) : null,
+    getLocalMigrationSummary: ()=>localMigrationSummary(),
+    importAnonymousRecords: ()=>importAnonymousRecords(),
     getReportModel: (id=currentId)=>reportModelFor(db[id]),
     listReportModels: ()=>Object.values(db).map(reportModelFor).filter(Boolean),
     createRecord: async (initialData={})=>createBlankInspection(initialData),
@@ -2629,7 +2723,7 @@ export async function initializeLegacyFeatures(vehicleData) {
     },
     openRecord: async (id)=>{
       if(!db[id]) return false;
-      saveCurrent(); currentId=id; safeStorage.setItem(CUR_KEY,currentId); refreshSelector(); applyToForm(db[currentId].data); await restoreVehicleSelects(db[currentId].data); renderAllPhotoGrids(); updateAll();
+      saveCurrent(); currentId=id; safeStorage.setItem(currentStorageKey(),currentId); refreshSelector(); applyToForm(db[currentId].data); await restoreVehicleSelects(db[currentId].data); renderAllPhotoGrids(); updateAll();
       window.dispatchEvent(new CustomEvent('cardiag:scenario-change'));
       window.dispatchEvent(new CustomEvent('cardiag:record-open', { detail:{ id } }));
       return true;
@@ -2639,6 +2733,14 @@ export async function initializeLegacyFeatures(vehicleData) {
       printFallback(button, button.textContent);
     },
   };
+  // Firebase can restore a persisted session after this module is mounted.
+  // Serialising scope transitions prevents a rapid sign-out/sign-in sequence
+  // from ever mixing two accounts in the same in-memory database.
+  window.cardiagAuth?.onChange?.((user)=>{
+    scopeTransition = scopeTransition.then(() => switchLocalWorkspace(user)).catch((error) => {
+      console.warn('Impossible de changer l’espace local du compte.', error);
+    });
+  });
   buildNavButtons();
   initAppTabbar();
   applyToForm(db[currentId].data);

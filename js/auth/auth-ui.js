@@ -103,18 +103,27 @@ export async function initializeAuthUi() {
     window.dispatchEvent(new CustomEvent('cardiag:authentication-complete', { detail: { provider } }));
   };
 
-  const pendingLocalRecords = () => (window.cardiagDataBridge?.exportRecords?.() || [])
-    .filter((record) => !record?.syncConflict && (!Number.isSafeInteger(record.syncVersion) || record.syncVersion < 1)).length;
+  const pendingLocalRecords = () => {
+    const summary = window.cardiagDataBridge?.getLocalMigrationSummary?.();
+    if (summary) return summary;
+    const account = (window.cardiagDataBridge?.exportRecords?.() || [])
+      .filter((record) => !record?.syncConflict && (!Number.isSafeInteger(record.syncVersion) || record.syncVersion < 1)).length;
+    return { account, anonymous:0, total:account };
+  };
   const refreshMigration = (user = authClient.user) => {
     const section = panel.querySelector('[data-local-migration]');
     const button = panel.querySelector('[data-migrate-local]');
-    const count = pendingLocalRecords();
+    const candidates = pendingLocalRecords();
+    const count = candidates.total ?? candidates.account ?? 0;
     section.hidden = !user || count === 0;
     if (section.hidden) return;
     const verified = Boolean(user.emailVerified);
     const migrationWording = count > 1 ? 'seront copiées' : 'sera copiée';
+    const anonymousHint = candidates.anonymous
+      ? ` ${candidates.anonymous} provient${candidates.anonymous > 1 ? 'nent' : ''} de l’espace anonyme de cet appareil.`
+      : '';
     section.querySelector('[data-local-migration-text]').textContent = verified
-      ? `${count} fiche${count > 1 ? 's' : ''} locale${count > 1 ? 's' : ''} ${migrationWording} vers votre compte. Elles restent aussi sur cet appareil.`
+      ? `${count} fiche${count > 1 ? 's' : ''} locale${count > 1 ? 's' : ''} ${migrationWording} vers votre compte. Elles restent aussi sur cet appareil.${anonymousHint}`
       : 'Vérifiez d’abord votre adresse email pour sauvegarder vos fiches dans le cloud.';
     button.disabled = !verified;
   };
@@ -267,6 +276,9 @@ export async function initializeAuthUi() {
     setBusy(button, true);
     message(panel, 'Sauvegarde des fiches locales en cours…');
     try {
+      // Anonymous browser drafts are copied into this account only after this
+      // explicit user action; logging in never silently exposes them.
+      window.cardiagDataBridge?.importAnonymousRecords?.();
       const result = await window.cardiagSync?.migrateLocalRecords?.();
       if (!result) throw new Error('La synchronisation est indisponible.');
       message(panel, result.state === 'synced'

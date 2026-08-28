@@ -80,6 +80,16 @@ export async function initializeSyncQueue(){
   }
   window.addEventListener('cardiag:data-change',()=>{clearTimeout(timer);timer=setTimeout(enqueue,1600)});
   window.cardiagConnectivity?.subscribe(({online})=>{if(online)drain()});
-  window.cardiagAuth?.onChange?.(async user=>{if(!user)return;try{const remote=await window.cardiagAuth.api('/api/account/history');window.cardiagDataBridge?.mergeRecords?.(remote.records||[]);await enqueue()}catch{/* Une session peut exister pendant que le serveur redémarre. */}});
+  window.cardiagAuth?.onChange?.(async user=>{
+    if(!user)return;
+    try{
+      // Firebase may restore an account after the inspection module. Never
+      // merge remote history until its UID-scoped local workspace is ready.
+      await window.cardiagDataBridge?.ready;
+      const remote=await window.cardiagAuth.api('/api/account/history');
+      window.cardiagDataBridge?.mergeRecords?.(remote.records||[]);
+      await enqueue();
+    }catch{/* Une session peut exister pendant que le serveur redémarre. */}
+  });
   window.cardiagSync={enqueue,drain,migrateLocalRecords};
 }

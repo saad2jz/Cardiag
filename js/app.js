@@ -1,4 +1,4 @@
-import { initializeLegacyFeatures } from './legacy-features.js?v=20260827-3';
+import { initializeLegacyFeatures } from './legacy-features.js?v=20260829-1';
 import { initializePwa } from './pwa.js?v=20260823-3';
 import { initializeWizard } from './wizard.js?v=20260827-2';
 import { initializeI18n } from './i18n/i18n.js?v=20260826-1';
@@ -52,8 +52,8 @@ function hasPendingAuthenticationReturn() {
 async function loadAccountFeature(){
   if(!accountFeaturePromise){
     accountFeaturePromise=Promise.all([
-      import('./auth/auth-ui.js?v=20260828-2'),
-      import('./native/sync-queue.js?v=20260825-1'),
+      import('./auth/auth-ui.js?v=20260829-1'),
+      import('./native/sync-queue.js?v=20260829-1'),
     ]).then(async ([auth,sync])=>{
       await auth.initializeAuthUi();
       await sync.initializeSyncQueue();
