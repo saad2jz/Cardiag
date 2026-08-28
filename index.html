@@ -66,6 +66,7 @@
 <link rel="stylesheet" href="css/score/score.css?v=20260821-1">
 <link rel="stylesheet" href="css/reports/premium-report.css?v=20260814-2">
 <link rel="stylesheet" href="css/app-redesign.css?v=20260823-2">
+<link rel="stylesheet" href="css/native/obd2.css?v=20260828-1">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cardiag.online/#organization","name":"CarDiag","url":"https://cardiag.online/","logo":"https://cardiag.online/icons/app-icon-512.png"},{"@type":"WebApplication","name":"CarDiag","url":"https://cardiag.online/","publisher":{"@id":"https://cardiag.online/#organization"},"applicationCategory":"AutomotiveApplication","operatingSystem":"Web, Android, iOS","inLanguage":["fr","en"],"description":"Application d'inspection automobile guidée avec rapport PDF détaillé.","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}]}
 </script>
@@ -438,6 +439,8 @@
       <p class="hint" style="margin:0 0 10px;">Sélectionnez votre véhicule étape par étape (base de <span id="vehicleBrandCount">nombreuses</span> marques et <span id="vehicleModelCount">nombreux</span> modèles, chargée à la demande depuis <code>data/</code>). Les générations et motorisations documentées sont proposées quand elles sont disponibles ; vérifiez toujours le code exact sur la carte grise (champ P3) ou sur le moteur lui-même avant de commander une pièce. Si une marque ou un modèle n'apparaît pas (ou hors-ligne sans cache), complétez le VIN et les champs libres ci-dessous. <span style="color:var(--rouge); font-weight:600;">Les champs marqués d'un * sont obligatoires.</span></p>
       <p class="vehicle-db-status is-loading" id="vehicleDatabaseStatus" role="status"><span aria-hidden="true"></span>Chargement de la base véhicule…</p>
 
+      <div id="registrationScannerWrap" class="registration-scanner-wrap" hidden></div>
+
       <div class="vehicle-selector-bar">
         <div class="vstep" id="step-marque">
           <span class="vstep-num" id="num-marque" title="Marque">🚗</span>
@@ -501,6 +504,8 @@
         <div class="field" id="fieldWrap-valeur"><label>Valeur affichée / négociée (€) <span class="req-star">*</span></label><input type="number" name="valeur" min="0" inputmode="decimal" required placeholder="12500"><span class="req-error">Indiquez une valeur valide.</span></div>
       </div>
 
+      <div id="histovecVerificationWrap" class="histovec-verification-wrap" hidden></div>
+
       <div class="subhead">Contexte de l'expertise</div>
       <div class="geo-row">
         <div class="field"><label>Date et heure</label><input type="datetime-local" name="date_expertise"></div>
@@ -551,6 +556,7 @@
         <div class="badge-group"><input type="radio" name="supports" id="supports_ok" value="ok"><label for="supports_ok">OK</label><input type="radio" name="supports" id="supports_moy" value="moyen"><label for="supports_moy">Usure</label><input type="radio" name="supports" id="supports_def" value="defaut"><label for="supports_def">Défaut</label></div></div>
 
       <div class="field note-line"><label>Notes moteur</label><textarea name="notes_moteur" placeholder="Observations complémentaires..."></textarea></div>
+      <div id="engineAudioAnalyzerWrap" class="engine-audio-analyzer-wrap" hidden></div>
     </div>
   </details>
 
@@ -589,6 +595,8 @@
         <div class="badge-group"><input type="radio" name="mastic" id="ma_ok" value="ok"><label for="ma_ok">Aimant adhère</label><input type="radio" name="mastic" id="ma_moy" value="moyen"><label for="ma_moy">Zone douteuse</label><input type="radio" name="mastic" id="ma_def" value="defaut"><label for="ma_def">Aimant décroche</label></div></div>
       <div class="check-item"><div class="label-block"><span class="t">Qualité et homogénéité de la peinture</span><span class="d">Différence de teinte, effet "peau d'orange", raccords visibles</span></div>
         <div class="badge-group"><input type="radio" name="peinture" id="pe_ok" value="ok"><label for="pe_ok">Uniforme</label><input type="radio" name="peinture" id="pe_moy" value="moyen"><label for="pe_moy">Retouches</label><input type="radio" name="peinture" id="pe_def" value="defaut"><label for="pe_def">Repeint</label></div></div>
+
+      <div id="paintThicknessWrap" class="paint-thickness-wrap" hidden></div>
 
       <div class="subhead">Éclairage</div>
       <div class="check-item"><div class="label-block"><span class="t">Feux avant (croisement / route / clignotants)</span><span class="d">Fonctionnement, buée interne, fissures</span></div>
@@ -634,6 +642,8 @@
       <div class="check-item"><div class="label-block"><span class="t">Comportement à vitesse stabilisée</span><span class="d">Vibrations dans le volant, tenue de trajectoire, bruits de roulement</span></div>
         <div class="badge-group"><input type="radio" name="stabilite" id="st_ok" value="ok"><label for="st_ok">OK</label><input type="radio" name="stabilite" id="st_moy" value="moyen"><label for="st_moy">Moyen</label><input type="radio" name="stabilite" id="st_def" value="defaut"><label for="st_def">Défaut</label></div></div>
 
+      <div id="obd2LiveGaugesContainer" class="obd2-live-gauges-container" hidden></div>
+
       <div class="field note-line"><label>Notes essai routier</label><textarea name="notes_essai" placeholder="Observations complémentaires..."></textarea></div>
     </div>
   </details>
@@ -643,10 +653,13 @@
     <div class="section-body">
       <div class="subhead">Relevé des codes défauts</div>
       <div class="grid cols-3">
-        <div class="field"><label>Codes ECM (moteur)</label><input type="text" name="codes_ecm" placeholder="Ex : P0300, aucun..."></div>
-        <div class="field"><label>Codes ABS</label><input type="text" name="codes_abs" placeholder="Ex : C0035, aucun..."></div>
-        <div class="field"><label>Codes boîte de vitesses</label><input type="text" name="codes_boite" placeholder="Ex : P0700, aucun..."></div>
+        <div class="field"><label>Codes ECM (moteur)</label><input type="text" id="codesEcmInput" name="codes_ecm" placeholder="Ex : P0300, aucun..."></div>
+        <div class="field"><label>Codes ABS</label><input type="text" id="codesAbsInput" name="codes_abs" placeholder="Ex : C0035, aucun..."></div>
+        <div class="field"><label>Codes boîte de vitesses</label><input type="text" id="codesBoiteInput" name="codes_boite" placeholder="Ex : P0700, aucun..."></div>
       </div>
+      <div id="obd2ScanControls" class="obd2-scan-controls" hidden></div>
+      <div id="obd2ScanTrace" class="obd2-scan-trace" hidden></div>
+      <input type="hidden" name="obd2_scan_source" value="">
 
       <div class="alert-box">
         <div class="icon">!</div>
@@ -665,6 +678,8 @@
         <input type="radio" name="verdict" id="v_fuir" value="fuir"><label for="v_fuir" class="verdict-card"><span class="dot"></span><span class="title">À FUIR</span><span class="sub">Risques majeurs identifiés</span></label>
       </div>
       <p class="decision-disclaimer">Cette aide à la décision ne remplace ni un contrôle technique officiel ni l’avis d’un professionnel qualifié.</p>
+
+      <div id="repairEstimatorWrap" class="repair-estimator-wrap" hidden></div>
 
       <div class="subhead">Budget</div>
       <div class="grid cols-3">

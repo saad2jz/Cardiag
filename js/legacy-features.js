@@ -1279,7 +1279,7 @@ export async function initializeLegacyFeatures(vehicleData) {
         ['Périmètre autorisé', d.work_authorization],
         ['Codes moteur / antipollution', d.codes_ecm],
         ['Codes ABS / ESP', d.codes_abs],
-        ['Codes transmission', d.codes_boitier],
+        ['Codes transmission', d.codes_boite || d.codes_boitier],
         ['Observations du diagnostic', d.notes_diagnostic],
         ['Travaux réalisés', d.repair_work_completed],
         ['Contrôles après réparation', d.post_repair_checks],

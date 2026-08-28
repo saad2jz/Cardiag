@@ -312,7 +312,17 @@ export async function createPdf(model,branding) {
     }
     if(section==='diagnostic'){
       const obdRows=[['Codes ECM (moteur)',model.data.codes_ecm],['Codes ABS',model.data.codes_abs],['Codes boîte de vitesses',model.data.codes_boite||model.data.codes_boitier],['Observations diagnostic',model.data.notes_diagnostic]].filter(([,value])=>String(value||'').trim());
-      if(obdRows.length){py+=6;if(py>220){pdf.addPage();py=setupPage(pdf,palette,'Diagnostic électronique (OBD2)');}pdf.setTextColor(...palette.text);pdf.setFont('helvetica','bold');pdf.setFontSize(11);pdf.text('Relevé électronique saisi',16,py);py+=7;obdRows.forEach(([label,value])=>{const lines=pdf.splitTextToSize(String(value),112).slice(0,3),height=Math.max(16,7+lines.length*4);pdf.setFillColor(...palette.surface);pdf.roundedRect(16,py,178,height-2,2,2,'F');pdf.setTextColor(...palette.muted);pdf.setFontSize(7);pdf.text(label.toUpperCase(),21,py+6);pdf.setTextColor(...palette.text);pdf.setFont('helvetica','normal');pdf.setFontSize(8);pdf.text(lines,75,py+6,{lineHeightFactor:1.25});py+=height;});}
+      if(obdRows.length){
+        py+=6;if(py>220){pdf.addPage();py=setupPage(pdf,palette,'Diagnostic électronique (OBD2)');}
+        pdf.setTextColor(...palette.text);pdf.setFont('helvetica','bold');pdf.setFontSize(11);
+        let scanMeta=null;
+        try{scanMeta=typeof model.data.obd2_scan_source==='string'?JSON.parse(model.data.obd2_scan_source):model.data.obd2_scan_source;}catch(_){}
+        const scanTitle=scanMeta?.device
+          ? (english?`Electronic readout (Auto scan via ${scanMeta.device})`:`Relevé électronique (Scan automatique via ${scanMeta.device})`)
+          : (english?'Electronic diagnostic readout (OBD2)':'Relevé électronique saisi');
+        pdf.text(scanTitle,16,py);py+=7;
+        obdRows.forEach(([label,value])=>{const lines=pdf.splitTextToSize(String(value),112).slice(0,3),height=Math.max(16,7+lines.length*4);pdf.setFillColor(...palette.surface);pdf.roundedRect(16,py,178,height-2,2,2,'F');pdf.setTextColor(...palette.muted);pdf.setFontSize(7);pdf.text(label.toUpperCase(),21,py+6);pdf.setTextColor(...palette.text);pdf.setFont('helvetica','normal');pdf.setFontSize(8);pdf.text(lines,75,py+6,{lineHeightFactor:1.25});py+=height;});
+      }
     }
     if(section==='diagnostic' && model.data.p1000==='defaut'){
       if(py>248){pdf.addPage();py=setupPage(pdf,palette,'Alerte électronique');}

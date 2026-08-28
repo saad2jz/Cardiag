@@ -21,5 +21,28 @@ export function initializePermissions(){
       if(!await explain('Activer les notifications','Recevez le statut d’une expertise et vos rappels d’entretien. Vous pourrez désactiver cette option dans Paramètres.'))return false;
       return (await push.requestPermissions()).receive==='granted';
     },
+    async bluetooth(){
+      const cap=window.Capacitor;if(!cap || cap.getPlatform?.() !== 'android') return true;
+      const plugin = cap.Plugins?.BluetoothSerial ?? cap.Plugins?.BluetoothClassic ?? cap.Plugins?.BluetoothCommunication;
+      if(!plugin) return true;
+      if(typeof plugin.checkPermissions === 'function'){
+        try {
+          const current = await plugin.checkPermissions();
+          if(current?.bluetooth === 'granted' || current?.granted === true) return true;
+        } catch { /* proceed to prompt */ }
+      }
+      if(!await explain('Connexion Bluetooth OBD2','CarDiag utilise le Bluetooth pour communiquer avec votre boîtier de diagnostic OBD2. Aucune donnée n’est transmise sur Internet.')) return false;
+      if(typeof plugin.requestPermissions === 'function'){
+        try {
+          const result = await plugin.requestPermissions();
+          return Boolean(result?.granted ?? result?.bluetooth ?? result);
+        } catch { return false; }
+      }
+      return true;
+    },
+    async microphone(){
+      if(!await explain('Accès au microphone','CarDiag utilise le microphone uniquement pour la dictée vocale des notes et l’analyse acoustique du bruit moteur.')) return false;
+      return true;
+    },
   };
 }

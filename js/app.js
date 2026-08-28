@@ -24,6 +24,13 @@ import { initializeRouteController } from './navigation/route-controller.js?v=20
 import { parseRoute } from './navigation/router.js?v=20260828-2';
 import { initializeBrandPicker } from './wizard/brand-picker.js?v=20260823-6';
 import { initializeModelSpecificAlerts } from './knowledge/model-specific-alerts.js?v=20260823-1';
+import { initializeObd2Controller } from './obd2/obd2-controller.js?v=20260828-1';
+import { initializeSpeechDictation } from './ux/speech-dictation.js?v=20260828-1';
+import { initializeRegistrationScanner } from './wizard/registration-scanner.js?v=20260828-1';
+import { initializeHistovecIntegration } from './ux/histovec-integration.js?v=20260828-1';
+import { initializeRepairEstimator } from './score/repair-estimator.js?v=20260828-1';
+import { initializeEngineAudioAnalyzer } from './media/engine-audio-analyzer.js?v=20260828-1';
+import { initializePaintThicknessProfiler } from './wizard/paint-thickness-profiler.js?v=20260828-1';
 
 let reportFeaturePromise;
 let chatFeaturePromise;
@@ -240,6 +247,13 @@ async function initializeApp() {
     initializeInspectionEnhancements();
     initializeTechnicalTooltips();
     initializeOwnerTechnicalHelp();
+    initializeObd2Controller();
+    initializeSpeechDictation();
+    initializeRegistrationScanner();
+    initializeHistovecIntegration();
+    initializeRepairEstimator();
+    initializeEngineAudioAnalyzer();
+    initializePaintThicknessProfiler();
     await initializeThemeManager();
     initializeMediaManager();
     initializeScoreVisuals();

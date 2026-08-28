@@ -1,3 +1,5 @@
+import { PhotoAnnotatorModal } from './photo-annotator.js';
+
 // HEIC/HEIF cannot be decoded consistently by the browser canvas used by the
 // offline compressor. Refuse it explicitly instead of failing after selection.
 const ACCEPTED_TYPES = new Set(['image/jpeg', 'image/png', 'image/webp']);
@@ -35,7 +37,7 @@ function buildMediaDock() {
       <button type="button" data-media-gallery>Galerie</button>
       <input type="file" accept="image/*" multiple data-media-input hidden>
     </div>
-    <p>Glissez des photos ici ou utilisez l’appareil photo.</p>
+    <p>Glissez des photos ici ou utilisez l’appareil photo. Cliquez sur une photo pour l’annoter.</p>
     <div class="media-dock-thumbs" data-media-thumbs aria-label="Photos du dossier"></div>`;
   document.getElementById('diagnosticVehicleReadout')?.after(dock);
   return dock;
@@ -46,7 +48,19 @@ function renderThumbnails(container, photos) {
     const image = document.createElement('img');
     image.src = photo.dataUrl;
     image.alt = photo.name || 'Photo du véhicule';
+    image.title = 'Cliquez pour annoter la photo (cercles, flèches, défauts)';
     image.loading = 'lazy';
+    image.style.cursor = 'pointer';
+    image.addEventListener('click', async () => {
+      const annotated = await PhotoAnnotatorModal.open(photo.dataUrl);
+      if (annotated && annotated !== photo.dataUrl) {
+        photo.dataUrl = annotated;
+        image.src = annotated;
+        window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback', {
+          detail: { type: 'success', message: 'Photo annotée enregistrée.' },
+        }));
+      }
+    });
     return image;
   }));
   container.closest('.media-dock')?.classList.toggle('has-media', photos.length > 0);
