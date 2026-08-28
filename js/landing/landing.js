@@ -198,7 +198,16 @@ export function initializeLanding() {
       }));
     } catch { /* Non-essential navigation hint. */ }
   };
-  const requestAuthentication = (role = '', level = '') => {
+  const leaveLandingForAccount = (role = '', level = '') => {
+    // The public document never owns an authentication surface. Moving to
+    // the application shell before opening the account journey removes the
+    // Firebase callback race that could restore the marketing landing.
+    rememberAuthReturn(role, level, { path: '/app/inspection/nouveau', openProfile: true });
+    window.location.assign('/app/inspection/nouveau');
+  };
+  const requestAuthentication = (role = '', level = '') => leaveLandingForAccount(role, level);
+  /* Legacy in-document account opening kept only as a reference while the
+     public shell is retired from the authentication flow.
     rememberAuthReturn(role, level);
     if (window.cardiagOpenAuthentication) {
       window.cardiagOpenAuthentication({ view: 'login' }).catch((error) => {
@@ -209,6 +218,7 @@ export function initializeLanding() {
     }
     window.dispatchEvent(new CustomEvent('cardiag:open-auth', { detail: { view: 'login' } }));
   };
+  */
   const enter = (role = '', level = '') => {
     const selectedLevel = level || document.querySelector('[name="inspection_mode"]:checked')?.value || '';
     if (!window.cardiagAuth?.user) {
@@ -272,6 +282,10 @@ export function initializeLanding() {
   });
   root.querySelectorAll('[data-landing-auth]').forEach((button) => button.addEventListener('click', () => {
     closeAuthOptions();
+    // Google, email and existing-account choices first leave the public
+    // marketing shell. The profile/account screen then owns authentication.
+    return leaveLandingForAccount();
+    /* Legacy in-document account opening intentionally disabled.
     // A sign-in initiated from the public account menu always lands on the
     // first application screen and immediately exposes the connected profile.
     rememberAuthReturn('', '', { path: '/app/nouvelle', openProfile: true });
@@ -286,6 +300,7 @@ export function initializeLanding() {
     window.dispatchEvent(new CustomEvent('cardiag:open-auth', {
       detail,
     }));
+    */
   }));
   document.addEventListener('click', (event) => {
     if (!event.target.closest('.landing-account-menu')) closeAuthOptions();

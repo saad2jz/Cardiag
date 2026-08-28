@@ -30,11 +30,11 @@ test('the app shell keeps SEO, accessibility and cache safeguards', () => {
   assert.match(index, /"@type":"Organization"/);
   assert.match(index, /id="installAppBtn"[^>]*hidden/);
   assert.match(index, /sigCanvasAcheteur[^>]*aria-label=/);
-  assert.match(worker, /cardiag-v129/);
+  assert.match(worker, /cardiag-v131/);
   assert.match(index, /cardiag_design_preferences/);
   assert.match(index, /Apply the saved visual preference before the first paint/);
-  assert.match(worker, /landing\/landing\.js\?v=20260828-1/);
-  assert.match(worker, /js\/app\.js\?v=20260828-2/);
+  assert.match(worker, /landing\/landing\.js\?v=20260828-2/);
+  assert.match(worker, /js\/app\.js\?v=20260828-3/);
   assert.match(index, /id="pwaUpdateBanner"/);
   assert.match(index, /Fiches locales par défaut/);
   assert.match(pwa, /registration\.addEventListener\('updatefound'/);
@@ -104,7 +104,8 @@ test('saved reports expose working create, compare and recoverable delete action
   assert.match(recordsGallery, /data-records-compare/);
   assert.match(recordsGallery, /data-record-delete/);
   assert.match(recordsGallery, /trigger\.dataset\.appRoute = 'dashboard'/);
-  assert.match(recordsGallery, /window\.cardiagRouter\?\.dashboard/);
+  assert.match(recordsGallery, /const dashboardPath = '\/app';/);
+  assert.match(recordsGallery, /window\.location\.assign\(dashboardPath\)/);
   assert.match(recordsGallery, /window\.cardiagRequireAuthentication/);
   assert.match(legacy, /deleteRecord: \(id\)=>deleteRecordById\(id\)/);
   assert.match(legacy, /showUndoSnackbar/);

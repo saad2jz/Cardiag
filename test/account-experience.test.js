@@ -85,21 +85,21 @@ test('Google authentication remains available alongside passwordless email', () 
   assert.match(authUi, /open\('profile'\);/);
 });
 
-test('public landing opens account choices without entering the inspection application', () => {
+test('public landing account choices enter the dedicated application shell before authentication', () => {
   assert.match(index, /<base href="\/">/);
   assert.match(index, /data-landing-auth-toggle/);
   assert.match(index, /data-landing-auth="google"/);
   assert.match(index, /data-landing-auth="email"/);
   assert.match(index, /data-landing-auth="existing"/);
   assert.match(landingStyles, /\.landing-active>:not\(#marketingLanding\):not\(\.profile-onboarding\):not\(\.account-sheet\)/);
-  assert.match(landing, /cardiag:open-auth/);
-  assert.match(landing, /cardiagOpenAuthentication/);
-  assert.match(landing, /provider: button\.dataset\.landingAuth/);
+  assert.match(landing, /const leaveLandingForAccount[\s\S]{0,500}window\.location\.assign\('\/app\/inspection\/nouveau'\)/);
+  assert.match(landing, /const requestAuthentication = \(role = '', level = ''\) => leaveLandingForAccount\(role, level\)/);
+  assert.match(landing, /return leaveLandingForAccount\(\);/);
   assert.match(authUi, /provider === 'google'/);
   assert.match(app, /The landing is immediately interactive/);
   assert.match(app, /The profile shell must exist before the large vehicle catalogue/);
   assert.match(app, /const landing = isApplicationShell \? null : initializeLanding\(\);[\s\S]{0,300}initializeLazyAccountFeature\(\);/);
-  assert.match(app, /landing\.js\?v=20260828-1/);
+  assert.match(app, /landing\.js\?v=20260828-2/);
   assert.match(app, /hasPendingAuthenticationReturn/);
   assert.match(router, /rememberProtectedRoute/);
   assert.match(router, /consumeProtectedRoute/);
@@ -115,7 +115,7 @@ test('authentication resumes the requested app entry and reports a failed migrat
   assert.match(client, /cardiag_google_redirect_intent_v1/);
   assert.match(client, /rememberGoogleRedirectIntent\(\)/);
   assert.match(landing, /A successful sign-in must visibly enter the app/);
-  assert.match(landing, /path: '\/app\/nouvelle'/);
+  assert.match(landing, /path: '\/app\/inspection\/nouveau'/);
   assert.match(landing, /openProfile: Boolean\(options\.openProfile\)/);
   assert.match(router, /cardiagAuthUi\?\.open\?\.\('profile'\)/);
   assert.match(router, /pending\.openProfile/);

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cardiag-v129';
+const CACHE_NAME = 'cardiag-v131';
 const APP_SHELL = [
   './',
   './index.html',
@@ -118,11 +118,11 @@ const APP_SHELL = [
   './css/shared-report.css?v=20260813-1',
   './build-data.js?v=20260823-5',
   './js/db-loader.js?v=20260811-1',
-  './js/app.js?v=20260828-2',
+  './js/app.js?v=20260828-3',
   './js/navigation/home-button.js?v=20260828-1',
   './js/navigation/router.js?v=20260828-2',
-  './js/navigation/route-controller.js?v=20260828-2',
-  './js/landing/landing.js?v=20260828-1',
+  './js/navigation/route-controller.js?v=20260828-3',
+  './js/landing/landing.js?v=20260828-2',
   './js/wizard.js?v=20260827-2',
   './js/i18n/i18n.js?v=20260826-1',
   './js/legacy-features.js?v=20260827-3',
@@ -143,7 +143,7 @@ const APP_SHELL = [
   './js/native/push.js?v=20260813-1',
   './js/settings/settings.js?v=20260827-1',
   './js/score/score-visuals.js?v=20260813-1',
-  './js/records/records-gallery.js?v=20260826-2',
+  './js/records/records-gallery.js?v=20260828-1',
   './js/reports/negotiation.js?v=20260814-1',
   './js/reports/premium-report.js?v=20260823-14',
   './js/reports/report-sharing.js?v=20260827-1',

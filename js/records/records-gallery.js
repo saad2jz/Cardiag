@@ -77,13 +77,15 @@ export function initializeRecordsGallery() {
   const open = ({ assistant = false } = {}) => { selectingForAssistant = assistant; render(); sheet.hidden = false; requestAnimationFrame(() => sheet.classList.add('is-open')); };
   trigger.addEventListener('click', async () => {
     try {
-      if (window.cardiagRouter?.dashboard) {
-        window.cardiagRouter.dashboard();
+      // Always use the canonical dashboard URL outside the dashboard itself.
+      // This keeps "Mes fiches" reliable while the application shell is
+      // booting and after an OAuth return, where an in-memory router may not
+      // yet be ready.
+      const dashboardPath = '/app';
+      if (window.location.pathname !== dashboardPath) {
+        window.location.assign(dashboardPath);
         return;
       }
-      // The application shell loads asynchronously. If a visitor taps this
-      // control during that small window, preserve the same account gate
-      // instead of silently doing nothing or exposing an unauthenticated view.
       if (window.cardiagRequireAuthentication && !await window.cardiagRequireAuthentication()) return;
       open();
     } catch (error) {
