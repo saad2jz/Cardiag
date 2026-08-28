@@ -71,6 +71,19 @@
 </script>
 </head>
 <body class="landing-active">
+<script>
+// The public introduction and the authenticated application use distinct
+// shells.  Apply the application shell before its markup is parsed so a
+// restored Firebase session can never flash or re-open the landing page.
+(function () {
+  var path = window.location.pathname || '/';
+  var recovered = new URLSearchParams(window.location.search).get('_r') || '';
+  if (/^\/app(?:\/|$)/.test(path) || /^\/app(?:\/|$)/.test(recovered)) {
+    document.body.classList.remove('landing-active');
+    document.body.classList.add('app-shell');
+  }
+}());
+</script>
 <section class="marketing-landing" id="marketingLanding" aria-label="Accueil CarDiag" data-landing-aria-label="ariaHome">
   <div class="landing-shell">
     <nav class="landing-nav" aria-label="Navigation principale" data-landing-aria-label="ariaNav">
@@ -804,6 +817,6 @@
 
 <script src="build-data.js?v=20260823-5"></script>
 <script src="js/db-loader.js?v=20260811-1"></script>
-<script type="module" src="js/app.js?v=20260828-1"></script>
+<script type="module" src="js/app.js?v=20260828-2"></script>
 </body>
 </html>

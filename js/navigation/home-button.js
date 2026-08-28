@@ -3,8 +3,8 @@ function isNativePlatform() {
 }
 
 /**
- * Adds a persistent CarDiag home action to the wizard toolbar.
- * Opening home never resets the active report or the current form values.
+ * Adds a persistent CarDiag home action to the application toolbar.
+ * It returns to the signed-in dashboard, never to the public marketing page.
  */
 export function initializeHomeButton() {
   const header = document.getElementById('wizardHeader');
@@ -20,15 +20,11 @@ export function initializeHomeButton() {
 
   button.addEventListener('click', () => {
     if (!isNativePlatform() && window.cardiagRouter?.navigate) {
-      window.cardiagRouter.navigate({ kind: 'landing' });
+      window.cardiagRouter.navigate({ kind: 'dashboard' });
       return;
     }
-    if (!isNativePlatform() && window.cardiagLanding?.show) {
-      window.cardiagLanding.show();
-      document.documentElement.scrollTop = 0;
-      document.body.scrollTop = 0;
-      return;
-    }
+    // Native builds do not have a public landing route; keep the existing
+    // safe wizard fallback there without clearing the current inspection.
     window.cardiagWizard?.goToStep?.(1, 'back');
   });
 

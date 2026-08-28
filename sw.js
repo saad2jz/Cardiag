@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cardiag-v128';
+const CACHE_NAME = 'cardiag-v129';
 const APP_SHELL = [
   './',
   './index.html',
@@ -118,10 +118,10 @@ const APP_SHELL = [
   './css/shared-report.css?v=20260813-1',
   './build-data.js?v=20260823-5',
   './js/db-loader.js?v=20260811-1',
-  './js/app.js?v=20260828-1',
-  './js/navigation/home-button.js?v=20260825-2',
-  './js/navigation/router.js?v=20260828-1',
-  './js/navigation/route-controller.js?v=20260828-1',
+  './js/app.js?v=20260828-2',
+  './js/navigation/home-button.js?v=20260828-1',
+  './js/navigation/router.js?v=20260828-2',
+  './js/navigation/route-controller.js?v=20260828-2',
   './js/landing/landing.js?v=20260828-1',
   './js/wizard.js?v=20260827-2',
   './js/i18n/i18n.js?v=20260826-1',
@@ -132,7 +132,7 @@ const APP_SHELL = [
   './js/branding/vehicle-brand-logos.js?v=20260823-5',
   './js/knowledge/model-specific-alerts.js?v=20260823-1',
   './js/wizard/interactions.js?v=20260813-1',
-  './js/theming/theme-manager.js?v=20260820-3',
+  './js/theming/theme-manager.js?v=20260828-1',
   './js/onboarding/profile-onboarding.js?v=20260826-6',
   './js/auth/firebase-client.js?v=20260826-6',
   './js/media/media-manager.js?v=20260813-2',

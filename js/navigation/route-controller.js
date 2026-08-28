@@ -7,6 +7,24 @@ const URL_PROFILE = Object.freeze(Object.fromEntries(Object.entries(INTERNAL_PRO
 const SECTION_TO_STEP = Object.freeze({ vehicule: 'info', moteur: 'moteur', chassis: 'chassis', carrosserie: 'carrosserie', habitacle: 'habitacle', essai: 'essai', diagnostic: 'diagnostic' });
 const AUTH_RETURN_KEY = 'cardiag_auth_return_v1';
 
+function currentBrowserPath() {
+  return `${window.location.pathname || '/'}${window.location.search || ''}`;
+}
+
+function continueInApplicationShell(route, pending) {
+  const target = routePath(route);
+  if (!/^\/app(?:\/|$)/.test(target) || currentBrowserPath() === target) return false;
+  try {
+    // Keep the intent for the fresh document.  The app shell consumes it only
+    // after Firebase has restored its persisted session.
+    sessionStorage.setItem(AUTH_RETURN_KEY, JSON.stringify({
+      ...(pending || {}), path: target, requestedAt: Date.now(),
+    }));
+  } catch { /* Navigation still works when session storage is unavailable. */ }
+  window.location.assign(target);
+  return true;
+}
+
 function rememberProtectedRoute(route) {
   const path = routePath(route);
   if (!/^\/app(?:\/|$)/.test(path)) return;
@@ -78,7 +96,7 @@ export function initializeRouteController({ landing } = {}) {
     // A stale asynchronous guard must never take over an active application
     // route.  This is deliberately checked against the browser URL rather
     // than the route argument, which may already be outdated.
-    if (/^\/app(?:\/|$)/.test(window.location.pathname)) {
+    if (/^\/app(?:\/|$)/.test(window.location.pathname) || document.body.classList.contains('app-shell')) {
       hideLanding();
       return false;
     }
@@ -182,6 +200,10 @@ export function initializeRouteController({ landing } = {}) {
           level: pending.level === 'quick' ? 'rapide' : pending.level === 'complete' ? 'complet' : pending.route.level,
         }
         : pending.route;
+      // Crossing the public/auth shell boundary is deliberately a document
+      // navigation. This prevents landing event handlers from surviving an
+      // OAuth or email-link completion and masking the application afterwards.
+      if (continueInApplicationShell(route, pending)) return true;
       navigate(route, { replace: true, source: 'authentication-return' });
       // OAuth and magic-link completion may happen after a full page reload.
       // Open the connected profile only after the destination has rendered.

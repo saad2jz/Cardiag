@@ -70,7 +70,13 @@ function buildPanel() {
 }
 
 function applyBranding(state) {
-  document.documentElement.dataset.theme = THEMES.has(state.theme) ? state.theme : 'carbon';
+  // Carbon is the stable product default. A different appearance can only
+  // come from the user's own persisted settings, never from authentication
+  // state or a profile synchronisation response.
+  const theme = THEMES.has(state.theme) ? state.theme : 'carbon';
+  state.theme = theme;
+  document.documentElement.dataset.theme = theme;
+  document.documentElement.style.colorScheme = theme === 'carbon' ? 'dark' : 'light';
   document.querySelectorAll('.brand-wordmark').forEach((node) => { node.textContent = state.workshopName || 'CarDiag'; });
   document.querySelectorAll('.brand-logo').forEach((image) => {
     if (state.logo) image.src = state.logo;

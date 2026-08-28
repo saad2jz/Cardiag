@@ -30,10 +30,11 @@ test('the app shell keeps SEO, accessibility and cache safeguards', () => {
   assert.match(index, /"@type":"Organization"/);
   assert.match(index, /id="installAppBtn"[^>]*hidden/);
   assert.match(index, /sigCanvasAcheteur[^>]*aria-label=/);
-  assert.match(worker, /cardiag-v128/);
+  assert.match(worker, /cardiag-v129/);
   assert.match(index, /cardiag_design_preferences/);
   assert.match(index, /Apply the saved visual preference before the first paint/);
   assert.match(worker, /landing\/landing\.js\?v=20260828-1/);
+  assert.match(worker, /js\/app\.js\?v=20260828-2/);
   assert.match(index, /id="pwaUpdateBanner"/);
   assert.match(index, /Fiches locales par défaut/);
   assert.match(pwa, /registration\.addEventListener\('updatefound'/);
@@ -42,7 +43,8 @@ test('the app shell keeps SEO, accessibility and cache safeguards', () => {
 
 test('the wizard toolbar exposes a non-destructive CarDiag home action', () => {
   assert.match(homeButton, /dataset\.cardiagHome/);
-  assert.match(homeButton, /cardiagLanding\?\.show/);
+  assert.match(homeButton, /navigate\(\{ kind: 'dashboard' \}\)/);
+  assert.doesNotMatch(homeButton, /cardiagLanding\?\.show/);
   assert.match(homeButton, /cardiagWizard\?\.goToStep\?\.\(1, 'back'\)/);
   assert.doesNotMatch(homeButton, /localStorage\.clear|location\.reload|resetFiche/);
   assert.match(worker, /navigation\/home-button\.js/);
@@ -53,6 +55,18 @@ test('the wizard toolbar exposes a non-destructive CarDiag home action', () => {
   assert.match(settings, /data-setting-inspection-view/);
   assert.match(themes, /button\.hidden = true/);
   assert.match(themes, /data-open-all-settings/);
+});
+
+test('application routes use an isolated shell and never initialise the public landing', async () => {
+  const app = await readFile(new URL('../js/app.js', import.meta.url), 'utf8');
+  const landingCss = await readFile(new URL('../css/landing/landing.css', import.meta.url), 'utf8');
+  assert.match(index, /document\.body\.classList\.add\('app-shell'\)/);
+  assert.match(landingCss, /\.app-shell #marketingLanding\{display:none!important\}/);
+  assert.match(app, /const initialRoute = parseRoute\(window\.location\.href\);/);
+  assert.match(app, /const landing = isApplicationShell \? null : initializeLanding\(\);/);
+  assert.match(app, /Boolean\(landing\?\.active\)/);
+  assert.match(routeController, /continueInApplicationShell/);
+  assert.match(routeController, /window\.location\.assign\(target\)/);
 });
 
 test('the app shell owns stable routes for each workflow and inspection state', () => {

@@ -4,7 +4,7 @@ import { initializeWizard } from './wizard.js?v=20260827-2';
 import { initializeI18n } from './i18n/i18n.js?v=20260826-1';
 import { initializeWizardInteractions } from './wizard/interactions.js?v=20260813-1';
 import { initializeVehiclePicker } from './wizard/vehicle-picker.js?v=20260825-2';
-import { initializeThemeManager } from './theming/theme-manager.js?v=20260820-3';
+import { initializeThemeManager } from './theming/theme-manager.js?v=20260828-1';
 import { initializeProfileOnboarding } from './onboarding/profile-onboarding.js?v=20260826-6';
 import { initializeMediaManager } from './media/media-manager.js?v=20260813-2';
 import { initializePermissions } from './native/permissions.js?v=20260813-1';
@@ -19,8 +19,9 @@ import { initializeLanding } from './landing/landing.js?v=20260828-1';
 import { initializeInspectionEnhancements } from './ux/inspection-enhancements.js?v=20260827-1';
 import { initializeTechnicalTooltips } from './ux/technical-tooltips.js?v=20260827-1';
 import { initializeOwnerTechnicalHelp } from './ux/owner-technical-help.js?v=20260821-1';
-import { initializeHomeButton } from './navigation/home-button.js?v=20260825-2';
-import { initializeRouteController } from './navigation/route-controller.js?v=20260828-1';
+import { initializeHomeButton } from './navigation/home-button.js?v=20260828-1';
+import { initializeRouteController } from './navigation/route-controller.js?v=20260828-2';
+import { parseRoute } from './navigation/router.js?v=20260828-2';
 import { initializeBrandPicker } from './wizard/brand-picker.js?v=20260823-6';
 import { initializeModelSpecificAlerts } from './knowledge/model-specific-alerts.js?v=20260823-1';
 
@@ -166,7 +167,18 @@ async function initializeApp() {
   const status = document.getElementById('result');
   try {
     initializeI18n();
-    const landing = initializeLanding();
+    // The marketing landing and the signed-in product are separate shells.
+    // Do not even initialise landing listeners on /app routes: a late auth
+    // callback used to re-add `.landing-active` and hide the application.
+    const initialRoute = parseRoute(window.location.href);
+    const isApplicationShell = Boolean(initialRoute.app);
+    if (isApplicationShell) {
+      document.body.classList.remove('landing-active');
+      document.body.classList.add('app-shell');
+      const marketingLanding = document.getElementById('marketingLanding');
+      if (marketingLanding) marketingLanding.hidden = true;
+    }
+    const landing = isApplicationShell ? null : initializeLanding();
     // The landing is immediately interactive, while the offline vehicle data
     // may still be loading. Register its account gateway now so an early tap
     // cannot dispatch an authentication event before a listener exists.
@@ -174,7 +186,7 @@ async function initializeApp() {
     // The profile shell must exist before the large vehicle catalogue is
     // loaded. Otherwise a successful sign-in can wait silently for several
     // seconds before the selected journey is allowed to continue.
-    await initializeProfileOnboarding({ deferProfile: landing.active });
+    await initializeProfileOnboarding({ deferProfile: Boolean(landing?.active) });
     if (!window.dbLoader?.loadAppData || !window.buildData) {
       throw new Error('Le chargeur de donnees n’est pas disponible.');
     }
@@ -239,7 +251,7 @@ async function initializeApp() {
     // Firebase stores the result of a Google redirect internally. Loading the
     // account feature on the public page lets Firebase consume it and resume
     // the requested application entry without a second click.
-    if (landing.active || hasPendingAuthenticationReturn()) {
+    if (landing?.active || hasPendingAuthenticationReturn()) {
       loadAccountFeature().catch((error) => console.warn('Authentification en attente', error));
     }
     initializePwa();
