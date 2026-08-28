@@ -1,4 +1,4 @@
-import { authClient } from '../auth/firebase-client.js';
+import { authClient } from '../auth/firebase-client.js?v=20260828-1';
 
 const panel = document.getElementById('garagePremiumManager');
 

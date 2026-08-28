@@ -1,11 +1,12 @@
-const RENDER_API = 'https://fiche-expert-auto.onrender.com/';
 const CANONICAL_WEB_ORIGIN = 'https://cardiag.online';
 const FIREBASE_APP_SDK = 'https://www.gstatic.com/firebasejs/12.17.1/firebase-app.js';
 const FIREBASE_AUTH_SDK = 'https://www.gstatic.com/firebasejs/12.17.1/firebase-auth.js';
 const browserWindow = typeof window === 'undefined' ? {} : window;
 const browserLocation = typeof location === 'undefined' ? { hostname: '', origin: '' } : location;
 const isNative = browserWindow.Capacitor?.isNativePlatform?.() === true;
-const API_BASE = !isNative && ['localhost','127.0.0.1'].includes(browserLocation.hostname) ? `${browserLocation.origin}/` : RENDER_API;
+const API_BASE = isNative
+  ? `${CANONICAL_WEB_ORIGIN}/`
+  : `${browserLocation.origin || CANONICAL_WEB_ORIGIN}/`;
 const MAGIC_LINK_EMAIL_KEY = 'cardiag_magic_link_email_v1';
 const AUTH_COMPLETION_KEY = 'cardiag_auth_completion_v1';
 const AUTH_RETURN_KEY = 'cardiag_auth_return_v1';
@@ -22,6 +23,16 @@ let webFirebasePromise = null;
 let currentUser = null;
 let pendingMagicLink = false;
 const listeners = new Set();
+let authInitializationPromise = null;
+let authReadySettled = false;
+let resolveAuthReady;
+const authReady = new Promise((resolve) => { resolveAuthReady = resolve; });
+
+function settleAuthReady() {
+  if (authReadySettled) return;
+  authReadySettled = true;
+  resolveAuthReady(currentUser);
+}
 
 export function normalizeAuthEmail(value) {
   return String(value || '').trim().toLowerCase();
@@ -195,18 +206,20 @@ async function loadWebFirebase() {
       const [appSdk, authSdk] = await Promise.all([import(FIREBASE_APP_SDK), import(FIREBASE_AUTH_SDK)]);
       const app = appSdk.getApps().length ? appSdk.getApp() : appSdk.initializeApp(firebaseConfig);
       let auth;
+      const persistence = authSdk.browserLocalPersistence || authSdk.indexedDBLocalPersistence;
       try {
         // initializeAuth does not install a popup/redirect resolver unless it
         // is explicitly provided. Google OAuth therefore fails before the
         // redirect on browsers even though the provider is enabled in Firebase.
         auth = authSdk.initializeAuth(app, {
-          persistence: [authSdk.indexedDBLocalPersistence],
+          persistence: [persistence],
           popupRedirectResolver: authSdk.browserPopupRedirectResolver,
         });
       } catch {
         auth = authSdk.getAuth(app);
-        await authSdk.setPersistence(auth, authSdk.indexedDBLocalPersistence);
       }
+      // Must happen before auth listeners, OAuth redirects or popup sign-in.
+      await authSdk.setPersistence(auth, persistence);
       authSdk.useDeviceLanguage(auth);
       return { auth, ...authSdk };
     })().catch((error) => { webFirebasePromise = null; throw error; });
@@ -261,52 +274,62 @@ async function refreshWebToken() {
 
 export const authClient = {
   async initialize() {
-    await loadConfig();
-    const native = nativeAuth();
-    if (native) {
-      const result = await native.getCurrentUser();
-      notify(result?.user);
-      native.addListener?.('authStateChange', ({ user }) => notify(user));
-    } else {
-      const sdk = await optionalWebFirebase();
-      if (sdk) await new Promise((resolve) => {
-        let initialized = false;
-        sdk.onAuthStateChanged(sdk.auth, (user) => {
-          notify(user);
-          if (!initialized) { initialized = true; resolve(); }
-        }, () => { if (!initialized) { initialized = true; resolve(); } });
-      });
-      // OAuth redirects return here after Google has authenticated the user. Calling this
-      // explicitly also surfaces a useful Firebase error instead of silently losing it.
+    if (authInitializationPromise) return authInitializationPromise;
+    authInitializationPromise = (async () => {
       try {
-        const redirectResult = await sdk.getRedirectResult?.(sdk.auth);
-        // Some mobile browsers restore the Firebase session before
-        // getRedirectResult resolves. Keep an explicit intent so that a
-        // successful Google return always resumes the requested application.
-        const returningFromGoogle = Boolean(redirectResult?.user) || (Boolean(currentUser) && consumeGoogleRedirectIntent());
-        if (returningFromGoogle) {
-          if (redirectResult?.user) notify(redirectResult.user);
-          rememberAuthenticationCompletion('google');
+        await loadConfig();
+        const native = nativeAuth();
+        if (native) {
+          // Capacitor Firebase restores from native Keychain/Keystore. It is
+          // deliberately independent from volatile WebView storage.
+          const result = await native.getCurrentUser();
+          notify(result?.user);
+          native.addListener?.('authStateChange', ({ user }) => notify(user));
+        } else {
+          const sdk = await optionalWebFirebase();
+          if (sdk) await new Promise((resolve) => {
+            let initialized = false;
+            sdk.onAuthStateChanged(sdk.auth, (user) => {
+              notify(user);
+              if (!initialized) { initialized = true; resolve(); }
+            }, () => { if (!initialized) { initialized = true; resolve(); } });
+          });
+          // OAuth redirects return here after Google has authenticated the user.
+          // The intent is navigation-only and is always consumed once.
+          try {
+            const redirectResult = await sdk?.getRedirectResult?.(sdk.auth);
+            const googleRedirectIntent = consumeGoogleRedirectIntent();
+            const returningFromGoogle = Boolean(redirectResult?.user) || (Boolean(currentUser) && googleRedirectIntent);
+            if (returningFromGoogle) {
+              if (redirectResult?.user) notify(redirectResult.user);
+              rememberAuthenticationCompletion('google');
+            }
+          } catch (error) {
+            consumeGoogleRedirectIntent();
+            browserWindow.dispatchEvent?.(new CustomEvent('cardiag:google-auth-error', {
+              detail: { message: friendlyAuthError(error), code: error?.code || 'AUTH_ERROR' },
+            }));
+          }
+          if (sdk?.isSignInWithEmailLink?.(sdk.auth, browserLocation.href)) {
+            restoreMagicLinkReturn();
+            const email = storedMagicLinkEmail();
+            if (email) await authClient.completeMagicLink(email);
+            else {
+              pendingMagicLink = true;
+              browserWindow.dispatchEvent?.(new CustomEvent('cardiag:magic-link-email-required'));
+            }
+          }
         }
-      } catch (error) {
-        browserWindow.dispatchEvent?.(new CustomEvent('cardiag:google-auth-error', {
-          detail: { message: friendlyAuthError(error), code: error?.code || 'AUTH_ERROR' },
-        }));
+        return currentUser;
+      } finally {
+        settleAuthReady();
       }
-      if (sdk?.isSignInWithEmailLink?.(sdk.auth, browserLocation.href)) {
-        restoreMagicLinkReturn();
-        const email = storedMagicLinkEmail();
-        if (email) await this.completeMagicLink(email);
-        else {
-          pendingMagicLink = true;
-          browserWindow.dispatchEvent?.(new CustomEvent('cardiag:magic-link-email-required'));
-        }
-      }
-    }
-    return currentUser;
+    })();
+    return authInitializationPromise;
   },
   onChange(listener) { listeners.add(listener); listener(currentUser); return () => listeners.delete(listener); },
   get user() { return currentUser; },
+  get ready() { return authReady; },
   get configured() { return Boolean(config?.apiKey && config?.projectId); },
   get pendingMagicLink() { return pendingMagicLink; },
   async sendMagicLink(email) {

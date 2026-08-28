@@ -120,6 +120,9 @@ export function initializeRouteController({ landing } = {}) {
       }
       if (!route.app) return;
       if (window.cardiagRequireAuthentication) {
+        // Wait for the first Firebase/native restoration before deciding that
+        // this protected route needs a login panel.
+        await window.cardiagAuthReady?.();
         // Persist the canonical route *before* opening the login panel. A
         // Google popup or redirect can complete before the async guard returns.
         // Keeping the route first makes every auth method resume the exact
@@ -220,9 +223,9 @@ export function initializeRouteController({ landing } = {}) {
 
   // Replay a destination that was saved before the authentication feature or
   // this route controller became ready (notably after OAuth page reloads).
-  window.setTimeout(() => {
+  window.cardiagAuthReady?.().then(() => {
     if (window.cardiagAuth?.user) resumeAuthenticationDestination();
-  }, 0);
+  }).catch(() => { /* The normal route guard displays a recoverable login UI. */ });
 
   window.addEventListener('cardiag:wizard-step', (event) => {
     if (applying) return;

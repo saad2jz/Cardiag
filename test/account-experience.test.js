@@ -15,11 +15,26 @@ const syncQueue = await readFile(new URL('../js/native/sync-queue.js', import.me
 const app = await readFile(new URL('../js/app.js', import.meta.url), 'utf8');
 const deepLinks = await readFile(new URL('../js/native/app-links.js', import.meta.url), 'utf8');
 
-test('web authentication uses official IndexedDB persistence instead of raw localStorage tokens', () => {
-  assert.match(client, /indexedDBLocalPersistence/);
+test('web authentication uses durable browser persistence before its first auth listener', () => {
+  assert.match(client, /browserLocalPersistence/);
+  assert.match(client, /await authSdk\.setPersistence\(auth, persistence\)/);
   assert.doesNotMatch(client, /localStorage\.setItem/);
   assert.match(client, /onAuthStateChanged/);
   assert.match(client, /fetch\('\/firebase-config\.json'/);
+});
+
+test('auth restoration resolves before protected routing and OAuth intents are navigation-only', async () => {
+  const capacitor = await readFile(new URL('../capacitor.config.ts', import.meta.url), 'utf8');
+  assert.match(client, /getApps\(\)\.length \? appSdk\.getApp\(\) : appSdk\.initializeApp/);
+  assert.match(client, /const authReady = new Promise/);
+  assert.match(client, /get ready\(\) \{ return authReady; \}/);
+  assert.match(client, /const googleRedirectIntent = consumeGoogleRedirectIntent\(\)/);
+  assert.match(client, /consumeGoogleRedirectIntent\(\);[\s\S]{0,220}cardiag:google-auth-error/);
+  assert.match(app, /await window\.cardiagAuth\?\.ready/);
+  assert.match(app, /window\.cardiagAuthReady = async/);
+  assert.match(router, /await window\.cardiagAuthReady\?\.\(\)/);
+  assert.match(router, /window\.cardiagAuthReady\?\.\(\)\.then/);
+  assert.match(capacitor, /FirebaseAuthentication:[\s\S]{0,140}skipNativeAuth:\s*false/);
 });
 
 test('account profile keeps the useful personal and professional details', () => {

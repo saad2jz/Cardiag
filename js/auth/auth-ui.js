@@ -1,4 +1,4 @@
-import { authClient } from './firebase-client.js?v=20260826-6';
+import { authClient } from './firebase-client.js?v=20260828-1';
 
 const AUTH_COMPLETION_KEY = 'cardiag_auth_completion_v1';
 
@@ -71,6 +71,9 @@ function setBusy(button, busy) {
 }
 
 export async function initializeAuthUi() {
+  // The route controller can await this stable object while Firebase restores
+  // a persisted browser/native session.
+  window.cardiagAuth = authClient;
   const panel = createAuthSurface();
   const actions = document.createElement('div');
   actions.className = 'auth-quick-actions';
@@ -383,7 +386,6 @@ export async function initializeAuthUi() {
   try { await authClient.initialize(); }
   catch (error) { message(panel, error.message || 'Authentification temporairement indisponible.', 'error'); }
   updateQuickLabels();
-  window.cardiagAuth = authClient;
   window.cardiagAuthUi = { open, refresh:() => authClient.user && loadProfile(authClient.user) };
   try {
     const provider = sessionStorage.getItem(AUTH_COMPLETION_KEY);

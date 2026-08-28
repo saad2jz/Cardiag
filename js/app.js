@@ -20,7 +20,7 @@ import { initializeInspectionEnhancements } from './ux/inspection-enhancements.j
 import { initializeTechnicalTooltips } from './ux/technical-tooltips.js?v=20260827-1';
 import { initializeOwnerTechnicalHelp } from './ux/owner-technical-help.js?v=20260821-1';
 import { initializeHomeButton } from './navigation/home-button.js?v=20260828-1';
-import { initializeRouteController } from './navigation/route-controller.js?v=20260828-3';
+import { initializeRouteController } from './navigation/route-controller.js?v=20260828-4';
 import { parseRoute } from './navigation/router.js?v=20260828-2';
 import { initializeBrandPicker } from './wizard/brand-picker.js?v=20260823-6';
 import { initializeModelSpecificAlerts } from './knowledge/model-specific-alerts.js?v=20260823-1';
@@ -45,7 +45,7 @@ function hasPendingAuthenticationReturn() {
 async function loadAccountFeature(){
   if(!accountFeaturePromise){
     accountFeaturePromise=Promise.all([
-      import('./auth/auth-ui.js?v=20260828-1'),
+      import('./auth/auth-ui.js?v=20260828-2'),
       import('./native/sync-queue.js?v=20260825-1'),
     ]).then(async ([auth,sync])=>{
       await auth.initializeAuthUi();
@@ -57,6 +57,8 @@ async function loadAccountFeature(){
 }
 async function requireAuthentication() {
   const authUi = await loadAccountFeature();
+  // Do not redirect while Firebase is still restoring a durable session.
+  await window.cardiagAuth?.ready;
   if (window.cardiagAuth?.user) return true;
   authUi?.open?.('login');
   return false;
@@ -70,6 +72,11 @@ function initializeLazyAccountFeature(){
     return authUi;
   };
   window.cardiagOpenAuthentication = openAuthentication;
+  window.cardiagAuthReady = async () => {
+    await loadAccountFeature();
+    await window.cardiagAuth?.ready;
+    return window.cardiagAuth?.user || null;
+  };
   // The route controller uses this guard for every /app route, including a
   // deep link opened directly in a new browser tab.
   window.cardiagRequireAuthentication = requireAuthentication;
@@ -91,7 +98,7 @@ function initializeLazyAccountFeature(){
   });
 }
 async function loadChatFeature(){
-  if(!chatFeaturePromise){chatFeaturePromise=import('./chat-experience.js?v=20260825-1').then(({initializeChatExperience})=>{initializeChatExperience();return window.cardiagChat;});}
+  if(!chatFeaturePromise){chatFeaturePromise=import('./chat-experience.js?v=20260828-2').then(({initializeChatExperience})=>{initializeChatExperience();return window.cardiagChat;});}
   return chatFeaturePromise;
 }
 async function loadReportFeature(){
