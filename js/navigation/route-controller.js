@@ -67,18 +67,35 @@ function feedback(message) {
  */
 export function initializeRouteController({ landing } = {}) {
   let applying = false;
+  // Route handlers may overlap while Firebase restores a session after an
+  // OAuth/email-link return.  Only the newest handler is allowed to mutate
+  // the UI; otherwise a late unauthenticated handler can re-open the landing
+  // after the authenticated destination has already rendered.
+  let routeEpoch = 0;
 
   const hideLanding = () => landing?.hide?.() || window.cardiagLanding?.hide?.();
-  const showLanding = () => landing?.show?.() || window.cardiagLanding?.show?.();
+  const showLanding = () => {
+    // A stale asynchronous guard must never take over an active application
+    // route.  This is deliberately checked against the browser URL rather
+    // than the route argument, which may already be outdated.
+    if (/^\/app(?:\/|$)/.test(window.location.pathname)) {
+      hideLanding();
+      return false;
+    }
+    return landing?.show?.() || window.cardiagLanding?.show?.();
+  };
 
   async function applyRoute(route) {
+    const epoch = ++routeEpoch;
+    const isCurrentRoute = () => epoch === routeEpoch;
     applying = true;
     try {
       if (route.kind === 'landing') {
-        showLanding();
+        if (isCurrentRoute()) showLanding();
         return;
       }
       if (route.kind === 'demo-report') {
+        if (!isCurrentRoute()) return;
         showLanding();
         document.getElementById('landingReport')?.scrollIntoView?.({ behavior: 'smooth', block: 'start' });
         return;
@@ -91,13 +108,14 @@ export function initializeRouteController({ landing } = {}) {
         // action the user originally chose.
         rememberProtectedRoute(route);
         if (!await window.cardiagRequireAuthentication()) {
-          showLanding();
+          if (isCurrentRoute()) showLanding();
           return;
         }
         // An existing Firebase session did not need a resume token; discard
         // it so it cannot interfere with a future sign-in.
         consumeProtectedRoute();
       }
+      if (!isCurrentRoute()) return;
       hideLanding();
 
       if (route.kind === 'dashboard') {
@@ -121,6 +139,7 @@ export function initializeRouteController({ landing } = {}) {
       }
       if (route.kind === 'inspection') {
         const opened = await window.cardiagDataBridge?.openRecord?.(route.id);
+        if (!isCurrentRoute()) return;
         if (!opened) {
           feedback('Cette fiche n’est pas disponible sur cet appareil. Ouvrez-la depuis Mes fiches ou utilisez un lien de partage privé.');
           navigate({ kind: 'dashboard' }, { replace: true, source: 'missing-record' });
@@ -140,7 +159,7 @@ export function initializeRouteController({ landing } = {}) {
         }
       }
     } finally {
-      applying = false;
+      if (isCurrentRoute()) applying = false;
     }
   }
 

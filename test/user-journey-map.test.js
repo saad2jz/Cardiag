@@ -64,6 +64,18 @@ test('protected routes resume after authentication instead of leaving an unauthe
   assert.match(controller, /applyRoute\(router\.current\)/);
 });
 
+test('a late authentication guard cannot replace the authenticated application route with the landing', () => {
+  // OAuth and email-link returns can make two asynchronous route applications
+  // overlap. The newest route wins, and the landing refuses to mask /app.
+  assert.match(controller, /let routeEpoch = 0/);
+  assert.match(controller, /const epoch = \+\+routeEpoch/);
+  assert.match(controller, /const isCurrentRoute = \(\) => epoch === routeEpoch/);
+  assert.match(controller, /if \(isCurrentRoute\(\)\) showLanding\(\);/);
+  assert.match(controller, /\^\\\/app\(\?:\\\/\|\$\)/);
+  assert.match(landing, /Authentication is asynchronous/);
+  assert.ok(landing.includes('/^\\/app(?:\\/|$)/.test(window.location.pathname)'));
+});
+
 test('public report and legal pages stay public while malformed application URLs fail safely', () => {
   assert.match(sharedReport, /<base href="\/">/);
   for (const path of ['/exemple-rapport', '/privacy.html', '/terms.html', '/account-deletion.html', '/r/random-token']) {

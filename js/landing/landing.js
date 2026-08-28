@@ -312,7 +312,19 @@ export function initializeLanding() {
     enter,
     requestAuthentication,
     hide,
-    show() { active = true; root.hidden = false; document.body.classList.add('landing-active'); },
+    show() {
+      // Authentication is asynchronous.  If an older callback fires after the
+      // router has already entered /app, keeping the landing hidden prevents
+      // it from masking the authenticated wizard with `.landing-active`.
+      if (/^\/app(?:\/|$)/.test(window.location.pathname)) {
+        hide();
+        return false;
+      }
+      active = true;
+      root.hidden = false;
+      document.body.classList.add('landing-active');
+      return true;
+    },
   };
   return { get active() { return active; } };
 }
