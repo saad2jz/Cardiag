@@ -1,4 +1,4 @@
-import { initializeRouter, navigate, parseRoute, routePath } from './router.js?v=20260827-7';
+import { initializeRouter, navigate, parseRoute, routePath } from './router.js?v=20260828-1';
 
 const INTERNAL_PROFILE = Object.freeze({
   acheteur: 'buyer', vendeur: 'seller', proprietaire: 'owner', garagiste: 'mechanic', location: 'rental',
@@ -22,7 +22,14 @@ function consumeProtectedRoute() {
     sessionStorage.removeItem(AUTH_RETURN_KEY);
     if (!pending?.path || Date.now() - Number(pending.requestedAt || 0) > 30 * 60 * 1000) return null;
     const route = parseRoute(pending.path);
-    return route.app ? route : null;
+    // Keep the companion intent. A route alone cannot express a first-time
+    // profile opening or the role selected from the public landing.
+    return route.app ? {
+      route,
+      openProfile: Boolean(pending.openProfile),
+      role: String(pending.role || ''),
+      level: String(pending.level || ''),
+    } : null;
   } catch { return null; }
 }
 
@@ -139,18 +146,42 @@ export function initializeRouteController({ landing } = {}) {
 
   const router = initializeRouter({ onRouteChange: applyRoute });
 
-  window.addEventListener('cardiag:authentication-complete', () => {
+  // Firebase can restore a Google or email-link session before this controller
+  // has finished initialising.  The requested destination is persisted in
+  // sessionStorage by the authentication guard, so consume it both when the
+  // event arrives and once at startup.  This prevents a successful sign-in
+  // from leaving the visitor on the public landing page with no navigation.
+  const resumeAuthenticationDestination = () => {
     const pending = consumeProtectedRoute();
     if (pending) {
-      navigate(pending, { replace: true, source: 'authentication-return' });
-      // The landing consumes this intent during a normal in-page sign-in.
-      // Keep this fallback for OAuth redirect reloads, where initialization
-      // order can make the route controller consume it first.
+      // A landing CTA can select a role before a record exists. Preserve that
+      // choice for the chooser while keeping the public URL canonical.
+      const route = pending.route.kind === 'new-inspection' && pending.role
+        ? {
+          ...pending.route,
+          profile: routeProfileForScenario(pending.role),
+          level: pending.level === 'quick' ? 'rapide' : pending.level === 'complete' ? 'complet' : pending.route.level,
+        }
+        : pending.route;
+      navigate(route, { replace: true, source: 'authentication-return' });
+      // OAuth and magic-link completion may happen after a full page reload.
+      // Open the connected profile only after the destination has rendered.
       if (pending.openProfile) window.setTimeout(() => window.cardiagAuthUi?.open?.('profile'), 0);
-      return;
+      return true;
     }
+    return false;
+  };
+
+  window.addEventListener('cardiag:authentication-complete', () => {
+    if (resumeAuthenticationDestination()) return;
     if (router.current?.app) applyRoute(router.current);
   });
+
+  // Replay a destination that was saved before the authentication feature or
+  // this route controller became ready (notably after OAuth page reloads).
+  window.setTimeout(() => {
+    if (window.cardiagAuth?.user) resumeAuthenticationDestination();
+  }, 0);
 
   window.addEventListener('cardiag:wizard-step', (event) => {
     if (applying) return;

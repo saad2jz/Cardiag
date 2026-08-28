@@ -302,6 +302,13 @@ export async function initializeAuthUi() {
       const user = await authClient.reloadUser();
       renderAccount(user);
       message(panel, user?.emailVerified ? 'Adresse email vérifiée.' : 'La vérification n’est pas encore confirmée. Ouvrez le lien reçu puis réessayez.', user?.emailVerified ? 'success' : '');
+      // If email verification completes a protected journey, resume the route
+      // that originally led to authentication instead of keeping the account
+      // drawer open on a static page.
+      if (user?.emailVerified && hasPendingJourney()) {
+        closeForJourney();
+        announceAuthentication('email-verification');
+      }
     } catch (error) { message(panel, error.message, 'error'); }
     finally { setBusy(button, false); }
   };

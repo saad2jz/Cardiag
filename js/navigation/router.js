@@ -197,6 +197,7 @@ export function initializeRouter({ onRouteChange } = {}) {
     inspection: (id, view, section, options) => navigate({ kind: 'inspection', id, view, section }, options),
     dashboard: (options) => navigate({ kind: 'dashboard' }, options),
     compare: (ids, options) => navigate({ kind: 'compare', ids: comparisonIds(ids) }, options),
+    settings: (options) => navigate({ kind: 'settings' }, options),
   });
   globalThis.cardiagRouter = api;
   return api;

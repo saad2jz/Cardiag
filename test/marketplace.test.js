@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { after, before, test } from 'node:test';
 import { createApp } from '../src/app.js';
 import { garageSlug, sanitizeGarage, sanitizeReview } from '../src/marketplace/garage-utils.js';
+import { readFile } from 'node:fs/promises';
 
 const activeGarage = { id:'garage-central-lyon', slug:'garage-central-lyon', name:'Garage Central', city:'Lyon', postalCode:'69003', specialties:['Diagnostic'], status:'active', ratingAverage:4.5, reviewCount:2, description:'Diagnostic et entretien automobile.' };
 const pendingGarage = { ...activeGarage, id:'garage-en-attente-lyon', slug:'garage-en-attente-lyon', status:'pending', name:'Garage en attente' };
@@ -71,4 +72,11 @@ test('garage applications are pending and admin actions require an authenticated
   assert.equal(admin.status, 200);
   const moderation = await fetch(`${baseUrl}/api/admin/garage-reviews/review-1/status`, { method:'PATCH', headers:{Authorization:'Bearer admin','content-type':'application/json'}, body:JSON.stringify({ status:'published' }) });
   assert.equal(moderation.status, 200);
+});
+
+test('admin garage actions send an active garage to its public URL and retain pending work in the admin area', async () => {
+  const client = await readFile(new URL('../js/marketplace/garage-admin.js', import.meta.url), 'utf8');
+  assert.match(client, /window\.location\.assign\(url\)/);
+  assert.match(client, /result\.garage\?\.status === 'active'/);
+  assert.match(client, /Garage enregistré en attente de compléments/);
 });

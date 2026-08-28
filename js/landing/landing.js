@@ -187,7 +187,7 @@ export function initializeLanding() {
     // The account menu on the public landing has no inspection selected yet.
     // Store an explicit destination so an OAuth page reload cannot strand a
     // successfully authenticated user on the marketing page.
-    const path = options.path === '/app/nouvelle' ? options.path : '';
+    const path = options.path === '/app/nouvelle' ? options.path : '/app/inspection/nouveau';
     try {
       sessionStorage.setItem(AUTH_RETURN_KEY, JSON.stringify({
         role,
@@ -197,13 +197,6 @@ export function initializeLanding() {
         requestedAt: Date.now(),
       }));
     } catch { /* Non-essential navigation hint. */ }
-  };
-  const consumeAuthReturn = () => {
-    try {
-      const pending = JSON.parse(sessionStorage.getItem(AUTH_RETURN_KEY) || 'null');
-      sessionStorage.removeItem(AUTH_RETURN_KEY);
-      return pending && Date.now() - Number(pending.requestedAt || 0) < 30 * 60 * 1000 ? pending : null;
-    } catch { return null; }
   };
   const requestAuthentication = (role = '', level = '') => {
     rememberAuthReturn(role, level);
@@ -294,22 +287,6 @@ export function initializeLanding() {
       detail,
     }));
   }));
-  window.addEventListener('cardiag:authentication-complete', () => {
-    // An application route owns its own resume target. Do not consume it from
-    // the landing listener when the landing is only temporarily visible behind
-    // the sign-in panel.
-    if (!active) return;
-    const pending = consumeAuthReturn();
-    if (!pending) return;
-    if (pending.path && /^\/app(?:\/|$)/.test(pending.path) && window.cardiagRouter?.navigate) {
-      window.cardiagRouter.navigate(pending.path, { replace: true, source: 'authentication-return' });
-      if (pending.openProfile) {
-        window.setTimeout(() => window.cardiagAuthUi?.open?.('profile'), 0);
-      }
-      return;
-    }
-    enter(pending.role || '', pending.level || '');
-  });
   document.addEventListener('click', (event) => {
     if (!event.target.closest('.landing-account-menu')) closeAuthOptions();
   });

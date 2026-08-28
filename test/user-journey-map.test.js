@@ -35,8 +35,9 @@ test('every public journey enters through the same stateless creation URL', () =
 test('public calls to action always save the selected journey before opening authentication', () => {
   assert.match(landing, /rememberAuthReturn\(role, level\)/);
   assert.match(landing, /window\.cardiagOpenAuthentication\(\{ view: 'login' \}\)/);
-  assert.match(landing, /enter\(pending\.role \|\| '', pending\.level \|\| ''\)/);
-  assert.match(landing, /persistEntryChoice\(role, selectedLevel\)/);
+  assert.match(landing, /path = options\.path === '\/app\/nouvelle' \? options\.path : '\/app\/inspection\/nouveau'/);
+  assert.doesNotMatch(landing, /consumeAuthReturn/);
+  assert.match(controller, /function consumeProtectedRoute/);
   assert.match(app, /initializeLazyAccountFeature\(\);/);
   assert.match(app, /The landing is immediately interactive/);
 });
@@ -55,6 +56,10 @@ test('protected routes resume after authentication instead of leaving an unauthe
   }
   assert.match(controller, /cardiagRequireAuthentication/);
   assert.match(controller, /cardiag:authentication-complete/);
+  assert.match(controller, /resumeAuthenticationDestination/);
+  assert.match(controller, /Replay a destination that was saved before the authentication feature/);
+  assert.match(controller, /openProfile: Boolean\(pending\.openProfile\)/);
+  assert.match(controller, /profile: routeProfileForScenario\(pending\.role\)/);
   assert.match(controller, /applyRoute\(router\.current\)/);
 });
 

@@ -96,7 +96,7 @@ test('public landing opens account choices without entering the inspection appli
   assert.match(app, /The landing is immediately interactive/);
   assert.match(app, /The profile shell must exist before the large vehicle catalogue/);
   assert.match(app, /const landing = initializeLanding\(\);[\s\S]{0,300}initializeLazyAccountFeature\(\);/);
-  assert.match(app, /landing\.js\?v=20260826-4/);
+  assert.match(app, /landing\.js\?v=20260828-1/);
   assert.match(app, /hasPendingAuthenticationReturn/);
   assert.match(router, /rememberProtectedRoute/);
   assert.match(router, /consumeProtectedRoute/);
@@ -106,7 +106,7 @@ test('public landing opens account choices without entering the inspection appli
 test('authentication resumes the requested app entry and reports a failed migration truthfully', () => {
   assert.doesNotMatch(index, /landing-nav-cta/);
   assert.match(landing, /cardiag_auth_return_v1/);
-  assert.match(landing, /cardiag:authentication-complete/);
+  assert.match(router, /cardiag:authentication-complete/);
   assert.match(authUi, /cardiag:authentication-complete/);
   assert.match(client, /cardiag_auth_completion_v1/);
   assert.match(client, /cardiag_google_redirect_intent_v1/);
@@ -114,7 +114,7 @@ test('authentication resumes the requested app entry and reports a failed migrat
   assert.match(landing, /A successful sign-in must visibly enter the app/);
   assert.match(landing, /path: '\/app\/nouvelle'/);
   assert.match(landing, /openProfile: Boolean\(options\.openProfile\)/);
-  assert.match(landing, /cardiagAuthUi\?\.open\?\.\('profile'\)/);
+  assert.match(router, /cardiagAuthUi\?\.open\?\.\('profile'\)/);
   assert.match(router, /pending\.openProfile/);
   assert.match(router, /cardiagRequireAuthentication/);
   assert.match(syncQueue, /Vos fiches restent sur cet appareil/);
@@ -125,7 +125,8 @@ test('every public scenario keeps its intended destination after authentication'
     assert.match(index, new RegExp(`data-landing-role="${role}"`));
   }
   assert.match(landing, /rememberAuthReturn\(role, level\)/);
-  assert.match(landing, /enter\(pending\.role \|\| '', pending\.level \|\| ''\)/);
+  assert.match(router, /resumeAuthenticationDestination/);
+  assert.match(router, /routeProfileForScenario\(pending\.role\)/);
   assert.match(landing, /persistEntryChoice\(role, selectedLevel\)/);
   assert.match(landing, /suggestedRole: role \|\| 'buyer'/);
 });
