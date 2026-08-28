@@ -9,6 +9,7 @@ const authStyles = await readFile(new URL('../css/auth/auth.css', import.meta.ur
 const comparison = await readFile(new URL('../js/legacy-features.js', import.meta.url), 'utf8');
 const index = await readFile(new URL('../index.html', import.meta.url), 'utf8');
 const landing = await readFile(new URL('../js/landing/landing.js', import.meta.url), 'utf8');
+const landingStyles = await readFile(new URL('../css/landing/landing.css', import.meta.url), 'utf8');
 const router = await readFile(new URL('../js/navigation/route-controller.js', import.meta.url), 'utf8');
 const syncQueue = await readFile(new URL('../js/native/sync-queue.js', import.meta.url), 'utf8');
 const app = await readFile(new URL('../js/app.js', import.meta.url), 'utf8');
@@ -85,10 +86,12 @@ test('Google authentication remains available alongside passwordless email', () 
 });
 
 test('public landing opens account choices without entering the inspection application', () => {
+  assert.match(index, /<base href="\/">/);
   assert.match(index, /data-landing-auth-toggle/);
   assert.match(index, /data-landing-auth="google"/);
   assert.match(index, /data-landing-auth="email"/);
   assert.match(index, /data-landing-auth="existing"/);
+  assert.match(landingStyles, /\.landing-active>:not\(#marketingLanding\):not\(\.profile-onboarding\):not\(\.account-sheet\)/);
   assert.match(landing, /cardiag:open-auth/);
   assert.match(landing, /cardiagOpenAuthentication/);
   assert.match(landing, /provider: button\.dataset\.landingAuth/);

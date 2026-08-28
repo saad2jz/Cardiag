@@ -7,6 +7,7 @@ const index = await readFile(new URL('../index.html', import.meta.url), 'utf8');
 const app = await readFile(new URL('../js/app.js', import.meta.url), 'utf8');
 const landing = await readFile(new URL('../js/landing/landing.js', import.meta.url), 'utf8');
 const controller = await readFile(new URL('../js/navigation/route-controller.js', import.meta.url), 'utf8');
+const sharedReport = await readFile(new URL('../shared-report.html', import.meta.url), 'utf8');
 
 const journeys = Object.freeze([
   { role: 'buyer', profile: 'acheteur', stage: 'identification' },
@@ -64,6 +65,7 @@ test('protected routes resume after authentication instead of leaving an unauthe
 });
 
 test('public report and legal pages stay public while malformed application URLs fail safely', () => {
+  assert.match(sharedReport, /<base href="\/">/);
   for (const path of ['/exemple-rapport', '/privacy.html', '/terms.html', '/account-deletion.html', '/r/random-token']) {
     assert.equal(parseRoute(path).app, false, path);
   }
