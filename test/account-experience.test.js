@@ -114,7 +114,7 @@ test('public landing account choices enter the dedicated application shell befor
   assert.match(app, /The landing is immediately interactive/);
   assert.match(app, /The profile shell must exist before the large vehicle catalogue/);
   assert.match(app, /const landing = isApplicationShell \? null : initializeLanding\(\);[\s\S]{0,300}initializeLazyAccountFeature\(\);/);
-  assert.match(app, /landing\.js\?v=20260828-2/);
+  assert.match(app, /landing\.js\?v=20260829-1/);
   assert.match(app, /hasPendingAuthenticationReturn/);
   assert.match(router, /rememberProtectedRoute/);
   assert.match(router, /consumeProtectedRoute/);

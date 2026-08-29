@@ -94,6 +94,12 @@
   align-items: center;
   gap: 6px;
 }
+
+/* Diagnostic terminal skin. It only changes the visual readout, leaving the
+   Bluetooth scan controls and their editable underlying fields untouched. */
+.obd2-scan-controls,.obd2-scan-trace{border:1px solid color-mix(in srgb,var(--primary) 28%,var(--border));border-radius:12px;background:linear-gradient(135deg,color-mix(in srgb,var(--primary) 7%,var(--surface)),var(--surface));box-shadow:inset 0 1px 0 rgb(255 255 255 / .05)}
+.obd2-scan-controls{padding:12px}.obd2-scan-trace{border-left-width:1px;color:var(--ink);font:600 12px/1.55 'JetBrains Mono',monospace}.obd2-scan-btn{border:1px solid var(--primary);border-radius:9px;background:var(--primary);color:#071214;box-shadow:0 8px 22px color-mix(in srgb,var(--primary) 23%,transparent)}.obd2-scan-btn:hover{background:color-mix(in srgb,var(--primary) 88%,white);box-shadow:0 10px 26px color-mix(in srgb,var(--primary) 32%,transparent)}
+@media(prefers-reduced-motion:reduce){.obd2-scan-status[data-state="loading"]::before{animation:none}}
 .obd2-trace-icon {
   font-size: 1em;
 }
@@ -1126,6 +1132,5 @@
   box-shadow: 0 0 8px rgba(239, 68, 68, 0.7);
   animation: speech-pulse 1s infinite;
 }
-
 
 

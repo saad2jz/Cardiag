@@ -71,6 +71,21 @@ function applyLanguage(root, language) {
   root.querySelectorAll('[data-landing-language]').forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.landingLanguage === language)));
   const heroImage = root.querySelector('.landing-visual-frame img');
   if (heroImage) heroImage.alt = language === 'en' ? EN.imageAlt : heroImage.dataset.altFr;
+  renderLandingMarquee(root, language);
+}
+
+function renderLandingMarquee(root, language) {
+  const track = root.querySelector('.landing-marquee > div');
+  if (!track) return;
+  const entries = language === 'en'
+    ? ['33 structured inspection points', '7 technical sections', 'Exportable PDF report', 'Works offline', 'No payment card required']
+    : ['33 points de contrôle', '7 sections techniques', 'Rapport PDF exportable', 'Fonctionne hors ligne', 'Aucune carte bancaire requise'];
+  track.replaceChildren(...[...entries, ...entries].map((entry, index) => {
+    const item = document.createElement('span');
+    item.textContent = entry;
+    if (index >= entries.length) item.setAttribute('aria-hidden', 'true');
+    return item;
+  }));
 }
 
 function selectScenario(role) {
@@ -314,6 +329,56 @@ export function initializeLanding() {
     applyLanguage(root, language);
   }));
   root.querySelectorAll('a[href^="#"]').forEach((link) => link.addEventListener('click', () => document.querySelector(link.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' })));
+  const reduceMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+  const hero = root.querySelector('.landing-hero--diagnostic');
+  if (hero && !reduceMotion && window.matchMedia?.('(pointer: fine)').matches) {
+    hero.addEventListener('pointermove', (event) => {
+      const bounds = hero.getBoundingClientRect();
+      hero.style.setProperty('--spot-x', `${((event.clientX - bounds.left) / bounds.width) * 100}%`);
+      hero.style.setProperty('--spot-y', `${((event.clientY - bounds.top) / bounds.height) * 100}%`);
+    });
+  }
+  if (!reduceMotion && window.matchMedia?.('(pointer: fine)').matches) {
+    root.querySelectorAll('[data-tilt-card]').forEach((card) => {
+      let animationFrame = 0;
+      const reset = () => {
+        cancelAnimationFrame(animationFrame);
+        card.removeAttribute('data-tilt-active');
+        card.style.removeProperty('transform');
+        card.style.removeProperty('--tilt-x');
+        card.style.removeProperty('--tilt-y');
+      };
+      card.addEventListener('pointermove', (event) => {
+        const bounds = card.getBoundingClientRect();
+        const x = (event.clientX - bounds.left) / bounds.width;
+        const y = (event.clientY - bounds.top) / bounds.height;
+        cancelAnimationFrame(animationFrame);
+        animationFrame = requestAnimationFrame(() => {
+          card.setAttribute('data-tilt-active', '');
+          card.style.setProperty('--tilt-x', `${x * 100}%`);
+          card.style.setProperty('--tilt-y', `${y * 100}%`);
+          card.style.transform = `translateY(-5px) rotateX(${(0.5 - y) * 5}deg) rotateY(${(x - 0.5) * 5}deg)`;
+        });
+      });
+      card.addEventListener('pointerleave', reset);
+      card.addEventListener('blur', reset, true);
+    });
+  }
+  root.querySelectorAll('[data-orbit-node]').forEach((node) => node.addEventListener('click', () => {
+    root.querySelectorAll('[data-orbit-node]').forEach((other) => other.setAttribute('aria-expanded', String(other === node)));
+  }));
+  root.querySelectorAll('[data-compare]').forEach((comparison) => {
+    const range = comparison.querySelector('[data-compare-range]');
+    const overlay = comparison.querySelector('.landing-compare-after');
+    if (!range || !overlay) return;
+    const update = () => {
+      const value = `${range.value}%`;
+      overlay.style.width = value;
+      comparison.style.setProperty('--compare-position', value);
+    };
+    range.addEventListener('input', update);
+    update();
+  });
   window.addEventListener('cardiag:language-change', (event) => {
     const language = event.detail?.language || 'fr';
     applyLanguage(root, language);

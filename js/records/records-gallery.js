@@ -33,7 +33,7 @@ export function initializeRecordsGallery() {
     sheet.querySelector('h2').textContent=translate('records.title','Mes fiches');
     sheet.querySelector('[data-records-new]').textContent=translate('records.new','＋ Nouvelle expertise');
     sheet.querySelector('[data-records-compare]').textContent=`⇄ ${translate('records.compare','Comparer des véhicules')}`;
-    if(!records.length){grid.innerHTML=`<p class="records-empty">${translate('records.empty','Aucune fiche enregistrée pour le moment.')}</p>`;return}
+    if(!records.length){grid.innerHTML=`<div class="records-empty"><img src="assets/landing/empty-state-inspection.webp" alt="" width="320" height="320"><p>${translate('records.empty','Aucune fiche enregistrée pour le moment.')}</p><span>${translate('records.emptyHint','Créez votre première expertise pour retrouver ici vos analyses et rapports.')}</span></div>`;return}
     grid.replaceChildren(...records.sort((a,b) => String(b.createdAt).localeCompare(String(a.createdAt))).map((record) => {
       const card = document.createElement('article');
       card.className = 'record-card';
