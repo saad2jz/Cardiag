@@ -14,6 +14,7 @@ const settings = await readFile(new URL('../js/settings/settings.js', import.met
 const audioAnalyzer = await readFile(new URL('../js/media/engine-audio-analyzer.js', import.meta.url), 'utf8');
 const themes = await readFile(new URL('../js/theming/theme-manager.js', import.meta.url), 'utf8');
 const styles = await readFile(new URL('../css/styles.css', import.meta.url), 'utf8');
+const landingStyles = await readFile(new URL('../css/landing/landing.css', import.meta.url), 'utf8');
 const pwa = await readFile(new URL('../js/pwa.js', import.meta.url), 'utf8');
 const router = await readFile(new URL('../js/navigation/router.js', import.meta.url), 'utf8');
 const routeController = await readFile(new URL('../js/navigation/route-controller.js', import.meta.url), 'utf8');
@@ -31,11 +32,11 @@ test('the app shell keeps SEO, accessibility and cache safeguards', () => {
   assert.match(index, /"@type":"Organization"/);
   assert.match(index, /id="installAppBtn"[^>]*hidden/);
   assert.match(index, /sigCanvasAcheteur[^>]*aria-label=/);
-  assert.match(worker, /cardiag-v136/);
+  assert.match(worker, /cardiag-v138/);
   assert.match(index, /cardiag_design_preferences/);
   assert.match(index, /Apply the saved visual preference before the first paint/);
   assert.match(worker, /landing\/landing\.js\?v=20260829-1/);
-  assert.match(worker, /js\/app\.js\?v=20260829-1/);
+  assert.match(worker, /js\/app\.js\?v=20260830-1/);
   assert.match(index, /id="pwaUpdateBanner"/);
   assert.match(index, /Fiches locales par défaut/);
   assert.match(pwa, /registration\.addEventListener\('updatefound'/);
@@ -68,14 +69,22 @@ test('the acoustic analyzer is restricted to the relevant engine checks', () => 
 
 test('application routes use an isolated shell and never initialise the public landing', async () => {
   const app = await readFile(new URL('../js/app.js', import.meta.url), 'utf8');
-  const landingCss = await readFile(new URL('../css/landing/landing.css', import.meta.url), 'utf8');
   assert.match(index, /document\.body\.classList\.add\('app-shell'\)/);
-  assert.match(landingCss, /\.app-shell #marketingLanding\{display:none!important\}/);
+  assert.match(landingStyles, /\.app-shell #marketingLanding\{display:none!important\}/);
   assert.match(app, /const initialRoute = parseRoute\(window\.location\.href\);/);
   assert.match(app, /const landing = isApplicationShell \? null : initializeLanding\(\);/);
   assert.match(app, /Boolean\(landing\?\.active\)/);
   assert.match(routeController, /continueInApplicationShell/);
   assert.match(routeController, /window\.location\.assign\(target\)/);
+});
+
+test('landing media has stable layers, deliberate crops and a visual fallback', () => {
+  assert.match(index, /class="landing-process-ambient"[^>]*preload="metadata"[^>]*poster="assets\/landing\/report-preview-bg\.webp"/);
+  assert.match(landingStyles, /\.landing-visual-frame\{position:relative;isolation:isolate/);
+  assert.match(landingStyles, /\.landing-visual-frame::after\{content:'';position:absolute;z-index:1/);
+  assert.match(landingStyles, /\.landing-orbit-core\{position:absolute;z-index:0/);
+  assert.match(landingStyles, /\.landing-compare img\{display:block;width:100%;height:100%;object-fit:cover/);
+  assert.match(landingStyles, /\.landing-path-card--illustrated:nth-child\(1\) \.landing-path-media\{object-position:center 61%/);
 });
 
 test('the app shell owns stable routes for each workflow and inspection state', () => {

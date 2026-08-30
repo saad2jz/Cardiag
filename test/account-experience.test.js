@@ -60,6 +60,13 @@ test('passwordless email authentication keeps account creation separate from pro
   assert.match(authUi, /data-existing-login/);
   assert.match(authUi, /Se connecter par e-mail/);
   assert.match(authUi, /authClient\.sendMagicLink\(form\.email\.value\)/);
+  assert.match(authUi, /data-auth-view="email-sent"/);
+  assert.match(authUi, /data-auth-resend/);
+  assert.match(authUi, /lastMagicLinkEmail/);
+  assert.match(authUi, /show\('email-sent'\)/);
+  assert.match(authUi, /const finishAuthentication/);
+  assert.match(authUi, /Reprise de votre parcours/);
+  assert.match(authStyles, /\.auth-email-sent-card/);
   assert.doesNotMatch(authUi, /name="passwordConfirmation"/);
   assert.match(client, /validateEmail\(normalizedEmail\)/);
   assert.match(client, /sendSignInLinkToEmail/);
@@ -97,7 +104,7 @@ test('Google authentication remains available alongside passwordless email', () 
   assert.match(authUi, /data-link-google/);
   assert.match(client, /googleAuthError/);
   assert.match(client, /Firebase: \$\{error\?\.code/);
-  assert.match(authUi, /open\('profile'\);/);
+  assert.match(authUi, /show\('profile'\);/);
 });
 
 test('public landing account choices enter the dedicated application shell before authentication', () => {

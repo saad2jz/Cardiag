@@ -17,6 +17,7 @@ function createAuthSurface() {
   panel.hidden = true;
   panel.innerHTML = `
     <header><div><p class="panel-kicker">COMPTE CARDIAG</p><h2 data-account-title>Connexion</h2></div><button type="button" data-account-close aria-label="Fermer">×</button></header>
+    <p class="auth-status" data-auth-status role="status" aria-live="polite"></p>
     <div class="auth-view" data-auth-view="login">
       <p class="auth-help">Recevez un lien sécurisé par email : aucun mot de passe à créer ni à retenir.</p>
       <form data-auth-form="email-link">
@@ -26,6 +27,12 @@ function createAuthSurface() {
       <button type="button" class="google-auth-button" data-google-login><span aria-hidden="true">G</span> Continuer avec Google</button>
       <button type="button" class="auth-existing-button" data-existing-login>Déjà inscrit ? Recevoir mon lien sécurisé</button>
       <p class="auth-help">Premier accès ? Le lien crée votre compte automatiquement.</p>
+    </div>
+    <div class="auth-view auth-email-sent" data-auth-view="email-sent" hidden>
+      <div class="auth-email-sent-card"><p class="panel-kicker">LIEN SÉCURISÉ ENVOYÉ</p><h3>Consultez votre boîte e-mail</h3><p>Ouvrez le lien reçu pour revenir automatiquement à votre inspection.</p><strong data-auth-sent-email></strong></div>
+      <button type="button" data-auth-resend>Renvoyer le lien sécurisé</button>
+      <button type="button" data-auth-use-other>Utiliser une autre adresse e-mail</button>
+      <p class="auth-help">Le lien peut arriver dans les courriers indésirables et expire pour votre sécurité.</p>
     </div>
     <div class="auth-view" data-auth-view="profile" hidden>
       <div class="account-summary"><div class="account-summary-avatar" data-account-avatar aria-hidden="true">C</div><div><strong data-account-summary-name>Compte CarDiag</strong><span data-account-summary-email></span><span class="account-verified" data-account-verification></span></div></div>
@@ -41,8 +48,7 @@ function createAuthSurface() {
         <button type="submit">Enregistrer les réglages du profil</button>
       </form>
       <div class="account-actions"><button type="button" data-link-google>Associer Google à ce compte</button><button type="button" data-export-account>Exporter mes données</button><button type="button" data-sign-out>Se déconnecter</button><button type="button" class="danger" data-delete-account>Supprimer définitivement le compte</button></div>
-    </div>
-    <p class="auth-status" data-auth-status role="status" aria-live="polite"></p>`;
+    </div>`;
   document.body.append(panel);
   return panel;
 }
@@ -91,6 +97,7 @@ export async function initializeAuthUi() {
   let profile = null;
   let profileUid = '';
   let profileRequest = 0;
+  let lastMagicLinkEmail = '';
   const hasPendingJourney = () => {
     try { return Boolean(sessionStorage.getItem('cardiag_auth_return_v1')); } catch { return false; }
   };
@@ -130,9 +137,9 @@ export async function initializeAuthUi() {
 
   const accountName = () => profile?.displayName || authClient.user?.displayName || authClient.user?.email?.split('@')[0] || '';
   const show = (requested) => {
-    const name = authClient.user ? 'profile' : 'login';
+    const name = authClient.user ? 'profile' : requested === 'email-sent' ? 'email-sent' : 'login';
     panel.querySelectorAll('[data-auth-view]').forEach((view) => { view.hidden = view.dataset.authView !== name; });
-    panel.querySelector('[data-account-title]').textContent = name === 'profile' ? 'Mon profil' : 'Connexion ou créer un compte';
+    panel.querySelector('[data-account-title]').textContent = name === 'profile' ? 'Mon profil' : name === 'email-sent' ? 'Vérifiez votre e-mail' : 'Connexion ou créer un compte';
   };
   const updateQuickLabels = () => {
     const english = window.cardiagI18n?.language === 'en';
@@ -164,6 +171,15 @@ export async function initializeAuthUi() {
     avatar.style.backgroundImage = source ? `url("${String(source).replaceAll('"','%22')}")` : '';
     updateQuickLabels();
     refreshMigration(user);
+  };
+  const finishAuthentication = (user, provider) => {
+    if (hasPendingJourney()) closeForJourney();
+    else {
+      show('profile');
+      renderAccount(user);
+    }
+    message(panel, 'Connexion réussie. Reprise de votre parcours…', 'success');
+    announceAuthentication(provider);
   };
   const open = (requestedView = '', provider = '') => {
     panel.hidden = false;
@@ -224,16 +240,13 @@ export async function initializeAuthUi() {
       if (authClient.pendingMagicLink) {
         const user = await authClient.completeMagicLink(form.email.value);
         if (!user) throw new Error('Ce lien de connexion est invalide ou a expiré. Demandez un nouveau lien.');
-        if (hasPendingJourney()) closeForJourney();
-        else {
-          show('profile');
-          renderAccount(user);
-        }
-        message(panel, 'Connexion réussie.', 'success');
-        announceAuthentication('email');
+        finishAuthentication(user, 'email');
         return;
       }
       await authClient.sendMagicLink(form.email.value);
+      lastMagicLinkEmail = form.email.value.trim().toLowerCase();
+      panel.querySelector('[data-auth-sent-email]').textContent = lastMagicLinkEmail;
+      show('email-sent');
       message(panel, 'Si cette adresse est valide, un lien de connexion vient d’être envoyé. Vérifiez aussi vos courriers indésirables.', 'success');
     } catch (error) { message(panel, error.message, 'error'); }
     finally { setBusy(submit, false); }
@@ -241,6 +254,25 @@ export async function initializeAuthUi() {
   panel.querySelector('[data-existing-login]').onclick = () => {
     message(panel, 'Saisissez votre adresse e-mail puis choisissez « Se connecter par e-mail ».');
     panel.querySelector('[data-auth-form="email-link"] [name="email"]')?.focus();
+  };
+  panel.querySelector('[data-auth-use-other]').onclick = () => {
+    show('login');
+    requestAnimationFrame(() => panel.querySelector('[data-auth-form="email-link"] [name="email"]')?.focus());
+  };
+  panel.querySelector('[data-auth-resend]').onclick = async (event) => {
+    const button = event.currentTarget;
+    if (!lastMagicLinkEmail) {
+      show('login');
+      panel.querySelector('[data-auth-form="email-link"] [name="email"]')?.focus();
+      return;
+    }
+    setBusy(button, true);
+    message(panel, 'Nouvel envoi du lien sécurisé…');
+    try {
+      await authClient.sendMagicLink(lastMagicLinkEmail);
+      message(panel, 'Un nouveau lien sécurisé a été envoyé.', 'success');
+    } catch (error) { message(panel, error.message, 'error'); }
+    finally { setBusy(button, false); }
   };
 
   const signInWithGoogle = async (button) => {
@@ -253,13 +285,7 @@ export async function initializeAuthUi() {
         message(panel, 'Redirection sécurisée vers Google…', '');
         return;
       }
-      if (hasPendingJourney()) closeForJourney();
-      else {
-        show('profile');
-        renderAccount(user);
-      }
-      message(panel, 'Connexion Google réussie.', 'success');
-      announceAuthentication('google');
+      finishAuthentication(user, 'google');
     } catch (error) { message(panel, error.message, 'error'); }
     finally { setBusy(button, false); }
   };
@@ -404,9 +430,7 @@ export async function initializeAuthUi() {
     if (provider && authClient.user) {
       // Redirect OAuth returns reload the document. Reopen the authenticated
       // account panel so the user lands directly on their account and goal.
-      if (hasPendingJourney()) closeForJourney();
-      else open('profile');
-      announceAuthentication(provider);
+      finishAuthentication(authClient.user, provider);
     }
   } catch { /* Browser storage is optional for authentication. */ }
 }
