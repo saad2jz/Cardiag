@@ -11,6 +11,7 @@ const brandPicker = await readFile(new URL('../js/wizard/brand-picker.js', impor
 const vehiclePicker = await readFile(new URL('../js/wizard/vehicle-picker.js', import.meta.url), 'utf8');
 const recordsGallery = await readFile(new URL('../js/records/records-gallery.js', import.meta.url), 'utf8');
 const settings = await readFile(new URL('../js/settings/settings.js', import.meta.url), 'utf8');
+const audioAnalyzer = await readFile(new URL('../js/media/engine-audio-analyzer.js', import.meta.url), 'utf8');
 const themes = await readFile(new URL('../js/theming/theme-manager.js', import.meta.url), 'utf8');
 const styles = await readFile(new URL('../css/styles.css', import.meta.url), 'utf8');
 const pwa = await readFile(new URL('../js/pwa.js', import.meta.url), 'utf8');
@@ -30,7 +31,7 @@ test('the app shell keeps SEO, accessibility and cache safeguards', () => {
   assert.match(index, /"@type":"Organization"/);
   assert.match(index, /id="installAppBtn"[^>]*hidden/);
   assert.match(index, /sigCanvasAcheteur[^>]*aria-label=/);
-  assert.match(worker, /cardiag-v135/);
+  assert.match(worker, /cardiag-v136/);
   assert.match(index, /cardiag_design_preferences/);
   assert.match(index, /Apply the saved visual preference before the first paint/);
   assert.match(worker, /landing\/landing\.js\?v=20260829-1/);
@@ -55,6 +56,14 @@ test('the wizard toolbar exposes a non-destructive CarDiag home action', () => {
   assert.match(settings, /data-setting-inspection-view/);
   assert.match(themes, /button\.hidden = true/);
   assert.match(themes, /data-open-all-settings/);
+});
+
+test('the acoustic analyzer is restricted to the relevant engine checks', () => {
+  assert.match(audioAnalyzer, /const AUDIO_SUPPORTED_TESTS = \{/);
+  assert.match(audioAnalyzer, /bruits:/);
+  assert.match(audioAnalyzer, /ralenti:/);
+  assert.match(audioAnalyzer, /input\[name="\$\{testKey\}"\]/);
+  assert.doesNotMatch(index, /id="engineAudioAnalyzerWrap"/);
 });
 
 test('application routes use an isolated shell and never initialise the public landing', async () => {

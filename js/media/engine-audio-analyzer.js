@@ -10,13 +10,34 @@ function translate(fr, en) {
   return window.cardiagI18n?.language === 'en' ? en : fr;
 }
 
+// An acoustic sample is meaningful only while checking engine noise or idle
+// stability. Keeping this explicit prevents a microphone action from leaking
+// into unrelated inspection controls.
+const AUDIO_SUPPORTED_TESTS = {
+  bruits: {
+    label: ['Analyser le bruit moteur', 'Analyze engine noise'],
+    description: [
+      'Enregistrez le moteur au ralenti ou à 2500 tr/min pour préciser un cliquetis, un sifflement ou un cognement.',
+      'Record the engine at idle or 2500 RPM to clarify ticking, whistling, or knocking.',
+    ],
+  },
+  ralenti: {
+    label: ['Analyser le ralenti moteur', 'Analyze engine idle'],
+    description: [
+      'Enregistrez le moteur au ralenti pour documenter une instabilité, des vibrations ou un bruit associé.',
+      'Record the engine at idle to document instability, vibration, or related noise.',
+    ],
+  },
+};
+
 export class EngineAudioAnalyzerModal {
-  static open() {
-    const modal = new EngineAudioAnalyzerModal();
+  static open(testKey = 'bruits') {
+    const modal = new EngineAudioAnalyzerModal(testKey);
     modal.render();
   }
 
-  constructor() {
+  constructor(testKey) {
+    this.testKey = AUDIO_SUPPORTED_TESTS[testKey] ? testKey : 'bruits';
     this.audioCtx = null;
     this.analyser = null;
     this.mediaStream = null;
@@ -29,6 +50,7 @@ export class EngineAudioAnalyzerModal {
   }
 
   render() {
+    const test = AUDIO_SUPPORTED_TESTS[this.testKey];
     const overlay = document.createElement('div');
     overlay.className = 'audio-analyzer-overlay';
     overlay.innerHTML = `
@@ -41,10 +63,7 @@ export class EngineAudioAnalyzerModal {
           <button type="button" class="btn-close-modal" id="btnAudioClose">✕</button>
         </div>
 
-        <p class="audio-analyzer-desc">${translate(
-          'Enregistrez 5 à 10 secondes du son moteur capot ouvert (au ralenti ou à 2500 tr/min) pour détecter cliquetis, bruits de chaîne, sifflements de turbo ou claquements.',
-          'Record 5-10 seconds of engine sound with the hood open (at idle or 2500 RPM) to detect rattling, timing chain noise, turbo whistling, or knocking.',
-        )}</p>
+        <p class="audio-analyzer-desc">${translate(...test.description)}</p>
 
         <div class="audio-visualizer-wrap">
           <canvas id="audioVisualizerCanvas" width="500" height="120"></canvas>
@@ -201,26 +220,21 @@ export class EngineAudioAnalyzerModal {
 }
 
 export function initializeEngineAudioAnalyzer() {
-  const container = document.getElementById('engineAudioAnalyzerWrap');
-  if (!container) return;
+  document.getElementById('engineAudioAnalyzerWrap')?.remove();
 
-  container.hidden = false;
-  container.innerHTML = `
-    <div class="engine-audio-card">
-      <div class="engine-audio-info">
-        <span class="engine-audio-icon">🎧</span>
-        <div>
-          <strong>${translate('Analyseur de Bruit Moteur', 'Engine Acoustic Analyzer')}</strong>
-          <p>${translate('Enregistrez et analysez le son du moteur pour détecter cliquetis ou sifflements.', 'Record and analyze engine sound to detect ticking or whistling.')}</p>
-        </div>
-      </div>
-      <button type="button" class="btn-open-audio-analyzer" id="btnOpenAudioAnalyzer">
-        🎙️ ${translate('Analyser le son', 'Analyze Sound')}
-      </button>
-    </div>
-  `;
+  Object.entries(AUDIO_SUPPORTED_TESTS).forEach(([testKey, test]) => {
+    const check = document.querySelector(`.check-item input[name="${testKey}"]`)?.closest('.check-item');
+    const labelBlock = check?.querySelector('.label-block');
+    if (!labelBlock || labelBlock.querySelector('[data-engine-audio-test]')) return;
 
-  container.querySelector('#btnOpenAudioAnalyzer')?.addEventListener('click', () => {
-    EngineAudioAnalyzerModal.open();
+    const trigger = document.createElement('button');
+    trigger.type = 'button';
+    trigger.className = 'btn-open-audio-analyzer';
+    trigger.dataset.engineAudioTest = testKey;
+    trigger.textContent = translate(...test.label);
+    trigger.addEventListener('click', () => {
+      EngineAudioAnalyzerModal.open(testKey);
+    });
+    labelBlock.append(trigger);
   });
 }

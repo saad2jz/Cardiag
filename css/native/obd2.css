@@ -914,6 +914,10 @@
   color: var(--text-muted, #94a3b8);
 }
 .btn-open-audio-analyzer {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  margin-top: 9px;
   padding: 8px 14px;
   border-radius: 8px;
   border: none;
@@ -1132,5 +1136,4 @@
   box-shadow: 0 0 8px rgba(239, 68, 68, 0.7);
   animation: speech-pulse 1s infinite;
 }
-
 

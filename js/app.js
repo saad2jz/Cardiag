@@ -29,7 +29,7 @@ import { initializeSpeechDictation } from './ux/speech-dictation.js?v=20260828-1
 import { initializeRegistrationScanner } from './wizard/registration-scanner.js?v=20260828-1';
 import { initializeHistovecIntegration } from './ux/histovec-integration.js?v=20260828-1';
 import { initializeRepairEstimator } from './score/repair-estimator.js?v=20260828-1';
-import { initializeEngineAudioAnalyzer } from './media/engine-audio-analyzer.js?v=20260828-1';
+import { initializeEngineAudioAnalyzer } from './media/engine-audio-analyzer.js?v=20260830-1';
 import { initializePaintThicknessProfiler } from './wizard/paint-thickness-profiler.js?v=20260828-1';
 
 let reportFeaturePromise;
