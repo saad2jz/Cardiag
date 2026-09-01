@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
 import { test } from 'node:test';
 import vercelHandler from '../src/app.js';
 
@@ -12,6 +13,17 @@ test('Vercel can import the Express application without opening a local listener
   assert.equal(typeof vercelHandler, 'function');
   assert.equal(typeof app, 'function');
   assert.equal(typeof app.listen, 'function');
+});
+
+test('the Vercel build stages frontend files in the public CDN directory', async () => {
+  const packageJson = JSON.parse(await readFile(new URL('../package.json', import.meta.url), 'utf8'));
+  const buildScript = await readFile(new URL('../scripts/prepare-vercel-public.mjs', import.meta.url), 'utf8');
+
+  assert.equal(packageJson.scripts.build, 'node scripts/prepare-vercel-public.mjs');
+  assert.match(buildScript, /'firebase-config\.json'/);
+  assert.match(buildScript, /'assets'/);
+  assert.match(buildScript, /'data'/);
+  assert.match(buildScript, /outputDir !== join\(projectRoot, 'public'\)/);
 });
 
 test('an invalid Firebase private key disables account APIs without crashing Vercel', () => {
