@@ -81,7 +81,7 @@ test('Firebase Google Auth iframe can use the first-party authentication relay',
   const init = await fetch(`${baseUrl}/__/firebase/init.json`);
   assert.equal(init.status, 200);
   assert.equal(init.headers.get('cache-control'), 'no-store');
-  assert.match(await init.text(), /"authDomain": "cardiag\.online"/);
+  assert.match(await init.text(), /"authDomain": "www\.cardiag\.online"/);
 });
 
 test('app routes survive refreshes and legacy local fiche links redirect safely', async () => {

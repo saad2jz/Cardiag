@@ -1,4 +1,4 @@
-const CANONICAL_WEB_ORIGIN = 'https://cardiag.online';
+const CANONICAL_WEB_ORIGIN = 'https://www.cardiag.online';
 const FIREBASE_APP_SDK = 'https://www.gstatic.com/firebasejs/12.17.1/firebase-app.js';
 const FIREBASE_AUTH_SDK = 'https://www.gstatic.com/firebasejs/12.17.1/firebase-auth.js';
 const browserWindow = typeof window === 'undefined' ? {} : window;
@@ -98,7 +98,7 @@ function googleAuthError(error) {
   const code = String(error?.code || '').replace(/^auth\//i, '').replaceAll('-', '_').toUpperCase();
   const known = friendlyAuthError(error);
   if (code === 'UNAUTHORIZED_DOMAIN') {
-    return 'Le domaine actuel n’est pas autorisé par Firebase. Ouvrez cardiag.online et ajoutez ce domaine dans Firebase Authentication.';
+    return 'Le domaine actuel n’est pas autorisé par Firebase. Ajoutez www.cardiag.online dans Firebase Authentication.';
   }
   if (code === 'OPERATION_NOT_ALLOWED') {
     return 'Le fournisseur Google n’est pas activé dans Firebase Authentication.';

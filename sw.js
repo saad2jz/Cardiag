@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cardiag-v144';
+const CACHE_NAME = 'cardiag-v145';
 const APP_SHELL = [
   './',
   './index.html',
