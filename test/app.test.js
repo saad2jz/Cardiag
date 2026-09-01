@@ -71,12 +71,17 @@ test('alternate browser hosts redirect to the canonical CarDiag domain without r
   assert.equal((await api.json()).status, 'ok');
 });
 
-test('Firebase Google Auth iframe is explicitly permitted by the CSP', async () => {
+test('Firebase Google Auth iframe can use the first-party authentication relay', async () => {
   const response = await fetch(`${baseUrl}/`);
   assert.match(
     response.headers.get('content-security-policy'),
-    /frame-src https:\/\/cardiag-f1ea7\.firebaseapp\.com https:\/\/accounts\.google\.com/,
+    /frame-src 'self' https:\/\/cardiag-f1ea7\.firebaseapp\.com https:\/\/accounts\.google\.com/,
   );
+
+  const init = await fetch(`${baseUrl}/__/firebase/init.json`);
+  assert.equal(init.status, 200);
+  assert.equal(init.headers.get('cache-control'), 'no-store');
+  assert.match(await init.text(), /"authDomain": "cardiag\.online"/);
 });
 
 test('app routes survive refreshes and legacy local fiche links redirect safely', async () => {

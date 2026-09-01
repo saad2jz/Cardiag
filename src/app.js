@@ -17,6 +17,7 @@ const DEFAULT_FRONTEND_ORIGINS = new Set([
   'https://localhost',
   'capacitor://localhost',
 ]);
+const FIREBASE_AUTH_HELPER_ORIGIN = 'https://cardiag-f1ea7.firebaseapp.com';
 
 function isAllowedOrigin(origin) {
   if (!origin) return true;
@@ -32,6 +33,60 @@ const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '
 function sendPublicFile(res, fileName) {
   const filePath = path.join(projectRoot, fileName);
   return res.type(path.extname(fileName)).send(fs.readFileSync(filePath));
+}
+
+function firebaseProxyHeaders(req) {
+  const headers = new Headers();
+  for (const name of ['accept', 'accept-language', 'content-type', 'user-agent']) {
+    const value = req.get(name);
+    if (value) headers.set(name, value);
+  }
+  return headers;
+}
+
+function proxyResponseHeaders(res, upstream, canonicalOrigin) {
+  // Node décompresse les réponses fetch. Ne pas recopier content-length ni
+  // content-encoding, qui décriraient alors les octets reçus en amont plutôt
+  // que le corps effectivement envoyé au navigateur.
+  const allowed = new Set(['content-type', 'cache-control', 'etag', 'last-modified', 'vary']);
+  for (const [name, value] of upstream.headers) {
+    if (allowed.has(name.toLowerCase())) res.setHeader(name, value);
+  }
+  const location = upstream.headers.get('location');
+  if (location) {
+    const rewritten = location.startsWith(FIREBASE_AUTH_HELPER_ORIGIN)
+      ? `${canonicalOrigin}${location.slice(FIREBASE_AUTH_HELPER_ORIGIN.length)}`
+      : location;
+    res.setHeader('Location', rewritten);
+  }
+  const cookies = upstream.headers.getSetCookie?.() || [];
+  if (cookies.length) res.setHeader('Set-Cookie', cookies);
+  res.setHeader('Cache-Control', 'no-store');
+}
+
+async function proxyFirebaseAuthHelper(req, res, next, canonicalOrigin) {
+  const requestPath = req.originalUrl || req.url;
+  if (requestPath.startsWith('/__/firebase/init.json')) {
+    res.setHeader('Cache-Control', 'no-store');
+    return sendPublicFile(res, 'firebase-config.json');
+  }
+  const isAuthHelper = requestPath.startsWith('/__/auth/');
+  if (!isAuthHelper) return next();
+  try {
+    const noBody = ['GET', 'HEAD'].includes(req.method);
+    const upstream = await fetch(new URL(requestPath, FIREBASE_AUTH_HELPER_ORIGIN), {
+      method: req.method,
+      headers: firebaseProxyHeaders(req),
+      body: noBody ? undefined : req,
+      duplex: noBody ? undefined : 'half',
+      redirect: 'manual',
+    });
+    proxyResponseHeaders(res, upstream, canonicalOrigin);
+    return res.status(upstream.status).send(Buffer.from(await upstream.arrayBuffer()));
+  } catch (error) {
+    console.error(`[${req.requestId || 'unknown'}] Relais Firebase Auth indisponible:`, error.message);
+    return res.status(502).json({ error: 'Le relais de connexion Firebase est temporairement indisponible.' });
+  }
 }
 
 function xmlEscape(value) {
@@ -92,7 +147,7 @@ export function createApp({ llmService, accountService = null, mailService = nul
       "connect-src 'self' https://fiche-expert-auto.onrender.com https://*.googleapis.com https://*.firebaseio.com https://*.firebasestorage.app https://*.googleusercontent.com",
       "script-src 'self' 'unsafe-inline' https://www.gstatic.com https://cdnjs.cloudflare.com",
       "style-src 'self' 'unsafe-inline'",
-      "frame-src https://cardiag-f1ea7.firebaseapp.com https://accounts.google.com",
+      "frame-src 'self' https://cardiag-f1ea7.firebaseapp.com https://accounts.google.com",
       "form-action 'self' https://accounts.google.com",
       "worker-src 'self' blob:",
     ].join('; '));
@@ -113,6 +168,10 @@ export function createApp({ llmService, accountService = null, mailService = nul
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
   }));
+  // Firebase redirect authentication must run under cardiag.online on modern
+  // browsers. Proxy the official helper without a browser-visible redirect so
+  // its storage remains first-party (Firebase Auth redirect best practice).
+  app.use('/__', (req, res, next) => proxyFirebaseAuthHelper(req, res, next, canonicalOrigin));
   // Stripe signe les octets bruts. Cette route doit précéder express.json().
   app.post('/api/stripe/webhook', express.raw({ type: 'application/json' }), async (req, res) => {
     if (!stripeService?.webhookConfigured || !accountService) return res.status(503).json({ error: 'Webhook Stripe non configuré.' });

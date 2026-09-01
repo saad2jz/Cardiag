@@ -6,6 +6,7 @@ import { friendlyAuthError, normalizeAuthEmail } from '../js/auth/firebase-clien
 const authUi = await readFile(new URL('../js/auth/auth-ui.js', import.meta.url), 'utf8');
 const client = await readFile(new URL('../js/auth/firebase-client.js', import.meta.url), 'utf8');
 const worker = await readFile(new URL('../sw.js', import.meta.url), 'utf8');
+const firebaseConfig = await readFile(new URL('../firebase-config.json', import.meta.url), 'utf8');
 
 test('passwordless email authentication normalizes and validates account email addresses', () => {
   assert.equal(normalizeAuthEmail('  Client@Example.COM '), 'client@example.com');
@@ -21,4 +22,5 @@ test('email-link UI prevents duplicate requests and keeps a neutral confirmation
   assert.match(authUi, /data-auth-form="email-link"/);
   assert.match(worker, /cardiag-v143/);
   assert.match(client, /CANONICAL_WEB_ORIGIN/);
+  assert.match(firebaseConfig, /"authDomain": "cardiag\.online"/);
 });
