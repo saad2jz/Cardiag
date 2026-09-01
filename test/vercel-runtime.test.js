@@ -15,15 +15,16 @@ test('Vercel can import the Express application without opening a local listener
   assert.equal(typeof app.listen, 'function');
 });
 
-test('the Vercel build stages frontend files in the public CDN directory', async () => {
-  const packageJson = JSON.parse(await readFile(new URL('../package.json', import.meta.url), 'utf8'));
-  const buildScript = await readFile(new URL('../scripts/prepare-vercel-public.mjs', import.meta.url), 'utf8');
+test('the Vercel function explicitly bundles frontend files used by Express', async () => {
+  const config = JSON.parse(await readFile(new URL('../vercel.json', import.meta.url), 'utf8'));
+  const includeFiles = config.functions?.['src/app.js']?.includeFiles || '';
 
-  assert.equal(packageJson.scripts.build, 'node scripts/prepare-vercel-public.mjs');
-  assert.match(buildScript, /'firebase-config\.json'/);
-  assert.match(buildScript, /'assets'/);
-  assert.match(buildScript, /'data'/);
-  assert.match(buildScript, /outputDir !== join\(projectRoot, 'public'\)/);
+  assert.match(includeFiles, /\*\.html/);
+  assert.match(includeFiles, /\*\.json/);
+  assert.match(includeFiles, /assets\/\*\*/);
+  assert.match(includeFiles, /data\/\*\*/);
+  assert.match(includeFiles, /css\/\*\*/);
+  assert.match(includeFiles, /js\/\*\*/);
 });
 
 test('an invalid Firebase private key disables account APIs without crashing Vercel', () => {

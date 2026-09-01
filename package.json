@@ -5,7 +5,6 @@
   "description": "API de diagnostic et d'explication technique pour Cardiag",
   "type": "module",
   "scripts": {
-    "build": "node scripts/prepare-vercel-public.mjs",
     "start": "node src/server.js",
     "dev": "node --watch src/server.js",
     "test": "node --test",
