@@ -10,15 +10,26 @@ const outputPath = resolve(projectRoot, 'assets', 'demo', 'rapport-expertise-dem
 const model = buildCompleteReportModel();
 
 model.id = 'demo-cardiag-2026-001';
-model.title = 'BMW Série 3 320d — véhicule fictif';
+model.title = 'Porsche 911 GT3 RS (991) — véhicule de démonstration';
 model.shareUrl = '';
-model.data.geoloc = 'Lyon — données de démonstration';
-model.assistantSummary = 'Exemple fictif destiné à présenter la structure du rapport CarDiag.';
+Object.assign(model.data, {
+  marque: 'Porsche',
+  annee: '2016',
+  kilometrage: '32 800',
+  vin: 'Non communiqué — démonstration',
+  valeur: '198000',
+  budget_max: '210000',
+  usage_scenario: 'buyer',
+  geoloc: 'Lyon — données de démonstration',
+  vehicle_details_label: 'Génération 991 · données de démonstration',
+  is_demo: true,
+});
+model.assistantSummary = 'Exemple fictif présentant la structure d’un rapport CarDiag pour une Porsche 911 GT3 RS (991).';
 const vehicleImage = await readFile(resolve(projectRoot, 'assets', 'landing', 'cardiag-inspection.webp'));
-model.mainPhoto = { dataUrl: `data:image/webp;base64,${vehicleImage.toString('base64')}`, name: 'vehicule-fictif.webp' };
+model.mainPhoto = { dataUrl: `data:image/webp;base64,${vehicleImage.toString('base64')}`, name: 'porsche-911-gt3-rs-991-demonstration.webp' };
 
 globalThis.window = { jspdf: { jsPDF } };
-const { pdf } = await createPdf(model, { theme: 'workshop', workshopName: 'Atelier Démonstration CarDiag' });
+const { pdf } = await createPdf(model, { theme: 'cardiag', workshopName: 'CarDiag · Rapport de démonstration' });
 await mkdir(dirname(outputPath), { recursive: true });
 await writeFile(outputPath, Buffer.from(pdf.output('arraybuffer')));
 console.log(`Rapport de démonstration généré : ${outputPath}`);

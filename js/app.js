@@ -1,4 +1,4 @@
-import { initializeLegacyFeatures } from './legacy-features.js?v=20260829-1';
+import { initializeLegacyFeatures } from './legacy-features.js?v=20260901-1';
 import { initializePwa } from './pwa.js?v=20260823-3';
 import { initializeWizard } from './wizard.js?v=20260827-2';
 import { initializeI18n } from './i18n/i18n.js?v=20260826-1';
@@ -11,16 +11,16 @@ import { initializePermissions } from './native/permissions.js?v=20260813-1';
 import { initializeConnectivity } from './native/connectivity.js?v=20260813-1';
 import { initializeAppLinks } from './native/app-links.js?v=20260826-1';
 import { initializePush } from './native/push.js?v=20260813-1';
-import { initializeSettings } from './settings/settings.js?v=20260827-1';
+import { initializeSettings } from './settings/settings.js?v=20260901-1';
 import { initializeConsent } from './auth/consent.js?v=20260826-2';
 import { initializeScoreVisuals } from './score/score-visuals.js?v=20260813-1';
-import { initializeRecordsGallery } from './records/records-gallery.js?v=20260829-1';
+import { initializeRecordsGallery } from './records/records-gallery.js?v=20260901-1';
 import { initializeLanding } from './landing/landing.js?v=20260829-1';
 import { initializeInspectionEnhancements } from './ux/inspection-enhancements.js?v=20260827-1';
 import { initializeTechnicalTooltips } from './ux/technical-tooltips.js?v=20260827-1';
 import { initializeOwnerTechnicalHelp } from './ux/owner-technical-help.js?v=20260821-1';
 import { initializeHomeButton } from './navigation/home-button.js?v=20260828-1';
-import { initializeRouteController } from './navigation/route-controller.js?v=20260828-4';
+import { initializeRouteController } from './navigation/route-controller.js?v=20260901-1';
 import { parseRoute } from './navigation/router.js?v=20260828-2';
 import { initializeBrandPicker } from './wizard/brand-picker.js?v=20260823-6';
 import { initializeModelSpecificAlerts } from './knowledge/model-specific-alerts.js?v=20260823-1';
@@ -111,7 +111,7 @@ async function loadChatFeature(){
 async function loadReportFeature(){
   if(!reportFeaturePromise){
     reportFeaturePromise=Promise.all([
-      import('./reports/premium-report.js?v=20260825-1'),
+      import('./reports/premium-report.js?v=20260901-1'),
       import('./reports/report-sharing.js?v=20260827-1'),
       import('./ux/post-report-actions.js?v=20260821-1'),
       import('./ux/local-backup-reminder.js?v=20260821-1'),
@@ -268,7 +268,12 @@ async function initializeApp() {
     await initializePush();
     initializeSettings();
     await initializeConsent();
-    initializeRouteController({ landing });
+    const routeController = initializeRouteController({ landing });
+    // Keep the static wizard out of view until the first deep link has been
+    // applied. This prevents a saved inspection from flashing before a route
+    // such as /app/parametres or /app is rendered.
+    await routeController.ready;
+    document.body.classList.remove('app-booting');
     // Firebase stores the result of a Google redirect internally. Loading the
     // account feature on the public page lets Firebase consume it and resume
     // the requested application entry without a second click.
@@ -278,12 +283,18 @@ async function initializeApp() {
     initializePwa();
   } catch (error) {
     console.error('Erreur app.js:', error);
+    document.body.classList.remove('app-booting');
     if (status) status.textContent = `Le chargement a echoue : ${error.message}`;
   }
 }
 
+function bootApplicationOnce() {
+  if (!window.cardiagAppBootPromise) window.cardiagAppBootPromise = initializeApp();
+  return window.cardiagAppBootPromise;
+}
+
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initializeApp, { once: true });
+  document.addEventListener('DOMContentLoaded', bootApplicationOnce, { once: true });
 } else {
-  initializeApp();
+  bootApplicationOnce();
 }

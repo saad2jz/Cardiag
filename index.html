@@ -56,7 +56,7 @@
 <link rel="stylesheet" href="css/styles.css?v=20260826-1">
 <link rel="stylesheet" href="css/wizard/premium.css?v=20260813-1">
 <link rel="stylesheet" href="css/theming/themes.css?v=20260820-3">
-<link rel="stylesheet" href="css/landing/landing.css?v=20260829-3">
+  <link rel="stylesheet" href="css/landing/landing.css?v=20260901-1">
 <link rel="stylesheet" href="css/media/media.css?v=20260813-1">
 <link rel="stylesheet" href="css/auth/auth.css?v=20260830-1">
 <link rel="stylesheet" href="css/onboarding/profile-onboarding.css?v=20260824-2">
@@ -66,6 +66,7 @@
 <link rel="stylesheet" href="css/score/score.css?v=20260829-1">
 <link rel="stylesheet" href="css/reports/premium-report.css?v=20260814-2">
 <link rel="stylesheet" href="css/app-redesign.css?v=20260823-2">
+<link rel="stylesheet" href="css/app-brand.css?v=20260901-1">
 <link rel="stylesheet" href="css/native/obd2.css?v=20260830-1">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cardiag.online/#organization","name":"CarDiag","url":"https://cardiag.online/","logo":"https://cardiag.online/icons/app-icon-512.png"},{"@type":"WebApplication","name":"CarDiag","url":"https://cardiag.online/","publisher":{"@id":"https://cardiag.online/#organization"},"applicationCategory":"AutomotiveApplication","operatingSystem":"Web, Android, iOS","inLanguage":["fr","en"],"description":"Application d'inspection automobile guidée avec rapport PDF détaillé.","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}]}
@@ -81,7 +82,7 @@
   var recovered = new URLSearchParams(window.location.search).get('_r') || '';
   if (/^\/app(?:\/|$)/.test(path) || /^\/app(?:\/|$)/.test(recovered)) {
     document.body.classList.remove('landing-active');
-    document.body.classList.add('app-shell');
+    document.body.classList.add('app-shell', 'app-booting');
   }
 }());
 </script>
@@ -846,6 +847,6 @@
 
 <script src="build-data.js?v=20260823-5"></script>
 <script src="js/db-loader.js?v=20260811-1"></script>
-<script type="module" src="js/app.js?v=20260901-1"></script>
+<script type="module" src="js/app.js?v=20260901-2"></script>
 </body>
 </html>

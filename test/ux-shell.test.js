@@ -3,6 +3,7 @@ import { readFile } from 'node:fs/promises';
 import { test } from 'node:test';
 
 const index = await readFile(new URL('../index.html', import.meta.url), 'utf8');
+const app = await readFile(new URL('../js/app.js', import.meta.url), 'utf8');
 const worker = await readFile(new URL('../sw.js', import.meta.url), 'utf8');
 const enhancements = await readFile(new URL('../js/ux/inspection-enhancements.js', import.meta.url), 'utf8');
 const legacy = await readFile(new URL('../js/legacy-features.js', import.meta.url), 'utf8');
@@ -15,6 +16,7 @@ const audioAnalyzer = await readFile(new URL('../js/media/engine-audio-analyzer.
 const themes = await readFile(new URL('../js/theming/theme-manager.js', import.meta.url), 'utf8');
 const styles = await readFile(new URL('../css/styles.css', import.meta.url), 'utf8');
 const landingStyles = await readFile(new URL('../css/landing/landing.css', import.meta.url), 'utf8');
+const appBrandStyles = await readFile(new URL('../css/app-brand.css', import.meta.url), 'utf8');
 const pwa = await readFile(new URL('../js/pwa.js', import.meta.url), 'utf8');
 const router = await readFile(new URL('../js/navigation/router.js', import.meta.url), 'utf8');
 const routeController = await readFile(new URL('../js/navigation/route-controller.js', import.meta.url), 'utf8');
@@ -32,11 +34,13 @@ test('the app shell keeps SEO, accessibility and cache safeguards', () => {
   assert.match(index, /"@type":"Organization"/);
   assert.match(index, /id="installAppBtn"[^>]*hidden/);
   assert.match(index, /sigCanvasAcheteur[^>]*aria-label=/);
-  assert.match(worker, /cardiag-v139/);
+  assert.match(worker, /cardiag-v142/);
   assert.match(index, /cardiag_design_preferences/);
   assert.match(index, /Apply the saved visual preference before the first paint/);
   assert.match(worker, /landing\/landing\.js\?v=20260829-1/);
-  assert.match(worker, /js\/app\.js\?v=20260901-1/);
+  assert.match(index, /css\/landing\/landing\.css\?v=20260901-1/);
+  assert.match(worker, /css\/landing\/landing\.css\?v=20260901-1/);
+  assert.match(worker, /js\/app\.js\?v=20260901-2/);
   assert.match(index, /id="pwaUpdateBanner"/);
   assert.match(index, /Fiches locales par défaut/);
   assert.match(pwa, /registration\.addEventListener\('updatefound'/);
@@ -68,8 +72,7 @@ test('the acoustic analyzer is restricted to the relevant engine checks', () => 
 });
 
 test('application routes use an isolated shell and never initialise the public landing', async () => {
-  const app = await readFile(new URL('../js/app.js', import.meta.url), 'utf8');
-  assert.match(index, /document\.body\.classList\.add\('app-shell'\)/);
+  assert.match(index, /document\.body\.classList\.add\('app-shell', 'app-booting'\)/);
   assert.match(landingStyles, /\.app-shell #marketingLanding\{display:none!important\}/);
   assert.match(app, /const initialRoute = parseRoute\(window\.location\.href\);/);
   assert.match(app, /const landing = isApplicationShell \? null : initializeLanding\(\);/);
@@ -78,9 +81,35 @@ test('application routes use an isolated shell and never initialise the public l
   assert.match(routeController, /window\.location\.assign\(target\)/);
 });
 
+test('the application shell applies a coherent visual system while preserving saved themes', () => {
+  assert.match(index, /css\/app-brand\.css\?v=20260901-1/);
+  assert.match(appBrandStyles, /body\.app-shell\{font-family:var\(--font-body\)/);
+  assert.match(appBrandStyles, /--signal:#45d6e7/);
+  assert.match(appBrandStyles, /\[data-theme='workshop'\]/);
+  assert.match(appBrandStyles, /\[data-theme='premium'\]/);
+  assert.match(appBrandStyles, /\.wizard-progress-track span\{background:linear-gradient/);
+  assert.match(appBrandStyles, /@media \(prefers-reduced-motion:reduce\)/);
+});
+
+test('application routes wait for their first destination and keep header actions in-app', () => {
+  assert.match(index, /classList\.add\('app-shell', 'app-booting'\)/);
+  assert.match(app, /await routeController\.ready/);
+  assert.match(app, /function bootApplicationOnce\(\)/);
+  assert.match(routeController, /const ready = new Promise/);
+  assert.match(routeController, /return Object\.freeze\(\{ router, ready \}\)/);
+  assert.match(recordsGallery, /window\.cardiagRouter\.navigate\(\{ kind: 'dashboard' \}\)/);
+  assert.match(settings, /if \(window\.cardiagSettings\?\.open\) return window\.cardiagSettings/);
+  assert.match(legacy, /window\.cardiagRouter\.inspection\(record\.id, key === 'info' \? 'identification' : 'controle'/);
+  assert.match(appBrandStyles, /body\.app-shell \.settings-sheet\{position:fixed/);
+  assert.match(app, /reports\/premium-report\.js\?v=20260901-1/);
+  assert.match(worker, /reports\/premium-report\.js\?v=20260901-1/);
+});
+
 test('landing media has stable layers, deliberate crops and a visual fallback', () => {
   assert.match(index, /class="landing-process-ambient"[^>]*preload="metadata"[^>]*poster="assets\/landing\/report-preview-bg\.webp"/);
   assert.match(landingStyles, /\.landing-visual-frame\{position:relative;isolation:isolate/);
+  assert.match(landingStyles, /grid-template-columns:minmax\(0,\.82fr\) minmax\(500px,1\.18fr\)/);
+  assert.match(landingStyles, /grid-template-rows:clamp\(204px,16vw,238px\) auto 1fr auto/);
   assert.match(landingStyles, /\.landing-visual-frame::after\{content:'';position:absolute;z-index:1/);
   assert.match(landingStyles, /\.landing-orbit-core\{position:absolute;z-index:0/);
   assert.match(landingStyles, /\.landing-compare img\{display:block;width:100%;height:100%;object-fit:cover/);

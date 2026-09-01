@@ -79,3 +79,20 @@
 .landing-compare-after{width:var(--compare-position,52%)}.landing-compare::after{left:calc(var(--compare-position,52%) - 18px)}
 /* Accessible compact navigation: keep every public landing control usable by touch. */
 .landing-brand{display:inline-flex;justify-content:center;min-width:44px;min-height:44px}.landing-language button{min-width:44px;min-height:44px}
+
+/* Give the proof media the visual weight of the product promise.  The hero
+   remains split on wide screens while the cards retain an intentional 16:9
+   crop instead of showing narrow decorative strips. */
+@media(min-width:901px){
+  .landing-hero--diagnostic{grid-template-columns:minmax(0,.82fr) minmax(500px,1.18fr);gap:clamp(30px,4.6vw,64px)}
+  .landing-hero--diagnostic .landing-visual{width:min(100%,760px);justify-self:end}
+  .landing-hero--diagnostic .landing-visual-frame video{aspect-ratio:16/10}
+  .landing-path-card--illustrated{grid-template-rows:clamp(204px,16vw,238px) auto 1fr auto;min-height:438px}
+  .landing-path-media{height:clamp(204px,16vw,238px)}
+  .landing-path-card--illustrated .landing-path-icon{top:calc(clamp(204px,16vw,238px) - 31px)}
+}
+@media(max-width:620px){
+  .landing-path-card--illustrated{grid-template-rows:190px auto 1fr auto;min-height:392px}
+  .landing-path-media{height:190px}
+  .landing-path-card--illustrated .landing-path-icon{top:159px}
+}

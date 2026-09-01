@@ -85,6 +85,9 @@ function feedback(message) {
  */
 export function initializeRouteController({ landing } = {}) {
   let applying = false;
+  let resolveInitialRoute;
+  let initialRouteResolved = false;
+  const ready = new Promise((resolve) => { resolveInitialRoute = resolve; });
   // Route handlers may overlap while Firebase restores a session after an
   // OAuth/email-link return.  Only the newest handler is allowed to mutate
   // the UI; otherwise a late unauthenticated handler can re-open the landing
@@ -180,7 +183,13 @@ export function initializeRouteController({ landing } = {}) {
         }
       }
     } finally {
-      if (isCurrentRoute()) applying = false;
+      if (isCurrentRoute()) {
+        applying = false;
+        if (!initialRouteResolved) {
+          initialRouteResolved = true;
+          resolveInitialRoute();
+        }
+      }
     }
   }
 
@@ -260,7 +269,7 @@ export function initializeRouteController({ landing } = {}) {
   });
 
   window.cardiagRouteController = { applyRoute };
-  return router;
+  return Object.freeze({ router, ready });
 }
 
 export function routeProfileForScenario(scenario) {

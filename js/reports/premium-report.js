@@ -11,6 +11,7 @@ const STATUS = {
 };
 const THEMES = {
   carbon:{ page:[13,16,19], surface:[25,30,35], text:[241,244,246], muted:[160,170,178], accent:[242,151,31], line:[60,69,77] },
+  cardiag:{ page:[7,11,13], surface:[16,23,27], text:[244,248,250], muted:[163,180,188], accent:[67,216,232], line:[48,69,77] },
   workshop:{ page:[242,246,248], surface:[255,255,255], text:[21,33,42], muted:[83,102,114], accent:[0,101,177], line:[207,220,226] },
   premium:{ page:[243,245,246], surface:[255,255,255], text:[25,34,41], muted:[90,103,112], accent:[11,104,177], line:[214,224,230] },
 };
@@ -237,12 +238,14 @@ export async function createPdf(model,branding) {
   pdf.setTextColor(...palette.text);pdf.setFont('helvetica','bold');pdf.setFontSize(12);pdf.text(branding?.workshopName||'CarDiag',43,25);pdf.setFont('helvetica','normal');pdf.setTextColor(...palette.muted);pdf.setFontSize(8);pdf.text('EXPERTISE AUTOMOBILE INDÉPENDANTE',43,31);
   if(!addImageContained(pdf,vehicleBrandLogo,151,16,42,21,palette))drawVehicleBrandBadge(pdf,model.data.marque,151,16,palette);
   pdf.setTextColor(...palette.text);pdf.setFont('helvetica','bold');pdf.setFontSize(21);const coverTitle=pdf.splitTextToSize(english?reportMeta.titleEn:reportMeta.title,122).slice(0,2);pdf.text(coverTitle,17,58,{lineHeightFactor:1.15});
+  if(model.data?.is_demo){pdf.setFillColor(255,159,28);pdf.roundedRect(148,48,45,10,2,2,'F');pdf.setTextColor(10,14,16);pdf.setFont('helvetica','bold');pdf.setFontSize(6.2);pdf.text('DONNÉES FICTIVES',170.5,54.2,{align:'center'});}
   pdf.setTextColor(...palette.muted);pdf.setFont('helvetica','normal');pdf.setFontSize(9);pdf.text(`${dateLabel(model.data.date_expertise||model.createdAt)}  ·  Référence ${ref}`,17,80);
   if(model.mainPhoto){addImageSafe(pdf,model.mainPhoto,17,91,176,88);}else{pdf.setFillColor(...palette.surface);pdf.roundedRect(17,91,176,88,4,4,'F');pdf.setTextColor(...palette.muted);pdf.setFontSize(12);pdf.text('PHOTO PRINCIPALE DU VÉHICULE',105,137,{align:'center'});}
   const badge=decisionColor(decision.verdict);pdf.setFillColor(...badge);pdf.roundedRect(17,190,70,18,3,3,'F');pdf.setTextColor(255,255,255);pdf.setFont('helvetica','bold');pdf.setFontSize(decision.label.length>15?10:13);pdf.text(decision.label,52,202,{align:'center'});
   pdf.setTextColor(...palette.text);pdf.setFontSize(17);pdf.text(model.title||'Véhicule non identifié',17,224);
   pdf.setFont('helvetica','normal');pdf.setFontSize(9);pdf.setTextColor(...palette.muted);
-  pdf.text(`Année  ${model.data.annee||'—'}     Kilométrage  ${model.data.kilometrage||'—'} km`,17,235);
+  const vehicleDetails=model.data.vehicle_details_label||`Année  ${model.data.annee||'—'}     Kilométrage  ${model.data.kilometrage||'—'} km`;
+  pdf.text(vehicleDetails,17,235);
   pdf.text(`VIN / Immatriculation  ${model.data.vin||'—'}`,17,243);
   pdf.text('Contrôle documenté à un instant T · Voir les limites en dernière page',17,273);
 

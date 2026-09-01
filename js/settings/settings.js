@@ -1,6 +1,7 @@
 const SETTINGS_KEY='cardiag_app_settings_v1';
 function read(){try{return JSON.parse(localStorage.getItem(SETTINGS_KEY)||'{}')}catch{return{}}}function save(value){try{localStorage.setItem(SETTINGS_KEY,JSON.stringify(value))}catch{}}
 export function initializeSettings(){
+  if (window.cardiagSettings?.open) return window.cardiagSettings;
   const state={notifications:false,language:'fr',inspectionView:'guided',...read()};
   const sheet=document.createElement('aside');sheet.className='settings-sheet';sheet.hidden=true;sheet.innerHTML=`<header><div><p class="panel-kicker">CARDIAG</p><h2>Paramètres</h2></div><button data-settings-close aria-label="Fermer">×</button></header><div class="settings-list">
   <button data-open-design><span>Apparence</span><small>Thème et identité atelier</small></button>

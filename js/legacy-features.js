@@ -805,6 +805,14 @@ export async function initializeLegacyFeatures(vehicleData) {
     };
 
     const goTo = (key)=>{
+      const record = window.cardiagDataBridge?.getCurrentRecord?.();
+      // Tabs are deep links when an inspection is underway, so a refresh or
+      // a shared internal URL returns to the exact selected control section.
+      // The entry chooser stays local until its profile has been confirmed.
+      if (document.body.dataset.scenarioConfirmed === 'true' && record?.id && window.cardiagRouter?.inspection) {
+        window.cardiagRouter.inspection(record.id, key === 'info' ? 'identification' : 'controle', key === 'info' ? undefined : key);
+        return;
+      }
       if(window.cardiagWizard){
         if(key === 'info') window.cardiagWizard.goToStep?.(2, 'back');
         else window.cardiagWizard.goToStep?.(4, 'forward');

@@ -1,0 +1,84 @@
+/* CarDiag application identity — scoped to the product shell, never the public landing. */
+:root{
+  --font-display:'Sora',system-ui,sans-serif;
+  --font-body:'Inter',system-ui,-apple-system,sans-serif;
+  --font-mono:'JetBrains Mono',ui-monospace,monospace;
+  --signal:#45d6e7;
+  --signal-soft:color-mix(in srgb,var(--signal) 16%,transparent);
+  --on-primary:#16110a;
+  --app-grid:color-mix(in srgb,var(--ink) 7%,transparent);
+  --app-glow:color-mix(in srgb,var(--signal) 16%,transparent);
+  --app-panel:linear-gradient(145deg,color-mix(in srgb,var(--surface) 97%,var(--signal) 3%),var(--surface));
+  --app-edge:color-mix(in srgb,var(--ink) 13%,var(--border));
+}
+[data-theme='workshop']{--signal:#007da8;--signal-soft:color-mix(in srgb,var(--signal) 11%,transparent);--on-primary:#fff;--app-grid:color-mix(in srgb,var(--ink) 5%,transparent);--app-glow:color-mix(in srgb,var(--signal) 9%,transparent);}
+[data-theme='premium']{--signal:#387f91;--signal-soft:color-mix(in srgb,var(--signal) 12%,transparent);--on-primary:#fffdf7;--app-grid:color-mix(in srgb,var(--ink) 5%,transparent);--app-glow:color-mix(in srgb,var(--signal) 8%,transparent);}
+
+body.app-shell{font-family:var(--font-body);background:radial-gradient(circle at 84% -12%,var(--app-glow),transparent 30rem),var(--bg);}
+body.app-shell::before{content:'';position:fixed;z-index:0;inset:0;pointer-events:none;opacity:.52;background-image:linear-gradient(90deg,var(--app-grid) 1px,transparent 1px),linear-gradient(var(--app-grid) 1px,transparent 1px);background-size:46px 46px;mask-image:linear-gradient(to bottom,black,transparent 70%);}
+body.app-shell .wizard-header,body.app-shell .wizard-view,body.app-shell .wizard-bottom-bar{position:relative;z-index:1;}
+body.app-shell.app-booting .app-header,body.app-shell.app-booting .app-tabbar,body.app-shell.app-booting .wizard-header,body.app-shell.app-booting main,body.app-shell.app-booting .wizard-bottom-bar,body.app-shell.app-booting .inspection-progress-dock,body.app-shell.app-booting .chat-launcher{visibility:hidden;}
+body.app-shell.app-booting::after{content:'Chargement de votre espace CarDiag…';position:fixed;z-index:170;left:50%;top:50%;width:min(300px,calc(100vw - 40px));padding:14px 18px;border:1px solid var(--app-edge);border-radius:999px;background:var(--surface);color:var(--ink);box-shadow:var(--ombre-lg);font:700 12px/1.4 var(--font-body);text-align:center;transform:translate(-50%,-50%);}
+body.app-shell h1,body.app-shell h2,body.app-shell h3,body.app-shell .font-display{font-family:var(--font-display);letter-spacing:-.025em;}
+body.app-shell .panel-kicker,body.app-shell .wizard-progress p,body.app-shell .subhead{font-family:var(--font-mono);letter-spacing:.13em;}
+
+body.app-shell .wizard-header{isolation:isolate;min-height:76px;border-color:var(--app-edge);background:linear-gradient(105deg,color-mix(in srgb,var(--app-chrome) 97%,transparent),color-mix(in srgb,var(--app-chrome) 88%,var(--signal) 12%));box-shadow:0 10px 30px color-mix(in srgb,var(--ink) 10%,transparent);}
+body.app-shell .wizard-header::after{content:'';position:absolute;z-index:0;right:18%;bottom:-1px;width:clamp(110px,18vw,240px);height:2px;pointer-events:none;background:linear-gradient(90deg,transparent,var(--signal),transparent);opacity:.8;}
+body.app-shell .wizard-header>*{position:relative;z-index:1;}
+body.app-shell .wizard-back,body.app-shell .home-trigger,body.app-shell .professional-path-trigger,body.app-shell .account-trigger{border-color:color-mix(in srgb,var(--ink) 18%,var(--border));background:color-mix(in srgb,var(--surface) 82%,transparent);box-shadow:none;transition:transform .18s ease,border-color .18s ease,background-color .18s ease;}
+body.app-shell .wizard-back:hover,body.app-shell .home-trigger:hover,body.app-shell .professional-path-trigger:hover,body.app-shell .account-trigger:hover{transform:translateY(-1px);border-color:var(--signal);background:color-mix(in srgb,var(--surface) 90%,var(--signal) 10%);}
+body.app-shell .wizard-progress p{color:color-mix(in srgb,var(--ink) 72%,var(--muted));font-size:10px;}
+body.app-shell .wizard-progress-track{height:5px;background:color-mix(in srgb,var(--ink) 15%,transparent);box-shadow:inset 0 1px 1px color-mix(in srgb,var(--ink) 18%,transparent);}
+body.app-shell .wizard-progress-track span{background:linear-gradient(90deg,var(--primary),var(--signal));box-shadow:0 0 14px var(--signal-soft);}
+body.app-shell .wizard-dots span.active{background:var(--signal);}
+
+body.app-shell .wizard-view{padding-top:clamp(28px,5vw,56px);animation:cardiag-shell-in .34s cubic-bezier(.22,.8,.25,1) both;}
+body.app-shell .wizard-view-heading{max-width:840px;margin-bottom:28px;}
+body.app-shell .wizard-view-heading h1{max-width:17ch;font-size:clamp(30px,4vw,48px);letter-spacing:-.045em;}
+body.app-shell .wizard-view-heading>p{color:var(--signal);}
+body.app-shell .usage-scenario-panel,body.app-shell .brand-picker,body.app-shell .saved-vehicles-panel,body.app-shell .vehicle-choice-picker{border:1px solid var(--app-edge);background:var(--app-panel);box-shadow:0 22px 48px color-mix(in srgb,var(--ink) 8%,transparent);}
+body.app-shell .wizard-view[data-wizard-step="1"] .usage-scenario-panel{position:relative;isolation:isolate;overflow:hidden;}
+body.app-shell .wizard-view[data-wizard-step="1"] .usage-scenario-panel::before{content:'';position:absolute;z-index:0;inset:auto -18% -44% auto;width:360px;aspect-ratio:1;pointer-events:none;border:1px solid color-mix(in srgb,var(--signal) 30%,transparent);border-radius:50%;box-shadow:0 0 0 38px color-mix(in srgb,var(--signal) 5%,transparent),0 0 0 76px color-mix(in srgb,var(--signal) 3%,transparent);}
+body.app-shell .usage-scenario-panel>*{position:relative;z-index:1;}
+body.app-shell .usage-scenario-head h2{font-size:clamp(30px,4vw,47px);letter-spacing:-.05em;}
+body.app-shell .usage-scenario-head>p:last-child{max-width:62ch;font-size:14px;line-height:1.6;}
+body.app-shell .usage-scenario-card,body.app-shell .personal-entry-card,body.app-shell .inspection-mode-selector span{position:relative;border-color:var(--app-edge);border-radius:14px;background:color-mix(in srgb,var(--bg) 55%,var(--surface));transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease,background-color .18s ease;}
+body.app-shell .usage-scenario-card:hover,body.app-shell .personal-entry-card:hover{transform:translateY(-2px);border-color:color-mix(in srgb,var(--signal) 55%,var(--border));box-shadow:0 14px 28px color-mix(in srgb,var(--ink) 9%,transparent);}
+body.app-shell .usage-scenario-card:has(input:checked),body.app-shell .personal-diagnostic-entry:has(input:checked),body.app-shell .inspection-mode-selector input:checked+span{border-color:var(--primary);background:linear-gradient(135deg,color-mix(in srgb,var(--primary) 12%,var(--surface)),var(--surface));box-shadow:inset 3px 0 0 var(--primary),0 0 0 3px color-mix(in srgb,var(--primary) 12%,transparent);}
+body.app-shell .usage-scenario-icon,body.app-shell .entry-icon{background:linear-gradient(145deg,color-mix(in srgb,var(--signal) 22%,var(--surface)),color-mix(in srgb,var(--primary) 9%,var(--bg)));}
+
+body.app-shell details.section,body.app-shell .inspection-section{border-color:var(--app-edge);background:var(--app-panel);box-shadow:0 14px 32px color-mix(in srgb,var(--ink) 6%,transparent);}
+body.app-shell details.section[open]{border-color:color-mix(in srgb,var(--signal) 40%,var(--border));box-shadow:0 20px 44px color-mix(in srgb,var(--ink) 10%,transparent);}
+body.app-shell details.section summary{padding:20px 22px;font-size:clamp(17px,2vw,21px);}
+body.app-shell .sec-num{border:1px solid color-mix(in srgb,var(--signal) 55%,transparent);background:color-mix(in srgb,var(--signal) 16%,var(--surface));color:var(--signal);}
+body.app-shell .section-body{border-color:var(--app-edge);}
+body.app-shell .subhead{color:var(--signal);}
+body.app-shell .subhead::before{background:var(--signal);}
+body.app-shell .check-item{border-color:var(--app-edge);background:color-mix(in srgb,var(--bg) 44%,var(--surface));}
+body.app-shell .check-item:focus-within{border-color:var(--signal);box-shadow:0 0 0 3px var(--signal-soft);}
+body.app-shell input[type="text"],body.app-shell input[type="number"],body.app-shell input[type="date"],body.app-shell input[type="datetime-local"],body.app-shell select,body.app-shell textarea{border-color:var(--app-edge);background:color-mix(in srgb,var(--bg) 65%,var(--surface));}
+body.app-shell input:focus,body.app-shell select:focus,body.app-shell textarea:focus{border-color:var(--signal);box-shadow:0 0 0 3px var(--signal-soft);}
+
+body.app-shell .wizard-bottom-bar{border-color:var(--app-edge);background:color-mix(in srgb,var(--app-chrome) 93%,transparent);box-shadow:0 -14px 36px color-mix(in srgb,var(--ink) 10%,transparent);backdrop-filter:blur(18px);}
+body.app-shell .wizard-bottom-bar .wizard-primary,body.app-shell .vehicle-choice-confirm{border-color:color-mix(in srgb,var(--primary) 70%,var(--signal));background:linear-gradient(115deg,var(--primary),color-mix(in srgb,var(--primary) 72%,var(--signal)));color:var(--on-primary);box-shadow:0 12px 26px color-mix(in srgb,var(--primary) 25%,transparent);transition:transform .18s ease,box-shadow .18s ease,filter .18s ease;}
+body.app-shell .wizard-bottom-bar .wizard-primary:hover,body.app-shell .vehicle-choice-confirm:hover{transform:translateY(-1px);filter:saturate(1.08);box-shadow:0 16px 32px color-mix(in srgb,var(--primary) 34%,transparent);}
+body.app-shell .wizard-bottom-bar .wizard-secondary{border-color:var(--app-edge);background:color-mix(in srgb,var(--surface) 88%,transparent);color:var(--ink);}
+body.app-shell .account-sheet{border-left-color:color-mix(in srgb,var(--signal) 38%,var(--border));background:var(--surface);box-shadow:-26px 0 60px color-mix(in srgb,var(--ink) 18%,transparent);}
+body.app-shell .settings-sheet{position:fixed;z-index:190;inset:0 0 0 auto;display:grid;grid-template-rows:auto minmax(0,1fr);width:min(440px,100vw);height:100dvh;padding:calc(20px + env(safe-area-inset-top)) max(18px,env(safe-area-inset-right)) calc(24px + env(safe-area-inset-bottom)) 18px;overflow:hidden;border-left:1px solid color-mix(in srgb,var(--signal) 38%,var(--border));background:var(--surface);color:var(--ink);box-shadow:-26px 0 60px color-mix(in srgb,var(--ink) 18%,transparent);transform:translateX(102%);transition:transform .22s cubic-bezier(.2,.78,.24,1);}
+body.app-shell .settings-sheet.is-open{transform:translateX(0);}
+body.app-shell .settings-sheet[hidden]{display:none;}
+body.app-shell .settings-sheet header{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding-bottom:18px;border-bottom:1px solid var(--app-edge);}
+body.app-shell .settings-sheet h2{margin:4px 0 0;font-size:clamp(25px,6vw,32px);}
+body.app-shell .settings-sheet header button{display:grid;place-items:center;width:46px;height:46px;border:1px solid var(--app-edge);border-radius:50%;background:color-mix(in srgb,var(--bg) 72%,var(--surface));color:var(--ink);font-size:23px;cursor:pointer;}
+body.app-shell .settings-list{display:grid;align-content:start;gap:10px;overflow:auto;padding-top:18px;padding-bottom:8px;}
+body.app-shell .settings-list>button,body.app-shell .settings-list>label,body.app-shell .settings-list>a{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:58px;padding:12px 14px;border:1px solid var(--app-edge);border-radius:12px;background:color-mix(in srgb,var(--bg) 58%,var(--surface));color:var(--ink);font:700 14px/1.25 var(--font-body);text-align:left;text-decoration:none;cursor:pointer;}
+body.app-shell .settings-list>button:hover,body.app-shell .settings-list>a:hover,body.app-shell .settings-list>label:focus-within{border-color:var(--signal);background:color-mix(in srgb,var(--signal) 8%,var(--surface));}
+body.app-shell .settings-list span{display:grid;gap:4px;}
+body.app-shell .settings-list small{color:var(--muted);font-weight:500;font-size:12px;line-height:1.35;}
+body.app-shell .settings-list select{width:min(150px,42%);min-height:38px;}
+body.app-shell .settings-list input[type="checkbox"]{width:22px;height:22px;accent-color:var(--primary);}
+body.app-shell .settings-version{display:flex;justify-content:space-between;gap:12px;padding:14px 2px;color:var(--muted);font-size:12px;}
+
+@keyframes cardiag-shell-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@media (max-width:760px){body.app-shell::before{background-size:32px 32px;opacity:.3;}body.app-shell .wizard-header{min-height:68px;}body.app-shell .wizard-view{padding-top:22px;}body.app-shell .wizard-view-heading h1{font-size:clamp(28px,10vw,38px);}body.app-shell .usage-scenario-head h2{font-size:clamp(28px,9vw,38px);}body.app-shell .usage-scenario-head>p:last-child{font-size:13px;}body.app-shell .wizard-view[data-wizard-step="1"] .usage-scenario-panel{padding:20px 16px;}body.app-shell .wizard-bottom-bar .wizard-primary{min-height:52px;}body.app-shell .settings-sheet{width:100vw;padding-inline:16px;}body.app-shell .settings-list>button,body.app-shell .settings-list>label,body.app-shell .settings-list>a{min-height:56px;padding:11px 12px;}}
+@media (prefers-reduced-motion:reduce){body.app-shell *,body.app-shell *::before,body.app-shell *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important;}}

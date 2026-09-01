@@ -23,6 +23,7 @@ function createGallery() {
 }
 
 export function initializeRecordsGallery() {
+  if (window.cardiagRecords?.open) return window.cardiagRecords;
   const { sheet, trigger } = createGallery();
   let selectingForAssistant = false;
   const refreshTrigger=()=>{trigger.textContent=translate('records.title','Mes fiches')};refreshTrigger();
@@ -83,7 +84,11 @@ export function initializeRecordsGallery() {
       // yet be ready.
       const dashboardPath = '/app';
       if (window.location.pathname !== dashboardPath) {
-        window.location.assign(dashboardPath);
+        if (window.cardiagRouter?.navigate) {
+          window.cardiagRouter.navigate({ kind: 'dashboard' });
+        } else {
+          window.location.assign(dashboardPath);
+        }
         return;
       }
       if (window.cardiagRequireAuthentication && !await window.cardiagRequireAuthentication()) return;
