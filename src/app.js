@@ -124,6 +124,14 @@ export function createRateLimiter({ windowMs = 60_000, max = 12, accountService 
   };
 }
 
+// Vercel gives precedence to `src/app.js` as a recognized Express entry file.
+// Keep the factory above reusable by tests while forwarding production
+// invocations to the fully configured runtime assembled in `src/server.js`.
+export default async function cardiagVercelHandler(req, res) {
+  const { default: runtimeApp } = await import('./server.js');
+  return runtimeApp(req, res);
+}
+
 export function createApp({ llmService, accountService = null, mailService = null, stripeService = null }) {
   if (!llmService) throw new Error('llmService est requis.');
   const app = express();

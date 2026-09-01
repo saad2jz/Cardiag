@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
+import vercelHandler from '../src/app.js';
 
 const previousVercel = process.env.VERCEL;
 process.env.VERCEL = '1';
@@ -8,6 +9,7 @@ if (previousVercel === undefined) delete process.env.VERCEL;
 else process.env.VERCEL = previousVercel;
 
 test('Vercel can import the Express application without opening a local listener', () => {
+  assert.equal(typeof vercelHandler, 'function');
   assert.equal(typeof app, 'function');
   assert.equal(typeof app.listen, 'function');
 });
