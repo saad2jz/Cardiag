@@ -66,6 +66,8 @@ test('passwordless email authentication keeps account creation separate from pro
   assert.match(authUi, /show\('email-sent'\)/);
   assert.match(authUi, /const finishAuthentication/);
   assert.match(authUi, /Reprise de votre parcours/);
+  assert.match(authUi, /message\(panel, 'Connexion réussie[\s\S]{0,240}closeForJourney\(\);[\s\S]{0,240}announceAuthentication\(provider\)/);
+  assert.match(authUi, /signInViewIsVisible/);
   assert.match(authStyles, /\.auth-email-sent-card/);
   assert.doesNotMatch(authUi, /name="passwordConfirmation"/);
   assert.match(client, /validateEmail\(normalizedEmail\)/);

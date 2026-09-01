@@ -173,12 +173,15 @@ export async function initializeAuthUi() {
     refreshMigration(user);
   };
   const finishAuthentication = (user, provider) => {
-    if (hasPendingJourney()) closeForJourney();
-    else {
-      show('profile');
-      renderAccount(user);
-    }
+    // A successful identity confirmation always returns the visitor to the
+    // application. The profile remains available from the "Compte" button;
+    // leaving the sign-in sheet open makes a completed login look stalled.
+    renderAccount(user);
     message(panel, 'Connexion réussie. Reprise de votre parcours…', 'success');
+    closeForJourney();
+    window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback', {
+      detail: { type:'success', message:'Connexion réussie. Votre parcours reprend.' },
+    }));
     announceAuthentication(provider);
   };
   const open = (requestedView = '', provider = '') => {
@@ -416,7 +419,16 @@ export async function initializeAuthUi() {
       if (!panel.hidden) show('login');
       return;
     }
-    if (!panel.hidden) show('profile');
+    if (!panel.hidden) {
+      const signInViewIsVisible = ['login', 'email-sent'].some((name) =>
+        panel.querySelector(`[data-auth-view="${name}"]`)?.hidden === false
+      );
+      // Firebase can restore a durable session after the route guard has
+      // opened the drawer. Treat that confirmation exactly like a completed
+      // login and remove the obsolete sign-in surface.
+      if (signInViewIsVisible) closeForJourney();
+      else show('profile');
+    }
     renderAccount(user);
     if (profileUid !== user.uid) loadProfile(user);
   });

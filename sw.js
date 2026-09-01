@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cardiag-v138';
+const CACHE_NAME = 'cardiag-v139';
 const APP_SHELL = [
   './',
   './index.html',
@@ -120,7 +120,7 @@ const APP_SHELL = [
   './css/shared-report.css?v=20260813-1',
   './build-data.js?v=20260823-5',
   './js/db-loader.js?v=20260811-1',
-  './js/app.js?v=20260830-1',
+  './js/app.js?v=20260901-1',
   './js/navigation/home-button.js?v=20260828-1',
   './js/navigation/router.js?v=20260828-2',
   './js/navigation/route-controller.js?v=20260828-4',
