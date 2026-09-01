@@ -510,7 +510,8 @@ export function initializeChatExperience() {
   window.cardiagChat = { open: openPanel };
   window.addEventListener('cardiag:open-chat', openPanel);
 
-  toggles.forEach((toggle) => toggle.addEventListener('click', openPanel));
+  // The launcher is routed by app.js to the dedicated assistant workspace.
+  // This module only owns the chatbot once that workspace is active.
   window.addEventListener('cardiag:scenario-change', applyUsageScenario);
   window.addEventListener('cardiag:language-change', applyUsageScenario);
   close?.addEventListener('click', () => { panel.hidden = true; });

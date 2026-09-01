@@ -29,6 +29,8 @@ test('legacy fiche links and app utilities preserve their intended boundaries', 
   assert.deepEqual(parseRoute('/app/comparer?ids=t123,t456,t123'), { kind: 'compare', app: true, ids: ['t123', 't456'] });
   assert.equal(comparisonPath(['t123', 't456']), '/app/comparer?ids=t123%2Ct456');
   assert.equal(parseRoute('/app/parametres').kind, 'settings');
+  assert.deepEqual(parseRoute('/app/assistant'), { kind: 'assistant', app: true });
+  assert.equal(routePath(parseRoute('/app/assistant')), '/app/assistant');
   assert.equal(parseRoute('/r/a-very-private-share-token').kind, 'shared-report');
   assert.equal(parseRoute('/app/inspection/%3Cbad%3E/rapport').kind, 'not-found');
 });

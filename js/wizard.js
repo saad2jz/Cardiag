@@ -587,24 +587,21 @@ export function initializeWizard() {
     }
   });
 
+  const openAssistantWorkspace = () => {
+    assistantOriginStep = currentStep;
+    assistantMode = true;
+    assistantOpened = true;
+    goToStep(4, 'forward');
+    renderExpertiseLayout();
+    window.dispatchEvent(new CustomEvent('cardiag:open-chat'));
+    if (assistantVehicleIdentified()) chatPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+  window.addEventListener('cardiag:open-assistant-workspace', openAssistantWorkspace);
   document.querySelectorAll('[data-chat-toggle]').forEach((button) => {
-    button.addEventListener('click', () => {
-      assistantOriginStep = currentStep;
-      assistantMode = true;
-      assistantOpened = true;
-      goToStep(4, 'forward');
-      if (assistantMode) {
-        renderExpertiseLayout();
-        if (assistantVehicleIdentified()) chatPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        return;
-      }
-      if (activeProfile() === 'owner') return;
-      if (!hasGeneratedReport()) {
-        window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback', { detail: { type: 'selection', message: 'Terminez et générez d’abord la fiche. L’assistant restera ensuite facultatif.' } }));
-        return;
-      }
-      assistantOpened = true;
-      renderExpertiseLayout();
+    button.addEventListener('click', (event) => {
+      event.preventDefault();
+      if (window.cardiagRouter?.assistant) window.cardiagRouter.assistant({ source:'assistant-button' });
+      else openAssistantWorkspace();
     });
   });
   document.getElementById('chatClose')?.addEventListener('click', (event) => {

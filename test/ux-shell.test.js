@@ -34,13 +34,13 @@ test('the app shell keeps SEO, accessibility and cache safeguards', () => {
   assert.match(index, /"@type":"Organization"/);
   assert.match(index, /id="installAppBtn"[^>]*hidden/);
   assert.match(index, /sigCanvasAcheteur[^>]*aria-label=/);
-  assert.match(worker, /cardiag-v143/);
+  assert.match(worker, /cardiag-v144/);
   assert.match(index, /cardiag_design_preferences/);
   assert.match(index, /Apply the saved visual preference before the first paint/);
   assert.match(worker, /landing\/landing\.js\?v=20260829-1/);
   assert.match(index, /css\/landing\/landing\.css\?v=20260901-1/);
   assert.match(worker, /css\/landing\/landing\.css\?v=20260901-1/);
-  assert.match(worker, /js\/app\.js\?v=20260901-3/);
+  assert.match(worker, /js\/app\.js\?v=20260901-4/);
   assert.match(index, /id="pwaUpdateBanner"/);
   assert.match(index, /Fiches locales par défaut/);
   assert.match(pwa, /registration\.addEventListener\('updatefound'/);
@@ -125,6 +125,8 @@ test('the app shell owns stable routes for each workflow and inspection state', 
   assert.match(router, /history\?\.\[replace \? 'replaceState' : 'pushState'\]/);
   assert.match(routeController, /cardiag:wizard-step/);
   assert.match(routeController, /cardiag:inspection-section-change/);
+  assert.match(router, /\/app\/assistant/);
+  assert.match(routeController, /cardiagOpenAssistantWorkspace/);
   assert.match(worker, /navigation\/route-controller\.js/);
 });
 

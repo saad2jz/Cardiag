@@ -20,7 +20,7 @@ test('email-link UI prevents duplicate requests and keeps a neutral confirmation
   assert.match(authUi, /Si cette adresse est valide/);
   assert.match(authUi, /courriers ind/);
   assert.match(authUi, /data-auth-form="email-link"/);
-  assert.match(worker, /cardiag-v143/);
+  assert.match(worker, /cardiag-v144/);
   assert.match(client, /CANONICAL_WEB_ORIGIN/);
   assert.match(firebaseConfig, /"authDomain": "cardiag\.online"/);
 });

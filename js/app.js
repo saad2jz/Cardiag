@@ -1,6 +1,6 @@
 import { initializeLegacyFeatures } from './legacy-features.js?v=20260901-1';
 import { initializePwa } from './pwa.js?v=20260901-1';
-import { initializeWizard } from './wizard.js?v=20260827-2';
+import { initializeWizard } from './wizard.js?v=20260901-3';
 import { initializeI18n } from './i18n/i18n.js?v=20260826-1';
 import { initializeWizardInteractions } from './wizard/interactions.js?v=20260813-1';
 import { initializeVehiclePicker } from './wizard/vehicle-picker.js?v=20260825-2';
@@ -20,7 +20,7 @@ import { initializeInspectionEnhancements } from './ux/inspection-enhancements.j
 import { initializeTechnicalTooltips } from './ux/technical-tooltips.js?v=20260827-1';
 import { initializeOwnerTechnicalHelp } from './ux/owner-technical-help.js?v=20260821-1';
 import { initializeHomeButton } from './navigation/home-button.js?v=20260828-1';
-import { initializeRouteController } from './navigation/route-controller.js?v=20260901-1';
+import { initializeRouteController } from './navigation/route-controller.js?v=20260901-2';
 import { parseRoute } from './navigation/router.js?v=20260828-2';
 import { initializeBrandPicker } from './wizard/brand-picker.js?v=20260823-6';
 import { initializeModelSpecificAlerts } from './knowledge/model-specific-alerts.js?v=20260823-1';
@@ -105,7 +105,7 @@ function initializeLazyAccountFeature(){
   });
 }
 async function loadChatFeature(){
-  if(!chatFeaturePromise){chatFeaturePromise=import('./chat-experience.js?v=20260828-2').then(({initializeChatExperience})=>{initializeChatExperience();return window.cardiagChat;});}
+  if(!chatFeaturePromise){chatFeaturePromise=import('./chat-experience.js?v=20260901-3').then(({initializeChatExperience})=>{initializeChatExperience();return window.cardiagChat;});}
   return chatFeaturePromise;
 }
 async function loadReportFeature(){
@@ -153,18 +153,19 @@ function initializeAuthenticatedActionGate(){
   }, true);
 }
 function initializeLazyChatFeature(){
+  window.cardiagOpenAssistantWorkspace=async()=>{
+    await loadChatFeature();
+    window.dispatchEvent(new CustomEvent('cardiag:open-assistant-workspace'));
+    return window.cardiagChat;
+  };
   document.addEventListener('click',async(event)=>{
     const toggle=event.target.closest('[data-chat-toggle]');
     if(!toggle) return;
-    if(toggle.dataset.authGatePassed==='true'){
-      delete toggle.dataset.authGatePassed;
-      return;
-    }
     event.preventDefault();event.stopImmediatePropagation();
     try{
       if(!await requireAuthentication()) return;
-      toggle.dataset.authGatePassed='true';
-      toggle.click();
+      if(window.cardiagRouter?.assistant) window.cardiagRouter.assistant({source:'assistant-button'});
+      else await window.cardiagOpenAssistantWorkspace();
     }catch(error){console.error('Assistant indisponible',error);}
   },true);
   window.addEventListener('cardiag:scenario-change',()=>{

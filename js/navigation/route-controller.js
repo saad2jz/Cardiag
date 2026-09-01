@@ -146,6 +146,10 @@ export function initializeRouteController({ landing } = {}) {
         window.cardiagRecords?.open?.();
         return;
       }
+      if (route.kind === 'assistant') {
+        await window.cardiagOpenAssistantWorkspace?.();
+        return;
+      }
       if (route.kind === 'compare') {
         window.cardiagDataBridge?.openComparison?.(route.ids || []);
         return;
@@ -179,7 +183,7 @@ export function initializeRouteController({ landing } = {}) {
           window.dispatchEvent(new CustomEvent('cardiag:inspection-section-request', { detail: { key: SECTION_TO_STEP[route.section] || 'diagnostic' } }));
         }
         if (route.view === 'assistant') {
-          document.querySelector('[data-chat-toggle]')?.click();
+          await window.cardiagOpenAssistantWorkspace?.();
         }
       }
     } finally {

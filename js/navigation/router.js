@@ -106,6 +106,7 @@ export function parseRoute(input) {
 
   if (path === '/exemple-rapport') return Object.freeze({ kind: 'demo-report', app: false });
   if (path === '/app' || path === '/app/fiches') return appRoute('dashboard');
+  if (path === '/app/assistant') return appRoute('assistant');
   if (path === '/app/comparer') return appRoute('compare', { ids: comparisonIds(url.searchParams.get('ids')) });
   if (path === '/app/parametres') return appRoute('settings');
   if (path === '/app/inspection/nouveau') return appRoute('new-inspection', { profile: '', level: '' });
@@ -140,6 +141,7 @@ export function routePath(route) {
     case 'landing': return '/';
     case 'demo-report': return '/exemple-rapport';
     case 'dashboard': return '/app';
+    case 'assistant': return '/app/assistant';
     case 'compare': return comparisonPath(route.ids);
     case 'settings': return '/app/parametres';
     case 'new-inspection': return newInspectionPath();
@@ -196,6 +198,7 @@ export function initializeRouter({ onRouteChange } = {}) {
     newInspection: (_profile, _level, _stage, options) => navigate({ kind: 'new-inspection' }, options),
     inspection: (id, view, section, options) => navigate({ kind: 'inspection', id, view, section }, options),
     dashboard: (options) => navigate({ kind: 'dashboard' }, options),
+    assistant: (options) => navigate({ kind: 'assistant' }, options),
     compare: (ids, options) => navigate({ kind: 'compare', ids: comparisonIds(ids) }, options),
     settings: (options) => navigate({ kind: 'settings' }, options),
   });
