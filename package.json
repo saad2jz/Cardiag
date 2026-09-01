@@ -21,7 +21,7 @@
     "cap:open:ios": "npx cap open ios"
   },
   "engines": {
-    "node": ">=20"
+    "node": "22.x"
   },
   "dependencies": {
     "@capacitor-firebase/authentication": "^8.4.0",
@@ -48,7 +48,10 @@
     "stripe": "^18.5.0"
   },
   "overrides": {
-    "uuid": "11.1.1"
+    "uuid": "11.1.1",
+    "jwks-rsa": {
+      "jose": "4.15.9"
+    }
   },
   "devDependencies": {
     "@capacitor/android": "^8.5.0",
