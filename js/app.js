@@ -1,5 +1,5 @@
 import { initializeLegacyFeatures } from './legacy-features.js?v=20260901-1';
-import { initializePwa } from './pwa.js?v=20260823-3';
+import { initializePwa } from './pwa.js?v=20260901-1';
 import { initializeWizard } from './wizard.js?v=20260827-2';
 import { initializeI18n } from './i18n/i18n.js?v=20260826-1';
 import { initializeWizardInteractions } from './wizard/interactions.js?v=20260813-1';

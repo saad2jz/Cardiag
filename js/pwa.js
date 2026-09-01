@@ -53,7 +53,9 @@ export function initializePwa() {
   }
 
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./sw.js')
+    // Évite qu'un cache HTTP intermédiaire retarde le téléchargement du
+    // service worker qui porte une mise à jour de l'application.
+    navigator.serviceWorker.register('./sw.js', { updateViaCache: 'none' })
       .then((registration) => {
         const watchInstallingWorker = () => {
           const worker = registration.installing;

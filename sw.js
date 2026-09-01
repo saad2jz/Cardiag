@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cardiag-v142';
+const CACHE_NAME = 'cardiag-v143';
 const APP_SHELL = [
   './',
   './index.html',
@@ -121,7 +121,7 @@ const APP_SHELL = [
   './css/shared-report.css?v=20260813-1',
   './build-data.js?v=20260823-5',
   './js/db-loader.js?v=20260811-1',
-  './js/app.js?v=20260901-2',
+  './js/app.js?v=20260901-3',
   './js/navigation/home-button.js?v=20260828-1',
   './js/navigation/router.js?v=20260828-2',
   './js/navigation/route-controller.js?v=20260901-1',
@@ -165,7 +165,7 @@ const APP_SHELL = [
   './assets/reference/section-guides/essai-routier.svg',
   './assets/reference/section-guides/diagnostic.svg',
   './assets/reference/test-guides.svg',
-  './js/pwa.js?v=20260823-3',
+  './js/pwa.js?v=20260901-1',
   './privacy.html',
   './terms.html',
   './account-deletion.html',
@@ -195,6 +195,25 @@ self.addEventListener('fetch', (event) => {
   // Les réponses API peuvent contenir un diagnostic ou un rapport partagé :
   // elles ne doivent jamais être placées dans le Cache Storage du PWA.
   if (url.pathname.startsWith('/api/')) return;
+
+  // Un rechargement forcé (Ctrl+F5 / Ctrl+Shift+R) doit toujours récupérer
+  // la version réseau. Cache Storage n'est pas vidé par le navigateur lors
+  // de ce geste : sans ce traitement, notre stratégie cache-first le
+  // masquerait et l'utilisateur continuerait à voir une ancienne version.
+  const forceReload = event.request.cache === 'reload' || event.request.cache === 'no-cache';
+  if (forceReload) {
+    event.respondWith(
+      fetch(event.request)
+        .then((response) => {
+          if (response.ok) {
+            caches.open(CACHE_NAME).then((cache) => cache.put(event.request, response.clone()));
+          }
+          return response;
+        })
+        .catch(() => caches.match(event.request))
+    );
+    return;
+  }
 
   // Navigation : réseau d'abord pour récupérer les mises à jour, puis cache hors ligne.
   if (event.request.mode === 'navigate') {
