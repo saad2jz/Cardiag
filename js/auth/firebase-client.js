@@ -480,6 +480,7 @@ export const authClient = {
       }
       return currentUser;
     } catch (error) {
+      consumeGoogleRedirectIntent();
       throw Object.assign(new Error(googleAuthError(error)), { code: error?.code || 'AUTH_ERROR', cause: error });
     }
   },

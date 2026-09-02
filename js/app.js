@@ -62,16 +62,24 @@ async function loadAccountFeature(){
   }
   return accountFeaturePromise;
 }
+function consumeAuthenticationProvider() {
+  try {
+    const key = 'cardiag_auth_return_v1';
+    const pending = JSON.parse(sessionStorage.getItem(key) || 'null');
+    const provider = pending?.provider === 'google' ? 'google' : pending?.provider === 'email' ? 'email' : '';
+    if (pending?.provider) sessionStorage.setItem(key, JSON.stringify({ ...pending, provider: '' }));
+    return provider;
+  } catch { return ''; }
+}
 async function requireAuthentication() {
   const authUi = await loadAccountFeature();
   // Do not redirect while Firebase is still restoring a durable session.
   await window.cardiagAuth?.ready;
   if (window.cardiagAuth?.user) return true;
-  let provider = '';
-  try {
-    const pending = JSON.parse(sessionStorage.getItem('cardiag_auth_return_v1') || 'null');
-    provider = pending?.provider === 'google' ? 'google' : pending?.provider === 'email' ? 'email' : '';
-  } catch { /* The generic login remains available without session storage. */ }
+  // The selected provider is an intent for one attempt, not persistent state.
+  // Consuming it before opening Google prevents a rejected OAuth request from
+  // restarting automatically on every application reload.
+  const provider = consumeAuthenticationProvider();
   authUi?.open?.('login', provider);
   return false;
 }

@@ -124,6 +124,8 @@ test('public landing account choices enter the dedicated application shell befor
   assert.match(landing, /leaveLandingForAccount\('', '', button\.dataset\.landingAuth \|\| 'email'\)/);
   assert.match(landing, /provider: options\.provider === 'google'/);
   assert.match(app, /authUi\?\.open\?\.\('login', provider\)/);
+  assert.match(app, /const provider = consumeAuthenticationProvider\(\)/);
+  assert.match(app, /sessionStorage\.setItem\(key, JSON\.stringify\(\{ \.\.\.pending, provider: '' \}\)\)/);
   assert.match(app, /trigger\.matches\('\[data-google-login\], \[data-profile-google-auth\]'\)/);
   assert.match(authUi, /provider === 'google'/);
   assert.match(app, /The landing is immediately interactive/);
