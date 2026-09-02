@@ -52,7 +52,7 @@ function hasPendingAuthenticationReturn() {
 async function loadAccountFeature(){
   if(!accountFeaturePromise){
     accountFeaturePromise=Promise.all([
-      import('./auth/auth-ui.js?v=20260902-1'),
+      import('./auth/auth-ui.js?v=20260902-2'),
       import('./native/sync-queue.js?v=20260829-1'),
     ]).then(async ([auth,sync])=>{
       await auth.initializeAuthUi();

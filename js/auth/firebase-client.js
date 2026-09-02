@@ -17,6 +17,7 @@ const GOOGLE_REDIRECT_FALLBACK_CODES = new Set([
   'OPERATION_NOT_SUPPORTED_IN_THIS_ENVIRONMENT',
   'INTERNAL_ERROR',
 ]);
+const AUTH_RESTORE_TIMEOUT_MS = 8000;
 let config;
 let webSession = null;
 let webFirebasePromise = null;
@@ -196,7 +197,25 @@ function publicUser(user) {
     photoUrl: String(user.photoUrl || user.photoURL || ''),
   };
 }
-function notify(user) { currentUser = publicUser(user); listeners.forEach((listener) => listener(currentUser)); }
+function samePublicUser(left, right) {
+  if (left === right) return true;
+  if (!left || !right) return false;
+  return left.uid === right.uid
+    && left.email === right.email
+    && left.emailVerified === right.emailVerified
+    && left.displayName === right.displayName
+    && left.photoUrl === right.photoUrl;
+}
+function notify(user) {
+  const nextUser = publicUser(user);
+  // Firebase resolves sign-in methods and emits onAuthStateChanged for the
+  // same identity. Notify the UI once so profile loading and route resumption
+  // cannot run twice for a single Google or email-link confirmation.
+  if (samePublicUser(currentUser, nextUser)) return currentUser;
+  currentUser = nextUser;
+  listeners.forEach((listener) => listener(currentUser));
+  return currentUser;
+}
 
 async function loadWebFirebase() {
   if (isNative) return null;
@@ -289,10 +308,21 @@ export const authClient = {
           const sdk = await optionalWebFirebase();
           if (sdk) await new Promise((resolve) => {
             let initialized = false;
+            let timeout;
+            const finishInitialRestore = () => {
+              if (initialized) return;
+              initialized = true;
+              if (timeout) clearTimeout(timeout);
+              resolve();
+            };
+            // A privacy extension or degraded network must not leave the whole
+            // application behind an endless Firebase restoration screen. The
+            // listener stays active and can still restore a late session.
+            timeout = setTimeout(finishInitialRestore, AUTH_RESTORE_TIMEOUT_MS);
             sdk.onAuthStateChanged(sdk.auth, (user) => {
               notify(user);
-              if (!initialized) { initialized = true; resolve(); }
-            }, () => { if (!initialized) { initialized = true; resolve(); } });
+              finishInitialRestore();
+            }, finishInitialRestore);
           });
           // OAuth redirects return here after Google has authenticated the user.
           // The intent is navigation-only and is always consumed once.

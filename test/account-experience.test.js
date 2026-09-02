@@ -20,6 +20,9 @@ test('web authentication uses durable browser persistence before its first auth 
   assert.match(client, /await authSdk\.setPersistence\(auth, persistence\)/);
   assert.doesNotMatch(client, /localStorage\.setItem/);
   assert.match(client, /onAuthStateChanged/);
+  assert.match(client, /AUTH_RESTORE_TIMEOUT_MS = 8000/);
+  assert.match(client, /setTimeout\(finishInitialRestore, AUTH_RESTORE_TIMEOUT_MS\)/);
+  assert.match(client, /if \(samePublicUser\(currentUser, nextUser\)\) return currentUser/);
   assert.match(client, /fetch\('\/firebase-config\.json'/);
 });
 
