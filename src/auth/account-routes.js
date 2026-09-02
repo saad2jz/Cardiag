@@ -18,7 +18,7 @@ function garageErrorStatus(code) {
   return 400;
 }
 
-export function createAccountRouter(service, { mailService = null, stripeService = null, publicOrigin = process.env.PUBLIC_ORIGIN || 'https://cardiag.online' } = {}) {
+export function createAccountRouter(service, { mailService = null, stripeService = null, publicOrigin = process.env.PUBLIC_ORIGIN || 'https://www.cardiag.online' } = {}) {
   const router = express.Router();
   router.use(async (req, res, next) => {
     const token = bearerToken(req);
@@ -162,7 +162,7 @@ export function createAccountRouter(service, { mailService = null, stripeService
     const serialized = JSON.stringify(req.body?.report || null);
     if (!req.body?.report || serialized.length > 750_000) return res.status(413).json({ error: 'Rapport trop volumineux pour le partage.' });
     const share = await service.createReportShare(req.user.uid, req.body.report);
-    const publicOrigin = String(process.env.PUBLIC_ORIGIN || 'https://cardiag.online').replace(/\/$/, '');
+    const publicOrigin = String(process.env.PUBLIC_ORIGIN || 'https://www.cardiag.online').replace(/\/$/, '');
     return res.status(201).json({ ...share, url: `${publicOrigin}/r/${share.id}` });
   });
   router.delete('/shares/:id', verifiedOnly, async (req, res) => {

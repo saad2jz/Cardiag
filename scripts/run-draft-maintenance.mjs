@@ -9,6 +9,6 @@ if (!accountService) throw new Error('Firebase Admin doit être configuré pour 
 const result = await runDraftMaintenance({
   accountService,
   mailService: createMailService(),
-  publicOrigin: process.env.PUBLIC_ORIGIN || 'https://cardiag.online',
+  publicOrigin: process.env.PUBLIC_ORIGIN || 'https://www.cardiag.online',
 });
 console.log(JSON.stringify(result));

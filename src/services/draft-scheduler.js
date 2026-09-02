@@ -50,7 +50,7 @@ export function startDraftScheduler({ accountService, mailService, env = process
   const config = draftSchedulerConfig(env);
   if (!config.enabled || String(env.DRAFT_SCHEDULER_MODE || '').toLowerCase() !== 'internal') return () => {};
   const intervalMs = Math.max(60 * 60 * 1000, Number.parseInt(env.DRAFT_SCHEDULER_INTERVAL_MS || `${12 * 60 * 60 * 1000}`, 10));
-  const run = () => runDraftMaintenance({ accountService, mailService, publicOrigin: env.PUBLIC_ORIGIN || 'https://cardiag.online', config })
+  const run = () => runDraftMaintenance({ accountService, mailService, publicOrigin: env.PUBLIC_ORIGIN || 'https://www.cardiag.online', config })
     .then((result) => logger.info?.('Maintenance des brouillons terminée', result))
     .catch((error) => logger.error?.('Maintenance des brouillons échouée', error));
   const initial = setTimeout(run, 30_000);

@@ -43,7 +43,7 @@ test('the combined server serves the frontend without exposing environment files
   assert.equal(robots.status, 200);
   assert.match(await robots.text(), /Sitemap: https:\/\/cardiag\.online\/sitemap\.xml/);
   assert.equal(sitemap.status, 200);
-  assert.match(await sitemap.text(), /<loc>https:\/\/cardiag\.online\/<\/loc>/);
+  assert.match(await sitemap.text(), /<loc>https:\/\/www\.cardiag\.online\/<\/loc>/);
   assert.equal(landingImage.status, 200);
   assert.match(landingImage.headers.get('content-type'), /image\/webp/);
   assert.equal(demoReport.status, 200);
@@ -61,7 +61,7 @@ test('alternate browser hosts redirect to the canonical CarDiag domain without r
     headers: { Accept: 'text/html', 'X-Forwarded-Host': alternateHost },
   });
   assert.equal(page.status, 308);
-  assert.equal(page.headers.get('location'), 'https://cardiag.online/?niveau=complet&profil=acheteur');
+  assert.equal(page.headers.get('location'), 'https://www.cardiag.online/?niveau=complet&profil=acheteur');
 
   const api = await fetch(`${baseUrl}/health`, {
     redirect: 'manual',

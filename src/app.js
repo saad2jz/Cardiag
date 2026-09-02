@@ -161,9 +161,10 @@ export function createApp({ llmService, accountService = null, mailService = nul
     ].join('; '));
     next();
   });
-  const canonicalOrigin = String(process.env.PUBLIC_ORIGIN || 'https://cardiag.online').replace(/\/$/, '');
+  const canonicalOrigin = String(process.env.PUBLIC_ORIGIN || 'https://www.cardiag.online').replace(/\/$/, '');
   const canonicalHost = new URL(canonicalOrigin).hostname;
-  const alternatePageHosts = new Set(['fiche-expert-auto.onrender.com', 'www.cardiag.online']);
+  const alternatePageHosts = new Set(['fiche-expert-auto.onrender.com', 'cardiag.online', 'www.cardiag.online']);
+  alternatePageHosts.delete(canonicalHost);
   app.use((req, res, next) => {
     const acceptsHtml = req.method === 'GET' && String(req.headers.accept || '').includes('text/html');
     if (acceptsHtml && alternatePageHosts.has(req.hostname) && req.hostname !== canonicalHost) {

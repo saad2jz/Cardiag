@@ -37,7 +37,7 @@ test('empty directory and sitemap are valid without a public data leak', async (
   const [directory, sitemap] = await Promise.all([fetch(`${baseUrl}/api/garages`), fetch(`${baseUrl}/sitemap.xml`)]);
   assert.deepEqual(await directory.json(), { garages:[], nextCursor:null });
   const xml = await sitemap.text();
-  assert.match(xml, /<loc>https:\/\/cardiag\.online\/garages<\/loc>/);
+  assert.match(xml, /<loc>https:\/\/www\.cardiag\.online\/garages<\/loc>/);
   assert.match(xml, /garage-central-lyon/);
   assert.doesNotMatch(xml, /garage-en-attente/);
 });
