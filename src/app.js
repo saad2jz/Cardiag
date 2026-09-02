@@ -177,9 +177,9 @@ export function createApp({ llmService, accountService = null, mailService = nul
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
   }));
-  // Firebase redirect authentication must run under cardiag.online on modern
-  // browsers. Proxy the official helper without a browser-visible redirect so
-  // its storage remains first-party (Firebase Auth redirect best practice).
+  // Keep the Firebase helper relay available for existing callbacks and a
+  // future custom auth domain. Production currently uses the project's
+  // firebaseapp.com auth domain, which matches the registered Google OAuth URI.
   app.use('/__', (req, res, next) => proxyFirebaseAuthHelper(req, res, next, canonicalOrigin));
   // Stripe signe les octets bruts. Cette route doit précéder express.json().
   app.post('/api/stripe/webhook', express.raw({ type: 'application/json' }), async (req, res) => {

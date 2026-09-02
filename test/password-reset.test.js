@@ -23,5 +23,5 @@ test('email-link UI prevents duplicate requests and keeps a neutral confirmation
   assert.match(worker, /cardiag-v147/);
   assert.match(client, /CANONICAL_WEB_ORIGIN/);
   assert.match(client, /https:\/\/www\.cardiag\.online/);
-  assert.match(firebaseConfig, /"authDomain": "www\.cardiag\.online"/);
+  assert.match(firebaseConfig, /"authDomain": "cardiag-f1ea7\.firebaseapp\.com"/);
 });
