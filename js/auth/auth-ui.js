@@ -1,4 +1,4 @@
-import { authClient } from './firebase-client.js?v=20260828-1';
+import { authClient } from './firebase-client.js?v=20260902-1';
 
 const AUTH_COMPLETION_KEY = 'cardiag_auth_completion_v1';
 
@@ -25,7 +25,6 @@ function createAuthSurface() {
         <button type="submit">Se connecter par e-mail</button>
       </form>
       <button type="button" class="google-auth-button" data-google-login><span aria-hidden="true">G</span> Continuer avec Google</button>
-      <button type="button" class="auth-existing-button" data-existing-login>Déjà inscrit ? Recevoir mon lien sécurisé</button>
       <p class="auth-help">Premier accès ? Le lien crée votre compte automatiquement.</p>
     </div>
     <div class="auth-view auth-email-sent" data-auth-view="email-sent" hidden>
@@ -253,10 +252,6 @@ export async function initializeAuthUi() {
       message(panel, 'Si cette adresse est valide, un lien de connexion vient d’être envoyé. Vérifiez aussi vos courriers indésirables.', 'success');
     } catch (error) { message(panel, error.message, 'error'); }
     finally { setBusy(submit, false); }
-  };
-  panel.querySelector('[data-existing-login]').onclick = () => {
-    message(panel, 'Saisissez votre adresse e-mail puis choisissez « Se connecter par e-mail ».');
-    panel.querySelector('[data-auth-form="email-link"] [name="email"]')?.focus();
   };
   panel.querySelector('[data-auth-use-other]').onclick = () => {
     show('login');

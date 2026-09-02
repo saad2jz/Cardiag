@@ -15,7 +15,7 @@ import { initializeSettings } from './settings/settings.js?v=20260901-1';
 import { initializeConsent } from './auth/consent.js?v=20260826-2';
 import { initializeScoreVisuals } from './score/score-visuals.js?v=20260813-1';
 import { initializeRecordsGallery } from './records/records-gallery.js?v=20260901-1';
-import { initializeLanding } from './landing/landing.js?v=20260829-1';
+import { initializeLanding } from './landing/landing.js?v=20260902-1';
 import { initializeInspectionEnhancements } from './ux/inspection-enhancements.js?v=20260827-1';
 import { initializeTechnicalTooltips } from './ux/technical-tooltips.js?v=20260827-1';
 import { initializeOwnerTechnicalHelp } from './ux/owner-technical-help.js?v=20260821-1';
@@ -52,7 +52,7 @@ function hasPendingAuthenticationReturn() {
 async function loadAccountFeature(){
   if(!accountFeaturePromise){
     accountFeaturePromise=Promise.all([
-      import('./auth/auth-ui.js?v=20260901-1'),
+      import('./auth/auth-ui.js?v=20260902-1'),
       import('./native/sync-queue.js?v=20260829-1'),
     ]).then(async ([auth,sync])=>{
       await auth.initializeAuthUi();
@@ -67,7 +67,12 @@ async function requireAuthentication() {
   // Do not redirect while Firebase is still restoring a durable session.
   await window.cardiagAuth?.ready;
   if (window.cardiagAuth?.user) return true;
-  authUi?.open?.('login');
+  let provider = '';
+  try {
+    const pending = JSON.parse(sessionStorage.getItem('cardiag_auth_return_v1') || 'null');
+    provider = pending?.provider === 'google' ? 'google' : pending?.provider === 'email' ? 'email' : '';
+  } catch { /* The generic login remains available without session storage. */ }
+  authUi?.open?.('login', provider);
   return false;
 }
 function initializeLazyAccountFeature(){
@@ -93,7 +98,8 @@ function initializeLazyAccountFeature(){
     const trigger=event.target.closest('[data-account-open], .account-trigger, .account-signup-trigger, [data-google-login], [data-profile-google-auth]');
     if(!trigger || window.cardiagAuthUi) return;
     event.preventDefault(); event.stopImmediatePropagation();
-    try { await openAuthentication({ view: 'login' }); }
+    const provider = trigger.matches('[data-google-login], [data-profile-google-auth]') ? 'google' : '';
+    try { await openAuthentication({ view: 'login', provider }); }
     catch(error){ console.error('Compte indisponible', error); window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback',{detail:{type:'error',message:'Le compte est temporairement indisponible.'}})); }
   }, true);
   window.addEventListener('cardiag:open-auth',(event)=>{

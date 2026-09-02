@@ -57,7 +57,7 @@ test('connected account view exposes identity details and comparison filters bla
 
 test('passwordless email authentication keeps account creation separate from profile sync', () => {
   assert.match(authUi, /data-auth-form="email-link"/);
-  assert.match(authUi, /data-existing-login/);
+  assert.doesNotMatch(authUi, /data-existing-login/);
   assert.match(authUi, /Se connecter par e-mail/);
   assert.match(authUi, /authClient\.sendMagicLink\(form\.email\.value\)/);
   assert.match(authUi, /data-auth-view="email-sent"/);
@@ -114,16 +114,19 @@ test('public landing account choices enter the dedicated application shell befor
   assert.match(index, /data-landing-auth-toggle/);
   assert.match(index, /data-landing-auth="google"/);
   assert.match(index, /data-landing-auth="email"/);
-  assert.match(index, /data-landing-auth="existing"/);
+  assert.doesNotMatch(index, /data-landing-auth="existing"/);
   assert.match(landingStyles, /\.landing-active>:not\(#marketingLanding\):not\(\.profile-onboarding\):not\(\.account-sheet\)/);
   assert.match(landing, /const leaveLandingForAccount[\s\S]{0,500}window\.location\.assign\('\/app\/inspection\/nouveau'\)/);
   assert.match(landing, /const requestAuthentication = \(role = '', level = ''\) => leaveLandingForAccount\(role, level\)/);
-  assert.match(landing, /return leaveLandingForAccount\(\);/);
+  assert.match(landing, /leaveLandingForAccount\('', '', button\.dataset\.landingAuth \|\| 'email'\)/);
+  assert.match(landing, /provider: options\.provider === 'google'/);
+  assert.match(app, /authUi\?\.open\?\.\('login', provider\)/);
+  assert.match(app, /trigger\.matches\('\[data-google-login\], \[data-profile-google-auth\]'\)/);
   assert.match(authUi, /provider === 'google'/);
   assert.match(app, /The landing is immediately interactive/);
   assert.match(app, /The profile shell must exist before the large vehicle catalogue/);
   assert.match(app, /const landing = isApplicationShell \? null : initializeLanding\(\);[\s\S]{0,300}initializeLazyAccountFeature\(\);/);
-  assert.match(app, /landing\.js\?v=20260829-1/);
+  assert.match(app, /landing\.js\?v=20260902-1/);
   assert.match(app, /hasPendingAuthenticationReturn/);
   assert.match(router, /rememberProtectedRoute/);
   assert.match(router, /consumeProtectedRoute/);

@@ -10,7 +10,7 @@ const EN = {
   ariaHome: 'CarDiag home', ariaNav: 'Main navigation', ariaBrand: 'CarDiag, home', ariaLanguage: 'Language',
   ariaExperience: 'CarDiag experience preview', ariaScore: 'Report score preview', ariaFeatures: 'Included features', ariaReportMockup: 'CarDiag PDF report preview', ariaLegal: 'Legal information', ariaUserType: 'User type',
   navHow: 'How it works', navReport: 'The report', navLogin: 'Sign in', navStart: 'Open the app',
-  authGoogle: 'Continue with Google', authEmail: 'Sign in with email', authExisting: 'Already registered',
+  authGoogle: 'Continue with Google', authEmail: 'Sign in with email',
   kicker: 'USED VEHICLE INSPECTION · PROFESSIONAL REPORT',
   title: 'Inspect a used vehicle like an expert, in 15 minutes.',
   lead: 'A guided checklist, documented evidence and a clear PDF report to buy, sell, repair or monitor a vehicle with confidence.',
@@ -208,16 +208,17 @@ export function initializeLanding() {
         role,
         level,
         path,
+        provider: options.provider === 'google' ? 'google' : options.provider === 'email' ? 'email' : '',
         openProfile: Boolean(options.openProfile),
         requestedAt: Date.now(),
       }));
     } catch { /* Non-essential navigation hint. */ }
   };
-  const leaveLandingForAccount = (role = '', level = '') => {
+  const leaveLandingForAccount = (role = '', level = '', provider = '') => {
     // The public document never owns an authentication surface. Moving to
     // the application shell before opening the account journey removes the
     // Firebase callback race that could restore the marketing landing.
-    rememberAuthReturn(role, level, { path: '/app/inspection/nouveau', openProfile: true });
+    rememberAuthReturn(role, level, { path: '/app/inspection/nouveau', provider, openProfile: true });
     window.location.assign('/app/inspection/nouveau');
   };
   const requestAuthentication = (role = '', level = '') => leaveLandingForAccount(role, level);
@@ -297,9 +298,9 @@ export function initializeLanding() {
   });
   root.querySelectorAll('[data-landing-auth]').forEach((button) => button.addEventListener('click', () => {
     closeAuthOptions();
-    // Google, email and existing-account choices first leave the public
-    // marketing shell. The profile/account screen then owns authentication.
-    return leaveLandingForAccount();
+    // Preserve the selected method while leaving the public shell, so Google
+    // starts immediately and email focuses its field without a redundant tap.
+    return leaveLandingForAccount('', '', button.dataset.landingAuth || 'email');
     /* Legacy in-document account opening intentionally disabled.
     // A sign-in initiated from the public account menu always lands on the
     // first application screen and immediately exposes the connected profile.
