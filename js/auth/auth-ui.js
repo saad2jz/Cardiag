@@ -1,4 +1,4 @@
-import { authClient } from './firebase-client.js?v=20260902-2';
+import { authClient } from './firebase-client.js?v=20260902-3';
 
 const AUTH_COMPLETION_KEY = 'cardiag_auth_completion_v1';
 

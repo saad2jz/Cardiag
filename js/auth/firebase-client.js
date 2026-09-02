@@ -115,7 +115,7 @@ function googleAuthError(error) {
 async function loadConfig() {
   // This must be origin-relative: relative URLs break when the app was
   // refreshed directly on /app/... and the browser resolves them below it.
-  if (!config) config = await fetch('/firebase-config.json', { cache: 'no-store' }).then((response) => response.json());
+  if (!config) config = await fetch('/firebase-config.json?v=20260902-2', { cache: 'no-store' }).then((response) => response.json());
   return config;
 }
 

@@ -23,7 +23,7 @@ test('web authentication uses durable browser persistence before its first auth 
   assert.match(client, /AUTH_RESTORE_TIMEOUT_MS = 8000/);
   assert.match(client, /setTimeout\(finishInitialRestore, AUTH_RESTORE_TIMEOUT_MS\)/);
   assert.match(client, /if \(samePublicUser\(currentUser, nextUser\)\) return currentUser/);
-  assert.match(client, /fetch\('\/firebase-config\.json'/);
+  assert.match(client, /fetch\('\/firebase-config\.json\?v=20260902-2'/);
 });
 
 test('auth restoration resolves before protected routing and OAuth intents are navigation-only', async () => {
