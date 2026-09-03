@@ -81,7 +81,11 @@ test('Firebase authentication helper configuration stays available', async () =>
   const init = await fetch(`${baseUrl}/__/firebase/init.json`);
   assert.equal(init.status, 200);
   assert.equal(init.headers.get('cache-control'), 'no-store');
-  assert.match(await init.text(), /"authDomain": "cardiag-f1ea7\.firebaseapp\.com"/);
+  assert.match(await init.text(), /"authDomain": "www\.cardiag\.online"/);
+
+  const source = await import('node:fs/promises').then(({ readFile }) => readFile(new URL('../src/app.js', import.meta.url), 'utf8'));
+  assert.match(source, /res\.removeHeader\('X-Frame-Options'\)/);
+  assert.match(source, /res\.removeHeader\('Content-Security-Policy'\)/);
 });
 
 test('app routes survive refreshes and legacy local fiche links redirect safely', async () => {

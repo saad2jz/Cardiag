@@ -45,6 +45,11 @@ function firebaseProxyHeaders(req) {
 }
 
 function proxyResponseHeaders(res, upstream, canonicalOrigin) {
+  // The global application policy deliberately blocks framing. Firebase's
+  // reserved `/__/auth/iframe` endpoint is the one exception: its same-origin
+  // iframe carries OAuth state between the app and the popup/redirect helper.
+  res.removeHeader('X-Frame-Options');
+  res.removeHeader('Content-Security-Policy');
   // Node décompresse les réponses fetch. Ne pas recopier content-length ni
   // content-encoding, qui décriraient alors les octets reçus en amont plutôt
   // que le corps effectivement envoyé au navigateur.
@@ -177,9 +182,9 @@ export function createApp({ llmService, accountService = null, mailService = nul
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
   }));
-  // Keep the Firebase helper relay available for existing callbacks and a
-  // future custom auth domain. Production currently uses the project's
-  // firebaseapp.com auth domain, which matches the registered Google OAuth URI.
+  // Firebase uses the canonical CarDiag origin as its first-party authDomain.
+  // Relay only the reserved helper paths to Firebase Hosting so popup and
+  // redirect state are not dependent on third-party browser storage.
   app.use('/__', (req, res, next) => proxyFirebaseAuthHelper(req, res, next, canonicalOrigin));
   // Stripe signe les octets bruts. Cette route doit précéder express.json().
   app.post('/api/stripe/webhook', express.raw({ type: 'application/json' }), async (req, res) => {
