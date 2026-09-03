@@ -1,4 +1,4 @@
-import { authClient } from '../auth/firebase-client.js?v=20260903-1';
+import { authClient } from '../auth/firebase-client.js?v=20260903-2';
 
 const status = document.getElementById('adminStatus');
 const garages = document.getElementById('adminGarages');

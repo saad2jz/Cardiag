@@ -86,6 +86,7 @@ export function friendlyAuthError(error) {
     API_KEY_NOT_VALID: 'La configuration Firebase de cette application est invalide.',
     APP_NOT_AUTHORIZED: 'Cette application n’est pas autorisée à utiliser Firebase Authentication.',
     INTERNAL_ERROR: 'Firebase a refusé la connexion Google. Vérifiez que Google est activé et que ce domaine est autorisé.',
+    REDIRECT_RESULT_MISSING: 'Google a terminé la connexion, mais la session n’a pas pu être restaurée. Autorisez le stockage du site puis réessayez.',
     INVALID_ACTION_CODE: 'Ce lien de connexion est invalide ou a expiré. Demandez un nouveau lien.',
     EXPIRED_ACTION_CODE: 'Ce lien de connexion a expiré. Demandez un nouveau lien.',
     INVALID_OOB_CODE: 'Ce lien de connexion est invalide ou a expiré. Demandez un nouveau lien.',
@@ -115,7 +116,7 @@ function googleAuthError(error) {
 async function loadConfig() {
   // This must be origin-relative: relative URLs break when the app was
   // refreshed directly on /app/... and the browser resolves them below it.
-  if (!config) config = await fetch('/firebase-config.json?v=20260903-1', { cache: 'no-store' }).then((response) => response.json());
+  if (!config) config = await fetch('/firebase-config.json?v=20260903-2', { cache: 'no-store' }).then((response) => response.json());
   return config;
 }
 
@@ -225,20 +226,25 @@ async function loadWebFirebase() {
       const [appSdk, authSdk] = await Promise.all([import(FIREBASE_APP_SDK), import(FIREBASE_AUTH_SDK)]);
       const app = appSdk.getApps().length ? appSdk.getApp() : appSdk.initializeApp(firebaseConfig);
       let auth;
-      const persistence = authSdk.browserLocalPersistence || authSdk.indexedDBLocalPersistence;
+      // Firebase tries these stores in order. IndexedDB survives OAuth page
+      // changes most reliably, while local/session storage keep authentication
+      // available in browsers that disable or partition IndexedDB.
+      const persistence = [
+        authSdk.indexedDBLocalPersistence,
+        authSdk.browserLocalPersistence,
+        authSdk.browserSessionPersistence,
+      ].filter(Boolean);
       try {
         // initializeAuth does not install a popup/redirect resolver unless it
         // is explicitly provided. Google OAuth therefore fails before the
         // redirect on browsers even though the provider is enabled in Firebase.
         auth = authSdk.initializeAuth(app, {
-          persistence: [persistence],
+          persistence,
           popupRedirectResolver: authSdk.browserPopupRedirectResolver,
         });
       } catch {
         auth = authSdk.getAuth(app);
       }
-      // Must happen before auth listeners, OAuth redirects or popup sign-in.
-      await authSdk.setPersistence(auth, persistence);
       authSdk.useDeviceLanguage(auth);
       return { auth, ...authSdk };
     })().catch((error) => { webFirebasePromise = null; throw error; });
@@ -306,39 +312,57 @@ export const authClient = {
           native.addListener?.('authStateChange', ({ user }) => notify(user));
         } else {
           const sdk = await optionalWebFirebase();
-          if (sdk) await new Promise((resolve) => {
-            let initialized = false;
-            let timeout;
-            const finishInitialRestore = () => {
-              if (initialized) return;
-              initialized = true;
-              if (timeout) clearTimeout(timeout);
-              resolve();
-            };
-            // A privacy extension or degraded network must not leave the whole
-            // application behind an endless Firebase restoration screen. The
-            // listener stays active and can still restore a late session.
-            timeout = setTimeout(finishInitialRestore, AUTH_RESTORE_TIMEOUT_MS);
-            sdk.onAuthStateChanged(sdk.auth, (user) => {
-              notify(user);
-              finishInitialRestore();
-            }, finishInitialRestore);
-          });
-          // OAuth redirects return here after Google has authenticated the user.
-          // The intent is navigation-only and is always consumed once.
-          try {
-            const redirectResult = await sdk?.getRedirectResult?.(sdk.auth);
+          if (sdk) {
             const googleRedirectIntent = consumeGoogleRedirectIntent();
-            const returningFromGoogle = Boolean(redirectResult?.user) || (Boolean(currentUser) && googleRedirectIntent);
-            if (returningFromGoogle) {
-              if (redirectResult?.user) notify(redirectResult.user);
-              rememberAuthenticationCompletion('google');
+            let redirectResultPromise;
+            const initialAuthState = new Promise((resolve) => {
+              let initialized = false;
+              let timeout;
+              const finishInitialRestore = () => {
+                if (initialized) return;
+                initialized = true;
+                if (timeout) clearTimeout(timeout);
+                resolve();
+              };
+              // A privacy extension or degraded network must not leave the whole
+              // application behind an endless Firebase restoration screen. The
+              // listener stays active and can still restore a late session.
+              timeout = setTimeout(finishInitialRestore, AUTH_RESTORE_TIMEOUT_MS);
+              sdk.onAuthStateChanged(sdk.auth, (user) => {
+                notify(user);
+                finishInitialRestore();
+              }, finishInitialRestore);
+            });
+
+            // Start consuming the OAuth response immediately. Waiting for the
+            // first auth-state event before this call can lose the redirect
+            // handshake in browsers that partition storage during navigation.
+            try {
+              redirectResultPromise = sdk.getRedirectResult?.(sdk.auth, sdk.browserPopupRedirectResolver);
+            } catch (error) {
+              redirectResultPromise = Promise.reject(error);
             }
-          } catch (error) {
-            consumeGoogleRedirectIntent();
-            browserWindow.dispatchEvent?.(new CustomEvent('cardiag:google-auth-error', {
-              detail: { message: googleAuthError(error), code: error?.code || 'AUTH_ERROR' },
-            }));
+            await initialAuthState;
+
+            try {
+              const redirectResult = await redirectResultPromise;
+              const returningFromGoogle = Boolean(redirectResult?.user) || (Boolean(currentUser) && googleRedirectIntent);
+              if (returningFromGoogle) {
+                if (redirectResult?.user) notify(redirectResult.user);
+                rememberAuthenticationCompletion('google');
+              } else if (googleRedirectIntent) {
+                const error = Object.assign(new Error('Google redirect returned without a Firebase session.'), {
+                  code: 'auth/redirect-result-missing',
+                });
+                browserWindow.dispatchEvent?.(new CustomEvent('cardiag:google-auth-error', {
+                  detail: { message: googleAuthError(error), code: error.code },
+                }));
+              }
+            } catch (error) {
+              browserWindow.dispatchEvent?.(new CustomEvent('cardiag:google-auth-error', {
+                detail: { message: googleAuthError(error), code: error?.code || 'AUTH_ERROR' },
+              }));
+            }
           }
           if (sdk?.isSignInWithEmailLink?.(sdk.auth, browserLocation.href)) {
             restoreMagicLinkReturn();
@@ -456,7 +480,7 @@ export const authClient = {
         provider.setCustomParameters?.({ prompt: 'select_account' });
         if (!useGoogleRedirect()) {
           try {
-            const result = await sdk.signInWithPopup(sdk.auth, provider);
+            const result = await sdk.signInWithPopup(sdk.auth, provider, sdk.browserPopupRedirectResolver);
             notify(result.user);
             return currentUser;
           } catch (popupError) {
@@ -468,12 +492,12 @@ export const authClient = {
         }
         if (typeof sdk.signInWithRedirect === 'function') {
           rememberGoogleRedirectIntent();
-          await sdk.signInWithRedirect(sdk.auth, provider);
+          await sdk.signInWithRedirect(sdk.auth, provider, sdk.browserPopupRedirectResolver);
           return null;
         }
         // This branch is only reached on an obsolete SDK without redirects.
         {
-          const result = await sdk.signInWithPopup(sdk.auth, provider);
+          const result = await sdk.signInWithPopup(sdk.auth, provider, sdk.browserPopupRedirectResolver);
           notify(result.user);
           return currentUser;
         }

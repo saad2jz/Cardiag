@@ -16,14 +16,16 @@ const app = await readFile(new URL('../js/app.js', import.meta.url), 'utf8');
 const deepLinks = await readFile(new URL('../js/native/app-links.js', import.meta.url), 'utf8');
 
 test('web authentication uses durable browser persistence before its first auth listener', () => {
+  assert.match(client, /indexedDBLocalPersistence/);
   assert.match(client, /browserLocalPersistence/);
-  assert.match(client, /await authSdk\.setPersistence\(auth, persistence\)/);
+  assert.match(client, /browserSessionPersistence/);
+  assert.match(client, /persistence,\s*popupRedirectResolver/);
   assert.doesNotMatch(client, /localStorage\.setItem/);
   assert.match(client, /onAuthStateChanged/);
   assert.match(client, /AUTH_RESTORE_TIMEOUT_MS = 8000/);
   assert.match(client, /setTimeout\(finishInitialRestore, AUTH_RESTORE_TIMEOUT_MS\)/);
   assert.match(client, /if \(samePublicUser\(currentUser, nextUser\)\) return currentUser/);
-  assert.match(client, /fetch\('\/firebase-config\.json\?v=20260903-1'/);
+  assert.match(client, /fetch\('\/firebase-config\.json\?v=20260903-2'/);
 });
 
 test('auth restoration resolves before protected routing and OAuth intents are navigation-only', async () => {
@@ -32,7 +34,8 @@ test('auth restoration resolves before protected routing and OAuth intents are n
   assert.match(client, /const authReady = new Promise/);
   assert.match(client, /get ready\(\) \{ return authReady; \}/);
   assert.match(client, /const googleRedirectIntent = consumeGoogleRedirectIntent\(\)/);
-  assert.match(client, /consumeGoogleRedirectIntent\(\);[\s\S]{0,220}cardiag:google-auth-error/);
+  assert.match(client, /redirectResultPromise = sdk\.getRedirectResult\?\.\(sdk\.auth, sdk\.browserPopupRedirectResolver\)/);
+  assert.match(client, /REDIRECT_RESULT_MISSING/);
   assert.match(client, /cardiag:google-auth-error'[\s\S]{0,160}googleAuthError\(error\)/);
   assert.match(app, /await window\.cardiagAuth\?\.ready/);
   assert.match(app, /window\.cardiagAuthReady = async/);

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cardiag-v150';
+const CACHE_NAME = 'cardiag-v151';
 const APP_SHELL = [
   './',
   './index.html',
@@ -121,7 +121,7 @@ const APP_SHELL = [
   './css/shared-report.css?v=20260813-1',
   './build-data.js?v=20260823-5',
   './js/db-loader.js?v=20260811-1',
-  './js/app.js?v=20260903-1',
+  './js/app.js?v=20260903-2',
   './js/navigation/home-button.js?v=20260828-1',
   './js/navigation/router.js?v=20260828-2',
   './js/navigation/route-controller.js?v=20260901-2',
@@ -136,8 +136,8 @@ const APP_SHELL = [
   './js/knowledge/model-specific-alerts.js?v=20260823-1',
   './js/wizard/interactions.js?v=20260813-1',
   './js/theming/theme-manager.js?v=20260828-1',
-  './js/onboarding/profile-onboarding.js?v=20260903-1',
-  './js/auth/firebase-client.js?v=20260903-1',
+  './js/onboarding/profile-onboarding.js?v=20260903-2',
+  './js/auth/firebase-client.js?v=20260903-2',
   './js/media/media-manager.js?v=20260813-2',
   './js/media/engine-audio-analyzer.js?v=20260830-1',
   './js/auth/consent.js?v=20260826-2',

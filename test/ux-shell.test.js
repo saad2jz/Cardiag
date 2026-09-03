@@ -34,13 +34,13 @@ test('the app shell keeps SEO, accessibility and cache safeguards', () => {
   assert.match(index, /"@type":"Organization"/);
   assert.match(index, /id="installAppBtn"[^>]*hidden/);
   assert.match(index, /sigCanvasAcheteur[^>]*aria-label=/);
-  assert.match(worker, /cardiag-v150/);
+  assert.match(worker, /cardiag-v151/);
   assert.match(index, /cardiag_design_preferences/);
   assert.match(index, /Apply the saved visual preference before the first paint/);
   assert.match(worker, /landing\/landing\.js\?v=20260902-1/);
   assert.match(index, /css\/landing\/landing\.css\?v=20260901-1/);
   assert.match(worker, /css\/landing\/landing\.css\?v=20260901-1/);
-  assert.match(worker, /js\/app\.js\?v=20260903-1/);
+  assert.match(worker, /js\/app\.js\?v=20260903-2/);
   assert.match(worker, /css\/auth\/auth\.css\?v=20260902-1/);
   assert.match(index, /id="pwaUpdateBanner"/);
   assert.match(index, /Fiches locales par défaut/);

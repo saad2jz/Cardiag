@@ -1,4 +1,4 @@
-import { authClient } from '../auth/firebase-client.js?v=20260903-1';
+import { authClient } from '../auth/firebase-client.js?v=20260903-2';
 
 document.getElementById('garageRegistration')?.addEventListener('submit', async (event) => {
   event.preventDefault();
