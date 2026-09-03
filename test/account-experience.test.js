@@ -112,6 +112,25 @@ test('Google authentication remains available alongside passwordless email', () 
   assert.match(authUi, /show\('profile'\);/);
 });
 
+test('visitors can explicitly continue locally through every protected journey', () => {
+  assert.match(app, /const GUEST_MODE_KEY = 'cardiag_guest_mode_v1'/);
+  assert.match(app, /let guestModeFallback = false/);
+  assert.match(app, /window\.cardiagGuestSession =/);
+  assert.match(app, /if \(isGuestMode\(\)\) return true/);
+  assert.match(app, /if \(isGuestMode\(\)\) return \{ guest:true \}/);
+  assert.match(app, /hasPendingAuthenticationReturn\(\) \|\| isGuestMode\(\)/);
+  assert.match(authUi, /data-guest-continue/);
+  assert.match(authUi, /Continuer en visiteur/);
+  assert.match(authUi, /uniquement sur cet appareil/);
+  assert.match(authUi, /announceAuthentication\('guest'\)/);
+  assert.match(authUi, /user && window\.cardiagGuestSession\?\.active/);
+  assert.match(authStyles, /\.guest-auth-option button\{[^}]*min-height:58px/);
+  assert.match(router, /cardiag:authentication-complete/);
+  for (const routeKind of ['dashboard', 'assistant', 'compare', 'settings', 'new-inspection', 'inspection']) {
+    assert.match(router, new RegExp(`route\\.kind === '${routeKind}'`));
+  }
+});
+
 test('public landing account choices enter the dedicated application shell before authentication', () => {
   assert.match(index, /<base href="\/">/);
   assert.match(index, /data-landing-auth-toggle/);

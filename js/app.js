@@ -35,6 +35,29 @@ import { initializePaintThicknessProfiler } from './wizard/paint-thickness-profi
 let reportFeaturePromise;
 let chatFeaturePromise;
 let accountFeaturePromise;
+const GUEST_MODE_KEY = 'cardiag_guest_mode_v1';
+let guestModeFallback = false;
+
+function isGuestMode() {
+  try { return localStorage.getItem(GUEST_MODE_KEY) === 'active' || guestModeFallback; }
+  catch { return guestModeFallback; }
+}
+
+function setGuestMode(active) {
+  guestModeFallback = active;
+  try {
+    if (active) localStorage.setItem(GUEST_MODE_KEY, 'active');
+    else localStorage.removeItem(GUEST_MODE_KEY);
+  } catch { /* Private browsing can make storage unavailable. */ }
+  window.dispatchEvent(new CustomEvent('cardiag:guest-mode-change', { detail: { active } }));
+  return active;
+}
+
+window.cardiagGuestSession = {
+  get active() { return isGuestMode(); },
+  enable: () => setGuestMode(true),
+  disable: () => setGuestMode(false),
+};
 function hasPendingAuthenticationReturn() {
   // OAuth may restore the document on a legacy entry URL (for example
   // `/?niveau=complet`). In that case the landing is intentionally hidden,
@@ -52,7 +75,7 @@ function hasPendingAuthenticationReturn() {
 async function loadAccountFeature(){
   if(!accountFeaturePromise){
     accountFeaturePromise=Promise.all([
-      import('./auth/auth-ui.js?v=20260902-3'),
+      import('./auth/auth-ui.js?v=20260902-4'),
       import('./native/sync-queue.js?v=20260829-1'),
     ]).then(async ([auth,sync])=>{
       await auth.initializeAuthUi();
@@ -72,10 +95,13 @@ function consumeAuthenticationProvider() {
   } catch { return ''; }
 }
 async function requireAuthentication() {
+  // A visitor explicitly chose local-only use. Do not wait for Firebase or
+  // reopen the account sheet on every protected route.
+  if (isGuestMode()) return true;
   const authUi = await loadAccountFeature();
   // Do not redirect while Firebase is still restoring a durable session.
   await window.cardiagAuth?.ready;
-  if (window.cardiagAuth?.user) return true;
+  if (window.cardiagAuth?.user || isGuestMode()) return true;
   // The selected provider is an intent for one attempt, not persistent state.
   // Consuming it before opening Google prevents a rejected OAuth request from
   // restarting automatically on every application reload.
@@ -93,6 +119,7 @@ function initializeLazyAccountFeature(){
   };
   window.cardiagOpenAuthentication = openAuthentication;
   window.cardiagAuthReady = async () => {
+    if (isGuestMode()) return { guest:true };
     await loadAccountFeature();
     await window.cardiagAuth?.ready;
     return window.cardiagAuth?.user || null;
@@ -292,7 +319,7 @@ async function initializeApp() {
     // Firebase stores the result of a Google redirect internally. Loading the
     // account feature on the public page lets Firebase consume it and resume
     // the requested application entry without a second click.
-    if (landing?.active || hasPendingAuthenticationReturn()) {
+    if (landing?.active || hasPendingAuthenticationReturn() || isGuestMode()) {
       loadAccountFeature().catch((error) => console.warn('Authentification en attente', error));
     }
     initializePwa();

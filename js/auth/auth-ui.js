@@ -26,6 +26,10 @@ function createAuthSurface() {
       </form>
       <button type="button" class="google-auth-button" data-google-login><span aria-hidden="true">G</span> Continuer avec Google</button>
       <p class="auth-help">Premier accès ? Le lien crée votre compte automatiquement.</p>
+      <div class="guest-auth-option">
+        <button type="button" data-guest-continue><strong>Continuer en visiteur</strong><span>Sans créer de compte</span></button>
+        <p>Vos fiches restent uniquement sur cet appareil. Elles ne sont ni synchronisées ni récupérables en cas de perte.</p>
+      </div>
     </div>
     <div class="auth-view auth-email-sent" data-auth-view="email-sent" hidden>
       <div class="auth-email-sent-card"><p class="panel-kicker">LIEN SÉCURISÉ ENVOYÉ</p><h3>Consultez votre boîte e-mail</h3><p>Ouvrez le lien reçu pour revenir automatiquement à votre inspection.</p><strong data-auth-sent-email></strong></div>
@@ -143,11 +147,14 @@ export async function initializeAuthUi() {
   const updateQuickLabels = () => {
     const english = window.cardiagI18n?.language === 'en';
     const user = authClient.user;
+    const guest = !user && Boolean(window.cardiagGuestSession?.active);
     const name = accountName();
     actions.dataset.authenticated = String(Boolean(user));
     panel.dataset.authenticated = String(Boolean(user));
-    trigger.textContent = user ? `${english ? 'Account' : 'Compte'}${name ? ` · ${name}` : ''}` : (english ? 'Already registered' : 'Déjà inscrit');
-    trigger.title = user ? (english ? 'Open profile settings' : 'Ouvrir les réglages du profil') : trigger.textContent;
+    actions.dataset.guest = String(guest);
+    panel.dataset.guest = String(guest);
+    trigger.textContent = user ? `${english ? 'Account' : 'Compte'}${name ? ` · ${name}` : ''}` : guest ? (english ? 'Guest' : 'Visiteur') : (english ? 'Already registered' : 'Déjà inscrit');
+    trigger.title = user ? (english ? 'Open profile settings' : 'Ouvrir les réglages du profil') : guest ? (english ? 'Sign in to sync your records' : 'Se connecter pour sauvegarder et retrouver vos fiches') : trigger.textContent;
   };
   const renderAccount = (user) => {
     if (!user) return;
@@ -222,6 +229,7 @@ export async function initializeAuthUi() {
   trigger.addEventListener('click', () => open('login'));
   window.addEventListener('cardiag:open-auth', (event) => open(event.detail?.view, event.detail?.provider));
   window.addEventListener('cardiag:language-change', updateQuickLabels);
+  window.addEventListener('cardiag:guest-mode-change', updateQuickLabels);
   window.addEventListener('cardiag:data-change', () => refreshMigration());
   window.addEventListener('cardiag:sync-status', () => refreshMigration());
   panel.querySelector('[data-account-close]').onclick = () => { panel.classList.remove('is-open'); setTimeout(() => { panel.hidden = true; }, 220); };
@@ -290,6 +298,15 @@ export async function initializeAuthUi() {
   panel.querySelectorAll('[data-google-login]').forEach((button) => {
     button.onclick = () => signInWithGoogle(button);
   });
+  panel.querySelector('[data-guest-continue]').onclick = () => {
+    window.cardiagGuestSession?.enable?.();
+    message(panel, 'Mode visiteur activé. Vos fiches restent sur cet appareil.', 'success');
+    closeForJourney();
+    window.dispatchEvent(new CustomEvent('cardiag:wizard-feedback', {
+      detail: { type:'success', message:'Mode visiteur activé. Vos fiches restent sur cet appareil.' },
+    }));
+    announceAuthentication('guest');
+  };
   window.addEventListener('cardiag:google-auth-error', (event) => {
     message(panel, event.detail?.message || 'La connexion Google a échoué.', 'error');
   });
@@ -406,6 +423,7 @@ export async function initializeAuthUi() {
   };
 
   authClient.onChange((user) => {
+    if (user && window.cardiagGuestSession?.active) window.cardiagGuestSession.disable();
     updateQuickLabels();
     if (!user) {
       profileRequest += 1;
